@@ -1,15 +1,14 @@
-
 \section{Conceptos Básicos}
 
 La regresión logística es una técnica de modelado estadístico utilizada para predecir la probabilidad de un evento binario (es decir, un evento que tiene dos posibles resultados) en función de una o más variables independientes. Es ampliamente utilizada en diversas disciplinas, como medicina, economía, biología, y ciencias sociales, para analizar y predecir resultados binarios.
 
-Un modelo de regresión logística tiene la forma de una ecuación que describe cómo una variable dependiente binaria $Y$ (que puede tomar los valores $0$ o $1$) está relacionada con una o más variables independientes $X_1, X_2, \ldots, X_n$. A diferencia de la regresión lineal, que predice un valor continuo, la regresión logística predice una probabilidad que puede ser interpretada como la probabilidad de que $Y=1$ dado un conjunto de valores para $X_1, X_2, \ldots, X_n$.
+Un modelo de regresión logística describe cómo una variable dependiente binaria $Y$ (que puede tomar los valores $0$ o $1$) está relacionada con una o más variables independientes $X_1, X_2, \ldots, X_n$. A diferencia de la regresión lineal, que predice un valor continuo, la regresión logística predice una probabilidad que puede ser interpretada como la probabilidad de que $Y=1$ dado un conjunto de valores para $X_1, X_2, \ldots, X_n$.
 
 \section{Regresión Lineal}
 
-La regresión lineal es una técnica de modelado estadístico utilizada para predecir el valor de una variable dependiente continua en función de una o más variables independientes.
+La regresión lineal es utilizada para predecir el valor de una variable dependiente continua en función de una o más variables independientes.
 
-\subsection*{Modelo Lineal}
+%\subsection*{Modelo Lineal}
 
 El modelo de regresión lineal tiene la forma:
 \begin{equation}
@@ -24,11 +23,11 @@ donde:
     \item $\epsilon$ es el término de error, que representa la desviación de los datos observados de los valores predichos por el modelo.
 \end{itemize}
 
-\subsection*{Mínimos Cuadrados Ordinarios (OLS)}
+%\subsection*{Mínimos Cuadrados Ordinarios (OLS)}
 
 El objetivo de la regresión lineal es encontrar los valores de los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$ que minimicen la suma de los cuadrados de las diferencias entre los valores observados y los valores predichos. Este método se conoce como mínimos cuadrados ordinarios (OLS, por sus siglas en inglés).
 
-La función de costo que se minimiza es:
+La función de costo a minimizar es:
 \begin{equation}
 J\left(\beta_0, \beta_1, \ldots, \beta_n\right) = \sum_{i=1}^{n}\left(y_i - \hat{y}_i\right)^2
 \end{equation}
@@ -52,7 +51,7 @@ Resolviendo este sistema de ecuaciones, se obtienen los valores de los coeficien
 
 La deducción de la fórmula de la regresión logística comienza con la necesidad de modelar la probabilidad de un evento binario. Queremos encontrar una función que relacione las variables independientes con la probabilidad de que la variable dependiente tome el valor $1$.
 
-\subsection*{Probabilidad y Odds}
+%\subsection*{Probabilidad y Odds}
 
 La probabilidad de que el evento ocurra, $P(Y=1)$, se denota como $p$. La probabilidad de que el evento no ocurra, $P(Y=0)$, es $1-p$. Los \textit{odds} (chances) de que ocurra el evento se definen como:
 \begin{equation}
@@ -60,38 +59,34 @@ La probabilidad de que el evento ocurra, $P(Y=1)$, se denota como $p$. La probab
 \end{equation}
 Los \textit{odds} nos indican cuántas veces más probable es que ocurra el evento frente a que no ocurra.
 
-\subsection*{Transformación Logit}
+%\subsection*{Transformación Logit}
 
 Para simplificar el modelado de los \textit{odds}, aplicamos el logaritmo natural, obteniendo la función logit:
 \begin{equation}
 \text{logit}(p) = \log\left(\frac{p}{1-p}\right)
 \end{equation}
-La transformación logit es útil porque convierte el rango de la probabilidad (0, 1) al rango de números reales $\left(-\infty, \infty\right)$.
-
-\subsection*{Modelo Lineal en el Espacio Logit}
-
-La idea clave de la regresión logística es modelar la transformación logit de la probabilidad como una combinación lineal de las variables independientes:
+La transformación logit es útil porque convierte el rango de la probabilidad (0, 1) al rango de números reales $\left(-\infty, \infty\right)$. La idea clave de la regresión logística es modelar la transformación logit de la probabilidad como una combinación lineal de las variables independientes:
 \begin{equation}
 \text{logit}(p) = \log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n
 \end{equation}
-Aquí, $\beta_0$ es el intercepto y $\beta_1, \beta_2, \ldots, \beta_n$ son los coeficientes asociados con las variables independientes $X_1, X_2, \ldots, X_n$.
+Aquí, $\beta_0$ es el t\'ermino constante y $\beta_1, \beta_2, \ldots, \beta_n$ son los coeficientes asociados con las variables independientes $X_1, X_2, \ldots, X_n$.
 
-\subsection*{Invertir la Transformación Logit}
+%\subsection*{Invertir la Transformación Logit}
 
 Para expresar $p$ en función de una combinación lineal de las variables independientes, invertimos la transformación logit. Partimos de la ecuación:
-\begin{equation}
+\begin{eqnarray*}
 \log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n
-\end{equation}
+\end{eqnarray*}
 Aplicamos la exponenciación a ambos lados:
-\begin{equation}
+\begin{eqnarray*}
 \frac{p}{1-p} = e^{\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n}
-\end{equation}
+\end{eqnarray*}
 Despejamos $p$:
-\begin{equation}
+\begin{eqnarray*}
 p = \frac{e^{\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n}}{1 + e^{\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n}}
-\end{equation}
+\end{eqnarray*}
 
-\subsection*{Función Logística}
+%\subsection*{Función Logística}
 
 La expresión final que obtenemos es conocida como la función logística:
 \begin{equation}
@@ -101,11 +96,148 @@ Esta función describe cómo las variables independientes se relacionan con la p
 
 \section{Método de Máxima Verosimilitud}
 
-En la regresión logística, los coeficientes del modelo se estiman utilizando el método de máxima verosimilitud. Este método busca encontrar los valores de los coeficientes que maximicen la probabilidad de observar los datos dados los valores de las variables independientes.
+Para estimar los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$ en la regresión logística, utilizamos el método de máxima verosimilitud. La idea es encontrar los valores de los coeficientes que maximicen la probabilidad de observar los datos dados. Esta probabilidad se expresa mediante la función de verosimilitud $L$. La función de verosimilitud $L(\beta_0, \beta_1, \ldots, \beta_n)$ para un conjunto de $n$ observaciones se define como el producto de las probabilidades de las observaciones dadas las variables independientes:
 
-\subsection*{Función de Verosimilitud}
+\begin{equation}
+L(\beta_0, \beta_1, \ldots, \beta_n) = \prod_{i=1}^{n} p_i^{y_i} (1 - p_i)^{1 - y_i}
+\end{equation}
 
-Para un conjunto de $n$ observaciones, la función de verosimilitud $L$ se define como el producto de las probabilidades individuales de observar cada dato:
+donde:
+\begin{itemize}
+    \item $p_i$ es la probabilidad predicha de que $Y_i = 1$,
+    \item $y_i$ es el valor observado de la variable dependiente para la $i$-ésima observación.
+\end{itemize}
+
+%\subsection{Función de Log-Verosimilitud}
+
+Trabajar directamente con esta función de verosimilitud puede ser complicado debido al producto de muchas probabilidades, especialmente si $n$ es grande. Para simplificar los cálculos, se utiliza el logaritmo de la función de verosimilitud, conocido como la función de log-verosimilitud. El uso del logaritmo simplifica significativamente la diferenciación y maximización de la función. La función de log-verosimilitud se define como:
+
+\begin{equation}
+\log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right]
+\end{equation}
+
+Aquí, $\log$ representa el logaritmo natural. Esta transformación es válida porque el logaritmo es una función monótona creciente, lo que significa que maximizar la log-verosimilitud es equivalente a maximizar la verosimilitud original. En la regresión logística, la probabilidad $p_i$ está dada por la función logística:
+
+\begin{equation}
+p_i = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}}
+\end{equation}
+
+Sustituyendo esta expresión en la función de log-verosimilitud, obtenemos:
+
+\begin{eqnarray*}
+\log L(\beta_0, \beta_1, \ldots, \beta_n) &= \sum_{i=1}^{n} \left[ y_i \log \left( \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}} \right) + \right. \nonumber \\
+& \quad \left. (1 - y_i) \log \left( 1 - \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}} \right) \right]
+\end{eqnarray*}
+
+Simplificando esta expresión, notamos que:
+
+\begin{eqnarray*}
+\log \left( \frac{1}{1 + e^{-z}} \right) = -\log(1 + e^{-z})
+\end{eqnarray*}
+
+y
+
+\begin{eqnarray*}
+\log \left( 1 - \frac{1}{1 + e^{-z}} \right) = \log \left( \frac{e^{-z}}{1 + e^{-z}} \right) = -z - \log(1 + e^{-z})
+\end{eqnarray*}
+
+Aplicando estas identidades, la función de log-verosimilitud se convierte en:
+
+\begin{eqnarray*}
+\log L(\beta_0, \beta_1, \ldots, \beta_n) &=& \sum_{i=1}^{n} \left[ y_i (-\log(1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})})) + \right. \nonumber \\
+&& \quad \left. (1 - y_i) \left( -(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}) - \log(1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}) \right) \right]
+\end{eqnarray*}
+
+Simplificando aún más, obtenemos:
+
+\begin{eqnarray}
+\log L(\beta_0, \beta_1, \ldots, \beta_n) &= \sum_{i=1}^{n} \left[ y_i (\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}) - \log(1 + e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}) \right]
+\end{eqnarray}
+
+
+Para simplificar aún más la notación, podemos utilizar notación matricial. Definimos la matriz $\mathbf{X}$ de tamaño $n \times (k+1)$ y el vector de coeficientes $\boldsymbol{\beta}$ de tamaño $(k+1) \times 1$ como sigue:
+
+\begin{equation}
+\mathbf{X} = \begin{bmatrix}
+1 & x_{11} & x_{12} & \ldots & x_{1k} \\
+1 & x_{21} & x_{22} & \ldots & x_{2k} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+1 & x_{n1} & x_{n2} & \ldots & x_{nk}
+\end{bmatrix}, \quad
+\boldsymbol{\beta} = \begin{bmatrix}
+\beta_0 \\
+\beta_1 \\
+\beta_2 \\
+\vdots \\
+\beta_k
+\end{bmatrix}
+\end{equation}
+
+Entonces, la expresión para la función de log-verosimilitud es:
+
+\begin{equation}
+\log L(\boldsymbol{\beta}) = \sum_{i=1}^{n} \left[ y_i (\mathbf{X}_i \boldsymbol{\beta}) - \log(1 + e^{\mathbf{X}_i \boldsymbol{\beta}}) \right]
+\end{equation}
+
+donde $\mathbf{X}_i$ es la $i$-ésima fila de la matriz $\mathbf{X}$.  Esta notación matricial simplifica la implementación y la derivación de los estimadores de los coeficientes en la regresión logística. Utilizando métodos numéricos, como el algoritmo de Newton-Raphson, se pueden encontrar los coeficientes que maximizan la función de log-verosimilitud. Para maximizar la función de log-verosimilitud, derivamos esta función con respecto a cada uno de los coeficientes $\beta_j$ y encontramos los puntos críticos. La derivada parcial de la función de log-verosimilitud con respecto a $\beta_j$ es:
+
+\begin{equation}
+\frac{\partial \log L(\boldsymbol{\beta})}{\partial \beta_j} = \sum_{i=1}^{n} \left[ y_i X_{ij} - \frac{X_{ij} e^{\mathbf{X}_i \boldsymbol{\beta}}}{1 + e^{\mathbf{X}_i \boldsymbol{\beta}}} \right]
+\end{equation}
+
+Simplificando, esta derivada se puede expresar como:
+
+\begin{equation}
+\frac{\partial \log L(\boldsymbol{\beta})}{\partial \beta_j} = \sum_{i=1}^{n} X_{ij} (y_i - p_i)
+\end{equation}
+
+donde $p_i = \frac{1}{1 + e^{-\mathbf{X}_i \boldsymbol{\beta}}}$. Para encontrar los coeficientes que maximizan la log-verosimilitud, resolvemos el sistema de ecuaciones $\frac{\partial \log L(\boldsymbol{\beta})}{\partial \beta_j} = 0$ para todos los $j = 0, 1, \ldots, k$. Este sistema de ecuaciones no tiene una solución analítica cerrada, por lo que se resuelve numéricamente utilizando métodos iterativos como el algoritmo de Newton-Raphson.
+
+\section{Método de Newton-Raphson}
+
+El método de Newton-Raphson es un algoritmo iterativo que se utiliza para encontrar las raíces de una función. En el contexto de la regresión logística, se utiliza para maximizar la función de log-verosimilitud encontrando los valores de los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$. Este m\'etodo se basa en una aproximación de segundo orden de la función objetivo. Dado un valor inicial de los coeficientes $\boldsymbol{\beta}^{(0)}$, se actualiza iterativamente el valor de los coeficientes utilizando la fórmula:
+
+\begin{equation}
+\boldsymbol{\beta}^{(t+1)} = \boldsymbol{\beta}^{(t)} - \left[ \mathbf{H}(\boldsymbol{\beta}^{(t)}) \right]^{-1} \nabla \log L(\boldsymbol{\beta}^{(t)})
+\end{equation}
+
+donde:
+\begin{itemize}
+    \item $\boldsymbol{\beta}^{(t)}$ es el vector de coeficientes en la $t$-ésima iteración.
+    \item $\nabla \log L(\boldsymbol{\beta}^{(t)})$ es el gradiente de la función de log-verosimilitud con respecto a los coeficientes $\boldsymbol{\beta}$:
+
+\begin{equation}
+\nabla \log L(\boldsymbol{\beta}) = \mathbf{X}^T (\mathbf{y} - \mathbf{p})
+\end{equation}
+
+donde $\mathbf{y}$ es el vector de valores observados y $\mathbf{p}$ es el vector de probabilidades.
+    \item $\mathbf{H}(\boldsymbol{\beta}^{(t)})$ es la matriz Hessiana (matriz de segundas derivadas) evaluada en $\boldsymbol{\beta}^{(t)}$:
+\begin{equation}
+\mathbf{H}(\boldsymbol{\beta}) = -\mathbf{X}^T \mathbf{W} \mathbf{X}
+\end{equation}
+
+donde $\mathbf{W}$ es una matriz diagonal de pesos con elementos $w_i = p_i (1 - p_i)$.
+
+\end{itemize}
+
+
+\begin{Algthm}
+El algoritmo Newton-Raphson para la regresión logística se puede resumir en los siguientes pasos:
+\begin{enumerate}
+    \item Inicializar el vector de coeficientes $\boldsymbol{\beta}^{(0)}$ (por ejemplo, con ceros o valores pequeños aleatorios).
+    \item Calcular el gradiente $\nabla \log L(\boldsymbol{\beta}^{(t)})$ y la matriz Hessiana $\mathbf{H}(\boldsymbol{\beta}^{(t)})$ en la iteración $t$.
+    \item Actualizar los coeficientes utilizando la fórmula:
+    \begin{equation}
+    \boldsymbol{\beta}^{(t+1)} = \boldsymbol{\beta}^{(t)} - \left[ \mathbf{H}(\boldsymbol{\beta}^{(t)}) \right]^{-1} \nabla \log L(\boldsymbol{\beta}^{(t)})
+    \end{equation}
+    \item Repetir los pasos 2 y 3 hasta que la diferencia entre $\boldsymbol{\beta}^{(t+1)}$ y $\boldsymbol{\beta}^{(t)}$ sea menor que un umbral predefinido (criterio de convergencia).
+\end{enumerate}
+\end{Algthm}
+
+En resumen, el método de Newton-Raphson permite encontrar los coeficientes que maximizan la función de log-verosimilitud de manera eficiente. 
+
+\section{Espec\'ificando}
+En espec\'ifico para un conjunto de $n$ observaciones, la función de verosimilitud $L$ se define como el producto de las probabilidades individuales de observar cada dato:
 \begin{equation}
 L(\beta_0, \beta_1, \ldots, \beta_n) = \prod_{i=1}^{n} p_i^{y_i} (1 - p_i)^{1 - y_i}
 \end{equation}
@@ -114,9 +246,7 @@ donde $y_i$ es el valor observado de la variable dependiente para la $i$-ésima 
 p_i = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}}
 \end{equation}
 
-\subsection*{Función de Log-Verosimilitud}
-
-Para simplificar los cálculos, trabajamos con el logaritmo de la función de verosimilitud, conocido como la función de log-verosimilitud. Tomar el logaritmo convierte el producto en una suma:
+Tomando el logaritmo:
 \begin{equation}
 \log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right]
 \end{equation}
@@ -126,11 +256,7 @@ Sustituyendo $p_i$:
 \log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i (\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}) - \log(1 + e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}) \right]
 \end{equation}
 
-\subsection*{Maximización de la Log-Verosimilitud}
-
-El objetivo es encontrar los valores de $\beta_0, \beta_1, \ldots, \beta_n$ que maximicen la función de log-verosimilitud. Esto se hace derivando la función de log-verosimilitud con respecto a cada uno de los coeficientes y encontrando los puntos críticos.
-
-Para $\beta_j$, la derivada parcial de la función de log-verosimilitud es:
+Dado que el objetivo es encontrar los valores de $\beta_0, \beta_1, \ldots, \beta_n$ que maximicen la función de log-verosimilitud.  Para $\beta_j$, la derivada parcial de la función de log-verosimilitud es:
 \begin{equation}
 \frac{\partial \log L}{\partial \beta_j} = \sum_{i=1}^{n} \left[ y_i X_{ij} - \frac{X_{ij} e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}}{1 + e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}} \right]
 \end{equation}
@@ -140,40 +266,27 @@ Esto se simplifica a:
 \frac{\partial \log L}{\partial \beta_j} = \sum_{i=1}^{n} X_{ij} (y_i - p_i)
 \end{equation}
 
-Para maximizar la log-verosimilitud, resolvemos el sistema de ecuaciones $\frac{\partial \log L}{\partial \beta_j} = 0$ para todos los $j$ de 0 a $n$. Este sistema de ecuaciones no tiene una solución analítica cerrada, por lo que se resuelve numéricamente utilizando métodos iterativos como el algoritmo de Newton-Raphson.
-
-\subsection*{Método de Newton-Raphson}
-
-El método de Newton-Raphson es un algoritmo iterativo que se utiliza para encontrar las raíces de una función. En el contexto de la regresión logística, se utiliza para maximizar la función de log-verosimilitud encontrando los valores de los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$. El método de Newton-Raphson se basa en una aproximación de segundo orden de la función objetivo. Dado un valor inicial de los coeficientes $\beta^{(0)}$, se iterativamente actualiza el valor de los coeficientes utilizando la fórmula:
+Para maximizar la log-verosimilitud, resolvemos el sistema de ecuaciones $\frac{\partial \log L}{\partial \beta_j} = 0$ para todos los $j$ de 0 a $n$., mismo que se resuelve numéricamente utilizando métodos el algoritmo de Newton-Raphson. El método de Newton-Raphson se basa en una aproximación de segundo orden de la función objetivo. Dado un valor inicial de los coeficientes $\beta^{(0)}$, se iterativamente actualiza el valor de los coeficientes utilizando la fórmula:
 \begin{equation}
 \beta^{(k+1)} = \beta^{(k)} - \left[ \mathbf{H}(\beta^{(k)}) \right]^{-1} \mathbf{g}(\beta^{(k)})
 \end{equation}
 donde:
 \begin{itemize}
     \item $\beta^{(k)}$ es el vector de coeficientes en la $k$-ésima iteración.
-    \item $\mathbf{H}(\beta^{(k)})$ es la matriz Hessiana (matriz de segundas derivadas) evaluada en $\beta^{(k)}$.
-    \item $\mathbf{g}(\beta^{(k)})$ es el gradiente (vector de primeras derivadas) evaluado en $\beta^{(k)}$.
-\end{itemize}
-
-\subsubsection*{Gradiente}
-
-El gradiente de la función de log-verosimilitud con respecto a los coeficientes $\beta$ es:
+    \item $\mathbf{g}(\beta^{(k)})$ es el gradiente (vector de primeras derivadas) evaluado en $\beta^{(k)}$:
 \begin{equation}
 \mathbf{g}(\beta) = \frac{\partial \log L}{\partial \beta} = \sum_{i=1}^{n} \mathbf{X}_i (y_i - p_i)
 \end{equation}
 donde $\mathbf{X}_i$ es el vector de valores de las variables independientes para la $i$-ésima observación.
 
-\subsubsection*{Hessiana}
-
-La matriz Hessiana de la función de log-verosimilitud con respecto a los coeficientes $\beta$ es:
+    \item $\mathbf{H}(\beta^{(k)})$ es la matriz Hessiana (matriz de segundas derivadas) evaluada en $\beta^{(k)}$:
 \begin{equation}
 \mathbf{H}(\beta) = \frac{\partial^2 \log L}{\partial \beta \partial \beta^T} = -\sum_{i=1}^{n} p_i (1 - p_i) \mathbf{X}_i \mathbf{X}_i^T
 \end{equation}
 
-\subsubsection*{Algoritmo Newton-Raphson}
+\end{itemize}
 
-El algoritmo Newton-Raphson para la regresión logística se puede resumir en los siguientes pasos:
-\begin{Algthm}
+\begin{Algthm} Los pasos del algoritmo Newton-Raphson para la regresión logística son:
 \begin{enumerate}
     \item Inicializar el vector de coeficientes $\beta^{(0)}$ (por ejemplo, con ceros o valores pequeños aleatorios).
     \item Calcular el gradiente $\mathbf{g}(\beta^{(k)})$ y la matriz Hessiana $\mathbf{H}(\beta^{(k)})$ en la iteración $k$.
@@ -185,7 +298,7 @@ El algoritmo Newton-Raphson para la regresión logística se puede resumir en lo
 \end{enumerate}
 \end{Algthm}
 
-\section{Representaci\'on vectorial}
+\section{Notas finales}
 
 En el contexto de la regresión logística, los vectores $X_1, X_2, \ldots, X_n$ representan las variables independientes. Cada $X_j$ es un vector columna que contiene los valores de la variable independiente $j$ para cada una de las $n$ observaciones. Es decir,
 
@@ -233,11 +346,7 @@ Así, la probabilidad $p$ se puede expresar como:
 p = \frac{1}{1 + e^{-\mathbf{X} \boldsymbol{\beta}}}
 \end{equation}
 
-Esta notación matricial simplifica la implementación y la derivación de los estimadores de los coeficientes en la regresión logística.
-
-\subsection*{Estimación de los Coeficientes}
-
-Para estimar los coeficientes $\boldsymbol{\beta}$ en la regresión logística, se utiliza el método de máxima verosimilitud. La función de verosimilitud $L(\boldsymbol{\beta})$ se define como el producto de las probabilidades de las observaciones dadas las variables independientes:
+Esta notación matricial simplifica la implementación y la derivación de los estimadores de los coeficientes en la regresión logística. Para estimar los coeficientes $\boldsymbol{\beta}$ en la regresión logística, se utiliza el método de máxima verosimilitud. La función de verosimilitud $L(\boldsymbol{\beta})$ se define como el producto de las probabilidades de las observaciones dadas las variables independientes:
 
 \begin{equation}
 L(\boldsymbol{\beta}) = \prod_{i=1}^{n} p_i^{y_i} (1 - p_i)^{1 - y_i}
@@ -259,7 +368,6 @@ Sustituyendo $p_i = \frac{1}{1 + e^{-\mathbf{X}_i \boldsymbol{\beta}}}$, donde $
 
 Para encontrar los valores de $\boldsymbol{\beta}$ que maximizan la función de log-verosimilitud, se utiliza un algoritmo iterativo como el método de Newton-Raphson. Este método requiere calcular el gradiente y la matriz Hessiana de la función de log-verosimilitud.
 
-\subsubsection*{Gradiente}
 
 El gradiente de la función de log-verosimilitud con respecto a $\boldsymbol{\beta}$ es:
 
@@ -269,8 +377,6 @@ El gradiente de la función de log-verosimilitud con respecto a $\boldsymbol{\be
 
 donde $\mathbf{y}$ es el vector de valores observados y $\mathbf{p}$ es el vector de probabilidades predichas.
 
-\subsubsection*{Matriz Hessiana}
-
 La matriz Hessiana de la función de log-verosimilitud es:
 
 \begin{equation}
@@ -278,8 +384,6 @@ La matriz Hessiana de la función de log-verosimilitud es:
 \end{equation}
 
 donde $\mathbf{W}$ es una matriz diagonal de pesos con elementos $w_i = p_i (1 - p_i)$.
-
-\subsubsection*{Método de Newton-Raphson}
 
 El método de Newton-Raphson actualiza los coeficientes $\boldsymbol{\beta}$ de la siguiente manera:
 

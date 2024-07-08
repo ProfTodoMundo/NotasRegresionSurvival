@@ -1,4 +1,4 @@
-\section{Regresión Logística}
+\section{D\'ia 1: Regresión Logística}
 
 \subsection*{Implementación Básica en R}
 
@@ -133,7 +133,7 @@ abline(h = 0, col = "red", lwd = 2)
 cat("El modelo de regresión logística se ha ajustado, se han hecho predicciones y los resultados se han guardado en 'regresion_logistica_modelo.RData'.\n")
 \end{verbatim}
 
-\subsection{Aplicación a Datos de Cáncer}
+\subsection{Aplicación a Datos de Cáncer - Parte I}
 
 A continuación, se muestra un ejemplo de cómo ajustar un modelo de regresión logística en R utilizando el conjunto de datos del cáncer de mama de Wisconsin.
 
@@ -206,7 +206,7 @@ abline(h = 0, col = "red", lwd = 2)
 cat("El modelo de regresión logística se ha ajustado, se han hecho predicciones y los resultados se han guardado en 'regresion_logistica_cancer_modelo.RData'.\n")
 \end{verbatim}
 
-\subsection*{Descripción del Código}
+\subsubsection*{Descripción del Código}
 
 \textbf{Instalación y Carga de Paquetes:}
 
@@ -259,11 +259,11 @@ Instalamos y cargamos el paquete \texttt{stats} necesario para la regresión log
 
 Para ejecutar este script, guarda el código en un archivo llamado \textit{regresionlogistica.R}, abre R o RStudio, navega hasta el directorio donde guardaste el archivo y ejecuta el script usando \textit{source("regresionlogistica.R")}.
 
-\subsection{Ejemplo Titanic}
+\subsubsection{Ejemplo Titanic}
 
 Cuando realizas una regresión logística, obtienes coeficientes para cada variable independiente en tu modelo. Estos coeficientes indican la dirección y la magnitud de la relación entre cada variable independiente y la variable dependiente (en este caso, \textit{Survived}).
 
-\subsection*{Interpretación de los Coeficientes}
+\subsubsection*{Interpretación de los Coeficientes}
 
 \begin{itemize}
     \item \textbf{Intercepto} (\textit{(Intercept)}): Este coeficiente representa el logaritmo de las probabilidades (log-odds) de que \textit{Survived} sea 1 (supervivencia) cuando todas las variables independientes son cero.
@@ -274,7 +274,7 @@ Cuando realizas una regresión logística, obtienes coeficientes para cada varia
     \item \textbf{Fare}: Este coeficiente indica el efecto del precio del billete en las probabilidades de supervivencia. Un coeficiente positivo sugiere que pagar más por el billete se asocia con mayores probabilidades de supervivencia.
 \end{itemize}
 
-\subsection*{Estadísticas de Ajuste del Modelo}
+\subsubsection*{Estadísticas de Ajuste del Modelo}
 
 El resumen del modelo (\textit{summary(model)}) incluye varias estadísticas importantes:
 
@@ -284,19 +284,19 @@ El resumen del modelo (\textit{summary(model)}) incluye varias estadísticas imp
     \item \textbf{AIC (Akaike Information Criterion)}: El AIC es una medida de la calidad del modelo que toma en cuenta tanto la bondad del ajuste como la complejidad del modelo. Modelos con AIC más bajo son preferidos.
 \end{itemize}
 
-\subsection*{Precisión del Modelo}
+\subsubsection*{Precisión del Modelo}
 
 La precisión del modelo en el conjunto de prueba es una métrica importante para evaluar el rendimiento del modelo. La precisión se calcula como el número de predicciones correctas dividido por el número total de predicciones.
 
-\subsection*{Ejemplo de Resultados}
+\subsubsection*{Ejemplo de Resultados}
 
 Supongamos que la precisión del modelo es 0.78 (78\%). Esto significa que el modelo correctamente predijo el estado de supervivencia del 78\% de los pasajeros en el conjunto de prueba.
 
-\subsection*{Matriz de Confusión y Otras Métricas}
+\subsubsection*{Matriz de Confusión y Otras Métricas}
 
 Además de la precisión, otras métricas como la matriz de confusión, la sensibilidad, la especificidad, y el área bajo la curva ROC (AUC-ROC) también pueden proporcionar una visión más completa del rendimiento del modelo.
 
-\subsection*{Matriz de Confusión}
+\subsubsection*{Matriz de Confusión}
 
 \begin{itemize}
     \item \textbf{Verdaderos Positivos (TP)}: Número de pasajeros que sobrevivieron y fueron predichos como sobrevivientes.
@@ -305,7 +305,7 @@ Además de la precisión, otras métricas como la matriz de confusión, la sensi
     \item \textbf{Falsos Negativos (FN)}: Número de pasajeros que sobrevivieron pero fueron predichos como no sobrevivientes.
 \end{itemize}
 
-\subsection*{Ejemplo de Cálculo de Métricas}
+\subsubsection*{Ejemplo de Cálculo de Métricas}
 
 \begin{verbatim}
 # Calcular la matriz de confusión
@@ -321,7 +321,7 @@ roc_curve <- roc(test_set$Survived, test_set$prob_pred)
 auc(roc_curve)
 \end{verbatim}
 
-\subsection*{Visualización de Resultados}
+\subsubsection*{Visualización de Resultados}
 
 Graficar los coeficientes del modelo, la curva ROC y otras visualizaciones ayudan a entender mejor el rendimiento y la importancia de cada variable en el modelo.
 
@@ -330,11 +330,11 @@ Graficar los coeficientes del modelo, la curva ROC y otras visualizaciones ayuda
 plot(roc_curve, main = "Curva ROC para el Modelo de Regresión Logística")
 \end{verbatim}
 
-\subsection*{Resumen Final}
+\subsubsection*{Resumen Final}
 
 El modelo de regresión logística aplicado al conjunto de datos del Titanic proporciona una forma de entender cómo diferentes características de los pasajeros influyen en sus probabilidades de supervivencia. La interpretación de los coeficientes del modelo, las estadísticas de ajuste, y la precisión del modelo en el conjunto de prueba son fundamentales para evaluar el rendimiento y la utilidad del modelo en hacer predicciones sobre la supervivencia de los pasajeros del Titanic.
 
-\subsection{Simulaci\'on de Datos de Cáncer}
+\subsection{Simulaci\'on de Datos de Cáncer - Parte II}
 
 Aquí se presenta un ejemplo de cómo realizar una regresión logística utilizando datos simulados de pacientes con cáncer.
 
@@ -430,7 +430,7 @@ cat("El modelo de regresión logística se ha ajustado, se han hecho prediccione
 y los resultados se han guardado en 'regresion_logistica_cancer_modelo_simulado.RData'.\n")
 \end{verbatim}
 
-\subsection{Simulaci\'on de Datos de Cáncer - Parte II}
+\subsection{Simulaci\'on de Datos de Cáncer - Parte III}
 
 En un estudio sobre cáncer, especialmente en el contexto del cáncer de mama, las principales mediciones suelen incluir una variedad de características clínicas y patológicas. Aquí hay algunas de las principales mediciones que se tienen en cuenta:
 

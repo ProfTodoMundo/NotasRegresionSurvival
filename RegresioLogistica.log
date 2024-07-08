@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 JUL 2024 00:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 JUL 2024 10:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -417,12 +417,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.72 ...a Preparaci\'on de Datos}{24}{section.4.2}
+l.68 ...y Selecci\'on de Variables}{25}{chapter.4}
                                                    [1
 
 ]
-LaTeX Info: Redefining \. on input line 129.
-LaTeX Info: Redefining \% on input line 129.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -430,37 +430,37 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-LaTeX Info: Redefining \. on input line 129.
-LaTeX Info: Redefining \% on input line 129.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
 [2]
-LaTeX Info: Redefining \. on input line 180.
-LaTeX Info: Redefining \% on input line 180.
-LaTeX Info: Redefining \. on input line 180.
-LaTeX Info: Redefining \% on input line 180.
+LaTeX Info: Redefining \. on input line 178.
+LaTeX Info: Redefining \% on input line 178.
+LaTeX Info: Redefining \. on input line 178.
+LaTeX Info: Redefining \% on input line 178.
  [3]
-Overfull \hbox (2.55557pt too wide) detected at line 181
+Overfull \hbox (2.55557pt too wide) detected at line 179
 \OT1/cmr/m/n/10 11.10. 
  []
 
 
-Overfull \hbox (2.55557pt too wide) detected at line 213
+Overfull \hbox (2.55557pt too wide) detected at line 211
 \OT1/cmr/m/n/10 13.10. 
  []
 
 
-Overfull \hbox (2.55557pt too wide) detected at line 214
+Overfull \hbox (2.55557pt too wide) detected at line 212
 \OT1/cmr/m/n/10 13.11. 
  []
 
-LaTeX Info: Redefining \. on input line 233.
-LaTeX Info: Redefining \% on input line 233.
-LaTeX Info: Redefining \. on input line 233.
-LaTeX Info: Redefining \% on input line 233.
+LaTeX Info: Redefining \. on input line 231.
+LaTeX Info: Redefining \% on input line 231.
+LaTeX Info: Redefining \. on input line 231.
+LaTeX Info: Redefining \% on input line 231.
 [4]
-LaTeX Info: Redefining \. on input line 286.
-LaTeX Info: Redefining \% on input line 286.
-LaTeX Info: Redefining \. on input line 286.
-LaTeX Info: Redefining \% on input line 286.
+LaTeX Info: Redefining \. on input line 284.
+LaTeX Info: Redefining \% on input line 284.
+LaTeX Info: Redefining \. on input line 284.
+LaTeX Info: Redefining \% on input line 284.
  [5])
 \tf@toc=\write4
 \openout4 = `RegresioLogistica.toc'.
@@ -476,67 +476,81 @@ Cap\'{\i }tulo 1.
 (./Capitulo1.tex [8
 
 ]
-LaTeX Info: Redefining \. on input line 84.
-LaTeX Info: Redefining \% on input line 84.
-LaTeX Info: Redefining \. on input line 84.
-LaTeX Info: Redefining \% on input line 84.
+LaTeX Info: Redefining \. on input line 100.
+LaTeX Info: Redefining \% on input line 100.
+LaTeX Info: Redefining \. on input line 100.
+LaTeX Info: Redefining \% on input line 100.
  [9]
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
- [10]
-LaTeX Info: Redefining \. on input line 185.
-LaTeX Info: Redefining \% on input line 185.
-LaTeX Info: Redefining \. on input line 185.
-LaTeX Info: Redefining \% on input line 185.
+Overfull \hbox (62.5248pt too wide) in alignment at lines 146--149
+ [][][] []
+ []
+
+
+Overfull \hbox (24.5013pt too wide) in alignment at lines 153--155
+ [][][] []
+ []
+
+LaTeX Info: Redefining \. on input line 160.
+LaTeX Info: Redefining \% on input line 160.
+LaTeX Info: Redefining \. on input line 160.
+LaTeX Info: Redefining \% on input line 160.
+[10]
+LaTeX Info: Redefining \. on input line 221.
+LaTeX Info: Redefining \% on input line 221.
+LaTeX Info: Redefining \. on input line 221.
+LaTeX Info: Redefining \% on input line 221.
  [11]
-LaTeX Info: Redefining \. on input line 247.
-LaTeX Info: Redefining \% on input line 247.
-LaTeX Info: Redefining \. on input line 247.
-LaTeX Info: Redefining \% on input line 247.
- [12])
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+LaTeX Info: Redefining \. on input line 275.
+LaTeX Info: Redefining \% on input line 275.
+ [12]
+LaTeX Info: Redefining \. on input line 329.
+LaTeX Info: Redefining \% on input line 329.
+LaTeX Info: Redefining \. on input line 329.
+LaTeX Info: Redefining \% on input line 329.
+ [13])
 LaTeX Info: Redefining \. on input line 71.
 LaTeX Info: Redefining \% on input line 71.
 LaTeX Info: Redefining \. on input line 71.
 LaTeX Info: Redefining \% on input line 71.
- [13]
+ [14]
 Cap\'{\i }tulo 2.
-(./Capitulo2.tex [14
+(./Capitulo2.tex [15
 
 ]
 LaTeX Info: Redefining \. on input line 87.
 LaTeX Info: Redefining \% on input line 87.
 LaTeX Info: Redefining \. on input line 87.
 LaTeX Info: Redefining \% on input line 87.
- [15]
-LaTeX Info: Redefining \. on input line 150.
-LaTeX Info: Redefining \% on input line 150.
-LaTeX Info: Redefining \. on input line 150.
-LaTeX Info: Redefining \% on input line 150.
  [16]
-LaTeX Info: Redefining \. on input line 199.
-LaTeX Info: Redefining \% on input line 199.
-LaTeX Info: Redefining \. on input line 199.
-LaTeX Info: Redefining \% on input line 199.
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
  [17]
-LaTeX Info: Redefining \. on input line 252.
-LaTeX Info: Redefining \% on input line 252.
-LaTeX Info: Redefining \. on input line 252.
-LaTeX Info: Redefining \% on input line 252.
+LaTeX Info: Redefining \. on input line 199.
+LaTeX Info: Redefining \% on input line 199.
+LaTeX Info: Redefining \. on input line 199.
+LaTeX Info: Redefining \% on input line 199.
  [18]
+LaTeX Info: Redefining \. on input line 252.
+LaTeX Info: Redefining \% on input line 252.
+LaTeX Info: Redefining \. on input line 252.
+LaTeX Info: Redefining \% on input line 252.
+ [19]
 LaTeX Info: Redefining \. on input line 299.
 LaTeX Info: Redefining \% on input line 299.
 LaTeX Info: Redefining \. on input line 299.
 LaTeX Info: Redefining \% on input line 299.
- [19])
+ [20])
 LaTeX Info: Redefining \. on input line 74.
 LaTeX Info: Redefining \% on input line 74.
 LaTeX Info: Redefining \. on input line 74.
 LaTeX Info: Redefining \% on input line 74.
- [20]
+ [21]
 Cap\'{\i }tulo 3.
-(./Capitulo3.tex [21
+(./Capitulo3.tex [22
 
 ]
 Overfull \hbox (17.71356pt too wide) in alignment at lines 46--48
@@ -553,125 +567,125 @@ LaTeX Info: Redefining \. on input line 84.
 LaTeX Info: Redefining \% on input line 84.
 LaTeX Info: Redefining \. on input line 84.
 LaTeX Info: Redefining \% on input line 84.
-[22])
+[23])
 LaTeX Info: Redefining \. on input line 77.
 LaTeX Info: Redefining \% on input line 77.
 LaTeX Info: Redefining \. on input line 77.
 LaTeX Info: Redefining \% on input line 77.
- [23]
+ [24]
 Cap\'{\i }tulo 4.
-(./Capitulo4.tex [24
+(./Capitulo4.tex [25
 
 ]
 LaTeX Info: Redefining \. on input line 79.
 LaTeX Info: Redefining \% on input line 79.
 LaTeX Info: Redefining \. on input line 79.
 LaTeX Info: Redefining \% on input line 79.
- [25]
+ [26]
 LaTeX Info: Redefining \. on input line 127.
 LaTeX Info: Redefining \% on input line 127.
 LaTeX Info: Redefining \. on input line 127.
 LaTeX Info: Redefining \% on input line 127.
- [26])
+ [27])
 LaTeX Info: Redefining \. on input line 80.
 LaTeX Info: Redefining \% on input line 80.
 LaTeX Info: Redefining \. on input line 80.
 LaTeX Info: Redefining \% on input line 80.
- [27]
+ [28]
 Cap\'{\i }tulo 5.
 (./Capitulo5.tex
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[28
+[29
 
 ]
 LaTeX Info: Redefining \. on input line 89.
 LaTeX Info: Redefining \% on input line 89.
 LaTeX Info: Redefining \. on input line 89.
 LaTeX Info: Redefining \% on input line 89.
- [29])
+ [30])
 LaTeX Info: Redefining \. on input line 83.
 LaTeX Info: Redefining \% on input line 83.
 LaTeX Info: Redefining \. on input line 83.
 LaTeX Info: Redefining \% on input line 83.
- [30]
+ [31]
 Cap\'{\i }tulo 6.
-(./Capitulo6.tex [31
+(./Capitulo6.tex [32
 
 ]
 LaTeX Info: Redefining \. on input line 89.
 LaTeX Info: Redefining \% on input line 89.
 LaTeX Info: Redefining \. on input line 89.
 LaTeX Info: Redefining \% on input line 89.
- [32])
+ [33])
 LaTeX Info: Redefining \. on input line 86.
 LaTeX Info: Redefining \% on input line 86.
 LaTeX Info: Redefining \. on input line 86.
 LaTeX Info: Redefining \% on input line 86.
- [33]
+ [34]
 Cap\'{\i }tulo 7.
-(./Capitulo7.tex [34
+(./Capitulo7.tex [35
 
 ]
 LaTeX Info: Redefining \. on input line 93.
 LaTeX Info: Redefining \% on input line 93.
 LaTeX Info: Redefining \. on input line 93.
 LaTeX Info: Redefining \% on input line 93.
- [35])
+ [36])
 LaTeX Info: Redefining \. on input line 89.
 LaTeX Info: Redefining \% on input line 89.
 LaTeX Info: Redefining \. on input line 89.
 LaTeX Info: Redefining \% on input line 89.
- [36]
+ [37]
 Cap\'{\i }tulo 8.
 
 Overfull \hbox (38.6787pt too wide) in paragraph at lines 89--89
 |\OT1/cmr/bx/n/24.88 Regresi^^Son Log^^S^^Psti-ca Mul-ti-no-mial y An^^Sali-
  []
 
-(./Capitulo8.tex [37
+(./Capitulo8.tex [38
 
 ])
 LaTeX Info: Redefining \. on input line 92.
 LaTeX Info: Redefining \% on input line 92.
 LaTeX Info: Redefining \. on input line 92.
 LaTeX Info: Redefining \% on input line 92.
- [38]
+ [39]
 Cap\'{\i }tulo 9.
-(./Capitulo9.tex [39
+(./Capitulo9.tex [40
 
 ])
 LaTeX Info: Redefining \. on input line 95.
 LaTeX Info: Redefining \% on input line 95.
 LaTeX Info: Redefining \. on input line 95.
 LaTeX Info: Redefining \% on input line 95.
- [40]
+ [41]
 Cap\'{\i }tulo 10.
-(./Capitulo10.tex [41
+(./Capitulo10.tex [42
 
 ])
 LaTeX Info: Redefining \. on input line 99.
 LaTeX Info: Redefining \% on input line 99.
 LaTeX Info: Redefining \. on input line 99.
 LaTeX Info: Redefining \% on input line 99.
- [42] [43
+ [43] [44
 
 ]
 Cap\'{\i }tulo 11.
-(./Capitulo11.tex [44
+(./Capitulo11.tex [45
 
 ]
 LaTeX Info: Redefining \. on input line 67.
 LaTeX Info: Redefining \% on input line 67.
 LaTeX Info: Redefining \. on input line 67.
 LaTeX Info: Redefining \% on input line 67.
- [45])
+ [46])
 LaTeX Info: Redefining \. on input line 103.
 LaTeX Info: Redefining \% on input line 103.
 LaTeX Info: Redefining \. on input line 103.
 LaTeX Info: Redefining \% on input line 103.
- [46]
+ [47]
 Cap\'{\i }tulo 12.
 (./Capitulo12.tex
 
@@ -690,7 +704,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 29.
 
-[47
+[48
 
 ]
 
@@ -729,7 +743,7 @@ LaTeX Info: Redefining \. on input line 77.
 LaTeX Info: Redefining \% on input line 77.
 LaTeX Info: Redefining \. on input line 77.
 LaTeX Info: Redefining \% on input line 77.
-[48]
+[49]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 82.
@@ -746,31 +760,31 @@ LaTeX Info: Redefining \. on input line 116.
 LaTeX Info: Redefining \% on input line 116.
 LaTeX Info: Redefining \. on input line 116.
 LaTeX Info: Redefining \% on input line 116.
-[49])
+[50])
 LaTeX Info: Redefining \. on input line 106.
 LaTeX Info: Redefining \% on input line 106.
 LaTeX Info: Redefining \. on input line 106.
 LaTeX Info: Redefining \% on input line 106.
- [50]
+ [51]
 Cap\'{\i }tulo 13.
-(./Capitulo13.tex [51
+(./Capitulo13.tex [52
 
 ]
 LaTeX Info: Redefining \. on input line 79.
 LaTeX Info: Redefining \% on input line 79.
 LaTeX Info: Redefining \. on input line 79.
 LaTeX Info: Redefining \% on input line 79.
- [52]
+ [53]
 LaTeX Info: Redefining \. on input line 112.
 LaTeX Info: Redefining \% on input line 112.
 LaTeX Info: Redefining \. on input line 112.
 LaTeX Info: Redefining \% on input line 112.
- [53])
+ [54])
 LaTeX Info: Redefining \. on input line 109.
 LaTeX Info: Redefining \% on input line 109.
 LaTeX Info: Redefining \. on input line 109.
 LaTeX Info: Redefining \% on input line 109.
- [54]
+ [55]
 Cap\'{\i }tulo 14.
 (./Capitulo14.tex
 
@@ -797,67 +811,67 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 20.
 
-[55
+[56
 
 ])
 LaTeX Info: Redefining \. on input line 112.
 LaTeX Info: Redefining \% on input line 112.
 LaTeX Info: Redefining \. on input line 112.
 LaTeX Info: Redefining \% on input line 112.
- [56]
+ [57]
 Cap\'{\i }tulo 15.
 
 Overfull \hbox (1.48264pt too wide) in paragraph at lines 112--112
 |\OT1/cmr/bx/n/24.88 Modelos de Ries-gos Pro-por-cio-na-les de
  []
 
-(./Capitulo15.tex [57
+(./Capitulo15.tex [58
 
 ]
 LaTeX Info: Redefining \. on input line 76.
 LaTeX Info: Redefining \% on input line 76.
 LaTeX Info: Redefining \. on input line 76.
 LaTeX Info: Redefining \% on input line 76.
- [58])
+ [59])
 LaTeX Info: Redefining \. on input line 115.
 LaTeX Info: Redefining \% on input line 115.
 LaTeX Info: Redefining \. on input line 115.
 LaTeX Info: Redefining \% on input line 115.
- [59]
+ [60]
 Cap\'{\i }tulo 16.
-(./Capitulo16.tex [60
+(./Capitulo16.tex [61
 
 ])
 LaTeX Info: Redefining \. on input line 118.
 LaTeX Info: Redefining \% on input line 118.
 LaTeX Info: Redefining \. on input line 118.
 LaTeX Info: Redefining \% on input line 118.
- [61]
+ [62]
 Cap\'{\i }tulo 17.
-(./Capitulo17.tex [62
+(./Capitulo17.tex [63
 
 ]
 LaTeX Info: Redefining \. on input line 80.
 LaTeX Info: Redefining \% on input line 80.
 LaTeX Info: Redefining \. on input line 80.
 LaTeX Info: Redefining \% on input line 80.
- [63])
+ [64])
 LaTeX Info: Redefining \. on input line 121.
 LaTeX Info: Redefining \% on input line 121.
 LaTeX Info: Redefining \. on input line 121.
 LaTeX Info: Redefining \% on input line 121.
- [64]
+ [65]
 Cap\'{\i }tulo 18.
-(./Capitulo18.tex [65
+(./Capitulo18.tex [66
 
 ])
 LaTeX Info: Redefining \. on input line 124.
 LaTeX Info: Redefining \% on input line 124.
 LaTeX Info: Redefining \. on input line 124.
 LaTeX Info: Redefining \% on input line 124.
- [66]
+ [67]
 Cap\'{\i }tulo 19.
-(./Capitulo19.tex [67
+(./Capitulo19.tex [68
 
 ]
 Overfull \hbox (6.00677pt too wide) in paragraph at lines 42--43
@@ -870,16 +884,16 @@ LaTeX Info: Redefining \. on input line 127.
 LaTeX Info: Redefining \% on input line 127.
 LaTeX Info: Redefining \. on input line 127.
 LaTeX Info: Redefining \% on input line 127.
- [68]
+ [69]
 Cap\'{\i }tulo 20.
-(./Capitulo20.tex [69
+(./Capitulo20.tex [70
 
 ])
 LaTeX Info: Redefining \. on input line 130.
 LaTeX Info: Redefining \% on input line 130.
 LaTeX Info: Redefining \. on input line 130.
 LaTeX Info: Redefining \% on input line 130.
- [70] [71
+ [71] [72
 
 ]
 Cap\'{\i }tulo 21.
@@ -888,7 +902,7 @@ Overfull \hbox (30.54668pt too wide) in paragraph at lines 131--131
 |\OT1/cmr/bx/n/24.88 IMPLEMENTACIONES NUM[]ERI-CAS| 
  []
 
-(./numericoLogReg.tex [72
+(./numericoLogReg.tex [73
 
 ]
 Overfull \hbox (22.50172pt too wide) in paragraph at lines 134--134
@@ -906,7 +920,7 @@ LaTeX Info: Redefining \. on input line 134.
 LaTeX Info: Redefining \% on input line 134.
 LaTeX Info: Redefining \. on input line 134.
 LaTeX Info: Redefining \% on input line 134.
-[73]
+[74]
 Overfull \hbox (358.4988pt too wide) in paragraph at lines 134--134
 []\OT1/cmtt/m/n/10 cat("El modelo de regresi^^Son log^^S^^Pstica se ha ajustado
 , se han hecho predicciones y los resultados se han guardado en 'regresion_logi
@@ -917,7 +931,7 @@ LaTeX Info: Redefining \. on input line 207.
 LaTeX Info: Redefining \% on input line 207.
 LaTeX Info: Redefining \. on input line 207.
 LaTeX Info: Redefining \% on input line 207.
-[74]
+[75]
 Overfull \hbox (27.75168pt too wide) in paragraph at lines 207--207
 []\OT1/cmtt/m/n/10 train_indices <- sample(1:nrow(breast_cancer_clean), size = 
 0.7 * nrow(breast_cancer_clean))[] 
@@ -927,7 +941,7 @@ LaTeX Info: Redefining \. on input line 207.
 LaTeX Info: Redefining \% on input line 207.
 LaTeX Info: Redefining \. on input line 207.
 LaTeX Info: Redefining \% on input line 207.
-[75]
+[76]
 Overfull \hbox (395.24847pt too wide) in paragraph at lines 207--207
 []\OT1/cmtt/m/n/10 cat("El modelo de regresi^^Son log^^S^^Pstica se ha ajustado
 , se han hecho predicciones y los resultados se han guardado en 'regresion_logi
@@ -938,12 +952,12 @@ LaTeX Info: Redefining \. on input line 271.
 LaTeX Info: Redefining \% on input line 271.
 LaTeX Info: Redefining \. on input line 271.
 LaTeX Info: Redefining \% on input line 271.
-[76]
-LaTeX Info: Redefining \. on input line 304.
-LaTeX Info: Redefining \% on input line 304.
-LaTeX Info: Redefining \. on input line 304.
-LaTeX Info: Redefining \% on input line 304.
- [77]
+[77]
+LaTeX Info: Redefining \. on input line 305.
+LaTeX Info: Redefining \% on input line 305.
+LaTeX Info: Redefining \. on input line 305.
+LaTeX Info: Redefining \% on input line 305.
+ [78]
 Overfull \hbox (80.25122pt too wide) in paragraph at lines 322--322
 []\OT1/cmtt/m/n/10 sensitivity <- sum(test_set$Survived == 1 & test_set$Survive
 d_pred == 1) / sum(test_set$Survived == 1)[] 
@@ -959,7 +973,7 @@ LaTeX Info: Redefining \. on input line 431.
 LaTeX Info: Redefining \% on input line 431.
 LaTeX Info: Redefining \. on input line 431.
 LaTeX Info: Redefining \% on input line 431.
-[78]
+[79]
 Overfull \hbox (22.50172pt too wide) in paragraph at lines 431--431
 []\OT1/cmtt/m/n/10 # Generamos un vector de 16 coeficientes (incluyendo el inte
 rcepto) aleatorios entre -1 y 1[] 
@@ -975,22 +989,22 @@ LaTeX Info: Redefining \. on input line 431.
 LaTeX Info: Redefining \% on input line 431.
 LaTeX Info: Redefining \. on input line 431.
 LaTeX Info: Redefining \% on input line 431.
-[79]
+[80]
 Overfull \hbox (22.50172pt too wide) in paragraph at lines 431--431
 []\OT1/cmtt/m/n/10 y los resultados se han guardado en 'regresion_logistica_can
 cer_modelo_simulado.RData'.\n")[] 
  []
 
-LaTeX Info: Redefining \. on input line 457.
-LaTeX Info: Redefining \% on input line 457.
-LaTeX Info: Redefining \. on input line 457.
-LaTeX Info: Redefining \% on input line 457.
-[80]
+LaTeX Info: Redefining \. on input line 458.
+LaTeX Info: Redefining \% on input line 458.
+LaTeX Info: Redefining \. on input line 458.
+LaTeX Info: Redefining \% on input line 458.
+[81]
 LaTeX Info: Redefining \. on input line 587.
 LaTeX Info: Redefining \% on input line 587.
 LaTeX Info: Redefining \. on input line 587.
 LaTeX Info: Redefining \% on input line 587.
- [81]
+ [82]
 Overfull \hbox (12.00182pt too wide) in paragraph at lines 587--587
 []\OT1/cmtt/m/n/10 # Ajustamos un modelo de regresi^^Son log^^S^^Pstica utiliza
 ndo las variables independientes para[] 
@@ -1000,7 +1014,7 @@ LaTeX Info: Redefining \. on input line 587.
 LaTeX Info: Redefining \% on input line 587.
 LaTeX Info: Redefining \. on input line 587.
 LaTeX Info: Redefining \% on input line 587.
-[82]
+[83]
 Overfull \hbox (22.50172pt too wide) in paragraph at lines 587--587
 []\OT1/cmtt/m/n/10 y los resultados se han guardado en 'regresion_logistica_can
 cer_modelo_simulado.RData'.\n")[] 
@@ -1011,9 +1025,9 @@ LaTeX Info: Redefining \. on input line 134.
 LaTeX Info: Redefining \% on input line 134.
 LaTeX Info: Redefining \. on input line 134.
 LaTeX Info: Redefining \% on input line 134.
- [83]
+ [84]
 Cap\'{\i }tulo 22.
-(./bibliografia.tex [84
+(./bibliografia.tex [85
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 69--70
@@ -1021,7 +1035,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 Da-ta Scien-ce: []$\OT1/cmtt/m/n/10 https : / /
  []
 
-[85
+[86
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 100--101
@@ -1035,7 +1049,7 @@ LaTeX Info: Redefining \. on input line 137.
 LaTeX Info: Redefining \% on input line 137.
 LaTeX Info: Redefining \. on input line 137.
 LaTeX Info: Redefining \% on input line 137.
- [86]
+ [87]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
  (./RegresioLogistica.aux
 LaTeX Info: Redefining \. on input line 23.
@@ -1044,17 +1058,17 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
 Package rerunfilecheck Info: File `RegresioLogistica.out' has not changed.
-(rerunfilecheck)             Checksum: 71C94B62BD75FD4816184149F816AF98;21568.
+(rerunfilecheck)             Checksum: 7DC643A6355F063912F3CDFA28734EFA;21565.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
  ) 
 Here is how much of TeX's memory you used:
- 9076 strings out of 492649
- 128527 string characters out of 6129622
+ 9091 strings out of 492649
+ 128683 string characters out of 6129622
  276787 words of memory out of 5000000
  12352 multiletter control sequences out of 15000+600000
  16000 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,14n,43p,587b,700s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,14n,43p,664b,700s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></
@@ -1079,10 +1093,10 @@ e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/
 18/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/201
 8/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on RegresioLogistica.pdf (87 pages, 496005 bytes).
+Output written on RegresioLogistica.pdf (88 pages, 504196 bytes).
 PDF statistics:
- 2059 PDF objects out of 2073 (max. 8388607)
- 1926 compressed objects within 20 object streams
- 453 named destinations out of 1000 (max. 500000)
+ 2079 PDF objects out of 2487 (max. 8388607)
+ 1945 compressed objects within 20 object streams
+ 468 named destinations out of 1000 (max. 500000)
  2193 words of extra memory for PDF output out of 10000 (max. 10000000)
 
