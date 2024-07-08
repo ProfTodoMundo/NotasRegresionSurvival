@@ -1,0 +1,67 @@
+
+\section{Introducci\'on}
+Una vez ajustado un modelo de Cox, es crucial realizar diagn\'osticos y validaciones para asegurar que el modelo es apropiado y que los supuestos subyacentes son válidos. Esto incluye la verificaci\'on del supuesto de proporcionalidad de riesgos y la evaluaci\'on del ajuste del modelo.
+
+\section{Supuesto de Proporcionalidad de Riesgos}
+El supuesto de proporcionalidad de riesgos implica que la raz\'on de riesgos entre dos individuos es constante a lo largo del tiempo. Si este supuesto no se cumple, las inferencias hechas a partir del modelo pueden ser incorrectas.
+
+\subsection{Residuos de Schoenfeld}
+Los residuos de Schoenfeld se utilizan para evaluar la proporcionalidad de riesgos. Para cada evento en el tiempo $t_i$, el residuo de Schoenfeld para la covariable $X_j$ se define como:
+\begin{eqnarray*}
+r_{ij} = X_{ij} - \hat{X}_{ij}
+\end{eqnarray*}
+donde $\hat{X}_{ij}$ es la covariable ajustada. Si los residuos de Schoenfeld no muestran una tendencia sistemática cuando se trazan contra el tiempo, el supuesto de proporcionalidad de riesgos es razonable.
+
+\section{Bondad de Ajuste}
+La bondad de ajuste del modelo de Cox se eval\'ua comparando las curvas de supervivencia observadas y ajustadas, y utilizando estad\'isticas de ajuste global.
+
+\subsection{Curvas de Supervivencia Ajustadas}
+Las curvas de supervivencia aaustadas se obtienen utilizando la funci\'on de riesgo basal estimada y los coeficientes del modelo. La funci\'on de supervivencia ajustada se define como:
+\begin{eqnarray*}
+\hat{S}(t \mid X) = \hat{S}_0(t)^{\exp(\beta^T X)}
+\end{eqnarray*}
+donde $\hat{S}_0(t)$ es la funci\'on de supervivencia basal estimada. Comparar estas curvas con las curvas de Kaplan-Meier para diferentes niveles de las covariables puede proporcionar una validaci\'on visual del ajuste del modelo.
+
+\subsection{Estad\'isticas de Ajuste Global}
+Las estad\'isticas de ajuste global, como el test de la desviaci\'on y el test de la bondad de ajuste de Grambsch y Therneau, se utilizan para evaluar el ajuste global del modelo de Cox.
+
+\section{Diagn\'ostico de Influencia}
+El diagn\'ostico de influencia identifica observaciones individuales que tienen un gran impacto en los estimados del modelo. Los residuos de devianza y los residuos de martingala se utilizan com\'unmente para este prop\'osito.
+
+\subsection{Residuos de Deviance}
+Los residuos de deviance se definen como:
+\begin{eqnarray*}
+D_i = \text{sign}(O_i - E_i) \sqrt{-2 \left(O_i \log \frac{O_i}{E_i} - (O_i - E_i)\right)}
+\end{eqnarray*}
+donde $O_i$ es el n\'umero observado de eventos y $E_i$ es el n\'umero esperado de eventos. Observaciones con residuos de deviance grandes en valor absoluto pueden ser influyentes.
+
+\subsection{Residuos de Martingala}
+Los residuos de martingala se definen como:
+\begin{eqnarray*}
+M_i = O_i - E_i
+\end{eqnarray*}
+donde $O_i$ es el n\'umero observado de eventos y $E_i$ es el n\'umero esperado de eventos. Los residuos de martingala se utilizan para detectar observaciones que no se ajustan bien al modelo.
+
+\section{Ejemplo de Diagn\'ostico}
+Consideremos un modelo de Cox ajustado con las covariables edad, sexo y tratamiento. Para diagnosticar la influencia de observaciones individuales, calculamos los residuos de deviance y martingala para cada observaci\'on.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Observaci\'on & Edad & Sexo & Tratamiento & Residuo de Deviance \\
+\hline
+1 & 50 & 0 & 1 & 1.2 \\
+2 & 60 & 1 & 0 & -0.5 \\
+3 & 45 & 0 & 1 & -1.8 \\
+4 & 70 & 1 & 0 & 0.3 \\
+\hline
+\end{tabular}
+\caption{Residuos de deviance para observaciones individuales}
+\end{table}
+
+Observaciones con residuos de deviance grandes en valor absoluto (como la observaci\'on 3) pueden ser influyentes y requieren una revisi\'on adicional.
+
+\section{Conclusi\'on}
+El diagn\'ostico y la validaci\'on son pasos cr\'iticos en el an\'slisis de modelos de Cox. Evaluar el supuesto de proporcionalidad de riesgos, la bondad de ajuste y la influencia de observaciones individuales asegura que las inferencias y conclusiones derivadas del modelo sean v\'slidas y fiables.
+

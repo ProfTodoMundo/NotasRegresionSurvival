@@ -1,0 +1,70 @@
+
+\section{Introducción}
+El análisis multivariado de supervivencia extiende los modelos de supervivencia para incluir múltiples covariables, permitiendo evaluar su efecto simultáneo sobre el tiempo hasta el evento. Los modelos de Cox y AFT son comúnmente utilizados en este contexto.
+
+\section{Modelo de Cox Multivariado}
+El modelo de Cox multivariado se define como:
+\begin{eqnarray*}
+\lambda(t \mid X) = \lambda_0(t) \exp(\beta^T X)
+\end{eqnarray*}
+donde $X$ es un vector de covariables.
+
+\subsection{Estimación de los Parámetros}
+Los parámetros $\beta$ se estiman utilizando el método de máxima verosimilitud parcial, como se discutió anteriormente. La función de verosimilitud parcial se maximiza para obtener los estimadores de los coeficientes.
+
+\section{Modelo AFT Multivariado}
+El modelo AFT multivariado se expresa como:
+\begin{eqnarray*}
+T = T_0 \exp(\beta^T X)
+\end{eqnarray*}
+
+\subsection{Estimación de los Parámetros}
+Los parámetros $\beta$ se estiman utilizando el método de máxima verosimilitud, similar al caso univariado. La función de verosimilitud se maximiza para obtener los estimadores de los coeficientes.
+
+\section{Interacción y Efectos No Lineales}
+En el análisis multivariado, es importante considerar la posibilidad de interacciones entre covariables y efectos no lineales. Estos se pueden incluir en los modelos extendiendo las funciones de riesgo o supervivencia.
+
+\subsection{Interacciones}
+Las interacciones entre covariables se pueden modelar añadiendo términos de interacción en el modelo:
+\begin{eqnarray*}
+\lambda(t \mid X) = \lambda_0(t) \exp(\beta_1 X_1 + \beta_2 X_2 + \beta_3 X_1 X_2)
+\end{eqnarray*}
+donde $X_1 X_2$ es el término de interacción.
+
+\subsection{Efectos No Lineales}
+Los efectos no lineales se pueden modelar utilizando funciones no lineales de las covariables, como polinomios o splines:
+\begin{eqnarray*}
+\lambda(t \mid X) = \lambda_0(t) \exp(\beta_1 X + \beta_2 X^2)
+\end{eqnarray*}
+
+\section{Selección de Variables}
+La selección de variables es crucial en el análisis multivariado para evitar el sobreajuste y mejorar la interpretabilidad del modelo. Métodos como la regresión hacia atrás, la regresión hacia adelante y la selección por criterios de información (AIC, BIC) son comúnmente utilizados.
+
+\subsection{Regresión Hacia Atrás}
+La regresión hacia atrás comienza con todas las covariables en el modelo y elimina iterativamente la covariable menos significativa hasta que todas las covariables restantes sean significativas.
+
+\subsection{Regresión Hacia Adelante}
+La regresión hacia adelante comienza con un modelo vacío y añade iterativamente la covariable más significativa hasta que no se pueda añadir ninguna covariable adicional significativa.
+
+\subsection{Criterios de Información}
+Los criterios de información, como el AIC (Akaike Information Criterion) y el BIC (Bayesian Information Criterion), se utilizan para seleccionar el modelo que mejor se ajusta a los datos con la menor complejidad posible:
+\begin{eqnarray*}
+AIC &=& -2 \log L + 2k \\
+BIC &=& -2 \log L + k \log n
+\end{eqnarray*}
+donde $L$ es la función de verosimilitud del modelo, $k$ es el número de parámetros en el modelo y $n$ es el tamaño de la muestra.
+
+\section{Ejemplo de Análisis Multivariado}
+Consideremos un ejemplo con tres covariables: edad, sexo y tratamiento. Ajustamos un modelo de Cox multivariado y obtenemos los siguientes coeficientes:
+\begin{eqnarray*}
+\hat{\beta}_{edad} = 0.03, \quad \hat{\beta}_{sexo} = -0.6, \quad \hat{\beta}_{tratamiento} = 1.5
+\end{eqnarray*}
+
+La función de riesgo ajustada se expresa como:
+\begin{eqnarray*}
+\lambda(t \mid X) = \lambda_0(t) \exp(0.03 \cdot \text{edad} - 0.6 \cdot \text{sexo} + 1.5 \cdot \text{tratamiento})
+\end{eqnarray*}
+
+\section{Conclusión}
+El análisis multivariado de supervivencia permite evaluar el efecto conjunto de múltiples covariables sobre el tiempo hasta el evento. La inclusión de interacciones y efectos no lineales, junto con la selección adecuada de variables, mejora la precisión y la interpretabilidad de los modelos de supervivencia.
+

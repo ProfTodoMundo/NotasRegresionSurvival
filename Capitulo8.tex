@@ -1,0 +1,73 @@
+
+\section{Introducci\'on}
+
+La regresi\'on log\'istica multinomial y el an\'alisis de supervivencia son extensiones de la regresi\'on log\'istica binaria. Este cap\'itulo se enfoca en las t\'ecnicas y aplicaciones de estos m\'etodos avanzados.
+
+\section{Regresi\'on Log\'istica Multinomial}
+
+La regresi\'on log\'istica multinomial se utiliza cuando la variable dependiente tiene m\'as de dos categor\'ias.
+
+\subsection{Modelo Multinomial}
+
+El modelo de regresi\'on log\'istica multinomial generaliza el modelo binario para manejar m\'ultiples categor\'ias. La probabilidad de que una observaci\'on pertenezca a la categor\'ia $k$ se expresa como:
+
+\begin{eqnarray*}
+P(Y = k) = \frac{e^{\beta_{0k} + \beta_{1k} X_1 + \ldots + \beta_{nk} X_n}}{\sum_{j=1}^{K} e^{\beta_{0j} + \beta_{1j} X_1 + \ldots + \beta_{nj} X_n}}
+\end{eqnarray*}
+
+\subsection{Estimaci\'on de Par\'ametros}
+
+Los coeficientes del modelo multinomial se estiman utilizando m\'axima verosimilitud, similar a la regresi\'on log\'istica binaria.
+
+\section{An\'alisis de Supervivencia}
+
+El an\'alisis de supervivencia se utiliza para modelar el tiempo hasta que ocurre un evento de inter\'es, como la muerte o la falla de un componente.
+
+\subsection{Funci\'on de Supervivencia}
+
+La funci\'on de supervivencia $S(t)$ describe la probabilidad de que una observaci\'on sobreviva m\'as all\'a del tiempo $t$:
+
+\begin{eqnarray*}
+S(t) = P(T > t)
+\end{eqnarray*}
+
+\subsection{Modelo de Riesgos Proporcionales de Cox}
+
+El modelo de Cox es un modelo de regresi\'on semiparam\'etrico utilizado para analizar datos de supervivencia:
+
+\begin{eqnarray*}
+h(t|X) = h_0(t) e^{\beta_1 X_1 + \ldots + \beta_p X_p}
+\end{eqnarray*}
+donde $h(t|X)$ es la tasa de riesgo en el tiempo $t$ dado el vector de covariables $X$ y $h_0(t)$ es la tasa de riesgo basal.
+
+\section{Implementaci\'on en R}
+
+\subsection{Regresi\'on Log\'istica Multinomial}
+
+\begin{verbatim}
+# Cargar el paquete necesario
+library(nnet)
+
+# Entrenar el modelo de regresi\'on log\'istica multinomial
+model_multinom <- multinom(var1 ~ ., data = dataTrain)
+
+# Resumen del modelo
+summary(model_multinom)
+\end{verbatim}
+
+\subsection{An\'alisis de Supervivencia}
+
+\begin{verbatim}
+# Cargar el paquete necesario
+library(survival)
+
+# Crear el objeto de supervivencia
+surv_object <- Surv(time = data$time, event = data$status)
+
+# Ajustar el modelo de Cox
+model_cox <- coxph(surv_object ~ var1 + var2, data = data)
+
+# Resumen del modelo
+summary(model_cox)
+\end{verbatim}
+

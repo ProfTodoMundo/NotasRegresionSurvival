@@ -1,0 +1,97 @@
+\section{Introducci\'on}
+
+La regresi\'on log\'istica es una t\'ecnica de modelado estad\'istico utilizada para predecir la probabilidad de un evento binario en funci\'on de una o m\'as variables independientes. Este cap\'itulo profundiza en las matem\'aticas subyacentes a la regresi\'on log\'istica, incluyendo la funci\'on log\'istica, la funci\'on de verosimilitud, y los m\'etodos para estimar los coeficientes del modelo.
+
+\section{Funci\'on Log\'istica}
+
+La funci\'on log\'istica es la base de la regresi\'on log\'istica. Esta funci\'on transforma una combinaci\'on lineal de variables independientes en una probabilidad.
+
+\subsection{Definici\'on}
+
+La funci\'on log\'istica se define como:
+\begin{eqnarray*}
+p = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n)}}
+\end{eqnarray*}
+donde $p$ es la probabilidad de que el evento ocurra, $\beta_0, \beta_1, \ldots, \beta_n$ son los coeficientes del modelo, y $X_1, X_2, \ldots, X_n$ son las variables independientes.
+
+\subsection{Propiedades}
+
+La funci\'on log\'istica tiene varias propiedades importantes:
+\begin{itemize}
+    \item \textbf{Rango}: La funci\'on log\'istica siempre produce un valor entre 0 y 1, lo que la hace adecuada para modelar probabilidades.
+    \item \textbf{Monoton\'ia}: La funci\'on es mon\'otona creciente, lo que significa que a medida que la combinaci\'on lineal de variables independientes aumenta, la probabilidad tambi\'en aumenta.
+    \item \textbf{Simetr\'ia}: La funci\'on log\'istica es sim\'etrica en torno a $p = 0.5$.
+\end{itemize}
+
+\section{Funci\'on de Verosimilitud}
+
+La funci\'on de verosimilitud se utiliza para estimar los coeficientes del modelo de regresi\'on log\'istica. Esta funci\'on mide la probabilidad de observar los datos dados los coeficientes del modelo.
+
+\subsection{Definici\'on}
+
+Para un conjunto de $n$ observaciones, la funci\'on de verosimilitud $L$ se define como el producto de las probabilidades individuales de observar cada dato:
+\begin{eqnarray*}
+L(\beta_0, \beta_1, \ldots, \beta_n) = \prod_{i=1}^{n} p_i^{y_i} (1 - p_i)^{1 - y_i}
+\end{eqnarray*}
+donde $y_i$ es el valor observado de la variable dependiente para la $i$-\'esima observaci\'on y $p_i$ es la probabilidad predicha de que $Y_i = 1$.
+
+\subsection{Funci\'on de Log-Verosimilitud}
+
+Para simplificar los c\'alculos, trabajamos con el logaritmo de la funci\'on de verosimilitud, conocido como la funci\'on de log-verosimilitud. Tomar el logaritmo convierte el producto en una suma:
+\begin{eqnarray*}
+\log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right]
+\end{eqnarray*}
+
+Sustituyendo $p_i$:
+\begin{eqnarray*}
+\log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i (\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}) - \log(1 + e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}) \right]
+\end{eqnarray*}
+
+\section{Estimaci\'on de Coeficientes}
+
+Los coeficientes del modelo de regresi\'on log\'istica se estiman maximizando la funci\'on de log-verosimilitud. Este proceso generalmente se realiza mediante m\'etodos iterativos como el algoritmo de Newton-Raphson.
+
+\subsection{Gradiente y Hessiana}
+
+Para maximizar la funci\'on de log-verosimilitud, necesitamos calcular su gradiente y su matriz Hessiana.
+
+\subsubsection{Gradiente}
+
+El gradiente de la funci\'on de log-verosimilitud con respecto a los coeficientes $\beta$ es:
+\begin{eqnarray*}
+\mathbf{g}(\beta) = \frac{\partial \log L}{\partial \beta} = \sum_{i=1}^{n} \mathbf{X}_i (y_i - p_i)
+\end{eqnarray*}
+donde $\mathbf{X}_i$ es el vector de valores de las variables independientes para la $i$-\'esima observaci\'on.
+
+\subsubsection{Hessiana}
+
+La matriz Hessiana de la funci\'on de log-verosimilitud con respecto a los coeficientes $\beta$ es:
+\begin{eqnarray*}
+\mathbf{H}(\beta) = \frac{\partial^2 \log L}{\partial \beta \partial \beta^T} = -\sum_{i=1}^{n} p_i (1 - p_i) \mathbf{X}_i \mathbf{X}_i^T
+\end{eqnarray*}
+
+\subsection{Algoritmo Newton-Raphson}
+
+El algoritmo Newton-Raphson se utiliza para encontrar los valores de los coeficientes que maximizan la funci\'on de log-verosimilitud. El algoritmo se puede resumir en los siguientes pasos:
+\begin{enumerate}
+    \item Inicializar el vector de coeficientes $\beta^{(0)}$ (por ejemplo, con ceros o valores peque\~nos aleatorios).
+    \item Calcular el gradiente $\mathbf{g}(\beta^{(k)})$ y la matriz Hessiana $\mathbf{H}(\beta^{(k)})$ en la iteraci\'on $k$.
+    \item Actualizar los coeficientes utilizando la f\'ormula:
+    \begin{eqnarray*}
+    \beta^{(k+1)} = \beta^{(k)} - \left[ \mathbf{H}(\beta^{(k)}) \right]^{-1} \mathbf{g}(\beta^{(k)})
+    \end{eqnarray*}
+    \item Repetir los pasos 2 y 3 hasta que la diferencia entre $\beta^{(k+1)}$ y $\beta^{(k)}$ sea menor que un umbral predefinido (criterio de convergencia).
+\end{enumerate}
+
+\section{Validaci\'on del Modelo}
+
+Una vez que se han estimado los coeficientes del modelo de regresi\'on log\'istica, es importante validar el modelo para asegurarse de que proporciona predicciones precisas.
+
+\subsection{Curva ROC y AUC}
+
+La curva ROC (Receiver Operating Characteristic) es una herramienta gr\'afica utilizada para evaluar el rendimiento de un modelo de clasificaci\'on binaria. El \'area bajo la curva (AUC) mide la capacidad del modelo para distinguir entre las clases.
+
+\subsection{Matriz de Confusi\'on}
+
+La matriz de confusi\'on es una tabla que resume el rendimiento de un modelo de clasificaci\'on al comparar las predicciones del modelo con los valores reales. Los t\'erminos en la matriz de confusi\'on incluyen verdaderos positivos, falsos positivos, verdaderos negativos y falsos negativos.
+

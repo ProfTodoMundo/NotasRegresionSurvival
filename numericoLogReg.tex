@@ -1,0 +1,587 @@
+\section{Regresión Logística}
+
+\subsection*{Implementación Básica en R}
+
+Para implementar una regresión logística en R, primero es necesario instalar y cargar los paquetes necesarios.
+
+\subsection*{Instalación y Configuración de R y RStudio}
+\begin{itemize}
+    \item Descargue e instale R desde \texttt{https://cran.r-project.org/}. Siga las instrucciones para su sistema operativo (Windows, MacOS, Linux).
+    \item Descargue e instale RStudio desde \texttt{https://rstudio.com/products/rstudio/download/}. 
+\end{itemize}
+
+\subsection{Ejemplo de Regresión Logística en R}
+
+A continuación, se muestra un ejemplo de cómo ajustar un modelo de regresión logística en R utilizando un conjunto de datos simulado. El ejemplo incluye la instalación del paquete necesario, la carga de datos, el ajuste del modelo, y la interpretación de los resultados.
+
+\begin{verbatim}
+# Instalación del paquete necesario
+install.packages("stats")
+
+# Carga del paquete
+library(stats)
+
+# Ejemplo de conjunto de datos
+data <- data.frame(
+  outcome = c(1, 0, 1, 0, 1, 1, 0, 1, 0, 0),
+  predictor = c(2.3, 1.9, 3.1, 2.8, 3.6, 2.4, 2.1, 3.3, 2.2, 1.7)
+)
+
+# Ajuste del modelo de regresión logística
+model <- glm(outcome ~ predictor, data = data, family = binomial)
+
+# Resumen del modelo
+summary(model)
+\end{verbatim}
+
+En este ejemplo, se utiliza el conjunto de datos \textit{data} que contiene una variable de resultado binaria \textit{outcome} y una variable predictora continua \textit{predictor}. El modelo de regresión logística se ajusta utilizando la función \texttt{glm} con la familia binomial. La función \texttt{summary(model)} proporciona un resumen del modelo ajustado, incluyendo los coeficientes estimados, sus errores estándar, valores z, y p-valores.
+
+\begin{itemize}
+    \item \textbf{Coeficientes}: Los coeficientes estimados $\beta_0$ y $\beta_1$ indican la dirección y magnitud de la relación entre las variables predictoras y la probabilidad del resultado.
+    \item \textbf{Errores Estándar}: Los errores estándar proporcionan una medida de la precisión de los coeficientes estimados.
+    \item \textbf{Valores z y p-valores}: Los valores z y p-valores se utilizan para evaluar la significancia estadística de los coeficientes. Un p-valor pequeño (generalmente < 0.05) indica que el coeficiente es significativamente diferente de cero.
+\end{itemize}
+
+Este es solo un ejemplo básico, en aplicaciones reales, es posible que necesites realizar más análisis y validaciones, como la evaluación de la bondad de ajuste del modelo, el diagnóstico de posibles problemas de multicolinealidad, y la validación cruzada del modelo.
+
+\begin{verbatim}
+# Archivo: regresionlogistica.R
+
+# Instalación del paquete necesario
+#install.packages("stats")
+
+# Carga del paquete
+library(stats)
+
+# Fijar la semilla para reproducibilidad
+set.seed(123)
+
+# Número de observaciones
+n <- 100
+
+# Generar las variables independientes X1, X2, ..., X15
+# Creamos una matriz de tamaño n x 15 con valores generados aleatoriamente de una
+ distribución normal
+X <- as.data.frame(matrix(rnorm(n * 15), nrow = n, ncol = 15))
+colnames(X) <- paste0("X", 1:15)  # Nombramos las columnas como X1, X2, ..., X15
+
+# Coeficientes verdaderos para las variables independientes
+# Generamos un vector de 16 coeficientes (incluyendo el intercepto) aleatorios entre -1 y 1
+beta <- runif(16, -1, 1)  # 15 coeficientes más el intercepto
+
+# Generar el término lineal
+# Calculamos el término lineal utilizando los coeficientes y las variables independientes
+linear_term <- beta[1] + as.matrix(X) %*% beta[-1]
+
+# Generar la probabilidad utilizando la función logística
+# Calculamos las probabilidades utilizando la función logística
+p <- 1 / (1 + exp(-linear_term))
+
+# Generar la variable dependiente binaria Y
+# Generamos valores binarios (0 o 1) utilizando las probabilidades calculadas
+Y <- rbinom(n, 1, p)
+
+# Combinar las variables independientes y la variable dependiente en un data frame
+data <- cbind(Y, X)
+
+# Dividir el conjunto de datos en entrenamiento y prueba
+set.seed(123)  # Fijar la semilla para reproducibilidad
+train_indices <- sample(1:n, size = 0.7 * n)  # 70% de los datos para entrenamiento
+train_set <- data[train_indices, ]  # Conjunto de entrenamiento
+test_set <- data[-train_indices, ]  # Conjunto de prueba
+
+# Ajuste del modelo de regresión logística en el conjunto de entrenamiento
+# Ajustamos un modelo de regresión logística utilizando las variables independientes
+para predecir Y
+model <- glm(Y ~ ., data = train_set, family = binomial)
+
+# Resumen del modelo
+# Mostramos un resumen del modelo ajustado
+summary(model)
+
+# Guardar el modelo y los resultados en un archivo
+# Guardamos el modelo ajustado en un archivo .RData
+save(model, file = "regresion_logistica_modelo.RData")
+
+# Guardar los datos simulados en archivos CSV
+# Guardamos los conjuntos de datos de entrenamiento y prueba en archivos CSV
+write.csv(train_set, "datos_entrenamiento_regresion_logistica.csv", row.names = FALSE)
+write.csv(test_set, "datos_prueba_regresion_logistica.csv", row.names = FALSE)
+
+# Hacer predicciones en el conjunto de prueba
+# Utilizamos el modelo ajustado para hacer predicciones en el conjunto de prueba
+test_set$prob_pred <- predict(model, newdata = test_set, type = "response")
+test_set$Y_pred <- ifelse(test_set$prob_pred > 0.5, 1, 0)  
+# Convertimos probabilidades a clases binarias
+
+# Calcular la precisión de las predicciones
+# Calculamos la precisión de las predicciones comparando con los valores reales de Y
+accuracy <- mean(test_set$Y_pred == test_set$Y)
+cat("La precisión del modelo en el conjunto de prueba es:", accuracy, "\n")
+
+# Guardar las predicciones en un archivo CSV
+# Guardamos las predicciones y las probabilidades predichas en un archivo CSV
+write.csv(test_set, "predicciones_regresion_logistica.csv", row.names = FALSE)
+
+# Graficar los coeficientes estimados
+# Graficamos los coeficientes estimados del modelo ajustado
+plot(coef(model), main = "Coeficientes Estimados del Modelo de Regresión Logística", 
+     xlab = "Variables", ylab = "Coeficientes", type = "h", col = "blue")
+abline(h = 0, col = "red", lwd = 2)
+
+# Mostrar un mensaje indicando que el proceso ha finalizado
+cat("El modelo de regresión logística se ha ajustado, se han hecho predicciones y los resultados se han guardado en 'regresion_logistica_modelo.RData'.\n")
+\end{verbatim}
+
+\subsection{Aplicación a Datos de Cáncer}
+
+A continuación, se muestra un ejemplo de cómo ajustar un modelo de regresión logística en R utilizando el conjunto de datos del cáncer de mama de Wisconsin.
+
+\begin{verbatim}
+# Archivo: regresionlogistica_cancer.R
+
+# Instalación del paquete necesario
+install.packages("mlbench")
+install.packages("dplyr")
+
+# Carga de los paquetes
+library(mlbench)
+library(dplyr)
+
+# Cargar el conjunto de datos BreastCancer
+data("BreastCancer")
+
+# Ver las primeras filas del conjunto de datos
+head(BreastCancer)
+
+# Preprocesamiento de los datos
+# Eliminar la columna de identificación y filas con valores faltantes
+breast_cancer_clean <- BreastCancer %>%
+  select(-Id) %>%
+  na.omit()
+
+# Convertir la variable 'Class' a factor binario
+breast_cancer_clean$Class <- ifelse(breast_cancer_clean$Class == "malignant", 1, 0)
+breast_cancer_clean$Class <- as.factor(breast_cancer_clean$Class)
+
+# Convertir las demás columnas a numéricas
+breast_cancer_clean[, 1:9] <- lapply(breast_cancer_clean[, 1:9], as.numeric)
+
+# Dividir el conjunto de datos en entrenamiento (70%) y prueba (30%)
+set.seed(123)
+train_indices <- sample(1:nrow(breast_cancer_clean), size = 0.7 * nrow(breast_cancer_clean))
+train_set <- breast_cancer_clean[train_indices, ]
+test_set <- breast_cancer_clean[-train_indices, ]
+
+# Ajuste del modelo de regresión logística en el conjunto de entrenamiento
+model <- glm(Class ~ ., data = train_set, family = binomial)
+
+# Resumen del modelo
+summary(model)
+
+# Guardar el modelo y los resultados en un archivo
+save(model, file = "regresion_logistica_cancer_modelo.RData")
+
+# Guardar los datos simulados en archivos CSV
+write.csv(train_set, "datos_entrenamiento_cancer.csv", row.names = FALSE)
+write.csv(test_set, "datos_prueba_cancer.csv", row.names = FALSE)
+
+# Hacer predicciones en el conjunto de prueba
+test_set$prob_pred <- predict(model, newdata = test_set, type = "response")
+test_set$Class_pred <- ifelse(test_set$prob_pred > 0.5, 1, 0)
+
+# Calcular la precisión de las predicciones
+accuracy <- mean(test_set$Class_pred == test_set$Class)
+cat("La precisión del modelo en el conjunto de prueba es:", accuracy, "\n")
+
+# Guardar las predicciones en un archivo CSV
+write.csv(test_set, "predicciones_cancer.csv", row.names = FALSE)
+
+# Graficar los coeficientes estimados
+plot(coef(model), main = "Coeficientes Estimados del Modelo de Regresión Logística", 
+     xlab = "Variables", ylab = "Coeficientes", type = "h", col = "blue")
+abline(h = 0, col = "red", lwd = 2)
+
+# Mostrar un mensaje indicando que el proceso ha finalizado
+cat("El modelo de regresión logística se ha ajustado, se han hecho predicciones y los resultados se han guardado en 'regresion_logistica_cancer_modelo.RData'.\n")
+\end{verbatim}
+
+\subsection*{Descripción del Código}
+
+\textbf{Instalación y Carga de Paquetes:}
+
+Instalamos y cargamos el paquete \texttt{stats} necesario para la regresión logística.
+
+\textbf{Generación de Datos Simulados:}
+
+\begin{itemize}
+    \item Fijamos una semilla para la reproducibilidad.
+    \item Generamos un conjunto de datos con 100 observaciones y 15 variables independientes (\texttt{X1, X2, ..., X15}) usando una distribución normal.
+    \item Definimos los coeficientes verdaderos para las variables independientes y calculamos el término lineal.
+    \item Calculamos las probabilidades usando la función logística y generamos una variable dependiente binaria \texttt{Y} basada en esas probabilidades.
+    \item Combinamos las variables independientes y la variable dependiente en un \texttt{data frame}.
+\end{itemize}
+
+\textbf{División de Datos en Conjuntos de Entrenamiento y Prueba:}
+
+\begin{itemize}
+    \item Dividimos los datos en un conjunto de entrenamiento (70\%) y un conjunto de prueba (30\%).
+\end{itemize}
+
+\textbf{Ajuste del Modelo de Regresión Logística:}
+
+\begin{itemize}
+    \item Ajustamos un modelo de regresión logística en el conjunto de entrenamiento.
+    \item Mostramos un resumen del modelo ajustado.
+\end{itemize}
+
+\textbf{Guardado de Datos y Modelo:}
+
+\begin{itemize}
+    \item Guardamos el modelo ajustado en un archivo \texttt{.RData}.
+    \item Guardamos los conjuntos de datos de entrenamiento y prueba en archivos CSV.
+\end{itemize}
+
+\textbf{Predicciones y Evaluación del Modelo:}
+
+\begin{itemize}
+    \item Hacemos predicciones en el conjunto de prueba utilizando el modelo ajustado.
+    \item Calculamos la precisión de las predicciones comparando con los valores reales de \texttt{Y}.
+    \item Guardamos las predicciones y las probabilidades predichas en un archivo CSV.
+\end{itemize}
+
+\textbf{Visualización de los Coeficientes del Modelo:}
+
+\begin{itemize}
+    \item Graficamos los coeficientes estimados del modelo ajustado.
+    \item Mostramos un mensaje indicando que el proceso ha finalizado.
+\end{itemize}
+
+Para ejecutar este script, guarda el código en un archivo llamado \textit{regresionlogistica.R}, abre R o RStudio, navega hasta el directorio donde guardaste el archivo y ejecuta el script usando \textit{source("regresionlogistica.R")}.
+
+\subsection{Ejemplo Titanic}
+
+Cuando realizas una regresión logística, obtienes coeficientes para cada variable independiente en tu modelo. Estos coeficientes indican la dirección y la magnitud de la relación entre cada variable independiente y la variable dependiente (en este caso, \textit{Survived}).
+
+\subsection*{Interpretación de los Coeficientes}
+
+\begin{itemize}
+    \item \textbf{Intercepto} (\textit{(Intercept)}): Este coeficiente representa el logaritmo de las probabilidades (log-odds) de que \textit{Survived} sea 1 (supervivencia) cuando todas las variables independientes son cero.
+    \item \textbf{Pclass}: El coeficiente asociado con \textit{Pclass} indica cómo cambia el log-odds de supervivencia con cada incremento en la clase del pasajero. Si el coeficiente es negativo, sugiere que una clase más alta (por ejemplo, de primera clase a tercera clase) reduce las probabilidades de supervivencia.
+    \item \textbf{Sex}: Este coeficiente muestra el efecto de ser hombre o mujer en las probabilidades de supervivencia. Generalmente, se espera que el coeficiente sea positivo para \textit{female} indicando que las mujeres tenían mayores probabilidades de sobrevivir.
+    \item \textbf{Age}: El coeficiente de \textit{Age} indica cómo cambia el log-odds de supervivencia con cada año de incremento en la edad. Un coeficiente negativo sugiere que la probabilidad de supervivencia disminuye con la edad.
+    \item \textbf{SibSp} y \textbf{Parch}: Estos coeficientes indican el efecto del número de hermanos/cónyuges a bordo y padres/hijos a bordo en las probabilidades de supervivencia.
+    \item \textbf{Fare}: Este coeficiente indica el efecto del precio del billete en las probabilidades de supervivencia. Un coeficiente positivo sugiere que pagar más por el billete se asocia con mayores probabilidades de supervivencia.
+\end{itemize}
+
+\subsection*{Estadísticas de Ajuste del Modelo}
+
+El resumen del modelo (\textit{summary(model)}) incluye varias estadísticas importantes:
+
+\begin{itemize}
+    \item \textbf{Estadísticos z y p-valores}: Estas estadísticas indican la significancia de cada coeficiente. Un p-valor bajo (generalmente < 0.05) sugiere que la variable es un predictor significativo de la variable dependiente.
+    \item \textbf{Desviación Residual}: La desviación residual mide la calidad del ajuste del modelo. Valores más bajos indican un mejor ajuste.
+    \item \textbf{AIC (Akaike Information Criterion)}: El AIC es una medida de la calidad del modelo que toma en cuenta tanto la bondad del ajuste como la complejidad del modelo. Modelos con AIC más bajo son preferidos.
+\end{itemize}
+
+\subsection*{Precisión del Modelo}
+
+La precisión del modelo en el conjunto de prueba es una métrica importante para evaluar el rendimiento del modelo. La precisión se calcula como el número de predicciones correctas dividido por el número total de predicciones.
+
+\subsection*{Ejemplo de Resultados}
+
+Supongamos que la precisión del modelo es 0.78 (78\%). Esto significa que el modelo correctamente predijo el estado de supervivencia del 78\% de los pasajeros en el conjunto de prueba.
+
+\subsection*{Matriz de Confusión y Otras Métricas}
+
+Además de la precisión, otras métricas como la matriz de confusión, la sensibilidad, la especificidad, y el área bajo la curva ROC (AUC-ROC) también pueden proporcionar una visión más completa del rendimiento del modelo.
+
+\subsection*{Matriz de Confusión}
+
+\begin{itemize}
+    \item \textbf{Verdaderos Positivos (TP)}: Número de pasajeros que sobrevivieron y fueron predichos como sobrevivientes.
+    \item \textbf{Verdaderos Negativos (TN)}: Número de pasajeros que no sobrevivieron y fueron predichos como no sobrevivientes.
+    \item \textbf{Falsos Positivos (FP)}: Número de pasajeros que no sobrevivieron pero fueron predichos como sobrevivientes.
+    \item \textbf{Falsos Negativos (FN)}: Número de pasajeros que sobrevivieron pero fueron predichos como no sobrevivientes.
+\end{itemize}
+
+\subsection*{Ejemplo de Cálculo de Métricas}
+
+\begin{verbatim}
+# Calcular la matriz de confusión
+table(test_set$Survived, test_set$Survived_pred)
+
+# Calcular sensibilidad y especificidad
+sensitivity <- sum(test_set$Survived == 1 & test_set$Survived_pred == 1) / sum(test_set$Survived == 1)
+specificity <- sum(test_set$Survived == 0 & test_set$Survived_pred == 0) / sum(test_set$Survived == 0)
+
+# Calcular AUC-ROC
+library(pROC)
+roc_curve <- roc(test_set$Survived, test_set$prob_pred)
+auc(roc_curve)
+\end{verbatim}
+
+\subsection*{Visualización de Resultados}
+
+Graficar los coeficientes del modelo, la curva ROC y otras visualizaciones ayudan a entender mejor el rendimiento y la importancia de cada variable en el modelo.
+
+\begin{verbatim}
+# Graficar la curva ROC
+plot(roc_curve, main = "Curva ROC para el Modelo de Regresión Logística")
+\end{verbatim}
+
+\subsection*{Resumen Final}
+
+El modelo de regresión logística aplicado al conjunto de datos del Titanic proporciona una forma de entender cómo diferentes características de los pasajeros influyen en sus probabilidades de supervivencia. La interpretación de los coeficientes del modelo, las estadísticas de ajuste, y la precisión del modelo en el conjunto de prueba son fundamentales para evaluar el rendimiento y la utilidad del modelo en hacer predicciones sobre la supervivencia de los pasajeros del Titanic.
+
+\subsection{Simulaci\'on de Datos de Cáncer}
+
+Aquí se presenta un ejemplo de cómo realizar una regresión logística utilizando datos simulados de pacientes con cáncer.
+
+\begin{verbatim}
+#---- Archivo: cancerLogRegSimulado.R ----
+
+# Instalación del paquete necesario
+if (!requireNamespace("dplyr", quietly = TRUE)) {
+  install.packages("dplyr")
+}
+
+# Carga del paquete
+library(dplyr)
+
+# Fijar la semilla para reproducibilidad
+set.seed(123)
+
+# Número de observaciones
+n <- 150
+
+# Generar las variables independientes X1, X2, ..., X15
+# Creamos una matriz de tamaño n x 15 con valores generados aleatoriamente de una 
+distribución normal
+X <- as.data.frame(matrix(rnorm(n * 15), nrow = n, ncol = 15))
+colnames(X) <- paste0("X", 1:15)  # Nombramos las columnas como X1, X2, ..., X15
+
+# Coeficientes verdaderos para las variables independientes
+# Generamos un vector de 16 coeficientes (incluyendo el intercepto) aleatorios entre -1 y 1
+beta <- runif(16, -1, 1)  # 15 coeficientes más el intercepto
+
+# Generar el término lineal
+# Calculamos el término lineal utilizando los coeficientes y las variables independientes
+linear_term <- beta[1] + as.matrix(X) %*% beta[-1]
+
+# Generar la probabilidad utilizando la función logística
+# Calculamos las probabilidades utilizando la función logística
+p <- 1 / (1 + exp(-linear_term))
+
+# Generar la variable dependiente binaria Y
+# Generamos valores binarios (0 o 1) utilizando las probabilidades calculadas
+Y <- rbinom(n, 1, p)
+
+# Combinar las variables independientes y la variable dependiente en un data frame
+data <- cbind(Y, X)
+
+# Dividir el conjunto de datos en entrenamiento y prueba
+set.seed(123)  # Fijar la semilla para reproducibilidad
+train_indices <- sample(1:n, size = 0.7 * n)  # 70% de los datos para entrenamiento
+train_set <- data[train_indices, ]  # Conjunto de entrenamiento
+test_set <- data[-train_indices, ]  # Conjunto de prueba
+
+# Ajuste del modelo de regresión logística en el conjunto de entrenamiento
+# Ajustamos un modelo de regresión logística utilizando las variables independientes 
+para predecir Y
+model <- glm(Y ~ ., data = train_set, family = binomial)
+
+# Resumen del modelo
+# Mostramos un resumen del modelo ajustado
+summary(model)
+
+# Guardar el modelo y los resultados en un archivo
+# Guardamos el modelo ajustado en un archivo .RData
+save(model, file = "regresion_logistica_cancer_modelo_simulado.RData")
+
+# Guardar los datos simulados en archivos CSV
+# Guardamos los conjuntos de datos de entrenamiento y prueba en archivos CSV
+write.csv(train_set, "datos_entrenamiento_cancer_simulado.csv", row.names = FALSE)
+write.csv(test_set, "datos_prueba_cancer_simulado.csv", row.names = FALSE)
+
+# Hacer predicciones en el conjunto de prueba
+# Utilizamos el modelo ajustado para hacer predicciones en el conjunto de prueba
+test_set$prob_pred <- predict(model, newdata = test_set, type = "response")
+test_set$Y_pred <- ifelse(test_set$prob_pred > 0.5, 1, 0)  
+# Convertimos probabilidades a clases binarias
+
+# Calcular la precisión de las predicciones
+# Calculamos la precisión de las predicciones comparando con los valores reales de Y
+accuracy <- mean(test_set$Y_pred == test_set$Y)
+cat("La precisión del modelo en el conjunto de prueba es:", accuracy, "\n")
+
+# Guardar las predicciones en un archivo CSV
+# Guardamos las predicciones y las probabilidades predichas en un archivo CSV
+write.csv(test_set, "predicciones_cancer_simulado.csv", row.names = FALSE)
+
+# Graficar los coeficientes estimados
+# Graficamos los coeficientes estimados del modelo ajustado
+plot(coef(model), main = "Coeficientes Estimados del Modelo de Regresión Logística", 
+     xlab = "Variables", ylab = "Coeficientes", type = "h", col = "blue")
+abline(h = 0, col = "red", lwd = 2)
+
+# Mostrar un mensaje indicando que el proceso ha finalizado
+cat("El modelo de regresión logística se ha ajustado, se han hecho predicciones 
+y los resultados se han guardado en 'regresion_logistica_cancer_modelo_simulado.RData'.\n")
+\end{verbatim}
+
+\subsection{Simulaci\'on de Datos de Cáncer - Parte II}
+
+En un estudio sobre cáncer, especialmente en el contexto del cáncer de mama, las principales mediciones suelen incluir una variedad de características clínicas y patológicas. Aquí hay algunas de las principales mediciones que se tienen en cuenta:
+
+\begin{itemize}
+    \item \textbf{Tamaño del Tumor}: Medición del diámetro del tumor.
+    \item \textbf{Estado de los Ganglios Linfáticos}: Número de ganglios linfáticos afectados.
+    \item \textbf{Grado del Tumor}: Clasificación del tumor basada en la apariencia de las células cancerosas.
+    \item \textbf{Receptores Hormonales}: Estado de los receptores de estrógeno y progesterona.
+    \item \textbf{Estado HER2}: Expresión del receptor 2 del factor de crecimiento epidérmico humano.
+    \item \textbf{Ki-67}: Índice de proliferación celular.
+    \item \textbf{Edad del Paciente}: Edad en el momento del diagnóstico.
+    \item \textbf{Histopatología}: Tipo y subtipo histológico del cáncer.
+    \item \textbf{Márgenes Quirúrgicos}: Estado de los márgenes después de la cirugía (si están libres de cáncer o no).
+    \item \textbf{Invasión Linfovascular}: Presencia de células cancerosas en los vasos linfáticos o sanguíneos.
+    \item \textbf{Tratamientos Previos}: Tipos de tratamientos recibidos antes del diagnóstico (quimioterapia, radioterapia, etc.).
+    \item \textbf{Tipo de Cirugía}: Tipo de procedimiento quirúrgico realizado (mastectomía, lumpectomía, etc.).
+    \item \textbf{Metástasis}: Presencia de metástasis y ubicación de las mismas.
+    \item \textbf{Índice de Masa Corporal (IMC)}: Relación entre el peso y la altura del paciente.
+    \item \textbf{Marcadores Genéticos}: Presencia de mutaciones genéticas específicas (BRCA1, BRCA2, etc.).
+\end{itemize}
+
+Estas mediciones proporcionan una visión integral del estado del cáncer y se utilizan para planificar el tratamiento y predecir el pronóstico.
+
+A continuación, se muestra un ejemplo de cómo ajustar un modelo de regresión logística en R utilizando un conjunto de datos simulado con estas mediciones.
+
+\begin{verbatim}
+# Archivo: simulcorrectedCancer.R
+
+# Instalación del paquete necesario
+if (!requireNamespace("dplyr", quietly = TRUE)) {
+  install.packages("dplyr")
+}
+
+# Carga del paquete
+library(dplyr)
+
+# Fijar la semilla para reproducibilidad
+set.seed(123)
+
+# Número de observaciones
+n <- 1500
+
+# Simulación de las variables independientes
+# Tamaño del Tumor (en cm)
+Tumor_Size <- rnorm(n, mean = 3, sd = 1.5)
+
+# Estado de los Ganglios Linfáticos (número de ganglios afectados)
+Lymph_Nodes <- rpois(n, lambda = 3)
+
+# Grado del Tumor (1 a 3)
+Tumor_Grade <- sample(1:3, n, replace = TRUE)
+
+# Receptores Hormonales (0: negativo, 1: positivo)
+Estrogen_Receptor <- rbinom(n, 1, 0.7)
+Progesterone_Receptor <- rbinom(n, 1, 0.7)
+
+# Estado HER2 (0: negativo, 1: positivo)
+HER2_Status <- rbinom(n, 1, 0.3)
+
+# Ki-67 (% de células proliferativas)
+Ki_67 <- rnorm(n, mean = 20, sd = 10)
+
+# Edad del Paciente (años)
+Age <- rnorm(n, mean = 50, sd = 10)
+
+# Histopatología (1: ductal, 2: lobular, 3: otros)
+Histopathology <- sample(1:3, n, replace = TRUE)
+
+# Márgenes Quirúrgicos (0: positivo, 1: negativo)
+Surgical_Margins <- rbinom(n, 1, 0.8)
+
+# Invasión Linfovascular (0: no, 1: sí)
+Lymphovascular_Invasion <- rbinom(n, 1, 0.4)
+
+# Tratamientos Previos (0: no, 1: sí)
+Prior_Treatments <- rbinom(n, 1, 0.5)
+
+# Tipo de Cirugía (0: mastectomía, 1: lumpectomía)
+Surgery_Type <- rbinom(n, 1, 0.5)
+
+# Metástasis (0: no, 1: sí)
+Metastasis <- rbinom(n, 1, 0.2)
+
+# Índice de Masa Corporal (IMC)
+BMI <- rnorm(n, mean = 25, sd = 5)
+
+# Marcadores Genéticos (0: negativo, 1: positivo)
+Genetic_Markers <- rbinom(n, 1, 0.1)
+
+# Generar la variable dependiente binaria Y (sobrevivencia 0: no, 1: sí)
+# Utilizaremos una combinación arbitraria de las variables para generar Y
+linear_term <- -1 + 0.5 * Tumor_Size - 0.3 * Lymph_Nodes + 0.2 * Tumor_Grade + 
+  0.4 * Estrogen_Receptor + 0.3 * Progesterone_Receptor - 0.2 * HER2_Status + 
+  0.1 * Ki_67 - 0.05 * Age + 0.3 * Surgical_Margins - 0.4 * Lymphovascular_Invasion +
+  0.2 * Prior_Treatments + 0.1 * Surgery_Type - 0.5 * Metastasis + 0.01 * BMI + 
+  0.2 * Genetic_Markers
+p <- 1 / (1 + exp(-linear_term))
+Y <- rbinom(n, 1, p)
+
+# Combinar las variables independientes y la variable dependiente en un data frame
+data <- data.frame(Y, Tumor_Size, Lymph_Nodes, Tumor_Grade, Estrogen_Receptor, 
+                   Progesterone_Receptor, HER2_Status, Ki_67, Age, Histopathology,
+                   Surgical_Margins, Lymphovascular_Invasion, Prior_Treatments,
+                   Surgery_Type, Metastasis, BMI, Genetic_Markers)
+
+# Dividir el conjunto de datos en entrenamiento y prueba
+set.seed(123)  # Fijar la semilla para reproducibilidad
+train_indices <- sample(1:n, size = 0.7 * n)  # 70% de los datos para entrenamiento
+train_set <- data[train_indices, ]  # Conjunto de entrenamiento
+test_set <- data[-train_indices, ]  # Conjunto de prueba
+
+# Ajuste del modelo de regresión logística en el conjunto de entrenamiento
+# Ajustamos un modelo de regresión logística utilizando las variables independientes para
+ predecir Y
+model <- glm(Y ~ ., data = train_set, family = binomial)
+
+# Resumen del modelo
+# Mostramos un resumen del modelo ajustado
+summary(model)
+
+# Guardar el modelo y los resultados en un archivo
+# Guardamos el modelo ajustado en un archivo .RData
+save(model, file = "regresion_logistica_cancer_modelo_simulado.RData")
+
+# Guardar los datos simulados en archivos CSV
+# Guardamos los conjuntos de datos de entrenamiento y prueba en archivos CSV
+write.csv(train_set, "datos_entrenamiento_cancer_simulado.csv", row.names = FALSE)
+write.csv(test_set, "datos_prueba_cancer_simulado.csv", row.names = FALSE)
+
+# Hacer predicciones en el conjunto de prueba
+# Utilizamos el modelo ajustado para hacer predicciones en el conjunto de prueba
+test_set$prob_pred <- predict(model, newdata = test_set, type = "response")
+test_set$Y_pred <- ifelse(test_set$prob_pred > 0.5, 1, 0)  
+# Convertimos probabilidades a clases binarias
+
+# Calcular la precisión de las predicciones
+# Calculamos la precisión de las predicciones comparando con los valores reales de Y
+accuracy <- mean(test_set$Y_pred == test_set$Y)
+cat("La precisión del modelo en el conjunto de prueba es:", accuracy, "\n")
+
+# Guardar las predicciones en un archivo CSV
+# Guardamos las predicciones y las probabilidades predichas en un archivo CSV
+write.csv(test_set, "predicciones_cancer_simulado.csv", row.names = FALSE)
+
+# Graficar los coeficientes estimados
+# Graficamos los coeficientes estimados del modelo ajustado
+plot(coef(model), main = "Coeficientes Estimados del Modelo de Regresión Logística", 
+     xlab = "Variables", ylab = "Coeficientes", type = "h", col = "blue")
+abline(h = 0, col = "red", lwd = 2)
+
+# Mostrar un mensaje indicando que el proceso ha finalizado
+cat("El modelo de regresión logística se ha ajustado, se han hecho predicciones 
+y los resultados se han guardado en 'regresion_logistica_cancer_modelo_simulado.RData'.\n")
+\end{verbatim}

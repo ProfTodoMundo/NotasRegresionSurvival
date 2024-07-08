@@ -1,0 +1,124 @@
+
+\section{Introducción}
+El estimador de Kaplan-Meier, también conocido como la función de supervivencia empírica, es una herramienta no paramétrica para estimar la función de supervivencia a partir de datos censurados. Este método es especialmente útil cuando los tiempos de evento están censurados a la derecha.
+
+\section{Definición del Estimador de Kaplan-Meier}
+El estimador de Kaplan-Meier se define como:
+\begin{eqnarray*}
+\hat{S}(t) = \prod_{t_i \leq t} \left(1 - \frac{d_i}{n_i}\right)
+\end{eqnarray*}
+donde:
+\begin{itemize}
+    \item $t_i$ es el tiempo del $i$-ésimo evento,
+    \item $d_i$ es el número de eventos que ocurren en $t_i$,
+    \item $n_i$ es el número de individuos en riesgo justo antes de $t_i$.
+\end{itemize}
+
+\section{Propiedades del Estimador de Kaplan-Meier}
+El estimador de Kaplan-Meier tiene las siguientes propiedades:
+\begin{itemize}
+    \item Es una función escalonada que disminuye en los tiempos de los eventos observados.
+    \item Puede manejar datos censurados a la derecha.
+    \item Proporciona una estimación no paramétrica de la función de supervivencia.
+\end{itemize}
+
+\subsection{Función Escalonada}
+La función escalonada del estimador de Kaplan-Meier significa que $\hat{S}(t)$ permanece constante entre los tiempos de los eventos y disminuye en los tiempos de los eventos. Matemáticamente, si $t_i$ es el tiempo del $i$-ésimo evento, entonces:
+\begin{eqnarray*}
+\hat{S}(t) = \hat{S}(t_i) \quad \text{para} \ t_i \leq t < t_{i+1}
+\end{eqnarray*}
+
+\subsection{Manejo de Datos Censurados}
+El estimador de Kaplan-Meier maneja datos censurados a la derecha al ajustar la estimación de la función de supervivencia sólo en los tiempos en que ocurren eventos. Si un individuo es censurado antes de experimentar el evento, no contribuye a la disminución de $\hat{S}(t)$ en el tiempo de censura. Esto asegura que la censura no sesga la estimación de la supervivencia.
+
+\subsection{Estimación No Paramétrica}
+El estimador de Kaplan-Meier es no paramétrico porque no asume ninguna forma específica para la distribución de los tiempos de supervivencia. En cambio, utiliza la información empírica disponible para estimar la función de supervivencia.
+
+\section{Deducción del Estimador de Kaplan-Meier}
+La deducción del estimador de Kaplan-Meier se basa en el principio de probabilidad condicional. Consideremos un conjunto de tiempos de supervivencia observados $t_1, t_2, \ldots, t_k$ con eventos en cada uno de estos tiempos. El estimador de la probabilidad de supervivencia más allá del tiempo $t$ es el producto de las probabilidades de sobrevivir más allá de cada uno de los tiempos de evento observados hasta $t$.
+
+\subsection{Probabilidad Condicional}
+La probabilidad de sobrevivir más allá de $t_i$, dado que el individuo ha sobrevivido justo antes de $t_i$, es:
+\begin{eqnarray*}
+P(T > t_i \mid T \geq t_i) = 1 - \frac{d_i}{n_i}
+\end{eqnarray*}
+donde $d_i$ es el número de eventos en $t_i$ y $n_i$ es el número de individuos en riesgo justo antes de $t_i$.
+
+\subsection{Producto de Probabilidades Condicionales}
+La probabilidad de sobrevivir más allá de un tiempo $t$ cualquiera, dada la secuencia de tiempos de evento, es el producto de las probabilidades condicionales de sobrevivir más allá de cada uno de los tiempos de evento observados hasta $t$. Así, el estimador de Kaplan-Meier se obtiene como:
+\begin{eqnarray*}
+\hat{S}(t) = \prod_{t_i \leq t} \left(1 - \frac{d_i}{n_i}\right)
+\end{eqnarray*}
+
+\section{Ejemplo de Cálculo}
+Supongamos que tenemos los siguientes tiempos de supervivencia observados para cinco individuos: 2, 3, 5, 7, 8. Supongamos además que tenemos censura a la derecha en el tiempo 10. Los tiempos de evento y el número de individuos en riesgo justo antes de cada evento son:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+Tiempo ($t_i$) & Eventos ($d_i$) & En Riesgo ($n_i$) \\
+\hline
+2 & 1 & 5 \\
+3 & 1 & 4 \\
+5 & 1 & 3 \\
+7 & 1 & 2 \\
+8 & 1 & 1 \\
+\hline
+\end{tabular}
+\caption{Ejemplo de cálculo del estimador de Kaplan-Meier}
+\end{table}
+
+Usando estos datos, el estimador de Kaplan-Meier se calcula como:
+\begin{eqnarray*}
+\hat{S}(2) &=& 1 - \frac{1}{5} = 0.8 \\
+\hat{S}(3) &=& 0.8 \times \left(1 - \frac{1}{4}\right) = 0.8 \times 0.75 = 0.6 \\
+\hat{S}(5) &=& 0.6 \times \left(1 - \frac{1}{3}\right) = 0.6 \times 0.6667 = 0.4 \\
+\hat{S}(7) &=& 0.4 \times \left(1 - \frac{1}{2}\right) = 0.4 \times 0.5 = 0.2 \\
+\hat{S}(8) &=& 0.2 \times \left(1 - \frac{1}{1}\right) = 0.2 \times 0 = 0 \\
+\end{eqnarray*}
+
+\section{Intervalos de Confianza para el Estimador de Kaplan-Meier}
+Para calcular intervalos de confianza para el estimador de Kaplan-Meier, se puede usar la transformación logarítmica y la aproximación normal. Un intervalo de confianza aproximado para $\log(-\log(\hat{S}(t)))$ se obtiene como:
+\begin{eqnarray*}
+\log(-\log(\hat{S}(t))) \pm z_{\alpha/2} \sqrt{\frac{1}{d_i(n_i - d_i)}}
+\end{eqnarray*}
+donde $z_{\alpha/2}$ es el percentil correspondiente de la distribución normal estándar.
+
+\section{Transformación Logarítmica Inversa}
+La transformación logarítmica inversa se utiliza para obtener los límites del intervalo de confianza para $S(t)$:
+\begin{eqnarray*}
+\hat{S}(t) = \exp\left(-\exp\left(\log(-\log(\hat{S}(t))) \pm z_{\alpha/2} \sqrt{\frac{1}{d_i(n_i - d_i)}}\right)\right)
+\end{eqnarray*}
+
+\section{Cálculo Detallado de Intervalos de Confianza}
+Para un cálculo más detallado de los intervalos de confianza, consideremos un tiempo específico $t_j$. La varianza del estimador de Kaplan-Meier en $t_j$ se puede estimar usando Greenwood's formula:
+\begin{eqnarray*}
+\text{Var}(\hat{S}(t_j)) = \hat{S}(t_j)^2 \sum_{t_i \leq t_j} \frac{d_i}{n_i(n_i - d_i)}
+\end{eqnarray*}
+El intervalo de confianza aproximado para $\hat{S}(t_j)$ es entonces:
+\begin{eqnarray*}
+\hat{S}(t_j) \pm z_{\alpha/2} \sqrt{\text{Var}(\hat{S}(t_j))}
+\end{eqnarray*}
+
+\section{Ejemplo de Intervalo de Confianza}
+Supongamos que en el ejemplo anterior queremos calcular el intervalo de confianza para $\hat{S}(3)$. Primero, calculamos la varianza:
+\begin{eqnarray*}
+\text{Var}(\hat{S}(3)) &=& \hat{S}(3)^2 \left( \frac{1}{5 \times 4} + \frac{1}{4 \times 3} \right) \\
+                       &=& 0.6^2 \left( \frac{1}{20} + \frac{1}{12} \right) \\
+                       &=& 0.36 \left( 0.05 + 0.0833 \right) \\
+                       &=& 0.36 \times 0.1333 \\
+                       &=& 0.048
+\end{eqnarray*}
+El intervalo de confianza es entonces:
+\begin{eqnarray*}
+0.6 \pm 1.96 \sqrt{0.048} = 0.6 \pm 1.96 \times 0.219 = 0.6 \pm 0.429
+\end{eqnarray*}
+Por lo tanto, el intervalo de confianza para $\hat{S}(3)$ es aproximadamente $(0.171, 1.029)$. Dado que una probabilidad no puede exceder 1, ajustamos el intervalo a $(0.171, 1.0)$.
+
+\section{Interpretación del Estimador de Kaplan-Meier}
+El estimador de Kaplan-Meier proporciona una estimación empírica de la función de supervivencia que es fácil de interpretar y calcular. Su capacidad para manejar datos censurados lo hace especialmente útil en estudios de supervivencia.
+
+\section{Conclusión}
+El estimador de Kaplan-Meier es una herramienta poderosa para estimar la función de supervivencia en presencia de datos censurados. Su cálculo es relativamente sencillo y proporciona una estimación no paramétrica robusta de la supervivencia a lo largo del tiempo. La interpretación adecuada de este estimador y su intervalo de confianza asociado es fundamental para el análisis de datos de supervivencia.
+

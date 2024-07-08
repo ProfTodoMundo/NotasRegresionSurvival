@@ -1,0 +1,70 @@
+\section{Resumen de Conceptos Clave}
+
+En este curso, hemos cubierto una variedad de conceptos y t\'ecnicas esenciales para la regresi\'on log\'istica. Los conceptos clave incluyen:
+
+\begin{itemize}
+    \item \textbf{Fundamentos de Probabilidad y Estad\'istica}: Comprensi\'on de distribuciones de probabilidad, medidas de tendencia central y dispersi\'on, inferencia estad\'istica y pruebas de hip\'otesis.
+    \item \textbf{Regresi\'on Log\'istica}: Modelo de regresi\'on log\'istica binaria y multinomial, interpretaci\'on de coeficientes y odds ratios, m\'etodos de estimaci\'on y validaci\'on.
+    \item \textbf{Preparaci\'on de Datos}: Limpieza de datos, tratamiento de valores faltantes, codificaci\'on de variables categ\'oricas y selecci\'on de variables.
+    \item \textbf{Evaluaci\'on del Modelo}: Curva ROC, AUC, matriz de confusi\'on, precisi\'on, recall, F1-score y validaci\'on cruzada.
+    \item \textbf{Diagn\'ostico del Modelo}: An\'alisis de residuos, influencia, multicolinealidad y ajuste de par\'ametros.
+    \item \textbf{An\'alisis de Supervivencia}: Modelos de supervivencia, funci\'on de supervivencia y modelos de riesgos proporcionales de Cox.
+\end{itemize}
+
+\section{Buenas Pr\'acticas}
+
+Al implementar modelos de regresi\'on log\'istica, es importante seguir buenas pr\'acticas para garantizar la precisi\'on y la robustez de los modelos. Algunas buenas pr\'acticas incluyen:
+
+\begin{itemize}
+    \item \textbf{Exploraci\'on y Preparaci\'on de Datos}: Realizar un an\'alisis exploratorio exhaustivo y preparar los datos adecuadamente antes de construir el modelo.
+    \item \textbf{Evaluaci\'on y Validaci\'on del Modelo}: Utilizar m\'etricas adecuadas para evaluar el rendimiento del modelo y validar el modelo utilizando t\'ecnicas como la validaci\'on cruzada.
+    \item \textbf{Interpretaci\'on de Resultados}: Interpretar correctamente los coeficientes del modelo y las odds ratios, y comunicar los resultados de manera clara y concisa.
+    \item \textbf{Revisi\'on y Ajuste del Modelo}: Diagnosticar problemas en el modelo y ajustar los par\'ametros para mejorar el rendimiento.
+\end{itemize}
+
+\section{Proyecto Final}
+
+Para aplicar los conceptos y t\'ecnicas aprendidos en este curso, te proponemos realizar un proyecto final utilizando un conjunto de datos de tu elecci\'on. El proyecto debe incluir las siguientes etapas:
+
+\subsection{Selecci\'on del Conjunto de Datos}
+
+Elige un conjunto de datos relevante que contenga una variable dependiente binaria o multinomial y varias variables independientes.
+
+\subsection{Exploraci\'on y Preparaci\'on de Datos}
+
+Realiza un an\'alisis exploratorio de los datos y prepara los datos para el modelado. Esto incluye la limpieza de datos, el tratamiento de valores faltantes y la codificaci\'on de variables categ\'oricas.
+
+\subsection{Entrenamiento y Evaluaci\'on del Modelo}
+
+Entrena un modelo de regresi\'on log\'istica utilizando el conjunto de datos preparado y eval\'ua su rendimiento utilizando m\'etricas apropiadas.
+
+\subsection{Interpretaci\'on de Resultados}
+
+Interpreta los coeficientes del modelo y las odds ratios, y proporciona una explicaci\'on clara de los resultados.
+
+\subsection{Presentaci\'on del Proyecto}
+
+Presenta tu proyecto en un informe detallado que incluya la descripci\'on del conjunto de datos, los pasos de preparaci\'on y modelado, los resultados del modelo y las conclusiones.
+
+\section{Referencias y Bibliograf\'ia}
+
+Para profundizar en los conceptos y t\'ecnicas cubiertos en este curso, se recomiendan las siguientes referencias adicionales:
+
+\begin{itemize}
+    \item \textbf{Libros}:
+    \begin{itemize}
+        \item James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013). \textit{An Introduction to Statistical Learning: with Applications in R}. Springer.
+        \item Hosmer, D. W., Lemeshow, S., and Sturdivant, R. X. (2013). \textit{Applied Logistic Regression} (3rd ed.). Wiley.
+        \item Harrell, F. E. (2015). \textit{Regression Modeling Strategies: With Applications to Linear Models, Logistic and Ordinal Regression, and Survival Analysis}. Springer.
+    \end{itemize}
+    \item \textbf{Art\'iculos y Tutoriales}:
+    \begin{itemize}
+        \item Peng, C. Y. J., Lee, K. L., and Ingersoll, G. M. (2002). \textit{An Introduction to Logistic Regression Analysis and Reporting}. The Journal of Educational Research.
+        \item Practical Guide to Logistic Regression in R on Towards Data Science: \url{https://towardsdatascience.com/practical-guide-to-logistic-regression-in-r}
+    \end{itemize}
+    \item \textbf{Cursos en L\'inea}:
+    \begin{itemize}
+        \item Coursera: \textit{Machine Learning} by Stanford University.
+        \item edX: \textit{Data Science: Statistical Inference and Modeling for High-throughput Experiments} by Harvard University.
+    \end{itemize}
+\end{itemize}

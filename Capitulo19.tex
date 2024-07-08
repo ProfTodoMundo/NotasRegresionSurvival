@@ -1,0 +1,59 @@
+
+\section{Introducci\'on}
+El análisis de supervivencia en datos complicados se refiere a la evaluaci\'on de datos de supervivencia que presentan desaf\'ios adicionales, como la censura por intervalo, datos truncados y datos con m\'ultiples tipos de eventos. Estos escenarios requieren m\'etodos avanzados para un análisis adecuado.
+
+\section{Censura por Intervalo}
+La censura por intervalo ocurre cuando el evento de inter\'es se sabe que ocurri\'o dentro de un intervalo de tiempo, pero no se conoce el momento exacto. Esto es com\'un en estudios donde las observaciones se realizan en puntos de tiempo discretos.
+
+\subsection{Modelo para Datos Censurados por Intervalo}
+Para datos censurados por intervalo, la funci\'on de verosimilitud se modifica para incluir la probabilidad de que el evento ocurra dentro de un intervalo:
+\begin{eqnarray*}
+L(\beta) = \prod_{i=1}^n P(T_i \in [L_i, U_i] \mid X_i; \beta)
+\end{eqnarray*}
+donde $[L_i, U_i]$ es el intervalo de tiempo durante el cual se sabe que ocurri\'o el evento para el individuo $i$.
+
+\section{Datos Truncados}
+Los datos truncados ocurren cuando los tiempos de supervivencia est\'an sujetos a un umbral, y solo se observan los individuos cuyos tiempos de supervivencia superan (o est\'an por debajo de) ese umbral. Existen dos tipos principales de truncamiento: truncamiento a la izquierda y truncamiento a la derecha.
+
+\subsection{Modelo para Datos Truncados}
+Para datos truncados a la izquierda, la funci\'on de verosimilitud se ajusta para considerar solo los individuos que superan el umbral de truncamiento:
+\begin{eqnarray*}
+L(\beta) = \prod_{i=1}^n \frac{f(t_i \mid X_i; \beta)}{1 - F(L_i \mid X_i; \beta)}
+\end{eqnarray*}
+donde $L_i$ es el umbral de truncamiento para el individuo $i$.
+
+\section{An\'alisis de Competing Risks}
+En estudios donde pueden ocurrir m\'ultiples tipos de eventos (competing risks), es crucial modelar adecuadamente el riesgo asociado con cada tipo de evento. La probabilidad de ocurrencia de cada evento compite con las probabilidades de ocurrencia de otros eventos.
+
+\subsection{Modelo de Competing Risks}
+Para un an\'alisis de competing risks, la funci\'on de riesgo se descompone en funciones de riesgo espec\'ificas para cada tipo de evento:
+\begin{eqnarray*}
+\lambda(t) = \sum_{j=1}^m \lambda_j(t)
+\end{eqnarray*}
+donde $\lambda_j(t)$ es la funci\'on de riesgo para el evento $j$.
+
+\section{M\'etodos de Imputaci\'on}
+Los m\'etodos de imputaci\'on se utilizan para manejar datos faltantes o censurados en estudios de supervivencia. La imputaci\'on m\'ultiple es un enfoque com\'un que crea m\'ultiples conjuntos de datos completos imputando valores faltantes varias veces y luego combina los resultados.
+
+\subsection{Imputaci\'on M\'ultiple}
+La imputaci\'on m\'ultiple para datos de supervivencia se realiza en tres pasos:
+\begin{enumerate}
+    \item Imputar los valores faltantes m\'ultiples veces para crear varios conjuntos de datos completos.
+    \item Analizar cada conjunto de datos completo por separado utilizando m\'etodos de supervivencia est\'andar.
+    \item Combinar los resultados de los an\'alisis separados para obtener estimaciones y varianzas combinadas.
+\end{enumerate}
+
+\section{Ejemplo de An\'alisis con Datos Complicados}
+Consideremos un estudio con datos censurados por intervalo y competing risks. Ajustamos un modelo para los datos censurados por intervalo y obtenemos los siguientes coeficientes para las covariables edad y tratamiento:
+\begin{eqnarray*}
+\hat{\beta}_{edad} = 0.04, \quad \hat{\beta}_{tratamiento} = -0.8
+\end{eqnarray*}
+
+La funci\'on de supervivencia ajustada se expresa como:
+\begin{eqnarray*}
+S(t \mid X) = \exp\left(-\left(\frac{t \exp(0.04 \cdot \text{edad} - 0.8 \cdot \text{tratamiento})}{\lambda}\right)^k\right)
+\end{eqnarray*}
+
+\section{Conclusi\'on}
+El an\'alisis de supervivencia en datos complicados requiere m\'etodos avanzados para manejar censura por intervalo, datos truncados y competing risks. La aplicaci\'on de modelos adecuados y m\'etodos de imputaci\'on asegura un an\'alisis preciso y completo de estos datos complejos.
+

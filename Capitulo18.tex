@@ -1,0 +1,70 @@
+
+\section{Introducci\'on}
+El análisis multivariado de supervivencia extiende los modelos de supervivencia para incluir m\'ultiples covariables, permitiendo evaluar su efecto simultáneo sobre el tiempo hasta el evento. Los modelos de Cox y AFT son com\'unmente utilizados en este contexto.
+
+\section{Modelo de Cox Multivariado}
+El modelo de Cox multivariado se define como:
+\begin{eqnarray*}
+\lambda(t \mid X) = \lambda_0(t) \exp(\beta^T X)
+\end{eqnarray*}
+donde $X$ es un vector de covariables.
+
+\subsection{Estimaci\'on de los Parámetros}
+Los parámetros $\beta$ se estiman utilizando el m\'etodo de máxima verosimilitud parcial, como se discuti\'o anteriormente. La funci\'on de verosimilitud parcial se maximiza para obtener los estimadores de los coeficientes.
+
+\section{Modelo AFT Multivariado}
+El modelo AFT multivariado se expresa como:
+\begin{eqnarray*}
+T = T_0 \exp(\beta^T X)
+\end{eqnarray*}
+
+\subsection{Estimaci\'on de los Par\'ametros}
+Los par\'ametros $\beta$ se estiman utilizando el m\'etodo de m\'axima verosimilitud, similar al caso univariado. La funci\'on de verosimilitud se maximiza para obtener los estimadores de los coeficientes.
+
+\section{Interacci\'on y Efectos No Lineales}
+En el an\'alisis multivariado, es importante considerar la posibilidad de interacciones entre covariables y efectos no lineales. Estos se pueden incluir en los modelos extendiendo las funciones de riesgo o supervivencia.
+
+\subsection{Interacciones}
+Las interacciones entre covariables se pueden modelar a\~nadiendo t\'erminos de interacci\'on en el modelo:
+\begin{eqnarray*}
+\lambda(t \mid X) = \lambda_0(t) \exp(\beta_1 X_1 + \beta_2 X_2 + \beta_3 X_1 X_2)
+\end{eqnarray*}
+donde $X_1 X_2$ es el t\'ermino de interacci\'on.
+
+\subsection{Efectos No Lineales}
+Los efectos no lineales se pueden modelar utilizando funciones no lineales de las covariables, como polinomios o splines:
+\begin{eqnarray*}
+\lambda(t \mid X) = \lambda_0(t) \exp(\beta_1 X + \beta_2 X^2)
+\end{eqnarray*}
+
+\section{Selecci\'on de Variables}
+La selecci\'on de variables es crucial en el an\'alisis multivariado para evitar el sobreajuste y mejorar la interpretabilidad del modelo. M\'etodos como la regresi\'on hacia atr\'as, la regresi\'on hacia adelante y la selecci\'on por criterios de informaci\'on (AIC, BIC) son com\'unmente utilizados.
+
+\subsection{Regresi\'on Hacia Atr\'as}
+La regresi\'on hacia atr\'as comienza con todas las covariables en el modelo y elimina iterativamente la covariable menos significativa hasta que todas las covariables restantes sean significativas.
+
+\subsection{Regresi\'on Hacia Adelante}
+La regresi\'on hacia adelante comienza con un modelo vac\'io y a\~nade iterativamente la covariable m\'as significativa hasta que no se pueda a\~nadir ninguna covariable adicional significativa.
+
+\subsection{Criterios de Informaci\'on}
+Los criterios de informaci\'on, como el AIC (Akaike Information Criterion) y el BIC (Bayesian Information Criterion), se utilizan para seleccionar el modelo que mejor se ajusta a los datos con la menor complejidad posible:
+\begin{eqnarray*}
+AIC &=& -2 \log L + 2k \\
+BIC &=& -2 \log L + k \log n
+\end{eqnarray*}
+donde $L$ es la funci\'on de verosimilitud del modelo, $k$ es el n\'umero de par\'ametros en el modelo y $n$ es el tama\~no de la muestra.
+
+\section{Ejemplo de An\'alisis Multivariado}
+Consideremos un ejemplo con tres covariables: edad, sexo y tratamiento. Ajustamos un modelo de Cox multivariado y obtenemos los siguientes coeficientes:
+\begin{eqnarray*}
+\hat{\beta}_{edad} = 0.03, \quad \hat{\beta}_{sexo} = -0.6, \quad \hat{\beta}_{tratamiento} = 1.5
+\end{eqnarray*}
+
+La funci\'on de riesgo ajustada se expresa como:
+\begin{eqnarray*}
+\lambda(t \mid X) = \lambda_0(t) \exp(0.03 \cdot \text{edad} - 0.6 \cdot \text{sexo} + 1.5 \cdot \text{tratamiento})
+\end{eqnarray*}
+
+\section{Conclusi\'on}
+El an\'alisis multivariado de supervivencia permite evaluar el efecto conjunto de m\'ultiples covariables sobre el tiempo hasta el evento. La inclusi\'on de interacciones y efectos no lineales, junto con la selecci\'on adecuada de variables, mejora la precisi\'on y la interpretabilidad de los modelos de supervivencia.
+

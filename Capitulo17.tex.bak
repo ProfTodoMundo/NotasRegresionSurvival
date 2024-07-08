@@ -1,0 +1,89 @@
+\section{Introducción}
+Los modelos acelerados de fallos (AFT) son una alternativa a los modelos de riesgos proporcionales de Cox. En lugar de asumir que las covariables afectan la tasa de riesgo, los modelos AFT asumen que las covariables multiplican el tiempo de supervivencia por una constante.
+
+\section{Definición del Modelo AFT}
+Un modelo AFT se expresa como:
+\begin{eqnarray*}
+T = T_0 \exp(\beta^T X)
+\end{eqnarray*}
+donde:
+\begin{itemize}
+    \item $T$ es el tiempo de supervivencia observado.
+    \item $T_0$ es el tiempo de supervivencia bajo condiciones basales.
+    \item $\beta$ es el vector de coeficientes del modelo.
+    \item $X$ es el vector de covariables.
+\end{itemize}
+
+\subsection{Transformación Logarítmica}
+El modelo AFT se puede transformar logarítmicamente para obtener una forma lineal:
+\begin{eqnarray*}
+\log(T) = \log(T_0) + \beta^T X
+\end{eqnarray*}
+
+\section{Estimación de los Parámetros}
+Los parámetros del modelo AFT se estiman utilizando el método de máxima verosimilitud. La función de verosimilitud se define como:
+\begin{eqnarray*}
+L(\beta) = \prod_{i=1}^n f(t_i \mid X_i; \beta)
+\end{eqnarray*}
+donde $f(t_i \mid X_i; \beta)$ es la función de densidad de probabilidad del tiempo de supervivencia $t_i$ dado el vector de covariables $X_i$ y los parámetros $\beta$.
+
+\subsection{Función de Log-Verosimilitud}
+La función de log-verosimilitud es:
+\begin{eqnarray*}
+\log L(\beta) = \sum_{i=1}^n \log f(t_i \mid X_i; \beta)
+\end{eqnarray*}
+
+\subsection{Maximización de la Verosimilitud}
+Los estimadores de máxima verosimilitud se obtienen resolviendo el sistema de ecuaciones obtenido al igualar a cero las derivadas parciales de $\log L(\beta)$ con respecto a $\beta$:
+\begin{eqnarray*}
+\frac{\partial \log L(\beta)}{\partial \beta} = 0
+\end{eqnarray*}
+
+\section{Distribuciones Comunes en Modelos AFT}
+En los modelos AFT, el tiempo de supervivencia $T$ puede seguir varias distribuciones comunes, como la exponencial, Weibull, log-normal y log-logística. Cada una de estas distribuciones tiene diferentes propiedades y aplicaciones.
+
+\subsection{Modelo Exponencial AFT}
+En un modelo exponencial AFT, el tiempo de supervivencia $T$ sigue una distribución exponencial con parámetro $\lambda$:
+\begin{eqnarray*}
+f(t) = \lambda \exp(-\lambda t)
+\end{eqnarray*}
+La función de supervivencia es:
+\begin{eqnarray*}
+S(t) = \exp(-\lambda t)
+\end{eqnarray*}
+La transformación logarítmica del tiempo de supervivencia es:
+\begin{eqnarray*}
+\log(T) = \log\left(\frac{1}{\lambda}\right) + \beta^T X
+\end{eqnarray*}
+
+\subsection{Modelo Weibull AFT}
+En un modelo Weibull AFT, el tiempo de supervivencia $T$ sigue una distribución Weibull con parámetros $\lambda$ y $k$:
+\begin{eqnarray*}
+f(t) = \lambda k t^{k-1} \exp(-\lambda t^k)
+\end{eqnarray*}
+La función de supervivencia es:
+\begin{eqnarray*}
+S(t) = \exp(-\lambda t^k)
+\end{eqnarray*}
+La transformación logarítmica del tiempo de supervivencia es:
+\begin{eqnarray*}
+\log(T) = \log\left(\left(\frac{1}{\lambda}\right)^{1/k}\right) + \frac{\beta^T X}{k}
+\end{eqnarray*}
+
+\section{Interpretación de los Coeficientes}
+En los modelos AFT, los coeficientes $\beta_i$ se interpretan como factores multiplicativos del tiempo de supervivencia. Un valor positivo de $\beta_i$ indica que un aumento en la covariable $X_i$ incrementa el tiempo de supervivencia, mientras que un valor negativo indica una reducción del tiempo de supervivencia.
+
+\section{Ejemplo de Aplicación del Modelo AFT}
+Consideremos un ejemplo con tres covariables: edad, sexo y tratamiento. Supongamos que los datos se ajustan a un modelo Weibull AFT y obtenemos los siguientes coeficientes:
+\begin{eqnarray*}
+\hat{\beta}_{edad} = -0.02, \quad \hat{\beta}_{sexo} = 0.5, \quad \hat{\beta}_{tratamiento} = -1.2
+\end{eqnarray*}
+
+La función de supervivencia ajustada se expresa como:
+\begin{eqnarray*}
+S(t \mid X) = \exp\left(-\left(\frac{t \exp(-0.02 \cdot \text{edad} + 0.5 \cdot \text{sexo} - 1.2 \cdot \text{tratamiento})}{\lambda}\right)^k\right)
+\end{eqnarray*}
+
+\section{Conclusión}
+Los modelos AFT proporcionan una alternativa flexible a los modelos de riesgos proporcionales de Cox. Su enfoque en la multiplicación del tiempo de supervivencia por una constante permite una interpretación intuitiva y aplicaciones en diversas áreas.
+

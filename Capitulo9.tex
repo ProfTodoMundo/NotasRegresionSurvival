@@ -1,0 +1,98 @@
+\section{Introducci\'on}
+
+Implementar un modelo de regresi\'on log\'istica en datos reales implica varias etapas, desde la limpieza de datos hasta la evaluaci\'on y validaci\'on del modelo. Este cap\'itulo presenta un ejemplo pr\'actico de la implementaci\'on de un modelo de regresi\'on log\'istica utilizando un conjunto de datos real.
+
+\section{Conjunto de Datos}
+
+Para este ejemplo, utilizaremos un conjunto de datos disponible p\'ublicamente que contiene informaci\'on sobre clientes bancarios. El objetivo es predecir si un cliente suscribir\'a un dep\'osito a plazo fijo.
+
+\section{Preparaci\'on de Datos}
+
+\subsection{Carga y Exploraci\'on de Datos}
+
+Primero, cargamos y exploramos el conjunto de datos para entender su estructura y contenido.
+
+\begin{verbatim}
+# Cargar el paquete necesario
+library(dplyr)
+
+# Cargar el conjunto de datos
+data <- read.csv("bank.csv")
+
+# Explorar los datos
+str(data)
+summary(data)
+\end{verbatim}
+
+\subsection{Limpieza de Datos}
+
+El siguiente paso es limpiar los datos, lo que incluye tratar los valores faltantes y eliminar las duplicidades.
+
+\begin{verbatim}
+# Eliminar duplicados
+data <- data %>% distinct()
+
+# Imputar valores faltantes (si existen)
+data <- data %>% mutate_if(is.numeric, ~ifelse(is.na(.), mean(., na.rm = TRUE), .))
+\end{verbatim}
+
+\subsection{Codificaci\'on de Variables Categ\'oricas}
+
+Convertimos las variables categ\'oricas en variables num\'ericas utilizando la codificaci\'on one-hot.
+
+\begin{verbatim}
+# Codificaci\'on one-hot de variables categ\'oricas
+data <- data %>% mutate(across(where(is.factor), ~ as.numeric(as.factor(.))))
+\end{verbatim}
+
+\section{Divisi\'on de Datos}
+
+Dividimos los datos en conjuntos de entrenamiento y prueba.
+
+\begin{verbatim}
+# Dividir los datos en conjuntos de entrenamiento y prueba
+set.seed(123)
+trainIndex <- createDataPartition(data$y, p = .8, list = FALSE, times = 1)
+dataTrain <- data[trainIndex,]
+dataTest <- data[-trainIndex,]
+\end{verbatim}
+
+\section{Entrenamiento del Modelo}
+
+Entrenamos un modelo de regresi\'on log\'istica utilizando el conjunto de entrenamiento.
+
+\begin{verbatim}
+# Entrenar el modelo de regresi\'on log\'istica
+model <- glm(y ~ ., data = dataTrain, family = "binomial")
+
+# Resumen del modelo
+summary(model)
+\end{verbatim}
+
+\section{Evaluaci\'on del Modelo}
+
+Evaluamos el rendimiento del modelo utilizando el conjunto de prueba.
+
+\begin{verbatim}
+# Predicciones en el conjunto de prueba
+predictions <- predict(model, dataTest, type = "response")
+
+# Convertir probabilidades a etiquetas
+predicted_labels <- ifelse(predictions > 0.5, 1, 0)
+
+# Matriz de confusi\'on
+confusionMatrix(predicted_labels, dataTest$y)
+\end{verbatim}
+
+\section{Interpretaci\'on de los Resultados}
+
+Interpretamos los coeficientes del modelo y las odds ratios.
+
+\begin{verbatim}
+# Coeficientes del modelo
+coef(model)
+
+# Odds ratios
+exp(coef(model))
+\end{verbatim}
+

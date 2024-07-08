@@ -1,0 +1,104 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{natbib}
+
+\title{Curso de Regresi\'on Logística y Analisis de Supervivencia}
+\author{Carlos}
+\date{\today}
+
+\geometry{
+  a4paper,
+  left=25mm,
+  right=25mm,
+  top=30mm,
+  bottom=30mm,
+}
+
+
+
+% Configuraci\'on de encabezados y pies de p\'agina
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyfoot[C]{\thepage}
+\fancyfoot[L]{\rightmark}
+
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\chapter{Introducci\'on a la Regresi\'on Logística}
+\input{Capitulo1}
+
+\chapter{Elementos de Probabilidad}
+\input{Capitulo2}
+
+\chapter{Matem\'aticas Detr\'as de la Regresi\'on Logística}
+\input{Capitulo3}
+
+\chapter{Preparaci\'on de Datos y Selecci\'on de Variables}
+\input{Capitulo4}
+
+\chapter{Evaluaci\'on del Modelo y Validaci\'on Cruzada}
+\input{Capitulo5}
+
+\chapter{Diagn\'ostico del Modelo y Ajuste de Par\'ametros}
+\input{Capitulo6}
+
+\chapter{Interpretaci\'on de los Resultados}
+\input{Capitulo7}
+
+\chapter{Regresi\'on Logística Multinomial y An\'alisis de Supervivencia}
+\input{Capitulo8}
+
+\chapter{Implementaci\'on de Regresi\'on Logística en Datos Reales}
+\input{Capitulo9}
+
+\chapter{Resumen y Proyecto Final}
+\input{Capitulo10}
+
+\chapter{Introducci\'on al An\'alisis de Supervivencia}
+\input{Capitulo11}
+
+\chapter{Funci\'on de Supervivencia y Funci\'on de Riesgo}
+\input{Capitulo12}
+
+\chapter{Estimador de Kaplan-Meier}
+\input{Capitulo13}
+
+\chapter{Comparaci\'on de Curvas de Supervivencia}
+\input{Capitulo14}
+
+\chapter{Modelos de Riesgos Proporcionales de Cox}
+\input{Capitulo15}
+
+\chapter{Diagn\'ostico y Validaci\'on de Modelos de Cox}
+\input{Capitulo16}
+
+
+\chapter{Modelos Acelerados de Fallos}
+\input{Capitulo17}
+
+\chapter{An\'alisis Multivariado de Supervivencia}
+\input{Capitulo18}
+
+\chapter{Supervivencia en Datos Complicados}
+\input{Capitulo19}
+
+\chapter{Proyecto Final y Revisi\'on}
+\input{Capitulo20}
+
+
+% Puedes agregar m\'as cap\'itulos aqu\'i
+%\chapter{Nombre del Cap\'itulo}
+%\input{chapter2}
+
+\end{document}

@@ -1,0 +1,184 @@
+
+
+\section{Introducci\'on}
+
+La preparaci\'on de datos y la selecci\'on de variables son pasos cruciales en el proceso de modelado estad\'istico. Un modelo bien preparado y con las variables adecuadas puede mejorar significativamente la precisi\'on y la interpretabilidad del modelo. Este cap\'itulo proporciona una revisi\'on detallada de las t\'ecnicas de limpieza de datos, tratamiento de datos faltantes, codificaci\'on de variables categ\'oricas y selecci\'on de variables.
+
+\section{Importancia de la Preparaci\'on de Datos}
+
+La calidad de los datos es fundamental para el \'exito de cualquier an\'alisis estad\'istico. Los datos sin limpiar pueden llevar a modelos inexactos y conclusiones err\'oneas. La preparaci\'on de datos incluye varias etapas:
+\begin{itemize}
+    \item Limpieza de datos
+    \item Tratamiento de datos faltantes
+    \item Codificaci\'on de variables categ\'oricas
+    \item Selecci\'on y transformaci\'on de variables
+\end{itemize}
+
+\section{Limpieza de Datos}
+
+La limpieza de datos es el proceso de detectar y corregir (o eliminar) los datos incorrectos, incompletos o irrelevantes. Este proceso incluye:
+\begin{itemize}
+    \item Eliminaci\'on de duplicados
+    \item Correcci\'on de errores tipogr\'aficos
+    \item Consistencia de formato
+    \item Tratamiento de valores extremos (outliers)
+\end{itemize}
+
+\section{Tratamiento de Datos Faltantes}
+
+Los datos faltantes son un problema com\'un en los conjuntos de datos y pueden afectar la calidad de los modelos. Hay varias estrategias para manejar los datos faltantes:
+\begin{itemize}
+    \item \textbf{Eliminaci\'on de Datos Faltantes}: Se eliminan las filas o columnas con datos faltantes.
+    \item \textbf{Imputaci\'on}: Se reemplazan los valores faltantes con estimaciones, como la media, la mediana o la moda.
+    \item \textbf{Modelos Predictivos}: Se utilizan modelos predictivos para estimar los valores faltantes.
+\end{itemize}
+
+\subsection{Imputaci\'on de la Media}
+
+Una t\'ecnica com\'un es reemplazar los valores faltantes con la media de la variable. Esto se puede hacer de la siguiente manera:
+\begin{eqnarray*}
+x_i = \begin{cases} 
+      x_i & \text{si } x_i \text{ no es faltante} \\
+      \bar{x} & \text{si } x_i \text{ es faltante}
+   \end{cases}
+\end{eqnarray*}
+donde $\bar{x}$ es la media de la variable.
+
+\section{Codificaci\'on de Variables Categ\'oricas}
+
+Las variables categ\'oricas deben ser convertidas a un formato num\'erico antes de ser usadas en un modelo de regresi\'on log\'istica. Hay varias t\'ecnicas para codificar variables categ\'oricas:
+
+\subsection{Codificaci\'on One-Hot}
+
+La codificaci\'on one-hot crea una columna binaria para cada categor\'ia. Por ejemplo, si tenemos una variable categ\'orica con tres categor\'ias (A, B, C), se crean tres columnas:
+\begin{eqnarray*}
+\text{A} &=& [1, 0, 0] \\
+\text{B} &=& [0, 1, 0] \\
+\text{C} &=& [0, 0, 1]
+\end{eqnarray*}
+
+\subsection{Codificaci\'on Ordinal}
+
+La codificaci\'on ordinal asigna un valor entero \'unico a cada categor\'ia, preservando el orden natural de las categor\'ias. Por ejemplo:
+\begin{eqnarray*}
+\text{Bajo} &=& 1 \\
+\text{Medio} &=& 2 \\
+\text{Alto} &=& 3
+\end{eqnarray*}
+
+\section{Selecci\'on de Variables}
+
+La selecci\'on de variables es el proceso de elegir las variables m\'as relevantes para el modelo. Existen varias t\'ecnicas para la selecci\'on de variables:
+
+\subsection{M\'etodos de Filtrado}
+
+Los m\'etodos de filtrado seleccionan variables basadas en criterios estad\'isticos, como la correlaci\'on o la chi-cuadrado. Algunas t\'ecnicas comunes incluyen:
+\begin{itemize}
+    \item \textbf{An\'alisis de Correlaci\'on}: Se seleccionan variables con alta correlaci\'on con la variable dependiente y baja correlaci\'on entre ellas.
+    \item \textbf{Pruebas de Chi-cuadrado}: Se utilizan para variables categ\'oricas para determinar la asociaci\'on entre la variable independiente y la variable dependiente.
+\end{itemize}
+
+\subsection{M\'etodos de Wrapper}
+
+Los m\'etodos de wrapper eval\'uan m\'ultiples combinaciones de variables y seleccionan la combinaci\'on que optimiza el rendimiento del modelo. Ejemplos incluyen:
+\begin{itemize}
+    \item \textbf{Selecci\'on hacia Adelante}: Comienza con un modelo vac\'io y agrega variables una por una, seleccionando la variable que mejora m\'as el modelo en cada paso.
+    \item \textbf{Selecci\'on hacia Atr\'as}: Comienza con todas las variables y elimina una por una, removiendo la variable que tiene el menor impacto en el modelo en cada paso.
+    \item \textbf{Selecci\'on Paso a Paso}: Combina la selecci\'on hacia adelante y hacia atr\'as, agregando y eliminando variables seg\'un sea necesario.
+\end{itemize}
+
+\subsection{M\'etodos Basados en Modelos}
+
+Los m\'etodos basados en modelos utilizan t\'ecnicas de regularizaci\'on como Lasso y Ridge para seleccionar variables. Estas t\'ecnicas a\~naden un t\'ermino de penalizaci\'on a la funci\'on de costo para evitar el sobreajuste.
+
+\subsubsection{Regresi\'on Lasso}
+
+La regresi\'on Lasso (Least Absolute Shrinkage and Selection Operator) a\~nade una penalizaci\'on $L_1$ a la funci\'on de costo:
+\begin{eqnarray*}
+J(\beta) = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{p} |\beta_j|
+\end{eqnarray*}
+donde $\lambda$ es el par\'ametro de regularizaci\'on que controla la cantidad de penalizaci\'on.
+
+\subsubsection{Regresi\'on Ridge}
+
+La regresi\'on Ridge a\~nade una penalizaci\'on $L_2$ a la funci\'on de costo:
+\begin{eqnarray*}
+J(\beta) = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{p} \beta_j^2
+\end{eqnarray*}
+donde $\lambda$ es el par\'ametro de regularizaci\'on.
+
+\section{Implementaci\'on en R}
+
+\subsection{Limpieza de Datos}
+
+Para ilustrar la limpieza de datos en R, considere el siguiente conjunto de datos:
+\begin{verbatim}
+data <- data.frame(
+  var1 = c(1, 2, 3, NA, 5),
+  var2 = c("A", "B", "A", "B", "A"),
+  var3 = c(10, 15, 10, 20, 25)
+)
+
+# Eliminaci\'on de filas con datos faltantes
+data_clean <- na.omit(data)
+
+# Imputaci\'on de la media
+data$var1[is.na(data$var1)] <- mean(data$var1, na.rm = TRUE)
+\end{verbatim}
+
+\subsection{Codificaci\'on de Variables Categ\'oricas}
+
+Para codificar variables categ\'oricas, utilice la funci\'on `model.matrix`:
+\begin{verbatim}
+data <- data.frame(
+  var1 = c(1, 2, 3, 4, 5),
+  var2 = c("A", "B", "A", "B", "A")
+)
+
+# Codificaci\'on one-hot
+data_onehot <- model.matrix(~ var2 - 1, data = data)
+\end{verbatim}
+
+\subsection{Selecci\'on de Variables}
+
+Para la selecci\'on de variables, utilice el paquete `caret`:
+\begin{verbatim}
+library(caret)
+
+# Dividir los datos en conjuntos de entrenamiento y prueba
+set.seed(123)
+trainIndex <- createDataPartition(data$var1, p = .8, 
+                                  list = FALSE, 
+                                  times = 1)
+dataTrain <- data[trainIndex,]
+dataTest <- data[-trainIndex,]
+
+# Modelo de regresi\'on log\'istica
+model <- train(var1 ~ ., data = dataTrain, method = "glm", family = "binomial")
+
+# Selecci\'on de variables
+model <- step(model, direction = "both")
+summary(model)
+\end{verbatim}
+
+\section{Referencias y Bibliograf\'ia}
+
+Para profundizar en la preparaci\'on de datos y selecci\'on de variables, se recomiendan las siguientes referencias:
+
+\begin{itemize}
+    \item \textbf{Libros}:
+    \begin{itemize}
+        \item James, G., Witten, D., Hastie, T., and Tibshirani, R. (2013). \textit{An Introduction to Statistical Learning: with Applications in R}. Springer.
+        \item Kuhn, M., and Johnson, K. (2013). \textit{Applied Predictive Modeling}. Springer.
+    \end{itemize}
+    \item \textbf{Art\'iculos y Tutoriales}:
+    \begin{itemize}
+        \item Han, J., Pei, J., and Kamber, M. (2011). \textit{Data Mining: Concepts and Techniques}. Morgan Kaufmann.
+        \item Data Cleaning and Preprocessing on Towards Data Science: \url{https://towardsdatascience.com/data-cleaning-and-preprocessing}
+    \end{itemize}
+    \item \textbf{Cursos en L\'inea}:
+    \begin{itemize}
+        \item Coursera: \textit{Data Science: Wrangling and Cleaning} by Johns Hopkins University.
+        \item edX: \textit{Data Science: R Basics} by Harvard University.
+    \end{itemize}
+\end{itemize}

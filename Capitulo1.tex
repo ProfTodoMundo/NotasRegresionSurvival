@@ -1,0 +1,582 @@
+
+\section{Conceptos Básicos}
+
+La regresión logística es una técnica de modelado estadístico utilizada para predecir la probabilidad de un evento binario (es decir, un evento que tiene dos posibles resultados) en función de una o más variables independientes. Es ampliamente utilizada en diversas disciplinas, como medicina, economía, biología, y ciencias sociales, para analizar y predecir resultados binarios.
+
+Un modelo de regresión logística tiene la forma de una ecuación que describe cómo una variable dependiente binaria $Y$ (que puede tomar los valores $0$ o $1$) está relacionada con una o más variables independientes $X_1, X_2, \ldots, X_n$. A diferencia de la regresión lineal, que predice un valor continuo, la regresión logística predice una probabilidad que puede ser interpretada como la probabilidad de que $Y=1$ dado un conjunto de valores para $X_1, X_2, \ldots, X_n$.
+
+\section{Regresión Lineal}
+
+La regresión lineal es una técnica de modelado estadístico utilizada para predecir el valor de una variable dependiente continua en función de una o más variables independientes.
+
+\subsection*{Modelo Lineal}
+
+El modelo de regresión lineal tiene la forma:
+\begin{equation}
+Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n + \epsilon
+\end{equation}
+donde:
+\begin{itemize}
+    \item $Y$ es la variable dependiente.
+    \item $\beta_0$ es la intersección con el eje $Y$ o término constante.
+    \item $\beta_1, \beta_2, \ldots, \beta_n$ son los coeficientes que representan la relación entre las variables independientes y la variable dependiente.
+    \item $X_1, X_2, \ldots, X_n$ son las variables independientes.
+    \item $\epsilon$ es el término de error, que representa la desviación de los datos observados de los valores predichos por el modelo.
+\end{itemize}
+
+\subsection*{Mínimos Cuadrados Ordinarios (OLS)}
+
+El objetivo de la regresión lineal es encontrar los valores de los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$ que minimicen la suma de los cuadrados de las diferencias entre los valores observados y los valores predichos. Este método se conoce como mínimos cuadrados ordinarios (OLS, por sus siglas en inglés).
+
+La función de costo que se minimiza es:
+\begin{equation}
+J\left(\beta_0, \beta_1, \ldots, \beta_n\right) = \sum_{i=1}^{n}\left(y_i - \hat{y}_i\right)^2
+\end{equation}
+donde:
+\begin{itemize}
+    \item $y_i$ es el valor observado de la variable dependiente para la $i$-ésima observación.
+    \item $\hat{y}_i$ es el valor predicho por el modelo para la $i$-ésima observación, dado por:
+    \begin{equation}
+    \hat{y}_i = \beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \ldots + \beta_n x_{in}
+    \end{equation}
+\end{itemize}
+
+Para encontrar los valores óptimos de los coeficientes, se toman las derivadas parciales de la función de costo con respecto a cada coeficiente y se igualan a cero:
+\begin{equation}
+\frac{\partial J}{\partial \beta_j} = 0 \quad \text{para } j = 0, 1, \ldots, n
+\end{equation}
+
+Resolviendo este sistema de ecuaciones, se obtienen los valores de los coeficientes que minimizan la función de costo.
+
+\section{Regresión Logística}
+
+La deducción de la fórmula de la regresión logística comienza con la necesidad de modelar la probabilidad de un evento binario. Queremos encontrar una función que relacione las variables independientes con la probabilidad de que la variable dependiente tome el valor $1$.
+
+\subsection*{Probabilidad y Odds}
+
+La probabilidad de que el evento ocurra, $P(Y=1)$, se denota como $p$. La probabilidad de que el evento no ocurra, $P(Y=0)$, es $1-p$. Los \textit{odds} (chances) de que ocurra el evento se definen como:
+\begin{equation}
+\text{odds} = \frac{p}{1-p}
+\end{equation}
+Los \textit{odds} nos indican cuántas veces más probable es que ocurra el evento frente a que no ocurra.
+
+\subsection*{Transformación Logit}
+
+Para simplificar el modelado de los \textit{odds}, aplicamos el logaritmo natural, obteniendo la función logit:
+\begin{equation}
+\text{logit}(p) = \log\left(\frac{p}{1-p}\right)
+\end{equation}
+La transformación logit es útil porque convierte el rango de la probabilidad (0, 1) al rango de números reales $\left(-\infty, \infty\right)$.
+
+\subsection*{Modelo Lineal en el Espacio Logit}
+
+La idea clave de la regresión logística es modelar la transformación logit de la probabilidad como una combinación lineal de las variables independientes:
+\begin{equation}
+\text{logit}(p) = \log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n
+\end{equation}
+Aquí, $\beta_0$ es el intercepto y $\beta_1, \beta_2, \ldots, \beta_n$ son los coeficientes asociados con las variables independientes $X_1, X_2, \ldots, X_n$.
+
+\subsection*{Invertir la Transformación Logit}
+
+Para expresar $p$ en función de una combinación lineal de las variables independientes, invertimos la transformación logit. Partimos de la ecuación:
+\begin{equation}
+\log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n
+\end{equation}
+Aplicamos la exponenciación a ambos lados:
+\begin{equation}
+\frac{p}{1-p} = e^{\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n}
+\end{equation}
+Despejamos $p$:
+\begin{equation}
+p = \frac{e^{\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n}}{1 + e^{\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n}}
+\end{equation}
+
+\subsection*{Función Logística}
+
+La expresión final que obtenemos es conocida como la función logística:
+\begin{equation}
+p = \frac{1}{1 + e^{-\left(\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n\right)}}
+\end{equation}
+Esta función describe cómo las variables independientes se relacionan con la probabilidad de que el evento de interés ocurra. Los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$ se estiman a partir de los datos utilizando el método de máxima verosimilitud.
+
+\section{Método de Máxima Verosimilitud}
+
+En la regresión logística, los coeficientes del modelo se estiman utilizando el método de máxima verosimilitud. Este método busca encontrar los valores de los coeficientes que maximicen la probabilidad de observar los datos dados los valores de las variables independientes.
+
+\subsection*{Función de Verosimilitud}
+
+Para un conjunto de $n$ observaciones, la función de verosimilitud $L$ se define como el producto de las probabilidades individuales de observar cada dato:
+\begin{equation}
+L(\beta_0, \beta_1, \ldots, \beta_n) = \prod_{i=1}^{n} p_i^{y_i} (1 - p_i)^{1 - y_i}
+\end{equation}
+donde $y_i$ es el valor observado de la variable dependiente para la $i$-ésima observación y $p_i$ es la probabilidad predicha de que $Y_i = 1$. Aquí, $p_i$ es dado por la función logística:
+\begin{equation}
+p_i = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}}
+\end{equation}
+
+\subsection*{Función de Log-Verosimilitud}
+
+Para simplificar los cálculos, trabajamos con el logaritmo de la función de verosimilitud, conocido como la función de log-verosimilitud. Tomar el logaritmo convierte el producto en una suma:
+\begin{equation}
+\log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right]
+\end{equation}
+
+Sustituyendo $p_i$:
+\begin{equation}
+\log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i (\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}) - \log(1 + e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}) \right]
+\end{equation}
+
+\subsection*{Maximización de la Log-Verosimilitud}
+
+El objetivo es encontrar los valores de $\beta_0, \beta_1, \ldots, \beta_n$ que maximicen la función de log-verosimilitud. Esto se hace derivando la función de log-verosimilitud con respecto a cada uno de los coeficientes y encontrando los puntos críticos.
+
+Para $\beta_j$, la derivada parcial de la función de log-verosimilitud es:
+\begin{equation}
+\frac{\partial \log L}{\partial \beta_j} = \sum_{i=1}^{n} \left[ y_i X_{ij} - \frac{X_{ij} e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}}{1 + e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}} \right]
+\end{equation}
+
+Esto se simplifica a:
+\begin{equation}
+\frac{\partial \log L}{\partial \beta_j} = \sum_{i=1}^{n} X_{ij} (y_i - p_i)
+\end{equation}
+
+Para maximizar la log-verosimilitud, resolvemos el sistema de ecuaciones $\frac{\partial \log L}{\partial \beta_j} = 0$ para todos los $j$ de 0 a $n$. Este sistema de ecuaciones no tiene una solución analítica cerrada, por lo que se resuelve numéricamente utilizando métodos iterativos como el algoritmo de Newton-Raphson.
+
+\subsection*{Método de Newton-Raphson}
+
+El método de Newton-Raphson es un algoritmo iterativo que se utiliza para encontrar las raíces de una función. En el contexto de la regresión logística, se utiliza para maximizar la función de log-verosimilitud encontrando los valores de los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$. El método de Newton-Raphson se basa en una aproximación de segundo orden de la función objetivo. Dado un valor inicial de los coeficientes $\beta^{(0)}$, se iterativamente actualiza el valor de los coeficientes utilizando la fórmula:
+\begin{equation}
+\beta^{(k+1)} = \beta^{(k)} - \left[ \mathbf{H}(\beta^{(k)}) \right]^{-1} \mathbf{g}(\beta^{(k)})
+\end{equation}
+donde:
+\begin{itemize}
+    \item $\beta^{(k)}$ es el vector de coeficientes en la $k$-ésima iteración.
+    \item $\mathbf{H}(\beta^{(k)})$ es la matriz Hessiana (matriz de segundas derivadas) evaluada en $\beta^{(k)}$.
+    \item $\mathbf{g}(\beta^{(k)})$ es el gradiente (vector de primeras derivadas) evaluado en $\beta^{(k)}$.
+\end{itemize}
+
+\subsubsection*{Gradiente}
+
+El gradiente de la función de log-verosimilitud con respecto a los coeficientes $\beta$ es:
+\begin{equation}
+\mathbf{g}(\beta) = \frac{\partial \log L}{\partial \beta} = \sum_{i=1}^{n} \mathbf{X}_i (y_i - p_i)
+\end{equation}
+donde $\mathbf{X}_i$ es el vector de valores de las variables independientes para la $i$-ésima observación.
+
+\subsubsection*{Hessiana}
+
+La matriz Hessiana de la función de log-verosimilitud con respecto a los coeficientes $\beta$ es:
+\begin{equation}
+\mathbf{H}(\beta) = \frac{\partial^2 \log L}{\partial \beta \partial \beta^T} = -\sum_{i=1}^{n} p_i (1 - p_i) \mathbf{X}_i \mathbf{X}_i^T
+\end{equation}
+
+\subsubsection*{Algoritmo Newton-Raphson}
+
+El algoritmo Newton-Raphson para la regresión logística se puede resumir en los siguientes pasos:
+\begin{Algthm}
+\begin{enumerate}
+    \item Inicializar el vector de coeficientes $\beta^{(0)}$ (por ejemplo, con ceros o valores pequeños aleatorios).
+    \item Calcular el gradiente $\mathbf{g}(\beta^{(k)})$ y la matriz Hessiana $\mathbf{H}(\beta^{(k)})$ en la iteración $k$.
+    \item Actualizar los coeficientes utilizando la fórmula:
+    \begin{equation}
+    \beta^{(k+1)} = \beta^{(k)} - \left[ \mathbf{H}(\beta^{(k)}) \right]^{-1} \mathbf{g}(\beta^{(k)})
+    \end{equation}
+    \item Repetir los pasos 2 y 3 hasta que la diferencia entre $\beta^{(k+1)}$ y $\beta^{(k)}$ sea menor que un umbral predefinido (criterio de convergencia).
+\end{enumerate}
+\end{Algthm}
+
+\subsection{Forma de los Vectores $X_1, X_2, \ldots, X_n$}
+
+En el contexto de la regresión logística, los vectores $X_1, X_2, \ldots, X_n$ representan las variables independientes. Cada $X_j$ es un vector columna que contiene los valores de la variable independiente $j$ para cada una de las $n$ observaciones. Es decir,
+
+\begin{equation}
+X_j = \begin{bmatrix}
+x_{1j} \\
+x_{2j} \\
+\vdots \\
+x_{nj}
+\end{bmatrix}
+\end{equation}
+
+Para simplificar la notación y los cálculos, a menudo combinamos todos los vectores de variables independientes en una única matriz de diseño $\mathbf{X}$ de tamaño $n \times (k+1)$, donde $n$ es el número de observaciones y $k+1$ es el número de variables independientes más el término de intercepto. La primera columna de $\mathbf{X}$ corresponde a un vector de unos para el término de intercepto, y las demás columnas corresponden a los valores de las variables independientes:
+
+\begin{equation}
+\mathbf{X} = \begin{bmatrix}
+1 & x_{11} & x_{12} & \ldots & x_{1k} \\
+1 & x_{21} & x_{22} & \ldots & x_{2k} \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+1 & x_{n1} & x_{n2} & \ldots & x_{nk}
+\end{bmatrix}
+\end{equation}
+
+De esta forma, el modelo logit puede ser escrito de manera compacta utilizando la notación matricial:
+
+\begin{equation}
+\text{logit}(p) = \log\left(\frac{p}{1-p}\right) = \mathbf{X} \boldsymbol{\beta}
+\end{equation}
+
+donde $\boldsymbol{\beta}$ es el vector de coeficientes:
+
+\begin{equation}
+\boldsymbol{\beta} = \begin{bmatrix}
+\beta_0 \\
+\beta_1 \\
+\beta_2 \\
+\vdots \\
+\beta_k
+\end{bmatrix}
+\end{equation}
+
+Así, la probabilidad $p$ se puede expresar como:
+
+\begin{equation}
+p = \frac{1}{1 + e^{-\mathbf{X} \boldsymbol{\beta}}}
+\end{equation}
+
+Esta notación matricial simplifica la implementación y la derivación de los estimadores de los coeficientes en la regresión logística.
+
+\section{Implementaci\'on Num\'erica}
+\subsection*{Implementación Básica en R}
+
+Para implementar una regresión logística en R, primero es necesario instalar y cargar los paquetes necesarios. 
+
+\subsection*{Instalación y Configuración de R y RStudio}
+\begin{itemize}
+    \item Descargue e instale R desde \texttt{https://cran.r-project.org/}. Siga las instrucciones para su sistema operativo (Windows, MacOS, Linux).
+    \item Descargue e instale RStudio desde \texttt{https://rstudio.com/products/rstudio/download/}. 
+\end{itemize}
+
+\subsection*{Ejemplo de Regresión Logística en R}
+
+A continuación, se muestra un ejemplo de cómo ajustar un modelo de regresión logística en R utilizando un conjunto de datos simulado. El ejemplo incluye la instalación del paquete necesario, la carga de datos, el ajuste del modelo, y la interpretación de los resultados.
+
+\begin{verbatim}
+# Instalación del paquete necesario
+install.packages("stats")
+
+# Carga del paquete
+library(stats)
+
+# Ejemplo de conjunto de datos
+data <- data.frame(
+  outcome = c(1, 0, 1, 0, 1, 1, 0, 1, 0, 0),
+  predictor = c(2.3, 1.9, 3.1, 2.8, 3.6, 2.4, 2.1, 3.3, 2.2, 1.7)
+)
+
+# Ajuste del modelo de regresión logística
+model <- glm(outcome ~ predictor, data = data, family = binomial)
+
+# Resumen del modelo
+summary(model)
+\end{verbatim}
+
+En este ejemplo, se utiliza el conjunto de datos \textit{data} que contiene una variable de resultado binaria \textit{outcome} y una variable predictora continua \textit{predictor}. El modelo de regresión logística se ajusta utilizando la función \texttt{glm} con la familia binomial. La función \texttt{summary(model)} proporciona un resumen del modelo ajustado, incluyendo los coeficientes estimados, sus errores estándar, valores z, y p-valores.
+
+\begin{itemize}
+    \item \textbf{Coeficientes}: Los coeficientes estimados $\beta_0$ y $\beta_1$ indican la dirección y magnitud de la relación entre las variables predictoras y la probabilidad del resultado.
+    \item \textbf{Errores Estándar}: Los errores estándar proporcionan una medida de la precisión de los coeficientes estimados.
+    \item \textbf{Valores z y p-valores}: Los valores z y p-valores se utilizan para evaluar la significancia estadística de los coeficientes. Un p-valor pequeño (generalmente < 0.05) indica que el coeficiente es significativamente diferente de cero.
+\end{itemize}
+
+Este es solo un ejemplo básico, en aplicaciones reales, es posible que necesites realizar más análisis y validaciones, como la evaluación de la bondad de ajuste del modelo, el diagnóstico de posibles problemas de multicolinealidad, y la validación cruzada del modelo.
+\begin{verbatim}
+
+# Archivo: regresionlogistica.R
+
+# Instalación del paquete necesario
+#install.packages("stats")
+
+# Carga del paquete
+library(stats)
+
+# Fijar la semilla para reproducibilidad
+set.seed(123)
+
+# Número de observaciones
+n <- 100
+
+# Generar las variables independientes X1, X2, ..., X15
+# Creamos una matriz de tamaño n x 15 con valores generados aleatoriamente de una
+ distribución normal
+X <- as.data.frame(matrix(rnorm(n * 15), nrow = n, ncol = 15))
+colnames(X) <- paste0("X", 1:15)  # Nombramos las columnas como X1, X2, ..., X15
+
+# Coeficientes verdaderos para las variables independientes
+# Generamos un vector de 16 coeficientes (incluyendo el intercepto) aleatorios entre -1 y 1
+beta <- runif(16, -1, 1)  # 15 coeficientes más el intercepto
+
+# Generar el término lineal
+# Calculamos el término lineal utilizando los coeficientes y las variables independientes
+linear_term <- beta[1] + as.matrix(X) %*% beta[-1]
+
+# Generar la probabilidad utilizando la función logística
+# Calculamos las probabilidades utilizando la función logística
+p <- 1 / (1 + exp(-linear_term))
+
+# Generar la variable dependiente binaria Y
+# Generamos valores binarios (0 o 1) utilizando las probabilidades calculadas
+Y <- rbinom(n, 1, p)
+
+# Combinar las variables independientes y la variable dependiente en un data frame
+data <- cbind(Y, X)
+
+# Dividir el conjunto de datos en entrenamiento y prueba
+set.seed(123)  # Fijar la semilla para reproducibilidad
+train_indices <- sample(1:n, size = 0.7 * n)  # 70% de los datos para entrenamiento
+train_set <- data[train_indices, ]  # Conjunto de entrenamiento
+test_set <- data[-train_indices, ]  # Conjunto de prueba
+
+# Ajuste del modelo de regresión logística en el conjunto de entrenamiento
+# Ajustamos un modelo de regresión logística utilizando las variables independientes 
+para predecir Y
+model <- glm(Y ~ ., data = train_set, family = binomial)
+
+# Resumen del modelo
+# Mostramos un resumen del modelo ajustado
+summary(model)
+
+# Guardar el modelo y los resultados en un archivo
+# Guardamos el modelo ajustado en un archivo .RData
+save(model, file = "regresion_logistica_modelo.RData")
+
+# Guardar los datos simulados en archivos CSV
+# Guardamos los conjuntos de datos de entrenamiento y prueba en archivos CSV
+write.csv(train_set, "datos_entrenamiento_regresion_logistica.csv", row.names = FALSE)
+write.csv(test_set, "datos_prueba_regresion_logistica.csv", row.names = FALSE)
+
+# Hacer predicciones en el conjunto de prueba
+# Utilizamos el modelo ajustado para hacer predicciones en el conjunto de prueba
+test_set$prob_pred <- predict(model, newdata = test_set, type = "response")
+test_set$Y_pred <- ifelse(test_set$prob_pred > 0.5, 1, 0)  # Convertimos probabilidades a
+ clases binarias
+
+# Calcular la precisión de las predicciones
+# Calculamos la precisión de las predicciones comparando con los valores reales de Y
+accuracy <- mean(test_set$Y_pred == test_set$Y)
+cat("La precisión del modelo en el conjunto de prueba es:", accuracy, "\n")
+
+# Guardar las predicciones en un archivo CSV
+# Guardamos las predicciones y las probabilidades predichas en un archivo CSV
+write.csv(test_set, "predicciones_regresion_logistica.csv", row.names = FALSE)
+
+# Graficar los coeficientes estimados
+# Graficamos los coeficientes estimados del modelo ajustado
+plot(coef(model), main = "Coeficientes Estimados del Modelo de Regresión Logística", 
+     xlab = "Variables", ylab = "Coeficientes", type = "h", col = "blue")
+abline(h = 0, col = "red", lwd = 2)
+
+# Mostrar un mensaje indicando que el proceso ha finalizado
+cat("El modelo de regresión logística se ha ajustado, se han 
+hecho predicciones y los 
+resultados se han guardado en 'regresion_logistica_modelo.RData'.\n")
+
+# Archivo: regresionlogistica_titanic.R
+
+# Instalación del paquete necesario
+#install.packages("titanic")
+#install.packages("dplyr")
+
+# Carga de los paquetes
+library(titanic)
+library(dplyr)
+
+# Cargar el conjunto de datos Titanic
+data("titanic_train")
+
+# Ver las primeras filas del conjunto de datos
+head(titanic_train)
+
+# Preprocesamiento de los datos
+# Seleccionar variables relevantes y eliminar filas con valores faltantes
+titanic_clean <- titanic_train %>%
+  select(Survived, Pclass, Sex, Age, SibSp, Parch, Fare) %>%
+  na.omit()
+
+# Convertir la variable 'Sex' a factor
+titanic_clean$Sex <- as.factor(titanic_clean$Sex)
+
+# Dividir el conjunto de datos en entrenamiento (70%) y prueba (30%)
+set.seed(123)
+train_indices <- sample(1:nrow(titanic_clean), size = 0.7 * nrow(titanic_clean))
+train_set <- titanic_clean[train_indices, ]
+test_set <- titanic_clean[-train_indices, ]
+
+# Ajuste del modelo de regresión logística en el conjunto de entrenamiento
+model <- glm(Survived ~ ., data = train_set, family = binomial)
+
+# Resumen del modelo
+summary(model)
+
+# Guardar el modelo y los resultados en un archivo
+save(model, file = "regresion_logistica_titanic_modelo.RData")
+
+# Guardar los datos simulados en archivos CSV
+write.csv(train_set, "datos_entrenamiento_titanic.csv", row.names = FALSE)
+write.csv(test_set, "datos_prueba_titanic.csv", row.names = FALSE)
+
+# Hacer predicciones en el conjunto de prueba
+test_set$prob_pred <- predict(model, newdata = test_set, type = "response")
+test_set$Survived_pred <- ifelse(test_set$prob_pred > 0.5, 1, 0)
+
+# Calcular la precisión de las predicciones
+accuracy <- mean(test_set$Survived_pred == test_set$Survived)
+cat("La precisión del modelo en el conjunto de prueba es:", accuracy, "\n")
+
+# Guardar las predicciones en un archivo CSV
+write.csv(test_set, "predicciones_titanic.csv", row.names = FALSE)
+
+# Graficar los coeficientes estimados
+plot(coef(model), main = "Coeficientes Estimados del Modelo de Regresión Logística", 
+     xlab = "Variables", ylab = "Coeficientes", type = "h", col = "blue")
+abline(h = 0, col = "red", lwd = 2)
+
+# Mostrar un mensaje indicando que el proceso ha finalizado
+cat("El modelo de regresión logística se ha ajustado, se han hecho predicciones y los resultados se han guardado en 'regresion_logistica_titanic_modelo.RData'.\n")
+
+# Calcular la matriz de confusión
+table(test_set$Survived, test_set$Survived_pred)
+
+# Calcular sensibilidad y especificidad
+sensitivity <- sum(test_set$Survived == 1 & test_set$Survived_pred == 1) / sum(test_set$Survived == 1)
+specificity <- sum(test_set$Survived == 0 & test_set$Survived_pred == 0) / sum(test_set$Survived == 0)
+
+# Calcular AUC-ROC
+library(pROC)
+roc_curve <- roc(test_set$Survived, test_set$prob_pred)
+auc(roc_curve)
+
+# Graficar la curva ROC
+plot(roc_curve, main = "Curva ROC para el Modelo de Regresión Logística")
+
+
+\end{verbatim}
+
+\subsection*{Descripción del Código}
+
+\textbf{Instalación y Carga de Paquetes:}
+
+Instalamos y cargamos el paquete \texttt{stats} necesario para la regresión logística.
+
+\textbf{Generación de Datos Simulados:}
+
+\begin{itemize}
+    \item Fijamos una semilla para la reproducibilidad.
+    \item Generamos un conjunto de datos con 100 observaciones y 15 variables independientes (\texttt{X1, X2, ..., X15}) usando una distribución normal.
+    \item Definimos los coeficientes verdaderos para las variables independientes y calculamos el término lineal.
+    \item Calculamos las probabilidades usando la función logística y generamos una variable dependiente binaria \texttt{Y} basada en esas probabilidades.
+    \item Combinamos las variables independientes y la variable dependiente en un \texttt{data frame}.
+\end{itemize}
+
+\textbf{División de Datos en Conjuntos de Entrenamiento y Prueba:}
+
+\begin{itemize}
+    \item Dividimos los datos en un conjunto de entrenamiento (70%) y un conjunto de prueba (30%).
+\end{itemize}
+
+\textbf{Ajuste del Modelo de Regresión Logística:}
+
+\begin{itemize}
+    \item Ajustamos un modelo de regresión logística en el conjunto de entrenamiento.
+    \item Mostramos un resumen del modelo ajustado.
+\end{itemize}
+
+\textbf{Guardado de Datos y Modelo:}
+
+\begin{itemize}
+    \item Guardamos el modelo ajustado en un archivo \texttt{.RData}.
+    \item Guardamos los conjuntos de datos de entrenamiento y prueba en archivos CSV.
+\end{itemize}
+
+\textbf{Predicciones y Evaluación del Modelo:}
+
+\begin{itemize}
+    \item Hacemos predicciones en el conjunto de prueba utilizando el modelo ajustado.
+    \item Calculamos la precisión de las predicciones comparando con los valores reales de \texttt{Y}.
+    \item Guardamos las predicciones y las probabilidades predichas en un archivo CSV.
+\end{itemize}
+
+\textbf{Visualización de los Coeficientes del Modelo:}
+
+\begin{itemize}
+    \item Graficamos los coeficientes estimados del modelo ajustado.
+    \item Mostramos un mensaje indicando que el proceso ha finalizado.
+\end{itemize}
+
+Para ejecutar este script, guarda el código en un archivo llamado \textit{regresionlogistica.R}, abre R o RStudio, navega hasta el directorio donde guardaste el archivo y ejecuta el script usando \textit{"regresionlogistica.R"}.
+
+\subsection*{Ejemplo Titanic}
+
+Cuando realizas una regresión logística, obtienes coeficientes para cada variable independiente en tu modelo. Estos coeficientes indican la dirección y la magnitud de la relación entre cada variable independiente y la variable dependiente (en este caso, \textit{Survived}).
+
+\subsection*{Interpretación de los Coeficientes}
+
+\begin{itemize}
+    \item \textbf{Intercepto} (\texttt{(Intercept)}): Este coeficiente representa el logaritmo de las probabilidades (log-odds) de que \texttt{Survived} sea 1 (supervivencia) cuando todas las variables independientes son cero.
+    \item \textbf{Pclass}: El coeficiente asociado con \texttt{Pclass} indica cómo cambia el log-odds de supervivencia con cada incremento en la clase del pasajero. Si el coeficiente es negativo, sugiere que una clase más alta (por ejemplo, de primera clase a tercera clase) reduce las probabilidades de supervivencia.
+    \item \textbf{Sex}: Este coeficiente muestra el efecto de ser hombre o mujer en las probabilidades de supervivencia. Generalmente, se espera que el coeficiente sea positivo para \texttt{female} indicando que las mujeres tenían mayores probabilidades de sobrevivir.
+    \item \textbf{Age}: El coeficiente de \texttt{Age} indica cómo cambia el log-odds de supervivencia con cada año de incremento en la edad. Un coeficiente negativo sugiere que la probabilidad de supervivencia disminuye con la edad.
+    \item \textbf{SibSp} y \textbf{Parch}: Estos coeficientes indican el efecto del número de hermanos/cónyuges a bordo y padres/hijos a bordo en las probabilidades de supervivencia.
+    \item \textbf{Fare}: Este coeficiente indica el efecto del precio del billete en las probabilidades de supervivencia. Un coeficiente positivo sugiere que pagar más por el billete se asocia con mayores probabilidades de supervivencia.
+\end{itemize}
+
+\subsection*{Estadísticas de Ajuste del Modelo}
+
+El resumen del modelo (\texttt{summary(model)}) incluye varias estadísticas importantes:
+
+\begin{itemize}
+    \item \textbf{Estadísticos z y p-valores}: Estas estadísticas indican la significancia de cada coeficiente. Un p-valor bajo (generalmente < 0.05) sugiere que la variable es un predictor significativo de la variable dependiente.
+    \item \textbf{Desviación Residual}: La desviación residual mide la calidad del ajuste del modelo. Valores más bajos indican un mejor ajuste.
+    \item \textbf{AIC (Akaike Information Criterion)}: El AIC es una medida de la calidad del modelo que toma en cuenta tanto la bondad del ajuste como la complejidad del modelo. Modelos con AIC más bajo son preferidos.
+\end{itemize}
+
+\subsection*{Precisión del Modelo}
+
+La precisión del modelo en el conjunto de prueba es una métrica importante para evaluar el rendimiento del modelo. La precisión se calcula como el número de predicciones correctas dividido por el número total de predicciones.
+
+\subsection*{Ejemplo de Resultados}
+
+Supongamos que la precisión del modelo es 0.78 (78\%). Esto significa que el modelo correctamente predijo el estado de supervivencia del 78\% de los pasajeros en el conjunto de prueba.
+
+\subsection*{Matriz de Confusión y Otras Métricas}
+
+Además de la precisión, otras métricas como la matriz de confusión, la sensibilidad, la especificidad, y el área bajo la curva ROC (AUC-ROC) también pueden proporcionar una visión más completa del rendimiento del modelo.
+
+\subsection*{Matriz de Confusión}
+
+\begin{itemize}
+    \item \textbf{Verdaderos Positivos (TP)}: Número de pasajeros que sobrevivieron y fueron predichos como sobrevivientes.
+    \item \textbf{Verdaderos Negativos (TN)}: Número de pasajeros que no sobrevivieron y fueron predichos como no sobrevivientes.
+    \item \textbf{Falsos Positivos (FP)}: Número de pasajeros que no sobrevivieron pero fueron predichos como sobrevivientes.
+    \item \textbf{Falsos Negativos (FN)}: Número de pasajeros que sobrevivieron pero fueron predichos como no sobrevivientes.
+\end{itemize}
+
+\subsection*{Ejemplo de Cálculo de Métricas}
+
+\begin{verbatim}
+# Calcular la matriz de confusión
+table(test_set$Survived, test_set$Survived_pred)
+
+# Calcular sensibilidad y especificidad
+sensitivity <- sum(test_set$Survived == 1 & test_set$Survived_pred == 1) / sum(test_set$Survived == 1)
+specificity <- sum(test_set$Survived == 0 & test_set$Survived_pred == 0) / sum(test_set$Survived == 0)
+
+# Calcular AUC-ROC
+library(pROC)
+roc_curve <- roc(test_set$Survived, test_set$prob_pred)
+auc(roc_curve)
+\end{verbatim}
+
+\subsection*{Visualización de Resultados}
+
+Graficar los coeficientes del modelo, la curva ROC y otras visualizaciones ayudan a entender mejor el rendimiento y la importancia de cada variable en el modelo.
+
+\begin{verbatim}
+# Graficar la curva ROC
+plot(roc_curve, main = "Curva ROC para el Modelo de Regresión Logística")
+\end{verbatim}
+
+\subsection*{Resumen Final}
+
+El modelo de regresión logística aplicado al conjunto de datos del Titanic proporciona una forma de entender cómo diferentes características de los pasajeros influyen en sus probabilidades de supervivencia. La interpretación de los coeficientes del modelo, las estadísticas de ajuste, y la precisión del modelo en el conjunto de prueba son fundamentales para evaluar el rendimiento y la utilidad del modelo en hacer predicciones sobre la supervivencia de los pasajeros del Titanic.
+
+

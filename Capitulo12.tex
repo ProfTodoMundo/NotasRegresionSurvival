@@ -1,0 +1,129 @@
+\section{Introducci\'on}
+Este cap\'itulo profundiza en la definici\'on y propiedades de la funci\'on de supervivencia y la funci\'on de riesgo, dos conceptos fundamentales en el análisis de supervivencia. Entender estas funciones y su relaci\'on es crucial para modelar y analizar datos de tiempo hasta evento.
+
+\section{Funci\'on de Supervivencia}
+La funci\'on de supervivencia, $S(t)$, describe la probabilidad de que un individuo sobreviva más allá de un tiempo $t$. Formalmente, se define como:
+\begin{eqnarray*}
+S(t) = P(T > t)
+\end{eqnarray*}
+donde $T$ es una variable aleatoria que representa el tiempo hasta el evento.
+
+\subsection{Propiedades de la Funci\'on de Supervivencia}
+La funci\'on de supervivencia tiene varias propiedades importantes:
+\begin{itemize}
+    \item $S(0) = 1$: Indica que la probabilidad de haber experimentado el evento en el tiempo 0 es cero.
+    \item $\lim_{t \to \infty} S(t) = 0$: A medida que el tiempo tiende al infinito, la probabilidad de supervivencia tiende a cero.
+    \item $S(t)$ es una funci\'on no creciente: A medida que el tiempo avanza, la probabilidad de supervivencia no aumenta.
+\end{itemize}
+
+\subsection{Derivaci\'on de $S(t)$}
+Si la funci\'on de densidad de probabilidad $f(t)$ del tiempo de supervivencia $T$ es conocida, la funci\'on de supervivencia puede derivarse como:
+\begin{eqnarray*}
+S(t) &=& P(T > t) \\
+     &=& 1 - P(T \leq t) \\
+     &=& 1 - F(t) \\
+     &=& 1 - \int_0^t f(u) \, du
+\end{eqnarray*}
+donde $F(t)$ es la funci\'on de distribuci\'on acumulada.
+
+\subsection{Ejemplo de Cálculo de $S(t)$}
+Consideremos un ejemplo donde el tiempo de supervivencia $T$ sigue una distribuci\'on exponencial con tasa $\lambda$. La funci\'on de densidad de probabilidad $f(t)$ es:
+\begin{eqnarray*}
+f(t) = \lambda e^{-\lambda t}, \quad t \geq 0
+\end{eqnarray*}
+La funci\'on de distribuci\'on acumulada $F(t)$ es:
+\begin{eqnarray*}
+F(t) = \int_0^t \lambda e^{-\lambda u} \, du = 1 - e^{-\lambda t}
+\end{eqnarray*}
+Por lo tanto, la funci\'on de supervivencia $S(t)$ es:
+\begin{eqnarray*}
+S(t) = 1 - F(t) = e^{-\lambda t}
+\end{eqnarray*}
+
+\section{Funci\'on de Riesgo}
+La funci\'on de riesgo, $\lambda(t)$, proporciona la tasa instant\'anea de ocurrencia del evento en el tiempo $t$, dado que el individuo ha sobrevivido hasta el tiempo $t$. Matem\'aticamente, se define como:
+\begin{eqnarray*}
+\lambda(t) = \lim_{\Delta t \to 0} \frac{P(t \leq T < t + \Delta t \mid T \geq t)}{\Delta t}
+\end{eqnarray*}
+
+\subsection{Relaci\'on entre $\lambda(t)$ y $f(t)$}
+La funci\'on de riesgo se puede relacionar con la funci\'on de densidad de probabilidad $f(t)$ y la funci\'on de supervivencia $S(t)$ de la siguiente manera:
+\begin{eqnarray*}
+\lambda(t) &=& \frac{f(t)}{S(t)}
+\end{eqnarray*}
+
+\subsection{Derivaci\'on de $\lambda(t)$}
+La derivaci\'on de $\lambda(t)$ se basa en la definici\'on condicional de la probabilidad:
+\begin{eqnarray*}
+\lambda(t) &=& \lim_{\Delta t \to 0} \frac{P(t \leq T < t + \Delta t \mid T \geq t)}{\Delta t} \\
+           &=& \lim_{\Delta t \to 0} \frac{\frac{P(t \leq T < t + \Delta t \text{ y } T \geq t)}{P(T \geq t)}}{\Delta t} \\
+           &=& \lim_{\Delta t \to 0} \frac{\frac{P(t \leq T < t + \Delta t)}{P(T \geq t)}}{\Delta t} \\
+           &=& \frac{f(t)}{S(t)}
+\end{eqnarray*}
+
+\section{Relaci\'on entre Funci\'on de Supervivencia y Funci\'on de Riesgo}
+La funci\'on de supervivencia y la funci\'on de riesgo est\'an estrechamente relacionadas. La relaci\'on se expresa mediante la siguiente ecuaci\'on:
+\begin{eqnarray*}
+S(t) = \exp\left(-\int_0^t \lambda(u) \, du\right)
+\end{eqnarray*}
+
+\subsection{Deducci\'on de la Relaci\'on}
+Para deducir esta relaci\'on, consideramos la derivada logar\'itmica de la funci\'on de supervivencia:
+\begin{eqnarray*}
+S(t) &=& \exp\left(-\int_0^t \lambda(u) \, du\right) \\
+\log S(t) &=& -\int_0^t \lambda(u) \, du \\
+\frac{d}{dt} \log S(t) &=& -\lambda(t) \\
+\lambda(t) &=& -\frac{d}{dt} \log S(t)
+\end{eqnarray*}
+
+\section{Interpretaci\'on de la Funci\'on de Riesgo}
+La funci\'on de riesgo, $\lambda(t)$, se interpreta como la tasa instant\'anea de ocurrencia del evento por unidad de tiempo, dado que el individuo ha sobrevivido hasta el tiempo $t$. Es una medida local del riesgo de falla en un instante espec\'ifico.
+
+\subsection{Ejemplo de C\'alculo de $\lambda(t)$}
+Consideremos nuevamente el caso donde el tiempo de supervivencia $T$ sigue una distribuci\'on exponencial con tasa $\lambda$. La funci\'on de densidad de probabilidad $f(t)$ es:
+\begin{eqnarray*}
+f(t) = \lambda e^{-\lambda t}
+\end{eqnarray*}
+La funci\'on de supervivencia $S(t)$ es:
+\begin{eqnarray*}
+S(t) = e^{-\lambda t}
+\end{eqnarray*}
+La funci\'on de riesgo $\lambda(t)$ se calcula como:
+\begin{eqnarray*}
+\lambda(t) &=& \frac{f(t)}{S(t)} \\
+           &=& \frac{\lambda e^{-\lambda t}}{e^{-\lambda t}} \\
+           &=& \lambda
+\end{eqnarray*}
+En este caso, $\lambda(t)$ es constante y igual a $\lambda$, lo que es una caracter\'istica de la distribuci\'on exponencial.
+
+\section{Funciones de Riesgo Acumulada y Media Residual}
+La funci\'on de riesgo acumulada $H(t)$ se define como:
+\begin{eqnarray*}
+H(t) = \int_0^t \lambda(u) \, du
+\end{eqnarray*}
+Esta funci\'on proporciona la suma acumulada de la tasa de riesgo hasta el tiempo $t$.
+
+La funci\'on de vida media residual $e(t)$ se define como la esperanza del tiempo de vida restante dado que el individuo ha sobrevivido hasta el tiempo $t$:
+\begin{eqnarray*}
+e(t) = \mathbb{E}[T - t \mid T > t] = \int_t^\infty S(u) \, du
+\end{eqnarray*}
+
+\section{Ejemplo de C\'alculo de Funci\'on de Riesgo Acumulada y Vida Media Residual}
+Consideremos nuevamente la distribuci\'on exponencial con tasa $\lambda$. La funci\'on de riesgo acumulada $H(t)$ es:
+\begin{eqnarray*}
+H(t) &=& \int_0^t \lambda \, du \\
+     &=& \lambda t
+\end{eqnarray*}
+
+La funci\'on de vida media residual $e(t)$ es:
+\begin{eqnarray*}
+e(t) &=& \int_t^\infty e^{-\lambda u} \, du \\
+     &=& \left[ \frac{-1}{\lambda} e^{-\lambda u} \right]_t^\infty \\
+     &=& \frac{1}{\lambda} e^{-\lambda t} \\
+     &=& \frac{1}{\lambda}
+\end{eqnarray*}
+En este caso, la vida media residual es constante e igual a $\frac{1}{\lambda}$, otra caracter\'istica de la distribuci\'on exponencial.
+
+\section{Conclusi\'on}
+La funci\'on de supervivencia y la funci\'on de riesgo son herramientas fundamentales en el an\'alisis de supervivencia. Entender su definici\'on, propiedades, y la relaci\'on entre ellas es esencial para modelar y analizar correctamente los datos de tiempo hasta evento. Las funciones de riesgo acumulada y vida media residual proporcionan informaci\'on adicional sobre la din\'amica del riesgo a lo largo del tiempo.
+
