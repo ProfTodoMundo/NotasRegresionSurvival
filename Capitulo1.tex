@@ -182,7 +182,7 @@ Este sistema de ecuaciones no tiene una solución analítica cerrada, por lo que
 
 El método de Newton-Raphson es un algoritmo iterativo que se utiliza para encontrar las raíces de una función. En el contexto de la regresión logística, se utiliza para maximizar la función de log-verosimilitud encontrando los valores de los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$. Este m\'etodo se basa en una aproximación de segundo orden de la función objetivo. Dado un valor inicial de los coeficientes $\boldsymbol{\beta}^{(0)}$, se actualiza iterativamente el valor de los coeficientes utilizando la fórmula:
 
-\begin{equation}
+\begin{equation}\label{Eq.Criterio0}
 \boldsymbol{\beta}^{(t+1)} = \boldsymbol{\beta}^{(t)} - \left[ \mathbf{H}(\boldsymbol{\beta}^{(t)}) \right]^{-1} \nabla \log L(\boldsymbol{\beta}^{(t)})
 \end{equation}
 
@@ -254,7 +254,7 @@ Esto se simplifica a (comparar con la ecuaci\'on \ref{Eq.1.14}):
 
 
 Para maximizar la log-verosimilitud, resolvemos el sistema de ecuaciones $\frac{\partial \log L}{\partial \beta_j} = 0$ para todos los $j$ de 0 a $n$., mismo que se resuelve numéricamente utilizando métodos el algoritmo de Newton-Raphson. El método de Newton-Raphson se basa en una aproximación de segundo orden de la función objetivo. Dado un valor inicial de los coeficientes $\beta^{(0)}$, se iterativamente actualiza el valor de los coeficientes utilizando la fórmula:
-\begin{equation}
+\begin{equation}\label{Eq.Criterio1.5}
 \beta^{(k+1)} = \beta^{(k)} - \left[ \mathbf{H}(\beta^{(k)}) \right]^{-1} \mathbf{g}(\beta^{(k)})
 \end{equation}
 donde:
@@ -378,5 +378,5 @@ El método de Newton-Raphson actualiza los coeficientes $\boldsymbol{\beta}$ de 
 \boldsymbol{\beta}^{(t+1)} = \boldsymbol{\beta}^{(t)} - [\mathbf{H}(\boldsymbol{\beta}^{(t)})]^{-1} \nabla \log L(\boldsymbol{\beta}^{(t)})
 \end{equation}
 
-Iterando este proceso hasta que la diferencia entre $\boldsymbol{\beta}^{(t+1)}$ y $\boldsymbol{\beta}^{(t)}$ sea menor que un umbral predefinido (\ref{Eq.Criterio1} y \ref{Eq.Criterio2}), se obtienen los estimadores de máxima verosimilitud para los coeficientes de la regresión logística.
+Iterando este proceso hasta que la diferencia entre $\boldsymbol{\beta}^{(t+1)}$ y $\boldsymbol{\beta}^{(t)}$ sea menor que un umbral predefinido (\ref{Eq.Criterio0}, \ref{Eq.Criterio1}, \ref{Eq.Criterio1.5} y \ref{Eq.Criterio2}), se obtienen los estimadores de máxima verosimilitud para los coeficientes de la regresión logística.
 
