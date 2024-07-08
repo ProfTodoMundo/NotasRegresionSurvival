@@ -1,11 +1,11 @@
-\BOOKMARK [-1][-]{part.1}{I PRIMERA PARTE}{}% 1
-\BOOKMARK [0][-]{chapter.1}{Introducci\363n a la Regresi\363n Log\355stica}{part.1}% 2
+\BOOKMARK [-1][-]{part.1}{I PRIMERA PARTE: Regresi\363n Log\355stica}{}% 1
+\BOOKMARK [0][-]{chapter.1}{D\355a 1: Introducci\363n}{part.1}% 2
 \BOOKMARK [1][-]{section.1.1}{Conceptos B\341sicos}{chapter.1}% 3
 \BOOKMARK [1][-]{section.1.2}{Regresi\363n Lineal}{chapter.1}% 4
 \BOOKMARK [1][-]{section.1.3}{Regresi\363n Log\355stica}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.4}{M\351todo de M\341xima Verosimilitud}{chapter.1}% 6
-\BOOKMARK [2][-]{subsection.1.4.1}{Forma de los Vectores X1, X2, \203, Xn}{section.1.4}% 7
-\BOOKMARK [1][-]{section.1.5}{Implementaci\363n Num\351rica}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.5}{Representaci\363n vectorial}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.5.1}{Estimaci\363n de los Coeficientes}{section.1.5}% 8
 \BOOKMARK [0][-]{chapter.2}{Elementos de Probabilidad}{part.1}% 9
 \BOOKMARK [1][-]{section.2.1}{Introducci\363n}{chapter.2}% 10
 \BOOKMARK [1][-]{section.2.2}{Probabilidad}{chapter.2}% 11
