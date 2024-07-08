@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 JUL 2024 11:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 JUL 2024 11:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -417,12 +417,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.68 ...y Selecci\'on de Variables}{26}{chapter.4}
+l.69 ...a Preparaci\'on de Datos}{26}{section.4.2}
                                                    [1
 
 ]
-LaTeX Info: Redefining \. on input line 127.
-LaTeX Info: Redefining \% on input line 127.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -430,37 +430,37 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-LaTeX Info: Redefining \. on input line 127.
-LaTeX Info: Redefining \% on input line 127.
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
 [2]
-LaTeX Info: Redefining \. on input line 178.
-LaTeX Info: Redefining \% on input line 178.
-LaTeX Info: Redefining \. on input line 178.
-LaTeX Info: Redefining \% on input line 178.
+LaTeX Info: Redefining \. on input line 177.
+LaTeX Info: Redefining \% on input line 177.
+LaTeX Info: Redefining \. on input line 177.
+LaTeX Info: Redefining \% on input line 177.
  [3]
-Overfull \hbox (2.55557pt too wide) detected at line 179
+Overfull \hbox (2.55557pt too wide) detected at line 178
 \OT1/cmr/m/n/10 11.10. 
  []
 
 
-Overfull \hbox (2.55557pt too wide) detected at line 211
+Overfull \hbox (2.55557pt too wide) detected at line 210
 \OT1/cmr/m/n/10 13.10. 
  []
 
 
-Overfull \hbox (2.55557pt too wide) detected at line 212
+Overfull \hbox (2.55557pt too wide) detected at line 211
 \OT1/cmr/m/n/10 13.11. 
  []
 
-LaTeX Info: Redefining \. on input line 231.
-LaTeX Info: Redefining \% on input line 231.
-LaTeX Info: Redefining \. on input line 231.
-LaTeX Info: Redefining \% on input line 231.
+LaTeX Info: Redefining \. on input line 230.
+LaTeX Info: Redefining \% on input line 230.
+LaTeX Info: Redefining \. on input line 230.
+LaTeX Info: Redefining \% on input line 230.
 [4]
-LaTeX Info: Redefining \. on input line 284.
-LaTeX Info: Redefining \% on input line 284.
-LaTeX Info: Redefining \. on input line 284.
-LaTeX Info: Redefining \% on input line 284.
+LaTeX Info: Redefining \. on input line 283.
+LaTeX Info: Redefining \% on input line 283.
+LaTeX Info: Redefining \. on input line 283.
+LaTeX Info: Redefining \% on input line 283.
  [5])
 \tf@toc=\write4
 \openout4 = `RegresioLogistica.toc'.
@@ -1058,14 +1058,14 @@ LaTeX Info: Redefining \% on input line 23.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
 Package rerunfilecheck Info: File `RegresioLogistica.out' has not changed.
-(rerunfilecheck)             Checksum: 7DC643A6355F063912F3CDFA28734EFA;21565.
+(rerunfilecheck)             Checksum: F149B13EFCD07E78E509AA1991A7F86D;21504.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 137.
  ) 
 Here is how much of TeX's memory you used:
- 9112 strings out of 492649
- 128978 string characters out of 6129622
+ 9110 strings out of 492649
+ 128954 string characters out of 6129622
  276787 words of memory out of 5000000
- 12373 multiletter control sequences out of 15000+600000
+ 12372 multiletter control sequences out of 15000+600000
  16000 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,14n,43p,889b,700s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1093,10 +1093,10 @@ e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/
 18/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/201
 8/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on RegresioLogistica.pdf (89 pages, 505780 bytes).
+Output written on RegresioLogistica.pdf (89 pages, 505666 bytes).
 PDF statistics:
- 2099 PDF objects out of 2487 (max. 8388607)
- 1964 compressed objects within 20 object streams
- 468 named destinations out of 1000 (max. 500000)
- 2193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2094 PDF objects out of 2487 (max. 8388607)
+ 1959 compressed objects within 20 object streams
+ 467 named destinations out of 1000 (max. 500000)
+ 2185 words of extra memory for PDF output out of 10000 (max. 10000000)
 

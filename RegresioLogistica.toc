@@ -7,7 +7,6 @@
 \contentsline {section}{\numberline {1.4}M\IeC {\'e}todo de M\IeC {\'a}xima Verosimilitud}{10}{section.1.4}
 \contentsline {section}{\numberline {1.5}M\IeC {\'e}todo de Newton-Raphson}{11}{section.1.5}
 \contentsline {section}{\numberline {1.6}Espec\'ificando}{12}{section.1.6}
-\contentsline {section}{\numberline {1.7}Notas finales}{14}{section.1.7}
 \contentsline {chapter}{\numberline {2}Elementos de Probabilidad}{16}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introducci\'on}{16}{section.2.1}
 \contentsline {section}{\numberline {2.2}Probabilidad}{16}{section.2.2}
