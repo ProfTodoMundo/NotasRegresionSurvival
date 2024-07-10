@@ -1,307 +1,565 @@
 \babel@toc {spanish}{}
-\contentsline {part}{I\hspace {1em}PRIMERA PARTE: Regresi\'on Log\'istica}{7}{part.1}
-\contentsline {chapter}{\numberline {1}D\'ia 1: Introducci\'on}{8}{chapter.1}
-\contentsline {section}{\numberline {1.1}Conceptos B\IeC {\'a}sicos}{8}{section.1.1}
-\contentsline {section}{\numberline {1.2}Regresi\IeC {\'o}n Lineal}{8}{section.1.2}
-\contentsline {section}{\numberline {1.3}Regresi\IeC {\'o}n Log\IeC {\'\i }stica}{9}{section.1.3}
-\contentsline {section}{\numberline {1.4}M\IeC {\'e}todo de M\IeC {\'a}xima Verosimilitud}{10}{section.1.4}
-\contentsline {section}{\numberline {1.5}M\IeC {\'e}todo de Newton-Raphson}{11}{section.1.5}
-\contentsline {section}{\numberline {1.6}Espec\'ificando}{12}{section.1.6}
-\contentsline {chapter}{\numberline {2}Elementos de Probabilidad}{16}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introducci\'on}{16}{section.2.1}
-\contentsline {section}{\numberline {2.2}Probabilidad}{16}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Espacio Muestral y Eventos}{16}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Definiciones de Probabilidad}{16}{subsection.2.2.2}
-\contentsline {subsubsection}{Probabilidad Cl\'asica}{16}{subsection.2.2.2}
-\contentsline {subsubsection}{Probabilidad Frecuentista}{17}{subsection.2.2.2}
-\contentsline {subsubsection}{Probabilidad Bayesiana}{17}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Estad\'istica Bayesiana}{17}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Prior y Posterior}{17}{subsection.2.3.1}
-\contentsline {subsubsection}{Distribuci\'on Prior}{17}{subsection.2.3.1}
-\contentsline {subsubsection}{Verosimilitud}{17}{subsection.2.3.1}
-\contentsline {subsubsection}{Distribuci\'on Posterior}{17}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Distribuciones de Probabilidad}{18}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Distribuciones Discretas}{18}{subsection.2.4.1}
-\contentsline {subsubsection}{Distribuci\'on Binomial}{18}{subsection.2.4.1}
-\contentsline {subsubsection}{Distribuci\'on de Poisson}{18}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Distribuciones Continuas}{18}{subsection.2.4.2}
-\contentsline {subsubsection}{Distribuci\'on Normal}{19}{subsection.2.4.2}
-\contentsline {subsubsection}{Distribuci\'on Exponencial}{19}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Estad\'istica Descriptiva}{19}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Medidas de Tendencia Central}{19}{subsection.2.5.1}
-\contentsline {subsubsection}{Media}{19}{subsection.2.5.1}
-\contentsline {subsubsection}{Mediana}{19}{subsection.2.5.1}
-\contentsline {subsubsection}{Moda}{20}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Medidas de Dispersi\'on}{20}{subsection.2.5.2}
-\contentsline {subsubsection}{Rango}{20}{subsection.2.5.2}
-\contentsline {subsubsection}{Varianza}{20}{subsection.2.5.2}
-\contentsline {subsubsection}{Desviaci\'on Est\'andar}{20}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Inferencia Estad\'istica}{20}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Estimaci\'on de Par\'ametros}{20}{subsection.2.6.1}
-\contentsline {subsubsection}{Estimador Puntual}{20}{subsection.2.6.1}
-\contentsline {subsubsection}{Propiedades de los Estimadores Puntuales}{21}{subsection.2.6.1}
-\contentsline {subsubsection}{Estimador por Intervalo}{21}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Prueba de Hip\'otesis}{21}{subsection.2.6.2}
-\contentsline {subsubsection}{Hip\'otesis Nula y Alternativa}{21}{subsection.2.6.2}
-\contentsline {subsubsection}{Nivel de Significancia}{21}{subsection.2.6.2}
-\contentsline {subsubsection}{Estad\'istico de Prueba}{21}{subsection.2.6.2}
-\contentsline {subsubsection}{P-valor}{21}{subsection.2.6.2}
-\contentsline {subsubsection}{Tipos de Errores}{22}{subsection.2.6.2}
-\contentsline {subsubsection}{Tabla de Errores en la Prueba de Hip\'otesis}{22}{subsection.2.6.2}
-\contentsline {chapter}{\numberline {3}Matem\'aticas Detr\'as de la Regresi\'on Log\IeC {\'\i }stica}{23}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introducci\'on}{23}{section.3.1}
-\contentsline {section}{\numberline {3.2}Funci\'on Log\'istica}{23}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Definici\'on}{23}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Propiedades}{23}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Funci\'on de Verosimilitud}{23}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Definici\'on}{24}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Funci\'on de Log-Verosimilitud}{24}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Estimaci\'on de Coeficientes}{24}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Gradiente y Hessiana}{24}{subsection.3.4.1}
-\contentsline {subsubsection}{Gradiente}{24}{subsection.3.4.1}
-\contentsline {subsubsection}{Hessiana}{24}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Algoritmo Newton-Raphson}{24}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Validaci\'on del Modelo}{25}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Curva ROC y AUC}{25}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Matriz de Confusi\'on}{25}{subsection.3.5.2}
-\contentsline {chapter}{\numberline {4}Preparaci\'on de Datos y Selecci\'on de Variables}{26}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introducci\'on}{26}{section.4.1}
-\contentsline {section}{\numberline {4.2}Importancia de la Preparaci\'on de Datos}{26}{section.4.2}
-\contentsline {section}{\numberline {4.3}Limpieza de Datos}{26}{section.4.3}
-\contentsline {section}{\numberline {4.4}Tratamiento de Datos Faltantes}{27}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Imputaci\'on de la Media}{27}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Codificaci\'on de Variables Categ\'oricas}{27}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Codificaci\'on One-Hot}{27}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Codificaci\'on Ordinal}{27}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Selecci\'on de Variables}{27}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}M\'etodos de Filtrado}{27}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}M\'etodos de Wrapper}{28}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}M\'etodos Basados en Modelos}{28}{subsection.4.6.3}
-\contentsline {subsubsection}{Regresi\'on Lasso}{28}{subsection.4.6.3}
-\contentsline {subsubsection}{Regresi\'on Ridge}{28}{subsection.4.6.3}
-\contentsline {section}{\numberline {4.7}Implementaci\'on en R}{28}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Limpieza de Datos}{28}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Codificaci\'on de Variables Categ\'oricas}{29}{subsection.4.7.2}
-\contentsline {subsection}{\numberline {4.7.3}Selecci\'on de Variables}{29}{subsection.4.7.3}
-\contentsline {chapter}{\numberline {5}Evaluaci\'on del Modelo y Validaci\'on Cruzada}{30}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introducci\IeC {\'o}n}{30}{section.5.1}
-\contentsline {section}{\numberline {5.2}M\IeC {\'e}tricas de Evaluaci\IeC {\'o}n del Modelo}{30}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Curva ROC y AUC}{30}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Matriz de Confusi\IeC {\'o}n}{30}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Precisi\IeC {\'o}n, Recall y F1-Score}{31}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Log-Loss}{31}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Validaci\IeC {\'o}n Cruzada}{31}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}K-Fold Cross-Validation}{31}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Leave-One-Out Cross-Validation (LOOCV)}{31}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Ajuste y Sobreajuste del Modelo}{31}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Sobreajuste}{31}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Subajuste}{32}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Regularizaci\IeC {\'o}n}{32}{subsection.5.4.3}
-\contentsline {section}{\numberline {5.5}Implementaci\IeC {\'o}n en R}{32}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Evaluaci\IeC {\'o}n del Modelo}{32}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Validaci\IeC {\'o}n Cruzada}{32}{subsection.5.5.2}
-\contentsline {chapter}{\numberline {6}Diagn\'ostico del Modelo y Ajuste de Par\'ametros}{33}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introducci\'on}{33}{section.6.1}
-\contentsline {section}{\numberline {6.2}Diagn\'ostico del Modelo}{33}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Residuos}{33}{subsection.6.2.1}
-\contentsline {subsubsection}{Residuos Estudiantizados}{33}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Influencia}{33}{subsection.6.2.2}
-\contentsline {subsubsection}{Distancia de Cook}{34}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Multicolinealidad}{34}{subsection.6.2.3}
-\contentsline {subsubsection}{Factor de Inflaci\'on de la Varianza (VIF)}{34}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Ajuste de Par\'ametros}{34}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Grid Search}{34}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Random Search}{34}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Bayesian Optimization}{34}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Implementaci\'on en R}{34}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Diagn\'ostico del Modelo}{34}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Ajuste de Par\'ametros}{35}{subsection.6.4.2}
-\contentsline {chapter}{\numberline {7}Interpretaci\'on de los Resultados}{36}{chapter.7}
-\contentsline {section}{\numberline {7.1}Introducci\'on}{36}{section.7.1}
-\contentsline {section}{\numberline {7.2}Coeficientes de Regresi\'on Log\'istica}{36}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Interpretaci\'on de los Coeficientes}{36}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Signo de los Coeficientes}{36}{subsection.7.2.2}
-\contentsline {section}{\numberline {7.3}Odds Ratios}{36}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}C\'alculo de las Odds Ratios}{36}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Interpretaci\'on de las Odds Ratios}{37}{subsection.7.3.2}
-\contentsline {section}{\numberline {7.4}Intervalos de Confianza}{37}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}C\'alculo de los Intervalos de Confianza}{37}{subsection.7.4.1}
-\contentsline {section}{\numberline {7.5}Significancia Estad\'istica}{37}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Prueba de Hip\'otesis}{37}{subsection.7.5.1}
-\contentsline {subsection}{\numberline {7.5.2}P-valor}{37}{subsection.7.5.2}
-\contentsline {section}{\numberline {7.6}Implementaci\'on en R}{37}{section.7.6}
-\contentsline {subsection}{\numberline {7.6.1}C\'alculo de Coeficientes y Odds Ratios}{37}{subsection.7.6.1}
-\contentsline {subsection}{\numberline {7.6.2}Intervalos de Confianza}{38}{subsection.7.6.2}
-\contentsline {subsection}{\numberline {7.6.3}P-valores y Significancia Estad\'istica}{38}{subsection.7.6.3}
-\contentsline {chapter}{\numberline {8}Regresi\'on Log\IeC {\'\i }stica Multinomial y An\'alisis de Supervivencia}{39}{chapter.8}
-\contentsline {section}{\numberline {8.1}Introducci\'on}{39}{section.8.1}
-\contentsline {section}{\numberline {8.2}Regresi\'on Log\'istica Multinomial}{39}{section.8.2}
-\contentsline {subsection}{\numberline {8.2.1}Modelo Multinomial}{39}{subsection.8.2.1}
-\contentsline {subsection}{\numberline {8.2.2}Estimaci\'on de Par\'ametros}{39}{subsection.8.2.2}
-\contentsline {section}{\numberline {8.3}An\'alisis de Supervivencia}{39}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Funci\'on de Supervivencia}{39}{subsection.8.3.1}
-\contentsline {subsection}{\numberline {8.3.2}Modelo de Riesgos Proporcionales de Cox}{40}{subsection.8.3.2}
-\contentsline {section}{\numberline {8.4}Implementaci\'on en R}{40}{section.8.4}
-\contentsline {subsection}{\numberline {8.4.1}Regresi\'on Log\'istica Multinomial}{40}{subsection.8.4.1}
-\contentsline {subsection}{\numberline {8.4.2}An\'alisis de Supervivencia}{40}{subsection.8.4.2}
-\contentsline {chapter}{\numberline {9}Implementaci\'on de Regresi\'on Log\IeC {\'\i }stica en Datos Reales}{41}{chapter.9}
-\contentsline {section}{\numberline {9.1}Introducci\'on}{41}{section.9.1}
-\contentsline {section}{\numberline {9.2}Conjunto de Datos}{41}{section.9.2}
-\contentsline {section}{\numberline {9.3}Preparaci\'on de Datos}{41}{section.9.3}
-\contentsline {subsection}{\numberline {9.3.1}Carga y Exploraci\'on de Datos}{41}{subsection.9.3.1}
-\contentsline {subsection}{\numberline {9.3.2}Limpieza de Datos}{41}{subsection.9.3.2}
-\contentsline {subsection}{\numberline {9.3.3}Codificaci\'on de Variables Categ\'oricas}{42}{subsection.9.3.3}
-\contentsline {section}{\numberline {9.4}Divisi\'on de Datos}{42}{section.9.4}
-\contentsline {section}{\numberline {9.5}Entrenamiento del Modelo}{42}{section.9.5}
-\contentsline {section}{\numberline {9.6}Evaluaci\'on del Modelo}{42}{section.9.6}
-\contentsline {section}{\numberline {9.7}Interpretaci\'on de los Resultados}{42}{section.9.7}
-\contentsline {chapter}{\numberline {10}Resumen y Proyecto Final}{43}{chapter.10}
-\contentsline {section}{\numberline {10.1}Resumen de Conceptos Clave}{43}{section.10.1}
-\contentsline {section}{\numberline {10.2}Buenas Pr\'acticas}{43}{section.10.2}
-\contentsline {section}{\numberline {10.3}Proyecto Final}{43}{section.10.3}
-\contentsline {subsection}{\numberline {10.3.1}Selecci\'on del Conjunto de Datos}{44}{subsection.10.3.1}
-\contentsline {subsection}{\numberline {10.3.2}Exploraci\'on y Preparaci\'on de Datos}{44}{subsection.10.3.2}
-\contentsline {subsection}{\numberline {10.3.3}Entrenamiento y Evaluaci\'on del Modelo}{44}{subsection.10.3.3}
-\contentsline {subsection}{\numberline {10.3.4}Interpretaci\'on de Resultados}{44}{subsection.10.3.4}
-\contentsline {subsection}{\numberline {10.3.5}Presentaci\'on del Proyecto}{44}{subsection.10.3.5}
-\contentsline {part}{II\hspace {1em}SEGUNDA PARTE}{45}{part.2}
-\contentsline {chapter}{\numberline {11}Introducci\'on al An\'alisis de Supervivencia}{46}{chapter.11}
-\contentsline {section}{\numberline {11.1}Conceptos B\IeC {\'a}sicos}{46}{section.11.1}
-\contentsline {section}{\numberline {11.2}Definici\'on de Eventos y Tiempos}{46}{section.11.2}
-\contentsline {section}{\numberline {11.3}Censura}{46}{section.11.3}
-\contentsline {section}{\numberline {11.4}Funci\'on de Supervivencia}{46}{section.11.4}
-\contentsline {section}{\numberline {11.5}Funci\'on de Densidad de Probabilidad}{47}{section.11.5}
-\contentsline {section}{\numberline {11.6}Funci\'on de Riesgo}{47}{section.11.6}
-\contentsline {section}{\numberline {11.7}Relaci\'on entre Funci\'on de Supervivencia y Funci\'on de Riesgo}{47}{section.11.7}
-\contentsline {section}{\numberline {11.8}Deducci\'on de la Funci\'on de Supervivencia}{48}{section.11.8}
-\contentsline {section}{\numberline {11.9}Ejemplo de C\'alculo}{48}{section.11.9}
-\contentsline {section}{\numberline {11.10}Conclusi\'on}{48}{section.11.10}
-\contentsline {chapter}{\numberline {12}Funci\'on de Supervivencia y Funci\'on de Riesgo}{49}{chapter.12}
-\contentsline {section}{\numberline {12.1}Introducci\'on}{49}{section.12.1}
-\contentsline {section}{\numberline {12.2}Funci\'on de Supervivencia}{49}{section.12.2}
-\contentsline {subsection}{\numberline {12.2.1}Propiedades de la Funci\'on de Supervivencia}{49}{subsection.12.2.1}
-\contentsline {subsection}{\numberline {12.2.2}Derivaci\'on de $S(t)$}{49}{subsection.12.2.2}
-\contentsline {subsection}{\numberline {12.2.3}Ejemplo de C\IeC {\'a}lculo de $S(t)$}{50}{subsection.12.2.3}
-\contentsline {section}{\numberline {12.3}Funci\'on de Riesgo}{50}{section.12.3}
-\contentsline {subsection}{\numberline {12.3.1}Relaci\'on entre $\lambda (t)$ y $f(t)$}{50}{subsection.12.3.1}
-\contentsline {subsection}{\numberline {12.3.2}Derivaci\'on de $\lambda (t)$}{50}{subsection.12.3.2}
-\contentsline {section}{\numberline {12.4}Relaci\'on entre Funci\'on de Supervivencia y Funci\'on de Riesgo}{50}{section.12.4}
-\contentsline {subsection}{\numberline {12.4.1}Deducci\'on de la Relaci\'on}{51}{subsection.12.4.1}
-\contentsline {section}{\numberline {12.5}Interpretaci\'on de la Funci\'on de Riesgo}{51}{section.12.5}
-\contentsline {subsection}{\numberline {12.5.1}Ejemplo de C\'alculo de $\lambda (t)$}{51}{subsection.12.5.1}
-\contentsline {section}{\numberline {12.6}Funciones de Riesgo Acumulada y Media Residual}{51}{section.12.6}
-\contentsline {section}{\numberline {12.7}Ejemplo de C\'alculo de Funci\'on de Riesgo Acumulada y Vida Media Residual}{52}{section.12.7}
-\contentsline {section}{\numberline {12.8}Conclusi\'on}{52}{section.12.8}
-\contentsline {chapter}{\numberline {13}Estimador de Kaplan-Meier}{53}{chapter.13}
-\contentsline {section}{\numberline {13.1}Introducci\'on}{53}{section.13.1}
-\contentsline {section}{\numberline {13.2}Definici\'on del Estimador de Kaplan-Meier}{53}{section.13.2}
-\contentsline {section}{\numberline {13.3}Propiedades del Estimador de Kaplan-Meier}{53}{section.13.3}
-\contentsline {subsection}{\numberline {13.3.1}Funci\'on Escalonada}{53}{subsection.13.3.1}
-\contentsline {subsection}{\numberline {13.3.2}Manejo de Datos Censurados}{54}{subsection.13.3.2}
-\contentsline {subsection}{\numberline {13.3.3}Estimaci\'on No Param\'etrica}{54}{subsection.13.3.3}
-\contentsline {section}{\numberline {13.4}Deducci\'on del Estimador de Kaplan-Meier}{54}{section.13.4}
-\contentsline {subsection}{\numberline {13.4.1}Probabilidad Condicional}{54}{subsection.13.4.1}
-\contentsline {subsection}{\numberline {13.4.2}Producto de Probabilidades Condicionales}{54}{subsection.13.4.2}
-\contentsline {section}{\numberline {13.5}Ejemplo de C\'alculo}{54}{section.13.5}
-\contentsline {section}{\numberline {13.6}Intervalos de Confianza para el Estimador de Kaplan-Meier}{55}{section.13.6}
-\contentsline {section}{\numberline {13.7}Transformaci\'on Logar\'itmica Inversa}{55}{section.13.7}
-\contentsline {section}{\numberline {13.8}C\'alculo Detallado de Intervalos de Confianza}{55}{section.13.8}
-\contentsline {section}{\numberline {13.9}Ejemplo de Intervalo de Confianza}{56}{section.13.9}
-\contentsline {section}{\numberline {13.10}Interpretaci\'on del Estimador de Kaplan-Meier}{56}{section.13.10}
-\contentsline {section}{\numberline {13.11}Conclusi\'on}{56}{section.13.11}
-\contentsline {chapter}{\numberline {14}Comparaci\'on de Curvas de Supervivencia}{57}{chapter.14}
-\contentsline {section}{\numberline {14.1}Introducci\'on}{57}{section.14.1}
-\contentsline {section}{\numberline {14.2}Test de Log-rank}{57}{section.14.2}
-\contentsline {subsection}{\numberline {14.2.1}F\'ormula del Test de Log-rank}{57}{subsection.14.2.1}
-\contentsline {subsection}{\numberline {14.2.2}C\IeC {\'a}lculo de $E_i$ y $V_i$}{57}{subsection.14.2.2}
-\contentsline {section}{\numberline {14.3}Ejemplo de C\'alculo del Test de Log-rank}{58}{section.14.3}
-\contentsline {section}{\numberline {14.4}Interpretaci\'on del Test de Log-rank}{58}{section.14.4}
-\contentsline {section}{\numberline {14.5}Pruebas Alternativas}{58}{section.14.5}
-\contentsline {section}{\numberline {14.6}Conclusi\'on}{58}{section.14.6}
-\contentsline {chapter}{\numberline {15}Modelos de Riesgos Proporcionales de Cox}{59}{chapter.15}
-\contentsline {section}{\numberline {15.1}Introducci\'on}{59}{section.15.1}
-\contentsline {section}{\numberline {15.2}Definici\'on del Modelo de Cox}{59}{section.15.2}
-\contentsline {section}{\numberline {15.3}Supuesto de Proporcionalidad de Riesgos}{59}{section.15.3}
-\contentsline {section}{\numberline {15.4}Estimaci\'on de los Par\'ametros}{59}{section.15.4}
-\contentsline {subsection}{\numberline {15.4.1}Funci\'on de Log-Verosimilitud Parcial}{60}{subsection.15.4.1}
-\contentsline {subsection}{\numberline {15.4.2}Derivadas Parciales y Maximizaci\'on}{60}{subsection.15.4.2}
-\contentsline {section}{\numberline {15.5}Interpretaci\'on de los Coeficientes}{60}{section.15.5}
-\contentsline {section}{\numberline {15.6}Evaluaci\'on del Modelo}{60}{section.15.6}
-\contentsline {subsection}{\numberline {15.6.1}Residuos de Schoenfeld}{60}{subsection.15.6.1}
-\contentsline {subsection}{\numberline {15.6.2}Curvas de Supervivencia Ajustadas}{60}{subsection.15.6.2}
-\contentsline {section}{\numberline {15.7}Ejemplo de Aplicaci\'on del Modelo de Cox}{60}{section.15.7}
-\contentsline {section}{\numberline {15.8}Conclusi\'on}{61}{section.15.8}
-\contentsline {chapter}{\numberline {16}Diagn\'ostico y Validaci\'on de Modelos de Cox}{62}{chapter.16}
-\contentsline {section}{\numberline {16.1}Introducci\'on}{62}{section.16.1}
-\contentsline {section}{\numberline {16.2}Supuesto de Proporcionalidad de Riesgos}{62}{section.16.2}
-\contentsline {subsection}{\numberline {16.2.1}Residuos de Schoenfeld}{62}{subsection.16.2.1}
-\contentsline {section}{\numberline {16.3}Bondad de Ajuste}{62}{section.16.3}
-\contentsline {subsection}{\numberline {16.3.1}Curvas de Supervivencia Ajustadas}{62}{subsection.16.3.1}
-\contentsline {subsection}{\numberline {16.3.2}Estad\'isticas de Ajuste Global}{63}{subsection.16.3.2}
-\contentsline {section}{\numberline {16.4}Diagn\'ostico de Influencia}{63}{section.16.4}
-\contentsline {subsection}{\numberline {16.4.1}Residuos de Deviance}{63}{subsection.16.4.1}
-\contentsline {subsection}{\numberline {16.4.2}Residuos de Martingala}{63}{subsection.16.4.2}
-\contentsline {section}{\numberline {16.5}Ejemplo de Diagn\'ostico}{63}{section.16.5}
-\contentsline {section}{\numberline {16.6}Conclusi\'on}{63}{section.16.6}
-\contentsline {chapter}{\numberline {17}Modelos Acelerados de Fallos}{64}{chapter.17}
-\contentsline {section}{\numberline {17.1}Introducci\'on}{64}{section.17.1}
-\contentsline {section}{\numberline {17.2}Definici\'on del Modelo AFT}{64}{section.17.2}
-\contentsline {subsection}{\numberline {17.2.1}Transformaci\'on Logar\'itmica}{64}{subsection.17.2.1}
-\contentsline {section}{\numberline {17.3}Estimaci\'on de los Par\IeC {\'a}metros}{64}{section.17.3}
-\contentsline {subsection}{\numberline {17.3.1}Funci\'on de Log-Verosimilitud}{65}{subsection.17.3.1}
-\contentsline {subsection}{\numberline {17.3.2}Maximizaci\'on de la Verosimilitud}{65}{subsection.17.3.2}
-\contentsline {section}{\numberline {17.4}Distribuciones Comunes en Modelos AFT}{65}{section.17.4}
-\contentsline {subsection}{\numberline {17.4.1}Modelo Exponencial AFT}{65}{subsection.17.4.1}
-\contentsline {subsection}{\numberline {17.4.2}Modelo Weibull AFT}{65}{subsection.17.4.2}
-\contentsline {section}{\numberline {17.5}Interpretaci\'on de los Coeficientes}{65}{section.17.5}
-\contentsline {section}{\numberline {17.6}Ejemplo de Aplicaci\'on del Modelo AFT}{66}{section.17.6}
-\contentsline {section}{\numberline {17.7}Conclusi\'on}{66}{section.17.7}
-\contentsline {chapter}{\numberline {18}An\'alisis Multivariado de Supervivencia}{67}{chapter.18}
-\contentsline {section}{\numberline {18.1}Introducci\'on}{67}{section.18.1}
-\contentsline {section}{\numberline {18.2}Modelo de Cox Multivariado}{67}{section.18.2}
-\contentsline {subsection}{\numberline {18.2.1}Estimaci\'on de los Par\IeC {\'a}metros}{67}{subsection.18.2.1}
-\contentsline {section}{\numberline {18.3}Modelo AFT Multivariado}{67}{section.18.3}
-\contentsline {subsection}{\numberline {18.3.1}Estimaci\'on de los Par\'ametros}{67}{subsection.18.3.1}
-\contentsline {section}{\numberline {18.4}Interacci\'on y Efectos No Lineales}{67}{section.18.4}
-\contentsline {subsection}{\numberline {18.4.1}Interacciones}{68}{subsection.18.4.1}
-\contentsline {subsection}{\numberline {18.4.2}Efectos No Lineales}{68}{subsection.18.4.2}
-\contentsline {section}{\numberline {18.5}Selecci\'on de Variables}{68}{section.18.5}
-\contentsline {subsection}{\numberline {18.5.1}Regresi\'on Hacia Atr\'as}{68}{subsection.18.5.1}
-\contentsline {subsection}{\numberline {18.5.2}Regresi\'on Hacia Adelante}{68}{subsection.18.5.2}
-\contentsline {subsection}{\numberline {18.5.3}Criterios de Informaci\'on}{68}{subsection.18.5.3}
-\contentsline {section}{\numberline {18.6}Ejemplo de An\'alisis Multivariado}{68}{section.18.6}
-\contentsline {section}{\numberline {18.7}Conclusi\'on}{68}{section.18.7}
-\contentsline {chapter}{\numberline {19}Supervivencia en Datos Complicados}{69}{chapter.19}
-\contentsline {section}{\numberline {19.1}Introducci\'on}{69}{section.19.1}
-\contentsline {section}{\numberline {19.2}Censura por Intervalo}{69}{section.19.2}
-\contentsline {subsection}{\numberline {19.2.1}Modelo para Datos Censurados por Intervalo}{69}{subsection.19.2.1}
-\contentsline {section}{\numberline {19.3}Datos Truncados}{69}{section.19.3}
-\contentsline {subsection}{\numberline {19.3.1}Modelo para Datos Truncados}{69}{subsection.19.3.1}
-\contentsline {section}{\numberline {19.4}An\'alisis de Competing Risks}{70}{section.19.4}
-\contentsline {subsection}{\numberline {19.4.1}Modelo de Competing Risks}{70}{subsection.19.4.1}
-\contentsline {section}{\numberline {19.5}M\'etodos de Imputaci\'on}{70}{section.19.5}
-\contentsline {subsection}{\numberline {19.5.1}Imputaci\'on M\'ultiple}{70}{subsection.19.5.1}
-\contentsline {section}{\numberline {19.6}Ejemplo de An\'alisis con Datos Complicados}{70}{section.19.6}
-\contentsline {section}{\numberline {19.7}Conclusi\'on}{70}{section.19.7}
-\contentsline {chapter}{\numberline {20}Proyecto Final y Revisi\'on}{71}{chapter.20}
-\contentsline {section}{\numberline {20.1}Introducci\'on}{71}{section.20.1}
-\contentsline {section}{\numberline {20.2}Desarrollo del Proyecto}{71}{section.20.2}
-\contentsline {section}{\numberline {20.3}Revisi\'on de Conceptos Clave}{71}{section.20.3}
-\contentsline {section}{\numberline {20.4}Ejemplo de Proyecto Final}{72}{section.20.4}
-\contentsline {subsection}{\numberline {20.4.1}Definici\'on del Problema}{72}{subsection.20.4.1}
-\contentsline {subsection}{\numberline {20.4.2}Descripci\'on de los Datos}{72}{subsection.20.4.2}
-\contentsline {subsection}{\numberline {20.4.3}An\'alisis Exploratorio}{72}{subsection.20.4.3}
-\contentsline {subsection}{\numberline {20.4.4}Ajuste del Modelo}{72}{subsection.20.4.4}
-\contentsline {subsection}{\numberline {20.4.5}Diagn\'ostico del Modelo}{72}{subsection.20.4.5}
-\contentsline {subsection}{\numberline {20.4.6}Interpretaci\'on de Resultados}{72}{subsection.20.4.6}
-\contentsline {subsection}{\numberline {20.4.7}Conclusiones}{72}{subsection.20.4.7}
-\contentsline {section}{\numberline {20.5}Conclusi\'on}{72}{section.20.5}
-\contentsline {part}{III\hspace {1em}AP\IeC {\'E}NDICES}{73}{part.3}
-\contentsline {chapter}{\numberline {21}IMPLEMENTACIONES NUM\'ERICAS}{74}{chapter.21}
-\contentsline {section}{\numberline {21.1}D\'ia 1: Regresi\IeC {\'o}n Log\IeC {\'\i }stica}{74}{section.21.1}
-\contentsline {subsection}{\numberline {21.1.1}Ejemplo de Regresi\IeC {\'o}n Log\IeC {\'\i }stica en R}{74}{subsection.21.1.1}
-\contentsline {subsection}{\numberline {21.1.2}Aplicaci\IeC {\'o}n a Datos de C\IeC {\'a}ncer - Parte I}{76}{subsection.21.1.2}
-\contentsline {subsubsection}{Ejemplo Titanic}{78}{subsection.21.1.2}
-\contentsline {subsection}{\numberline {21.1.3}Simulaci\'on de Datos de C\IeC {\'a}ncer - Parte II}{80}{subsection.21.1.3}
-\contentsline {subsection}{\numberline {21.1.4}Simulaci\'on de Datos de C\IeC {\'a}ncer - Parte III}{82}{subsection.21.1.4}
-\contentsline {chapter}{\numberline {22}Bibliograf\IeC {\'\i }a}{86}{chapter.22}
+\contentsline {part}{I\hspace {1em}INTRODUCCION}{11}{part.1}
+\contentsline {chapter}{\numberline {1}Introducci\'on}{12}{chapter.1}
+\contentsline {section}{\numberline {1.1}Descripci\'on del curso}{12}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Presentaci\'on}{12}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Parte I. Introducci\'on a la Bioestad\'istica}{12}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Parte II. Estad\'istica descriptiva}{12}{subsection.1.1.3}
+\contentsline {subsection}{\numberline {1.1.4}Parte III. Estad\'istica inferencial}{13}{subsection.1.1.4}
+\contentsline {section}{\numberline {1.2}Introducci\'on}{14}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Definici\'on de Estad\'istica}{14}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Utilidad e Importancia}{14}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Historia de la Estad\'istica}{14}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}Etapas de Desarrollo de la Estad\'istica}{16}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Divisi\'on de la Estad\'istica}{17}{subsection.1.2.5}
+\contentsline {subsection}{\numberline {1.2.6}Estad\'istica Inferencial}{17}{subsection.1.2.6}
+\contentsline {subsection}{\numberline {1.2.7}M\'etodo Estad\'istico}{18}{subsection.1.2.7}
+\contentsline {subsection}{\numberline {1.2.8}Errores Estad\'isticos Comunes}{18}{subsection.1.2.8}
+\contentsline {subsection}{\numberline {1.2.9}T\'erminos comunes utilizados en Estad\'istica}{20}{subsection.1.2.9}
+\contentsline {subsection}{\numberline {1.2.10}Muestreo:}{22}{subsection.1.2.10}
+\contentsline {subsection}{\numberline {1.2.11}Un sesgo del usuario}{23}{subsection.1.2.11}
+\contentsline {subsection}{\numberline {1.2.12}Supuestos falsos}{23}{subsection.1.2.12}
+\contentsline {section}{\numberline {1.3}Muestreo}{23}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Un sesgo del usuario}{25}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Supuestos falsos}{25}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}2. Pruebas de Hip\IeC {\'o}tesis}{25}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}2.1 Tipos de errores}{25}{subsection.1.4.1}
+\contentsline {section}{\numberline {1.5}2.2 Muestras grandes: una media poblacional}{27}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}2.2.1 C\IeC {\'a}lculo de valor $p$}{27}{subsection.1.5.1}
+\contentsline {section}{\numberline {1.6}2. Pruebas de Hip\'otesis}{27}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}2.1 Tipos de errores}{27}{subsection.1.6.1}
+\contentsline {section}{\numberline {1.7}2.2 Muestras grandes: una media poblacional}{29}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}2.2.1 C\'alculo de valor $p$}{29}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}2.2.2 Prueba de hip\'otesis para la diferencia entre dos medias poblacionales}{31}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.3}2.2.3 Prueba de Hip\'otesis para una Proporci\'on Binomial}{32}{subsection.1.7.3}
+\contentsline {subsection}{\numberline {1.7.4}2.2.4 Prueba de Hip\'otesis diferencia entre dos Proporciones Binomiales}{33}{subsection.1.7.4}
+\contentsline {section}{\numberline {1.8}2.3 Muestras Peque\~nas}{34}{section.1.8}
+\contentsline {subsection}{\numberline {1.8.1}2.3.1 Una media poblacional}{34}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {1.8.2}2.3.2 Diferencia entre dos medias poblacionales: M.A.I.}{35}{subsection.1.8.2}
+\contentsline {subsection}{\numberline {1.8.3}2.3.3 Diferencia entre dos medias poblacionales: Diferencias Pareadas}{35}{subsection.1.8.3}
+\contentsline {subsection}{\numberline {1.8.4}2.3.4 Inferencias con respecto a la Varianza Poblacional}{36}{subsection.1.8.4}
+\contentsline {subsection}{\numberline {1.8.5}2.3.5 Comparaci\'on de dos varianzas poblacionales}{36}{subsection.1.8.5}
+\contentsline {section}{\numberline {1.9}2. Pruebas de Hip\'otesis}{36}{section.1.9}
+\contentsline {subsection}{\numberline {1.9.1}2.1 Tipos de errores}{36}{subsection.1.9.1}
+\contentsline {section}{\numberline {1.10}2.2 Muestras grandes: una media poblacional}{38}{section.1.10}
+\contentsline {subsection}{\numberline {1.10.1}2.2.1 C\'alculo de valor $p$}{38}{subsection.1.10.1}
+\contentsline {subsection}{\numberline {1.10.2}2.2.2 Prueba de hip\'otesis para la diferencia entre dos medias poblacionales}{41}{subsection.1.10.2}
+\contentsline {subsection}{\numberline {1.10.3}2.2.3 Prueba de Hip\'otesis para una Proporci\'on Binomial}{42}{subsection.1.10.3}
+\contentsline {subsection}{\numberline {1.10.4}2.2.4 Prueba de Hip\'otesis diferencia entre dos Proporciones Binomiales}{42}{subsection.1.10.4}
+\contentsline {section}{\numberline {1.11}2.3 Muestras Peque\~nas}{43}{section.1.11}
+\contentsline {subsection}{\numberline {1.11.1}2.3.1 Una media poblacional}{43}{subsection.1.11.1}
+\contentsline {subsection}{\numberline {1.11.2}2.3.2 Diferencia entre dos medias poblacionales: M.A.I.}{44}{subsection.1.11.2}
+\contentsline {subsection}{\numberline {1.11.3}2.3.3 Diferencia entre dos medias poblacionales: Diferencias Pareadas}{44}{subsection.1.11.3}
+\contentsline {subsection}{\numberline {1.11.4}2.3.4 Inferencias con respecto a la Varianza Poblacional}{45}{subsection.1.11.4}
+\contentsline {subsection}{\numberline {1.11.5}2.3.5 Comparaci\'on de dos varianzas poblacionales}{45}{subsection.1.11.5}
+\contentsline {section}{\numberline {1.12}Ejercicios}{46}{section.1.12}
+\contentsline {section}{\numberline {1.13}Pruebas de Hip\'otesis}{46}{section.1.13}
+\contentsline {subsection}{\numberline {1.13.1}Tipos de errores}{46}{subsection.1.13.1}
+\contentsline {section}{\numberline {1.14}Muestras grandes: una media poblacional}{47}{section.1.14}
+\contentsline {subsection}{\numberline {1.14.1}C\'alculo de valor $p$}{47}{subsection.1.14.1}
+\contentsline {section}{\numberline {1.15}Pruebas de Hip\'otesis}{49}{section.1.15}
+\contentsline {subsection}{\numberline {1.15.1}Tipos de errores}{49}{subsection.1.15.1}
+\contentsline {section}{\numberline {1.16}Pruebas de Hip\'otesis}{49}{section.1.16}
+\contentsline {subsection}{\numberline {1.16.1}Tipos de errores}{49}{subsection.1.16.1}
+\contentsline {section}{\numberline {1.17}Muestras grandes: una media poblacional}{51}{section.1.17}
+\contentsline {subsection}{\numberline {1.17.1}C\'alculo de valor $p$}{51}{subsection.1.17.1}
+\contentsline {section}{\numberline {1.18}Estimaci\'on por intervalos}{52}{section.1.18}
+\contentsline {section}{\numberline {1.19}Intervalos de confianza para dos muestras}{54}{section.1.19}
+\contentsline {section}{\numberline {1.20}Intervalos de confianza para raz\'on de Varianzas}{56}{section.1.20}
+\contentsline {section}{\numberline {1.21}Intervalos de confianza para diferencia de proporciones}{57}{section.1.21}
+\contentsline {section}{\numberline {1.22}An\'alisis de Regresion Lineal (RL)}{58}{section.1.22}
+\contentsline {section}{\numberline {1.23}An\'alisis de Regresion Lineal (RL)}{58}{section.1.23}
+\contentsline {subsection}{\numberline {1.23.1}Regresi\'on Lineal Simple (RLS)}{58}{subsection.1.23.1}
+\contentsline {subsection}{\numberline {1.23.2}Regresi\'on Lineal Simple (RLS)}{59}{subsection.1.23.2}
+\contentsline {section}{\numberline {1.24}3. An\'alisis de Regresion Lineal (RL)}{61}{section.1.24}
+\contentsline {subsection}{\numberline {1.24.1}3.1 Regresi\'on Lineal Simple (RLS)}{61}{subsection.1.24.1}
+\contentsline {subsection}{\numberline {1.24.2}3.2 M\'etodo de M\'inimos Cuadrados}{61}{subsection.1.24.2}
+\contentsline {subsection}{\numberline {1.24.3}3.3 Propiedades de los Estimadores $\mathaccentV {hat}05E{\beta }_{0}$ y $\mathaccentV {hat}05E{\beta }_{1}$}{62}{subsection.1.24.3}
+\contentsline {subsection}{\numberline {1.24.4}3.4 Prueba de Hip\'otesis en RLS}{64}{subsection.1.24.4}
+\contentsline {subsection}{\numberline {1.24.5}Estimaci\'on de Intervalos en RLS}{66}{subsection.1.24.5}
+\contentsline {section}{\numberline {1.25}3. An\'alisis de Regresion Lineal (RL)}{66}{section.1.25}
+\contentsline {subsection}{\numberline {1.25.1}3.1 Regresi\'on Lineal Simple (RLS)}{67}{subsection.1.25.1}
+\contentsline {subsection}{\numberline {1.25.2}3.2 M\'etodo de M\'inimos Cuadrados}{67}{subsection.1.25.2}
+\contentsline {subsection}{\numberline {1.25.3}3.3 Propiedades de los Estimadores $\mathaccentV {hat}05E{\beta }_{0}$ y $\mathaccentV {hat}05E{\beta }_{1}$}{68}{subsection.1.25.3}
+\contentsline {subsection}{\numberline {1.25.4}3.4 Prueba de Hip\'otesis en RLS}{69}{subsection.1.25.4}
+\contentsline {subsection}{\numberline {1.25.5}Estimaci\'on de Intervalos en RLS}{71}{subsection.1.25.5}
+\contentsline {subsection}{\numberline {1.25.6}Predicci\'on}{71}{subsection.1.25.6}
+\contentsline {subsection}{\numberline {1.25.7}Prueba de falta de ajuste}{72}{subsection.1.25.7}
+\contentsline {subsection}{\numberline {1.25.8}Coeficiente de Determinaci\'on}{72}{subsection.1.25.8}
+\contentsline {part}{II\hspace {1em}PRIMERA PARTE: Regresi\'on Log\'istica}{73}{part.2}
+\contentsline {chapter}{\numberline {2}D\'ia 1: Introducci\'on}{74}{chapter.2}
+\contentsline {section}{\numberline {2.1}Conceptos B\IeC {\'a}sicos}{74}{section.2.1}
+\contentsline {section}{\numberline {2.2}Regresi\IeC {\'o}n Lineal}{74}{section.2.2}
+\contentsline {section}{\numberline {2.3}Regresi\IeC {\'o}n Log\IeC {\'\i }stica}{75}{section.2.3}
+\contentsline {section}{\numberline {2.4}M\IeC {\'e}todo de M\IeC {\'a}xima Verosimilitud}{75}{section.2.4}
+\contentsline {section}{\numberline {2.5}M\IeC {\'e}todo de Newton-Raphson}{77}{section.2.5}
+\contentsline {section}{\numberline {2.6}Espec\'ificando}{78}{section.2.6}
+\contentsline {chapter}{\numberline {3}Elementos de Probabilidad}{81}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introducci\'on}{81}{section.3.1}
+\contentsline {section}{\numberline {3.2}Probabilidad}{81}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Espacio Muestral y Eventos}{81}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Definiciones de Probabilidad}{81}{subsection.3.2.2}
+\contentsline {subsubsection}{Probabilidad Cl\'asica}{81}{subsection.3.2.2}
+\contentsline {subsubsection}{Probabilidad Frecuentista}{81}{subsection.3.2.2}
+\contentsline {subsubsection}{Probabilidad Bayesiana}{82}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Estad\'istica Bayesiana}{82}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Prior y Posterior}{82}{subsection.3.3.1}
+\contentsline {subsubsection}{Distribuci\'on Prior}{82}{subsection.3.3.1}
+\contentsline {subsubsection}{Verosimilitud}{82}{subsection.3.3.1}
+\contentsline {subsubsection}{Distribuci\'on Posterior}{82}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Distribuciones de Probabilidad}{82}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Distribuciones Discretas}{82}{subsection.3.4.1}
+\contentsline {subsubsection}{Distribuci\'on Binomial}{83}{subsection.3.4.1}
+\contentsline {subsubsection}{Distribuci\'on de Poisson}{83}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Distribuciones Continuas}{83}{subsection.3.4.2}
+\contentsline {subsubsection}{Distribuci\'on Normal}{83}{subsection.3.4.2}
+\contentsline {subsubsection}{Distribuci\'on Exponencial}{84}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Estad\'istica Descriptiva}{84}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Medidas de Tendencia Central}{84}{subsection.3.5.1}
+\contentsline {subsubsection}{Media}{84}{subsection.3.5.1}
+\contentsline {subsubsection}{Mediana}{84}{subsection.3.5.1}
+\contentsline {subsubsection}{Moda}{84}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Medidas de Dispersi\'on}{84}{subsection.3.5.2}
+\contentsline {subsubsection}{Rango}{84}{subsection.3.5.2}
+\contentsline {subsubsection}{Varianza}{84}{subsection.3.5.2}
+\contentsline {subsubsection}{Desviaci\'on Est\'andar}{85}{subsection.3.5.2}
+\contentsline {section}{\numberline {3.6}Inferencia Estad\'istica}{85}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Estimaci\'on de Par\'ametros}{85}{subsection.3.6.1}
+\contentsline {subsubsection}{Estimador Puntual}{85}{subsection.3.6.1}
+\contentsline {subsubsection}{Propiedades de los Estimadores Puntuales}{85}{subsection.3.6.1}
+\contentsline {subsubsection}{Estimador por Intervalo}{85}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Prueba de Hip\'otesis}{85}{subsection.3.6.2}
+\contentsline {subsubsection}{Hip\'otesis Nula y Alternativa}{86}{subsection.3.6.2}
+\contentsline {subsubsection}{Nivel de Significancia}{86}{subsection.3.6.2}
+\contentsline {subsubsection}{Estad\'istico de Prueba}{86}{subsection.3.6.2}
+\contentsline {subsubsection}{P-valor}{86}{subsection.3.6.2}
+\contentsline {subsubsection}{Tipos de Errores}{86}{subsection.3.6.2}
+\contentsline {subsubsection}{Tabla de Errores en la Prueba de Hip\'otesis}{86}{subsection.3.6.2}
+\contentsline {chapter}{\numberline {4}Matem\'aticas Detr\'as de la Regresi\'on Log\IeC {\'\i }stica}{87}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introducci\'on}{87}{section.4.1}
+\contentsline {section}{\numberline {4.2}Funci\'on Log\'istica}{87}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Definici\'on}{87}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Propiedades}{87}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Funci\'on de Verosimilitud}{87}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Definici\'on}{88}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Funci\'on de Log-Verosimilitud}{88}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Estimaci\'on de Coeficientes}{88}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Gradiente y Hessiana}{88}{subsection.4.4.1}
+\contentsline {subsubsection}{Gradiente}{88}{subsection.4.4.1}
+\contentsline {subsubsection}{Hessiana}{88}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Algoritmo Newton-Raphson}{88}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Validaci\'on del Modelo}{89}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Curva ROC y AUC}{89}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Matriz de Confusi\'on}{89}{subsection.4.5.2}
+\contentsline {chapter}{\numberline {5}Preparaci\'on de Datos y Selecci\'on de Variables}{90}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introducci\'on}{90}{section.5.1}
+\contentsline {section}{\numberline {5.2}Importancia de la Preparaci\'on de Datos}{90}{section.5.2}
+\contentsline {section}{\numberline {5.3}Limpieza de Datos}{90}{section.5.3}
+\contentsline {section}{\numberline {5.4}Tratamiento de Datos Faltantes}{90}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Imputaci\'on de la Media}{91}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.5}Codificaci\'on de Variables Categ\'oricas}{91}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Codificaci\'on One-Hot}{91}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Codificaci\'on Ordinal}{91}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Selecci\'on de Variables}{91}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}M\'etodos de Filtrado}{91}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}M\'etodos de Wrapper}{91}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}M\'etodos Basados en Modelos}{92}{subsection.5.6.3}
+\contentsline {subsubsection}{Regresi\'on Lasso}{92}{subsection.5.6.3}
+\contentsline {subsubsection}{Regresi\'on Ridge}{92}{subsection.5.6.3}
+\contentsline {section}{\numberline {5.7}Implementaci\'on en R}{92}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}Limpieza de Datos}{92}{subsection.5.7.1}
+\contentsline {subsection}{\numberline {5.7.2}Codificaci\'on de Variables Categ\'oricas}{92}{subsection.5.7.2}
+\contentsline {subsection}{\numberline {5.7.3}Selecci\'on de Variables}{92}{subsection.5.7.3}
+\contentsline {chapter}{\numberline {6}Evaluaci\'on del Modelo y Validaci\'on Cruzada}{94}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introducci\IeC {\'o}n}{94}{section.6.1}
+\contentsline {section}{\numberline {6.2}M\IeC {\'e}tricas de Evaluaci\IeC {\'o}n del Modelo}{94}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Curva ROC y AUC}{94}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Matriz de Confusi\IeC {\'o}n}{94}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Precisi\IeC {\'o}n, Recall y F1-Score}{95}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Log-Loss}{95}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Validaci\IeC {\'o}n Cruzada}{95}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}K-Fold Cross-Validation}{95}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Leave-One-Out Cross-Validation (LOOCV)}{95}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Ajuste y Sobreajuste del Modelo}{95}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Sobreajuste}{95}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Subajuste}{95}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Regularizaci\IeC {\'o}n}{95}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.5}Implementaci\IeC {\'o}n en R}{96}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Evaluaci\IeC {\'o}n del Modelo}{96}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Validaci\IeC {\'o}n Cruzada}{96}{subsection.6.5.2}
+\contentsline {chapter}{\numberline {7}Diagn\'ostico del Modelo y Ajuste de Par\'ametros}{97}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introducci\'on}{97}{section.7.1}
+\contentsline {section}{\numberline {7.2}Diagn\'ostico del Modelo}{97}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Residuos}{97}{subsection.7.2.1}
+\contentsline {subsubsection}{Residuos Estudiantizados}{97}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Influencia}{97}{subsection.7.2.2}
+\contentsline {subsubsection}{Distancia de Cook}{97}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Multicolinealidad}{98}{subsection.7.2.3}
+\contentsline {subsubsection}{Factor de Inflaci\'on de la Varianza (VIF)}{98}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Ajuste de Par\'ametros}{98}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Grid Search}{98}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Random Search}{98}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Bayesian Optimization}{98}{subsection.7.3.3}
+\contentsline {section}{\numberline {7.4}Implementaci\'on en R}{98}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Diagn\'ostico del Modelo}{98}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Ajuste de Par\'ametros}{98}{subsection.7.4.2}
+\contentsline {chapter}{\numberline {8}Interpretaci\'on de los Resultados}{100}{chapter.8}
+\contentsline {section}{\numberline {8.1}Introducci\'on}{100}{section.8.1}
+\contentsline {section}{\numberline {8.2}Coeficientes de Regresi\'on Log\'istica}{100}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}Interpretaci\'on de los Coeficientes}{100}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}Signo de los Coeficientes}{100}{subsection.8.2.2}
+\contentsline {section}{\numberline {8.3}Odds Ratios}{100}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}C\'alculo de las Odds Ratios}{100}{subsection.8.3.1}
+\contentsline {subsection}{\numberline {8.3.2}Interpretaci\'on de las Odds Ratios}{101}{subsection.8.3.2}
+\contentsline {section}{\numberline {8.4}Intervalos de Confianza}{101}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}C\'alculo de los Intervalos de Confianza}{101}{subsection.8.4.1}
+\contentsline {section}{\numberline {8.5}Significancia Estad\'istica}{101}{section.8.5}
+\contentsline {subsection}{\numberline {8.5.1}Prueba de Hip\'otesis}{101}{subsection.8.5.1}
+\contentsline {subsection}{\numberline {8.5.2}P-valor}{101}{subsection.8.5.2}
+\contentsline {section}{\numberline {8.6}Implementaci\'on en R}{101}{section.8.6}
+\contentsline {subsection}{\numberline {8.6.1}C\'alculo de Coeficientes y Odds Ratios}{101}{subsection.8.6.1}
+\contentsline {subsection}{\numberline {8.6.2}Intervalos de Confianza}{102}{subsection.8.6.2}
+\contentsline {subsection}{\numberline {8.6.3}P-valores y Significancia Estad\'istica}{102}{subsection.8.6.3}
+\contentsline {chapter}{\numberline {9}Regresi\'on Log\IeC {\'\i }stica Multinomial y An\'alisis de Supervivencia}{103}{chapter.9}
+\contentsline {section}{\numberline {9.1}Introducci\'on}{103}{section.9.1}
+\contentsline {section}{\numberline {9.2}Regresi\'on Log\'istica Multinomial}{103}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}Modelo Multinomial}{103}{subsection.9.2.1}
+\contentsline {subsection}{\numberline {9.2.2}Estimaci\'on de Par\'ametros}{103}{subsection.9.2.2}
+\contentsline {section}{\numberline {9.3}An\'alisis de Supervivencia}{103}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Funci\'on de Supervivencia}{103}{subsection.9.3.1}
+\contentsline {subsection}{\numberline {9.3.2}Modelo de Riesgos Proporcionales de Cox}{104}{subsection.9.3.2}
+\contentsline {section}{\numberline {9.4}Implementaci\'on en R}{104}{section.9.4}
+\contentsline {subsection}{\numberline {9.4.1}Regresi\'on Log\'istica Multinomial}{104}{subsection.9.4.1}
+\contentsline {subsection}{\numberline {9.4.2}An\'alisis de Supervivencia}{104}{subsection.9.4.2}
+\contentsline {chapter}{\numberline {10}Implementaci\'on de Regresi\'on Log\IeC {\'\i }stica en Datos Reales}{105}{chapter.10}
+\contentsline {section}{\numberline {10.1}Introducci\'on}{105}{section.10.1}
+\contentsline {section}{\numberline {10.2}Conjunto de Datos}{105}{section.10.2}
+\contentsline {section}{\numberline {10.3}Preparaci\'on de Datos}{105}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}Carga y Exploraci\'on de Datos}{105}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.3.2}Limpieza de Datos}{105}{subsection.10.3.2}
+\contentsline {subsection}{\numberline {10.3.3}Codificaci\'on de Variables Categ\'oricas}{106}{subsection.10.3.3}
+\contentsline {section}{\numberline {10.4}Divisi\'on de Datos}{106}{section.10.4}
+\contentsline {section}{\numberline {10.5}Entrenamiento del Modelo}{106}{section.10.5}
+\contentsline {section}{\numberline {10.6}Evaluaci\'on del Modelo}{106}{section.10.6}
+\contentsline {section}{\numberline {10.7}Interpretaci\'on de los Resultados}{106}{section.10.7}
+\contentsline {chapter}{\numberline {11}Resumen y Proyecto Final}{107}{chapter.11}
+\contentsline {section}{\numberline {11.1}Resumen de Conceptos Clave}{107}{section.11.1}
+\contentsline {section}{\numberline {11.2}Buenas Pr\'acticas}{107}{section.11.2}
+\contentsline {section}{\numberline {11.3}Proyecto Final}{107}{section.11.3}
+\contentsline {subsection}{\numberline {11.3.1}Selecci\'on del Conjunto de Datos}{107}{subsection.11.3.1}
+\contentsline {subsection}{\numberline {11.3.2}Exploraci\'on y Preparaci\'on de Datos}{108}{subsection.11.3.2}
+\contentsline {subsection}{\numberline {11.3.3}Entrenamiento y Evaluaci\'on del Modelo}{108}{subsection.11.3.3}
+\contentsline {subsection}{\numberline {11.3.4}Interpretaci\'on de Resultados}{108}{subsection.11.3.4}
+\contentsline {subsection}{\numberline {11.3.5}Presentaci\'on del Proyecto}{108}{subsection.11.3.5}
+\contentsline {part}{III\hspace {1em}SEGUNDA PARTE}{109}{part.3}
+\contentsline {chapter}{\numberline {12}Introducci\'on al An\'alisis de Supervivencia}{110}{chapter.12}
+\contentsline {section}{\numberline {12.1}Conceptos B\IeC {\'a}sicos}{110}{section.12.1}
+\contentsline {section}{\numberline {12.2}Definici\'on de Eventos y Tiempos}{110}{section.12.2}
+\contentsline {section}{\numberline {12.3}Censura}{110}{section.12.3}
+\contentsline {section}{\numberline {12.4}Funci\'on de Supervivencia}{110}{section.12.4}
+\contentsline {section}{\numberline {12.5}Funci\'on de Densidad de Probabilidad}{111}{section.12.5}
+\contentsline {section}{\numberline {12.6}Funci\'on de Riesgo}{111}{section.12.6}
+\contentsline {section}{\numberline {12.7}Relaci\'on entre Funci\'on de Supervivencia y Funci\'on de Riesgo}{111}{section.12.7}
+\contentsline {section}{\numberline {12.8}Deducci\'on de la Funci\'on de Supervivencia}{111}{section.12.8}
+\contentsline {section}{\numberline {12.9}Ejemplo de C\'alculo}{112}{section.12.9}
+\contentsline {section}{\numberline {12.10}Conclusi\'on}{112}{section.12.10}
+\contentsline {chapter}{\numberline {13}Funci\'on de Supervivencia y Funci\'on de Riesgo}{113}{chapter.13}
+\contentsline {section}{\numberline {13.1}Introducci\'on}{113}{section.13.1}
+\contentsline {section}{\numberline {13.2}Funci\'on de Supervivencia}{113}{section.13.2}
+\contentsline {subsection}{\numberline {13.2.1}Propiedades de la Funci\'on de Supervivencia}{113}{subsection.13.2.1}
+\contentsline {subsection}{\numberline {13.2.2}Derivaci\'on de $S(t)$}{113}{subsection.13.2.2}
+\contentsline {subsection}{\numberline {13.2.3}Ejemplo de C\IeC {\'a}lculo de $S(t)$}{114}{subsection.13.2.3}
+\contentsline {section}{\numberline {13.3}Funci\'on de Riesgo}{114}{section.13.3}
+\contentsline {subsection}{\numberline {13.3.1}Relaci\'on entre $\lambda (t)$ y $f(t)$}{114}{subsection.13.3.1}
+\contentsline {subsection}{\numberline {13.3.2}Derivaci\'on de $\lambda (t)$}{114}{subsection.13.3.2}
+\contentsline {section}{\numberline {13.4}Relaci\'on entre Funci\'on de Supervivencia y Funci\'on de Riesgo}{114}{section.13.4}
+\contentsline {subsection}{\numberline {13.4.1}Deducci\'on de la Relaci\'on}{115}{subsection.13.4.1}
+\contentsline {section}{\numberline {13.5}Interpretaci\'on de la Funci\'on de Riesgo}{115}{section.13.5}
+\contentsline {subsection}{\numberline {13.5.1}Ejemplo de C\'alculo de $\lambda (t)$}{115}{subsection.13.5.1}
+\contentsline {section}{\numberline {13.6}Funciones de Riesgo Acumulada y Media Residual}{115}{section.13.6}
+\contentsline {section}{\numberline {13.7}Ejemplo de C\'alculo de Funci\'on de Riesgo Acumulada y Vida Media Residual}{115}{section.13.7}
+\contentsline {section}{\numberline {13.8}Conclusi\'on}{116}{section.13.8}
+\contentsline {chapter}{\numberline {14}Estimador de Kaplan-Meier}{117}{chapter.14}
+\contentsline {section}{\numberline {14.1}Introducci\'on}{117}{section.14.1}
+\contentsline {section}{\numberline {14.2}Definici\'on del Estimador de Kaplan-Meier}{117}{section.14.2}
+\contentsline {section}{\numberline {14.3}Propiedades del Estimador de Kaplan-Meier}{117}{section.14.3}
+\contentsline {subsection}{\numberline {14.3.1}Funci\'on Escalonada}{117}{subsection.14.3.1}
+\contentsline {subsection}{\numberline {14.3.2}Manejo de Datos Censurados}{117}{subsection.14.3.2}
+\contentsline {subsection}{\numberline {14.3.3}Estimaci\'on No Param\'etrica}{118}{subsection.14.3.3}
+\contentsline {section}{\numberline {14.4}Deducci\'on del Estimador de Kaplan-Meier}{118}{section.14.4}
+\contentsline {subsection}{\numberline {14.4.1}Probabilidad Condicional}{118}{subsection.14.4.1}
+\contentsline {subsection}{\numberline {14.4.2}Producto de Probabilidades Condicionales}{118}{subsection.14.4.2}
+\contentsline {section}{\numberline {14.5}Ejemplo de C\'alculo}{118}{section.14.5}
+\contentsline {section}{\numberline {14.6}Intervalos de Confianza para el Estimador de Kaplan-Meier}{119}{section.14.6}
+\contentsline {section}{\numberline {14.7}Transformaci\'on Logar\'itmica Inversa}{119}{section.14.7}
+\contentsline {section}{\numberline {14.8}C\'alculo Detallado de Intervalos de Confianza}{119}{section.14.8}
+\contentsline {section}{\numberline {14.9}Ejemplo de Intervalo de Confianza}{119}{section.14.9}
+\contentsline {section}{\numberline {14.10}Interpretaci\'on del Estimador de Kaplan-Meier}{119}{section.14.10}
+\contentsline {section}{\numberline {14.11}Conclusi\'on}{120}{section.14.11}
+\contentsline {chapter}{\numberline {15}Comparaci\'on de Curvas de Supervivencia}{121}{chapter.15}
+\contentsline {section}{\numberline {15.1}Introducci\'on}{121}{section.15.1}
+\contentsline {section}{\numberline {15.2}Test de Log-rank}{121}{section.15.2}
+\contentsline {subsection}{\numberline {15.2.1}F\'ormula del Test de Log-rank}{121}{subsection.15.2.1}
+\contentsline {subsection}{\numberline {15.2.2}C\IeC {\'a}lculo de $E_i$ y $V_i$}{121}{subsection.15.2.2}
+\contentsline {section}{\numberline {15.3}Ejemplo de C\'alculo del Test de Log-rank}{122}{section.15.3}
+\contentsline {section}{\numberline {15.4}Interpretaci\'on del Test de Log-rank}{122}{section.15.4}
+\contentsline {section}{\numberline {15.5}Pruebas Alternativas}{122}{section.15.5}
+\contentsline {section}{\numberline {15.6}Conclusi\'on}{122}{section.15.6}
+\contentsline {chapter}{\numberline {16}Modelos de Riesgos Proporcionales de Cox}{123}{chapter.16}
+\contentsline {section}{\numberline {16.1}Introducci\'on}{123}{section.16.1}
+\contentsline {section}{\numberline {16.2}Definici\'on del Modelo de Cox}{123}{section.16.2}
+\contentsline {section}{\numberline {16.3}Supuesto de Proporcionalidad de Riesgos}{123}{section.16.3}
+\contentsline {section}{\numberline {16.4}Estimaci\'on de los Par\'ametros}{123}{section.16.4}
+\contentsline {subsection}{\numberline {16.4.1}Funci\'on de Log-Verosimilitud Parcial}{124}{subsection.16.4.1}
+\contentsline {subsection}{\numberline {16.4.2}Derivadas Parciales y Maximizaci\'on}{124}{subsection.16.4.2}
+\contentsline {section}{\numberline {16.5}Interpretaci\'on de los Coeficientes}{124}{section.16.5}
+\contentsline {section}{\numberline {16.6}Evaluaci\'on del Modelo}{124}{section.16.6}
+\contentsline {subsection}{\numberline {16.6.1}Residuos de Schoenfeld}{124}{subsection.16.6.1}
+\contentsline {subsection}{\numberline {16.6.2}Curvas de Supervivencia Ajustadas}{124}{subsection.16.6.2}
+\contentsline {section}{\numberline {16.7}Ejemplo de Aplicaci\'on del Modelo de Cox}{124}{section.16.7}
+\contentsline {section}{\numberline {16.8}Conclusi\'on}{124}{section.16.8}
+\contentsline {chapter}{\numberline {17}Diagn\'ostico y Validaci\'on de Modelos de Cox}{125}{chapter.17}
+\contentsline {section}{\numberline {17.1}Introducci\'on}{125}{section.17.1}
+\contentsline {section}{\numberline {17.2}Supuesto de Proporcionalidad de Riesgos}{125}{section.17.2}
+\contentsline {subsection}{\numberline {17.2.1}Residuos de Schoenfeld}{125}{subsection.17.2.1}
+\contentsline {section}{\numberline {17.3}Bondad de Ajuste}{125}{section.17.3}
+\contentsline {subsection}{\numberline {17.3.1}Curvas de Supervivencia Ajustadas}{125}{subsection.17.3.1}
+\contentsline {subsection}{\numberline {17.3.2}Estad\'isticas de Ajuste Global}{125}{subsection.17.3.2}
+\contentsline {section}{\numberline {17.4}Diagn\'ostico de Influencia}{126}{section.17.4}
+\contentsline {subsection}{\numberline {17.4.1}Residuos de Deviance}{126}{subsection.17.4.1}
+\contentsline {subsection}{\numberline {17.4.2}Residuos de Martingala}{126}{subsection.17.4.2}
+\contentsline {section}{\numberline {17.5}Ejemplo de Diagn\'ostico}{126}{section.17.5}
+\contentsline {section}{\numberline {17.6}Conclusi\'on}{126}{section.17.6}
+\contentsline {chapter}{\numberline {18}Modelos Acelerados de Fallos}{127}{chapter.18}
+\contentsline {section}{\numberline {18.1}Introducci\'on}{127}{section.18.1}
+\contentsline {section}{\numberline {18.2}Definici\'on del Modelo AFT}{127}{section.18.2}
+\contentsline {subsection}{\numberline {18.2.1}Transformaci\'on Logar\'itmica}{127}{subsection.18.2.1}
+\contentsline {section}{\numberline {18.3}Estimaci\'on de los Par\IeC {\'a}metros}{127}{section.18.3}
+\contentsline {subsection}{\numberline {18.3.1}Funci\'on de Log-Verosimilitud}{127}{subsection.18.3.1}
+\contentsline {subsection}{\numberline {18.3.2}Maximizaci\'on de la Verosimilitud}{128}{subsection.18.3.2}
+\contentsline {section}{\numberline {18.4}Distribuciones Comunes en Modelos AFT}{128}{section.18.4}
+\contentsline {subsection}{\numberline {18.4.1}Modelo Exponencial AFT}{128}{subsection.18.4.1}
+\contentsline {subsection}{\numberline {18.4.2}Modelo Weibull AFT}{128}{subsection.18.4.2}
+\contentsline {section}{\numberline {18.5}Interpretaci\'on de los Coeficientes}{128}{section.18.5}
+\contentsline {section}{\numberline {18.6}Ejemplo de Aplicaci\'on del Modelo AFT}{128}{section.18.6}
+\contentsline {section}{\numberline {18.7}Conclusi\'on}{129}{section.18.7}
+\contentsline {chapter}{\numberline {19}An\'alisis Multivariado de Supervivencia}{130}{chapter.19}
+\contentsline {section}{\numberline {19.1}Introducci\'on}{130}{section.19.1}
+\contentsline {section}{\numberline {19.2}Modelo de Cox Multivariado}{130}{section.19.2}
+\contentsline {subsection}{\numberline {19.2.1}Estimaci\'on de los Par\IeC {\'a}metros}{130}{subsection.19.2.1}
+\contentsline {section}{\numberline {19.3}Modelo AFT Multivariado}{130}{section.19.3}
+\contentsline {subsection}{\numberline {19.3.1}Estimaci\'on de los Par\'ametros}{130}{subsection.19.3.1}
+\contentsline {section}{\numberline {19.4}Interacci\'on y Efectos No Lineales}{130}{section.19.4}
+\contentsline {subsection}{\numberline {19.4.1}Interacciones}{131}{subsection.19.4.1}
+\contentsline {subsection}{\numberline {19.4.2}Efectos No Lineales}{131}{subsection.19.4.2}
+\contentsline {section}{\numberline {19.5}Selecci\'on de Variables}{131}{section.19.5}
+\contentsline {subsection}{\numberline {19.5.1}Regresi\'on Hacia Atr\'as}{131}{subsection.19.5.1}
+\contentsline {subsection}{\numberline {19.5.2}Regresi\'on Hacia Adelante}{131}{subsection.19.5.2}
+\contentsline {subsection}{\numberline {19.5.3}Criterios de Informaci\'on}{131}{subsection.19.5.3}
+\contentsline {section}{\numberline {19.6}Ejemplo de An\'alisis Multivariado}{131}{section.19.6}
+\contentsline {section}{\numberline {19.7}Conclusi\'on}{131}{section.19.7}
+\contentsline {chapter}{\numberline {20}Supervivencia en Datos Complicados}{132}{chapter.20}
+\contentsline {section}{\numberline {20.1}Introducci\'on}{132}{section.20.1}
+\contentsline {section}{\numberline {20.2}Censura por Intervalo}{132}{section.20.2}
+\contentsline {subsection}{\numberline {20.2.1}Modelo para Datos Censurados por Intervalo}{132}{subsection.20.2.1}
+\contentsline {section}{\numberline {20.3}Datos Truncados}{132}{section.20.3}
+\contentsline {subsection}{\numberline {20.3.1}Modelo para Datos Truncados}{132}{subsection.20.3.1}
+\contentsline {section}{\numberline {20.4}An\'alisis de Competing Risks}{133}{section.20.4}
+\contentsline {subsection}{\numberline {20.4.1}Modelo de Competing Risks}{133}{subsection.20.4.1}
+\contentsline {section}{\numberline {20.5}M\'etodos de Imputaci\'on}{133}{section.20.5}
+\contentsline {subsection}{\numberline {20.5.1}Imputaci\'on M\'ultiple}{133}{subsection.20.5.1}
+\contentsline {section}{\numberline {20.6}Ejemplo de An\'alisis con Datos Complicados}{133}{section.20.6}
+\contentsline {section}{\numberline {20.7}Conclusi\'on}{133}{section.20.7}
+\contentsline {chapter}{\numberline {21}Proyecto Final y Revisi\'on}{134}{chapter.21}
+\contentsline {section}{\numberline {21.1}Introducci\'on}{134}{section.21.1}
+\contentsline {section}{\numberline {21.2}Desarrollo del Proyecto}{134}{section.21.2}
+\contentsline {section}{\numberline {21.3}Revisi\'on de Conceptos Clave}{134}{section.21.3}
+\contentsline {section}{\numberline {21.4}Ejemplo de Proyecto Final}{135}{section.21.4}
+\contentsline {subsection}{\numberline {21.4.1}Definici\'on del Problema}{135}{subsection.21.4.1}
+\contentsline {subsection}{\numberline {21.4.2}Descripci\'on de los Datos}{135}{subsection.21.4.2}
+\contentsline {subsection}{\numberline {21.4.3}An\'alisis Exploratorio}{135}{subsection.21.4.3}
+\contentsline {subsection}{\numberline {21.4.4}Ajuste del Modelo}{135}{subsection.21.4.4}
+\contentsline {subsection}{\numberline {21.4.5}Diagn\'ostico del Modelo}{135}{subsection.21.4.5}
+\contentsline {subsection}{\numberline {21.4.6}Interpretaci\'on de Resultados}{135}{subsection.21.4.6}
+\contentsline {subsection}{\numberline {21.4.7}Conclusiones}{135}{subsection.21.4.7}
+\contentsline {section}{\numberline {21.5}Conclusi\'on}{135}{section.21.5}
+\contentsline {part}{IV\hspace {1em}TERCERA PARTE}{136}{part.4}
+\contentsline {chapter}{\numberline {22}Probabilidad Avanzada}{137}{chapter.22}
+\contentsline {section}{\numberline {22.1}Cadenas de Markov}{137}{section.22.1}
+\contentsline {subsection}{\numberline {22.1.1}Estacionareidad}{137}{subsection.22.1.1}
+\contentsline {subsection}{\numberline {22.1.2}Teor\'ia Erg\'odica}{138}{subsection.22.1.2}
+\contentsline {subsection}{\numberline {22.1.3}Funciones Arm\'onicas, Recurrencia y Transitoriedad}{138}{subsection.22.1.3}
+\contentsline {section}{\numberline {22.2}Procesos de Markov de Saltos}{138}{section.22.2}
+\contentsline {subsection}{\numberline {22.2.1}Estructura B\'asica de los Procesos Markovianos de Saltos}{138}{subsection.22.2.1}
+\contentsline {subsection}{\numberline {22.2.2}Matriz Intensidad}{139}{subsection.22.2.2}
+\contentsline {subsection}{\numberline {22.2.3}Medidas Estacionarias}{139}{subsection.22.2.3}
+\contentsline {subsection}{\numberline {22.2.4}Criterios de Ergodicidad}{139}{subsection.22.2.4}
+\contentsline {section}{\numberline {22.3}Notaci\'on Kendall-Lee}{140}{section.22.3}
+\contentsline {section}{\numberline {22.4}Procesos de Nacimiento y Muerte}{141}{section.22.4}
+\contentsline {subsection}{\numberline {22.4.1}Procesos de Nacimiento y Muerte Generales}{141}{subsection.22.4.1}
+\contentsline {subsection}{\numberline {22.4.2}Cola M/M/1}{142}{subsection.22.4.2}
+\contentsline {subsection}{\numberline {22.4.3}Cola $M/M/\infty $}{143}{subsection.22.4.3}
+\contentsline {subsection}{\numberline {22.4.4}Cola M/M/m}{143}{subsection.22.4.4}
+\contentsline {subsection}{\numberline {22.4.5}Cola M/G/1}{144}{subsection.22.4.5}
+\contentsline {section}{\numberline {22.5}Redes de Colas}{146}{section.22.5}
+\contentsline {section}{\numberline {22.6}Estacionareidad}{146}{section.22.6}
+\contentsline {section}{\numberline {22.7}Procesos de Markov de Saltos}{147}{section.22.7}
+\contentsline {section}{\numberline {22.8}Notaci\'on Kendall-Lee}{147}{section.22.8}
+\contentsline {section}{\numberline {22.9}Procesos de Nacimiento y Muerte (Teor\'ia)}{148}{section.22.9}
+\contentsline {section}{\numberline {22.10}Procesos de Nacimiento y Muerte como Modelos de Colas}{149}{section.22.10}
+\contentsline {subsection}{\numberline {22.10.1}Cola $M/M/1$}{149}{subsection.22.10.1}
+\contentsline {section}{\numberline {22.11}Notaci\'on Kendall-Lee, segunda parte}{150}{section.22.11}
+\contentsline {section}{\numberline {22.12}Procesos de Nacimiento y Muerte como Modelos de Colas(Continuaci\'on)}{150}{section.22.12}
+\contentsline {subsection}{\numberline {22.12.1}Cola $M/M/\infty $}{150}{subsection.22.12.1}
+\contentsline {subsection}{\numberline {22.12.2}Cola $M/M/m$}{150}{subsection.22.12.2}
+\contentsline {section}{\numberline {22.13}Cadenas de Markov}{151}{section.22.13}
+\contentsline {subsection}{\numberline {22.13.1}Estacionareidad}{151}{subsection.22.13.1}
+\contentsline {subsection}{\numberline {22.13.2}Teor\'ia Erg\'odica}{151}{subsection.22.13.2}
+\contentsline {subsection}{\numberline {22.13.3}Funciones Arm\'onicas, Recurrencia y Transitoriedad}{152}{subsection.22.13.3}
+\contentsline {section}{\numberline {22.14}Procesos de Markov de Saltos}{152}{section.22.14}
+\contentsline {section}{\numberline {22.15}Notaci\'on Kendall-Lee}{152}{section.22.15}
+\contentsline {subsection}{\numberline {22.15.1}Primera parte}{152}{subsection.22.15.1}
+\contentsline {subsection}{\numberline {22.15.2}Segunda parte}{153}{subsection.22.15.2}
+\contentsline {section}{\numberline {22.16}Procesos de Nacimiento y Muerte}{154}{section.22.16}
+\contentsline {subsection}{\numberline {22.16.1}Cola $M/M/1$}{154}{subsection.22.16.1}
+\contentsline {subsection}{\numberline {22.16.2}Cola $M/M/\infty $}{155}{subsection.22.16.2}
+\contentsline {subsection}{\numberline {22.16.3}Cola $M/M/m$}{156}{subsection.22.16.3}
+\contentsline {section}{\numberline {22.17}Ejemplo de Cadena de Markov para dos Estados}{157}{section.22.17}
+\contentsline {section}{\numberline {22.18}Cadenas de Markov}{157}{section.22.18}
+\contentsline {subsection}{\numberline {22.18.1}Estacionareidad}{157}{subsection.22.18.1}
+\contentsline {subsection}{\numberline {22.18.2}Teor\'ia Erg\'odica}{158}{subsection.22.18.2}
+\contentsline {subsection}{\numberline {22.18.3}Funciones Arm\'onicas, Recurrencia y Transitoriedad}{158}{subsection.22.18.3}
+\contentsline {section}{\numberline {22.19}Procesos de Markov de Saltos}{159}{section.22.19}
+\contentsline {subsection}{\numberline {22.19.1}Estructura B\'asica de los Procesos Markovianos de Saltos}{159}{subsection.22.19.1}
+\contentsline {subsection}{\numberline {22.19.2}Matriz Intensidad}{159}{subsection.22.19.2}
+\contentsline {subsection}{\numberline {22.19.3}Medidas Estacionarias}{159}{subsection.22.19.3}
+\contentsline {subsection}{\numberline {22.19.4}Criterios de Ergodicidad}{160}{subsection.22.19.4}
+\contentsline {section}{\numberline {22.20}Notaci\'on Kendall-Lee}{160}{section.22.20}
+\contentsline {subsection}{\numberline {22.20.1}Primera parte}{160}{subsection.22.20.1}
+\contentsline {subsection}{\numberline {22.20.2}M\'as sobre la notaci\'on {\em Kendall-Lee}}{161}{subsection.22.20.2}
+\contentsline {section}{\numberline {22.21}Procesos de Nacimiento y Muerte}{161}{section.22.21}
+\contentsline {subsection}{\numberline {22.21.1}Procesos de Nacimiento y Muerte Generales}{161}{subsection.22.21.1}
+\contentsline {subsection}{\numberline {22.21.2}Cola M/M/1}{162}{subsection.22.21.2}
+\contentsline {subsection}{\numberline {22.21.3}Cola $M/M/\infty $}{163}{subsection.22.21.3}
+\contentsline {subsection}{\numberline {22.21.4}Cola M/M/m}{163}{subsection.22.21.4}
+\contentsline {subsection}{\numberline {22.21.5}Cola M/G/1}{165}{subsection.22.21.5}
+\contentsline {subsection}{\numberline {22.21.6}Cola M/M/m/m}{166}{subsection.22.21.6}
+\contentsline {section}{\numberline {22.22}Cadenas de Markov}{166}{section.22.22}
+\contentsline {subsection}{\numberline {22.22.1}Estacionareidad}{166}{subsection.22.22.1}
+\contentsline {subsection}{\numberline {22.22.2}Teor\'ia Erg\'odica}{167}{subsection.22.22.2}
+\contentsline {subsection}{\numberline {22.22.3}Funciones Arm\'onicas, Recurrencia y Transitoriedad}{167}{subsection.22.22.3}
+\contentsline {section}{\numberline {22.23}Procesos de Markov de Saltos}{168}{section.22.23}
+\contentsline {subsection}{\numberline {22.23.1}Estructura B\'asica de los Procesos Markovianos de Saltos}{168}{subsection.22.23.1}
+\contentsline {subsection}{\numberline {22.23.2}Matriz Intensidad}{168}{subsection.22.23.2}
+\contentsline {subsection}{\numberline {22.23.3}Medidas Estacionarias}{169}{subsection.22.23.3}
+\contentsline {subsection}{\numberline {22.23.4}Criterios de Ergodicidad}{169}{subsection.22.23.4}
+\contentsline {section}{\numberline {22.24}Notaci\'on Kendall-Lee}{169}{section.22.24}
+\contentsline {section}{\numberline {22.25}Procesos de Nacimiento y Muerte}{170}{section.22.25}
+\contentsline {subsection}{\numberline {22.25.1}Procesos de Nacimiento y Muerte Generales}{170}{subsection.22.25.1}
+\contentsline {subsection}{\numberline {22.25.2}Cola M/M/1}{171}{subsection.22.25.2}
+\contentsline {subsection}{\numberline {22.25.3}Cola $M/M/\infty $}{172}{subsection.22.25.3}
+\contentsline {subsection}{\numberline {22.25.4}Cola M/M/m}{173}{subsection.22.25.4}
+\contentsline {subsection}{\numberline {22.25.5}Cola M/G/1}{174}{subsection.22.25.5}
+\contentsline {section}{\numberline {22.26}Redes de Colas}{176}{section.22.26}
+\contentsline {subsection}{\numberline {22.26.1}Sistemas Abiertos}{176}{subsection.22.26.1}
+\contentsline {section}{\numberline {22.27}Ejemplo de Cadena de Markov para dos Estados}{177}{section.22.27}
+\contentsline {section}{\numberline {22.28}Cadenas de Markov: Estacionareidad}{177}{section.22.28}
+\contentsline {section}{\numberline {22.29}Teor\'ia Erg\'odica}{177}{section.22.29}
+\contentsline {section}{\numberline {22.30}Queueing Theory at Markovian Level}{178}{section.22.30}
+\contentsline {subsection}{\numberline {22.30.1}General Death Birth Processes}{178}{subsection.22.30.1}
+\contentsline {section}{\numberline {22.31}Birth-Death Processes as Queueing Models}{179}{section.22.31}
+\contentsline {subsection}{\numberline {22.31.1}Cola M/M/1}{179}{subsection.22.31.1}
+\contentsline {subsection}{\numberline {22.31.2}Cola con Infinidad de Servidores}{179}{subsection.22.31.2}
+\contentsline {subsection}{\numberline {22.31.3}Cola M/M/m}{179}{subsection.22.31.3}
+\contentsline {section}{\numberline {22.32}Procesos Regenerativos}{180}{section.22.32}
+\contentsline {subsection}{\numberline {22.32.1}Procesos Harris Recurrente}{182}{subsection.22.32.1}
+\contentsline {subsection}{\numberline {22.32.2}Modelo de Flujo}{183}{subsection.22.32.2}
+\contentsline {subsection}{\numberline {22.32.3}Procesos de Estados de Markov}{192}{subsection.22.32.3}
+\contentsline {subsection}{\numberline {22.32.4}Teor\'ia General de Procesos Estoc\'asticos}{193}{subsection.22.32.4}
+\contentsline {subsection}{\numberline {22.32.5}Propiedades de Markov}{194}{subsection.22.32.5}
+\contentsline {subsection}{\numberline {22.32.6}Primer Condici\'on de Regularidad}{194}{subsection.22.32.6}
+\contentsline {subsection}{\numberline {22.32.7}Construcci\'on del Modelo de Flujo}{195}{subsection.22.32.7}
+\contentsline {subsection}{\numberline {22.32.8}Estabilidad}{198}{subsection.22.32.8}
+\contentsline {subsection}{\numberline {22.32.9}Propiedades de Markov}{201}{subsection.22.32.9}
+\contentsline {subsection}{\numberline {22.32.10}Primer Condici\'on de Regularidad}{202}{subsection.22.32.10}
+\contentsline {subsection}{\numberline {22.32.11}Procesos Fuerte de Markov}{208}{subsection.22.32.11}
+\contentsline {subsubsection}{Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{208}{subsection.22.32.11}
+\contentsline {subsection}{\numberline {22.32.12}Procesos Harris Recurrentes Positivos}{208}{subsection.22.32.12}
+\contentsline {subsection}{\numberline {22.32.13}Construcci\'on de un Modelo de Flujo L\'imite}{208}{subsection.22.32.13}
+\contentsline {subsection}{\numberline {22.32.14}Modelo de Visitas C\'iclicas con un Servidor: Estabilidad}{212}{subsection.22.32.14}
+\contentsline {subsection}{\numberline {22.32.15}Teorema 2.1}{212}{subsection.22.32.15}
+\contentsline {subsection}{\numberline {22.32.16}Teorema 2.2}{213}{subsection.22.32.16}
+\contentsline {subsection}{\numberline {22.32.17}Teorema 2.3}{213}{subsection.22.32.17}
+\contentsline {subsection}{\numberline {22.32.18}Definiciones B\'asicas}{213}{subsection.22.32.18}
+\contentsline {subsection}{\numberline {22.32.19}Preliminares}{217}{subsection.22.32.19}
+\contentsline {subsection}{\numberline {22.32.20}Procesos Harris Recurrente}{218}{subsection.22.32.20}
+\contentsline {subsection}{\numberline {22.32.21}Modelo de Flujo}{219}{subsection.22.32.21}
+\contentsline {subsection}{\numberline {22.32.22}Procesos de Estados de Markov}{229}{subsection.22.32.22}
+\contentsline {subsection}{\numberline {22.32.23}Teor\'ia General de Procesos Estoc\'asticos}{230}{subsection.22.32.23}
+\contentsline {subsection}{\numberline {22.32.24}Propiedades de Markov}{230}{subsection.22.32.24}
+\contentsline {subsection}{\numberline {22.32.25}Primer Condici\'on de Regularidad}{231}{subsection.22.32.25}
+\contentsline {subsection}{\numberline {22.32.26}Construcci\'on del Modelo de Flujo}{231}{subsection.22.32.26}
+\contentsline {subsection}{\numberline {22.32.27}Estabilidad}{234}{subsection.22.32.27}
+\contentsline {subsection}{\numberline {22.32.28}Propiedades de Markov}{238}{subsection.22.32.28}
+\contentsline {subsection}{\numberline {22.32.29}Primer Condici\'on de Regularidad}{238}{subsection.22.32.29}
+\contentsline {subsection}{\numberline {22.32.30}Procesos de Estados Markoviano para el Sistema}{244}{subsection.22.32.30}
+\contentsline {subsection}{\numberline {22.32.31}Procesos Fuerte de Markov}{244}{subsection.22.32.31}
+\contentsline {subsubsection}{Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{244}{subsection.22.32.31}
+\contentsline {subsection}{\numberline {22.32.32}Procesos Harris Recurrentes Positivos}{244}{subsection.22.32.32}
+\contentsline {subsection}{\numberline {22.32.33}Construcci\'on de un Modelo de Flujo L\'imite}{245}{subsection.22.32.33}
+\contentsline {subsection}{\numberline {22.32.34}Modelo de Visitas C\'iclicas con un Servidor: Estabilidad}{248}{subsection.22.32.34}
+\contentsline {subsection}{\numberline {22.32.35}Teorema 2.1}{248}{subsection.22.32.35}
+\contentsline {subsection}{\numberline {22.32.36}Teorema 2.2}{249}{subsection.22.32.36}
+\contentsline {subsection}{\numberline {22.32.37}Teorema 2.3}{249}{subsection.22.32.37}
+\contentsline {subsection}{\numberline {22.32.38}Definiciones B\'asicas}{250}{subsection.22.32.38}
+\contentsline {subsection}{\numberline {22.32.39}Proceso de Estados Markoviano para el Sistema}{252}{subsection.22.32.39}
+\contentsline {subsection}{\numberline {22.32.40}Procesos Fuerte de Markov}{253}{subsection.22.32.40}
+\contentsline {subsection}{\numberline {22.32.41}Propiedades de Markov}{253}{subsection.22.32.41}
+\contentsline {subsection}{\numberline {22.32.42}Primer Condici\'on de Regularidad}{254}{subsection.22.32.42}
+\contentsline {subsection}{\numberline {22.32.43}Propiedades de Markov}{256}{subsection.22.32.43}
+\contentsline {subsection}{\numberline {22.32.44}Primer Condici\'on de Regularidad}{257}{subsection.22.32.44}
+\contentsline {subsection}{\numberline {22.32.45}Supuestos}{263}{subsection.22.32.45}
+\contentsline {subsubsection}{Supuestos B\'asicos}{263}{equation.22.32.626}
+\contentsline {subsection}{\numberline {22.32.46}Procesos Harris Recurrente}{264}{subsection.22.32.46}
+\contentsline {subsection}{\numberline {22.32.47}Modelo de Flujo}{265}{subsection.22.32.47}
+\contentsline {subsubsection}{Modelo de Flujo y Estabilidad}{270}{Dem.22.32.1}
+\contentsline {subsubsection}{Resultados principales}{271}{Lemma.22.32.18}
+\contentsline {subsubsection}{Definiciones Generales}{272}{Dem.22.32.2}
+\contentsline {subsubsection}{Definiciones y Descripci\'on del Modelo}{273}{Def.22.32.185}
+\contentsline {subsubsection}{Pol\'iticas de Servicio}{273}{Def.22.32.185}
+\contentsline {subsubsection}{Proceso de Estados}{274}{Def.22.32.185}
+\contentsline {subsubsection}{Introducci{\'o}n}{274}{Def.22.32.185}
+\contentsline {subsubsection}{Colas C\'iclicas}{275}{equation.22.32.688}
+\contentsline {subsubsection}{Resultados Previos}{275}{Prop.22.32.49}
+\contentsline {subsubsection}{Teorema de Estabilidad: Descripci{\'o}n}{276}{equation.22.32.697}
+\contentsline {subsection}{\numberline {22.32.48}Supuestos}{277}{subsection.22.32.48}
+\contentsline {subsubsection}{Supuestos B\'asicos}{278}{equation.22.32.702}
+\contentsline {subsection}{\numberline {22.32.49}Procesos Harris Recurrente}{278}{subsection.22.32.49}
+\contentsline {subsection}{\numberline {22.32.50}Modelo de Flujo}{279}{subsection.22.32.50}
+\contentsline {subsection}{\numberline {22.32.51}Modelo de Flujo}{281}{subsection.22.32.51}
+\contentsline {subsection}{\numberline {22.32.52}Estabilidad de los Sistemas de Visitas C\'iclicas}{283}{subsection.22.32.52}
+\contentsline {subsection}{\numberline {22.32.53}Resultados principales}{284}{subsection.22.32.53}
+\contentsline {subsection}{\numberline {22.32.54}Supuestos}{284}{subsection.22.32.54}
+\contentsline {subsubsection}{Supuestos B\'asicos}{285}{equation.22.32.742}
+\contentsline {subsection}{\numberline {22.32.55}Procesos Harris Recurrente}{286}{subsection.22.32.55}
+\contentsline {subsection}{\numberline {22.32.56}Modelo de Flujo}{287}{subsection.22.32.56}
+\contentsline {subsection}{\numberline {22.32.57}Supuestos}{289}{subsection.22.32.57}
+\contentsline {subsubsection}{Supuestos B\'asicos}{289}{equation.22.32.759}
+\contentsline {subsection}{\numberline {22.32.58}Procesos Harris Recurrente}{290}{subsection.22.32.58}
+\contentsline {subsection}{\numberline {22.32.59}Modelo de Flujo}{291}{subsection.22.32.59}
+\contentsline {subsubsection}{Supuestos B\'asicos}{293}{equation.22.32.774}
+\contentsline {subsection}{\numberline {22.32.60}Procesos Harris Recurrente}{293}{subsection.22.32.60}
+\contentsline {subsection}{\numberline {22.32.61}Modelo de Flujo}{294}{subsection.22.32.61}
+\contentsline {subsection}{\numberline {22.32.62}Supuestos}{296}{subsection.22.32.62}
+\contentsline {subsubsection}{Supuestos B\'asicos}{297}{equation.22.32.791}
+\contentsline {subsection}{\numberline {22.32.63}Procesos Harris Recurrente}{297}{subsection.22.32.63}
+\contentsline {subsection}{\numberline {22.32.64}Modelo de Flujo}{299}{subsection.22.32.64}
+\contentsline {part}{V\hspace {1em}AP\IeC {\'E}NDICES}{301}{part.5}
+\contentsline {chapter}{\numberline {23}IMPLEMENTACIONES NUM\'ERICAS}{302}{chapter.23}
+\contentsline {section}{\numberline {23.1}D\'ia 1: Regresi\IeC {\'o}n Log\IeC {\'\i }stica}{302}{section.23.1}
+\contentsline {subsection}{\numberline {23.1.1}Ejemplo de Regresi\IeC {\'o}n Log\IeC {\'\i }stica en R}{302}{subsection.23.1.1}
+\contentsline {subsection}{\numberline {23.1.2}Aplicaci\IeC {\'o}n a Datos de C\IeC {\'a}ncer - Parte I}{304}{subsection.23.1.2}
+\contentsline {subsubsection}{Ejemplo Titanic}{306}{subsection.23.1.2}
+\contentsline {subsection}{\numberline {23.1.3}Simulaci\'on de Datos de C\IeC {\'a}ncer - Parte II}{308}{subsection.23.1.3}
+\contentsline {subsection}{\numberline {23.1.4}Simulaci\'on de Datos de C\IeC {\'a}ncer - Parte III}{309}{subsection.23.1.4}
+\contentsline {chapter}{\numberline {24}Bibliograf\IeC {\'\i }a}{313}{chapter.24}

@@ -57,6 +57,30 @@
     breakatwhitespace=false,
     title=\lstname
 }
+\newtheorem{Def}{Definici\'on}[section]
+\newtheorem{Ejem}{Ejemplo}[section]
+\newtheorem{Teo}{Teorema}[section]
+\newtheorem{Dem}{Demostraci\'on}[section]
+\newtheorem{Note}{Nota}[section]
+\newtheorem{Sol}{Soluci\'on}[section]
+\newtheorem{Prop}{Proposici\'on}[section]
+\newtheorem{Coro}{Corolario}[section]
+\newtheorem{Cor}{Corolario}[section]
+\newtheorem{Lemma}{Lema}[section]
+\newtheorem{Lema}{Lema}[section]
+\newtheorem{Lem}{Lema}[section]
+\newtheorem{Sup}{Supuestos}[section]
+
+\def\RR{\mathbb{R}}
+\def\ZZ{\mathbb{Z}}
+\newcommand{\nat}{\mathbb{N}}
+\newcommand{\ent}{\mathbb{Z}}
+\newcommand{\rea}{\mathbb{R}}
+\newcommand{\esp}{\mathbb{E}}
+\newcommand{\prob}{\mathbb{P}}
+\newcommand{\indora}{\mbox{$1$\hspace{-0.8ex}$1$}}
+
+
 
 \begin{document}
 
@@ -64,7 +88,18 @@
 
 \tableofcontents
 
+\part{INTRODUCCION}
+\chapter{Introducci\'on}
+
+\input{Introduccion}
+\input{Fundamentos}
+\input{Elementos}
+\input{Requisitos}
+\input{Bases}
+
 \part{PRIMERA PARTE: Regresi\'on Log\'istica}
+
+
 \chapter{D\'ia 1: Introducci\'on}
 \input{Capitulo1}
 
@@ -127,9 +162,17 @@
 \chapter{Proyecto Final y Revisi\'on}
 \input{Capitulo20}
 
+\part{TERCERA PARTE}
+\chapter{Probabilidad Avanzada}
+\input{TeoriaColas}
+\input{ModelosFlujo}
+
 \part{APÉNDICES}
 \chapter{IMPLEMENTACIONES NUM\'ERICAS}
 \input{numericoLogReg}
+
+
+
 
 \chapter{Bibliografía}
 \input{bibliografia}

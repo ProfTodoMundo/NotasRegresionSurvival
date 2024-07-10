@@ -1,0 +1,992 @@
+
+%---------------------------------------------------------
+\section{Pruebas de Hip\'otesis}
+%---------------------------------------------------------
+\subsection{Tipos de errores}
+
+
+
+
+
+%\frametitle{Prueba de Hip\'otesis}
+
+\begin{itemize}
+\item Una hip\'otesis estad\'istica es una afirmaci\'on  acerca de la distribuci\'on de probabilidad de una variable aleatoria, a menudo involucran uno o m\'as par\'ametros de la distribuci\'on.
+
+\item Las hip\'otesis son afirmaciones respecto a la poblaci\'on o distribuci\'on bajo estudio, no en torno a la muestra.
+
+\item La mayor\'ia de las veces, la prueba de hip\'otesis consiste en determinar si la situaci \'on experimental ha cambiado
+
+\item el inter\'es principal es decidir sobre la veracidad o falsedad de una hip\'otesis, a este procedimiento se le llama \textit{prueba de hip\'otesis}.
+
+\item Si la informaci\'on es consistente con la hip\'otesis, se concluye que esta es verdadera, de lo contrario que con base en la informaci\'on, es falsa.
+
+\end{itemize}
+
+
+
+
+
+
+
+Una prueba de hip\'otesis est\'a formada por cinco partes
+\begin{itemize}
+\item La hip\'otesis nula, denotada por $H_{0}$.
+\item La hip\'otesis alterativa, denorada por $H_{1}$.
+\item El estad\'sitico de prueba y su valor $p$.
+\item La regi\'on de rechazo.
+\item La conclusi\'on.
+
+\end{itemize}
+
+\begin{Def}
+Las dos hip\'otesis en competencias son la \textbf{hip\'otesis alternativa $H_{1}$}, usualmente la que se desea apoyar, y la \textbf{hip\'otesis nula $H_{0}$}, opuesta a $H_{1}$.
+\end{Def}
+
+
+
+
+
+
+
+
+
+En general, es m\'as f\'acil presentar evidencia de que $H_{1}$ es cierta, que demostrar 	que $H_{0}$ es falsa, es por eso que por lo regular se comienza suponiendo que $H_{0}$ es cierta, luego se utilizan los datos de la muestra para decidir si existe evidencia a favor de $H_{1}$, m\'as que a favor de $H_{0}$, as\'i se tienen dos conclusiones
+\begin{itemize}
+\item Rechazar $H_{0}$ y concluir que $H_{1}$ es verdadera.
+\item Aceptar, no rechazar, $H_{0}$ como verdadera.
+
+\end{itemize}
+
+\begin{Ejem}
+Se desea demostrar que el salario promedio  por hora en cierto lugar es distinto de $19$usd, que es el promedio nacional. Entonces $H_{1}:\mu\neq19$, y $H_{0}:\mu=19$.
+\end{Ejem}
+A esta se le denomina \textbf{Prueba de hip\'otesis de dos colas}.
+
+
+
+
+
+
+
+
+
+
+\begin{Ejem}
+Un determinado proceso produce un promedio de $5\%$ de piezas defectuosas. Se est\'a interesado en demostrar que un simple ajuste en una m\'aquina reducir\'a $p$, la proporci\'on de piezas defectuosas producidas en este proceso. Entonces se tiene $H_{0}:p<0.3$ y $H_{1}:p=0.03$. Si se puede rechazar $H_{0}$, se concluye que el proceso ajustado produce menos del $5\%$ de piezas defectuosas.
+\end{Ejem}
+A esta se le denomina \textbf{Prueba de hip\'otesis de una cola}.
+
+La decisi\'on de rechazar o aceptar la hip\'otesis nula est\'a basada en la informaci\'on contenida en una muestra proveniente de la poblaci\'on de inter\'es. Esta informaci\'on tiene estas formas
+
+
+
+
+\begin{itemize}
+\item \textbf{Estad\'sitico de prueba:} un s\'olo n\'umero calculado a partir de la muestra.
+
+\item \textbf{$p$-value:} probabilidad calculada a partir del estad\'stico de prueba.
+\begin{Def}
+El $p$-value es la probabilidad de observar un estad\'istico de prueba tanto o m\'as alejado del valor obervado, si en realidad $H_{0}$ es verdadera.\medskip
+Valores grandes del estad\'stica de prueba  y valores peque\~nos de $p$ significan que se ha observado un evento muy poco probable, si $H_{0}$ en realidad es verdadera.
+\end{Def}
+
+\end{itemize}
+
+
+
+
+
+
+Todo el conjunto de valores que puede tomar el estad\'istico de prueba se divide en dos regiones. Un conjunto, formado de valores que apoyan la hip\'otesis alternativa y llevan a rechazar $H_{0}$, se denomina \textbf{regi\'on de rechazo}. El otro, conformado por los valores que sustentatn la hip\'otesis nula, se le denomina \textbf{regi\'on de aceptaci\'on}.\medskip
+
+Cuando la regi\'on de rechazo est\'a en la cola izquierda de la distribuci\'on, la  prueba se denomina \textbf{prueba lateral izquierda}. Una prueba con regi\'on de rechazo en la cola derecha se le llama \textbf{prueba lateral derecha}.
+
+
+Si el estad\'stico de prueba cae en la regi\'on de rechazo, entonces se rechaza $H_{0}$. Si el estad\'stico de prueba cae en la regi\'on de aceptaci\'on, entonces la hip\'otesis nula se acepta o la prueba se juzga como no concluyente.\medskip
+
+
+
+
+
+
+Dependiendo del nivel de confianza que se desea agregar a las conclusiones de la prueba, y el \textbf{nivel de significancia $\alpha$}, el riesgo que est\'a dispuesto a correr si se toma una decisi\'on incorrecta.
+
+
+
+
+
+
+\begin{Def}
+Un \textbf{error de tipo I} para una prueba estad\'istica es el error que se tiene al rechazar la hip\'otesis nula cuando es verdadera. El \textbf{nivel de significancia} para una prueba estad\'istica de hip\'otesis es
+\begin{eqnarray*}
+\alpha&=&P\left\{\textrm{error tipo I}\right\}=P\left\{\textrm{rechazar equivocadamente }H_{0}\right\}\\
+&=&P\left\{\textrm{rechazar }H_{0}\textrm{ cuando }H_{0}\textrm{ es verdadera}\right\}
+\end{eqnarray*}
+
+\end{Def}
+Este valor $\alpha$ representa el valor m\'aximo de riesgo tolerable de rechazar incorrectamente $H_{0}$. Una vez establecido el nivel de significancia, la regi\'on de rechazo se define para poder determinar si se rechaza $H_{0}$ con un cierto nivel de confianza.
+
+
+
+\section{Muestras grandes: una media poblacional}
+\subsection{C\'alculo de valor $p$}
+
+
+
+
+
+\begin{Def}
+El \textbf{valor de $p$} (\textbf{$p$-value}) o nivel de significancia observado de un estad\'istico de prueba es el valor m\'as peque\~ no de $\alpha$ para el cual $H_{0}$ se puede rechazar. El riesgo de cometer un error tipo $I$, si $H_{0}$ es rechazada con base en la informaci\'on que proporciona la muestra.
+\end{Def}
+
+\begin{Note}
+Valores peque\~ nos de $p$ indican 	que el valor observado del estad\'stico de prueba se encuentra alejado del valor hipot\'etico de $\mu$, es decir se tiene evidencia de que $H_{0}$ es falsa y por tanto debe de rechazarse.
+\end{Note}
+
+\begin{Note}
+Valores grandes de $p$ indican que el estad\'istico de prueba observado no est\'a alejado de la medi hipot\'etica y no apoya el rechazo de $H_{0}$.
+\end{Note}
+
+
+
+
+
+
+
+\begin{Def}
+Si el valor de $p$ es menor o igual que el nivel de significancia $\alpha$, determinado previamente, entonces $H_{0}$ es rechazada y se puede concluir que los resultados son estad\'isticamente significativos con un nivel de confianza del $100\left(1-\alpha\right)\%$.
+\end{Def}
+Es usual utilizar la siguiente clasificaci\'on de resultados
+
+
+\begin{tabular}{|c||c|l|}\hline
+$p$& $H_{0}$&Significativa\\\hline\hline
+$p<0.01$&Rechazar &Altamente\\\hline
+$0.01\leq p<0.05$ & Rechazar&Estad\'isticamente\\\hline
+$0.05\leq p <0.1$ & No rechazar & Tendencia estad\'istica\\\hline
+$0.01\leq p$ & No rechazar & No son estad\'isticamente\\\hline
+\end{tabular}
+
+
+
+
+
+\begin{Note}
+Para determinar el valor de $p$, encontrar el \'area en la cola despu\'es del estad\'istico de prueba. Si la prueba es de una cola, este es el valor de $p$. Si es de dos colas, \'este valor encontrado es la mitad del valor de $p$. Rechazar $H_{0}$ cuando el valor de $p<\alpha$.
+\end{Note}
+
+Hay dos tipos de errores al realizar una prueba de hip\'otesis
+\begin{center}
+\begin{tabular}{c|cc}
+& $H_{0}$ es Verdadera & $H_{0}$ es Falsa\\\hline\hline
+Rechazar $H_{0}$ & Error tipo I & $\surd$\\
+Aceptar $H_{0}$ & $\surd$ & Error tipo II
+\end{tabular}
+\end{center}
+
+
+
+
+
+
+\begin{Def}
+La probabilidad de cometer el error tipo II se define por $\beta$ donde
+\begin{eqnarray*}
+\beta&=&P\left\{\textrm{error tipo II}\right\}=P\left\{\textrm{Aceptar equivocadamente }H_{0}\right\}\\
+&=&P\left\{\textrm{Aceptar }H_{0}\textrm{ cuando }H_{0}\textrm{ es falsa}\right\}
+\end{eqnarray*}
+\end{Def}
+
+\begin{Note}
+Cuando $H_{0}$ es falsa y $H_{1}$ es verdadera, no siempre es posible especificar un valor exacto de $\mu$, sino m\'as bien un rango de posibles valores.\medskip
+En lugar de arriesgarse a tomar una decisi\'on incorrecta, es mejor conlcuir que \textit{no hay evidencia suficiente para rechazar $H_{0}$}, es decir en lugar de aceptar $H_{0}$, \textit{no rechazar $H_{0}$}.
+
+\end{Note}
+
+
+
+
+
+
+La bondad de una prueba estad\'istica se mide por el tama\~ no de $\alpha$ y $\beta$, ambas deben de ser peque\~ nas. Una manera muy efectiva de medir la potencia de la prueba es calculando el complemento del error tipo $II$:
+\begin{eqnarray*}
+1-\beta&= &P\left\{\textrm{Rechazar }H_{0}\textrm{ cuando }H_{0}\textrm{ es falsa}\right\}\\
+&=&P\left\{\textrm{Rechazar }H_{0}\textrm{ cuando }H_{1}\textrm{ es verdadera}\right\}
+\end{eqnarray*}
+\begin{Def}
+La \textbf{potencia de la prueba}, $1-\beta$, mide la capacidad de que la prueba funciona como se necesita.
+\end{Def}
+
+
+
+
+
+
+
+\begin{Ejem}
+La producci\'on diariade una planta qu\'imica local ha promediado 880 toneladas en los \'ultimos a\~nos. A la gerente de control de calidad le gustar\'ia saber si este promedio ha cambiado en meses recientes. Ella selecciona al azar 50 d\'ias de la base de datos computarizada y calcula el promedio y la desviaci\'on est\'andar de las $n=50$  producciones como $\overline{x}=871$ toneladas y $s=21$ toneladas, respectivamente. Pruebe la hip\'otesis  apropiada usando $\alpha=0.05$.
+
+\end{Ejem}
+
+
+
+
+
+
+\begin{Sol}
+La hip\'otesis nula apropiada es:
+
+\begin{eqnarray*}
+H_{0}&:& \mu=880\\
+&&\textrm{ y la hip\'otesis alternativa }H_{1}\textrm{ es }\\
+H_{1}&:& \mu\neq880
+\end{eqnarray*}
+el estimador puntual para $\mu$ es $\overline{x}$, entonces el estad\'istico de prueba es\medskip
+\begin{eqnarray*}
+z&=&\frac{\overline{x}-\mu_{0}}{s/\sqrt{n}}\\
+&=&\frac{871-880}{21/\sqrt{50}}=-3.03
+\end{eqnarray*}
+\end{Sol}
+
+
+
+\begin{Sol}
+Para esta prueba de  dos colas, hay que determinar los dos valores de $z_{\alpha/2}$, es decir, $z_{\alpha/2}=\pm1.96$
+
+\end{Sol}
+
+
+
+
+
+%---------------------------------------------------------
+\section{Pruebas de Hip\'otesis}
+%---------------------------------------------------------
+\subsection{Tipos de errores}
+
+
+
+
+
+\begin{itemize}
+\item Una hip\'otesis estad\'istica es una afirmaci\'on  acerca de la distribuci\'on de probabilidad de una variable aleatoria, a menudo involucran uno o m\'as par\'ametros de la distribuci\'on.
+
+\item Las hip\'otesis son afirmaciones respecto a la poblaci\'on o distribuci\'on bajo estudio, no en torno a la muestra.
+
+\item La mayor\'ia de las veces, la prueba de hip\'otesis consiste en determinar si la situaci \'on experimental ha cambiado
+
+\item el inter\'es principal es decidir sobre la veracidad o falsedad de una hip\'otesis, a este procedimiento se le llama \textit{prueba de hip\'otesis}.
+
+\item Si la informaci\'on es consistente con la hip\'otesis, se concluye que esta es verdadera, de lo contrario que con base en la informaci\'on, es falsa.
+
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+\begin{itemize}
+\item La descisi\'on de aceptar o rechazar la hip\'otesis nula se basa en un estad\'istico calculado a partir de la muestra. Esto necesariamente implica la existencia de un error.
+
+
+\end{itemize}
+
+
+
+%---------------------------------------------------------
+\section{Pruebas de Hip\'otesis}
+%---------------------------------------------------------
+\subsection{Tipos de errores}
+
+
+
+
+\begin{itemize}
+\item Una hip\'otesis estad\'istica es una afirmaci\'on  acerca de la distribuci\'on de probabilidad de una variable aleatoria, a menudo involucran uno o m\'as par\'ametros de la distribuci\'on.
+
+\item Las hip\'otesis son afirmaciones respecto a la poblaci\'on o distribuci\'on bajo estudio, no en torno a la muestra.
+
+\item La mayor\'ia de las veces, la prueba de hip\'otesis consiste en determinar si la situaci \'on experimental ha cambiado
+
+\item el inter\'es principal es decidir sobre la veracidad o falsedad de una hip\'otesis, a este procedimiento se le llama \textit{prueba de hip\'otesis}.
+
+\item Si la informaci\'on es consistente con la hip\'otesis, se concluye que esta es verdadera, de lo contrario que con base en la informaci\'on, es falsa.
+
+\end{itemize}
+
+
+
+
+
+
+
+Una prueba de hip\'otesis est\'a formada por cinco partes
+\begin{itemize}
+\item La hip\'otesis nula, denotada por $H_{0}$.
+\item La hip\'otesis alterativa, denorada por $H_{1}$.
+\item El estad\'sitico de prueba y su valor $p$.
+\item La regi\'on de rechazo.
+\item La conclusi\'on.
+
+\end{itemize}
+
+\begin{Def}
+Las dos hip\'otesis en competencias son la \textbf{hip\'otesis alternativa $H_{1}$}, usualmente la que se desea apoyar, y la \textbf{hip\'otesis nula $H_{0}$}, opuesta a $H_{1}$.
+\end{Def}
+
+
+
+
+
+
+
+
+En general, es m\'as f\'acil presentar evidencia de que $H_{1}$ es cierta, que demostrar 	que $H_{0}$ es falsa, es por eso que por lo regular se comienza suponiendo que $H_{0}$ es cierta, luego se utilizan los datos de la muestra para decidir si existe evidencia a favor de $H_{1}$, m\'as que a favor de $H_{0}$, as\'i se tienen dos conclusiones
+\begin{itemize}
+\item Rechazar $H_{0}$ y concluir que $H_{1}$ es verdadera.
+\item Aceptar, no rechazar, $H_{0}$ como verdadera.
+
+\end{itemize}
+
+\begin{Ejem}
+Se desea demostrar que el salario promedio  por hora en cierto lugar es distinto de $19$usd, que es el promedio nacional. Entonces $H_{1}:\mu\neq19$, y $H_{0}:\mu=19$.
+\end{Ejem}
+A esta se le denomina \textbf{Prueba de hip\'otesis de dos colas}.
+
+
+
+
+
+
+\begin{Ejem}
+Un determinado proceso produce un promedio de $5\%$ de piezas defectuosas. Se est\'a interesado en demostrar que un simple ajuste en una m\'aquina reducir\'a $p$, la proporci\'on de piezas defectuosas producidas en este proceso. Entonces se tiene $H_{0}:p<0.3$ y $H_{1}:p=0.03$. Si se puede rechazar $H_{0}$, se concluye que el proceso ajustado produce menos del $5\%$ de piezas defectuosas.
+\end{Ejem}
+A esta se le denomina \textbf{Prueba de hip\'otesis de una cola}.
+
+
+La decisi\'on de rechazar o aceptar la hip\'otesis nula est\'a basada en la informaci\'on contenida en una muestra proveniente de la poblaci\'on de inter\'es. Esta informaci\'on tiene estas formas
+
+\begin{itemize}
+\item \textbf{Estad\'sitico de prueba:} un s\'olo n\'umero calculado a partir de la muestra.
+
+\item \textbf{$p$-value:} probabilidad calculada a partir del estad\'stico de prueba.
+\begin{Def}
+El $p$-value es la probabilidad de observar un estad\'istico de prueba tanto o m\'as alejado del valor obervado, si en realidad $H_{0}$ es verdadera.\medskip
+Valores grandes del estad\'stica de prueba  y valores peque\~nos de $p$ significan que se ha observado un evento muy poco probable, si $H_{0}$ en realidad es verdadera.
+\end{Def}
+
+\end{itemize}
+
+
+
+
+
+
+
+
+Todo el conjunto de valores que puede tomar el estad\'istico de prueba se divide en dos regiones. Un conjunto, formado de valores que apoyan la hip\'otesis alternativa y llevan a rechazar $H_{0}$, se denomina \textbf{regi\'on de rechazo}. El otro, conformado por los valores que sustentatn la hip\'otesis nula, se le denomina \textbf{regi\'on de aceptaci\'on}.\medskip
+
+Cuando la regi\'on de rechazo est\'a en la cola izquierda de la distribuci\'on, la  prueba se denomina \textbf{prueba lateral izquierda}. Una prueba con regi\'on de rechazo en la cola derecha se le llama \textbf{prueba lateral derecha}.
+
+
+
+Si el estad\'stico de prueba cae en la regi\'on de rechazo, entonces se rechaza $H_{0}$. Si el estad\'stico de prueba cae en la regi\'on de aceptaci\'on, entonces la hip\'otesis nula se acepta o la prueba se juzga como no concluyente.\medskip
+
+
+
+
+
+
+
+
+Dependiendo del nivel de confianza que se desea agregar a las conclusiones de la prueba, y el \textbf{nivel de significancia $\alpha$}, el riesgo que est\'a dispuesto a correr si se toma una decisi\'on incorrecta.
+
+
+
+
+
+
+
+
+\begin{Def}
+Un \textbf{error de tipo I} para una prueba estad\'istica es el error que se tiene al rechazar la hip\'otesis nula cuando es verdadera. El \textbf{nivel de significancia} para una prueba estad\'istica de hip\'otesis es
+\begin{eqnarray*}
+\alpha&=&P\left\{\textrm{error tipo I}\right\}=P\left\{\textrm{rechazar equivocadamente }H_{0}\right\}\\
+&=&P\left\{\textrm{rechazar }H_{0}\textrm{ cuando }H_{0}\textrm{ es verdadera}\right\}
+\end{eqnarray*}
+
+\end{Def}
+Este valor $\alpha$ representa el valor m\'aximo de riesgo tolerable de rechazar incorrectamente $H_{0}$. Una vez establecido el nivel de significancia, la regi\'on de rechazo se define para poder determinar si se rechaza $H_{0}$ con un cierto nivel de confianza.
+
+
+
+
+
+
+\section{Muestras grandes: una media poblacional}
+\subsection{C\'alculo de valor $p$}
+
+
+
+
+
+
+\begin{Def}
+El \textbf{valor de $p$} (\textbf{$p$-value}) o nivel de significancia observado de un estad\'istico de prueba es el valor m\'as peque\~ no de $\alpha$ para el cual $H_{0}$ se puede rechazar. El riesgo de cometer un error tipo $I$, si $H_{0}$ es rechazada con base en la informaci\'on que proporciona la muestra.
+\end{Def}
+
+\begin{Note}
+Valores peque\~ nos de $p$ indican 	que el valor observado del estad\'stico de prueba se encuentra alejado del valor hipot\'etico de $\mu$, es decir se tiene evidencia de que $H_{0}$ es falsa y por tanto debe de rechazarse.
+\end{Note}
+
+\begin{Note}
+Valores grandes de $p$ indican que el estad\'istico de prueba observado no est\'a alejado de la medi hipot\'etica y no apoya el rechazo de $H_{0}$.
+\end{Note}
+
+
+
+
+
+
+
+
+\begin{Def}
+Si el valor de $p$ es menor o igual que el nivel de significancia $\alpha$, determinado previamente, entonces $H_{0}$ es rechazada y se puede concluir que los resultados son estad\'isticamente significativos con un nivel de confianza del $100\left(1-\alpha\right)\%$.
+\end{Def}
+Es usual utilizar la siguiente clasificaci\'on de resultados
+
+
+\begin{tabular}{|c||c|l|}\hline
+$p$& $H_{0}$&Significativa\\\hline\hline
+$p<0.01$&Rechazar &Altamente\\\hline
+$0.01\leq p<0.05$ & Rechazar&Estad\'isticamente\\\hline
+$0.05\leq p <0.1$ & No rechazar & Tendencia estad\'istica\\\hline
+$0.01\leq p$ & No rechazar & No son estad\'isticamente\\\hline
+\end{tabular}
+
+
+
+
+
+
+\begin{Note}
+Para determinar el valor de $p$, encontrar el \'area en la cola despu\'es del estad\'istico de prueba. Si la prueba es de una cola, este es el valor de $p$. Si es de dos colas, \'este valor encontrado es la mitad del valor de $p$. Rechazar $H_{0}$ cuando el valor de $p<\alpha$.
+\end{Note}
+
+Hay dos tipos de errores al realizar una prueba de hip\'otesis
+\begin{center}
+\begin{tabular}{c|cc}
+& $H_{0}$ es Verdadera & $H_{0}$ es Falsa\\\hline\hline
+Rechazar $H_{0}$ & Error tipo I & $\surd$\\
+Aceptar $H_{0}$ & $\surd$ & Error tipo II
+\end{tabular}
+\end{center}
+
+
+
+
+
+
+\begin{Def}
+La probabilidad de cometer el error tipo II se define por $\beta$ donde
+\begin{eqnarray*}
+\beta&=&P\left\{\textrm{error tipo II}\right\}=P\left\{\textrm{Aceptar equivocadamente }H_{0}\right\}\\
+&=&P\left\{\textrm{Aceptar }H_{0}\textrm{ cuando }H_{0}\textrm{ es falsa}\right\}
+\end{eqnarray*}
+\end{Def}
+
+\begin{Note}
+Cuando $H_{0}$ es falsa y $H_{1}$ es verdadera, no siempre es posible especificar un valor exacto de $\mu$, sino m\'as bien un rango de posibles valores.\medskip
+En lugar de arriesgarse a tomar una decisi\'on incorrecta, es mejor conlcuir que \textit{no hay evidencia suficiente para rechazar $H_{0}$}, es decir en lugar de aceptar $H_{0}$, \textit{no rechazar $H_{0}$}.
+
+\end{Note}
+
+
+
+
+
+
+La bondad de una prueba estad\'istica se mide por el tama\~ no de $\alpha$ y $\beta$, ambas deben de ser peque\~ nas. Una manera muy efectiva de medir la potencia de la prueba es calculando el complemento del error tipo $II$:
+\begin{eqnarray*}
+1-\beta&= &P\left\{\textrm{Rechazar }H_{0}\textrm{ cuando }H_{0}\textrm{ es falsa}\right\}\\
+&=&P\left\{\textrm{Rechazar }H_{0}\textrm{ cuando }H_{1}\textrm{ es verdadera}\right\}
+\end{eqnarray*}
+\begin{Def}
+La \textbf{potencia de la prueba}, $1-\beta$, mide la capacidad de que la prueba funciones como se necesita.
+\end{Def}
+
+
+
+
+%---------------------------------------------------------
+\section{Estimaci\'on por intervalos}
+%---------------------------------------------------------
+\subsection*{Para la media}
+
+
+
+
+
+Recordemos que $S^{2}$ es un estimador insesgado de $\sigma^{2}$
+\begin{Def}
+Sean $\hat{\theta}_{1}$ y $\hat{\theta}_{2}$ dos estimadores insesgados de $\theta$, par\'ametro poblacional. Si $\sigma_{\hat{\theta}_{1}}^{2}<\sigma_{\hat{\theta}_{2}}^{2}$, decimos que $\hat{\theta}_{1}$ un estimador m\'as eficaz de $\theta$ que $\hat{\theta}_{2}$.
+\end{Def}
+
+Algunas observaciones que es preciso realizar
+
+\begin{enumerate}
+\item[a) ]Para poblaciones normales, $\overline{X}$ y $\tilde{X}$ son estimadores insesgados de $\mu$, pero con $\sigma_{\overline{X}}^{2}<\sigma_{\tilde{X}_{2}}^{2}$.
+%\end{Note}
+
+%\begin{Note}
+\item[b) ]Para las estimaciones por intervalos de $\theta$, un intervalo de la forma $\hat{\theta}_{L}<\theta<\hat{\theta}_{U}$,  $\hat{\theta}_{L}$ y $\hat{\theta}_{U}$ dependen del valor de $\hat{\theta}$.
+\item[c) ]Para $\sigma_{\overline{X}}^{2}=\frac{\sigma^{2}}{n}$, si $n\rightarrow\infty$, entonces $\hat{\theta}\rightarrow\mu$.
+%\end{Note}
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+%\begin{Note}
+%Para $\sigma_{\overline{X}}^{2}=\frac{\sigma^{2}}{n}$, si $n\rightarrow\infty$, %entonces $\hat{\theta}\rightarrow\mu$.
+%\end{Note}
+
+%\begin{Note}
+\begin{enumerate}
+\item[d) ]Para $\hat{\theta}$ se determinan $\hat{\theta}_{L}$ y $\hat{\theta}_{U}$ de modo tal que 
+\begin{eqnarray}
+P\left\{\hat{\theta}_{L}<\hat{\theta}<\hat{\theta}_{U}\right\}=1-\alpha,
+\end{eqnarray}
+con $\alpha\in\left(0,1\right)$. Es decir, $\theta\in\left(\hat{\theta}_{L},\hat{\theta}_{U}\right)$ es un intervalo de confianza del $100\left(1-\alpha\right)\%$.
+
+\item[e) ] De acuerdo con el TLC se espera que la distribuci\'on muestral de $\overline{X}$ se distribuye aproximadamente normal con media $\mu_{X}=\mu$ y desviaci\'on est\'andar $\sigma_{\overline{X}}=\frac{\sigma}{\sqrt{n}}$.
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+Para $Z_{\alpha/2}$ se tiene $P\left\{-Z_{\alpha/2}<Z<Z_{\alpha/2}\right\}=1-\alpha$, donde $Z=\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}$. Entonces
+$P\left\{-Z_{\alpha/2}<\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}<Z_{\alpha/2}\right\}=1-\alpha$ es equivalente a 
+$P\left\{\overline{X}-Z_{\alpha/2}\frac{\sigma}{\sqrt{n}}<\mu<\overline{X}+Z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\right\}=1-\alpha$ 
+
+\begin{enumerate}
+\item[f) ]Si $\overline{X}$ es la media muestral de una muestra de tama\~no $n$ de una poblaci\'on con varianza conocida $\sigma^{2}$, el intervalo de confianza de $100\left(1-\alpha\right)\%$ para $\mu$ es $\mu\in\left(\overline{x}-z_{\alpha/2}\frac{\sigma}{\sqrt{n}},\overline{x}+z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\right)$.
+
+\item[g) ] Para muestras peque\~nas de poblaciones no normales, no se puede esperar que el grado de confianza sea preciso.
+\item[h) ] Para $n\geq30$, con distribuci\'on de forma no muy sesgada, se pueden tener buenos resultados.
+\end{enumerate}
+
+
+
+
+
+
+
+
+\begin{Teo}
+Si $\overline{X}$ es un estimador de $\mu$, podemos tener $100\left(1-\alpha\right)\%$  de confianza en que el error no exceder\'a a $z_{\alpha/2}\frac{\sigma}{\sqrt{n}}$, error entre $\overline{X}$ y $\mu$.
+\end{Teo}
+
+\begin{Teo}
+Si $\overline{X}$ es un estimador de $\mu$, podemos tener $100\left(1-\alpha\right)\%$  de confianza en que el error no exceder\'a una cantidad $e$ cuando el tama\~no de la muestra es $$n=\left(\frac{z_{\alpha/2}\sigma}{e}\right)^{2}.$$
+\end{Teo}
+\begin{Note}
+Para intervalos unilaterales
+$$P\left\{\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}<Z_{\alpha}\right\}=1-\alpha$$
+\end{Note}
+
+
+
+
+
+
+
+
+equivalentemente
+$$P\left\{\mu<\overline{X}+Z_{\alpha}\frac{\sigma}{\sqrt{n}}\right\}=1-\alpha.$$
+Si $\overline{X}$ es la media de una muestra aleatoria de tama\~no $n$  a partir de una poblaci\'on con varianza $\sigma^{2}$, los l\'imites de confianza unilaterales del   $100\left(1-\alpha\right)\%$  de confianza para $\mu$ est\'an dados por
+\begin{itemize}
+\item L\'imite unilateral superior: $\overline{x}+z_{\alpha}\frac{\sigma}{\sqrt{n}}$
+\item L\'imite unilateral inferior: $\overline{x}-z_{\alpha}\frac{\sigma}{\sqrt{n}}$
+\end{itemize}
+
+
+\begin{itemize}
+\item Para $\sigma$ desconocida recordar que $T=\frac{\overline{x}-\mu}{s/\sqrt{n}}\sim t_{n-1}$, donde $s$ es la desviaci\'on est\'andar de la muestra. Entonces
+\begin{eqnarray*}
+P\left\{-t_{\alpha/2}<T<t_{\alpha/2}\right\}=1-\alpha,\textrm{equivalentemente}\\
+P\left\{\overline{X}-t_{\alpha/2}\frac{s}{\sqrt{n}}<\mu<\overline{X}+t_{\alpha/2}\frac{s}{\sqrt{n}}\right\}=1-\alpha.
+\end{eqnarray*}
+
+\item Un intervalo de confianza del $100\left(1-\alpha\right)\%$  de confianza para $\mu$, $\sigma^{2}$ desconocida y poblaci\'on normal es $\mu\in\left(\overline{x}-t_{\alpha/2}\frac{s}{\sqrt{n}},\overline{x}+t_{\alpha/2}\frac{s}{\sqrt{n}}\right)$, donde $t_{\alpha/2}$ es una $t$-student con $\nu=n-1$ grados de libertad.
+\item Los l\'imites unilaterales para $\mu$ con $\sigma$ desconocida son $\overline{X}-t_{\alpha/2}\frac{s}{\sqrt{n}}$ y $\overline{X}+t_{\alpha/2}\frac{s}{\sqrt{n}}$.
+\end{itemize}
+
+
+
+
+
+
+
+
+
+
+\begin{itemize}
+\item Cuando la poblaci\'on no es normal, $\sigma$ desconocida y $n\geq30$, $\sigma$ se puede reemplazar por $s$ para obtener el intervalo de confianza para muestras grandes:
+$$\overline{X}\pm t_{\alpha/2}\frac{s}{\sqrt{n}}.$$
+
+\item El estimador de $\overline{X}$ de $\mu$,  $\sigma$ desconocida, la varianza de $\sigma_{\overline{X}}^{2}=\frac{\sigma^{2}}{n}$, el error est\'andar de $\overline{X}$ es $\sigma/\sqrt{n}$.
+
+\item Si $\sigma$ es desconocida y la poblaci\'on es normal, $s\rightarrow\sigma$ y se incluye el error est\'andar $s/\sqrt{n}$, entonces $$\overline{x}\pm t_{\alpha/2}\frac{s}{\sqrt{n}}.$$
+\end{itemize}
+
+
+
+
+%---------------------------------------------------------
+\subsection*{Intervalos de confianza sobre la varianza}
+%---------------------------------------------------------
+
+
+
+
+
+Supongamos que  $X$ se distribuye normal $\left(\mu,\sigma^{2}\right)$, desconocidas. Sea $X_{1},X_{2},\ldots,X_{n}$ muestra aleatoria de tama\~no $n$ , $s^{2}$ la varianza muestral.
+
+Se sabe que $X^{2}=\frac{\left(n-1\right)s^{2}}{\sigma^{2}}$ se distribuye $\chi^{2}_{n-1}$ grados de libertad. Su intervalo de confianza es
+\begin{eqnarray}
+\begin{array}{l}
+P\left\{\chi^{2}_{1-\frac{\alpha}{2},n-1}\leq\chi^{2}\leq\chi^{2}_{\frac{\alpha}{2},n-1}\right\}=1-\alpha\\
+P\left\{\chi^{2}_{1-\frac{\alpha}{2},n-1}\leq\frac{\left(n-1\right)s^{2}}{\sigma^{2}}\leq\chi^{2}_{\frac{\alpha}{2},n-1}\right\}=1-\alpha\\
+P\left\{\frac{\left(n-1\right)s^{2}}{\chi^{2}_{\frac{\alpha}{2},n-1}}\leq\sigma^{2}\leq\frac{\left(n-1\right)s^{2}}{\chi^{2}_{1-\frac{\alpha}{2},n-1}}\right\}=1-\alpha
+\end{array}
+\end{eqnarray}
+es decir
+
+
+
+
+
+
+
+
+\begin{eqnarray}
+\sigma^{2}\in\left[\frac{\left(n-1\right)s^{2}}{\chi^{2}_{\frac{\alpha}{2},n-1}},\frac{\left(n-1\right)s^{2}}{\chi^{2}_{1-\frac{\alpha}{2},n-1}}\right]
+\end{eqnarray}
+los intervalos unilaterales son
+\begin{eqnarray}
+\sigma^{2}\in\left[\frac{\left(n-1\right)s^{2}}{\chi^{2}_{\frac{\alpha}{2},n-1}},\infty\right]-
+\end{eqnarray}
+\begin{eqnarray}
+\sigma^{2}\in\left[-\infty,\frac{\left(n-1\right)s^{2}}{\chi^{2}_{1-\frac{\alpha}{2},n-1}}\right]
+\end{eqnarray}
+
+
+
+
+%---------------------------------------------------------
+\subsection*{Intervalos de confianza para proporciones}
+%---------------------------------------------------------
+
+
+
+
+Supongamos que se tienen una muestra de tama\~no $n$ de una poblaci\'on grande pero finita, y supongamos que $X$, $X\leq n$, pertenecen a la clase de inter\'es, entonces $$\hat{p}=\frac{\overline{X}}{n}$$ es el estimador puntual de la proporci\'on de la poblaci\'on que pertenece a dicha clase.
+
+$n$ y $p$ son los par\'ametros de la distribuci\'on binomial, entonces $\hat{p}\sim N\left(p,\frac{p\left(1-p\right)}{n}\right)$ aproximadamente si $p$ es distinto de $0$ y $1$; o si $n$ es suficientemente grande. Entonces
+\begin{eqnarray*}
+Z=\frac{\hat{p}-p}{\sqrt{\frac{p\left(1-p\right)}{n}}}\sim N\left(0,1\right),\textrm{aproximadamente.}
+\end{eqnarray*}
+ 
+ 
+entonces
+\begin{eqnarray*}
+1-\alpha&=&P\left\{-z_{\alpha/2}\leq\frac{\hat{p}-p}{\sqrt{\frac{p\left(1-p\right)}{n}}}\leq z_{\alpha/2}\right\}\\
+&=&P\left\{\hat{p}-z_{\alpha/2}\sqrt{\frac{p\left(1-p\right)}{n}}\leq p\leq \hat{p}+z_{\alpha/2}\sqrt{\frac{p\left(1-p\right)}{n}}\right\}
+\end{eqnarray*}
+con $\sqrt{\frac{p\left(1-p\right)}{n}}$ error est\'andar del estimador puntual $p$. Una soluci\'on para determinar el intervalo de confianza del par\'ametro $p$ (desconocido) es
+
+
+
+
+
+
+
+\begin{eqnarray*}
+1-\alpha=P\left\{\hat{p}-z_{\alpha/2}\sqrt{\frac{\hat{p}\left(1-\hat{p}\right)}{n}}\leq p\leq \hat{p}+z_{\alpha/2}\sqrt{\frac{\hat{p}\left(1-\hat{p}\right)}{n}}\right\}
+\end{eqnarray*}
+entonces los intervalos de confianza, tanto unilaterales como de dos colas son: 
+\begin{itemize}
+\item $p\in \left(\hat{p}-z_{\alpha/2}\sqrt{\frac{\hat{p}\left(1-\hat{p}\right)}{n}},\hat{p}+z_{\alpha/2}\sqrt{\frac{\hat{p}\left(1-\hat{p}\right)}{n}}\right)$
+
+\item $p\in \left(-\infty,\hat{p}+z_{\alpha/2}\sqrt{\frac{\hat{p}\left(1-\hat{p}\right)}{n}}\right)$
+
+\item $p\in \left(\hat{p}-z_{\alpha/2}\sqrt{\frac{\hat{p}\left(1-\hat{p}\right)}{n}},\infty\right)$
+
+\end{itemize}
+para minimizar el error est\'andar, se propone que el tama\~no de la muestra sea $n= \left(\frac{z_{\alpha/2}}{E}\right)^{2}p\left(1-p\right)$, donde $E=\mid p-\hat{p}\mid$.
+
+
+
+%---------------------------------------------------------
+\section{Intervalos de confianza para dos muestras}
+%---------------------------------------------------------
+\subsection*{Varianzas conocidas}
+%---------------------------------------------------------
+
+
+
+
+Sean $X_{1}$ y $X_{2}$ variables aleatorias independientes. $X_{1}$ con media desconocida $\mu_{1}$ y varianza conocida $\sigma_{1}^{2}$; y $X_{2}$ con media desconocida $\mu_{2}$ y varianza conocida $\sigma_{2}^{2}$. Se busca encontrar un intervalo de confianza de $100\left(1-\alpha\right)\%$ de la diferencia entre medias $\mu_{1}$ y $\mu_{2}$.\medskip
+
+Sean $X_{11},X_{12},\ldots,X_{1n_{1}}$ muestra aleatoria de $n_{1}$ observaciones de $X_{1}$, y sean $X_{21},X_{22},\ldots,X_{2n_{2}}$ muestra aleatoria de $n_{2}$ observaciones de $X_{2}$.\medskip
+
+Sean $\overline{X}_{1}$ y $\overline{X}_{2}$, medias muestrales, entonces el estad\'sitico 
+\begin{eqnarray}
+Z=\frac{\left(\overline{X}_{1}-\overline{X}_{2}\right)-\left(\mu_{1}-\mu_{2}\right)}{\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}}\sim N\left(0,1\right),\end{eqnarray}
+si $X_{1}$ y $X_{2}$ son normales o aproximadamente normales si se aplican las condiciones del Teorema de L\'imite Central respectivamente. 
+
+
+
+
+
+
+
+Entonces se tiene
+\begin{eqnarray*}
+1-\alpha&=& P\left\{-Z_{\alpha/2}\leq Z\leq Z_{\alpha/2}\right\}\\
+&=&P\left\{-Z_{\alpha/2}\leq \frac{\left(\overline{X}_{1}-\overline{X}_{2}\right)-\left(\mu_{1}-\mu_{2}\right)}{\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}}\leq Z_{\alpha/2}\right\}\\
+&=&P\left\{\left(\overline{X}_{1}-\overline{X}_{2}\right)-Z_{\alpha/2}\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}\leq \mu_{1}-\mu_{2}\leq\right.\\
+&&\left. \left(\overline{X}_{1}-\overline{X}_{2}\right)+Z_{\alpha/2}\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}\right\}
+\end{eqnarray*}
+
+Entonces los intervalos de confianza unilaterales y de dos colas al $\left(1-\alpha\right)\%$ de confianza son 
+
+
+
+
+
+
+
+\begin{itemize}
+\item $\mu_{1}-\mu_{2}\in \left[\left(\overline{X}_{1}-\overline{X}_{2}\right)-Z_{\alpha/2}\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}},\left(\overline{X}_{1}-\overline{X}_{2}\right)+Z_{\alpha/2}\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}\right]$
+
+\item $\mu_{1}-\mu_{2}\in \left[-\infty,\left(\overline{X}_{1}-\overline{X}_{2}\right)+Z_{\alpha/2}\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}\right]$
+
+\item $\mu_{1}-\mu_{2}\in \left[\left(\overline{X}_{1}-\overline{X}_{2}\right)-Z_{\alpha/2}\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}},\infty\right]$
+
+\end{itemize}
+
+
+
+
+
+
+
+
+\begin{Note}
+Si $\sigma_{1}$ y $\sigma_{2}$ son conocidas, o por lo menos se conoce una aproximaci\'on, y los tama\~nos de las muestras $n_{1}$ y $n_{2}$ son iguales, $n_{1}=n_{2}=n$, se puede determinar el tama\~no de la muestra para que el error al estimar $\mu_{1}-\mu_{2}$ usando $\overline{X}_{1}-\overline{X}_{2}$ sea menor que $E$ (valor del error deseado) al $\left(1-\alpha\right)\%$ de confianza. El tama\~no $n$ de la muestra requerido para cada muestra es
+\begin{eqnarray*}
+n=\left(\frac{Z_{\alpha/2}}{E}\right)^{2}\left(\sigma_{1}^{2}+\sigma_{2}^{2}\right).
+\end{eqnarray*}
+
+\end{Note}
+
+
+
+
+
+\subsection*{Varianzas desconocidas}
+
+
+
+
+
+
+\begin{itemize}
+\item Si $n_{1},n_{2}\geq30$ se pueden utilizar los intervalos de la distribuci\'on normal para varianza conocida
+
+
+\item Si $n_{1},n_{2}$ son muestras peque\~nas, supongase que las poblaciones para $X_{1}$ y $X_{2}$ son normales con varianzas desconocidas y con base en el intervalo de confianza para distribuciones $t$-student
+\end{itemize}
+
+
+
+
+\subsubsection*{$\sigma_{1}^{2}=\sigma_{2}^{2}=\sigma$}
+
+
+Supongamos que $X_{1}$ es una variable aleatoria con media $\mu_{1}$ y varianza $\sigma_{1}^{2}$, $X_{2}$ es una variable aleatoria con media $\mu_{2}$ y varianza $\sigma_{2}^{2}$. Todos los par\'ametros son desconocidos. Sin embargo sup\'ongase que es razonable considerar que $\sigma_{1}^{2}=\sigma_{2}^{2}=\sigma^{2}$.\medskip
+
+Nuevamente sean $X_{1}$ y $X_{2}$ variables aleatorias independientes. $X_{1}$ con media desconocida $\mu_{1}$ y varianza muestral $S_{1}^{2}$; y $X_{2}$ con media desconocida $\mu_{2}$ y varianza muestral $S_{2}^{2}$. Dado que $S_{1}^{2}$ y $S_{2}^{2}$ son estimadores de $\sigma_{1}^{2}$, se propone el estimador $S$ de $\sigma^{2}$ como 
+
+\begin{eqnarray*}
+S_{p}^{2}=\frac{\left(n_{1}-1\right)S_{1}^{2}+\left(n_{2}-1\right)S_{2}^{2}}{n_{1}+n_{2}-2},
+\end{eqnarray*}
+entonces, el estad\'istico para $\mu_{1}-\mu_{2}$ es
+
+\begin{eqnarray*}
+t_{\nu}=\frac{\left(\overline{X}_{1}-\overline{X}_{2}\right)-\left(\mu_{1}-\mu_{2}\right)}{S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}}
+\end{eqnarray*}
+donde $t_{\nu}$ es una $t$ de student con $\nu=n_{1}+n_{2}-2$ grados de libertad.\medskip
+
+Por lo tanto
+
+
+
+
+
+
+
+\begin{eqnarray*}
+1-\alpha=P\left\{-t_{\alpha/2,\nu}\leq t\leq t_{\alpha/2,\nu}\right\}\\
+=P\left\{\left(\overline{X}_{1}-\overline{X}_{2}\right)-t_{\alpha/2,\nu}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}\leq \right.\\
+\left.t\leq\left(\overline{X}_{1}-\overline{X}_{2}\right)+ t_{\alpha/2,\nu}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}\right\}
+\end{eqnarray*}
+
+luego, los intervalos de confianza del $\left(1-\alpha\right)\%$ para $\mu_{1}-|mu_{2}$ son 
+\begin{itemize}
+\item $\mu_{1}-\mu_{2}\in\left[\left(\overline{X}_{1}-\overline{X}_{2}\right)- t_{\alpha/2,\nu}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}},\left(\overline{X}_{1}-\overline{X}_{2}\right)+ t_{\alpha/2,\nu}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}\right]$
+
+
+\item $\mu_{1}-\mu_{2}\in\left[-\infty,\left(\overline{X}_{1}-\overline{X}_{2}\right)+ t_{\alpha/2,\nu}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}\right]$
+
+\item $\mu_{1}-\mu_{2}\in\left[\left(\overline{X}_{1}-\overline{X}_{2}\right)- t_{\alpha/2,\nu}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}},\infty\right]$
+
+
+\end{itemize}
+
+
+
+
+
+\subsubsection*{$\sigma_{1}^{2}\neq\sigma_{2}^{2}$}
+
+
+
+
+
+Si no se tiene certeza de que $\sigma_{1}^{2}=\sigma_{2}^{2}$, se propone el estad\'istico
+\begin{eqnarray}
+t^{*}=\frac{\left(\overline{X}_{1}-\overline{X}_{2}\right)-\left(\mu_{1}-\mu_{2}\right)}{\sqrt{\frac{S_{1}^{2}}{n_{1}}+\frac{S_{2}^{2}}{n_{2}}}}
+\end{eqnarray}
+que se distribuye $t$-student con $\nu$ grados de libertad, donde
+
+\begin{eqnarray*}
+\nu=\frac{\left(\frac{S_{1}^{2}}{n_{1}}+\frac{S_{2}^{2}}{n_{2}}\right)^{2}}{\frac{S_{1}^{2}/n_{1}}{n_{1}+1}+\frac{S_{2}^{2}/n_{2}}{n_{2}+1}}-2
+\end{eqnarray*}
+
+
+Entonces el intervalo de confianza de aproximadamente el $100\left(1-\alpha\right)\%$ para $\mu_{1}-\mu_{2}$ con $\sigma_{1}^{2}\neq\sigma_{2}^{2}$ es
+\begin{eqnarray*}
+\mu_{1}-\mu_{2}\in\left[\left(\overline{X}_{1}-\overline{X}_{2}\right)-t_{\alpha/2,\nu}\sqrt{\frac{S_{1}^{2}}{n_{1}}+\frac{S_{2}^{2}}{n_{2}}},\right.\\
+\left.\left(\overline{X}_{1}-\overline{X}_{2}\right)+t_{\alpha/2,\nu}\sqrt{\frac{S_{1}^{2}}{n_{1}}+\frac{S_{2}^{2}}{n_{2}}}\right]
+\end{eqnarray*}
+
+
+
+
+
+
+\section{Intervalos de confianza para raz\'on de Varianzas}
+
+
+
+
+
+Supongamos que se toman dos muestras aleatorias independientes de las dos poblaciones de inter\'es.\medskip
+
+Sean $X_{1}$ y $X_{2}$ variables normales independientes con medias desconocidas $\mu_{1}$ y $\mu_{2}$ y varianzas desconocidas $\sigma_{1}^{2}$ y $\sigma_{2}^{2}$ respectivamente. Se busca un intervalo de confianza de $100\left(1-\alpha\right)\%$ para $\sigma_{1}^{2}/\sigma_{2}^{2}$.\medskip
+Supongamos $n_{1}$ y $n_{2}$ muestras aleatorias de $X_{1}$ y $X_{2}$ y sean $S_{1}^{2}$ y $S_{2}^{2}$ varianzas muestralres. Se sabe que 
+$$F=\frac{S_{2}^{2}/\sigma_{2}^{2}}{S_{1}^{2}/\sigma_{1}^{2}}$$
+se distribuye $F$ con $n_{2}-1$ y $n_{1}-1$ grados de libertad.
+
+
+Por lo tanto
+\begin{eqnarray*}
+P\left\{F_{1-\frac{\alpha}{2},n_{2}-1,n_{1}-1}\leq F\leq F_{\frac{\alpha}{2},n_{2}-1,n_{1}-1}\right\}=1-\alpha\\
+P\left\{F_{1-\frac{\alpha}{2},n_{2}-1,n_{1}-1}\leq \frac{S_{2}^{2}/\sigma_{2}^{2}}{S_{1}^{2}/\sigma_{1}^{2}}\leq F_{\frac{\alpha}{2},n_{2}-1,n_{1}-1}\right\}=1-\alpha
+\end{eqnarray*}
+por lo tanto
+\begin{eqnarray*}
+P\left\{\frac{S_{1}^{2}}{S_{2}^{2}}F_{1-\frac{\alpha}{2},n_{2}-1,n_{1}-1}\leq \frac{\sigma_{1}^{2}}{\sigma_{2}^{2}}\leq \frac{S_{1}^{2}}{S_{2}^{2}}F_{\frac{\alpha}{2},n_{2}-1,n_{1}-1}\right\}=1-\alpha\\
+\end{eqnarray*}
+entonces
+
+
+
+
+
+
+
+
+\begin{eqnarray*}
+\frac{\sigma_{1}^{2}}{\sigma_{2}^{2}}\in \left[\frac{S_{1}^{2}}{S_{2}^{2}}F_{1-\frac{\alpha}{2},n_{2}-1,n_{1}-1}, \frac{S_{1}^{2}}{S_{2}^{2}}F_{\frac{\alpha}{2},n_{2}-1,n_{1}-1}\right]
+\end{eqnarray*}
+donde
+\begin{eqnarray*}
+F_{1-\frac{\alpha}{2},n_{2}-1,n_{1}-1}=\frac{1}{F_{\frac{\alpha}{2},n_{2}-1,n_{1}-1}}
+\end{eqnarray*}
+
+
+
+
+
+\section{Intervalos de confianza para diferencia de proporciones}
+
+
+
+
+
+Sean dos proporciones de inter\'es $p_{1}$ y $p_{2}$. Se busca un intervalo para $p_{1}-p_{2}$ al $100\left(1-\alpha\right)\%$.\medskip
+
+Sean dos muestras independientes de tama\~no $n_{1}$ y $n_{2}$ de poblaciones infinitas de modo que $X_{1}$ y $X_{2}$ variables aleatorias binomiales independientes con par\'ametros $\left(n_{1},p_{1}\right)$ y $\left(n_{2},p_{2}\right)$.\medskip
+
+$X_{1}$ y $X_{2}$ son  el n\'umero de observaciones que pertenecen a la clase de inter\'es correspondientes. Entonces $\hat{p}_{1}=\frac{X_{1}}{n_{1}}$ y $\hat{p}_{2}=\frac{X_{2}}{n_{2}}$ son estimadores de $p_{1}$ y $p_{2}$ respectivamente. Supongamos que se cumple la aproximaci\'on  normal a la binomial, entonces
+
+
+
+
+\begin{eqnarray*}
+Z=\frac{\left(\hat{p}_{1}-\hat{p}_{2}\right)-\left(p_{1}-p_{2}\right)}{\sqrt{\frac{p_{1}\left(1-p_{1}\right)}{n_{1}}-\frac{p_{2}\left(1-p_{2}\right)}{n_{2}}}}\sim N\left(0,1\right)\textrm{aproximadamente}
+\end{eqnarray*}
+entonces
+
+\begin{eqnarray*}
+\left(\hat{p}_{1}-\hat{p}_{2}\right)-Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}_{1}\left(1-\hat{p}_{1}\right)}{n_{1}}+\frac{\hat{p}_{2}\left(1-\hat{p}_{2}\right)}{n_{2}}}\leq p_{1}-p_{2}\\
+\leq\left(\hat{p}_{1}-\hat{p}_{2}\right)+Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}_{1}\left(1-\hat{p}_{1}\right)}{n_{1}}-\frac{\hat{p}_{2}\left(1-\hat{p}_{2}\right)}{n_{2}}}
+\end{eqnarray*}
+
+
+
+
+\begin{itemize}
+\item Una hip\'otesis estad\'istica es una afirmaci\'on  acerca de la distribuci\'on de probabilidad de una variable aleatoria, a menudo involucran uno o m\'as par\'ametros de la distribuci\'on.
+
+\item Las hip\'otesis son afirmaciones respecto a la poblaci\'on o distribuci\'on bajo estudio, no en torno a la muestra.
+
+\item La mayor\'ia de las veces, la prueba de hip\'otesis consiste en determinar si la situaci \'on experimental ha cambiado
+
+\item el inter\'es principal es decidir sobre la veracidad o falsedad de una hip\'otesis, a este procedimiento se le llama \textit{prueba de hip\'otesis}.
+
+\item Si la informaci\'on es consistente con la hip\'otesis, se concluye que esta es verdadera, de lo contrario que con base en la informaci\'on, es falsa.
+
+\end{itemize}
+
+
