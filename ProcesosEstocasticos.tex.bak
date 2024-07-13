@@ -1,0 +1,221 @@
+
+\section{Procesos Estocásticos: Introducción}
+
+\begin{Def}
+Sea $\left(\Omega,\mathcal{F},\prob\right)$ un espacio de probabilidad y $\mathbf{E}$ un conjunto no vacío, finito o numerable. Una sucesión de variables aleatorias $\left\{X_{n}:\Omega\rightarrow\mathbf{E},n\geq0\right\}$ se le llama \textit{Cadena de Markov} con espacio de estados $\mathbf{E}$ si satisface la condición de Markov, esto es, si para todo $n\geq1$ y toda sucesión $x_{0},x_{1},\ldots,x_{n},x,y\in\mathbf{E}$ se cumple que 
+
+\begin{equation}
+P\left\{X_{n}=y|X_{n-1}=x,\ldots,X_{0}=x_{0}\right\}=P\left\{X_{n}=x_{n}|X_{n-1}=x_{n-1}\right\}
+\end{equation}
+La distribución de $X_{0}$ se llama distribución inicial y se denotará por $\pi$.
+\end{Def}
+
+Las probabilidades condicionales $P\left\{X_{n}=y|X_{n-1}=x\right\}$ se les llama \textit{probabilidades condicionales}
+
+
+En este trabajo se considerarán solamente aquellas cadenas de Markov con probabilidades de transición estacionarias, es decir, aquellas que no dependen del valor de $n$ (se dice que es una cadena homogénea), es decir, cuando se diga $X_{n},n\geq0$ es cadena de Markov, se entiende que es una sucesión de variables aleatorias que satisfacen la propiedad de Markov y que tienen probabilidades de transición estacionarias.
+
+\begin{Note}
+Para una cadena de Markov Homogénea se tiene la siguiente denotación
+\begin{equation}
+P\left\{X_{n}=y|X_{n-1}=x\right\}=P_{x,y}
+\end{equation}
+\end{Note}
+
+\begin{Note}
+Para $m\geq1$ se denotará por $P^{(m)}_{x,y}$ a $P\left\{X_{n+m}=y|X_{n}=x\right\}$, que significa la probabilidad de ir en $m$ pasos o unidades de tiempo de $x$ a $y$, y se le llama \textit{probabilidad de transición en $m$ pasos}.
+\end{Note}
+
+\begin{Note}
+Para $x,y\in\mathbf{E}$ se define a $P^{(0)}_{x,y}$ como $\delta_{x,y}$, donde $\delta_{x,y}$ es la delta de Kronecker, es decir, vale 1 si $x=y$ y 0 en otro caso.
+\end{Note}
+
+
+\begin{Note}
+En el caso de que $\mathbf{E}$ sea finito, se considera la matrix $P=\left(P_{x,y}\right)_{x,y\in \mathbf{E}}$ y se le llama \textit{matriz de transición}.
+\end{Note}
+
+
+\begin{Note}
+Si la distribución inicial $\pi$ es igual al vector $\left(\delta_{x,y}\right)_{y\in\mathbf{E}}$, es decir
+\begin{eqnarray*}
+P\left(X_{0}=x)=1\right)\textrm{ y }P\left(X_{0}\neq x\right)=0,
+\end{eqnarray*}
+entonces se toma la notación 
+\begin{eqnarray}
+&&P_{x}\left(A\right)=P\left(A|X_{0}=x\right),A\in\mathcal{F},
+\end{eqnarray}
+y se dice que la cadena empieza en $A$. Se puede demostrar que $P_{x}$ es una nueva medida de probabilidad en el espacio $\left(\Omega,\mathcal{F}\right)$.
+\end{Note}
+
+
+\begin{Note}
+La suma de las entradas de los renglones de la matriz de transición es igual a uno, es decir, para todo $x\in \mathbf{E}$ se tiene $\sum_{y\in\mathbf{E}}P_{x,y}=1$.
+\end{Note}
+
+Para poder obtener uno de los resultados más importantes en cadenas de Markov, la \textit{ecuación de Chapman-kolmogorov} se requieren los siguientes resultados:
+
+\begin{Lema}
+Sean $x,y,z\in\Eb$ y $0\leq m\leq n-1$, entonces se cumple que
+\begin{equation}
+P\left(X_{n+1}=y|X_{n}=z,X_{m}=x\right)=P_{z,y}.
+\end{equation}
+\end{Lema}
+
+
+\begin{Prop}
+Si $x_{0},x_{1},\ldots,x_{n}\in \Eb$ y $\pi\left(x_{0}\right)=P\left(X_{0}=x_{0}\right)$, entonces
+\begin{equation}
+P\left(X_{1}=x_{1},\ldots,X_{n}=x_{n},X_{0}=x_{0}\right)=\pi\left(x_{0}\right)P_{x_{0},x_{1}}\cdot P_{x_{1},x_{2}}\cdots P_{x_{n-1},x_{n}}
+\end{equation}
+\end{Prop}
+
+De la proposición anterior se tiene
+\begin{equation}
+P\left(X_{1}=x_{1},\ldots,X_{n}=x_{n}|X_{0}=x_{0}\right)=P_{x_{0},x_{1}}\cdot P_{x_{1},x_{2}}\cdots P_{x_{n-1},x_{n}}.
+\end{equation}
+
+finalmente tenemos la siguiente proposición
+
+\begin{Prop}
+Sean $n,k\in\nat$ fijos y $x_{0},x_{1},\ldots,x_{n},\ldots,x_{n+k}\in\Eb$, entonces
+\begin{eqnarray*}
+&&P\left(X_{n+1}=x_{n+1},\ldots,X_{n+k}=x_{n+k}|X_{n}=x_{n},\ldots,X_{0}=x_{0}\right)\\
+&=&P\left(X_{1}=x_{n+1},X_{2}=x_{n+2},\cdots,X_{k}=x_{n+k}|X_{0}=x_{n}\right)
+\end{eqnarray*}
+\end{Prop}
+
+
+\begin{Ejem}
+Sea $X_{n}$ una variable aleatoria al tiempo $n$ tal que
+\begin{eqnarray}
+P\left(X_{n+1}=1|X_{n}=0\right)&=&p\\
+P\left(X_{n+1}=0|X_{n}=1\right)&=&q=1-p\\
+P\left(X_{0}=0\right)&=&\pi_{0}\left(0\right).
+\end{eqnarray}
+\end{Ejem}
+Se puede demostrar que
+\begin{eqnarray}
+P\left(X_{n}=0\right)&=&\frac{q}{p+q}\\
+P\left(X_{n}=1\right)&=&\frac{p}{p+q}
+\end{eqnarray}
+
+\begin{Ejem}
+El problema de la Caminata Aleatoria
+\end{Ejem}
+
+\begin{Ejem}
+El problema de la ruina del jugador
+\end{Ejem}
+
+\begin{Ejem}
+Sea $\left\{Y_{i}\right\}_{i=0}^{\infty}$ sucesión de variables aleatorias independientes e identicamente distribuidas, definidas sobre un espacio de probabilidad $\left(\Omega,\mathcal{F},\prob\right)$ y que toman valores enteros, se tiene que la sucesión $\left\{X_{i}\right\}_{i=0}^{\infty}$ definida por $X_{j}\sum_{}i=0^{j}Y_{j}$ es una cadena de Markov en el conjunto de los números enteros.
+\end{Ejem}
+
+\begin{Prop}
+Para una cadena de Markov $\left(X_{n}\right)_{n\in\nat}$ con espacio de estados $\Eb$ y para todo $n,m\in \nat$ y toda pareja $x,y\in\Eb$ se cumple
+\begin{equation}
+P\left(X_{n+m}=y|X_{0}=x\right)=\sum_{z\in\Eb}P_{x,z}^{(m)}P_{z,y}^{(n)}=P_{x,y}^{(n+m)}
+\end{equation}
+\end{Prop}
+
+\begin{Note}
+Para una cadena de Markov con un número finito de estados, se puede pensar a $P^{n}$ como la $n$-ésima potencia de la matriz $P$. Sea $\pi_{0}$ distribución inicial de la cadena de Markov, como 
+\begin{eqnarray}
+P\left(X_{n}=y\right)=\sum_{x} P\left(X_{0}=x,X_{n}=y\right)=\sum_{x} P\left(X_{0}=x\right)P\left(X_{n}=y|X_{0}=x\right)
+\end{eqnarray}
+se puede comprobar que 
+
+\begin{eqnarray}
+P\left(X_{n}=y\right)=\sum_{x} \pi_{0}\left(X\right)P^{n}\left(x,y\right).
+\end{eqnarray}
+\end{Note}
+
+Con lo anterior es posible calcular la distribuición de $X_{n}$ en términos de la distribución inicial $\pi_{0}$ y la función de transición de $n$-pasos $P^{n}$,
+\begin{eqnarray}
+P\left(X_{n+1}=y\right)=\sum_{x} P\left(X_{n}=x\right)P\left(x,y\right).
+\end{eqnarray}
+
+Si se conoce la distribución de $X_{0}$ se puede conocer la distribución de $X_{1}$.
+
+\section{Clasificación de Estados}
+
+\begin{Def}
+Para $A$ conjunto en el espacio de estados, se define un tiempo de paro $T_{A}$ de $A$ como
+\begin{equation}
+T_{A}=min_{n>0}\left(X_{n}\in A\right)
+\end{equation}
+\end{Def}
+
+\begin{Note}
+Si $X_{n}\notin A$ para toda $n>0$, $T_{A}=\infty$, es decir,  $T_{A}$ es el primer tiempo positivo que la cadena de Markov está en $A$.
+\end{Note}
+
+Una vez que se tiene la definición anterior se puede demostrar la siguiente igualdad:
+
+\begin{Prop}
+$P^{n}\left(x,y\right)=\sum_{m=1}^{n}P_{x}\left(T_{y}=m\right)P^{n.m}\left(y,x\right), n\geq1$
+\end{Prop}
+
+\begin{Def}
+En una cadena de Markov $\left(X_{n}\right)_{n\in\nat}$ con espacio de estados $\Eb$, matriz de transición $\left(P_{x,y}\right)_{x,y\in\Eb}$ y para $x,y\in\Eb$,  se dice que
+\begin{enumerate}
+\item  De $x$ se accede a $y$ si existe $n\geq0$ tal que $P_{x,y}^{(n)}>0$ y se denota por $\left(x\rightarrow y\right)$
+
+\item $x$ y $y$ se comunican entre sí, lo que se denota por $\left(x\leftrightarrow y\right)$, si se cumplen $\left(x\rightarrow y\right)$ y $\left(y\rightarrow x\right)$.
+
+\item Un estado $x\in\Eb$ es estado recurrente si $$P\left(X_{n}=x\textrm{ para algún }n\in\nat|X_{0}=x \right)\equiv1.$$ 
+
+\item Un estado $x\in\Eb$ es estado transitorio si $$P\left(X_{n}=x\textrm{ para algún }n\in\nat|X_{0}=x \right)<1.$$ 
+
+\item Un estado $x\in\Eb$ se llama absorbente si $P_{x,x}\equiv1$.
+\end{enumerate}
+\end{Def}
+
+
+Se tiene el siguiente resultado:
+
+\begin{Prop}
+$x\leftrightarrow y$ es una relación de equivalencia y da lugar a una partición del espacio de estados $\Eb$
+\end{Prop}
+
+
+\begin{Def}
+\begin{enumerate}
+\item[1.  ] Se dice que $C\subset \Eb$ es una clase de comunicación si cualesquiera dos estados de $C$ se comunicán entre sí
+
+\item[2.  ] Dado $x\in\Eb$, su clase de comunicación se denota por: $C\left(x\right)=\left\{y\in\Eb:x\leftrightarrow y\right\}$.
+
+\item[3.  ] Se dice que un conjunto de estados  $C\subset \Eb$ es cerrado si ningún estado de $\Eb-C$ puede ser accedido desde un estado de $C$.
+\end{enumerate}
+\end{Def}
+
+
+\begin{Def}
+Se dice que la cadena es irreducible si cualquiera de las siguientes condiciones, equivalentes entre sí,  se cumplen
+\begin{enumerate}
+\item[a) ] Desde cualquier estado de $\Eb$ se puede acceder a cualquier otro.
+
+\item[b) ] Todos los estados se comunican entre sí.
+
+\item[c) ] $C\left(x\right)=\Eb$ para algún $x\in\Eb$.
+
+\item[d) ] $C\left(x\right)=\Eb$ para todo $x\in\Eb$.
+
+\item[e) ] El único conjunto cerrado es el total.
+\end{enumerate}
+\end{Def}
+
+\begin{Prop}
+\begin{enumerate}
+\item[a) ] Un estado $x\in\Eb$ es recurrente si y sólo si $P\left(T_{x}<\infty|x_{0}=x\right)=1$.
+
+\item[b) ] Un estado $x\in\Eb$ es transitorio si y sólo si $P\left(T_{x}<\infty|x_{0}=x\right)<1$.
+
+\item[c) ] Un estado $x\in\Eb$ es absorbente si y sólo si $P\left(T_{x}=1|x_{0}=x\right)=1$.
+
+
+\end{enumerate}
+\end{Prop}
+
+

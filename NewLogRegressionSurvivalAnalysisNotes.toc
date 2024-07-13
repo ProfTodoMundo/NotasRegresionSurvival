@@ -1,0 +1,1293 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {part}{I\hspace {1em}INTRODUCCIÓN}{24}{part.1}%
+\contentsline {chapter}{\numberline {1}Introducción}{25}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introducci\'on}{25}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Historia de la Estad\'istica}{25}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Muestreo:}{31}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Errores Estad\'isticos Comunes}{32}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Elementos}{33}{chapter.2}%
+\contentsline {section}{\numberline {2.1}2. Pruebas de Hip\'otesis}{33}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}2.1 Tipos de errores}{33}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}2.2 Muestras grandes: una media poblacional}{34}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}2.2.1 C\'alculo de valor $p$}{34}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Prueba de hip\'otesis para la diferencia entre dos medias poblacionales}{36}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}2.2.3 Prueba de Hip\'otesis para una Proporci\'on Binomial}{37}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}2.2.4 Prueba de Hip\'otesis diferencia entre dos Proporciones Binomiales}{38}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}2.3 Muestras Peque\~nas}{39}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}2.3.1 Una media poblacional}{39}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}2.3.2 Diferencia entre dos medias poblacionales: M.A.I.}{39}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}2.3.3 Diferencia entre dos medias poblacionales: Diferencias Pareadas}{40}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}2.3.4 Inferencias con respecto a la Varianza Poblacional}{40}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}2.3.5 Comparaci\'on de dos varianzas poblacionales}{40}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}2. Pruebas de Hip\'otesis}{41}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}2.1 Tipos de errores}{41}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}2.2 Muestras grandes: una media poblacional}{42}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}2.2.1 C\'alculo de valor $p$}{42}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}2.2.2 Prueba de hip\'otesis para la diferencia entre dos medias poblacionales}{45}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}2.2.3 Prueba de Hip\'otesis para una Proporci\'on Binomial}{46}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}2.2.4 Prueba de Hip\'otesis diferencia entre dos Proporciones Binomiales}{47}{subsection.2.5.4}%
+\contentsline {section}{\numberline {2.6}2.3 Muestras Peque\~nas}{48}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}2.3.1 Una media poblacional}{48}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}2.3.2 Diferencia entre dos medias poblacionales: M.A.I.}{48}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}2.3.3 Diferencia entre dos medias poblacionales: Diferencias Pareadas}{49}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}2.3.4 Inferencias con respecto a la Varianza Poblacional}{49}{subsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.6.5}2.3.5 Comparaci\'on de dos varianzas poblacionales}{50}{subsection.2.6.5}%
+\contentsline {section}{\numberline {2.7}Ejercicios}{50}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Bioestadistica}{51}{chapter.3}%
+\contentsline {subsection}{\numberline {3.0.1}Parte I. Introducci\'on a la Bioestad\'istica}{51}{subsection.3.0.1}%
+\contentsline {section}{\numberline {3.1}Introducci\'on}{51}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Definici\'on de Estad\'istica}{51}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Utilidad e Importancia}{52}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Historia de la Estad\'istica}{52}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Etapas de Desarrollo de la Estad\'istica}{54}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Divisi\'on de la Estad\'istica}{55}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Estad\'istica Inferencial}{55}{subsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.1.7}M\'etodo Estad\'istico}{56}{subsection.3.1.7}%
+\contentsline {subsection}{\numberline {3.1.8}Errores Estad\'isticos Comunes}{56}{subsection.3.1.8}%
+\contentsline {subsection}{\numberline {3.1.9}T\'erminos comunes utilizados en Estad\'istica}{58}{subsection.3.1.9}%
+\contentsline {subsection}{\numberline {3.1.10}Muestreo:}{60}{subsection.3.1.10}%
+\contentsline {subsection}{\numberline {3.1.11}Variables}{61}{subsection.3.1.11}%
+\contentsline {subsection}{\numberline {3.1.12}Malos Usos de la Estad\'istica}{61}{subsection.3.1.12}%
+\contentsline {subsection}{\numberline {3.1.13}Un sesgo del usuario}{61}{subsection.3.1.13}%
+\contentsline {subsection}{\numberline {3.1.14} Supuestos falsos}{62}{subsection.3.1.14}%
+\contentsline {section}{\numberline {3.2}2. Pruebas de Hip\'otesis}{66}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}2.1 Tipos de errores}{66}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}2.2 Muestras grandes: una media poblacional}{67}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}2.2.1 C\'alculo de valor $p$}{67}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}2.2.2 Prueba de hip\'otesis para la diferencia entre dos medias poblacionales}{70}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}2.2.3 Prueba de Hip\'otesis para una Proporci\'on Binomial}{71}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}2.2.4 Prueba de Hip\'otesis diferencia entre dos Proporciones Binomiales}{72}{subsection.3.3.4}%
+\contentsline {section}{\numberline {3.4}2.3 Muestras Peque\~nas}{73}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}2.3.1 Una media poblacional}{73}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}2.3.2 Diferencia entre dos medias poblacionales: M.A.I.}{73}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}2.3.3 Diferencia entre dos medias poblacionales: Diferencias Pareadas}{74}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}2.3.4 Inferencias con respecto a la Varianza Poblacional}{74}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}2.3.5 Comparaci\'on de dos varianzas poblacionales}{75}{subsection.3.4.5}%
+\contentsline {section}{\numberline {3.5}3. An\'alisis de Regresion Lineal (RL)}{75}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}3.1 Regresi\'on Lineal Simple (RLS)}{75}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}3.2 M\'etodo de M\'inimos Cuadrados}{75}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}3.3 Propiedades de los Estimadores $\hat {\beta }_{0}$ y $\hat {\beta }_{1}$}{76}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}3.4 Prueba de Hip\'otesis en RLS}{78}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Estimaci\'on de Intervalos en RLS}{80}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}Predicci\'on}{80}{subsection.3.5.6}%
+\contentsline {subsection}{\numberline {3.5.7}Coeficiente de Determinaci\'on}{81}{subsection.3.5.7}%
+\contentsline {section}{\numberline {3.6}An\'alisis de Varianza}{81}{section.3.6}%
+\contentsline {section}{\numberline {3.7}3. An\'alisis de Regresion Lineal (RL)}{82}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}3.1 Regresi\'on Lineal Simple (RLS)}{82}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}3.2 M\'etodo de M\'inimos Cuadrados}{82}{subsection.3.7.2}%
+\contentsline {subsection}{\numberline {3.7.3}3.3 Propiedades de los Estimadores $\hat {\beta }_{0}$ y $\hat {\beta }_{1}$}{83}{subsection.3.7.3}%
+\contentsline {subsection}{\numberline {3.7.4}3.4 Prueba de Hip\'otesis en RLS}{84}{subsection.3.7.4}%
+\contentsline {subsection}{\numberline {3.7.5}Estimaci\'on de Intervalos en RLS}{86}{subsection.3.7.5}%
+\contentsline {subsection}{\numberline {3.7.6}Predicci\'on}{87}{subsection.3.7.6}%
+\contentsline {subsection}{\numberline {3.7.7}Coeficiente de Determinaci\'on}{87}{subsection.3.7.7}%
+\contentsline {section}{\numberline {3.8}An\'alisis de Varianza}{87}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Pruebas de Hip\'otesis}{90}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Tipos de errores}{90}{subsection.3.9.1}%
+\contentsline {section}{\numberline {3.10}Muestras grandes: una media poblacional}{91}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}C\'alculo de valor $p$}{91}{subsection.3.10.1}%
+\contentsline {section}{\numberline {3.11}Pruebas de Hip\'otesis}{92}{section.3.11}%
+\contentsline {subsection}{\numberline {3.11.1}Tipos de errores}{92}{subsection.3.11.1}%
+\contentsline {section}{\numberline {3.12}Pruebas de Hip\'otesis}{92}{section.3.12}%
+\contentsline {subsection}{\numberline {3.12.1}Tipos de errores}{92}{subsection.3.12.1}%
+\contentsline {section}{\numberline {3.13}Muestras grandes: una media poblacional}{94}{section.3.13}%
+\contentsline {subsection}{\numberline {3.13.1}C\'alculo de valor $p$}{94}{subsection.3.13.1}%
+\contentsline {section}{\numberline {3.14}Estimaci\'on por intervalos}{94}{section.3.14}%
+\contentsline {section}{\numberline {3.15}Intervalos de confianza para dos muestras}{97}{section.3.15}%
+\contentsline {section}{\numberline {3.16}Intervalos de confianza para raz\'on de Varianzas}{99}{section.3.16}%
+\contentsline {section}{\numberline {3.17}Intervalos de confianza para diferencia de proporciones}{99}{section.3.17}%
+\contentsline {section}{\numberline {3.18}2. Pruebas de Hip\'otesis}{100}{section.3.18}%
+\contentsline {subsection}{\numberline {3.18.1}2.1 Tipos de errores}{100}{subsection.3.18.1}%
+\contentsline {section}{\numberline {3.19}2.2 Muestras grandes: una media poblacional}{101}{section.3.19}%
+\contentsline {subsection}{\numberline {3.19.1}2.2.1 C\'alculo de valor $p$}{101}{subsection.3.19.1}%
+\contentsline {subsection}{\numberline {3.19.2}2.2.2 Prueba de hip\'otesis para la diferencia entre dos medias poblacionales}{103}{subsection.3.19.2}%
+\contentsline {subsection}{\numberline {3.19.3}2.2.3 Prueba de Hip\'otesis para una Proporci\'on Binomial}{104}{subsection.3.19.3}%
+\contentsline {subsection}{\numberline {3.19.4}2.2.4 Prueba de Hip\'otesis diferencia entre dos Proporciones Binomiales}{105}{subsection.3.19.4}%
+\contentsline {section}{\numberline {3.20}2.3 Muestras Peque\~nas}{106}{section.3.20}%
+\contentsline {subsection}{\numberline {3.20.1}2.3.1 Una media poblacional}{106}{subsection.3.20.1}%
+\contentsline {subsection}{\numberline {3.20.2}2.3.2 Diferencia entre dos medias poblacionales: M.A.I.}{106}{subsection.3.20.2}%
+\contentsline {subsection}{\numberline {3.20.3}2.3.3 Diferencia entre dos medias poblacionales: Diferencias Pareadas}{107}{subsection.3.20.3}%
+\contentsline {subsection}{\numberline {3.20.4}2.3.4 Inferencias con respecto a la Varianza Poblacional}{107}{subsection.3.20.4}%
+\contentsline {subsection}{\numberline {3.20.5}2.3.5 Comparaci\'on de dos varianzas poblacionales}{107}{subsection.3.20.5}%
+\contentsline {section}{\numberline {3.21}2. Pruebas de Hip\'otesis}{108}{section.3.21}%
+\contentsline {subsection}{\numberline {3.21.1}2.1 Tipos de errores}{108}{subsection.3.21.1}%
+\contentsline {section}{\numberline {3.22}2.2 Muestras grandes: una media poblacional}{109}{section.3.22}%
+\contentsline {subsection}{\numberline {3.22.1}2.2.1 C\'alculo de valor $p$}{109}{subsection.3.22.1}%
+\contentsline {subsection}{\numberline {3.22.2}2.2.2 Prueba de hip\'otesis para la diferencia entre dos medias poblacionales}{111}{subsection.3.22.2}%
+\contentsline {subsection}{\numberline {3.22.3}2.2.3 Prueba de Hip\'otesis para una Proporci\'on Binomial}{112}{subsection.3.22.3}%
+\contentsline {subsection}{\numberline {3.22.4}2.2.4 Prueba de Hip\'otesis diferencia entre dos Proporciones Binomiales}{113}{subsection.3.22.4}%
+\contentsline {section}{\numberline {3.23}2.3 Muestras Peque\~nas}{113}{section.3.23}%
+\contentsline {subsection}{\numberline {3.23.1}2.3.1 Una media poblacional}{113}{subsection.3.23.1}%
+\contentsline {subsection}{\numberline {3.23.2}2.3.2 Diferencia entre dos medias poblacionales: M.A.I.}{114}{subsection.3.23.2}%
+\contentsline {subsection}{\numberline {3.23.3}2.3.3 Diferencia entre dos medias poblacionales: Diferencias Pareadas}{114}{subsection.3.23.3}%
+\contentsline {subsection}{\numberline {3.23.4}2.3.4 Inferencias con respecto a la Varianza Poblacional}{115}{subsection.3.23.4}%
+\contentsline {subsection}{\numberline {3.23.5}2.3.5 Comparaci\'on de dos varianzas poblacionales}{115}{subsection.3.23.5}%
+\contentsline {section}{\numberline {3.24}Ejercicios}{115}{section.3.24}%
+\contentsline {section}{\numberline {3.25}An\'alisis de Regresion Lineal (RL)}{116}{section.3.25}%
+\contentsline {section}{\numberline {3.26}An\'alisis de Regresion Lineal (RL)}{116}{section.3.26}%
+\contentsline {subsection}{\numberline {3.26.1}Regresi\'on Lineal Simple (RLS)}{116}{subsection.3.26.1}%
+\contentsline {subsection}{\numberline {3.26.2}Regresi\'on Lineal Simple (RLS)}{117}{subsection.3.26.2}%
+\contentsline {section}{\numberline {3.27}3. An\'alisis de Regresion Lineal (RL)}{118}{section.3.27}%
+\contentsline {subsection}{\numberline {3.27.1}3.1 Regresi\'on Lineal Simple (RLS)}{119}{subsection.3.27.1}%
+\contentsline {subsection}{\numberline {3.27.2}3.2 M\'etodo de M\'inimos Cuadrados}{119}{subsection.3.27.2}%
+\contentsline {subsection}{\numberline {3.27.3}3.3 Propiedades de los Estimadores $\hat {\beta }_{0}$ y $\hat {\beta }_{1}$}{120}{subsection.3.27.3}%
+\contentsline {subsection}{\numberline {3.27.4}3.4 Prueba de Hip\'otesis en RLS}{121}{subsection.3.27.4}%
+\contentsline {subsection}{\numberline {3.27.5}Estimaci\'on de Intervalos en RLS}{123}{subsection.3.27.5}%
+\contentsline {section}{\numberline {3.28}3. An\'alisis de Regresion Lineal (RL)}{123}{section.3.28}%
+\contentsline {subsection}{\numberline {3.28.1}3.1 Regresi\'on Lineal Simple (RLS)}{123}{subsection.3.28.1}%
+\contentsline {subsection}{\numberline {3.28.2}3.2 M\'etodo de M\'inimos Cuadrados}{124}{subsection.3.28.2}%
+\contentsline {subsection}{\numberline {3.28.3}3.3 Propiedades de los Estimadores $\hat {\beta }_{0}$ y $\hat {\beta }_{1}$}{125}{subsection.3.28.3}%
+\contentsline {subsection}{\numberline {3.28.4}3.4 Prueba de Hip\'otesis en RLS}{126}{subsection.3.28.4}%
+\contentsline {subsection}{\numberline {3.28.5}Estimaci\'on de Intervalos en RLS}{128}{subsection.3.28.5}%
+\contentsline {subsection}{\numberline {3.28.6}Predicci\'on}{128}{subsection.3.28.6}%
+\contentsline {subsection}{\numberline {3.28.7}Prueba de falta de ajuste}{128}{subsection.3.28.7}%
+\contentsline {subsection}{\numberline {3.28.8}Coeficiente de Determinaci\'on}{129}{subsection.3.28.8}%
+\contentsline {chapter}{\numberline {4}Requisitos}{130}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Pruebas de Hip\'otesis}{130}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Tipos de errores}{130}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Muestras grandes: una media poblacional}{131}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}C\'alculo de valor $p$}{131}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Pruebas de Hip\'otesis}{132}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Tipos de errores}{132}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}Pruebas de Hip\'otesis}{133}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Tipos de errores}{133}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Muestras grandes: una media poblacional}{134}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}C\'alculo de valor $p$}{134}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Estimaci\'on por intervalos}{135}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Intervalos de confianza para dos muestras}{137}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Intervalos de confianza para raz\'on de Varianzas}{139}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Intervalos de confianza para diferencia de proporciones}{139}{section.4.9}%
+\contentsline {chapter}{\numberline {5}Bases}{141}{chapter.5}%
+\contentsline {section}{\numberline {5.1}An\'alisis de Regresion Lineal (RL)}{141}{section.5.1}%
+\contentsline {section}{\numberline {5.2}An\'alisis de Regresion Lineal (RL)}{141}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Regresi\'on Lineal Simple (RLS)}{141}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Regresi\'on Lineal Simple (RLS)}{142}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}3. An\'alisis de Regresion Lineal (RL)}{144}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}3.1 Regresi\'on Lineal Simple (RLS)}{144}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}3.2 M\'etodo de M\'inimos Cuadrados}{144}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}3.3 Propiedades de los Estimadores $\hat {\beta }_{0}$ y $\hat {\beta }_{1}$}{145}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}3.4 Prueba de Hip\'otesis en RLS}{146}{subsection.5.3.4}%
+\contentsline {subsection}{\numberline {5.3.5}Estimaci\'on de Intervalos en RLS}{148}{subsection.5.3.5}%
+\contentsline {section}{\numberline {5.4}3. An\'alisis de Regresion Lineal (RL)}{148}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}3.1 Regresi\'on Lineal Simple (RLS)}{149}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}3.2 M\'etodo de M\'inimos Cuadrados}{149}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}3.3 Propiedades de los Estimadores $\hat {\beta }_{0}$ y $\hat {\beta }_{1}$}{150}{subsection.5.4.3}%
+\contentsline {subsection}{\numberline {5.4.4}3.4 Prueba de Hip\'otesis en RLS}{151}{subsection.5.4.4}%
+\contentsline {subsection}{\numberline {5.4.5}Estimaci\'on de Intervalos en RLS}{153}{subsection.5.4.5}%
+\contentsline {subsection}{\numberline {5.4.6}Predicci\'on}{153}{subsection.5.4.6}%
+\contentsline {subsection}{\numberline {5.4.7}Prueba de falta de ajuste}{154}{subsection.5.4.7}%
+\contentsline {subsection}{\numberline {5.4.8}Coeficiente de Determinaci\'on}{154}{subsection.5.4.8}%
+\contentsline {part}{II\hspace {1em}PRIMERA PARTE: Regresión Logística}{155}{part.2}%
+\contentsline {chapter}{\numberline {6}Día 1: Introducción}{156}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Conceptos Básicos}{156}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Regresión Lineal}{156}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Regresión Logística}{157}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Método de Máxima Verosimilitud}{157}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Método de Newton-Raphson}{159}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Espec\'ificando}{160}{section.6.6}%
+\contentsline {chapter}{\numberline {7}Elementos de Probabilidad}{163}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introducci\'on}{163}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Probabilidad}{163}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Espacio Muestral y Eventos}{163}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Definiciones de Probabilidad}{163}{subsection.7.2.2}%
+\contentsline {subsubsection}{Probabilidad Cl\'asica}{163}{subsection.7.2.2}%
+\contentsline {subsubsection}{Probabilidad Frecuentista}{163}{subsection.7.2.2}%
+\contentsline {subsubsection}{Probabilidad Bayesiana}{164}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}Estad\'istica Bayesiana}{164}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Prior y Posterior}{164}{subsection.7.3.1}%
+\contentsline {subsubsection}{Distribuci\'on Prior}{164}{subsection.7.3.1}%
+\contentsline {subsubsection}{Verosimilitud}{164}{subsection.7.3.1}%
+\contentsline {subsubsection}{Distribuci\'on Posterior}{164}{subsection.7.3.1}%
+\contentsline {section}{\numberline {7.4}Distribuciones de Probabilidad}{164}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Distribuciones Discretas}{164}{subsection.7.4.1}%
+\contentsline {subsubsection}{Distribuci\'on Binomial}{165}{subsection.7.4.1}%
+\contentsline {subsubsection}{Distribuci\'on de Poisson}{165}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Distribuciones Continuas}{165}{subsection.7.4.2}%
+\contentsline {subsubsection}{Distribuci\'on Normal}{165}{subsection.7.4.2}%
+\contentsline {subsubsection}{Distribuci\'on Exponencial}{166}{subsection.7.4.2}%
+\contentsline {section}{\numberline {7.5}Estad\'istica Descriptiva}{166}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Medidas de Tendencia Central}{166}{subsection.7.5.1}%
+\contentsline {subsubsection}{Media}{166}{subsection.7.5.1}%
+\contentsline {subsubsection}{Mediana}{166}{subsection.7.5.1}%
+\contentsline {subsubsection}{Moda}{166}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Medidas de Dispersi\'on}{166}{subsection.7.5.2}%
+\contentsline {subsubsection}{Rango}{166}{subsection.7.5.2}%
+\contentsline {subsubsection}{Varianza}{166}{subsection.7.5.2}%
+\contentsline {subsubsection}{Desviaci\'on Est\'andar}{167}{subsection.7.5.2}%
+\contentsline {section}{\numberline {7.6}Inferencia Estad\'istica}{167}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Estimaci\'on de Par\'ametros}{167}{subsection.7.6.1}%
+\contentsline {subsubsection}{Estimador Puntual}{167}{subsection.7.6.1}%
+\contentsline {subsubsection}{Propiedades de los Estimadores Puntuales}{167}{subsection.7.6.1}%
+\contentsline {subsubsection}{Estimador por Intervalo}{167}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}Prueba de Hip\'otesis}{167}{subsection.7.6.2}%
+\contentsline {subsubsection}{Hip\'otesis Nula y Alternativa}{168}{subsection.7.6.2}%
+\contentsline {subsubsection}{Nivel de Significancia}{168}{subsection.7.6.2}%
+\contentsline {subsubsection}{Estad\'istico de Prueba}{168}{subsection.7.6.2}%
+\contentsline {subsubsection}{P-valor}{168}{subsection.7.6.2}%
+\contentsline {subsubsection}{Tipos de Errores}{168}{subsection.7.6.2}%
+\contentsline {subsubsection}{Tabla de Errores en la Prueba de Hip\'otesis}{168}{subsection.7.6.2}%
+\contentsline {chapter}{\numberline {8}Matemáticas Detrás de la Regresión Logística}{169}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introducci\'on}{169}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Funci\'on Log\'istica}{169}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Definici\'on}{169}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Propiedades}{169}{subsection.8.2.2}%
+\contentsline {section}{\numberline {8.3}Funci\'on de Verosimilitud}{169}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Definici\'on}{170}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Funci\'on de Log-Verosimilitud}{170}{subsection.8.3.2}%
+\contentsline {section}{\numberline {8.4}Estimaci\'on de Coeficientes}{170}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Gradiente y Hessiana}{170}{subsection.8.4.1}%
+\contentsline {subsubsection}{Gradiente}{170}{subsection.8.4.1}%
+\contentsline {subsubsection}{Hessiana}{170}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Algoritmo Newton-Raphson}{170}{subsection.8.4.2}%
+\contentsline {section}{\numberline {8.5}Validaci\'on del Modelo}{171}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Curva ROC y AUC}{171}{subsection.8.5.1}%
+\contentsline {subsection}{\numberline {8.5.2}Matriz de Confusi\'on}{171}{subsection.8.5.2}%
+\contentsline {chapter}{\numberline {9}Preparación de Datos y Selección de Variables}{172}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Introducci\'on}{172}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Importancia de la Preparaci\'on de Datos}{172}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Limpieza de Datos}{172}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Tratamiento de Datos Faltantes}{172}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Imputaci\'on de la Media}{173}{subsection.9.4.1}%
+\contentsline {section}{\numberline {9.5}Codificaci\'on de Variables Categ\'oricas}{173}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}Codificaci\'on One-Hot}{173}{subsection.9.5.1}%
+\contentsline {subsection}{\numberline {9.5.2}Codificaci\'on Ordinal}{173}{subsection.9.5.2}%
+\contentsline {section}{\numberline {9.6}Selecci\'on de Variables}{173}{section.9.6}%
+\contentsline {subsection}{\numberline {9.6.1}M\'etodos de Filtrado}{173}{subsection.9.6.1}%
+\contentsline {subsection}{\numberline {9.6.2}M\'etodos de Wrapper}{173}{subsection.9.6.2}%
+\contentsline {subsection}{\numberline {9.6.3}M\'etodos Basados en Modelos}{174}{subsection.9.6.3}%
+\contentsline {subsubsection}{Regresi\'on Lasso}{174}{subsection.9.6.3}%
+\contentsline {subsubsection}{Regresi\'on Ridge}{174}{subsection.9.6.3}%
+\contentsline {section}{\numberline {9.7}Implementaci\'on en R}{174}{section.9.7}%
+\contentsline {subsection}{\numberline {9.7.1}Limpieza de Datos}{174}{subsection.9.7.1}%
+\contentsline {subsection}{\numberline {9.7.2}Codificaci\'on de Variables Categ\'oricas}{174}{subsection.9.7.2}%
+\contentsline {subsection}{\numberline {9.7.3}Selecci\'on de Variables}{174}{subsection.9.7.3}%
+\contentsline {chapter}{\numberline {10}Evaluación del Modelo y Validación Cruzada}{176}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Introducción}{176}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Métricas de Evaluación del Modelo}{176}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Curva ROC y AUC}{176}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Matriz de Confusión}{176}{subsection.10.2.2}%
+\contentsline {subsection}{\numberline {10.2.3}Precisión, Recall y F1-Score}{177}{subsection.10.2.3}%
+\contentsline {subsection}{\numberline {10.2.4}Log-Loss}{177}{subsection.10.2.4}%
+\contentsline {section}{\numberline {10.3}Validación Cruzada}{177}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}K-Fold Cross-Validation}{177}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}Leave-One-Out Cross-Validation (LOOCV)}{177}{subsection.10.3.2}%
+\contentsline {section}{\numberline {10.4}Ajuste y Sobreajuste del Modelo}{177}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Sobreajuste}{177}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Subajuste}{177}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}Regularización}{177}{subsection.10.4.3}%
+\contentsline {section}{\numberline {10.5}Implementación en R}{178}{section.10.5}%
+\contentsline {subsection}{\numberline {10.5.1}Evaluación del Modelo}{178}{subsection.10.5.1}%
+\contentsline {subsection}{\numberline {10.5.2}Validación Cruzada}{178}{subsection.10.5.2}%
+\contentsline {chapter}{\numberline {11}Diagnóstico del Modelo y Ajuste de Parámetros}{179}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Introducci\'on}{179}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Diagn\'ostico del Modelo}{179}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}Residuos}{179}{subsection.11.2.1}%
+\contentsline {subsubsection}{Residuos Estudiantizados}{179}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}Influencia}{179}{subsection.11.2.2}%
+\contentsline {subsubsection}{Distancia de Cook}{179}{subsection.11.2.2}%
+\contentsline {subsection}{\numberline {11.2.3}Multicolinealidad}{180}{subsection.11.2.3}%
+\contentsline {subsubsection}{Factor de Inflaci\'on de la Varianza (VIF)}{180}{subsection.11.2.3}%
+\contentsline {section}{\numberline {11.3}Ajuste de Par\'ametros}{180}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}Grid Search}{180}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}Random Search}{180}{subsection.11.3.2}%
+\contentsline {subsection}{\numberline {11.3.3}Bayesian Optimization}{180}{subsection.11.3.3}%
+\contentsline {section}{\numberline {11.4}Implementaci\'on en R}{180}{section.11.4}%
+\contentsline {subsection}{\numberline {11.4.1}Diagn\'ostico del Modelo}{180}{subsection.11.4.1}%
+\contentsline {subsection}{\numberline {11.4.2}Ajuste de Par\'ametros}{180}{subsection.11.4.2}%
+\contentsline {chapter}{\numberline {12}Interpretación de los Resultados}{182}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Introducci\'on}{182}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Coeficientes de Regresi\'on Log\'istica}{182}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}Interpretaci\'on de los Coeficientes}{182}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.2}Signo de los Coeficientes}{182}{subsection.12.2.2}%
+\contentsline {section}{\numberline {12.3}Odds Ratios}{182}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}C\'alculo de las Odds Ratios}{182}{subsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.3.2}Interpretaci\'on de las Odds Ratios}{183}{subsection.12.3.2}%
+\contentsline {section}{\numberline {12.4}Intervalos de Confianza}{183}{section.12.4}%
+\contentsline {subsection}{\numberline {12.4.1}C\'alculo de los Intervalos de Confianza}{183}{subsection.12.4.1}%
+\contentsline {section}{\numberline {12.5}Significancia Estad\'istica}{183}{section.12.5}%
+\contentsline {subsection}{\numberline {12.5.1}Prueba de Hip\'otesis}{183}{subsection.12.5.1}%
+\contentsline {subsection}{\numberline {12.5.2}P-valor}{183}{subsection.12.5.2}%
+\contentsline {section}{\numberline {12.6}Implementaci\'on en R}{183}{section.12.6}%
+\contentsline {subsection}{\numberline {12.6.1}C\'alculo de Coeficientes y Odds Ratios}{183}{subsection.12.6.1}%
+\contentsline {subsection}{\numberline {12.6.2}Intervalos de Confianza}{184}{subsection.12.6.2}%
+\contentsline {subsection}{\numberline {12.6.3}P-valores y Significancia Estad\'istica}{184}{subsection.12.6.3}%
+\contentsline {chapter}{\numberline {13}Regresión Logística Multinomial y Análisis de Supervivencia}{185}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Introducci\'on}{185}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Regresi\'on Log\'istica Multinomial}{185}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Modelo Multinomial}{185}{subsection.13.2.1}%
+\contentsline {subsection}{\numberline {13.2.2}Estimaci\'on de Par\'ametros}{185}{subsection.13.2.2}%
+\contentsline {section}{\numberline {13.3}An\'alisis de Supervivencia}{185}{section.13.3}%
+\contentsline {subsection}{\numberline {13.3.1}Funci\'on de Supervivencia}{185}{subsection.13.3.1}%
+\contentsline {subsection}{\numberline {13.3.2}Modelo de Riesgos Proporcionales de Cox}{186}{subsection.13.3.2}%
+\contentsline {section}{\numberline {13.4}Implementaci\'on en R}{186}{section.13.4}%
+\contentsline {subsection}{\numberline {13.4.1}Regresi\'on Log\'istica Multinomial}{186}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {13.4.2}An\'alisis de Supervivencia}{186}{subsection.13.4.2}%
+\contentsline {chapter}{\numberline {14}Implementación de Regresión Logística en Datos Reales}{187}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Introducci\'on}{187}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Conjunto de Datos}{187}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Preparaci\'on de Datos}{187}{section.14.3}%
+\contentsline {subsection}{\numberline {14.3.1}Carga y Exploraci\'on de Datos}{187}{subsection.14.3.1}%
+\contentsline {subsection}{\numberline {14.3.2}Limpieza de Datos}{187}{subsection.14.3.2}%
+\contentsline {subsection}{\numberline {14.3.3}Codificaci\'on de Variables Categ\'oricas}{188}{subsection.14.3.3}%
+\contentsline {section}{\numberline {14.4}Divisi\'on de Datos}{188}{section.14.4}%
+\contentsline {section}{\numberline {14.5}Entrenamiento del Modelo}{188}{section.14.5}%
+\contentsline {section}{\numberline {14.6}Evaluaci\'on del Modelo}{188}{section.14.6}%
+\contentsline {section}{\numberline {14.7}Interpretaci\'on de los Resultados}{188}{section.14.7}%
+\contentsline {chapter}{\numberline {15}Resumen y Proyecto Final}{189}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Resumen de Conceptos Clave}{189}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Buenas Pr\'acticas}{189}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Proyecto Final}{189}{section.15.3}%
+\contentsline {subsection}{\numberline {15.3.1}Selecci\'on del Conjunto de Datos}{189}{subsection.15.3.1}%
+\contentsline {subsection}{\numberline {15.3.2}Exploraci\'on y Preparaci\'on de Datos}{190}{subsection.15.3.2}%
+\contentsline {subsection}{\numberline {15.3.3}Entrenamiento y Evaluaci\'on del Modelo}{190}{subsection.15.3.3}%
+\contentsline {subsection}{\numberline {15.3.4}Interpretaci\'on de Resultados}{190}{subsection.15.3.4}%
+\contentsline {subsection}{\numberline {15.3.5}Presentaci\'on del Proyecto}{190}{subsection.15.3.5}%
+\contentsline {part}{III\hspace {1em}SEGUNDA PARTE: ANALISIS DE SUPERVIVENCIA}{191}{part.3}%
+\contentsline {chapter}{\numberline {16}Introducción al Análisis de Supervivencia}{192}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Conceptos Básicos}{192}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Definici\'on de Eventos y Tiempos}{192}{section.16.2}%
+\contentsline {section}{\numberline {16.3}Censura}{192}{section.16.3}%
+\contentsline {section}{\numberline {16.4}Funci\'on de Supervivencia}{192}{section.16.4}%
+\contentsline {section}{\numberline {16.5}Funci\'on de Densidad de Probabilidad}{193}{section.16.5}%
+\contentsline {section}{\numberline {16.6}Funci\'on de Riesgo}{193}{section.16.6}%
+\contentsline {section}{\numberline {16.7}Relaci\'on entre Funci\'on de Supervivencia y Funci\'on de Riesgo}{193}{section.16.7}%
+\contentsline {section}{\numberline {16.8}Deducci\'on de la Funci\'on de Supervivencia}{193}{section.16.8}%
+\contentsline {section}{\numberline {16.9}Ejemplo de C\'alculo}{194}{section.16.9}%
+\contentsline {section}{\numberline {16.10}Conclusi\'on}{194}{section.16.10}%
+\contentsline {chapter}{\numberline {17}Función de Supervivencia y Función de Riesgo}{195}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Introducci\'on}{195}{section.17.1}%
+\contentsline {section}{\numberline {17.2}Funci\'on de Supervivencia}{195}{section.17.2}%
+\contentsline {subsection}{\numberline {17.2.1}Propiedades de la Funci\'on de Supervivencia}{195}{subsection.17.2.1}%
+\contentsline {subsection}{\numberline {17.2.2}Derivaci\'on de $S(t)$}{195}{subsection.17.2.2}%
+\contentsline {subsection}{\numberline {17.2.3}Ejemplo de Cálculo de $S(t)$}{196}{subsection.17.2.3}%
+\contentsline {section}{\numberline {17.3}Funci\'on de Riesgo}{196}{section.17.3}%
+\contentsline {subsection}{\numberline {17.3.1}Relaci\'on entre $\lambda (t)$ y $f(t)$}{196}{subsection.17.3.1}%
+\contentsline {subsection}{\numberline {17.3.2}Derivaci\'on de $\lambda (t)$}{196}{subsection.17.3.2}%
+\contentsline {section}{\numberline {17.4}Relaci\'on entre Funci\'on de Supervivencia y Funci\'on de Riesgo}{196}{section.17.4}%
+\contentsline {subsection}{\numberline {17.4.1}Deducci\'on de la Relaci\'on}{197}{subsection.17.4.1}%
+\contentsline {section}{\numberline {17.5}Interpretaci\'on de la Funci\'on de Riesgo}{197}{section.17.5}%
+\contentsline {subsection}{\numberline {17.5.1}Ejemplo de C\'alculo de $\lambda (t)$}{197}{subsection.17.5.1}%
+\contentsline {section}{\numberline {17.6}Funciones de Riesgo Acumulada y Media Residual}{197}{section.17.6}%
+\contentsline {section}{\numberline {17.7}Ejemplo de C\'alculo de Funci\'on de Riesgo Acumulada y Vida Media Residual}{197}{section.17.7}%
+\contentsline {section}{\numberline {17.8}Conclusi\'on}{198}{section.17.8}%
+\contentsline {chapter}{\numberline {18}Estimador de Kaplan-Meier}{199}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Introducci\'on}{199}{section.18.1}%
+\contentsline {section}{\numberline {18.2}Definici\'on del Estimador de Kaplan-Meier}{199}{section.18.2}%
+\contentsline {section}{\numberline {18.3}Propiedades del Estimador de Kaplan-Meier}{199}{section.18.3}%
+\contentsline {subsection}{\numberline {18.3.1}Funci\'on Escalonada}{199}{subsection.18.3.1}%
+\contentsline {subsection}{\numberline {18.3.2}Manejo de Datos Censurados}{199}{subsection.18.3.2}%
+\contentsline {subsection}{\numberline {18.3.3}Estimaci\'on No Param\'etrica}{200}{subsection.18.3.3}%
+\contentsline {section}{\numberline {18.4}Deducci\'on del Estimador de Kaplan-Meier}{200}{section.18.4}%
+\contentsline {subsection}{\numberline {18.4.1}Probabilidad Condicional}{200}{subsection.18.4.1}%
+\contentsline {subsection}{\numberline {18.4.2}Producto de Probabilidades Condicionales}{200}{subsection.18.4.2}%
+\contentsline {section}{\numberline {18.5}Ejemplo de C\'alculo}{200}{section.18.5}%
+\contentsline {section}{\numberline {18.6}Intervalos de Confianza para el Estimador de Kaplan-Meier}{201}{section.18.6}%
+\contentsline {section}{\numberline {18.7}Transformaci\'on Logar\'itmica Inversa}{201}{section.18.7}%
+\contentsline {section}{\numberline {18.8}C\'alculo Detallado de Intervalos de Confianza}{201}{section.18.8}%
+\contentsline {section}{\numberline {18.9}Ejemplo de Intervalo de Confianza}{201}{section.18.9}%
+\contentsline {section}{\numberline {18.10}Interpretaci\'on del Estimador de Kaplan-Meier}{201}{section.18.10}%
+\contentsline {section}{\numberline {18.11}Conclusi\'on}{202}{section.18.11}%
+\contentsline {chapter}{\numberline {19}Comparación de Curvas de Supervivencia}{203}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Introducci\'on}{203}{section.19.1}%
+\contentsline {section}{\numberline {19.2}Test de Log-rank}{203}{section.19.2}%
+\contentsline {subsection}{\numberline {19.2.1}F\'ormula del Test de Log-rank}{203}{subsection.19.2.1}%
+\contentsline {subsection}{\numberline {19.2.2}Cálculo de $E_i$ y $V_i$}{203}{subsection.19.2.2}%
+\contentsline {section}{\numberline {19.3}Ejemplo de C\'alculo del Test de Log-rank}{204}{section.19.3}%
+\contentsline {section}{\numberline {19.4}Interpretaci\'on del Test de Log-rank}{204}{section.19.4}%
+\contentsline {section}{\numberline {19.5}Pruebas Alternativas}{204}{section.19.5}%
+\contentsline {section}{\numberline {19.6}Conclusi\'on}{204}{section.19.6}%
+\contentsline {chapter}{\numberline {20}Modelos de Riesgos Proporcionales de Cox}{205}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Introducci\'on}{205}{section.20.1}%
+\contentsline {section}{\numberline {20.2}Definici\'on del Modelo de Cox}{205}{section.20.2}%
+\contentsline {section}{\numberline {20.3}Supuesto de Proporcionalidad de Riesgos}{205}{section.20.3}%
+\contentsline {section}{\numberline {20.4}Estimaci\'on de los Par\'ametros}{205}{section.20.4}%
+\contentsline {subsection}{\numberline {20.4.1}Funci\'on de Log-Verosimilitud Parcial}{206}{subsection.20.4.1}%
+\contentsline {subsection}{\numberline {20.4.2}Derivadas Parciales y Maximizaci\'on}{206}{subsection.20.4.2}%
+\contentsline {section}{\numberline {20.5}Interpretaci\'on de los Coeficientes}{206}{section.20.5}%
+\contentsline {section}{\numberline {20.6}Evaluaci\'on del Modelo}{206}{section.20.6}%
+\contentsline {subsection}{\numberline {20.6.1}Residuos de Schoenfeld}{206}{subsection.20.6.1}%
+\contentsline {subsection}{\numberline {20.6.2}Curvas de Supervivencia Ajustadas}{206}{subsection.20.6.2}%
+\contentsline {section}{\numberline {20.7}Ejemplo de Aplicaci\'on del Modelo de Cox}{206}{section.20.7}%
+\contentsline {section}{\numberline {20.8}Conclusi\'on}{206}{section.20.8}%
+\contentsline {chapter}{\numberline {21}Diagnóstico y Validación de Modelos de Cox}{207}{chapter.21}%
+\contentsline {section}{\numberline {21.1}Introducci\'on}{207}{section.21.1}%
+\contentsline {section}{\numberline {21.2}Supuesto de Proporcionalidad de Riesgos}{207}{section.21.2}%
+\contentsline {subsection}{\numberline {21.2.1}Residuos de Schoenfeld}{207}{subsection.21.2.1}%
+\contentsline {section}{\numberline {21.3}Bondad de Ajuste}{207}{section.21.3}%
+\contentsline {subsection}{\numberline {21.3.1}Curvas de Supervivencia Ajustadas}{207}{subsection.21.3.1}%
+\contentsline {subsection}{\numberline {21.3.2}Estad\'isticas de Ajuste Global}{207}{subsection.21.3.2}%
+\contentsline {section}{\numberline {21.4}Diagn\'ostico de Influencia}{208}{section.21.4}%
+\contentsline {subsection}{\numberline {21.4.1}Residuos de Deviance}{208}{subsection.21.4.1}%
+\contentsline {subsection}{\numberline {21.4.2}Residuos de Martingala}{208}{subsection.21.4.2}%
+\contentsline {section}{\numberline {21.5}Ejemplo de Diagn\'ostico}{208}{section.21.5}%
+\contentsline {section}{\numberline {21.6}Conclusi\'on}{208}{section.21.6}%
+\contentsline {chapter}{\numberline {22}Modelos Acelerados de Fallos}{209}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Introducci\'on}{209}{section.22.1}%
+\contentsline {section}{\numberline {22.2}Definici\'on del Modelo AFT}{209}{section.22.2}%
+\contentsline {subsection}{\numberline {22.2.1}Transformaci\'on Logar\'itmica}{209}{subsection.22.2.1}%
+\contentsline {section}{\numberline {22.3}Estimaci\'on de los Parámetros}{209}{section.22.3}%
+\contentsline {subsection}{\numberline {22.3.1}Funci\'on de Log-Verosimilitud}{209}{subsection.22.3.1}%
+\contentsline {subsection}{\numberline {22.3.2}Maximizaci\'on de la Verosimilitud}{210}{subsection.22.3.2}%
+\contentsline {section}{\numberline {22.4}Distribuciones Comunes en Modelos AFT}{210}{section.22.4}%
+\contentsline {subsection}{\numberline {22.4.1}Modelo Exponencial AFT}{210}{subsection.22.4.1}%
+\contentsline {subsection}{\numberline {22.4.2}Modelo Weibull AFT}{210}{subsection.22.4.2}%
+\contentsline {section}{\numberline {22.5}Interpretaci\'on de los Coeficientes}{210}{section.22.5}%
+\contentsline {section}{\numberline {22.6}Ejemplo de Aplicaci\'on del Modelo AFT}{210}{section.22.6}%
+\contentsline {section}{\numberline {22.7}Conclusi\'on}{211}{section.22.7}%
+\contentsline {chapter}{\numberline {23}Análisis Multivariado de Supervivencia}{212}{chapter.23}%
+\contentsline {section}{\numberline {23.1}Introducci\'on}{212}{section.23.1}%
+\contentsline {section}{\numberline {23.2}Modelo de Cox Multivariado}{212}{section.23.2}%
+\contentsline {subsection}{\numberline {23.2.1}Estimaci\'on de los Parámetros}{212}{subsection.23.2.1}%
+\contentsline {section}{\numberline {23.3}Modelo AFT Multivariado}{212}{section.23.3}%
+\contentsline {subsection}{\numberline {23.3.1}Estimaci\'on de los Par\'ametros}{212}{subsection.23.3.1}%
+\contentsline {section}{\numberline {23.4}Interacci\'on y Efectos No Lineales}{212}{section.23.4}%
+\contentsline {subsection}{\numberline {23.4.1}Interacciones}{213}{subsection.23.4.1}%
+\contentsline {subsection}{\numberline {23.4.2}Efectos No Lineales}{213}{subsection.23.4.2}%
+\contentsline {section}{\numberline {23.5}Selecci\'on de Variables}{213}{section.23.5}%
+\contentsline {subsection}{\numberline {23.5.1}Regresi\'on Hacia Atr\'as}{213}{subsection.23.5.1}%
+\contentsline {subsection}{\numberline {23.5.2}Regresi\'on Hacia Adelante}{213}{subsection.23.5.2}%
+\contentsline {subsection}{\numberline {23.5.3}Criterios de Informaci\'on}{213}{subsection.23.5.3}%
+\contentsline {section}{\numberline {23.6}Ejemplo de An\'alisis Multivariado}{213}{section.23.6}%
+\contentsline {section}{\numberline {23.7}Conclusi\'on}{213}{section.23.7}%
+\contentsline {chapter}{\numberline {24}Supervivencia en Datos Complicados}{214}{chapter.24}%
+\contentsline {section}{\numberline {24.1}Introducci\'on}{214}{section.24.1}%
+\contentsline {section}{\numberline {24.2}Censura por Intervalo}{214}{section.24.2}%
+\contentsline {subsection}{\numberline {24.2.1}Modelo para Datos Censurados por Intervalo}{214}{subsection.24.2.1}%
+\contentsline {section}{\numberline {24.3}Datos Truncados}{214}{section.24.3}%
+\contentsline {subsection}{\numberline {24.3.1}Modelo para Datos Truncados}{214}{subsection.24.3.1}%
+\contentsline {section}{\numberline {24.4}An\'alisis de Competing Risks}{215}{section.24.4}%
+\contentsline {subsection}{\numberline {24.4.1}Modelo de Competing Risks}{215}{subsection.24.4.1}%
+\contentsline {section}{\numberline {24.5}M\'etodos de Imputaci\'on}{215}{section.24.5}%
+\contentsline {subsection}{\numberline {24.5.1}Imputaci\'on M\'ultiple}{215}{subsection.24.5.1}%
+\contentsline {section}{\numberline {24.6}Ejemplo de An\'alisis con Datos Complicados}{215}{section.24.6}%
+\contentsline {section}{\numberline {24.7}Conclusi\'on}{215}{section.24.7}%
+\contentsline {chapter}{\numberline {25}Proyecto Final y Revisión}{216}{chapter.25}%
+\contentsline {section}{\numberline {25.1}Introducci\'on}{216}{section.25.1}%
+\contentsline {section}{\numberline {25.2}Desarrollo del Proyecto}{216}{section.25.2}%
+\contentsline {section}{\numberline {25.3}Revisi\'on de Conceptos Clave}{216}{section.25.3}%
+\contentsline {section}{\numberline {25.4}Ejemplo de Proyecto Final}{217}{section.25.4}%
+\contentsline {subsection}{\numberline {25.4.1}Definici\'on del Problema}{217}{subsection.25.4.1}%
+\contentsline {subsection}{\numberline {25.4.2}Descripci\'on de los Datos}{217}{subsection.25.4.2}%
+\contentsline {subsection}{\numberline {25.4.3}An\'alisis Exploratorio}{217}{subsection.25.4.3}%
+\contentsline {subsection}{\numberline {25.4.4}Ajuste del Modelo}{217}{subsection.25.4.4}%
+\contentsline {subsection}{\numberline {25.4.5}Diagn\'ostico del Modelo}{217}{subsection.25.4.5}%
+\contentsline {subsection}{\numberline {25.4.6}Interpretaci\'on de Resultados}{217}{subsection.25.4.6}%
+\contentsline {subsection}{\numberline {25.4.7}Conclusiones}{217}{subsection.25.4.7}%
+\contentsline {section}{\numberline {25.5}Conclusi\'on}{217}{section.25.5}%
+\contentsline {part}{IV\hspace {1em}TERCERA PARTE: TEMAS SELECTOS}{218}{part.4}%
+\contentsline {chapter}{\numberline {26}Probabilidad Avanzada}{219}{chapter.26}%
+\contentsline {chapter}{\numberline {27}Polling Systems}{220}{chapter.27}%
+\contentsline {section}{\numberline {27.1}Ecuaciones Centrales}{220}{section.27.1}%
+\contentsline {section}{\numberline {27.2}Funciones Generadoras de Probabilidad Conjunta}{223}{section.27.2}%
+\contentsline {chapter}{\numberline {28}Cadenas de Markov}{227}{chapter.28}%
+\contentsline {section}{\numberline {28.1}Cadenas de Markov}{227}{section.28.1}%
+\contentsline {subsection}{\numberline {28.1.1}Estacionareidad}{227}{subsection.28.1.1}%
+\contentsline {subsection}{\numberline {28.1.2}Teor?a Erg?dica}{228}{subsection.28.1.2}%
+\contentsline {subsection}{\numberline {28.1.3}Funciones Arm?nicas, Recurrencia y Transitoriedad}{228}{subsection.28.1.3}%
+\contentsline {section}{\numberline {28.2}Procesos de Markov de Saltos}{228}{section.28.2}%
+\contentsline {subsection}{\numberline {28.2.1}Estructura B?sica de los Procesos Markovianos de Saltos}{228}{subsection.28.2.1}%
+\contentsline {subsection}{\numberline {28.2.2}Matriz Intensidad}{229}{subsection.28.2.2}%
+\contentsline {subsection}{\numberline {28.2.3}Medidas Estacionarias}{229}{subsection.28.2.3}%
+\contentsline {subsection}{\numberline {28.2.4}Criterios de Ergodicidad}{229}{subsection.28.2.4}%
+\contentsline {section}{\numberline {28.3}Notaci?n Kendall-Lee}{230}{section.28.3}%
+\contentsline {section}{\numberline {28.4}Procesos de Nacimiento y Muerte}{231}{section.28.4}%
+\contentsline {subsection}{\numberline {28.4.1}Procesos de Nacimiento y Muerte Generales}{231}{subsection.28.4.1}%
+\contentsline {subsection}{\numberline {28.4.2}Cola M/M/1}{232}{subsection.28.4.2}%
+\contentsline {subsection}{\numberline {28.4.3}Cola $M/M/\infty $}{233}{subsection.28.4.3}%
+\contentsline {subsection}{\numberline {28.4.4}Cola M/M/m}{233}{subsection.28.4.4}%
+\contentsline {subsection}{\numberline {28.4.5}Cola M/G/1}{234}{subsection.28.4.5}%
+\contentsline {section}{\numberline {28.5}Redes de Colas}{236}{section.28.5}%
+\contentsline {section}{\numberline {28.6}Estacionareidad}{236}{section.28.6}%
+\contentsline {section}{\numberline {28.7}Procesos de Markov de Saltos}{237}{section.28.7}%
+\contentsline {section}{\numberline {28.8}Notaci?n Kendall-Lee}{238}{section.28.8}%
+\contentsline {section}{\numberline {28.9}Procesos de Nacimiento y Muerte (Teor?a)}{238}{section.28.9}%
+\contentsline {section}{\numberline {28.10}Procesos de Nacimiento y Muerte como Modelos de Colas}{239}{section.28.10}%
+\contentsline {subsection}{\numberline {28.10.1}Cola $M/M/1$}{239}{subsection.28.10.1}%
+\contentsline {section}{\numberline {28.11}Notaci?n Kendall-Lee, segunda parte}{240}{section.28.11}%
+\contentsline {section}{\numberline {28.12}Procesos de Nacimiento y Muerte como Modelos de Colas(Continuaci?n)}{240}{section.28.12}%
+\contentsline {subsection}{\numberline {28.12.1}Cola $M/M/\infty $}{240}{subsection.28.12.1}%
+\contentsline {subsection}{\numberline {28.12.2}Cola $M/M/m$}{241}{subsection.28.12.2}%
+\contentsline {section}{\numberline {28.13}Cadenas de Markov}{241}{section.28.13}%
+\contentsline {subsection}{\numberline {28.13.1}Estacionareidad}{241}{subsection.28.13.1}%
+\contentsline {subsection}{\numberline {28.13.2}Teor?a Erg?dica}{242}{subsection.28.13.2}%
+\contentsline {subsection}{\numberline {28.13.3}Funciones Arm?nicas, Recurrencia y Transitoriedad}{242}{subsection.28.13.3}%
+\contentsline {section}{\numberline {28.14}Procesos de Markov de Saltos}{242}{section.28.14}%
+\contentsline {section}{\numberline {28.15}Notaci?n Kendall-Lee}{243}{section.28.15}%
+\contentsline {subsection}{\numberline {28.15.1}Primera parte}{243}{subsection.28.15.1}%
+\contentsline {subsection}{\numberline {28.15.2}Segunda parte}{244}{subsection.28.15.2}%
+\contentsline {section}{\numberline {28.16}Procesos de Nacimiento y Muerte}{244}{section.28.16}%
+\contentsline {subsection}{\numberline {28.16.1}Cola $M/M/1$}{245}{subsection.28.16.1}%
+\contentsline {subsection}{\numberline {28.16.2}Cola $M/M/\infty $}{246}{subsection.28.16.2}%
+\contentsline {subsection}{\numberline {28.16.3}Cola $M/M/m$}{246}{subsection.28.16.3}%
+\contentsline {section}{\numberline {28.17}Ejemplo de Cadena de Markov para dos Estados}{247}{section.28.17}%
+\contentsline {section}{\numberline {28.18}Cadenas de Markov}{248}{section.28.18}%
+\contentsline {subsection}{\numberline {28.18.1}Estacionareidad}{248}{subsection.28.18.1}%
+\contentsline {subsection}{\numberline {28.18.2}Teor?a Erg?dica}{248}{subsection.28.18.2}%
+\contentsline {subsection}{\numberline {28.18.3}Funciones Arm?nicas, Recurrencia y Transitoriedad}{249}{subsection.28.18.3}%
+\contentsline {section}{\numberline {28.19}Procesos de Markov de Saltos}{249}{section.28.19}%
+\contentsline {subsection}{\numberline {28.19.1}Estructura B?sica de los Procesos Markovianos de Saltos}{249}{subsection.28.19.1}%
+\contentsline {subsection}{\numberline {28.19.2}Matriz Intensidad}{249}{subsection.28.19.2}%
+\contentsline {subsection}{\numberline {28.19.3}Medidas Estacionarias}{250}{subsection.28.19.3}%
+\contentsline {subsection}{\numberline {28.19.4}Criterios de Ergodicidad}{250}{subsection.28.19.4}%
+\contentsline {section}{\numberline {28.20}Notaci?n Kendall-Lee}{250}{section.28.20}%
+\contentsline {subsection}{\numberline {28.20.1}Primera parte}{250}{subsection.28.20.1}%
+\contentsline {subsection}{\numberline {28.20.2}Segunda parte}{251}{subsection.28.20.2}%
+\contentsline {section}{\numberline {28.21}Procesos de Nacimiento y Muerte}{252}{section.28.21}%
+\contentsline {subsection}{\numberline {28.21.1}Procesos de Nacimiento y Muerte Generales}{252}{subsection.28.21.1}%
+\contentsline {subsection}{\numberline {28.21.2}Cola M/M/1}{252}{subsection.28.21.2}%
+\contentsline {subsection}{\numberline {28.21.3}Cola $M/M/\infty $}{254}{subsection.28.21.3}%
+\contentsline {subsection}{\numberline {28.21.4}Cola M/M/m}{254}{subsection.28.21.4}%
+\contentsline {subsection}{\numberline {28.21.5}Cola M/G/1}{255}{subsection.28.21.5}%
+\contentsline {subsection}{\numberline {28.21.6}Cola M/M/m/m}{256}{subsection.28.21.6}%
+\contentsline {section}{\numberline {28.22}Redes de Colas}{257}{section.28.22}%
+\contentsline {subsection}{\numberline {28.22.1}Colas en Serie}{257}{subsection.28.22.1}%
+\contentsline {subsection}{\numberline {28.22.2}Redes Abiertas de Jackson}{257}{subsection.28.22.2}%
+\contentsline {subsection}{\numberline {28.22.3}Colas C?clicas}{257}{subsection.28.22.3}%
+\contentsline {section}{\numberline {28.23}Cadenas de Markov}{257}{section.28.23}%
+\contentsline {subsection}{\numberline {28.23.1}Estacionareidad}{257}{subsection.28.23.1}%
+\contentsline {subsection}{\numberline {28.23.2}Teor?a Erg?dica}{258}{subsection.28.23.2}%
+\contentsline {subsection}{\numberline {28.23.3}Funciones Arm?nicas, Recurrencia y Transitoriedad}{258}{subsection.28.23.3}%
+\contentsline {section}{\numberline {28.24}Procesos de Markov de Saltos}{258}{section.28.24}%
+\contentsline {subsection}{\numberline {28.24.1}Estructura B?sica de los Procesos Markovianos de Saltos}{258}{subsection.28.24.1}%
+\contentsline {subsection}{\numberline {28.24.2}Matriz Intensidad}{259}{subsection.28.24.2}%
+\contentsline {subsection}{\numberline {28.24.3}Medidas Estacionarias}{259}{subsection.28.24.3}%
+\contentsline {subsection}{\numberline {28.24.4}Criterios de Ergodicidad}{259}{subsection.28.24.4}%
+\contentsline {section}{\numberline {28.25}Notaci?n Kendall-Lee}{260}{section.28.25}%
+\contentsline {section}{\numberline {28.26}Procesos de Nacimiento y Muerte}{261}{section.28.26}%
+\contentsline {subsection}{\numberline {28.26.1}Procesos de Nacimiento y Muerte Generales}{261}{subsection.28.26.1}%
+\contentsline {subsection}{\numberline {28.26.2}Cola M/M/1}{262}{subsection.28.26.2}%
+\contentsline {subsection}{\numberline {28.26.3}Cola $M/M/\infty $}{263}{subsection.28.26.3}%
+\contentsline {subsection}{\numberline {28.26.4}Cola M/M/m}{263}{subsection.28.26.4}%
+\contentsline {subsection}{\numberline {28.26.5}Cola M/G/1}{264}{subsection.28.26.5}%
+\contentsline {section}{\numberline {28.27}Redes de Colas}{266}{section.28.27}%
+\contentsline {subsection}{\numberline {28.27.1}Sistemas Abiertos}{266}{subsection.28.27.1}%
+\contentsline {section}{\numberline {28.28}Ejemplo de Cadena de Markov para dos Estados}{267}{section.28.28}%
+\contentsline {section}{\numberline {28.29}Cadenas de Markov: Estacionareidad}{268}{section.28.29}%
+\contentsline {section}{\numberline {28.30}Teor\'ia Erg\'odica}{268}{section.28.30}%
+\contentsline {section}{\numberline {28.31}Queueing Theory at Markovian Level}{268}{section.28.31}%
+\contentsline {subsection}{\numberline {28.31.1}General Death Birth Processes}{268}{subsection.28.31.1}%
+\contentsline {section}{\numberline {28.32}Birth-Death Processes as Queueing Models}{270}{section.28.32}%
+\contentsline {subsection}{\numberline {28.32.1}Cola M/M/1}{270}{subsection.28.32.1}%
+\contentsline {subsection}{\numberline {28.32.2}Cola con Infinidad de Servidores}{270}{subsection.28.32.2}%
+\contentsline {subsection}{\numberline {28.32.3}Cola M/M/m}{270}{subsection.28.32.3}%
+\contentsline {chapter}{\numberline {29}Procesos Estocasticos}{271}{chapter.29}%
+\contentsline {section}{\numberline {29.1}Procesos Estocásticos: Introducción}{271}{section.29.1}%
+\contentsline {section}{\numberline {29.2}Clasificación de Estados}{273}{section.29.2}%
+\contentsline {chapter}{\numberline {30}Procesos Regenerativos}{274}{chapter.30}%
+\contentsline {section}{\numberline {30.1}Procesos Regenerativos}{274}{section.30.1}%
+\contentsline {subsection}{\numberline {30.1.1}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{278}{subsection.30.1.1}%
+\contentsline {subsection}{\numberline {30.1.2}Procesos de Renovaci\'on}{279}{subsection.30.1.2}%
+\contentsline {subsection}{\numberline {30.1.3}Teorema Principal de Renovaci\'on}{279}{subsection.30.1.3}%
+\contentsline {subsection}{\numberline {30.1.4}Propiedades de los Procesos de Renovaci\'on}{280}{subsection.30.1.4}%
+\contentsline {subsection}{\numberline {30.1.5}Propiedades de los Procesos de Renovaci\'on}{281}{subsection.30.1.5}%
+\contentsline {subsection}{\numberline {30.1.6}Propiedades de los Procesos de Renovaci\'on}{282}{subsection.30.1.6}%
+\contentsline {subsection}{\numberline {30.1.7}Propiedades de los Procesos de Renovaci\'on}{283}{subsection.30.1.7}%
+\contentsline {subsection}{\numberline {30.1.8}Propiedades de los Procesos de Renovaci\'on}{285}{subsection.30.1.8}%
+\contentsline {subsection}{\numberline {30.1.9}Funci\'on de Renovaci\'on}{286}{subsection.30.1.9}%
+\contentsline {subsection}{\numberline {30.1.10}Funci\'on de Renovaci\'on}{286}{subsection.30.1.10}%
+\contentsline {subsection}{\numberline {30.1.11}Procesos de Renovaci\'on}{287}{subsection.30.1.11}%
+\contentsline {subsection}{\numberline {30.1.12}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{287}{subsection.30.1.12}%
+\contentsline {subsection}{\numberline {30.1.13}Procesos Regenerativos}{293}{subsection.30.1.13}%
+\contentsline {subsection}{\numberline {30.1.14}Procesos Regenerativos}{294}{subsection.30.1.14}%
+\contentsline {subsection}{\numberline {30.1.15}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{295}{subsection.30.1.15}%
+\contentsline {subsection}{\numberline {30.1.16}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{295}{subsection.30.1.16}%
+\contentsline {subsection}{\numberline {30.1.17}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{296}{subsection.30.1.17}%
+\contentsline {subsection}{\numberline {30.1.18}Procesos Regenerativos}{301}{subsection.30.1.18}%
+\contentsline {subsection}{\numberline {30.1.19}Procesos Regenerativos}{302}{subsection.30.1.19}%
+\contentsline {subsection}{\numberline {30.1.20}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{303}{subsection.30.1.20}%
+\contentsline {subsection}{\numberline {30.1.21}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{303}{subsection.30.1.21}%
+\contentsline {subsection}{\numberline {30.1.22}Propiedades de los Procesos de Renovaci\'on}{304}{subsection.30.1.22}%
+\contentsline {subsection}{\numberline {30.1.23}Propiedades de los Procesos de Renovaci\'on}{305}{subsection.30.1.23}%
+\contentsline {subsection}{\numberline {30.1.24}Propiedades de los Procesos de Renovaci\'on}{306}{subsection.30.1.24}%
+\contentsline {subsection}{\numberline {30.1.25}Propiedades de los Procesos de Renovaci\'on}{307}{subsection.30.1.25}%
+\contentsline {subsection}{\numberline {30.1.26}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{309}{subsection.30.1.26}%
+\contentsline {subsection}{\numberline {30.1.27}Procesos de Renovaci\'on}{309}{subsection.30.1.27}%
+\contentsline {subsection}{\numberline {30.1.28}Teorema Principal de Renovaci\'on}{310}{subsection.30.1.28}%
+\contentsline {subsection}{\numberline {30.1.29}Funci\'on de Renovaci\'on}{310}{subsection.30.1.29}%
+\contentsline {subsection}{\numberline {30.1.30}Propiedades de los Procesos de Renovaci\'on}{311}{subsection.30.1.30}%
+\contentsline {subsection}{\numberline {30.1.31}Funci\'on de Renovaci\'on}{312}{subsection.30.1.31}%
+\contentsline {subsection}{\numberline {30.1.32}Procesos de Renovaci\'on}{312}{subsection.30.1.32}%
+\contentsline {subsection}{\numberline {30.1.33}Puntos de Renovaci\'on}{313}{subsection.30.1.33}%
+\contentsline {subsection}{\numberline {30.1.34}Procesos Regenerativos}{314}{subsection.30.1.34}%
+\contentsline {subsection}{\numberline {30.1.35}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{315}{subsection.30.1.35}%
+\contentsline {subsection}{\numberline {30.1.36}Procesos Regenerativos}{319}{subsection.30.1.36}%
+\contentsline {subsection}{\numberline {30.1.37}Procesos Regenerativos}{320}{subsection.30.1.37}%
+\contentsline {subsection}{\numberline {30.1.38}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{321}{subsection.30.1.38}%
+\contentsline {subsection}{\numberline {30.1.39}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{322}{subsection.30.1.39}%
+\contentsline {subsection}{\numberline {30.1.40}Propiedades de los Procesos de Renovaci\'on}{323}{subsection.30.1.40}%
+\contentsline {subsection}{\numberline {30.1.41}Propiedades de los Procesos de Renovaci\'on}{326}{subsection.30.1.41}%
+\contentsline {subsection}{\numberline {30.1.42}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{327}{subsection.30.1.42}%
+\contentsline {subsection}{\numberline {30.1.43}Procesos de Renovaci\'on}{328}{subsection.30.1.43}%
+\contentsline {subsection}{\numberline {30.1.44}Teorema Principal de Renovaci\'on}{328}{subsection.30.1.44}%
+\contentsline {subsection}{\numberline {30.1.45}Funci\'on de Renovaci\'on}{329}{subsection.30.1.45}%
+\contentsline {subsection}{\numberline {30.1.46}Propiedades de los Procesos de Renovaci\'on}{329}{subsection.30.1.46}%
+\contentsline {subsection}{\numberline {30.1.47}Funci\'on de Renovaci\'on}{330}{subsection.30.1.47}%
+\contentsline {subsection}{\numberline {30.1.48}Procesos de Renovaci\'on}{331}{subsection.30.1.48}%
+\contentsline {subsection}{\numberline {30.1.49}Puntos de Renovaci\'on}{332}{subsection.30.1.49}%
+\contentsline {subsection}{\numberline {30.1.50}Ya revisado}{332}{subsection.30.1.50}%
+\contentsline {subsection}{\numberline {30.1.51}Procesos de Renovaci\'on y Regenerativos}{338}{subsection.30.1.51}%
+\contentsline {subsection}{\numberline {30.1.52}Tiempo de Ciclo Promedio}{347}{subsection.30.1.52}%
+\contentsline {subsection}{\numberline {30.1.53}Tiempos de Ciclo e Intervisita}{348}{subsection.30.1.53}%
+\contentsline {subsection}{\numberline {30.1.54}Longitudes de la Cola en cualquier tiempo}{350}{subsection.30.1.54}%
+\contentsline {subsection}{\numberline {30.1.55}Por resolver}{352}{subsection.30.1.55}%
+\contentsline {subsection}{\numberline {30.1.56}Tiempos de Ciclo e Intervisita}{353}{subsection.30.1.56}%
+\contentsline {subsection}{\numberline {30.1.57}Longitudes de la Cola en cualquier tiempo}{357}{subsection.30.1.57}%
+\contentsline {subsection}{\numberline {30.1.58}Material por agregar}{357}{subsection.30.1.58}%
+\contentsline {subsection}{\numberline {30.1.59}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{415}{subsection.30.1.59}%
+\contentsline {subsection}{\numberline {30.1.60}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{449}{subsection.30.1.60}%
+\contentsline {subsection}{\numberline {30.1.61}Procesos de Renovaci\'on}{458}{subsection.30.1.61}%
+\contentsline {subsection}{\numberline {30.1.62}Procesos de Renovaci\'on}{458}{subsection.30.1.62}%
+\contentsline {subsection}{\numberline {30.1.63}Procesos de Renovaci\'on}{458}{subsection.30.1.63}%
+\contentsline {subsection}{\numberline {30.1.64}Procesos de Renovaci\'on}{459}{subsection.30.1.64}%
+\contentsline {subsection}{\numberline {30.1.65}Procesos de Renovaci\'on}{459}{subsection.30.1.65}%
+\contentsline {subsection}{\numberline {30.1.66}Procesos Regenerativos Estacionarios: Visi\'on cl\'asica}{460}{subsection.30.1.66}%
+\contentsline {subsection}{\numberline {30.1.67}Teorema Principal de Renovaci\'on}{460}{subsection.30.1.67}%
+\contentsline {subsection}{\numberline {30.1.68}Propiedades de los Procesos de Renovaci\'on}{461}{subsection.30.1.68}%
+\contentsline {subsection}{\numberline {30.1.69}Funci\'on de Renovaci\'on}{462}{subsection.30.1.69}%
+\contentsline {subsection}{\numberline {30.1.70}Procesos de Renovaci\'on}{462}{subsection.30.1.70}%
+\contentsline {subsection}{\numberline {30.1.71}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{463}{subsection.30.1.71}%
+\contentsline {subsection}{\numberline {30.1.72}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman2}}{472}{subsection.30.1.72}%
+\contentsline {subsection}{\numberline {30.1.73}Procesos Regenerativos}{473}{subsection.30.1.73}%
+\contentsline {subsection}{\numberline {30.1.74}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{474}{subsection.30.1.74}%
+\contentsline {subsection}{\numberline {30.1.75}Procesos Regenerativos}{475}{subsection.30.1.75}%
+\contentsline {subsection}{\numberline {30.1.76}Procesos Regenerativos Estacionarios: Visi\'on cl\'asica}{476}{subsection.30.1.76}%
+\contentsline {subsection}{\numberline {30.1.77}Teorema Principal de Renovaci\'on}{476}{subsection.30.1.77}%
+\contentsline {subsection}{\numberline {30.1.78}Propiedades de los Procesos de Renovaci\'on}{477}{subsection.30.1.78}%
+\contentsline {subsection}{\numberline {30.1.79}Funci\'on de Renovaci\'on}{478}{subsection.30.1.79}%
+\contentsline {subsection}{\numberline {30.1.80}Procesos de Renovaci\'on}{478}{subsection.30.1.80}%
+\contentsline {subsection}{\numberline {30.1.81}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{478}{subsection.30.1.81}%
+\contentsline {subsection}{\numberline {30.1.82}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman2}}{488}{subsection.30.1.82}%
+\contentsline {subsection}{\numberline {30.1.83}Procesos Regenerativos}{489}{subsection.30.1.83}%
+\contentsline {subsection}{\numberline {30.1.84}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{489}{subsection.30.1.84}%
+\contentsline {subsection}{\numberline {30.1.85}Procesos Regenerativos}{490}{subsection.30.1.85}%
+\contentsline {subsection}{\numberline {30.1.86}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman2}}{491}{subsection.30.1.86}%
+\contentsline {subsection}{\numberline {30.1.87}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{492}{subsection.30.1.87}%
+\contentsline {subsection}{\numberline {30.1.88}Procesos de Renovaci\'on}{493}{subsection.30.1.88}%
+\contentsline {subsection}{\numberline {30.1.89}Teorema Principal de Renovaci\'on}{493}{subsection.30.1.89}%
+\contentsline {subsection}{\numberline {30.1.90}Propiedades de los Procesos de Renovaci\'on}{494}{subsection.30.1.90}%
+\contentsline {subsection}{\numberline {30.1.91}Funci\'on de Renovaci\'on}{499}{subsection.30.1.91}%
+\contentsline {subsection}{\numberline {30.1.92}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{501}{subsection.30.1.92}%
+\contentsline {subsection}{\numberline {30.1.93}Procesos Regenerativos}{507}{subsection.30.1.93}%
+\contentsline {subsection}{\numberline {30.1.94}Puntos de Renovaci\'on}{510}{subsection.30.1.94}%
+\contentsline {subsection}{\numberline {30.1.95}Procesos Regenerativos}{511}{subsection.30.1.95}%
+\contentsline {subsection}{\numberline {30.1.96}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{512}{subsection.30.1.96}%
+\contentsline {subsection}{\numberline {30.1.97}Procesos Regenerativos}{516}{subsection.30.1.97}%
+\contentsline {subsection}{\numberline {30.1.98}Procesos Regenerativos}{517}{subsection.30.1.98}%
+\contentsline {subsection}{\numberline {30.1.99}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{518}{subsection.30.1.99}%
+\contentsline {subsection}{\numberline {30.1.100}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{519}{subsection.30.1.100}%
+\contentsline {subsection}{\numberline {30.1.101}Propiedades de los Procesos de Renovaci\'on}{520}{subsection.30.1.101}%
+\contentsline {subsection}{\numberline {30.1.102}Propiedades de los Procesos de Renovaci\'on}{521}{subsection.30.1.102}%
+\contentsline {subsection}{\numberline {30.1.103}Propiedades de los Procesos de Renovaci\'on}{522}{subsection.30.1.103}%
+\contentsline {subsection}{\numberline {30.1.104}Propiedades de los Procesos de Renovaci\'on}{523}{subsection.30.1.104}%
+\contentsline {subsection}{\numberline {30.1.105}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{524}{subsection.30.1.105}%
+\contentsline {subsection}{\numberline {30.1.106}Procesos de Renovaci\'on}{524}{subsection.30.1.106}%
+\contentsline {subsection}{\numberline {30.1.107}Teorema Principal de Renovaci\'on}{525}{subsection.30.1.107}%
+\contentsline {subsection}{\numberline {30.1.108}Funci\'on de Renovaci\'on}{525}{subsection.30.1.108}%
+\contentsline {subsection}{\numberline {30.1.109}Propiedades de los Procesos de Renovaci\'on}{526}{subsection.30.1.109}%
+\contentsline {subsection}{\numberline {30.1.110}Funci\'on de Renovaci\'on}{527}{subsection.30.1.110}%
+\contentsline {subsection}{\numberline {30.1.111}Procesos de Renovaci\'on}{527}{subsection.30.1.111}%
+\contentsline {subsection}{\numberline {30.1.112}Puntos de Renovaci\'on}{528}{subsection.30.1.112}%
+\contentsline {subsection}{\numberline {30.1.113}Procesos Regenerativos}{529}{subsection.30.1.113}%
+\contentsline {subsection}{\numberline {30.1.114}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{530}{subsection.30.1.114}%
+\contentsline {subsection}{\numberline {30.1.115}Procesos Regenerativos}{534}{subsection.30.1.115}%
+\contentsline {subsection}{\numberline {30.1.116}Procesos Regenerativos}{535}{subsection.30.1.116}%
+\contentsline {subsection}{\numberline {30.1.117}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{536}{subsection.30.1.117}%
+\contentsline {subsection}{\numberline {30.1.118}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{537}{subsection.30.1.118}%
+\contentsline {subsection}{\numberline {30.1.119}Propiedades de los Procesos de Renovaci\'on}{538}{subsection.30.1.119}%
+\contentsline {subsection}{\numberline {30.1.120}Propiedades de los Procesos de Renovaci\'on}{541}{subsection.30.1.120}%
+\contentsline {subsection}{\numberline {30.1.121}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{542}{subsection.30.1.121}%
+\contentsline {subsection}{\numberline {30.1.122}Procesos de Renovaci\'on}{543}{subsection.30.1.122}%
+\contentsline {subsection}{\numberline {30.1.123}Teorema Principal de Renovaci\'on}{543}{subsection.30.1.123}%
+\contentsline {subsection}{\numberline {30.1.124}Funci\'on de Renovaci\'on}{544}{subsection.30.1.124}%
+\contentsline {subsection}{\numberline {30.1.125}Propiedades de los Procesos de Renovaci\'on}{544}{subsection.30.1.125}%
+\contentsline {subsection}{\numberline {30.1.126}Funci\'on de Renovaci\'on}{545}{subsection.30.1.126}%
+\contentsline {subsection}{\numberline {30.1.127}Procesos de Renovaci\'on}{546}{subsection.30.1.127}%
+\contentsline {subsection}{\numberline {30.1.128}Puntos de Renovaci\'on}{547}{subsection.30.1.128}%
+\contentsline {subsection}{\numberline {30.1.129}Funci\'on de Renovaci\'on}{548}{subsection.30.1.129}%
+\contentsline {subsection}{\numberline {30.1.130}Funci\'on de Renovaci\'on}{549}{subsection.30.1.130}%
+\contentsline {subsection}{\numberline {30.1.131}Funci\'on de Renovaci\'on}{549}{subsection.30.1.131}%
+\contentsline {subsection}{\numberline {30.1.132}Funci\'on de Renovaci\'on}{550}{subsection.30.1.132}%
+\contentsline {subsection}{\numberline {30.1.133}Funci\'on de Renovaci\'on}{550}{subsection.30.1.133}%
+\contentsline {subsection}{\numberline {30.1.134}Funci\'on de Renovaci\'on}{551}{subsection.30.1.134}%
+\contentsline {subsection}{\numberline {30.1.135}Funci\'on de Renovaci\'on}{551}{subsection.30.1.135}%
+\contentsline {subsection}{\numberline {30.1.136}Procesos Regenerativos}{552}{subsection.30.1.136}%
+\contentsline {subsection}{\numberline {30.1.137}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{641}{subsection.30.1.137}%
+\contentsline {chapter}{\numberline {31}Procesos de Renovacion}{650}{chapter.31}%
+\contentsline {section}{\numberline {31.1}Propiedades de los Procesos de Renovaci\'on}{650}{section.31.1}%
+\contentsline {subsubsection}{Propiedades de los Procesos de Renovaci\'on}{651}{equation.31.1.6}%
+\contentsline {subsection}{\numberline {31.1.1}Propiedades de los Procesos de Renovaci\'on}{652}{subsection.31.1.1}%
+\contentsline {subsection}{\numberline {31.1.2}Propiedades de los Procesos de Renovaci\'on}{653}{subsection.31.1.2}%
+\contentsline {subsection}{\numberline {31.1.3}Propiedades de los Procesos de Renovaci\'on}{654}{subsection.31.1.3}%
+\contentsline {subsection}{\numberline {31.1.4}Propiedades de los Procesos de Renovaci\'on}{656}{subsection.31.1.4}%
+\contentsline {subsection}{\numberline {31.1.5}Propiedades de los Procesos de Renovaci\'on}{657}{subsection.31.1.5}%
+\contentsline {subsection}{\numberline {31.1.6}Propiedades de los Procesos de Renovaci\'on}{658}{subsection.31.1.6}%
+\contentsline {subsection}{\numberline {31.1.7}Propiedades de los Procesos de Renovaci\'on}{659}{subsection.31.1.7}%
+\contentsline {subsection}{\numberline {31.1.8}Propiedades de los Procesos de Renovaci\'on}{660}{subsection.31.1.8}%
+\contentsline {subsection}{\numberline {31.1.9}Propiedades de los Procesos de Renovaci\'on}{661}{subsection.31.1.9}%
+\contentsline {subsection}{\numberline {31.1.10}Propiedades de los Procesos de Renovaci\'on}{662}{subsection.31.1.10}%
+\contentsline {subsection}{\numberline {31.1.11}Propiedades de los Procesos de Renovaci\'on}{663}{subsection.31.1.11}%
+\contentsline {subsection}{\numberline {31.1.12}Propiedades de los Procesos de Renovaci\'on}{664}{subsection.31.1.12}%
+\contentsline {subsection}{\numberline {31.1.13}Propiedades de los Procesos de Renovaci\'on}{665}{subsection.31.1.13}%
+\contentsline {subsection}{\numberline {31.1.14}Propiedades de los Procesos de Renovaci\'on}{666}{subsection.31.1.14}%
+\contentsline {subsection}{\numberline {31.1.15}Propiedades de los Procesos de Renovaci\'on}{667}{subsection.31.1.15}%
+\contentsline {subsection}{\numberline {31.1.16}Propiedades de los Procesos de Renovaci\'on}{668}{subsection.31.1.16}%
+\contentsline {subsection}{\numberline {31.1.17}Propiedades de los Procesos de Renovaci\'on}{669}{subsection.31.1.17}%
+\contentsline {subsection}{\numberline {31.1.18}Propiedades de los Procesos de Renovaci\'on}{670}{subsection.31.1.18}%
+\contentsline {chapter}{\numberline {32}Revision Procesos Regenerativos}{672}{chapter.32}%
+\contentsline {section}{\numberline {32.1}Procesos Regenerativos: Thorisson}{672}{section.32.1}%
+\contentsline {subsection}{\numberline {32.1.1}Tiempos de Regeneraci\'on para Redes de Sistemas de Visitas C\'iclicas}{672}{subsection.32.1.1}%
+\contentsline {subsection}{\numberline {32.1.2}Introduction to Stochastic Processes}{673}{subsection.32.1.2}%
+\contentsline {subsection}{\numberline {32.1.3}One Sided Process}{675}{subsection.32.1.3}%
+\contentsline {subsection}{\numberline {32.1.4}Regeneration: Shift-Measurability}{675}{subsection.32.1.4}%
+\contentsline {subsection}{\numberline {32.1.5}Cycle-Stationarity}{675}{subsection.32.1.5}%
+\contentsline {subsection}{\numberline {32.1.6}Classical Regeneration}{676}{subsection.32.1.6}%
+\contentsline {subsection}{\numberline {32.1.7}Stationary Version}{676}{subsection.32.1.7}%
+\contentsline {subsection}{\numberline {32.1.8}Spread Out}{676}{subsection.32.1.8}%
+\contentsline {subsection}{\numberline {32.1.9}Wide Sense Regeneration}{677}{subsection.32.1.9}%
+\contentsline {subsection}{\numberline {32.1.10}Existence of Regeneration Times}{677}{subsection.32.1.10}%
+\contentsline {section}{\numberline {32.2}Procesos Regenerativos}{678}{section.32.2}%
+\contentsline {section}{\numberline {32.3}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{683}{section.32.3}%
+\contentsline {section}{\numberline {32.4}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{685}{section.32.4}%
+\contentsline {section}{\numberline {32.5}Teorema Principal de Renovaci\'on}{691}{section.32.5}%
+\contentsline {section}{\numberline {32.6}Propiedades de los Procesos de Renovaci\'on}{693}{section.32.6}%
+\contentsline {section}{\numberline {32.7}Funci\'on de Renovaci\'on}{704}{section.32.7}%
+\contentsline {section}{\numberline {32.8}Procesos de Renovaci\'on}{707}{section.32.8}%
+\contentsline {section}{\numberline {32.9}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{712}{section.32.9}%
+\contentsline {section}{\numberline {32.10}Resultados para Procesos de Salida}{724}{section.32.10}%
+\contentsline {chapter}{\numberline {33}Teoría de Colas}{727}{chapter.33}%
+\contentsline {section}{\numberline {33.1}Cadenas de Markov}{727}{section.33.1}%
+\contentsline {subsection}{\numberline {33.1.1}Estacionareidad}{727}{subsection.33.1.1}%
+\contentsline {subsection}{\numberline {33.1.2}Teor\'ia Erg\'odica}{728}{subsection.33.1.2}%
+\contentsline {subsection}{\numberline {33.1.3}Funciones Arm\'onicas, Recurrencia y Transitoriedad}{728}{subsection.33.1.3}%
+\contentsline {section}{\numberline {33.2}Procesos de Markov de Saltos}{728}{section.33.2}%
+\contentsline {subsection}{\numberline {33.2.1}Estructura B\'asica de los Procesos Markovianos de Saltos}{728}{subsection.33.2.1}%
+\contentsline {subsection}{\numberline {33.2.2}Matriz Intensidad}{729}{subsection.33.2.2}%
+\contentsline {subsection}{\numberline {33.2.3}Medidas Estacionarias}{729}{subsection.33.2.3}%
+\contentsline {subsection}{\numberline {33.2.4}Criterios de Ergodicidad}{729}{subsection.33.2.4}%
+\contentsline {section}{\numberline {33.3}Notaci\'on Kendall-Lee}{730}{section.33.3}%
+\contentsline {section}{\numberline {33.4}Procesos de Nacimiento y Muerte}{731}{section.33.4}%
+\contentsline {subsection}{\numberline {33.4.1}Procesos de Nacimiento y Muerte Generales}{731}{subsection.33.4.1}%
+\contentsline {subsection}{\numberline {33.4.2}Cola M/M/1}{732}{subsection.33.4.2}%
+\contentsline {subsection}{\numberline {33.4.3}Cola $M/M/\infty $}{733}{subsection.33.4.3}%
+\contentsline {subsection}{\numberline {33.4.4}Cola M/M/m}{733}{subsection.33.4.4}%
+\contentsline {subsection}{\numberline {33.4.5}Cola M/G/1}{734}{subsection.33.4.5}%
+\contentsline {section}{\numberline {33.5}Redes de Colas}{736}{section.33.5}%
+\contentsline {section}{\numberline {33.6}Estacionareidad}{736}{section.33.6}%
+\contentsline {section}{\numberline {33.7}Procesos de Markov de Saltos}{737}{section.33.7}%
+\contentsline {section}{\numberline {33.8}Notaci\'on Kendall-Lee}{737}{section.33.8}%
+\contentsline {section}{\numberline {33.9}Procesos de Nacimiento y Muerte (Teor\'ia)}{738}{section.33.9}%
+\contentsline {section}{\numberline {33.10}Procesos de Nacimiento y Muerte como Modelos de Colas}{739}{section.33.10}%
+\contentsline {subsection}{\numberline {33.10.1}Cola $M/M/1$}{739}{subsection.33.10.1}%
+\contentsline {section}{\numberline {33.11}Notaci\'on Kendall-Lee, segunda parte}{740}{section.33.11}%
+\contentsline {section}{\numberline {33.12}Procesos de Nacimiento y Muerte como Modelos de Colas(Continuaci\'on)}{740}{section.33.12}%
+\contentsline {subsection}{\numberline {33.12.1}Cola $M/M/\infty $}{740}{subsection.33.12.1}%
+\contentsline {subsection}{\numberline {33.12.2}Cola $M/M/m$}{740}{subsection.33.12.2}%
+\contentsline {section}{\numberline {33.13}Cadenas de Markov}{741}{section.33.13}%
+\contentsline {subsection}{\numberline {33.13.1}Estacionareidad}{741}{subsection.33.13.1}%
+\contentsline {subsection}{\numberline {33.13.2}Teor\'ia Erg\'odica}{741}{subsection.33.13.2}%
+\contentsline {subsection}{\numberline {33.13.3}Funciones Arm\'onicas, Recurrencia y Transitoriedad}{742}{subsection.33.13.3}%
+\contentsline {section}{\numberline {33.14}Procesos de Markov de Saltos}{742}{section.33.14}%
+\contentsline {section}{\numberline {33.15}Notaci\'on Kendall-Lee}{742}{section.33.15}%
+\contentsline {subsection}{\numberline {33.15.1}Primera parte}{742}{subsection.33.15.1}%
+\contentsline {subsection}{\numberline {33.15.2}Segunda parte}{743}{subsection.33.15.2}%
+\contentsline {section}{\numberline {33.16}Procesos de Nacimiento y Muerte}{744}{section.33.16}%
+\contentsline {subsection}{\numberline {33.16.1}Cola $M/M/1$}{744}{subsection.33.16.1}%
+\contentsline {subsection}{\numberline {33.16.2}Cola $M/M/\infty $}{745}{subsection.33.16.2}%
+\contentsline {subsection}{\numberline {33.16.3}Cola $M/M/m$}{746}{subsection.33.16.3}%
+\contentsline {section}{\numberline {33.17}Ejemplo de Cadena de Markov para dos Estados}{747}{section.33.17}%
+\contentsline {section}{\numberline {33.18}Cadenas de Markov}{747}{section.33.18}%
+\contentsline {subsection}{\numberline {33.18.1}Estacionareidad}{747}{subsection.33.18.1}%
+\contentsline {subsection}{\numberline {33.18.2}Teor\'ia Erg\'odica}{748}{subsection.33.18.2}%
+\contentsline {subsection}{\numberline {33.18.3}Funciones Arm\'onicas, Recurrencia y Transitoriedad}{748}{subsection.33.18.3}%
+\contentsline {section}{\numberline {33.19}Procesos de Markov de Saltos}{749}{section.33.19}%
+\contentsline {subsection}{\numberline {33.19.1}Estructura B\'asica de los Procesos Markovianos de Saltos}{749}{subsection.33.19.1}%
+\contentsline {subsection}{\numberline {33.19.2}Matriz Intensidad}{749}{subsection.33.19.2}%
+\contentsline {subsection}{\numberline {33.19.3}Medidas Estacionarias}{749}{subsection.33.19.3}%
+\contentsline {subsection}{\numberline {33.19.4}Criterios de Ergodicidad}{750}{subsection.33.19.4}%
+\contentsline {section}{\numberline {33.20}Notaci\'on Kendall-Lee}{750}{section.33.20}%
+\contentsline {subsection}{\numberline {33.20.1}Primera parte}{750}{subsection.33.20.1}%
+\contentsline {subsection}{\numberline {33.20.2}M\'as sobre la notaci\'on {\em Kendall-Lee}}{751}{subsection.33.20.2}%
+\contentsline {section}{\numberline {33.21}Procesos de Nacimiento y Muerte}{751}{section.33.21}%
+\contentsline {subsection}{\numberline {33.21.1}Procesos de Nacimiento y Muerte Generales}{751}{subsection.33.21.1}%
+\contentsline {subsection}{\numberline {33.21.2}Cola M/M/1}{752}{subsection.33.21.2}%
+\contentsline {subsection}{\numberline {33.21.3}Cola $M/M/\infty $}{753}{subsection.33.21.3}%
+\contentsline {subsection}{\numberline {33.21.4}Cola M/M/m}{753}{subsection.33.21.4}%
+\contentsline {subsection}{\numberline {33.21.5}Cola M/G/1}{755}{subsection.33.21.5}%
+\contentsline {subsection}{\numberline {33.21.6}Cola M/M/m/m}{756}{subsection.33.21.6}%
+\contentsline {section}{\numberline {33.22}Cadenas de Markov}{756}{section.33.22}%
+\contentsline {subsection}{\numberline {33.22.1}Estacionareidad}{756}{subsection.33.22.1}%
+\contentsline {subsection}{\numberline {33.22.2}Teor\'ia Erg\'odica}{757}{subsection.33.22.2}%
+\contentsline {subsection}{\numberline {33.22.3}Funciones Arm\'onicas, Recurrencia y Transitoriedad}{757}{subsection.33.22.3}%
+\contentsline {section}{\numberline {33.23}Procesos de Markov de Saltos}{758}{section.33.23}%
+\contentsline {subsection}{\numberline {33.23.1}Estructura B\'asica de los Procesos Markovianos de Saltos}{758}{subsection.33.23.1}%
+\contentsline {subsection}{\numberline {33.23.2}Matriz Intensidad}{758}{subsection.33.23.2}%
+\contentsline {subsection}{\numberline {33.23.3}Medidas Estacionarias}{759}{subsection.33.23.3}%
+\contentsline {subsection}{\numberline {33.23.4}Criterios de Ergodicidad}{759}{subsection.33.23.4}%
+\contentsline {section}{\numberline {33.24}Notaci\'on Kendall-Lee}{759}{section.33.24}%
+\contentsline {section}{\numberline {33.25}Procesos de Nacimiento y Muerte}{760}{section.33.25}%
+\contentsline {subsection}{\numberline {33.25.1}Procesos de Nacimiento y Muerte Generales}{760}{subsection.33.25.1}%
+\contentsline {subsection}{\numberline {33.25.2}Cola M/M/1}{761}{subsection.33.25.2}%
+\contentsline {subsection}{\numberline {33.25.3}Cola $M/M/\infty $}{762}{subsection.33.25.3}%
+\contentsline {subsection}{\numberline {33.25.4}Cola M/M/m}{763}{subsection.33.25.4}%
+\contentsline {subsection}{\numberline {33.25.5}Cola M/G/1}{764}{subsection.33.25.5}%
+\contentsline {section}{\numberline {33.26}Redes de Colas}{766}{section.33.26}%
+\contentsline {subsection}{\numberline {33.26.1}Sistemas Abiertos}{766}{subsection.33.26.1}%
+\contentsline {section}{\numberline {33.27}Ejemplo de Cadena de Markov para dos Estados}{767}{section.33.27}%
+\contentsline {section}{\numberline {33.28}Cadenas de Markov: Estacionareidad}{767}{section.33.28}%
+\contentsline {section}{\numberline {33.29}Teor\'ia Erg\'odica}{767}{section.33.29}%
+\contentsline {section}{\numberline {33.30}Queueing Theory at Markovian Level}{768}{section.33.30}%
+\contentsline {subsection}{\numberline {33.30.1}General Death Birth Processes}{768}{subsection.33.30.1}%
+\contentsline {section}{\numberline {33.31}Birth-Death Processes as Queueing Models}{769}{section.33.31}%
+\contentsline {subsection}{\numberline {33.31.1}Cola M/M/1}{769}{subsection.33.31.1}%
+\contentsline {subsection}{\numberline {33.31.2}Cola con Infinidad de Servidores}{769}{subsection.33.31.2}%
+\contentsline {subsection}{\numberline {33.31.3}Cola M/M/m}{769}{subsection.33.31.3}%
+\contentsline {chapter}{\numberline {34}Modelos de Flujo}{770}{chapter.34}%
+\contentsline {section}{\numberline {34.1}Procesos Regenerativos}{770}{section.34.1}%
+\contentsline {subsection}{\numberline {34.1.1}Procesos Harris Recurrente}{772}{subsection.34.1.1}%
+\contentsline {subsection}{\numberline {34.1.2}Modelo de Flujo}{773}{subsection.34.1.2}%
+\contentsline {subsection}{\numberline {34.1.3}Procesos de Estados de Markov}{783}{subsection.34.1.3}%
+\contentsline {subsection}{\numberline {34.1.4}Teor\'ia General de Procesos Estoc\'asticos}{784}{subsection.34.1.4}%
+\contentsline {subsection}{\numberline {34.1.5}Propiedades de Markov}{784}{subsection.34.1.5}%
+\contentsline {subsection}{\numberline {34.1.6}Primer Condici\'on de Regularidad}{785}{subsection.34.1.6}%
+\contentsline {subsection}{\numberline {34.1.7}Construcci\'on del Modelo de Flujo}{785}{subsection.34.1.7}%
+\contentsline {subsection}{\numberline {34.1.8}Estabilidad}{788}{subsection.34.1.8}%
+\contentsline {subsection}{\numberline {34.1.9}Propiedades de Markov}{792}{subsection.34.1.9}%
+\contentsline {subsection}{\numberline {34.1.10}Primer Condici\'on de Regularidad}{792}{subsection.34.1.10}%
+\contentsline {subsection}{\numberline {34.1.11}Procesos Fuerte de Markov}{798}{subsection.34.1.11}%
+\contentsline {subsubsection}{Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{798}{subsection.34.1.11}%
+\contentsline {subsection}{\numberline {34.1.12}Procesos Harris Recurrentes Positivos}{798}{subsection.34.1.12}%
+\contentsline {subsection}{\numberline {34.1.13}Construcci\'on de un Modelo de Flujo L\'imite}{799}{subsection.34.1.13}%
+\contentsline {subsection}{\numberline {34.1.14}Modelo de Visitas C\'iclicas con un Servidor: Estabilidad}{802}{subsection.34.1.14}%
+\contentsline {subsection}{\numberline {34.1.15}Teorema 2.1}{802}{subsection.34.1.15}%
+\contentsline {subsection}{\numberline {34.1.16}Teorema 2.2}{803}{subsection.34.1.16}%
+\contentsline {subsection}{\numberline {34.1.17}Teorema 2.3}{803}{subsection.34.1.17}%
+\contentsline {subsection}{\numberline {34.1.18}Definiciones B\'asicas}{804}{subsection.34.1.18}%
+\contentsline {subsection}{\numberline {34.1.19}Preliminares}{807}{subsection.34.1.19}%
+\contentsline {subsection}{\numberline {34.1.20}Procesos Harris Recurrente}{808}{subsection.34.1.20}%
+\contentsline {subsection}{\numberline {34.1.21}Modelo de Flujo}{810}{subsection.34.1.21}%
+\contentsline {subsection}{\numberline {34.1.22}Procesos de Estados de Markov}{819}{subsection.34.1.22}%
+\contentsline {subsection}{\numberline {34.1.23}Teor\'ia General de Procesos Estoc\'asticos}{820}{subsection.34.1.23}%
+\contentsline {subsection}{\numberline {34.1.24}Propiedades de Markov}{821}{subsection.34.1.24}%
+\contentsline {subsection}{\numberline {34.1.25}Primer Condici\'on de Regularidad}{821}{subsection.34.1.25}%
+\contentsline {subsection}{\numberline {34.1.26}Construcci\'on del Modelo de Flujo}{822}{subsection.34.1.26}%
+\contentsline {subsection}{\numberline {34.1.27}Estabilidad}{825}{subsection.34.1.27}%
+\contentsline {subsection}{\numberline {34.1.28}Propiedades de Markov}{828}{subsection.34.1.28}%
+\contentsline {subsection}{\numberline {34.1.29}Primer Condici\'on de Regularidad}{829}{subsection.34.1.29}%
+\contentsline {subsection}{\numberline {34.1.30}Procesos de Estados Markoviano para el Sistema}{835}{subsection.34.1.30}%
+\contentsline {subsection}{\numberline {34.1.31}Procesos Fuerte de Markov}{835}{subsection.34.1.31}%
+\contentsline {subsubsection}{Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{835}{subsection.34.1.31}%
+\contentsline {subsection}{\numberline {34.1.32}Procesos Harris Recurrentes Positivos}{835}{subsection.34.1.32}%
+\contentsline {subsection}{\numberline {34.1.33}Construcci\'on de un Modelo de Flujo L\'imite}{835}{subsection.34.1.33}%
+\contentsline {subsection}{\numberline {34.1.34}Modelo de Visitas C\'iclicas con un Servidor: Estabilidad}{839}{subsection.34.1.34}%
+\contentsline {subsection}{\numberline {34.1.35}Teorema 2.1}{839}{subsection.34.1.35}%
+\contentsline {subsection}{\numberline {34.1.36}Teorema 2.2}{840}{subsection.34.1.36}%
+\contentsline {subsection}{\numberline {34.1.37}Teorema 2.3}{840}{subsection.34.1.37}%
+\contentsline {subsection}{\numberline {34.1.38}Definiciones B\'asicas}{841}{subsection.34.1.38}%
+\contentsline {subsection}{\numberline {34.1.39}Proceso de Estados Markoviano para el Sistema}{843}{subsection.34.1.39}%
+\contentsline {subsection}{\numberline {34.1.40}Procesos Fuerte de Markov}{844}{subsection.34.1.40}%
+\contentsline {subsection}{\numberline {34.1.41}Propiedades de Markov}{844}{subsection.34.1.41}%
+\contentsline {subsection}{\numberline {34.1.42}Primer Condici\'on de Regularidad}{845}{subsection.34.1.42}%
+\contentsline {subsection}{\numberline {34.1.43}Propiedades de Markov}{847}{subsection.34.1.43}%
+\contentsline {subsection}{\numberline {34.1.44}Primer Condici\'on de Regularidad}{848}{subsection.34.1.44}%
+\contentsline {subsection}{\numberline {34.1.45}Supuestos}{854}{subsection.34.1.45}%
+\contentsline {subsubsection}{Supuestos B\'asicos}{854}{equation.34.1.490}%
+\contentsline {subsection}{\numberline {34.1.46}Procesos Harris Recurrente}{855}{subsection.34.1.46}%
+\contentsline {subsection}{\numberline {34.1.47}Modelo de Flujo}{856}{subsection.34.1.47}%
+\contentsline {subsubsection}{Modelo de Flujo y Estabilidad}{861}{Dem.34.1.1}%
+\contentsline {subsubsection}{Resultados principales}{862}{Lemma.34.1.18}%
+\contentsline {subsubsection}{Definiciones Generales}{863}{Dem.34.1.2}%
+\contentsline {subsubsection}{Definiciones y Descripci\'on del Modelo}{864}{Def.34.1.185}%
+\contentsline {subsubsection}{Pol\'iticas de Servicio}{864}{Def.34.1.185}%
+\contentsline {subsubsection}{Proceso de Estados}{865}{Def.34.1.185}%
+\contentsline {subsubsection}{Introducci{\'o}n}{865}{Def.34.1.185}%
+\contentsline {subsubsection}{Colas C\'iclicas}{866}{equation.34.1.552}%
+\contentsline {subsubsection}{Resultados Previos}{866}{Prop.34.1.49}%
+\contentsline {subsubsection}{Teorema de Estabilidad: Descripci{\'o}n}{867}{equation.34.1.561}%
+\contentsline {subsection}{\numberline {34.1.48}Supuestos}{868}{subsection.34.1.48}%
+\contentsline {subsubsection}{Supuestos B\'asicos}{869}{equation.34.1.566}%
+\contentsline {subsection}{\numberline {34.1.49}Procesos Harris Recurrente}{869}{subsection.34.1.49}%
+\contentsline {subsection}{\numberline {34.1.50}Modelo de Flujo}{870}{subsection.34.1.50}%
+\contentsline {subsection}{\numberline {34.1.51}Modelo de Flujo}{872}{subsection.34.1.51}%
+\contentsline {subsection}{\numberline {34.1.52}Estabilidad de los Sistemas de Visitas C\'iclicas}{874}{subsection.34.1.52}%
+\contentsline {subsection}{\numberline {34.1.53}Resultados principales}{875}{subsection.34.1.53}%
+\contentsline {subsection}{\numberline {34.1.54}Supuestos}{875}{subsection.34.1.54}%
+\contentsline {subsubsection}{Supuestos B\'asicos}{876}{equation.34.1.606}%
+\contentsline {subsection}{\numberline {34.1.55}Procesos Harris Recurrente}{877}{subsection.34.1.55}%
+\contentsline {subsection}{\numberline {34.1.56}Modelo de Flujo}{878}{subsection.34.1.56}%
+\contentsline {subsection}{\numberline {34.1.57}Supuestos}{880}{subsection.34.1.57}%
+\contentsline {subsubsection}{Supuestos B\'asicos}{880}{equation.34.1.623}%
+\contentsline {subsection}{\numberline {34.1.58}Procesos Harris Recurrente}{881}{subsection.34.1.58}%
+\contentsline {subsection}{\numberline {34.1.59}Modelo de Flujo}{882}{subsection.34.1.59}%
+\contentsline {subsubsection}{Supuestos B\'asicos}{884}{equation.34.1.638}%
+\contentsline {subsection}{\numberline {34.1.60}Procesos Harris Recurrente}{884}{subsection.34.1.60}%
+\contentsline {subsection}{\numberline {34.1.61}Modelo de Flujo}{885}{subsection.34.1.61}%
+\contentsline {subsection}{\numberline {34.1.62}Supuestos}{887}{subsection.34.1.62}%
+\contentsline {subsubsection}{Supuestos B\'asicos}{888}{equation.34.1.655}%
+\contentsline {subsection}{\numberline {34.1.63}Procesos Harris Recurrente}{888}{subsection.34.1.63}%
+\contentsline {subsection}{\numberline {34.1.64}Modelo de Flujo}{890}{subsection.34.1.64}%
+\contentsline {chapter}{\numberline {35}Sistemas de Visita}{892}{chapter.35}%
+\contentsline {section}{\numberline {35.1}Preliminares: Modelos de Flujo}{892}{section.35.1}%
+\contentsline {subsection}{\numberline {35.1.1}Supuestos B\'asicos}{893}{subsection.35.1.1}%
+\contentsline {subsection}{\numberline {35.1.2}Procesos Regenerativos}{893}{subsection.35.1.2}%
+\contentsline {subsection}{\numberline {35.1.3}Preliminares}{894}{subsection.35.1.3}%
+\contentsline {subsection}{\numberline {35.1.4}Procesos Harris Recurrente}{895}{subsection.35.1.4}%
+\contentsline {section}{\numberline {35.2}Modelo de Flujo}{897}{section.35.2}%
+\contentsline {subsection}{\numberline {35.2.1}Teor\'a de Procesos Estoc\'asticos y Medibilidad}{898}{subsection.35.2.1}%
+\contentsline {subsection}{\numberline {35.2.2}Construcci\'on del Modelo de Flujo}{905}{subsection.35.2.2}%
+\contentsline {chapter}{\numberline {36}Teorema de Down}{957}{chapter.36}%
+\contentsline {section}{\numberline {36.1}Teorema de Down}{957}{section.36.1}%
+\contentsline {subsubsection}{Teorema de Estabilidad}{974}{Lemma.36.1.2}%
+\contentsline {subsubsection}{Consecuencias del Teorema}{975}{equation.36.1.76}%
+\contentsline {subsubsection}{Notaci\'on}{976}{equation.36.1.78}%
+\contentsline {subsubsection}{Supuestos Te\'oricos}{977}{equation.36.1.78}%
+\contentsline {subsubsection}{Proposiciones}{977}{equation.36.1.80}%
+\contentsline {subsubsection}{El Modelo Global}{983}{equation.36.1.97}%
+\contentsline {subsubsection}{Modelo Fantasma}{983}{equation.36.1.99}%
+\contentsline {subsubsection}{La funci\'on susituta}{983}{equation.36.1.100}%
+\contentsline {section}{\numberline {36.2}Preliminaries: }{993}{section.36.2}%
+\contentsline {section}{\numberline {36.3}Main Result and An Example}{995}{section.36.3}%
+\contentsline {section}{\numberline {36.4}Concluding Remarks}{998}{section.36.4}%
+\contentsline {section}{\numberline {36.5}General Case Calculations Exhaustive Policy}{999}{section.36.5}%
+\contentsline {section}{\numberline {36.6}Descripci\'on}{1000}{section.36.6}%
+\contentsline {section}{\numberline {36.7}Descripci\'on de una Red de Sistemas de Visitas C\'iclicas}{1001}{section.36.7}%
+\contentsline {subsection}{\numberline {36.7.1}Funciones Generadoras de Probabilidades}{1002}{subsection.36.7.1}%
+\contentsline {subsection}{\numberline {36.7.2}El problema de la ruina del jugador}{1002}{subsection.36.7.2}%
+\contentsline {section}{\numberline {36.8}Procesos de Llegadas a las colas en la RSVC}{1003}{section.36.8}%
+\contentsline {section}{\numberline {36.9}Ecuaciones Recursivas para la RSVC}{1005}{section.36.9}%
+\contentsline {subsection}{\numberline {36.9.1}Tiempos de Traslado del Servidor}{1006}{subsection.36.9.1}%
+\contentsline {subsection}{\numberline {36.9.2}Longitudes de la Cola en tiempos del servidor del otro sistema}{1006}{subsection.36.9.2}%
+\contentsline {subsection}{\numberline {36.9.3}Usuarios presentes en la cola en tiempos del servidor de sus sistema}{1006}{subsection.36.9.3}%
+\contentsline {subsection}{\numberline {36.9.4}Usuarios presentes en la RSVC}{1007}{subsection.36.9.4}%
+\contentsline {subsection}{\numberline {36.9.5}Ecuaciones Recursivas}{1008}{subsection.36.9.5}%
+\contentsline {subsection}{\numberline {36.9.6}Soluci\'on del Sistema de Ecuaciones Lineales}{1009}{subsection.36.9.6}%
+\contentsline {section}{\numberline {36.10}Resultado Principal}{1009}{section.36.10}%
+\contentsline {section}{\numberline {36.11}Derivadas de Orden Superior}{1009}{section.36.11}%
+\contentsline {subsection}{\numberline {36.11.1}Derivadas de Segundo Orden: Tiempos de Traslado del Servidor}{1009}{subsection.36.11.1}%
+\contentsline {subsection}{\numberline {36.11.2}Derivadas de Segundo Orden: Longitudes de las Colas}{1010}{subsection.36.11.2}%
+\contentsline {section}{\numberline {36.12}Aplicaciones}{1012}{section.36.12}%
+\contentsline {subsection}{\numberline {36.12.1}Ejemplo 1: Automatizaci\'on en dos l\'ineas de trabajo}{1012}{subsection.36.12.1}%
+\contentsline {subsection}{\numberline {36.12.2}Ejemplo 2: Sistema de Salud P\'ublica}{1012}{subsection.36.12.2}%
+\contentsline {subsection}{\numberline {36.12.3}Ejemplo 3: RSVC con dos conexiones}{1013}{subsection.36.12.3}%
+\contentsline {section}{\numberline {36.13}Descripci\'on de una Red de Sistemas de Visitas C\'iclicas}{1013}{section.36.13}%
+\contentsline {subsection}{\numberline {36.13.1}Funciones Generadoras de Probabilidades}{1014}{subsection.36.13.1}%
+\contentsline {subsection}{\numberline {36.13.2}El problema de la ruina del jugador}{1015}{subsection.36.13.2}%
+\contentsline {section}{\numberline {36.14}Procesos de Llegadas a las colas en la RSVC}{1016}{section.36.14}%
+\contentsline {section}{\numberline {36.15}Ecuaciones Recursivas para la RSVC}{1017}{section.36.15}%
+\contentsline {subsection}{\numberline {36.15.1}Tiempos de Traslado del Servidor}{1018}{subsection.36.15.1}%
+\contentsline {subsection}{\numberline {36.15.2}Longitudes de la Cola en tiempos del servidor del otro sistema}{1018}{subsection.36.15.2}%
+\contentsline {subsection}{\numberline {36.15.3}Usuarios presentes en la cola en tiempos del servidor de sus sistema}{1019}{subsection.36.15.3}%
+\contentsline {subsection}{\numberline {36.15.4}Usuarios presentes en la RSVC}{1019}{subsection.36.15.4}%
+\contentsline {subsection}{\numberline {36.15.5}Ecuaciones Recursivas}{1020}{subsection.36.15.5}%
+\contentsline {subsection}{\numberline {36.15.6}Soluci\'on del Sistema de Ecuaciones Lineales}{1021}{subsection.36.15.6}%
+\contentsline {section}{\numberline {36.16}Resultado Principal}{1021}{section.36.16}%
+\contentsline {section}{\numberline {36.17}Derivadas de Orden Superior}{1022}{section.36.17}%
+\contentsline {subsection}{\numberline {36.17.1}Derivadas de Segundo Orden: Tiempos de Traslado del Servidor}{1022}{subsection.36.17.1}%
+\contentsline {subsection}{\numberline {36.17.2}Derivadas de Segundo Orden: Longitudes de las Colas}{1022}{subsection.36.17.2}%
+\contentsline {section}{\numberline {36.18}Aplicaciones}{1024}{section.36.18}%
+\contentsline {subsection}{\numberline {36.18.1}Ejemplo 1: Automatizaci\'on en dos l\'ineas de trabajo}{1024}{subsection.36.18.1}%
+\contentsline {subsection}{\numberline {36.18.2}Ejemplo 2: Sistema de Salud P\'ublica}{1024}{subsection.36.18.2}%
+\contentsline {subsection}{\numberline {36.18.3}Ejemplo 3: RSVC con dos conexiones}{1025}{subsection.36.18.3}%
+\contentsline {subsubsection}{Queue lengths for server times in the System}{1025}{subsection.36.18.3}%
+\contentsline {subsubsection}{Recursive Equations for the Cyclic Polling System}{1026}{equation.36.18.4}%
+\contentsline {subsection}{\numberline {36.18.4}General Second Order Derivatives}{1027}{subsection.36.18.4}%
+\contentsline {subsubsection}{Second Order Derivatives: Serve's Switchover Times}{1028}{subsection.36.18.4}%
+\contentsline {subsubsection}{Second Order Derivatives: Queue Lengths}{1028}{equation.36.18.12}%
+\contentsline {subsection}{\numberline {36.18.5}Second Grade Derivative Recursive Equations}{1032}{subsection.36.18.5}%
+\contentsline {section}{\numberline {36.19}Generalizaciones}{1038}{section.36.19}%
+\contentsline {subsection}{\numberline {36.19.1}RSVC con dos conexiones}{1038}{subsection.36.19.1}%
+\contentsline {subsection}{\numberline {36.19.2}First Moments of the Queue Lengths}{1038}{subsection.36.19.2}%
+\contentsline {subsection}{\numberline {36.19.3}General Second Order Derivatives}{1041}{subsection.36.19.3}%
+\contentsline {subsubsection}{Second Order Derivatives: Serve's Switchover Times}{1041}{subsection.36.19.3}%
+\contentsline {subsubsection}{Second Order Derivatives: Queue Lengths}{1042}{equation.36.19.15}%
+\contentsline {subsection}{\numberline {36.19.4}Second Grade Derivative Recursive Equations}{1046}{subsection.36.19.4}%
+\contentsline {section}{\numberline {36.20}Generalizaciones}{1052}{section.36.20}%
+\contentsline {subsection}{\numberline {36.20.1}RSVC con dos conexiones}{1052}{subsection.36.20.1}%
+\contentsline {subsection}{\numberline {36.20.2}First Moments of the Queue Lengths}{1052}{subsection.36.20.2}%
+\contentsline {subsection}{\numberline {36.20.3}General Second Order Derivatives}{1054}{subsection.36.20.3}%
+\contentsline {subsubsection}{Second Order Derivatives: Serve's Switchover Times}{1055}{subsection.36.20.3}%
+\contentsline {subsubsection}{Second Order Derivatives: Queue Lengths}{1055}{equation.36.20.15}%
+\contentsline {section}{\numberline {36.21}Generalizaciones}{1066}{section.36.21}%
+\contentsline {subsection}{\numberline {36.21.1}RSVC con dos conexiones}{1066}{subsection.36.21.1}%
+\contentsline {subsection}{\numberline {36.21.2}First Moments of the Queue Lengths}{1066}{subsection.36.21.2}%
+\contentsline {subsection}{\numberline {36.21.3}General Second Order Derivatives}{1068}{subsection.36.21.3}%
+\contentsline {subsubsection}{Second Order Derivatives: Serve's Switchover Times}{1069}{subsection.36.21.3}%
+\contentsline {subsubsection}{Second Order Derivatives: Queue Lengths}{1069}{equation.36.21.15}%
+\contentsline {section}{\numberline {36.22}Generalizaciones}{1080}{section.36.22}%
+\contentsline {subsection}{\numberline {36.22.1}RSVC con dos conexiones}{1080}{subsection.36.22.1}%
+\contentsline {subsection}{\numberline {36.22.2}First Moments of the Queue Lengths}{1080}{subsection.36.22.2}%
+\contentsline {subsection}{\numberline {36.22.3}General Second Order Derivatives}{1082}{subsection.36.22.3}%
+\contentsline {subsubsection}{Second Order Derivatives: Serve's Switchover Times}{1083}{subsection.36.22.3}%
+\contentsline {subsubsection}{Second Order Derivatives: Queue Lengths}{1083}{equation.36.22.15}%
+\contentsline {section}{\numberline {36.23}Generalizaciones}{1093}{section.36.23}%
+\contentsline {subsection}{\numberline {36.23.1}RSVC con dos conexiones}{1093}{subsection.36.23.1}%
+\contentsline {subsection}{\numberline {36.23.2}First Moments of the Queue Lengths}{1093}{subsection.36.23.2}%
+\contentsline {subsection}{\numberline {36.23.3}General Second Order Derivatives}{1095}{subsection.36.23.3}%
+\contentsline {subsubsection}{Second Order Derivatives: Serve's Switchover Times}{1096}{subsection.36.23.3}%
+\contentsline {subsubsection}{Second Order Derivatives: Queue Lengths}{1096}{equation.36.23.15}%
+\contentsline {section}{\numberline {36.24}Generalizaciones}{1102}{section.36.24}%
+\contentsline {subsection}{\numberline {36.24.1}RSVC con dos conexiones}{1102}{subsection.36.24.1}%
+\contentsline {subsection}{\numberline {36.24.2}First Moments of the Queue Lengths}{1102}{subsection.36.24.2}%
+\contentsline {section}{\numberline {36.25}Generalizaciones}{1110}{section.36.25}%
+\contentsline {subsection}{\numberline {36.25.1}RSVC con dos conexiones}{1110}{subsection.36.25.1}%
+\contentsline {subsection}{\numberline {36.25.2}First Moments of the Queue Lengths}{1110}{subsection.36.25.2}%
+\contentsline {section}{\numberline {36.26}Generalizaciones}{1118}{section.36.26}%
+\contentsline {subsection}{\numberline {36.26.1}RSVC con dos conexiones}{1118}{subsection.36.26.1}%
+\contentsline {subsection}{\numberline {36.26.2}First Moments of the Queue Lengths}{1118}{subsection.36.26.2}%
+\contentsline {subsection}{\numberline {36.26.3}General Second Order Derivatives}{1120}{subsection.36.26.3}%
+\contentsline {subsubsection}{Second Order Derivatives: Serve's Switchover Times}{1121}{subsection.36.26.3}%
+\contentsline {subsubsection}{Second Order Derivatives: Queue Lengths}{1121}{equation.36.26.15}%
+\contentsline {subsection}{\numberline {36.26.4}Second Grade Derivative Recursive Equations}{1125}{subsection.36.26.4}%
+\contentsline {section}{\numberline {36.27}Generalizaciones}{1131}{section.36.27}%
+\contentsline {subsection}{\numberline {36.27.1}RSVC con dos conexiones}{1131}{subsection.36.27.1}%
+\contentsline {subsection}{\numberline {36.27.2}First Moments of the Queue Lengths}{1131}{subsection.36.27.2}%
+\contentsline {section}{\numberline {36.28}Generalizaciones}{1138}{section.36.28}%
+\contentsline {subsection}{\numberline {36.28.1}RSVC con dos conexiones}{1138}{subsection.36.28.1}%
+\contentsline {subsection}{\numberline {36.28.2}Derivadas de Orden Superior}{1140}{subsection.36.28.2}%
+\contentsline {section}{\numberline {36.29}Teor\'ia General}{1143}{section.36.29}%
+\contentsline {subsection}{\numberline {36.29.1}Ecuaciones Recursivas para la RSVC}{1143}{subsection.36.29.1}%
+\contentsline {subsection}{\numberline {36.29.2}Derivadas de Orden Superior}{1145}{subsection.36.29.2}%
+\contentsline {section}{\numberline {36.30}Ejemplos Particulares}{1148}{section.36.30}%
+\contentsline {subsection}{\numberline {36.30.1}Automatizaci\'on en dos l\'ineas de trabajo}{1148}{subsection.36.30.1}%
+\contentsline {subsection}{\numberline {36.30.2}Sistema de Salud P\'ublica}{1149}{subsection.36.30.2}%
+\contentsline {subsection}{\numberline {36.30.3}RSVC con dos conexiones}{1149}{subsection.36.30.3}%
+\contentsline {section}{\numberline {36.31}Preliminaries: }{1149}{section.36.31}%
+\contentsline {section}{\numberline {36.32}Main Result and An Example}{1152}{section.36.32}%
+\contentsline {section}{\numberline {36.33}Concluding Remarks}{1153}{section.36.33}%
+\contentsline {section}{\numberline {36.34}Appendix A: Gambler's ruin problem Proof}{1154}{section.36.34}%
+\contentsline {section}{\numberline {36.35}Appendix B: General Case Calculations Exhaustive Policy}{1157}{section.36.35}%
+\contentsline {section}{\numberline {36.36}Appendix C: General Case Calculations Gated Policy}{1160}{section.36.36}%
+\contentsline {section}{\numberline {36.37}Resultados Necesarios}{1183}{section.36.37}%
+\contentsline {subsubsection}{Expresion de las Parciales mixtas para $F_{1}$ y $F_{2}$}{1183}{Prop.36.37.1}%
+\contentsline {subsection}{\numberline {36.37.1}Derivadas de Segundo Orden para $F_{1}$}{1190}{subsection.36.37.1}%
+\contentsline {subsubsection}{Mixtas para $z_{1}$:}{1190}{subsection.36.37.1}%
+\contentsline {subsubsection}{Mixtas para $z_{2}$:}{1191}{Item.200}%
+\contentsline {subsubsection}{Mixtas para $w_{1}$:}{1191}{Item.204}%
+\contentsline {subsubsection}{Mixtas para $w_{2}$:}{1192}{Item.208}%
+\contentsline {subsection}{\numberline {36.37.2}Derivadas de Segundo Orden para $F_{2}$}{1192}{subsection.36.37.2}%
+\contentsline {subsubsection}{Mixtas para $z_{1}$:}{1192}{subsection.36.37.2}%
+\contentsline {subsubsection}{Mixtas para $z_{2}$:}{1193}{Item.216}%
+\contentsline {subsubsection}{Mixtas para $w_{1}$:}{1193}{Item.220}%
+\contentsline {subsubsection}{Mixtas para $w_{2}$:}{1194}{Item.224}%
+\contentsline {subsection}{\numberline {36.37.3}Derivadas de Segundo Orden para $\hat {F}_{1}$}{1195}{subsection.36.37.3}%
+\contentsline {subsubsection}{Mixtas para $z_{1}$:}{1195}{subsection.36.37.3}%
+\contentsline {subsubsection}{Mixtas para $z_{2}$:}{1195}{Item.232}%
+\contentsline {subsubsection}{Mixtas para $w_{1}$:}{1196}{Item.236}%
+\contentsline {subsubsection}{Mixtas para $w_{2}$:}{1196}{Item.240}%
+\contentsline {subsection}{\numberline {36.37.4}Derivadas de Segundo Orden para $\hat {F}_{2}$}{1197}{subsection.36.37.4}%
+\contentsline {subsubsection}{Mixtas para $z_{1}$:}{1197}{subsection.36.37.4}%
+\contentsline {subsubsection}{Mixtas para $z_{2}$:}{1197}{Item.248}%
+\contentsline {subsubsection}{Mixtas para $w_{1}$:}{1198}{Item.252}%
+\contentsline {subsubsection}{Mixtas para $w_{1}$:}{1198}{Item.256}%
+\contentsline {subsection}{\numberline {36.37.5}Longitudes de la Cola en cualquier tiempo}{1204}{subsection.36.37.5}%
+\contentsline {section}{\numberline {36.38}Descripci\'on de una Red de Sistemas de Visitas C\'iclicas}{1205}{section.36.38}%
+\contentsline {subsection}{\numberline {36.38.1}Funciones Generadoras de Probabilidades}{1205}{subsection.36.38.1}%
+\contentsline {subsection}{\numberline {36.38.2}El problema de la ruina del jugador}{1206}{subsection.36.38.2}%
+\contentsline {section}{\numberline {36.39}Procesos de Llegadas a las colas en la RSVC}{1209}{section.36.39}%
+\contentsline {section}{\numberline {36.40}Ecuaciones Recursivas para la R.S.V.C.}{1212}{section.36.40}%
+\contentsline {subsection}{\numberline {36.40.1}Tiempos de Traslado del Servidor}{1212}{subsection.36.40.1}%
+\contentsline {subsection}{\numberline {36.40.2}Usuarios presentes en la cola}{1213}{subsection.36.40.2}%
+\contentsline {subsection}{\numberline {36.40.3}Ecuaciones Recursivas}{1214}{subsection.36.40.3}%
+\contentsline {subsection}{\numberline {36.40.4}Soluci\'on del Sistema de Ecuaciones Lineales}{1215}{subsection.36.40.4}%
+\contentsline {section}{\numberline {36.41}Resultado Principal}{1216}{section.36.41}%
+\contentsline {section}{\numberline {36.42}Segundos Momentos}{1216}{section.36.42}%
+\contentsline {subsection}{\numberline {36.42.1}Sistema de Ecuaciones Lineales para los Segundos Momentos}{1217}{subsection.36.42.1}%
+\contentsline {section}{\numberline {36.43}Medidas de Desempe\~no}{1221}{section.36.43}%
+\contentsline {section}{\numberline {36.44}Descripci\'on de una Red de Sistemas de Visitas C\'iclicas}{1234}{section.36.44}%
+\contentsline {subsection}{\numberline {36.44.1}Funciones Generadoras de Probabilidades}{1235}{subsection.36.44.1}%
+\contentsline {subsection}{\numberline {36.44.2}El problema de la ruina del jugador}{1235}{subsection.36.44.2}%
+\contentsline {section}{\numberline {36.45}Procesos de Llegadas a las colas en la RSVC}{1239}{section.36.45}%
+\contentsline {section}{\numberline {36.46}Ecuaciones Recursivas para la R.S.V.C.}{1241}{section.36.46}%
+\contentsline {subsection}{\numberline {36.46.1}Tiempos de Traslado del Servidor}{1242}{subsection.36.46.1}%
+\contentsline {subsection}{\numberline {36.46.2}Usuarios presentes en la cola}{1242}{subsection.36.46.2}%
+\contentsline {subsection}{\numberline {36.46.3}Ecuaciones Recursivas}{1244}{subsection.36.46.3}%
+\contentsline {subsection}{\numberline {36.46.4}Soluci\'on del Sistema de Ecuaciones Lineales}{1245}{subsection.36.46.4}%
+\contentsline {section}{\numberline {36.47}Resultado Principal}{1246}{section.36.47}%
+\contentsline {section}{\numberline {36.48}Segundos Momentos}{1247}{section.36.48}%
+\contentsline {subsection}{\numberline {36.48.1}Sistema de Ecuaciones Lineales para los Segundos Momentos}{1248}{subsection.36.48.1}%
+\contentsline {section}{\numberline {36.49}Medidas de Desempe\~no}{1253}{section.36.49}%
+\contentsline {section}{\numberline {36.50}Descripci\'on de una Red de Sistemas de Visitas C\'iclicas}{1266}{section.36.50}%
+\contentsline {subsection}{\numberline {36.50.1}Funciones Generadoras de Probabilidades}{1266}{subsection.36.50.1}%
+\contentsline {subsection}{\numberline {36.50.2}El problema de la ruina del jugador}{1267}{subsection.36.50.2}%
+\contentsline {section}{\numberline {36.51}Procesos de Llegadas a las colas en la RSVC}{1271}{section.36.51}%
+\contentsline {section}{\numberline {36.52}Ecuaciones Recursivas para la R.S.V.C.}{1273}{section.36.52}%
+\contentsline {subsection}{\numberline {36.52.1}Tiempos de Traslado del Servidor}{1273}{subsection.36.52.1}%
+\contentsline {subsection}{\numberline {36.52.2}Usuarios presentes en la cola}{1274}{subsection.36.52.2}%
+\contentsline {subsection}{\numberline {36.52.3}Ecuaciones Recursivas}{1275}{subsection.36.52.3}%
+\contentsline {subsection}{\numberline {36.52.4}Soluci\'on del Sistema de Ecuaciones Lineales}{1277}{subsection.36.52.4}%
+\contentsline {section}{\numberline {36.53}Resultado Principal}{1278}{section.36.53}%
+\contentsline {section}{\numberline {36.54}Segundos Momentos}{1279}{section.36.54}%
+\contentsline {subsection}{\numberline {36.54.1}Sistema de Ecuaciones Lineales para los Segundos Momentos}{1280}{subsection.36.54.1}%
+\contentsline {section}{\numberline {36.55}Medidas de Desempe\~no}{1285}{section.36.55}%
+\contentsline {section}{\numberline {36.56}Descripci\'on de una Red de Sistemas de Visitas C\'iclicas}{1298}{section.36.56}%
+\contentsline {subsection}{\numberline {36.56.1}Funciones Generadoras de Probabilidades}{1298}{subsection.36.56.1}%
+\contentsline {subsection}{\numberline {36.56.2}El problema de la ruina del jugador}{1299}{subsection.36.56.2}%
+\contentsline {section}{\numberline {36.57}Procesos de Llegadas a las colas en la RSVC}{1304}{section.36.57}%
+\contentsline {section}{\numberline {36.58}Ecuaciones Recursivas para la R.S.V.C.}{1306}{section.36.58}%
+\contentsline {subsection}{\numberline {36.58.1}Tiempos de Traslado del Servidor}{1306}{subsection.36.58.1}%
+\contentsline {subsection}{\numberline {36.58.2}Usuarios presentes en la cola}{1307}{subsection.36.58.2}%
+\contentsline {subsection}{\numberline {36.58.3}Ecuaciones Recursivas}{1308}{subsection.36.58.3}%
+\contentsline {subsection}{\numberline {36.58.4}Soluci\'on del Sistema de Ecuaciones Lineales}{1310}{subsection.36.58.4}%
+\contentsline {section}{\numberline {36.59}Resultado Principal}{1311}{section.36.59}%
+\contentsline {section}{\numberline {36.60}Segundos Momentos}{1312}{section.36.60}%
+\contentsline {subsection}{\numberline {36.60.1}Sistema de Ecuaciones Lineales para los Segundos Momentos}{1313}{subsection.36.60.1}%
+\contentsline {section}{\numberline {36.61}Medidas de Desempe\~no}{1318}{section.36.61}%
+\contentsline {section}{\numberline {36.62}Descripci\'on de una Red de Sistemas de Visitas C\'iclicas}{1331}{section.36.62}%
+\contentsline {subsection}{\numberline {36.62.1}Funciones Generadoras de Probabilidades}{1331}{subsection.36.62.1}%
+\contentsline {subsection}{\numberline {36.62.2}El problema de la ruina del jugador}{1332}{subsection.36.62.2}%
+\contentsline {section}{\numberline {36.63}Procesos de Llegadas a las colas en la RSVC}{1337}{section.36.63}%
+\contentsline {section}{\numberline {36.64}Ecuaciones Recursivas para la R.S.V.C.}{1339}{section.36.64}%
+\contentsline {subsection}{\numberline {36.64.1}Tiempos de Traslado del Servidor}{1339}{subsection.36.64.1}%
+\contentsline {subsection}{\numberline {36.64.2}Usuarios presentes en la cola}{1340}{subsection.36.64.2}%
+\contentsline {subsection}{\numberline {36.64.3}Ecuaciones Recursivas}{1341}{subsection.36.64.3}%
+\contentsline {subsection}{\numberline {36.64.4}Soluci\'on del Sistema de Ecuaciones Lineales}{1343}{subsection.36.64.4}%
+\contentsline {section}{\numberline {36.65}Resultado Principal}{1344}{section.36.65}%
+\contentsline {section}{\numberline {36.66}Segundos Momentos}{1345}{section.36.66}%
+\contentsline {subsection}{\numberline {36.66.1}Sistema de Ecuaciones Lineales para los Segundos Momentos}{1346}{subsection.36.66.1}%
+\contentsline {section}{\numberline {36.67}Medidas de Desempe\~no}{1351}{section.36.67}%
+\contentsline {subsection}{\numberline {36.67.1}Distribuci\'on para los usuarios de traslado}{1359}{subsection.36.67.1}%
+\contentsline {section}{\numberline {36.68}Descripci\'on de una Red de Sistemas de Visitas C\'iclicas}{1363}{section.36.68}%
+\contentsline {subsection}{\numberline {36.68.1}Funciones Generadoras de Probabilidades}{1363}{subsection.36.68.1}%
+\contentsline {subsection}{\numberline {36.68.2}La ruina del jugador}{1364}{subsection.36.68.2}%
+\contentsline {section}{\numberline {36.69}Descripci\'on de una Red de S.V.C.}{1371}{section.36.69}%
+\contentsline {section}{\numberline {36.70}Ecuaciones Recursivas para la R.S.V.C.}{1374}{section.36.70}%
+\contentsline {subsection}{\numberline {36.70.1}Tiempos de Traslado del Servidor}{1375}{subsection.36.70.1}%
+\contentsline {subsection}{\numberline {36.70.2}Usuarios presentes en la cola}{1376}{subsection.36.70.2}%
+\contentsline {subsection}{\numberline {36.70.3}Ecuaciones Recursivas}{1377}{subsection.36.70.3}%
+\contentsline {subsection}{\numberline {36.70.4}Soluci\'on del Sistema de Ecuaciones Lineales}{1379}{subsection.36.70.4}%
+\contentsline {section}{\numberline {36.71}Segundos Momentos}{1381}{section.36.71}%
+\contentsline {subsection}{\numberline {36.71.1}Sistema de Ecuaciones Lineales para los Segundos Momentos}{1382}{subsection.36.71.1}%
+\contentsline {section}{\numberline {36.72}Tiempos de Ciclo e Intervisita}{1388}{section.36.72}%
+\contentsline {subsection}{\numberline {36.72.1}Longitudes de la Cola en cualquier tiempo}{1391}{subsection.36.72.1}%
+\contentsline {section}{\numberline {36.73}Procesos de Renovaci\'on y Regenerativos}{1392}{section.36.73}%
+\contentsline {subsection}{\numberline {36.73.1}Propiedades de los Procesos de Renovaci\'on}{1392}{subsection.36.73.1}%
+\contentsline {subsection}{\numberline {36.73.2}Funci\'on de Renovaci\'on}{1393}{subsection.36.73.2}%
+\contentsline {subsection}{\numberline {36.73.3}Teorema Principal de Renovaci\'on}{1394}{subsection.36.73.3}%
+\contentsline {subsection}{\numberline {36.73.4}Procesos Regenerativos}{1394}{subsection.36.73.4}%
+\contentsline {subsection}{\numberline {36.73.5}Procesos Regenerativos Estacionarios}{1395}{subsection.36.73.5}%
+\contentsline {section}{\numberline {36.74}Tiempo de Ciclo Promedio}{1396}{section.36.74}%
+\contentsline {section}{\numberline {36.75}Expresion de las Parciales mixtas para $F_{1}$ y $F_{2}$}{1396}{section.36.75}%
+\contentsline {section}{\numberline {36.76}Sistemas de Visitas C\'iclicas}{1413}{section.36.76}%
+\contentsline {section}{\numberline {36.77}Definiciones}{1413}{section.36.77}%
+\contentsline {section}{\numberline {36.78}La ruina del jugador}{1414}{section.36.78}%
+\contentsline {section}{\numberline {36.79}Funciones Generadoras de Probabilidad Conjunta}{1415}{section.36.79}%
+\contentsline {section}{\numberline {36.80}Definiciones}{1417}{section.36.80}%
+\contentsline {section}{\numberline {36.81}La ruina del jugador}{1418}{section.36.81}%
+\contentsline {section}{\numberline {36.82}Funciones Generadoras de Probabilidades}{1422}{section.36.82}%
+\contentsline {section}{\numberline {36.83}Descripci\'on de una Red de S.V.C.}{1427}{section.36.83}%
+\contentsline {section}{\numberline {36.84}Ecuaciones Recursivas para la R.S.V.C.}{1429}{section.36.84}%
+\contentsline {subsection}{\numberline {36.84.1}Tiempos de Traslado del Servidor}{1430}{subsection.36.84.1}%
+\contentsline {subsection}{\numberline {36.84.2}Usuarios presentes en la cola}{1431}{subsection.36.84.2}%
+\contentsline {subsection}{\numberline {36.84.3}Ecuaciones Recursivas}{1432}{subsection.36.84.3}%
+\contentsline {subsection}{\numberline {36.84.4}Soluci\'on del Sistema de Ecuaciones Lineales}{1434}{subsection.36.84.4}%
+\contentsline {section}{\numberline {36.85}Segundos Momentos}{1436}{section.36.85}%
+\contentsline {section}{\numberline {36.86}Sistema de Ecuaciones Lineales para los Segundos Momentos}{1437}{section.36.86}%
+\contentsline {section}{\numberline {36.87}Tiempos de Ciclo e Intervisita}{1443}{section.36.87}%
+\contentsline {subsection}{\numberline {36.87.1}Longitudes de la Cola en cualquier tiempo}{1446}{subsection.36.87.1}%
+\contentsline {section}{\numberline {36.88}Procesos de Renovaci\'on}{1447}{section.36.88}%
+\contentsline {subsection}{\numberline {36.88.1}Propiedades de los Procesos de Renovaci\'on}{1447}{subsection.36.88.1}%
+\contentsline {subsection}{\numberline {36.88.2}Funci\'on de Renovaci\'on}{1448}{subsection.36.88.2}%
+\contentsline {subsection}{\numberline {36.88.3}Funci\'on de Renovaci\'on}{1449}{subsection.36.88.3}%
+\contentsline {subsection}{\numberline {36.88.4}Teorema Principal de Renovaci\'on}{1449}{subsection.36.88.4}%
+\contentsline {section}{\numberline {36.89}Procesos Regenerativos}{1450}{section.36.89}%
+\contentsline {subsection}{\numberline {36.89.1}Procesos Regenerativos Estacionarios}{1450}{subsection.36.89.1}%
+\contentsline {section}{\numberline {36.90}Tiempo de Ciclo Promedio}{1451}{section.36.90}%
+\contentsline {subsubsection}{Expresion de las Parciales mixtas para $F_{1}$ y $F_{2}$}{1451}{Def.36.90.3}%
+\contentsline {subsection}{\numberline {36.90.1}Derivadas de Segundo Orden para $F_{1}$}{1457}{subsection.36.90.1}%
+\contentsline {subsubsection}{Mixtas para $z_{1}$:}{1457}{subsection.36.90.1}%
+\contentsline {subsubsection}{Mixtas para $z_{2}$:}{1458}{Item.880}%
+\contentsline {subsubsection}{Mixtas para $w_{1}$:}{1458}{Item.884}%
+\contentsline {subsubsection}{Mixtas para $w_{2}$:}{1459}{Item.888}%
+\contentsline {subsection}{\numberline {36.90.2}Derivadas de Segundo Orden para $F_{2}$}{1459}{subsection.36.90.2}%
+\contentsline {subsubsection}{Mixtas para $z_{1}$:}{1459}{subsection.36.90.2}%
+\contentsline {subsubsection}{Mixtas para $z_{2}$:}{1460}{Item.896}%
+\contentsline {subsubsection}{Mixtas para $w_{1}$:}{1460}{Item.900}%
+\contentsline {subsubsection}{Mixtas para $w_{2}$:}{1461}{Item.904}%
+\contentsline {subsection}{\numberline {36.90.3}Derivadas de Segundo Orden para $\hat {F}_{1}$}{1461}{subsection.36.90.3}%
+\contentsline {subsubsection}{Mixtas para $z_{1}$:}{1461}{subsection.36.90.3}%
+\contentsline {subsubsection}{Mixtas para $z_{2}$:}{1462}{Item.912}%
+\contentsline {subsubsection}{Mixtas para $w_{1}$:}{1462}{Item.916}%
+\contentsline {subsubsection}{Mixtas para $w_{2}$:}{1463}{Item.920}%
+\contentsline {subsection}{\numberline {36.90.4}Derivadas de Segundo Orden para $\hat {F}_{2}$}{1463}{subsection.36.90.4}%
+\contentsline {subsubsection}{Mixtas para $z_{1}$:}{1463}{subsection.36.90.4}%
+\contentsline {subsubsection}{Mixtas para $z_{2}$:}{1464}{Item.928}%
+\contentsline {subsubsection}{Mixtas para $w_{1}$:}{1464}{Item.932}%
+\contentsline {subsubsection}{Mixtas para $w_{1}$:}{1465}{Item.936}%
+\contentsline {subsection}{\numberline {36.90.5}Longitudes de la Cola en cualquier tiempo}{1470}{subsection.36.90.5}%
+\contentsline {chapter}{\numberline {37}Thorisson}{1471}{chapter.37}%
+\contentsline {section}{\numberline {37.1}Existencia de Tiempos de Regeneraci\'on}{1471}{section.37.1}%
+\contentsline {subsection}{\numberline {37.1.1}Procesos Regenerativos: Thorisson}{1471}{subsection.37.1.1}%
+\contentsline {section}{\numberline {37.2}Procesos Regenerativos}{1483}{section.37.2}%
+\contentsline {subsection}{\numberline {37.2.1}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman2}}{1483}{subsection.37.2.1}%
+\contentsline {subsection}{\numberline {37.2.2}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{1484}{subsection.37.2.2}%
+\contentsline {subsubsection}{Procesos de Renovaci\'on}{1485}{Coro.37.2.1}%
+\contentsline {subsubsection}{Teorema Principal de Renovaci\'on}{1485}{Note.37.2.7}%
+\contentsline {subsubsection}{Propiedades de los Procesos de Renovaci\'on}{1485}{Teo.37.2.3}%
+\contentsline {subsubsection}{Funci\'on de Renovaci\'on}{1490}{equation.37.2.31}%
+\contentsline {subsubsection}{Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{1491}{Note.37.2.15}%
+\contentsline {subsubsection}{Procesos Regenerativos}{1497}{Coro.37.2.17}%
+\contentsline {subsection}{\numberline {37.2.3}Puntos de Renovaci\'on}{1499}{subsection.37.2.3}%
+\contentsline {subsection}{\numberline {37.2.4}Resultados para Procesos de Salida}{1500}{subsection.37.2.4}%
+\contentsline {subsection}{\numberline {37.2.5}Procesos Regenerativos}{1500}{subsection.37.2.5}%
+\contentsline {subsection}{\numberline {37.2.6}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{1500}{subsection.37.2.6}%
+\contentsline {subsection}{\numberline {37.2.7}Procesos Regenerativos}{1504}{subsection.37.2.7}%
+\contentsline {subsection}{\numberline {37.2.8}Procesos Regenerativos}{1505}{subsection.37.2.8}%
+\contentsline {subsection}{\numberline {37.2.9}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{1506}{subsection.37.2.9}%
+\contentsline {subsection}{\numberline {37.2.10}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{1507}{subsection.37.2.10}%
+\contentsline {subsection}{\numberline {37.2.11}Propiedades de los Procesos de Renovaci\'on}{1507}{subsection.37.2.11}%
+\contentsline {subsection}{\numberline {37.2.12}Propiedades de los Procesos de Renovaci\'on}{1508}{subsection.37.2.12}%
+\contentsline {subsection}{\numberline {37.2.13}Propiedades de los Procesos de Renovaci\'on}{1509}{subsection.37.2.13}%
+\contentsline {subsection}{\numberline {37.2.14}Propiedades de los Procesos de Renovaci\'on}{1510}{subsection.37.2.14}%
+\contentsline {subsection}{\numberline {37.2.15}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{1511}{subsection.37.2.15}%
+\contentsline {subsection}{\numberline {37.2.16}Procesos de Renovaci\'on}{1512}{subsection.37.2.16}%
+\contentsline {subsection}{\numberline {37.2.17}Teorema Principal de Renovaci\'on}{1512}{subsection.37.2.17}%
+\contentsline {subsection}{\numberline {37.2.18}Funci\'on de Renovaci\'on}{1512}{subsection.37.2.18}%
+\contentsline {subsection}{\numberline {37.2.19}Propiedades de los Procesos de Renovaci\'on}{1513}{subsection.37.2.19}%
+\contentsline {subsection}{\numberline {37.2.20}Funci\'on de Renovaci\'on}{1514}{subsection.37.2.20}%
+\contentsline {subsection}{\numberline {37.2.21}Procesos de Renovaci\'on}{1514}{subsection.37.2.21}%
+\contentsline {subsection}{\numberline {37.2.22}Puntos de Renovaci\'on}{1515}{subsection.37.2.22}%
+\contentsline {subsection}{\numberline {37.2.23}Resultados para Procesos de Salida}{1515}{subsection.37.2.23}%
+\contentsline {subsection}{\numberline {37.2.24}Procesos Regenerativos}{1516}{subsection.37.2.24}%
+\contentsline {subsection}{\numberline {37.2.25}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{1517}{subsection.37.2.25}%
+\contentsline {subsection}{\numberline {37.2.26}Procesos Regenerativos}{1521}{subsection.37.2.26}%
+\contentsline {subsection}{\numberline {37.2.27}Procesos Regenerativos}{1522}{subsection.37.2.27}%
+\contentsline {subsection}{\numberline {37.2.28}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{1523}{subsection.37.2.28}%
+\contentsline {subsection}{\numberline {37.2.29}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{1523}{subsection.37.2.29}%
+\contentsline {subsection}{\numberline {37.2.30}Propiedades de los Procesos de Renovaci\'on}{1524}{subsection.37.2.30}%
+\contentsline {subsection}{\numberline {37.2.31}Propiedades de los Procesos de Renovaci\'on}{1527}{subsection.37.2.31}%
+\contentsline {subsection}{\numberline {37.2.32}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{1528}{subsection.37.2.32}%
+\contentsline {subsection}{\numberline {37.2.33}Procesos de Renovaci\'on}{1528}{subsection.37.2.33}%
+\contentsline {subsection}{\numberline {37.2.34}Teorema Principal de Renovaci\'on}{1529}{subsection.37.2.34}%
+\contentsline {subsection}{\numberline {37.2.35}Funci\'on de Renovaci\'on}{1529}{subsection.37.2.35}%
+\contentsline {subsection}{\numberline {37.2.36}Propiedades de los Procesos de Renovaci\'on}{1529}{subsection.37.2.36}%
+\contentsline {subsection}{\numberline {37.2.37}Funci\'on de Renovaci\'on}{1530}{subsection.37.2.37}%
+\contentsline {subsection}{\numberline {37.2.38}Procesos de Renovaci\'on}{1531}{subsection.37.2.38}%
+\contentsline {subsection}{\numberline {37.2.39}Puntos de Renovaci\'on}{1531}{subsection.37.2.39}%
+\contentsline {subsection}{\numberline {37.2.40}Resultados para Procesos de Salida}{1532}{subsection.37.2.40}%
+\contentsline {subsection}{\numberline {37.2.41}Ya revisado}{1533}{subsection.37.2.41}%
+\contentsline {subsection}{\numberline {37.2.42}Procesos de Renovaci\'on y Regenerativos}{1538}{subsection.37.2.42}%
+\contentsline {subsection}{\numberline {37.2.43}Tiempo de Ciclo Promedio}{1546}{subsection.37.2.43}%
+\contentsline {subsection}{\numberline {37.2.44}Tiempos de Ciclo e Intervisita}{1546}{subsection.37.2.44}%
+\contentsline {subsection}{\numberline {37.2.45}Longitudes de la Cola en cualquier tiempo}{1548}{subsection.37.2.45}%
+\contentsline {subsection}{\numberline {37.2.46}Por resolver}{1550}{subsection.37.2.46}%
+\contentsline {subsection}{\numberline {37.2.47}Tiempos de Ciclo e Intervisita}{1551}{subsection.37.2.47}%
+\contentsline {subsection}{\numberline {37.2.48}Longitudes de la Cola en cualquier tiempo}{1554}{subsection.37.2.48}%
+\contentsline {subsection}{\numberline {37.2.49}Material por agregar}{1555}{subsection.37.2.49}%
+\contentsline {section}{\numberline {37.3}Introduction}{1606}{section.37.3}%
+\contentsline {section}{\numberline {37.4}Construcci\'on del Modelo e Hip\'otesis}{1606}{section.37.4}%
+\contentsline {subsection}{\numberline {37.4.1}Description of the model: Probability Generating Function}{1607}{subsection.37.4.1}%
+\contentsline {subsection}{\numberline {37.4.2}Stability Analysis}{1611}{subsection.37.4.2}%
+\contentsline {section}{\numberline {37.5}Appendix A: General Case Calculations Exhaustive Policy}{1617}{section.37.5}%
+\contentsline {section}{\numberline {37.6}Appendix B: Stability Analysis for a NCPS}{1618}{section.37.6}%
+\contentsline {section}{\numberline {37.7}Appendix C: Output Process and Regenerative Processes}{1621}{section.37.7}%
+\contentsline {section}{\numberline {37.8}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{1650}{section.37.8}%
+\contentsline {section}{\numberline {37.9}Existencia de Tiempos de Regeneraci\'on}{1658}{section.37.9}%
+\contentsline {section}{\numberline {37.10}Main Theorem: Article}{1661}{section.37.10}%
+\contentsline {part}{V\hspace {1em}APÉNDICES}{1666}{part.5}%
+\contentsline {chapter}{\numberline {38}IMPLEMENTACIONES NUMÉRICAS}{1667}{chapter.38}%
+\contentsline {section}{\numberline {38.1}D\'ia 1: Regresión Logística}{1667}{section.38.1}%
+\contentsline {subsection}{\numberline {38.1.1}Ejemplo de Regresión Logística en R}{1667}{subsection.38.1.1}%
+\contentsline {subsection}{\numberline {38.1.2}Aplicación a Datos de Cáncer - Parte I}{1669}{subsection.38.1.2}%
+\contentsline {subsubsection}{Ejemplo Titanic}{1670}{subsection.38.1.2}%
+\contentsline {subsection}{\numberline {38.1.3}Simulaci\'on de Datos de Cáncer - Parte II}{1672}{subsection.38.1.3}%
+\contentsline {subsection}{\numberline {38.1.4}Simulaci\'on de Datos de Cáncer - Parte III}{1673}{subsection.38.1.4}%
+\contentsline {part}{VI\hspace {1em}BIBLIOGRAFIA}{1676}{part.6}%
+\contentsline {chapter}{\numberline {39}Bibliografía}{1677}{chapter.39}%

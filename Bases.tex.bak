@@ -1,0 +1,1127 @@
+
+%---------------------------------------------------------
+\section{An\'alisis de Regresion Lineal (RL)}
+%---------------------------------------------------------
+
+
+
+\begin{Note}
+\begin{itemize}
+\item En muchos problemas hay dos o m\'as variables relacionadas, para medir el grado de relaci\'on se utiliza el \textbf{an\'alisis de regresi\'on}. 
+\item Supongamos que se tiene una \'unica variable dependiente, $y$, y varias  variables independientes, $x_{1},x_{2},\ldots,x_{n}$.
+
+\item  La variable $y$ es una varaible aleatoria, y las variables independientes pueden ser distribuidas independiente o conjuntamente. 
+
+\item A la relaci\'on entre estas variables se le denomina modelo regresi\'on de $y$ en $x_{1},x_{2},\ldots,x_{n}$, por ejemplo $y=\phi\left(x_{1},x_{2},\ldots,x_{n}\right)$, lo que se busca es una funci\'on que mejor aproxime a $\phi\left(\cdot\right)$.
+
+\end{itemize}
+
+\end{Note}
+
+
+
+%---------------------------------------------------------
+\section{An\'alisis de Regresion Lineal (RL)}
+%---------------------------------------------------------
+
+
+\begin{Note}
+\begin{itemize}
+\item En muchos problemas hay dos o m\'as variables relacionadas, para medir el grado de relaci\'on se utiliza el \textbf{an\'alisis de regresi\'on}. 
+\item Supongamos que se tiene una \'unica variable dependiente, $y$, y varias  variables independientes, $x_{1},x_{2},\ldots,x_{n}$.
+
+\item  La variable $y$ es una varaible aleatoria, y las variables independientes pueden ser distribuidas independiente o conjuntamente. 
+
+\item A la relaci\'on entre estas variables se le denomina modelo regresi\'on de $y$ en $x_{1},x_{2},\ldots,x_{n}$, por ejemplo $y=\phi\left(x_{1},x_{2},\ldots,x_{n}\right)$, lo que se busca es una funci\'on que mejor aproxime a $\phi\left(\cdot\right)$.
+
+\end{itemize}
+
+\end{Note}
+
+
+
+
+
+\subsection{Regresi\'on Lineal Simple (RLS)}
+
+
+
+
+Supongamos que de momento solamente se tienen una variable independiente $x$, para la variable de respuesta $y$. Y supongamos que la relaci\'on que hay entre $x$ y $y$ es una l\'inea recta, y que para cada observaci\'on de $x$, $y$ es una variable aleatoria.
+
+El valor esperado de $y$ para cada valor de $x$ es
+\begin{eqnarray}
+E\left(y|x\right)=\beta_{0}+\beta_{1}x
+\end{eqnarray}
+$\beta_{0}$ es la ordenada al or\'igen y  $\beta_{1}$ la pendiente de la recta en cuesti\'on, ambas constantes desconocidas. 
+
+Supongamos que cada observaci\'on $y$ se puede describir por el modelo
+\begin{eqnarray}\label{Modelo.Regresion}
+y=\beta_{0}+\beta_{1}x+\epsilon
+\end{eqnarray}
+
+donde $\epsilon$ es un error aleatorio con media cero y varianza $\sigma^{2}$. Para cada valor $y_{i}$ se tiene $\epsilon_{i}$ variables aleatorias no correlacionadas, cuando se incluyen en el modelo \ref{Modelo.Regresion}, este se le llama \textit{modelo de regresi\'on lineal simple}.
+
+
+
+
+
+
+Suponga que se tienen $n$ pares de observaciones $\left(x_{1},y_{1}\right),\left(x_{2},y_{2}\right),\ldots,\left(x_{n},y_{n}\right)$,  estos datos pueden utilizarse para estimar los valores de $\beta_{0}$ y $\beta_{1}$. Esta estimaci\'on es por el \textbf{m\'etodos de m\'inimos cuadrados}.
+
+Entonces la ecuaci\'on (\ref{Modelo.Regresion}) se puede reescribir como
+\begin{eqnarray}\label{Modelo.Regresion.dos}
+y_{i}=\beta_{0}+\beta_{1}x_{i}+\epsilon_{i},\textrm{ para }i=1,2,\ldots,n.
+\end{eqnarray}
+Si consideramos la suma de los cuadrados de los errores aleatorios, es decir, el cuadrado de la diferencia entre las observaciones con la recta de regresi\'on 
+\begin{eqnarray}
+L=\sum_{i=1}^{n}\epsilon^{2}=\sum_{i=1}^{n}\left(y_{i}-\beta_{0}-\beta_{1}x_{i}\right)^{2}
+\end{eqnarray}
+
+
+
+
+
+Para obtener los estimadores por m\'inimos cuadrados de $\beta_{0}$ y $\beta_{1}$,  $\hat{\beta}_{0}$ y $\hat{\beta}_{1}$, es preciso calcular las derivadas parciales con respecto a $\beta_{0}$ y $\beta_{1}$,  igualar a cero y  resolver el sistema de ecuaciones lineales resultante:
+\begin{eqnarray*}
+\frac{\partial L}{\partial \beta_{0}}=0\\
+\frac{\partial L}{\partial \beta_{1}}=0\\
+\end{eqnarray*}
+evaluando en $\hat{\beta}_{0}$ y $\hat{\beta}_{1}$, se tiene 
+
+\begin{eqnarray*}
+-2\sum_{i=1}^{n}\left(y_{i}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{i}\right)&=&0\\
+-2\sum_{i=1}^{n}\left(y_{i}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{i}\right)x_{i}&=&0
+\end{eqnarray*}
+simplificando
+\begin{eqnarray*}
+n\hat{\beta}_{0}+\hat{\beta}_{1}\sum_{i=1}^{n}x_{i}&=&\sum_{i=1}^{n}y_{i}\\
+\hat{\beta}_{0}\sum_{i=1}^{n}x_{i}+\hat{\beta}_{1}\sum_{i=1}^{n}x_{i}^{2}&=&\sum_{i=1}^{n}x_{i}y_{i}
+\end{eqnarray*}
+
+
+
+
+
+Las ecuaciones anteriores se les denominan \textit{ecuaciones normales de m\'inimos cuadrados} con soluci\'on
+\begin{eqnarray}
+\hat{\beta}_{0}&=&\overline{y}-\hat{\beta}_{1}\overline{x}\\
+\hat{\beta}_{1}&=&\frac{\sum_{i=1}^{n}x_{i}y_{i}-\frac{1}{n}\left(\sum_{i=1}^{n}y_{i}\right)\left(\sum_{i=1}^{n}x_{i}\right)}{\sum_{i=1}^{n}x_{i}^{2}-\frac{1}{n}\left(\sum_{i=1}^{n}x_{i}\right)^{2}}
+\end{eqnarray}
+entonces el modelo de regresi\'on lineal simple ajustado es
+\begin{eqnarray}
+\hat{y}=\hat{\beta}_{0}+\hat{\beta}_{1}x
+\end{eqnarray}
+
+Se intrduce la siguiente notaci\'on
+\begin{eqnarray}
+S_{xx}&=&\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}=\sum_{i=1}^{n}x_{i}^{2}-\frac{1}{n}\left(\sum_{i=1}^{n}x_{i}\right)^{2}\\
+S_{xy}&=&\sum_{i=1}^{n}y_{i}\left(x_{i}-\overline{x}\right)=\sum_{i=1}^{n}x_{i}y_{i}-\frac{1}{n}\left(\sum_{i=1}^{n}x_{i}\right)\left(\sum_{i=1}^{n}y_{i}\right)
+\end{eqnarray}
+y por tanto
+
+
+
+
+
+\begin{eqnarray}
+\hat{\beta}_{1}=\frac{S_{xy}}{S_{xx}}
+\end{eqnarray}
+
+
+
+
+\subsection{Regresi\'on Lineal Simple (RLS)}
+
+
+
+
+
+Supongamos que de momento solamente se tienen una variable independiente $x$, para la variable de respuesta $y$. Y supongamos que la relaci\'on que hay entre $x$ y $y$ es una l\'inea recta, y que para cada observaci\'on de $x$, $y$ es una variable aleatoria.
+
+El valor esperado de $y$ para cada valor de $x$ es
+\begin{eqnarray}
+E\left(y|x\right)=\beta_{0}+\beta_{1}x
+\end{eqnarray}
+$\beta_{0}$ es la ordenada al or\'igen y  $\beta_{1}$ la pendiente de la recta en cuesti\'on, ambas constantes desconocidas. 
+
+Supongamos que cada observaci\'on $y$ se puede describir por el modelo
+\begin{eqnarray}\label{Modelo.Regresion}
+y=\beta_{0}+\beta_{1}x+\epsilon
+\end{eqnarray}
+
+
+
+
+
+donde $\epsilon$ es un error aleatorio con media cero y varianza $\sigma^{2}$. Para cada valor $y_{i}$ se tiene $\epsilon_{i}$ variables aleatorias no correlacionadas, cuando se incluyen en el modelo \ref{Modelo.Regresion}, este se le llama \textit{modelo de regresi\'on lineal simple}.
+
+
+Suponga que se tienen $n$ pares de observaciones $\left(x_{1},y_{1}\right),\left(x_{2},y_{2}\right),\ldots,\left(x_{n},y_{n}\right)$,  estos datos pueden utilizarse para estimar los valores de $\beta_{0}$ y $\beta_{1}$. Esta estimaci\'on es por el \textbf{m\'etodos de m\'inimos cuadrados}.
+
+
+Entonces la ecuaci\'on (\ref{Modelo.Regresion}) se puede reescribir como
+\begin{eqnarray}\label{Modelo.Regresion.dos}
+y_{i}=\beta_{0}+\beta_{1}x_{i}+\epsilon_{i},\textrm{ para }i=1,2,\ldots,n.
+\end{eqnarray}
+Si consideramos la suma de los cuadrados de los errores aleatorios, es decir, el cuadrado de la diferencia entre las observaciones con la recta de regresi\'on 
+\begin{eqnarray}
+L=\sum_{i=1}^{n}\epsilon^{2}=\sum_{i=1}^{n}\left(y_{i}-\beta_{0}-\beta_{1}x_{i}\right)^{2}
+\end{eqnarray}
+
+
+
+
+
+Para obtener los estimadores por m\'inimos cuadrados de $\beta_{0}$ y $\beta_{1}$, $\hat{\beta}_{0}$ y $\hat{\beta}_{1}$, es preciso calcular las derivadas parciales con respecto a $\beta_{0}$ y $\beta_{1}$,  igualar a cero y  resolver el sistema de ecuaciones lineales resultante:
+\begin{eqnarray*}
+\frac{\partial L}{\partial \beta_{0}}=0\\
+\frac{\partial L}{\partial \beta_{1}}=0\\
+\end{eqnarray*}
+evaluando en $\hat{\beta}_{0}$ y $\hat{\beta}_{1}$, se tiene
+
+\begin{eqnarray*}
+-2\sum_{i=1}^{n}\left(y_{i}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{i}\right)&=&0\\
+-2\sum_{i=1}^{n}\left(y_{i}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{i}\right)x_{i}&=&0
+\end{eqnarray*}
+simplificando
+\begin{eqnarray*}
+n\hat{\beta}_{0}+\hat{\beta}_{1}\sum_{i=1}^{n}x_{i}&=&\sum_{i=1}^{n}y_{i}\\
+\hat{\beta}_{0}\sum_{i=1}^{n}x_{i}+\hat{\beta}_{1}\sum_{i=1}^{n}x_{i}^{2}&=&\sum_{i=1}^{n}x_{i}y_{i}
+\end{eqnarray*}
+
+
+
+
+
+Las ecuaciones anteriores se les denominan \textit{ecuaciones normales de m\'inimos cuadrados} con soluci\'on
+\begin{eqnarray}
+\hat{\beta}_{0}&=&\overline{y}-\hat{\beta}_{1}\overline{x}\\
+\hat{\beta}_{1}&=&\frac{\sum_{i=1}^{n}x_{i}y_{i}-\frac{1}{n}\left(\sum_{i=1}^{n}y_{i}\right)\left(\sum_{i=1}^{n}x_{i}\right)}{\sum_{i=1}^{n}x_{i}^{2}-\frac{1}{n}\left(\sum_{i=1}^{n}x_{i}\right)^{2}}
+\end{eqnarray}
+entonces el modelo de regresi\'on lineal simple ajustado es
+\begin{eqnarray}
+\hat{y}=\hat{\beta}_{0}+\hat{\beta}_{1}x
+\end{eqnarray}
+
+Se intrduce la siguiente notaci\'on
+\begin{eqnarray}
+S_{xx}&=&\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}=\sum_{i=1}^{n}x_{i}^{2}-\frac{1}{n}\left(\sum_{i=1}^{n}x_{i}\right)^{2}\\
+S_{xy}&=&\sum_{i=1}^{n}y_{i}\left(x_{i}-\overline{x}\right)=\sum_{i=1}^{n}x_{i}y_{i}-\frac{1}{n}\left(\sum_{i=1}^{n}x_{i}\right)\left(\sum_{i=1}^{n}y_{i}\right)
+\end{eqnarray}
+y por tanto
+\begin{eqnarray}
+\hat{\beta}_{1}=\frac{S_{xy}}{S_{xx}}
+\end{eqnarray}
+
+
+
+
+%---------------------------------------------------------
+\section{3. An\'alisis de Regresion Lineal (RL)}
+%---------------------------------------------------------
+
+
+
+
+\begin{Note}
+\begin{itemize}
+\item En muchos problemas hay dos o m\'as variables relacionadas, para medir el grado de relaci\'on se utiliza el \textbf{an\'alisis de regresi\'on}. 
+\item Supongamos que se tiene una \'unica variable dependiente, $y$, y varias  variables independientes, $x_{1},x_{2},\ldots,x_{n}$.
+
+\item  La variable $y$ es una varaible aleatoria, y las variables independientes pueden ser distribuidas independiente o conjuntamente. 
+
+\end{itemize}
+
+\end{Note}
+
+
+
+
+\subsection{3.1 Regresi\'on Lineal Simple (RLS)}
+
+
+
+
+
+\begin{itemize}
+
+\item A la relaci\'on entre estas variables se le denomina modelo regresi\'on de $y$ en $x_{1},x_{2},\ldots,x_{n}$, por ejemplo $y=\phi\left(x_{1},x_{2},\ldots,x_{n}\right)$, lo que se busca es una funci\'on que mejor aproxime a $\phi\left(\cdot\right)$.
+
+\end{itemize}
+
+Supongamos que de momento solamente se tienen una variable independiente $x$, para la variable de respuesta $y$. Y supongamos que la relaci\'on que hay entre $x$ y $y$ es una l\'inea recta, y que para cada observaci\'on de $x$, $y$ es una variable aleatoria.
+
+El valor esperado de $y$ para cada valor de $x$ es
+\begin{eqnarray}
+E\left(y|x\right)=\beta_{0}+\beta_{1}x
+\end{eqnarray}
+$\beta_{0}$ es la ordenada al or\'igen y $\beta_{1}$ la pendiente de la recta en cuesti\'on, ambas constantes desconocidas. 
+
+
+
+
+
+\subsection{3.2 M\'etodo de M\'inimos Cuadrados}
+
+
+
+
+Supongamos que cada observaci\'on $y$ se puede describir por el modelo
+\begin{eqnarray}\label{Modelo.Regresion}
+y=\beta_{0}+\beta_{1}x+\epsilon
+\end{eqnarray}
+donde $\epsilon$ es un error aleatorio con media cero y varianza $\sigma^{2}$. Para cada valor $y_{i}$ se tiene $\epsilon_{i}$ variables aleatorias no correlacionadas, cuando se incluyen en el modelo \ref{Modelo.Regresion}, este se le llama \textit{modelo de regresi\'on lineal simple}.
+
+
+Suponga que se tienen $n$ pares de observaciones $\left(x_{1},y_{1}\right),\left(x_{2},y_{2}\right),\ldots,\left(x_{n},y_{n}\right)$, estos datos pueden utilizarse para estimar los valores de $\beta_{0}$ y $\beta_{1}$. Esta estimaci\'on es por el \textbf{m\'etodos de m\'inimos cuadrados}.
+
+
+
+
+
+
+
+Entonces la ecuaci\'on \ref{Modelo.Regresion} se puede reescribir como
+\begin{eqnarray}\label{Modelo.Regresion.dos}
+y_{i}=\beta_{0}+\beta_{1}x_{i}+\epsilon_{i},\textrm{ para }i=1,2,\ldots,n.
+\end{eqnarray}
+Si consideramos la suma de los cuadrados de los errores aleatorios, es decir, el cuadrado de la diferencia entre las observaciones con la recta de regresi\'on
+\begin{eqnarray}
+L=\sum_{i=1}^{n}\epsilon^{2}=\sum_{i=1}^{n}\left(y_{i}-\beta_{0}-\beta_{1}x_{i}\right)^{2}
+\end{eqnarray}
+
+
+
+
+
+
+Para obtener los estimadores por m\'inimos cuadrados de $\beta_{0}$ y $\beta_{1}$, $\hat{\beta}_{0}$ y $\hat{\beta}_{1}$, es preciso calcular las derivadas parciales con respecto a $\beta_{0}$ y $\beta_{1}$, igualar a cero y resolver el sistema de ecuaciones lineales resultante:
+\begin{eqnarray*}
+\frac{\partial L}{\partial \beta_{0}}=0\\
+\frac{\partial L}{\partial \beta_{1}}=0\\
+\end{eqnarray*}
+evaluando en $\hat{\beta}_{0}$ y $\hat{\beta}_{1}$, se tiene
+
+\begin{eqnarray*}
+-2\sum_{i=1}^{n}\left(y_{i}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{i}\right)&=&0\\
+-2\sum_{i=1}^{n}\left(y_{i}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{i}\right)x_{i}&=&0
+\end{eqnarray*}
+simplificando
+\begin{eqnarray*}
+n\hat{\beta}_{0}+\hat{\beta}_{1}\sum_{i=1}^{n}x_{i}&=&\sum_{i=1}^{n}y_{i}\\
+\hat{\beta}_{0}\sum_{i=1}^{n}x_{i}+\hat{\beta}_{1}\sum_{i=1}^{n}x_{i}^{2}&=&\sum_{i=1}^{n}x_{i}y_{i}
+\end{eqnarray*}
+Las ecuaciones anteriores se les denominan \textit{ecuaciones normales de m\'inimos cuadrados} con soluci\'on
+\begin{eqnarray}\label{Ecs.Estimadores.Regresion}
+\hat{\beta}_{0}&=&\overline{y}-\hat{\beta}_{1}\overline{x}\\
+\hat{\beta}_{1}&=&\frac{\sum_{i=1}^{n}x_{i}y_{i}-\frac{1}{n}\left(\sum_{i=1}^{n}y_{i}\right)\left(\sum_{i=1}^{n}x_{i}\right)}{\sum_{i=1}^{n}x_{i}^{2}-\frac{1}{n}\left(\sum_{i=1}^{n}x_{i}\right)^{2}}
+\end{eqnarray}
+
+
+
+
+
+entonces el modelo de regresi\'on lineal simple ajustado es
+\begin{eqnarray}
+\hat{y}=\hat{\beta}_{0}+\hat{\beta}_{1}x
+\end{eqnarray}
+Se intrduce la siguiente notaci\'on
+\begin{eqnarray}
+S_{xx}&=&\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}=\sum_{i=1}^{n}x_{i}^{2}-\frac{1}{n}\left(\sum_{i=1}^{n}x_{i}\right)^{2}\\
+S_{xy}&=&\sum_{i=1}^{n}y_{i}\left(x_{i}-\overline{x}\right)=\sum_{i=1}^{n}x_{i}y_{i}-\frac{1}{n}\left(\sum_{i=1}^{n}x_{i}\right)\left(\sum_{i=1}^{n}y_{i}\right)
+\end{eqnarray}
+y por tanto
+\begin{eqnarray}
+\hat{\beta}_{1}=\frac{S_{xy}}{S_{xx}}
+\end{eqnarray}
+
+
+
+
+\subsection{3.3 Propiedades de los Estimadores $\hat{\beta}_{0}$ y $\hat{\beta}_{1}$}
+
+
+\begin{Note}
+\begin{itemize}
+\item Las propiedades estad\'isticas de los estimadores de m\'inimos cuadrados son \'utiles para evaluar la suficiencia del modelo.
+
+\item Dado que $\hat{\beta}_{0}$ y  $\hat{\beta}_{1}$ son combinaciones lineales de las variables aleatorias $y_{i}$, tambi\'en resultan ser variables aleatorias.
+\end{itemize}
+\end{Note}
+A saber
+\begin{eqnarray*}
+E\left(\hat{\beta}_{1}\right)&=&E\left(\frac{S_{xy}}{S_{xx}}\right)=\frac{1}{S_{xx}}E\left(\sum_{i=1}^{n}y_{i}\left(x_{i}-\overline{x}\right)\right)
+\end{eqnarray*}
+\begin{eqnarray*}
+&=&\frac{1}{S_{xx}}E\left(\sum_{i=1}^{n}\left(\beta_{0}+\beta_{1}x_{i}+\epsilon_{i}\right)\left(x_{i}-\overline{x}\right)\right)\\
+&=&\frac{1}{S_{xx}}\left[\beta_{0}E\left(\sum_{k=1}^{n}\left(x_{k}-\overline{x}\right)\right)+E\left(\beta_{1}\sum_{k=1}^{n}x_{k}\left(x_{k}-\overline{x}\right)\right)\right.\\
+&+&\left.E\left(\sum_{k=1}^{n}\epsilon_{k}\left(x_{k}-\overline{x}\right)\right)\right]=\frac{1}{S_{xx}}\beta_{1}S_{xx}=\beta_{1}
+\end{eqnarray*}
+
+
+
+
+
+
+por lo tanto 
+\begin{equation}\label{Esperanza.Beta.1}
+E\left(\hat{\beta}_{1}\right)=\beta_{1}
+\end{equation}
+\begin{Note}
+Es decir, $\hat{\beta_{1}}$ es un estimador insesgado.
+\end{Note}
+Ahora calculemos la varianza:
+\begin{eqnarray*}
+V\left(\hat{\beta}_{1}\right)&=&V\left(\frac{S_{xy}}{S_{xx}}\right)=\frac{1}{S_{xx}^{2}}V\left(\sum_{k=1}^{n}y_{k}\left(x_{k}-\overline{x}\right)\right)\\
+&=&\frac{1}{S_{xx}^{2}}\sum_{k=1}^{n}V\left(y_{k}\left(x_{k}-\overline{x}\right)\right)=\frac{1}{S_{xx}^{2}}\sum_{k=1}^{n}\sigma^{2}\left(x_{k}-\overline{x}\right)^{2}\\
+&=&\frac{\sigma^{2}}{S_{xx}^{2}}\sum_{k=1}^{n}\left(x_{k}-\overline{x}\right)^{2}=\frac{\sigma^{2}}{S_{xx}}
+\end{eqnarray*}
+
+
+
+
+
+
+por lo tanto
+\begin{equation}\label{Varianza.Beta.1}
+V\left(\hat{\beta}_{1}\right)=\frac{\sigma^{2}}{S_{xx}}
+\end{equation}
+\begin{Prop}
+\begin{eqnarray*}
+E\left(\hat{\beta}_{0}\right)&=&\beta_{0},\\
+V\left(\hat{\beta}_{0}\right)&=&\sigma^{2}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right),\\
+Cov\left(\hat{\beta}_{0},\hat{\beta}_{1}\right)&=&-\frac{\sigma^{2}\overline{x}}{S_{xx}}.
+\end{eqnarray*}
+\end{Prop}
+Para estimar $\sigma^{2}$ es preciso definir la diferencia entre la observaci\'on $y_{k}$, y el valor predecido $\hat{y}_{k}$, es decir
+\begin{eqnarray*}
+e_{k}=y_{k}-\hat{y}_{k},\textrm{ se le denomina \textbf{residuo}.}
+\end{eqnarray*}
+La suma de los cuadrados de los errores de los reisduos, \textit{suma de cuadrados del error}
+\begin{eqnarray}
+SC_{E}=\sum_{k=1}^{n}e_{k}^{2}=\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)^{2}
+\end{eqnarray}
+
+
+
+
+
+
+sustituyendo $\hat{y}_{k}=\hat{\beta}_{0}+\hat{\beta}_{1}x_{k}$ se obtiene
+\begin{eqnarray*}
+SC_{E}&=&\sum_{k=1}^{n}y_{k}^{2}-n\overline{y}^{2}-\hat{\beta}_{1}S_{xy}=S_{yy}-\hat{\beta}_{1}S_{xy},\\
+E\left(SC_{E}\right)&=&\left(n-2\right)\sigma^{2},\textrm{ por lo tanto}\\
+\hat{\sigma}^{2}&=&\frac{SC_{E}}{n-2}=MC_{E}\textrm{ es un estimador insesgado de }\sigma^{2}.
+\end{eqnarray*}
+
+
+
+\subsection{3.4 Prueba de Hip\'otesis en RLS}
+
+
+
+
+\begin{itemize}
+\item Para evaluar la suficiencia del modelo de regresi\'on lineal simple, es necesario lleva a cabo una prueba de hip\'otesis respecto de los par\'ametros del modelo as\'i como de la construcci\'on de intervalos de confianza.
+
+\item Para poder realizar la prueba de hip\'otesis sobre la pendiente y la ordenada al or\'igen de la recta de regresi\'on es necesario hacer el supuesto de que el error $\epsilon_{i}$ se distribuye normalmente, es decir $\epsilon_{i} \sim N\left(0,\sigma^{2}\right)$.
+
+\end{itemize}
+
+
+
+
+
+
+Suponga que se desea probar la hip\'otesis de que la pendiente es igual a una constante, $\beta_{0,1}$ las hip\'otesis Nula y Alternativa son:
+\begin{centering}
+\begin{itemize}
+\item[$H_{0}$: ] $\beta_{1}=\beta_{1,0}$,
+
+\item[$H_{1}$: ]$\beta_{1}\neq\beta_{1,0}$.
+
+\end{itemize}
+donde dado que las $\epsilon_{i} \sim N\left(0,\sigma^{2}\right)$, se tiene que $y_{i}$ son variables aleatorias normales $N\left(\beta_{0}+\beta_{1}x_{1},\sigma^{2}\right)$. 
+\end{centering}
+
+
+
+
+
+De las ecuaciones (\ref{Ecs.Estimadores.Regresion}) se desprende que $\hat{\beta}_{1}$ es combinaci\'on lineal de variables aleatorias normales independientes, es decir, $\hat{\beta}_{1}\sim N\left(\beta_{1},\sigma^{2}/S_{xx}\right)$, recordar las ecuaciones (\ref{Esperanza.Beta.1}) y (\ref{Varianza.Beta.1}).
+Entonces se tiene que el estad\'istico de prueba apropiado es
+\begin{equation}\label{Estadistico.Beta.1}
+t_{0}=\frac{\hat{\beta}_{1}-\hat{\beta}_{1,0}}{\sqrt{MC_{E}/S_{xx}}}
+\end{equation}
+que se distribuye $t$ con $n-2$ grados de libertad bajo $H_{0}:\beta_{1}=\beta_{1,0}$. Se rechaza $H_{0}$ si 
+\begin{equation}\label{Zona.Rechazo.Beta.1}
+t_{0}|>t_{\alpha/2,n-2}.
+\end{equation}
+
+
+
+
+
+
+
+Para $\beta_{0}$ se puede proceder de manera an\'aloga para
+\begin{itemize}
+\item[$H_{0}:$] $\beta_{0}=\beta_{0,0}$,
+\item[$H_{1}:$] $\beta_{0}\neq\beta_{0,0}$,
+\end{itemize}
+con $\hat{\beta}_{0}\sim N\left(\beta_{0},\sigma^{2}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right)\right)$, por lo tanto
+\begin{equation}\label{Estadistico.Beta.0}
+t_{0}=\frac{\hat{\beta}_{0}-\beta_{0,0}}{MC_{E}\left[\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right]},
+\end{equation}
+con el que rechazamos la hip\'otesis nula si
+\begin{equation}\label{Zona.Rechazo.Beta.0}
+t_{0}|>t_{\alpha/2,n-2}.
+\end{equation}
+
+
+
+
+
+
+\begin{itemize}
+\item No rechazar $H_{0}:\beta_{1}=0$ es equivalente a decir que no hay relaci\'on lineal entre $x$ y $y$.
+\item Alternativamente, si $H_{0}:\beta_{1}=0$ se rechaza, esto implica que $x$ explica la variabilidad de $y$, es decir, podr\'ia significar que la l\'inea recta esel modelo adecuado.
+\end{itemize}
+El procedimiento de prueba para $H_{0}:\beta_{1}=0$ puede realizarse de la siguiente manera:
+\begin{eqnarray*}
+S_{yy}=\sum_{k=1}^{n}\left(y_{k}-\overline{y}\right)^{2}=\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)^{2}+\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)^{2}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+S_{yy}&=&\sum_{k=1}^{n}\left(y_{k}-\overline{y}\right)^{2}=\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}+\hat{y}_{k}-\overline{y}\right)^{2}\\
+&=&\sum_{k=1}^{n}\left[\left(\hat{y}_{k}-\overline{y}\right)+\left(y_{k}-\hat{y}_{k}\right)\right]^{2}\\
+&=&\sum_{k=1}^{n}\left[\left(\hat{y}_{k}-\overline{y}\right)^{2}+2\left(\hat{y}_{k}-\overline{y}\right)\left(y_{k}-\hat{y}_{k}\right)+\left(y_{k}-\hat{y}_{k}\right)^{2}\right]\\
+&=&\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)^{2}+2\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)\left(y_{k}-\hat{y}_{k}\right)+\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)^{2}
+\end{eqnarray*}
+
+
+
+
+
+
+\begin{eqnarray*}
+&&\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)\left(y_{k}-\hat{y}_{k}\right)=\sum_{k=1}^{n}\hat{y}_{k}\left(y_{k}-\hat{y}_{k}\right)-\sum_{k=1}^{n}\overline{y}\left(y_{k}-\hat{y}_{k}\right)\\
+&=&\sum_{k=1}^{n}\hat{y}_{k}\left(y_{k}-\hat{y}_{k}\right)-\overline{y}\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)\\
+&=&\sum_{k=1}^{n}\left(\hat{\beta}_{0}+\hat{\beta}_{1}x_{k}\right)\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)-\overline{y}\sum_{k=1}^{n}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)
+\end{eqnarray*}
+
+\begin{eqnarray*}
+&=&\sum_{k=1}^{n}\hat{\beta}_{0}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)+\sum_{k=1}^{n}\hat{\beta}_{1}x_{k}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)\\
+&-&\overline{y}\sum_{k=1}^{n}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)\\
+&=&\hat{\beta}_{0}\sum_{k=1}^{n}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)+\hat{\beta}_{1}\sum_{k=1}^{n}x_{k}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)\\
+&-&\overline{y}\sum_{k=1}^{n}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)=0+0+0=0.
+\end{eqnarray*}
+
+
+
+
+
+
+Por lo tanto, efectivamente se tiene
+\begin{equation}\label{Suma.Total.Cuadrados}
+S_{yy}=\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)^{2}+\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)^{2},
+\end{equation}
+donde se hacen las definiciones
+\begin{eqnarray}
+SC_{E}&=&\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)^{2}\cdots\textrm{Suma de Cuadrados del Error}\\
+SC_{R}&=&\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)^{2}\cdots\textrm{ Suma de Regresi\'on de Cuadrados}
+\end{eqnarray}
+Por lo tanto la ecuaci\'on (\ref{Suma.Total.Cuadrados}) se puede reescribir como 
+\begin{equation}\label{Suma.Total.Cuadrados.Dos}
+S_{yy}=SC_{R}+SC_{E}
+\end{equation}
+recordemos que $SC_{E}=S_{yy}-\hat{\beta}_{1}S_{xy}$
+\begin{eqnarray*}
+S_{yy}&=&SC_{R}+\left( S_{yy}-\hat{\beta}_{1}S_{xy}\right)\\
+S_{xy}&=&\frac{1}{\hat{\beta}_{1}}SC_{R}
+\end{eqnarray*}
+$S_{xy}$ tiene $n-1$ grados de libertad y $SC_{R}$ y $SC_{E}$ tienen 1 y $n-2$ grados de libertad respectivamente.
+
+
+
+
+
+
+\begin{Prop}
+\begin{equation}
+E\left(SC_{R}\right)=\sigma^{2}+\beta_{1}S_{xx}
+\end{equation}
+adem\'as, $SC_{E}$ y $SC_{R}$ son independientes.
+\end{Prop}
+Recordemos que $\hat{\beta}_{1}=\frac{S_{xy}}{S_{xx}}$. Para $H_{0}:\beta_{1}=0$ verdadera,
+\begin{eqnarray*}
+F_{0}=\frac{SC_{R}/1}{SC_{E}/(n-2)}=\frac{MC_{R}}{MC_{E}}
+\end{eqnarray*}
+se distribuye $F_{1,n-2}$, y se rechazar\'ia $H_{0}$ si $F_{0}>F_{\alpha,1,n-2}$.
+
+El procedimiento de prueba de hip\'otesis puede presentarse como la tabla de an\'alisis de varianza siguiente\medskip
+
+
+
+
+
+
+\begin{tabular}{lcccc}\hline
+Fuente de & Suma de  &  Grados de  & Media  & $F_{0}$ \\ 
+ variaci\'on & Cuadrados & Libertad & Cuadr\'atica & \\\hline
+ Regresi\'on & $SC_{R}$ & 1 & $MC_{R}$  & $MC_{R}/MC_{E}$\\
+ Error Residual & $SC_{E}$ & $n-2$ & $MC_{E}$ & \\\hline
+ Total & $S_{yy}$ & $n-1$ & & \\\hline
+\end{tabular} 
+
+La prueba para la significaci\'on de la regresi\'on puede desarrollarse bas\'andose en la expresi\'on (\ref{Estadistico.Beta.1}), con $\hat{\beta}_{1,0}=0$, es decir
+\begin{equation}\label{Estadistico.Beta.1.Cero}
+t_{0}=\frac{\hat{\beta}_{1}}{\sqrt{MC_{E}/S_{xx}}}
+\end{equation}
+
+
+
+
+
+Elevando al cuadrado ambos t\'erminos:
+\begin{eqnarray*}
+t_{0}^{2}=\frac{\hat{\beta}_{1}^{2}S_{xx}}{MC_{E}}=\frac{\hat{\beta}_{1}S_{xy}}{MC_{E}}=\frac{MC_{R}}{MC_{E}}
+\end{eqnarray*}
+Observar que $t_{0}^{2}=F_{0}$, por tanto la prueba que se utiliza para $t_{0}$ es la misma que para $F_{0}$.
+
+
+
+
+\subsection{Estimaci\'on de Intervalos en RLS}
+
+
+
+
+\begin{itemize}
+\item Adem\'as de la estimaci\'on puntual para los par\'ametros $\beta_{1}$ y $\beta_{0}$, es posible obtener estimaciones del intervalo de confianza de estos par\'ametros.
+
+\item El ancho de estos intervalos de confianza es una medida de la calidad total de la recta de regresi\'on.
+
+\end{itemize}
+
+
+
+
+
+
+Si los $\epsilon_{k}$ se distribuyen normal e independientemente, entonces
+\begin{eqnarray*}
+\begin{array}{ccc}
+\frac{\left(\hat{\beta}_{1}-\beta_{1}\right)}{\sqrt{\frac{MC_{E}}{S_{xx}}}}&y &\frac{\left(\hat{\beta}_{0}-\beta_{0}\right)}{\sqrt{MC_{E}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right)}}
+\end{array}
+\end{eqnarray*}
+se distribuyen $t$ con $n-2$ grados de libertad. Por tanto un intervalo de confianza de $100\left(1-\alpha\right)\%$ para $\beta_{1}$ est\'a dado por
+\begin{eqnarray}
+\hat{\beta}_{1}-t_{\alpha/2,n-2}\sqrt{\frac{MC_{E}}{S_{xx}}}\leq \beta_{1}\leq\hat{\beta}_{1}+t_{\alpha/2,n-2}\sqrt{\frac{MC_{E}}{S_{xx}}}.
+\end{eqnarray}
+De igual manera, para $\beta_{0}$ un intervalo de confianza al $100\left(1-\alpha\right)\%$ es
+\small{
+\begin{eqnarray}
+\begin{array}{l}
+\hat{\beta}_{0}-t_{\alpha/2,n-2}\sqrt{MC_{E}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right)}\leq\beta_{0}\leq\hat{\beta}_{0}+t_{\alpha/2,n-2}\sqrt{MC_{E}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right)}
+\end{array}
+\end{eqnarray}}
+
+
+
+%---------------------------------------------------------
+\section{3. An\'alisis de Regresion Lineal (RL)}
+%---------------------------------------------------------
+
+
+
+\begin{Note}
+\begin{itemize}
+\item En muchos problemas hay dos o m\'as variables relacionadas, para medir el grado de relaci\'on se utiliza el \textbf{an\'alisis de regresi\'on}. 
+\item Supongamos que se tiene una \'unica variable dependiente, $y$, y varias  variables independientes, $x_{1},x_{2},\ldots,x_{n}$.
+
+\item  La variable $y$ es una varaible aleatoria, y las variables independientes pueden ser distribuidas independiente o conjuntamente. 
+
+\end{itemize}
+
+\end{Note}
+
+
+
+
+
+\subsection{3.1 Regresi\'on Lineal Simple (RLS)}
+
+
+
+
+
+\begin{itemize}
+
+\item A la relaci\'on entre estas variables se le denomina modelo regresi\'on de $y$ en $x_{1},x_{2},\ldots,x_{n}$, por ejemplo $y=\phi\left(x_{1},x_{2},\ldots,x_{n}\right)$, lo que se busca es una funci\'on que mejor aproxime a $\phi\left(\cdot\right)$.
+
+\end{itemize}
+
+Supongamos que de momento solamente se tienen una variable independiente $x$, para la variable de respuesta $y$. Y supongamos que la relaci\'on que hay entre $x$ y $y$ es una l\'inea recta, y que para cada observaci\'on de $x$, $y$ es una variable aleatoria.
+
+El valor esperado de $y$ para cada valor de $x$ es
+\begin{eqnarray}
+E\left(y|x\right)=\beta_{0}+\beta_{1}x
+\end{eqnarray}
+$\beta_{0}$ es la ordenada al or\'igen y $\beta_{1}$ la pendiente de la recta en cuesti\'on, ambas constantes desconocidas. 
+
+
+
+
+\subsection{3.2 M\'etodo de M\'inimos Cuadrados}
+
+
+
+
+Supongamos que cada observaci\'on $y$ se puede describir por el modelo
+\begin{eqnarray}\label{Modelo.Regresion}
+y=\beta_{0}+\beta_{1}x+\epsilon
+\end{eqnarray}
+donde $\epsilon$ es un error aleatorio con media cero y varianza $\sigma^{2}$. Para cada valor $y_{i}$ se tiene $\epsilon_{i}$ variables aleatorias no correlacionadas, cuando se incluyen en el modelo \ref{Modelo.Regresion}, este se le llama \textit{modelo de regresi\'on lineal simple}.
+
+
+Suponga que se tienen $n$ pares de observaciones $\left(x_{1},y_{1}\right),\left(x_{2},y_{2}\right),\ldots,\left(x_{n},y_{n}\right)$, estos datos pueden utilizarse para estimar los valores de $\beta_{0}$ y $\beta_{1}$. Esta estimaci\'on es por el \textbf{m\'etodos de m\'inimos cuadrados}.
+
+
+
+
+
+
+
+
+
+Entonces la ecuaci\'on \ref{Modelo.Regresion} se puede reescribir como
+\begin{eqnarray}\label{Modelo.Regresion.dos}
+y_{i}=\beta_{0}+\beta_{1}x_{i}+\epsilon_{i},\textrm{ para }i=1,2,\ldots,n.
+\end{eqnarray}
+Si consideramos la suma de los cuadrados de los errores aleatorios, es decir, el cuadrado de la diferencia entre las observaciones con la recta de regresi\'on
+\begin{eqnarray}
+L=\sum_{i=1}^{n}\epsilon^{2}=\sum_{i=1}^{n}\left(y_{i}-\beta_{0}-\beta_{1}x_{i}\right)^{2}
+\end{eqnarray}
+Para obtener los estimadores por m\'inimos cuadrados de $\beta_{0}$ y $\beta_{1}$, $\hat{\beta}_{0}$ y $\hat{\beta}_{1}$, es preciso calcular las derivadas parciales con respecto a $\beta_{0}$ y $\beta_{1}$, igualar a cero y resolver el sistema de ecuaciones lineales resultante:
+\begin{eqnarray*}
+\frac{\partial L}{\partial \beta_{0}}=0\\
+\frac{\partial L}{\partial \beta_{1}}=0\\
+\end{eqnarray*}
+
+
+
+
+
+evaluando en $\hat{\beta}_{0}$ y $\hat{\beta}_{1}$, se tiene
+\begin{eqnarray*}
+-2\sum_{i=1}^{n}\left(y_{i}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{i}\right)&=&0\\
+-2\sum_{i=1}^{n}\left(y_{i}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{i}\right)x_{i}&=&0
+\end{eqnarray*}
+simplificando
+\begin{eqnarray*}
+n\hat{\beta}_{0}+\hat{\beta}_{1}\sum_{i=1}^{n}x_{i}&=&\sum_{i=1}^{n}y_{i}\\
+\hat{\beta}_{0}\sum_{i=1}^{n}x_{i}+\hat{\beta}_{1}\sum_{i=1}^{n}x_{i}^{2}&=&\sum_{i=1}^{n}x_{i}y_{i}
+\end{eqnarray*}
+Las ecuaciones anteriores se les denominan \textit{ecuaciones normales de m\'inimos cuadrados} con soluci\'on
+\begin{eqnarray}\label{Ecs.Estimadores.Regresion}
+\hat{\beta}_{0}&=&\overline{y}-\hat{\beta}_{1}\overline{x}\\
+\hat{\beta}_{1}&=&\frac{\sum_{i=1}^{n}x_{i}y_{i}-\frac{1}{n}\left(\sum_{i=1}^{n}y_{i}\right)\left(\sum_{i=1}^{n}x_{i}\right)}{\sum_{i=1}^{n}x_{i}^{2}-\frac{1}{n}\left(\sum_{i=1}^{n}x_{i}\right)^{2}}
+\end{eqnarray}
+
+
+
+
+
+entonces el modelo de regresi\'on lineal simple ajustado es
+\begin{eqnarray}
+\hat{y}=\hat{\beta}_{0}+\hat{\beta}_{1}x
+\end{eqnarray}
+Se intrduce la siguiente notaci\'on
+\begin{eqnarray}
+S_{xx}&=&\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}=\sum_{i=1}^{n}x_{i}^{2}-\frac{1}{n}\left(\sum_{i=1}^{n}x_{i}\right)^{2}\\
+S_{xy}&=&\sum_{i=1}^{n}y_{i}\left(x_{i}-\overline{x}\right)=\sum_{i=1}^{n}x_{i}y_{i}-\frac{1}{n}\left(\sum_{i=1}^{n}x_{i}\right)\left(\sum_{i=1}^{n}y_{i}\right)
+\end{eqnarray}
+y por tanto
+\begin{eqnarray}
+\hat{\beta}_{1}=\frac{S_{xy}}{S_{xx}}
+\end{eqnarray}
+
+
+
+
+
+\subsection{3.3 Propiedades de los Estimadores $\hat{\beta}_{0}$ y $\hat{\beta}_{1}$}
+
+
+
+
+
+\begin{Note}
+\begin{itemize}
+\item Las propiedades estad\'isticas de los estimadores de m\'inimos cuadrados son \'utiles para evaluar la suficiencia del modelo.
+
+\item Dado que $\hat{\beta}_{0}$ y  $\hat{\beta}_{1}$ son combinaciones lineales de las variables aleatorias $y_{i}$, tambi\'en resultan ser variables aleatorias.
+\end{itemize}
+\end{Note}
+A saber
+\begin{eqnarray*}
+E\left(\hat{\beta}_{1}\right)&=&E\left(\frac{S_{xy}}{S_{xx}}\right)=\frac{1}{S_{xx}}E\left(\sum_{i=1}^{n}y_{i}\left(x_{i}-\overline{x}\right)\right)
+\end{eqnarray*}
+
+
+
+
+
+
+\begin{eqnarray*}
+&=&\frac{1}{S_{xx}}E\left(\sum_{i=1}^{n}\left(\beta_{0}+\beta_{1}x_{i}+\epsilon_{i}\right)\left(x_{i}-\overline{x}\right)\right)\\
+&=&\frac{1}{S_{xx}}\left[\beta_{0}E\left(\sum_{k=1}^{n}\left(x_{k}-\overline{x}\right)\right)+E\left(\beta_{1}\sum_{k=1}^{n}x_{k}\left(x_{k}-\overline{x}\right)\right)\right.\\
+&+&\left.E\left(\sum_{k=1}^{n}\epsilon_{k}\left(x_{k}-\overline{x}\right)\right)\right]=\frac{1}{S_{xx}}\beta_{1}S_{xx}=\beta_{1}
+\end{eqnarray*}
+por lo tanto 
+\begin{equation}\label{Esperanza.Beta.1}
+E\left(\hat{\beta}_{1}\right)=\beta_{1}
+\end{equation}
+
+
+
+
+
+
+\begin{Note}
+Es decir, $\hat{\beta_{1}}$ es un estimador insesgado.
+\end{Note}
+Ahora calculemos la varianza:
+\begin{eqnarray*}
+V\left(\hat{\beta}_{1}\right)&=&V\left(\frac{S_{xy}}{S_{xx}}\right)=\frac{1}{S_{xx}^{2}}V\left(\sum_{k=1}^{n}y_{k}\left(x_{k}-\overline{x}\right)\right)\\
+&=&\frac{1}{S_{xx}^{2}}\sum_{k=1}^{n}V\left(y_{k}\left(x_{k}-\overline{x}\right)\right)=\frac{1}{S_{xx}^{2}}\sum_{k=1}^{n}\sigma^{2}\left(x_{k}-\overline{x}\right)^{2}\\
+&=&\frac{\sigma^{2}}{S_{xx}^{2}}\sum_{k=1}^{n}\left(x_{k}-\overline{x}\right)^{2}=\frac{\sigma^{2}}{S_{xx}}
+\end{eqnarray*}
+
+
+
+
+
+
+
+por lo tanto
+\begin{equation}\label{Varianza.Beta.1}
+V\left(\hat{\beta}_{1}\right)=\frac{\sigma^{2}}{S_{xx}}
+\end{equation}
+\begin{Prop}
+\begin{eqnarray*}
+E\left(\hat{\beta}_{0}\right)&=&\beta_{0},\\
+V\left(\hat{\beta}_{0}\right)&=&\sigma^{2}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right),\\
+Cov\left(\hat{\beta}_{0},\hat{\beta}_{1}\right)&=&-\frac{\sigma^{2}\overline{x}}{S_{xx}}.
+\end{eqnarray*}
+\end{Prop}
+
+Para estimar $\sigma^{2}$ es preciso definir la diferencia entre la observaci\'on $y_{k}$, y el valor predecido $\hat{y}_{k}$, es decir
+\begin{eqnarray*}
+e_{k}=y_{k}-\hat{y}_{k},\textrm{ se le denomina \textbf{residuo}.}
+\end{eqnarray*}
+La suma de los cuadrados de los errores de los reisduos, \textit{suma de cuadrados del error}
+\begin{eqnarray}
+SC_{E}=\sum_{k=1}^{n}e_{k}^{2}=\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)^{2}
+\end{eqnarray}
+
+
+
+
+
+
+sustituyendo $\hat{y}_{k}=\hat{\beta}_{0}+\hat{\beta}_{1}x_{k}$ se obtiene
+\begin{eqnarray*}
+SC_{E}&=&\sum_{k=1}^{n}y_{k}^{2}-n\overline{y}^{2}-\hat{\beta}_{1}S_{xy}=S_{yy}-\hat{\beta}_{1}S_{xy},\\
+E\left(SC_{E}\right)&=&\left(n-2\right)\sigma^{2},\textrm{ por lo tanto}\\
+\hat{\sigma}^{2}&=&\frac{SC_{E}}{n-2}=MC_{E}\textrm{ es un estimador insesgado de }\sigma^{2}.
+\end{eqnarray*}
+
+
+
+
+
+
+%\end{document}
+\subsection{3.4 Prueba de Hip\'otesis en RLS}
+
+
+
+
+\begin{itemize}
+\item Para evaluar la suficiencia del modelo de regresi\'on lineal simple, es necesario lleva a cabo una prueba de hip\'otesis respecto de los par\'ametros del modelo as\'i como de la construcci\'on de intervalos de confianza.
+
+\item Para poder realizar la prueba de hip\'otesis sobre la pendiente y la ordenada al or\'igen de la recta de regresi\'on es necesario hacer el supuesto de que el error $\epsilon_{i}$ se distribuye normalmente, es decir $\epsilon_{i} \sim N\left(0,\sigma^{2}\right)$.
+
+\end{itemize}
+
+
+Suponga que se desea probar la hip\'otesis de que la pendiente es igual a una constante, $\beta_{0,1}$ las hip\'otesis Nula y Alternativa son:
+\begin{centering}
+\begin{itemize}
+\item[$H_{0}$: ] $\beta_{1}=\beta_{1,0}$,
+
+\item[$H_{1}$: ]$\beta_{1}\neq\beta_{1,0}$.
+
+\end{itemize}
+
+donde dado que las $\epsilon_{i} \sim N\left(0,\sigma^{2}\right)$, se tiene que $y_{i}$ son variables aleatorias normales $N\left(\beta_{0}+\beta_{1}x_{1},\sigma^{2}\right)$. 
+\end{centering}
+
+
+
+
+De las ecuaciones (\ref{Ecs.Estimadores.Regresion}) se desprende que $\hat{\beta}_{1}$ es combinaci\'on lineal de variables aleatorias normales independientes, es decir, $\hat{\beta}_{1}\sim N\left(\beta_{1},\sigma^{2}/S_{xx}\right)$, recordar las ecuaciones (\ref{Esperanza.Beta.1}) y (\ref{Varianza.Beta.1}).
+
+Entonces se tiene que el estad\'istico de prueba apropiado es
+\begin{equation}\label{Estadistico.Beta.1}
+t_{0}=\frac{\hat{\beta}_{1}-\hat{\beta}_{1,0}}{\sqrt{MC_{E}/S_{xx}}}
+\end{equation}
+que se distribuye $t$ con $n-2$ grados de libertad bajo $H_{0}:\beta_{1}=\beta_{1,0}$. Se rechaza $H_{0}$ si 
+\begin{equation}\label{Zona.Rechazo.Beta.1}
+t_{0}|>t_{\alpha/2,n-2}.
+\end{equation}
+
+
+
+
+
+
+
+Para $\beta_{0}$ se puede proceder de manera an\'aloga para
+\begin{itemize}
+\item[$H_{0}:$] $\beta_{0}=\beta_{0,0}$,
+\item[$H_{1}:$] $\beta_{0}\neq\beta_{0,0}$,
+\end{itemize}
+con $\hat{\beta}_{0}\sim N\left(\beta_{0},\sigma^{2}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right)\right)$, por lo tanto
+\begin{equation}\label{Estadistico.Beta.0}
+t_{0}=\frac{\hat{\beta}_{0}-\beta_{0,0}}{MC_{E}\left[\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right]},
+\end{equation}
+con el que rechazamos la hip\'otesis nula si
+\begin{equation}\label{Zona.Rechazo.Beta.0}
+t_{0}|>t_{\alpha/2,n-2}.
+\end{equation}
+
+
+
+
+
+
+
+
+\begin{itemize}
+\item No rechazar $H_{0}:\beta_{1}=0$ es equivalente a decir que no hay relaci\'on lineal entre $x$ y $y$.
+\item Alternativamente, si $H_{0}:\beta_{1}=0$ se rechaza, esto implica que $x$ explica la variabilidad de $y$, es decir, podr\'ia significar que la l\'inea recta esel modelo adecuado.
+\end{itemize}
+El procedimiento de prueba para $H_{0}:\beta_{1}=0$ puede realizarse de la siguiente manera:
+\begin{eqnarray*}
+S_{yy}=\sum_{k=1}^{n}\left(y_{k}-\overline{y}\right)^{2}=\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)^{2}+\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)^{2}
+\end{eqnarray*}
+
+
+
+
+
+
+\begin{eqnarray*}
+S_{yy}&=&\sum_{k=1}^{n}\left(y_{k}-\overline{y}\right)^{2}=\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}+\hat{y}_{k}-\overline{y}\right)^{2}\\
+&=&\sum_{k=1}^{n}\left[\left(\hat{y}_{k}-\overline{y}\right)+\left(y_{k}-\hat{y}_{k}\right)\right]^{2}\\
+&=&\sum_{k=1}^{n}\left[\left(\hat{y}_{k}-\overline{y}\right)^{2}+2\left(\hat{y}_{k}-\overline{y}\right)\left(y_{k}-\hat{y}_{k}\right)+\left(y_{k}-\hat{y}_{k}\right)^{2}\right]\\
+&=&\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)^{2}+2\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)\left(y_{k}-\hat{y}_{k}\right)+\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)^{2}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+&&\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)\left(y_{k}-\hat{y}_{k}\right)=\sum_{k=1}^{n}\hat{y}_{k}\left(y_{k}-\hat{y}_{k}\right)-\sum_{k=1}^{n}\overline{y}\left(y_{k}-\hat{y}_{k}\right)\\
+&=&\sum_{k=1}^{n}\hat{y}_{k}\left(y_{k}-\hat{y}_{k}\right)-\overline{y}\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)\\
+&=&\sum_{k=1}^{n}\left(\hat{\beta}_{0}+\hat{\beta}_{1}x_{k}\right)\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)-\overline{y}\sum_{k=1}^{n}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)
+\end{eqnarray*}
+
+
+
+
+
+\begin{eqnarray*}
+&=&\sum_{k=1}^{n}\hat{\beta}_{0}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)+\sum_{k=1}^{n}\hat{\beta}_{1}x_{k}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)\\
+&-&\overline{y}\sum_{k=1}^{n}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)\\
+&=&\hat{\beta}_{0}\sum_{k=1}^{n}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)+\hat{\beta}_{1}\sum_{k=1}^{n}x_{k}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)\\
+&-&\overline{y}\sum_{k=1}^{n}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)=0+0+0=0.
+\end{eqnarray*}
+
+Por lo tanto, efectivamente se tiene
+\begin{equation}\label{Suma.Total.Cuadrados}
+S_{yy}=\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)^{2}+\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)^{2},
+\end{equation}
+donde se hacen las definiciones
+\begin{eqnarray}
+SC_{E}&=&\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)^{2}\cdots\textrm{Suma de Cuadrados del Error}\\
+SC_{R}&=&\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)^{2}\cdots\textrm{ Suma de Regresi\'on de Cuadrados}
+\end{eqnarray}
+
+
+
+
+
+Por lo tanto la ecuaci\'on (\ref{Suma.Total.Cuadrados}) se puede reescribir como 
+\begin{equation}\label{Suma.Total.Cuadrados.Dos}
+S_{yy}=SC_{R}+SC_{E}
+\end{equation}
+recordemos que $SC_{E}=S_{yy}-\hat{\beta}_{1}S_{xy}$
+\begin{eqnarray*}
+S_{yy}&=&SC_{R}+\left( S_{yy}-\hat{\beta}_{1}S_{xy}\right)\\
+S_{xy}&=&\frac{1}{\hat{\beta}_{1}}SC_{R}
+\end{eqnarray*}
+$S_{xy}$ tiene $n-1$ grados de libertad y $SC_{R}$ y $SC_{E}$ tienen 1 y $n-2$ grados de libertad respectivamente.
+
+\begin{Prop}
+\begin{equation}
+E\left(SC_{R}\right)=\sigma^{2}+\beta_{1}S_{xx}
+\end{equation}
+adem\'as, $SC_{E}$ y $SC_{R}$ son independientes.
+\end{Prop}
+
+
+
+
+Recordemos que $\hat{\beta}_{1}=\frac{S_{xy}}{S_{xx}}$. Para $H_{0}:\beta_{1}=0$ verdadera,
+\begin{eqnarray*}
+F_{0}=\frac{SC_{R}/1}{SC_{E}/(n-2)}=\frac{MC_{R}}{MC_{E}}
+\end{eqnarray*}
+se distribuye $F_{1,n-2}$, y se rechazar\'ia $H_{0}$ si $F_{0}>F_{\alpha,1,n-2}$.
+									
+El procedimiento de prueba de hip\'otesis puede presentarse como la tabla de an\'alisis de varianza siguiente\medskip
+
+\begin{tabular}{lcccc}\hline
+Fuente de & Suma de  &  Grados de  & Media  & $F_{0}$ \\ 
+ variaci\'on & Cuadrados & Libertad & Cuadr\'atica & \\\hline
+ Regresi\'on & $SC_{R}$ & 1 & $MC_{R}$  & $MC_{R}/MC_{E}$\\
+ Error Residual & $SC_{E}$ & $n-2$ & $MC_{E}$ & \\\hline
+ Total & $S_{yy}$ & $n-1$ & & \\\hline
+\end{tabular} 
+
+
+
+
+
+La prueba para la significaci\'on de la regresi\'on puede desarrollarse bas\'andose en la expresi\'on (\ref{Estadistico.Beta.1}), con $\hat{\beta}_{1,0}=0$, es decir
+\begin{equation}\label{Estadistico.Beta.1.Cero}
+t_{0}=\frac{\hat{\beta}_{1}}{\sqrt{MC_{E}/S_{xx}}}
+\end{equation}
+Elevando al cuadrado ambos t\'erminos:
+\begin{eqnarray*}
+t_{0}^{2}=\frac{\hat{\beta}_{1}^{2}S_{xx}}{MC_{E}}=\frac{\hat{\beta}_{1}S_{xy}}{MC_{E}}=\frac{MC_{R}}{MC_{E}}
+\end{eqnarray*}
+Observar que $t_{0}^{2}=F_{0}$, por tanto la prueba que se utiliza para $t_{0}$ es la misma que para $F_{0}$.
+
+
+
+
+
+\subsection{Estimaci\'on de Intervalos en RLS}
+
+
+
+\begin{itemize}
+\item Adem\'as de la estimaci\'on puntual para los par\'ametros $\beta_{1}$ y $\beta_{0}$, es posible obtener estimaciones del intervalo de confianza de estos par\'ametros.
+
+\item El ancho de estos intervalos de confianza es una medida de la calidad total de la recta de regresi\'on.
+
+\end{itemize}
+
+Si los $\epsilon_{k}$ se distribuyen normal e independientemente, entonces
+\begin{eqnarray*}
+\begin{array}{ccc}
+\frac{\left(\hat{\beta}_{1}-\beta_{1}\right)}{\sqrt{\frac{MC_{E}}{S_{xx}}}}&y &\frac{\left(\hat{\beta}_{0}-\beta_{0}\right)}{\sqrt{MC_{E}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right)}}
+\end{array}
+\end{eqnarray*}
+se distribuyen $t$ con $n-2$ grados de libertad. Por tanto un intervalo de confianza de $100\left(1-\alpha\right)\%$ para $\beta_{1}$ est\'a dado por
+
+
+
+
+\begin{eqnarray}
+\hat{\beta}_{1}-t_{\alpha/2,n-2}\sqrt{\frac{MC_{E}}{S_{xx}}}\leq \beta_{1}\leq\hat{\beta}_{1}+t_{\alpha/2,n-2}\sqrt{\frac{MC_{E}}{S_{xx}}}.
+\end{eqnarray}
+De igual manera, para $\beta_{0}$ un intervalo de confianza al $100\left(1-\alpha\right)\%$ es
+\small{
+\begin{eqnarray}
+\begin{array}{l}
+\hat{\beta}_{0}-t_{\alpha/2,n-2}\sqrt{MC_{E}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right)}\leq\beta_{0}\leq\hat{\beta}_{0}+t_{\alpha/2,n-2}\sqrt{MC_{E}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right)}
+\end{array}
+\end{eqnarray}}
+
+
+%\end{document}
+\subsection{Predicci\'on}
+
+
+Supongamos que se tiene un valor $x_{0}$ de inter\'es, entonces la estimaci\'on puntual de este nuevo valor
+\begin{equation}
+\hat{y}_{0}=\hat{\beta}_{0}+\hat{\beta}_{1}x_{0}
+\end{equation}
+\begin{Note}
+Esta nueva observaci\'on es independiente de las utilizadas para obtener el modelo de regresi\'on, por tanto, el intervalo en torno a la recta de regresi\'on es inapropiado, puesto que se basa \'unicamente en los datos empleados para ajustar el modelo de regresi\'on.\\
+
+El intervalo de confianza en torno a la recta de regresi\'on se refiere a la respuesta media verdadera $x=x_{0}$, no a observaciones futuras.
+\end{Note}
+
+
+
+
+
+
+Sea $y_{0}$ la observaci\'on futura en $x=x_{0}$, y sea $\hat{y}_{0}$ dada en la ecuaci\'on anterior, el estimador de $y_{0}$. Si se define la variable aleatoria $$w=y_{0}-\hat{y}_{0},$$ esta se distribuye normalmente con media cero y varianza $$V\left(w\right)=\sigma^{2}\left[1+\frac{1}{n}+\frac{\left(x-x_{0}\right)^2}{S_{xx}}\right]$$
+dado que $y_{0}$ es independiente de $\hat{y}_{0}$, por lo tanto el intervalo de predicci\'on al nivel $\alpha$ para futuras observaciones $x_{0}$ es
+
+
+\begin{eqnarray*}
+\hat{y}_{0}-t_{\alpha/2,n-2}\sqrt{MC_{E}\left[1+\frac{1}{n}+\frac{\left(x-x_{0}\right)^2}{S_{xx}}\right]}\leq y_{0}\\
+\leq \hat{y}_{0}+t_{\alpha/2,n-2}\sqrt{MC_{E}\left[1+\frac{1}{n}+\frac{\left(x-x_{0}\right)^2}{S_{xx}}\right]}.
+\end{eqnarray*}
+
+
+
+
+
+\subsection{Prueba de falta de ajuste}
+%\frametitle{Falta de ajuste}
+Es com\'un encontrar que el modelo ajustado no satisface totalmente el modelo necesario para los datos, en este caso es preciso saber qu\'e tan bueno es el modelo propuesto. Para esto se propone la siguiente prueba de hip\'otesis:
+\begin{itemize}
+\item[$H_{0}:$ ]El modelo propuesto se ajusta adecuademente a los datos.
+\item[$H_{1}:$ ]El modelo NO se ajusta a los datos.
+\end{itemize}
+La prueba implica dividir la suma de cuadrados del eror o del residuo en las siguientes dos componentes:
+\begin{eqnarray*}
+SC_{E}=SC_{EP}+SC_{FDA}
+\end{eqnarray*}
+
+
+
+%\frametitle{Falta de ajuste}
+donde $SC_{EP}$ es la suma de cuadrados atribuibles al error puro, y $SC_{FDA}$ es la suma de cuadrados atribuible a la falta de ajuste del modelo.
+
+
+%%\frametitle{Falta de ajuste}
+%
+
+
+\subsection{Coeficiente de Determinaci\'on}
+
+
+
+La cantidad
+\begin{equation}
+R^{2}=\frac{SC_{R}}{S_{yy}}=1-\frac{SC_{E}}{S_{yy}}
+\end{equation}
+se denomina coeficiente de determinaci\'on y se utiliza para saber si el modelo de regresi\'on es suficiente o no. Se puede demostrar que $0\leq R^{2}\leq1$, una manera de interpretar este valor es que si $R^{2}=k$, entonces el modelo de regresi\'on explica el $k*100\%$ de la variabilidad en los datos.
+$R^{2}$ 
+\begin{itemize}
+\item No mide la magnitud de la pendiente de la recta de regresi\'on
+\item Un valor grande de $R^{2}$ no implica una pendiente empinada.
+\item No mide la suficiencia del modelo.
+\item Valores grandes de $R^{2}$ no implican necesariamente que el modelo de regresi\'on proporcionar\'a predicciones precisas para futuras observaciones.
+\end{itemize}
+
+
+

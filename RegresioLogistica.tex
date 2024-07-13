@@ -8,10 +8,10 @@
 \usepackage{titlesec} % Paquete para modificar títulos de secciones
 \usepackage[spanish]{babel} % Paquete para definir el idioma
 \usepackage{listings} % Para incluir código fuente
+\usepackage{graphicx}
 
-
-\title{Curso Elemental de Regresi\'on Logística y Análisis de Supervivencia}
-\author{Carlos E Mart\'inez-Rodr\'iguez}
+\title{Curso Elemental de Regresión Logística y Análisis de Supervivencia}
+\author{Carlos E. Martínez-Rodríguez}
 \date{Julio 2024}
 
 \geometry{
@@ -28,7 +28,7 @@
 \fancyhead[L]{\leftmark}
 \fancyfoot[C]{\thepage}
 \fancyfoot[R]{\rightmark}
-\fancyfoot[L]{Carlos E Mart\'inez-Rodr\'iguez} % Nombre del autor en la parte inferior izquierda
+\fancyfoot[L]{Carlos E. Martínez-Rodríguez} % Nombre del autor en la parte inferior izquierda
 
 % Redefinir el nombre de los capítulos
 \titleformat{\chapter}[display]
@@ -36,8 +36,6 @@
   {CAPÍTULO \thechapter}
   {20pt}
   {\Huge}
-
-\newtheorem{Algthm}{Algoritmo}%[section]
 
 % Configuración para la inclusión de código fuente en R
 \lstset{
@@ -57,19 +55,31 @@
     breakatwhitespace=false,
     title=\lstname
 }
-\newtheorem{Def}{Definici\'on}[section]
+
+% Definiciones de nuevos entornos
+\newtheorem{Algthm}{Algoritmo}[section]
+\newtheorem{Def}{Definición}[section]
 \newtheorem{Ejem}{Ejemplo}[section]
 \newtheorem{Teo}{Teorema}[section]
-\newtheorem{Dem}{Demostraci\'on}[section]
+\newtheorem{Dem}{Demostración}[section]
 \newtheorem{Note}{Nota}[section]
-\newtheorem{Sol}{Soluci\'on}[section]
-\newtheorem{Prop}{Proposici\'on}[section]
+\newtheorem{Sol}{Solución}[section]
+\newtheorem{Prop}{Proposición}[section]
 \newtheorem{Coro}{Corolario}[section]
 \newtheorem{Cor}{Corolario}[section]
-\newtheorem{Lemma}{Lema}[section]
 \newtheorem{Lema}{Lema}[section]
+\newtheorem{Lemma}{Lema}[section]
 \newtheorem{Lem}{Lema}[section]
 \newtheorem{Sup}{Supuestos}[section]
+\newtheorem{Assumption}{Supuestos}[section]
+\newtheorem{Remark}{Observación}[section]
+\newtheorem{Condition}{Condición}[section]
+\newtheorem{Theorem}{Teorema}[section]
+\newtheorem{proof}{Demostración}[section]
+\newtheorem{Corollary}{Corolario}[section]
+\newtheorem{Ejemplo}{Ejemplo}[section]
+\newtheorem{Example}{Ejemplo}[section]
+\newtheorem{Obs}{Observación}[section]
 
 \def\RR{\mathbb{R}}
 \def\ZZ{\mathbb{Z}}
@@ -79,8 +89,13 @@
 \newcommand{\esp}{\mathbb{E}}
 \newcommand{\prob}{\mathbb{P}}
 \newcommand{\indora}{\mbox{$1$\hspace{-0.8ex}$1$}}
+\newcommand{\ER}{\left(E,\mathcal{E}\right)}
+\newcommand{\KM}{\left(P_{s,t}\right)}
+\newcommand{\PE}{\left(X_{t}\right)_{t\in I}}
+\newcommand{\SG}{\left(P_{t}\right)}
+\newcommand{\CM}{\mathbf{P}^{x}}
 
-
+%______________________________________________________________________
 
 \begin{document}
 
@@ -88,91 +103,116 @@
 
 \tableofcontents
 
-\part{INTRODUCCION}
-\chapter{Introducci\'on}
+\part{INTRODUCCIÓN}
 
+\chapter{Introducción}
 \input{Introduccion}
+
+\chapter{Fundamentos}
 \input{Fundamentos}
+
+\chapter{Elementos}
 \input{Elementos}
+
+\chapter{Requisitos}
 \input{Requisitos}
+
+\chapter{Bases}
 \input{Bases}
 
-\part{PRIMERA PARTE: Regresi\'on Log\'istica}
+%==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
+\part{PRIMERA PARTE: Regresión Logística}
+%==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
 
-
-\chapter{D\'ia 1: Introducci\'on}
+\chapter{Día 1: Introducción}
 \input{Capitulo1}
 
 \chapter{Elementos de Probabilidad}
 \input{Capitulo2}
 
-\chapter{Matem\'aticas Detr\'as de la Regresi\'on Logística}
+\chapter{Matemáticas Detrás de la Regresión Logística}
 \input{Capitulo3}
 
-\chapter{Preparaci\'on de Datos y Selecci\'on de Variables}
+\chapter{Preparación de Datos y Selección de Variables}
 \input{Capitulo4}
 
-\chapter{Evaluaci\'on del Modelo y Validaci\'on Cruzada}
+\chapter{Evaluación del Modelo y Validación Cruzada}
 \input{Capitulo5}
 
-\chapter{Diagn\'ostico del Modelo y Ajuste de Par\'ametros}
+\chapter{Diagnóstico del Modelo y Ajuste de Parámetros}
 \input{Capitulo6}
 
-\chapter{Interpretaci\'on de los Resultados}
+\chapter{Interpretación de los Resultados}
 \input{Capitulo7}
 
-\chapter{Regresi\'on Logística Multinomial y An\'alisis de Supervivencia}
+\chapter{Regresión Logística Multinomial y Análisis de Supervivencia}
 \input{Capitulo8}
 
-\chapter{Implementaci\'on de Regresi\'on Logística en Datos Reales}
+\chapter{Implementación de Regresión Logística en Datos Reales}
 \input{Capitulo9}
 
 \chapter{Resumen y Proyecto Final}
 \input{Capitulo10}
 
+%==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
+\part{SEGUNDA PARTE: Análisis de Supervivencia}
+%==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
 
-\part{SEGUNDA PARTE}
-\chapter{Introducci\'on al An\'alisis de Supervivencia}
+\chapter{Introducción al Análisis de Supervivencia}
 \input{Capitulo11}
 
-\chapter{Funci\'on de Supervivencia y Funci\'on de Riesgo}
+\chapter{Función de Supervivencia y Función de Riesgo}
 \input{Capitulo12}
 
 \chapter{Estimador de Kaplan-Meier}
 \input{Capitulo13}
 
-\chapter{Comparaci\'on de Curvas de Supervivencia}
+\chapter{Comparación de Curvas de Supervivencia}
 \input{Capitulo14}
 
 \chapter{Modelos de Riesgos Proporcionales de Cox}
 \input{Capitulo15}
 
-\chapter{Diagn\'ostico y Validaci\'on de Modelos de Cox}
+\chapter{Diagnóstico y Validación de Modelos de Cox}
 \input{Capitulo16}
 
 \chapter{Modelos Acelerados de Fallos}
 \input{Capitulo17}
 
-\chapter{An\'alisis Multivariado de Supervivencia}
+\chapter{Análisis Multivariado de Supervivencia}
 \input{Capitulo18}
 
 \chapter{Supervivencia en Datos Complicados}
 \input{Capitulo19}
 
-\chapter{Proyecto Final y Revisi\'on}
+\chapter{Proyecto Final y Revisión}
 \input{Capitulo20}
 
-\part{TERCERA PARTE}
+%==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
+\part{TERCERA PARTE: Probabilidad Avanzada}
+%==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
+
 \chapter{Probabilidad Avanzada}
+%\input{ProbabilidadAvanzada}
+
+\chapter{Teoría de Colas}
 \input{TeoriaColas}
+
+\chapter{Modelos de Flujo}
 \input{ModelosFlujo}
 
+\chapter{Sistemas de Visita}
+\input{SistemasVisita}
+
+\chapter{Teorema de Down}
+\input{TeoremaDown}
+
+%==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
 \part{APÉNDICES}
-\chapter{IMPLEMENTACIONES NUM\'ERICAS}
+%==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
+
+\chapter{IMPLEMENTACIONES NUMÉRICAS}
 \input{numericoLogReg}
-
-
-
 
 \chapter{Bibliografía}
 \input{bibliografia}

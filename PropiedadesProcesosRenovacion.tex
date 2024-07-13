@@ -1,0 +1,1910 @@
+
+%___________________________________________________________________________________________
+%
+\section{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+%___________________________________________________________________________________________
+%
+\subsubsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+
