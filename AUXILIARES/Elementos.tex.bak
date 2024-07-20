@@ -1,0 +1,1565 @@
+\section{2. Pruebas de Hip\'otesis}
+%---------------------------------------------------------
+\subsection{2.1 Tipos de errores}
+
+
+Una prueba de hip\'otesis est\'a formada por cinco partes
+\begin{itemize}
+\item La hip\'otesis nula, denotada por $H_{0}$.
+\item La hip\'otesis alterativa, denorada por $H_{1}$.
+\item El estad\'sitico de prueba y su valor $p$.
+\item La regi\'on de rechazo.
+\item La conclusi\'on.
+
+\end{itemize}
+
+\begin{Def}
+Las dos hip\'otesis en competencias son la \textbf{hip\'otesis alternativa $H_{1}$}, usualmente la que se desea apoyar, y la \textbf{hip\'otesis nula $H_{0}$}, opuesta a $H_{1}$.
+\end{Def}
+
+En general, es m\'as f\'acil presentar evidencia de que $H_{1}$ es cierta, que demostrar 	que $H_{0}$ es falsa, es por eso que por lo regular se comienza suponiendo que $H_{0}$ es cierta, luego se utilizan los datos de la muestra para decidir si existe evidencia a favor de $H_{1}$, m\'as que a favor de $H_{0}$, as\'i se tienen dos conclusiones:
+\begin{itemize}
+\item Rechazar $H_{0}$ y concluir que $H_{1}$ es verdadera.
+\item Aceptar, no rechazar, $H_{0}$ como verdadera.
+
+\end{itemize}
+\begin{Ejem}
+Se desea demostrar que el salario promedio  por hora en cierto lugar es distinto de $19$usd, que es el promedio nacional. Entonces $H_{1}:\mu\neq19$, y $H_{0}:\mu=19$.
+\end{Ejem}
+A esta se le denomina \textbf{Prueba de hip\'otesis de dos colas}.
+
+
+\begin{Ejem}
+Un determinado proceso produce un promedio de $5\%$ de piezas defectuosas. Se est\'a interesado en demostrar que un simple ajuste en una m\'aquina reducir\'a $p$, la proporci\'on de piezas defectuosas producidas en este proceso. Entonces se tiene $H_{0}:p<0.3$ y $H_{1}:p=0.03$. Si se puede rechazar $H_{0}$, se concluye que el proceso ajustado produce menos del $5\%$ de piezas defectuosas.
+\end{Ejem}
+A esta se le denomina \textbf{Prueba de hip\'otesis de una cola}.
+
+La decisi\'on de rechazar o aceptar la hip\'otesis nula est\'a basada en la informaci\'on contenida en una muestra proveniente de la poblaci\'on de inter\'es. Esta informaci\'on tiene estas formas
+
+\begin{itemize}
+\item \textbf{Estad\'sitico de prueba:} un s\'olo n\'umero calculado a partir de la muestra.
+
+\item \textbf{$p$-value:} probabilidad calculada a partir del estad\'stico de prueba.
+
+\end{itemize}
+
+\begin{Def}
+El $p$-value es la probabilidad de observar un estad\'istico de prueba tanto o m\'as alejado del valor obervado, si en realidad $H_{0}$ es verdadera.\medskip
+Valores grandes del estad\'stica de prueba  y valores peque\~nos de $p$ significan que se ha observado un evento muy poco probable, si $H_{0}$ en realidad es verdadera.
+\end{Def}
+
+Todo el conjunto de valores que puede tomar el estad\'istico de prueba se divide en dos regiones. Un conjunto, formado de valores que apoyan la hip\'otesis alternativa y llevan a rechazar $H_{0}$, se denomina \textbf{regi\'on de rechazo}. El otro, conformado por los valores que sustentatn la hip\'otesis nula, se le denomina \textbf{regi\'on de aceptaci\'on}.\medskip
+
+
+Cuando la regi\'on de rechazo est\'a en la cola izquierda de la distribuci\'on, la  prueba se denomina \textbf{prueba lateral izquierda}. Una prueba con regi\'on de rechazo en la cola derecha se le llama \textbf{prueba lateral derecha}.\medskip
+
+Si el estad\'stico de prueba cae en la regi\'on de rechazo, entonces se rechaza $H_{0}$. Si el estad\'stico de prueba cae en la regi\'on de aceptaci\'on, entonces la hip\'otesis nula se acepta o la prueba se juzga como no concluyente.\medskip
+
+Dependiendo del nivel de confianza que se desea agregar a las conclusiones de la prueba, y el \textbf{nivel de significancia $\alpha$}, el riesgo que est\'a dispuesto a correr si se toma una decisi\'on incorrecta.
+
+\begin{Def}
+Un \textbf{error de tipo I} para una prueba estad\'istica es el error que se tiene al rechazar la hip\'otesis nula cuando es verdadera. El \textbf{nivel de significancia} para una prueba estad\'istica de hip\'otesis es
+\begin{eqnarray*}
+\alpha&=&P\left\{\textrm{error tipo I}\right\}=P\left\{\textrm{rechazar equivocadamente }H_{0}\right\}\\
+&=&P\left\{\textrm{rechazar }H_{0}\textrm{ cuando }H_{0}\textrm{ es verdadera}\right\}
+\end{eqnarray*}
+
+\end{Def}
+
+Este valor $\alpha$ representa el valor m\'aximo de riesgo tolerable de rechazar incorrectamente $H_{0}$. Una vez establecido el nivel de significancia, la regi\'on de rechazo se define para poder determinar si se rechaza $H_{0}$ con un cierto nivel de confianza.
+
+
+
+
+
+\section{2.2 Muestras grandes: una media poblacional}
+\subsection{2.2.1 C\'alculo de valor $p$}
+
+
+\begin{Def}
+El \textbf{valor de $p$} (\textbf{$p$-value}) o nivel de significancia observado de un estad\'istico de prueba es el valor m\'as peque\~ no de $\alpha$ para el cual $H_{0}$ se puede rechazar. El riesgo de cometer un error tipo $I$, si $H_{0}$ es rechazada con base en la informaci\'on que proporciona la muestra.
+\end{Def}
+
+\begin{Note}
+Valores peque\~ nos de $p$ indican 	que el valor observado del estad\'stico de prueba se encuentra alejado del valor hipot\'etico de $\mu$, es decir se tiene evidencia de que $H_{0}$ es falsa y por tanto debe de rechazarse.
+\end{Note}
+
+
+
+
+\begin{Note}
+Valores grandes de $p$ indican que el estad\'istico de prueba observado no est\'a alejado de la medi hipot\'etica y no apoya el rechazo de $H_{0}$.
+\end{Note}
+
+\begin{Def}
+Si el valor de $p$ es menor o igual que el nivel de significancia $\alpha$, determinado previamente, entonces $H_{0}$ es rechazada y se puede concluir que los resultados son estad\'isticamente significativos con un nivel de confianza del $100\left(1-\alpha\right)\%$.
+\end{Def}
+Es usual utilizar la siguiente clasificaci\'on de resultados
+
+
+
+
+\begin{tabular}{|c||c|l|}\hline
+$p$& $H_{0}$&Significativa\\\hline\hline
+$p<0.01$&Rechazar &Altamente\\\hline
+$0.01\leq p<0.05$ & Rechazar&Estad\'isticamente\\\hline
+$0.05\leq p <0.1$ & No rechazar & Tendencia estad\'istica\\\hline
+$0.01\leq p$ & No rechazar & No son estad\'isticamente\\\hline
+\end{tabular}
+
+\begin{Note}
+Para determinar el valor de $p$, encontrar el \'area en la cola despu\'es del estad\'istico de prueba. Si la prueba es de una cola, este es el valor de $p$. Si es de dos colas, \'este valor encontrado es la mitad del valor de $p$. Rechazar $H_{0}$ cuando el valor de $p<\alpha$.
+\end{Note}
+
+
+
+
+Hay dos tipos de errores al realizar una prueba de hip\'otesis
+\begin{center}
+\begin{tabular}{c|cc}
+& $H_{0}$ es Verdadera & $H_{0}$ es Falsa\\\hline\hline
+Rechazar $H_{0}$ & Error tipo I & $\surd$\\
+Aceptar $H_{0}$ & $\surd$ & Error tipo II
+\end{tabular}
+\end{center}
+\begin{Def}
+La probabilidad de cometer el error tipo II se define por $\beta$ donde
+\begin{eqnarray*}
+\beta&=&P\left\{\textrm{error tipo II}\right\}=P\left\{\textrm{Aceptar equivocadamente }H_{0}\right\}\\
+&=&P\left\{\textrm{Aceptar }H_{0}\textrm{ cuando }H_{0}\textrm{ es falsa}\right\}
+\end{eqnarray*}
+\end{Def}
+
+
+
+
+
+\begin{Note}
+Cuando $H_{0}$ es falsa y $H_{1}$ es verdadera, no siempre es posible especificar un valor exacto de $\mu$, sino m\'as bien un rango de posibles valores.\medskip
+En lugar de arriesgarse a tomar una decisi\'on incorrecta, es mejor conlcuir que \textit{no hay evidencia suficiente para rechazar $H_{0}$}, es decir en lugar de aceptar $H_{0}$, \textit{no rechazar $H_{0}$}.
+
+\end{Note}
+La bondad de una prueba estad\'istica se mide por el tama\~ no de $\alpha$ y $\beta$, ambas deben de ser peque\~ nas. Una manera muy efectiva de medir la potencia de la prueba es calculando el complemento del error tipo $II$:
+\begin{eqnarray*}
+1-\beta&= &P\left\{\textrm{Rechazar }H_{0}\textrm{ cuando }H_{0}\textrm{ es falsa}\right\}\\
+&=&P\left\{\textrm{Rechazar }H_{0}\textrm{ cuando }H_{1}\textrm{ es verdadera}\right\}
+\end{eqnarray*}
+\begin{Def}
+La \textbf{potencia de la prueba}, $1-\beta$, mide la capacidad de que la prueba funciona como se necesita.
+\end{Def}
+
+
+
+
+
+\begin{Ejem}
+La producci\'on diariade una planta qu\'imica local ha promediado 880 toneladas en los \'ultimos a\~nos. A la gerente de control de calidad le gustar\'ia saber si este promedio ha cambiado en meses recientes. Ella selecciona al azar 50 d\'ias de la base de datos computarizada y calcula el promedio y la desviaci\'on est\'andar de las $n=50$  producciones como $\overline{x}=871$ toneladas y $s=21$ toneladas, respectivamente. Pruebe la hip\'otesis  apropiada usando $\alpha=0.05$.
+
+\end{Ejem}
+
+\begin{Sol}
+La hip\'otesis nula apropiada es:
+\begin{eqnarray*}
+H_{0}&:& \mu=880\\
+&&\textrm{ y la hip\'otesis alternativa }H_{1}\textrm{ es }\\
+H_{1}&:& \mu\neq880
+\end{eqnarray*}
+el estimador puntual para $\mu$ es $\overline{x}$, entonces el estad\'istico de prueba es\medskip
+\begin{eqnarray*}
+z&=&\frac{\overline{x}-\mu_{0}}{s/\sqrt{n}}\\
+&=&\frac{871-880}{21/\sqrt{50}}=-3.03
+\end{eqnarray*}
+\end{Sol}
+
+
+
+
+\begin{Sol}
+Para esta prueba de  dos colas, hay que determinar los dos valores de $z_{\alpha/2}$, es decir,  $z_{\alpha/2}=\pm1.96$, como $z>z_{\alpha/2}$, $z$ cae en la zona de rechazo, por lo tanto  la gerente puede rechazar la hip\'otesis nula y concluir que el promedio efectivamente ha cambiado.\medskip
+La probabilidad de rechazar $H_{0}$ cuando esta es verdadera es de  $0.05$.
+
+
+Recordemos que el valor observado del estad\'istico de prueba es $z=-3.03$, la regi\'on de rechazo m\'as peque\~na que puede usarse y todav\'ia seguir rechazando $H_{0}$ es $|z|>3.03$, \\
+entonces $p=2(0.012)=0.0024$, que a su vez es menor que el nivel de significancia $\alpha$ asignado inicialmente, y adem\'as los resultados son  \textbf{altamente significativos}.
+
+
+\end{Sol}
+
+
+
+
+
+Finalmente determinemos la potencia de la prueba cuando $\mu$ en realidad es igual a $870$ toneladas.
+
+Recordar que la regi\'on de aceptaci\'on est\'a entre $-1.96$ y $1.96$, para $\mu=880$, equivalentemente $$874.18<\overline{x}<885.82$$
+$\beta$ es la probabilidad de aceptar $H_{0}$ cuando $\mu=870$, calculemos los valores de $z$ correspondientes a $874.18$ y $885.82$ \medskip
+Entonces
+\begin{eqnarray*}
+z_{1}&=&\frac{\overline{x}-\mu}{s/\sqrt{n}}=\frac{874.18-870}{21/\sqrt{50}}=1.41\\
+z_{1}&=&\frac{\overline{x}-\mu}{s/\sqrt{n}}=\frac{885.82-870}{21/\sqrt{50}}=5.33
+\end{eqnarray*}
+por lo tanto
+\begin{eqnarray*}
+\beta&=&P\left\{\textrm{aceptar }H_{0}\textrm{ cuando }H_{0}\textrm{ es falsa}\right\}\\
+&=&P\left\{874.18<\mu<885.82\textrm{ cuando }\mu=870\right\}\\
+&=&P\left\{1.41<z<5.33\right\}=P\left\{1.41<z\right\}\\
+&=&1-0.9207=0.0793
+\end{eqnarray*}
+entonces, la potencia de la prueba es
+$$1-\beta=1-0.0793=0.9207$$ que es la probabilidad de rechazar correctamente $H_{0}$ cuando $H_{0}$ es falsa.
+
+
+
+
+\subsection{Prueba de hip\'otesis para la diferencia entre dos medias poblacionales}
+
+
+
+El estad\'istico que resume la informaci\'on muestral respecto a la diferencia en medias poblacionales $\left(\mu_{1}-\mu_{2}\right)$ es la diferencia de las medias muestrales $\left(\overline{x}_{1}-\overline{x}_{2}\right)$, por tanto al probar la difencia entre las medias muestrales se verifica que la diferencia real entre las medias poblacionales difiere de un valor especificado, $\left(\mu_{1}-\mu_{2}\right)=D_{0}$, se puede usar el error est\'andar de $\left(\overline{x}_{1}-\overline{x}_{2}\right)$, es decir
+$$\sqrt{\frac{\sigma^{2}_{1}}{n_{1}}+\frac{\sigma^{2}_{2}}{n_{2}}}$$
+cuyo estimador est\'a dado por
+$$SE=\sqrt{\frac{s^{2}_{1}}{n_{1}}+\frac{s^{2}_{2}}{n_{2}}}$$
+El procedimiento para muestras grandes es:
+
+
+
+\begin{itemize}
+\item[1) ] \textbf{Hip\'otesis Nula} $H_{0}:\left(\mu_{1}-\mu_{2}\right)=D_{0}$,\medskip
+
+donde $D_{0}$ es el valor, la diferencia, espec\'ifico que se desea probar. En algunos casos se querr\'a demostrar que no hay diferencia alguna, es decir $D_{0}=0$.
+
+\item[2) ] \textbf{Hip\'otesis Alternativa}
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:\left(\mu_{1}-\mu_{2}\right)>D_{0}$ & $H_{1}:\left(\mu_{1}-\mu_{2}\right)\neq D_{0}$\\ 
+$H_{1}:\left(\mu_{1}-\mu_{2}\right)<D_{0}$&\\
+\end{tabular}
+
+\end{itemize}
+
+
+
+
+\begin{itemize}
+\item[3) ] Estad\'istico de prueba:
+$$z=\frac{\left(\overline{x}_{1}-\overline{x}_{2}\right)-D_{0}}{\sqrt{\frac{s^{2}_{1}}{n_{1}}+\frac{s^{2}_{2}}{n_{2}}}}$$
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$z>z_{0}$ & \\
+$z<-z_{\alpha}$ cuando $H_{1}:\left(\mu_{1}-\mu_{2}\right)<D_{0}$&$z>z_{\alpha/2}$ o $z<-z_{\alpha/2}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+
+
+\end{itemize}
+
+
+
+
+
+\begin{Ejem}
+Para determinar si ser propietario de un autom\'ovil afecta el rendimiento acad\'emico de un estudiante, se tomaron dos muestras aleatorias de 100 estudiantes varones. El promedio de calificaciones para los $n_{1}=100$ no propietarios de un auto tuvieron un promedio y varianza de $\overline{x}_{1}=2.7$ y $s_{1}^{2}=0.36$, respectivamente, mientras que para para la segunda muestra con $n_{2}=100$ propietarios de un auto, se tiene $\overline{x}_{2}=2.54$ y $s_{2}^{2}=0.4$. Los datos presentan suficiente evidencia para indicar una diferencia en la media en el rendimiento acad\'emico entre propietarios y no propietarios de un autom\'ovil? Hacer pruebas para $\alpha=0.01,0.05$ y $\alpha=0.1$.
+\end{Ejem}
+
+\begin{Sol}
+\begin{itemize}
+\item Soluci\'on utilizando la t\'ecnica de regiones de rechazo:\medskip
+realizando las operaciones
+$z=1.84$, determinar si excede los valores de $z_{\alpha/2}$.
+\item Soluci\'on utilizando el $p$-value:\medskip
+Calcular el valor de $p$, la probabilidad de que $z$ sea mayor que $z=1.84$ o menor que $z=-1.84$, se tiene que $p=0.0658$. Concluir.
+\end{itemize}
+\end{Sol}
+
+
+
+\begin{itemize}
+\item Si el intervalo de confianza que se construye contiene el valor del par\'ametro especificado por $H_{0}$, entonces ese valor es uno de los posibles valores del par\'ametro y $H_{0}$ no debe ser rechazada.
+
+\item Si el valor hipot\'etico se encuentra fuera de los l\'imites de confianza, la hip\'otesis nula es rechazada al nivel de significancia $\alpha$.
+\end{itemize}
+
+\begin{enumerate}
+\item Del libro Mendenhall resolver los ejercicios 9.18, 9.19 y 9.20(\href{https://cu.uacm.edu.mx/nextcloud/index.php/f/202873}{Mendenhall}).
+
+\item Del libro \href{https://cu.uacm.edu.mx/nextcloud/index.php/f/202873}{Mendenhall} resolver los ejercicios: 9.23, 9.26 y 9.28.
+\end{enumerate}
+
+
+
+\subsection{2.2.3 Prueba de Hip\'otesis para una Proporci\'on Binomial}
+
+
+Para una muestra aleatoria de $n$ intentos id\'enticos, de una poblaci\'on binomial, la proporci\'on muesrtal $\hat{p}$ tiene una distribuci\'on aproximadamente normal cuando $n$ es grande, con media $p$ y error est\'andar
+$$SE=\sqrt{\frac{pq}{n}}.$$
+La prueba de hip\'otesis de la forma
+\begin{eqnarray*}
+H_{0}&:&p=p_{0}\\
+H_{1}&:&p>p_{0}\textrm{, o }p<p_{0}\textrm{ o }p\neq p_{0}
+\end{eqnarray*}
+El estad\'istico de prueba se construye con el mejor estimador de la proporci\'on verdadera, $\hat{p}$, con el estad\'istico de prueba $z$, que se distribuye normal est\'andar.
+
+
+
+El procedimiento es
+\begin{itemize}
+\item[1) ] Hip\'otesis nula: $H_{0}:p=p_{0}$
+\item[2) ] Hip\'otesis alternativa
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:p>p_{0}$ & $p\neq p_{0}$\\
+$H_{1}:p<p_{0}$ & \\
+\end{tabular}
+\item[3) ] Estad\'istico de prueba:
+\begin{eqnarray*}
+z=\frac{\hat{p}-p_{0}}{\sqrt{\frac{pq}{n}}},\hat{p}=\frac{x}{n}
+\end{eqnarray*}
+donde $x$ es el n\'umero de \'exitos en $n$ intentos binomiales.
+
+\end{itemize}
+
+
+
+\begin{itemize}
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$z>z_{0}$ & \\
+$z<-z_{\alpha}$ cuando $H_{1}:p<p_{0}$&$z>z_{\alpha/2}$ o $z<-z_{\alpha/2}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+\end{itemize}
+
+
+
+\begin{Ejem}
+A cualquier edad, alrededor del $20\%$ de los adultos de cierto pa\'is realiza actividades de acondicionamiento f\'isico al menos dos veces por semana. En una encuesta local de $n=100$ adultos de m\'as de $40$ a\ ~nos, un total de 15 personas indicaron que realizaron actividad f\'isica al menos dos veces por semana. Estos datos indican que el porcentaje de participaci\'on para adultos de m\'as de 40 a\ ~nos de edad es  considerablemente menor a la cifra del $20\%$? Calcule el valor de $p$ y \'uselo para sacar las conclusiones apropiadas.
+\end{Ejem}
+
+\begin{enumerate}
+\item Resolver los ejercicios: 9.30, 9.32, 9.33, 9.35 y 9.39.
+\end{enumerate}
+
+
+
+\subsection{2.2.4 Prueba de Hip\'otesis diferencia entre dos Proporciones Binomiales}
+
+
+
+
+\begin{Note}
+Cuando se tienen dos muestras aleatorias independientes de dos poblaciones binomiales, el objetivo del experimento puede ser la diferencia $\left(p_{1}-p_{2}\right)$ en las proporciones de individuos u objetos que poseen una caracter\'istica especifica en las dos poblaciones. En este caso se pueden utilizar los estimadores de las dos proporciones $\left(\hat{p}_{1}-\hat{p}_{2}\right)$ con error est\'andar dado por
+$$SE=\sqrt{\frac{p_{1}q_{1}}{n_{1}}+\frac{p_{2}q_{2}}{n_{2}}}$$
+considerando el estad\'istico $z$ con un nivel de significancia $\left(1-\alpha\right)100\%$
+
+\end{Note}
+
+
+\begin{Note}
+La hip\'otesis nula a probarse es de la forma
+\begin{itemize}
+\item[$H_{0}$: ] $p_{1}=p_{2}$ o equivalentemente $\left(p_{1}-p_{2}\right)=0$, contra una hip\'otesis alternativa $H_{1}$ de una o dos colas.
+\end{itemize}
+\end{Note}
+
+
+
+
+
+\begin{Note}
+Para estimar el error est\'andar del estad\'istico $z$, se debe de utilizar el hecho de que suponiendo que $H_{0}$ es verdadera, las dos proporciones son iguales a alg\'un valor com\'un, $p$. Para obtener el mejor estimador de $p$ es
+$$p=\frac{\textrm{n\'umero total de \'exitos}}{\textrm{N\'umero total de pruebas}}=\frac{x_{1}+x_{2}}{n_{1}+n_{2}}$$
+\end{Note}
+
+
+
+\begin{itemize}
+\item[1) ] \textbf{Hip\'otesis Nula:} $H_{0}:\left(p_{1}-p_{2}\right)=0$
+\item[2) ] \textbf{Hip\'otesis Alternativa: } $H_{1}:$
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:\left(p_{1}-p_{2}\right)>0$ & $H_{1}:\left(p_{1}-p_{2}\right)\neq 0$\\ 
+$H_{1}:\left(p_{1}-p_{2}\right)<0$&\\
+\end{tabular}
+\item[3) ] Estad\'istico de prueba:
+\begin{eqnarray*}
+z=\frac{\left(\hat{p}_{1}-\hat{p}_{2}\right)}{\sqrt{\frac{p_{1}q_{1}}{n_{1}}+\frac{p_{2}q_{2}}{n_{2}}}}=\frac{\left(\hat{p}_{1}-\hat{p}_{2}\right)}{\sqrt{\frac{pq}{n_{1}}+\frac{pq}{n_{2}}}}
+\end{eqnarray*}
+donde $\hat{p_{1}}=x_{1}/n_{1}$ y $\hat{p_{2}}=x_{2}/n_{2}$ , dado que el valor com\'un para $p_{1}$ y $p_{2}$ es $p$, entonces $\hat{p}=\frac{x_{1}+x_{2}}{n_{1}+n_{2}}$ y por tanto el estad\'istico de prueba es
+\end{itemize}
+
+
+
+
+
+
+\begin{eqnarray*}
+z=\frac{\hat{p}_{1}-\hat{p}_{2}}{\sqrt{\hat{p}\hat{q}}\left(\frac{1}{n_{1}}+\frac{1}{n_{2}}\right)}
+\end{eqnarray*}
+\begin{itemize}
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$z>z_{\alpha}$ & \\
+$z<-z_{\alpha}$ cuando $H_{1}:p<p_{0}$&$z>z_{\alpha/2}$ o $z<-z_{\alpha/2}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+
+\end{itemize}
+
+
+
+
+
+\begin{Ejem}
+Los registros de un hospital, indican que 52 hombres de una muestra de 1000 contra 23 mujeres de una muestra de 1000 fueron ingresados por enfermedad del coraz\'on. Estos datos presentan suficiente evidencia para indicar un porcentaje m\'as alto de enfermedades del coraz\'on entre hombres ingresados al hospital?, utilizar distintos niveles de confianza de $\alpha$.
+
+\end{Ejem}
+\begin{enumerate}
+\item Resolver los ejercicios 9.42
+
+\item Resolver los ejercicios: 9.45, 9.48, 9.50
+\end{enumerate}
+
+
+
+
+
+\section{2.3 Muestras Peque\~nas}
+
+\subsection{2.3.1 Una media poblacional}
+
+
+
+
+\begin{itemize}
+\item[1) ] \textbf{Hip\'otesis Nula:} $H_{0}:\mu=\mu_{0}$
+\item[2) ] \textbf{Hip\'otesis Alternativa: } $H_{1}:$
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:\mu>\mu_{0}$ & $H_{1}:\mu\neq \mu_{0}$\\ 
+$H_{1}:\mu<\mu0$&\\
+\end{tabular}
+\item[3) ] Estad\'istico de prueba:
+\begin{eqnarray*}
+t=\frac{\overline{x}-\mu_{0}}{\sqrt{\frac{s^{2}}{n}}}
+\end{eqnarray*}
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$t>t_{\alpha}$ & \\
+$t<-t_{\alpha}$ cuando $H_{1}:\mu<mu_{0}$&$t>t_{\alpha/2}$ o $t<-t_{\alpha/2}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+\end{itemize}
+
+
+
+
+
+\begin{Ejem}
+Las etiquetas en latas de un gal'on de pintura por lo general indican el tiempo de secado y el \'area puede cubrir una capa. Casi todas las marcas de pintura indican que, en una capa, un gal\'on cubrir\'a entre 250 y 500 pies cuadrados, dependiento de la textura de la superficie a pintarse, un fabricante, sin embargo afirma que un gal\'on de su pintura cubrir\'a 400 pies cuadrados de \'area superficial. Para probar su afirmaci\'on, una muestra aleatoria de 10 latas de un gal\'on de pintura blanca se emple\'o para pintar 10 \'areas id\'enticas usando la misma clase de equipo. Las \'areas reales en pies cuadrados cubiertas por estos 10 galones de pintura se dan a continuac\'on:
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+310 & 311 & 412 & 368 & 447 \\ 
+\hline 
+376 & 303 &410 &365 & 350 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\end{Ejem}
+
+
+
+
+
+\begin{Ejem}
+Los datos presentan suficiente evidencia para indicar que el promedio de la cobertura difiere de 400 pies cuadrados? encuentre el valor de $p$ para la prueba y \'uselo para evaluar la significancia de los resultados.
+\end{Ejem}
+\begin{enumerate}
+\item Resolver los ejercicios: 10.2, 10.3,10.5, 10.7, 10.9, 10.13 y 10.16
+\end{enumerate}
+
+
+
+
+\subsection{2.3.2 Diferencia entre dos medias poblacionales: M.A.I.}
+
+
+
+
+\begin{Note}
+Cuando los tama\ ~nos de muestra son peque\ ~nos, no se puede asegurar que las medias muestrales sean normales, pero si las poblaciones originales son normales, entonces la distribuci\'on muestral de la diferencia de las medias muestales, $\left(\overline{x}_{1}-\overline{x}_{2}\right)$, ser\'a normal con media $\left(\mu_{1}-\mu_{2}\right)$ y error est\'andar $$ES=\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}$$
+
+\end{Note}
+
+\begin{itemize}
+\item[1) ] \textbf{Hip\'otesis Nula} $H_{0}:\left(\mu_{1}-\mu_{2}\right)=D_{0}$,\medskip
+
+donde $D_{0}$ es el valor, la diferencia, espec\'ifico que se desea probar. En algunos casos se querr\'a demostrar que no hay diferencia alguna, es decir $D_{0}=0$.
+
+\item[2) ] \textbf{Hip\'otesis Alternativa}
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:\left(\mu_{1}-\mu_{2}\right)>D_{0}$ & $H_{1}:\left(\mu_{1}-\mu_{2}\right)\neq D_{0}$\\ 
+$H_{1}:\left(\mu_{1}-\mu_{2}\right)<D_{0}$&\\
+\end{tabular}
+
+\item[3) ] Estad\'istico de prueba:
+$$t=\frac{\left(\overline{x}_{1}-\overline{x}_{2}\right)-D_{0}}{\sqrt{\frac{s^{2}_{1}}{n_{1}}+\frac{s^{2}_{2}}{n_{2}}}}$$
+\end{itemize}
+
+
+
+
+
+
+donde $$s^{2}=\frac{\left(n_{1}-1\right)s_{1}^{2}+\left(n_{2}-1\right)s_{2}^{2}}{n_{1}+n_{2}-2}$$
+\begin{itemize}
+
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$z>z_{0}$ & \\
+$z<-z_{\alpha}$ cuando $H_{1}:\left(\mu_{1}-\mu_{2}\right)<D_{0}$&$z>z_{\alpha/2}$ o $z<-z_{\alpha/2}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+Los valores cr\'iticos de $t$, $t_{-\alpha}$ y $t_{\alpha/2}$ est\'an basados en $\left(n_{1}+n_{2}-2\right)$ grados de libertad.
+
+
+\end{itemize}
+
+
+
+
+\subsection{2.3.3 Diferencia entre dos medias poblacionales: Diferencias Pareadas}
+
+
+
+
+
+
+\begin{itemize}
+\item[1) ] \textbf{Hip\'otesis Nula:} $H_{0}:\mu_{d}=0$
+\item[2) ] \textbf{Hip\'otesis Alternativa: } $H_{1}:\mu_{d}$
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:\mu_{d}>0$ & $H_{1}:\mu_{d}\neq 0$\\ 
+$H_{1}:\mu_{d}<0$&\\
+\end{tabular}
+\item[3) ] Estad\'istico de prueba:
+\begin{eqnarray*}
+t=\frac{\overline{d}}{\sqrt{\frac{s_{d}^{2}}{n}}}
+\end{eqnarray*}
+donde $n$ es el n\'umero de diferencias pareadas, $\overline{d}$ es la media de las diferencias muestrales, y $s_{d}$ es la desviaci\'on est\'andar de las diferencias muestrales.
+
+\end{itemize}
+
+
+
+
+
+
+\begin{itemize}
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$t>t_{\alpha}$ & \\
+$t<-t_{\alpha}$ cuando $H_{1}:\mu<mu_{0}$&$t>t_{\alpha/2}$ o $t<-t_{\alpha/2}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+
+Los valores cr\'iticos de $t$, $t_{-\alpha}$ y $t_{\alpha/2}$ est\'an basados en $\left(n_{1}+n_{2}-2\right)$ grados de libertad.
+
+\end{itemize}
+
+
+
+
+
+
+\subsection{2.3.4 Inferencias con respecto a la Varianza Poblacional}
+
+
+
+
+\begin{itemize}
+\item[1) ] \textbf{Hip\'otesis Nula:} $H_{0}:\sigma^{2}=\sigma^{2}_{0}$
+\item[2) ] \textbf{Hip\'otesis Alternativa: } $H_{1}$
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:\sigma^{2}>\sigma^{2}_{0}$ & $H_{1}:\sigma^{2}\neq \sigma^{2}_{0}$\\ 
+$H_{1}:\sigma^{2}<\sigma^{2}_{0}$&\\
+\end{tabular}
+\item[3) ] Estad\'istico de prueba:
+\begin{eqnarray*}
+\chi^{2}=\frac{\left(n-1\right)s^{2}}{\sigma^{2}_{0}}
+\end{eqnarray*}
+
+\end{itemize}
+
+
+
+
+
+
+\begin{itemize}
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$\chi^{2}>\chi^{2}_{\alpha}$ & \\
+$\chi^{2}<\chi^{2}_{\left(1-\alpha\right)}$ cuando $H_{1}:\chi^{2}<\chi^{2}_{0}$&$\chi^{2}>\chi^{2}_{\alpha/2}$ o $\chi^{2}<\chi^{2}_{\left(1-\alpha/2\right)}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+
+Los valores cr\'iticos de $\chi^{2}$,est\'an basados en $\left(n_{1}+\right)$ grados de libertad.
+
+\end{itemize}
+
+
+
+
+
+\subsection{2.3.5 Comparaci\'on de dos varianzas poblacionales}
+
+
+
+
+
+\begin{itemize}
+\item[1) ] \textbf{Hip\'otesis Nula} $H_{0}:\left(\sigma^{2}_{1}-\sigma^{2}_{2}\right)=D_{0}$,\medskip
+
+donde $D_{0}$ es el valor, la diferencia, espec\'ifico que se desea probar. En algunos casos se querr\'a demostrar que no hay diferencia alguna, es decir $D_{0}=0$.
+
+\item[2) ] \textbf{Hip\'otesis Alternativa}
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:\left(\sigma^{2}_{1}-\sigma^{2}_{2}\right)>D_{0}$ & $H_{1}:\left(\sigma^{2}_{1}-\sigma^{2}_{2}\right)\neq D_{0}$\\ 
+$H_{1}:\left(\sigma^{2}_{1}-\sigma^{2}_{2}\right)<D_{0}$&\\
+\end{tabular}
+
+\end{itemize}
+
+
+
+
+
+
+
+\begin{itemize}
+\item[3) ] Estad\'istico de prueba:
+$$F=\frac{s_{1}^{2}}{s_{2}^{2}}$$
+donde $s_{1}^{2}$ es la varianza muestral m\'as grande.
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$F>F_{\alpha}$ & $F>F_{\alpha/2}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+
+
+\end{itemize}
+
+
+
+
+%---------------------------------------------------------
+\section{2. Pruebas de Hip\'otesis}
+%---------------------------------------------------------
+\subsection{2.1 Tipos de errores}
+
+
+
+
+
+\begin{itemize}
+\item Una hip\'otesis estad\'istica es una afirmaci\'on  acerca de la distribuci\'on de probabilidad de una variable aleatoria, a menudo involucran uno o m\'as par\'ametros de la distribuci\'on.
+
+\item Las hip\'otesis son afirmaciones respecto a la poblaci\'on o distribuci\'on bajo estudio, no en torno a la muestra.
+
+\item La mayor\'ia de las veces, la prueba de hip\'otesis consiste en determinar si la situaci \'on experimental ha cambiado
+
+\item el inter\'es principal es decidir sobre la veracidad o falsedad de una hip\'otesis, a este procedimiento se le llama \textit{prueba de hip\'otesis}.
+
+\item Si la informaci\'on es consistente con la hip\'otesis, se concluye que esta es verdadera, de lo contrario que con base en la informaci\'on, es falsa.
+
+\end{itemize}
+
+
+
+
+
+
+
+Una prueba de hip\'otesis est\'a formada por cinco partes
+\begin{itemize}
+\item La hip\'otesis nula, denotada por $H_{0}$.
+\item La hip\'otesis alterativa, denorada por $H_{1}$.
+\item El estad\'sitico de prueba y su valor $p$.
+\item La regi\'on de rechazo.
+\item La conclusi\'on.
+
+\end{itemize}
+
+
+\begin{Def}
+Las dos hip\'otesis en competencias son la \textbf{hip\'otesis alternativa $H_{1}$}, usualmente la que se desea apoyar, y la \textbf{hip\'otesis nula $H_{0}$}, opuesta a $H_{1}$.
+\end{Def}
+
+
+
+
+
+
+
+En general, es m\'as f\'acil presentar evidencia de que $H_{1}$ es cierta, que demostrar 	que $H_{0}$ es falsa, es por eso que por lo regular se comienza suponiendo que $H_{0}$ es cierta, luego se utilizan los datos de la muestra para decidir si existe evidencia a favor de $H_{1}$, m\'as que a favor de $H_{0}$, as\'i se tienen dos conclusiones:
+\begin{itemize}
+\item Rechazar $H_{0}$ y concluir que $H_{1}$ es verdadera.
+\item Aceptar, no rechazar, $H_{0}$ como verdadera.
+
+\end{itemize}
+
+
+
+
+
+
+
+\begin{Ejem}
+Se desea demostrar que el salario promedio  por hora en cierto lugar es distinto de $19$usd, que es el promedio nacional. Entonces $H_{1}:\mu\neq19$, y $H_{0}:\mu=19$.
+\end{Ejem}
+A esta se le denomina \textbf{Prueba de hip\'otesis de dos colas}.
+
+
+\begin{Ejem}
+Un determinado proceso produce un promedio de $5\%$ de piezas defectuosas. Se est\'a interesado en demostrar que un simple ajuste en una m\'aquina reducir\'a $p$, la proporci\'on de piezas defectuosas producidas en este proceso. Entonces se tiene $H_{0}:p<0.3$ y $H_{1}:p=0.03$. Si se puede rechazar $H_{0}$, se concluye que el proceso ajustado produce menos del $5\%$ de piezas defectuosas.
+\end{Ejem}
+A esta se le denomina \textbf{Prueba de hip\'otesis de una cola}.
+
+
+
+
+
+
+La decisi\'on de rechazar o aceptar la hip\'otesis nula est\'a basada en la informaci\'on contenida en una muestra proveniente de la poblaci\'on de inter\'es. Esta informaci\'on tiene estas formas
+
+\begin{itemize}
+\item \textbf{Estad\'sitico de prueba:} un s\'olo n\'umero calculado a partir de la muestra.
+
+\item \textbf{$p$-value:} probabilidad calculada a partir del estad\'stico de prueba.
+
+\end{itemize}
+
+
+
+
+
+
+\begin{Def}
+El $p$-value es la probabilidad de observar un estad\'istico de prueba tanto o m\'as alejado del valor obervado, si en realidad $H_{0}$ es verdadera.\medskip
+Valores grandes del estad\'stica de prueba  y valores peque\~nos de $p$ significan que se ha observado un evento muy poco probable, si $H_{0}$ en realidad es verdadera.
+\end{Def}
+
+Todo el conjunto de valores que puede tomar el estad\'istico de prueba se divide en dos regiones. Un conjunto, formado de valores que apoyan la hip\'otesis alternativa y llevan a rechazar $H_{0}$, se denomina \textbf{regi\'on de rechazo}. El otro, conformado por los valores que sustentatn la hip\'otesis nula, se le denomina \textbf{regi\'on de aceptaci\'on}.\medskip
+
+
+
+
+
+
+
+Cuando la regi\'on de rechazo est\'a en la cola izquierda de la distribuci\'on, la  prueba se denomina \textbf{prueba lateral izquierda}. Una prueba con regi\'on de rechazo en la cola derecha se le llama \textbf{prueba lateral derecha}.\medskip
+
+Si el estad\'stico de prueba cae en la regi\'on de rechazo, entonces se rechaza $H_{0}$. Si el estad\'stico de prueba cae en la regi\'on de aceptaci\'on, entonces la hip\'otesis nula se acepta o la prueba se juzga como no concluyente.\medskip
+
+Dependiendo del nivel de confianza que se desea agregar a las conclusiones de la prueba, y el \textbf{nivel de significancia $\alpha$}, el riesgo que est\'a dispuesto a correr si se toma una decisi\'on incorrecta.
+
+
+
+
+
+
+\begin{Def}
+Un \textbf{error de tipo I} para una prueba estad\'istica es el error que se tiene al rechazar la hip\'otesis nula cuando es verdadera. El \textbf{nivel de significancia} para una prueba estad\'istica de hip\'otesis es
+\begin{eqnarray*}
+\alpha&=&P\left\{\textrm{error tipo I}\right\}=P\left\{\textrm{rechazar equivocadamente }H_{0}\right\}\\
+&=&P\left\{\textrm{rechazar }H_{0}\textrm{ cuando }H_{0}\textrm{ es verdadera}\right\}
+\end{eqnarray*}
+
+\end{Def}
+Este valor $\alpha$ representa el valor m\'aximo de riesgo tolerable de rechazar incorrectamente $H_{0}$. Una vez establecido el nivel de significancia, la regi\'on de rechazo se define para poder determinar si se rechaza $H_{0}$ con un cierto nivel de confianza.
+
+
+
+
+\section{2.2 Muestras grandes: una media poblacional}
+\subsection{2.2.1 C\'alculo de valor $p$}
+
+
+
+
+
+\begin{Def}
+El \textbf{valor de $p$} (\textbf{$p$-value}) o nivel de significancia observado de un estad\'istico de prueba es el valor m\'as peque\~ no de $\alpha$ para el cual $H_{0}$ se puede rechazar. El riesgo de cometer un error tipo $I$, si $H_{0}$ es rechazada con base en la informaci\'on que proporciona la muestra.
+\end{Def}
+
+\begin{Note}
+Valores peque\~ nos de $p$ indican 	que el valor observado del estad\'stico de prueba se encuentra alejado del valor hipot\'etico de $\mu$, es decir se tiene evidencia de que $H_{0}$ es falsa y por tanto debe de rechazarse.
+\end{Note}
+
+
+
+
+
+
+
+
+
+\begin{Note}
+Valores grandes de $p$ indican que el estad\'istico de prueba observado no est\'a alejado de la medi hipot\'etica y no apoya el rechazo de $H_{0}$.
+\end{Note}
+
+\begin{Def}
+Si el valor de $p$ es menor o igual que el nivel de significancia $\alpha$, determinado previamente, entonces $H_{0}$ es rechazada y se puede concluir que los resultados son estad\'isticamente significativos con un nivel de confianza del $100\left(1-\alpha\right)\%$.
+\end{Def}
+Es usual utilizar la siguiente clasificaci\'on de resultados
+
+
+
+
+
+
+
+
+
+\begin{tabular}{|c||c|l|}\hline
+$p$& $H_{0}$&Significativa\\\hline\hline
+$p<0.01$&Rechazar &Altamente\\\hline
+$0.01\leq p<0.05$ & Rechazar&Estad\'isticamente\\\hline
+$0.05\leq p <0.1$ & No rechazar & Tendencia estad\'istica\\\hline
+$0.01\leq p$ & No rechazar & No son estad\'isticamente\\\hline
+\end{tabular}
+
+\begin{Note}
+Para determinar el valor de $p$, encontrar el \'area en la cola despu\'es del estad\'istico de prueba. Si la prueba es de una cola, este es el valor de $p$. Si es de dos colas, \'este valor encontrado es la mitad del valor de $p$. Rechazar $H_{0}$ cuando el valor de $p<\alpha$.
+\end{Note}
+
+
+
+
+
+
+
+
+Hay dos tipos de errores al realizar una prueba de hip\'otesis
+\begin{center}
+\begin{tabular}{c|cc}
+& $H_{0}$ es Verdadera & $H_{0}$ es Falsa\\\hline\hline
+Rechazar $H_{0}$ & Error tipo I & $\surd$\\
+Aceptar $H_{0}$ & $\surd$ & Error tipo II
+\end{tabular}
+\end{center}
+\begin{Def}
+La probabilidad de cometer el error tipo II se define por $\beta$ donde
+\begin{eqnarray*}
+\beta&=&P\left\{\textrm{error tipo II}\right\}=P\left\{\textrm{Aceptar equivocadamente }H_{0}\right\}\\
+&=&P\left\{\textrm{Aceptar }H_{0}\textrm{ cuando }H_{0}\textrm{ es falsa}\right\}
+\end{eqnarray*}
+\end{Def}
+
+
+
+
+
+
+
+\begin{Note}
+Cuando $H_{0}$ es falsa y $H_{1}$ es verdadera, no siempre es posible especificar un valor exacto de $\mu$, sino m\'as bien un rango de posibles valores.\medskip
+En lugar de arriesgarse a tomar una decisi\'on incorrecta, es mejor conlcuir que \textit{no hay evidencia suficiente para rechazar $H_{0}$}, es decir en lugar de aceptar $H_{0}$, \textit{no rechazar $H_{0}$}.
+
+\end{Note}
+
+
+
+
+
+
+La bondad de una prueba estad\'istica se mide por el tama\~ no de $\alpha$ y $\beta$, ambas deben de ser peque\~ nas. Una manera muy efectiva de medir la potencia de la prueba es calculando el complemento del error tipo $II$:
+\begin{eqnarray*}
+1-\beta&= &P\left\{\textrm{Rechazar }H_{0}\textrm{ cuando }H_{0}\textrm{ es falsa}\right\}\\
+&=&P\left\{\textrm{Rechazar }H_{0}\textrm{ cuando }H_{1}\textrm{ es verdadera}\right\}
+\end{eqnarray*}
+\begin{Def}
+La \textbf{potencia de la prueba}, $1-\beta$, mide la capacidad de que la prueba funciona como se necesita.
+\end{Def}
+
+
+
+
+
+
+
+\begin{Ejem}
+La producci\'on diariade una planta qu\'imica local ha promediado 880 toneladas en los \'ultimos a\~nos. A la gerente de control de calidad le gustar\'ia saber si este promedio ha cambiado en meses recientes. Ella selecciona al azar 50 d\'ias de la base de datos computarizada y calcula el promedio y la desviaci\'on est\'andar de las $n=50$  producciones como $\overline{x}=871$ toneladas y $s=21$ toneladas, respectivamente. Pruebe la hip\'otesis  apropiada usando $\alpha=0.05$.
+
+\end{Ejem}
+
+\begin{Sol}
+La hip\'otesis nula apropiada es:
+\begin{eqnarray*}
+H_{0}&:& \mu=880\\
+&&\textrm{ y la hip\'otesis alternativa }H_{1}\textrm{ es }\\
+H_{1}&:& \mu\neq880
+\end{eqnarray*}
+el estimador puntual para $\mu$ es $\overline{x}$, entonces el estad\'istico de prueba es\medskip
+\begin{eqnarray*}
+z&=&\frac{\overline{x}-\mu_{0}}{s/\sqrt{n}}\\
+&=&\frac{871-880}{21/\sqrt{50}}=-3.03
+\end{eqnarray*}
+\end{Sol}
+
+
+
+
+
+
+
+\begin{Sol}
+Para esta prueba de  dos colas, hay que determinar los dos valores de $z_{\alpha/2}$, es decir,  $z_{\alpha/2}=\pm1.96$, como $z>z_{\alpha/2}$, $z$  cae en la zona de rechazo, por lo tanto  la gerente puede rechazar la hip\'otesis nula y concluir que el promedio efectivamente ha cambiado.\medskip
+La probabilidad de rechazar $H_{0}$ cuando esta es verdadera es de $0.05$.
+
+
+Recordemos que el valor observado del estad\'istico de prueba es $z=-3.03$, la regi\'on de rechazo m\'as peque\~na que puede usarse y todav\'ia seguir rechazando $H_{0}$ es $|z|>3.03$, \\
+entonces $p=2(0.012)=0.0024$, que a su vez es menor que el nivel de significancia $\alpha$ asignado inicialmente, y adem\'as los resultados son  \textbf{altamente significativos}.
+
+
+\end{Sol}
+
+
+
+
+
+
+Finalmente determinemos la potencia de la prueba cuando $\mu$ en realidad es igual a $870$ toneladas.
+
+Recordar que la regi\'on de aceptaci\'on est\'a entre $-1.96$ y $1.96$, para $\mu=880$, equivalentemente $$874.18<\overline{x}<885.82$$
+$\beta$ es la probabilidad de aceptar $H_{0}$ cuando $\mu=870$, calculemos los valores de $z$ correspondientes a $874.18$ y $885.82$ \medskip
+Entonces
+\begin{eqnarray*}
+z_{1}&=&\frac{\overline{x}-\mu}{s/\sqrt{n}}=\frac{874.18-870}{21/\sqrt{50}}=1.41\\
+z_{1}&=&\frac{\overline{x}-\mu}{s/\sqrt{n}}=\frac{885.82-870}{21/\sqrt{50}}=5.33
+\end{eqnarray*}
+
+
+por lo tanto
+\begin{eqnarray*}
+\beta&=&P\left\{\textrm{aceptar }H_{0}\textrm{ cuando }H_{0}\textrm{ es falsa}\right\}\\
+&=&P\left\{874.18<\mu<885.82\textrm{ cuando }\mu=870\right\}\\
+&=&P\left\{1.41<z<5.33\right\}=P\left\{1.41<z\right\}\\
+&=&1-0.9207=0.0793
+\end{eqnarray*}
+entonces, la potencia de la prueba es
+$$1-\beta=1-0.0793=0.9207$$ que es la probabilidad de rechazar correctamente $H_{0}$ cuando $H_{0}$ es falsa.
+
+
+
+
+
+
+Determinar la potencia de la prueba para distintos valores de $H_{1}$ y graficarlos, \textit{curva de potencia}
+\begin{center}
+\begin{tabular}{c||c}
+$H_{1}$ & $\left(1-\beta\right)$ \\\hline 
+\hline 
+865 &  \\ \hline 
+870 &  \\ \hline 
+872 &  \\ \hline 
+875 &  \\ \hline 
+877 &  \\ \hline 
+880 &  \\ \hline 
+883 &  \\ \hline 
+885 &  \\ \hline 
+888 &  \\ \hline 
+890 &  \\ \hline 
+895 &  \\ \hline 
+\end{tabular} 
+
+\end{center}
+
+
+
+
+
+
+\begin{enumerate}
+\item Encontrar las regiones de rechazo para el estad\'istico $z$, para una prueba de
+\begin{itemize}
+\item[a) ]  dos colas para $\alpha=0.01,0.05,0.1$
+\item[b) ]  una cola superior para $\alpha=0.01,0.05,0.1$
+\item[c) ] una cola inferior para $\alpha=0.01,0.05,0.1$
+
+\end{itemize}
+
+
+\item Suponga que el valor del estad\'istico de prueba es 
+\begin{itemize}
+\item[a) ]$z=-2.41$, sacar las conclusiones correspondientes para los incisos anteriores.
+\item[b) ] $z=2.16$, sacar las conclusiones correspondientes para los incisos anteriores.
+\item[c) ] $z=1.15$, sacar las conclusiones correspondientes para los incisos anteriores.
+\item[d) ] $z=-2.78$, sacar las conclusiones correspondientes para los incisos anteriores.
+\item[e) ] $z=-1.81$, sacar las conclusiones correspondientes para los incisos anteriores.
+
+\end{itemize}
+\end{enumerate}
+
+
+
+
+
+\begin{itemize}
+\item[3. ] Encuentre el valor de $p$ para las pruebas de hip\'otesis correspondientes a los valores de $z$ del ejercicio anterior.
+
+\item[4. ] Para las pruebas dadas en el ejercicio 2, utilice el valor de $p$, determinado en el ejercicio 3,  para determinar la significancia de los resultados.
+
+
+\end{itemize}
+
+
+
+
+
+
+\begin{itemize}
+\item[5. ] Una muestra aleatoria de $n=45$ observaciones de una poblaci\'on con media $\overline{x}=2.4$, y desviaci\'on est\'andar $s=0.29$. Suponga que el objetivo es demostrar que la media poblacional $\mu$ excede $2.3$.
+\begin{itemize}
+\item[a) ] Defina la hip\'otesis nula y alternativa para la prueba.
+\item[b) ] Determine la regi\'on de rechazo para un nivel de significancia de: $\alpha=0.1,0.05,0.01$.
+\item[c) ] Determine el error est\'andar de la media muestral.
+\item[d) ] Calcule el valor de $p$ para los estad\'isticos de prueba definidos en los incisos anteriores.
+\item[e) ] Utilice el valor de $p$ pra sacar una conclusi\'on al nivel de significancia $\alpha$.
+\item[f) ] Determine el valor de $\beta$ cuando $\mu=2.5$
+\item[g) ] Graficar la curva de potencia para la prueba.
+
+\end{itemize}
+\end{itemize}
+
+
+
+
+
+\subsection{2.2.2 Prueba de hip\'otesis para la diferencia entre dos medias poblacionales}
+
+
+
+
+
+El estad\'istico que resume la informaci\'on muestral respecto a la diferencia en medias poblacionales $\left(\mu_{1}-\mu_{2}\right)$ es la diferencia de las medias muestrales $\left(\overline{x}_{1}-\overline{x}_{2}\right)$, por tanto al probar la difencia entre las medias muestrales se verifica que la diferencia real entre las medias poblacionales difiere de un valor especificado, $\left(\mu_{1}-\mu_{2}\right)=D_{0}$, se puede usar el error est\'andar de $\left(\overline{x}_{1}-\overline{x}_{2}\right)$, es decir
+$$\sqrt{\frac{\sigma^{2}_{1}}{n_{1}}+\frac{\sigma^{2}_{2}}{n_{2}}}$$
+cuyo estimador est\'a dado por
+$$SE=\sqrt{\frac{s^{2}_{1}}{n_{1}}+\frac{s^{2}_{2}}{n_{2}}}$$
+
+El procedimiento para muestras grandes es:
+\begin{itemize}
+\item[1) ] \textbf{Hip\'otesis Nula} $H_{0}:\left(\mu_{1}-\mu_{2}\right)=D_{0}$,\medskip
+
+donde $D_{0}$ es el valor, la diferencia, espec\'ifico que se desea probar. En algunos casos se querr\'a demostrar que no hay diferencia alguna, es decir $D_{0}=0$.
+
+\item[2) ] \textbf{Hip\'otesis Alternativa}
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:\left(\mu_{1}-\mu_{2}\right)>D_{0}$ & $H_{1}:\left(\mu_{1}-\mu_{2}\right)\neq D_{0}$\\ 
+$H_{1}:\left(\mu_{1}-\mu_{2}\right)<D_{0}$&\\
+\end{tabular}
+
+\end{itemize}
+
+
+
+
+
+
+
+
+\begin{itemize}
+\item[3) ] Estad\'istico de prueba:
+$$z=\frac{\left(\overline{x}_{1}-\overline{x}_{2}\right)-D_{0}}{\sqrt{\frac{s^{2}_{1}}{n_{1}}+\frac{s^{2}_{2}}{n_{2}}}}$$
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$z>z_{0}$ & \\
+$z<-z_{\alpha}$ cuando $H_{1}:\left(\mu_{1}-\mu_{2}\right)<D_{0}$&$z>z_{\alpha/2}$ o $z<-z_{\alpha/2}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+
+
+\end{itemize}
+
+
+
+
+
+
+
+
+
+\begin{Ejem}
+Para determinar si ser propietario de un autom\'ovil afecta el rendimiento acad\'emico de un estudiante, se tomaron dos muestras aleatorias de 100 estudiantes varones. El promedio de calificaciones para los $n_{1}=100$ no propietarios de un auto tuvieron un promedio y varianza de $\overline{x}_{1}=2.7$ y $s_{1}^{2}=0.36$, respectivamente, mientras que para para la segunda muestra con $n_{2}=100$ propietarios de un auto, se tiene $\overline{x}_{2}=2.54$ y $s_{2}^{2}=0.4$. Los datos presentan suficiente evidencia para indicar una diferencia en la media en el rendimiento acad\'emico entre propietarios y no propietarios de un autom\'ovil? Hacer pruebas para $\alpha=0.01,0.05$ y $\alpha=0.1$.
+\end{Ejem}
+
+
+
+
+
+
+
+\begin{Sol}
+\begin{itemize}
+\item Soluci\'on utilizando la t\'ecnica de regiones de rechazo:\medskip
+realizando las operaciones
+$z=1.84$, determinar si excede los valores de $z_{\alpha/2}$.
+\item Soluci\'on utilizando el $p$-value:\medskip
+Calcular el valor de $p$, la probabilidad de que $z$ sea mayor que $z=1.84$ o menor que $z=-1.84$, se tiene que $p=0.0658$. Concluir.
+\end{itemize}
+\end{Sol}
+
+
+
+
+
+
+
+\begin{itemize}
+\item Si el intervalo de confianza que se construye contiene el valor del par\'ametro especificado por $H_{0}$, entonces ese valor es uno de los posibles valores del par\'ametro y $H_{0}$ no debe ser rechazada.
+
+\item Si el valor hipot\'etico se encuentra fuera de los l\'imites de confianza, la hip\'otesis nula es rechazada al nivel de significancia $\alpha$.
+\end{itemize}
+
+\begin{enumerate}
+\item Del libro Mendenhall resolver los ejercicios 9.18, 9.19 y 9.20(\href{https://cu.uacm.edu.mx/nextcloud/index.php/f/202873}{Mendenhall}).
+
+\item Del libro \href{https://cu.uacm.edu.mx/nextcloud/index.php/f/202873}{Mendenhall} resolver los ejercicios: 9.23, 9.26 y 9.28.
+\end{enumerate}
+
+
+
+
+
+
+
+\subsection{2.2.3 Prueba de Hip\'otesis para una Proporci\'on Binomial}
+
+
+
+
+Para una muestra aleatoria de $n$ intentos id\'enticos, de una poblaci\'on binomial, la proporci\'on muesrtal $\hat{p}$ tiene una distribuci\'on aproximadamente normal cuando $n$ es grande, con media $p$ y error est\'andar
+$$SE=\sqrt{\frac{pq}{n}}.$$
+La prueba de hip\'otesis de la forma
+\begin{eqnarray*}
+H_{0}&:&p=p_{0}\\
+H_{1}&:&p>p_{0}\textrm{, o }p<p_{0}\textrm{ o }p\neq p_{0}
+\end{eqnarray*}
+El estad\'istico de prueba se construye con el mejor estimador de la proporci\'on verdadera, $\hat{p}$, con el estad\'istico de prueba $z$, que se distribuye normal est\'andar.
+
+El procedimiento es
+\begin{itemize}
+\item[1) ] Hip\'otesis nula: $H_{0}:p=p_{0}$
+\item[2) ] Hip\'otesis alternativa
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:p>p_{0}$ & $p\neq p_{0}$\\
+$H_{1}:p<p_{0}$ & \\
+\end{tabular}
+\item[3) ] Estad\'istico de prueba:
+\begin{eqnarray*}
+z=\frac{\hat{p}-p_{0}}{\sqrt{\frac{pq}{n}}},\hat{p}=\frac{x}{n}
+\end{eqnarray*}
+donde $x$ es el n\'umero de \'exitos en $n$ intentos binomiales.
+
+\end{itemize}
+
+
+
+
+
+
+
+\begin{itemize}
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$z>z_{0}$ & \\
+$z<-z_{\alpha}$ cuando $H_{1}:p<p_{0}$&$z>z_{\alpha/2}$ o $z<-z_{\alpha/2}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+\end{itemize}
+
+
+
+
+
+
+
+\begin{Ejem}
+A cualquier edad, alrededor del $20\%$ de los adultos de cierto pa\'is realiza actividades de acondicionamiento f\'isico al menos dos veces por semana. En una encuesta local de $n=100$ adultos de m\'as de $40$ a\ ~nos, un total de 15 personas indicaron que realizaron actividad f\'isica al menos dos veces por semana. Estos datos indican que el porcentaje de participaci\'on para adultos de m\'as de 40 a\ ~nos de edad es  considerablemente menor a la cifra del $20\%$? Calcule el valor de $p$ y \'uselo para sacar las conclusiones apropiadas.
+\end{Ejem}
+
+\begin{enumerate}
+\item Resolver los ejercicios: 9.30, 9.32, 9.33, 9.35 y 9.39.
+\end{enumerate}
+
+
+
+
+
+
+\subsection{2.2.4 Prueba de Hip\'otesis diferencia entre dos Proporciones Binomiales}
+
+
+
+
+
+
+\begin{Note}
+Cuando se tienen dos muestras aleatorias independientes de dos poblaciones binomiales, el objetivo del experimento puede ser la diferencia $\left(p_{1}-p_{2}\right)$ en las proporciones de individuos u objetos que poseen una caracter\'istica especifica en las dos poblaciones. En este caso se pueden utilizar los estimadores de las dos proporciones $\left(\hat{p}_{1}-\hat{p}_{2}\right)$ con error est\'andar dado por
+$$SE=\sqrt{\frac{p_{1}q_{1}}{n_{1}}+\frac{p_{2}q_{2}}{n_{2}}}$$
+considerando el estad\'istico $z$ con un nivel de significancia $\left(1-\alpha\right)100\%$
+
+\end{Note}
+
+
+\begin{Note}
+La hip\'otesis nula a probarse es de la forma
+\begin{itemize}
+\item[$H_{0}$: ] $p_{1}=p_{2}$ o equivalentemente $\left(p_{1}-p_{2}\right)=0$, contra una hip\'otesis alternativa $H_{1}$ de una o dos colas.
+\end{itemize}
+\end{Note}
+
+
+
+
+
+
+
+\begin{Note}
+Para estimar el error est\'andar del estad\'istico $z$, se debe de utilizar el hecho de que suponiendo que $H_{0}$ es verdadera, las dos proporciones son iguales a alg\'un valor com\'un, $p$. Para obtener el mejor estimador de $p$ es
+$$p=\frac{\textrm{n\'umero total de \'exitos}}{\textrm{N\'umero total de pruebas}}=\frac{x_{1}+x_{2}}{n_{1}+n_{2}}$$
+\end{Note}
+
+
+
+\begin{itemize}
+\item[1) ] \textbf{Hip\'otesis Nula:} $H_{0}:\left(p_{1}-p_{2}\right)=0$
+\item[2) ] \textbf{Hip\'otesis Alternativa: } $H_{1}:$
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:\left(p_{1}-p_{2}\right)>0$ & $H_{1}:\left(p_{1}-p_{2}\right)\neq 0$\\ 
+$H_{1}:\left(p_{1}-p_{2}\right)<0$&\\
+\end{tabular}
+\item[3) ] Estad\'istico de prueba:
+\begin{eqnarray*}
+z=\frac{\left(\hat{p}_{1}-\hat{p}_{2}\right)}{\sqrt{\frac{p_{1}q_{1}}{n_{1}}+\frac{p_{2}q_{2}}{n_{2}}}}=\frac{\left(\hat{p}_{1}-\hat{p}_{2}\right)}{\sqrt{\frac{pq}{n_{1}}+\frac{pq}{n_{2}}}}
+\end{eqnarray*}
+donde $\hat{p_{1}}=x_{1}/n_{1}$ y $\hat{p_{2}}=x_{2}/n_{2}$ , dado que el valor com\'un para $p_{1}$ y $p_{2}$ es $p$, entonces $\hat{p}=\frac{x_{1}+x_{2}}{n_{1}+n_{2}}$ y por tanto el estad\'istico de prueba es
+\end{itemize}
+
+
+
+
+
+
+
+
+\begin{eqnarray*}
+z=\frac{\hat{p}_{1}-\hat{p}_{2}}{\sqrt{\hat{p}\hat{q}}\left(\frac{1}{n_{1}}+\frac{1}{n_{2}}\right)}
+\end{eqnarray*}
+\begin{itemize}
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$z>z_{\alpha}$ & \\
+$z<-z_{\alpha}$ cuando $H_{1}:p<p_{0}$&$z>z_{\alpha/2}$ o $z<-z_{\alpha/2}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+
+\end{itemize}
+
+
+
+
+
+
+
+
+\begin{Ejem}
+Los registros de un hospital, indican que 52 hombres de una muestra de 1000 contra 23 mujeres de una muestra de 1000 fueron ingresados por enfermedad del coraz\'on. Estos datos presentan suficiente evidencia para indicar un porcentaje m\'as alto de enfermedades del coraz\'on entre hombres ingresados al hospital?, utilizar distintos niveles de confianza de $\alpha$.
+
+\end{Ejem}
+\begin{enumerate}
+\item Resolver los ejercicios 9.42
+
+\item Resolver los ejercicios: 9.45, 9.48, 9.50
+\end{enumerate}
+
+
+
+
+
+
+
+\section{2.3 Muestras Peque\~nas}
+
+\subsection{2.3.1 Una media poblacional}
+
+
+
+
+\begin{itemize}
+\item[1) ] \textbf{Hip\'otesis Nula:} $H_{0}:\mu=\mu_{0}$
+\item[2) ] \textbf{Hip\'otesis Alternativa: } $H_{1}:$
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:\mu>\mu_{0}$ & $H_{1}:\mu\neq \mu_{0}$\\ 
+$H_{1}:\mu<\mu0$&\\
+\end{tabular}
+\item[3) ] Estad\'istico de prueba:
+\begin{eqnarray*}
+t=\frac{\overline{x}-\mu_{0}}{\sqrt{\frac{s^{2}}{n}}}
+\end{eqnarray*}
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$t>t_{\alpha}$ & \\
+$t<-t_{\alpha}$ cuando $H_{1}:\mu<mu_{0}$&$t>t_{\alpha/2}$ o $t<-t_{\alpha/2}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+\end{itemize}
+
+
+
+
+
+
+\begin{Ejem}
+Las etiquetas en latas de un gal'on de pintura por lo general indican el tiempo de secado y el \'area puede cubrir una capa. Casi todas las marcas de pintura indican que, en una capa, un gal\'on cubrir\'a entre 250 y 500 pies cuadrados, dependiento de la textura de la superficie a pintarse, un fabricante, sin embargo afirma que un gal\'on de su pintura cubrir\'a 400 pies cuadrados de \'area superficial. Para probar su afirmaci\'on, una muestra aleatoria de 10 latas de un gal\'on de pintura blanca se emple\'o para pintar 10 \'areas id\'enticas usando la misma clase de equipo. Las \'areas reales en pies cuadrados cubiertas por estos 10 galones de pintura se dan a continuac\'on:
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+310 & 311 & 412 & 368 & 447 \\ 
+\hline 
+376 & 303 &410 &365 & 350 \\ 
+\hline 
+\end{tabular} 
+\end{center}
+\end{Ejem}
+
+
+
+
+
+
+\begin{Ejem}
+Los datos presentan suficiente evidencia para indicar que el promedio de la cobertura difiere de 400 pies cuadrados? encuentre el valor de $p$ para la prueba y \'uselo para evaluar la significancia de los resultados.
+\end{Ejem}
+\begin{enumerate}
+\item Resolver los ejercicios: 10.2, 10.3,10.5, 10.7, 10.9, 10.13 y 10.16
+\end{enumerate}
+
+
+
+
+
+\subsection{2.3.2 Diferencia entre dos medias poblacionales: M.A.I.}
+
+
+
+\begin{Note}
+Cuando los tama\ ~nos de muestra son peque\ ~nos, no se puede asegurar que las medias muestrales sean normales, pero si las poblaciones originales son normales, entonces la distribuci\'on muestral de la diferencia de las medias muestales, $\left(\overline{x}_{1}-\overline{x}_{2}\right)$, ser\'a normal con media $\left(\mu_{1}-\mu_{2}\right)$ y error est\'andar $$ES=\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}$$
+
+\end{Note}
+
+\begin{itemize}
+\item[1) ] \textbf{Hip\'otesis Nula} $H_{0}:\left(\mu_{1}-\mu_{2}\right)=D_{0}$,\medskip
+
+donde $D_{0}$ es el valor, la diferencia, espec\'ifico que se desea probar. En algunos casos se querr\'a demostrar que no hay diferencia alguna, es decir $D_{0}=0$.
+
+\item[2) ] \textbf{Hip\'otesis Alternativa}
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:\left(\mu_{1}-\mu_{2}\right)>D_{0}$ & $H_{1}:\left(\mu_{1}-\mu_{2}\right)\neq D_{0}$\\ 
+$H_{1}:\left(\mu_{1}-\mu_{2}\right)<D_{0}$&\\
+\end{tabular}
+
+\item[3) ] Estad\'istico de prueba:
+$$t=\frac{\left(\overline{x}_{1}-\overline{x}_{2}\right)-D_{0}}{\sqrt{\frac{s^{2}_{1}}{n_{1}}+\frac{s^{2}_{2}}{n_{2}}}}$$
+\end{itemize}
+
+
+
+
+
+
+
+donde $$s^{2}=\frac{\left(n_{1}-1\right)s_{1}^{2}+\left(n_{2}-1\right)s_{2}^{2}}{n_{1}+n_{2}-2}$$
+\begin{itemize}
+
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$z>z_{0}$ & \\
+$z<-z_{\alpha}$ cuando $H_{1}:\left(\mu_{1}-\mu_{2}\right)<D_{0}$&$z>z_{\alpha/2}$ o $z<-z_{\alpha/2}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+Los valores cr\'iticos de $t$, $t_{-\alpha}$ y $t_{\alpha/2}$ est\'an basados en $\left(n_{1}+n_{2}-2\right)$ grados de libertad.
+
+
+\end{itemize}
+
+
+
+
+
+
+\subsection{2.3.3 Diferencia entre dos medias poblacionales: Diferencias Pareadas}
+
+
+
+
+\begin{itemize}
+\item[1) ] \textbf{Hip\'otesis Nula:} $H_{0}:\mu_{d}=0$
+\item[2) ] \textbf{Hip\'otesis Alternativa: } $H_{1}:\mu_{d}$
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:\mu_{d}>0$ & $H_{1}:\mu_{d}\neq 0$\\ 
+$H_{1}:\mu_{d}<0$&\\
+\end{tabular}
+\item[3) ] Estad\'istico de prueba:
+\begin{eqnarray*}
+t=\frac{\overline{d}}{\sqrt{\frac{s_{d}^{2}}{n}}}
+\end{eqnarray*}
+donde $n$ es el n\'umero de diferencias pareadas, $\overline{d}$ es la media de las diferencias muestrales, y $s_{d}$ es la desviaci\'on est\'andar de las diferencias muestrales.
+
+
+
+\end{itemize}
+
+
+
+
+
+
+\begin{itemize}
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$t>t_{\alpha}$ & \\
+$t<-t_{\alpha}$ cuando $H_{1}:\mu<mu_{0}$&$t>t_{\alpha/2}$ o $t<-t_{\alpha/2}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+
+Los valores cr\'iticos de $t$, $t_{-\alpha}$ y $t_{\alpha/2}$ est\'an basados en $\left(n_{1}+n_{2}-2\right)$ grados de libertad.
+
+\end{itemize}
+
+
+
+
+
+\subsection{2.3.4 Inferencias con respecto a la Varianza Poblacional}
+
+
+
+
+\begin{itemize}
+\item[1) ] \textbf{Hip\'otesis Nula:} $H_{0}:\sigma^{2}=\sigma^{2}_{0}$
+\item[2) ] \textbf{Hip\'otesis Alternativa: } $H_{1}$
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:\sigma^{2}>\sigma^{2}_{0}$ & $H_{1}:\sigma^{2}\neq \sigma^{2}_{0}$\\ 
+$H_{1}:\sigma^{2}<\sigma^{2}_{0}$&\\
+\end{tabular}
+\item[3) ] Estad\'istico de prueba:
+\begin{eqnarray*}
+\chi^{2}=\frac{\left(n-1\right)s^{2}}{\sigma^{2}_{0}}
+\end{eqnarray*}
+
+\end{itemize}
+
+
+
+
+
+
+
+\begin{itemize}
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$\chi^{2}>\chi^{2}_{\alpha}$ & \\
+$\chi^{2}<\chi^{2}_{\left(1-\alpha\right)}$ cuando $H_{1}:\chi^{2}<\chi^{2}_{0}$&$\chi^{2}>\chi^{2}_{\alpha/2}$ o $\chi^{2}<\chi^{2}_{\left(1-\alpha/2\right)}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+
+Los valores cr\'iticos de $\chi^{2}$,est\'an basados en $\left(n_{1}+\right)$ grados de libertad.
+
+\end{itemize}
+
+
+
+
+\subsection{2.3.5 Comparaci\'on de dos varianzas poblacionales}
+
+
+
+
+\begin{itemize}
+\item[1) ] \textbf{Hip\'otesis Nula} $H_{0}:\left(\sigma^{2}_{1}-\sigma^{2}_{2}\right)=D_{0}$,\medskip
+
+donde $D_{0}$ es el valor, la diferencia, espec\'ifico que se desea probar. En algunos casos se querr\'a demostrar que no hay diferencia alguna, es decir $D_{0}=0$.
+
+\item[2) ] \textbf{Hip\'otesis Alternativa}
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$H_{1}:\left(\sigma^{2}_{1}-\sigma^{2}_{2}\right)>D_{0}$ & $H_{1}:\left(\sigma^{2}_{1}-\sigma^{2}_{2}\right)\neq D_{0}$\\ 
+$H_{1}:\left(\sigma^{2}_{1}-\sigma^{2}_{2}\right)<D_{0}$&\\
+\end{tabular}
+
+\end{itemize}
+
+
+\begin{itemize}
+\item[3) ] Estad\'istico de prueba:
+$$F=\frac{s_{1}^{2}}{s_{2}^{2}}$$
+donde $s_{1}^{2}$ es la varianza muestral m\'as grande.
+\item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+\begin{tabular}{cc}\hline
+\textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
+$F>F_{\alpha}$ & $F>F_{\alpha/2}$\\
+ cuando $p<\alpha$&\\
+\end{tabular}
+
+
+\end{itemize}
+
+
+
+
+\section{Ejercicios}
+
+
+\begin{itemize}
+\item[1) ] Del libro Probabililidad y Estad\'sitica para Ingenier\'ia de Hines, Montgomery, Goldsman y Borror resolver los siguientes ejercicios: 10-9, 10-10,10-13,10-16 y 10-20.
+
+\item[2) ] Realizar un programa en R para cada una de las secciones y subsecciones revisadas en clase, para determinar intervalos de confianza.
+
+\item[3) ] Aplicar los programas elaborados en el ejercicio anterior a la siguiente lista:  10-39, 10-41, 10-45, 10-47, 10-48, 10-50, 10-52, 10-54, 10-56,10-57, 10-58, 10-65, 10-68, 10-72 y 10-73.
+
+\item[4) ]  Elaborar una rutina en R que grafique las siguientes distribuciones, permitiendo variar los par\'ametros de las distribuciones: Binomial, Uniforme continua, Gamma, Beta, Exponencial, Normal y $t$-Student.
+
+\item[5)] Presentar el primer cap\'itulo del libro del curso en formato \textit{Rnw} con su respectivo archivo \textit{pdf} generado
+\end{itemize}
+
+
+
+

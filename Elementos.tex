@@ -1,9 +1,7 @@
 %---------------------------------------------------------
 \section{Pruebas de Hip\'otesis}
 %---------------------------------------------------------
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
 \subsection*{Tipos de errores}
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
 
 \begin{itemize}
 \item Una hip\'otesis estad\'istica es una afirmaci\'on  acerca de la distribuci\'on de probabilidad de una variable aleatoria, a menudo involucran uno o m\'as par\'ametros de la distribuci\'on.
@@ -15,7 +13,6 @@
 \item el inter\'es principal es decidir sobre la veracidad o falsedad de una hip\'otesis, a este procedimiento se le llama \textit{prueba de hip\'otesis}.
 
 \item Si la informaci\'on es consistente con la hip\'otesis, se concluye que esta es verdadera, de lo contrario que con base en la informaci\'on, es falsa.
-
 \end{itemize}
 
 Una prueba de hip\'otesis est\'a formada por cinco partes
@@ -53,6 +50,7 @@ La decisi\'on de rechazar o aceptar la hip\'otesis nula est\'a basada en la info
 \item \textbf{Estad\'sitico de prueba:} un s\'olo n\'umero calculado a partir de la muestra.
 
 \item \textbf{$p$-value:} probabilidad calculada a partir del estad\'stico de prueba.
+
 \end{itemize}
 
 \begin{Def}
@@ -60,9 +58,7 @@ El $p$-value es la probabilidad de observar un estad\'istico de prueba tanto o m
 Valores grandes del estad\'stica de prueba  y valores peque\~nos de $p$ significan que se ha observado un evento muy poco probable, si $H_{0}$ en realidad es verdadera.
 \end{Def}
 
-Todo el conjunto de valores que puede tomar el estad\'istico de prueba se divide en dos regiones. Un conjunto, formado de valores que apoyan la hip\'otesis alternativa y llevan a rechazar $H_{0}$, se denomina \textbf{regi\'on de rechazo}. El otro, conformado por los valores que sustentatn la hip\'otesis nula, se le denomina \textbf{regi\'on de aceptaci\'on}.\medskip
-
-Cuando la regi\'on de rechazo est\'a en la cola izquierda de la distribuci\'on, la  prueba se denomina \textbf{prueba lateral izquierda}. Una prueba con regi\'on de rechazo en la cola derecha se le llama \textbf{prueba lateral derecha}.\medskip
+Todo el conjunto de valores que puede tomar el estad\'istico de prueba se divide en dos regiones. Un conjunto, formado de valores que apoyan la hip\'otesis alternativa y llevan a rechazar $H_{0}$, se denomina \textbf{regi\'on de rechazo}. El otro, conformado por los valores que sustentatn la hip\'otesis nula, se le denomina \textbf{regi\'on de aceptaci\'on}. Cuando la regi\'on de rechazo est\'a en la cola izquierda de la distribuci\'on, la  prueba se denomina \textbf{prueba lateral izquierda}. Una prueba con regi\'on de rechazo en la cola derecha se le llama \textbf{prueba lateral derecha}.\medskip
 
 Si el estad\'stico de prueba cae en la regi\'on de rechazo, entonces se rechaza $H_{0}$. Si el estad\'stico de prueba cae en la regi\'on de aceptaci\'on, entonces la hip\'otesis nula se acepta o la prueba se juzga como no concluyente.\medskip
 
@@ -76,14 +72,11 @@ Un \textbf{error de tipo I} para una prueba estad\'istica es el error que se tie
 \end{eqnarray*}
 
 \end{Def}
-
 Este valor $\alpha$ representa el valor m\'aximo de riesgo tolerable de rechazar incorrectamente $H_{0}$. Una vez establecido el nivel de significancia, la regi\'on de rechazo se define para poder determinar si se rechaza $H_{0}$ con un cierto nivel de confianza.
-%---------------------------------------------------------
-\section*{Muestras grandes: una media poblacional}
-%---------------------------------------------------------
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
-\subsection*{C\'alculo de valor $p$}
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+
+\section{Muestras grandes}
+\subsection*{ C\'alculo de valor $p$}
+
 \begin{Def}
 El \textbf{valor de $p$} (\textbf{$p$-value}) o nivel de significancia observado de un estad\'istico de prueba es el valor m\'as peque\~ no de $\alpha$ para el cual $H_{0}$ se puede rechazar. El riesgo de cometer un error tipo $I$, si $H_{0}$ es rechazada con base en la informaci\'on que proporciona la muestra.
 \end{Def}
@@ -112,6 +105,7 @@ $0.01\leq p$ & No rechazar & No son estad\'isticamente\\\hline
 \begin{Note}
 Para determinar el valor de $p$, encontrar el \'area en la cola despu\'es del estad\'istico de prueba. Si la prueba es de una cola, este es el valor de $p$. Si es de dos colas, \'este valor encontrado es la mitad del valor de $p$. Rechazar $H_{0}$ cuando el valor de $p<\alpha$.
 \end{Note}
+
 
 Hay dos tipos de errores al realizar una prueba de hip\'otesis
 \begin{center}
@@ -152,14 +146,15 @@ H_{0}&:& \mu=880\\
 &&\textrm{ y la hip\'otesis alternativa }H_{1}\textrm{ es }\\
 H_{1}&:& \mu\neq880
 \end{eqnarray*}
-el estimador puntual para $\mu$ es $\overline{x}$, entonces el estad\'istico de prueba es\medskip
+el estimador puntual para $\mu$ es $\overline{x}$, entonces el estad\'istico de prueba es
 \begin{eqnarray*}
 z&=&\frac{\overline{x}-\mu_{0}}{s/\sqrt{n}}\\
 &=&\frac{871-880}{21/\sqrt{50}}=-3.03
 \end{eqnarray*}
 
-Para esta prueba de  dos colas, hay que determinar los dos valores de $z_{\alpha/2}$, es decir,  $z_{\alpha/2}=\pm1.96$, como $z>z_{\alpha/2}$, $z$ cae en la zona de rechazo, por lo tanto  la gerente puede rechazar la hip\'otesis nula y concluir que el promedio efectivamente ha cambiado.\medskip
+Para esta prueba de  dos colas, hay que determinar los dos valores de $z_{\alpha/2}$, es decir,  $z_{\alpha/2}=\pm1.96$, como $z>z_{\alpha/2}$, $z$  cae en la zona de rechazo, por lo tanto  la gerente puede rechazar la hip\'otesis nula y concluir que el promedio efectivamente ha cambiado.\medskip
 La probabilidad de rechazar $H_{0}$ cuando esta es verdadera es de  $0.05$.
+
 
 Recordemos que el valor observado del estad\'istico de prueba es $z=-3.03$, la regi\'on de rechazo m\'as peque\~na que puede usarse y todav\'ia seguir rechazando $H_{0}$ es $|z|>3.03$, \\
 entonces $p=2(0.012)=0.0024$, que a su vez es menor que el nivel de significancia $\alpha$ asignado inicialmente, y adem\'as los resultados son  \textbf{altamente significativos}.
@@ -173,6 +168,7 @@ Entonces
 z_{1}&=&\frac{\overline{x}-\mu}{s/\sqrt{n}}=\frac{874.18-870}{21/\sqrt{50}}=1.41\\
 z_{1}&=&\frac{\overline{x}-\mu}{s/\sqrt{n}}=\frac{885.82-870}{21/\sqrt{50}}=5.33
 \end{eqnarray*}
+
 por lo tanto
 \begin{eqnarray*}
 \beta&=&P\left\{\textrm{aceptar }H_{0}\textrm{ cuando }H_{0}\textrm{ es falsa}\right\}\\
@@ -184,21 +180,22 @@ entonces, la potencia de la prueba es
 $$1-\beta=1-0.0793=0.9207$$ que es la probabilidad de rechazar correctamente $H_{0}$ cuando $H_{0}$ es falsa.
 \end{Ejem}
 
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+
 \subsection*{Prueba de hip\'otesis para la diferencia entre dos medias poblacionales}
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
 
 El estad\'istico que resume la informaci\'on muestral respecto a la diferencia en medias poblacionales $\left(\mu_{1}-\mu_{2}\right)$ es la diferencia de las medias muestrales $\left(\overline{x}_{1}-\overline{x}_{2}\right)$, por tanto al probar la difencia entre las medias muestrales se verifica que la diferencia real entre las medias poblacionales difiere de un valor especificado, $\left(\mu_{1}-\mu_{2}\right)=D_{0}$, se puede usar el error est\'andar de $\left(\overline{x}_{1}-\overline{x}_{2}\right)$, es decir
 $$\sqrt{\frac{\sigma^{2}_{1}}{n_{1}}+\frac{\sigma^{2}_{2}}{n_{2}}}$$
 cuyo estimador est\'a dado por
 $$SE=\sqrt{\frac{s^{2}_{1}}{n_{1}}+\frac{s^{2}_{2}}{n_{2}}}$$
-El procedimiento para muestras grandes es:
 
+El procedimiento para muestras grandes es:
 \begin{itemize}
 \item[1) ] \textbf{Hip\'otesis Nula} $H_{0}:\left(\mu_{1}-\mu_{2}\right)=D_{0}$,
+
 donde $D_{0}$ es el valor, la diferencia, espec\'ifico que se desea probar. En algunos casos se querr\'a demostrar que no hay diferencia alguna, es decir $D_{0}=0$.
 
 \item[2) ] \textbf{Hip\'otesis Alternativa}
+
 \begin{tabular}{cc}\hline
 \textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
 $H_{1}:\left(\mu_{1}-\mu_{2}\right)>D_{0}$ & $H_{1}:\left(\mu_{1}-\mu_{2}\right)\neq D_{0}$\\ 
@@ -206,8 +203,11 @@ $H_{1}:\left(\mu_{1}-\mu_{2}\right)<D_{0}$&\\
 \end{tabular}
 
 \item[3) ] Estad\'istico de prueba:
+
 $$z=\frac{\left(\overline{x}_{1}-\overline{x}_{2}\right)-D_{0}}{\sqrt{\frac{s^{2}_{1}}{n_{1}}+\frac{s^{2}_{2}}{n_{2}}}}$$
+
 \item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+
 \begin{tabular}{cc}\hline
 \textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
 $z>z_{0}$ & \\
@@ -218,7 +218,6 @@ $z<-z_{\alpha}$ cuando $H_{1}:\left(\mu_{1}-\mu_{2}\right)<D_{0}$&$z>z_{\alpha/2
 
 \begin{Ejem}
 Para determinar si ser propietario de un autom\'ovil afecta el rendimiento acad\'emico de un estudiante, se tomaron dos muestras aleatorias de 100 estudiantes varones. El promedio de calificaciones para los $n_{1}=100$ no propietarios de un auto tuvieron un promedio y varianza de $\overline{x}_{1}=2.7$ y $s_{1}^{2}=0.36$, respectivamente, mientras que para para la segunda muestra con $n_{2}=100$ propietarios de un auto, se tiene $\overline{x}_{2}=2.54$ y $s_{2}^{2}=0.4$. Los datos presentan suficiente evidencia para indicar una diferencia en la media en el rendimiento acad\'emico entre propietarios y no propietarios de un autom\'ovil? Hacer pruebas para $\alpha=0.01,0.05$ y $\alpha=0.1$.
-
 \begin{itemize}
 \item Soluci\'on utilizando la t\'ecnica de regiones de rechazo:\medskip
 realizando las operaciones
@@ -231,9 +230,9 @@ Calcular el valor de $p$, la probabilidad de que $z$ sea mayor que $z=1.84$ o me
 \item Si el valor hipot\'etico se encuentra fuera de los l\'imites de confianza, la hip\'otesis nula es rechazada al nivel de significancia $\alpha$.
 \end{itemize}
 \end{Ejem}
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+
 \subsection*{Prueba de Hip\'otesis para una Proporci\'on Binomial}
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+
 Para una muestra aleatoria de $n$ intentos id\'enticos, de una poblaci\'on binomial, la proporci\'on muesrtal $\hat{p}$ tiene una distribuci\'on aproximadamente normal cuando $n$ es grande, con media $p$ y error est\'andar
 $$SE=\sqrt{\frac{pq}{n}}.$$
 La prueba de hip\'otesis de la forma
@@ -241,23 +240,29 @@ La prueba de hip\'otesis de la forma
 H_{0}&:&p=p_{0}\\
 H_{1}&:&p>p_{0}\textrm{, o }p<p_{0}\textrm{ o }p\neq p_{0}
 \end{eqnarray*}
+
 El estad\'istico de prueba se construye con el mejor estimador de la proporci\'on verdadera, $\hat{p}$, con el estad\'istico de prueba $z$, que se distribuye normal est\'andar.
 
 El procedimiento es
 \begin{itemize}
 \item[1) ] Hip\'otesis nula: $H_{0}:p=p_{0}$
 \item[2) ] Hip\'otesis alternativa
+
 \begin{tabular}{cc}\hline
 \textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
 $H_{1}:p>p_{0}$ & $p\neq p_{0}$\\
 $H_{1}:p<p_{0}$ & \\
 \end{tabular}
+
 \item[3) ] Estad\'istico de prueba:
+
 \begin{eqnarray*}
 z=\frac{\hat{p}-p_{0}}{\sqrt{\frac{pq}{n}}},\hat{p}=\frac{x}{n}
 \end{eqnarray*}
 donde $x$ es el n\'umero de \'exitos en $n$ intentos binomiales.
+
 \item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+
 \begin{tabular}{cc}\hline
 \textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
 $z>z_{0}$ & \\
@@ -266,9 +271,11 @@ $z<-z_{\alpha}$ cuando $H_{1}:p<p_{0}$&$z>z_{\alpha/2}$ o $z<-z_{\alpha/2}$\\
 \end{tabular}
 \end{itemize}
 
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+\begin{Ejem}
+A cualquier edad, alrededor del $20\%$ de los adultos de cierto pa\'is realiza actividades de acondicionamiento f\'isico al menos dos veces por semana. En una encuesta local de $n=100$ adultos de m\'as de $40$ a\ ~nos, un total de 15 personas indicaron que realizaron actividad f\'isica al menos dos veces por semana. Estos datos indican que el porcentaje de participaci\'on para adultos de m\'as de 40 a\ ~nos de edad es  considerablemente menor a la cifra del $20\%$? Calcule el valor de $p$ y \'uselo para sacar las conclusiones apropiadas.
+\end{Ejem}
+
 \subsection*{Prueba de Hip\'otesis diferencia entre dos Proporciones Binomiales}
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
 
 Cuando se tienen dos muestras aleatorias independientes de dos poblaciones binomiales, el objetivo del experimento puede ser la diferencia $\left(p_{1}-p_{2}\right)$ en las proporciones de individuos u objetos que poseen una caracter\'istica especifica en las dos poblaciones. En este caso se pueden utilizar los estimadores de las dos proporciones $\left(\hat{p}_{1}-\hat{p}_{2}\right)$ con error est\'andar dado por
 $$SE=\sqrt{\frac{p_{1}q_{1}}{n_{1}}+\frac{p_{2}q_{2}}{n_{2}}}$$
@@ -283,23 +290,28 @@ Para estimar el error est\'andar del estad\'istico $z$, se debe de utilizar el h
 $$p=\frac{\textrm{n\'umero total de \'exitos}}{\textrm{N\'umero total de pruebas}}=\frac{x_{1}+x_{2}}{n_{1}+n_{2}}$$
 
 \begin{itemize}
-\item[1) ] \textbf{Hip\'otesis Nula:} $H_{0}:\left(p_{1}-p_{2}\right)=0$
-\item[2) ] \textbf{Hip\'otesis Alternativa: } $H_{1}:$
+\item[1) ] \textbf{Hip\'otesis Nula:}  $H_{0}:\left(p_{1}-p_{2}\right)=0$
+\item[2) ] \textbf{Hip\'otesis Alternativa: }  $H_{1}:$
+
 \begin{tabular}{cc}\hline
 \textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
 $H_{1}:\left(p_{1}-p_{2}\right)>0$ & $H_{1}:\left(p_{1}-p_{2}\right)\neq 0$\\ 
 $H_{1}:\left(p_{1}-p_{2}\right)<0$&\\
 \end{tabular}
+
 \item[3) ] Estad\'istico de prueba:
+
 \begin{eqnarray*}
 z=\frac{\left(\hat{p}_{1}-\hat{p}_{2}\right)}{\sqrt{\frac{p_{1}q_{1}}{n_{1}}+\frac{p_{2}q_{2}}{n_{2}}}}=\frac{\left(\hat{p}_{1}-\hat{p}_{2}\right)}{\sqrt{\frac{pq}{n_{1}}+\frac{pq}{n_{2}}}}
 \end{eqnarray*}
 donde $\hat{p_{1}}=x_{1}/n_{1}$ y $\hat{p_{2}}=x_{2}/n_{2}$ , dado que el valor com\'un para $p_{1}$ y $p_{2}$ es $p$, entonces $\hat{p}=\frac{x_{1}+x_{2}}{n_{1}+n_{2}}$ y por tanto el estad\'istico de prueba es
+
 \begin{eqnarray*}
 z=\frac{\hat{p}_{1}-\hat{p}_{2}}{\sqrt{\hat{p}\hat{q}}\left(\frac{1}{n_{1}}+\frac{1}{n_{2}}\right)}
 \end{eqnarray*}
-\begin{itemize}
+
 \item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+
 \begin{tabular}{cc}\hline
 \textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
 $z>z_{\alpha}$ & \\
@@ -309,27 +321,28 @@ $z<-z_{\alpha}$ cuando $H_{1}:p<p_{0}$&$z>z_{\alpha/2}$ o $z<-z_{\alpha/2}$\\
 \end{itemize}
 
 
-
-%----------------------------------------------------------------
 \section{Muestras Peque\~nas}
-%----------------------------------------------------------------
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+
 \subsection*{Una media poblacional}
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
 
 \begin{itemize}
 \item[1) ] \textbf{Hip\'otesis Nula:} $H_{0}:\mu=\mu_{0}$
 \item[2) ] \textbf{Hip\'otesis Alternativa: } $H_{1}:$
+
 \begin{tabular}{cc}\hline
 \textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
 $H_{1}:\mu>\mu_{0}$ & $H_{1}:\mu\neq \mu_{0}$\\ 
 $H_{1}:\mu<\mu0$&\\
 \end{tabular}
+
 \item[3) ] Estad\'istico de prueba:
+
 \begin{eqnarray*}
 t=\frac{\overline{x}-\mu_{0}}{\sqrt{\frac{s^{2}}{n}}}
 \end{eqnarray*}
+
 \item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+
 \begin{tabular}{cc}\hline
 \textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
 $t>t_{\alpha}$ & \\
@@ -337,9 +350,10 @@ $t<-t_{\alpha}$ cuando $H_{1}:\mu<mu_{0}$&$t>t_{\alpha/2}$ o $t<-t_{\alpha/2}$\\
  cuando $p<\alpha$&\\
 \end{tabular}
 \end{itemize}
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
-\subsection*{Diferencia entre dos medias poblacionales: Muestras Aleatorias Independientes}
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+
+
+\subsection*{Diferencia entre dos medias poblacionales: M.A.I.}
+
 Cuando los tama\ ~nos de muestra son peque\ ~nos, no se puede asegurar que las medias muestrales sean normales, pero si las poblaciones originales son normales, entonces la distribuci\'on muestral de la diferencia de las medias muestales, $\left(\overline{x}_{1}-\overline{x}_{2}\right)$, ser\'a normal con media $\left(\mu_{1}-\mu_{2}\right)$ y error est\'andar $$ES=\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}$$
 
 
@@ -349,6 +363,7 @@ Cuando los tama\ ~nos de muestra son peque\ ~nos, no se puede asegurar que las m
 donde $D_{0}$ es el valor, la diferencia, espec\'ifico que se desea probar. En algunos casos se querr\'a demostrar que no hay diferencia alguna, es decir $D_{0}=0$.
 
 \item[2) ] \textbf{Hip\'otesis Alternativa}
+
 \begin{tabular}{cc}\hline
 \textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
 $H_{1}:\left(\mu_{1}-\mu_{2}\right)>D_{0}$ & $H_{1}:\left(\mu_{1}-\mu_{2}\right)\neq D_{0}$\\ 
@@ -358,36 +373,44 @@ $H_{1}:\left(\mu_{1}-\mu_{2}\right)<D_{0}$&\\
 \item[3) ] Estad\'istico de prueba:
 $$t=\frac{\left(\overline{x}_{1}-\overline{x}_{2}\right)-D_{0}}{\sqrt{\frac{s^{2}_{1}}{n_{1}}+\frac{s^{2}_{2}}{n_{2}}}}$$
 
-
 donde $$s^{2}=\frac{\left(n_{1}-1\right)s_{1}^{2}+\left(n_{2}-1\right)s_{2}^{2}}{n_{1}+n_{2}-2}$$
 
+
 \item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+
 \begin{tabular}{cc}\hline
 \textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
 $z>z_{0}$ & \\
 $z<-z_{\alpha}$ cuando $H_{1}:\left(\mu_{1}-\mu_{2}\right)<D_{0}$&$z>z_{\alpha/2}$ o $z<-z_{\alpha/2}$\\
  cuando $p<\alpha$&\\
 \end{tabular}
-Los valores cr\'iticos de $t$, $t_{-\alpha}$ y $t_{\alpha/2}$ est\'an basados en $\left(n_{1}+n_{2}-2\right)$ grados de libertad.
+Los valores cr\'iticos de $t$, $t_{-\alpha}$ y $t_{\alpha/2}$ est\'an basados en $
+\left(n_{1}+n_{2}-2\right)$ grados de libertad.
 \end{itemize}
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+
+
 \subsection*{Diferencia entre dos medias poblacionales: Diferencias Pareadas}
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
 
 \begin{itemize}
 \item[1) ] \textbf{Hip\'otesis Nula:} $H_{0}:\mu_{d}=0$
 \item[2) ] \textbf{Hip\'otesis Alternativa: } $H_{1}:\mu_{d}$
+
 \begin{tabular}{cc}\hline
 \textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
 $H_{1}:\mu_{d}>0$ & $H_{1}:\mu_{d}\neq 0$\\ 
 $H_{1}:\mu_{d}<0$&\\
 \end{tabular}
+
 \item[3) ] Estad\'istico de prueba:
+
 \begin{eqnarray*}
 t=\frac{\overline{d}}{\sqrt{\frac{s_{d}^{2}}{n}}}
 \end{eqnarray*}
 donde $n$ es el n\'umero de diferencias pareadas, $\overline{d}$ es la media de las diferencias muestrales, y $s_{d}$ es la desviaci\'on est\'andar de las diferencias muestrales.
+
+\begin{itemize}
 \item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+
 \begin{tabular}{cc}\hline
 \textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
 $t>t_{\alpha}$ & \\
@@ -397,22 +420,29 @@ $t<-t_{\alpha}$ cuando $H_{1}:\mu<mu_{0}$&$t>t_{\alpha/2}$ o $t<-t_{\alpha/2}$\\
 
 Los valores cr\'iticos de $t$, $t_{-\alpha}$ y $t_{\alpha/2}$ est\'an basados en $\left(n_{1}+n_{2}-2\right)$ grados de libertad.
 \end{itemize}
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+
+
 \subsection*{Inferencias con respecto a la Varianza Poblacional}
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+
 \begin{itemize}
 \item[1) ] \textbf{Hip\'otesis Nula:} $H_{0}:\sigma^{2}=\sigma^{2}_{0}$
+
 \item[2) ] \textbf{Hip\'otesis Alternativa: } $H_{1}$
+
 \begin{tabular}{cc}\hline
 \textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
 $H_{1}:\sigma^{2}>\sigma^{2}_{0}$ & $H_{1}:\sigma^{2}\neq \sigma^{2}_{0}$\\ 
 $H_{1}:\sigma^{2}<\sigma^{2}_{0}$&\\
 \end{tabular}
+
 \item[3) ] Estad\'istico de prueba:
+
 \begin{eqnarray*}
 \chi^{2}=\frac{\left(n-1\right)s^{2}}{\sigma^{2}_{0}}
 \end{eqnarray*}
+
 \item[4) ] Regi\'on de rechazo: rechazar $H_{0}$ cuando
+
 \begin{tabular}{cc}\hline
 \textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
 $\chi^{2}>\chi^{2}_{\alpha}$ & \\
@@ -421,11 +451,10 @@ $\chi^{2}<\chi^{2}_{\left(1-\alpha\right)}$ cuando $H_{1}:\chi^{2}<\chi^{2}_{0}$
 \end{tabular}
 
 Los valores cr\'iticos de $\chi^{2}$,est\'an basados en $\left(n_{1}+\right)$ grados de libertad.
-
 \end{itemize}
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+
+
 \subsection*{Comparaci\'on de dos varianzas poblacionales}
-%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
 
 \begin{itemize}
 \item[1) ] \textbf{Hip\'otesis Nula} $H_{0}:\left(\sigma^{2}_{1}-\sigma^{2}_{2}\right)=D_{0}$,\medskip
@@ -433,11 +462,13 @@ Los valores cr\'iticos de $\chi^{2}$,est\'an basados en $\left(n_{1}+\right)$ gr
 donde $D_{0}$ es el valor, la diferencia, espec\'ifico que se desea probar. En algunos casos se querr\'a demostrar que no hay diferencia alguna, es decir $D_{0}=0$.
 
 \item[2) ] \textbf{Hip\'otesis Alternativa}
+
 \begin{tabular}{cc}\hline
 \textbf{Prueba de una Cola} & \textbf{Prueba de dos colas}\\\hline
 $H_{1}:\left(\sigma^{2}_{1}-\sigma^{2}_{2}\right)>D_{0}$ & $H_{1}:\left(\sigma^{2}_{1}-\sigma^{2}_{2}\right)\neq D_{0}$\\ 
 $H_{1}:\left(\sigma^{2}_{1}-\sigma^{2}_{2}\right)<D_{0}$&\\
 \end{tabular}
+
 \item[3) ] Estad\'istico de prueba:
 $$F=\frac{s_{1}^{2}}{s_{2}^{2}}$$
 donde $s_{1}^{2}$ es la varianza muestral m\'as grande.
@@ -448,5 +479,831 @@ $F>F_{\alpha}$ & $F>F_{\alpha/2}$\\
  cuando $p<\alpha$&\\
 \end{tabular}
 \end{itemize}
+
+%---------------------------------------------------------
+\section{Estimaci\'on por intervalos}
+%---------------------------------------------------------
+\subsection*{Para la media}
+
+
+Recordemos que $S^{2}$ es un estimador insesgado de $\sigma^{2}$
+\begin{Def}
+Sean $\hat{\theta}_{1}$ y $\hat{\theta}_{2}$ dos estimadores insesgados de $\theta$, par\'ametro poblacional. Si $\sigma_{\hat{\theta}_{1}}^{2}<\sigma_{\hat{\theta}_{2}}^{2}$, decimos que $\hat{\theta}_{1}$ un estimador m\'as eficaz de $\theta$ que $\hat{\theta}_{2}$.
+\end{Def}
+
+Algunas observaciones que es preciso realizar
+
+\begin{enumerate}
+\item[a) ]Para poblaciones normales, $\overline{X}$ y $\tilde{X}$ son estimadores insesgados de $\mu$, pero con $\sigma_{\overline{X}}^{2}<\sigma_{\tilde{X}_{2}}^{2}$.
+
+\item[b) ]Para las estimaciones por intervalos de $\theta$, un intervalo de la forma $\hat{\theta}_{L}<\theta<\hat{\theta}_{U}$,  $\hat{\theta}_{L}$ y $\hat{\theta}_{U}$ dependen del valor de $\hat{\theta}$.
+\item[c) ]Para $\sigma_{\overline{X}}^{2}=\frac{\sigma^{2}}{n}$, si $n\rightarrow\infty$, entonces $\hat{\theta}\rightarrow\mu$.
+
+
+Para $\sigma_{\overline{X}}^{2}=\frac{\sigma^{2}}{n}$, si $n\rightarrow\infty$,  entonces $\hat{\theta}\rightarrow\mu$.
+
+\item[d) ]Para $\hat{\theta}$ se determinan $\hat{\theta}_{L}$ y $\hat{\theta}_{U}$ de modo tal que 
+\begin{eqnarray}
+P\left\{\hat{\theta}_{L}<\hat{\theta}<\hat{\theta}_{U}\right\}=1-\alpha,
+\end{eqnarray}
+con $\alpha\in\left(0,1\right)$. Es decir, $\theta\in\left(\hat{\theta}_{L},\hat{\theta}_{U}\right)$ es un intervalo de confianza del $100\left(1-\alpha\right)\%$.
+
+\item[e) ] De acuerdo con el TLC se espera que la distribuci\'on muestral de $\overline{X}$ se distribuye aproximadamente normal con media $\mu_{X}=\mu$ y desviaci\'on est\'andar $\sigma_{\overline{X}}=\frac{\sigma}{\sqrt{n}}$.
+
+Para $Z_{\alpha/2}$ se tiene $P\left\{-Z_{\alpha/2}<Z<Z_{\alpha/2}\right\}=1-\alpha$, donde $Z=\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}$. Entonces
+$P\left\{-Z_{\alpha/2}<\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}<Z_{\alpha/2}\right\}=1-\alpha$ es equivalente a 
+$P\left\{\overline{X}-Z_{\alpha/2}\frac{\sigma}{\sqrt{n}}<\mu<\overline{X}+Z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\right\}=1-\alpha$ 
+
+\begin{enumerate}
+\item[f) ]Si $\overline{X}$ es la media muestral de una muestra de tama\~no $n$ de una poblaci\'on con varianza conocida $\sigma^{2}$, el intervalo de confianza de $100\left(1-\alpha\right)\%$ para $\mu$ es $\mu\in\left(\overline{x}-z_{\alpha/2}\frac{\sigma}{\sqrt{n}},\overline{x}+z_{\alpha/2}\frac{\sigma}{\sqrt{n}}\right)$.
+
+\item[g) ] Para muestras peque\~nas de poblaciones no normales, no se puede esperar que el grado de confianza sea preciso.
+\item[h) ] Para $n\geq30$, con distribuci\'on de forma no muy sesgada, se pueden tener buenos resultados.
+\end{enumerate}
+
+\begin{Teo}
+Si $\overline{X}$ es un estimador de $\mu$, podemos tener $100\left(1-\alpha\right)\%$  de confianza en que el error no exceder\'a a $z_{\alpha/2}\frac{\sigma}{\sqrt{n}}$, error entre $\overline{X}$ y $\mu$.
+\end{Teo}
+
+\begin{Teo}
+Si $\overline{X}$ es un estimador de $\mu$, podemos tener $100\left(1-\alpha\right)\%$  de confianza en que el error no exceder\'a una cantidad $e$ cuando el tama\~no de la muestra es $$n=\left(\frac{z_{\alpha/2}\sigma}{e}\right)^{2}.$$
+\end{Teo}
+\begin{Note}
+Para intervalos unilaterales
+$$P\left\{\frac{\overline{X}-\mu}{\sigma/\sqrt{n}}<Z_{\alpha}\right\}=1-\alpha.$$
+Equivalentemente
+$$P\left\{\mu<\overline{X}+Z_{\alpha}\frac{\sigma}{\sqrt{n}}\right\}=1-\alpha.$$
+\end{Note}
+
+Si $\overline{X}$ es la media de una muestra aleatoria de tama\~no $n$  a partir de una poblaci\'on con varianza $\sigma^{2}$, los l\'imites de confianza unilaterales del   $100\left(1-\alpha\right)\%$  de confianza para $\mu$ est\'an dados por
+\begin{itemize}
+\item L\'imite unilateral superior: $\overline{x}+z_{\alpha}\frac{\sigma}{\sqrt{n}}$
+\item L\'imite unilateral inferior: $\overline{x}-z_{\alpha}\frac{\sigma}{\sqrt{n}}$
+\end{itemize}
+
+
+\begin{itemize}
+\item Para $\sigma$ desconocida recordar que $T=\frac{\overline{x}-\mu}{s/\sqrt{n}}\sim t_{n-1}$, donde $s$ es la desviaci\'on est\'andar de la muestra. Entonces
+
+\begin{eqnarray*}
+P\left\{-t_{\alpha/2}<T<t_{\alpha/2}\right\}=1-\alpha,\textrm{equivalentemente}\\
+P\left\{\overline{X}-t_{\alpha/2}\frac{s}{\sqrt{n}}<\mu<\overline{X}+t_{\alpha/2}\frac{s}{\sqrt{n}}\right\}=1-\alpha.
+\end{eqnarray*}
+
+\item Un intervalo de confianza del $100\left(1-\alpha\right)\%$  de confianza para $\mu$, $\sigma^{2}$ desconocida y poblaci\'on normal es $\mu\in\left(\overline{x}-t_{\alpha/2}\frac{s}{\sqrt{n}},\overline{x}+t_{\alpha/2}\frac{s}{\sqrt{n}}\right)$, donde $t_{\alpha/2}$ es una $t$-student con $\nu=n-1$ grados de libertad.
+\item Los l\'imites unilaterales para $\mu$ con $\sigma$ desconocida son $\overline{X}-t_{\alpha/2}\frac{s}{\sqrt{n}}$ y $\overline{X}+t_{\alpha/2}\frac{s}{\sqrt{n}}$.
+
+\item Cuando la poblaci\'on no es normal, $\sigma$ desconocida y $n\geq30$, $\sigma$ se puede reemplazar por $s$ para obtener el intervalo de confianza para muestras grandes:
+$$\overline{X}\pm t_{\alpha/2}\frac{s}{\sqrt{n}}.$$
+
+\item El estimador de $\overline{X}$ de $\mu$,  $\sigma$ desconocida, la varianza de $\sigma_{\overline{X}}^{2}=\frac{\sigma^{2}}{n}$, el error est\'andar de $\overline{X}$ es $\sigma/\sqrt{n}$.
+
+\item Si $\sigma$ es desconocida y la poblaci\'on es normal, $s\rightarrow\sigma$ y se incluye el error est\'andar $s/\sqrt{n}$, entonces $$\overline{x}\pm t_{\alpha/2}\frac{s}{\sqrt{n}}.$$
+\end{itemize}
+%---------------------------------------------------------
+\subsection*{Intervalos de confianza sobre la varianza}
+%---------------------------------------------------------
+
+Supongamos que  $X$ se distribuye normal $\left(\mu,\sigma^{2}\right)$, desconocidas. Sea $X_{1},X_{2},\ldots,X_{n}$ muestra aleatoria de tama\~no $n$ , $s^{2}$ la varianza muestral.
+
+Se sabe que $X^{2}=\frac{\left(n-1\right)s^{2}}{\sigma^{2}}$ se distribuye $\chi^{2}_{n-1}$ grados de libertad. Su intervalo de confianza es
+\begin{eqnarray}
+\begin{array}{l}
+P\left\{\chi^{2}_{1-\frac{\alpha}{2},n-1}\leq\chi^{2}\leq\chi^{2}_{\frac{\alpha}{2},n-1}\right\}=1-\alpha\\
+P\left\{\chi^{2}_{1-\frac{\alpha}{2},n-1}\leq\frac{\left(n-1\right)s^{2}}{\sigma^{2}}\leq\chi^{2}_{\frac{\alpha}{2},n-1}\right\}=1-\alpha\\
+P\left\{\frac{\left(n-1\right)s^{2}}{\chi^{2}_{\frac{\alpha}{2},n-1}}\leq\sigma^{2}\leq\frac{\left(n-1\right)s^{2}}{\chi^{2}_{1-\frac{\alpha}{2},n-1}}\right\}=1-\alpha
+\end{array}
+\end{eqnarray}
+es decir
+
+\begin{eqnarray}
+\sigma^{2}\in\left[\frac{\left(n-1\right)s^{2}}{\chi^{2}_{\frac{\alpha}{2},n-1}},\frac{\left(n-1\right)s^{2}}{\chi^{2}_{1-\frac{\alpha}{2},n-1}}\right]
+\end{eqnarray}
+los intervalos unilaterales son
+\begin{eqnarray}
+\sigma^{2}\in\left[\frac{\left(n-1\right)s^{2}}{\chi^{2}_{\frac{\alpha}{2},n-1}},\infty\right]-
+\end{eqnarray}
+\begin{eqnarray}
+\sigma^{2}\in\left[-\infty,\frac{\left(n-1\right)s^{2}}{\chi^{2}_{1-\frac{\alpha}{2},n-1}}\right]
+\end{eqnarray}
+
+%---------------------------------------------------------
+\subsection*{Intervalos de confianza para proporciones}
+%---------------------------------------------------------
+
+Supongamos que se tienen una muestra de tama\~no $n$ de una poblaci\'on grande pero finita, y supongamos que $X$, $X\leq n$, pertenecen a la clase de inter\'es, entonces $$\hat{p}=\frac{\overline{X}}{n}$$ es el estimador puntual de la proporci\'on de la poblaci\'on que pertenece a dicha clase.
+
+$n$ y $p$ son los par\'ametros de la distribuci\'on binomial, entonces $\hat{p}\sim N\left(p,\frac{p\left(1-p\right)}{n}\right)$ aproximadamente si $p$ es distinto de $0$ y $1$; o si $n$ es suficientemente grande. Entonces
+\begin{eqnarray*}
+Z=\frac{\hat{p}-p}{\sqrt{\frac{p\left(1-p\right)}{n}}}\sim N\left(0,1\right),\textrm{aproximadamente.}
+\end{eqnarray*}
+ 
+ entonces
+\begin{eqnarray*}
+1-\alpha&=&P\left\{-z_{\alpha/2}\leq\frac{\hat{p}-p}{\sqrt{\frac{p\left(1-p\right)}{n}}}\leq z_{\alpha/2}\right\}\\
+&=&P\left\{\hat{p}-z_{\alpha/2}\sqrt{\frac{p\left(1-p\right)}{n}}\leq p\leq \hat{p}+z_{\alpha/2}\sqrt{\frac{p\left(1-p\right)}{n}}\right\}
+\end{eqnarray*}
+con $\sqrt{\frac{p\left(1-p\right)}{n}}$ error est\'andar del estimador puntual $p$. Una soluci\'on para determinar el intervalo de confianza del par\'ametro $p$ (desconocido) es
+
+\begin{eqnarray*}
+1-\alpha=P\left\{\hat{p}-z_{\alpha/2}\sqrt{\frac{\hat{p}\left(1-\hat{p}\right)}{n}}\leq p\leq \hat{p}+z_{\alpha/2}\sqrt{\frac{\hat{p}\left(1-\hat{p}\right)}{n}}\right\}
+\end{eqnarray*}
+entonces los intervalos de confianza, tanto unilaterales como de dos colas son: 
+
+\begin{itemize}
+\item $p\in \left(\hat{p}-z_{\alpha/2}\sqrt{\frac{\hat{p}\left(1-\hat{p}\right)}{n}},\hat{p}+z_{\alpha/2}\sqrt{\frac{\hat{p}\left(1-\hat{p}\right)}{n}}\right)$
+\item $p\in \left(-\infty,\hat{p}+z_{\alpha/2}\sqrt{\frac{\hat{p}\left(1-\hat{p}\right)}{n}}\right)$
+\item $p\in \left(\hat{p}-z_{\alpha/2}\sqrt{\frac{\hat{p}\left(1-\hat{p}\right)}{n}},\infty\right)$
+\end{itemize}
+
+para minimizar el error est\'andar, se propone que el tama\~no de la muestra sea $n= \left(\frac{z_{\alpha/2}}{E}\right)^{2}p\left(1-p\right)$, donde $E=\mid p-\hat{p}\mid$.
+
+%---------------------------------------------------------
+\subsection*{Intervalos de confianza para dos muestras}
+%---------------------------------------------------------
+\subsubsection*{Varianzas conocidas}
+%---------------------------------------------------------
+Sean $X_{1}$ y $X_{2}$ variables aleatorias independientes. $X_{1}$ con media desconocida $\mu_{1}$ y varianza conocida $\sigma_{1}^{2}$; y $X_{2}$ con media desconocida $\mu_{2}$ y varianza conocida $\sigma_{2}^{2}$. Se busca encontrar un intervalo de confianza de $100\left(1-\alpha\right)\%$ de la diferencia entre medias $\mu_{1}$ y $\mu_{2}$.
+
+Sean $X_{11},X_{12},\ldots,X_{1n_{1}}$ muestra aleatoria de $n_{1}$ observaciones de $X_{1}$, y sean $X_{21},X_{22},\ldots,X_{2n_{2}}$ muestra aleatoria de $n_{2}$ observaciones de $X_{2}$.\medskip
+
+Sean $\overline{X}_{1}$ y $\overline{X}_{2}$, medias muestrales, entonces el estad\'sitico 
+\begin{eqnarray}
+Z=\frac{\left(\overline{X}_{1}-\overline{X}_{2}\right)-\left(\mu_{1}-\mu_{2}\right)}{\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}}\sim N\left(0,1\right),\end{eqnarray}
+si $X_{1}$ y $X_{2}$ son normales o aproximadamente normales si se aplican las condiciones del Teorema de L\'imite Central respectivamente. 
+
+Entonces se tiene
+\begin{eqnarray*}
+1-\alpha&=& P\left\{-Z_{\alpha/2}\leq Z\leq Z_{\alpha/2}\right\}\\
+&=&P\left\{-Z_{\alpha/2}\leq \frac{\left(\overline{X}_{1}-\overline{X}_{2}\right)-\left(\mu_{1}-\mu_{2}\right)}{\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}}\leq Z_{\alpha/2}\right\}\\
+&=&P\left\{\left(\overline{X}_{1}-\overline{X}_{2}\right)-Z_{\alpha/2}\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}\leq \mu_{1}-\mu_{2}\leq\right.\\
+&&\left. \left(\overline{X}_{1}-\overline{X}_{2}\right)+Z_{\alpha/2}\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}\right\}
+\end{eqnarray*}
+
+Entonces los intervalos de confianza unilaterales y de dos colas al $\left(1-\alpha\right)\%$ de confianza son 
+
+\begin{itemize}
+\item $\mu_{1}-\mu_{2}\in \left[\left(\overline{X}_{1}-\overline{X}_{2}\right)-Z_{\alpha/2}\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}},\left(\overline{X}_{1}-\overline{X}_{2}\right)+Z_{\alpha/2}\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}\right]$
+
+\item $\mu_{1}-\mu_{2}\in \left[-\infty,\left(\overline{X}_{1}-\overline{X}_{2}\right)+Z_{\alpha/2}\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}}\right]$
+
+\item $\mu_{1}-\mu_{2}\in \left[\left(\overline{X}_{1}-\overline{X}_{2}\right)-Z_{\alpha/2}\sqrt{\frac{\sigma_{1}^{2}}{n_{1}}+\frac{\sigma_{2}^{2}}{n_{2}}},\infty\right]$
+
+\end{itemize}
+
+\begin{Note}
+Si $\sigma_{1}$ y $\sigma_{2}$ son conocidas, o por lo menos se conoce una aproximaci\'on, y los tama\~nos de las muestras $n_{1}$ y $n_{2}$ son iguales, $n_{1}=n_{2}=n$, se puede determinar el tama\~no de la muestra para que el error al estimar $\mu_{1}-\mu_{2}$ usando $\overline{X}_{1}-\overline{X}_{2}$ sea menor que $E$ (valor del error deseado) al $\left(1-\alpha\right)\%$ de confianza. El tama\~no $n$ de la muestra requerido para cada muestra es
+\begin{eqnarray*}
+n=\left(\frac{Z_{\alpha/2}}{E}\right)^{2}\left(\sigma_{1}^{2}+\sigma_{2}^{2}\right).
+\end{eqnarray*}
+
+\end{Note}
+%---------------------------------------------------------
+\subsection*{Varianzas desconocidas}
+%---------------------------------------------------------
+
+\begin{itemize}
+\item Si $n_{1},n_{2}\geq30$ se pueden utilizar los intervalos de la distribuci\'on normal para varianza conocida
+
+\item Si $n_{1},n_{2}$ son muestras peque\~nas, supongase que las poblaciones para $X_{1}$ y $X_{2}$ son normales con varianzas desconocidas y con base en el intervalo de confianza para distribuciones $t$-student
+\end{itemize}
+
+%---------------------------------------------------------
+\subsubsection*{$\sigma_{1}^{2}=\sigma_{2}^{2}=\sigma$}
+%---------------------------------------------------------
+
+Supongamos que $X_{1}$ es una variable aleatoria con media $\mu_{1}$ y varianza $\sigma_{1}^{2}$, $X_{2}$ es una variable aleatoria con media $\mu_{2}$ y varianza $\sigma_{2}^{2}$. Todos los par\'ametros son desconocidos. Sin embargo sup\'ongase que es razonable considerar que $\sigma_{1}^{2}=\sigma_{2}^{2}=\sigma^{2}$.\medskip
+
+Nuevamente sean $X_{1}$ y $X_{2}$ variables aleatorias independientes. $X_{1}$ con media desconocida $\mu_{1}$ y varianza muestral $S_{1}^{2}$; y $X_{2}$ con media desconocida $\mu_{2}$ y varianza muestral $S_{2}^{2}$. Dado que $S_{1}^{2}$ y $S_{2}^{2}$ son estimadores de $\sigma_{1}^{2}$, se propone el estimador $S$ de $\sigma^{2}$ como 
+
+\begin{eqnarray*}
+S_{p}^{2}=\frac{\left(n_{1}-1\right)S_{1}^{2}+\left(n_{2}-1\right)S_{2}^{2}}{n_{1}+n_{2}-2},
+\end{eqnarray*}
+entonces, el estad\'istico para $\mu_{1}-\mu_{2}$ es
+
+\begin{eqnarray*}
+t_{\nu}=\frac{\left(\overline{X}_{1}-\overline{X}_{2}\right)-\left(\mu_{1}-\mu_{2}\right)}{S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}}
+\end{eqnarray*}
+donde $t_{\nu}$ es una $t$ de student con $\nu=n_{1}+n_{2}-2$ grados de libertad.\medskip
+
+Por lo tanto
+
+\begin{eqnarray*}
+1-\alpha=P\left\{-t_{\alpha/2,\nu}\leq t\leq t_{\alpha/2,\nu}\right\}\\
+=P\left\{\left(\overline{X}_{1}-\overline{X}_{2}\right)-t_{\alpha/2,\nu}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}\leq \right.\\
+\left.t\leq\left(\overline{X}_{1}-\overline{X}_{2}\right)+ t_{\alpha/2,\nu}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}\right\}
+\end{eqnarray*}
+
+luego, los intervalos de confianza del $\left(1-\alpha\right)\%$ para $\mu_{1}-|mu_{2}$ son 
+\begin{itemize}
+\item $\mu_{1}-\mu_{2}\in\left[\left(\overline{X}_{1}-\overline{X}_{2}\right)- t_{\alpha/2,\nu}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}},\left(\overline{X}_{1}-\overline{X}_{2}\right)+ t_{\alpha/2,\nu}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}\right]$
+
+
+\item $\mu_{1}-\mu_{2}\in\left[-\infty,\left(\overline{X}_{1}-\overline{X}_{2}\right)+ t_{\alpha/2,\nu}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}}\right]$
+
+\item $\mu_{1}-\mu_{2}\in\left[\left(\overline{X}_{1}-\overline{X}_{2}\right)- t_{\alpha/2,\nu}S_{p}\sqrt{\frac{1}{n_{1}}+\frac{1}{n_{2}}},\infty\right]$
+\end{itemize}
+
+%---------------------------------------------------------
+\subsubsection*{$\sigma_{1}^{2}\neq\sigma_{2}^{2}$}
+%---------------------------------------------------------
+
+Si no se tiene certeza de que $\sigma_{1}^{2}=\sigma_{2}^{2}$, se propone el estad\'istico
+\begin{eqnarray}
+t^{*}=\frac{\left(\overline{X}_{1}-\overline{X}_{2}\right)-\left(\mu_{1}-\mu_{2}\right)}{\sqrt{\frac{S_{1}^{2}}{n_{1}}+\frac{S_{2}^{2}}{n_{2}}}}
+\end{eqnarray}
+que se distribuye $t$-student con $\nu$ grados de libertad, donde
+
+\begin{eqnarray*}
+\nu=\frac{\left(\frac{S_{1}^{2}}{n_{1}}+\frac{S_{2}^{2}}{n_{2}}\right)^{2}}{\frac{S_{1}^{2}/n_{1}}{n_{1}+1}+\frac{S_{2}^{2}/n_{2}}{n_{2}+1}}-2
+\end{eqnarray*}
+
+Entonces el intervalo de confianza de aproximadamente el $100\left(1-\alpha\right)\%$ para $\mu_{1}-\mu_{2}$ con $\sigma_{1}^{2}\neq\sigma_{2}^{2}$ es
+\begin{eqnarray*}
+\mu_{1}-\mu_{2}\in\left[\left(\overline{X}_{1}-\overline{X}_{2}\right)-t_{\alpha/2,\nu}\sqrt{\frac{S_{1}^{2}}{n_{1}}+\frac{S_{2}^{2}}{n_{2}}},\right.\\
+\left.\left(\overline{X}_{1}-\overline{X}_{2}\right)+t_{\alpha/2,\nu}\sqrt{\frac{S_{1}^{2}}{n_{1}}+\frac{S_{2}^{2}}{n_{2}}}\right]
+\end{eqnarray*}
+
+%---------------------------------------------------------
+\subsection*{Intervalos de confianza para raz\'on de Varianzas}
+%---------------------------------------------------------
+
+Supongamos que se toman dos muestras aleatorias independientes de las dos poblaciones de inter\'es.
+
+Sean $X_{1}$ y $X_{2}$ variables normales independientes con medias desconocidas $\mu_{1}$ y $\mu_{2}$ y varianzas desconocidas $\sigma_{1}^{2}$ y $\sigma_{2}^{2}$ respectivamente. Se busca un intervalo de confianza de $100\left(1-\alpha\right)\%$ para $\sigma_{1}^{2}/\sigma_{2}^{2}$.\medskip
+Supongamos $n_{1}$ y $n_{2}$ muestras aleatorias de $X_{1}$ y $X_{2}$ y sean $S_{1}^{2}$ y $S_{2}^{2}$ varianzas muestralres. Se sabe que 
+$$F=\frac{S_{2}^{2}/\sigma_{2}^{2}}{S_{1}^{2}/\sigma_{1}^{2}}$$
+se distribuye $F$ con $n_{2}-1$ y $n_{1}-1$ grados de libertad.
+
+Por lo tanto
+\begin{eqnarray*}
+P\left\{F_{1-\frac{\alpha}{2},n_{2}-1,n_{1}-1}\leq F\leq F_{\frac{\alpha}{2},n_{2}-1,n_{1}-1}\right\}=1-\alpha\\
+P\left\{F_{1-\frac{\alpha}{2},n_{2}-1,n_{1}-1}\leq \frac{S_{2}^{2}/\sigma_{2}^{2}}{S_{1}^{2}/\sigma_{1}^{2}}\leq F_{\frac{\alpha}{2},n_{2}-1,n_{1}-1}\right\}=1-\alpha
+\end{eqnarray*}
+por lo tanto
+\begin{eqnarray*}
+P\left\{\frac{S_{1}^{2}}{S_{2}^{2}}F_{1-\frac{\alpha}{2},n_{2}-1,n_{1}-1}\leq \frac{\sigma_{1}^{2}}{\sigma_{2}^{2}}\leq \frac{S_{1}^{2}}{S_{2}^{2}}F_{\frac{\alpha}{2},n_{2}-1,n_{1}-1}\right\}=1-\alpha\\
+\end{eqnarray*}
+entonces
+
+
+\begin{eqnarray*}
+\frac{\sigma_{1}^{2}}{\sigma_{2}^{2}}\in \left[\frac{S_{1}^{2}}{S_{2}^{2}}F_{1-\frac{\alpha}{2},n_{2}-1,n_{1}-1}, \frac{S_{1}^{2}}{S_{2}^{2}}F_{\frac{\alpha}{2},n_{2}-1,n_{1}-1}\right]
+\end{eqnarray*}
+donde
+\begin{eqnarray*}
+F_{1-\frac{\alpha}{2},n_{2}-1,n_{1}-1}=\frac{1}{F_{\frac{\alpha}{2},n_{2}-1,n_{1}-1}}
+\end{eqnarray*}
+%---------------------------------------------------------
+\subsection*{Intervalos de confianza para diferencia de proporciones}
+%---------------------------------------------------------
+Sean dos proporciones de inter\'es $p_{1}$ y $p_{2}$. Se busca un intervalo para $p_{1}-p_{2}$ al $100\left(1-\alpha\right)\%$. Sean dos muestras independientes de tama\~no $n_{1}$ y $n_{2}$ de poblaciones infinitas de modo que $X_{1}$ y $X_{2}$ variables aleatorias binomiales independientes con par\'ametros $\left(n_{1},p_{1}\right)$ y $\left(n_{2},p_{2}\right)$.  $X_{1}$ y $X_{2}$ son  el n\'umero de observaciones que pertenecen a la clase de inter\'es correspondientes. Entonces $\hat{p}_{1}=\frac{X_{1}}{n_{1}}$ y $\hat{p}_{2}=\frac{X_{2}}{n_{2}}$ son estimadores de $p_{1}$ y $p_{2}$ respectivamente. Supongamos que se cumple la aproximaci\'on  normal a la binomial, entonces
+
+\begin{eqnarray*}
+Z=\frac{\left(\hat{p}_{1}-\hat{p}_{2}\right)-\left(p_{1}-p_{2}\right)}{\sqrt{\frac{p_{1}\left(1-p_{1}\right)}{n_{1}}-\frac{p_{2}\left(1-p_{2}\right)}{n_{2}}}}\sim N\left(0,1\right)\textrm{aproximadamente}
+\end{eqnarray*}
+entonces
+
+\begin{eqnarray*}
+\left(\hat{p}_{1}-\hat{p}_{2}\right)-Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}_{1}\left(1-\hat{p}_{1}\right)}{n_{1}}+\frac{\hat{p}_{2}\left(1-\hat{p}_{2}\right)}{n_{2}}}\leq p_{1}-p_{2}\\
+\leq\left(\hat{p}_{1}-\hat{p}_{2}\right)+Z_{\frac{\alpha}{2}}\sqrt{\frac{\hat{p}_{1}\left(1-\hat{p}_{1}\right)}{n_{1}}-\frac{\hat{p}_{2}\left(1-\hat{p}_{2}\right)}{n_{2}}}
+\end{eqnarray*}
+
+\begin{itemize}
+\item Una hip\'otesis estad\'istica es una afirmaci\'on  acerca de la distribuci\'on de probabilidad de una variable aleatoria, a menudo involucran uno o m\'as par\'ametros de la distribuci\'on.
+
+\item Las hip\'otesis son afirmaciones respecto a la poblaci\'on o distribuci\'on bajo estudio, no en torno a la muestra.
+
+\item La mayor\'ia de las veces, la prueba de hip\'otesis consiste en determinar si la situaci \'on experimental ha cambiado
+
+\item el inter\'es principal es decidir sobre la veracidad o falsedad de una hip\'otesis, a este procedimiento se le llama \textit{prueba de hip\'otesis}.
+
+\item Si la informaci\'on es consistente con la hip\'otesis, se concluye que esta es verdadera, de lo contrario que con base en la informaci\'on, es falsa.
+
+\end{itemize}
+
+%---------------------------------------------------------
+\section{An\'alisis de Regresion Lineal (RL)}
+%---------------------------------------------------------
+
+En muchos problemas hay dos o m\'as variables relacionadas, para medir el grado de relaci\'on se utiliza el \textbf{an\'alisis de regresi\'on}.  Supongamos que se tiene una \'unica variable dependiente, $y$, y varias  variables independientes, $x_{1},x_{2},\ldots,x_{n}$. La variable $y$ es una varaible aleatoria, y las variables independientes pueden ser distribuidas independiente o conjuntamente. 
+
+%---------------------------------------------------------
+\subsection*{Regresi\'on Lineal Simple (RLS)}
+%---------------------------------------------------------
+A la relaci\'on entre estas variables se le denomina modelo regresi\'on de $y$ en $x_{1},x_{2},\ldots,x_{n}$, por ejemplo $y=\phi\left(x_{1},x_{2},\ldots,x_{n}\right)$, lo que se busca es una funci\'on que mejor aproxime a $\phi\left(\cdot\right)$.
+
+Supongamos que de momento solamente se tienen una variable independiente $x$, para la variable de respuesta $y$. Y supongamos que la relaci\'on que hay entre $x$ y $y$ es una l\'inea recta, y que para cada observaci\'on de $x$, $y$ es una variable aleatoria.
+
+El valor esperado de $y$ para cada valor de $x$ es
+\begin{eqnarray}
+E\left(y|x\right)=\beta_{0}+\beta_{1}x
+\end{eqnarray}
+$\beta_{0}$ es la ordenada al or\'igen y $\beta_{1}$ la pendiente de la recta en cuesti\'on, ambas constantes desconocidas. 
+
+%---------------------------------------------------------
+\subsection*{M\'etodo de M\'inimos Cuadrados}
+%---------------------------------------------------------
+Supongamos que cada observaci\'on $y$ se puede describir por el modelo
+\begin{eqnarray}\label{Modelo.Regresion}
+y=\beta_{0}+\beta_{1}x+\epsilon
+\end{eqnarray}
+donde $\epsilon$ es un error aleatorio con media cero y varianza $\sigma^{2}$. Para cada valor $y_{i}$ se tiene $\epsilon_{i}$ variables aleatorias no correlacionadas, cuando se incluyen en el modelo \ref{Modelo.Regresion}, este se le llama \textit{modelo de regresi\'on lineal simple}.
+
+
+Suponga que se tienen $n$ pares de observaciones $\left(x_{1},y_{1}\right),\left(x_{2},y_{2}\right),\ldots,\left(x_{n},y_{n}\right)$, estos datos pueden utilizarse para estimar los valores de $\beta_{0}$ y $\beta_{1}$. Esta estimaci\'on es por el \textbf{m\'etodos de m\'inimos cuadrados}.
+
+Entonces la ecuaci\'on \ref{Modelo.Regresion} se puede reescribir como
+\begin{eqnarray}\label{Modelo.Regresion.dos}
+y_{i}=\beta_{0}+\beta_{1}x_{i}+\epsilon_{i},\textrm{ para }i=1,2,\ldots,n.
+\end{eqnarray}
+Si consideramos la suma de los cuadrados de los errores aleatorios, es decir, el cuadrado de la diferencia entre las observaciones con la recta de regresi\'on
+\begin{eqnarray}
+L=\sum_{i=1}^{n}\epsilon^{2}=\sum_{i=1}^{n}\left(y_{i}-\beta_{0}-\beta_{1}x_{i}\right)^{2}
+\end{eqnarray}
+
+Para obtener los estimadores por m\'inimos cuadrados de $\beta_{0}$ y $\beta_{1}$, $\hat{\beta}_{0}$ y $\hat{\beta}_{1}$, es preciso calcular las derivadas parciales con respecto a $\beta_{0}$ y $\beta_{1}$, igualar a cero y resolver el sistema de ecuaciones lineales resultante:
+\begin{eqnarray*}
+\frac{\partial L}{\partial \beta_{0}}=0\\
+\frac{\partial L}{\partial \beta_{1}}=0\\
+\end{eqnarray*}
+evaluando en $\hat{\beta}_{0}$ y $\hat{\beta}_{1}$, se tiene
+%\end{frame}
+%\begin{frame}\frametitle{M\'inimos Cuadrados}
+\begin{eqnarray*}
+-2\sum_{i=1}^{n}\left(y_{i}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{i}\right)&=&0\\
+-2\sum_{i=1}^{n}\left(y_{i}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{i}\right)x_{i}&=&0
+\end{eqnarray*}
+simplificando
+\begin{eqnarray*}
+n\hat{\beta}_{0}+\hat{\beta}_{1}\sum_{i=1}^{n}x_{i}&=&\sum_{i=1}^{n}y_{i}\\
+\hat{\beta}_{0}\sum_{i=1}^{n}x_{i}+\hat{\beta}_{1}\sum_{i=1}^{n}x_{i}^{2}&=&\sum_{i=1}^{n}x_{i}y_{i}
+\end{eqnarray*}
+
+Las ecuaciones anteriores se les denominan \textit{ecuaciones normales de m\'inimos cuadrados} con soluci\'on
+\begin{eqnarray}\label{Ecs.Estimadores.Regresion}
+\hat{\beta}_{0}&=&\overline{y}-\hat{\beta}_{1}\overline{x}\\
+\hat{\beta}_{1}&=&\frac{\sum_{i=1}^{n}x_{i}y_{i}-\frac{1}{n}\left(\sum_{i=1}^{n}y_{i}\right)\left(\sum_{i=1}^{n}x_{i}\right)}{\sum_{i=1}^{n}x_{i}^{2}-\frac{1}{n}\left(\sum_{i=1}^{n}x_{i}\right)^{2}}
+\end{eqnarray}
+entonces el modelo de regresi\'on lineal simple ajustado es
+\begin{eqnarray}
+\hat{y}=\hat{\beta}_{0}+\hat{\beta}_{1}x
+\end{eqnarray}
+
+Se intrduce la siguiente notaci\'on
+\begin{eqnarray}
+S_{xx}&=&\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}=\sum_{i=1}^{n}x_{i}^{2}-\frac{1}{n}\left(\sum_{i=1}^{n}x_{i}\right)^{2}\\
+S_{xy}&=&\sum_{i=1}^{n}y_{i}\left(x_{i}-\overline{x}\right)=\sum_{i=1}^{n}x_{i}y_{i}-\frac{1}{n}\left(\sum_{i=1}^{n}x_{i}\right)\left(\sum_{i=1}^{n}y_{i}\right)
+\end{eqnarray}
+y por tanto
+
+\begin{eqnarray}
+\hat{\beta}_{1}=\frac{S_{xy}}{S_{xx}}
+\end{eqnarray}
+%---------------------------------------------------------
+\subsection*{Propiedades de los Estimadores $\hat{\beta}_{0}$ y $\hat{\beta}_{1}$}
+%---------------------------------------------------------
+\begin{itemize}
+\item Las propiedades estad\'isticas de los estimadores de m\'inimos cuadrados son \'utiles para evaluar la suficiencia del modelo.
+
+\item Dado que $\hat{\beta}_{0}$ y  $\hat{\beta}_{1}$ son combinaciones lineales de las variables aleatorias $y_{i}$, tambi\'en resultan ser variables aleatorias.
+\end{itemize}
+
+A saber
+\begin{eqnarray*}
+E\left(\hat{\beta}_{1}\right)&=&E\left(\frac{S_{xy}}{S_{xx}}\right)=\frac{1}{S_{xx}}E\left(\sum_{i=1}^{n}y_{i}\left(x_{i}-\overline{x}\right)\right)
+\end{eqnarray*}
+%\end{frame}
+
+\begin{eqnarray*}
+&=&\frac{1}{S_{xx}}E\left(\sum_{i=1}^{n}\left(\beta_{0}+\beta_{1}x_{i}+\epsilon_{i}\right)\left(x_{i}-\overline{x}\right)\right)\\
+&=&\frac{1}{S_{xx}}\left[\beta_{0}E\left(\sum_{k=1}^{n}\left(x_{k}-\overline{x}\right)\right)+E\left(\beta_{1}\sum_{k=1}^{n}x_{k}\left(x_{k}-\overline{x}\right)\right)\right.\\
+&+&\left.E\left(\sum_{k=1}^{n}\epsilon_{k}\left(x_{k}-\overline{x}\right)\right)\right]=\frac{1}{S_{xx}}\beta_{1}S_{xx}=\beta_{1}
+\end{eqnarray*}
+por lo tanto 
+\begin{equation}\label{Esperanza.Beta.1}
+E\left(\hat{\beta}_{1}\right)=\beta_{1}
+\end{equation}
+
+Es decir, $\hat{\beta_{1}}$ es un estimador insesgado.
+
+Ahora calculemos la varianza:
+\begin{eqnarray*}
+V\left(\hat{\beta}_{1}\right)&=&V\left(\frac{S_{xy}}{S_{xx}}\right)=\frac{1}{S_{xx}^{2}}V\left(\sum_{k=1}^{n}y_{k}\left(x_{k}-\overline{x}\right)\right)\\
+&=&\frac{1}{S_{xx}^{2}}\sum_{k=1}^{n}V\left(y_{k}\left(x_{k}-\overline{x}\right)\right)=\frac{1}{S_{xx}^{2}}\sum_{k=1}^{n}\sigma^{2}\left(x_{k}-\overline{x}\right)^{2}\\
+&=&\frac{\sigma^{2}}{S_{xx}^{2}}\sum_{k=1}^{n}\left(x_{k}-\overline{x}\right)^{2}=\frac{\sigma^{2}}{S_{xx}}
+\end{eqnarray*}
+
+por lo tanto
+\begin{equation}\label{Varianza.Beta.1}
+V\left(\hat{\beta}_{1}\right)=\frac{\sigma^{2}}{S_{xx}}
+\end{equation}
+\begin{Prop}
+\begin{eqnarray*}
+E\left(\hat{\beta}_{0}\right)&=&\beta_{0},\\
+V\left(\hat{\beta}_{0}\right)&=&\sigma^{2}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right),\\
+Cov\left(\hat{\beta}_{0},\hat{\beta}_{1}\right)&=&-\frac{\sigma^{2}\overline{x}}{S_{xx}}.
+\end{eqnarray*}
+\end{Prop}
+
+Para estimar $\sigma^{2}$ es preciso definir la diferencia entre la observaci\'on $y_{k}$, y el valor predecido $\hat{y}_{k}$, es decir
+\begin{eqnarray*}
+e_{k}=y_{k}-\hat{y}_{k},\textrm{ se le denomina \textbf{residuo}.}
+\end{eqnarray*}
+La suma de los cuadrados de los errores de los reisduos, \textit{suma de cuadrados del error}
+\begin{eqnarray}
+SC_{E}=\sum_{k=1}^{n}e_{k}^{2}=\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)^{2}
+\end{eqnarray}
+
+sustituyendo $\hat{y}_{k}=\hat{\beta}_{0}+\hat{\beta}_{1}x_{k}$ se obtiene
+\begin{eqnarray*}
+SC_{E}&=&\sum_{k=1}^{n}y_{k}^{2}-n\overline{y}^{2}-\hat{\beta}_{1}S_{xy}=S_{yy}-\hat{\beta}_{1}S_{xy},\\
+E\left(SC_{E}\right)&=&\left(n-2\right)\sigma^{2},\textrm{ por lo tanto}\\
+\hat{\sigma}^{2}&=&\frac{SC_{E}}{n-2}=MC_{E}\textrm{ es un estimador insesgado de }\sigma^{2}.
+\end{eqnarray*}
+
+\subsection*{Prueba de Hip\'otesis en RLS}
+
+Para evaluar la suficiencia del modelo de regresi\'on lineal simple, es necesario lleva a cabo una prueba de hip\'otesis respecto de los par\'ametros del modelo as\'i como de la construcci\'on de intervalos de confianza. Para poder realizar la prueba de hip\'otesis sobre la pendiente y la ordenada al or\'igen de la recta de regresi\'on es necesario hacer el supuesto de que el error $\epsilon_{i}$ se distribuye normalmente, es decir $\epsilon_{i} \sim N\left(0,\sigma^{2}\right)$.
+
+Suponga que se desea probar la hip\'otesis de que la pendiente es igual a una constante, $\beta_{0,1}$ las hip\'otesis Nula y Alternativa son:
+
+\begin{centering}
+\begin{itemize}
+\item[$H_{0}$: ] $\beta_{1}=\beta_{1,0}$,
+
+\item[$H_{1}$: ]$\beta_{1}\neq\beta_{1,0}$.
+
+\end{itemize}
+donde dado que las $\epsilon_{i} \sim N\left(0,\sigma^{2}\right)$, se tiene que $y_{i}$ son variables aleatorias normales $N\left(\beta_{0}+\beta_{1}x_{1},\sigma^{2}\right)$. 
+\end{centering}
+
+De las ecuaciones (\ref{Ecs.Estimadores.Regresion}) se desprende que $\hat{\beta}_{1}$ es combinaci\'on lineal de variables aleatorias normales independientes, es decir, $\hat{\beta}_{1}\sim N\left(\beta_{1},\sigma^{2}/S_{xx}\right)$, recordar las ecuaciones (\ref{Esperanza.Beta.1}) y (\ref{Varianza.Beta.1}).
+
+Entonces se tiene que el estad\'istico de prueba apropiado es
+\begin{equation}\label{Estadistico.Beta.1}
+t_{0}=\frac{\hat{\beta}_{1}-\hat{\beta}_{1,0}}{\sqrt{MC_{E}/S_{xx}}}
+\end{equation}
+que se distribuye $t$ con $n-2$ grados de libertad bajo $H_{0}:\beta_{1}=\beta_{1,0}$. Se rechaza $H_{0}$ si 
+\begin{equation}\label{Zona.Rechazo.Beta.1}
+t_{0}|>t_{\alpha/2,n-2}.
+\end{equation}
+
+Para $\beta_{0}$ se puede proceder de manera an\'aloga para
+\begin{itemize}
+\item[$H_{0}:$] $\beta_{0}=\beta_{0,0}$,
+\item[$H_{1}:$] $\beta_{0}\neq\beta_{0,0}$,
+\end{itemize}
+con $\hat{\beta}_{0}\sim N\left(\beta_{0},\sigma^{2}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right)\right)$, por lo tanto
+
+\begin{equation}\label{Estadistico.Beta.0}
+t_{0}=\frac{\hat{\beta}_{0}-\beta_{0,0}}{MC_{E}\left[\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right]},
+\end{equation}
+con el que rechazamos la hip\'otesis nula si
+\begin{equation}\label{Zona.Rechazo.Beta.0}
+t_{0}|>t_{\alpha/2,n-2}.
+\end{equation}
+
+No rechazar $H_{0}:\beta_{1}=0$ es equivalente a decir que no hay relaci\'on lineal entre $x$ y $y$.  Alternativamente, si $H_{0}:\beta_{1}=0$ se rechaza, esto implica que $x$ explica la variabilidad de $y$, es decir, podr\'ia significar que la l\'inea recta esel modelo adecuado.
+
+El procedimiento de prueba para $H_{0}:\beta_{1}=0$ puede realizarse de la siguiente manera:
+\begin{eqnarray*}
+S_{yy}&=&\sum_{k=1}^{n}\left(y_{k}-\overline{y}\right)^{2}=\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)^{2}+\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)^{2}\\
+&=&\sum_{k=1}^{n}\left(y_{k}-\overline{y}\right)^{2}=\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}+\hat{y}_{k}-\overline{y}\right)^{2}\\
+&=&\sum_{k=1}^{n}\left[\left(\hat{y}_{k}-\overline{y}\right)+\left(y_{k}-\hat{y}_{k}\right)\right]^{2}\\
+&=&\sum_{k=1}^{n}\left[\left(\hat{y}_{k}-\overline{y}\right)^{2}+2\left(\hat{y}_{k}-\overline{y}\right)\left(y_{k}-\hat{y}_{k}\right)+\left(y_{k}-\hat{y}_{k}\right)^{2}\right]\\
+&=&\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)^{2}+2\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)\left(y_{k}-\hat{y}_{k}\right)+\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)^{2}\\
+&&\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)\left(y_{k}-\hat{y}_{k}\right)=\sum_{k=1}^{n}\hat{y}_{k}\left(y_{k}-\hat{y}_{k}\right)-\sum_{k=1}^{n}\overline{y}\left(y_{k}-\hat{y}_{k}\right)\\
+&=&\sum_{k=1}^{n}\hat{y}_{k}\left(y_{k}-\hat{y}_{k}\right)-\overline{y}\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)\\
+&=&\sum_{k=1}^{n}\left(\hat{\beta}_{0}+\hat{\beta}_{1}x_{k}\right)\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)-\overline{y}\sum_{k=1}^{n}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)\\
+&=&\sum_{k=1}^{n}\hat{\beta}_{0}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)+\sum_{k=1}^{n}\hat{\beta}_{1}x_{k}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)\\
+&-&\overline{y}\sum_{k=1}^{n}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)\\
+&=&\hat{\beta}_{0}\sum_{k=1}^{n}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)+\hat{\beta}_{1}\sum_{k=1}^{n}x_{k}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)\\
+&-&\overline{y}\sum_{k=1}^{n}\left(y_{k}-\hat{\beta}_{0}-\hat{\beta}_{1}x_{k}\right)=0+0+0=0.
+\end{eqnarray*}
+
+Por lo tanto, efectivamente se tiene
+
+\begin{equation}\label{Suma.Total.Cuadrados}
+S_{yy}=\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)^{2}+\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)^{2},
+\end{equation}
+
+donde se hacen las definiciones
+
+\begin{eqnarray}
+SC_{E}&=&\sum_{k=1}^{n}\left(\hat{y}_{k}-\overline{y}\right)^{2}\cdots\textrm{Suma de Cuadrados del Error}\\
+SC_{R}&=&\sum_{k=1}^{n}\left(y_{k}-\hat{y}_{k}\right)^{2}\cdots\textrm{ Suma de Regresi\'on de Cuadrados}
+\end{eqnarray}
+
+Por lo tanto la ecuaci\'on (\ref{Suma.Total.Cuadrados}) se puede reescribir como 
+
+\begin{equation}\label{Suma.Total.Cuadrados.Dos}
+S_{yy}=SC_{R}+SC_{E}
+\end{equation}
+
+recordemos que $SC_{E}=S_{yy}-\hat{\beta}_{1}S_{xy}$
+
+\begin{eqnarray*}
+S_{yy}&=&SC_{R}+\left( S_{yy}-\hat{\beta}_{1}S_{xy}\right)\\
+S_{xy}&=&\frac{1}{\hat{\beta}_{1}}SC_{R}
+\end{eqnarray*}
+
+$S_{xy}$ tiene $n-1$ grados de libertad y $SC_{R}$ y $SC_{E}$ tienen 1 y $n-2$ grados de libertad respectivamente.
+
+\begin{Prop}
+\begin{equation}
+E\left(SC_{R}\right)=\sigma^{2}+\beta_{1}S_{xx}
+\end{equation}
+adem\'as, $SC_{E}$ y $SC_{R}$ son independientes.
+\end{Prop}
+
+Recordemos que $\hat{\beta}_{1}=\frac{S_{xy}}{S_{xx}}$. Para $H_{0}:\beta_{1}=0$ verdadera,
+
+\begin{eqnarray*}
+F_{0}=\frac{SC_{R}/1}{SC_{E}/(n-2)}=\frac{MC_{R}}{MC_{E}}
+\end{eqnarray*}
+
+se distribuye $F_{1,n-2}$, y se rechazar\'ia $H_{0}$ si $F_{0}>F_{\alpha,1,n-2}$.
+
+El procedimiento de prueba de hip\'otesis puede presentarse como la tabla de an\'alisis de varianza siguiente
+
+\begin{tabular}{lcccc}\hline
+Fuente de & Suma de  &  Grados de  & Media  & $F_{0}$ \\ 
+ variaci\'on & Cuadrados & Libertad & Cuadr\'atica & \\\hline
+ Regresi\'on & $SC_{R}$ & 1 & $MC_{R}$  & $MC_{R}/MC_{E}$\\
+ Error Residual & $SC_{E}$ & $n-2$ & $MC_{E}$ & \\\hline
+ Total & $S_{yy}$ & $n-1$ & & \\\hline
+\end{tabular} 
+
+La prueba para la significaci\'on de la regresi\'on puede desarrollarse bas\'andose en la expresi\'on (\ref{Estadistico.Beta.1}), con $\hat{\beta}_{1,0}=0$, es decir
+
+\begin{equation}\label{Estadistico.Beta.1.Cero}
+t_{0}=\frac{\hat{\beta}_{1}}{\sqrt{MC_{E}/S_{xx}}}
+\end{equation}
+
+Elevando al cuadrado ambos t\'erminos:
+
+\begin{eqnarray*}
+t_{0}^{2}=\frac{\hat{\beta}_{1}^{2}S_{xx}}{MC_{E}}=\frac{\hat{\beta}_{1}S_{xy}}{MC_{E}}=\frac{MC_{R}}{MC_{E}}
+\end{eqnarray*}
+
+Observar que $t_{0}^{2}=F_{0}$, por tanto la prueba que se utiliza para $t_{0}$ es la misma que para $F_{0}$.
+
+%---------------------------------------------------------
+\subsection*{Estimaci\'on de Intervalos en RLS}
+%---------------------------------------------------------
+
+Adem\'as de la estimaci\'on puntual para los par\'ametros $\beta_{1}$ y $\beta_{0}$, es posible obtener estimaciones del intervalo de confianza de estos par\'ametros. El ancho de estos intervalos de confianza es una medida de la calidad total de la recta de regresi\'on.
+
+
+Si los $\epsilon_{k}$ se distribuyen normal e independientemente, entonces
+
+\begin{eqnarray*}
+\begin{array}{ccc}
+\frac{\left(\hat{\beta}_{1}-\beta_{1}\right)}{\sqrt{\frac{MC_{E}}{S_{xx}}}}&y &\frac{\left(\hat{\beta}_{0}-\beta_{0}\right)}{\sqrt{MC_{E}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right)}}
+\end{array}
+\end{eqnarray*}
+
+se distribuyen $t$ con $n-2$ grados de libertad. Por tanto un intervalo de confianza de $100\left(1-\alpha\right)\%$ para $\beta_{1}$ est\'a dado por
+
+\begin{eqnarray}
+\hat{\beta}_{1}-t_{\alpha/2,n-2}\sqrt{\frac{MC_{E}}{S_{xx}}}\leq \beta_{1}\leq\hat{\beta}_{1}+t_{\alpha/2,n-2}\sqrt{\frac{MC_{E}}{S_{xx}}}.
+\end{eqnarray}
+
+De igual manera, para $\beta_{0}$ un intervalo de confianza al $100\left(1-\alpha\right)\%$ es
+
+\begin{eqnarray}
+\begin{array}{l}
+\hat{\beta}_{0}-t_{\alpha/2,n-2}\sqrt{MC_{E}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right)}\leq\beta_{0}\leq\hat{\beta}_{0}+t_{\alpha/2,n-2}\sqrt{MC_{E}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right)}
+\end{array}
+\end{eqnarray}
+%---------------------------------------------------------
+\subsection*{Predicci\'on}
+%---------------------------------------------------------
+Supongamos que se tiene un valor $x_{0}$ de inter\'es, entonces la estimaci\'on puntual de este nuevo valor
+
+\begin{equation}
+\hat{y}_{0}=\hat{\beta}_{0}+\hat{\beta}_{1}x_{0}
+\end{equation}
+
+
+Esta nueva observaci\'on es independiente de las utilizadas para obtener el modelo de regresi\'on, por tanto, el intervalo en torno a la recta de regresi\'on es inapropiado, puesto que se basa \'unicamente en los datos empleados para ajustar el modelo de regresi\'on.
+
+El intervalo de confianza en torno a la recta de regresi\'on se refiere a la respuesta media verdadera $x=x_{0}$, no a observaciones futuras.
+
+Sea $y_{0}$ la observaci\'on futura en $x=x_{0}$, y sea $\hat{y}_{0}$ dada en la ecuaci\'on anterior, el estimador de $y_{0}$. Si se define la variable aleatoria $$w=y_{0}-\hat{y}_{0},$$ esta se distribuye normalmente con media cero y varianza $$V\left(w\right)=\sigma^{2}\left[1+\frac{1}{n}+\frac{\left(x-x_{0}\right)^2}{S_{xx}}\right]$$
+dado que $y_{0}$ es independiente de $\hat{y}_{0}$, por lo tanto el intervalo de predicci\'on al nivel $\alpha$ para futuras observaciones $x_{0}$ es
+
+
+\begin{eqnarray*}
+\hat{y}_{0}-t_{\alpha/2,n-2}\sqrt{MC_{E}\left[1+\frac{1}{n}+\frac{\left(x-x_{0}\right)^2}{S_{xx}}\right]}\leq y_{0}\\
+\leq \hat{y}_{0}+t_{\alpha/2,n-2}\sqrt{MC_{E}\left[1+\frac{1}{n}+\frac{\left(x-x_{0}\right)^2}{S_{xx}}\right]}.
+\end{eqnarray*}
+%---------------------------------------------------------
+\subsection*{Prueba de falta de ajuste}
+%---------------------------------------------------------
+Es com\'un encontrar que el modelo ajustado no satisface totalmente el modelo necesario para los datos, en este caso es preciso saber qu\'e tan bueno es el modelo propuesto. Para esto se propone la siguiente prueba de hip\'otesis:
+\begin{itemize}
+\item[$H_{0}:$ ]El modelo propuesto se ajusta adecuademente a los datos.
+\item[$H_{1}:$ ]El modelo NO se ajusta a los datos.
+\end{itemize}
+
+La prueba implica dividir la suma de cuadrados del eror o del residuo en las siguientes dos componentes:
+\begin{eqnarray*}
+SC_{E}=SC_{EP}+SC_{FDA}
+\end{eqnarray*}
+
+donde $SC_{EP}$ es la suma de cuadrados atribuibles al error puro, y $SC_{FDA}$ es la suma de cuadrados atribuible a la falta de ajuste del modelo.
+
+%---------------------------------------------------------
+\subsection*{Coeficiente de Determinaci\'on}
+%---------------------------------------------------------
+La cantidad
+\begin{equation}
+R^{2}=\frac{SC_{R}}{S_{yy}}=1-\frac{SC_{E}}{S_{yy}}
+\end{equation}
+
+se denomina coeficiente de determinaci\'on y se utiliza para saber si el modelo de regresi\'on es suficiente o no. Se puede demostrar que $0\leq R^{2}\leq1$, una manera de interpretar este valor es que si $R^{2}=k$, entonces el modelo de regresi\'on explica el $k*100\%$ de la variabilidad en los datos.
+
+\begin{itemize}
+\item No mide la magnitud de la pendiente de la recta de regresi\'on
+\item Un valor grande de $R^{2}$ no implica una pendiente empinada.
+\item No mide la suficiencia del modelo.
+\item Valores grandes de $R^{2}$ no implican necesariamente que el modelo de regresi\'on proporcionar\'a predicciones precisas para futuras observaciones.
+\end{itemize}
+%---------------------------------------------------------
+\subsection*{An\'alisis de Varianza}
+%---------------------------------------------------------
+Para analizar el ajuste de regresi\'on se utiliza el m\'etodo de  \textbf{An\'alisis de Varianza} (\textbf{ANOVA}), el en cu\'al  se estudia la variaci\'on de la variable dependiente, subidividiendola en dos componentes significativos.
+Recordemos las ecuaciones \ref{Suma.Total.Cuadrados} y \ref{Suma.Total.Cuadrados.Dos}:
+\begin{eqnarray*}
+S_{yy}=SC_{R}+SC_{E}.
+\end{eqnarray*}
+
+\begin{itemize}
+\item[$SC_{R}$] Se le denomina \textbf{suma de cuadrados de la regresi\'on} y refleja la cantidad de variaci\'on de los valores de $y$ que es explicada por el modelo, para nuestro caso: la recta propuesta.
+
+\item[$SC_{E}$] Se le denomina suma de cuadrados del error, que es la variaci\'on o diferencia que hay entre los valores originales y los obtenidos mediante el ajuste. 
+\end{itemize}
+
+De lo anterior se desprende que estamos interesados en validar nuestro modelo dado en la ecuaci\'on (\ref{Modelo.Regresion}), es decir, 
+
+\begin{eqnarray*}
+y=\beta_{0}+\beta_{1}x+\epsilon
+\end{eqnarray*}
+que en realidad el par\'ametro $\beta_{1}$ ha sido bien estimado:
+
+Supongamos que se desea probar la hip\'otesis
+\begin{itemize}
+\item[$H_{0}:$] $\beta_{1}=0$
+\item[$H_{1}:$] $\beta_{1}\neq0$
+\end{itemize}
+
+Donde la hip\'otesis nula nos dice que el modelo en realidad debe de ser: $\mu_{Y|x}=\beta_{0}$, es decir, las variaciones en los valores de $Y$ son independientes de los valores de $x$. Se puede demostrar que bajo la hip\'otesis nula los t\'erminos
+
+\begin{itemize}
+\item $SC_{R}/\sigma^{2}$ se distribuye $\chi^{2}$ con 1 grado de libertad
+\item $SC_{E}/\sigma^{2}$ se distribuye $\chi^{2}$ con $n-2$ grado de libertad.
+\end{itemize}
+e independientes, y por tanto $S_{yy}$,  tambien llamada \textbf{suma total de cuadrados corregida: STCC}, se distribuye $\chi^{2}$ con $n-1$ grados de libertad.
+
+Para realizar esta prueba de hip\'otesis se calcula el cociente
+
+\begin{eqnarray*}
+f=\frac{SC_{R}/1}{SC_{E}/\left(n-2\right)}=\frac{SC_{R}}{s^{2}}
+\end{eqnarray*}
+y se rechaza $H_{0}$ a un nivel de significancia $\alpha$ si $f>f_{\alpha}\left(1,\left(n-2\right)\right)$, esto se puede realizar mediante una tabla, llamada tabla de an\'alisis de varianza, cuando a las distintas sumas de cuadrados se les divide por sus grados de libertad, se les denomina \textbf{cuadrados medios}.
+
+Se rechaza la hip\'otesis nula, cuando el estad\'istico $F$ calculado excede al valor cr\'itico $f_{\alpha}\left(1-n-2\right)$, y entonces se concluye que existe evidencia sobre la variaci\'on respecto al modelo ajustado. Si el estad\'istico $F$ est\'a en la regi\'on de no rechazo, se concluye que los datos no reflejan evidencia suficiente para sostener que el modelo ajustado.
+
+Para hacer la prueba de hip\'otesis 
+\begin{itemize}
+\item[$H_{0}$ :]$\beta_{1}=\beta_{10}$
+\item[$H_{1}$ :]$\beta_{1}\neq\beta_{10}$
+\end{itemize}
+
+se utiliza el estad\'istico:
+
+\begin{eqnarray*}
+T=\frac{B_{1}-\beta_{10}}{S/\sqrt{S_{xx}}}
+\end{eqnarray*}
+donde $T$ se distribuye $t$ con $n-2$ grados de libertad. La hip\'otesis se rechaza si $|t|>t_{\alpha/2}$ con un nivel de confianza $\alpha$.
+
+Para el caso en que $\beta_{10}=0$, se tiene que el valor del estad\'istico se convierte en 
+
+\begin{eqnarray*}
+T=\frac{b_{1}-\beta_{10}}{s/\sqrt{S_{xx}}}
+\end{eqnarray*}
+y entonces el an\'alisis es similar al dado en la tabla \ref{tab:ANOVA}, y lo que se est\'a diciendo es que la variaci\'on depende totalmente del azar. El An\'alisis de Varianza utiliza la distribuci\'on $F$ en lugar de la distribuci\'on $t$.
+
+Supongamos que se tienen observaciones repetidas de las respuestas para $k$ valores distintos de $x$, es decir: para $x_{1},x_{2},\ldots,x_{k}$ se tienen $y_{1,1},y_{1,2},\ldots,y_{1,n_{1}}$ valores observados para la variable aleatoria $Y_{1}$, $y_{2,1},y_{2,2},\ldots,y_{2,n_{2}}$ valores observados para la variable aleatoria $Y_{2}$, y as\'i sucesivamente para $y_{k,1},y_{k,2},\ldots,y_{1,n_{k}}$ valores observados para la variable aleatoria $Y_{k}$, de tal manera que 
+\begin{eqnarray*}
+n=\sum_{i=1}^{k}n_{i}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+Y = \left[
+\begin{matrix}
+y_{1,1} & y_{2,1} & \cdots & Y_{k,1} \\ 
+y_{1,2} & y_{2,2} & \cdots & Y_{k,2} \\ 
+\vdots & \vdots &  \vdots & \vdots \\ 
+ y_{1,j} &  y_{2,j} & y_{i,j} &  y_{k,j} \\ 
+\vdots & \vdots & \vdots & \vdots \\ 
+y_{1,n_{1}} & y_{2,n_{2}} & \cdots & Y_{k,n_{k}} 
+\end{matrix} 
+\right]
+\end{eqnarray*}
+entonces, si definimos $y_{i}=T_{i}=\sum_{j=1}^{n_{i}}y_{i,j}$, se tiene que $\overline{y}_{i}=\frac{T_{i}}{n_{i}}$
+
+C\'omo se ve la matriz para el caso en que:
+\begin{itemize}
+\item $n_{4}=3$ mediciones de $Y$
+\item Simular en R, para los casos en que $n_{1}=4$, $n_{2}=6$, $n_{3}=5$, y $n_{4}=8$,
+\end{itemize}
+
+La suma de cuadrados del error se divide en dos partes: la cantidad debida a la variaci\'on entre los valores de $Y$ para los valores dados de $x$, y lo que se denomina \textbf{falta de ajuste} que es una medida de la variaci\'on sistem\'atica introducida por  los t\'erminos de orden superior. Para nuestro caso en espec\'ifico, estos son t\'erminos de $x$ distintos de la contribuci\'on lineal de primer orden. Hasta el momento, dado que hemos considerado un modelo lineal, se asume que este segundo componente no existe, y por tanto la suma de cuadrados de error depende totalmente de los errores aleatorios. En consecuencia tenemos que $s^{2}=\frac{SCE}{\left(n-2\right)}$ es un estimador insesgado para $\sigma^{2}$.
+
+Sin embargo, si el modelo no ajusta correctamente a los datos, lo que tenemos es una sobre estimaci\'on del valor de $\sigma^{2}$ y por tanto ser\'a un estimador sesgado del mismo.\medskip
+
+Para obtener un estimador insesgado se calcula
+\begin{eqnarray*}
+s^{2}=\frac{\sum_{j=1}^{n_{i}}\left(y_{ij}-\overline{y}_{i}\right)^{2}}{n_{i}-1},\textrm{ para } i=1,2,\ldots,k
+\end{eqnarray*}
+despu\'es de hacer unas operaciones se puede obtener:
+
+\begin{eqnarray*}
+s^{2}=\frac{\sum_{i=1}^{k}\left(n_{i}-1\right)s_{i}^{2}}{n_{i}-k}=\frac{\sum_{i=1}^{k}\sum_{j=1}^{n_{i}}\left(y_{ij}-\overline{y}_{i}\right)^{2}}{n-k}.
+\end{eqnarray*}
+
+El numerador de $s^{2}$ es una medida del \textbf{error experimental puro} o \textbf{falta de ajuste}. Para determinar el cuadrado del error en: error puro y la falta de ajuste:
+\begin{itemize}
+\item Se calcula la suma de cuadrados del error puro:
+\begin{eqnarray*}
+\sum_{i=1}^{k}\sum_{j=1}^{n_{i}}\left(y_{ij}-\overline{y}_{i}\right)^{2}
+\end{eqnarray*}
+
+esta suma de cuadrados tiene $n-k$ grados de libertad, y el cuadrado medio resultante es el estimador insesgado $s^{2}$ de $\sigma^{2}$.
+
+\item Restar la suma de cuadrados del error puro de la suma de cuadrados del error, SCE, resultando la suma de cuadrados por ajuste. Los grados de libertad de la  falta de ajuste se obtienen por la resta: $\left(n-2\right)-\left(n-k\right)=k-2$.
+\end{itemize}
+
+La prueba de hip\'otesis en un problema de regresi\'on con mediciones repetidas de la respuesta se ilustra en la tabla \ref{tab:ANOVA}:
+\begin{table}[t!]
+\begin{center}
+\scalebox{0.65}{\begin{tabular}{| c | c | c | c| c | }
+\hline 
+\textbf{Fuente de Variaci\'on}&\textbf{Suma de Cuadrados}&\textbf{ Grados de Libertad }&\textbf{ Cuadrado Medio }&\textbf{ $f$ calculada }\\ 
+\hline 
+Regresi\'on & $SC_{R}$ & 1 & $SC_{R}$ & $\frac{SC_{R}}{s^{2}}$ \\ 
+Error & $SC_{E}$ & $n-2$ &  &  \\\hline
+Falta de ajuste &$SCE-SCE (puro)$&$k-2$&$\frac{SCE-SCE (puro)}{k-2}$&$\frac{SCE-SCE(puro)}{s^{2}\left(k-2\right)}$\\\hline
+Error Puro &$SCE(puro)$&$n-k$&$s^{2}=\frac{SCE(puro)}{n-k}$&\\\hline
+Total & $STCC$ & $n-1$ &  &  \\ 
+\hline 
+\end{tabular}}
+\caption{An\'alisis de Varianza para la prueba $\beta_{1}=0$}
+\label{tab:ANOVA}
+\end{center}
+\end{table}
+
+
+
+%---------------------------------------------------------
+\subsection*{Estimaci\'on de Intervalos en RLS}
+%---------------------------------------------------------
+
+%\begin{frame}
+
+\begin{itemize}
+\item Adem\'as de la estimaci\'on puntual para los par\'ametros $\beta_{1}$ y $\beta_{0}$, es posible obtener estimaciones del intervalo de confianza de estos par\'ametros.
+
+\item El ancho de estos intervalos de confianza es una medida de la calidad total de la recta de regresi\'on.
+
+\end{itemize}
+
+%\end{frame}
+
+
+%\begin{frame}
+
+Si los $\epsilon_{k}$ se distribuyen normal e independientemente, entonces
+\begin{eqnarray*}
+\begin{array}{ccc}
+\frac{\left(\hat{\beta}_{1}-\beta_{1}\right)}{\sqrt{\frac{MC_{E}}{S_{xx}}}}&y &\frac{\left(\hat{\beta}_{0}-\beta_{0}\right)}{\sqrt{MC_{E}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right)}}
+\end{array}
+\end{eqnarray*}
+se distribuyen $t$ con $n-2$ grados de libertad. Por tanto un intervalo de confianza de $100\left(1-\alpha\right)\%$ para $\beta_{1}$ est\'a dado por
+\begin{eqnarray}
+\hat{\beta}_{1}-t_{\alpha/2,n-2}\sqrt{\frac{MC_{E}}{S_{xx}}}\leq \beta_{1}\leq\hat{\beta}_{1}+t_{\alpha/2,n-2}\sqrt{\frac{MC_{E}}{S_{xx}}}.
+\end{eqnarray}
+De igual manera, para $\beta_{0}$ un intervalo de confianza al $100\left(1-\alpha\right)\%$ es
+\small{
+\begin{eqnarray}
+\begin{array}{l}
+\hat{\beta}_{0}-t_{\alpha/2,n-2}\sqrt{MC_{E}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right)}\leq\beta_{0}\leq\hat{\beta}_{0}+t_{\alpha/2,n-2}\sqrt{MC_{E}\left(\frac{1}{n}+\frac{\overline{x}^{2}}{S_{xx}}\right)}
+\end{array}
+\end{eqnarray}}
+
+
 
 

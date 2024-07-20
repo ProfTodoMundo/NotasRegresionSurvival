@@ -57,30 +57,31 @@
 }
 
 % Definiciones de nuevos entornos
-\newtheorem{Algthm}{Algoritmo}[section]
-\newtheorem{Def}{Definición}[section]
-\newtheorem{Ejem}{Ejemplo}[section]
-\newtheorem{Teo}{Teorema}[section]
-\newtheorem{Dem}{Demostración}[section]
-\newtheorem{Note}{Nota}[section]
-\newtheorem{Sol}{Solución}[section]
-\newtheorem{Prop}{Proposición}[section]
-\newtheorem{Coro}{Corolario}[section]
-\newtheorem{Cor}{Corolario}[section]
-\newtheorem{Col}{Corolario}[section]
-\newtheorem{Lemma}{Lema}[section]
-\newtheorem{Lema}{Lema}[section]
-\newtheorem{Lem}{Lema}[section]
-\newtheorem{Sup}{Supuestos}[section]
-\newtheorem{Assumption}{Supuestos}[section]
-\newtheorem{Remark}{Observación}[section]
-\newtheorem{Condition}{Condición}[section]
-\newtheorem{Theorem}{Teorema}[section]
-\newtheorem{proof}{Demostración}[section]
-\newtheorem{Corollary}{Corolario}[section]
-\newtheorem{Ejemplo}{Ejemplo}[section]
-\newtheorem{Example}{Ejemplo}[section]
-\newtheorem{Obs}{Observación}[section]
+\newtheorem{Algthm}{Algoritmo}[chapter]
+\newtheorem{Def}{Definición}[chapter]
+\newtheorem{Ejem}{Ejemplo}[chapter]
+\newtheorem{Teo}{Teorema}[chapter]
+\newtheorem{Dem}{Demostración}[chapter]
+\newtheorem{Note}{Nota}[chapter]
+\newtheorem{Sol}{Solución}[chapter]
+\newtheorem{Prop}{Proposición}[chapter]
+\newtheorem{Propty}{Proposición}[chapter]
+\newtheorem{Coro}{Corolario}[chapter]
+\newtheorem{Cor}{Corolario}[chapter]
+\newtheorem{Col}{Corolario}[chapter]
+\newtheorem{Lemma}{Lema}[chapter]
+\newtheorem{Lema}{Lema}[chapter]
+\newtheorem{Lem}{Lema}[chapter]
+\newtheorem{Sup}{Supuestos}[chapter]
+\newtheorem{Assumption}{Supuestos}[chapter]
+\newtheorem{Remark}{Observación}[chapter]
+\newtheorem{Condition}{Condición}[chapter]
+\newtheorem{Theorem}{Teorema}[chapter]
+\newtheorem{proof}{Demostración}[chapter]
+\newtheorem{Corollary}{Corolario}[chapter]
+\newtheorem{Ejemplo}{Ejemplo}[chapter]
+\newtheorem{Example}{Ejemplo}[chapter]
+\newtheorem{Obs}{Observación}[chapter]
 
 \def\RR{\mathbb{R}}
 \def\ZZ{\mathbb{Z}}
@@ -88,6 +89,8 @@
 \newcommand{\ent}{\mathbb{Z}}
 \newcommand{\rea}{\mathbb{R}}
 \newcommand{\Eb}{\mathbf{E}}
+%\newcommand{\em}{\mathbb{E}}
+\newcommand{\Prob}{\mathbb{P}}
 \newcommand{\esp}{\mathbb{E}}
 \newcommand{\prob}{\mathbb{P}}
 \newcommand{\indora}{\mbox{$1$\hspace{-0.8ex}$1$}}
@@ -111,21 +114,9 @@
 % 1
 \chapter{Introducción}
 \input{Introduccion}
-% 2
-%\chapter{Fundamentos}
-%\input{Fundamentos}
-% 3
+
 \chapter{Elementos}
 \input{Elementos}
-% 4
-\chapter{Bioestadistica}
-\input{Biostatistics}
-% 5
-\chapter{Requisitos}
-\input{Requisitos}
-% 6
-\chapter{Bases}
-\input{Bases}
 
 %==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
 \part{PRIMERA PARTE: Regresión Logística}
@@ -136,6 +127,8 @@
 
 \chapter{Elementos de Probabilidad}
 \input{Capitulo2}
+\input{Probabilidd}
+
 
 \chapter{Matemáticas Detrás de la Regresión Logística}
 \input{Capitulo3}
