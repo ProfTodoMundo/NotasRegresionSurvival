@@ -1,0 +1,212 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,english]{babel}
+\usepackage{amsmath,amssymb,amsthm,amsfonts}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{graphicx,graphics}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{float} 
+\usepackage{subfig}
+\usepackage[figuresright]{rotating}
+\usepackage{enumerate}
+\usepackage{anysize} 
+\usepackage{url}
+
+\title{Temas Selectos de Probabilidad}
+\author{Carlos E. Martínez-Rodríguez}
+\date{Julio 2024}
+
+\geometry{
+  a4paper,
+  left=25mm,
+  right=25mm,
+  top=30mm,
+  bottom=30mm,
+}
+
+% Configuración de encabezados y pies de página
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\rightmark}
+\fancyfoot[L]{Carlos E. Martínez-Rodríguez}
+
+% Redefinir el nombre de los capítulos
+\titleformat{\chapter}[display]
+  {\normalfont\huge\bfseries}
+  {CAPÍTULO \thechapter}
+  {20pt}
+  {\Huge}
+
+% Configuración para la inclusión de código fuente en R
+\lstset{
+    language=R,
+    basicstyle=\ttfamily\small,
+    numbers=left,
+    numberstyle=\tiny,
+    stepnumber=1,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    frame=single,
+    tabsize=2,
+    captionpos=b,
+    breaklines=true,
+    breakatwhitespace=false,
+    title=\lstname
+}
+
+% Definiciones de nuevos entornos
+\newtheorem{Algthm}{Algoritmo}[section]
+\newtheorem{Def}{Definición}[section]
+\newtheorem{Ejem}{Ejemplo}[section]
+\newtheorem{Teo}{Teorema}[section]
+\newtheorem{Dem}{Demostración}[section]
+\newtheorem{Note}{Nota}[section]
+\newtheorem{Sol}{Solución}[section]
+\newtheorem{Prop}{Proposición}[section]
+\newtheorem{Cor}{Corolario}[section]
+\newtheorem{Col}{Corolario}[section]
+\newtheorem{Coro}{Corolario}[section]
+\newtheorem{Lemma}{Lema}[section]
+\newtheorem{Lem}{Lema}[section]
+\newtheorem{Lema}{Lema}[section]
+\newtheorem{Sup}{Supuestos}[section]
+\newtheorem{Assumption}{Supuestos}[section]
+\newtheorem{Remark}{Observación}[section]
+\newtheorem{Condition}{Condición}[section]
+\newtheorem{Theorem}{Teorema}[section]
+%\newtheorem{proof}{Demostración}[section]
+\newtheorem{Corollary}{Corolario}[section]
+\newtheorem{Ejemplo}{Ejemplo}[section]
+\newtheorem{Example}{Ejemplo}[section]
+\newtheorem{Obs}{Observación}[section]
+
+% Nuevos comandos
+\def\RR{\mathbb{R}}
+\def\ZZ{\mathbb{Z}}
+\newcommand{\nat}{\mathbb{N}}
+\newcommand{\ent}{\mathbb{Z}}
+\newcommand{\rea}{\mathbb{R}}
+\newcommand{\Eb}{\mathbf{E}}
+\newcommand{\esp}{\mathbb{E}}
+\newcommand{\prob}{\mathbb{P}}
+\newcommand{\indora}{\mbox{$1$\hspace{-0.8ex}$1$}}
+\newcommand{\ER}{\left(E,\mathcal{E}\right)}
+\newcommand{\KM}{\left(P_{s,t}\right)}
+\newcommand{\Xt}{\left(X_{t}\right)_{t\in I}}
+\newcommand{\PE}{\left(X_{t}\right)_{t\in I}}
+\newcommand{\SG}{\left(P_{t}\right)}
+\newcommand{\CM}{\mathbf{P}^{x}}
+\newcommand\mypar{\par\vspace{\baselineskip}}
+
+%______________________________________________________________________
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+%==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
+\part{TERCERA PARTE: TEMAS SELECTOS}
+%==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
+
+%\chapter{Probabilidad Avanzada}
+%\input{ProbabilidadAvanzada}
+%---- ESTE CAPITULO YA ESTA CORREGIDO ---
+%-- INCLUYE VARIAS SECCIONES----
+%\input{ReviewCadenasMarkov}
+% -------- QUE A SU VEZ INCLUYE ----
+%\chapter{PROCESOS DE MARKOV DE SALTOS}
+%\input{ProcesosMarkovSaltos}
+%\chapter{PROCESOS NACIMIENTO Y MUERTE}
+%\input{NacMuerteProcesos}
+%\chapter{TEORIA DE COLAS}
+%\input{QueueingTheory}
+%\chapter{NOTACION DE KENDALL LEE}
+%\input{KendalLeeNotation}
+%\chapter{REDES DE COLAS}
+%\input{RedesColas}
+\chapter{CADENAS DE MARKOV}
+\input{MarkovChainsReview}
+% ==__--__-- ==__--__-- ==__--__-- ==__--__--
+
+\chapter{Sistemas de Visita}
+\input{SistemasVisita}
+%--------------
+%---- CAPITULO YA INCLUIDO EN OTRO ----
+%\chapter{Polling Systems: Introducci\'on}
+%\input{intPS}
+%-------------- CAPITULO YA INCLUIDO EN OTRO ----
+%\chapter{Polling Systems}
+%\input{Takagi}
+
+
+\chapter{Funciones Generadoras de Probabilidades}
+%\input{intFGP}
+
+\chapter{Modelos de Flujo}
+%\input{ModelosFlujo}
+
+\chapter{Modelos de Flujo: Preliminario}
+%\input{PreMF}
+
+\chapter{Teorema de Down}
+%\input{TeoremaDown}
+
+
+\chapter{Revi\'on de Procesos Regenerativos}
+%\input{RRP}
+
+
+\chapter{Procesos Estocasticos}
+%\input{ProcesosEstocasticos}
+
+\chapter{Procesos Regenerativos}
+%\input{ProcesosRegenerativos}
+
+\chapter{Introducción a los Procesos de Renovacion}
+%\input{intPRenovacion}
+
+
+\chapter{Thorisson}
+%\input{Thorisson}
+
+
+
+\chapter{Transformaciones}
+%\input{Transformaciones}
+
+\chapter{Simulacion de Variables Aleatorias}
+%\input{Simulacion}
+
+
+
+
+
+
+
+
+\chapter{Procesos de Renovacion}
+%\input{PropiedadesProcesosRenovacion}
+
+\chapter{Revision Procesos Regenerativos}
+%\input{RegenerativeProcessesReview}
+
+%==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
+\part{BIBLIOGRAFIA}
+%==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
+
+\chapter{Bibliografía}
+\input{bibliografia}
+
+\end{document}

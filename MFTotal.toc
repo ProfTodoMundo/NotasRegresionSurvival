@@ -1,0 +1,425 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Procesos Regenerativos}{9}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Procesos Regenerativos}{11}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{14}{subsubsection.1.1.1}%
+\contentsline {section}{\numberline {2}Definiciones B\'asicas}{14}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Definiciones B\'asicas}{18}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Supuestos}{21}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Supuestos}{22}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Supuestos B\'asicos}{23}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Supuestos B\'asicos}{23}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}Supuestos}{24}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Supuestos B\'asicos}{25}{subsubsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.5}Supuestos}{26}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Supuestos B\'asicos}{27}{subsubsection.2.5.1}%
+\contentsline {section}{\numberline {3}Preliminares}{27}{section.3}%
+\contentsline {section}{\numberline {4}Procesos Harris Recurrente}{28}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Procesos Harris Recurrente}{30}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Procesos Harris Recurrente}{31}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Procesos Harris Recurrente}{33}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Procesos Harris Recurrente}{34}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Procesos Harris Recurrente}{35}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Procesos Harris Recurrente}{37}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Modelo de Flujo}{38}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Modelo de Flujo}{40}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Modelo de Flujo}{51}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Proceso de Estados Markoviano para el Sistema}{61}{section.6}%
+\contentsline {section}{\numberline {7}Procesos de Estados de Markov}{62}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Procesos de Estados de Markov}{63}{subsection.7.1}%
+\contentsline {section}{\numberline {8}Teor\'ia General de Procesos Estoc\'asticos}{65}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Teor\'ia General de Procesos Estoc\'asticos}{65}{subsection.8.1}%
+\contentsline {section}{\numberline {9}Propiedades de Markov}{65}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Propiedades de Markov}{66}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Propiedades de Markov}{67}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Propiedades de Markov}{67}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Propiedades de Markov}{68}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Propiedades de Markov}{69}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Primer Condici\'on de Regularidad}{69}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Primer Condici\'on de Regularidad}{70}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Primer Condici\'on de Regularidad}{77}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Primer Condici\'on de Regularidad}{77}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Primer Condici\'on de Regularidad}{84}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Primer Condici\'on de Regularidad}{87}{subsection.10.5}%
+\contentsline {section}{\numberline {11}Construcci\'on del Modelo de Flujo}{94}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Construcci\'on del Modelo de Flujo}{97}{subsection.11.1}%
+\contentsline {section}{\numberline {12}Estabilidad}{100}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Estabilidad}{104}{subsection.12.1}%
+\contentsline {section}{\numberline {13}Procesos Fuerte de Markov}{108}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Procesos Fuerte de Markov}{109}{subsection.13.1}%
+\contentsline {subsubsection}{\numberline {13.1.1}Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{109}{subsubsection.13.1.1}%
+\contentsline {subsection}{\numberline {13.2}Procesos Fuerte de Markov}{109}{subsection.13.2}%
+\contentsline {section}{\numberline {14}Procesos Harris Recurrentes Positivos}{109}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Procesos Harris Recurrentes Positivos}{109}{subsection.14.1}%
+\contentsline {section}{\numberline {15}Construcci\'on de un Modelo de Flujo L\'imite}{110}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Construcci\'on de un Modelo de Flujo L\'imite}{113}{subsection.15.1}%
+\contentsline {subsection}{\numberline {15.2}Modelo de Visitas C\'iclicas con un Servidor: Estabilidad}{117}{subsection.15.2}%
+\contentsline {section}{\numberline {16}Teorema 2.1}{117}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Teorema 2.1}{119}{subsection.16.1}%
+\contentsline {section}{\numberline {17}Teorema 2.2}{120}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Teorema 2.2}{120}{subsection.17.1}%
+\contentsline {section}{\numberline {18}Teorema 2.3}{121}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Teorema 2.3}{121}{subsection.18.1}%
+\contentsline {subsection}{\numberline {18.2}Modelo de Flujo}{122}{subsection.18.2}%
+\contentsline {subsubsection}{\numberline {18.2.1}Modelo de Flujo y Estabilidad}{127}{subsubsection.18.2.1}%
+\contentsline {subsubsection}{\numberline {18.2.2}Resultados principales}{128}{subsubsection.18.2.2}%
+\contentsline {subsubsection}{\numberline {18.2.3}Definiciones Generales}{129}{subsubsection.18.2.3}%
+\contentsline {subsubsection}{\numberline {18.2.4}Definiciones y Descripci\'on del Modelo}{131}{subsubsection.18.2.4}%
+\contentsline {subsubsection}{\numberline {18.2.5}Pol\'iticas de Servicio}{131}{subsubsection.18.2.5}%
+\contentsline {subsubsection}{\numberline {18.2.6}Proceso de Estados}{131}{subsubsection.18.2.6}%
+\contentsline {subsubsection}{\numberline {18.2.7}Introducci{\'o}n}{132}{subsubsection.18.2.7}%
+\contentsline {subsubsection}{\numberline {18.2.8}Colas C\'iclicas}{132}{subsubsection.18.2.8}%
+\contentsline {subsubsection}{\numberline {18.2.9}Resultados Previos}{133}{subsubsection.18.2.9}%
+\contentsline {subsubsection}{\numberline {18.2.10}Teorema de Estabilidad: Descripci{\'o}n}{134}{subsubsection.18.2.10}%
+\contentsline {subsection}{\numberline {18.3}Modelo de Flujo}{135}{subsection.18.3}%
+\contentsline {subsection}{\numberline {18.4}Modelo de Flujo}{137}{subsection.18.4}%
+\contentsline {section}{\numberline {19}Estabilidad de los Sistemas de Visitas C\'iclicas}{139}{section.19}%
+\contentsline {section}{\numberline {20}Resultados principales}{140}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Modelo de Flujo}{141}{subsection.20.1}%
+\contentsline {subsubsection}{\numberline {20.1.1}Supuestos B\'asicos}{143}{subsubsection.20.1.1}%
+\contentsline {subsection}{\numberline {20.2}Procesos Harris Recurrente}{143}{subsection.20.2}%
+\contentsline {subsection}{\numberline {20.3}Modelo de Flujo}{144}{subsection.20.3}%
+\contentsline {subsection}{\numberline {20.4}Supuestos}{146}{subsection.20.4}%
+\contentsline {subsubsection}{\numberline {20.4.1}Supuestos B\'asicos}{147}{subsubsection.20.4.1}%
+\contentsline {subsection}{\numberline {20.5}Procesos Harris Recurrente}{148}{subsection.20.5}%
+\contentsline {subsection}{\numberline {20.6}Modelo de Flujo}{149}{subsection.20.6}%
+\contentsline {subsection}{\numberline {20.7}Ya revisado}{151}{subsection.20.7}%
+\contentsline {subsection}{\numberline {20.8}Procesos de Renovaci\'on y Regenerativos}{158}{subsection.20.8}%
+\contentsline {subsection}{\numberline {20.9}Tiempo de Ciclo Promedio}{167}{subsection.20.9}%
+\contentsline {subsection}{\numberline {20.10}Tiempos de Ciclo e Intervisita}{168}{subsection.20.10}%
+\contentsline {subsection}{\numberline {20.11}Longitudes de la Cola en cualquier tiempo}{171}{subsection.20.11}%
+\contentsline {subsection}{\numberline {20.12}Por resolver}{172}{subsection.20.12}%
+\contentsline {subsection}{\numberline {20.13}Tiempos de Ciclo e Intervisita}{173}{subsection.20.13}%
+\contentsline {subsection}{\numberline {20.14}Longitudes de la Cola en cualquier tiempo}{178}{subsection.20.14}%
+\contentsline {subsection}{\numberline {20.15}Material por agregar}{178}{subsection.20.15}%
+\contentsline {subsection}{\numberline {20.16}Propiedades de los Procesos de Renovaci\'on}{191}{subsection.20.16}%
+\contentsline {section}{\numberline {21}Preliminares: Modelos de Flujo}{208}{section.21}%
+\contentsline {subsection}{\numberline {21.1}Procesos Regenerativos}{208}{subsection.21.1}%
+\contentsline {subsection}{\numberline {21.2}Procesos Harris Recurrente}{211}{subsection.21.2}%
+\contentsline {subsection}{\numberline {21.3}Modelo de Flujo}{212}{subsection.21.3}%
+\contentsline {subsection}{\numberline {21.4}Procesos de Estados de Markov}{223}{subsection.21.4}%
+\contentsline {subsection}{\numberline {21.5}Teor\'ia General de Procesos Estoc\'asticos}{224}{subsection.21.5}%
+\contentsline {subsection}{\numberline {21.6}Propiedades de Markov}{224}{subsection.21.6}%
+\contentsline {subsection}{\numberline {21.7}Primer Condici\'on de Regularidad}{225}{subsection.21.7}%
+\contentsline {subsection}{\numberline {21.8}Construcci\'on del Modelo de Flujo}{226}{subsection.21.8}%
+\contentsline {subsection}{\numberline {21.9}Estabilidad}{229}{subsection.21.9}%
+\contentsline {subsection}{\numberline {21.10}Propiedades de Markov}{233}{subsection.21.10}%
+\contentsline {subsection}{\numberline {21.11}Primer Condici\'on de Regularidad}{234}{subsection.21.11}%
+\contentsline {subsection}{\numberline {21.12}Procesos Fuerte de Markov}{240}{subsection.21.12}%
+\contentsline {subsubsection}{\numberline {21.12.1}Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{241}{subsubsection.21.12.1}%
+\contentsline {subsection}{\numberline {21.13}Procesos Harris Recurrentes Positivos}{241}{subsection.21.13}%
+\contentsline {subsection}{\numberline {21.14}Construcci\'on de un Modelo de Flujo L\'imite}{241}{subsection.21.14}%
+\contentsline {subsection}{\numberline {21.15}Modelo de Visitas C\'iclicas con un Servidor: Estabilidad}{245}{subsection.21.15}%
+\contentsline {subsection}{\numberline {21.16}Teorema 2.1}{245}{subsection.21.16}%
+\contentsline {subsection}{\numberline {21.17}Teorema 2.2}{246}{subsection.21.17}%
+\contentsline {subsection}{\numberline {21.18}Teorema 2.3}{246}{subsection.21.18}%
+\contentsline {subsection}{\numberline {21.19}Definiciones B\'asicas}{246}{subsection.21.19}%
+\contentsline {subsection}{\numberline {21.20}Preliminares}{251}{subsection.21.20}%
+\contentsline {subsection}{\numberline {21.21}Procesos Harris Recurrente}{252}{subsection.21.21}%
+\contentsline {subsection}{\numberline {21.22}Modelo de Flujo}{253}{subsection.21.22}%
+\contentsline {subsection}{\numberline {21.23}Procesos de Estados de Markov}{264}{subsection.21.23}%
+\contentsline {subsection}{\numberline {21.24}Teor\'ia General de Procesos Estoc\'asticos}{265}{subsection.21.24}%
+\contentsline {subsection}{\numberline {21.25}Propiedades de Markov}{266}{subsection.21.25}%
+\contentsline {subsection}{\numberline {21.26}Primer Condici\'on de Regularidad}{266}{subsection.21.26}%
+\contentsline {subsection}{\numberline {21.27}Construcci\'on del Modelo de Flujo}{267}{subsection.21.27}%
+\contentsline {subsection}{\numberline {21.28}Estabilidad}{270}{subsection.21.28}%
+\contentsline {subsection}{\numberline {21.29}Propiedades de Markov}{274}{subsection.21.29}%
+\contentsline {subsection}{\numberline {21.30}Primer Condici\'on de Regularidad}{275}{subsection.21.30}%
+\contentsline {subsection}{\numberline {21.31}Procesos de Estados Markoviano para el Sistema}{282}{subsection.21.31}%
+\contentsline {subsection}{\numberline {21.32}Procesos Fuerte de Markov}{282}{subsection.21.32}%
+\contentsline {subsubsection}{\numberline {21.32.1}Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{282}{subsubsection.21.32.1}%
+\contentsline {subsection}{\numberline {21.33}Procesos Harris Recurrentes Positivos}{282}{subsection.21.33}%
+\contentsline {subsection}{\numberline {21.34}Construcci\'on de un Modelo de Flujo L\'imite}{282}{subsection.21.34}%
+\contentsline {subsection}{\numberline {21.35}Modelo de Visitas C\'iclicas con un Servidor: Estabilidad}{286}{subsection.21.35}%
+\contentsline {subsection}{\numberline {21.36}Teorema 2.1}{286}{subsection.21.36}%
+\contentsline {subsection}{\numberline {21.37}Teorema 2.2}{288}{subsection.21.37}%
+\contentsline {subsection}{\numberline {21.38}Teorema 2.3}{288}{subsection.21.38}%
+\contentsline {subsection}{\numberline {21.39}Definiciones B\'asicas}{289}{subsection.21.39}%
+\contentsline {subsection}{\numberline {21.40}Proceso de Estados Markoviano para el Sistema}{292}{subsection.21.40}%
+\contentsline {subsection}{\numberline {21.41}Procesos Fuerte de Markov}{292}{subsection.21.41}%
+\contentsline {subsection}{\numberline {21.42}Propiedades de Markov}{293}{subsection.21.42}%
+\contentsline {subsection}{\numberline {21.43}Primer Condici\'on de Regularidad}{293}{subsection.21.43}%
+\contentsline {subsection}{\numberline {21.44}Propiedades de Markov}{296}{subsection.21.44}%
+\contentsline {subsection}{\numberline {21.45}Primer Condici\'on de Regularidad}{297}{subsection.21.45}%
+\contentsline {subsection}{\numberline {21.46}Supuestos}{304}{subsection.21.46}%
+\contentsline {subsubsection}{\numberline {21.46.1}Supuestos B\'asicos}{305}{subsubsection.21.46.1}%
+\contentsline {subsection}{\numberline {21.47}Procesos Harris Recurrente}{305}{subsection.21.47}%
+\contentsline {subsection}{\numberline {21.48}Modelo de Flujo}{306}{subsection.21.48}%
+\contentsline {subsubsection}{\numberline {21.48.1}Modelo de Flujo y Estabilidad}{312}{subsubsection.21.48.1}%
+\contentsline {subsubsection}{\numberline {21.48.2}Resultados principales}{313}{subsubsection.21.48.2}%
+\contentsline {subsubsection}{\numberline {21.48.3}Definiciones Generales}{314}{subsubsection.21.48.3}%
+\contentsline {subsubsection}{\numberline {21.48.4}Definiciones y Descripci\'on del Modelo}{316}{subsubsection.21.48.4}%
+\contentsline {subsubsection}{\numberline {21.48.5}Pol\'iticas de Servicio}{316}{subsubsection.21.48.5}%
+\contentsline {subsubsection}{\numberline {21.48.6}Proceso de Estados}{316}{subsubsection.21.48.6}%
+\contentsline {subsubsection}{\numberline {21.48.7}Introducci{\'o}n}{317}{subsubsection.21.48.7}%
+\contentsline {subsubsection}{\numberline {21.48.8}Colas C\'iclicas}{317}{subsubsection.21.48.8}%
+\contentsline {subsubsection}{\numberline {21.48.9}Resultados Previos}{318}{subsubsection.21.48.9}%
+\contentsline {subsubsection}{\numberline {21.48.10}Teorema de Estabilidad: Descripci{\'o}n}{319}{subsubsection.21.48.10}%
+\contentsline {subsection}{\numberline {21.49}Supuestos}{320}{subsection.21.49}%
+\contentsline {subsubsection}{\numberline {21.49.1}Supuestos B\'asicos}{321}{subsubsection.21.49.1}%
+\contentsline {subsection}{\numberline {21.50}Procesos Harris Recurrente}{321}{subsection.21.50}%
+\contentsline {subsection}{\numberline {21.51}Modelo de Flujo}{323}{subsection.21.51}%
+\contentsline {subsection}{\numberline {21.52}Modelo de Flujo}{324}{subsection.21.52}%
+\contentsline {subsection}{\numberline {21.53}Estabilidad de los Sistemas de Visitas C\'iclicas}{327}{subsection.21.53}%
+\contentsline {subsection}{\numberline {21.54}Resultados principales}{328}{subsection.21.54}%
+\contentsline {subsection}{\numberline {21.55}Supuestos}{328}{subsection.21.55}%
+\contentsline {subsubsection}{\numberline {21.55.1}Supuestos B\'asicos}{329}{subsubsection.21.55.1}%
+\contentsline {subsection}{\numberline {21.56}Procesos Harris Recurrente}{330}{subsection.21.56}%
+\contentsline {subsection}{\numberline {21.57}Modelo de Flujo}{331}{subsection.21.57}%
+\contentsline {subsection}{\numberline {21.58}Supuestos}{333}{subsection.21.58}%
+\contentsline {subsubsection}{\numberline {21.58.1}Supuestos B\'asicos}{334}{subsubsection.21.58.1}%
+\contentsline {subsection}{\numberline {21.59}Procesos Harris Recurrente}{335}{subsection.21.59}%
+\contentsline {subsection}{\numberline {21.60}Modelo de Flujo}{336}{subsection.21.60}%
+\contentsline {subsubsection}{\numberline {21.60.1}Supuestos B\'asicos}{338}{subsubsection.21.60.1}%
+\contentsline {subsection}{\numberline {21.61}Procesos Harris Recurrente}{338}{subsection.21.61}%
+\contentsline {subsection}{\numberline {21.62}Modelo de Flujo}{340}{subsection.21.62}%
+\contentsline {subsection}{\numberline {21.63}Supuestos}{341}{subsection.21.63}%
+\contentsline {subsubsection}{\numberline {21.63.1}Supuestos B\'asicos}{343}{subsubsection.21.63.1}%
+\contentsline {subsection}{\numberline {21.64}Procesos Harris Recurrente}{343}{subsection.21.64}%
+\contentsline {subsection}{\numberline {21.65}Modelo de Flujo}{344}{subsection.21.65}%
+\contentsline {section}{\numberline {22}Fuera de tema}{346}{section.22}%
+\contentsline {subsection}{\numberline {22.1}Teorema Principal de Renovaci\'on}{347}{subsection.22.1}%
+\contentsline {subsection}{\numberline {22.2}Propiedades de los Procesos de Renovaci\'on}{348}{subsection.22.2}%
+\contentsline {subsection}{\numberline {22.3}Procesos de Renovaci\'on}{349}{subsection.22.3}%
+\contentsline {subsection}{\numberline {22.4}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{349}{subsection.22.4}%
+\contentsline {subsection}{\numberline {22.5}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{356}{subsection.22.5}%
+\contentsline {subsection}{\numberline {22.6}Procesos Regenerativos}{363}{subsection.22.6}%
+\contentsline {subsection}{\numberline {22.7}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{364}{subsection.22.7}%
+\contentsline {section}{\numberline {23}De nuevo}{364}{section.23}%
+\contentsline {subsection}{\numberline {23.1}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{364}{subsection.23.1}%
+\contentsline {subsection}{\numberline {23.2}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{370}{subsection.23.2}%
+\contentsline {subsection}{\numberline {23.3}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{370}{subsection.23.3}%
+\contentsline {subsection}{\numberline {23.4}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{371}{subsection.23.4}%
+\contentsline {subsection}{\numberline {23.5}Procesos de Renovaci\'on}{372}{subsection.23.5}%
+\contentsline {subsection}{\numberline {23.6}Teorema Principal de Renovaci\'on}{372}{subsection.23.6}%
+\contentsline {subsection}{\numberline {23.7}Funci\'on de Renovaci\'on}{373}{subsection.23.7}%
+\contentsline {subsection}{\numberline {23.8}Propiedades de los Procesos de Renovaci\'on}{373}{subsection.23.8}%
+\contentsline {subsection}{\numberline {23.9}Funci\'on de Renovaci\'on}{375}{subsection.23.9}%
+\contentsline {subsection}{\numberline {23.10}Procesos de Renovaci\'on}{375}{subsection.23.10}%
+\contentsline {subsection}{\numberline {23.11}Procesos Regenerativos}{376}{subsection.23.11}%
+\contentsline {subsection}{\numberline {23.12}Procesos de Renovaci\'on}{378}{subsection.23.12}%
+\contentsline {subsection}{\numberline {23.13}Teorema Principal de Renovaci\'on}{378}{subsection.23.13}%
+\contentsline {subsection}{\numberline {23.14}Funci\'on de Renovaci\'on}{379}{subsection.23.14}%
+\contentsline {subsection}{\numberline {23.15}Funci\'on de Renovaci\'on}{379}{subsection.23.15}%
+\contentsline {subsection}{\numberline {23.16}Procesos de Renovaci\'on}{380}{subsection.23.16}%
+\contentsline {subsection}{\numberline {23.17}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{389}{subsection.23.17}%
+\contentsline {subsection}{\numberline {23.18}Output Process and Regenerative Processes}{390}{subsection.23.18}%
+\contentsline {subsection}{\numberline {23.19}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{391}{subsection.23.19}%
+\contentsline {subsection}{\numberline {23.20}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman2}}{438}{subsection.23.20}%
+\contentsline {subsection}{\numberline {23.21}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{439}{subsection.23.21}%
+\contentsline {subsection}{\numberline {23.22}Propiedades de los Procesos de Renovaci\'on}{441}{subsection.23.22}%
+\contentsline {subsection}{\numberline {23.23}Funci\'on de Renovaci\'on}{447}{subsection.23.23}%
+\contentsline {subsection}{\numberline {23.24}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{448}{subsection.23.24}%
+\contentsline {subsection}{\numberline {23.25}Procesos Regenerativos}{455}{subsection.23.25}%
+\contentsline {subsection}{\numberline {23.26}Puntos de Renovaci\'on}{458}{subsection.23.26}%
+\contentsline {subsection}{\numberline {23.27}Resultados para Procesos de Salida}{459}{subsection.23.27}%
+\contentsline {subsection}{\numberline {23.28}Procesos Regenerativos}{459}{subsection.23.28}%
+\contentsline {subsection}{\numberline {23.29}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{460}{subsection.23.29}%
+\contentsline {subsection}{\numberline {23.30}Procesos Regenerativos}{465}{subsection.23.30}%
+\contentsline {subsection}{\numberline {23.31}Procesos Regenerativos}{466}{subsection.23.31}%
+\contentsline {subsection}{\numberline {23.32}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{467}{subsection.23.32}%
+\contentsline {subsection}{\numberline {23.33}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{467}{subsection.23.33}%
+\contentsline {subsection}{\numberline {23.34}Propiedades de los Procesos de Renovaci\'on}{468}{subsection.23.34}%
+\contentsline {subsection}{\numberline {23.35}Propiedades de los Procesos de Renovaci\'on}{469}{subsection.23.35}%
+\contentsline {subsection}{\numberline {23.36}Propiedades de los Procesos de Renovaci\'on}{471}{subsection.23.36}%
+\contentsline {subsection}{\numberline {23.37}Propiedades de los Procesos de Renovaci\'on}{472}{subsection.23.37}%
+\contentsline {subsection}{\numberline {23.38}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{473}{subsection.23.38}%
+\contentsline {subsection}{\numberline {23.39}Procesos de Renovaci\'on}{474}{subsection.23.39}%
+\contentsline {subsection}{\numberline {23.40}Teorema Principal de Renovaci\'on}{474}{subsection.23.40}%
+\contentsline {subsection}{\numberline {23.41}Funci\'on de Renovaci\'on}{475}{subsection.23.41}%
+\contentsline {subsection}{\numberline {23.42}Propiedades de los Procesos de Renovaci\'on}{475}{subsection.23.42}%
+\contentsline {subsection}{\numberline {23.43}Funci\'on de Renovaci\'on}{477}{subsection.23.43}%
+\contentsline {subsection}{\numberline {23.44}Puntos de Renovaci\'on}{477}{subsection.23.44}%
+\contentsline {subsection}{\numberline {23.45}Resultados para Procesos de Salida}{478}{subsection.23.45}%
+\contentsline {subsection}{\numberline {23.46}Procesos Regenerativos}{480}{subsection.23.46}%
+\contentsline {subsection}{\numberline {23.47}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{481}{subsection.23.47}%
+\contentsline {subsection}{\numberline {23.48}Procesos Regenerativos}{486}{subsection.23.48}%
+\contentsline {subsection}{\numberline {23.49}Procesos Regenerativos}{487}{subsection.23.49}%
+\contentsline {subsection}{\numberline {23.50}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{488}{subsection.23.50}%
+\contentsline {subsection}{\numberline {23.51}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{489}{subsection.23.51}%
+\contentsline {subsection}{\numberline {23.52}Propiedades de los Procesos de Renovaci\'on}{490}{subsection.23.52}%
+\contentsline {subsection}{\numberline {23.53}Propiedades de los Procesos de Renovaci\'on}{493}{subsection.23.53}%
+\contentsline {subsection}{\numberline {23.54}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{495}{subsection.23.54}%
+\contentsline {subsection}{\numberline {23.55}Procesos de Renovaci\'on}{495}{subsection.23.55}%
+\contentsline {subsection}{\numberline {23.56}Teorema Principal de Renovaci\'on}{496}{subsection.23.56}%
+\contentsline {subsection}{\numberline {23.57}Funci\'on de Renovaci\'on}{496}{subsection.23.57}%
+\contentsline {subsection}{\numberline {23.58}Propiedades de los Procesos de Renovaci\'on}{497}{subsection.23.58}%
+\contentsline {subsection}{\numberline {23.59}Funci\'on de Renovaci\'on}{498}{subsection.23.59}%
+\contentsline {subsection}{\numberline {23.60}Procesos de Renovaci\'on}{499}{subsection.23.60}%
+\contentsline {subsection}{\numberline {23.61}Puntos de Renovaci\'on}{499}{subsection.23.61}%
+\contentsline {subsection}{\numberline {23.62}Resultados para Procesos de Salida}{500}{subsection.23.62}%
+\contentsline {subsection}{\numberline {23.63}Procesos Regenerativos}{502}{subsection.23.63}%
+\contentsline {subsection}{\numberline {23.64}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{536}{subsection.23.64}%
+\contentsline {subsection}{\numberline {23.65}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{537}{subsection.23.65}%
+\contentsline {subsection}{\numberline {23.66}Procesos de Renovaci\'on}{538}{subsection.23.66}%
+\contentsline {subsection}{\numberline {23.67}Propiedades de los Procesos de Renovaci\'on}{539}{subsection.23.67}%
+\contentsline {subsection}{\numberline {23.68}Propiedades de los Procesos de Renovaci\'on}{540}{subsection.23.68}%
+\contentsline {subsection}{\numberline {23.69}Propiedades de los Procesos de Renovaci\'on}{542}{subsection.23.69}%
+\contentsline {subsection}{\numberline {23.70}Propiedades de los Procesos de Renovaci\'on}{543}{subsection.23.70}%
+\contentsline {subsection}{\numberline {23.71}Propiedades de los Procesos de Renovaci\'on}{544}{subsection.23.71}%
+\contentsline {subsection}{\numberline {23.72}Funci\'on de Renovaci\'on}{545}{subsection.23.72}%
+\contentsline {subsection}{\numberline {23.73}Funci\'on de Renovaci\'on}{546}{subsection.23.73}%
+\contentsline {subsection}{\numberline {23.74}Procesos de Renovaci\'on}{546}{subsection.23.74}%
+\contentsline {subsection}{\numberline {23.75}Procesos Regenerativos}{553}{subsection.23.75}%
+\contentsline {subsection}{\numberline {23.76}Procesos Regenerativos}{554}{subsection.23.76}%
+\contentsline {subsection}{\numberline {23.77}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{555}{subsection.23.77}%
+\contentsline {subsection}{\numberline {23.78}Existencia de Tiempos de Regeneraci\'on}{556}{subsection.23.78}%
+\contentsline {subsection}{\numberline {23.79}Procesos Regenerativos: Thorisson}{556}{subsection.23.79}%
+\contentsline {subsection}{\numberline {23.80}Procesos Regenerativos}{570}{subsection.23.80}%
+\contentsline {subsection}{\numberline {23.81}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman2}}{570}{subsection.23.81}%
+\contentsline {subsection}{\numberline {23.82}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{571}{subsection.23.82}%
+\contentsline {subsection}{\numberline {23.83}Procesos de Renovaci\'on}{572}{subsection.23.83}%
+\contentsline {subsection}{\numberline {23.84}Teorema Principal de Renovaci\'on}{573}{subsection.23.84}%
+\contentsline {subsection}{\numberline {23.85}Propiedades de los Procesos de Renovaci\'on}{573}{subsection.23.85}%
+\contentsline {subsection}{\numberline {23.86}Propiedades de los Procesos de Renovaci\'on}{575}{subsection.23.86}%
+\contentsline {subsection}{\numberline {23.87}Propiedades de los Procesos de Renovaci\'on}{576}{subsection.23.87}%
+\contentsline {subsection}{\numberline {23.88}Propiedades de los Procesos de Renovaci\'on}{577}{subsection.23.88}%
+\contentsline {subsection}{\numberline {23.89}Propiedades de los Procesos de Renovaci\'on}{578}{subsection.23.89}%
+\contentsline {subsection}{\numberline {23.90}Funci\'on de Renovaci\'on}{580}{subsection.23.90}%
+\contentsline {subsection}{\numberline {23.91}Funci\'on de Renovaci\'on}{580}{subsection.23.91}%
+\contentsline {subsection}{\numberline {23.92}Procesos de Renovaci\'on}{581}{subsection.23.92}%
+\contentsline {subsection}{\numberline {23.93}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{581}{subsection.23.93}%
+\contentsline {subsection}{\numberline {23.94}Procesos Regenerativos}{588}{subsection.23.94}%
+\contentsline {subsection}{\numberline {23.95}Puntos de Renovaci\'on}{591}{subsection.23.95}%
+\contentsline {subsection}{\numberline {23.96}Resultados para Procesos de Salida}{592}{subsection.23.96}%
+\contentsline {subsection}{\numberline {23.97}Procesos Regenerativos}{592}{subsection.23.97}%
+\contentsline {subsection}{\numberline {23.98}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{593}{subsection.23.98}%
+\contentsline {subsection}{\numberline {23.99}Procesos Regenerativos}{598}{subsection.23.99}%
+\contentsline {subsection}{\numberline {23.100}Procesos Regenerativos}{599}{subsection.23.100}%
+\contentsline {subsection}{\numberline {23.101}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{600}{subsection.23.101}%
+\contentsline {subsection}{\numberline {23.102}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{600}{subsection.23.102}%
+\contentsline {subsection}{\numberline {23.103}Propiedades de los Procesos de Renovaci\'on}{601}{subsection.23.103}%
+\contentsline {subsection}{\numberline {23.104}Propiedades de los Procesos de Renovaci\'on}{602}{subsection.23.104}%
+\contentsline {subsection}{\numberline {23.105}Propiedades de los Procesos de Renovaci\'on}{604}{subsection.23.105}%
+\contentsline {subsection}{\numberline {23.106}Propiedades de los Procesos de Renovaci\'on}{605}{subsection.23.106}%
+\contentsline {subsection}{\numberline {23.107}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{606}{subsection.23.107}%
+\contentsline {subsection}{\numberline {23.108}Procesos de Renovaci\'on}{607}{subsection.23.108}%
+\contentsline {subsection}{\numberline {23.109}Teorema Principal de Renovaci\'on}{607}{subsection.23.109}%
+\contentsline {subsection}{\numberline {23.110}Funci\'on de Renovaci\'on}{608}{subsection.23.110}%
+\contentsline {subsection}{\numberline {23.111}Propiedades de los Procesos de Renovaci\'on}{608}{subsection.23.111}%
+\contentsline {subsection}{\numberline {23.112}Funci\'on de Renovaci\'on}{610}{subsection.23.112}%
+\contentsline {subsection}{\numberline {23.113}Procesos de Renovaci\'on}{610}{subsection.23.113}%
+\contentsline {subsection}{\numberline {23.114}Puntos de Renovaci\'on}{611}{subsection.23.114}%
+\contentsline {subsection}{\numberline {23.115}Resultados para Procesos de Salida}{612}{subsection.23.115}%
+\contentsline {subsection}{\numberline {23.116}Procesos Regenerativos}{613}{subsection.23.116}%
+\contentsline {subsection}{\numberline {23.117}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{614}{subsection.23.117}%
+\contentsline {subsection}{\numberline {23.118}Procesos Regenerativos}{619}{subsection.23.118}%
+\contentsline {subsection}{\numberline {23.119}Procesos Regenerativos}{620}{subsection.23.119}%
+\contentsline {subsection}{\numberline {23.120}Propiedades de los Procesos de Renovaci\'on}{621}{subsection.23.120}%
+\contentsline {subsection}{\numberline {23.121}Propiedades de los Procesos de Renovaci\'on}{625}{subsection.23.121}%
+\contentsline {subsection}{\numberline {23.122}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{626}{subsection.23.122}%
+\contentsline {subsection}{\numberline {23.123}Procesos de Renovaci\'on}{627}{subsection.23.123}%
+\contentsline {subsection}{\numberline {23.124}Teorema Principal de Renovaci\'on}{628}{subsection.23.124}%
+\contentsline {subsection}{\numberline {23.125}Funci\'on de Renovaci\'on}{628}{subsection.23.125}%
+\contentsline {subsection}{\numberline {23.126}Propiedades de los Procesos de Renovaci\'on}{629}{subsection.23.126}%
+\contentsline {subsection}{\numberline {23.127}Funci\'on de Renovaci\'on}{630}{subsection.23.127}%
+\contentsline {subsection}{\numberline {23.128}Procesos de Renovaci\'on}{631}{subsection.23.128}%
+\contentsline {subsection}{\numberline {23.129}Puntos de Renovaci\'on}{631}{subsection.23.129}%
+\contentsline {subsection}{\numberline {23.130}Resultados para Procesos de Salida}{632}{subsection.23.130}%
+\contentsline {subsection}{\numberline {23.131}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{634}{subsection.23.131}%
+\contentsline {subsection}{\numberline {23.132}Output Process and Regenerative Processes}{685}{subsection.23.132}%
+\contentsline {subsection}{\numberline {23.133}Procesos Regenerativos}{706}{subsection.23.133}%
+\contentsline {subsection}{\numberline {23.134}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{706}{subsection.23.134}%
+\contentsline {subsection}{\numberline {23.135}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{717}{subsection.23.135}%
+\contentsline {section}{\numberline {24}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{726}{section.24}%
+\contentsline {subsection}{\numberline {24.1}Teorema Principal de Renovaci\'on}{727}{subsection.24.1}%
+\contentsline {subsection}{\numberline {24.2}Propiedades de los Procesos de Renovaci\'on}{728}{subsection.24.2}%
+\contentsline {subsection}{\numberline {24.3}Funci\'on de Renovaci\'on}{729}{subsection.24.3}%
+\contentsline {subsection}{\numberline {24.4}Procesos de Renovaci\'on}{730}{subsection.24.4}%
+\contentsline {subsection}{\numberline {24.5}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{730}{subsection.24.5}%
+\contentsline {subsection}{\numberline {24.6}Procesos Regenerativos}{737}{subsection.24.6}%
+\contentsline {subsection}{\numberline {24.7}Procesos Regenerativos}{737}{subsection.24.7}%
+\contentsline {subsection}{\numberline {24.8}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{738}{subsection.24.8}%
+\contentsline {subsection}{\numberline {24.9}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{739}{subsection.24.9}%
+\contentsline {subsection}{\numberline {24.10}Procesos Regenerativos}{740}{subsection.24.10}%
+\contentsline {subsection}{\numberline {24.11}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{740}{subsection.24.11}%
+\contentsline {subsection}{\numberline {24.12}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{741}{subsection.24.12}%
+\contentsline {subsection}{\numberline {24.13}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{742}{subsection.24.13}%
+\contentsline {subsection}{\numberline {24.14}Modelo de Flujo}{743}{subsection.24.14}%
+\contentsline {subsection}{\numberline {24.15}Procesos de Estados de Markov}{753}{subsection.24.15}%
+\contentsline {subsection}{\numberline {24.16}Teor\'ia General de Procesos Estoc\'asticos}{755}{subsection.24.16}%
+\contentsline {subsection}{\numberline {24.17}Propiedades de Markov}{755}{subsection.24.17}%
+\contentsline {subsection}{\numberline {24.18}Primer Condici\'on de Regularidad}{756}{subsection.24.18}%
+\contentsline {subsection}{\numberline {24.19}Construcci\'on del Modelo de Flujo}{756}{subsection.24.19}%
+\contentsline {subsection}{\numberline {24.20}Estabilidad}{759}{subsection.24.20}%
+\contentsline {subsection}{\numberline {24.21}Propiedades de Markov}{763}{subsection.24.21}%
+\contentsline {subsection}{\numberline {24.22}Primer Condici\'on de Regularidad}{764}{subsection.24.22}%
+\contentsline {subsection}{\numberline {24.23}Procesos Fuerte de Markov}{771}{subsection.24.23}%
+\contentsline {subsubsection}{\numberline {24.23.1}Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{771}{subsubsection.24.23.1}%
+\contentsline {subsection}{\numberline {24.24}Procesos Harris Recurrentes Positivos}{771}{subsection.24.24}%
+\contentsline {subsection}{\numberline {24.25}Construcci\'on de un Modelo de Flujo L\'imite}{771}{subsection.24.25}%
+\contentsline {subsection}{\numberline {24.26}Modelo de Visitas C\'iclicas con un Servidor: Estabilidad}{775}{subsection.24.26}%
+\contentsline {subsection}{\numberline {24.27}Teorema 2.1}{775}{subsection.24.27}%
+\contentsline {subsection}{\numberline {24.28}Teorema 2.2}{777}{subsection.24.28}%
+\contentsline {subsection}{\numberline {24.29}Teorema 2.3}{777}{subsection.24.29}%
+\contentsline {subsection}{\numberline {24.30}Definiciones B\'asicas}{777}{subsection.24.30}%
+\contentsline {subsection}{\numberline {24.31}Preliminares}{781}{subsection.24.31}%
+\contentsline {subsection}{\numberline {24.32}Procesos Harris Recurrente}{782}{subsection.24.32}%
+\contentsline {subsection}{\numberline {24.33}Modelo de Flujo}{784}{subsection.24.33}%
+\contentsline {subsection}{\numberline {24.34}Procesos de Estados de Markov}{795}{subsection.24.34}%
+\contentsline {subsection}{\numberline {24.35}Teor\'ia General de Procesos Estoc\'asticos}{796}{subsection.24.35}%
+\contentsline {subsection}{\numberline {24.36}Propiedades de Markov}{796}{subsection.24.36}%
+\contentsline {subsection}{\numberline {24.37}Primer Condici\'on de Regularidad}{797}{subsection.24.37}%
+\contentsline {subsection}{\numberline {24.38}Construcci\'on del Modelo de Flujo}{798}{subsection.24.38}%
+\contentsline {subsection}{\numberline {24.39}Estabilidad}{801}{subsection.24.39}%
+\contentsline {subsection}{\numberline {24.40}Propiedades de Markov}{805}{subsection.24.40}%
+\contentsline {subsection}{\numberline {24.41}Primer Condici\'on de Regularidad}{806}{subsection.24.41}%
+\contentsline {subsection}{\numberline {24.42}Procesos de Estados Markoviano para el Sistema}{812}{subsection.24.42}%
+\contentsline {subsection}{\numberline {24.43}Procesos Fuerte de Markov}{812}{subsection.24.43}%
+\contentsline {subsubsection}{\numberline {24.43.1}Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{813}{subsubsection.24.43.1}%
+\contentsline {subsection}{\numberline {24.44}Procesos Harris Recurrentes Positivos}{813}{subsection.24.44}%
+\contentsline {subsection}{\numberline {24.45}Construcci\'on de un Modelo de Flujo L\'imite}{813}{subsection.24.45}%
+\contentsline {subsection}{\numberline {24.46}Modelo de Visitas C\'iclicas con un Servidor: Estabilidad}{817}{subsection.24.46}%
+\contentsline {subsection}{\numberline {24.47}Teorema 2.1}{817}{subsection.24.47}%
+\contentsline {subsection}{\numberline {24.48}Teorema 2.2}{818}{subsection.24.48}%
+\contentsline {subsection}{\numberline {24.49}Teorema 2.3}{818}{subsection.24.49}%
+\contentsline {subsection}{\numberline {24.50}Definiciones B\'asicas}{819}{subsection.24.50}%
+\contentsline {subsection}{\numberline {24.51}Proceso de Estados Markoviano para el Sistema}{822}{subsection.24.51}%
+\contentsline {subsection}{\numberline {24.52}Procesos Fuerte de Markov}{822}{subsection.24.52}%
+\contentsline {subsection}{\numberline {24.53}Propiedades de Markov}{823}{subsection.24.53}%
+\contentsline {subsection}{\numberline {24.54}Primer Condici\'on de Regularidad}{823}{subsection.24.54}%
+\contentsline {subsection}{\numberline {24.55}Propiedades de Markov}{826}{subsection.24.55}%
+\contentsline {subsection}{\numberline {24.56}Primer Condici\'on de Regularidad}{827}{subsection.24.56}%
+\contentsline {subsection}{\numberline {24.57}Supuestos}{834}{subsection.24.57}%
+\contentsline {subsubsection}{\numberline {24.57.1}Supuestos B\'asicos}{835}{subsubsection.24.57.1}%
+\contentsline {subsection}{\numberline {24.58}Procesos Harris Recurrente}{835}{subsection.24.58}%
+\contentsline {subsection}{\numberline {24.59}Modelo de Flujo}{836}{subsection.24.59}%
+\contentsline {subsubsection}{\numberline {24.59.1}Modelo de Flujo y Estabilidad}{842}{subsubsection.24.59.1}%
+\contentsline {subsubsection}{\numberline {24.59.2}Resultados principales}{843}{subsubsection.24.59.2}%
+\contentsline {subsubsection}{\numberline {24.59.3}Definiciones Generales}{844}{subsubsection.24.59.3}%
+\contentsline {subsubsection}{\numberline {24.59.4}Definiciones y Descripci\'on del Modelo}{846}{subsubsection.24.59.4}%
+\contentsline {subsubsection}{\numberline {24.59.5}Pol\'iticas de Servicio}{846}{subsubsection.24.59.5}%
+\contentsline {subsubsection}{\numberline {24.59.6}Proceso de Estados}{846}{subsubsection.24.59.6}%
+\contentsline {subsubsection}{\numberline {24.59.7}Introducci{\'o}n}{847}{subsubsection.24.59.7}%
+\contentsline {subsubsection}{\numberline {24.59.8}Colas C\'iclicas}{847}{subsubsection.24.59.8}%
+\contentsline {subsubsection}{\numberline {24.59.9}Resultados Previos}{848}{subsubsection.24.59.9}%
+\contentsline {subsubsection}{\numberline {24.59.10}Teorema de Estabilidad: Descripci{\'o}n}{849}{subsubsection.24.59.10}%
+\contentsline {subsection}{\numberline {24.60}Supuestos}{850}{subsection.24.60}%
+\contentsline {subsubsection}{\numberline {24.60.1}Supuestos B\'asicos}{851}{subsubsection.24.60.1}%
+\contentsline {subsection}{\numberline {24.61}Procesos Harris Recurrente}{851}{subsection.24.61}%
+\contentsline {subsection}{\numberline {24.62}Modelo de Flujo}{853}{subsection.24.62}%
+\contentsline {subsection}{\numberline {24.63}Modelo de Flujo}{854}{subsection.24.63}%
+\contentsline {subsection}{\numberline {24.64}Estabilidad de los Sistemas de Visitas C\'iclicas}{857}{subsection.24.64}%
+\contentsline {subsection}{\numberline {24.65}Resultados principales}{858}{subsection.24.65}%
+\contentsline {subsection}{\numberline {24.66}Supuestos}{858}{subsection.24.66}%
+\contentsline {subsubsection}{\numberline {24.66.1}Supuestos B\'asicos}{859}{subsubsection.24.66.1}%
+\contentsline {subsection}{\numberline {24.67}Procesos Harris Recurrente}{860}{subsection.24.67}%
+\contentsline {subsection}{\numberline {24.68}Modelo de Flujo}{861}{subsection.24.68}%
+\contentsline {subsection}{\numberline {24.69}Supuestos}{863}{subsection.24.69}%
+\contentsline {subsubsection}{\numberline {24.69.1}Supuestos B\'asicos}{864}{subsubsection.24.69.1}%
+\contentsline {subsection}{\numberline {24.70}Procesos Harris Recurrente}{865}{subsection.24.70}%
+\contentsline {subsection}{\numberline {24.71}Modelo de Flujo}{866}{subsection.24.71}%
+\contentsline {subsubsection}{\numberline {24.71.1}Supuestos B\'asicos}{868}{subsubsection.24.71.1}%
+\contentsline {subsection}{\numberline {24.72}Procesos Harris Recurrente}{868}{subsection.24.72}%
+\contentsline {subsection}{\numberline {24.73}Modelo de Flujo}{870}{subsection.24.73}%
+\contentsline {subsection}{\numberline {24.74}Supuestos}{871}{subsection.24.74}%
+\contentsline {subsubsection}{\numberline {24.74.1}Supuestos B\'asicos}{873}{subsubsection.24.74.1}%
+\contentsline {subsection}{\numberline {24.75}Procesos Harris Recurrente}{873}{subsection.24.75}%
+\contentsline {subsection}{\numberline {24.76}Modelo de Flujo}{874}{subsection.24.76}%
+\contentsline {section}{\numberline {25}Preliminares: Modelos de Flujo}{876}{section.25}%
+\contentsline {subsection}{\numberline {25.1}Supuestos B\'asicos}{877}{subsection.25.1}%
+\contentsline {subsection}{\numberline {25.2}Procesos Regenerativos}{878}{subsection.25.2}%
+\contentsline {subsection}{\numberline {25.3}Preliminares}{879}{subsection.25.3}%
+\contentsline {subsection}{\numberline {25.4}Procesos Harris Recurrente}{880}{subsection.25.4}%
+\contentsline {section}{\numberline {26}Modelo de Flujo}{882}{section.26}%
+\contentsline {subsection}{\numberline {26.1}Teor\'a de Procesos Estoc\'asticos y Medibilidad}{884}{subsection.26.1}%
+\contentsline {subsection}{\numberline {26.2}Construcci\'on del Modelo de Flujo}{892}{subsection.26.2}%

@@ -1,4 +1,3 @@
-
 %_____________________________________________________________________________________
 %
 \section{Cadenas de Markov}
@@ -6,54 +5,50 @@
 %
 \subsection{Estacionareidad}
 %_____________________________________________________________________________________
-%}
-%%\begin{frame}\frametitle{Estacionareidad}
-Sea $v=\left(v_{i}\right)_{i\in E}$ medida no negativa en $E$, podemos definir una nueva medida $v\prob$ que asigna masa $\sum_{i\in E}v_{i}p_{ij}$ a cada estado $j$.\smallskip
+%
+Sea $v=\left(v_{i}\right)_{i\in E}$ medida no negativa en $E$, podemos definir una nueva medida $v\prob$ que asigna masa $\sum_{i\in E}v_{i}p_{ij}$ a cada estado $j$.
 
 \begin{Def}
-La medida $v$ es estacionaria si $v_{i}<\infty$ para toda $i$ y adem?s $v\prob=v$.\smallskip
+La medida $v$ es estacionaria si $v_{i}<\infty$ para toda $i$ y adem\'s $v\prob=v$.
 \end{Def}
-En el caso de que $v$ sea distribuci?n, independientemente de que sea estacionaria o no, se cumple con
+En el caso de que $v$ sea distribuci\'on, independientemente de que sea estacionaria o no, se cumple con
 
 \begin{eqnarray*}
 \prob_{v}\left[X_{1}=j\right]=\sum_{i\in E}\prob_{v}\left[X_{0}=i\right]p_{ij}=\sum_{i\in E}v_{i}p_{ij}=\left(vP\right)_{j}
 \end{eqnarray*}
 
-%\end{frame}
-%____________________________________________________________________________
-%%%\begin{frame}\frametitle{Estacionareidad}
 \begin{Teo}
-Supongamos que $v$ es una distribuci?n estacionaria. Entonces
+Supongamos que $v$ es una distribuci\'on estacionaria. Entonces
 \begin{itemize}
-\item[i)] La cadena es estrictamente estacionaria con respecto a $\prob_{v}$, es decir, $\prob_{v}$-distribuci?n de $\left\{X_{n},X_{n+1},\ldots\right\}$ no depende de $n$;
-\item[ii)] Existe un aversi?n estrictamente estacionaria $\left\{X_{n}\right\}_{n\in Z}$ de la cadena con doble tiempo infinito y $\prob\left(X_{n}=i\right)=v_{i}$ para toda $n\in Z$.
+\item[i)] La cadena es estrictamente estacionaria con respecto a $\prob_{v}$, es decir, $\prob_{v}$-distribuci\'on de $\left\{X_{n},X_{n+1},\ldots\right\}$ no depende de $n$;
+\item[ii)] Existe una versi\'on estrictamente estacionaria $\left\{X_{n}\right\}_{n\in Z}$ de la cadena con doble tiempo infinito y $\prob\left(X_{n}=i\right)=v_{i}$ para toda $n\in Z$.
 \end{itemize}
 \end{Teo}
+
 \begin{Teo}
-Sea $i$ estado fijo, recurrente. Entonces una medida estacionaria $v$ puede definirse haciendo que $v_{j}$ sea el n?mero esperado de visitas a $j$ entre dos visitas consecutivas $i$,
+Sea $i$ estado fijo, recurrente. Entonces una medida estacionaria $v$ puede definirse haciendo que $v_{j}$ sea el n\'umero esperado de visitas a $j$ entre dos visitas consecutivas $i$,
 \begin{equation}\label{Eq.3.1}
 v_{j}=\esp_{i}\sum_{n=0}^{\tau(i)-1}\indora\left(X_{n}=i\right)=\sum_{n=0}^{\infty}\prob_{i}\left[X_{n}=j,\tau(i)>n\right]
 \end{equation}
 \end{Teo}
-%\end{frame}
-%____________________________________________________________________________
-%%%\begin{frame}\frametitle{Estacionareidad}
+
 \begin{Teo}\label{Teo.3.3}
-Si la cadena es irreducible y recurrente, entonces una medida estacionaria $v$ existe, satisface $0<v_{j}<\infty$ para toda $j$ y es ?nica salvo factores multiplicativos, es decir, si $v,v^{*}$ son estacionarias, entonces $c=cv^{*}$ para alguna $c\in\left(0,\infty\right)$.
+Si la cadena es irreducible y recurrente, entonces una medida estacionaria $v$ existe, satisface $0<v_{j}<\infty$ para toda $j$ y es \'unica salvo factores multiplicativos, es decir, si $v,v^{*}$ son estacionarias, entonces $c=cv^{*}$ para alguna $c\in\left(0,\infty\right)$.
 \end{Teo}
+
 \begin{Cor}\label{Cor.3.5}
-Si la cadena es irreducible y positiva recurrente, existe una ?nica distribuci?n estacionaria $\pi$ dada por
+Si la cadena es irreducible y positiva recurrente, existe una \'unica distribuci\'on estacionaria $\pi$ dada por
 \begin{equation}
 \pi_{j}=\frac{1}{\esp_{i}\tau_{i}}\esp_{i}\sum_{n=0}^{\tau\left(i\right)-1}\indora\left(X_{n}=j\right)=\frac{1}{\esp_{j}\tau\left(j\right)}.
 \end{equation}
 \end{Cor}
+
 \begin{Cor}\label{Cor.3.6}
 Cualquier cadena de Markov irreducible con un espacio de estados finito es positiva recurrente.
 \end{Cor}
-%\end{frame}
 %_____________________________________________________________________________________
 %
-\subsection{Teor?a Erg?dica}
+\subsection{Teor\'ia Erg\'odica}
 %_____________________________________________________________________________________
 %
 %%%\begin{frame}\frametitle{Estacionareidad y Teor?a Erg?dica}

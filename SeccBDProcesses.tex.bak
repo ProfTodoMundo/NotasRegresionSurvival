@@ -1,0 +1,42 @@
+\section{Birth-Death Processes as Queueing Models}
+
+\subsection{Cola M/M/1}
+\begin{Prop}
+La cola M/M/1 con intensidad de tr\'afico $\rho$ es recurrente si
+y s\'olo si $\rho\leq1$
+\end{Prop}
+
+\begin{Prop}
+La cola M/M/1 con intensidad de tr\'afica $\rho$ es ergodica si y
+s\'olo si $\rho<1$. En este caso, la distribuci\'on de equilibrio
+$\pi$ de la longitud de la cola es geom\'etrica,
+$\pi_{n}=\left(1-\rho\right)\rho^{n}$, para $n=0,1,2,\ldots$.
+\end{Prop}
+%\end{frame}
+
+
+%____________________________________________________________________________
+%%%\begin{frame}
+\subsection{Cola con Infinidad de Servidores}
+
+Este caso corresponde a $\beta_{n}=\beta$ y $\delta_{n}=n\delta$.
+El par\'ametro de inter\'es es $\eta=\frac{\beta}{\delta}$, de
+donde se obtiene:
+\begin{eqnarray*}
+\sum_{n\geq0}\frac{\delta_{1}\cdots\delta_{n}}{\beta_{1}\cdots\beta_{n}}=\sum_{n=1}^{\infty}n!\eta^{n}=\infty,\\
+S=1+\sum_{n=1}^{\infty}\frac{\eta^{n}}{n!}=e^{n}.
+\end{eqnarray*}
+\begin{Prop}
+La cola $M/M/\infty$ es ergodica para todos los valores de $\eta$.
+La distribuci\'on de equilibrio $\pi$ es Poisson con media $\eta$,
+$\pi_{n}=\frac{e^{-n}\eta}{n!}$
+\end{Prop}
+\subsection{Cola M/M/m}
+
+En este caso $\beta_{n}=\beta$ y
+$\delta_{n}=m\left(n\right)\delta$, donde $m\left(n\right)=n$,
+$1\leq n\leq m$. La intensidad de tr\'afico es
+$\rho=\frac{\beta}{m\delta}$, se tiene entonces que
+$\beta_{n}/\delta_{n}=\rho$ para $n\geq m$. As\'i, para el caso
+$m=1$,
+%\end{frame}

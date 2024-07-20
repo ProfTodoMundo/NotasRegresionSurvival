@@ -218,4 +218,2178 @@ Se dice que la cadena es irreducible si cualquiera de las siguientes condiciones
 \end{enumerate}
 \end{Prop}
 
+%______________________________________________________________________
+\section{Procesos Regenerativos Estacionarios: Visi\'on cl\'asica}
+%______________________________________________________________________
 
+\begin{Def}\label{Def.Tn}
+Sean $0\leq T_{1}\leq T_{2}\leq \ldots$ son tiempos aleatorios infinitos en los cuales ocurren ciertos eventos. El n\'umero de tiempos $T_{n}$ en el intervalo $\left[0,t\right)$ es
+
+\begin{eqnarray}
+N\left(t\right)=\sum_{n=1}^{\infty}\indora\left(T_{n}\leq t\right),
+\end{eqnarray}
+para $t\geq0$.
+\end{Def}
+
+Si se consideran los puntos $T_{n}$ como elementos de $\rea_{+}$, y $N\left(t\right)$ es el n\'umero de puntos en $\rea$. El proceso denotado por $\left\{N\left(t\right):t\geq0\right\}$, denotado por $N\left(t\right)$, es un proceso puntual en $\rea_{+}$. Los $T_{n}$ son los tiempos de ocurrencia, el proceso puntual $N\left(t\right)$ es simple si su n\'umero de ocurrencias son distintas: $0<T_{1}<T_{2}<\ldots$ casi seguramente.
+
+\begin{Def}
+Un proceso puntual $N\left(t\right)$ es un proceso de renovaci\'on si los tiempos de interocurrencia $\xi_{n}=T_{n}-T_{n-1}$, para $n\geq1$, son independientes e identicamente distribuidos con distribuci\'on $F$, donde $F\left(0\right)=0$ y $T_{0}=0$. Los $T_{n}$ son llamados tiempos de renovaci\'on, referente a la independencia o renovaci\'on de la informaci\'on estoc\'astica en estos tiempos. Los $\xi_{n}$ son los tiempos de inter-renovaci\'on, y $N\left(t\right)$ es el n\'umero de renovaciones en el intervalo $\left[0,t\right)$
+\end{Def}
+
+
+\begin{Note}
+Para definir un proceso de renovaci\'on para cualquier contexto, solamente hay que especificar una distribuci\'on $F$, con $F\left(0\right)=0$, para los tiempos de inter-renovaci\'on. La funci\'on $F$ en turno degune las otra variables aleatorias. De manera formal, existe un espacio de probabilidad y una sucesi\'on de variables aleatorias $\xi_{1},\xi_{2},\ldots$ definidas en este con distribuci\'on $F$. Entonces las otras cantidades son $T_{n}=\sum_{k=1}^{n}\xi_{k}$ y $N\left(t\right)=\sum_{n=1}^{\infty}\indora\left(T_{n}\leq t\right)$, donde $T_{n}\rightarrow\infty$ casi seguramente por la Ley Fuerte de los Grandes Números.
+\end{Note}
+
+%___________________________________________________________________________________________
+%
+\subsection{Teorema Principal de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+\begin{Note} Una funci\'on $h:\rea_{+}\rightarrow\rea$ es Directamente Riemann Integrable en los siguientes casos:
+\begin{itemize}
+\item[a)] $h\left(t\right)\geq0$ es decreciente y Riemann Integrable.
+\item[b)] $h$ es continua excepto posiblemente en un conjunto de Lebesgue de medida 0, y $|h\left(t\right)|\leq b\left(t\right)$, donde $b$ es DRI.
+\end{itemize}
+\end{Note}
+
+\begin{Teo}[Teorema Principal de Renovaci\'on]
+Si $F$ es no aritm\'etica y $h\left(t\right)$ es Directamente Riemann Integrable (DRI), entonces
+
+\begin{eqnarray*}
+lim_{t\rightarrow\infty}U\star h=\frac{1}{\mu}\int_{\rea_{+}}h\left(s\right)ds.
+\end{eqnarray*}
+\end{Teo}
+
+\begin{Prop}
+Cualquier funci\'on $H\left(t\right)$ acotada en intervalos finitos y que es 0 para $t<0$ puede expresarse como
+\begin{eqnarray*}
+H\left(t\right)=U\star h\left(t\right)\textrm{,  donde }h\left(t\right)=H\left(t\right)-F\star H\left(t\right)
+\end{eqnarray*}
+\end{Prop}
+
+\begin{Def}
+Un proceso estoc\'astico $X\left(t\right)$ es crudamente regenerativo en un tiempo aleatorio positivo $T$ si
+\begin{eqnarray*}
+\esp\left[X\left(T+t\right)|T\right]=\esp\left[X\left(t\right)\right]\textrm{, para }t\geq0,\end{eqnarray*}
+y con las esperanzas anteriores finitas.
+\end{Def}
+
+\begin{Prop}
+Sup\'ongase que $X\left(t\right)$ es un proceso crudamente regenerativo en $T$, que tiene distribuci\'on $F$. Si $\esp\left[X\left(t\right)\right]$ es acotado en intervalos finitos, entonces
+\begin{eqnarray*}
+\esp\left[X\left(t\right)\right]=U\star h\left(t\right)\textrm{,  donde }h\left(t\right)=\esp\left[X\left(t\right)\indora\left(T>t\right)\right].
+\end{eqnarray*}
+\end{Prop}
+
+\begin{Teo}[Regeneraci\'on Cruda]
+Sup\'ongase que $X\left(t\right)$ es un proceso con valores positivo crudamente regenerativo en $T$, y def\'inase $M=\sup\left\{|X\left(t\right)|:t\leq T\right\}$. Si $T$ es no aritm\'etico y $M$ y $MT$ tienen media finita, entonces
+\begin{eqnarray*}
+lim_{t\rightarrow\infty}\esp\left[X\left(t\right)\right]=\frac{1}{\mu}\int_{\rea_{+}}h\left(s\right)ds,
+\end{eqnarray*}
+donde $h\left(t\right)=\esp\left[X\left(t\right)\indora\left(T>t\right)\right]$.
+\end{Teo}
+
+%___________________________________________________________________________________________
+%
+\subsection{Propiedades de los Procesos de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+%___________________________________________________________________________________________
+%
+\subsection{Funci\'on de Renovaci\'on}
+%___________________________________________________________________________________________
+%
+
+
+\begin{Def}
+Sea $h\left(t\right)$ funci\'on de valores reales en $\rea$ acotada en intervalos finitos e igual a cero para $t<0$ La ecuaci\'on de renovaci\'on para $h\left(t\right)$ y la distribuci\'on $F$ es
+
+\begin{eqnarray}\label{Ec.Renovacion}
+H\left(t\right)=h\left(t\right)+\int_{\left[0,t\right]}H\left(t-s\right)dF\left(s\right)\textrm{,    }t\geq0,
+\end{eqnarray}
+donde $H\left(t\right)$ es una funci\'on de valores reales. Esto es $H=h+F\star H$. Decimos que $H\left(t\right)$ es soluci\'on de esta ecuaci\'on si satisface la ecuaci\'on, y es acotada en intervalos finitos e iguales a cero para $t<0$.
+\end{Def}
+
+\begin{Prop}
+La funci\'on $U\star h\left(t\right)$ es la \'unica soluci\'on de la ecuaci\'on de renovaci\'on (\ref{Ec.Renovacion}).
+\end{Prop}
+
+\begin{Teo}[Teorema Renovaci\'on Elemental]
+\begin{eqnarray*}
+t^{-1}U\left(t\right)\rightarrow 1/\mu\textrm{,    cuando }t\rightarrow\infty.
+\end{eqnarray*}
+\end{Teo}
+
+%______________________________________________________________________
+\subsection{Procesos de Renovaci\'on}
+%______________________________________________________________________
+
+\begin{Def}\label{Def.Tn}
+Sean $0\leq T_{1}\leq T_{2}\leq \ldots$ son tiempos aleatorios infinitos en los cuales ocurren ciertos eventos. El n\'umero de tiempos $T_{n}$ en el intervalo $\left[0,t\right)$ es
+
+\begin{eqnarray}
+N\left(t\right)=\sum_{n=1}^{\infty}\indora\left(T_{n}\leq t\right),
+\end{eqnarray}
+para $t\geq0$.
+\end{Def}
+
+Si se consideran los puntos $T_{n}$ como elementos de $\rea_{+}$, y $N\left(t\right)$ es el n\'umero de puntos en $\rea$. El proceso denotado por $\left\{N\left(t\right):t\geq0\right\}$, denotado por $N\left(t\right)$, es un proceso puntual en $\rea_{+}$. Los $T_{n}$ son los tiempos de ocurrencia, el proceso puntual $N\left(t\right)$ es simple si su n\'umero de ocurrencias son distintas: $0<T_{1}<T_{2}<\ldots$ casi seguramente.
+
+\begin{Def}
+Un proceso puntual $N\left(t\right)$ es un proceso de renovaci\'on si los tiempos de interocurrencia $\xi_{n}=T_{n}-T_{n-1}$, para $n\geq1$, son independientes e identicamente distribuidos con distribuci\'on $F$, donde $F\left(0\right)=0$ y $T_{0}=0$. Los $T_{n}$ son llamados tiempos de renovaci\'on, referente a la independencia o renovaci\'on de la informaci\'on estoc\'astica en estos tiempos. Los $\xi_{n}$ son los tiempos de inter-renovaci\'on, y $N\left(t\right)$ es el n\'umero de renovaciones en el intervalo $\left[0,t\right)$
+\end{Def}
+
+
+\begin{Note}
+Para definir un proceso de renovaci\'on para cualquier contexto, solamente hay que especificar una distribuci\'on $F$, con $F\left(0\right)=0$, para los tiempos de inter-renovaci\'on. La funci\'on $F$ en turno degune las otra variables aleatorias. De manera formal, existe un espacio de probabilidad y una sucesi\'on de variables aleatorias $\xi_{1},\xi_{2},\ldots$ definidas en este con distribuci\'on $F$. Entonces las otras cantidades son $T_{n}=\sum_{k=1}^{n}\xi_{k}$ y $N\left(t\right)=\sum_{n=1}^{\infty}\indora\left(T_{n}\leq t\right)$, donde $T_{n}\rightarrow\infty$ casi seguramente por la Ley Fuerte de los Grandes Números.
+\end{Note}
+
+%___________________________________________________________________________________________
+%
+\subsection{Renewal and Regenerative Processes: Serfozo\cite{Serfozo}}
+%___________________________________________________________________________________________
+%
+\begin{Def}\label{Def.Tn}
+Sean $0\leq T_{1}\leq T_{2}\leq \ldots$ son tiempos aleatorios infinitos en los cuales ocurren ciertos eventos. El n\'umero de tiempos $T_{n}$ en el intervalo $\left[0,t\right)$ es
+
+\begin{eqnarray}
+N\left(t\right)=\sum_{n=1}^{\infty}\indora\left(T_{n}\leq t\right),
+\end{eqnarray}
+para $t\geq0$.
+\end{Def}
+
+Si se consideran los puntos $T_{n}$ como elementos de $\rea_{+}$, y $N\left(t\right)$ es el n\'umero de puntos en $\rea$. El proceso denotado por $\left\{N\left(t\right):t\geq0\right\}$, denotado por $N\left(t\right)$, es un proceso puntual en $\rea_{+}$. Los $T_{n}$ son los tiempos de ocurrencia, el proceso puntual $N\left(t\right)$ es simple si su n\'umero de ocurrencias son distintas: $0<T_{1}<T_{2}<\ldots$ casi seguramente.
+
+\begin{Def}
+Un proceso puntual $N\left(t\right)$ es un proceso de renovaci\'on si los tiempos de interocurrencia $\xi_{n}=T_{n}-T_{n-1}$, para $n\geq1$, son independientes e identicamente distribuidos con distribuci\'on $F$, donde $F\left(0\right)=0$ y $T_{0}=0$. Los $T_{n}$ son llamados tiempos de renovaci\'on, referente a la independencia o renovaci\'on de la informaci\'on estoc\'astica en estos tiempos. Los $\xi_{n}$ son los tiempos de inter-renovaci\'on, y $N\left(t\right)$ es el n\'umero de renovaciones en el intervalo $\left[0,t\right)$
+\end{Def}
+
+
+\begin{Note}
+Para definir un proceso de renovaci\'on para cualquier contexto, solamente hay que especificar una distribuci\'on $F$, con $F\left(0\right)=0$, para los tiempos de inter-renovaci\'on. La funci\'on $F$ en turno degune las otra variables aleatorias. De manera formal, existe un espacio de probabilidad y una sucesi\'on de variables aleatorias $\xi_{1},\xi_{2},\ldots$ definidas en este con distribuci\'on $F$. Entonces las otras cantidades son $T_{n}=\sum_{k=1}^{n}\xi_{k}$ y $N\left(t\right)=\sum_{n=1}^{\infty}\indora\left(T_{n}\leq t\right)$, donde $T_{n}\rightarrow\infty$ casi seguramente por la Ley Fuerte de los Grandes N\'umeros.
+\end{Note}
+
+
+
+
+
+
+
+Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
+\end{eqnarray*}
+
+adem\'as $N\left(T_{n}\right)=n$, y 
+
+\begin{eqnarray*}
+N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}
+\end{eqnarray*}
+
+Por propiedades de la convoluci\'on se sabe que
+
+\begin{eqnarray*}
+P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right)
+\end{eqnarray*}
+que es la $n$-\'esima convoluci\'on de $F$. Entonces 
+
+\begin{eqnarray*}
+\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\}\\
+P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right)
+\end{eqnarray*}
+
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$
+se tiene que
+
+\begin{eqnarray*}
+\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right)
+\end{eqnarray*}
+
+\begin{Prop}
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+\end{Prop}
+
+\begin{Ejem}[\textbf{Proceso Poisson}]
+
+Suponga que se tienen tiempos de inter-renovaci\'on \textit{i.i.d.} del proceso de renovaci\'on $N\left(t\right)$ tienen distribuci\'on exponencial $F\left(t\right)=q-e^{-\lambda t}$ con tasa $\lambda$. Entonces $N\left(t\right)$ es un proceso Poisson con tasa $\lambda$.
+
+\end{Ejem}
+
+
+\begin{Note}
+Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on que el resto de las $\xi_{n}$, para $n\geq2$, a $N\left(t\right)$ se le llama Proceso de Renovaci\'on retardado, donde si $\xi$ tiene distribuci\'on $G$, entonces el tiempo $T_{n}$ de la $n$-\'esima renovaci\'on tiene distribuci\'on $G\star F^{\left(n-1\right)\star}\left(t\right)$
+\end{Note}
+
+
+\begin{Teo}
+Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
+
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\end{eqnarray}
+\end{Teo}
+
+
+Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left/t\right)$ la cumple.
+
+
+\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]
+Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
+\begin{eqnarray}
+t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
+\end{eqnarray}
+
+\end{Coro}
+
+
+Considerar el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
+
+\begin{Def}
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+\begin{eqnarray*}
+M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|
+\end{eqnarray*}
+\end{Def}
+
+\begin{Teo}
+Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
+\begin{eqnarray}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\end{eqnarray}
+La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
+\end{Teo}
+
+\begin{Coro}
+Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
+\begin{eqnarray}
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
+\end{eqnarray}
+\end{Coro}
+
+
+Sup\'ongase que $N\left(t\right)$ es un proceso de renovaci\'on con distribuci\'on $F$ con media finita $\mu$.
+
+\begin{Def}
+La funci\'on de renovaci\'on asociada con la distribuci\'on $F$, del proceso $N\left(t\right)$, es
+\begin{eqnarray*}
+U\left(t\right)=\sum_{n=1}^{\infty}F^{n\star}\left(t\right),\textrm{   }t\geq0,
+\end{eqnarray*}
+donde $F^{0\star}\left(t\right)=\indora\left(t\geq0\right)$.
+\end{Def}
+
+
+\begin{Prop}
+Sup\'ongase que la distribuci\'on de inter-renovaci\'on $F$ tiene densidad $f$. Entonces $U\left(t\right)$ tambi\'en tiene densidad, para $t>0$, y es $U^{'}\left(t\right)=\sum_{n=0}^{\infty}f^{n\star}\left(t\right)$. Adem\'as
+\begin{eqnarray*}
+\prob\left\{N\left(t\right)>N\left(t-\right)\right\}=0\textrm{,   }t\geq0.
+\end{eqnarray*}
+\end{Prop}
+
+\begin{Def}
+La Transformada de Laplace-Stieljes de $F$ est\'a dada por
+
+\begin{eqnarray*}
+\hat{F}\left(\alpha\right)=\int_{\rea_{+}}e^{-\alpha t}dF\left(t\right)\textrm{,  }\alpha\geq0.
+\end{eqnarray*}
+\end{Def}
+
+Entonces
+
+\begin{eqnarray*}
+\hat{U}\left(\alpha\right)=\sum_{n=0}^{\infty}\hat{F^{n\star}}\left(\alpha\right)=\sum_{n=0}^{\infty}\hat{F}\left(\alpha\right)^{n}=\frac{1}{1-\hat{F}\left(\alpha\right)}.
+\end{eqnarray*}
+
+
+\begin{Prop}
+La Transformada de Laplace $\hat{U}\left(\alpha\right)$ y $\hat{F}\left(\alpha\right)$ determina una a la otra de manera \'unica por la relaci\'on $\hat{U}\left(\alpha\right)=\frac{1}{1-\hat{F}\left(\alpha\right)}$.
+\end{Prop}
+
+
+\begin{Note}
+Un proceso de renovaci\'on $N\left(t\right)$ cuyos tiempos de inter-renovaci\'on tienen media finita, es un proceso Poisson con tasa $\lambda$ si y s\'olo s\'i $\esp\left[U\left(t\right)\right]=\lambda t$, para $t\geq0$.
+\end{Note}
+
+
+\begin{Teo}
+Sea $N\left(t\right)$ un proceso puntual simple con puntos de localizaci\'on $T_{n}$ tal que $\eta\left(t\right)=\esp\left[N\left(\right)\right]$ es finita para cada $t$. Entonces para cualquier funci\'on $f:\rea_{+}\rightarrow\rea$,
+\begin{eqnarray*}
+\esp\left[\sum_{n=1}^{N\left(\right)}f\left(T_{n}\right)\right]=\int_{\left(0,t\right]}f\left(s\right)d\eta\left(s\right)\textrm{,  }t\geq0,
+\end{eqnarray*}
+suponiendo que la integral exista. Adem\'as si $X_{1},X_{2},\ldots$ son variables aleatorias definidas en el mismo espacio de probabilidad que el proceso $N\left(t\right)$ tal que $\esp\left[X_{n}|T_{n}=s\right]=f\left(s\right)$, independiente de $n$. Entonces
+\begin{eqnarray*}
+\esp\left[\sum_{n=1}^{N\left(t\right)}X_{n}\right]=\int_{\left(0,t\right]}f\left(s\right)d\eta\left(s\right)\textrm{,  }t\geq0,
+\end{eqnarray*} 
+suponiendo que la integral exista. 
+\end{Teo}
+
+\begin{Coro}[Identidad de Wald para Renovaciones]
+Para el proceso de renovaci\'on $N\left(t\right)$,
+\begin{eqnarray*}
+\esp\left[T_{N\left(t\right)+1}\right]=\mu\esp\left[N\left(t\right)+1\right]\textrm{,  }t\geq0,
+\end{eqnarray*}  
+\end{Coro}
+
+
+\begin{Def}
+Sea $h\left(t\right)$ funci\'on de valores reales en $\rea$ acotada en intervalos finitos e igual a cero para $t<0$ La ecuaci\'on de renovaci\'on para $h\left(t\right)$ y la distribuci\'on $F$ es
+
+\begin{eqnarray}\label{Ec.Renovacion}
+H\left(t\right)=h\left(t\right)+\int_{\left[0,t\right]}H\left(t-s\right)dF\left(s\right)\textrm{,    }t\geq0,
+\end{eqnarray}
+donde $H\left(t\right)$ es una funci\'on de valores reales. Esto es $H=h+F\star H$. Decimos que $H\left(t\right)$ es soluci\'on de esta ecuaci\'on si satisface la ecuaci\'on, y es acotada en intervalos finitos e iguales a cero para $t<0$.
+\end{Def}
+
+\begin{Prop}
+La funci\'on $U\star h\left(t\right)$ es la \'unica soluci\'on de la ecuaci\'on de renovaci\'on (\ref{Ec.Renovacion}).
+\end{Prop}
+
+\begin{Teo}[Teorema Renovaci\'on Elemental]
+\begin{eqnarray*}
+t^{-1}U\left(t\right)\rightarrow 1/\mu\textrm{,    cuando }t\rightarrow\infty.
+\end{eqnarray*}
+\end{Teo}
+
+
+
+Sup\'ongase que $N\left(t\right)$ es un proceso de renovaci\'on con distribuci\'on $F$ con media finita $\mu$.
+
+\begin{Def}
+La funci\'on de renovaci\'on asociada con la distribuci\'on $F$, del proceso $N\left(t\right)$, es
+\begin{eqnarray*}
+U\left(t\right)=\sum_{n=1}^{\infty}F^{n\star}\left(t\right),\textrm{   }t\geq0,
+\end{eqnarray*}
+donde $F^{0\star}\left(t\right)=\indora\left(t\geq0\right)$.
+\end{Def}
+
+
+\begin{Prop}
+Sup\'ongase que la distribuci\'on de inter-renovaci\'on $F$ tiene densidad $f$. Entonces $U\left(t\right)$ tambi\'en tiene densidad, para $t>0$, y es $U^{'}\left(t\right)=\sum_{n=0}^{\infty}f^{n\star}\left(t\right)$. Adem\'as
+\begin{eqnarray*}
+\prob\left\{N\left(t\right)>N\left(t-\right)\right\}=0\textrm{,   }t\geq0.
+\end{eqnarray*}
+\end{Prop}
+
+\begin{Def}
+La Transformada de Laplace-Stieljes de $F$ est\'a dada por
+
+\begin{eqnarray*}
+\hat{F}\left(\alpha\right)=\int_{\rea_{+}}e^{-\alpha t}dF\left(t\right)\textrm{,  }\alpha\geq0.
+\end{eqnarray*}
+\end{Def}
+
+Entonces
+
+\begin{eqnarray*}
+\hat{U}\left(\alpha\right)=\sum_{n=0}^{\infty}\hat{F^{n\star}}\left(\alpha\right)=\sum_{n=0}^{\infty}\hat{F}\left(\alpha\right)^{n}=\frac{1}{1-\hat{F}\left(\alpha\right)}.
+\end{eqnarray*}
+
+
+\begin{Prop}
+La Transformada de Laplace $\hat{U}\left(\alpha\right)$ y $\hat{F}\left(\alpha\right)$ determina una a la otra de manera \'unica por la relaci\'on $\hat{U}\left(\alpha\right)=\frac{1}{1-\hat{F}\left(\alpha\right)}$.
+\end{Prop}
+
+
+\begin{Note}
+Un proceso de renovaci\'on $N\left(t\right)$ cuyos tiempos de inter-renovaci\'on tienen media finita, es un proceso Poisson con tasa $\lambda$ si y s\'olo s\'i $\esp\left[U\left(t\right)\right]=\lambda t$, para $t\geq0$.
+\end{Note}
+
+
+\begin{Teo}
+Sea $N\left(t\right)$ un proceso puntual simple con puntos de localizaci\'on $T_{n}$ tal que $\eta\left(t\right)=\esp\left[N\left(\right)\right]$ es finita para cada $t$. Entonces para cualquier funci\'on $f:\rea_{+}\rightarrow\rea$,
+\begin{eqnarray*}
+\esp\left[\sum_{n=1}^{N\left(\right)}f\left(T_{n}\right)\right]=\int_{\left(0,t\right]}f\left(s\right)d\eta\left(s\right)\textrm{,  }t\geq0,
+\end{eqnarray*}
+suponiendo que la integral exista. Adem\'as si $X_{1},X_{2},\ldots$ son variables aleatorias definidas en el mismo espacio de probabilidad que el proceso $N\left(t\right)$ tal que $\esp\left[X_{n}|T_{n}=s\right]=f\left(s\right)$, independiente de $n$. Entonces
+\begin{eqnarray*}
+\esp\left[\sum_{n=1}^{N\left(t\right)}X_{n}\right]=\int_{\left(0,t\right]}f\left(s\right)d\eta\left(s\right)\textrm{,  }t\geq0,
+\end{eqnarray*} 
+suponiendo que la integral exista. 
+\end{Teo}
+
+\begin{Coro}[Identidad de Wald para Renovaciones]
+Para el proceso de renovaci\'on $N\left(t\right)$,
+\begin{eqnarray*}
+\esp\left[T_{N\left(t\right)+1}\right]=\mu\esp\left[N\left(t\right)+1\right]\textrm{,  }t\geq0,
+\end{eqnarray*}  
+\end{Coro}
+
+
+\begin{Def}
+Sea $h\left(t\right)$ funci\'on de valores reales en $\rea$ acotada en intervalos finitos e igual a cero para $t<0$ La ecuaci\'on de renovaci\'on para $h\left(t\right)$ y la distribuci\'on $F$ es
+
+\begin{eqnarray}\label{Ec.Renovacion}
+H\left(t\right)=h\left(t\right)+\int_{\left[0,t\right]}H\left(t-s\right)dF\left(s\right)\textrm{,    }t\geq0,
+\end{eqnarray}
+donde $H\left(t\right)$ es una funci\'on de valores reales. Esto es $H=h+F\star H$. Decimos que $H\left(t\right)$ es soluci\'on de esta ecuaci\'on si satisface la ecuaci\'on, y es acotada en intervalos finitos e iguales a cero para $t<0$.
+\end{Def}
+
+\begin{Prop}
+La funci\'on $U\star h\left(t\right)$ es la \'unica soluci\'on de la ecuaci\'on de renovaci\'on (\ref{Ec.Renovacion}).
+\end{Prop}
+
+\begin{Teo}[Teorema Renovaci\'on Elemental]
+\begin{eqnarray*}
+t^{-1}U\left(t\right)\rightarrow 1/\mu\textrm{,    cuando }t\rightarrow\infty.
+\end{eqnarray*}
+\end{Teo}
+
+
+\begin{Note} Una funci\'on $h:\rea_{+}\rightarrow\rea$ es Directamente Riemann Integrable en los siguientes casos:
+\begin{itemize}
+\item[a)] $h\left(t\right)\geq0$ es decreciente y Riemann Integrable.
+\item[b)] $h$ es continua excepto posiblemente en un conjunto de Lebesgue de medida 0, y $|h\left(t\right)|\leq b\left(t\right)$, donde $b$ es DRI.
+\end{itemize}
+\end{Note}
+
+\begin{Teo}[Teorema Principal de Renovaci\'on]
+Si $F$ es no aritm\'etica y $h\left(t\right)$ es Directamente Riemann Integrable (DRI), entonces
+
+\begin{eqnarray*}
+lim_{t\rightarrow\infty}U\star h=\frac{1}{\mu}\int_{\rea_{+}}h\left(s\right)ds.
+\end{eqnarray*}
+\end{Teo}
+
+\begin{Prop}
+Cualquier funci\'on $H\left(t\right)$ acotada en intervalos finitos y que es 0 para $t<0$ puede expresarse como
+\begin{eqnarray*}
+H\left(t\right)=U\star h\left(t\right)\textrm{,  donde }h\left(t\right)=H\left(t\right)-F\star H\left(t\right)
+\end{eqnarray*}
+\end{Prop}
+
+\begin{Def}
+Un proceso estoc\'astico $X\left(t\right)$ es crudamente regenerativo en un tiempo aleatorio positivo $T$ si
+\begin{eqnarray*}
+\esp\left[X\left(T+t\right)|T\right]=\esp\left[X\left(t\right)\right]\textrm{, para }t\geq0,\end{eqnarray*}
+y con las esperanzas anteriores finitas.
+\end{Def}
+
+\begin{Prop}
+Sup\'ongase que $X\left(t\right)$ es un proceso crudamente regenerativo en $T$, que tiene distribuci\'on $F$. Si $\esp\left[X\left(t\right)\right]$ es acotado en intervalos finitos, entonces
+\begin{eqnarray*}
+\esp\left[X\left(t\right)\right]=U\star h\left(t\right)\textrm{,  donde }h\left(t\right)=\esp\left[X\left(t\right)\indora\left(T>t\right)\right].
+\end{eqnarray*}
+\end{Prop}
+
+\begin{Teo}[Regeneraci\'on Cruda]
+Sup\'ongase que $X\left(t\right)$ es un proceso con valores positivo crudamente regenerativo en $T$, y def\'inase $M=\sup\left\{|X\left(t\right)|:t\leq T\right\}$. Si $T$ es no aritm\'etico y $M$ y $MT$ tienen media finita, entonces
+\begin{eqnarray*}
+lim_{t\rightarrow\infty}\esp\left[X\left(t\right)\right]=\frac{1}{\mu}\int_{\rea_{+}}h\left(s\right)ds,
+\end{eqnarray*}
+donde $h\left(t\right)=\esp\left[X\left(t\right)\indora\left(T>t\right)\right]$.
+\end{Teo}
+
+
+\begin{Note} Una funci\'on $h:\rea_{+}\rightarrow\rea$ es Directamente Riemann Integrable en los siguientes casos:
+\begin{itemize}
+\item[a)] $h\left(t\right)\geq0$ es decreciente y Riemann Integrable.
+\item[b)] $h$ es continua excepto posiblemente en un conjunto de Lebesgue de medida 0, y $|h\left(t\right)|\leq b\left(t\right)$, donde $b$ es DRI.
+\end{itemize}
+\end{Note}
+
+\begin{Teo}[Teorema Principal de Renovaci\'on]
+Si $F$ es no aritm\'etica y $h\left(t\right)$ es Directamente Riemann Integrable (DRI), entonces
+
+\begin{eqnarray*}
+lim_{t\rightarrow\infty}U\star h=\frac{1}{\mu}\int_{\rea_{+}}h\left(s\right)ds.
+\end{eqnarray*}
+\end{Teo}
+
+\begin{Prop}
+Cualquier funci\'on $H\left(t\right)$ acotada en intervalos finitos y que es 0 para $t<0$ puede expresarse como
+\begin{eqnarray*}
+H\left(t\right)=U\star h\left(t\right)\textrm{,  donde }h\left(t\right)=H\left(t\right)-F\star H\left(t\right)
+\end{eqnarray*}
+\end{Prop}
+
+\begin{Def}
+Un proceso estoc\'astico $X\left(t\right)$ es crudamente regenerativo en un tiempo aleatorio positivo $T$ si
+\begin{eqnarray*}
+\esp\left[X\left(T+t\right)|T\right]=\esp\left[X\left(t\right)\right]\textrm{, para }t\geq0,\end{eqnarray*}
+y con las esperanzas anteriores finitas.
+\end{Def}
+
+\begin{Prop}
+Sup\'ongase que $X\left(t\right)$ es un proceso crudamente regenerativo en $T$, que tiene distribuci\'on $F$. Si $\esp\left[X\left(t\right)\right]$ es acotado en intervalos finitos, entonces
+\begin{eqnarray*}
+\esp\left[X\left(t\right)\right]=U\star h\left(t\right)\textrm{,  donde }h\left(t\right)=\esp\left[X\left(t\right)\indora\left(T>t\right)\right].
+\end{eqnarray*}
+\end{Prop}
+
+\begin{Teo}[Regeneraci\'on Cruda]
+Sup\'ongase que $X\left(t\right)$ es un proceso con valores positivo crudamente regenerativo en $T$, y def\'inase $M=\sup\left\{|X\left(t\right)|:t\leq T\right\}$. Si $T$ es no aritm\'etico y $M$ y $MT$ tienen media finita, entonces
+\begin{eqnarray*}
+lim_{t\rightarrow\infty}\esp\left[X\left(t\right)\right]=\frac{1}{\mu}\int_{\rea_{+}}h\left(s\right)ds,
+\end{eqnarray*}
+donde $h\left(t\right)=\esp\left[X\left(t\right)\indora\left(T>t\right)\right]$.
+\end{Teo}
+
+\begin{Def}
+Para el proceso $\left\{\left(N\left(t\right),X\left(t\right)\right):t\geq0\right\}$, sus trayectoria muestrales en el intervalo de tiempo $\left[T_{n-1},T_{n}\right)$ est\'an descritas por
+\begin{eqnarray*}
+\zeta_{n}=\left(\xi_{n},\left\{X\left(T_{n-1}+t\right):0\leq t<\xi_{n}\right\}\right)
+\end{eqnarray*}
+Este $\zeta_{n}$ es el $n$-\'esimo segmento del proceso. El proceso es regenerativo sobre los tiempos $T_{n}$ si sus segmentos $\zeta_{n}$ son independientes e id\'enticamennte distribuidos.
+\end{Def}
+
+
+\begin{Note}
+Si $\tilde{X}\left(t\right)$ con espacio de estados $\tilde{S}$ es regenerativo sobre $T_{n}$, entonces $X\left(t\right)=f\left(\tilde{X}\left(t\right)\right)$ tambi\'en es regenerativo sobre $T_{n}$, para cualquier funci\'on $f:\tilde{S}\rightarrow S$.
+\end{Note}
+
+\begin{Note}
+Los procesos regenerativos son crudamente regenerativos, pero no al rev\'es.
+\end{Note}
+
+
+\begin{Note}
+Un proceso estoc\'astico a tiempo continuo o discreto es regenerativo si existe un proceso de renovaci\'on  tal que los segmentos del proceso entre tiempos de renovaci\'on sucesivos son i.i.d., es decir, para $\left\{X\left(t\right):t\geq0\right\}$ proceso estoc\'astico a tiempo continuo con espacio de estados $S$, espacio m\'etrico.
+\end{Note}
+
+Para $\left\{X\left(t\right):t\geq0\right\}$ Proceso Estoc\'astico a tiempo continuo con estado de espacios $S$, que es un espacio m\'etrico, con trayectorias continuas por la derecha y con l\'imites por la izquierda c.s. Sea $N\left(t\right)$ un proceso de renovaci\'on en $\rea_{+}$ definido en el mismo espacio de probabilidad que $X\left(t\right)$, con tiempos de renovaci\'on $T$ y tiempos de inter-renovaci\'on $\xi_{n}=T_{n}-T_{n-1}$, con misma distribuci\'on $F$ de media finita $\mu$.
+
+
+
+\begin{Def}
+Para el proceso $\left\{\left(N\left(t\right),X\left(t\right)\right):t\geq0\right\}$, sus trayectoria muestrales en el intervalo de tiempo $\left[T_{n-1},T_{n}\right)$ est\'an descritas por
+\begin{eqnarray*}
+\zeta_{n}=\left(\xi_{n},\left\{X\left(T_{n-1}+t\right):0\leq t<\xi_{n}\right\}\right)
+\end{eqnarray*}
+Este $\zeta_{n}$ es el $n$-\'esimo segmento del proceso. El proceso es regenerativo sobre los tiempos $T_{n}$ si sus segmentos $\zeta_{n}$ son independientes e id\'enticamennte distribuidos.
+\end{Def}
+
+\begin{Note}
+Un proceso regenerativo con media de la longitud de ciclo finita es llamado positivo recurrente.
+\end{Note}
+
+\begin{Teo}[Procesos Regenerativos]
+Suponga que el proceso
+\end{Teo}
+
+
+\begin{Def}[Renewal Process Trinity]
+Para un proceso de renovaci\'on $N\left(t\right)$, los siguientes procesos proveen de informaci\'on sobre los tiempos de renovaci\'on.
+\begin{itemize}
+\item $A\left(t\right)=t-T_{N\left(t\right)}$, el tiempo de recurrencia hacia atr\'as al tiempo $t$, que es el tiempo desde la \'ultima renovaci\'on para $t$.
+
+\item $B\left(t\right)=T_{N\left(t\right)+1}-t$, el tiempo de recurrencia hacia adelante al tiempo $t$, residual del tiempo de renovaci\'on, que es el tiempo para la pr\'oxima renovaci\'on despu\'es de $t$.
+
+\item $L\left(t\right)=\xi_{N\left(t\right)+1}=A\left(t\right)+B\left(t\right)$, la longitud del intervalo de renovaci\'on que contiene a $t$.
+\end{itemize}
+\end{Def}
+
+\begin{Note}
+El proceso tridimensional $\left(A\left(t\right),B\left(t\right),L\left(t\right)\right)$ es regenerativo sobre $T_{n}$, y por ende cada proceso lo es. Cada proceso $A\left(t\right)$ y $B\left(t\right)$ son procesos de MArkov a tiempo continuo con trayectorias continuas por partes en el espacio de estados $\rea_{+}$. Una expresi\'on conveniente para su distribuci\'on conjunta es, para $0\leq x<t,y\geq0$
+\begin{equation}\label{NoRenovacion}
+P\left\{A\left(t\right)>x,B\left(t\right)>y\right\}=
+P\left\{N\left(t+y\right)-N\left((t-x)\right)=0\right\}
+\end{equation}
+\end{Note}
+
+\begin{Ejem}[Tiempos de recurrencia Poisson]
+Si $N\left(t\right)$ es un proceso Poisson con tasa $\lambda$, entonces de la expresi\'on (\ref{NoRenovacion}) se tiene que
+
+\begin{eqnarray*}
+\begin{array}{lc}
+P\left\{A\left(t\right)>x,B\left(t\right)>y\right\}=e^{-\lambda\left(x+y\right)},&0\leq x<t,y\geq0,
+\end{array}
+\end{eqnarray*}
+que es la probabilidad Poisson de no renovaciones en un intervalo de longitud $x+y$.
+
+\end{Ejem}
+
+\begin{Note}
+Una cadena de Markov erg\'odica tiene la propiedad de ser estacionaria si la distribuci\'on de su estado al tiempo $0$ es su distribuci\'on estacionaria.
+\end{Note}
+
+
+\begin{Def}
+Un proceso estoc\'astico a tiempo continuo $\left\{X\left(t\right):t\geq0\right\}$ en un espacio general es estacionario si sus distribuciones finito dimensionales son invariantes bajo cualquier  traslado: para cada $0\leq s_{1}<s_{2}<\cdots<s_{k}$ y $t\geq0$,
+\begin{eqnarray*}
+\left(X\left(s_{1}+t\right),\ldots,X\left(s_{k}+t\right)\right)=_{d}\left(X\left(s_{1}\right),\ldots,X\left(s_{k}\right)\right).
+\end{eqnarray*}
+\end{Def}
+
+\begin{Note}
+Un proceso de Markov es estacionario si $X\left(t\right)=_{d}X\left(0\right)$, $t\geq0$.
+\end{Note}
+
+Considerese el proceso $N\left(t\right)=\sum_{n}\indora\left(\tau_{n}\leq t\right)$ en $\rea_{+}$, con puntos $0<\tau_{1}<\tau_{2}<\cdots$.
+
+\begin{Prop}
+Si $N$ es un proceso puntual estacionario y $\esp\left[N\left(1\right)\right]<\infty$, entonces $\esp\left[N\left(t\right)\right]=t\esp\left[N\left(1\right)\right]$, $t\geq0$
+
+\end{Prop}
+
+\begin{Teo}
+Los siguientes enunciados son equivalentes
+\begin{itemize}
+\item[i)] El proceso retardado de renovaci\'on $N$ es estacionario.
+
+\item[ii)] EL proceso de tiempos de recurrencia hacia adelante $B\left(t\right)$ es estacionario.
+
+
+\item[iii)] $\esp\left[N\left(t\right)\right]=t/\mu$,
+
+
+\item[iv)] $G\left(t\right)=F_{e}\left(t\right)=\frac{1}{\mu}\int_{0}^{t}\left[1-F\left(s\right)\right]ds$
+\end{itemize}
+Cuando estos enunciados son ciertos, $P\left\{B\left(t\right)\leq x\right\}=F_{e}\left(x\right)$, para $t,x\geq0$.
+
+\end{Teo}
+
+\begin{Note}
+Una consecuencia del teorema anterior es que el Proceso Poisson es el \'unico proceso sin retardo que es estacionario.
+\end{Note}
+
+\begin{Coro}
+El proceso de renovaci\'on $N\left(t\right)$ sin retardo, y cuyos tiempos de inter renonaci\'on tienen media finita, es estacionario si y s\'olo si es un proceso Poisson.
+
+\end{Coro}
+
+%______________________________________________________________________
+
+%\section{Ejemplos, Notas importantes}
+%______________________________________________________________________
+%\section*{Ap\'endice A}
+%__________________________________________________________________
+
+%________________________________________________________________________
+%\subsection*{Procesos Regenerativos}
+%________________________________________________________________________
+
+
+
+\begin{Note}
+Si $\tilde{X}\left(t\right)$ con espacio de estados $\tilde{S}$ es regenerativo sobre $T_{n}$, entonces $X\left(t\right)=f\left(\tilde{X}\left(t\right)\right)$ tambi\'en es regenerativo sobre $T_{n}$, para cualquier funci\'on $f:\tilde{S}\rightarrow S$.
+\end{Note}
+
+\begin{Note}
+Los procesos regenerativos son crudamente regenerativos, pero no al rev\'es.
+\end{Note}
+%\subsection*{Procesos Regenerativos: Sigman\cite{Sigman1}}
+\begin{Def}[Definici\'on Cl\'asica]
+Un proceso estoc\'astico $X=\left\{X\left(t\right):t\geq0\right\}$ es llamado regenerativo is existe una variable aleatoria $R_{1}>0$ tal que
+\begin{itemize}
+\item[i)] $\left\{X\left(t+R_{1}\right):t\geq0\right\}$ es independiente de $\left\{\left\{X\left(t\right):t<R_{1}\right\},\right\}$
+\item[ii)] $\left\{X\left(t+R_{1}\right):t\geq0\right\}$ es estoc\'asticamente equivalente a $\left\{X\left(t\right):t>0\right\}$
+\end{itemize}
+
+Llamamos a $R_{1}$ tiempo de regeneraci\'on, y decimos que $X$ se regenera en este punto.
+\end{Def}
+
+$\left\{X\left(t+R_{1}\right)\right\}$ es regenerativo con tiempo de regeneraci\'on $R_{2}$, independiente de $R_{1}$ pero con la misma distribuci\'on que $R_{1}$. Procediendo de esta manera se obtiene una secuencia de variables aleatorias independientes e id\'enticamente distribuidas $\left\{R_{n}\right\}$ llamados longitudes de ciclo. Si definimos a $Z_{k}\equiv R_{1}+R_{2}+\cdots+R_{k}$, se tiene un proceso de renovaci\'on llamado proceso de renovaci\'on encajado para $X$.
+
+
+
+
+\begin{Def}
+Para $x$ fijo y para cada $t\geq0$, sea $I_{x}\left(t\right)=1$ si $X\left(t\right)\leq x$,  $I_{x}\left(t\right)=0$ en caso contrario, y def\'inanse los tiempos promedio
+\begin{eqnarray*}
+\overline{X}&=&lim_{t\rightarrow\infty}\frac{1}{t}\int_{0}^{\infty}X\left(u\right)du\\
+\prob\left(X_{\infty}\leq x\right)&=&lim_{t\rightarrow\infty}\frac{1}{t}\int_{0}^{\infty}I_{x}\left(u\right)du,
+\end{eqnarray*}
+cuando estos l\'imites existan.
+\end{Def}
+
+Como consecuencia del teorema de Renovaci\'on-Recompensa, se tiene que el primer l\'imite  existe y es igual a la constante
+\begin{eqnarray*}
+\overline{X}&=&\frac{\esp\left[\int_{0}^{R_{1}}X\left(t\right)dt\right]}{\esp\left[R_{1}\right]},
+\end{eqnarray*}
+suponiendo que ambas esperanzas son finitas.
+
+\begin{Note}
+\begin{itemize}
+\item[a)] Si el proceso regenerativo $X$ es positivo recurrente y tiene trayectorias muestrales no negativas, entonces la ecuaci\'on anterior es v\'alida.
+\item[b)] Si $X$ es positivo recurrente regenerativo, podemos construir una \'unica versi\'on estacionaria de este proceso, $X_{e}=\left\{X_{e}\left(t\right)\right\}$, donde $X_{e}$ es un proceso estoc\'astico regenerativo y estrictamente estacionario, con distribuci\'on marginal distribuida como $X_{\infty}$
+\end{itemize}
+\end{Note}
+
+Para $\left\{X\left(t\right):t\geq0\right\}$ Proceso Estoc\'astico a tiempo continuo con estado de espacios $S$, que es un espacio m\'etrico, con trayectorias continuas por la derecha y con l\'imites por la izquierda c.s. Sea $N\left(t\right)$ un proceso de renovaci\'on en $\rea_{+}$ definido en el mismo espacio de probabilidad que $X\left(t\right)$, con tiempos de renovaci\'on $T$ y tiempos de inter-renovaci\'on $\xi_{n}=T_{n}-T_{n-1}$, con misma distribuci\'on $F$ de media finita $\mu$.
+
+
+\begin{Def}
+Para el proceso $\left\{\left(N\left(t\right),X\left(t\right)\right):t\geq0\right\}$, sus trayectoria muestrales en el intervalo de tiempo $\left[T_{n-1},T_{n}\right)$ est\'an descritas por
+\begin{eqnarray*}
+\zeta_{n}=\left(\xi_{n},\left\{X\left(T_{n-1}+t\right):0\leq t<\xi_{n}\right\}\right)
+\end{eqnarray*}
+Este $\zeta_{n}$ es el $n$-\'esimo segmento del proceso. El proceso es regenerativo sobre los tiempos $T_{n}$ si sus segmentos $\zeta_{n}$ son independientes e id\'enticamennte distribuidos.
+\end{Def}
+
+
+\begin{Note}
+Si $\tilde{X}\left(t\right)$ con espacio de estados $\tilde{S}$ es regenerativo sobre $T_{n}$, entonces $X\left(t\right)=f\left(\tilde{X}\left(t\right)\right)$ tambi\'en es regenerativo sobre $T_{n}$, para cualquier funci\'on $f:\tilde{S}\rightarrow S$.
+\end{Note}
+
+\begin{Note}
+Los procesos regenerativos son crudamente regenerativos, pero no al rev\'es.
+\end{Note}
+
+\begin{Def}[Definici\'on Cl\'asica]
+Un proceso estoc\'astico $X=\left\{X\left(t\right):t\geq0\right\}$ es llamado regenerativo is existe una variable aleatoria $R_{1}>0$ tal que
+\begin{itemize}
+\item[i)] $\left\{X\left(t+R_{1}\right):t\geq0\right\}$ es independiente de $\left\{\left\{X\left(t\right):t<R_{1}\right\},\right\}$
+\item[ii)] $\left\{X\left(t+R_{1}\right):t\geq0\right\}$ es estoc\'asticamente equivalente a $\left\{X\left(t\right):t>0\right\}$
+\end{itemize}
+
+Llamamos a $R_{1}$ tiempo de regeneraci\'on, y decimos que $X$ se regenera en este punto.
+\end{Def}
+
+$\left\{X\left(t+R_{1}\right)\right\}$ es regenerativo con tiempo de regeneraci\'on $R_{2}$, independiente de $R_{1}$ pero con la misma distribuci\'on que $R_{1}$. Procediendo de esta manera se obtiene una secuencia de variables aleatorias independientes e id\'enticamente distribuidas $\left\{R_{n}\right\}$ llamados longitudes de ciclo. Si definimos a $Z_{k}\equiv R_{1}+R_{2}+\cdots+R_{k}$, se tiene un proceso de renovaci\'on llamado proceso de renovaci\'on encajado para $X$.
+
+\begin{Note}
+Un proceso regenerativo con media de la longitud de ciclo finita es llamado positivo recurrente.
+\end{Note}
+
+
+\begin{Def}
+Para $x$ fijo y para cada $t\geq0$, sea $I_{x}\left(t\right)=1$ si $X\left(t\right)\leq x$,  $I_{x}\left(t\right)=0$ en caso contrario, y def\'inanse los tiempos promedio
+\begin{eqnarray*}
+\overline{X}&=&lim_{t\rightarrow\infty}\frac{1}{t}\int_{0}^{\infty}X\left(u\right)du\\
+\prob\left(X_{\infty}\leq x\right)&=&lim_{t\rightarrow\infty}\frac{1}{t}\int_{0}^{\infty}I_{x}\left(u\right)du,
+\end{eqnarray*}
+cuando estos l\'imites existan.
+\end{Def}
+
+Como consecuencia del teorema de Renovaci\'on-Recompensa, se tiene que el primer l\'imite  existe y es igual a la constante
+\begin{eqnarray*}
+\overline{X}&=&\frac{\esp\left[\int_{0}^{R_{1}}X\left(t\right)dt\right]}{\esp\left[R_{1}\right]},
+\end{eqnarray*}
+suponiendo que ambas esperanzas son finitas.
+
+\begin{Note}
+\begin{itemize}
+\item[a)] Si el proceso regenerativo $X$ es positivo recurrente y tiene trayectorias muestrales no negativas, entonces la ecuaci\'on anterior es v\'alida.
+\item[b)] Si $X$ es positivo recurrente regenerativo, podemos construir una \'unica versi\'on estacionaria de este proceso, $X_{e}=\left\{X_{e}\left(t\right)\right\}$, donde $X_{e}$ es un proceso estoc\'astico regenerativo y estrictamente estacionario, con distribuci\'on marginal distribuida como $X_{\infty}$
+\end{itemize}
+\end{Note}
+
+%__________________________________________________________________________________________
+%\subsection{Procesos Regenerativos Estacionarios - Stidham \cite{Stidham}}
+%__________________________________________________________________________________________
+
+
+Un proceso estoc\'astico a tiempo continuo $\left\{V\left(t\right),t\geq0\right\}$ es un proceso regenerativo si existe una sucesi\'on de variables aleatorias independientes e id\'enticamente distribuidas $\left\{X_{1},X_{2},\ldots\right\}$, sucesi\'on de renovaci\'on, tal que para cualquier conjunto de Borel $A$, 
+
+\begin{eqnarray*}
+\prob\left\{V\left(t\right)\in A|X_{1}+X_{2}+\cdots+X_{R\left(t\right)}=s,\left\{V\left(\tau\right),\tau<s\right\}\right\}=\prob\left\{V\left(t-s\right)\in A|X_{1}>t-s\right\},
+\end{eqnarray*}
+para todo $0\leq s\leq t$, donde $R\left(t\right)=\max\left\{X_{1}+X_{2}+\cdots+X_{j}\leq t\right\}=$n\'umero de renovaciones ({\emph{puntos de regeneraci\'on}}) que ocurren en $\left[0,t\right]$. El intervalo $\left[0,X_{1}\right)$ es llamado {\emph{primer ciclo de regeneraci\'on}} de $\left\{V\left(t \right),t\geq0\right\}$, $\left[X_{1},X_{1}+X_{2}\right)$ el {\emph{segundo ciclo de regeneraci\'on}}, y as\'i sucesivamente.
+
+Sea $X=X_{1}$ y sea $F$ la funci\'on de distrbuci\'on de $X$
+
+
+\begin{Def}
+Se define el proceso estacionario, $\left\{V^{*}\left(t\right),t\geq0\right\}$, para $\left\{V\left(t\right),t\geq0\right\}$ por
+
+\begin{eqnarray*}
+\prob\left\{V\left(t\right)\in A\right\}=\frac{1}{\esp\left[X\right]}\int_{0}^{\infty}\prob\left\{V\left(t+x\right)\in A|X>x\right\}\left(1-F\left(x\right)\right)dx,
+\end{eqnarray*} 
+para todo $t\geq0$ y todo conjunto de Borel $A$.
+\end{Def}
+
+\begin{Def}
+Una distribuci\'on se dice que es {\emph{aritm\'etica}} si todos sus puntos de incremento son m\'ultiplos de la forma $0,\lambda, 2\lambda,\ldots$ para alguna $\lambda>0$ entera.
+\end{Def}
+
+
+\begin{Def}
+Una modificaci\'on medible de un proceso $\left\{V\left(t\right),t\geq0\right\}$, es una versi\'on de este, $\left\{V\left(t,w\right)\right\}$ conjuntamente medible para $t\geq0$ y para $w\in S$, $S$ espacio de estados para $\left\{V\left(t\right),t\geq0\right\}$.
+\end{Def}
+
+\begin{Teo}
+Sea $\left\{V\left(t\right),t\geq\right\}$ un proceso regenerativo no negativo con modificaci\'on medible. Sea $\esp\left[X\right]<\infty$. Entonces el proceso estacionario dado por la ecuaci\'on anterior est\'a bien definido y tiene funci\'on de distribuci\'on independiente de $t$, adem\'as
+\begin{itemize}
+\item[i)] \begin{eqnarray*}
+\esp\left[V^{*}\left(0\right)\right]&=&\frac{\esp\left[\int_{0}^{X}V\left(s\right)ds\right]}{\esp\left[X\right]}\end{eqnarray*}
+\item[ii)] Si $\esp\left[V^{*}\left(0\right)\right]<\infty$, equivalentemente, si $\esp\left[\int_{0}^{X}V\left(s\right)ds\right]<\infty$,entonces
+\begin{eqnarray*}
+\frac{\int_{0}^{t}V\left(s\right)ds}{t}\rightarrow\frac{\esp\left[\int_{0}^{X}V\left(s\right)ds\right]}{\esp\left[X\right]}
+\end{eqnarray*}
+con probabilidad 1 y en media, cuando $t\rightarrow\infty$.
+\end{itemize}
+\end{Teo}
+%
+%___________________________________________________________________________________________
+%\vspace{5.5cm}
+%\chapter{Cadenas de Markov estacionarias}
+%\vspace{-1.0cm}
+
+
+%__________________________________________________________________________________________
+%\subsection{Procesos Regenerativos Estacionarios - Stidham \cite{Stidham}}
+%__________________________________________________________________________________________
+
+
+Un proceso estoc\'astico a tiempo continuo $\left\{V\left(t\right),t\geq0\right\}$ es un proceso regenerativo si existe una sucesi\'on de variables aleatorias independientes e id\'enticamente distribuidas $\left\{X_{1},X_{2},\ldots\right\}$, sucesi\'on de renovaci\'on, tal que para cualquier conjunto de Borel $A$, 
+
+\begin{eqnarray*}
+\prob\left\{V\left(t\right)\in A|X_{1}+X_{2}+\cdots+X_{R\left(t\right)}=s,\left\{V\left(\tau\right),\tau<s\right\}\right\}=\prob\left\{V\left(t-s\right)\in A|X_{1}>t-s\right\},
+\end{eqnarray*}
+para todo $0\leq s\leq t$, donde $R\left(t\right)=\max\left\{X_{1}+X_{2}+\cdots+X_{j}\leq t\right\}=$n\'umero de renovaciones ({\emph{puntos de regeneraci\'on}}) que ocurren en $\left[0,t\right]$. El intervalo $\left[0,X_{1}\right)$ es llamado {\emph{primer ciclo de regeneraci\'on}} de $\left\{V\left(t \right),t\geq0\right\}$, $\left[X_{1},X_{1}+X_{2}\right)$ el {\emph{segundo ciclo de regeneraci\'on}}, y as\'i sucesivamente.
+
+Sea $X=X_{1}$ y sea $F$ la funci\'on de distrbuci\'on de $X$
+
+
+\begin{Def}
+Se define el proceso estacionario, $\left\{V^{*}\left(t\right),t\geq0\right\}$, para $\left\{V\left(t\right),t\geq0\right\}$ por
+
+\begin{eqnarray*}
+\prob\left\{V\left(t\right)\in A\right\}=\frac{1}{\esp\left[X\right]}\int_{0}^{\infty}\prob\left\{V\left(t+x\right)\in A|X>x\right\}\left(1-F\left(x\right)\right)dx,
+\end{eqnarray*} 
+para todo $t\geq0$ y todo conjunto de Borel $A$.
+\end{Def}
+
+\begin{Def}
+Una distribuci\'on se dice que es {\emph{aritm\'etica}} si todos sus puntos de incremento son m\'ultiplos de la forma $0,\lambda, 2\lambda,\ldots$ para alguna $\lambda>0$ entera.
+\end{Def}
+
+
+\begin{Def}
+Una modificaci\'on medible de un proceso $\left\{V\left(t\right),t\geq0\right\}$, es una versi\'on de este, $\left\{V\left(t,w\right)\right\}$ conjuntamente medible para $t\geq0$ y para $w\in S$, $S$ espacio de estados para $\left\{V\left(t\right),t\geq0\right\}$.
+\end{Def}
+
+\begin{Teo}
+Sea $\left\{V\left(t\right),t\geq\right\}$ un proceso regenerativo no negativo con modificaci\'on medible. Sea $\esp\left[X\right]<\infty$. Entonces el proceso estacionario dado por la ecuaci\'on anterior est\'a bien definido y tiene funci\'on de distribuci\'on independiente de $t$, adem\'as
+\begin{itemize}
+\item[i)] \begin{eqnarray*}
+\esp\left[V^{*}\left(0\right)\right]&=&\frac{\esp\left[\int_{0}^{X}V\left(s\right)ds\right]}{\esp\left[X\right]}\end{eqnarray*}
+\item[ii)] Si $\esp\left[V^{*}\left(0\right)\right]<\infty$, equivalentemente, si $\esp\left[\int_{0}^{X}V\left(s\right)ds\right]<\infty$,entonces
+\begin{eqnarray*}
+\frac{\int_{0}^{t}V\left(s\right)ds}{t}\rightarrow\frac{\esp\left[\int_{0}^{X}V\left(s\right)ds\right]}{\esp\left[X\right]}
+\end{eqnarray*}
+con probabilidad 1 y en media, cuando $t\rightarrow\infty$.
+\end{itemize}
+\end{Teo}
+
+Sea la funci\'on generadora de momentos para $L_{i}$, el n\'umero de usuarios en la cola $Q_{i}\left(z\right)$ en cualquier momento, est\'a dada por el tiempo promedio de $z^{L_{i}\left(t\right)}$ sobre el ciclo regenerativo definido anteriormente. Entonces 
+
+
+
+Es decir, es posible determinar las longitudes de las colas a cualquier tiempo $t$. Entonces, determinando el primer momento es posible ver que
+
+
+\begin{Def}
+El tiempo de Ciclo $C_{i}$ es el periodo de tiempo que comienza cuando la cola $i$ es visitada por primera vez en un ciclo, y termina cuando es visitado nuevamente en el pr\'oximo ciclo. La duraci\'on del mismo est\'a dada por $\tau_{i}\left(m+1\right)-\tau_{i}\left(m\right)$, o equivalentemente $\overline{\tau}_{i}\left(m+1\right)-\overline{\tau}_{i}\left(m\right)$ bajo condiciones de estabilidad.
+\end{Def}
+
+
+\begin{Def}
+El tiempo de intervisita $I_{i}$ es el periodo de tiempo que comienza cuando se ha completado el servicio en un ciclo y termina cuando es visitada nuevamente en el pr\'oximo ciclo. Su  duraci\'on del mismo est\'a dada por $\tau_{i}\left(m+1\right)-\overline{\tau}_{i}\left(m\right)$.
+\end{Def}
+
+La duraci\'on del tiempo de intervisita es $\tau_{i}\left(m+1\right)-\overline{\tau}\left(m\right)$. Dado que el n\'umero de usuarios presentes en $Q_{i}$ al tiempo $t=\tau_{i}\left(m+1\right)$ es igual al n\'umero de arribos durante el intervalo de tiempo $\left[\overline{\tau}\left(m\right),\tau_{i}\left(m+1\right)\right]$ se tiene que
+
+
+\begin{eqnarray*}
+\esp\left[z_{i}^{L_{i}\left(\tau_{i}\left(m+1\right)\right)}\right]=\esp\left[\left\{P_{i}\left(z_{i}\right)\right\}^{\tau_{i}\left(m+1\right)-\overline{\tau}\left(m\right)}\right]
+\end{eqnarray*}
+
+entonces, si $I_{i}\left(z\right)=\esp\left[z^{\tau_{i}\left(m+1\right)-\overline{\tau}\left(m\right)}\right]$
+se tiene que $F_{i}\left(z\right)=I_{i}\left[P_{i}\left(z\right)\right]$
+para $i=1,2$.
+
+Conforme a la definici\'on dada al principio del cap\'itulo, definici\'on (\ref{Def.Tn}), sean $T_{1},T_{2},\ldots$ los puntos donde las longitudes de las colas de la red de sistemas de visitas c\'iclicas son cero simult\'aneamente, cuando la cola $Q_{j}$ es visitada por el servidor para dar servicio, es decir, $L_{1}\left(T_{i}\right)=0,L_{2}\left(T_{i}\right)=0,\hat{L}_{1}\left(T_{i}\right)=0$ y $\hat{L}_{2}\left(T_{i}\right)=0$, a estos puntos se les denominar\'a puntos regenerativos. Entonces, 
+
+\begin{Def}
+Al intervalo de tiempo entre dos puntos regenerativos se le llamar\'a ciclo regenerativo.
+\end{Def}
+
+\begin{Def}
+Para $T_{i}$ se define, $M_{i}$, el n\'umero de ciclos de visita a la cola $Q_{l}$, durante el ciclo regenerativo, es decir, $M_{i}$ es un proceso de renovaci\'on.
+\end{Def}
+
+\begin{Def}
+Para cada uno de los $M_{i}$'s, se definen a su vez la duraci\'on de cada uno de estos ciclos de visita en el ciclo regenerativo, $C_{i}^{(m)}$, para $m=1,2,\ldots,M_{i}$, que a su vez, tambi\'en es n proceso de renovaci\'on.
+\end{Def}
+
+\footnote{In Stidham and  Heyman \cite{Stidham} shows that is sufficient for the regenerative process to be stationary that the mean regenerative cycle time is finite: $\esp\left[\sum_{m=1}^{M_{i}}C_{i}^{(m)}\right]<\infty$, 
+
+
+ como cada $C_{i}^{(m)}$ contiene intervalos de r\'eplica positivos, se tiene que $\esp\left[M_{i}\right]<\infty$, adem\'as, como $M_{i}>0$, se tiene que la condici\'on anterior es equivalente a tener que $\esp\left[C_{i}\right]<\infty$,
+por lo tanto una condici\'on suficiente para la existencia del proceso regenerativo est\'a dada por $\sum_{k=1}^{N}\mu_{k}<1.$}
+%________________________________________________________________________
+\subsection{Procesos Regenerativos Sigman, Thorisson y Wolff \cite{Sigman2}}
+%________________________________________________________________________
+
+
+\begin{Def}[Definici\'on Cl\'asica]
+Un proceso estoc\'astico $X=\left\{X\left(t\right):t\geq0\right\}$ es llamado regenerativo is existe una variable aleatoria $R_{1}>0$ tal que
+\begin{itemize}
+\item[i)] $\left\{X\left(t+R_{1}\right):t\geq0\right\}$ es independiente de $\left\{\left\{X\left(t\right):t<R_{1}\right\},\right\}$
+\item[ii)] $\left\{X\left(t+R_{1}\right):t\geq0\right\}$ es estoc\'asticamente equivalente a $\left\{X\left(t\right):t>0\right\}$
+\end{itemize}
+
+Llamamos a $R_{1}$ tiempo de regeneraci\'on, y decimos que $X$ se regenera en este punto.
+\end{Def}
+
+$\left\{X\left(t+R_{1}\right)\right\}$ es regenerativo con tiempo de regeneraci\'on $R_{2}$, independiente de $R_{1}$ pero con la misma distribuci\'on que $R_{1}$. Procediendo de esta manera se obtiene una secuencia de variables aleatorias independientes e id\'enticamente distribuidas $\left\{R_{n}\right\}$ llamados longitudes de ciclo. Si definimos a $Z_{k}\equiv R_{1}+R_{2}+\cdots+R_{k}$, se tiene un proceso de renovaci\'on llamado proceso de renovaci\'on encajado para $X$.
+
+
+\begin{Note}
+La existencia de un primer tiempo de regeneraci\'on, $R_{1}$, implica la existencia de una sucesi\'on completa de estos tiempos $R_{1},R_{2}\ldots,$ que satisfacen la propiedad deseada \cite{Sigman2}.
+\end{Note}
+
+
+\begin{Note} Para la cola $GI/GI/1$ los usuarios arriban con tiempos $t_{n}$ y son atendidos con tiempos de servicio $S_{n}$, los tiempos de arribo forman un proceso de renovaci\'on  con tiempos entre arribos independientes e identicamente distribuidos (\texttt{i.i.d.})$T_{n}=t_{n}-t_{n-1}$, adem\'as los tiempos de servicio son \texttt{i.i.d.} e independientes de los procesos de arribo. Por \textit{estable} se entiende que $\esp S_{n}<\esp T_{n}<\infty$.
+\end{Note}
+ 
+
+
+\begin{Def}
+Para $x$ fijo y para cada $t\geq0$, sea $I_{x}\left(t\right)=1$ si $X\left(t\right)\leq x$,  $I_{x}\left(t\right)=0$ en caso contrario, y def\'inanse los tiempos promedio
+\begin{eqnarray*}
+\overline{X}&=&lim_{t\rightarrow\infty}\frac{1}{t}\int_{0}^{\infty}X\left(u\right)du\\
+\prob\left(X_{\infty}\leq x\right)&=&lim_{t\rightarrow\infty}\frac{1}{t}\int_{0}^{\infty}I_{x}\left(u\right)du,
+\end{eqnarray*}
+cuando estos l\'imites existan.
+\end{Def}
+
+Como consecuencia del teorema de Renovaci\'on-Recompensa, se tiene que el primer l\'imite  existe y es igual a la constante
+\begin{eqnarray*}
+\overline{X}&=&\frac{\esp\left[\int_{0}^{R_{1}}X\left(t\right)dt\right]}{\esp\left[R_{1}\right]},
+\end{eqnarray*}
+suponiendo que ambas esperanzas son finitas.
+ 
+\begin{Note}
+Funciones de procesos regenerativos son regenerativas, es decir, si $X\left(t\right)$ es regenerativo y se define el proceso $Y\left(t\right)$ por $Y\left(t\right)=f\left(X\left(t\right)\right)$ para alguna funci\'on Borel medible $f\left(\cdot\right)$. Adem\'as $Y$ es regenerativo con los mismos tiempos de renovaci\'on que $X$. 
+
+En general, los tiempos de renovaci\'on, $Z_{k}$ de un proceso regenerativo no requieren ser tiempos de paro con respecto a la evoluci\'on de $X\left(t\right)$.
+\end{Note} 
+
+\begin{Note}
+Una funci\'on de un proceso de Markov, usualmente no ser\'a un proceso de Markov, sin embargo ser\'a regenerativo si el proceso de Markov lo es.
+\end{Note}
+
+ 
+\begin{Note}
+Un proceso regenerativo con media de la longitud de ciclo finita es llamado positivo recurrente.
+\end{Note}
+
+
+\begin{Note}
+\begin{itemize}
+\item[a)] Si el proceso regenerativo $X$ es positivo recurrente y tiene trayectorias muestrales no negativas, entonces la ecuaci\'on anterior es v\'alida.
+\item[b)] Si $X$ es positivo recurrente regenerativo, podemos construir una \'unica versi\'on estacionaria de este proceso, $X_{e}=\left\{X_{e}\left(t\right)\right\}$, donde $X_{e}$ es un proceso estoc\'astico regenerativo y estrictamente estacionario, con distribuci\'on marginal distribuida como $X_{\infty}$
+\end{itemize}
+\end{Note}
+
+
+
+%________________________________________________________________________
+\subsection{Procesos Regenerativos}
+%________________________________________________________________________
+
+
+
+\begin{Note}
+Si $\tilde{X}\left(t\right)$ con espacio de estados $\tilde{S}$ es regenerativo sobre $T_{n}$, entonces $X\left(t\right)=f\left(\tilde{X}\left(t\right)\right)$ tambi\'en es regenerativo sobre $T_{n}$, para cualquier funci\'on $f:\tilde{S}\rightarrow S$.
+\end{Note}
+
+\begin{Note}
+Los procesos regenerativos son crudamente regenerativos, pero no al rev\'es.
+\end{Note}
+
+%______________________________________________________________________
+\subsection*{Procesos Regenerativos: Sigman\cite{Sigman1}}
+%______________________________________________________________________
+\begin{Def}[Definici\'on Cl\'asica]
+Un proceso estoc\'astico $X=\left\{X\left(t\right):t\geq0\right\}$ es llamado regenerativo is existe una variable aleatoria $R_{1}>0$ tal que
+\begin{itemize}
+\item[i)] $\left\{X\left(t+R_{1}\right):t\geq0\right\}$ es independiente de $\left\{\left\{X\left(t\right):t<R_{1}\right\},\right\}$
+\item[ii)] $\left\{X\left(t+R_{1}\right):t\geq0\right\}$ es estoc\'asticamente equivalente a $\left\{X\left(t\right):t>0\right\}$
+\end{itemize}
+
+Llamamos a $R_{1}$ tiempo de regeneraci\'on, y decimos que $X$ se regenera en este punto.
+\end{Def}
+
+$\left\{X\left(t+R_{1}\right)\right\}$ es regenerativo con tiempo de regeneraci\'on $R_{2}$, independiente de $R_{1}$ pero con la misma distribuci\'on que $R_{1}$. Procediendo de esta manera se obtiene una secuencia de variables aleatorias independientes e id\'enticamente distribuidas $\left\{R_{n}\right\}$ llamados longitudes de ciclo. Si definimos a $Z_{k}\equiv R_{1}+R_{2}+\cdots+R_{k}$, se tiene un proceso de renovaci\'on llamado proceso de renovaci\'on encajado para $X$.
+
+
+
+
+\begin{Def}
+Para $x$ fijo y para cada $t\geq0$, sea $I_{x}\left(t\right)=1$ si $X\left(t\right)\leq x$,  $I_{x}\left(t\right)=0$ en caso contrario, y def\'inanse los tiempos promedio
+\begin{eqnarray*}
+\overline{X}&=&lim_{t\rightarrow\infty}\frac{1}{t}\int_{0}^{\infty}X\left(u\right)du\\
+\prob\left(X_{\infty}\leq x\right)&=&lim_{t\rightarrow\infty}\frac{1}{t}\int_{0}^{\infty}I_{x}\left(u\right)du,
+\end{eqnarray*}
+cuando estos l\'imites existan.
+\end{Def}
+
+Como consecuencia del teorema de Renovaci\'on-Recompensa, se tiene que el primer l\'imite  existe y es igual a la constante
+\begin{eqnarray*}
+\overline{X}&=&\frac{\esp\left[\int_{0}^{R_{1}}X\left(t\right)dt\right]}{\esp\left[R_{1}\right]},
+\end{eqnarray*}
+suponiendo que ambas esperanzas son finitas.
+
+\begin{Note}
+\begin{itemize}
+\item[a)] Si el proceso regenerativo $X$ es positivo recurrente y tiene trayectorias muestrales no negativas, entonces la ecuaci\'on anterior es v\'alida.
+\item[b)] Si $X$ es positivo recurrente regenerativo, podemos construir una \'unica versi\'on estacionaria de este proceso, $X_{e}=\left\{X_{e}\left(t\right)\right\}$, donde $X_{e}$ es un proceso estoc\'astico regenerativo y estrictamente estacionario, con distribuci\'on marginal distribuida como $X_{\infty}$
+\end{itemize}
+\end{Note}
+
+
+%__________________________________________________________________________________________
+\subsection{Procesos Regenerativos Estacionarios - Stidham \cite{Stidham}}
+%__________________________________________________________________________________________
+
+
+Un proceso estoc\'astico a tiempo continuo $\left\{V\left(t\right),t\geq0\right\}$ es un proceso regenerativo si existe una sucesi\'on de variables aleatorias independientes e id\'enticamente distribuidas $\left\{X_{1},X_{2},\ldots\right\}$, sucesi\'on de renovaci\'on, tal que para cualquier conjunto de Borel $A$, 
+
+\begin{eqnarray*}
+\prob\left\{V\left(t\right)\in A|X_{1}+X_{2}+\cdots+X_{R\left(t\right)}=s,\left\{V\left(\tau\right),\tau<s\right\}\right\}=\prob\left\{V\left(t-s\right)\in A|X_{1}>t-s\right\},
+\end{eqnarray*}
+para todo $0\leq s\leq t$, donde $R\left(t\right)=\max\left\{X_{1}+X_{2}+\cdots+X_{j}\leq t\right\}=$n\'umero de renovaciones ({\emph{puntos de regeneraci\'on}}) que ocurren en $\left[0,t\right]$. El intervalo $\left[0,X_{1}\right)$ es llamado {\emph{primer ciclo de regeneraci\'on}} de $\left\{V\left(t \right),t\geq0\right\}$, $\left[X_{1},X_{1}+X_{2}\right)$ el {\emph{segundo ciclo de regeneraci\'on}}, y as\'i sucesivamente.
+
+Sea $X=X_{1}$ y sea $F$ la funci\'on de distrbuci\'on de $X$
+
+
+\begin{Def}
+Se define el proceso estacionario, $\left\{V^{*}\left(t\right),t\geq0\right\}$, para $\left\{V\left(t\right),t\geq0\right\}$ por
+
+\begin{eqnarray*}
+\prob\left\{V\left(t\right)\in A\right\}=\frac{1}{\esp\left[X\right]}\int_{0}^{\infty}\prob\left\{V\left(t+x\right)\in A|X>x\right\}\left(1-F\left(x\right)\right)dx,
+\end{eqnarray*} 
+para todo $t\geq0$ y todo conjunto de Borel $A$.
+\end{Def}
+
+\begin{Def}
+Una distribuci\'on se dice que es {\emph{aritm\'etica}} si todos sus puntos de incremento son m\'ultiplos de la forma $0,\lambda, 2\lambda,\ldots$ para alguna $\lambda>0$ entera.
+\end{Def}
+
+
+\begin{Def}
+Una modificaci\'on medible de un proceso $\left\{V\left(t\right),t\geq0\right\}$, es una versi\'on de este, $\left\{V\left(t,w\right)\right\}$ conjuntamente medible para $t\geq0$ y para $w\in S$, $S$ espacio de estados para $\left\{V\left(t\right),t\geq0\right\}$.
+\end{Def}
+
+\begin{Teo}
+Sea $\left\{V\left(t\right),t\geq\right\}$ un proceso regenerativo no negativo con modificaci\'on medible. Sea $\esp\left[X\right]<\infty$. Entonces el proceso estacionario dado por la ecuaci\'on anterior est\'a bien definido y tiene funci\'on de distribuci\'on independiente de $t$, adem\'as
+\begin{itemize}
+\item[i)] \begin{eqnarray*}
+\esp\left[V^{*}\left(0\right)\right]&=&\frac{\esp\left[\int_{0}^{X}V\left(s\right)ds\right]}{\esp\left[X\right]}\end{eqnarray*}
+\item[ii)] Si $\esp\left[V^{*}\left(0\right)\right]<\infty$, equivalentemente, si $\esp\left[\int_{0}^{X}V\left(s\right)ds\right]<\infty$,entonces
+\begin{eqnarray*}
+\frac{\int_{0}^{t}V\left(s\right)ds}{t}\rightarrow\frac{\esp\left[\int_{0}^{X}V\left(s\right)ds\right]}{\esp\left[X\right]}
+\end{eqnarray*}
+con probabilidad 1 y en media, cuando $t\rightarrow\infty$.
+\end{itemize}
+\end{Teo}
+
+%________________________________________________________________________
+\subsection{Procesos Regenerativos}
+%________________________________________________________________________
+
+Para $\left\{X\left(t\right):t\geq0\right\}$ Proceso Estoc\'astico a tiempo continuo con estado de espacios $S$, que es un espacio m\'etrico, con trayectorias continuas por la derecha y con l\'imites por la izquierda c.s. Sea $N\left(t\right)$ un proceso de renovaci\'on en $\rea_{+}$ definido en el mismo espacio de probabilidad que $X\left(t\right)$, con tiempos de renovaci\'on $T$ y tiempos de inter-renovaci\'on $\xi_{n}=T_{n}-T_{n-1}$, con misma distribuci\'on $F$ de media finita $\mu$.
+
+
+
+\begin{Def}
+Para el proceso $\left\{\left(N\left(t\right),X\left(t\right)\right):t\geq0\right\}$, sus trayectoria muestrales en el intervalo de tiempo $\left[T_{n-1},T_{n}\right)$ est\'an descritas por
+\begin{eqnarray*}
+\zeta_{n}=\left(\xi_{n},\left\{X\left(T_{n-1}+t\right):0\leq t<\xi_{n}\right\}\right)
+\end{eqnarray*}
+Este $\zeta_{n}$ es el $n$-\'esimo segmento del proceso. El proceso es regenerativo sobre los tiempos $T_{n}$ si sus segmentos $\zeta_{n}$ son independientes e id\'enticamennte distribuidos.
+\end{Def}
+
+
+\begin{Obs}
+Si $\tilde{X}\left(t\right)$ con espacio de estados $\tilde{S}$ es regenerativo sobre $T_{n}$, entonces $X\left(t\right)=f\left(\tilde{X}\left(t\right)\right)$ tambi\'en es regenerativo sobre $T_{n}$, para cualquier funci\'on $f:\tilde{S}\rightarrow S$.
+\end{Obs}
+
+\begin{Obs}
+Los procesos regenerativos son crudamente regenerativos, pero no al rev\'es.
+\end{Obs}
+
+\begin{Def}[Definici\'on Cl\'asica]
+Un proceso estoc\'astico $X=\left\{X\left(t\right):t\geq0\right\}$ es llamado regenerativo is existe una variable aleatoria $R_{1}>0$ tal que
+\begin{itemize}
+\item[i)] $\left\{X\left(t+R_{1}\right):t\geq0\right\}$ es independiente de $\left\{\left\{X\left(t\right):t<R_{1}\right\},\right\}$
+\item[ii)] $\left\{X\left(t+R_{1}\right):t\geq0\right\}$ es estoc\'asticamente equivalente a $\left\{X\left(t\right):t>0\right\}$
+\end{itemize}
+
+Llamamos a $R_{1}$ tiempo de regeneraci\'on, y decimos que $X$ se regenera en este punto.
+\end{Def}
+
+$\left\{X\left(t+R_{1}\right)\right\}$ es regenerativo con tiempo de regeneraci\'on $R_{2}$, independiente de $R_{1}$ pero con la misma distribuci\'on que $R_{1}$. Procediendo de esta manera se obtiene una secuencia de variables aleatorias independientes e id\'enticamente distribuidas $\left\{R_{n}\right\}$ llamados longitudes de ciclo. Si definimos a $Z_{k}\equiv R_{1}+R_{2}+\cdots+R_{k}$, se tiene un proceso de renovaci\'on llamado proceso de renovaci\'on encajado para $X$.
+
+\begin{Note}
+Un proceso regenerativo con media de la longitud de ciclo finita es llamado positivo recurrente.
+\end{Note}
+
+
+\begin{Def}
+Para $x$ fijo y para cada $t\geq0$, sea $I_{x}\left(t\right)=1$ si $X\left(t\right)\leq x$,  $I_{x}\left(t\right)=0$ en caso contrario, y def\'inanse los tiempos promedio
+\begin{eqnarray*}
+\overline{X}&=&lim_{t\rightarrow\infty}\frac{1}{t}\int_{0}^{\infty}X\left(u\right)du\\
+\prob\left(X_{\infty}\leq x\right)&=&lim_{t\rightarrow\infty}\frac{1}{t}\int_{0}^{\infty}I_{x}\left(u\right)du,
+\end{eqnarray*}
+cuando estos l\'imites existan.
+\end{Def}
+
+Como consecuencia del teorema de Renovaci\'on-Recompensa, se tiene que el primer l\'imite  existe y es igual a la constante
+\begin{eqnarray*}
+\overline{X}&=&\frac{\esp\left[\int_{0}^{R_{1}}X\left(t\right)dt\right]}{\esp\left[R_{1}\right]},
+\end{eqnarray*}
+suponiendo que ambas esperanzas son finitas.
+
+\begin{Note}
+\begin{itemize}
+\item[a)] Si el proceso regenerativo $X$ es positivo recurrente y tiene trayectorias muestrales no negativas, entonces la ecuaci\'on anterior es v\'alida.
+\item[b)] Si $X$ es positivo recurrente regenerativo, podemos construir una \'unica versi\'on estacionaria de este proceso, $X_{e}=\left\{X_{e}\left(t\right)\right\}$, donde $X_{e}$ es un proceso estoc\'astico regenerativo y estrictamente estacionario, con distribuci\'on marginal distribuida como $X_{\infty}$
+\end{itemize}
+\end{Note}
+
+%________________________________________________________________________
+\section{Procesos Regenerativos: Thorisson}
+%________________________________________________________________________
+
+\begin{Def}
+Un elemento aleatorio en un espacio medible $\left(E,\mathcal{E}\right)$ en un espacio de probabilidad $\left(\Omega,\mathcal{F},\prob\right)$ a $\left(E,\mathcal{E}\right)$, es decir,
+para $A\in \mathcal{E}$,  se tiene que $\left\{Y\in A\right\}\in\mathcal{F}$, donde $\left\{Y\in A\right\}:=\left\{w\in\Omega:Y\left(w\right)\in A\right\}=:Y^{-1}A$.
+\end{Def}
+
+\begin{Note}
+Tambi\'en se dice que $Y$ est\'a soportado por el espacio de probabilidad $\left(\Omega,\mathcal{F},\prob\right)$ y que $Y$ es un mapeo medible de $\Omega$ en $E$, es decir, es $\mathcal{F}/\mathcal{E}$ medible.
+\end{Note}
+
+\begin{Def}
+Para cada $i\in \mathbb{I}$ sea $P_{i}$ una medida de probabilidad en un espacio medible $\left(E_{i},\mathcal{E}_{i}\right)$. Se define el espacio producto
+$\otimes_{i\in\mathbb{I}}\left(E_{i},\mathcal{E}_{i}\right):=\left(\prod_{i\in\mathbb{I}}E_{i},\otimes_{i\in\mathbb{I}}\mathcal{E}_{i}\right)$, donde $\prod_{i\in\mathbb{I}}E_{i}$ es el producto cartesiano de los $E_{i}$'s, y $\otimes_{i\in\mathbb{I}}\mathcal{E}_{i}$ es la $\sigma$-\'algebra producto, es decir, es la $\sigma$-\'algebra m\'as peque\~na en $\prod_{i\in\mathbb{I}}E_{i}$ que hace al $i$-\'esimo mapeo proyecci\'on en $E_{i}$ medible para toda $i\in\mathbb{I}$ es la $\sigma$-\'algebra inducida por los mapeos proyecci\'on. $$\otimes_{i\in\mathbb{I}}\mathcal{E}_{i}:=\sigma\left\{\left\{y:y_{i}\in A\right\}:i\in\mathbb{I}\textrm{ y }A\in\mathcal{E}_{i}\right\}.$$
+\end{Def}
+
+\begin{Def}
+Un espacio de probabilidad $\left(\tilde{\Omega},\tilde{\mathcal{F}},\tilde{\prob}\right)$ es una extensi\'on de otro espacio de probabilidad $\left(\Omega,\mathcal{F},\prob\right)$ si $\left(\tilde{\Omega},\tilde{\mathcal{F}},\tilde{\prob}\right)$ soporta un elemento aleatorio $\xi\in\left(\Omega,\mathcal{F}\right)$ que tienen a $\prob$ como distribuci\'on.
+\end{Def}
+
+\begin{Teo}
+Sea $\mathbb{I}$ un conjunto de \'indices arbitrario. Para cada $i\in\mathbb{I}$ sea $P_{i}$ una medida de probabilidad en un espacio medible $\left(E_{i},\mathcal{E}_{i}\right)$. Entonces existe una \'unica medida de probabilidad $\otimes_{i\in\mathbb{I}}P_{i}$ en $\otimes_{i\in\mathbb{I}}\left(E_{i},\mathcal{E}_{i}\right)$ tal que 
+
+\begin{eqnarray*}
+\otimes_{i\in\mathbb{I}}P_{i}\left(y\in\prod_{i\in\mathbb{I}}E_{i}:y_{i}\in A_{i_{1}},\ldots,y_{n}\in A_{i_{n}}\right)=P_{i_{1}}\left(A_{i_{n}}\right)\cdots P_{i_{n}}\left(A_{i_{n}}\right)
+\end{eqnarray*}
+para todos los enteros $n>0$, toda $i_{1},\ldots,i_{n}\in\mathbb{I}$ y todo $A_{i_{1}}\in\mathcal{E}_{i_{1}},\ldots,A_{i_{n}}\in\mathcal{E}_{i_{n}}$
+\end{Teo}
+
+La medida $\otimes_{i\in\mathbb{I}}P_{i}$ es llamada la medida producto y $\otimes_{i\in\mathbb{I}}\left(E_{i},\mathcal{E}_{i},P_{i}\right):=\left(\prod_{i\in\mathbb{I}},E_{i},\otimes_{i\in\mathbb{I}}\mathcal{E}_{i},\otimes_{i\in\mathbb{I}}P_{i}\right)$, es llamado espacio de probabilidad producto.
+
+
+\begin{Def}
+Un espacio medible $\left(E,\mathcal{E}\right)$ es \textit{Polaco} si existe una m\'etrica en $E$ tal que $E$ es completo, es decir cada sucesi\'on de Cauchy converge a un l\'imite en $E$, y \textit{separable}, $E$ tienen un subconjunto denso numerable, y tal que $\mathcal{E}$ es generado por conjuntos abiertos.
+\end{Def}
+
+
+\begin{Def}
+Dos espacios medibles $\left(E,\mathcal{E}\right)$ y $\left(G,\mathcal{G}\right)$ son Borel equivalentes \textit{isomorfos} si existe una biyecci\'on $f:E\rightarrow G$ tal que $f$ es $\mathcal{E}/\mathcal{G}$ medible y su inversa $f^{-1}$ es $\mathcal{G}/\mathcal{E}$ medible. La biyecci\'on es una equivalencia de Borel.
+\end{Def}
+
+\begin{Def}
+Un espacio medible  $\left(E,\mathcal{E}\right)$ es un \textit{espacio est\'andar} si es Borel equivalente a $\left(G,\mathcal{G}\right)$, donde $G$ es un subconjunto de Borel de $\left[0,1\right]$ y $\mathcal{G}$ son los subconjuntos de Borel de $G$.
+\end{Def}
+
+\begin{Note}
+Cualquier espacio Polaco es un espacio est\'andar.
+\end{Note}
+
+
+\begin{Def}
+Un proceso estoc\'astico con conjunto de \'indices $\mathbb{I}$ y espacio de estados $\left(E,\mathcal{E}\right)$ es una familia $Z=\left(\mathbb{Z}_{s}\right)_{s\in\mathbb{I}}$ donde $\mathbb{Z}_{s}$ son elementos aleatorios definidos en un espacio de probabilidad com\'un $\left(\Omega,\mathcal{F},\prob\right)$ y todos toman valores en $\left(E,\mathcal{E}\right)$.
+\end{Def}
+
+\begin{Def}
+Un proceso estoc\'astico \textit{one-sided contiuous time} (\textbf{PEOSCT}) es un proceso estoc\'astico con conjunto de \'indices $\mathbb{I}=\left[0,\infty\right)$.
+\end{Def}
+
+
+Sea $\left(E^{\mathbb{I}},\mathcal{E}^{\mathbb{I}}\right)$ denota el espacio producto $\left(E^{\mathbb{I}},\mathcal{E}^{\mathbb{I}}\right):=\otimes_{s\in\mathbb{I}}\left(E,\mathcal{E}\right)$. Vamos a considerar $\mathbb{Z}$ como un mapeo aleatorio, es decir, como un elemento aleatorio en $\left(E^{\mathbb{I}},\mathcal{E}^{\mathbb{I}}\right)$ definido por $Z\left(w\right)=\left(Z_{s}\left(w\right)\right)_{s\in\mathbb{I}}$ y $w\in\Omega$.
+
+\begin{Note}
+La distribuci\'on de un proceso estoc\'astico $Z$ es la distribuci\'on de $Z$ como un elemento aleatorio en $\left(E^{\mathbb{I}},\mathcal{E}^{\mathbb{I}}\right)$. La distribuci\'on de $Z$ esta determinada de manera \'unica por las distribuciones finito dimensionales.
+\end{Note}
+
+\begin{Note}
+En particular cuando $Z$ toma valores reales, es decir, $\left(E,\mathcal{E}\right)=\left(\mathbb{R},\mathcal{B}\right)$ las distribuciones finito dimensionales est\'an determinadas por las funciones de distribuci\'on finito dimensionales
+
+\begin{eqnarray}
+\prob\left(Z_{t_{1}}\leq x_{1},\ldots,Z_{t_{n}}\leq x_{n}\right),x_{1},\ldots,x_{n}\in\mathbb{R},t_{1},\ldots,t_{n}\in\mathbb{I},n\geq1.
+\end{eqnarray}
+\end{Note}
+
+\begin{Note}
+Para espacios polacos $\left(E,\mathcal{E}\right)$ el Teorema de Consistencia de Kolmogorov asegura que dada una colecci\'on de distribuciones finito dimensionales consistentes, siempre existe un proceso estoc\'astico que posee tales distribuciones finito dimensionales.
+\end{Note}
+
+
+\begin{Def}
+Las trayectorias de $Z$ son las realizaciones $Z\left(w\right)$ para $w\in\Omega$ del mapeo aleatorio $Z$.
+\end{Def}
+
+\begin{Note}
+Algunas restricciones se imponen sobre las trayectorias, por ejemplo que sean continuas por la derecha, o continuas por la derecha con l\'imites por la izquierda, o de manera m\'as general, se pedir\'a que caigan en alg\'un subconjunto $H$ de $E^{\mathbb{I}}$. En este caso es natural considerar a $Z$ como un elemento aleatorio que no est\'a en $\left(E^{\mathbb{I}},\mathcal{E}^{\mathbb{I}}\right)$ sino en $\left(H,\mathcal{H}\right)$, donde $\mathcal{H}$ es la $\sigma$-\'algebra generada por los mapeos proyecci\'on que toman a $z\in H$ a $z_{t}\in E$ para $t\in\mathbb{I}$. A $\mathcal{H}$ se le conoce como la traza de $H$ en $E^{\mathbb{I}}$, es decir,
+\begin{eqnarray}
+\mathcal{H}:=E^{\mathbb{I}}\cap H:=\left\{A\cap H:A\in E^{\mathbb{I}}\right\}.
+\end{eqnarray}
+\end{Note}
+
+
+\begin{Note}
+$Z$ tiene trayectorias con valores en $H$ y cada $Z_{t}$ es un mapeo medible de $\left(\Omega,\mathcal{F}\right)$ a $\left(H,\mathcal{H}\right)$. Cuando se considera un espacio de trayectorias en particular $H$, al espacio $\left(H,\mathcal{H}\right)$ se le llama el espacio de trayectorias de $Z$.
+\end{Note}
+
+\begin{Note}
+La distribuci\'on del proceso estoc\'astico $Z$ con espacio de trayectorias $\left(H,\mathcal{H}\right)$ es la distribuci\'on de $Z$ como  un elemento aleatorio en $\left(H,\mathcal{H}\right)$. La distribuci\'on, nuevemente, est\'a determinada de manera \'unica por las distribuciones finito dimensionales.
+\end{Note}
+
+
+\begin{Def}
+Sea $Z$ un PEOSCT  con espacio de estados $\left(E,\mathcal{E}\right)$ y sea $T$ un tiempo aleatorio en $\left[0,\infty\right)$. Por $Z_{T}$ se entiende el mapeo con valores en $E$ definido en $\Omega$ en la manera obvia:
+\begin{eqnarray*}
+Z_{T}\left(w\right):=Z_{T\left(w\right)}\left(w\right). w\in\Omega.
+\end{eqnarray*}
+\end{Def}
+
+\begin{Def}
+Un PEOSCT $Z$ es conjuntamente medible (\textbf{CM}) si el mapeo que toma $\left(w,t\right)\in\Omega\times\left[0,\infty\right)$ a $Z_{t}\left(w\right)\in E$ es $\mathcal{F}\otimes\mathcal{B}\left[0,\infty\right)/\mathcal{E}$ medible.
+\end{Def}
+
+\begin{Note}
+Un PEOSCT-CM implica que el proceso es medible, dado que $Z_{T}$ es una composici\'on  de dos mapeos continuos: el primero que toma $w$ en $\left(w,T\left(w\right)\right)$ es $\mathcal{F}/\mathcal{F}\otimes\mathcal{B}\left[0,\infty\right)$ medible, mientras que el segundo toma $\left(w,T\left(w\right)\right)$ en $Z_{T\left(w\right)}\left(w\right)$ es $\mathcal{F}\otimes\mathcal{B}\left[0,\infty\right)/\mathcal{E}$ medible.
+\end{Note}
+
+
+\begin{Def}
+Un PEOSCT con espacio de estados $\left(H,\mathcal{H}\right)$ es can\'onicamente conjuntamente medible (\textbf{CCM}) si el mapeo $\left(z,t\right)\in H\times\left[0,\infty\right)$ en $Z_{t}\in E$ es $\mathcal{H}\otimes\mathcal{B}\left[0,\infty\right)/\mathcal{E}$ medible.
+\end{Def}
+
+\begin{Note}
+Un PEOSCTCCM implica que el proceso es CM, dado que un PECCM $Z$ es un mapeo de $\Omega\times\left[0,\infty\right)$ a $E$, es la composici\'on de dos mapeos medibles: el primero, toma $\left(w,t\right)$ en $\left(Z\left(w\right),t\right)$ es $\mathcal{F}\otimes\mathcal{B}\left[0,\infty\right)/\mathcal{H}\otimes\mathcal{B}\left[0,\infty\right)$ medible, y el segundo que toma $\left(Z\left(w\right),t\right)$  en $Z_{t}\left(w\right)$ es $\mathcal{H}\otimes\mathcal{B}\left[0,\infty\right)/\mathcal{E}$ medible. Por tanto CCM es una condici\'on m\'as fuerte que CM.
+\end{Note}
+
+\begin{Def}
+Un conjunto de trayectorias $H$ de un PEOSCT $Z$, es internamente shift-invariante (\textbf{ISI}) si 
+\begin{eqnarray*}
+\left\{\left(z_{t+s}\right)_{s\in\left[0,\infty\right)}:z\in H\right\}=H\textrm{, }t\in\left[0,\infty\right).
+\end{eqnarray*}
+\end{Def}
+
+
+\begin{Def}
+Dado un PEOSCTISI, se define el mapeo-shift $\theta_{t}$, $t\in\left[0,\infty\right)$, de $H$ a $H$ por 
+\begin{eqnarray*}
+\theta_{t}z=\left(z_{t+s}\right)_{s\in\left[0,\infty\right)}\textrm{, }z\in H.
+\end{eqnarray*}
+\end{Def}
+
+\begin{Def}
+Se dice que un proceso $Z$ es shift-medible (\textbf{SM}) si $Z$ tiene un conjunto de trayectorias $H$ que es ISI y adem\'as el mapeo que toma $\left(z,t\right)\in H\times\left[0,\infty\right)$ en $\theta_{t}z\in H$ es $\mathcal{H}\otimes\mathcal{B}\left[0,\infty\right)/\mathcal{H}$ medible.
+\end{Def}
+
+\begin{Note}
+Un proceso estoc\'astico con conjunto de trayectorias $H$ ISI es shift-medible si y s\'olo si es CCM
+\end{Note}
+
+\begin{Note}
+\begin{itemize}
+\item Dado el espacio polaco $\left(E,\mathcal{E}\right)$ se tiene el  conjunto de trayectorias $D_{E}\left[0,\infty\right)$ que es ISI, entonces cumpe con ser CCM.
+
+\item Si $G$ es abierto, podemos cubrirlo por bolas abiertas cuya cerradura este contenida en $G$, y como $G$ es segundo numerable como subespacio de $E$, lo podemos cubrir por una cantidad numerable de bolas abiertas.
+
+\end{itemize}
+\end{Note}
+
+
+\begin{Note}
+Los procesos estoc\'asticos $Z$ a tiempo discreto con espacio de estados polaco, tambi\'en tiene un espacio de trayectorias polaco y por tanto tiene distribuciones condicionales regulares.
+\end{Note}
+
+\begin{Teo}
+El producto numerable de espacios polacos es polaco.
+\end{Teo}
+
+
+\begin{Def}
+Sea $\left(\Omega,\mathcal{F},\prob\right)$ espacio de probabilidad que soporta al proceso $Z=\left(Z_{s}\right)_{s\in\left[0,\infty\right)}$ y $S=\left(S_{k}\right)_{0}^{\infty}$ donde $Z$ es un PEOSCTM con espacio de estados $\left(E,\mathcal{E}\right)$  y espacio de trayectorias $\left(H,\mathcal{H}\right)$  y adem\'as $S$ es una sucesi\'on de tiempos aleatorios one-sided que satisfacen la condici\'on $0\leq S_{0}<S_{1}<\cdots\rightarrow\infty$. Considerando $S$ como un mapeo medible de $\left(\Omega,\mathcal{F}\right)$ al espacio sucesi\'on $\left(L,\mathcal{L}\right)$, donde 
+\begin{eqnarray*}
+L=\left\{\left(s_{k}\right)_{0}^{\infty}\in\left[0,\infty\right)^{\left\{0,1,\ldots\right\}}:s_{0}<s_{1}<\cdots\rightarrow\infty\right\},
+\end{eqnarray*}
+donde $\mathcal{L}$ son los subconjuntos de Borel de $L$, es decir, $\mathcal{L}=L\cap\mathcal{B}^{\left\{0,1,\ldots\right\}}$.
+
+As\'i el par $\left(Z,S\right)$ es un mapeo medible de  $\left(\Omega,\mathcal{F}\right)$ en $\left(H\times L,\mathcal{H}\otimes\mathcal{L}\right)$. El par $\mathcal{H}\otimes\mathcal{L}^{+}$ denotar\'a la clase de todas las funciones medibles de $\left(H\times L,\mathcal{H}\otimes\mathcal{L}\right)$ en $\left(\left[0,\infty\right),\mathcal{B}\left[0,\infty\right)\right)$.
+\end{Def}
+
+
+\begin{Def}
+Sea $\theta_{t}$ el mapeo-shift conjunto de $H\times L$ en $H\times L$ dado por
+\begin{eqnarray*}
+\theta_{t}\left(z,\left(s_{k}\right)_{0}^{\infty}\right)=\theta_{t}\left(z,\left(s_{n_{t-}+k}-t\right)_{0}^{\infty}\right)
+\end{eqnarray*}
+donde 
+$n_{t-}=inf\left\{n\geq1:s_{n}\geq t\right\}$.
+\end{Def}
+
+\begin{Note}
+Con la finalidad de poder realizar los shift's sin complicaciones de medibilidad, se supondr\'a que $Z$ es shit-medible, es decir, el conjunto de trayectorias $H$ es invariante bajo shifts del tiempo y el mapeo que toma $\left(z,t\right)\in H\times\left[0,\infty\right)$ en $z_{t}\in E$ es $\mathcal{H}\otimes\mathcal{B}\left[0,\infty\right)/\mathcal{E}$ medible.
+\end{Note}
+
+\begin{Def}
+Dado un proceso \textbf{PEOSSM} (Proceso Estoc\'astico One Side Shift Medible) $Z$, se dice regenerativo cl\'asico con tiempos de regeneraci\'on $S$ si 
+
+\begin{eqnarray*}
+\theta_{S_{n}}\left(Z,S\right)=\left(Z^{0},S^{0}\right),n\geq0
+\end{eqnarray*}
+y adem\'as $\theta_{S_{n}}\left(Z,S\right)$ es independiente de $\left(\left(Z_{s}\right)s\in\left[0,S_{n}\right),S_{0},\ldots,S_{n}\right)$
+Si lo anterior se cumple, al par $\left(Z,S\right)$ se le llama regenerativo cl\'asico.
+\end{Def}
+
+\begin{Note}
+Si el par $\left(Z,S\right)$ es regenerativo cl\'asico, entonces las longitudes de los ciclos $X_{1},X_{2},\ldots,$ son i.i.d. e independientes de la longitud del retraso $S_{0}$, es decir, $S$ es un proceso de renovaci\'on. Las longitudes de los ciclos tambi\'en son llamados tiempos de inter-regeneraci\'on y tiempos de ocurrencia.
+
+\end{Note}
+
+\begin{Teo}
+Sup\'ongase que el par $\left(Z,S\right)$ es regenerativo cl\'asico con $\esp\left[X_{1}\right]<\infty$. Entonces $\left(Z^{*},S^{*}\right)$ en el teorema 2.1 es una versi\'on estacionaria de $\left(Z,S\right)$. Adem\'as, si $X_{1}$ es lattice con span $d$, entonces $\left(Z^{**},S^{**}\right)$ en el teorema 2.2 es una versi\'on periodicamente estacionaria de $\left(Z,S\right)$ con periodo $d$.
+
+\end{Teo}
+
+\begin{Def}
+Una variable aleatoria $X_{1}$ es \textit{spread out} si existe una $n\geq1$ y una  funci\'on $f\in\mathcal{B}^{+}$ tal que $\int_{\rea}f\left(x\right)dx>0$ con $X_{2},X_{3},\ldots,X_{n}$ copias i.i.d  de $X_{1}$, $$\prob\left(X_{1}+\cdots+X_{n}\in B\right)\geq\int_{B}f\left(x\right)dx$$ para $B\in\mathcal{B}$.
+
+\end{Def}
+
+
+
+\begin{Def}
+Dado un proceso estoc\'astico $Z$ se le llama \textit{wide-sense regenerative} (\textbf{WSR}) con tiempos de regeneraci\'on $S$ si $\theta_{S_{n}}\left(Z,S\right)=\left(Z^{0},S^{0}\right)$ para $n\geq0$ en distribuci\'on y $\theta_{S_{n}}\left(Z,S\right)$ es independiente de $\left(S_{0},S_{1},\ldots,S_{n}\right)$ para $n\geq0$.
+Se dice que el par $\left(Z,S\right)$ es WSR si lo anterior se cumple.
+\end{Def}
+
+
+\begin{Note}
+\begin{itemize}
+\item El proceso de trayectorias $\left(\theta_{s}Z\right)_{s\in\left[0,\infty\right)}$ es WSR con tiempos de regeneraci\'on $S$ pero no es regenerativo cl\'asico.
+
+\item Si $Z$ es cualquier proceso estacionario y $S$ es un proceso de renovaci\'on que es independiente de $Z$, entonces $\left(Z,S\right)$ es WSR pero en general no es regenerativo cl\'asico
+
+\end{itemize}
+
+\end{Note}
+
+
+\begin{Note}
+Para cualquier proceso estoc\'astico $Z$, el proceso de trayectorias $\left(\theta_{s}Z\right)_{s\in\left[0,\infty\right)}$ es siempre un proceso de Markov.
+\end{Note}
+
+
+
+\begin{Teo}
+Supongase que el par $\left(Z,S\right)$ es WSR con $\esp\left[X_{1}\right]<\infty$. Entonces $\left(Z^{*},S^{*}\right)$ en el teorema 2.1 es una versi\'on estacionaria de 
+$\left(Z,S\right)$.
+\end{Teo}
+
+
+\begin{Teo}
+Supongase que $\left(Z,S\right)$ es cycle-stationary con $\esp\left[X_{1}\right]<\infty$. Sea $U$ distribuida uniformemente en $\left[0,1\right)$ e independiente de $\left(Z^{0},S^{0}\right)$ y sea $\prob^{*}$ la medida de probabilidad en $\left(\Omega,\prob\right)$ definida por $$d\prob^{*}=\frac{X_{1}}{\esp\left[X_{1}\right]}d\prob$$. Sea $\left(Z^{*},S^{*}\right)$ con distribuci\'on $\prob^{*}\left(\theta_{UX_{1}}\left(Z^{0},S^{0}\right)\in\cdot\right)$. Entonces $\left(Z^{}*,S^{*}\right)$ es estacionario,
+\begin{eqnarray*}
+\esp\left[f\left(Z^{*},S^{*}\right)\right]=\esp\left[\int_{0}^{X_{1}}f\left(\theta_{s}\left(Z^{0},S^{0}\right)\right)ds\right]/\esp\left[X_{1}\right]
+\end{eqnarray*}
+$f\in\mathcal{H}\otimes\mathcal{L}^{+}$, and $S_{0}^{*}$ es continuo con funci\'on distribuci\'on $G_{\infty}$ definida por $$G_{\infty}\left(x\right):=\frac{\esp\left[X_{1}\right]\wedge x}{\esp\left[X_{1}\right]}$$ para $x\geq0$ y densidad $\prob\left[X_{1}>x\right]/\esp\left[X_{1}\right]$, con $x\geq0$.
+
+\end{Teo}
+
+
+\begin{Teo}
+Sea $Z$ un Proceso Estoc\'astico un lado shift-medible \textit{one-sided shift-measurable stochastic process}, (PEOSSM),
+y $S_{0}$ y $S_{1}$ tiempos aleatorios tales que $0\leq S_{0}<S_{1}$ y
+\begin{equation}
+\theta_{S_{1}}Z=\theta_{S_{0}}Z\textrm{ en distribuci\'on}.
+\end{equation}
+
+Entonces el espacio de probabilidad subyacente $\left(\Omega,\mathcal{F},\prob\right)$ puede extenderse para soportar una sucesi\'on de tiempos aleatorios $S$ tales que
+
+\begin{eqnarray}
+\theta_{S_{n}}\left(Z,S\right)=\left(Z^{0},S^{0}\right),n\geq0,\textrm{ en distribuci\'on},\\
+\left(Z,S_{0},S_{1}\right)\textrm{ depende de }\left(X_{2},X_{3},\ldots\right)\textrm{ solamente a traves de }\theta_{S_{1}}Z.
+\end{eqnarray}
+\end{Teo}
+
+\begin{itemize}
+\item Lista de pendientes por agregar
+\begin{itemize}
+\item[a)] definiciones de la Secci\'on 2.1, p\'agina 128
+
+\item[b)] Segundo p\'arrafo, Secci\'on 2.8, p\'agina 131
+
+\item[c)] Secci\'on 2.7, p\'agina 130
+
+\item[d)] Teorema 4.5, p\'agina 362
+
+\item[e)] Definici\'on 3.1,  p\'agina 346
+
+\item[f)] Ecuaciones 4.6 y 4.7 p\'agina 362
+
+\item[b)] Teorema 3.1, p\'agina 348.
+
+
+\end{itemize}
+
+%_____________________________________________________________________
+\section{Definiciones  B\'asicas}
+%_____________________________________________________________________
+
+\begin{Def}
+Sea $X$ un conjunto y $\mathcal{F}$ una $\sigma$-\'algebra de
+subconjuntos de $X$, la pareja $\left(X,\mathcal{F}\right)$ es
+llamado espacio medible. Un subconjunto $A$ de $X$ es llamado
+medible, o medible con respecto a $\mathcal{F}$, si
+$A\in\mathcal{F}$.
+\end{Def}
+
+\begin{Def}
+Sea $\left(X,\mathcal{F},\mu\right)$ espacio de medida. Se dice
+que la medida $\mu$ es $\sigma$-finita si se puede escribir
+$X=\bigcup_{n\geq1}X_{n}$ con $X_{n}\in\mathcal{F}$ y
+$\mu\left(X_{n}\right)<\infty$.
+\end{Def}
+
+\begin{Def}\label{Cto.Borel}
+Sea $X$ el conjunto de los \'umeros reales $\rea$. El \'algebra de
+Borel es la $\sigma$-\'algebra $B$ generada por los intervalos
+abiertos $\left(a,b\right)\in\rea$. Cualquier conjunto en $B$ es
+llamado {\em Conjunto de Borel}.
+\end{Def}
+
+\begin{Def}\label{Funcion.Medible}
+Una funci\'on $f:X\rightarrow\rea$, es medible si para cualquier
+n\'umero real $\alpha$ el conjunto
+\[\left\{x\in X:f\left(x\right)>\alpha\right\}\]
+pertenece a $X$. Equivalentemente, se dice que $f$ es medible si
+\[f^{-1}\left(\left(\alpha,\infty\right)\right)=\left\{x\in X:f\left(x\right)>\alpha\right\}\in\mathcal{F}.\]
+\end{Def}
+
+
+\begin{Def}\label{Def.Cilindros}
+Sean $\left(\Omega_{i},\mathcal{F}_{i}\right)$, $i=1,2,\ldots,$
+espacios medibles y $\Omega=\prod_{i=1}^{\infty}\Omega_{i}$ el
+conjunto de todas las sucesiones
+$\left(\omega_{1},\omega_{2},\ldots,\right)$ tales que
+$\omega_{i}\in\Omega_{i}$, $i=1,2,\ldots,$. Si
+$B^{n}\subset\prod_{i=1}^{\infty}\Omega_{i}$, definimos
+$B_{n}=\left\{\omega\in\Omega:\left(\omega_{1},\omega_{2},\ldots,\omega_{n}\right)\in
+B^{n}\right\}$. Al conjunto $B_{n}$ se le llama {\em cilindro} con
+base $B^{n}$, el cilindro es llamado medible si
+$B^{n}\in\prod_{i=1}^{\infty}\mathcal{F}_{i}$.
+\end{Def}
+
+
+\begin{Def}\label{Def.Proc.Adaptado}[TSP, Ash \cite{RBA}]
+Sea $X\left(t\right),t\geq0$ proceso estoc\'astico, el proceso es
+adaptado a la familia de $\sigma$-\'algebras $\mathcal{F}_{t}$,
+para $t\geq0$, si para $s<t$ implica que
+$\mathcal{F}_{s}\subset\mathcal{F}_{t}$, y $X\left(t\right)$ es
+$\mathcal{F}_{t}$-medible para cada $t$. Si no se especifica
+$\mathcal{F}_{t}$ entonces se toma $\mathcal{F}_{t}$ como
+$\mathcal{F}\left(X\left(s\right),s\leq t\right)$, la m\'as
+peque\~na $\sigma$-\'algebra de subconjuntos de $\Omega$ que hace
+que cada $X\left(s\right)$, con $s\leq t$ sea Borel medible.
+\end{Def}
+
+
+\begin{Def}\label{Def.Tiempo.Paro}[TSP, Ash \cite{RBA}]
+Sea $\left\{\mathcal{F}\left(t\right),t\geq0\right\}$ familia
+creciente de sub $\sigma$-\'algebras. es decir,
+$\mathcal{F}\left(s\right)\subset\mathcal{F}\left(t\right)$ para
+$s\leq t$. Un tiempo de paro para $\mathcal{F}\left(t\right)$ es
+una funci\'on $T:\Omega\rightarrow\left[0,\infty\right]$ tal que
+$\left\{T\leq t\right\}\in\mathcal{F}\left(t\right)$ para cada
+$t\geq0$. Un tiempo de paro para el proceso estoc\'astico
+$X\left(t\right),t\geq0$ es un tiempo de paro para las
+$\sigma$-\'algebras
+$\mathcal{F}\left(t\right)=\mathcal{F}\left(X\left(s\right)\right)$.
+\end{Def}
+
+\begin{Def}
+Sea $X\left(t\right),t\geq0$ proceso estoc\'astico, con
+$\left(S,\chi\right)$ espacio de estados. Se dice que el proceso
+es adaptado a $\left\{\mathcal{F}\left(t\right)\right\}$, es
+decir, si para cualquier $s,t\in I$, $I$ conjunto de \'indices,
+$s<t$, se tiene que
+$\mathcal{F}\left(s\right)\subset\mathcal{F}\left(t\right)$ y
+$X\left(t\right)$ es $\mathcal{F}\left(t\right)$-medible,
+\end{Def}
+
+\begin{Def}
+Sea $X\left(t\right),t\geq0$ proceso estoc\'astico, se dice que es
+un Proceso de Markov relativo a $\mathcal{F}\left(t\right)$ o que
+$\left\{X\left(t\right),\mathcal{F}\left(t\right)\right\}$ es de
+Markov si y s\'olo si para cualquier conjunto $B\in\chi$,  y
+$s,t\in I$, $s<t$ se cumple que
+\begin{equation}\label{Prop.Markov}
+P\left\{X\left(t\right)\in
+B|\mathcal{F}\left(s\right)\right\}=P\left\{X\left(t\right)\in
+B|X\left(s\right)\right\}.
+\end{equation}
+\end{Def}
+\begin{Note}
+Si se dice que $\left\{X\left(t\right)\right\}$ es un Proceso de
+Markov sin mencionar $\mathcal{F}\left(t\right)$, se asumir\'a que
+\begin{eqnarray*}
+\mathcal{F}\left(t\right)=\mathcal{F}_{0}\left(t\right)=\mathcal{F}\left(X\left(r\right),r\leq
+t\right),
+\end{eqnarray*}
+entonces la ecuaci\'on (\ref{Prop.Markov}) se puede escribir como
+\begin{equation}
+P\left\{X\left(t\right)\in B|X\left(r\right),r\leq s\right\} =
+P\left\{X\left(t\right)\in B|X\left(s\right)\right\}
+\end{equation}
+\end{Note}
+
+\begin{Teo}
+Sea $\left(X_{n},\mathcal{F}_{n},n=0,1,\ldots,\right\}$ Proceso de
+Markov con espacio de estados $\left(S_{0},\chi_{0}\right)$
+generado por una distribuici\'on inicial $P_{o}$ y probabilidad de
+transici\'on $p_{mn}$, para $m,n=0,1,\ldots,$ $m<n$, que por
+notaci\'on se escribir\'a como $p\left(m,n,x,B\right)\rightarrow
+p_{mn}\left(x,B\right)$. Sea $S$ tiempo de paro relativo a la
+$\sigma$-\'algebra $\mathcal{F}_{n}$. Sea $T$ funci\'on medible,
+$T:\Omega\rightarrow\left\{0,1,\ldots,\right\}$. Sup\'ongase que
+$T\geq S$, entonces $T$ es tiempo de paro. Si $B\in\chi_{0}$,
+entonces
+\begin{equation}\label{Prop.Fuerte.Markov}
+P\left\{X\left(T\right)\in
+B,T<\infty|\mathcal{F}\left(S\right)\right\} =
+p\left(S,T,X\left(s\right),B\right)
+\end{equation}
+en $\left\{T<\infty\right\}$.
+\end{Teo}
+
+
+\begin{Def}
+Sea $X$ un conjunto y $\mathcal{F}$ una $\sigma$-\'algebra de
+subconjuntos de $X$, la pareja $\left(X,\mathcal{F}\right)$ es
+llamado espacio medible. Un subconjunto $A$ de $X$ es llamado
+medible, o medible con respecto a $\mathcal{F}$, si
+$A\in\mathcal{F}$.
+\end{Def}
+
+\begin{Def}
+Sea $\left(X,\mathcal{F},\mu\right)$ espacio de medida. Se dice
+que la medida $\mu$ es $\sigma$-finita si se puede escribir
+$X=\bigcup_{n\geq1}X_{n}$ con $X_{n}\in\mathcal{F}$ y
+$\mu\left(X_{n}\right)<\infty$.
+\end{Def}
+
+\begin{Def}\label{Cto.Borel}
+Sea $X$ el conjunto de los n\'umeros reales $\rea$. El \'algebra
+de Borel es la $\sigma$-\'algebra $B$ generada por los intervalos
+abiertos $\left(a,b\right)\in\rea$. Cualquier conjunto en $B$ es
+llamado {\em Conjunto de Borel}.
+\end{Def}
+
+\begin{Def}\label{Funcion.Medible}
+Una funci\'on $f:X\rightarrow\rea$, es medible si para cualquier
+n\'umero real $\alpha$ el conjunto
+\[\left\{x\in X:f\left(x\right)>\alpha\right\}\]
+pertenece a $\mathcal{F}$. Equivalentemente, se dice que $f$ es
+medible si
+\[f^{-1}\left(\left(\alpha,\infty\right)\right)=\left\{x\in X:f\left(x\right)>\alpha\right\}\in\mathcal{F}.\]
+\end{Def}
+
+
+\begin{Def}\label{Def.Cilindros}
+Sean $\left(\Omega_{i},\mathcal{F}_{i}\right)$, $i=1,2,\ldots,$
+espacios medibles y $\Omega=\prod_{i=1}^{\infty}\Omega_{i}$ el
+conjunto de todas las sucesiones
+$\left(\omega_{1},\omega_{2},\ldots,\right)$ tales que
+$\omega_{i}\in\Omega_{i}$, $i=1,2,\ldots,$. Si
+$B^{n}\subset\prod_{i=1}^{\infty}\Omega_{i}$, definimos
+$B_{n}=\left\{\omega\in\Omega:\left(\omega_{1},\omega_{2},\ldots,\omega_{n}\right)\in
+B^{n}\right\}$. Al conjunto $B_{n}$ se le llama {\em cilindro} con
+base $B^{n}$, el cilindro es llamado medible si
+$B^{n}\in\prod_{i=1}^{\infty}\mathcal{F}_{i}$.
+\end{Def}
+
+
+\begin{Def}\label{Def.Proc.Adaptado}[TSP, Ash \cite{RBA}]
+Sea $X\left(t\right),t\geq0$ proceso estoc\'astico, el proceso es
+adaptado a la familia de $\sigma$-\'algebras $\mathcal{F}_{t}$,
+para $t\geq0$, si para $s<t$ implica que
+$\mathcal{F}_{s}\subset\mathcal{F}_{t}$, y $X\left(t\right)$ es
+$\mathcal{F}_{t}$-medible para cada $t$. Si no se especifica
+$\mathcal{F}_{t}$ entonces se toma $\mathcal{F}_{t}$ como
+$\mathcal{F}\left(X\left(s\right),s\leq t\right)$, la m\'as
+peque\~na $\sigma$-\'algebra de subconjuntos de $\Omega$ que hace
+que cada $X\left(s\right)$, con $s\leq t$ sea Borel medible.
+\end{Def}
+
+
+\begin{Def}\label{Def.Tiempo.Paro}[TSP, Ash \cite{RBA}]
+Sea $\left\{\mathcal{F}\left(t\right),t\geq0\right\}$ familia
+creciente de sub $\sigma$-\'algebras. es decir,
+$\mathcal{F}\left(s\right)\subset\mathcal{F}\left(t\right)$ para
+$s\leq t$. Un tiempo de paro para $\mathcal{F}\left(t\right)$ es
+una funci\'on $T:\Omega\rightarrow\left[0,\infty\right]$ tal que
+$\left\{T\leq t\right\}\in\mathcal{F}\left(t\right)$ para cada
+$t\geq0$. Un tiempo de paro para el proceso estoc\'astico
+$X\left(t\right),t\geq0$ es un tiempo de paro para las
+$\sigma$-\'algebras
+$\mathcal{F}\left(t\right)=\mathcal{F}\left(X\left(s\right)\right)$.
+\end{Def}
+
+\begin{Def}
+Sea $X\left(t\right),t\geq0$ proceso estoc\'astico, con
+$\left(S,\chi\right)$ espacio de estados. Se dice que el proceso
+es adaptado a $\left\{\mathcal{F}\left(t\right)\right\}$, es
+decir, si para cualquier $s,t\in I$, $I$ conjunto de \'indices,
+$s<t$, se tiene que
+$\mathcal{F}\left(s\right)\subset\mathcal{F}\left(t\right)$ y
+$X\left(t\right)$ es $\mathcal{F}\left(t\right)$-medible,
+\end{Def}
+
+\begin{Def}
+Sea $X\left(t\right),t\geq0$ proceso estoc\'astico, se dice que es
+un Proceso de Markov relativo a $\mathcal{F}\left(t\right)$ o que
+$\left\{X\left(t\right),\mathcal{F}\left(t\right)\right\}$ es de
+Markov si y s\'olo si para cualquier conjunto $B\in\chi$,  y
+$s,t\in I$, $s<t$ se cumple que
+\begin{equation}\label{Prop.Markov}
+P\left\{X\left(t\right)\in
+B|\mathcal{F}\left(s\right)\right\}=P\left\{X\left(t\right)\in
+B|X\left(s\right)\right\}.
+\end{equation}
+\end{Def}
+\begin{Note}
+Si se dice que $\left\{X\left(t\right)\right\}$ es un Proceso de
+Markov sin mencionar $\mathcal{F}\left(t\right)$, se asumir\'a que
+\begin{eqnarray*}
+\mathcal{F}\left(t\right)=\mathcal{F}_{0}\left(t\right)=\mathcal{F}\left(X\left(r\right),r\leq
+t\right),
+\end{eqnarray*}
+entonces la ecuaci\'on (\ref{Prop.Markov}) se puede escribir como
+\begin{equation}
+P\left\{X\left(t\right)\in B|X\left(r\right),r\leq s\right\} =
+P\left\{X\left(t\right)\in B|X\left(s\right)\right\}
+\end{equation}
+\end{Note}
+
+
+%\newpage
+%_______________________________________________________________
+%\subsection{Procesos de Estados de Markov}
+%_______________________________________________________________
+
+\begin{Teo}
+Sea $\left(X_{n},\mathcal{F}_{n},n=0,1,\ldots,\right\}$ Proceso de
+Markov con espacio de estados $\left(S_{0},\chi_{0}\right)$
+generado por una distribuici\'on inicial $P_{o}$ y probabilidad de
+transici\'on $p_{mn}$, para $m,n=0,1,\ldots,$ $m<n$, que por
+notaci\'on se escribir\'a como $p\left(m,n,x,B\right)\rightarrow
+p_{mn}\left(x,B\right)$. Sea $S$ tiempo de paro relativo a la
+$\sigma$-\'algebra $\mathcal{F}_{n}$. Sea $T$ funci\'on medible,
+$T:\Omega\rightarrow\left\{0,1,\ldots,\right\}$. Sup\'ongase que
+$T\geq S$, entonces $T$ es tiempo de paro. Si $B\in\chi_{0}$,
+entonces
+\begin{equation}\label{Prop.Fuerte.Markov}
+P\left\{X\left(T\right)\in
+B,T<\infty|\mathcal{F}\left(S\right)\right\} =
+p\left(S,T,X\left(s\right),B\right)
+\end{equation}
+en $\left\{T<\infty\right\}$.
+\end{Teo}
+
+
+Sea $K$ conjunto numerable y sea $d:K\rightarrow\nat$ funci\'on.
+Para $v\in K$, $M_{v}$ es un conjunto abierto de
+$\rea^{d\left(v\right)}$. Entonces \[E=\bigcup_{v\in
+K}M_{v}=\left\{\left(v,\zeta\right):v\in K,\zeta\in
+M_{v}\right\}.\]
+
+Sea $\mathcal{E}$ la clase de conjuntos medibles en $E$:
+\[\mathcal{E}=\left\{\bigcup_{v\in K}A_{v}:A_{v}\in \mathcal{M}_{v}\right\}.\]
+
+donde $\mathcal{M}$ son los conjuntos de Borel de $M_{v}$.
+Entonces $\left(E,\mathcal{E}\right)$ es un espacio de Borel. El
+estado del proceso se denotar\'a por
+$\mathbf{x}_{t}=\left(v_{t},\zeta_{t}\right)$. La distribuci\'on
+de $\left(\mathbf{x}_{t}\right)$ est\'a determinada por por los
+siguientes objetos:
+
+\begin{itemize}
+\item[i)] Los campos vectoriales $\left(\mathcal{H}_{v},v\in
+K\right)$. \item[ii)] Una funci\'on medible $\lambda:E\rightarrow
+\rea_{+}$. \item[iii)] Una medida de transici\'on
+$Q:\mathcal{E}\times\left(E\cup\Gamma^{*}\right)\rightarrow\left[0,1\right]$
+donde
+\begin{equation}
+\Gamma^{*}=\bigcup_{v\in K}\partial^{*}M_{v}.
+\end{equation}
+y
+\begin{equation}
+\partial^{*}M_{v}=\left\{z\in\partial M_{v}:\mathbf{\mathbf{\phi}_{v}\left(t,\zeta\right)=\mathbf{z}}\textrm{ para alguna }\left(t,\zeta\right)\in\rea_{+}\times M_{v}\right\}.
+\end{equation}
+$\partial M_{v}$ denota  la frontera de $M_{v}$.
+\end{itemize}
+
+El campo vectorial $\left(\mathcal{H}_{v},v\in K\right)$ se supone
+tal que para cada $\mathbf{z}\in M_{v}$ existe una \'unica curva
+integral $\mathbf{\phi}_{v}\left(t,\zeta\right)$ que satisface la
+ecuaci\'on
+
+\begin{equation}
+\frac{d}{dt}f\left(\zeta_{t}\right)=\mathcal{H}f\left(\zeta_{t}\right),
+\end{equation}
+con $\zeta_{0}=\mathbf{z}$, para cualquier funci\'on suave
+$f:\rea^{d}\rightarrow\rea$ y $\mathcal{H}$ denota el operador
+diferencial de primer orden, con $\mathcal{H}=\mathcal{H}_{v}$ y
+$\zeta_{t}=\mathbf{\phi}\left(t,\mathbf{z}\right)$. Adem\'as se
+supone que $\mathcal{H}_{v}$ es conservativo, es decir, las curvas
+integrales est\'an definidas para todo $t>0$.
+
+Para $\mathbf{x}=\left(v,\zeta\right)\in E$ se denota
+\[t^{*}\mathbf{x}=inf\left\{t>0:\mathbf{\phi}_{v}\left(t,\zeta\right)\in\partial^{*}M_{v}\right\}\]
+
+En lo que respecta a la funci\'on $\lambda$, se supondr\'a que
+para cada $\left(v,\zeta\right)\in E$ existe un $\epsilon>0$ tal
+que la funci\'on
+$s\rightarrow\lambda\left(v,\phi_{v}\left(s,\zeta\right)\right)\in
+E$ es integrable para $s\in\left[0,\epsilon\right)$. La medida de
+transici\'on $Q\left(A;\mathbf{x}\right)$ es una funci\'on medible
+de $\mathbf{x}$ para cada $A\in\mathcal{E}$, definida para
+$\mathbf{x}\in E\cup\Gamma^{*}$ y es una medida de probabilidad en
+$\left(E,\mathcal{E}\right)$ para cada $\mathbf{x}\in E$.
+
+El movimiento del proceso $\left(\mathbf{x}_{t}\right)$ comenzando
+en $\mathbf{x}=\left(n,\mathbf{z}\right)\in E$ se puede construir
+de la siguiente manera, def\'inase la funci\'on $F$ por
+
+\begin{equation}
+F\left(t\right)=\left\{\begin{array}{ll}\\
+exp\left(-\int_{0}^{t}\lambda\left(n,\phi_{n}\left(s,\mathbf{z}\right)\right)ds\right), & t<t^{*}\left(\mathbf{x}\right),\\
+0, & t\geq t^{*}\left(\mathbf{x}\right)
+\end{array}\right.
+\end{equation}
+
+Sea $T_{1}$ una variable aleatoria tal que
+$\prob\left[T_{1}>t\right]=F\left(t\right)$, ahora sea la variable
+aleatoria $\left(N,Z\right)$ con distribuici\'on
+$Q\left(\cdot;\phi_{n}\left(T_{1},\mathbf{z}\right)\right)$. La
+trayectoria de $\left(\mathbf{x}_{t}\right)$ para $t\leq T_{1}$ es
+\begin{eqnarray*}
+\mathbf{x}_{t}=\left(v_{t},\zeta_{t}\right)=\left\{\begin{array}{ll}
+\left(n,\phi_{n}\left(t,\mathbf{z}\right)\right), & t<T_{1},\\
+\left(N,\mathbf{Z}\right), & t=t_{1}.
+\end{array}\right.
+\end{eqnarray*}
+
+Comenzando en $\mathbf{x}_{T_{1}}$ se selecciona el siguiente
+tiempo de intersalto $T_{2}-T_{1}$ lugar del post-salto
+$\mathbf{x}_{T_{2}}$ de manera similar y as\'i sucesivamente. Este
+procedimiento nos da una trayectoria determinista por partes
+$\mathbf{x}_{t}$ con tiempos de salto $T_{1},T_{2},\ldots$. Bajo
+las condiciones enunciadas para $\lambda,T_{1}>0$  y
+$T_{1}-T_{2}>0$ para cada $i$, con probabilidad 1. Se supone que
+se cumple la siguiente condici\'on.
+
+\begin{Sup}[Supuesto 3.1, Davis \cite{Davis}]\label{Sup3.1.Davis}
+Sea $N_{t}:=\sum_{t}\indora_{\left(t\geq t\right)}$ el n\'umero de
+saltos en $\left[0,t\right]$. Entonces
+\begin{equation}
+\esp\left[N_{t}\right]<\infty\textrm{ para toda }t.
+\end{equation}
+\end{Sup}
+
+es un proceso de Markov, m\'as a\'un, es un Proceso Fuerte de
+Markov, es decir, la Propiedad Fuerte de Markov\footnote{Revisar
+p\'agina 362, y 364 de Davis \cite{Davis}.} se cumple para
+cualquier tiempo de paro.
+%_________________________________________________________________________
+%\subsection{Teor\'ia General de Procesos Estoc\'asticos}
+%_________________________________________________________________________
+En esta secci\'on se har\'an las siguientes consideraciones: $E$
+es un espacio m\'etrico separable y la m\'etrica $d$ es compatible
+con la topolog\'ia.
+
+\begin{Def}
+Una medida finita, $\lambda$ en la $\sigma$-\'algebra de Borel de
+un espacio metrizable $E$ se dice cerrada si
+\begin{equation}\label{Eq.A2.3}
+\lambda\left(E\right)=sup\left\{\lambda\left(K\right):K\textrm{ es
+compacto en }E\right\}.
+\end{equation}
+\end{Def}
+
+\begin{Def}
+$E$ es un espacio de Rad\'on si cada medida finita en
+$\left(E,\mathcal{B}\left(E\right)\right)$ es regular interior o cerrada,
+{\em tight}.
+\end{Def}
+
+
+El siguiente teorema nos permite tener una mejor caracterizaci\'on de los espacios de Rad\'on:
+\begin{Teo}\label{Tma.A2.2}
+Sea $E$ espacio separable metrizable. Entonces $E$ es de Rad\'on
+si y s\'olo s\'i cada medida finita en
+$\left(E,\mathcal{B}\left(E\right)\right)$ es cerrada.
+\end{Teo}
+
+%_________________________________________________________________________________________
+%\subsection{Propiedades de Markov}
+%_________________________________________________________________________________________
+
+Sea $E$ espacio de estados, tal que $E$ es un espacio de Rad\'on, $\mathcal{B}\left(E\right)$ $\sigma$-\'algebra de Borel en $E$, que se denotar\'a por $\mathcal{E}$.
+
+Sea $\left(X,\mathcal{G},\prob\right)$ espacio de probabilidad,
+$I\subset\rea$ conjunto de índices. Sea $\mathcal{F}_{\leq t}$ la
+$\sigma$-\'algebra natural definida como
+$\sigma\left\{f\left(X_{r}\right):r\in I, r\leq
+t,f\in\mathcal{E}\right\}$. Se considerar\'a una
+$\sigma$-\'algebra m\'as general\footnote{qu\'e se quiere decir
+con el t\'ermino: m\'as general?}, $ \left(\mathcal{G}_{t}\right)$
+tal que $\left(X_{t}\right)$ sea $\mathcal{E}$-adaptado.
+
+\begin{Def}
+Una familia $\left(P_{s,t}\right)$ de kernels de Markov en $\left(E,\mathcal{E}\right)$ indexada por pares $s,t\in I$, con $s\leq t$ es una funci\'on de transici\'on en $\ER$, si  para todo $r\leq s< t$ en $I$ y todo $x\in E$, $B\in\mathcal{E}$
+\begin{equation}\label{Eq.Kernels}
+P_{r,t}\left(x,B\right)=\int_{E}P_{r,s}\left(x,dy\right)P_{s,t}\left(y,B\right)\footnote{Ecuaci\'on de Chapman-Kolmogorov}.
+\end{equation}
+\end{Def}
+
+Se dice que la funci\'on de transici\'on $\KM$ en $\ER$ es la funci\'on de transici\'on para un proceso $\PE$  con valores en $E$ y que satisface la propiedad de Markov\footnote{\begin{equation}\label{Eq.1.4.S}
+\prob\left\{H|\mathcal{G}_{t}\right\}=\prob\left\{H|X_{t}\right\}\textrm{ }H\in p\mathcal{F}_{\geq t}.
+\end{equation}} (\ref{Eq.1.4.S}) relativa a $\left(\mathcal{G}_{t}\right)$ si
+
+\begin{equation}\label{Eq.1.6.S}
+\prob\left\{f\left(X_{t}\right)|\mathcal{G}_{s}\right\}=P_{s,t}f\left(X_{t}\right)\textrm{ }s\leq t\in I,\textrm{ }f\in b\mathcal{E}.
+\end{equation}
+
+\begin{Def}
+Una familia $\left(P_{t}\right)_{t\geq0}$ de kernels de Markov en $\ER$ es llamada {\em Semigrupo de Transici\'on de Markov} o {\em Semigrupo de Transici\'on} si
+\[P_{t+s}f\left(x\right)=P_{t}\left(P_{s}f\right)\left(x\right),\textrm{ }t,s\geq0,\textrm{ }x\in E\textrm{ }f\in b\mathcal{E}\footnote{Definir los t\'ermino $b\mathcal{E}$ y $p\mathcal{E}$}.\]
+\end{Def}
+\begin{Note}
+Si la funci\'on de transici\'on $\KM$ es llamada homog\'enea si $P_{s,t}=P_{t-s}$.
+\end{Note}
+
+Un proceso de Markov que satisface la ecuaci\'on (\ref{Eq.1.6.S}) con funci\'on de transici\'on homog\'enea $\left(P_{t}\right)$ tiene la propiedad caracter\'istica
+\begin{equation}\label{Eq.1.8.S}
+\prob\left\{f\left(X_{t+s}\right)|\mathcal{G}_{t}\right\}=P_{s}f\left(X_{t}\right)\textrm{ }t,s\geq0,\textrm{ }f\in b\mathcal{E}.
+\end{equation}
+La ecuaci\'on anterior es la {\em Propiedad Simple de Markov} de $X$ relativa a $\left(P_{t}\right)$.
+
+En este sentido el proceso $\PE$ cumple con la propiedad de Markov (\ref{Eq.1.8.S}) relativa a $\left(\Omega,\mathcal{G},\mathcal{G}_{t},\prob\right)$ con semigrupo de transici\'on $\left(P_{t}\right)$.
+%_________________________________________________________________________________________
+%\subsection{Primer Condici\'on de Regularidad}
+%_________________________________________________________________________________________
+%\newcommand{\EM}{\left(\Omega,\mathcal{G},\prob\right)}
+%\newcommand{\E4}{\left(\Omega,\mathcal{G},\mathcal{G}_{t},\prob\right)}
+\begin{Def}
+Un proceso estoc\'astico $\PE$ definido en
+$\left(\Omega,\mathcal{G},\prob\right)$ con valores en el espacio
+topol\'ogico $E$ es continuo por la derecha si cada trayectoria
+muestral $t\rightarrow X_{t}\left(w\right)$ es un mapeo continuo
+por la derecha de $I$ en $E$.
+\end{Def}
+
+\begin{Def}[HD1]\label{Eq.2.1.S}
+Un semigrupo de Markov $\left(P_{t}\right)$ en un espacio de
+Rad\'on $E$ se dice que satisface la condici\'on {\em HD1} si,
+dada una medida de probabilidad $\mu$ en $E$, existe una
+$\sigma$-\'algebra $\mathcal{E^{*}}$ con
+$\mathcal{E}\subset\mathcal{E}^{*}$ y
+$P_{t}\left(b\mathcal{E}^{*}\right)\subset b\mathcal{E}^{*}$, y un
+$\mathcal{E}^{*}$-proceso $E$-valuado continuo por la derecha
+$\PE$ en alg\'un espacio de probabilidad filtrado
+$\left(\Omega,\mathcal{G},\mathcal{G}_{t},\prob\right)$ tal que
+$X=\left(\Omega,\mathcal{G},\mathcal{G}_{t},\prob\right)$ es de
+Markov (Homog\'eneo) con semigrupo de transici\'on $(P_{t})$ y
+distribuci\'on inicial $\mu$.
+\end{Def}
+
+Consid\'erese la colecci\'on de variables aleatorias $X_{t}$
+definidas en alg\'un espacio de probabilidad, y una colecci\'on de
+medidas $\mathbf{P}^{x}$ tales que
+$\mathbf{P}^{x}\left\{X_{0}=x\right\}$, y bajo cualquier
+$\mathbf{P}^{x}$, $X_{t}$ es de Markov con semigrupo
+$\left(P_{t}\right)$. $\mathbf{P}^{x}$ puede considerarse como la
+distribuci\'on condicional de $\mathbf{P}$ dado $X_{0}=x$.
+
+\begin{Def}\label{Def.2.2.S}
+Sea $E$ espacio de Rad\'on, $\SG$ semigrupo de Markov en $\ER$. La colecci\'on $\mathbf{X}=\left(\Omega,\mathcal{G},\mathcal{G}_{t},X_{t},\theta_{t},\CM\right)$ es un proceso $\mathcal{E}$-Markov continuo por la derecha simple, con espacio de estados $E$ y semigrupo de transici\'on $\SG$ en caso de que $\mathbf{X}$ satisfaga las siguientes condiciones:
+\begin{itemize}
+\item[i)] $\left(\Omega,\mathcal{G},\mathcal{G}_{t}\right)$ es un espacio de medida filtrado, y $X_{t}$ es un proceso $E$-valuado continuo por la derecha $\mathcal{E}^{*}$-adaptado a $\left(\mathcal{G}_{t}\right)$;
+
+\item[ii)] $\left(\theta_{t}\right)_{t\geq0}$ es una colecci\'on de operadores {\em shift} para $X$, es decir, mapea $\Omega$ en s\'i mismo satisfaciendo para $t,s\geq0$,
+
+\begin{equation}\label{Eq.Shift}
+\theta_{t}\circ\theta_{s}=\theta_{t+s}\textrm{ y }X_{t}\circ\theta_{t}=X_{t+s};
+\end{equation}
+
+\item[iii)] Para cualquier $x\in E$,$\CM\left\{X_{0}=x\right\}=1$, y el proceso $\PE$ tiene la propiedad de Markov (\ref{Eq.1.8.S}) con semigrupo de transici\'on $\SG$ relativo a $\left(\Omega,\mathcal{G},\mathcal{G}_{t},\CM\right)$.
+\end{itemize}
+\end{Def}
+
+\begin{Def}[HD2]\label{Eq.2.2.S}
+Para cualquier $\alpha>0$ y cualquier $f\in S^{\alpha}$, el proceso $t\rightarrow f\left(X_{t}\right)$ es continuo por la derecha casi seguramente.
+\end{Def}
+
+\begin{Def}\label{Def.PD}
+Un sistema $\mathbf{X}=\left(\Omega,\mathcal{G},\mathcal{G}_{t},X_{t},\theta_{t},\CM\right)$ es un proceso derecho en el espacio de Rad\'on $E$ con semigrupo de transici\'on $\SG$ provisto de:
+\begin{itemize}
+\item[i)] $\mathbf{X}$ es una realizaci\'on  continua por la derecha, \ref{Def.2.2.S}, de $\SG$.
+
+\item[ii)] $\mathbf{X}$ satisface la condicion HD2, \ref{Eq.2.2.S}, relativa a $\mathcal{G}_{t}$.
+
+\item[iii)] $\mathcal{G}_{t}$ es aumentado y continuo por la derecha.
+\end{itemize}
+\end{Def}
+
+\subsection{Estabilidad}
+
+\begin{Def}[Definici\'on 3.2, Dai y Meyn \cite{DaiSean}]
+El modelo de flujo retrasado de una disciplina de servicio en una
+red con retraso
+$\left(\overline{A}\left(0\right),\overline{B}\left(0\right)\right)\in\rea_{+}^{K+|A|}$
+se define como el conjunto de ecuaciones dadas en
+\ref{Eq.3.8}-\ref{Eq.3.13}, junto con la condici\'on:
+\begin{equation}\label{CondAd.FluidModel}
+\overline{Q}\left(t\right)=\overline{Q}\left(0\right)+\left(\alpha
+t-\overline{A}\left(0\right)\right)^{+}-\left(I-P^{'}\right)M\left(\overline{T}\left(t\right)-\overline{B}\left(0\right)\right)^{+}
+\end{equation}
+\end{Def}
+
+entonces si el modelo de flujo retrasado tambi\'en es estable:
+
+
+\begin{Def}[Definici\'on 3.1, Dai y Meyn \cite{DaiSean}]
+Un flujo l\'imite (retrasado) para una red bajo una disciplina de
+servicio espec\'ifica se define como cualquier soluci\'on
+ $\left(\overline{Q}\left(\cdot\right),\overline{T}\left(\cdot\right)\right)$ de las siguientes ecuaciones, donde
+$\overline{Q}\left(t\right)=\left(\overline{Q}_{1}\left(t\right),\ldots,\overline{Q}_{K}\left(t\right)\right)^{'}$
+y
+$\overline{T}\left(t\right)=\left(\overline{T}_{1}\left(t\right),\ldots,\overline{T}_{K}\left(t\right)\right)^{'}$
+\begin{equation}\label{Eq.3.8}
+\overline{Q}_{k}\left(t\right)=\overline{Q}_{k}\left(0\right)+\alpha_{k}t-\mu_{k}\overline{T}_{k}\left(t\right)+\sum_{l=1}^{k}P_{lk}\mu_{l}\overline{T}_{l}\left(t\right)\\
+\end{equation}
+\begin{equation}\label{Eq.3.9}
+\overline{Q}_{k}\left(t\right)\geq0\textrm{ para }k=1,2,\ldots,K,\\
+\end{equation}
+\begin{equation}\label{Eq.3.10}
+\overline{T}_{k}\left(0\right)=0,\textrm{ y }\overline{T}_{k}\left(\cdot\right)\textrm{ es no decreciente},\\
+\end{equation}
+\begin{equation}\label{Eq.3.11}
+\overline{I}_{i}\left(t\right)=t-\sum_{k\in C_{i}}\overline{T}_{k}\left(t\right)\textrm{ es no decreciente}\\
+\end{equation}
+\begin{equation}\label{Eq.3.12}
+\overline{I}_{i}\left(\cdot\right)\textrm{ se incrementa al tiempo }t\textrm{ cuando }\sum_{k\in C_{i}}Q_{k}^{x}\left(t\right)dI_{i}^{x}\left(t\right)=0\\
+\end{equation}
+\begin{equation}\label{Eq.3.13}
+\textrm{condiciones adicionales sobre
+}\left(Q^{x}\left(\cdot\right),T^{x}\left(\cdot\right)\right)\textrm{
+referentes a la disciplina de servicio}
+\end{equation}
+\end{Def}
+
+\begin{Lema}[Lema 3.1 \cite{Chen}]\label{Lema3.1}
+Si el modelo de flujo es estable, definido por las ecuaciones
+(3.8)-(3.13), entonces el modelo de flujo retrasado tambin es
+estable.
+\end{Lema}
+
+\begin{Teo}[Teorema 5.1 \cite{Chen}]\label{Tma.5.1.Chen}
+La red de colas es estable si existe una constante $t_{0}$ que
+depende de $\left(\alpha,\mu,T,U\right)$ y $V$ que satisfagan las
+ecuaciones (5.1)-(5.5), $Z\left(t\right)=0$, para toda $t\geq
+t_{0}$.
+\end{Teo}
+
+\begin{Prop}[Proposici\'on 5.1, Dai y Meyn \cite{DaiSean}]\label{Prop.5.1.DaiSean}
+Suponga que los supuestos A1) y A2) son ciertos y que el modelo de flujo es estable. Entonces existe $t_{0}>0$ tal que
+\begin{equation}
+lim_{|x|\rightarrow\infty}\frac{1}{|x|^{p+1}}\esp_{x}\left[|X\left(t_{0}|x|\right)|^{p+1}\right]=0
+\end{equation}
+\end{Prop}
+
+\begin{Lemma}[Lema 5.2, Dai y Meyn \cite{DaiSean}]\label{Lema.5.2.DaiSean}
+ Sea $\left\{\zeta\left(k\right):k\in \mathbb{z}\right\}$ una sucesi\'on independiente e id\'enticamente distribuida que toma valores en $\left(0,\infty\right)$,
+y sea
+$E\left(t\right)=max\left(n\geq1:\zeta\left(1\right)+\cdots+\zeta\left(n-1\right)\leq
+t\right)$. Si $\esp\left[\zeta\left(1\right)\right]<\infty$,
+entonces para cualquier entero $r\geq1$
+\begin{equation}
+ lim_{t\rightarrow\infty}\esp\left[\left(\frac{E\left(t\right)}{t}\right)^{r}\right]=\left(\frac{1}{\esp\left[\zeta_{1}\right]}\right)^{r}.
+\end{equation}
+Luego, bajo estas condiciones:
+\begin{itemize}
+ \item[a)] para cualquier $\delta>0$, $\sup_{t\geq\delta}\esp\left[\left(\frac{E\left(t\right)}{t}\right)^{r}\right]<\infty$
+\item[b)] las variables aleatorias
+$\left\{\left(\frac{E\left(t\right)}{t}\right)^{r}:t\geq1\right\}$
+son uniformemente integrables.
+\end{itemize}
+\end{Lemma}
+
+\begin{Teo}[Teorema 5.5, Dai y Meyn \cite{DaiSean}]\label{Tma.5.5.DaiSean}
+Suponga que los supuestos A1) y A2) se cumplen y que el modelo de
+flujo es estable. Entonces existe una constante $\kappa_{p}$ tal
+que
+\begin{equation}
+\frac{1}{t}\int_{0}^{t}\esp_{x}\left[|Q\left(s\right)|^{p}\right]ds\leq\kappa_{p}\left\{\frac{1}{t}|x|^{p+1}+1\right\}
+\end{equation}
+para $t>0$ y $x\in X$. En particular, para cada condici\'on
+inicial
+\begin{eqnarray*}
+\limsup_{t\rightarrow\infty}\frac{1}{t}\int_{0}^{t}\esp_{x}\left[|Q\left(s\right)|^{p}\right]ds\leq\kappa_{p}.
+\end{eqnarray*}
+\end{Teo}
+
+\begin{Teo}[Teorema 6.2, Dai y Meyn \cite{DaiSean}]\label{Tma.6.2.DaiSean}
+Suponga que se cumplen los supuestos A1), A2) y A3) y que el
+modelo de flujo es estable. Entonces se tiene que
+\begin{equation}
+\left\|P^{t}\left(x,\cdot\right)-\pi\left(\cdot\right)\right\|_{f_{p}}\textrm{,
+}t\rightarrow\infty,x\in X.
+\end{equation}
+En particular para cada condici\'on inicial
+\begin{eqnarray*}
+\lim_{t\rightarrow\infty}\esp_{x}\left[|Q\left(t\right)|^{p}\right]=\esp_{\pi}\left[|Q\left(0\right)|^{p}\right]\leq\kappa_{r}
+\end{eqnarray*}
+\end{Teo}
+\begin{Teo}[Teorema 6.3, Dai y Meyn \cite{DaiSean}]\label{Tma.6.3.DaiSean}
+Suponga que se cumplen los supuestos A1), A2) y A3) y que el
+modelo de flujo es estable. Entonces con
+$f\left(x\right)=f_{1}\left(x\right)$ se tiene
+\begin{equation}
+\lim_{t\rightarrow\infty}t^{p-1}\left\|P^{t}\left(x,\cdot\right)-\pi\left(\cdot\right)\right\|_{f}=0.
+\end{equation}
+En particular para cada condici\'on inicial
+\begin{eqnarray*}
+\lim_{t\rightarrow\infty}t^{p-1}|\esp_{x}\left[Q\left(t\right)\right]-\esp_{\pi}\left[Q\left(0\right)\right]|=0.
+\end{eqnarray*}
+\end{Teo}
+
+\begin{Teo}[Teorema 6.4, Dai y Meyn \cite{DaiSean}]\label{Tma.6.4.DaiSean}
+Suponga que se cumplen los supuestos A1), A2) y A3) y que el
+modelo de flujo es estable. Sea $\nu$ cualquier distribuci\'on de
+probabilidad en $\left(X,\mathcal{B}_{X}\right)$, y $\pi$ la
+distribuci\'on estacionaria de $X$.
+\begin{itemize}
+\item[i)] Para cualquier $f:X\leftarrow\rea_{+}$
+\begin{equation}
+\lim_{t\rightarrow\infty}\frac{1}{t}\int_{o}^{t}f\left(X\left(s\right)\right)ds=\pi\left(f\right):=\int
+f\left(x\right)\pi\left(dx\right)
+\end{equation}
+$\prob$-c.s.
+
+\item[ii)] Para cualquier $f:X\leftarrow\rea_{+}$ con
+$\pi\left(|f|\right)<\infty$, la ecuaci\'on anterior se cumple.
+\end{itemize}
+\end{Teo}
+
+\begin{Teo}[Teorema 2.2, Down \cite{Down}]\label{Tma2.2.Down}
+Suponga que el fluido modelo es inestable en el sentido de que
+para alguna $\epsilon_{0},c_{0}\geq0$,
+\begin{equation}\label{Eq.Inestability}
+|Q\left(T\right)|\geq\epsilon_{0}T-c_{0}\textrm{,   }T\geq0,
+\end{equation}
+para cualquier condici\'on inicial $Q\left(0\right)$, con
+$|Q\left(0\right)|=1$. Entonces para cualquier $0<q\leq1$, existe
+$B<0$ tal que para cualquier $|x|\geq B$,
+\begin{equation}
+\prob_{x}\left\{\mathbb{X}\rightarrow\infty\right\}\geq q.
+\end{equation}
+\end{Teo}

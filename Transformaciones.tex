@@ -1,0 +1,2870 @@
+%___________________________________________________________________________________________
+%
+% Cap 1
+%
+%___________________________________________________________________________________________
+\section{Transformaciones}
+
+%___________________________________________________________________________________________
+%
+%___________________________________________________________________________________________
+\section{Transformaciones de Variables Aleatorias}
+%___________________________________________________________________________________________
+Dada una variable aleatoria $X$ existen tres tipos de transformaciones b\'asicas.
+\begin{enumerate}
+\item Dada $X$ variable aleatoria con funcion de densidad $f_{X}\left(x\right)$ y una transformaci\'on $Y$, tal que para $g:\rea\rightarrow\rea$. Sea $Y=g\left(x\right)$. Se quiere encontrar $f_{Y}\left(y\right)$.
+\item Para $X$ variable aleatoria con funcion de densidad $f_{XY}\left(x,y\right)$ y una transformaci\'on $Y$, con $g:\rea^2\rightarrow\rea$. Sea $Y=g\left(x,y\right)$. Encontrar $f_{Y}\left(y\right)$.
+\item Sea $X_{1}, X_{2}, X_{3},..., X_{n}$ una sucesi\'on de variables aleatorias con funcion de densidad conjunta $f_{X_{1}},...,f_{X_{n}} \left(x_{1},...,x_{n}\right)$ y una transformaci\'on $Y$, tal que para $g_{i}:\rea^n\rightarrow\rea^n$. Sea 
+\begin{eqnarray*}
+Y_{1}&=&g_{1}\left(x_{1}\ldots x_{n}\right) \\ 
+Y_{2}&=&g_{2}\left(x_{1}\ldots x_{n}\right)\\ 
+\vdots \\ 
+Y_{n}&=&g_{n}\left(x_{1}\ldots x_{n}\right)
+\end{eqnarray*}
+Encontrar $f_{Y_{1}\ldots Y_{n}}\left(y_{1} \ldots y_{n}\right)$
+\end{enumerate}
+%_________________________________________________________________-
+\subsection{Ejercicios}
+%_________________________________________________________________-
+\begin{Ejem}
+Sea $X$ V.A distribuida uniformemente sobre el intervalo $ \left(0,1 \right)$, es decir,  $X \backsim U_{\left(0,1\right)}$ y sea $Y$ la transformaci\'on de $X$ definida por  $Y=\frac{1}{\lambda}\left( 1-X \right)$, 
+para $\lambda > 0$. Encontrar $f_{Y}\left(y\right)$
+
+Dado que $X$ se distribuye uniforme en el intervalo $\left(0,1 \right)$, se tiene que su funci\'on de densidad $ f_{X}\left(x\right)$ est\'a dada por: 
+\begin{eqnarray*}
+f_{X}\left(x\right) = \left\{
+\begin{array}{cc}
+1 & 0< x <1, \\
+0 & \textrm {e.o.c.} 
+\end{array}
+\right.
+\end{eqnarray*} 
+ Entonces $f_{Y}\left( y \right)=\dfrac{\partial}{\partial y} F_{Y}\left(y \right)$, donde $F_{Y}\left(y \right)$ est\'a dada por:
+\begin{eqnarray*}
+F_{Y}\left( y \right) &=& \prob \left[ Y \leqslant y \right]  = \prob \left[-\dfrac{1}{\lambda}\ln \left( 1-X\right) \leqslant y \right] =\prob \left[ \ln \left( 1-X \right) \leqslant \lambda y \right]\\
+&=&\prob \left[ \ln \left( 1-X \right) > - \lambda y \right] = \prob \left[ \left( 1-X \right) > e^ {- \lambda y}\right] = \prob \left[-X > e^ {-\lambda y} - 1 \right] \\
+&=& \prob \left[X \leqslant 1- e^{- \lambda y}\right] = F_{X}\left(1-e^{-\lambda y}\right)
+\end{eqnarray*}
+Por tanto $F_{Y}\left(y \right)=F_{X}\left(1-e^{-\lambda y}\right)$. Sabemos que $0<X<1 \Rightarrow -1< -X < 0 \Rightarrow 0 < 1-X < 1$.  Aplicando el logaritmo natural en ambos lados $-\infty < \ln \left(1-X\right) < 0\Rightarrow  -\infty < \dfrac{1}{\lambda} \ln \left(1-X\right) < 0\Rightarrow0 < - \dfrac{1}{\lambda}  \ln \left(1-X\right) <\infty $ es decir, $0<y<\infty$. Recordemos que $F_{Y} \left(y \right)= \prob \left[Y \leq y \right]$ para $0 < y < \infty$. Como $X \sim U \left(0,1 \right)$ tenemos que 
+$F_{Y}\left(y\right) =1-e^{-\lambda y}$ para $ y \geq 0$, entonces $0< y < \infty \Rightarrow0< \lambda y < \infty\Rightarrow- \infty < -\lambda y < 0\Rightarrow0<e ^{-\lambda y} < 1\Rightarrow-1<e^{-\lambda y} < 0\Rightarrow0<1 - e^{-\lambda y} < 1 $, es decir, su rango est\'a contenido en el intervalo  $ \left( 0,1 \right)$. Finalmente podemos determinar $\dfrac{\partial}{\partial Y} F_{Y} \left( y \right)$
+\begin{eqnarray*}
+\dfrac{\partial}{\partial Y} F_{y} \left( y \right) &=& -e^{-\lambda y} \left(-\lambda \right) = -\lambda e^{-\lambda y}. \, \, \textrm{es decir}\\
+f_{Y}\left(y \right) &=& \left\{
+\begin{array}{cc} 
+\lambda e^{-\lambda y} &y \geq 0 \\
+0 &  \textrm{e.o.c}
+\end{array}
+\right.
+\end{eqnarray*} 
+ Por lo tanto se tiene que
+$$Y \sim exp \left( \lambda \right)$$ .
+\end{Ejem}  
+
+\begin{Ejem}
+Sea $X$ v.a con distribuci\'on normal est\'andar,es decir $X \sim N\left(0,1 \right)$. Sea $Y$ transformacion definida por  $Y= \sqrt{x}$. Encontrar $f_{Y}\left(y\right)$.
+
+Al igual que antes recordemos que buscamos a $f_{Y}\left(y\right)=\dfrac{\partial}{\partial y}F_{Y}\left(y\right)$. Dado que:
+\begin{eqnarray*}
+F_{Y}\left(y\right) &=&\prob \left[ Y \leq y\right] = \prob \left[ X^{1/2}\leq y\right]
+\end{eqnarray*}
+Ahora, como $ X\sim N \left(0,1 \right)$, entonces $ \prob \left[ \left( X^{1/2} \right)^{2} \leq y^{2} \right]=
+ \prob \left[ X \leq y^{2} \right] = F_{X}\left(y^{2} \right)$. Por otra parte, $-\infty < X < \infty$, para $0 < X < \infty$. Por lo tanto se tiene que $0 < \sqrt{X} < \infty$, luego $0 < Y < \infty$. Ahora, $f_{X}\left( x \right)=\frac{1}{\sqrt{2 \pi}}exp ^{\frac{-x^{2}}{2}}$, con $f_{Y}\left(y\right)= f_{X}\left(y^{2}\right)\left(2y\right)$. Lo anterior es cierto por el teorema de cambio de variable. Por tanto:
+ $$f_{Y}\left(y\right)= \frac{1}{\sqrt{2\pi}} exp^{ \frac{-y^4}{2}} 2y,$$
+para $0<y< \infty$ .
+\end{Ejem}
+
+\begin{Ejem}
+Sea $X \sim Exp  \left( \lambda \right)$. Encontrar la densidad de $Y = \left[ 3X \right] $. Dado que
+\begin{eqnarray*}
+X \sim exp \left( \lambda \right) \Rightarrow f_{X}\left( x \right) = \left\{\begin{array}{ll} \lambda  e^{-\lambda x} & x > 0 ,\\ 
+0 & e.o.c. 
+\end{array}
+\right.
+\end{eqnarray*}
+Entonces tenemos
+\begin{eqnarray*}
+F_{Y}\left( y \right) &=& \prob\left[Y=y\right]=\prob\left[\left[ 3X\right]=y\right]=\prob\left[y\leq3X<y+1\right]=\prob\left[\frac{y}{3}\leq X\leq\frac{y+1}{3}\right]\\
+&=&\int_{y/3}^{(y+1)/3} f_{X}\left(x \right)dx 
+=\int_{y/3}^{\frac{y+1}{3}}\lambda e^{-\lambda x}dx = \lambda \int_{y/3}^{(y+1)/3 } e^{-\lambda x}dx =\lambda \Bigg[\dfrac{-e^{-\lambda x}}{\lambda}\Bigg]_{y/3}^{(y+1)/3} \\
+&=&-e^{-\lambda\left((y+1)/3 \right)}+e^{-\lambda\left(\frac{y}{3}\right)}=-e^{-\lambda\left(\frac{y}{3}\right)} e^{-\lambda\left(\frac{1}{3}\right)}+e^{-\lambda\left(\frac{y}{3}\right)}=e^{-\lambda\left(\frac{y}{3}\right)}\left[1-e^{\frac{-\lambda}{3}}\right].
+\end{eqnarray*}
+
+\end{Ejem}
+
+\begin{Ejem}
+Sea $X \sim Gamma \left(2,2 \right)$. Encontrar la densidad de $Y=\dfrac{X}{1+X}$
+\begin{eqnarray*}
+X \sim Gamma \left( 2,2 \right) \Rightarrow f_{X}\left( x \right)= 
+\begin{cases}
+\begin{array}{lc}
+\frac{2^{2}}{\Gamma\left(2\right)}x^{2-1}e^{2x} & x \geq 0, \\
+0 & \textrm{ e.o.c}
+\end{array}
+\end{cases}
+=\begin{cases}
+\begin{array}{lc}
+4xe^{-2x} & x \geq 0, \\
+0 & \textrm {e.o.c}
+\end{array}
+\end{cases}
+\end{eqnarray*}
+Sabemos que 
+$0<x\leq \infty \Rightarrow 1 \leq x+1 < \infty \Rightarrow 0 \leq \frac{1}{X+1}\leq 1 \Rightarrow 0\leq\frac{X}{X+1}\leq X\leq \infty$. Por tanto
+\begin{eqnarray*}
+F_{Y}\left(y\right)&=&\prob\left[Y\leq y\right]=\prob \left[\frac{X}{1+X}\leq y\right]=\prob\left[X\leq y\left(1+X\right)\right]= \prob\left[X\leq y+yX\right]\\
+&=&\prob\left[X-yX\leq y\right]=\prob\left[X\left(1-y\right)\leq y\right]=\prob\left[X\leq \frac{y}{1-y}\right]= F_{X}\left(\dfrac{y}{1-y}\right).
+\end{eqnarray*}
+Luego se tiene que
+\begin{eqnarray*}
+f_{Y}\left(y\right)&=&f_{X}\left(\frac{y}{1-y}\right)\dfrac{\left[\left(1-y\right)-y\left(-1\right)\right]}{\left(1-y\right)^{2}}=\frac{4\left(\frac{y}{1-y}\right)e^{-2\left(\frac{y}{1-y}\right)}}{\left(1-y\right)^{2}}\\
+&=&\begin{cases}
+\begin{array}{cc}
+\frac{4\left(\frac{y}{1-y}\right)e^{-2\left(\frac{y}{1-y}\right)}}{\left(1-y\right)^{3}} & 0<y<1, \\
+0 & \textrm {e.o.c.}
+\end{array}
+\end{cases}
+\end{eqnarray*}
+Entonces
+\begin{eqnarray*}
+\int_{0}^{1}\frac{4\left(\frac{y}{1-y}\right)e^{-2\left(\frac{y}{1-y}\right)}}{\left(1-y\right)^{3}}\, dy &=& 4\int_{0}^{1}\frac{y}{\left(1-y\right)^3}e^{-2\left(\frac{y}{1-y}\right)}dy = \left(\frac{y}{1-y}\right)\left(-\frac{1}{2}e^{-2\left(\frac{y}{1-y}\right)}\right)\vert_{0}^{1}\\
+&+& 2 \int_{0}^{1} e^{-2\left(\frac{y}{1-y}\right)}\left(\frac{1}{\left(1-y\right)^{2}}\right) dy
+\end{eqnarray*}
+si hacemos el siguiente cambio de variable
+$u=\frac{y}{1-y}\Rightarrow du=\frac{1}{\left(1-y\right)^{2}} dy$ y $dv= \frac{y}{\left(1-y\right)^3}e^{-2\left(\frac{y}{1-y}\right)} dy \Rightarrow v=-\frac{1}{2}e^{-2\left(\frac{y}{1-y}\right)}$, si ahora
+$u=\frac{1}{\left(1-y\right)^{2}} \Rightarrow 2\left(1-y\right)dy$, con $dv= e^{-2\left(\frac{y}{1-y}\right)} dy \Rightarrow v= \frac{\left(1-y\right)^2 e^{-2\left(\frac{y}{1-y}\right)}}{2}$ entonces se tiene
+$$-2\left(\frac{y}{1-y}\right)=\frac{\left(1-y\right)\left(-2\right)-\left(-2y\right)\left(-1\right)}{\left(1-y\right)^2}= \frac{2}{\left(1-y\right)^2}.$$
+\end{Ejem}
+
+\begin{Ejem}
+Sea $X \sim \mathcal{P}o\left(\lambda\right)$. Hallar la densidad de $Y=4X+3$. Dado que $X$ se distribuye Poisson
+\begin{eqnarray*}
+f_{X}\left(x\right)=
+\begin{cases}
+\begin{array}{lc}
+\frac{e^{-\lambda}\lambda^{x}}{x!} & x=0,1,2,\\
+0 & \textrm{ e.o.c.}
+\end{array}
+\end{cases}
+\end{eqnarray*}
+se tiene que
+\begin{eqnarray*}
+f_{Y}\left(y\right)&=& \prob\left[Y=y\right]= \prob\left[4X+3=y\right]=\prob\left[4X=y-3\right]=\prob\left[X=\frac{y-3}{4}\right]=f_{X}\left(\frac{y-3}{4}\right)\end{eqnarray*}entonces
+\begin{eqnarray*}
+f_{Y}\left(y\right)=f_{X}\left(\frac{y-3}{4}\right)\left(\dfrac{1}{4}\right)= 
+\begin{cases}
+\begin{array}{lc}
+\dfrac{e^{-\lambda} \lambda^{\left(\frac{y-3}{4}\right)}}{4\left(\frac{y-3}{4}\right)!} & y=3,7,11,15,\ldots\\
+0 & \textrm{ e.o.c.}
+\end{array}
+\end{cases}
+\end{eqnarray*}
+Lo anterior es cierto dado que 
+$x=0,1,2,3,\cdots$, entonces $4X=0,4,8,12, \cdots$, es decir
+$4X+3=3,7,11,15, \cdots$ por tanto $Y=3,7,11,15, \cdots$. 
+\end{Ejem}
+
+\begin{Ejem} Sea $X \sim  U\left(0,1\right)$. Hallar una funci\'on $g$ t.q $Y\sim U\left(a,t\right)$, con  $Y=g\left(X\right)$. Dado que $X\sim U\left(0,1\right)$, 
+\begin{eqnarray*}
+f_{X}\left(x\right) =
+\begin{cases}
+\begin{array}{lc}
+1  & 0\leq x \leq 1, \\
+0 & \textrm{ e.o.c.}
+\end{array}
+\end{cases}
+\end{eqnarray*}
+Adem\'as
+\begin{eqnarray*}
+F_{X}\left(x\right)=
+\begin{cases}
+\begin{array}{lc}
+0  & x<0 ,\\
+x & 0\leq x \leq 1, \\
+1 & x \geq 1.
+\end{array}
+\end{cases}
+\end{eqnarray*}
+Se busca que $Y\sim U\left(a,b\right)$, entonces
+\begin{eqnarray*}
+f_{Y}\left(y\right)=
+\begin{cases}
+\begin{array}{lc}
+\frac{1}{b-a}  & 0\leq y \leq 1, \\
+0 & \textrm{ e.o.c.}
+\end{array}
+\end{cases}
+\end{eqnarray*}
+por tanto
+$$\int_{a}^{y}\frac{1}{b-a} \, dv = \dfrac{y-a}{b-a},$$ entonces
+\begin{eqnarray*}
+F_{Y}\left(y\right)=
+\begin{cases}
+\begin{array}{lc}
+0  & y<0 \\
+\frac{y-a}{b-a} & a\leq y \leq b \\
+1 & y > b.
+\end{array}
+\end{cases}
+\end{eqnarray*}
+
+Sea $y \in \left[a,b\right]$, supongamos que  $g$ es creciente:
+$F_{Y}\left(y\right)=\prob \left[Y\leq y\right]= \prob\left[g\left(X\right)\leq y\right]= \prob\left[X\leq g^{-1}\left(y\right)\right]$, es decir, $F_{X}\left(g^{-1}\left(y\right)\right)=g^{-1}\left(y\right)$, con $g:\left(0,1\right) \rightarrow \left(a,b\right)$, por tanto $g^{-1}:\left(a,b\right) \rightarrow \left(0,1\right)$. Lo anterior es cierto puesto que 
+$F_{X}\left(x\right)=x$ para $x \in \left[0,1\right]$, por lo tanto $g^{-1}\left(y\right) = \frac{y-a}{b-a} \Rightarrow y =g\left(\frac{y-a}{b-a}\right)$. 
+Si hacemos $t=\frac{y-a}{b-a}\Rightarrow y-a \Rightarrow y=a+t\left(b-a\right)$, por tanto se propone
+$Y=g\left(X\right) = a+ \left(b-a\right)X$.
+\end{Ejem}
+
+\begin{Ejem}[\textbf{Importante}] Un insecto deposita un n\'umero grande de huevos, el n\'umero de huevos depositado es una v.a que frecuentemente se asocia una distribuci\'on Poisson $\left(\lambda\right)$. La supervivencia de un cierto huevo tiene probabilidad $p$. Encontrar el n\'umero promedio de huevos sobrevivientes.
+Sean las variables aleatorias
+ $Y \equiv $ N\'umero de huevos depositados, es decir, $Y \sim Poi\left(\lambda\right)$. $X \equiv $ N\'umero de huevos sobrevivientes $X|Y \sim Bin\left(Y,p\right)$. A saber
+ 
+ \begin{eqnarray*}
+\prob \left[X=x\right]&=& \sum_{y=0}^{\infty}\prob \left[X=x   Y=y \right]= \sum_{y=0}^{\infty}\prob \left[X=x | Y=y \right]\prob \left[Y=y \right]\\
+&=&\sum_{y=x}^{\infty} \left[ \left( 
+\begin{array}{cc}
+y \\ x
+\end{array} \right) p^{x}\left(1-p\right)^{y-x}\right]\left[\frac{\lambda^{y}e^{-\lambda}}{y!}\right]=\sum_{y=x}^{\infty}\left( \frac{y!}{\left(y-x\right)! x!}p^{x}\left(1-p\right)^{y-x}\right)\left(\frac{\lambda^{y}e^{-\lambda}}{y!}\right)
+\end{eqnarray*}
+\begin{eqnarray*}
+\prob \left[X=x\right] &=&e^{-\lambda}p^{x}\sum_{y=x}^{\infty}\frac{\left(1-p\right)^{y-x}\lambda^{y}}{\left(y-x\right)!x!}=\frac{e^{-\lambda}\left(\lambda p\right)^{x}}{x!} \sum_{y=x}^{\infty}\frac{\left[\left(1-p\right)\lambda\right]^{y-x}}{\left(y-x\right)!}
+\end{eqnarray*}
+si hacemos el cambio de variable $z=y-x$, obtenemos
+\begin{eqnarray*}
+\prob \left[X=x\right]&=& \frac{e^{-\lambda}\left(\lambda p\right)^{x}}{x!} \sum_{z=0}^{\infty}\frac{\left[\left(1-p\right)\lambda\right]^{z}}{z!}=\frac{e^{-\lambda}\left(\lambda p\right)^{x}}{x!}\sum_{z=0}^{\infty}\frac{\left[\left(1-p\right)\lambda\right]^{t}}{t!}\\
+&=&\frac{e^{-\lambda}\left(\lambda p\right)^{x}}{x!} \left(1 + \left(1-p\right)\lambda + \frac{\left(\left(1-p\right)\lambda\right)^{2}}{2!}+ \cdots \right)=\frac{e^{-\lambda}\left(\lambda p\right)^{x}}{x!} e ^{\left(1-p\right)\lambda}\\
+&=& \frac{e^{-\lambda p}\left(\lambda p\right)^{x}}{x!}.
+\end{eqnarray*}
+Por lo tanto 
+$\prob\left[X=x\right] = \frac{e^{-\lambda p}\left(\lambda p\right)^{x}}{x!}$, es decir, $X \sim \mathcal{P}o\left(\lambda p \right)$, por lo tanto $E\left[X\right] = \lambda p$.
+\end{Ejem}
+
+\begin{Ejem}
+\item Sea $X,Y$ variables aleatorias independientes, tales que $X\sim U\left(0,1\right)$ y $Y\sim U\left(0,2\right)$. Def\'inase la nueva variable aleatoria $Z=X+Y$, determinar la densidad de $Z$.
+A saber
+\begin{eqnarray*}
+\begin{array}{ll}
+X\sim U_{0,1} \Rightarrow f_{X}\left( x \right)= 
+\begin{cases}
+1 & 0\leq x \leq 1\\
+0 & e.o.c
+\end{cases},
+&
+Y\sim U_{0,2} \Rightarrow f_{Y}\left( y \right)= 
+\begin{cases}
+\frac{1}{2} & 0\leq y \leq 2\\
+0 & e.o.c
+\end{cases}
+\end{array}
+\end{eqnarray*}
+Por tanto la densidad conjunta es
+\begin{eqnarray*}
+f_{XY}\left( x,y \right)= f_{X}\left(x\right)f_{Y}\left(y\right)
+\begin{cases}
+\frac{1}{2} & 0\leq x \leq 1, 0\leq y \leq 2,\\
+0 & e.o.c
+\end{cases}
+\end{eqnarray*}
+con distribuci\'on de probabilidad
+\begin{eqnarray*}
+F_{Z}\left(z\right)= \mathbb{P}\left[X+Y\leq z \right]= \mathbb{P}\left[Y \leq z-X \right],
+\end{eqnarray*}
+adem\'as el rango de $Z$ es el intervalo $\left(0,3\right)$.
+\end{Ejem}
+
+\begin{Ejem}
+\item  Sea $X,Y$ variables aleatorias tales que $X \sim exp \left( \lambda \right)$ y $Y \sim exp \left( \lambda\right)$ independientes. Sea $Z=min\left\{x,y\right\}$. Hallar $f_{z} \left( z \right)$.
+
+A saber
+\begin{eqnarray*}
+\begin{array}{cc}
+X\sim exp \left(\lambda\right) \Rightarrow f_{X}\left( x \right)= 
+\begin{cases}
+\lambda e^{- \lambda x }  & x > 0\\
+0 & e.o.c
+\end{cases}
+,&
+Y\sim exp \left(\lambda\right) \Rightarrow f_{Y}\left( y \right)= 
+\begin{cases}
+\lambda e^{- \lambda y }  & y > 0\\
+0 & e.o.c
+\end{cases}
+\end{array}
+\end{eqnarray*}
+Entonces,
+\begin{eqnarray*}
+f_{XY} \left( x,y\right) = f_{X}\left(x\right)f_{Y}\left(y\right)= \left(\lambda e^{- \lambda x} \right)\left(\lambda e ^{-\lambda y } \right)=
+\begin{cases}
+\lambda^{2} e^{- \lambda \left(x+y \right) }  & x > 0\\
+& y>0\\
+0 & e.o.c
+\end{cases}
+\end{eqnarray*}
+Sea $z\geq 0$, entonces
+\begin{eqnarray*}
+F_{z} \left( z \right)&=& \mathbb{P} \left[Z \leq z \right]= \mathbb{P} \left[ min \{X,Y \} > Z \right]=1- \mathbb{P} \left[ X < z , Y > z\right]= 1- \mathbb{P} \left[ X < z\right]\mathbb{P}\left[ Y > z\right]\\
+&=& 1-\mathbb{P}\left[ X > z\right]^{2} =  1 -\left( \mathbb{P} \left[ X \leq z\right] \right) ^{2}=1 - \left( 1- F_{X} \left( z \right) \right)^{2}.
+\end{eqnarray*}
+Por lo tanto
+\begin{eqnarray*}
+F_{X} \left( x \right) &=& \int_{0}^{x} \lambda e^{-\lambda u} \, du = \lambda \int_{0}^{x}  e^{-\lambda u} \, du = x\left(-e ^{- \lambda u} /\! x\right)_{0}^{x}= -e ^{- \lambda x} + 1 = 1 -e ^{- \lambda x}\\
+&=& 1 - \left(1-1-e ^{- \lambda x} \right)^{2} = 1- e ^{- 2 \lambda z},
+\end{eqnarray*}
+por lo tanto $z>0$, as\'i
+\begin{eqnarray*}
+f_{x}\left(z \right) = \left(-e^{-2 \lambda z } \right)\left(-2 \lambda \right)= 
+\begin{cases}
+2 \lambda e^{-2 \lambda z }  & z > 0\\
+0 & e.o.c.
+\end{cases},
+\end{eqnarray*}
+es decir $z=min\{x,y\}\sim exp\left( 2 \lambda \right) $.
+\end{Ejem}
+%\begin{center}
+%_______________________________________________________________________________
+\section{Cambio de Variable}
+%_______________________________________________________________________________
+
+\begin{Teo}
+Sean $X_{1}, X_{2},\ldots,X _{n}$ v.a continuas con densidad conjunta $f_{x_{1}\ldots x_{n}}\left( x_{1} \ldots x_{n}\right)$ y $Y_{1}=g_{1} \left(x_{1}\ldots x_{n}\right),Y_{2}=g_{2} \left(x_{1}\ldots x_{n}  \right)\ldots $ $Y_{n}= g_{n} \left(x_{1}\ldots x_{n}\right)$. Si existe soluci?n ?nica $x_{1}=h_{1}\left(y_{1}\ldots y_{n}\right),x_{2}=h_{2}\left(y_{1}\ldots y_{n}\right),\ldots$,$x_{n}=h_{n} \left(y_{1}\ldots y{n}\right)$, con 
+\begin{eqnarray*}
+J= \left| 
+\begin{array}{cccc}
+\frac{\partial h_{1}}{\partial y_{1}} & \frac{\partial h_{1}}{\partial y_{2}} & \ldots & \frac{\partial h_{1}}{\partial y_{n}}\\
+\vdots & \vdots & \vdots & \vdots \\
+\frac{\partial h_{n}}{\partial y_{1}} & \frac{\partial h_{2}}{\partial y_{2}} & \ldots & \frac{\partial h_{n}}{\partial y_{n}}
+\end{array}
+\right|
+\neq 0.
+\end{eqnarray*}
+ Entonces
+\begin{eqnarray*}
+f_{Y1, \ldots Y_{n}}\left( y_{1} \ldots y_{n} \right)=\begin{cases}
+\mid J \mid f_{X1 \ldots Xn}\left[h_{1} \ldots h_{n}\right] & \left(y_{1} \ldots y_{n} \right) \in D \\  
+0 & e.o.c.
+\end{cases}
+\end{eqnarray*}
+\end{Teo}
+%_________________________________________________________________
+\subsection{Ejercicios}
+%_________________________________________________________________
+
+\begin{Ejem}
+Sean $X,Y$ variables aleatorias independientes tales que $X \sim Gamma \left( \alpha _{1},\lambda\right)$, $Y \sim Gamma \left( \alpha_{2}, \lambda \right)$. Hallar $f_{u,v}$ donde $ U= \dfrac{Y}{X}$ y $V = X+Y$ ?Son $U$ y $V$ independientes?.
+
+
+A saber
+\begin{eqnarray*}
+X\sim Gamma \left( \alpha _{1},\lambda \right)\Rightarrow f_{X} \left(x \right)=
+\begin{cases}
+\dfrac{\lambda^{\alpha_{1}} }{\Gamma \left(\alpha_{1}\right)} x^{\alpha_{1}-1}e^{-\lambda x} & x>0, \\ 
+0 & e.o.c
+\end{cases}.\\
+Y\sim Gamma \left( \alpha _{2},\lambda \right)\Rightarrow f_{Y} \left(y \right)=
+\begin{cases}
+\dfrac{\lambda^{\alpha_{2}} }{\Gamma \left(\alpha_{2}\right)} y^{\alpha_{2}-1}e^{-\lambda y} & y>0, \\ 
+0 & e.o.c.
+\end{cases}
+\end{eqnarray*}
+
+entonces
+\begin{eqnarray*}
+f_{XY} \left(x,y \right)=
+\begin{cases}
+\dfrac{\lambda^{\alpha_{1}+\alpha_{2} } }{\Gamma \left(\alpha_{1}\right)\Gamma \left(\alpha_{2}\right)} x^{\alpha_{1}-1} y^{\alpha_{2}-1}e^{-\lambda \left( x+y \right) } & y>0, x>0, \\ 
+0 & e.o.c.
+\end{cases}
+\end{eqnarray*}
+Si $U=\frac{y}{x} \Rightarrow y=ux$, entonces $v=x+y \Rightarrow v= x+ux \Rightarrow v= \left( 1+u \right)x \Rightarrow x= \frac{v}{1+u}$, por lo tanto se tiene que $y= u \left( \dfrac{v}{1+u}\right)$, entonces
+\begin{eqnarray*}
+\begin{vmatrix}
+\frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} \\\\
+\frac{\partial y}{\partial u} & \frac{\partial y}{\partial v}\\
+\end{vmatrix} = \begin{vmatrix}
+\frac{-v}{\left(1+u \right)^{2} } & \frac{1}{\left(1+u \right)} \\\\
+v\left(1+u \right)^{-1}-uv \left(1+u \right)^{-2} & \frac{u}{1+u}\\
+\end{vmatrix}=-\frac{-vu}{\left( 1+u \right)^{3}}-\dfrac{v}{\left(1+u \right)^{2}}+ \frac{-vu}{\left(1+u \right)^{3}}= v \left(1+u \right)^{-2}.
+\end{eqnarray*}
+Por lo tanto 
+\begin{eqnarray*}
+f_{uv} \left(u,v \right)&=&|J| f_{XY}\left(x,y \right)=v \left(1+u \right)^{2} \dfrac{\lambda^{\alpha_{1}+\alpha_{2} } }{\Gamma \left(\alpha_{1}\right)\Gamma \left(\alpha_{2}\right)} \left( \frac{v}{1+u}\right)^{ \alpha_{1}-1} \left( \frac{uv}{1+u} \right)^{\alpha_{2}-1}e^{-\lambda \left(\frac{v+uv}{1+u} \right)}\\
+&=&\frac{u^{\alpha_{2}-1}v^{\alpha_{1}+\alpha_{2}-2}}{\left(1+u \right)^{ \alpha_{2}+ \alpha_{2}}} \dfrac{\lambda^{\alpha_{1}+\alpha_{2} } }{\Gamma\left(\alpha_{1}\right)\Gamma\left(\alpha_{2}\right)} e^{-\lambda v }.
+\end{eqnarray*}
+\end{Ejem}
+
+\begin {Ejem}
+Sea $X,Y$ variables aleatorias, tales que $X \sim exp \left( 1 \right)$ y $Y \sim U \left( 0,1 \right)$ independientes. Sean $U=X+Y$ y $V=X-Y$, hallar $f_{U,V} \left( u,v \right)$ y averiguar independencia.
+
+A saber
+\begin{eqnarray*}
+\begin{array}{cc}
+f_{X}\left( x \right)=
+\begin{cases}
+e^{-x} & x>0, \\ 
+0 & e.o.c.
+\end{cases},&
+f_{Y}\left(y \right)=
+\begin{cases}
+1 & 0 \leq  y \leq 1, \\ 
+0 & e.o.c.
+\end{cases}
+\end{array}
+\end{eqnarray*}
+Entonces para $u=x+y$, $x=u-y$m adem\'as $v=x-y$ implica  que $y=x-v$, por lo tanto $y=u-y-v \Rightarrow y= \frac{u-v}{2}$. Por lo tanto $x=u-\left(\frac{u-v}{2}\right)=\frac{2u-u+v}{2}=\frac{u+v}{2}$.
+Haciendo $T \left(t,0 \right)=\left( t,t \right)$, $T \left(0,t \right)=\left( t,-t \right)$ y $T \left(t,1 \right)=\left( t+1,t-1 \right)$, tenemos que $T \left(u,v \right) = \left( x+y,x-y \right)$. Sean 
+\begin{eqnarray*}
+\sigma_{1} \left(t \right)&=&\left( t,0 \right)\textrm{ para }t>0, \\
+\sigma_{2} \left(t \right)&=&\left( 0,t \right)\textrm{ para }0<t<1 \textrm{ y }v=-u, \\
+\sigma_{3} \left(t \right)&=&\left( t,1 \right) \textrm{ para } t>0. 
+\end{eqnarray*}
+Ahora, si hacemos $u=t \Rightarrow u=v$, $u=t+1$, entonces $v=t$ y $v= t-1$, entonces
+$u=t v=t-1 \Rightarrow u=-v \Rightarrow u-1=t v+1=t$ y $u-1=v+1 \Rightarrow v=u-2$. Por tanto
+\begin{eqnarray*}
+J=
+\begin{vmatrix}
+\frac{1}{2} & \frac{1}{2}\\
+\frac{1}{2} & -\frac{1}{2}\\
+\end{vmatrix}=\frac{1}{2}. 
+\end{eqnarray*}
+Luego
+\begin{eqnarray*} 
+f_{u,v} \left(u,v \right) &=& |j| f_{XY}\left( u,v \right)=
+\begin{cases}
+\frac{1}{2} e^{-\left(\frac{u+v}{2} \right)} & x,y\in D,\\
+0 & e.o.c.\\
+\end{cases}
+\end{eqnarray*}
+Por tanto
+\begin{eqnarray*} 
+f_{u}\left(u \right) = \begin{cases}
+\int_{-u}^{u}\frac{1}{2}e^{- \frac{u+v}{2} }\,dv & 0 \leq u \leq 1, \\
+\int_{u-2}^{u}\frac{1}{2}e^{- \frac{u+v}{2} }\,dv & 0 \geq 1,  \\
+0 & e.o.c.\\
+\end{cases}
+\end{eqnarray*}
+Donde
+\begin{eqnarray*} 
+\int _{-u}^{u}\frac{1}{2}e^{- \frac{u+v}{2} }\,dv &=&\frac{1}{2}e^{- \frac{u}{2} } \int _{-u}^{u} e^{- \frac{v}{2} } \,dv= \left( \frac{1}{2} e^{-\frac{u}{2} } \right)\left(\frac{ e^-{\frac{v}{2} } }{-\frac{1}{2}}\right)_{-u}^{u}=
+ \left( \frac{1}{2} e^{-\frac{u}{2} } \right)\left(-2 e^{\frac{-v}{2}}\right)_{-u}^{u}\\
+ &=& \left( \frac{1}{2} e^{-\frac{u}{2} } \right)\left(-2 \left(e^{\frac{-u}{2}}- e^{\frac{u}{2}}\right)\right)= -e^{-u}+1=1-e^{-u}.\\
+ \int_{u-2}^{u} e^{\frac{v}{2} }\,dv &=& \left(-2e^{-\frac{v}{2} } \right)_{u-2}^{u}=-e^{-\frac{u}{2}}+ e^{-\frac{\left( u-2\right)}{2}}= e^{-\frac{u}{2}}\left(-e^{-\frac{u}{2}}+ e^{-\frac{\left( u-2\right)}{2}} \right)\\
+ &=& -e^{-u}+e^{-\frac{u}{2} -\frac{\left( u-2\right)}{2}}=-e^{-u}+e^{-u}e^{+1} = e^{1-u}-e^{-u}.
+\end{eqnarray*}
+Luego
+\begin{eqnarray*} 
+f_{u} \left(u \right) = \begin{cases}
+1-e^{-u} & 0 \leq u \leq 1, \\
+e^{1-u}-e^{-u} & u\geq1,  \\
+0 & e.o.c.
+\end{cases}
+\end{eqnarray*}
+De manera an\'aloga para $V$:
+\begin{eqnarray*} 
+f_{v} \left( v \right) = \begin{cases}
+\int_{-v}^{v+2} \frac{1}{2}e^{\left(\frac{u+v}{2}\right)}\,du & -1\leq v \leq 0,\\
+\int_{u}^{v+2} \frac{1}{2}e^{\left(\frac{u+v}{2}\right)}\,du & v \geq 0,\\
+0 & e.o.c.
+\end{cases}
+= \begin{cases}
+e^{-\frac{v}{2}}\left(e^{\frac{v}{2}}-e^{- \frac{v+2}{2} } \right)= 1-e^{\left(v+1 \right) }  & -1\leq v \leq 0,\\
+-e^{-\left(v+1 \right)}+e^{-v} & v \geq 0,\\
+0 & e.o.c.
+\end{cases} 
+\end{eqnarray*}
+\end{Ejem}
+
+\begin{Ejem} Sean $X_{1},X_{2}$ variables aleatorias independientes tales que $X_{1}, X_{2} \sim U_{ \left(-3,3 \right) }$. Sean $Y_{1}=X_{2}-X_{1}, Y_{2}= X_{1}-X_{2}$. Entonces
+$y_{1}&=&x_{2}-x_{1} \Rightarrow x_{2}=y_{1}+x_{1} \Rightarrow x_{2} = y_{1}+y_{2}-x_{2} \Rightarrow x_{2}=\frac{y_{1}+y_{2}}{2}$, $y_{2}&=& x_{1}+x_{2} \Rightarrow x_{1}= y_{2}-x_{2} \Rightarrow x_{1}=y_{2}-\left( \frac{y_{1}+y_{2}}{2} \right) = \frac{2y_{2}-y_{1}-y_{2}}{2}$, por lo tanto $x_{1}=\frac{y_{2}-y_{1}}{2}$. Entonces
+\begin{eqnarray*}
+J=
+\begin{vmatrix}
+-\frac{1}{2} & \frac{1}{2}\\
+\frac{1}{2} & \frac{1}{2}
+\end{vmatrix} = -\frac{1}{4}-\frac{1}{4}= -\frac{1}{2}, 
+\end{eqnarray*}
+es decir $|J|=\frac{1}{2}$. Por tanto
+\begin{eqnarray*}
+f_{Y_{1},Y_{2}}\left( y_{1},y_{2}\right)&=& \frac{1}{2} f_{X_{1},X_{2}}\left( \frac{y_{2}-y_{1}}{2}, \frac{y_{2}+y_{2}}{2}\right)
+=\frac{1}{2} \left( \frac{1}{36}\right)= \begin{cases}
+\frac{1}{72}  & x,y \in D\\
+0 & e.o.c.
+\end{cases}
+\end{eqnarray*}
+Si hacemos $\sigma_{1}\left(t \right) = \left(t,3 \right)$, $\sigma_{2}\left(t \right) = \left(-3,t \right)$, $\sigma_{3}\left(t \right) = \left(t,-3 \right)$, $\sigma_{4}\left(t \right) = \left(3,t \right)$ ,$T\left(t,3 \right)= \left(3-t, t+3 \right)$ ,$T\left(-3,t \right)=\left(t+3, -3+t \right)$ ,$T\left(t,-3 \right)=\left(-\left(3+t \right), -3+t \right)$ y $T\left(3,t \right)=\left(t-3,3+t \right)$. Entonces tenemos que 
+
+\begin{eqnarray*}
+y_{1}&=&3-t,\\
+y_{2}&=& -3+t \Rightarrow t=y_{1}-3 \Rightarrow t=y_{2}+3 \Rightarrow y_{1}-3=y_{2}+3,\\
+y_{2}&=&y_{2}=y_{1}-6,\\
+y_{1}&=&-\left(3+t \right),\\
+y_{2}&=& -3+t \Rightarrow t=-\left(3+y_{1} \right),\\ 
+y_{2}&=&-3+t \Rightarrow t=-\left(3+y_{1} \right)= y_{2}+3\Rightarrow -3 \left(3+y_{1} \right)= y_{2}+3,
+ \end{eqnarray*}
+ luego
+ \begin{eqnarray*}
+ y_{2}&=&-6-y_{1}\textrm{ es decir,}\\
+ y_{1}&=&t-3,\textrm{ con}\\
+ y_{2}&=&3+t.\\
+\end{eqnarray*}
+Luego 
+\begin{eqnarray*}
+\begin{array}{ll}
+y_{1}= 3-t, & y_{2}=t+3,\textrm{ por tanto}\\
+\Rightarrow t=3-y_{1} & t= y_{2}-3.\textrm{ Entonces}\\
+3-y_{1}=y_{2}-3 \Rightarrow y_{2}=6-y_{1} \Rightarrow y_{1}+3=t, & t=y_{2}-3.\\
+\Rightarrow y_{1}+3= y_{2}-3 \Rightarrow y_{2}=y_{1}+6. & 
+\end{array}
+\end{eqnarray*}
+Entonces
+\begin{eqnarray*}
+\begin{array}{cc}
+y_{2}=6+y_{1}, & \left(0,6 \right)\left(6,0\right),\\
+y_{2}=y_{1}-6, & \left(0,-6 \right)\left(6,0\right),\\
+y_{2}=-y_{1}-6, & \left(0,-6 \right)\left(-6,0\right)\textrm{ y }\\
+y_{2}=y_{1}+6, & \left(0,6 \right)\left(-6,0\right).
+\end{array}
+\end{eqnarray*}
+Por lo tanto obtenemos
+\begin{eqnarray*}
+f_{Y_{2}} \left(y_{2}\right) &=& \begin{cases}
+\int _{-y_{2}-6}^{y_{2}+6} f_{Y_{1}Y_{2}}\left(y_{1}, y_{2} \right)dy_{1} & -6\leq y_{2}\leq 0,\\
+\int _{y_{2}-6}^{6-y_{2}} f_{Y_{1}Y_{2}}\left(y_{1}, y_{2} \right)dy_{1} & 0 < y_{2}\leq 6,\\  
+0 & e.o.c.
+\end{cases}\\
+f_{Y_{1}} \left(y_{1}\right)& =& \begin{cases}
+\int _{-y_{1}-6}^{y_{1}+6} f_{Y_{1}Y_{2}}\left(y_{1}, y_{2} \right)dy_{2} & -6\leq y_{1}\leq 0,\\
+\int _{y_{1}-6}^{6-y_{1}} f_{Y_{1}Y_{2}}\left(y_{1}, y_{2} \right)dy_{2} & 0 < y_{1}\leq 6,\\  
+0 & e.o.c.
+\end{cases}\\
+f_{Y_{1}} \left(y_{1}\right) &=& \begin{cases}
+\frac{1}{36} y_{1}+\frac{1}{6}  & -6\leq y_{1}\leq 0,\\
+\frac{1}{6}-\frac{1}{36}y_{1} & 0 < y_{1}\leq 6,\\  
+0 & e.o.c.
+\end{cases}\\
+f_{Y_{2}} \left(y_{2}\right) &=& \begin{cases}
+\frac{1}{6}+ \frac{1}{36}y_{2} & -6\leq y_{2}\leq 0,\\
+\frac{1}{6}-\frac{1}{36}y_{1} & 0 < y_{2}\leq 6,\\  
+0 & e.o.c.
+\end{cases} 
+\end{eqnarray*}
+\end{Ejem}
+
+%_____________________________________________________________________
+\section{Estad?sticas de Orden}
+%_____________________________________________________________________
+
+Sea $X_{1}... X_{n}$ muestra aleatoria de variables continuas. Se definen las estad?sticas de orden como:
+
+\begin{eqnarray*}
+ Y_{1}&\equiv & \textrm{min} \left\{X_{1}... X_{n}\right\}, \textrm{estad?stica de orden 1}.\\
+ Y_{j}&\equiv & \textrm{La j-?sima m?s chica de la muestra est. de orden j.}\\
+ Y_{n}&\equiv & \textrm{m?x}\left\{X_{1}...X_{n}\right\}, \textrm{estad?stica de orden n}.
+\end{eqnarray*}
+Entonces $Y_{1} < &Y_{2}& <...<Y_{n}$.
+
+%_____________________________________________________________________
+\subsection{Ejercicios}
+%_____________________________________________________________________
+\begin{Ejem}
+Sean $X,Y$ variables aleatorias tales que $X,Y \sim Geo \left( p \right)$, es decir $f_{X}\left(x \right)=pq^{x}$, para $x=0,1,\ldots$. 
+Sean $U=X V= \textrm {min} \left\{X,Y \right\}$. Hallar la densidad conjunta de $U$ y $V$
+
+\begin{eqnarray*}
+\begin{array}{ll}
+f_{X}\left(x\right) = \begin{cases}
+pq^{x} & x=0,1,...\\  
+0 & \textrm {e.o.c.}
+\end{cases},  &
+f_{Y}\left(y\right) = \begin{cases}
+pq^{y} & y=0,1,...\\  
+0 & \textrm {e.o.c.}
+\end{cases} 
+\end{array}
+\end{eqnarray*}
+Por lo tanto
+\begin{eqnarray*}
+f_{u,v}\left(u,v \right) &=& \prob \left[U=u , V=v \right]= \prob \left[ X=u, \textrm{min}\left\{X,Y \right\}=v \right]=\prob \left[X=u, X=v,Y>v \right]\\
+&+&\prob \left[X=u, Y=v, X>v \right]+\prob \left[X=u, X=v,Y=v \right].
+\end{eqnarray*}
+ 
+ Caso 1:$u=v$
+\begin{eqnarray*}
+f_{u,v}\left(u,v \right)&=&\prob \left[X=u, Y>v \right]+ \prob \left[X=u, Y=u \right]=\prob \left[ X=u\right]\prob \left[Y\geqslant u \right].
+\end{eqnarray*}
+Recordemos que 
+\begin{eqnarray*}
+F_{X}\left(x \right) &=& \sum_{v=0}^{x} p \left(1-p \right)^{v} = p \left[1+ \left(1-p \right)+\left(1-p \right)^{2}+...+ \left(1-p\right)^{x} \right]\\
+&=& p \left[ \frac{1- \left( 1-p \right)^{x+1}} {1-\left(1-p \right)} \right] = p \left[\frac{1-\left(1-p \right)^{x+1} }{p} \right]= 1-\left(1-p \right)^{x+1}.
+\end{eqnarray*}
+Entonces
+\begin{eqnarray*}
+f_{u,v}\left(u,v \right)&=& p \left(1-p \right)^{u} \sum_{y=u}^{\infty} p \left(1-p \right)^{y}= p^{2}\left(1-p  \right)^{u} \sum_{y=u}^{\infty} \left(1-p\right)^{y}\\
+&=& p^{2}\left[\left(1-p \right)^{u}\left(1-p \right)^{u}+ \left(1-p \right)^{u+1}+...+ \right]= p^{2}\left(1-p \right)^{2u}\left[1 + \left(1-p \right)+ ...+ \right]\\
+&=& p^{2}\left(1-p \right)^{2u} \frac{1}{1-\left(1-p \right) } = p\left(1-p \right)^{2u}.
+\end{eqnarray*}  
+
+Caso 2: $u>v$
+\begin{eqnarray*}
+\prob \left[X=u, Y=v \right]&=&\prob \left[X=u \right]\prob \left[Y=v \right]= p \left(1-p \right)^{u} p \left(1-p \right)^{v}\\
+&=& p^{2}\left( 1-p \right) ^{u+v}\\
+u>v,f_{u,v} \left(u,v \right)= 0.
+\end{eqnarray*}
+\end{Ejem}
+
+\begin{Ejem}
+Para $f_{XY}\left(x,y \right)= \frac{1}{8}\left(y^{2}- x^{2} \right)e^{-y}$, con $-y\leq x \leq y$, $0<y<\infty $. Hallar la densidad de $Z= max \left\{ X,Y\right\}$.
+ 
+A saber
+\begin{eqnarray*}
+F_{z}\left( z \right)= \prob\left[ Z\leq z \right] = \prob \left[ \textrm{max} \left\{ X,Y \right\} \leq z \right]=\prob \left[X \leq  z, Y\leq z \right]
+\end{eqnarray*}
+Dado $y\geq 0 \Rightarrow z\geq 0$, $\prob \left[X\leq  0  Y \leq 0\right]= 0$ para $z=0$. Por lo tanto
+\begin{eqnarray*}
+\prob  \left[X \leq 1,Y\leq 1 \right]&=&\prob \left[Z\leq z,Y\leq z \right]= \int_{0}^{z}\int_{-y}^{y}\frac{1}{8}\left(y^{2}- x^{2} \right)e^{-y} \,dx\,dy\\
+&=&e^{-z}\left(-\frac{1}{6}z^{3}-\frac{1}{2}z^{2}-z-1 \right)+1
+\end{eqnarray*}
+Por lo tanto
+\begin{eqnarray*}
+f_{z}\left(z \right)&=&e^{-z}\left(-\frac{3}{6}z^{2}-z-1 \right)- e^{-z}\left(-\frac{1}{6}z^{3}-\frac{1}{2}z^{2}-z-1 \right)\\
+&=&e^{-z}\left(-\frac{1}{2}z^{2}-z-1+\frac{1}{6}z^{3}+\frac{1}{2}z^{2}+z+1 \right).
+\end{eqnarray*}
+Por lo tanto
+ 
+\begin{eqnarray*}
+f_{z}\left(z\right) = \begin{cases}
+\frac{1}{6}e^{-z}z^{3} & z>0,\\  
+0 & \textrm {e.o.c.}
+\end{cases}  
+\end{eqnarray*}
+\end{Ejem}
+
+\begin{Ejem}
+Sean $X_{1},X_{2},X_{3}$ m.a. $U\left(0,1\right)$. Hallar $f_{Yj}\left( t \right) j=1,2,3$, $Y_{j}$ es la estad\'istica de orden $j$. Entonces 
+
+\begin{eqnarray*}
+\begin{array}{ll}
+f_{X_{1}X_{2}X_{3}}\left(x_{1},x_{2},x_{3} \right) = \begin{cases}
+1 & x_{1},x_{2},x_{3} \in \left(0,1\right),\\  
+0 & e.o.c.
+\end{cases} ,& 
+f_{Y_{1}Y_{2}Y_{3}}\left(y_{1},y_{2},y_{3} \right) = \begin{cases}
+3! & 0<y_{1}<y_{2}<y_{3}<1,\\  
+0 & \textrm {e.o.c.}
+\end{cases}  
+\end{array}
+\end{eqnarray*}
+Por lo tanto, calculando la marginal con respecto a $Y_{1}$
+\begin{eqnarray*}
+f_{Y_{1}}\left( y_{1}\right)&=&\int_{y_{1}}^{y_{3}}\int_{y_{1}}^{1}6dy_{3}dy_{2} = 6\int_{y_{1}}^{1} y_{2}\mid _{y_{1}}^{y_{3}}dy_{3}, 0<y_{1}<1\\
+&=& 6\int_{y_{1}}^{1}\left( y_{3}-y_{1} \right)dy_{3}= 6 \left[\frac{y_{3}^{2}}{2}+y_{1}y_{3}\right]_{y_{1}}^{1}=6\left[\frac{1}{2}+y_{1}-\left[\frac{y_{1}^{2}}{2}+ y_{1}^{2}\right]\right]\\
+&=& 6\left[\frac{1}{2}+y_{1}-\frac{y_{1}^{2}}{2} \right]=12\left[1-\frac{y_{1}}{2}+y_{1}^{2}\right].
+\end{eqnarray*}
+Por lo tanto
+\begin{eqnarray*}
+f_{Y_{2}}\left(y_{2}\right)=\int _{y_{2}}^{1} \int_{0}^{y_{2}} \,dy_{1}\,dy_{3}= \begin{cases}
+6y_{2}\left(1-y_{2}\right) & 0<y_{2}<1,\\  
+0 & \textrm{e.o.c.}
+\end{cases}
+\end{eqnarray*}
+\end{Ejem}
+
+%_____________________________________________________________
+\section{Esperanza}
+%_____________________________________________________________
+
+Si $ \left(X,Y \right)$ es un vector aleatorio, la esperanza de $g \left(X,Y \right) $ es:
+\begin{eqnarray*}
+E \left[ g \left(Z,Y \right)\right] = \begin{cases}
+\int  \int g \left(X,Y \right)f_{XY}\left(x,y \right)dxdy &\textrm{ caso continuo,} \\  
+\sum \sum g \left( x,y\right)f_{XY}\left(x,y \right)&\textrm{ caso discreto.}
+\end{cases}
+\end{eqnarray*}
+Si $g \left(X,Y \right)=X$
+\begin{eqnarray*}
+E \left[X \right]&=& \int  \int x  f_{XY}\left(x,y \right)dydx=\int x \left( \int f_{XY}\left(x,y \right)dy \right)dx=xf_{X}\left(x \right)dx.
+\end{eqnarray*}
+Si $X$ y $Y$ son independientes $$E \left[ h_{1}\left( X \right)h_{2}\left(Y \right)  \right]= E \left[ h_{1}\left( X \right) \right] E \left[ h_{2}\left( X \right) \right]$.
+%_____________________________________________________________
+\subsection{Ejercicios}
+%_____________________________________________________________
+
+\begin{Ejem}
+Sea $X$ v.a con densidad
+
+\begin{eqnarray*}
+f_{X}\left(x \right) = \begin{cases}
+\frac{1}{3} & x=-2  \\  
+\frac{1}{2} & x=3  \\  
+\frac{1}{6} & x=1  \\  
+0 & \textrm{e.o.c}
+\end{cases}
+\end{eqnarray*}
+Hallar:
+\begin{itemize}
+\item[a)] $E \left[X \right] $
+\item[b)] $E \left[2X+5 \right] $
+\item[c)] $E \left[X^{2} \right] $
+\item[d)] $Var \left(X \right) $
+
+\begin{eqnarray*}
+E \left(X \right)&=& -2 \left(\frac{1}{3} \right)+3 \left(\frac{1}{2}+ \left(\frac{1}{6} \right) \right)= -\frac{2}{3}+\frac{3}{2}+ \frac{1}{6}= \frac{-4+9+1}{6}= \frac{6}{6}=1\\
+E \left[2X+5 \right]&=& 2 \left[X \right]+5=2+5=7\\
+E \left[X^{2} \right]&=& \sum_{x}x^{2}f_{X}\left(x\right)=\left(-2 \right)^{2}\left(\frac{1}{3} \right)+ \left(3 \right)^{2}\left(\frac{1}{2}\right)+ \left(\frac{1}{6} \right)= \frac{4}{3}+\frac{9}{2}+\frac{1}{6}\\
+&=& \frac{8+27+1}{6}=\frac{36}{6}=6\\
+\textrm{Var}\left(X \right)&=& E \left[X^{2} \right]+ E^{2}\left(X \right)=6+1=7
+\end{eqnarray*}
+\end{Ejem}
+\begin{Ejem}
+Si $X\sim \textrm{Bin} \left(n,Q \right)$ y $Q\sim \textrm{Beta} \left(4,2 \right)$. Hallar $E \left(X \right) \textrm{Var} \left(X \right)$ 
+
+\smallskip
+
+\begin{eqnarray*}
+f_{X|Q}\left(x,q \right)&=& \left(x^{n} \right)q^{x}\left(1-a \right)^{n-x}, x=0,1,2,...\\
+G &\sim & \textrm{Beta} \left(4,2 \right) \Rightarrow f_{Q}\left(a \right)= \frac{M \left(G \right) }{M \left(4 \right) \left(2 \right)} q^{3} \left(1-a \right)\\
+E \left(X \right)&=& E \left(E \left(X|Q\right) \right)= E \left(nQ \right)=n E \left(Q \right)= n \frac{ \alpha }{ \alpha + \beta }  = n \frac{2}{3}\\
+\textrm {Var}\left(X \right)&=& \textrm {Var} \left( E \left(X|Q \right) \right)+ E \left( \textrm{Var} \left(X|Q \right) \right)\\
+&=&\textrm {Var} \left(nQ \right) + E \left(nQ \left(1-Q \right)  \right)\\
+&=& n^{2}  \textrm{Var} \left(Q \right) + n \left[E \left(Q \right)- E \left(Q^2 \right) \right] \\
+&=& n^2 \left(\frac{\alpha \beta }{ \left(\alpha + \beta \right)^{2} \left(\alpha + \beta + 1 \right) } \right)
++ n \left[ \frac{2}{3}- \textrm{Var} \left(Q \right) - E^{2}\left(Q \right) \right]\\
+&=& n^2 \left( \frac{8}{ \left(36 \right) \left(7 \right) } \right)
++ n \left[\frac{2}{3}-  \frac{8}{ \left(36 \right) \left(7 \right)} - \frac{4}{9} \right]\\
+&=& n^2 \frac{2}{63} + n \left[ \frac{2}{3} - \frac{2}{63}- \frac{4}{9} \right]\\
+&=&\frac{2}{63} n^2 + n \left[\frac{42-2-28}{63} \right]\\
+&=& \frac{2}{63}
+\end{eqnarray*}
+\end{Ejem}
+
+\begin{Ejem}
+$X\sim U \left(1,T \right) $ y $f_{T} \left( t \right) = ct^2$, $1\leq t \leq 3$. Hallar $E \left(X \right)$  Var $\left(X \right) $
+ 
+ \smallskip
+ 
+ \begin{eqnarray*}
+f_{X|T} \left(x|T \right) = \begin{cases}
+\frac{1}{T-1} & 1\leq x \leq t\\  
+0 & \textrm {e.o.c}
+\end{cases}  
+\end{eqnarray*}
+
+ \begin{eqnarray*}
+f_{T}\left(t \right) = ct^{2}\\
+1= \int_{1}^{3} ct^2\, dt = c \int_{1}^{3} t^2\, dt = \left( \frac{t^3}{3} \right)_{1}^{3}= c \left(\frac{27}{3} - \frac{1}{3} \right)= c \left(\frac{26}{3} \right)\\
+\therefore c= \frac{3}{26}
+\end{eqnarray*}
+
+ \begin{eqnarray*}
+f_{T} \left(t \right) = \begin{cases}
+\frac{3}{26}t^{2} & 1\leq t \leq 3\\  
+0 & \textrm {e.o.c}
+\end{cases}  
+\end{eqnarray*}
+\end{Ejem}
+%______________________________________________________________
+\section{Ejercicios  de funci?n generadora de momentos.}
+%_______________________________________________________________
+\begin{enumerate}
+\item Encontrar todos los momentos de una v.a. $X$ si:
+
+\smallskip
+
+a) $X\sim N \left(0,1 \right)$ 
+
+\smallskip
+
+b) $X \sim U \left(a,b \right)$
+
+\smallskip
+
+c) $x \sim \textrm{Beta} \left(a,b \right)$
+
+\smallskip
+
+d) $x\sim Gamma \left( \alpha, \lambda \right)$
+
+\smallskip
+
+Para a)
+
+\begin{eqnarray*}
+X &\sim & N \left(0,1 \right) \Rightarrow f_{X}\left(x \right)= \frac{1}{\sqrt{2\pi}} \textrm{exp} \left\{- \frac{1}{2}x^2 \right\} x\in \rea \\
+E \left[ X^{r} \right] &=& \left.\frac{d^{r} } {dt^{r}} M_{X}\left( t \right) {y=0} \right|_{t=0}\\
+M_{X} \left(t \right) &=& E \left[e^{tX} \right] = \int_{-\infty }^{\infty} e^{tX}\left(\frac{1}{\sqrt{2\pi}}e^{\frac{x^{2} }{2}} \right) \, dx\\
+&=& \frac{1}{\sqrt{2\pi}}\int_{-\infty }^{ \infty } e^{\frac{x^{2} }{2}}\, dx \\
+tx- \frac{x^{2}}{2} & \Rightarrow & - \frac{1}{2}\left(x^{2}- 2tx  \right)= - \frac{1}{2} \left(x-t \right)^{2}+ \frac{t^{2}}{2}\\
+&=&\frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{- \frac{1}{2}\left(x-t \right)^2+ \frac{t^2}{2} }\,dx\\
+&=&\frac{e^{\frac{t^2}{2}}}{\sqrt{2\pi}} \int_{-\infty}^{\infty} e^{- \frac{1}{2}\left(x-t \right)^2 }\,dt = e^{\frac{t^2}{2}}\\
+N \left(t,1 \right)\\
+\left. M^{i}_{X}\left(t \right)\right|_{t=0} &=& e^{\frac{1}{2}t^2}\left(t \right)=0\\
+\left. M^{ii}_{X}\left(t \right)\right|_{t=0} &=&\left. e^{\frac{1}{2}t^2}+ t^2e^{\frac{1}{2}t^2}\right|_{t=0}\\
+\left. M^{iii}_{X}\left(t \right)\right|_{t=0} &=& \left. te^{\frac{1}{2}t^2}+ t^3e^{\frac{1}{2}e^2}+ e^{\frac{1}{2}t^2}\left( 2t \right)\right|_{t=0} =0\\
+\left. M^{iv}_{X}\left(t \right)\right|_{t=0} &=& \left. t^2e^{\frac{1}{2}t^2} + e^{ \frac{1}{2}t^2} + t^4 e^{\frac{1}{2}t^2 }+3 t^2 e^{\frac{1}{2}t^2 }+ 2t^2e^{\frac{1}{2}t^2}+ 2e^{\frac{1}{2}t^2 } \right|_{t=0}\\
+&=& 1+2=3
+\end{eqnarray*} 
+\begin{eqnarray*}
+E \left[X^r \right] &=&  \int x^r f_{X}\left(x \right)\, dx\\
+&=& \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty}x^r e^{- \frac{x^2}{2} }\, dx\\
+u &=& x^{r-1} \Rightarrow \frac{du}{dx}= \left(r-1 \right)x^{r-2} \Rightarrow du= \left( r-1 \right)x^{r-2} dx\\
+dv &=& xe^{-\frac{-x^2}{2}} dx \Rightarrow v= - e^{-\frac{x^2}{2}}\\
+&=& \left. x^{r-1} e^{\frac{x^2}{2}}\right|_{t=0} + \int e^{\frac{x^2 }{2}} \left(r-1 \right)x^{r-2}\, dx\\
+u &=& x^{r-3} \Rightarrow du= \left(r-3 \right)x^{r-4} dx\\
+dv &=& xe^{-\frac{1}{2}  x^2} dx \Rightarrow v= -e^{-\frac{1}{2}x^2 }\\
+&=&\left. -x^{r-3} e^{-\frac{1}{2}x^2} \right|_{-\infty } ^{\infty} + \int _{-\infty}^{\infty} e^{- \frac{1}{2}x^2 } \left(r-3 \right)x^{r-4} \, dx \\
+&=& \left(r-1 \right) \left(r-3 \right) \frac{1}{\sqrt{2\pi}} \int _{-\infty}^{\infty} e^{- \frac{1}{2}x^2 }x^{r-4} \, dx 
+\end{eqnarray*} 
+\begin{eqnarray*}
+r &=& 1\\ e \left[X \right] &=& 0 \\
+r &=& 2 \\
+&=&\frac{1}{\sqrt{2\pi}} \left(r-1 \right) \int_{-\infty }^{\infty}x^{r-2}e^{\frac{1}{2}t^2 } \, dx\\
+&=& \frac{1}{\sqrt{2\pi}}\left( 1 \right)  \int_{-\infty }^{\infty}x^{2-2}e^{\frac{1}{2}t^2 } \, dx\\
+&=& \frac{1}{\sqrt{2\pi}}\int_{-\infty }^{\infty}e^{\frac{1}{2}t^2 } \, dx = 1\\
+r &=& 3\\
+&=& \frac{1}{\sqrt{2\pi}} \left(r-1 \right) \left(r-3\right)\int_{-\infty }^{\infty } x^{r-4} e^{-\frac{1}{2}x^2 }\, dx \\
+&=& \frac{1}{\sqrt{2\pi}} \left(2 \right) \left(3-3\right))\int_{-\infty }^{\infty } x^{r-4} e^{-\frac{1}{2}x^2 }\, dx = 0
+\end{eqnarray*} 
+Para b)
+
+
+$X \sim U \left(a,b \right)$
+
+ \begin{eqnarray*}
+f_{X} \left(x \right) = \begin{cases}
+\frac{1}{b-a} & x \in\left( a,b \right) \\  
+0 & \textrm {e.o.c}
+\end{cases}  
+\end{eqnarray*}
+ 
+\begin{eqnarray*}
+E \left[X^r\right]&=& \int_{a},^{b} x^r f_{X} \left(x \right)\, dx = \frac{1}{b-a} \int_{a}^b x^r \, dx \\
+&=& \frac{1}{b-a} \left[\frac{x{r+1}}{r+1} \right]= \frac{1}{b-a}\left[\frac{b^{r+1} }{r+1}- \frac{a^{r+1}}{r+1} \right]\\
+M_{X}\left(t \right)&=& E \left[e^{tx}  \right]= \int_{a}^{b} e^{tx} \frac{1}{b-a} \, dx\\
+&=& \frac{1}{b-a} \int _{a}^{b} e^{tx} \, dx = \frac{1}{b-a} \left(e^{tx} \right)_{a}^b\\ 
+&=& \frac{1}{b-a} e^{t \left(b-a \right) } \\
+M^{'}_{X}|_{t=0}&=& \frac{1}{b-a} e^{t \left(b-a \right) } \left(b-a \right)\\
+&=& e^{t \left(b-a \right) }
+\end{eqnarray*}
+
+Para c) 
+
+\smallskip
+
+$X \sim \textrm{Beta} \left(a,b \right)$
+
+
+ \begin{eqnarray*}
+f_{X} \left(x \right) = \begin{cases}
+\frac{M \left(a+b\right)}{M \left(a \right)M \left(b \right)} x^{a-1} \left(1-x \right)^{b-1} & 0<x<1\\
+0 &  \textrm{e.o.c}
+\end{cases}  
+\end{eqnarray*}
+ 
+\begin{eqnarray*}
+E \left[X^{r} \right]&=& \int_{0}^{1} x^r \frac{M \left(a+b \right) }{ M \left( a\right) M \left(t \right)  } x^{a-1} \left(1-x \right)^{b-1} \, dx \\
+&=& \frac{M \left( a+b \right)}{M \left(a \right) M \left(b \right)} \, \frac{M \left( r+a \right) M \left( b\right) }{r \left( a+b+r \right) } \int_{0}^{1} \frac{M \left(a+r+b \right)}{M \left(r+a \right)r \left(b \right) } x^{r+a+1} \left( a-x\right)^{b-1} \, dx\\
+&=& \frac{M \left(a+b \right) M \left(r+a \right) }{r \left(a \right)M \left(a+b+r \right) }
+\end{eqnarray*} 
+ 
+Para d) 
+
+\smallskip
+
+$X \sim \textrm{Gamma} \left(\alpha , \lambda \right)$
+
+\begin{eqnarray*}
+f_{X} \left(x \right) = \begin{cases}
+\frac{1}{M \left(\alpha \right) \lambda^{ \alpha }} x^{\alpha -1 }e^-{\frac{x}{\lambda }}  & x>0\\
+0 &  \textrm{e.o.c}
+\end{cases}  
+\end{eqnarray*}
+
+
+ \begin{eqnarray*}
+E \left[X ^r \right] &=& \int_{0}^{ \infty } x^r \frac{1}{M \left(\alpha \right)\lambda^{ \alpha} } x^{\alpha - 1} e^{- \frac{x}{\lambda } }\, dx\\
+&=& \frac{1}{M \left( \alpha \right)  \lambda ^\alpha  } x^{r+ \alpha-1 } e^{- \frac{x}{\lambda} } \, dx\\
+&=& \frac{M \left( r+ \alpha \right) \lambda^{r+\alpha}} {M \left(\alpha\right) \lambda ^{ \alpha } M \left(r+\alpha \right) \lambda^{r+\alpha} } \int _{0}^{ \infty } x^{r+ \alpha -1 }   e^{\frac{x}{\lambda } } \, dx\\
+&=& \frac{M \left(\alpha + \alpha \right) }{ M \left(\alpha \right) \lambda^{ \alpha } }\\
+\textrm{Gamma} \left(r+\alpha, \lambda \right)
+\end{eqnarray*}
+
+\item Sean $X,Y \sim U_{1,2,..., m}$ ind. Calcular $E \left[|X-Y| \right]$
+
+\begin{eqnarray*}
+f_{X} \left(x \right) = \begin{cases}
+\frac{1}{m}  & x=1... m\\
+0 &  \textrm{e.o.c}
+\end{cases}  
+\end{eqnarray*}
+
+\begin{eqnarray*}
+f_{X} \left(x \right) = \begin{cases}
+\frac{1}{m}  & y=1... m\\
+0 &  \textrm{e.o.c}
+\end{cases}  
+\end{eqnarray*}
+
+\begin{eqnarray*}
+f_{XY} \left(x,y \right) = \begin{cases}
+\frac{1}{m^2}  & x,y =1... m\\
+0 &  \textrm{e.o.c}
+\end{cases}  
+\end{eqnarray*}
+
+\begin{eqnarray*}
+|X-Y| = \begin{cases}
+x-y  & x>y \\
+y-x  &  y>x
+\end{cases}  
+\end{eqnarray*}
+
+\begin{eqnarray*}
+Z &=&|X-Y|\\
+f_{Z} \left( z \right) &=& \prob \left[Z=z \right]= \prob \left[ |X-Y|=z \right]= \prob \left[X-Y=z \right] + \prob \left[ Y-X=z \right]\\
+&=& \prob \left[X= Y+z \right] + \prob \left[Y=z+X \right]
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\prob \left[ X= Y+z \right] &=& \sum _{K} \prob \left[X=K+z \right] \prob \left[Y=K \right]\\
+&=& \sum_{K=1}^{m-z} \prob \left[X=K+z \right] \prob \left[ Y= K \right]\\
+\prob \left[Y=z+X \right] &=& \sum _{K}  \prob \left[ K+z\right] \left[X=K \right]\\
+&=& \sum_{K=1}^{m-z}\prob \left[ Y=K + z\right]  \prob \left[X=K \right]
+\end{eqnarray*}
+
+\begin{eqnarray*}
+&=& \prob \left[X= Y+z \right] + \prob \left[Y=X+z \right]\\
+&=& \sum _{K=1}^{m-z} \left[\prob \left[X= K+z \right] \prob \left[Y=K \right]+ \prob \left[X=K \right] \right]\\
+&=& \sum _{K=1}^{m-z}\left( \frac{1}{m^2} + \frac{1}{m^2} \right) = 2 \sum_{K=1}^{m-z} \frac{1}{m^2} \\
+&=& \frac{2}{m^2} \sum _{K=1}^{m-z} = \frac{2}{m^2} \left( m-z-1+1 \right) = \frac{2}{m^2} \left( m-z \right) = \frac{2 \left( m-z \right) }{m^2}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+f_{Z} \left( z \right) = \begin{cases}
+\frac{2 \left( m-z \right) }{m^2}  & z=1,...,m-1 \\
+0 &  \textrm{e.o.c} 
+\end{cases}  
+\end{eqnarray*}
+
+\begin{eqnarray*}
+&=& E \left[ |X-Y| \right]= E \left[Z \right]= \sum_{z} z f_{z} \left(z \right)) \sum_{z}z \frac{2 \left(m-z \right) }{m^2}\\
+&=& \frac{2}{m^2} \sum _{z=1}^{m-1} zm-z^2 = \frac{2}{m^2} \left[ \left( m \left( \frac{ m-1 \left( m \right)}{2}\right) \right) - \sum _{z=1}^{m-1} z^2 \right]\\
+&=& \frac{2}{m^2} \left[ \frac{m^2 \left(m-1 \right) }{2} - \left(1+4+9+...+ \left( m-1\right) ^2 \right) \right]\\
+&=&\frac{2}{m^2} \left[ \frac{m^2 \left(m-1 \right) }{2} - \frac{ \left(m-1 \right) \left( m \right) \left(2 \left(m-1 \right)+1 \right)   }{6 } \right]\\
+&=& \frac{2}{m^2} \left[ \frac{m^2 \left(m-1 \right) }{2} - \frac{m \left( m-1 \right)\left( 2m - 1 \right) }{6 } \right]\\
+&=& m-1 \left[1 - \frac{m \left(2m-1 \right) }{3} \right]
+\end{eqnarray*}
+
+\item 
+$ X_{1} \sim \textrm{Exp} \left( 2 \right)$ y $X_{2} \sim U \left(X_{1}+1, X_{1}+2 \right) $. Hallar $E \left(X_{2} \right) $ y $ \textrm{Var} \left(X_{2} \right) $
+
+\begin{eqnarray*}
+X_{1} \sim \textrm{Exp} \left(2 \right)\Rightarrow f_{X_1} \left(x_{1} \right) &=& \begin{cases}
+2e^{-2x_{1}}  & x_{1 > 0} \\
+0 &  \textrm{e.o.c} 
+\end{cases} \\\\
+X_{2|X_{1}}&\sim & U \left(X_{1}+1, X_{1}+2 \right) \\
+\Rightarrow f_{X_{2}|X_{1}}\left( x_{2}| x_{1}\right) &=& \begin{cases}
+2e^{-2x_{1}}  & x_{1 > 0} \\
+0 &  \textrm{e.o.c} 
+\end{cases}\\\\
+f_{X_{1}X_{2}}\left(x_{1},x_{2} \right) &=& f_{X_{2}| X_{1}} \left(x_{2} | x_{1} \right) f_{X_{1}}\left(x_{1} \right)\\
+&=& \begin{cases}
+2e^{-2x_{1}}  & x_{1}+1 < x_{2} < x_{1}+2, x_1>0 \\
+0 &  \textrm{e.o.c} 
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+x_{2}=x_{1}+ 1\\
+\left(0,1 \right)\left(-1,0 \right)\\
+x_{2}=x_{1}+ 2\\
+\left(0,2 \right)\left(-2,0 \right)
+\end{eqnarray*}
+
+\begin{eqnarray*}									
+f_{X_{2}}\left(x_{2} \right) &=& \begin{cases}
+\int _{0}^{x_{2}-1} 2e^{-2x_{1}} \, dx_{1} & 1\leq x < 2 \\
+\int _{x_{2}-2}^{x_{2}-1} 2e^{-2x_{1}} \, dx_{1} &  x \geq 2 \\
+0 &  \textrm{e.o.c} 
+\end{cases}\\\\
+f_{X_{2}} \left( x_{2} \right) &=& \begin{cases}
+1-e^{-2 \left(x_{2}-1 \right) } & 1\leq x < 2 \\
+e^{-2 \left(x_{2}-2 \right)}- e^{-2 \left(x_{2}-1 \right) } &  x > 2 \\
+0 &  \textrm{e.o.c} 
+\end{cases}\\\\
+ E \left[ X_{2} \right] &=& \int _{1}^{2}x_{2} \left(1- e^{-2 \left(x_{2}-1 \right)}\right) \, dx_{2} + \int _{0}^{ \infty } x_{2} e^{-2 \left(x_{2}-2 \right)}- e ^{-2 \left( x_{2}-1 \right) } \, dx_{2} = 2\\ 
+ E \left[ X_{2}^{2} \right] &=& \int _{1}^{2}x_{2}^{2} \left(1- e^{-2 \left(x_{2}-1 \right)}\right) \, dx_{2} + \int _{0}^{ \infty } x_{2}^{2} e^{-2 \left(x_{2}-2 \right)}- e ^{-2 \left( x_{2}-1 \right) } \, dx_{2} = \frac{13}{3}\\
+ \textrm{Var} \left(X_{2} \right)&=& E \left[X_{2}^{2} \right]- E^2 \left[X_{2} \right]= \frac{13}{3}-4 = \frac{1}{3}
+\end{eqnarray*}
+
+\item $X_{1}, X_{2},X_{3},X_{4} \sim U \left(0,1 \right) $ Ind. Hallar $E \left( Y_{4}- Y_{1} \right)$ donde $Y_{j}$ es la estad?stica de orden $j$.
+
+\begin{eqnarray*}
+X_{1} \sim f_{X_{1}} \left(x_{1} \right) &=& \begin{cases}
+1  & 0 < x_{1} < 1 \\
+0 &  \textrm{e.o.c} 
+\end{cases}  \\\\
+\Rightarrow  f_{X_{1}X_{2}X_{3}X_{4}} \left(x_{1},X_{2,}X_{3},X_{4} \right) &=& \begin{cases}
+1  & 0 < x_{1} < 1 \, 0 < x_{2} < 1 \, 0 < x_{3} < 1 \, 0 < x_{4} < 1 \\
+0 &  \textrm{e.o.c} 
+\end{cases} \\\\
+\Rightarrow  f_{Y_{1}Y_{2}Y_{3}Y_{4}} \left(y_{1},y_{2,}y_{3},y_{4} \right) &=& \begin{cases}
+4!  & 0 < y_{1} < 1 \, 0 < y_{1}<y_{2}<y_{3}<y_{4} < 1 \\
+0 &  \textrm{e.o.c} 
+\end{cases}\\\\
+f_{Y_{4}Y_{1}} \left(y_{1}, y_{4} \right) &=& \int _{y_{1}}^{y_{4}} \int _{y_{1}}^{y_{3}} 4! \, dy_{2}\, dy_{3} = \left. 4! \int _{y_{1}}^{y_{4}} y_{2} \right| _{y_{1}}^{y_{3}}\, dy_{3}\\
+&=& 4! \int _{y_{1}}^{y_{4}} y_{3}- y_{1} \, dy_{3}= 4! \left(\frac{y_{3}^2}{2}-y_{1} y_{3} \right)_{y_{1}}^{y_{4}}\\
+&=& 4! \left(\frac{y_{4}^2}{2} - \frac{y_{1}^2}{2}- y_{1}y_{4} +  y_{1}^2 \right)\\
+&=& 4! \left(\frac{y_{4}^2}{2} + \frac{y_{1}^2}{2}- y_{1}y_{4} \right)\\
+&=& \frac{4!}{2} \left(y_{4}^2+ y_{1}^2 -2y_{1}y_{4}\right) = 12 \left(y_{4}-y_{1} \right)^2 \\
+0<y_{1}< y_{4}<1\\
+E \left[Y_{4}- Y_{1} \right] &=& \int_{0}^{1} \int_{0}^{y_{4}} \left(Y_{4}-Y_{1} \right)f_{Y_{1}Y_{4}} \left(y_{1}, y_{4} \right) \, dy_{1} \, dy_{4}\\
+&=&\int_{0}^{1} \int_{0}^{y_{4}} \left(Y_{4}-Y_{1} \right)12 \left(y_{4}- y_{1} \right)^2 \, dy_{1} \, dy_{4}\\
+&=& 12 \int_{0}^{1} \int_{0}^{y_{4}}  \left(y_{4}- y_{1} \right)^3 \, dy_{1} \, dy_{4}\\
+&=& 12 \int_{0}^{1}\left. - \frac{ \left(y_{4}-y_{1} \right)^4 }{ 4} \right| _{0}^{y_{4}} \, dy_{4}\\
+&=& 12 \int _{0}^{1}  - \frac{ \left(y_{4}-y_{4} \right)^4 }{ 4} +  \frac{ \left(y_{4}-0 \right)^4 }{ 4} \, dy_{4}\\
+&=& \frac{12}{4} \left(\frac{y_{4}^5}{5} \right)_{0} ^{1} = 3 \left(\frac{1}{5} \right) = \frac{3}{5}
+\end{eqnarray*}
+
+\item Sea \begin{eqnarray*} f_{X,Y} \left( x,y \right) &=& \begin{cases}
+C  & x\geq 0 \, y \geq 0 \, x+y\geq 1\\
+0 &  \textrm{e.o.c} 
+\end{cases}\end{eqnarray*}
+ Hallar $ \textrm{Cov} \left(X,Y \right) $.
+ 
+\begin{eqnarray*} 
+y &=& 1-x \, \left( 0,1 \right) \, \left(1,0 \right)\\
+1 &=& \int_{0}^{1} \int _{0}^{1-x} c \, dy \, dx= \left. c \int _{0}^{1} y \right|_{0}^{1-x} \, dx = c \int _{0}^{1} \left( 1-x  \right) \, dx \\
+&=& \left. -c \frac{\left(1-x \right)^2 }{2} \right| _{0}^{1} = -c \frac{\left(1-1 \right) }{2} + c \frac{\left( 1-0\right)^2 }{2} = \frac{c}{2}\\
+\therefore c &=& 2\\
+ f_{X,Y} \left( x,y \right) &=& \begin{cases}
+2  & x\geq 0 \, y \geq 0 \, x+y\geq 1\\
+0 &  \textrm{e.o.c} 
+\end{cases}\\
+ \textrm{Cov} \left(X,Y \right) &=& E \left(XY \right)- E \left(X \right)E \left(Y \right)\\
+ f_{X} \left(x \right) &=& \int _{0}^{1-x} 2 \, dy = \left. 2y  \right| _{0}^{1-x} = 2 \left(1-x \right) \\
+  0 &<& x<1\\
+ f_{Y} \left(y \right) &=& \int _{0}^{1-y} 2 \, dx =  2 \left(1-y \right) \\
+  0 &<& y<1\\
+   E \left(X \right) &=& \int _{0} ^{1} 2x \left(1-x \right) \, dx = x^2- \left.\frac{2x ^3}{3} \right| _{0} ^{1} \\
+  &=& 1- \frac{2}{3} = \frac{1}{3}\\
+  E \left[ Y \right]& =& \int_{0} ^{1} 2y \left( 1-y\right) \, dy = 2 \left(\frac{y^2}{2}- \frac{y^3}{3} \right)_{0} ^{1}\\
+  &=& 1- \frac{2}{3} = \frac{1}{3}\\
+   E \left[ XY \right] &=& \int _{0} ^{1} \int _{0}^{1-x} 2xy \, dy \, dx = 2 \int _{0}^{1} \left. x \frac{y^2}{2}\right|_{0}^{1-x} \, dx
+   \end{eqnarray*}
+\begin{eqnarray*}
+   &=& \int _{0} ^1 x \left(1-x \right)^{2} \, dx = \int _{0}^{1} x- 2x^2+x^3 \, dx = \left. \frac{x^2}{2}- \frac{2}{3} x^3 + \frac{x^4}{4} \right| _{0}^{1} \\
+   &=& \frac{1}{2} - \frac{2}{3}+ \frac{1}{4} = \frac{6-8+3}{12}= \frac{1}{12}\\
+   \textrm{Cov} \left(X,Y \right)&=& \frac{1}{12} - \left(\frac{1}{3} \right)\left(\frac{1}{3} \right) = \frac{1}{12} - \frac{1}{9} = \frac{3-4}{36}= - \frac{1}{36}\\
+   p \left(X,Y \right)&=& \frac{\textrm{Cov} \left(X,Y \right) }{\sqrt{\textrm{Var}\left(X \right)}\sqrt{\textrm{Var}\left(X \right) }} = \frac{-\frac{1}{36} }{\sqrt{\left( \frac{1}{18} \right)\left( \frac{1}{18} \right) }}= -\frac{\frac{1}{36} }{\frac{1}{18} }= -\frac{18}{36} = - \frac{1}{2}\\
+   \textrm{Var} \left(X \right) &=& E \left(X^2 \right)- E^2 \left(X \right)= \frac{1}{6} - \left( \frac{1}{3} \right)^2 = \frac{1}{6} - \frac{1}{9} = \frac{9-6}{54}= \frac{3}{54}= \frac{1}{18}\\
+ E \left[X ^2 \right]&=& \int _{0}^{1} 2x ^2 \left(1-x \right) \, dx = 2 \left. \frac{x^3}{3} - \frac{2x ^ 4}{4} \right| _{0}^{1}\\
+ &=& \frac{2}{3}- \frac{2}{4}= \frac{8-6}{12}= \frac{2}{12} = \frac{1}{6}
+\end{eqnarray*}
+
+ \item Si $X \sim N \left(0,1 \right) $. 
+ 
+ \begin{eqnarray*}
+\textrm{Cov}\left(X^2-1 , X + \frac{1}{2} \right) &=& E \left[\left(X^2-1 \right) \left( X+ \frac{1}{2}\right) \right]- E \left[X^2-1 \right] E \left[X+ \frac{1}{2} \right]\\
+&=& E   \left[X^3 + \frac{1}{2} X^2-X - \frac{1}{2} \right]- \left[ E \left[X^2 \right]-1 \right] \left[ E \left[ X \right]+ \frac{1}{2}\right]\\
+&=& E \left[X^3 \right]+ \frac{1}{2} E \left[X^2 \right]- E \left[ X \right]- \frac{1}{2}- E \left[X^2 \right] E \left[X \right]\\
+&-& \frac{1}{2} E \left[X^2 \right]+ E \left[X \right]+ \frac{1}{2}\\
+&=& E \left[X^3 \right]- E \left[ X^2\right]E \left[X \right]=0
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\textrm{Var} \left(X^2 - 1  \right)&=& E \left[ \left(X^2 - 1 \right)^2 \right]- E ^2 \left[X^2 - 1 \right]\\
+&=& E \left[ X^4 - 2X^2 + 1 \right] - \left(E \left[X^2 \right]-1 \right)^2\\
+&=& E \left[X^4 \right]- 2E \left[X^2 \right]+1 - \left( E^2 \left[ X^2\right]- 2E \left[ X^2 \right]+1 \right)\\
+&=& E \left[ X^4 \right]- E^2 \left[X^2 \right]= 3-1=2
+\end{eqnarray*}
+
+                                                                                                                                                 \begin{eqnarray*}
+\textrm{Var} \left( X + \frac{1}{2}  \right)&=&  E \left[\left(X + \frac{1}{2} \right)^2 \right]- \left( E \left[X + \frac{1}{2} \right]  \right)^2\\
+&=& E \left[X^2 + X + \frac{1}{4} \right] - \left( E \left[X \right] + \frac{1}{2} \right)^2\\
+&=& E \left[X ^ 2 \right] +  E \left[X \right]+ \frac{1}{4} - \left( E^2 \left[X \right]+ E \left[ X\right]+ \frac{1}{4} \right)\\
+&=& E \left[X^2 \right] - E^2\left[X \right] = 1
+\end{eqnarray*}
+
+\begin{eqnarray*}
+X \sim N \left( 0,1 \right) &\Rightarrow & f_{X} \left( x \right) = \frac{1}{ \sqrt{2 \pi}} \textrm{exp} \left\{- \frac{1}{2} x^2 \right\}\\
+M_{X} \left(t \right) &=& E\left[e^{xt} \right] = \int _{-\infty}^{\infty} e^{xt} \frac{1}{\sqrt{2 \pi}} e ^{- \frac{x^2}{2}} \, dx = \frac{1}{\sqrt{2 \pi}} \int _{-\infty}^{\infty}  e^{xt- \frac{x^2}{2}} \, dx\\\\
+ \textrm{Nota }-\frac{x^2}{2} + xt &=& \frac{-1}{2} \left(x^2 - 2xt \right) = - \frac{1}{2} \left(x-t \right)^2 + \frac{t^2}{2}\\\\ 
+& = &\frac{1}{\sqrt{2\pi}}\int _{-\infty}^{\infty} e^{- \frac{1}{2} \left(x-t \right)^2 + \frac{t^2}{2}}  \, dx = e^\frac{t^2}{2} \frac{1}{\sqrt{2\pi}}\int _{-\infty}^{\infty} e^{- \frac{1}{2} \left(x-t \right)^2} \, dx\\
+&=& e^{\frac{t^2}{2}}
+\end{eqnarray*}
+
+\item
+Hallar el n\'umero de lanzamientos necesarios para obtener al menos 1 vez c/cara de un lado.
+
+\begin{eqnarray*}
+i &=& \left\{1,2,3,..., 6 \right\}\\
+P_{i} &\equiv & \textrm{probabilidad de que caiga la cara i} \\
+X_{i} &\sim & \textrm{Geo} \left(p_{i} \right)\\
+E \left[X_{i} \right] &=& \frac{1}{i_{i}}\\
+f_{X} \left(x \right) &=& p \left(1-p \right)^{x-1}\, , x=1...\\
+X&=&X_{1}+X_{2}+X_{3}+X_{4}+X_{5}+X_{6}\\
+ E \left[ X \right] ?
+ \end{eqnarray*}
+ 
+ $X_{1} \equiv$  No. de lanzamientos para obtener la cara 1  (La cara que salga al tirar por primera vez un dado).
+ $p_{1} = 1 \Rightarrow X_{1} \sim $Geo $\left( 1 \right) \Rightarrow E \left[X_{1} \right] = 1$
+ 
+ \smallskip
+ 
+ $X_{2} \equiv$  No. de lanzamientos necesarios para obtener la cara 2. (La cara 2 es la primera cara diferente a la cara 1, como la cara 1 ya sali\'o por primera vez, entonces s\'olo interesa que salga cualquiera de las 5 restantes).
+ 
+ \smallskip
+ 
+ $p_{2} = \frac{5}{6} \Rightarrow X_{2} \sim $ Geo $\left(\frac{5}{6} \right) \Rightarrow E \left[X_{2} \right] = \frac{1}{\frac{5}{6}}= \frac{6}{5}$
+ 
+ \smallskip
+ 
+ Razonamiento an\'alogico
+
+
+\begin{eqnarray*}
+p_{3} =  \frac{4}{6}= \frac{2}{3} & X_{3} \sim \textrm{Geo} \left(\frac{2}{3}\right) & E \left[ X_{3}\right] = \frac{3}{2} \\
+p_{4}=  \frac{3}{6}= \frac{1}{2} & X_{4} \sim \textrm{Geo} \left(\frac{1}{2}\right) & E \left[ X_{4}\right] =2 \\
+p_{5}=  \frac{2}{6}= \frac{1}{3} & X_{5} \sim \textrm{Geo} \left(\frac{1}{3}\right) & E \left[ X_{5}\right] = 3 \\
+p_{6}=  \frac{1}{6} & X_{6} \sim \textrm{Geo} \left(\frac{1}{6}\right) & E \left[ X_{6}\right] = 6 
+\end{eqnarray*}
+
+
+\begin{eqnarray*}
+\therefore E \left[X \right] &=& 1 + \frac{6}{5}+ \frac{3}{2}+2+3+6 = 12 + \frac{12+15}{10}\\
+&=& \frac{120+12+15}{10}= \frac{147}{10} = 14.7
+\end{eqnarray*}
+
+\item
+
+Si $X \sim$ Geo $\left(\frac{5}{8} \right)$ $f_{X} \left(x \right)= \left(\frac{5}{8} \right) \left(\frac{3}{8} \right)^x$, $x=0,1,....$ 
+
+\smallskip
+
+Calcular $E \left[2X | Z \leq 3, x \right]$ par.
+
+\begin{eqnarray*}
+E  \left[2X | X \geq \textrm{par} \right] &=& \sum_{x=0}^{\infty} 2x f_{X|D} \left(x|d \right)\\
+\prob \left[X=x | X \geq 3 , X \textrm{par} \right]&=& \frac{\prob\left[X=x , X \geq 3, X \textrm{par} \right]}{\prob \left[X \geq 3 , X \textrm{par} \right]}\\
+\prob \left[ X=x , X \geq 3 , X \textrm{par} \right] &=& \prob \left[X=x \textrm{par mayor \'o igual a 4} \right]\\
+&=& \left(\frac{5}{8} \right)\left(\frac{3}{8} \right)^{x} , x=4,6,8,...
+\end{eqnarray*}
+
+
+\begin{eqnarray*}
+\prob \left[X 0 3 , X \geq 3 , X par \right] &=& 0 \\
+\prob \left[X=4, X \geq 3 , X par \right] &=& \prob \left[ X=4 \right]\\
+\prob \left[X \geq 3 , X par  \right] & = & \prob \left[ X=4 \right] + \prob \left[ X=6\right]+ \ldots \\
+&=& \left(\frac{5}{8} \right) \left( \frac{3}{8}\right)^4 + \left( \frac{5}{8} \right) \left(\frac{3}{8} \right)^6 + \ldots +\\
+&=&\left(\frac{5}{8} \right) \left( \frac{3}{8}\right)^4  \left[1 + \left(\frac{3}{8} \right)^2  + \left(\frac{3}{8} \right)^4 + \ldots \right]\\
+&=&\frac{5}{8} \left(\frac{3}{8} \right)^4 \left[\frac{1}{1- \left(\frac{3}{8} \right)^2} \right]\\
+&=&\frac{5}{8} \left(\frac{3}{8} \right)^4 \left(\frac{1}{\frac{64-9}{64}} \right)= \left(\frac{5}{8} \right) \left(\frac{3}{8} \right)^4 \left(\frac{64}{55} \right)\\
+&=& \frac{81}{5632}\\
+\prob \left[X=x \mid X \geq 3 , X par \right] &=& \begin{cases}
+\frac{\left( \frac{5}{8} \right) \left( \frac{3}{8} \right)^{\alpha}}{\left( \frac{5}{8} \right) \left( \frac{3}{8} \right)^{4} \left(\frac{64}{55} \right)}= \frac{3520}{81}\left(\frac{3}{8} \right)^x & x=4,6,8, \ldots\\
+0 &  \textrm{e.o.c} 
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+ \sum_{x=4}^{\infty} \left( \frac{3520}{81} \right)\left(\frac{3}{8} \right)^{x}&=& \frac{3520}{81} \left[\left( \frac{3}{8} \right)^4 + \left(\frac{3}{8} \right)^6+ \ldots \right]\\
+ &=& \frac{3520}{81} \left(\frac{3}{8} \right)^4 \left[1 + \left(\frac{3}{8} \right)^2 + \left( \frac{3}{8} \right)^4 + \ldots \right]\\
+ &=& \frac{55}{64} \left[ \frac{1}{1 - \frac{9}{64}} \right] = 1
+\end{eqnarray*}
+
+\begin{eqnarray*}
+ \therefore \prob \left[2X \mid Z \geq 3, X par \right] &=& \sum _{x=4}^{\infty} 2x \frac{3520}{81} \left( \frac{3}{8} \right)^{x}\\
+ &=& 2 \left( \frac{3520}{81} \right) \sum _{x=4} ^{\infty} x \left( \frac{3}{8} \right)^{x}\\
+ &=& \frac{7040}{81} \left[4 \left( \frac{3}{8} \right)^4 + 6 \left(\frac{3}{8} \right)^6 + \ldots \right]\\
+ &=& \frac{14080}{81}\left[ \frac{\frac{9}{64}}{\left(1 - \frac{9}{64} \right)^2} - \frac{9}{64} \right] = \frac{14080}{81} \left[ \frac{9}{64} \left(\frac{4086}{3025} \right)- \frac{9}{64} \right]\\
+&=& \left( \frac{14080}{81} \right) \left(\frac{9}{64} \right) \left[\frac{4096}{3025} - 1\right] = \frac{14080}{81} \left(\frac{9}{64} \right)\left( \frac{1071}{3025} \right)= \frac{476}{55}
+\end{eqnarray*}
+
+
+
+
+\item
+Sean $X,Y$ Vra. con densidad $f_{XY}$ constante en el tri\'angulo $\left(0,0 \right), \left(2,0 \right), \left(1,2 \right)$. Hallar $E \left[ Y \mid X \right]$
+
+\begin{eqnarray*}
+f_{Y \mid X} \left( y \mid x \right) &=& \begin{cases}
+\frac{1}{2x}  & 0 \leq y \leq 2x \mid 0\leq x < 1 \\
+\frac{1}{-2x+4} & 0 \leq y \leq -2x+4  \mid  1\leq x \leq 2\\
+0 &  \textrm{e.o.c} 
+\end{cases}\\
+\end{eqnarray*}
+
+\begin{eqnarray*}
+E \left[Y \mid X \right] &=& \begin{cases}
+\int_{0}^{2x} y \frac{1}{2x} \,dy= x  & 0\leq x \leq 1\\
+\int y \frac{1}{-2x+4}=-x+2 & 1 \leq x \leq 2\\
+0 &  \textrm{e.o.c} 
+\end{cases}\\
+\end{eqnarray*}
+
+\begin{eqnarray*}
+ &=& \begin{cases}
+x & 0 <x < 1\\
+-x+2 & 1 \leq x < 2\\
+0 &  \textrm{e.o.c} 
+\end{cases}\\
+\end{eqnarray*}
+\end{enumerate}
+\section{Ejercicios para Evaluaci\'on}
+\begin{enumerate}
+
+\item Sea $f_{X,Y} \left(x,y \right) = c \mid x \mid$. Si $0<y<1 - \mid x  \mid \, -1<x<1$
+
+\begin{eqnarray*}
+1 &=& \int_{-1}^{1} \int_{0}^{1-\mid x \mid}  c \mid x \mid \, dy \, dx = c \int_{-1}^{1} \int_{0}^{1-\mid x \mid}  \mid x \mid \, dy \, dx\\
+&=& c \left[ \int_{-1}^{0} \int_{0}^{1+ x }    -x  \, dy \, dx + \int_{0}^{1} \int_{0}^{1- x }    x  \, dy \, dx \right ]\\
+&=& c \left[ \int _{-1}^{0} -xy \mid_{0}^{1+x}  + \int _{0}^{1} xy \mid_{0}^{1-x} \, dx \right]\\
+&=& c \left[ \int _{-1}^{0} -x \left( 1+x \right) \, dx  + \int_{0}^{1} x \left(1-x \right) \, dx \right]\\
+&=& c \left[ \int _{-1}^{0} -x-x^2  \, dx  + \int_{0}^{1} x-x^2 \, dx \right]\\
+&=& c \left(- \frac{x^2}{2} - \frac{x^3}{3} \mid _{-1}^{0} + \frac{x^2}{2} - \frac{x^3}{3}\mid _{0}^{1}  \right)\\
+&=& c   \left( +\frac{1}{2} - \frac{1}{3} + \frac{1}{2} - \frac{1}{3}  \right) = c \left( 1-\frac{2}{3} \right) = \left( \frac{3-2}{3} \right)= c \left( \frac{1}{3} \right)\\
+\therefore c&=&3\\
+f_{XY}\left(x,y \right) &=&  \begin{cases}
+3 \mid x \mid & 0<y<1-\mid x \mid \, , -1<x<1 \\
+0 &  \textrm{e.o.c} 
+\end{cases}\\
+f_{X|Y} \left(  x | y\right) &=& \frac{f_{XY}\left(x,y \right)}{f_{Y} \left(y \right) }\\
+f_{Y}\left(y \right) &=& \int 3 \mid x \mid \, dx = -3 \int _{y-1}^{0} x \, dx + 3 \int _{0}^{1-y} x \, dx\\
+&=& -3 \left(\frac{x^2}{2} \right)_{y-1}^{0} + 3  \left( \frac{x^2}{2} \right)_{0}^{1-y} = 3 \frac{\left(y-1 \right)^2}{2}+ 3 \frac{\left(1-y\right)^2}{2}\\
+&=&\frac{3}{2} \left( \left(y-1 \right)^2 + \left(1-y \right)^2 \right)\\
+f_{Y} \left(\frac{1}{2} \right) &=& \frac{3}{2} \left( \frac{1}{4} \right) + \frac{3}{2} \left( \frac{1}{4} \right) = \frac{3}{4}\\
+f_{X|Y} \left( x \mid 1/2 \right)&=& \begin{cases}
+\frac{f_{XY}\left(x, \frac{1}{2}\right)}{f_{Y} \left(\frac{1}{2  } \right)}=  \frac{3\mid x \mid}{\frac{3}{4}}\\
+0 &  \textrm{e.o.c} 
+\end{cases}
+\end{eqnarray*}
+
+\item Hallar $f_{XY} \left( x,y \right) $ con los datos del problema anterior.
+\item Calcular $\prob \left[ Y > \mid X \mid \right]$ con los datos del problema 1.
+
+\begin{eqnarray*}
+y= \mid x \mid &=& \begin{cases}
+x & x \geq 0\\
+-x & x<0
+\end{cases}\\
+\prob \left[Y > \mid X \mid \right] &=& \int_{- \frac{1}{2}}^{0} \int _{-x}^{1+x} 3 \mid x \mid \, dy \, dx\\
+&=& \int_{0}^{\frac{1}{2}} \int_{x}^{1-x} 3 \mid x \mid  \, dy \, dx\\
+&=& \int _{\frac{-1}{2}}^{0} \int _{-x}^{1+x} -3x  \, dx \, dy + \int _{0}^{\frac{1}{2}} \int _{x}^{1-x} 3x \, dx \, dy\\
+&=& -3 \int _{\frac{-1}{2}}^{0} \int _{-x}^{1+x} x  \, dx \, dy + 3 \int _{0}^{\frac{1}{2}} \int _{x}^{1-x} x \, dx \, dy\\
+&=& -3 \int _{\frac{-1}{2}}^{0}  xy \mid_{x}^{1+x}  \, dx  + 3 \int _{0}^{\frac{1}{2}} xy \mid_{x}^{1-x}  \, dx \\
+&=& -3 \int _{\frac{-1}{2}}^{0}  x \left(1+x+x \right) \, dx  + 3 \int _{0}^{\frac{1}{2}} x \left(1-x-x \right) \, dx \\
+&=& -3 \int _{\frac{-1}{2}}^{0}  x+2x^{2} \, dx  + 3 \int _{0}^{\frac{1}{2}} x-2x^2 \, dx \\
+&=& -3 \left(\frac{x^2}{2}+\frac{2}{3}x^{3} \right)_{\frac{-1}{2}}^{0}+  3 \left(\frac{x^2}{2}-\frac{2}{3}x^{3} \right)_{0}^{\frac{1}{2}}\\
+&=& -3 \left(\frac{\frac{1}{4}}{2}+\frac{2\left(\frac{1}{2} \right)^3}{3} \right)+  3 \left(\frac{\left(\frac{1}{2} \right)^2}{2}-\frac{2\left(\frac{1}{2} \right)^3}{3} \right)\\
+&=& -3 \left( - \frac{1}{8}+ \dfrac{\frac{2}{8}}{\frac{3}{1}} \right)+ +3 \left( - \dfrac{\frac{1}{4}}{2}- \dfrac{\frac{2}{8}}{\frac{3}{1}} \right)\\
+&=& -3 \left( - \frac{1}{8} + \frac{1}{12} \right) + 3 \left( \frac{1}{2}- \frac{1}{2}- \frac{1}{12} \right)\\
+&=& \frac{3}{24}+ \frac{2}{12}\\
+&=& \frac{3}{8}
+\end{eqnarray*}
+
+\item $X\sim U_{\left\{ 1 \ldots N \right\}}, N \sim U_{\left\{ 1 \ldots m \right\}} $. Calcular $\prob \left[ \mid X-N \mid \right]$
+
+\begin{eqnarray*}
+f_{X/N} &=& \begin{cases}
+\frac{1}{N} & x= 1 \ldots N\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+f_{N\left(n \right)}&=&\begin{cases}
+\frac{1}{m} & N=1 \ldots m\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+f_{X/N}  \left(x/n \right)f_{N}\left(n \right)= f_{XN} \left(x,n \right)&=&  \begin{cases}
+\left(\frac{1}{N} \right) \left(\frac{1}{m} \right) & x=1 \ldots N, N= 1 \ldots m \\
+0 & \textrm{e.o.c}
+\end{cases}\\
+\prob \left[X-N \leq 1 \right] &=& \prob \left[-1 \leq X - N \leq 1 \right] = \prob \left[X-N \leq 1 \right] - \prob \left[ X-N \leq -1 \right]\\
+\prob \left[ X-N \leq 1 \right] &=& \prob \left[ X \leq 1+N \right] \\
+&=& \sum_{k=0} \prob \left[ X \leq 1+k \mid N=k \right]\prob \left[X \leq  1+k \mid N=k \right] \prob \left[N=k \right]\\
+&=& \sum_{k=1}^{m-1} \prob \left[X \leq 1+k, N=k \right]\\
+&=& \sum_{k=1}^{m-1} \sum_{j=1}^{1+k} \prob \left[X=j, N=k \right]\\
+&=&  \sum_{k=1}^{m-1} \sum_{j=1}^{1+k} \frac{1}{N} \frac{1}{m}= \sum_{k=1}^{m-1}\frac{1}{N} \frac{1}{m} \sum_{j=1}^{1+k} 1 = \sum_{k=1}^{m-1} \frac{1}{N} \frac{1}{m} \left(k+1 \right)\\
+&=& \frac{1}{N} \frac{1}{m} \sum_{k=1}^{m-1} \left(k+1 \right)= \frac{1}{Nm} \left[\sum_{k=1}^{m-1} k + \sum_{k=1}^{m-1} 1  \right]\\
+&=& \frac{1}{Nm}\left[ \frac{\left(m-1 \right)m }{2} + \left(m-1 \right)\right] = \frac{1}{Nm}\left(m-1 \right)\left[\frac{m}{2} +1\right]\\
+&=&\frac{1}{Nm} \left(m-1 \right)\left[\frac{m+2}{2} \right] = \frac{\left(m-1 \right)\left(m+2\right)}{2Nm}
+\end{eqnarray*}
+
+\item $X \sim U\left(0,1 \right)$. Hallar la densidad de $Y= - \ln \left( \frac{X}{X-1}\right)$
+
+\begin{eqnarray*}
+X \sim U\left(0,1 \right) \Rightarrow f_{X}\left(x \right) =  \begin{cases}
+1 & 0 < x < 1\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+X< X+1 &\Rightarrow & \frac{X}{X+1} < 1\\
+0 &<& \frac{X}{X+1} < 1\\
+\ln \left( 0 \right) &>& \ln \left( \frac{X}{X+1} \right) > \ln \left(1 \right)\\
+- \infty &<& \ln \left(\frac{X}{X+1}\right)< 0\\
+0 &<& -\ln \left(\frac{X}{X+1} \right) < \infty\\
+0 &<& Y < \infty
+\end{eqnarray*}
+
+\begin{eqnarray*}
+f_{Y} \left(y \right)&=& \frac{\partial}{\partial y} F_{Y} \left(y \right)\\
+F_{Y}\left(y \right) &=& \prob \left[ Y \leq y \right]= \prob \left[-\ln \left( \frac{X}{X-1} \right) \leq y \right] = \prob \left[ \ln \left( \frac{X}{X-1} \right) \geq -y \right]\\
+&=& \prob \left[ \frac{X}{X-1} \geq e^{-y} \right] = \prob \left[ X \geq e^{-y} \left( X+1 \right)\right] = \prob \left[X \geq X e^{-y} + e^{-y}\right]\\
+&=& \prob \left[ X - Xe^{-y} \geq e^{-y} \right] = \prob \left[X \left(1-e^{-y} \right) \geq e^{-y} \right]\\
+&=& \prob \left[ -X \left( e^{-y}-1 \right) \geq e^{-y} \right] = \prob \left[ \frac{-X \geq e^{-y}}{e^{-y}-1} \right]\\
+&=& \prob  \left[ X \leq - \frac{e^{-y}}{e^{-y}-1} \right] = \prob \left[X \leq \frac{e^{-y}}{1-e^{-y}} \right] = F_{X} \left( \frac{e^{-y}}{1-e^{-y}} \right)\\
+f_{Y}\left(y \right) &=& f_{X} \left( \frac{e^{-y}}{1-e^{-y}} \right)\\
+&=& \frac{\left(1-e^{-y} \right)\left(e^{-y} \right) \left( -1 \right) - e^{-y} \left(-e^{-y} \right) \left( -1\right) }{\left( 1 - e ^{-y} \right)^2}\\
+&=& \frac{-e^{-y}\left( 1- e ^{-y} \right)- e ^{-2y}}{\left(1-e^{-y} \right)^2} = \frac{e^{-y}+ e ^{-2y}- e^{-2y}}{\left(1-e^{-y} \right)^2}\\
+&=& \frac{e^{-y}}{\left( 1-e^{-y} \right)^2}\\
+0&<&y<\infty\\
+-\infty &<& y < 0\\
+ 0&<& e^{-y} < 1\\
+ -1&<& -e^{-y}< 0\\
+ 0&<& 1-e^{-y}< 1\\
+ 0&<& \left(1-e^{-y} \right)^2 < 1\\
+ f_{Y}\left(y \right) &=&  \begin{cases}
+\frac{e^{-y}}{\left(1-e^{-y} \right)^2} & \\
+0 & \textrm{e.o.c}
+\end{cases}\\
+\end{eqnarray*}
+
+\item Sea $f_{XY}\left( x,y\right) = cx, 0<x<y<1$. Hallar la densidad de $T=\frac{Y}{X}$
+
+\begin{eqnarray*}
+1&=& \int_{0}^{1} \int_{x}^{1} cx \, dy \, dx =  c \int_{0}^{1}  xy \mid _{x}^{1}  \, dx \\
+&=&  c \int_{0}^{1} x \left( 1-x \right) \, dx = c \int_{0}^{1} x -x^{2} \, dx\\
+&=& c \left( \frac{x^{2}}{2}- \frac{x^{3}}{3}\right)_{0}^{1}= c \left(\frac{1}{2}- \frac{1}{3} \right)= c \left(\frac{3-2}{6} \right)\\
+&=& c \left(\frac{1}{6} \right)\\
+\therefore c &=& 6\\
+F_{T} \left( t 	\right)&=& \prob \left[T \leq t \right] = \prob \left[Y \leq tX \right] , 0<t<1\\
+&=& \int  _{0}^{\frac{1}{t}} \int_{x}^{tx} 6x \, dy \, dx + \int  _{\frac{1}{t}}^{1} \int_{x}^{1} 6x \, dy \, dx \\
+&=& \int  _{0}^{\frac{1}{t}} 6xy \mid_{x}^{tx}  \, dx + \int _{\frac{1}{t}}^{1}  6xy \mid_{x}^{1}  \, dx = \int _{0}^{\frac{1}{t}}  6x \left( tx-x \right)   \, dx \\
+t \int_{\frac{1}{t}}^{1} 6x \left(1-x \right) \, dx &=& \int  _{0}^{\frac{1}{t}} 6tx^{2}- \frac{6x^{2}}{2}   \, dx + \int _{\frac{1}{t}}^{1}  6x- \frac{6x^{2}}{2}   \, dx \\
+&=& \frac{6tx^{3}}{3}\mid_{0}^{\frac{1}{t}} - \frac{6x^{3}}{6}\mid_{0}^{\frac{1}{t}} + \frac{6x^{2}}{2}\mid_{\frac{1}{t}}^{1} - \frac{6x^{3}}{6}\mid_{\frac{1}{t}}^{1} \\
+&=& 2t \left(\frac{1}{t}\right) ^{3}- \left(\frac{1}{t}\right) ^{3}+3\left( 1 \right)^{2}- 3\left( \frac{1}{t}\right)^{2}-\left(1 \right)^{3}+\left( \frac{1}{t} \right)^{3}\\
+&=& \frac{2}{t^{3}}- \frac{1}{t^{3}}+3-3\left(\frac{1}{t^{2}} \right)-1+\frac{1}{t^{3}}= - \frac{1}{t^{2}}+2\\
+F_{T}\left(t \right)&=&\begin{cases}
+-t^{-2}+2 & t \in \left( 0,1 \right) \\
+0 & \textrm{e.o.c}
+\end{cases}\\
+\end{eqnarray*}
+
+\item $X,Y \sim U\left(0,1\right)$ Ind. Hallar $f_{u,v}\left(u,v \right)$ si $U=X, V= X+Y$
+
+\begin{eqnarray*}
+J&=& \left| 
+\begin{array}{cc}
+0 & 1\\
+-1 & 1
+\end{array}
+\right| 
+=\mid 1 \mid=1\\
+f_{XY} \left(x,y \right)&=&\begin{cases}
+1 & 0<x<1, 0<y<1 \\
+0 & \textrm{e.o.c}
+\end{cases}\\
+f_{u,v} \left(u,v \right) &=& \mid J \mid f_{XY} \left(x,y \right)\\
+&=& 1*1=1\\
+f_{uv} \left(u,v \right)&=&\begin{cases}
+1 & \textrm{Si} 0<u<1 \\
+0 & \textrm{e.o.c}
+\end{cases}\\
+\end{eqnarray*}
+
+\item Con los datos del ejercicio 4. Calcular $E \left(X \right) $ y $Var \left(X \right)$
+
+\smallskip
+
+\begin{eqnarray*}
+X &\sim & U_{ \left\{ 1, \ldots N   \right\}  } \, y \, Y\sim U_{ \left\{ 1, \ldots m    \right\}  } \,  \textrm{Con m par}\\
+f_{X\nat}&=&\begin{cases}
+\frac{1}{N} & x= 1, \ldots N \\
+0 & \textrm{e.o.c}
+\end{cases}\\
+f_{Y}\left(y \right)&=&\begin{cases}
+\frac{1}{m} & y= 1, \ldots m \\
+0 & \textrm{e.o.c}
+\end{cases}\\
+E \left(X \right)&=& \sum_{x=1}^{N} X \frac{1}{N}= \frac{1}{N}\sum_{x=1}^{N} X = \frac{1}{N}\left(1+2+\ldots + N \right)\\
+&=& \frac{1}{N} \dfrac{\left(N \left(N+1\right)\right)}{2}= \frac{N+1}{2}\\
+E \left(X^{2}\right)&=& \sum_{x=1}^{N} x^{2}\frac{1}{N}= \frac{1}{N} \sum_{x=1}^{N} x^{2}= \frac{1}{N} \left( 1^2+2^2+ \ldots+ N^2 \right)\\
+&=& \frac{1}{N} \left( \dfrac{N \left(N+1\right)\left(2N+1\right)}{6} \right)= \dfrac{\left(N+1\right)\left(2N+1\right)}{6}\\
+Var\left(X\right)&=& E \left(X^2\right)- E^2\left(X\right)= \dfrac{\left(N+1\right)\left(2N+1\right)}{6}- \dfrac{\left(N+1\right)^2}{4}\\
+&=&\dfrac{2\left(N+1\right)\left(2N+1\right)-3\left(N+1\right)^2}{12}\\
+E\left(X\right)&=& E \left(E\left(X\mid N \right)\right)= E \left(\frac{N+1}{2} \right)= \frac{1}{2} E \left(N \right)+ \frac{1}{2}= \frac{1}{2}\left( \frac{m+1}{2} \right)+\frac{1}{2}\\
+&=& \frac{m+1}{4} + \frac{1}{2}= \frac{m+1+2}{4}= \frac{m+3}{4}\\
+Var \left(X \right)&=& E\left(Var \left(X \mid N \right) \right)+ var \left(E \left(X \mid N \right) \right)\\
+&=& E \left(\dfrac{2\left(N+1\right)\left(2N+1\right)-3\left(N+1\right)^2}{12} \right)  + Var \left(\frac{N+1}{2} \right)
+\end{eqnarray*}
+
+\end{enumerate}
+
+\section{Ejercicios para Tarea}
+
+\begin{enumerate}
+\item Dar un ejemplo de v.a discretas tales que $Cov\left(X,Y \right)=0$ pero que no sean ind.
+
+\begin{eqnarray*} 
+f_{XY}\left(x,y \right)&=&\begin{cases}
+\frac{1}{13} & x,y \in D \\
+0 & \textrm{e.o.c}
+\end{cases}\\
+f_{Y}\left(y \right)= f_{X}\left(x\right)&=& \begin{cases}
+\frac{1}{13} & x=-2 \\
+\frac{3}{13} & x=-1 \\
+\frac{5}{13} & x=0 \\
+\frac{3}{13} & x=1 \\
+\frac{1}{13} & x=2 \\
+0 & \textrm{e.o.c}
+\end{cases}\\
+E\left[X \right]&=& \left(-2 \right)\left(\frac{1}{13}\right)+ \left(-1 \right) \left(\frac{3}{13}\right)+ \left(0 \right)\left(\frac{3}{13}\right)+ \left(1 \right)\left(\frac{3}{13}\right)+ \left(2 \right) \left(\frac{2}{13}\right)\\
+&=& 0\\
+&=& E \left[Y \right]\\
+E \left[XY \right] &=& \sum_{y} \sum_{x} xy \frac{1}{13}= \left( \frac{1}{13} \right)\sum_{y} \sum_{x} xy\\
+&=& \left(-2 \right) \left(-2 \right) + \left(-2 \right)\left(-1\right)+ \left(-2 \right)\left(0\right)+ \left(-2\right)\left(2\right)+ \left(-1 \right)\left(-2\right)\\
+&+& \left( -1\right)\left(-1 \right)+ \ldots + \left(-1 \right)\left(2\right)+0+ \left(1 \right)\left(-2\right)\left(1 \right)\left(-1\right)\\
+&+& \left(1 \right)\left(0\right)+ \left(1 \right)\left(1\right)+ \left(1 \right)\left(2\right)+ \left(2 \right)\left(-2\right)+ \left(2 \right)\left(-1\right)+ \ldots + \left(2 \right)\left(2\right)\\
+&=& 0
+\end{eqnarray*}
+
+\item Hallar todos los momentos de $X$ si:
+
+\smallskip
+\textbf{a)} $X \sim  N \left(0,1\right)$
+\begin{eqnarray*} 
+M_{N}\left(t \right)&=& e^{\frac{t^2}{2}}\\
+M^{'}_{X} \left(0 \right)&=& te^{\frac{t^2}{2}}=0\\
+M^{''}_{X} \left(0 \right)&=& t^{2}e^{\frac{t^2}{2}}+ e^{\frac{t^2}{2}}=1\\
+\end{eqnarray*}
+
+\textbf{b)} $X \sim  U \left(a,b\right)$
+\begin{eqnarray*} 
+E\left(X^r\right)&=& \int_{a}^{b} x^{r} \frac{1}{b-a}\, dx = \frac{1}{b-a} \int_{a}^{b} x^{r} \, dx\\
+&=& \frac{1}{b-a} \frac{x^{r+1}}{r+1}\mid_{a}^{b}= \frac{1}{b-a}\left( \frac{b^{r+1}}{r+1}- \frac{a^{r+1}}{r+1} \right)\\
+&=&\frac{1}{\left(r+1\right)\left(b-a\right)}\left(b^{r+1}- a^{r+1}\right)\\
+r&=& 1\\
+&=&\frac{1}{2\left(b-a\right)}\left(b^2 - a^2 \right)= \frac{1}{2} \frac{\left(b-a\right)\left(b+a\right)}{\left(b-a\right)}= \frac{b+a}{2}
+\end{eqnarray*}
+
+\textbf{c)} $X \sim Gamma \left(2,1 \right)$
+\begin{eqnarray*} 
+E \left[X^r \right]&=& \frac{M \left(\alpha + r\right)}{\lambda^{r}M\left(r \right)}\\
+r&=& 1\\
+\frac{M \left(2+1\right)}{2^1 M \left(1\right)}&=& M\left(3\right)= 2\\
+r&=&2\\
+\frac{M\left(2+2\right)}{1^2 M \left(2\right)})&=& M\left(4 \right)= 3! = 6
+\end{eqnarray*}
+
+
+\item A una fiesta llegan 20 pares de gemelos, se forman equipos de 2 personas al azar. Hallar el n?mero promedio de equipos formados por gemelos.     
+\begin{eqnarray*}  
+X_{i}&=&  \begin{cases}
+1 & \textrm{Si la pareja i es de Gemelos}, \, i= 1... 20 \\
+0 & \textrm{e.o.c}
+\end{cases}\\   
+X &=& X_{i}+ \ldots + X_{20}= \textrm{N?mero de parejas formadas por gemelos} \\
+E \left(X \right) &=& \sum_{i=1}^{20} E \left(X_{i} \right) = \sum_{i=1}^{20} \prob \left[ X_{i}= 1 \right]= 20 \prob \left[X_{i}=1 \right]\\
+\prob \left[ X_{1} = 1 \right] &=& \prob \left[ \textrm{Primer pareja sea de gemelos} \right] = \dfrac{20 \left(\begin{array}{c} 2 \\2\end{array} \right)\left(\begin{array}{c} 38 \\0\end{array}  \right)}{\left(\begin{array}{c} 40 \\2\end{array} \right)} = \frac{1}{39} \\
+\prob \left[ X_{2}=1 \right]&=& \prob \left[ \textrm{Segunda pareja sea de gemelos} \right]= \prob \left[\textrm{2da}\ldots \mid \textrm{1ra. Fue }\right] \prob \left[\textrm{2da. Fue}\mid \textrm{1ra. No fue} \right]\prob \left[ \textrm{1ra. no fue} \right]\\
+&=& \dfrac{19 \left( \begin{array}{c} 2 \\2\end{array} \right) \left(\begin{array}{c} 36 \\0 \end{array} \right)}{\left( \begin{array}{c} 38 \\2\end{array} \right)} \left( \frac{1}{39} \right)+ \dfrac{18 \left(\begin{array}{c} 2 \\2\end{array} \right) \left( \begin{array}{c} 34 \\2\end{array} \right)}{\left(\begin{array}{c} 38 \\2\end{array} \right) }= \frac{1}{3739}+ \frac{36}{3739} = \frac{1}{39}
+\end{eqnarray*}
+
+\item Hallar el tercer momento factorial de $X$ si:
+
+\textbf{a)} $X \sim Poisson \left(1 \right)$
+\begin{eqnarray*} 
+f_{x}\left(2\right)&=& \begin{cases}
+\frac{e^{-\lambda}\lambda ^{x}}{x!} & x= 0,1,\ldots\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+E\left[X\left(X-1\right)\left(X-2\right)\right] &=& \sum_{x=0}^{\infty} x \left(x-1\right)\left(x-2\right)\frac{e^{-\lambda}\lambda ^{x}}{x!}\\
+&=& \sum_{x=0}^{\infty} \frac{e^{-\lambda}\lambda ^{x}}{\left( x-3\right)!} = \sum_{x=3}^{\infty}\frac{e^{-\lambda}\lambda ^{x}}{\left( x-3\right)!} \\
+&=& \lambda ^{3} \sum_{x=3}^{\infty} \frac{e^{-\lambda}\lambda ^{x-3}}{\left( x-3\right)!}\\
+y&=& x-3\\
+&\therefore & E \left[X \left(X-1\right)\left(X-2\right) \right]= \lambda ^{3}
+\end{eqnarray*}
+
+
+\textbf{b)} $X \sim Bin \left(n,p \right)$
+\begin{eqnarray*} 
+f_{X}\left(x\right)&=& \left(\begin{array}{c}n\\x \end{array}\right)p^{x}\left(1-p\right)^{n-x}, x=0,1,2.\ldots \\
+E \left[X \left(X-1 \right)\left(X-2 \right) \right] &=& \sum_{x=0}^{\infty} \left( \begin{array}{c} n\\x \end{array}\right)p^x \left( 1-p\right)^{n-x} x \left( x-1\right) \left(x-2 \right)\\
+&=& \sum _{x=0}^{\infty}  x \left( x-1 \right) \left(x-2 \right) \dfrac{n!}{\left( n-x \right)! x! }  p^{x} \left( 1-p\right)^{n-x}\\
+&=& \dfrac{n!}{\left( n-x \right)! \left( x-3\right)! }  p^{x} \left( 1-p\right)^{n-x}\\
+&=& n \left(n-1 \right)\left(n-2 \right)\sum_{x=3}^{\infty}\dfrac{\left(n-3 \right)! }{\left( n-x \right)! \left( x-3\right)! } p^{x} \left( 1-p\right)^{n-x}
+\end{eqnarray*}
+ \item Si $E \left[X \right]$ existe mostrar que $E \left[X \right]= \int_{0}^{\infty} \left( 1 - F_{X}\left(x \right) \right)\, dx - \int_{-\infty}^{0} F_{X}\left(x \right)\, dx $
+
+\begin{eqnarray*} 
+F_{X}\left(x \right)&=& \int_{-\infty}^{x} f_{X}\left(t \right)\, dt \Rightarrow 1-F_{X}\left( x\right)= 1 -\int_{-\infty}^{x}F_{X}\left( t\right) \, dt\\
+&=& \int_{x}^{\infty} f_{X} \left( t\right)\, dt\\
+E \left[X \right]&=& \int_{0}^{\infty} \left(1 - \int _{-\infty}^{x} f_{X} \left(t \right)\, dt\right)\, dx - \int_{-\infty}^{0}\int_{-\infty}^{x} f_{X} \left(t \right)\, dt\\
+&=& \int_{0}^{\infty} \int_{x}^{\infty} f_{X}\left(t \right)\, dt\,dx - \int_{-\infty}^{0} \int_{-\infty}^{x} f_{X}\left(t \right)\, dt\,dx\\
+&=& \int_{0}^{\infty} \int_{0}^{t} f_{X}\left(t \right)\, dx\,dt - \int_{-\infty}^{0} \int_{t}^{0} f_{X}\left(t \right)\, dx\,dt\\
+&=&\int_{0}^{\infty}f_{X}\left(t \right) \int_{0}^{t} \, dx\,dt - \int_{-\infty}^{0}f_{X}\left(t \right) \int_{t}^{0} \, dx\,dt\\
+&=&\int_{0}^{\infty}f_{X}\left(t \right)t \,dt - \int_{-\infty}^{0}f_{X}\left(t \right)\left(-t \right) \,dt\\
+&=& \int_{-\infty}^{\infty} tf_{X}\left(t\right) \, dt = \int_{-\infty}^{\infty} x f_{X} \left(x \right)\, dt
+\end{eqnarray*} 
+ \item Hallar $E \left(X^2 Y \right)$ si:
+ 
+ \smallskip
+ 
+ \textbf{a)} $X,Y \sim U_{\left\{1 \ldots N \right\}}$ Ind.
+ 
+ \begin{eqnarray*}
+ f_{X} \left(X \right)&=& \begin{cases}
+ \frac{1}{N} & x=1 \ldots N\\
+ 0 & \textrm{e.o.c}
+ \end{cases}\\
+  f_{Y} \left(y \right)&=&
+ \begin{cases}
+ \frac{1}{N} & y=1 \ldots N\\
+ 0 & \textrm{e.o.c}
+ \end{cases}\\
+ f_{XY} \left(x,y \right)&=& f_{X} \left(x \right)f_{Y} \left(y \right)
+ \begin{cases}
+ \frac{1}{N^2} & x,y \in \left\{ 1 \ldots N \right\} \\
+ 0 & \textrm{e.o.c}
+ \end{cases}\\
+ E \left(X^2 Y \right) &=& \sum_{x}\sum_{y} x^{2}y \frac{1}{N^2} = \frac{1}{N^2}\sum_{x=1}^{N} x^2 \sum_{y=1}^{N} y\\
+ &=& \frac{1}{N^2}\sum_{x=1}^{N} x^2 \left(\frac{N \left( N+1\right) }{2} \right)= \frac{\left(N+1\right) }{2N} \sum_{x=1}^{N} x^2\\
+ &=& \frac{N+1}{2N} \left[1+2^2+ 3^2+ \ldots + N^2 \right]
+ \end{eqnarray*}
+ 
+ \textbf{b)} $X, Y \sim U_{ \left(0,1 \right) }$ ind.
+ 
+ \begin{eqnarray*}
+ f_{X} \left(x \right) &=&
+ \begin{cases}
+ 1 & 0<x<1 \\
+ 0 & \textrm{e.o.c}
+ \end{cases}\\ 
+  f_{Y} \left(y \right) &=&
+ \begin{cases}
+ 1 & 0<y<1 \\
+ 0 & \textrm{e.o.c}
+ \end{cases}\\ 
+ f_{XY} \left(x,y \right)&=& f_{X} \left(x \right)f_{Y} \left(y \right)
+ \begin{cases}
+1 & 0<x<1 , \, 0<y<1 \\
+ 0 & \textrm{e.o.c}
+ \end{cases}\\
+ E \left(X^{2} Y \right)&=& \int_{0}^{1}\int_{0}^{1} x^{2} y \, dx \, dy = \left.\int_{0}^{1} y \frac{x^3}{3} \right|_{0}^{1} \, dy\\ &=&\frac{1}{3} \int_{0}^{1} y \, dy = \frac{1}{6} \left(\left.y^{2} \right|_{0}^{1}\right) = \frac{1}{6}
+ \end{eqnarray*}
+ \item Una Urna tiene 2 bolas negras y 3 rojas. Se extraen bolas sucesivamente sin reemplazo. \\
+ Sean $X = $ N?mero de extraccoines donde apareci? la primera roja. 
+ $Y=$ N?mero de extracciones donde apareci? la primera negra. 
+ Hallar $p \left(X,Y \right)$
+\begin{eqnarray*}
+X &=& \textrm{N?mero de extracciones donde apareci? la Primer bola roja.}= \left\{1,2,3 \right\}\\
+Y &=& \textrm{N?mero de extracciones donde apareci? la Primer bola negra.}= \left\{1,2,3,4 \right\}\\
+P \left[X=2, Y=1 \right] &=& \left(\frac{2}{5}\right) \left(\frac{3}{4}\right)
+\end{eqnarray*}  
+
+\item 
+\textbf{a)}  $X,Y \sim U \left(0,3 \right)$ Ind. Hallar $E \left(X \mid X+Y > 4 \right)$
+
+\begin{eqnarray*}
+y&=& 4-x, \left(0,4 \right), \left(4,0 \right)\\
+3 &=& 4-x \Rightarrow x= 4-3 \Rightarrow x=1\\
+f_{XY} \left(x,y \right) &=& \begin{cases}
+\frac{1}{9} & 0<x<3, 0<x<3\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+E \left[X \mid X+Y > 4 \right] &=& \int x f_{X\mid D} \left( x \mid D \right) \, dx\\
+f_{X\mid D} \left( x \mid D \right) &=& \dfrac{\prob \left[X \leq x , X+Y > 4\right] }{\prob \left[X+Y > 4 \right]  }\\
+\prob \left[X \leq x , X+Y > 4\right] &=& \begin{cases}
+\int_{1}^{x} \int_{4-t}^{3} \frac{1}{9} \, dy \, dt & 1<x<3\\
+\int_{1}^{3} \int_{4-x}^{3}  \frac{1}{9} \, dy \, dx & x>3\\
+0 & x<1
+\end{cases}\\
+\prob \left[X+Y > 4 \right] &=& \frac{1}{9} \, dy \, dx
+\end{eqnarray*}
+\textbf{b)} $X,Y \sim Geo \left(p \right)$ ind. $f_{X}\left(x \right)= pq^{x-1}$, $x\ 1,2, \ldots$. \\ Hallar $E \left(X \mid Y = X+2 \right)$
+
+\begin{eqnarray*}
+f_{X}\left(x \right) &=& \begin{cases}
+pq^{x-1} & x=1,2.\ldots\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+f_{Y}\left( y\right) &=& \begin{cases}
+pq^{y-1} & x=1,2.\ldots\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+f_{XY}\left(x,y \right) &=& \begin{cases}
+p^{2}q^{x+y-2} & x,y \in \left\{1,2.\ldots \right\} \\
+0 & \textrm{e.o.c}
+\end{cases}\\
+E \left[X \mid Y = X+2 \right]&=& \sum_{1}^{\infty} x f_{X\mid D}\left(x\mid D \right)\\
+f_{X\mid D}\left(x\mid D \right)&=& \dfrac{\prob \left[X=x, Y=X+2 \right] }{
+\left[Y=X+2 \right] }\\
+\prob \left[X=x, Y = X+2\right]&=& \prob \left[Y=X+2 \mid X=x \right]\prob \left[X=x \right]\\
+\prob \left[Y=X+2 \right]&=& \sum_{K=1}^{\infty} \prob \left[Y=K+2 \mid X=K \right] \prob \left[X=K \right]\\
+&=& \sum_{K=1}^{\infty}\dfrac{ \prob \left[Y=K+2 \mid X=K \right]}{\prob \left[X=K \right]} \prob \left[X=K \right]\\
+&=& \prob \left[Y=K+2  \right] \prob \left[X=K \right]
+\end{eqnarray*}
+
+\item Hallar $\varphi_{X}\left(t\right)$ si $X \sim Geo \left(p \right)$
+\begin{eqnarray*}
+f_{X} \left(x \right) &=& \begin{cases}
+pq^{x-1} & x=1,2\ldots \\
+0 & \textrm{e.o.c}
+\end{cases}\\
+\varphi_{X}\left(t \right)&=& E \left( e^{iXt} \right)= \sum_{x=1}^{\infty} e^{iXt} pq^{x-1} \\
+&=& pe^{it} \sum \left(e^{it}\left( 1-p\right) \right)^{x-1}\\
+&=& \dfrac{pe^{it}}{1-e^{it}\left(1-p \right) }
+\end{eqnarray*}
+\item $X \sim Bin neg \left(r,p \right)$\\
+Si 
+\begin{eqnarray*}
+Y_{1}, Y_{2}, \ldots, Y_{r} &\sim& Geo \left(p \right) \Rightarrow X= Y_{1}, Y_{2}, \ldots, Y_{r} \sim Binneg \left(r,p \right) \Rightarrow \varphi_{X} \left(t \right)\\
+&=& \left( \varphi_{Y} \left(t \right) \right)^{r}
+ =\left(\dfrac{pe^{it}}{1-e^{it}\left(1-p \right) } \right)^{r}
+\end{eqnarray*}
+\item Hallar $\varphi_{X} \left(t \right)$ si $\prob \left[X-2 \right]= \frac{1}{4}= \prob \left[X=-2 \right] \prob \left[X=0 \right]= \frac{1}{2}$
+
+\begin{eqnarray*}
+\varphi_{X} \left(t \right)&=& E \left(e^{itX} \right) = e^{itX} \prob \left[X=0 \right]+ e^{itx} \prob \left[X=2 \right]+ e {itx} \prob \left[X=-2 \right]\\
+&=& \frac{1}{2}+ e^{2it}\left(\frac{1}{4}\right)+ e^{2it} \left(\frac{1}{4}\right)\\
+&=& \frac{1}{2} + \frac{1}{4} \left(e^{2it}+ e^{-2it} \right)\\
+&=& \frac{1}{2} + \frac{1}{4} \cos \left(2t \right)
+\end{eqnarray*}
+
+\item $X$ variabe aleatroria continua con densidad $f_{X} \left(x \right)= \frac{1}{2} e ^{- \mid x \mid}$ con $x \in \rea$ Mostrar que $\varphi_{X}\left(t \right)= \frac{1}{1+t^{2}}$
+
+\begin{eqnarray*}
+\varphi_{X}\left(t \right)&=& E \left(e^{iXt}\right)= \int_{-\infty}^{\infty} e^{iXt} \frac{1}{2} e ^{- \mid x \mid}\, dx\\
+&=& \frac{1}{2} \left[ \int_{-\infty}^{0} e^{iXt} e^x \, dx + \int _{0}^{\infty} e^{iXt}e^{-x}\, dx \right]\\
+&=& \frac{1}{2} \left[ \int_{-\infty}^{0} e^{\left(1+it \right) } \, dx + \int _{0}^{\infty} e^{-x \left(1-it \right)}\, dx \right]\\
+&=&\left. \frac{1}{2} \left( \frac{1}{1+it}e^{1+it}\right|_{-\infty}^{0} - \left.\frac{1}{1-it}e^{-x} \left( 1-it \right)\right|_{0}^{\infty}\right)\\
+&=& \frac{1}{2} \left( \frac{1}{1+it} - \frac{1}{it-1} \right) \\
+&=& \frac{1}{1+t^{2}}
+\end{eqnarray*}
+ 
+ 
+ \item  Mostrar que $E \left[E \left(X \mid Y,Z \right) \right]= E \left(X \right)$
+ 
+\begin{eqnarray*}
+E \left(X \right)&=& \int_{-\infty}^{\infty} X f_{X}\left( x\right) \, dx\\
+f_{X} \left(x \right)&=& \int_{Y} \int_{Z} f_{XYZ} \left(x,y,z \right) \, dz\, dy  \\
+&=& \int_{-\infty}^{\infty} x \int_{y} \int_{z} f_{xyz} \left(x,y,z \right) \, dz \, dy \, dx\\
+E \left( E \left(X\mid Y,Z \right)\right)&=& \int \int E \left(X \mid Y=y, Z=z \right)f_{YZ} \left(y,z \right) \, dy \, dz\\
+&=& \int \int \int x f_{X\mid Y,Z} \left( x\mid y,z\right)f_{YZ} \left(y,z \right) \, dy\, dz \, dx\\
+&=& \int \int \int xf_{XYZ} \left(x,y,z \right)\,dz\,dy\,dx\\
+&=& \int xf_{X} \left(x \right) \, dx\\
+&=& E \left(X \right)
+\end{eqnarray*} 
+
+\end{enumerate}
+\section{Ejercicios para  Evaluaci\'on}
+
+\begin{enumerate}
+\item Se tienen bolas numeradas. Dos personas I y II eligen cada una 3 de las 6 bolas sin reemplazo y con independencia entre personas. Sea $X$ el n\' umero de bolas que nadie seleccion\' o. Hallar $E \left(X \right)$.
+
+\begin{eqnarray*}
+X_{i} &=&\begin{cases}
+1 & \textrm{Si la bola i nadie la elige}  \\
+0 & \textrm{e.o.c}
+\end{cases}\\
+i&=&1,\ldots ,6\\
+X&=& X_{1}+\ldots+ X_{6}\\
+E\left(X \right) &=& \sum_{i=1}^{6} E\left(X_{i} \right)= 6 E\left(X_{i} \right) = 6 \prob \left[X_{i} = 1 \right] = 6 \left(\frac{1}{4} \right) = \frac{3}{2}\\
+\prob \left[X_{i} = 1 \right]  &=& \prob \left[ \textrm{ Bola 1 no la elija I} \right] \prob \left[ \textrm{ Bola 1 no la elija II} \right]\\
+&=& \left( \prob \left[ \textrm{ Bola 1 no la elija I} \right]\right)^{2}\\
+&=& \left(\dfrac{\left(\begin{array}{c} 
+1\\
+0
+\end{array} \right)\left(\begin{array}{c} 
+5\\
+3
+\end{array} \right) }{ \left(\begin{array}{c} 
+6\\
+3
+\end{array} \right)} \right)^{2}= \left( \frac{10}{20}\right)^{2} = \frac{1}{4}
+\end{eqnarray*}
+
+\item $X,Y \sim U \left(0,2 \right)$ ind. Hallar $E \left(X \mid X+Y > 2 \right) $
+
+\begin{eqnarray*}
+E \left(X \mid X+Y>2\right) &=& \frac{1}{\prob \left[D \right] } E \left(X \parallel _{D} \right)\\
+x+y &=& 2 \Rightarrow y=2-x\\
+\left(0,2 \right) \left(2,0 \right)\\
+f_{XY} \left(x,y \right)&=& \begin{cases}
+\frac{1}{4} & 0<x<2 , 0<y<2\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+\prob \left[D \right] &=& \prob \left[X+Y=2 \right] = \prob \left[ Y >2 -X\right]\\
+&=& \int _{0}^{2} \int_{2-x}^{2} f_{XY} \left(x,y \right) \, dy\,dx\\
+&=&\frac{1}{4} \int _{0}^{2} \left. y \right|_{2-x}^{2} \, dx = \frac{1}{4} \int _{0}^{2} 2-2+x \, dx\\
+&=& \frac{1}{4} \int_{0}^{2} x \, dx = \frac{1}{4} \left(\frac{x^2}{2} \right)_{0}^{2}= \frac{1}{4} \left(2 \right) = \frac{1}{2}\\
+E \left( X \parallel _{D} \right)&=& \frac{1}{4} \int \int_{\rea}  x \parallel_{D}
+\, dx\, dy = \frac{1}{4} \int \int_{D\cap\rea} x \, dx\, dy\\
+ &=&\frac{1}{4} \int_{0}^{2} \int_{2-x}^{2}  x  \, dy\, dx = \frac{1}{4}\left.  \int_{0}^{2} xy \right|_{2-x}^{2} \, dx\\
+ &=& \frac{8}{3} \left(\frac{1}{4} \right)= \frac{2}{3}\\
+ \frac{1}{\prob \left(D \right)}E \left(X\parallel _{D} \right) &=& 2 \left(\frac{2}{3} \right)= \frac{4}{3}
+ \end{eqnarray*}
+
+\item $X_{1} \ldots X_{121}$ m.a de una densis?dad $f$ con media $2$ y varianza $1$. Hallar $c \in \rea$ t.q.
+$\prob \left[240- \frac{c}{2} \leq S_{121} \leq 240 + \frac{c}{2} \right]= 0.94$
+ \begin{eqnarray*}
+ S_{121} &=& \sum_{i=1}^{121} X_{i}\\
+ E \left(X_{i} \right)&=& 2\\
+  Var \left(X_{i} \right)&=& 4 \, \, \, \, \, \, \, \, \, \, \, \, \forall i=1 \ldots 121 \\
+  E \left(S_{121} \right)&=& \sum_{i=1}^{121} E \left(X_{i}\right) = \sum_{i=1}^{121} \left(2 \right)= 2 \left(121 \right)= 242\\
+  Var \left( S_{121} \right)&=& Var \left( \sum_{i=1}^{121} \right) X_{i})= \sum_{i=1}^{121} Var \left(X_{i} \right)= 4 \left(121 \right)= 484\\
+\prob \left[S_{121} \leq 240 + \frac{c}{2} \right]&-& \prob \left[S_{121} \leq 240-\frac{c}{2} \right]\\
+\prob \left[S_{121} \leq 240 + \frac{c}{2} \right]&=& \prob \left[  \dfrac{S_{121}-E \left( S_{121} \right) }{ \sqrt{484} } \leq \dfrac{240 + \frac{c}{2}- E \left(S_{121} \right)}{\sqrt{484}  }\right]\\
+&=& \prob \left[ \dfrac{S_{121}- 242}{22} \leq \dfrac{240 - 242 + \frac{c}{2} }{22} \right]\\
+&=& \prob \left[z \leq \frac{ \frac{-4+c}{2} }{22} \right] = \prob \left[ z \leq \frac{c-4}{44} \right] = \phi \left( \frac{c-4}{44} \right)\\
+\prob \left[S_{121} \leq 240-\frac{c}{2} \right] &=& \prob \left[ \dfrac{S_{121} - 242 }{22} \leq \dfrac{240 - \frac{c}{2}-242 }{22} \right] = \prob \left[z \leq \frac{c+4}{22} \right]\\
+&=& \phi \left(- \frac{c+4}{44} \right)
+ \end{eqnarray*}
+ \item Sean $X_{1} \sim N \left( 1,3 \right) $, $X_{2} \sim N \left( 0,5 \right) $ ind. Usar funci?n caracter?stica para encontra la densidad de $Y=2X_{1}+3X_{2}$
+ 
+ \begin{eqnarray*}
+ \varphi_{Y} \left(t \right) &=& E \left(e^{itY} \right) = E \left( e^{it \left(2X_{1}+ 3X_{2} \right) } \right) = E \left( e^{it2X_{1}}e^{it3X_2{}} \right)\\
+ &=&  E \left( e^{2itX_{1}} \right) E\left(e^{3itX_2} \right)=  E \left( e^{i \left( 2t \right) X_{1}} \right) E\left(e^{i \left( 3t \right) X_2} \right)\\
+ &=& \varphi_{X_{1}} \left(2t \right)\varphi_{X_{2}} \left(3t \right) \\
+ X &\sim & N \left(\mu, \sigma^{2} \right)\\
+ f_{X} \left(x \right) &=& \dfrac{1}{\sqrt{2\pi\sigma^2}}exp \left\{ - \frac{\left( x-\mu \right)^2 }{2\sigma^{2}} \right\}\\
+ \varphi_{X} \left(t \right) &=& E \left( e^{itX} \right) = \int e^{itX} \frac{1}{\sqrt{2\pi\sigma^2}}exp \left\{ - \frac{\left( x-\mu \right)^2 }{2\sigma^{2}} \right\}\\
+ &=& \frac{1}{\sqrt{2\pi\sigma^2}} \int_{-\infty}^{\infty} exp \left\{ - \frac{\left( x-\mu \right)^2 }{2\sigma^{2}}+ itX \right\}\, dx\\
+ &=& - \frac{\left( x-\mu \right)^2 }{2\sigma^{2}}+ itX =- \frac{1}{2\sigma^2} \left[ x^2+2x\mu+ \mu^2+ itx2\sigma^2 \right]\\
+ &=& - \frac{1}{2\sigma^2}\left( x^2 - 2x \left( \mu - it\sigma^2 \right)+ \mu^2 \right)\\
+ &=& - \frac{1}{2\sigma^2}\left( x^2 - 2x \left(\mu - it \sigma^2 \right) + \left(\mu - it\sigma^2 \right)^2 - \left(\mu - it\sigma^2 \right)^2+ \mu^2 \right)\\
+ &=&  - \frac{1}{2\sigma^2} \left[ \left( x- \left(\mu - it\sigma^2 \right) \right)^2 + 2\mu it\sigma^2- \left(it\sigma ^2 \right)^2 \right]\\
+ &=& \dfrac{1}{\sqrt{2\pi\sigma^2}} \int_{-\infty}^{\infty} exp \left\{ - \frac{1}{2\sigma^2} \left[ \left( x- \left(\mu - it\sigma^2 \right) \right)^2 + 2\mu it\sigma^2- \left(it\sigma ^2 \right)^2 \right] \right\} \, dx\\
+ &=& exp \left\{ - \frac{1}{2\sigma^2} \left( 2\mu it \sigma^2 - \left( it\sigma^2 \right)^2 \right)\right\}\\
+ \mu &=& 1\\
+ \sigma^2 &=& 3\\
+ \varphi_{X_{1}} \left(2t \right) &=& exp \left\{ - \frac{1}{6} \left( 2 \left(1 \right)i \left(2t \right) \left(3 \right)- \left(i \left(2t \right)\left(3 \right) \right)^{2} \right)\right\}\\
+ &=& exp \left\{- \frac{1}{6} \left(12it \right) - \left( 6it\right)^2 \right\}\\
+ &=& exp \left\{- \left(2it + 6t^2 \right) \right\}\\
+ \mu &=& 0\\
+ \sigma^2 &=& 5\\
+ \varphi _{X_{2}}\left(3t \right) &=& exp \left\{ - \frac{1}{10} \left(- \left( i \left(3t \right)5\right)^2 \right) \right\}\\
+ &=& exp \left\{ - \frac{1}{10} \left(225t^2 \right)\right\}
+ \end{eqnarray*} 
+  \begin{eqnarray*} 
+  \varphi_{Y} \left(t \right)&=& \varphi_{X_{1}} \left(2t \right)\varphi_{X_{2}} \left(3t \right)\\
+  &=& exp \left\{- \left(2it + 6t^2 \right) \right\} exp \left\{- \frac{1}{10}\left(225t^2 \right) \right\} \\
+  &=& exp \left\{ -2it - \frac{285t^2}{10} \right\}\\
+  &=& exp \left\{ - \frac{20it - 285t^2}{10} \right\} = exp \left\{ 2it - \frac{57}{2} t^2 \right\}
+   \end{eqnarray*} 
+   \item $Y \sim U_{0,1,\ldots, N }$, $N \sim Geo$. Hallar $Var \left( Y+1 \right)$ $f_{N} \left(n \right)= pq^{n}$
+   \begin{eqnarray*}
+   Y\mid N \sim U_{0,1, \ldots,N }&=& f_{Y\mid N} \left( y \mid n \right) = \begin{cases}
+   \frac{1}{N+1} & y=0,1 \ldots N  \\   o & \textrm{e.o.c}
+   \end{cases}\\
+   N \sim Geo \left(p \right) &\Rightarrow& f_{N} \left( n \right) = 
+ \begin{cases}
+   pq^n & n=0,1,2, \ldots\\
+   o & \textrm{e.o.c}
+   \end{cases}\\  
+   Var \left(Y+1 \right)&=& Var \left(Y \right) = Var \left( E \left(Y \mid N \right) \right)+ E \left( Var \left(Y \mid N \right) \right)\\
+   &=& Var \left( \frac{N}{2} \right)+ E \left( \frac{N \left(N+2 \right) }{12 }\right)\\
+   &=& \frac{1}{4} Var \left(N \right)+ \frac{1}{12} E \left[ N \left(N+2 \right) \right]\\
+   &=& \frac{1}{4} \left(\frac{q}{p^2} \right)+ \frac{1}{12} \left[E \left(N^2 \right)+ 2E \left(N \right) \right]\\
+   &=& \frac{1}{4} \frac{q}{p^2} + \frac{1}{12} \left[ \frac{q \left(1+q \right) }{p^2} + 2 \frac{q}{p} \right]\\
+   &=& \frac{1}{3} \frac{q}{p^2}+ \frac{1}{12} \frac{q}{p^2}+ \frac{1}{12} \frac{q^2}{p^2}+ \frac{q}{6p}= \frac{- \left(p-4 \right)\left(p-1\right) }{12p^2} 
+\end{eqnarray*}
+\end{enumerate}
+
+
+\section{Ejercicios para tarea del tema de transformaciones}
+
+
+
+\begin{enumerate}
+\item 
+\begin{enumerate}
+\item Si $X \sim U_{-1,4}$. Hallar la densidad de $Y= \left[5X \right]$
+ \begin{eqnarray*}
+ X \sim U_{-1,4} \Rightarrow f_{X}\left(x \right)&=& \begin{cases} \frac{1}{5} & -1 \leq x \leq 4\\
+ 0 & \textrm{e.o.c}
+ \end{cases}\\
+ F_{Y} \left( y \right) &=& \prob \left[Y=y \right]= \prob \left[\left[5X \right]= y \right] = \prob \left[ y \leq 5X < y+1 \right]\\
+ &=& \prob \left[\frac{y}{5}\leq X < \frac{y+1}{5} \right] = \int_{\frac{y}{5}}^{\frac{y+1}{5}} \frac{1}{5} \, dx = \left. \frac{1}{5}x \right|_{\frac{y}{5}}^{\frac{y+1}{5}} = \frac{1}{5} \left[ \frac{y+1}{5}- \frac{y}{5} \right]= \frac{1}{25}\\
+ f_{Y}\left(y \right)&=&    \begin{cases} \frac{1}{25} & y= -5 , \ldots, 20\\
+ 0 & \textrm{e.o.c}
+ \end{cases}
+\end{eqnarray*}
+
+\item Si $X \sim \textrm{Cauchy}$. Hallar la densidad de $Y= \frac{1}{X}$
+
+\begin{eqnarray*}
+ X \sim \textrm{Cauchy} \Rightarrow f_{X}\left(x \right)&=& \frac{1}{\pi \left(1+x^2 \right)} x \in \rea\\
+ Y&=& \frac{1}{X}\\
+  \textrm{Sea} y&>&0\\
+  F_{Y} \left(y \right)&=& \prob \left[Y \leq y \right] = \prob \left[ \frac{1}{X} \leq y \right] 
+\end{eqnarray*}
+\item Si $X \sim N \left(0,1 \right) $. Hallar la densidad de $Y= \mid2X\mid $
+
+\begin{eqnarray*}
+ X \sim N \left(0,1 \right)  &\Rightarrow& f_{X}\left( x \right)= \frac{1}{\sqrt{2\pi}  }exp \left\{ - \frac{- x^2}{2} \right\}\\
+ F_{Y} \left(y \right) &=& \prob \left[Y \leq y \right] = \prob \left[ \mid2X \mid \leq y \right] = \prob \left[-y \leq 2X < y \right]\\
+ &=& \prob \left[ - \frac{y}{2} \leq X \leq \frac{y}{2} \right]= \prob \left[X \leq \frac{y}{2} \right] - \prob \left[ X \leq - \frac{y}{2}\right]\\
+ &=& F_{X} \left(\frac{y}{2} \right)- F_{X} \left(- \frac{y}{2} \right)\\
+ f_{Y} \left(y \right) &=& f_{X}\left(\frac{y}{2}  \right) \left(\frac{1}{2} \right) - f_{x} \left(-\frac{y}{2}  \right) \left(-\frac{1}{2} \right)\\
+ &=& f_{X} \left(\frac{y}{2}  \right) \left(\frac{1}{2} \right)  + f_{X} \left(-\frac{y}{2}  \right) \left(\frac{1}{2} \right)  = f_{X} \left(\frac{y}{2}  \right) \left(\frac{1}{2} \right)  + f_{X} \left(\frac{y}{2}  \right) \left(\frac{1}{2} \right)\\
+ &=& f_{X} \left( \frac{y}{2} \right)\\
+ &=& \begin{cases}
+ \frac{1}{\sqrt{2\pi}  }exp \left\{ - \frac{\left(\frac{y}{2} \right)^2 }{2} \right\}= \frac{1}{\sqrt{2\pi}  }exp \left\{ - \frac{y^2}{8} \right\} &  y \geq 0\\
+ 0 & \textrm{e.o.c}
+ \end{cases}\\
+ -\infty &<& X < \infty\\
+  -\infty &<& 2X < \infty\\
+ 0 &<& \mid 2X \mid < \infty\\
+  0 &<& Y < \infty\\
+\end{eqnarray*}
+\item Si $X \sim Bin \left( n, \frac{1}{3} \right) $. Hallar la densidad de $Y = n-X$
+\begin{eqnarray*}
+X \sim Bin \left(n, \frac{1}{3} \right) \Rightarrow f_{X} \left(x \right) &=& \begin{cases}
+\left(\begin{array}{c} n \\ x
+\end{array}\right) \left(\frac{1}{3} \right)^{x} \left(\frac{2}{3} \right)^{n-x} & x= 0,1, \ldots n \\
+ 0 & \textrm{e.o.c}
+ \end{cases}\\
+ f_{Y} \left( y \right)&=& \prob \left[Y=y \right] = \prob \left[ n-X = y \right] = \prob \left[n-y=X \right] = f_{X} \left(n-y \right)\\
+ &=& \left(\begin{array}{c}
+ n \\ n-y
+ \end{array} \right)\left( \frac{1}{3} \right)^{n-y} \left(\frac{2}{3} \right)^{n-n+y}\\
+&=& \begin{cases}
+\left(\begin{array}{c}
+ n \\ n-y
+ \end{array} \right)\left( \frac{1}{3} \right)^{n-y} \left(\frac{2}{3} \right)^{y} & y=n-x \Rightarrow y=n,n-1, \ldots ,0\\
+ 0 & \textrm{e.o.c}
+ \end{cases}
+ \end{eqnarray*}
+ \item Si $X \sim U_{ \left(0,2 \right) }$. Hallar la distribuci?n $Y= X^{2} - X +1$
+\begin{eqnarray*}
+X \sim U_{ \left(0,2 \right) } \Rightarrow f_{X} \left(x \right) &=& \begin{cases}
+\frac{1}{2} & 0 \leq x\leq  \\
+ 0 & \textrm{e.o.c}
+ \end{cases}\\
+ F_{Y} \left(y \right) &=& \prob \left[Y \leq y \right]= \prob \left[ X^2 - X + 1 \leq y  \right] = \prob \left[ \left(X - \frac{1}{2} \right)^2 - \frac{1}{4}+ 1 \leq y \right]\\
+ &=& \prob \left[ \left(X - \frac{1}{2} \right) ^{2} \leq Y- \frac{3}{4}\right]\\
+ \textrm{Caso 1:} \, \,
+ \frac{3}{4}<y<1\\
+ \prob \left[- \sqrt{y- \frac{3}{4} } \leq X- \frac{1}{2} < \sqrt{y- \frac{3}{4} } \right]\\
+ &=& \prob \left[- \sqrt{y- \frac{3}{4}} + \frac{1}{2} < X < \sqrt{y- \frac{3}{4} } + \frac{1}{2}  \right]\\
+ F_{X} \left( \sqrt{y- \frac{3}{4}} \right)&-& F_{X} \left(- \sqrt{y- \frac{3}{4} } + \frac{1}{2}  \right)\\
+ f_{Y} \left(y \right)&=&  f_{X} \left( \sqrt{y- \frac{3}{4}} \right) \left( \frac{1}{2} \left( y - \frac{3}{4} \right)^{- \frac{1}{2} } \right)\\ &+& f_{X} \left(- \sqrt{y- \frac{3}{4} } +
+  \frac{1}{2}  \right)\left(4 \right)\\
+  &=& \frac{1}{4 \sqrt{y - \frac{3}{4} }} + \frac{1}{4 \sqrt{y - \frac{3}{4} }} = \frac{1}{2 \sqrt{y - \frac{3}{4} }}
+\end{eqnarray*} 
+\end{enumerate}
+\item 
+\begin{enumerate}
+ \item Si $X,y \sim Exp \left( \lambda \right) $ ind. Hallar la densidad de $T= min \left\{ X,Y \right\}$
+ 
+\begin{eqnarray*}
+X \sim Exp  \left(\lambda \right) \Rightarrow f_{X} \left(x \right) &=& \begin{cases}
+\lambda e^{-\lambda x } & x>0\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+t  &\geq & 0\\
+F_{T} \left(t \right) &=& \prob \left[ T \leq t \right] = \prob \left[ T= min \left\{ X,Y \right\} \leq t \right] = 1 - \prob \left[T= min \left\{ X,Y \right\} > t \right]\\
+&=& 1 - \prob \left[ X > t , Y >t \right] = 1- \prob \left[ X > t \right]\prob \left[ Y > t \right]= 1 - \prob \left[X > t \right]^{2}\\
+F_{X} \left(x \right) &=& \int_{0}^{x} \lambda e^{- \lambda t } \, dt  = \lambda \int_{0}^{x}  e^{- \lambda t } \, dt = x \left( - \frac{e^ {- \lambda t }}{\lambda } \right)_{0}^{x}\\
+&=& -e ^{- \lambda x } + e ^{0} = 1 - e ^{-\lambda x }\\
+&=& 1- \left( 1 - \left( 1 - e ^{-\lambda t }\right) \right)^{2} = 1 - e ^{-2 \lambda t }\\
+f_{T} \left(t \right) &=& \left( -e ^{- 2\lambda t } \right) \left(-2 \lambda \right) = \begin{cases} 2 \lambda e^{-2 \lambda t } & t>0\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+\therefore T &\sim& \textrm{Exp} \left(2 \lambda  \right)
+\end{eqnarray*}
+\item Si $X , Y \sim Geo \left( p \right)$ ind. Hallar la densidad de $W = X+Y$
+
+\begin{eqnarray*}
+X \sim Geo \left( p \right) &\Rightarrow& f_{X}\left(x \right) \begin{cases} pq^{x} & x= 0,1, \ldots\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+Y \sim Geo \left( p \right) &\Rightarrow& f_{Y}\left(y \right) \begin{cases} pq^{y} & y= 0,1, \ldots\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+ f_{XY}\left(x,y \right)&=& \begin{cases} p^{2}q^{x+y} & x= 0,1, \ldots, y=0,1, \ldots\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+f_{W} \left(w \right) &=& \prob \left[W=w \right]= \prob \left[X+Y=w \right]= \prob \left[Y= w-X \right]\\
+&=& \sum_{k=0}^{w} \prob \left[Y= w-k \right] \prob \left[X=k \right]\\
+&=& \sum_{k=0}^{w} \left( pq^{w-k} \right) \left( pq^{k} \right)= \sum_{k=0}^{w} p^{2} q^{w} = p^{2}q^{w} \sum_{k=0}^{w} \\
+&=& \begin{cases}p^{2} q^{w} \left( w \right) & w=0,1,\ldots\\
+0 & \textrm{e.o.c}
+\end{cases}
+\end{eqnarray*}
+\item  Si $X,Y \sim U_{ \left\{ 1, \ldots, N \right\} }$ ind. Hallar la densidad de $Z = max \left\{X,Y \right\} $
+
+\begin{eqnarray*}
+z &\in& \left\{ 1 , \ldots, 2N \right\} \\
+f_{z} \left(z \right) &=& \prob \left[Z = z \right] = \prob \left[max \left\{ X,Y\right\} = Z \right]\\
+f_{X} \left(x \right)&=& \begin{cases}
+\frac{1}{N} & x=1,2, \ldots ,N\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+F_{X} \left(x \right)&=& \begin{cases}
+\frac{1}{N} & x= \ldots -2, -1, 0\\
+\sum_{t=- \infty }^{x} f_{X} \left(t \right)= \sum_{t=-\infty}^{x} \frac{1}{N}=\frac{1}{N} \sum_{t=-\infty}^{x} = \frac{1}{N} \left(x-0 \right) = \frac{x}{N} & x= 1, \ldots ,N\\
+1 & x= N+1, N+2, \ldots
+\end{cases}\\
+\left(F_{X} \left(z \right) \right)^{2} &=& \left( \frac{z}{N} \right)^ {2} = \frac{z^2}{N^2}
+\end{eqnarray*}
+
+\item $X,Y \sim N \left( \sigma, \sigma ^{2} \right) $ ind. Hallar la densidad de $T= \frac{Y}{X}$
+
+\begin{eqnarray*}
+f_{X} \left(x \right)=  \frac{1}{\sqrt{2\pi \sigma^2}} \textrm{Exp} \left\{ - \frac{x^2}{2\sigma^2} \right\}, x\in \rea\\
+f_{Y} \left(x \right)=  \frac{1}{\sqrt{2\pi \sigma^2}} \textrm{Exp} \left\{ - \frac{y^2}{2\sigma^2} \right\}, y\in \rea\\
+\Rightarrow  f_{XY} \left(x \right) = \frac{1}{\sqrt{2\pi \sigma^2}} \textrm{Exp} \left\{ - \frac{\left( x^2+y^2\right) }{2\sigma^2} \right\} & x\in \rea\\
+\end{eqnarray*}
+\begin{eqnarray*}
+f_{T} \left(t \right) &=& \int_{-\infty} ^{\infty } \mid x \mid \frac{1}{\sqrt{2\pi \sigma^2}} e^{- \frac{x^2}{2\sigma^2} } \frac{1}{\sqrt{2\pi \sigma^2}} e^{- \frac{t^2 x^2}{2\sigma^2} } \, dx\\
+&=& \frac{1}{2\pi \sigma^2} \int_{- \infty}^{\infty} \mid x  \mid e^{- \frac{x^2 \left(1+t^2 \right) }{2\sigma^2} } \, dx\\
+&=& \frac{1}{2\pi \sigma^2}\left[ \int_{- \infty}^{0} \left( -x  \right) e^{- \frac{x^2 \left(1+t^2 \right) }{2\sigma^2} } \, dx 
++  \frac{1}{2\pi \sigma^2} \int_{0}^{\infty}  x   e^{- \frac{x^2 \left(1+t^2 \right) }{2\sigma^2} } \, dx\right]\\
+&=& - \frac{1}{2\pi \sigma^2} \left[ \dfrac{-2\sigma^2}{2 \left( 1+t^2 \right) } e^{- \frac{1}{2\sigma^2}x^2 \left(1+t^2 \right) } \right]_{-\infty} ^{0} + 
+\frac{1}{2\pi \sigma^2} \left[ \dfrac{-2\sigma^2}{2 \left( 1+t^2 \right) } e^{- \frac{1}{2\sigma^2}x^2 \left(1+t^2 \right) } \right]_{0} ^{\infty}\\
+&=& - \frac{1}{2\pi} \left[ - \frac{1}{1+t^2} \right] + \frac{1}{2\pi} \left[\frac{1}{ 1+t^2} \right]\\
+&=& \frac{1}{\pi \left( 1+z^2 \right) }\\
+Z &\sim& Cauchy\\
+-\infty &<& z < \infty
+\end{eqnarray*}
+
+\end{enumerate}
+\item
+\begin{enumerate}
+\item $X_{1}, X_{2}, X_{3}\sim N \left(\sigma, \sigma^2 \right) $ ind. Entonces $Y= \left( X_{1}^2 + X_{2}^{2}+ X_{3}^2 \right)^{ \frac{1}{2} } $ tiene la densidad de Maxwell. Encon trarla.
+
+\begin{eqnarray*}
+f_{Xi} \left(x_{i} \right) &=& \frac{1}{\sqrt{2\pi}} Exp \left\{ - \frac{x^2}{2\sigma^2} \right\}\\
+\Rightarrow f_{X_{1}X_{2}X_{3} } \left(x_{1}, x_{2}, x_{3} \right) &=& \frac{1}{\left(2\pi \right)^{ \frac{3}{2} } } exp \left\{- \frac{\sum x_{i}^2}{2\sigma^2} \right\}\\
+f_{Y} \left(y \right)&=& \prob \left[Y \leq y \right]= \prob \left[\left( X_{1}^2 + X_{2}^2+ X_{3}^2 \right)^{ \frac{1}{2}} \leq y  \right]\\
+&=& \prob \left[ X_{1}^2 + X_{2}^2+ X_{3}^2 \leq y^2  \right]\\
+\prob \left[ X_{1}^2 + X_{2}^2+ X_{3}^2 \leq y^2 \right] &=& \int \int \int_{s} \frac{1}{\left( 2\pi \right)^{ \frac{3}{2}}} exp \left\{ - \frac{ x_{1}^2 + x_{2}^2+ x_{3}^2}{2\sigma^2} \right\}\, ds\\
+\begin{array}{ll}
+\rho \leq y & x_{1}= \rho \cos \theta \sin \phi\\
+0 < \theta < 2\pi & x_{2}= \rho \cos \theta \sin \phi\\
+0< \rho < \pi & x_{3} = \rho \cos \phi
+\end{array}\\
+x_{1}^2 + x_{2}^2+ x_{3}^2 &=& \rho^2 \left[ \cos^{2} \theta \sin{2} \phi + \sin^{2}\theta \sin^2 \phi + \cos^2 \phi \right]\\
+&=& \rho^2 \left[ \sin ^{2} \phi + \cos^{2} \phi \right]= \rho^2\\
+&=& \frac{1}{ \left(2\pi\sigma^2 \right)^{ \frac{3}{2} } } \int_{0}^{y} \int_{0}^{2\pi} \int_{0}^{ \pi} e^{- \frac{\rho^2}{2\sigma^2} } \rho^2 \sin \varphi \,  d\varphi\, d\theta \, d\rho \\
+F_{Y} \left(y \right) &=& 4\pi \left( \frac{1}{\sqrt{2\pi} \sigma} \right)^3 \int _{0}^{y} e^{- \frac{\rho^2}{2\sigma^2} }  \, d \rho\\
+f_{Y} \left(y \right) &=& 4\pi \frac{1}{\left(2\pi \sigma^2 \right)^{ \frac{3}{2} } } y^2 e^{- \frac{y^2}{ 2\sigma^2} }\\
+&=& 2^{\frac{1}{2} } \pi^{-\frac{1}{2}} \sigma^{-3} y^{2}e^{- \frac{y^2}{ 2\sigma^2}}\\
+f_{Y} \left( y\right) &=& \begin{cases}
+\sqrt{ \frac{2}{\pi} } \frac{1}{\sigma^3} y^2 e^{- \frac{\alpha y^2}{ 2\sigma^2} } & y>0\\
+0 & \textrm{e.o.c}
+ \end{cases}\\
+ \alpha &=& \frac{1}{\sigma^2}\\
+ \Rightarrow f_{Y} \left(y \right)&=& \begin{cases} 
+ \sqrt{ \frac{2}{\pi} } \alpha^{ \frac{3}{2}} y^2 e^{- \frac{\alpha y^2}{ 2\sigma^2} } & y>0\\
+0 & \textrm{e.o.c}
+ \end{cases}\\
+ Y &\sim & Maxwell\\
+ \mid J  \mid &=& \mid - \rho^2 \sin \varphi \mid = \rho^2 \sin \varphi
+\end{eqnarray*}
+ \item  Sean $R$ y $\Theta$ v.a ind. t.q $\Theta \sim U \left( -\pi , \pi \right)$ y
+ $ \begin{cases} 
+ \frac{1}{\sigma^2}r e^{- \frac{r^2}{2\sigma^2} } & r\geq 0\\
+ 0 & \textrm{e.o.c}
+ \end{cases} 
+ $
+ Hallar la densidad conjunta de $X = R \cos \Theta$, $Y=R \sin \Theta$ ? Son ind?.
+ 
+\begin{eqnarray*} 
+f_{\Theta } \left( \theta \right) &=&
+\begin{cases}
+\frac{1}{2\pi} & -\pi < \theta < \pi\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+f_{R,\theta} &=& 
+\begin{cases}
+\frac{r}{2\pi \sigma^2}e^{-\frac{r^2}{2\sigma 2} } & r \geq 0 , -\pi < \theta < \pi\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+\begin{array}{cc}
+\sigma_{1} \left( t \right)= \left(0,t \right) & t\geq 0\\
+\sigma_{2} \left( t \right)= \left(t,0 \right) & 0\leq t < \pi\\
+\sigma_{3} \left( t \right)= \left(\pi,0 \right) & t\geq 0\\
+\end{array}\\
+T \left(x,y \right)&=& \left( R \cos \Theta , R \sin \Theta \right)\\
+T \left( 0,t \right)&=& \left( t,0 \right)\\
+T \left( t, 0 \right)&=& \left( 0,0 \right)\\
+T \left( \pi,0 \right)&=& \left( 0,0 \right)\\
+x^2 + y^2 &=& R^2 \cos^2 \Theta + R^2 \sin^{2} \Theta = R^2
+ \Rightarrow R= \sqrt{x^2 + y^2}\\
+ \frac{Y}{X} &=& \frac{R \sin \Theta }{R \cos \Theta } =  \tan  \Theta\\
+ \Theta &=& \arctan \left( \frac{y}{x} \right) \\
+ J&=& \left|
+ \begin{array}{cc}
+ \dfrac{\left( -1 \right) \frac{y_{2}}{y_{1} 2} }{1 + \left( \frac{y_{2}}{y_{1}} \right)^2 } & \dfrac{\frac{1}{y_{1}} }{1 +\left( \frac{y_{2}}{y_{1}} \right)^{2} } \\
+ \dfrac{y_{1}}{\left( y_{1}^{y}+ y_{2}^{2} \right)^{ \frac{1}{2} } } & \dfrac{y_{2}}{\left( y_{1}^2 + y_{2}^{2} \right)^{ \frac{1}{2} } }
+ \end{array} 
+  \right|\\
+  &=& \dfrac{-1}{\sqrt{y_{1}^2 + y_{2}^2}}\\
+  \mid J  \mid &=&  \dfrac{1}{\sqrt{y_{1}^2 + y_{2}^2}}\\
+  f_{X,Y} \left( x,y \right)&=& \frac{1}{\sqrt{ x^2 + y^2}} f_{\Theta, R } \left( \arctan \left(\frac{y}{x} \right) , \sqrt{ x^2 + y^2} \right)\\
+  \Rightarrow f_{X,Y} \left( x,y \right) &=& \begin{cases}
+  \frac{1}{2\pi \sigma^2 } Exp \left\{ - \frac{x^2+y^2}{2\sigma^ 2} \right\} & x\in \rea, y \in \rea\\
+  0 & \textrm{e.o.c}
+  \end{cases}\\
+  f_{X} \left(x \right) &=& \int_{-\infty}^{\infty} \frac{1}{2\pi \sigma^2} Exp \left\{ - \frac{x^2+y^2}{2\sigma^ 2} \right\} \,dy\\
+  &=&  \frac{1}{\left(2\pi \sigma^2 \right)^{ \frac{1}{2} } }  Exp \left\{ - \frac{x^2}{2\sigma^ 2}\right\} \int_{- \infty}^{\infty} \frac{1}{  \left( 2\pi \sigma^2 \right)^{ \frac{1}{2} } } e^{- \frac{y^2}{2\sigma^2} } \, dy\\
+  X &\sim& N \left( \sigma, \sigma^2\right)\\
+  y &\sim& N \left( \sigma, \sigma^2 \right) ind.
+\end{eqnarray*}
+\end{enumerate}
+\end{enumerate}
+
+\section{ Evaluaci\'on de Probabilidad }
+
+
+\begin{enumerate}
+\item Sea $X \sim U \left(0,2 \right) $. Hallar la densidad de $Y= X^2 - 3X + 1$
+\begin{eqnarray*}
+f_{Y}&=& \left(y \right)= \frac{dF_{Y}\left(y \right) }{dy}\\
+F_{Y} \left(y \right)&=& \prob \left[ Y \leq y \right] = \prob \left[ X^2 - 3X + 1 \leq y \right] = \prob \left[ \left( X - \frac{3}{2} \right)^2 + 1 \leq y + \frac{9}{4} \right]\\
+&=& \prob \left[ \left( X - \frac{3}{2} \right)^2  \leq y + \frac{9}{4}-1 \right] = \prob \left[ X- \frac{3}{2} \leq \sqrt{y+\frac{5}{4} }\right]\\
+&=& \prob \left[ X \leq \sqrt{y+\frac{5}{4} } - \frac{3}{2} \right]= F_{X} \left( \left( y+\frac{5}{4} \right)^{ \frac{1}{2} } + \frac{3}{2} \right)\\
+&=& f_{Y} \left(y \right)= f_{X} \left( \left(  y + \frac{5}{4}\right)^{ \frac{1}{2}}+ \frac{3}{2}    \right) \left(\frac{1}{2} \left( y + \frac{5}{4} \right)^{- \frac{1}{2} } \right)\\
+f_{Y} \left( y \right) &=& \begin{cases} \frac{1}{2}  \left(\frac{1}{2} \left( y + \frac{5}{4} \right)^{- \frac{1}{2} } \right)= \frac{1}{4} \left( y + \frac{5}{4} \right)^{-\frac{1}{2} } & \left(-1,1 \right)\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+\int_{-1}^{1} \frac{1}{4} \left( y + \frac{5}{4} \right)^{-\frac{1}{2} } \, dy &=& \frac{1}{4} \left(2 \left( y + \frac{5}{4} \right)^{ \frac{1}{2} } \right)_{-1}^{1}\\
+&=& \left. \frac{1}{2} \left( y + \frac{5}{4} \right)^{\frac{1}{2}} \right|_{-1}^{1} = \frac{1}{2} \left[ \left( 1 + \frac{5}{4} \right)^{ \frac{1}{2} } - \left(-1 + \frac{5}{4} \right)^{ \frac{1}{2} } \right]\\
+&=& \frac{1}{2} \left( \left(\frac{9}{4} \right)^{ \frac{1}{2}} - \left(\frac{1}{4} \right)^{ \frac{1}{2}} \right) = \frac{1}{2} \left( \frac{3}{2} - \frac{1}{2} \right) = \frac{1}{2}
+\end{eqnarray*}
+
+\item $X_{1}, X_{2} \sim U \left(0,1 \right)$ ind. $X_{1}= Y_{1} \cos \left(Y_{2} \right)$, $X_{2} = Y_{1} \sin \left(Y_{2} \right)$ Hallar la densidad conjunta de $Y_{1} $ y $Y_{2}$ y averiguar independencia
+\begin{eqnarray*}
+f_{X_{1}X_{2}} \left(x_{1} x_{2} \right) &=&  
+\begin{cases}
+1 & x_{1} \in  \left(0,1 \right), x_{2} \in \left(0,1 \right)\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+x_{1}^2+ x_{2}^2 &=& y_{1}^2 \cos^2 \left(y_{2} \right) + y_{1}^2 \sin ^2 \left(y_{2} \right)\\
+&=& y_{1}^2 + y_{1}^2 = 2 y_{1}^2\\
+\Rightarrow y_{1} &=& \sqrt{\frac{1}{2} \left( x_{1}^2 + x_{2}^2 \right) }\\
+\frac{X_{1}}{X_{2}} &=& \frac{Y_{1} \cos Y_{2}}{Y_{1} \sin Y_{2}} = \tan Y_{2} \Rightarrow Y_{2}= \arctan \left( \frac{X_{1}}{X_{2}} \right)\\
+J &=& \left| \begin{array}{cc}
+\cos \left( Y_{2} \right) & -Y_{1} \sin \left( Y_{2} \right) \\
+\sin \left( Y_{2} \right) & Y_{1} \cos \left( Y_{2} \right)
+\end{array} \right| = Y_{1} \cos^2 Y_{2} + Y_{1} \sin^2 Y_{2}\\
+&=& Y_{1} \Rightarrow \mid J \mid = Y_{1}\\
+f_{Y_{1}Y_{2}} \left( y_{1}, y_{2} \right) &=& \mid J \mid f_{X_{1}X_{2}} \left( \sqrt{ \frac{1}{2} \left(x_{1}^2 + x_{2}^2 \right)}, \arctan  \left( \frac{X_{1}}{X_{2}} \right) \right)\\
+&=& \begin{cases}
+Y_{1} & y_{1}y_{2}\in \rea\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+\left.
+\begin{array}{cccc}
+\sigma_{1} \left( t \right) = \left(t,1 \right)\\
+\sigma_{2} \left( t \right) = \left(0,t \right)\\
+\sigma_{3} \left( t \right) = \left(t,0 \right)\\
+\sigma_{4} \left( t \right) = \left(1,t \right)
+\end{array}
+\right\} 0 &\leq& t \leq 1\\
+Y_{1} &=& X_{1} \cos X_{2}, Y_{2} = X_{1} \sin \left( X_{2} \right)\\
+T \left(t,1 \right) &=& \left( t \cos \left(1 \right), t \sin \left(1 \right) \right) = \left( t \left(0.5403 \right), t \left( 0.8414 \right) \right)\\
+T \left(0,t \right) &=& \left(0,0 \right)\\
+T \left(t,0 \right) &=& \left( t \cos \left(0 \right), t \sin \left(0 \right) \right)= \left( t,0 \right)\\
+T \left(1,t \right) &=& \left( \cos \left(t \right), \sin \left(t \right) \right)\\
+y_{1} &=& t \cos \left(1 \right) \Rightarrow x_{1} \cos^{-1} \left(1 \right)= t\\
+y_{2} &=& t \sin \left(1 \right) \Rightarrow x_{2} \sin^{-1} \left(1 \right)= t\\
+\frac{y_{1}}{\cos \left(1 \right) } &=& t, \frac{y_{2}}{\sin \left(1 \right) }= t \Rightarrow
+\frac{y_{1}}{\cos \left(1 \right) } =  \frac{y_{2}}{\sin \left(1 \right) } \\
+y_{2}&=& y_{1} \tan \left(1 \right)\\
+y_{2}&=&t \Rightarrow
+t= \arccos \left(y_{1} \right) \Rightarrow \arccos \left(y_{1} \right) = \arcsin \left(y_{2} \right)\\
+y_{2} &=& \sin t \Rightarrow t= \arcsin \left( y_{2} \right) \Rightarrow \sin \left( \arccos \left(y_{1} \right) \right) = y_{2}
+\end{eqnarray*}
+\begin{eqnarray*}
+f_{Y_{1}} &=& \begin{cases}
+\int_{0} ^{y_{1} \tan \left(1 \right) } f_{Y_{1}Y_{2}} \left( y_{1}y_{2} \right) \, dy_{2} & y_{1} \in \left(0,0.5403 \right)\\
+\int_{0}^{\sin \left(\arccos \left(y_{1} \right) \right) }  f_{Y_{1}Y_{2}} \left( y_{1}y_{2} \right) \, dy_{2} & y_{1} \in \left(0.5403, 1 \right)\\
+0 & \textrm{e.o.c}
+\end{cases}\\ 
+f_{Y_{2}} \left(y_{2} \right) &=&
+\begin{cases}
+\int_{\cos \left( \arcsin \left( y_{2} \right) \right) } ^{\frac{y_{2}}{\tan \left( 1\right) } }  f_{Y_{1}Y_{2}} \left( y_{1}y_{2} \right) \, dy_{1} & y_{2} \in \left( 0 , 0.8414 \right)\\
+0 & \textrm{e.o.c/}
+\end{cases}
+\end{eqnarray*}
+ \item $N$ es una v.a t.q $\prob          \left[ N=1 \right]= \frac{1}{4},  \prob \left[ N = 2\right]= \frac{1}{3},  \prob \left[ N=3 \right]= \frac{5}{12}$ \\
+ $X_{i} \sim Poisson \left(1 \right), i=1,2, \ldots$\\
+ Hallar la densidad de la suma aleatoria $SN$
+ 
+ \begin{eqnarray*}
+ \prob \left[ S_{N} = x \right] &=& \prob \left[ X_{1}+ X_{2}+ \ldots + X_{N} = x\right]\\
+ &=& \sum_{n=1}^{3} \prob \left[ X_{1}+ X_{2}+ \ldots + X_{N} = x \mid N=n \right] \prob \left[ N=n \right]\\
+ &=&\sum_{n=1}^{3} \dfrac{X_{1}+ X_{2}+ \ldots + X_{N} = x , N=n}{\prob \left[N=n \right] } \prob \left[N=n \right]\\
+ Sol \sim Poisson \left(n \lambda \right)\\
+ &=& \sum_{n=1}^{3} \prob \left[S_{n}= x \right] \prob \left[ N=n\right]= \prob \left[ S_{1}=x \right] \prob \left[N=1 \right]+ \prob \left[S_{2}= x \right] \prob \left[ N=2 \right]\\ &+& \prob \left[S_{3}= x \right]\prob \left[N=3 \right]\\
+ S_{1} &=& X_{1}\\
+ &=&\prob \left[S_{1} = x \right] \prob \left[ N=1\right]+ \prob \left[ S_{2}= x \right] \prob \left[N=2 \right] + \prob  \left[S_{3}= x \right]\prob \left[ N=3 \right]\\
+ &=& \left( \frac{e^{-1}}{x!}\right)\frac{1}{4}+ \left( \frac{e^{-2}}{x!} \right) \frac{1}{3} + \left( \frac{e^{-3}}{x!} \right) \frac{5}{12}
+ \end{eqnarray*}
+\end{enumerate}
+
+Hay tres tipos de transformaciones b\'asicas.
+
+\begin{enumerate}
+\item Sea $X$ una variable aleatoria con funcion de densidad $f_{X}\left(x\right)$ y una transformaci\'on $T$, tal que $T:\rea\rightarrow\rea$. Sea $Y=g\left(x\right)$. Encontrar $f_{Y}\left(y\right)$
+
+\item Sea $X$ una variable aleatoria con funcion de densidad $f_{XY}\left(x,y\right)$ y una transformaci\'on $T$, tal que $T:\rea^2\rightarrow\rea$. Sea $Y=g\left(x,y\right)$. Encontrar $f_{Z}\left(z\right)$
+
+\item Sea $X_{1}, X_{2}, X_{3},..., X_{n}$ una variable aleatoria con funcion de densidad $f_{X_{1}},...,f_{X_{n}} \left(x_{1},...,x_{n}\right)$ y una transformaci\'on $T$, tal que $T:\rea^n\rightarrow\rea^n$. Sea 
+
+\begin{eqnarray*}
+Y_{1}&=&g_{1}\left(x_{1}\ldots x_{n}\right) \\ 
+Y_{2}&=&g_{2}\left(x_{1}\ldots x_{n}\right)\\ 
+\vdots \\ 
+Y_{n}&=&g_{n}\left(x_{1}\ldots x_{n}\right)
+\end{eqnarray*}
+
+
+Encontrar $f_{Y_{1}\ldots Y_{n}}\left(y_{1} \ldots y_{n}\right)$
+
+\end{enumerate}
+
+\bigskip
+
+\begin{Ejem}
+\begin{itemize}
+\item Sea $X \backsim U_{\left(0,1\right)}$ y $Y=\frac{1}{\lambda}\in \left( 1-X \right)$. 
+Para $\lambda > 0$. Encontrar $f_{Y}\left(y\right)$
+
+\textbf{Sol:}
+
+\begin{eqnarray*}
+X \sim U_{\left(0,1\right)}\longrightarrow f_{X}\left(x\right)= \left\{
+\begin{array}{cc}
+1 & 0< x <1 \\
+0 & \textrm {e.o.c} 
+\end{array}
+\right.
+\end{eqnarray*} 
+
+\begin{eqnarray*}
+f_{Y}\left( y \right) &=& \dfrac{\partial}{\partial y} F_{Y}\left(y \right)\\
+F_{Y}\left( y \right) &=& \prob \left[ Y \leqslant y \right]  = \prob \left[-\dfrac{1}{\lambda}\ln \left( 1-X\right) \leqslant y \right] =\prob \left[ \ln \left( 1-X \right) \leqslant \lambda y \right]\\
+&=&\prob \left[ \ln \left( 1-X \right) > - \lambda y \right] = \prob \left[ \left( 1-X \right) > e^ {- \lambda y}\right] \\
+&=& \prob \left[-X > e^ {-\lambda y} - 1 \right] = \prob \left[X \leqslant 1- e^{- \lambda y}\right] = F_{X}\left(1-e^{-\lambda y}\right).
+\end{eqnarray*}  
+
+\begin{eqnarray*}
+0<X<1 \Rightarrow -1< -X < 0 \Rightarrow 0 < 1-X < 1&\Rightarrow&
+-\infty < \ln \left(1-X\right) < 0\\
+\Rightarrow  -\infty < \dfrac{1}{\lambda} \ln \left(1-X\right) < 0 \Rightarrow  \infty > - \dfrac{1}{\lambda}  \ln \left(1-X\right) > 0&\Rightarrow&
+0 < - \dfrac{1}{\lambda}  \ln \left(1-X\right) <\infty \Rightarrow 0< Y < \infty
+\end{eqnarray*}
+
+\begin{eqnarray*}
+F_{Y}\left(y\right) = \left\{ 
+\begin{array}{cc} 1-e^{-\lambda y} &  y \geq 0 \\
+0 &  e.o.c 
+\end{array}
+\right.
+\end{eqnarray*}
+
+\begin{eqnarray*}
+0 < y < \infty \\
+0 < \lambda y < \infty \\
+- \infty < -\lambda y < 0 \\
+0 < e ^{-\lambda y} < 1 \\
+-1 < e^{-\lambda y < 0}\\
+0 < 1 - e^{-\lambda y} < 1\\
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\dfrac{\partial}{\partial Y} F_{y} \left( y \right) &=& -e^{-\lambda_{y}} \left(-\lambda \right) = -\lambda e^{-\lambda_{y}}\\
+f_{Y}\left(y \right) &=& \left\{
+\begin{array}{cc} 
+\lambda e^{-\lambda y} &y \geq 0 \\
+ 0 &  \textrm{e.o.c}\\
+ Y \sim exp \left( \lambda \right)
+\end{array}
+\right.
+\end{eqnarray*} 
+ 
+\smallskip
+
+$$Y \sim exp \left( \lambda \right)$$
+\end{itemize}
+\end{Ejem}
+
+ 
+  
+\begin{Ejem}
+\begin{itemize}
+\item Sea $X \sim N\left(0,1 \right)$ y $Y= \sqrt{x}$. Encontrar $f_{Y}\left(y\right)$.
+{Sol}
+ 
+\bigskip
+\begin{eqnarray*}
+f_{Y}\left(y\right)&=&\dfrac{\partial}{\partial y}F_{Y}\left(y\right)\\
+F_{Y}\left(y\right) &=&\prob \left[ Y \leq y\right] = \prob \left[ X^{1/2}\leq y\right]= \prob \left[ \left( X^{1/2} \right)^{2} \leq y^{2} \right] = \prob \left[ X \leq y^{2} \right] = F_{X}\left(y^{2} \right) 
+\end{eqnarray*}
+
+\begin{eqnarray*}
+-\infty < X < \infty \Rightarrow 0 < X < \infty \Rightarrow  0 < \sqrt{X} < \infty \Rightarrow 0 < Y < \infty
+\end{eqnarray*}
+
+\begin{eqnarray*}
+f_{X}\left( x \right) &=& \dfrac{1}{\sqrt{2 \pi}} exp \bigg\{ \dfrac{-x^{2}}{2} \bigg\} \\
+f_{Y}\left(y\right)&=& f_{X}\left(y^{2}\right)\left(2y\right)
+\end{eqnarray*}
+
+ \begin{eqnarray*}  
+ f_{Y}\left(y\right)= \left\{
+ \begin{array}{cc} 
+ \dfrac{1}{\sqrt{2 \pi}} exp\bigg\{ \dfrac{-y^4}{2}\bigg\} 2y & 0<y< \infty \\ 
+ 0 & \textrm {e.o.c} 
+ \end{array}
+ \right.
+ \end{eqnarray*}
+
+
+\end{itemize}
+\end{Ejem}
+
+
+\begin{Ejem}
+
+Sea $X \sim U_{\left(0,1 \right)}$. Con $Y= g\left( X \right)$. Encontrar $g$ t.q $Y\sim U_{\left( 0,b\right)}$.\\
+
+\begin{eqnarray*}  
+ f_{Y}\left(y\right)= \left\{
+ \begin{array}{cc} 
+ 0 & x\leq 0\\
+ x & 0<x<1\\
+ 1 & x\geq 1     
+ \end{array}
+ \right.
+ \end{eqnarray*}
+ 
+
+\end{Ejem}
+
+\begin{Ejem}
+
+Sea $X \sim Exp  \left( \lambda \right)$. Encontrar la densidad de $Y = \left[ 3X \right] $
+
+\begin{eqnarray*}
+X \sim Exp \left( \lambda \right) \Rightarrow f_{X}\left( x \right) = F_{Y}\left(y\right) = \left\{\begin{array}{ll} \lambda  e^{-\lambda x} & x > 0 \\ 
+0 & eoc 
+\end{array}
+\right.
+\end{eqnarray*}
+
+\begin{eqnarray*}
+F_{Y}\left( y \right) &=& \prob \left[ Y= 7y \right] = \prob \left[ \left[ 3X\right] = y \right] = \prob \left[ y \leq X < y+1 \right]\\
+&=& \prob \left[ \dfrac{y}{3} \leq \right] X \leq \dfrac{y+1}{3}] = \int_{y/3}^{(y+1)/3 }   f_{X} \left(x \right) \, dx \\
+&=& \int_{y/3}^{\frac{y+1}{3} } \lambda e^{-\lambda x}, dx = \lambda \int_{y/3}^{(y+1)/3 } e^{-\lambda x} \, dx = \lambda \Bigg[ \dfrac{-e^{-\lambda x}}{\lambda} \Bigg]_{y/3}^{(y+1)/3} \\
+&=& -e^{-\lambda \left((y+1)/3 \right)} + e^{-\lambda \left(\frac{y}{3} \right)} = -e^{-\lambda\left(\frac{y}{3} \right)} e^{-\lambda\left(\frac{1}{3} \right)}+ e^{-\lambda\left(\frac{y}{3}\right)}\\
+&=& e^{-\lambda \left(\frac{y}{3} \right)}\left[ 1-e^{\frac{-\lambda}{3}}\right]
+\end{eqnarray*}
+
+\end{Ejem}
+
+\begin{Ejem}
+
+Sea $X \sim Gamma \left( 2,2 \right)$. Encontrar la densidad de $Y=\dfrac{X}{1+X}$\\ 
+
+\begin{eqnarray*}
+X \sim Gamma \left( 2,2 \right) \Rightarrow f_{X}\left( x \right)= 
+\begin{cases}
+\begin{array}{lc}
+\dfrac{\beta^{\alpha}}{\mu\left(\alpha\right)}x^{\alpha -1}e^{x\beta} & x \geq 0 \\
+0 & \textrm{ e.o.c}
+\end{array}
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\Rightarrow
+\begin{cases}
+\begin{array}{lc}
+4xe^{-2x} & x \geq 0 \\
+0 & \textrm {e.o.c}
+\end{array}
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+0\leq \infty \Rightarrow 1 \leq x+1 < \infty \Rightarrow 0 \leq \frac{1}{X+1}\leq 1 \Rightarrow 0\leq\frac{X}{X+1}\leq\leq \infty
+\end{eqnarray*}
+\begin{eqnarray*}
+F_{Y}\left(y\right)&=& \prob \left[Y\leq y\right]=\prob \left[\frac{X}{1+X}\leq y\right]= \left[X\leq y\left(1+X\right)\right]\\
+&=& \prob\left[X\leq y+yX\right]=\prob\left[X-yX\leq y\right]=\prob\left[X\left(1-y\right)\leq y\right]\\
+&=& \left[X\leq \frac{y}{1-y}\right]= F_{X}\left(\dfrac{y}{1-y}\right)
+\end{eqnarray*}
+
+\begin{eqnarray*}
+f_{Y}\left(y\right)&=&f_{X}\left(\frac{y}{1-y}\right)\dfrac{\left[\left(1-y\right)-y\left(-1\right)\right]}{\left(1-y\right)^{2}}\\  
+&=&f_{X}\left(\frac{y}{1-y}\right)=\frac{4\left(\frac{y}{1-y}\right)e^{-2\left(\frac{y}{1-y}\right)}}{\left(1-y\right)^{2}}\\
+&=&\begin{cases}
+\begin{array}{cc}
+\frac{4\left(\frac{y}{1-y}\right)e^{-2\left(\frac{y}{1-y}\right)}}{\left(1-y\right)^{3}} & 0<y<1 \\
+0 & \textrm {e.o.c}
+\end{array}
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\int_{0}^{1}\frac{4\left(\frac{y}{1-y}\right)e^{-2\left(\frac{y}{1-y}\right)}}{\left(1-y\right)^{3}}\, dy &=& 4\int_{0}^{1}\frac{y}{\left(1-y\right)^3}e^{-2\left(\frac{y}{1-y}\right)}\, dy =\\
+&=& \left(\frac{y}{1-y}\right)\left(-\frac{1}{2}e^{-2\left(\frac{y}{1-y}\right)}\right)\left. \right|{0}^{1} + 2 \int_{0}^{1} e^{-2\left(\frac{y}{1-y}\right)}\left(\frac{1}{\left(1-y\right)^{2}}\right) dy
+\end{eqnarray*}
+\begin{eqnarray*}
+\begin{array}{cc}
+u=\frac{y}{1-y}\Rightarrow du=\frac{1}{\left(1-y\right)^{2}} dy\\
+dv= \frac{y}{\left(1-y\right)^3}e^{-2\left(\frac{y}{1-y}\right)} dy \Rightarrow v=-\frac{1}{2}e^{-2\left(\frac{y}{1-y}\right)}\\
+\end{array}
+\end{eqnarray*}
+
+
+\begin{eqnarray*}
+u=\frac{1}{\left(1-y\right)^{2}} \Rightarrow 2\left(1-y\right)dy\\
+dv= e^{-2\left(\frac{y}{1-y}\right)} dy \Rightarrow v= \frac{\left(1-y\right)^2 e^{-2\left(\frac{y}{1-y}\right)}}{2}\\
+-2\left(\frac{y}{1-y}\right)=\frac{\left(1-y\right)\left(-2\right)-\left(-2y\right)\left(-1\right)}{\left(1-y\right)^2}= \frac{2}{\left(1-y\right)^2}\\
+\end{eqnarray*}
+\end{Ejem}
+
+\begin{Ejem}
+Sea $X \sim $ Poisson $\left(\lambda\right)$. Hallar la densidad de $Y=4X+3$
+
+\begin{eqnarray*}
+X\sim \textrm{Poisson}\left(\lambda\right) \Rightarrow f_{X}\left(x\right)=
+\begin{cases}
+\begin{array}{lc}
+\frac{e^{-\lambda}\lambda^{x}}{x!} & x=0,1,2\\
+0 & \textrm{ e.o.c}
+\end{array}
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+f_{Y}\left(y\right)&=& \prob\left[Y=y\right]= \prob\left[4X+3=y\right]=\prob\left[4X0y-3\right]\\
+&=&\prob\left[X=\frac{y-3}{4}\right]=f_{X}\left(\frac{y-3}{4}\right)\\
+f_{Y}\left(y\right)=f_{X}\left(\frac{y-3}{4}\right)\left(\dfrac{1}{4}\right) \\
+&=& 
+\begin{cases}
+\begin{array}{lc}
+\dfrac{e^{-\lambda} \lambda^{\left(\frac{y-3}{4}\right)}}{4\left(\frac{y-3}{4}\right)!} & y=3,7,11,15\\
+0 & \textrm{ e.o.c}
+\end{array}
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+x=0,1,2,3,\cdots \\
+4X=0,4,8,12, \cdots \\
+4X+303,7,11,15, \cdots \\
+Y=3,7,11,15, \cdots \\
+\end{eqnarray*}
+\end{Ejem}
+
+\begin{Ejem} Sea $X \sim  U_{\left(0,1\right)}$. Hallar $g$ t.q $Y\sim U_{\left(a,t\right) }$. $Y=g\left(X\right)$.
+
+\begin{eqnarray*}
+X\sim U_{\left(0,1\right)} \Rightarrow f_{X}\left(x\right) =
+\begin{cases}
+\begin{array}{lc}
+1  & 0\leq x \leq 1 \\
+0 & \textrm{ e.o.c}
+\end{array}
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\Rightarrow  F_{X}\left(x\right)=
+\begin{cases}
+\begin{array}{lc}
+1  & x<0 \\
+x & 0\leq x \leq 1 \\
+1 & x \geq 1
+\end{array}
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+Y\sim U_{\left(a,b\right)}\Rightarrow f_{Y}\left(y\right)=
+\begin{cases}
+\begin{array}{lc}
+\frac{1}{b-a}  & 0\leq y \leq 1 \\
+0 & \textrm{ e.o.c}
+\end{array}
+\end{cases}
+\Rightarrow \int_{a}^{y}\frac{1}{b-a} \, dv = \dfrac{y-a}{b-a} 
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\Rightarrow  F_{Y}\left(y\right)=
+\begin{cases}
+\begin{array}{lc}
+1  & y<0 \\
+\frac{y-a}{b-a} & a\leq y \leq b \\
+1 & y > b
+\end{array}
+\end{cases}
+\end{eqnarray*}
+
+Sea $y \in \left[a,b\right]$, sup. $g$ creciente:
+\begin{eqnarray*}
+F_{Y}= \left(y\right)&=&\prob \left[Y\leq y\right]= \prob\left[g\left(X\right)\leq y\right]= \prob\left[X\leq g^{-1}\left(y\right)\right]\\
+F_{X}\left(g^{-1}\left(y\right)\right)&=& g^{-1}\left(y\right)\\
+g:\left(0,1\right) \rightarrow \left(a,b\right)\\
+g^{-1}:\left(a,b\right) \rightarrow \left(0,1\right)\\
+\textrm {Ya que}  F_{X}\left(x\right) &=& x, x \in \left[0,1\right]\\
+\therefore g^{-1}\left(y\right) &=& \frac{y-a}{b-a} \Rightarrow y = y\left(\frac{y-a}{b-a}\right)\\
+\textrm{Sea}  t &=&\frac{y-a}{b-a}\Rightarrow y-a \Rightarrow y=a+t\left(b-a\right)\\
+\therefore Y &=& g\left(X\right) = a+ \left(b-a\right)X
+\end{eqnarray*}
+\end{Ejem}
+
+
+
+\begin{Ejem}[\textbf{Importante}] Un insecto deposita un n\'umero grande de huevos, el n\'umero de huevos depositado es una v.a que frecuentemente se asocia una distribuci\'on Poisson $\left(\lambda\right)$. La supervivencia de un cierto huevo tiene probabilidad $p$. Encontrar el n\'umero promedio de huevos sobrevivientes.
+
+\smallskip
+
+ $Y \equiv $ N\'umero de huevos depositados $Y \sim Poi\left(\lambda\right)$
+ 
+ \smallskip
+ 
+ $X \equiv $ N\'umero de huevos sobrevivientes $X|Y \sim \beta \left(Y,p\right)$
+ 
+\smallskip
+
+$\prob\left[X=x\right] \equiv$ Esperanza de $X$
+ 
+ \begin{eqnarray*}
+\prob \left[X=x\right]&=& \sum_{y=0}^{\infty}\prob \left[X=x   Y=y \right]\\ 
+&=& \sum_{y=0}^{\infty}\prob \left[X=x | Y=y \right]\prob \left[Y=y \right]\\ 
+&=&\sum_{y=x}^{\infty} \left[ \left( 
+\begin{array}{cc}
+y \\ x
+\end{array} \right) p^{x}\left(1-p\right)^{y-x}\right]\left[\frac{\lambda^{y}e^{-\lambda}}{y!}\right]\\
+ &=& \sum_{y=x}^{\infty}\left( \frac{y!}{\left(y-x\right)! x!}p^{x}\left(1-p\right)^{y-x}\right)\left(\frac{\lambda^{y}e^{-\lambda}}{y!}\right)\\
+ &=& e^{-\lambda}p^{x}\sum_{y=x}^{\infty}\left(1-p\right)^{y-x}\lambda^{y} /\! \left(y-x\right)!x!\\
+ &=& \frac{e^{-\lambda}\left(\lambda p\right)^{x}}{x!} \sum_{y=x}^{\infty} \left[\left(1-p\right)\lambda\right]^{y-x}/\! \left(y-x\right)!\\
+z &=& y-x\\
+&=&  \frac{e^{-\lambda}\left(\lambda p\right)^{x}}{x!} \sum_{y=x}^{\infty} \left[\left(1-p\right)\lambda\right]^{z}/\! z! \\
+&=&  \frac{e^{-\lambda}\left(\lambda p\right)^{x}}{x!} \sum_{y=0}^{\infty} \left[\left(1-p\right)\lambda\right]^{t}/\! t! \\
+&=&  \frac{e^{-\lambda}\left(\lambda p\right)^{x}}{x!} \left(1 + \left(1-p\right)\lambda + \frac{\left(\left(1-p\right)\lambda\right)^{2}}{2!}+ \cdots \right) \\
+&=& \begin{array}{cc} 
+\frac{e^{-\lambda}\left(\lambda p\right)^{x}}{x!} e ^{\left(1-p\right)\lambda} & \textrm {Series de potencias} 
+\end{array}\\
+\begin{array}{cc} 
+=\frac{e^{-\lambda p}\left(\lambda p\right)^{x}}{x!}   & \therefore \prob\left[X=x\right] = \frac{e^{-\lambda p}\left(\lambda p\right)^{x}}{x!}\\
+X \sim Poi \left(\lambda p \right) & \therefore E\left[X\right] = \lambda p
+\end{array}
+ \end{eqnarray*}
+\end{Ejem}
+
+\begin{Ejem}
+Sea $X\sim U_{0,1}$ y $Y \sim$ independientes.  $Z=X+Y$
+
+
+\begin{eqnarray*}
+X\sim U_{0,1} \Rightarrow f_{X}\left( x \right)= 
+\begin{cases}
+1 & 0\leq x \leq 1\\
+0 & e.o.c
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+Y\sim U_{0,2} \Rightarrow f_{Y}\left( y \right)= 
+\begin{cases}
+\frac{1}{2} & 0\leq y \leq 2\\
+0 & e.o.c
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+ f_{XY}\left( x,y \right)= f_{X}\left(x\right)f_{Y}\left(y\right)
+\begin{cases}
+\frac{1}{2} & 0\leq x \leq 1\\
+& 0\leq y \leq 2\\
+0 & e.o.c
+\end{cases}
+\end{eqnarray*}
+\begin{eqnarray*}
+F_{Z}\left(z\right)= \mathbb{P}\left[X+Y\leq z \right]= \mathbb{P}\left[Y \leq z-X \right]
+\end{eqnarray*}
+\end{Ejem}
+
+\begin{Ejem}
+ Sea $X \sim Exp \left( \lambda \right)$ y $Y \sim Exp \left( \lambda\right)$ independientes. $Z = min \{ x,y \}$. Hallar $f_{z} \left( z \right)$.
+
+\begin{eqnarray*}
+X\sim Exp \left(\lambda\right) \Rightarrow f_{X}\left( x \right)= 
+\begin{cases}
+\lambda e^{- \lambda x }  & x > 0\\
+0 & e.o.c
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+Y\sim Exp \left(\lambda\right) \Rightarrow f_{Y}\left( y \right)= 
+\begin{cases}
+\lambda e^{- \lambda y }  & y > 0\\
+0 & e.o.c
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\Rightarrow f_{XY} \left( x,y\right) = f_{X}\left(x\right)f_{Y}\left(y\right)= \left(\lambda e^{- \lambda x} \right)\left(\lambda e ^{-\lambda y } \right)=
+\begin{cases}
+\lambda^{2} e^{- \lambda \left(x+y \right) }  & x > 0\\
+& y>0\\
+0 & e.o.c
+\end{cases}
+\end{eqnarray*}
+Sea $z \geq 0$
+
+\begin{eqnarray*}
+F_{z} \left( z \right)&=& \mathbb{P} \left[Z \leq z \right]= \mathbb{P} \left[ min \{X,Y \} > Z \right] \\
+&=& 1- \mathbb{P} \left[ X < z , Y > z\right]= 1- \mathbb{P} \left[ X < z\right]\mathbb{P}\left[ Y > z\right]\\
+&=& 1-\mathbb{P}\left[ X > z\right]^{2} =  1 -\left( \mathbb{P} \left[ X \leq z\right] \right) ^{2}\\
+&=& 1 - \left( 1- F_{X} \left( z \right) \right) ^{2}\\
+F_{X} \left( x \right) &=& \int_{0}^{x} \lambda e^{-\lambda u} \, du = \lambda \int_{0}^{x}  e^{-\lambda u} \, du = x\left(-e ^{- \lambda u} /\! x\right)_{0}^{x}\\
+&=& -e ^{- \lambda x} + 1 = 1 -e ^{- \lambda x}\\
+&=& 1 - \left(1-1-e ^{- \lambda x} \right)^{2} = 1- e ^{- 2 \lambda z}  \Rightarrow z>0\\
+\end{eqnarray*}
+\end{Ejem}
+
+\begin{center}
+\textbf{Cambio de Variables}
+\end{center}
+\textbf{Teorema:} Sean $X_{1}, X_{2},\ldots,X _{n}$ v.a continuos con densidad.
+
+\smallskip
+
+$f_{x_{1}\ldots x_{n}}\left( x_{1} \ldots x_{n}\right)$   y
+\begin{eqnarray*}
+Y_{1} &=& g_{1} \left(x_{1}\ldots x_{n}  \right)\\
+\vdots  \\
+Y_{n} &=& g_{n} \left(x_{1}\ldots x_{n}  \right)
+ \end{eqnarray*}
+Si existe soluci?n ?nica 
+
+\begin{eqnarray*}
+x_{1} &=& h_{1} \left(y_{1}\ldots y_{n}  \right)\\
+\vdots  \\
+x_{n} &=& h_{n} \left(y_{1}\ldots y{n}  \right)
+\end{eqnarray*}
+
+
+ 
+\begin{eqnarray*}
+J= \left| 
+\begin{array}{cccc}
+\frac{\partial h_{1}}{\partial y_{1}} & \frac{\partial h_{1}}{\partial y_{2}} & \ldots & \frac{\partial h_{1}}{\partial y_{n}}\\
+\vdots & \vdots & \vdots & \vdots \\
+\frac{\partial h_{n}}{\partial y_{1}} & \frac{\partial h_{2}}{\partial y_{2}} & \ldots & \frac{\partial h_{n}}{\partial y_{n}}
+\end{array}
+\right|
+\neq 0
+\end{eqnarray*}
+ Entonces
+
+
+$f_{Y1, \ldots Y_{n}}\left( y_{1} \ldots y_{n} \right) =$\begin{eqnarray*}
+\begin{cases}
+\mid J \mid f_{X1 \ldots Xn}\left[h_{1} \ldots h_{n}\right] & \left(y_{1} \ldots y_{n} \right) \in D \\  
+0 & e.o.c
+\end{cases}
+\end{eqnarray*}
+
+\textbf{Ejercicios:}
+
+\smallskip
+
+ Sean $X,Y$ ind. t.q. $X \sim Gamma \left( \alpha _{1}, \lambda\right) Y \sim Gamma \left( \alpha_{2}, \lambda \right)$. Hallar $f_{u,v}$ donde $ U= \dfrac{Y}{X}$ $V = X+Y$ ? Son $U$ y $V$ ind?
+ 
+\[
+\sim Gamma \left( \alpha _{1},\lambda \right)\Rightarrow f_{X} \left(x \right)=
+\begin{cases}
+\dfrac{\lambda^{\alpha_{1}} }{M \left(\alpha_{1}\right)} x^{\alpha_{1}-1}e^{-\lambda x} & x>0 \\ 
+0 & e.o.c
+\end{cases}
+\]
+
+\[
+\sim Gamma \left( \alpha _{2},\lambda \right)\Rightarrow f_{Y} \left(y \right)=
+\begin{cases}
+\dfrac{\lambda^{\alpha_{2}} }{M \left(\alpha_{2}\right)} y^{\alpha_{2}-1}e^{-\lambda y} & y>0 \\ 
+0 & e.o.c
+\end{cases}
+\]
+
+\[
+ f_{XY} \left(x,y \right)=
+\begin{cases}
+\dfrac{\lambda^{\alpha_{1}+\alpha_{2} } }{M \left(\alpha_{1}\right)M \left(\alpha_{2}\right)} x^{\alpha_{1}-1} y^{\alpha_{2}-1}e^{-\lambda \left( x+y \right) } & y>0, x>0 \\ 
+0 & e.o.c
+\end{cases}
+\]
+
+$U=\frac{y}{x} \Rightarrow y=ux$
+
+\smallskip
+
+$v=x+y \Rightarrow v= x+ux \Rightarrow v= \left( 1+u \right) \Rightarrow x= \frac{v}{1+u}$
+
+\smallskip
+
+$y= u \left( \dfrac{v}{1+u}\right)$
+
+\[
+\begin{vmatrix}
+\frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} \\\\
+\frac{\partial y}{\partial u} & \frac{\partial y}{\partial v}\\
+\end{vmatrix} = \begin{vmatrix}
+\frac{-v}{\left(1+u \right)^{2} } & \frac{1}{\left(1+u \right)} \\\\
+v\left(1+u \right)^{-1}-uv \left(1+u \right)^{-2} & \frac{u}{1+u}\\
+\end{vmatrix}
+\]
+
+
+$-\frac{-vu}{\left( 1+u \right)^{3}}-\dfrac{v}{\left(1+u \right)^{2}}+ \frac{-vu}{\left(1+u \right)^{3}}= v \left(1+u \right)^{-2}$
+
+ \smallskip
+ 
+$f_{uv} \left(u,v \right) = |J| f_{XY}\left(x,y \right)$
+
+\smallskip
+
+$ = v \left(1+u \right)^{2} \dfrac{\lambda^{\alpha_{1}+\alpha_{2} } }{M \left(\alpha_{1}\right)M \left(\alpha_{2}\right)} \left( \frac{v}{1+u}\right)^{ \alpha_{1}-1} \left( \frac{uv}{1+u} \right)^{\alpha_{2}-1}e^{-\lambda \left(\frac{v+uv}{1+u} \right)}$
+
+\smallskip
+
+$= \frac{u^{\alpha_{2}-1}v^{\alpha_{1}+\alpha_{2}-2}}{\left(1+u \right)^{ \alpha_{2}+ \alpha_{2}}} \dfrac{\lambda^{\alpha_{1}+\alpha_{2} } }{M \left(\alpha_{1}\right)M \left(\alpha_{2}\right)} e^{-\lambda v } $
+
+\smallskip
+
+\textbf{Ejercicios para clase:}
+
+\smallskip
+
+\noindent \textbf{1.}Sea $X \sim Exp \left( 1 \right)$ y $Y \sim U \left( 0,1 \right)$ ind. $U=X+Y$ y $V=X-Y$. Hallar $f_{U,V} \left( u,v \right)$ y averiguar independencia.
+
+\[
+X \sim \text{Exp} \left( 1 \right) \Rightarrow f_{X}\left( x \right)=
+\begin{cases}
+\lambda e^{-\lambda x }= e^{-x} & x>0 \\ 
+0 & e.o.c
+\end{cases}
+\]
+
+\[
+Y \sim U_{ \left( 0,1 \right) } \Rightarrow f_{Y}\left(y \right)=
+\begin{cases}
+1 & 0 \leq  y \leq 1 \\ 
+0 & e.o.c
+\end{cases}
+\]
+
+\begin{eqnarray*}
+u&=& x+y \Rightarrow x=u-y  \\
+v&=& x-y \Rightarrow y=x-v \Rightarrow y=u-y-v \Rightarrow y= \frac{u-v}{2}\\
+x&=&u-\left(\frac{u-v}{2}\right)=\frac{2u-u+v}{2}=\frac{u+v}{2}
+\end{eqnarray*}
+
+\begin{eqnarray*}
+T \left(t,0 \right) &=& \left( t,t \right)\\
+T \left(0,t \right) &=& \left( t,-t \right)\\
+T \left(t,1 \right) &=& \left( t+1,t-1 \right)\\
+\end{eqnarray*}
+
+\bigskip
+
+\begin{eqnarray*}
+T \left(0,v \right) = \left( x+y,x-y \right)\\
+\sigma_{1} \left(t \right) = \left( t,0 \right) & t>0 \\
+\sigma_{2} \left(t \right)= \left( 0,t \right) & 0<t<1 & v=-u \\
+\sigma_{3} \left(t \right) = \left( t,1 \right) & t>0 
+\end{eqnarray*}
+
+\begin{eqnarray*}
+u=t \Rightarrow u=v & u=t+1 \\
+v=t & v= t-1 \\
+u=t v=t-1 \Rightarrow u=-v \Rightarrow u-1=t v+1=t \\
+u-1=v+1 \Rightarrow v=u-2
+\end{eqnarray*}
+\[J=
+\begin{vmatrix}
+\frac{1}{2} & \frac{1}{2}\\
+\frac{1}{2} & -\frac{1}{2}\\
+\end{vmatrix} 
+\]
+
+\[ 
+\begin{vmatrix} J \end{vmatrix}=\frac{1}{2}
+\]
+ 
+\begin{eqnarray*} 
+f_{u,v} \left(u,v \right) &=& |j| f_{XY}\left( u,v \right)\\
+&=& 
+\begin{cases}
+\frac{1}{2} e^{-\left(\frac{u+v}{2} \right)} & x,y\in D \\
+0 & e.o.c\\
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*} 
+f_{u} \left(u \right) = \begin{cases}
+\int _{-u}^{u}\frac{1}{2}e^{- \frac{u+v}{2} }\,dv & 0 \leq u \leq 1  \\
+
+\int _{-u-2}^{u}\frac{1}{2}e^{- \frac{u+v}{2} }\,dv & 0 \geq 1  \\
+
+0 & e.o.c\\
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*} 
+\int _{-u}^{u}\frac{1}{2}e^{- \frac{u+v}{2} }\,dv &=&\frac{1}{2}e^{- \frac{u}{2} } \int _{-u}^{u} e^{- \frac{v}{2} } \,dv\\
+&=& \left( \frac{1}{2} e^{-\frac{u}{2} } \right)\left(\frac{ e^-{\frac{v}{2} } }{-\frac{1}{2}}\right)_{-u}^{u}=
+ \left( \frac{1}{2} e^{-\frac{u}{2} } \right)\left(-2 e^{\frac{-v}{2}}\right)_{-u}^{u}\\
+ &=& \left( \frac{1}{2} e^{-\frac{u}{2} } \right)\left(-2 \left(e^{\frac{-u}{2}}- e^{\frac{u}{2}}\right)\right)= -e^{-u}+1=1-e^{-u}\\
+ \int_{u-2}^{u} e^{\frac{v}{2} }\,dv &=& \left(-2e^{-\frac{v}{2} } \right)_{u-2}^{u}=-e^{-\frac{u}{2}}+ e^{-\frac{\left( u-2\right)}{2}}\\
+ &=& e^{-\frac{u}{2}}\left(-e^{-\frac{u}{2}}+ e^{-\frac{\left( u-2\right)}{2}} \right)= -e^{-u}+e^{-\frac{u}{2} -\frac{\left( u-2\right)}{2}}\\
+ &=& -e^{-u}+e^{-u}e^{+1} = e^{1-u}-e^{-u}
+\end{eqnarray*}
+
+\begin{eqnarray*} 
+f_{u} \left(u \right) = \begin{cases}
+1-e^{-u} & 0 \leq u \leq 1 \\
+e^{1-u}-e^{-u} & u\geq1  \\
+0 & e.o.c
+\end{cases}
+\end{eqnarray*}
+
+\begin{eqnarray*} 
+f_{v} \left( v \right) = \begin{cases}
+\int_{-v}^{v+2} \frac{1}{2}e^{\left(\frac{u+v}{2}\right)}\,du & -1\leq v \leq 0\\
+\int_{u}^{v+2} \frac{1}{2}e^{\left(\frac{u+v}{2}\right)}\,du & v \geq 0\\
+0 & e.o.c
+\end{cases} 
+\end{eqnarray*}
+
+\begin{eqnarray*} 
+f_{v} \left( v \right) = \begin{cases}
+e^{-\frac{v}{2}}\left(e^{\frac{v}{2}}-e^{- \frac{v+2}{2} } \right)= 1-e^{\left(v+1 \right) }  & -1\leq v \leq 0\\
+-e^{-\left(v+1 \right)}+e^{-v} & v \geq 0\\
+0 & e.o.c
+\end{cases} 
+\end{eqnarray*}
+
+\smallskip
+
+\noindent \textbf{2.} Sean $X_{1}, X_{2} \sim U_{ \left(-3,3 \right) }$ ind. $Y_{1}=X_{2}-X_{1}, Y_{2}= X_{1}-X_{2}$
+
+\begin{eqnarray*}
+y_{1}&=&x_{2}-x_{1} \Rightarrow x_{2}=y_{1}+x_{1} \Rightarrow x_{2} = y_{1}+y_{2}-x_{2} \Rightarrow x_{2}=\frac{y_{1}+y_{2}}{2}\\
+y_{2}&=& x_{1}+x_{2} \Rightarrow x_{1}= y_{2}-x_{2} \Rightarrow x_{1}=y_{2}-\left( \frac{y_{1}+y_{2}}{2} \right) = \frac{2y_{2}-y_{1}-y_{2}}{2}\\
+x_{1}&=& \frac{y_{2}-y_{1}}{2}
+\end{eqnarray*}
+
+\[
+J=
+\begin{vmatrix}
+-\frac{1}{2} & \frac{1}{2}\\
+\frac{1}{2} & \frac{1}{2}
+\end{vmatrix} = -\frac{1}{4}-\frac{1}{4}= -\frac{1}{2}, |J|=\frac{1}{2}
+\]
+
+\begin{eqnarray*}
+f_{Y_{1},Y_{2}}\left( y_{1},y_{2}\right)&=& \frac{1}{2} f_{X_{1},X_{2}}\left( \frac{y_{2}-y_{1}}{2}, \frac{y_{2}+y_{2}}{2}\right)\\ 
+&=&\frac{1}{2} \left( \frac{1}{36}\right)= \begin{cases}
+\frac{1}{72}  & x,y \in D\\
+0 & e.o.c
+\end{cases} 
+\end{eqnarray*}
+%_________________________________________________________________
+\begin{Ejem} Sea $X \sim U \left(0,2 \right) $. Hallar la densidad de $Y= X^2 - 3X + 1$
+\begin{eqnarray*}
+f_{Y}&=& \left(y \right)= \frac{dF_{Y}\left(y \right) }{dy}\\
+F_{Y} \left(y \right)&=& \prob \left[ Y \leq y \right] = \prob \left[ X^2 - 3X + 1 \leq y \right] = \prob \left[ \left( X - \frac{3}{2} \right)^2 + 1 \leq y + \frac{9}{4} \right]\\
+&=& \prob \left[ \left( X - \frac{3}{2} \right)^2  \leq y + \frac{9}{4}-1 \right] = \prob \left[ X- \frac{3}{2} \leq \sqrt{y+\frac{5}{4} }\right]\\
+&=& \prob \left[ X \leq \sqrt{y+\frac{5}{4} } - \frac{3}{2} \right]= F_{X} \left( \left( y+\frac{5}{4} \right)^{ \frac{1}{2} } + \frac{3}{2} \right)\\
+&=& f_{Y} \left(y \right)= f_{X} \left( \left(  y + \frac{5}{4}\right)^{ \frac{1}{2}}+ \frac{3}{2}    \right) \left(\frac{1}{2} \left( y + \frac{5}{4} \right)^{- \frac{1}{2} } \right)\\
+f_{Y} \left( y \right) &=& \begin{cases} \frac{1}{2}  \left(\frac{1}{2} \left( y + \frac{5}{4} \right)^{- \frac{1}{2} } \right)= \frac{1}{4} \left( y + \frac{5}{4} \right)^{-\frac{1}{2} } & \left(-1,1 \right)\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+\int_{-1}^{1} \frac{1}{4} \left( y + \frac{5}{4} \right)^{-\frac{1}{2} } \, dy &=& \frac{1}{4} \left(2 \left( y + \frac{5}{4} \right)^{ \frac{1}{2} } \right)_{-1}^{1}\\
+&=& \left. \frac{1}{2} \left( y + \frac{5}{4} \right)^{\frac{1}{2}} \right|_{-1}^{1} = \frac{1}{2} \left[ \left( 1 + \frac{5}{4} \right)^{ \frac{1}{2} } - \left(-1 + \frac{5}{4} \right)^{ \frac{1}{2} } \right]\\
+&=& \frac{1}{2} \left( \left(\frac{9}{4} \right)^{ \frac{1}{2}} - \left(\frac{1}{4} \right)^{ \frac{1}{2}} \right) = \frac{1}{2} \left( \frac{3}{2} - \frac{1}{2} \right) = \frac{1}{2}
+\end{eqnarray*}
+
+\end{Ejem}
+\begin{Ejem}$X_{1}, X_{2} \sim U \left(0,1 \right)$ ind. $X_{1}= Y_{1} \cos \left(Y_{2} \right)$, $X_{2} = Y_{1} \sin \left(Y_{2} \right)$ Hallar la densidad conjunta de $Y_{1} $ y $Y_{2}$ y averiguar independencia
+\begin{eqnarray*}
+f_{X_{1}X_{2}} \left(x_{1} x_{2} \right) &=&  
+\begin{cases}
+1 & x_{1} \in  \left(0,1 \right), x_{2} \in \left(0,1 \right)\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+x_{1}^2+ x_{2}^2 &=& y_{1}^2 \cos^2 \left(y_{2} \right) + y_{1}^2 \sin ^2 \left(y_{2} \right)\\
+&=& y_{1}^2 + y_{1}^2 = 2 y_{1}^2\\
+\Rightarrow y_{1} &=& \sqrt{\frac{1}{2} \left( x_{1}^2 + x_{2}^2 \right) }\\
+\frac{X_{1}}{X_{2}} &=& \frac{Y_{1} \cos Y_{2}}{Y_{1} \sin Y_{2}} = \tan Y_{2} \Rightarrow Y_{2}= \arctan \left( \frac{X_{1}}{X_{2}} \right)\\
+J &=& \left| \begin{array}{cc}
+\cos \left( Y_{2} \right) & -Y_{1} \sin \left( Y_{2} \right) \\
+\sin \left( Y_{2} \right) & Y_{1} \cos \left( Y_{2} \right)
+\end{array} \right| = Y_{1} \cos^2 Y_{2} + Y_{1} \sin^2 Y_{2}\\
+&=& Y_{1} \Rightarrow \mid J \mid = Y_{1}\\
+f_{Y_{1}Y_{2}} \left( y_{1}, y_{2} \right) &=& \mid J \mid f_{X_{1}X_{2}} \left( \sqrt{ \frac{1}{2} \left(x_{1}^2 + x_{2}^2 \right)}, \arctan  \left( \frac{X_{1}}{X_{2}} \right) \right)\\
+&=& \begin{cases}
+Y_{1} & y_{1}y_{2}\in \rea\\
+0 & \textrm{e.o.c}
+\end{cases}\\
+\left.
+\begin{array}{cccc}
+\sigma_{1} \left( t \right) = \left(t,1 \right)\\
+\sigma_{2} \left( t \right) = \left(0,t \right)\\
+\sigma_{3} \left( t \right) = \left(t,0 \right)\\
+\sigma_{4} \left( t \right) = \left(1,t \right)
+\end{array}
+\right\} 0 &\leq& t \leq 1\\
+Y_{1} &=& X_{1} \cos X_{2}, Y_{2} = X_{1} \sin \left( X_{2} \right)\\
+T \left(t,1 \right) &=& \left( t \cos \left(1 \right), t \sin \left(1 \right) \right) = \left( t \left(0.5403 \right), t \left( 0.8414 \right) \right)\\
+T \left(0,t \right) &=& \left(0,0 \right)\\
+T \left(t,0 \right) &=& \left( t \cos \left(0 \right), t \sin \left(0 \right) \right)= \left( t,0 \right)\\
+T \left(1,t \right) &=& \left( \cos \left(t \right), \sin \left(t \right) \right)\\
+y_{1} &=& t \cos \left(1 \right) \Rightarrow x_{1} \cos^{-1} \left(1 \right)= t\\
+y_{2} &=& t \sin \left(1 \right) \Rightarrow x_{2} \sin^{-1} \left(1 \right)= t\\
+\frac{y_{1}}{\cos \left(1 \right) } &=& t, \frac{y_{2}}{\sin \left(1 \right) }= t \Rightarrow
+\frac{y_{1}}{\cos \left(1 \right) } =  \frac{y_{2}}{\sin \left(1 \right) } \\
+y_{2}&=& y_{1} \tan \left(1 \right)\\
+y_{2}&=&t \Rightarrow
+t= \arccos \left(y_{1} \right) \Rightarrow \arccos \left(y_{1} \right) = \arcsin \left(y_{2} \right)\\
+y_{2} &=& \sin t \Rightarrow t= \arcsin \left( y_{2} \right) \Rightarrow \sin \left( \arccos \left(y_{1} \right) \right) = y_{2}
+\end{eqnarray*}
+\begin{eqnarray*}
+f_{Y_{1}} &=& \begin{cases}
+\int_{0} ^{y_{1} \tan \left(1 \right) } f_{Y_{1}Y_{2}} \left( y_{1}y_{2} \right) \, dy_{2} & y_{1} \in \left(0,0.5403 \right)\\
+\int_{0}^{\sin \left(\arccos \left(y_{1} \right) \right) }  f_{Y_{1}Y_{2}} \left( y_{1}y_{2} \right) \, dy_{2} & y_{1} \in \left(0.5403, 1 \right)\\
+0 & \textrm{e.o.c}
+\end{cases}\\ 
+f_{Y_{2}} \left(y_{2} \right) &=&
+\begin{cases}
+\int_{\cos \left( \arcsin \left( y_{2} \right) \right) } ^{\frac{y_{2}}{\tan \left( 1\right) } }  f_{Y_{1}Y_{2}} \left( y_{1}y_{2} \right) \, dy_{1} & y_{2} \in \left( 0 , 0.8414 \right)\\
+0 & \textrm{e.o.c/}
+\end{cases}
+\end{eqnarray*}
+\end{Ejem}
+\begin{Ejem} $N$ es una v.a t.q $\prob          \left[ N=1 \right]= \frac{1}{4},  \prob \left[ N = 2\right]= \frac{1}{3},  \prob \left[ N=3 \right]= \frac{5}{12}$ \\
+ $X_{i} \sim Poisson \left(1 \right), i=1,2, \ldots$\\
+ Hallar la densidad de la suma aleatoria $SN$
+ 
+ \begin{eqnarray*}
+ \prob \left[ S_{N} = x \right] &=& \prob \left[ X_{1}+ X_{2}+ \ldots + X_{N} = x\right]\\
+ &=& \sum_{n=1}^{3} \prob \left[ X_{1}+ X_{2}+ \ldots + X_{N} = x \mid N=n \right] \prob \left[ N=n \right]\\
+ &=&\sum_{n=1}^{3} \dfrac{X_{1}+ X_{2}+ \ldots + X_{N} = x , N=n}{\prob \left[N=n \right] } \prob \left[N=n \right]\\
+ Sol \sim Poisson \left(n \lambda \right)\\
+ &=& \sum_{n=1}^{3} \prob \left[S_{n}= x \right] \prob \left[ N=n\right]= \prob \left[ S_{1}=x \right] \prob \left[N=1 \right]+ \prob \left[S_{2}= x \right] \prob \left[ N=2 \right]\\ &+& \prob \left[S_{3}= x \right]\prob \left[N=3 \right]\\
+ S_{1} &=& X_{1}\\
+ &=&\prob \left[S_{1} = x \right] \prob \left[ N=1\right]+ \prob \left[ S_{2}= x \right] \prob \left[N=2 \right] + \prob  \left[S_{3}= x \right]\prob \left[ N=3 \right]\\
+ &=& \left( \frac{e^{-1}}{x!}\right)\frac{1}{4}+ \left( \frac{e^{-2}}{x!} \right) \frac{1}{3} + \left( \frac{e^{-3}}{x!} \right) \frac{5}{12}
+ \end{eqnarray*}
+\end{Ejem}
