@@ -1,158 +1,187 @@
-\BOOKMARK [1][-]{section.1}{Procesos Regenerativos}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{Procesos Regenerativos}{section.1}% 2
-\BOOKMARK [3][-]{subsubsection.1.1.1}{Construcci\363n de un Proceso Determinista por partes, Davis Davis}{subsection.1.1}% 3
-\BOOKMARK [1][-]{section.2}{Definiciones B\341sicas}{}% 4
-\BOOKMARK [2][-]{subsection.2.1}{Definiciones B\341sicas}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.2}{Definiciones B\341sicas}{section.2}% 6
-\BOOKMARK [2][-]{subsection.2.3}{Definiciones B\341sicas}{section.2}% 7
-\BOOKMARK [1][-]{section.3}{Supuestos}{}% 8
-\BOOKMARK [2][-]{subsection.3.1}{Supuestos}{section.3}% 9
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Supuestos B\341sicos}{subsection.3.1}% 10
-\BOOKMARK [3][-]{subsubsection.3.1.2}{Supuestos B\341sicos}{subsection.3.1}% 11
-\BOOKMARK [2][-]{subsection.3.2}{Supuestos}{section.3}% 12
-\BOOKMARK [3][-]{subsubsection.3.2.1}{Supuestos B\341sicos}{subsection.3.2}% 13
-\BOOKMARK [2][-]{subsection.3.3}{Supuestos}{section.3}% 14
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Supuestos B\341sicos}{subsection.3.3}% 15
-\BOOKMARK [2][-]{subsection.3.4}{Supuestos}{section.3}% 16
-\BOOKMARK [3][-]{subsubsection.3.4.1}{Supuestos B\341sicos}{subsection.3.4}% 17
-\BOOKMARK [2][-]{subsection.3.5}{Supuestos}{section.3}% 18
-\BOOKMARK [3][-]{subsubsection.3.5.1}{Supuestos B\341sicos}{subsection.3.5}% 19
-\BOOKMARK [2][-]{subsection.3.6}{Supuestos}{section.3}% 20
-\BOOKMARK [3][-]{subsubsection.3.6.1}{Supuestos B\341sicos}{subsection.3.6}% 21
-\BOOKMARK [2][-]{subsection.3.7}{Supuestos}{section.3}% 22
-\BOOKMARK [3][-]{subsubsection.3.7.1}{Supuestos B\341sicos}{subsection.3.7}% 23
-\BOOKMARK [2][-]{subsection.3.8}{Supuestos}{section.3}% 24
-\BOOKMARK [3][-]{subsubsection.3.8.1}{Supuestos B\341sicos}{subsection.3.8}% 25
-\BOOKMARK [2][-]{subsection.3.9}{Supuestos}{section.3}% 26
-\BOOKMARK [3][-]{subsubsection.3.9.1}{Supuestos B\341sicos}{subsection.3.9}% 27
-\BOOKMARK [1][-]{section.4}{Preliminares}{}% 28
-\BOOKMARK [1][-]{section.5}{Procesos Harris Recurrente}{}% 29
-\BOOKMARK [2][-]{subsection.5.1}{Procesos Harris Recurrente}{section.5}% 30
-\BOOKMARK [2][-]{subsection.5.2}{Procesos Harris Recurrente}{section.5}% 31
-\BOOKMARK [2][-]{subsection.5.3}{Procesos Harris Recurrente}{section.5}% 32
-\BOOKMARK [2][-]{subsection.5.4}{Procesos Harris Recurrente}{section.5}% 33
-\BOOKMARK [2][-]{subsection.5.5}{Procesos Harris Recurrente}{section.5}% 34
-\BOOKMARK [2][-]{subsection.5.6}{Procesos Harris Recurrente}{section.5}% 35
-\BOOKMARK [2][-]{subsection.5.7}{Procesos Harris Recurrente}{section.5}% 36
-\BOOKMARK [2][-]{subsection.5.8}{Procesos Harris Recurrente}{section.5}% 37
-\BOOKMARK [2][-]{subsection.5.9}{Procesos Harris Recurrente}{section.5}% 38
-\BOOKMARK [2][-]{subsection.5.10}{Procesos Harris Recurrente}{section.5}% 39
-\BOOKMARK [2][-]{subsection.5.11}{Procesos Harris Recurrente}{section.5}% 40
-\BOOKMARK [2][-]{subsection.5.12}{Procesos Harris Recurrente}{section.5}% 41
-\BOOKMARK [2][-]{subsection.5.13}{Procesos Harris Recurrente}{section.5}% 42
-\BOOKMARK [2][-]{subsection.5.14}{Procesos Harris Recurrente}{section.5}% 43
-\BOOKMARK [2][-]{subsection.5.15}{Procesos Harris Recurrente}{section.5}% 44
-\BOOKMARK [2][-]{subsection.5.16}{Procesos Harris Recurrente}{section.5}% 45
-\BOOKMARK [1][-]{section.6}{Modelo de Flujo}{}% 46
-\BOOKMARK [2][-]{subsection.6.1}{Modelo de Flujo}{section.6}% 47
-\BOOKMARK [3][-]{subsubsection.6.1.1}{Modelo de Flujo y Estabilidad}{subsection.6.1}% 48
-\BOOKMARK [3][-]{subsubsection.6.1.2}{Resultados principales}{subsection.6.1}% 49
-\BOOKMARK [3][-]{subsubsection.6.1.3}{Definiciones Generales}{subsection.6.1}% 50
-\BOOKMARK [3][-]{subsubsection.6.1.4}{Definiciones y Descripci\363n del Modelo}{subsection.6.1}% 51
-\BOOKMARK [3][-]{subsubsection.6.1.5}{Pol\355ticas de Servicio}{subsection.6.1}% 52
-\BOOKMARK [3][-]{subsubsection.6.1.6}{Proceso de Estados}{subsection.6.1}% 53
-\BOOKMARK [3][-]{subsubsection.6.1.7}{Introducci\363n}{subsection.6.1}% 54
-\BOOKMARK [3][-]{subsubsection.6.1.8}{Colas C\355clicas}{subsection.6.1}% 55
-\BOOKMARK [3][-]{subsubsection.6.1.9}{Resultados Previos}{subsection.6.1}% 56
-\BOOKMARK [3][-]{subsubsection.6.1.10}{Teorema de Estabilidad: Descripci\363n}{subsection.6.1}% 57
-\BOOKMARK [2][-]{subsection.6.2}{Modelo de Flujo}{section.6}% 58
-\BOOKMARK [2][-]{subsection.6.3}{Modelo de Flujo}{section.6}% 59
-\BOOKMARK [2][-]{subsection.6.4}{Modelo de Flujo}{section.6}% 60
-\BOOKMARK [2][-]{subsection.6.5}{Modelo de Flujo}{section.6}% 61
-\BOOKMARK [2][-]{subsection.6.6}{Modelo de Flujo}{section.6}% 62
-\BOOKMARK [2][-]{subsection.6.7}{Modelo de Flujo}{section.6}% 63
-\BOOKMARK [3][-]{subsubsection.6.7.1}{Supuestos B\341sicos}{subsection.6.7}% 64
-\BOOKMARK [2][-]{subsection.6.8}{Modelo de Flujo}{section.6}% 65
-\BOOKMARK [3][-]{subsubsection.6.8.1}{Supuestos B\341sicos}{subsection.6.8}% 66
-\BOOKMARK [2][-]{subsection.6.9}{Modelo de Flujo}{section.6}% 67
-\BOOKMARK [3][-]{subsubsection.6.9.1}{Modelo de Flujo y Estabilidad}{subsection.6.9}% 68
-\BOOKMARK [3][-]{subsubsection.6.9.2}{Resultados principales}{subsection.6.9}% 69
-\BOOKMARK [3][-]{subsubsection.6.9.3}{Definiciones Generales}{subsection.6.9}% 70
-\BOOKMARK [3][-]{subsubsection.6.9.4}{Definiciones y Descripci\363n del Modelo}{subsection.6.9}% 71
-\BOOKMARK [3][-]{subsubsection.6.9.5}{Pol\355ticas de Servicio}{subsection.6.9}% 72
-\BOOKMARK [3][-]{subsubsection.6.9.6}{Proceso de Estados}{subsection.6.9}% 73
-\BOOKMARK [3][-]{subsubsection.6.9.7}{Introducci\363n}{subsection.6.9}% 74
-\BOOKMARK [3][-]{subsubsection.6.9.8}{Colas C\355clicas}{subsection.6.9}% 75
-\BOOKMARK [3][-]{subsubsection.6.9.9}{Resultados Previos}{subsection.6.9}% 76
-\BOOKMARK [3][-]{subsubsection.6.9.10}{Teorema de Estabilidad: Descripci\363n}{subsection.6.9}% 77
-\BOOKMARK [2][-]{subsection.6.10}{Modelo de Flujo}{section.6}% 78
-\BOOKMARK [2][-]{subsection.6.11}{Modelo de Flujo}{section.6}% 79
-\BOOKMARK [2][-]{subsection.6.12}{Modelo de Flujo}{section.6}% 80
-\BOOKMARK [2][-]{subsection.6.13}{Modelo de Flujo}{section.6}% 81
-\BOOKMARK [2][-]{subsection.6.14}{Modelo de Flujo}{section.6}% 82
-\BOOKMARK [2][-]{subsection.6.15}{Modelo de Flujo}{section.6}% 83
-\BOOKMARK [2][-]{subsection.6.16}{Modelo de Flujo}{section.6}% 84
-\BOOKMARK [2][-]{subsection.6.17}{Modelo de Flujo}{section.6}% 85
-\BOOKMARK [1][-]{section.7}{Proceso de Estados Markoviano para el Sistema}{}% 86
-\BOOKMARK [2][-]{subsection.7.1}{Proceso de Estados Markoviano para el Sistema}{section.7}% 87
-\BOOKMARK [1][-]{section.8}{Procesos de Estados de Markov}{}% 88
-\BOOKMARK [2][-]{subsection.8.1}{Procesos de Estados de Markov}{section.8}% 89
-\BOOKMARK [2][-]{subsection.8.2}{Procesos de Estados de Markov}{section.8}% 90
-\BOOKMARK [2][-]{subsection.8.3}{Procesos de Estados de Markov}{section.8}% 91
-\BOOKMARK [1][-]{section.9}{Teor\355a General de Procesos Estoc\341sticos}{}% 92
-\BOOKMARK [2][-]{subsection.9.1}{Teor\355a General de Procesos Estoc\341sticos}{section.9}% 93
-\BOOKMARK [2][-]{subsection.9.2}{Teor\355a General de Procesos Estoc\341sticos}{section.9}% 94
-\BOOKMARK [2][-]{subsection.9.3}{Teor\355a General de Procesos Estoc\341sticos}{section.9}% 95
-\BOOKMARK [1][-]{section.10}{Propiedades de Markov}{}% 96
-\BOOKMARK [2][-]{subsection.10.1}{Propiedades de Markov}{section.10}% 97
-\BOOKMARK [2][-]{subsection.10.2}{Propiedades de Markov}{section.10}% 98
-\BOOKMARK [2][-]{subsection.10.3}{Propiedades de Markov}{section.10}% 99
-\BOOKMARK [2][-]{subsection.10.4}{Propiedades de Markov}{section.10}% 100
-\BOOKMARK [2][-]{subsection.10.5}{Propiedades de Markov}{section.10}% 101
-\BOOKMARK [2][-]{subsection.10.6}{Propiedades de Markov}{section.10}% 102
-\BOOKMARK [2][-]{subsection.10.7}{Propiedades de Markov}{section.10}% 103
-\BOOKMARK [2][-]{subsection.10.8}{Propiedades de Markov}{section.10}% 104
-\BOOKMARK [2][-]{subsection.10.9}{Propiedades de Markov}{section.10}% 105
-\BOOKMARK [2][-]{subsection.10.10}{Propiedades de Markov}{section.10}% 106
-\BOOKMARK [2][-]{subsection.10.11}{Propiedades de Markov}{section.10}% 107
-\BOOKMARK [1][-]{section.11}{Primer Condici\363n de Regularidad}{}% 108
-\BOOKMARK [2][-]{subsection.11.1}{Primer Condici\363n de Regularidad}{section.11}% 109
-\BOOKMARK [2][-]{subsection.11.2}{Primer Condici\363n de Regularidad}{section.11}% 110
-\BOOKMARK [2][-]{subsection.11.3}{Primer Condici\363n de Regularidad}{section.11}% 111
-\BOOKMARK [2][-]{subsection.11.4}{Primer Condici\363n de Regularidad}{section.11}% 112
-\BOOKMARK [2][-]{subsection.11.5}{Primer Condici\363n de Regularidad}{section.11}% 113
-\BOOKMARK [2][-]{subsection.11.6}{Primer Condici\363n de Regularidad}{section.11}% 114
-\BOOKMARK [2][-]{subsection.11.7}{Primer Condici\363n de Regularidad}{section.11}% 115
-\BOOKMARK [2][-]{subsection.11.8}{Primer Condici\363n de Regularidad}{section.11}% 116
-\BOOKMARK [2][-]{subsection.11.9}{Primer Condici\363n de Regularidad}{section.11}% 117
-\BOOKMARK [2][-]{subsection.11.10}{Primer Condici\363n de Regularidad}{section.11}% 118
-\BOOKMARK [2][-]{subsection.11.11}{Primer Condici\363n de Regularidad}{section.11}% 119
-\BOOKMARK [1][-]{section.12}{Construcci\363n del Modelo de Flujo}{}% 120
-\BOOKMARK [2][-]{subsection.12.1}{Construcci\363n del Modelo de Flujo}{section.12}% 121
-\BOOKMARK [2][-]{subsection.12.2}{Construcci\363n del Modelo de Flujo}{section.12}% 122
-\BOOKMARK [2][-]{subsection.12.3}{Construcci\363n del Modelo de Flujo}{section.12}% 123
-\BOOKMARK [2][-]{subsection.12.4}{Construcci\363n de un Modelo de Flujo L\355mite}{section.12}% 124
-\BOOKMARK [1][-]{section.13}{Estabilidad}{}% 125
-\BOOKMARK [2][-]{subsection.13.1}{Estabilidad}{section.13}% 126
-\BOOKMARK [2][-]{subsection.13.2}{Estabilidad}{section.13}% 127
-\BOOKMARK [2][-]{subsection.13.3}{Estabilidad}{section.13}% 128
-\BOOKMARK [1][-]{section.14}{Procesos Fuerte de Markov}{}% 129
-\BOOKMARK [2][-]{subsection.14.1}{Procesos Fuerte de Markov}{section.14}% 130
-\BOOKMARK [3][-]{subsubsection.14.1.1}{Construcci\363n de un Proceso Determinista por partes, Davis Davis}{subsection.14.1}% 131
-\BOOKMARK [2][-]{subsection.14.2}{Procesos Fuerte de Markov}{section.14}% 132
-\BOOKMARK [2][-]{subsection.14.3}{Procesos Fuerte de Markov}{section.14}% 133
-\BOOKMARK [2][-]{subsection.14.4}{Procesos Fuerte de Markov}{section.14}% 134
-\BOOKMARK [2][-]{subsection.14.5}{Procesos Fuerte de Markov}{section.14}% 135
-\BOOKMARK [1][-]{section.15}{Procesos Harris Recurrentes Positivos}{}% 136
-\BOOKMARK [2][-]{subsection.15.1}{Procesos Harris Recurrentes Positivos}{section.15}% 137
-\BOOKMARK [2][-]{subsection.15.2}{Procesos Harris Recurrentes Positivos}{section.15}% 138
-\BOOKMARK [1][-]{section.16}{Construcci\363n de un Modelo de Flujo L\355mite}{}% 139
-\BOOKMARK [2][-]{subsection.16.1}{Construcci\363n de un Modelo de Flujo L\355mite}{section.16}% 140
-\BOOKMARK [2][-]{subsection.16.2}{Construcci\363n de un Modelo de Flujo L\355mite}{section.16}% 141
-\BOOKMARK [2][-]{subsection.16.3}{Modelo de Visitas C\355clicas con un Servidor: Estabilidad}{section.16}% 142
-\BOOKMARK [1][-]{section.17}{Teorema 2.1}{}% 143
-\BOOKMARK [2][-]{subsection.17.1}{Teorema 2.1}{section.17}% 144
-\BOOKMARK [2][-]{subsection.17.2}{Teorema 2.1}{section.17}% 145
-\BOOKMARK [2][-]{subsection.17.3}{Teorema 2.1}{section.17}% 146
-\BOOKMARK [1][-]{section.18}{Teorema 2.2}{}% 147
-\BOOKMARK [2][-]{subsection.18.1}{Teorema 2.2}{section.18}% 148
-\BOOKMARK [2][-]{subsection.18.2}{Teorema 2.2}{section.18}% 149
-\BOOKMARK [2][-]{subsection.18.3}{Teorema 2.2}{section.18}% 150
-\BOOKMARK [1][-]{section.19}{Teorema 2.3}{}% 151
-\BOOKMARK [2][-]{subsection.19.1}{Teorema 2.3}{section.19}% 152
-\BOOKMARK [2][-]{subsection.19.2}{Teorema 2.3}{section.19}% 153
-\BOOKMARK [2][-]{subsection.19.3}{Teorema 2.3}{section.19}% 154
-\BOOKMARK [1][-]{section.20}{Estabilidad de los Sistemas de Visitas C\355clicas}{}% 155
-\BOOKMARK [2][-]{subsection.20.1}{Estabilidad de los Sistemas de Visitas C\355clicas}{section.20}% 156
-\BOOKMARK [1][-]{section.21}{Resultados principales}{}% 157
-\BOOKMARK [2][-]{subsection.21.1}{Resultados principales}{section.21}% 158
+\BOOKMARK [0][-]{part.1}{I Contenido}{}% 1
+\BOOKMARK [1][-]{section.1}{Definiciones B\341sicas}{part.1}% 2
+\BOOKMARK [1][-]{section.2}{Procesos Harris Recurrente}{part.1}% 3
+\BOOKMARK [1][-]{section.3}{Modelo de Flujo}{part.1}% 4
+\BOOKMARK [0][-]{part.2}{II Material}{}% 5
+\BOOKMARK [1][-]{subsection.3.1}{Modelo de Flujo}{part.2}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Modelo de Flujo}{subsection.3.1}% 7
+\BOOKMARK [2][-]{subsection.3.3}{Modelo de Flujo}{subsection.3.1}% 8
+\BOOKMARK [2][-]{subsection.3.4}{Modelo de Flujo}{subsection.3.1}% 9
+\BOOKMARK [2][-]{subsection.3.5}{Modelo de Flujo}{subsection.3.1}% 10
+\BOOKMARK [2][-]{subsection.3.6}{Modelo de Flujo}{subsection.3.1}% 11
+\BOOKMARK [2][-]{subsection.3.7}{Modelo de Flujo}{subsection.3.1}% 12
+\BOOKMARK [2][-]{subsection.3.8}{Modelo de Flujo}{subsection.3.1}% 13
+\BOOKMARK [1][-]{section.4}{Proceso de Estados Markoviano para el Sistema}{part.2}% 14
+\BOOKMARK [2][-]{subsection.4.1}{Proceso de Estados Markoviano para el Sistema}{section.4}% 15
+\BOOKMARK [1][-]{section.5}{Procesos de Estados de Markov}{part.2}% 16
+\BOOKMARK [2][-]{subsection.5.1}{Procesos de Estados de Markov}{section.5}% 17
+\BOOKMARK [2][-]{subsection.5.2}{Procesos de Estados de Markov}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.3}{Procesos de Estados de Markov}{section.5}% 19
+\BOOKMARK [1][-]{section.6}{Teor\355a General de Procesos Estoc\341sticos}{part.2}% 20
+\BOOKMARK [2][-]{subsection.6.1}{Teor\355a General de Procesos Estoc\341sticos}{section.6}% 21
+\BOOKMARK [2][-]{subsection.6.2}{Teor\355a General de Procesos Estoc\341sticos}{section.6}% 22
+\BOOKMARK [2][-]{subsection.6.3}{Teor\355a General de Procesos Estoc\341sticos}{section.6}% 23
+\BOOKMARK [1][-]{section.7}{Propiedades de Markov}{part.2}% 24
+\BOOKMARK [2][-]{subsection.7.1}{Propiedades de Markov}{section.7}% 25
+\BOOKMARK [2][-]{subsection.7.2}{Propiedades de Markov}{section.7}% 26
+\BOOKMARK [2][-]{subsection.7.3}{Propiedades de Markov}{section.7}% 27
+\BOOKMARK [2][-]{subsection.7.4}{Propiedades de Markov}{section.7}% 28
+\BOOKMARK [2][-]{subsection.7.5}{Propiedades de Markov}{section.7}% 29
+\BOOKMARK [2][-]{subsection.7.6}{Propiedades de Markov}{section.7}% 30
+\BOOKMARK [2][-]{subsection.7.7}{Propiedades de Markov}{section.7}% 31
+\BOOKMARK [2][-]{subsection.7.8}{Propiedades de Markov}{section.7}% 32
+\BOOKMARK [2][-]{subsection.7.9}{Propiedades de Markov}{section.7}% 33
+\BOOKMARK [2][-]{subsection.7.10}{Propiedades de Markov}{section.7}% 34
+\BOOKMARK [2][-]{subsection.7.11}{Propiedades de Markov}{section.7}% 35
+\BOOKMARK [1][-]{section.8}{Primer Condici\363n de Regularidad}{part.2}% 36
+\BOOKMARK [2][-]{subsection.8.1}{Primer Condici\363n de Regularidad}{section.8}% 37
+\BOOKMARK [2][-]{subsection.8.2}{Primer Condici\363n de Regularidad}{section.8}% 38
+\BOOKMARK [2][-]{subsection.8.3}{Primer Condici\363n de Regularidad}{section.8}% 39
+\BOOKMARK [2][-]{subsection.8.4}{Primer Condici\363n de Regularidad}{section.8}% 40
+\BOOKMARK [2][-]{subsection.8.5}{Primer Condici\363n de Regularidad}{section.8}% 41
+\BOOKMARK [2][-]{subsection.8.6}{Primer Condici\363n de Regularidad}{section.8}% 42
+\BOOKMARK [2][-]{subsection.8.7}{Primer Condici\363n de Regularidad}{section.8}% 43
+\BOOKMARK [2][-]{subsection.8.8}{Primer Condici\363n de Regularidad}{section.8}% 44
+\BOOKMARK [2][-]{subsection.8.9}{Primer Condici\363n de Regularidad}{section.8}% 45
+\BOOKMARK [2][-]{subsection.8.10}{Primer Condici\363n de Regularidad}{section.8}% 46
+\BOOKMARK [2][-]{subsection.8.11}{Primer Condici\363n de Regularidad}{section.8}% 47
+\BOOKMARK [1][-]{section.9}{Construcci\363n del Modelo de Flujo}{part.2}% 48
+\BOOKMARK [2][-]{subsection.9.1}{Construcci\363n del Modelo de Flujo}{section.9}% 49
+\BOOKMARK [2][-]{subsection.9.2}{Construcci\363n del Modelo de Flujo}{section.9}% 50
+\BOOKMARK [2][-]{subsection.9.3}{Construcci\363n del Modelo de Flujo}{section.9}% 51
+\BOOKMARK [2][-]{subsection.9.4}{Construcci\363n de un Modelo de Flujo L\355mite}{section.9}% 52
+\BOOKMARK [1][-]{section.10}{Estabilidad}{part.2}% 53
+\BOOKMARK [2][-]{subsection.10.1}{Estabilidad}{section.10}% 54
+\BOOKMARK [2][-]{subsection.10.2}{Estabilidad}{section.10}% 55
+\BOOKMARK [2][-]{subsection.10.3}{Estabilidad}{section.10}% 56
+\BOOKMARK [1][-]{section.11}{Procesos Fuerte de Markov}{part.2}% 57
+\BOOKMARK [2][-]{subsection.11.1}{Procesos Fuerte de Markov}{section.11}% 58
+\BOOKMARK [3][-]{subsubsection.11.1.1}{Construcci\363n de un Proceso Determinista por partes, Davis Davis}{subsection.11.1}% 59
+\BOOKMARK [2][-]{subsection.11.2}{Procesos Fuerte de Markov}{section.11}% 60
+\BOOKMARK [2][-]{subsection.11.3}{Procesos Fuerte de Markov}{section.11}% 61
+\BOOKMARK [2][-]{subsection.11.4}{Procesos Fuerte de Markov}{section.11}% 62
+\BOOKMARK [2][-]{subsection.11.5}{Procesos Fuerte de Markov}{section.11}% 63
+\BOOKMARK [1][-]{section.12}{Procesos Harris Recurrentes Positivos}{part.2}% 64
+\BOOKMARK [2][-]{subsection.12.1}{Procesos Harris Recurrentes Positivos}{section.12}% 65
+\BOOKMARK [2][-]{subsection.12.2}{Procesos Harris Recurrentes Positivos}{section.12}% 66
+\BOOKMARK [1][-]{section.13}{Construcci\363n de un Modelo de Flujo L\355mite}{part.2}% 67
+\BOOKMARK [2][-]{subsection.13.1}{Construcci\363n de un Modelo de Flujo L\355mite}{section.13}% 68
+\BOOKMARK [2][-]{subsection.13.2}{Construcci\363n de un Modelo de Flujo L\355mite}{section.13}% 69
+\BOOKMARK [2][-]{subsection.13.3}{Modelo de Visitas C\355clicas con un Servidor: Estabilidad}{section.13}% 70
+\BOOKMARK [1][-]{section.14}{Teorema 2.1}{part.2}% 71
+\BOOKMARK [2][-]{subsection.14.1}{Teorema 2.1}{section.14}% 72
+\BOOKMARK [2][-]{subsection.14.2}{Teorema 2.1}{section.14}% 73
+\BOOKMARK [2][-]{subsection.14.3}{Teorema 2.1}{section.14}% 74
+\BOOKMARK [1][-]{section.15}{Teorema 2.2}{part.2}% 75
+\BOOKMARK [2][-]{subsection.15.1}{Teorema 2.2}{section.15}% 76
+\BOOKMARK [2][-]{subsection.15.2}{Teorema 2.2}{section.15}% 77
+\BOOKMARK [2][-]{subsection.15.3}{Teorema 2.2}{section.15}% 78
+\BOOKMARK [1][-]{section.16}{Teorema 2.3}{part.2}% 79
+\BOOKMARK [2][-]{subsection.16.1}{Teorema 2.3}{section.16}% 80
+\BOOKMARK [2][-]{subsection.16.2}{Teorema 2.3}{section.16}% 81
+\BOOKMARK [2][-]{subsection.16.3}{Teorema 2.3}{section.16}% 82
+\BOOKMARK [1][-]{section.17}{Estabilidad de los Sistemas de Visitas C\355clicas}{part.2}% 83
+\BOOKMARK [2][-]{subsection.17.1}{Estabilidad de los Sistemas de Visitas C\355clicas}{section.17}% 84
+\BOOKMARK [1][-]{section.18}{Resultados principales}{part.2}% 85
+\BOOKMARK [2][-]{subsection.18.1}{Resultados principales}{section.18}% 86
+\BOOKMARK [2][-]{subsection.18.2}{Modelo de Flujo}{section.18}% 87
+\BOOKMARK [2][-]{subsection.18.3}{Procesos de Estados de Markov}{section.18}% 88
+\BOOKMARK [2][-]{subsection.18.4}{Teor\355a General de Procesos Estoc\341sticos}{section.18}% 89
+\BOOKMARK [2][-]{subsection.18.5}{Propiedades de Markov}{section.18}% 90
+\BOOKMARK [2][-]{subsection.18.6}{Primer Condici\363n de Regularidad}{section.18}% 91
+\BOOKMARK [2][-]{subsection.18.7}{Construcci\363n del Modelo de Flujo}{section.18}% 92
+\BOOKMARK [2][-]{subsection.18.8}{Estabilidad}{section.18}% 93
+\BOOKMARK [2][-]{subsection.18.9}{Propiedades de Markov}{section.18}% 94
+\BOOKMARK [2][-]{subsection.18.10}{Primer Condici\363n de Regularidad}{section.18}% 95
+\BOOKMARK [2][-]{subsection.18.11}{Procesos Fuerte de Markov}{section.18}% 96
+\BOOKMARK [3][-]{subsubsection.18.11.1}{Construcci\363n de un Proceso Determinista por partes, Davis Davis}{subsection.18.11}% 97
+\BOOKMARK [2][-]{subsection.18.12}{Procesos Harris Recurrentes Positivos}{section.18}% 98
+\BOOKMARK [2][-]{subsection.18.13}{Construcci\363n de un Modelo de Flujo L\355mite}{section.18}% 99
+\BOOKMARK [2][-]{subsection.18.14}{Modelo de Visitas C\355clicas con un Servidor: Estabilidad}{section.18}% 100
+\BOOKMARK [2][-]{subsection.18.15}{Teorema 2.1}{section.18}% 101
+\BOOKMARK [2][-]{subsection.18.16}{Teorema 2.2}{section.18}% 102
+\BOOKMARK [2][-]{subsection.18.17}{Teorema 2.3}{section.18}% 103
+\BOOKMARK [2][-]{subsection.18.18}{Definiciones B\341sicas}{section.18}% 104
+\BOOKMARK [2][-]{subsection.18.19}{Preliminares}{section.18}% 105
+\BOOKMARK [2][-]{subsection.18.20}{Procesos Harris Recurrente}{section.18}% 106
+\BOOKMARK [2][-]{subsection.18.21}{Modelo de Flujo}{section.18}% 107
+\BOOKMARK [2][-]{subsection.18.22}{Procesos de Estados de Markov}{section.18}% 108
+\BOOKMARK [2][-]{subsection.18.23}{Teor\355a General de Procesos Estoc\341sticos}{section.18}% 109
+\BOOKMARK [2][-]{subsection.18.24}{Propiedades de Markov}{section.18}% 110
+\BOOKMARK [2][-]{subsection.18.25}{Primer Condici\363n de Regularidad}{section.18}% 111
+\BOOKMARK [2][-]{subsection.18.26}{Construcci\363n del Modelo de Flujo}{section.18}% 112
+\BOOKMARK [2][-]{subsection.18.27}{Estabilidad}{section.18}% 113
+\BOOKMARK [2][-]{subsection.18.28}{Propiedades de Markov}{section.18}% 114
+\BOOKMARK [2][-]{subsection.18.29}{Primer Condici\363n de Regularidad}{section.18}% 115
+\BOOKMARK [2][-]{subsection.18.30}{Procesos de Estados Markoviano para el Sistema}{section.18}% 116
+\BOOKMARK [2][-]{subsection.18.31}{Procesos Fuerte de Markov}{section.18}% 117
+\BOOKMARK [3][-]{subsubsection.18.31.1}{Construcci\363n de un Proceso Determinista por partes, Davis Davis}{subsection.18.31}% 118
+\BOOKMARK [2][-]{subsection.18.32}{Procesos Harris Recurrentes Positivos}{section.18}% 119
+\BOOKMARK [2][-]{subsection.18.33}{Construcci\363n de un Modelo de Flujo L\355mite}{section.18}% 120
+\BOOKMARK [2][-]{subsection.18.34}{Modelo de Visitas C\355clicas con un Servidor: Estabilidad}{section.18}% 121
+\BOOKMARK [2][-]{subsection.18.35}{Teorema 2.1}{section.18}% 122
+\BOOKMARK [2][-]{subsection.18.36}{Teorema 2.2}{section.18}% 123
+\BOOKMARK [2][-]{subsection.18.37}{Teorema 2.3}{section.18}% 124
+\BOOKMARK [2][-]{subsection.18.38}{Definiciones B\341sicas}{section.18}% 125
+\BOOKMARK [2][-]{subsection.18.39}{Proceso de Estados Markoviano para el Sistema}{section.18}% 126
+\BOOKMARK [2][-]{subsection.18.40}{Procesos Fuerte de Markov}{section.18}% 127
+\BOOKMARK [2][-]{subsection.18.41}{Propiedades de Markov}{section.18}% 128
+\BOOKMARK [2][-]{subsection.18.42}{Primer Condici\363n de Regularidad}{section.18}% 129
+\BOOKMARK [2][-]{subsection.18.43}{Propiedades de Markov}{section.18}% 130
+\BOOKMARK [2][-]{subsection.18.44}{Primer Condici\363n de Regularidad}{section.18}% 131
+\BOOKMARK [2][-]{subsection.18.45}{Supuestos}{section.18}% 132
+\BOOKMARK [3][-]{subsubsection.18.45.1}{Supuestos B\341sicos}{subsection.18.45}% 133
+\BOOKMARK [2][-]{subsection.18.46}{Procesos Harris Recurrente}{section.18}% 134
+\BOOKMARK [2][-]{subsection.18.47}{Modelo de Flujo}{section.18}% 135
+\BOOKMARK [3][-]{subsubsection.18.47.1}{Modelo de Flujo y Estabilidad}{subsection.18.47}% 136
+\BOOKMARK [3][-]{subsubsection.18.47.2}{Resultados principales}{subsection.18.47}% 137
+\BOOKMARK [3][-]{subsubsection.18.47.3}{Definiciones Generales}{subsection.18.47}% 138
+\BOOKMARK [3][-]{subsubsection.18.47.4}{Definiciones y Descripci\363n del Modelo}{subsection.18.47}% 139
+\BOOKMARK [3][-]{subsubsection.18.47.5}{Pol\355ticas de Servicio}{subsection.18.47}% 140
+\BOOKMARK [3][-]{subsubsection.18.47.6}{Proceso de Estados}{subsection.18.47}% 141
+\BOOKMARK [3][-]{subsubsection.18.47.7}{Introducci\363n}{subsection.18.47}% 142
+\BOOKMARK [3][-]{subsubsection.18.47.8}{Colas C\355clicas}{subsection.18.47}% 143
+\BOOKMARK [3][-]{subsubsection.18.47.9}{Resultados Previos}{subsection.18.47}% 144
+\BOOKMARK [3][-]{subsubsection.18.47.10}{Teorema de Estabilidad: Descripci\363n}{subsection.18.47}% 145
+\BOOKMARK [2][-]{subsection.18.48}{Supuestos}{section.18}% 146
+\BOOKMARK [3][-]{subsubsection.18.48.1}{Supuestos B\341sicos}{subsection.18.48}% 147
+\BOOKMARK [2][-]{subsection.18.49}{Procesos Harris Recurrente}{section.18}% 148
+\BOOKMARK [2][-]{subsection.18.50}{Modelo de Flujo}{section.18}% 149
+\BOOKMARK [2][-]{subsection.18.51}{Modelo de Flujo}{section.18}% 150
+\BOOKMARK [2][-]{subsection.18.52}{Estabilidad de los Sistemas de Visitas C\355clicas}{section.18}% 151
+\BOOKMARK [2][-]{subsection.18.53}{Resultados principales}{section.18}% 152
+\BOOKMARK [2][-]{subsection.18.54}{Supuestos}{section.18}% 153
+\BOOKMARK [3][-]{subsubsection.18.54.1}{Supuestos B\341sicos}{subsection.18.54}% 154
+\BOOKMARK [2][-]{subsection.18.55}{Procesos Harris Recurrente}{section.18}% 155
+\BOOKMARK [2][-]{subsection.18.56}{Modelo de Flujo}{section.18}% 156
+\BOOKMARK [2][-]{subsection.18.57}{Supuestos}{section.18}% 157
+\BOOKMARK [3][-]{subsubsection.18.57.1}{Supuestos B\341sicos}{subsection.18.57}% 158
+\BOOKMARK [2][-]{subsection.18.58}{Procesos Harris Recurrente}{section.18}% 159
+\BOOKMARK [2][-]{subsection.18.59}{Modelo de Flujo}{section.18}% 160
+\BOOKMARK [3][-]{subsubsection.18.59.1}{Supuestos B\341sicos}{subsection.18.59}% 161
+\BOOKMARK [2][-]{subsection.18.60}{Procesos Harris Recurrente}{section.18}% 162
+\BOOKMARK [2][-]{subsection.18.61}{Modelo de Flujo}{section.18}% 163
+\BOOKMARK [2][-]{subsection.18.62}{Supuestos}{section.18}% 164
+\BOOKMARK [3][-]{subsubsection.18.62.1}{Supuestos B\341sicos}{subsection.18.62}% 165
+\BOOKMARK [2][-]{subsection.18.63}{Procesos Harris Recurrente}{section.18}% 166
+\BOOKMARK [2][-]{subsection.18.64}{Modelo de Flujo}{section.18}% 167
+\BOOKMARK [1][-]{section.19}{Preliminares: Modelos de Flujo}{part.2}% 168
+\BOOKMARK [2][-]{subsection.19.1}{Supuestos B\341sicos}{section.19}% 169
+\BOOKMARK [2][-]{subsection.19.2}{Procesos Regenerativos}{section.19}% 170
+\BOOKMARK [2][-]{subsection.19.3}{Preliminares}{section.19}% 171
+\BOOKMARK [2][-]{subsection.19.4}{Procesos Harris Recurrente}{section.19}% 172
+\BOOKMARK [1][-]{section.20}{Modelo de Flujo}{part.2}% 173
+\BOOKMARK [2][-]{subsection.20.1}{Teor\341 de Procesos Estoc\341sticos y Medibilidad}{section.20}% 174
+\BOOKMARK [2][-]{subsection.20.2}{Construcci\363n del Modelo de Flujo}{section.20}% 175
+\BOOKMARK [2][-]{subsection.20.3}{Ya revisado}{section.20}% 176
+\BOOKMARK [1][-]{section.21}{Procesos de Renovaci\363n y Regenerativos}{part.2}% 177
+\BOOKMARK [2][-]{subsection.21.1}{Tiempo de Ciclo Promedio}{section.21}% 178
+\BOOKMARK [2][-]{subsection.21.2}{Tiempos de Ciclo e Intervisita}{section.21}% 179
+\BOOKMARK [2][-]{subsection.21.3}{Longitudes de la Cola en cualquier tiempo}{section.21}% 180
+\BOOKMARK [2][-]{subsection.21.4}{Por resolver}{section.21}% 181
+\BOOKMARK [2][-]{subsection.21.5}{Tiempos de Ciclo e Intervisita}{section.21}% 182
+\BOOKMARK [2][-]{subsection.21.6}{Longitudes de la Cola en cualquier tiempo}{section.21}% 183
+\BOOKMARK [2][-]{subsection.21.7}{Material por agregar}{section.21}% 184
+\BOOKMARK [2][-]{subsection.21.8}{Propiedades de los Procesos de Renovaci\363n}{section.21}% 185
+\BOOKMARK [1][-]{section.22}{Procesos Regenerativos}{part.2}% 186
+\BOOKMARK [2][-]{subsection.22.1}{Preliminares}{section.22}% 187

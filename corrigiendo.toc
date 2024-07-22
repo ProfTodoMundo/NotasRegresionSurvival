@@ -1,257 +1,149 @@
 \babel@toc {english}{}
-\contentsline {subsection}{\numberline {0.1}Procesos de Renovaci\'on}{5}{subsection.0.1}
-\contentsline {subsection}{\numberline {0.2}Procesos de Renovaci\'on}{6}{subsection.0.2}
-\contentsline {subsection}{\numberline {0.3}Procesos de Renovaci\'on}{6}{subsection.0.3}
-\contentsline {subsection}{\numberline {0.4}Procesos de Renovaci\'on}{7}{subsection.0.4}
-\contentsline {subsection}{\numberline {0.5}Procesos de Renovaci\'on}{14}{subsection.0.5}
-\contentsline {subsection}{\numberline {0.6}Procesos de Renovaci\'on}{15}{subsection.0.6}
-\contentsline {subsection}{\numberline {0.7}Teorema Principal de Renovaci\'on}{15}{subsection.0.7}
-\contentsline {subsection}{\numberline {0.8}Teorema Principal de Renovaci\'on}{16}{subsection.0.8}
-\contentsline {subsection}{\numberline {0.9}Teorema Principal de Renovaci\'on}{16}{subsection.0.9}
-\contentsline {subsection}{\numberline {0.10}Teorema Principal de Renovaci\'on}{17}{subsection.0.10}
-\contentsline {subsection}{\numberline {0.11}Funci\'on de Renovaci\'on}{18}{subsection.0.11}
-\contentsline {subsection}{\numberline {0.12}Funci\'on de Renovaci\'on}{18}{subsection.0.12}
-\contentsline {subsection}{\numberline {0.13}Funci\'on de Renovaci\'on}{18}{subsection.0.13}
-\contentsline {subsection}{\numberline {0.14}Funci\'on de Renovaci\'on}{19}{subsection.0.14}
-\contentsline {subsection}{\numberline {0.15}Funci\'on de Renovaci\'on}{20}{subsection.0.15}
-\contentsline {subsection}{\numberline {0.16}Propiedades de los Procesos de Renovaci\'on}{20}{subsection.0.16}
-\contentsline {subsection}{\numberline {0.17}Funci\'on de Renovaci\'on}{22}{subsection.0.17}
-\contentsline {subsection}{\numberline {0.18}Puntos de Renovaci\'on}{22}{subsection.0.18}
-\contentsline {subsection}{\numberline {0.19}Resultados para Procesos de Salida}{23}{subsection.0.19}
-\contentsline {subsection}{\numberline {0.20}Procesos Regenerativos}{25}{subsection.0.20}
-\contentsline {subsection}{\numberline {0.21}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{26}{subsection.0.21}
-\contentsline {subsection}{\numberline {0.22}Procesos Regenerativos}{31}{subsection.0.22}
-\contentsline {subsection}{\numberline {0.23}Procesos Regenerativos}{32}{subsection.0.23}
-\contentsline {subsection}{\numberline {0.24}Procesos Regenerativos}{33}{subsection.0.24}
-\contentsline {subsection}{\numberline {0.25}Procesos Regenerativos}{33}{subsection.0.25}
-\contentsline {subsection}{\numberline {0.26}Procesos Regenerativos}{36}{subsection.0.26}
-\contentsline {subsection}{\numberline {0.27}Procesos Regenerativos}{37}{subsection.0.27}
-\contentsline {subsection}{\numberline {0.28}Procesos Regenerativos}{38}{subsection.0.28}
-\contentsline {subsection}{\numberline {0.29}Procesos Regenerativos}{39}{subsection.0.29}
-\contentsline {subsection}{\numberline {0.30}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{42}{subsection.0.30}
-\contentsline {subsection}{\numberline {0.31}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{43}{subsection.0.31}
-\contentsline {subsection}{\numberline {0.32}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{44}{subsection.0.32}
-\contentsline {subsection}{\numberline {0.33}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{44}{subsection.0.33}
-\contentsline {subsection}{\numberline {0.34}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{45}{subsection.0.34}
-\contentsline {subsection}{\numberline {0.35}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{46}{subsection.0.35}
-\contentsline {subsection}{\numberline {0.36}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{47}{subsection.0.36}
-\contentsline {subsection}{\numberline {0.37}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{48}{subsection.0.37}
-\contentsline {subsection}{\numberline {0.38}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{49}{subsection.0.38}
-\contentsline {subsection}{\numberline {0.39}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{50}{subsection.0.39}
-\contentsline {subsection}{\numberline {0.40}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{52}{subsection.0.40}
-\contentsline {subsection}{\numberline {0.41}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{52}{subsection.0.41}
-\contentsline {subsection}{\numberline {0.42}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman2}}{100}{subsection.0.42}
-\contentsline {subsection}{\numberline {0.43}Propiedades de los Procesos de Renovaci\'on}{101}{subsection.0.43}
-\contentsline {subsection}{\numberline {0.44}Propiedades de los Procesos de Renovaci\'on}{104}{subsection.0.44}
-\contentsline {subsection}{\numberline {0.45}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{106}{subsection.0.45}
-\contentsline {subsection}{\numberline {0.46}Procesos de Renovaci\'on}{106}{subsection.0.46}
-\contentsline {subsection}{\numberline {0.47}Teorema Principal de Renovaci\'on}{107}{subsection.0.47}
-\contentsline {subsection}{\numberline {0.48}Funci\'on de Renovaci\'on}{107}{subsection.0.48}
-\contentsline {subsection}{\numberline {0.49}Propiedades de los Procesos de Renovaci\'on}{108}{subsection.0.49}
-\contentsline {subsection}{\numberline {0.50}Funci\'on de Renovaci\'on}{109}{subsection.0.50}
-\contentsline {subsection}{\numberline {0.51}Procesos de Renovaci\'on}{110}{subsection.0.51}
-\contentsline {subsection}{\numberline {0.52}Puntos de Renovaci\'on}{110}{subsection.0.52}
-\contentsline {subsection}{\numberline {0.53}Puntos de Renovaci\'on}{111}{subsection.0.53}
-\contentsline {subsection}{\numberline {0.54}Resultados para Procesos de Salida}{112}{subsection.0.54}
-\contentsline {subsection}{\numberline {0.55}Procesos Regenerativos}{114}{subsection.0.55}
-\contentsline {subsection}{\numberline {0.56}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{148}{subsection.0.56}
-\contentsline {subsection}{\numberline {0.57}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{149}{subsection.0.57}
-\contentsline {subsection}{\numberline {0.58}Procesos de Renovaci\'on}{150}{subsection.0.58}
-\contentsline {subsection}{\numberline {0.59}Propiedades de los Procesos de Renovaci\'on}{151}{subsection.0.59}
-\contentsline {subsection}{\numberline {0.60}Propiedades de los Procesos de Renovaci\'on}{152}{subsection.0.60}
-\contentsline {subsection}{\numberline {0.61}Propiedades de los Procesos de Renovaci\'on}{154}{subsection.0.61}
-\contentsline {subsection}{\numberline {0.62}Propiedades de los Procesos de Renovaci\'on}{155}{subsection.0.62}
-\contentsline {subsection}{\numberline {0.63}Propiedades de los Procesos de Renovaci\'on}{156}{subsection.0.63}
-\contentsline {subsection}{\numberline {0.64}Propiedades de los Procesos de Renovaci\'on}{157}{subsection.0.64}
-\contentsline {subsection}{\numberline {0.65}Propiedades de los Procesos de Renovaci\'on}{164}{subsection.0.65}
-\contentsline {subsection}{\numberline {0.66}Propiedades de los Procesos de Renovaci\'on}{165}{subsection.0.66}
-\contentsline {subsection}{\numberline {0.67}Propiedades de los Procesos de Renovaci\'on}{166}{subsection.0.67}
-\contentsline {subsection}{\numberline {0.68}Propiedades de los Procesos de Renovaci\'on}{167}{subsection.0.68}
-\contentsline {subsection}{\numberline {0.69}Propiedades de los Procesos de Renovaci\'on}{169}{subsection.0.69}
-\contentsline {subsection}{\numberline {0.70}Propiedades de los Procesos de Renovaci\'on}{170}{subsection.0.70}
-\contentsline {subsection}{\numberline {0.71}Funci\'on de Renovaci\'on}{171}{subsection.0.71}
-\contentsline {subsection}{\numberline {0.72}Funci\'on de Renovaci\'on}{171}{subsection.0.72}
-\contentsline {subsection}{\numberline {0.73}Funci\'on de Renovaci\'on}{172}{subsection.0.73}
-\contentsline {subsection}{\numberline {0.74}Procesos de Renovaci\'on}{174}{subsection.0.74}
-\contentsline {subsection}{\numberline {0.75}Procesos Regenerativos}{181}{subsection.0.75}
-\contentsline {subsection}{\numberline {0.76}Procesos Regenerativos}{182}{subsection.0.76}
-\contentsline {subsection}{\numberline {0.77}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{183}{subsection.0.77}
-\contentsline {subsection}{\numberline {0.78}Existencia de Tiempos de Regeneraci\'on}{184}{subsection.0.78}
-\contentsline {subsection}{\numberline {0.79}Procesos Regenerativos: Thorisson}{184}{subsection.0.79}
-\contentsline {subsection}{\numberline {0.80}Procesos Regenerativos}{198}{subsection.0.80}
-\contentsline {subsection}{\numberline {0.81}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman2}}{198}{subsection.0.81}
-\contentsline {subsection}{\numberline {0.82}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{199}{subsection.0.82}
-\contentsline {subsection}{\numberline {0.83}Procesos de Renovaci\'on}{200}{subsection.0.83}
-\contentsline {subsection}{\numberline {0.84}Teorema Principal de Renovaci\'on}{200}{subsection.0.84}
-\contentsline {subsection}{\numberline {0.85}Propiedades de los Procesos de Renovaci\'on}{201}{subsection.0.85}
-\contentsline {subsection}{\numberline {0.86}Propiedades de los Procesos de Renovaci\'on}{202}{subsection.0.86}
-\contentsline {subsection}{\numberline {0.87}Propiedades de los Procesos de Renovaci\'on}{203}{subsection.0.87}
-\contentsline {subsection}{\numberline {0.88}Propiedades de los Procesos de Renovaci\'on}{204}{subsection.0.88}
-\contentsline {subsection}{\numberline {0.89}Propiedades de los Procesos de Renovaci\'on}{206}{subsection.0.89}
-\contentsline {subsection}{\numberline {0.90}Funci\'on de Renovaci\'on}{207}{subsection.0.90}
-\contentsline {subsection}{\numberline {0.91}Funci\'on de Renovaci\'on}{207}{subsection.0.91}
-\contentsline {subsection}{\numberline {0.92}Procesos de Renovaci\'on}{208}{subsection.0.92}
-\contentsline {subsection}{\numberline {0.93}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{208}{subsection.0.93}
-\contentsline {subsection}{\numberline {0.94}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{214}{subsection.0.94}
-\contentsline {subsection}{\numberline {0.95}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{220}{subsection.0.95}
-\contentsline {subsection}{\numberline {0.96}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{227}{subsection.0.96}
-\contentsline {subsection}{\numberline {0.97}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{234}{subsection.0.97}
-\contentsline {subsection}{\numberline {0.98}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{240}{subsection.0.98}
-\contentsline {subsection}{\numberline {0.99}Procesos Regenerativos}{245}{subsection.0.99}
-\contentsline {subsection}{\numberline {0.100}Puntos de Renovaci\'on}{249}{subsection.0.100}
-\contentsline {subsection}{\numberline {0.101}Resultados para Procesos de Salida}{249}{subsection.0.101}
-\contentsline {subsection}{\numberline {0.102}Procesos Regenerativos}{249}{subsection.0.102}
-\contentsline {subsection}{\numberline {0.103}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{250}{subsection.0.103}
-\contentsline {subsection}{\numberline {0.104}Procesos Regenerativos}{256}{subsection.0.104}
-\contentsline {subsection}{\numberline {0.105}Procesos Regenerativos}{257}{subsection.0.105}
-\contentsline {subsection}{\numberline {0.106}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{258}{subsection.0.106}
-\contentsline {subsection}{\numberline {0.107}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{258}{subsection.0.107}
-\contentsline {subsection}{\numberline {0.108}Propiedades de los Procesos de Renovaci\'on}{259}{subsection.0.108}
-\contentsline {subsection}{\numberline {0.109}Propiedades de los Procesos de Renovaci\'on}{260}{subsection.0.109}
-\contentsline {subsection}{\numberline {0.110}Propiedades de los Procesos de Renovaci\'on}{262}{subsection.0.110}
-\contentsline {subsection}{\numberline {0.111}Propiedades de los Procesos de Renovaci\'on}{263}{subsection.0.111}
-\contentsline {subsection}{\numberline {0.112}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{264}{subsection.0.112}
-\contentsline {subsection}{\numberline {0.113}Procesos de Renovaci\'on}{265}{subsection.0.113}
-\contentsline {subsection}{\numberline {0.114}Teorema Principal de Renovaci\'on}{265}{subsection.0.114}
-\contentsline {subsection}{\numberline {0.115}Funci\'on de Renovaci\'on}{266}{subsection.0.115}
-\contentsline {subsection}{\numberline {0.116}Propiedades de los Procesos de Renovaci\'on}{266}{subsection.0.116}
-\contentsline {subsection}{\numberline {0.117}Funci\'on de Renovaci\'on}{268}{subsection.0.117}
-\contentsline {subsection}{\numberline {0.118}Procesos de Renovaci\'on}{268}{subsection.0.118}
-\contentsline {subsection}{\numberline {0.119}Puntos de Renovaci\'on}{269}{subsection.0.119}
-\contentsline {subsection}{\numberline {0.120}Resultados para Procesos de Salida}{270}{subsection.0.120}
-\contentsline {subsection}{\numberline {0.121}Procesos Regenerativos}{271}{subsection.0.121}
-\contentsline {subsection}{\numberline {0.122}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{272}{subsection.0.122}
-\contentsline {subsection}{\numberline {0.123}Procesos Regenerativos}{277}{subsection.0.123}
-\contentsline {subsection}{\numberline {0.124}Procesos Regenerativos}{278}{subsection.0.124}
-\contentsline {subsection}{\numberline {0.125}Propiedades de los Procesos de Renovaci\'on}{279}{subsection.0.125}
-\contentsline {subsection}{\numberline {0.126}Propiedades de los Procesos de Renovaci\'on}{283}{subsection.0.126}
-\contentsline {subsection}{\numberline {0.127}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{284}{subsection.0.127}
-\contentsline {subsection}{\numberline {0.128}Procesos de Renovaci\'on}{285}{subsection.0.128}
-\contentsline {subsection}{\numberline {0.129}Teorema Principal de Renovaci\'on}{286}{subsection.0.129}
-\contentsline {subsection}{\numberline {0.130}Funci\'on de Renovaci\'on}{286}{subsection.0.130}
-\contentsline {subsection}{\numberline {0.131}Propiedades de los Procesos de Renovaci\'on}{287}{subsection.0.131}
-\contentsline {subsection}{\numberline {0.132}Funci\'on de Renovaci\'on}{288}{subsection.0.132}
-\contentsline {subsection}{\numberline {0.133}Procesos de Renovaci\'on}{289}{subsection.0.133}
-\contentsline {subsection}{\numberline {0.134}Puntos de Renovaci\'on}{289}{subsection.0.134}
-\contentsline {subsection}{\numberline {0.135}Resultados para Procesos de Salida}{290}{subsection.0.135}
-\contentsline {subsection}{\numberline {0.136}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{292}{subsection.0.136}
-\contentsline {subsection}{\numberline {0.137}Output Process and Regenerative Processes}{343}{subsection.0.137}
-\contentsline {subsection}{\numberline {0.138}Output Process and Regenerative Processes}{344}{subsection.0.138}
-\contentsline {subsection}{\numberline {0.139}Procesos Regenerativos}{366}{subsection.0.139}
-\contentsline {subsection}{\numberline {0.140}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{366}{subsection.0.140}
-\contentsline {subsection}{\numberline {0.141}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{376}{subsection.0.141}
-\contentsline {section}{\numberline {1}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{385}{section.1}
-\contentsline {subsection}{\numberline {1.1}Teorema Principal de Renovaci\'on}{386}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Propiedades de los Procesos de Renovaci\'on}{387}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Funci\'on de Renovaci\'on}{388}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Procesos de Renovaci\'on}{389}{subsection.1.4}
-\contentsline {subsection}{\numberline {1.5}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{389}{subsection.1.5}
-\contentsline {subsection}{\numberline {1.6}Procesos Regenerativos}{396}{subsection.1.6}
-\contentsline {subsection}{\numberline {1.7}Procesos Regenerativos}{396}{subsection.1.7}
-\contentsline {subsection}{\numberline {1.8}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{397}{subsection.1.8}
-\contentsline {subsection}{\numberline {1.9}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{398}{subsection.1.9}
-\contentsline {subsection}{\numberline {1.10}Procesos Regenerativos}{399}{subsection.1.10}
-\contentsline {subsection}{\numberline {1.11}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{399}{subsection.1.11}
-\contentsline {subsection}{\numberline {1.12}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{400}{subsection.1.12}
-\contentsline {subsection}{\numberline {1.13}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{401}{subsection.1.13}
-\contentsline {subsection}{\numberline {1.14}Modelo de Flujo}{402}{subsection.1.14}
-\contentsline {subsection}{\numberline {1.15}Procesos de Estados de Markov}{412}{subsection.1.15}
-\contentsline {subsection}{\numberline {1.16}Teor\'ia General de Procesos Estoc\'asticos}{414}{subsection.1.16}
-\contentsline {subsection}{\numberline {1.17}Propiedades de Markov}{414}{subsection.1.17}
-\contentsline {subsection}{\numberline {1.18}Primer Condici\'on de Regularidad}{415}{subsection.1.18}
-\contentsline {subsection}{\numberline {1.19}Construcci\'on del Modelo de Flujo}{415}{subsection.1.19}
-\contentsline {subsection}{\numberline {1.20}Estabilidad}{418}{subsection.1.20}
-\contentsline {subsection}{\numberline {1.21}Propiedades de Markov}{422}{subsection.1.21}
-\contentsline {subsection}{\numberline {1.22}Primer Condici\'on de Regularidad}{423}{subsection.1.22}
-\contentsline {subsection}{\numberline {1.23}Procesos Fuerte de Markov}{430}{subsection.1.23}
-\contentsline {subsubsection}{\numberline {1.23.1}Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{430}{subsubsection.1.23.1}
-\contentsline {subsection}{\numberline {1.24}Procesos Harris Recurrentes Positivos}{430}{subsection.1.24}
-\contentsline {subsection}{\numberline {1.25}Construcci\'on de un Modelo de Flujo L\'imite}{430}{subsection.1.25}
-\contentsline {subsection}{\numberline {1.26}Modelo de Visitas C\'iclicas con un Servidor: Estabilidad}{434}{subsection.1.26}
-\contentsline {subsection}{\numberline {1.27}Teorema 2.1}{434}{subsection.1.27}
-\contentsline {subsection}{\numberline {1.28}Teorema 2.2}{435}{subsection.1.28}
-\contentsline {subsection}{\numberline {1.29}Teorema 2.3}{435}{subsection.1.29}
-\contentsline {subsection}{\numberline {1.30}Definiciones B\'asicas}{436}{subsection.1.30}
-\contentsline {subsection}{\numberline {1.31}Preliminares}{440}{subsection.1.31}
-\contentsline {subsection}{\numberline {1.32}Procesos Harris Recurrente}{441}{subsection.1.32}
-\contentsline {subsection}{\numberline {1.33}Modelo de Flujo}{442}{subsection.1.33}
-\contentsline {subsection}{\numberline {1.34}Procesos de Estados de Markov}{453}{subsection.1.34}
-\contentsline {subsection}{\numberline {1.35}Teor\'ia General de Procesos Estoc\'asticos}{454}{subsection.1.35}
-\contentsline {subsection}{\numberline {1.36}Propiedades de Markov}{455}{subsection.1.36}
-\contentsline {subsection}{\numberline {1.37}Primer Condici\'on de Regularidad}{455}{subsection.1.37}
-\contentsline {subsection}{\numberline {1.38}Construcci\'on del Modelo de Flujo}{456}{subsection.1.38}
-\contentsline {subsection}{\numberline {1.39}Estabilidad}{459}{subsection.1.39}
-\contentsline {subsection}{\numberline {1.40}Propiedades de Markov}{463}{subsection.1.40}
-\contentsline {subsection}{\numberline {1.41}Primer Condici\'on de Regularidad}{464}{subsection.1.41}
-\contentsline {subsection}{\numberline {1.42}Procesos de Estados Markoviano para el Sistema}{470}{subsection.1.42}
-\contentsline {subsection}{\numberline {1.43}Procesos Fuerte de Markov}{470}{subsection.1.43}
-\contentsline {subsubsection}{\numberline {1.43.1}Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{471}{subsubsection.1.43.1}
-\contentsline {subsection}{\numberline {1.44}Procesos Harris Recurrentes Positivos}{471}{subsection.1.44}
-\contentsline {subsection}{\numberline {1.45}Construcci\'on de un Modelo de Flujo L\'imite}{471}{subsection.1.45}
-\contentsline {subsection}{\numberline {1.46}Modelo de Visitas C\'iclicas con un Servidor: Estabilidad}{475}{subsection.1.46}
-\contentsline {subsection}{\numberline {1.47}Teorema 2.1}{475}{subsection.1.47}
-\contentsline {subsection}{\numberline {1.48}Teorema 2.2}{476}{subsection.1.48}
-\contentsline {subsection}{\numberline {1.49}Teorema 2.3}{476}{subsection.1.49}
-\contentsline {subsection}{\numberline {1.50}Definiciones B\'asicas}{477}{subsection.1.50}
-\contentsline {subsection}{\numberline {1.51}Proceso de Estados Markoviano para el Sistema}{480}{subsection.1.51}
-\contentsline {subsection}{\numberline {1.52}Procesos Fuerte de Markov}{480}{subsection.1.52}
-\contentsline {subsection}{\numberline {1.53}Propiedades de Markov}{481}{subsection.1.53}
-\contentsline {subsection}{\numberline {1.54}Primer Condici\'on de Regularidad}{481}{subsection.1.54}
-\contentsline {subsection}{\numberline {1.55}Propiedades de Markov}{484}{subsection.1.55}
-\contentsline {subsection}{\numberline {1.56}Primer Condici\'on de Regularidad}{485}{subsection.1.56}
-\contentsline {subsection}{\numberline {1.57}Supuestos}{492}{subsection.1.57}
-\contentsline {subsubsection}{\numberline {1.57.1}Supuestos B\'asicos}{493}{subsubsection.1.57.1}
-\contentsline {subsection}{\numberline {1.58}Procesos Harris Recurrente}{493}{subsection.1.58}
-\contentsline {subsection}{\numberline {1.59}Modelo de Flujo}{494}{subsection.1.59}
-\contentsline {subsubsection}{\numberline {1.59.1}Modelo de Flujo y Estabilidad}{500}{subsubsection.1.59.1}
-\contentsline {subsubsection}{\numberline {1.59.2}Resultados principales}{501}{subsubsection.1.59.2}
-\contentsline {subsubsection}{\numberline {1.59.3}Definiciones Generales}{502}{subsubsection.1.59.3}
-\contentsline {subsubsection}{\numberline {1.59.4}Definiciones y Descripci\'on del Modelo}{504}{subsubsection.1.59.4}
-\contentsline {subsubsection}{\numberline {1.59.5}Pol\'iticas de Servicio}{504}{subsubsection.1.59.5}
-\contentsline {subsubsection}{\numberline {1.59.6}Proceso de Estados}{504}{subsubsection.1.59.6}
-\contentsline {subsubsection}{\numberline {1.59.7}Introducci{\'o}n}{505}{subsubsection.1.59.7}
-\contentsline {subsubsection}{\numberline {1.59.8}Colas C\'iclicas}{505}{subsubsection.1.59.8}
-\contentsline {subsubsection}{\numberline {1.59.9}Resultados Previos}{506}{subsubsection.1.59.9}
-\contentsline {subsubsection}{\numberline {1.59.10}Teorema de Estabilidad: Descripci{\'o}n}{507}{subsubsection.1.59.10}
-\contentsline {subsection}{\numberline {1.60}Supuestos}{508}{subsection.1.60}
-\contentsline {subsubsection}{\numberline {1.60.1}Supuestos B\'asicos}{509}{subsubsection.1.60.1}
-\contentsline {subsection}{\numberline {1.61}Procesos Harris Recurrente}{509}{subsection.1.61}
-\contentsline {subsection}{\numberline {1.62}Modelo de Flujo}{511}{subsection.1.62}
-\contentsline {subsection}{\numberline {1.63}Modelo de Flujo}{512}{subsection.1.63}
-\contentsline {subsection}{\numberline {1.64}Estabilidad de los Sistemas de Visitas C\'iclicas}{515}{subsection.1.64}
-\contentsline {subsection}{\numberline {1.65}Resultados principales}{516}{subsection.1.65}
-\contentsline {subsection}{\numberline {1.66}Supuestos}{516}{subsection.1.66}
-\contentsline {subsubsection}{\numberline {1.66.1}Supuestos B\'asicos}{517}{subsubsection.1.66.1}
-\contentsline {subsection}{\numberline {1.67}Procesos Harris Recurrente}{518}{subsection.1.67}
-\contentsline {subsection}{\numberline {1.68}Modelo de Flujo}{519}{subsection.1.68}
-\contentsline {subsection}{\numberline {1.69}Supuestos}{521}{subsection.1.69}
-\contentsline {subsubsection}{\numberline {1.69.1}Supuestos B\'asicos}{522}{subsubsection.1.69.1}
-\contentsline {subsection}{\numberline {1.70}Procesos Harris Recurrente}{523}{subsection.1.70}
-\contentsline {subsection}{\numberline {1.71}Modelo de Flujo}{524}{subsection.1.71}
-\contentsline {subsubsection}{\numberline {1.71.1}Supuestos B\'asicos}{526}{subsubsection.1.71.1}
-\contentsline {subsection}{\numberline {1.72}Procesos Harris Recurrente}{526}{subsection.1.72}
-\contentsline {subsection}{\numberline {1.73}Modelo de Flujo}{528}{subsection.1.73}
-\contentsline {subsection}{\numberline {1.74}Supuestos}{529}{subsection.1.74}
-\contentsline {subsubsection}{\numberline {1.74.1}Supuestos B\'asicos}{531}{subsubsection.1.74.1}
-\contentsline {subsection}{\numberline {1.75}Procesos Harris Recurrente}{531}{subsection.1.75}
-\contentsline {subsection}{\numberline {1.76}Modelo de Flujo}{532}{subsection.1.76}
-\contentsline {section}{\numberline {2}Preliminares: Modelos de Flujo}{534}{section.2}
-\contentsline {subsection}{\numberline {2.1}Supuestos B\'asicos}{535}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Procesos Regenerativos}{536}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Preliminares}{537}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Procesos Harris Recurrente}{538}{subsection.2.4}
-\contentsline {section}{\numberline {3}Modelo de Flujo}{540}{section.3}
-\contentsline {subsection}{\numberline {3.1}Teor\'a de Procesos Estoc\'asticos y Medibilidad}{542}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Construcci\'on del Modelo de Flujo}{550}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Ya revisado}{607}{subsection.3.3}
-\contentsline {section}{\numberline {4}Procesos de Renovaci\'on y Regenerativos}{614}{section.4}
-\contentsline {subsection}{\numberline {4.1}Tiempo de Ciclo Promedio}{624}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Tiempos de Ciclo e Intervisita}{624}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Longitudes de la Cola en cualquier tiempo}{627}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Por resolver}{629}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Tiempos de Ciclo e Intervisita}{630}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Longitudes de la Cola en cualquier tiempo}{634}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Material por agregar}{635}{subsection.4.7}
-\contentsline {subsection}{\numberline {4.8}Propiedades de los Procesos de Renovaci\'on}{647}{subsection.4.8}
-\contentsline {section}{\numberline {5}Procesos Regenerativos}{664}{section.5}
-\contentsline {subsection}{\numberline {5.1}Preliminares}{667}{subsection.5.1}
+\contentsline {section}{\numberline {1}Resultados para Procesos de Salida}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Resultados para Procesos de Salida}{5}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Resultados para Procesos de Salida}{7}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Resultados para Procesos de Salida}{9}{subsection.1.3}
+\contentsline {section}{\numberline {2}Puntos de Renovaci\'on}{10}{section.2}
+\contentsline {subsection}{\numberline {2.1}Puntos de Renovaci\'on}{11}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Puntos de Renovaci\'on}{12}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Puntos de Renovaci\'on}{13}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Puntos de Renovaci\'on}{13}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Puntos de Renovaci\'on}{14}{subsection.2.5}
+\contentsline {section}{\numberline {3}Teorema Principal de Renovaci\'on}{15}{section.3}
+\contentsline {subsection}{\numberline {3.1}Teorema Principal de Renovaci\'on}{16}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Teorema Principal de Renovaci\'on}{17}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Teorema Principal de Renovaci\'on}{17}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Teorema Principal de Renovaci\'on}{18}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Teorema Principal de Renovaci\'on}{19}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Teorema Principal de Renovaci\'on}{19}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Teorema Principal de Renovaci\'on}{20}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Teorema Principal de Renovaci\'on}{21}{subsection.3.8}
+\contentsline {section}{\numberline {4}Propiedades de los Procesos de Renovaci\'on}{21}{section.4}
+\contentsline {subsection}{\numberline {4.1}Propiedades de los Procesos de Renovaci\'on}{23}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Propiedades de los Procesos de Renovaci\'on}{24}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Propiedades de los Procesos de Renovaci\'on}{25}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Propiedades de los Procesos de Renovaci\'on}{26}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Propiedades de los Procesos de Renovaci\'on}{28}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Propiedades de los Procesos de Renovaci\'on}{29}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}Propiedades de los Procesos de Renovaci\'on}{30}{subsection.4.7}
+\contentsline {subsection}{\numberline {4.8}Propiedades de los Procesos de Renovaci\'on}{31}{subsection.4.8}
+\contentsline {subsection}{\numberline {4.9}Propiedades de los Procesos de Renovaci\'on}{33}{subsection.4.9}
+\contentsline {subsection}{\numberline {4.10}Propiedades de los Procesos de Renovaci\'on}{34}{subsection.4.10}
+\contentsline {subsection}{\numberline {4.11}Propiedades de los Procesos de Renovaci\'on}{35}{subsection.4.11}
+\contentsline {subsection}{\numberline {4.12}Propiedades de los Procesos de Renovaci\'on}{36}{subsection.4.12}
+\contentsline {subsection}{\numberline {4.13}Propiedades de los Procesos de Renovaci\'on}{38}{subsection.4.13}
+\contentsline {subsection}{\numberline {4.14}Propiedades de los Procesos de Renovaci\'on}{39}{subsection.4.14}
+\contentsline {subsection}{\numberline {4.15}Propiedades de los Procesos de Renovaci\'on}{45}{subsection.4.15}
+\contentsline {subsection}{\numberline {4.16}Propiedades de los Procesos de Renovaci\'on}{46}{subsection.4.16}
+\contentsline {subsection}{\numberline {4.17}Propiedades de los Procesos de Renovaci\'on}{48}{subsection.4.17}
+\contentsline {subsection}{\numberline {4.18}Propiedades de los Procesos de Renovaci\'on}{49}{subsection.4.18}
+\contentsline {subsection}{\numberline {4.19}Propiedades de los Procesos de Renovaci\'on}{50}{subsection.4.19}
+\contentsline {subsection}{\numberline {4.20}Propiedades de los Procesos de Renovaci\'on}{51}{subsection.4.20}
+\contentsline {subsection}{\numberline {4.21}Propiedades de los Procesos de Renovaci\'on}{53}{subsection.4.21}
+\contentsline {subsection}{\numberline {4.22}Propiedades de los Procesos de Renovaci\'on}{54}{subsection.4.22}
+\contentsline {subsection}{\numberline {4.23}Propiedades de los Procesos de Renovaci\'on}{58}{subsection.4.23}
+\contentsline {subsection}{\numberline {4.24}Propiedades de los Procesos de Renovaci\'on}{59}{subsection.4.24}
+\contentsline {subsection}{\numberline {4.25}Propiedades de los Procesos de Renovaci\'on}{60}{subsection.4.25}
+\contentsline {subsection}{\numberline {4.26}Propiedades de los Procesos de Renovaci\'on}{61}{subsection.4.26}
+\contentsline {subsection}{\numberline {4.27}Propiedades de los Procesos de Renovaci\'on}{65}{subsection.4.27}
+\contentsline {subsection}{\numberline {4.28}Propiedades de los Procesos de Renovaci\'on}{66}{subsection.4.28}
+\contentsline {subsection}{\numberline {4.29}Propiedades de los Procesos de Renovaci\'on}{68}{subsection.4.29}
+\contentsline {section}{\numberline {5}Funci\'on de Renovaci\'on}{69}{section.5}
+\contentsline {subsection}{\numberline {5.1}Funci\'on de Renovaci\'on}{69}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Funci\'on de Renovaci\'on}{69}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Funci\'on de Renovaci\'on}{70}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Funci\'on de Renovaci\'on}{71}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Funci\'on de Renovaci\'on}{73}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Funci\'on de Renovaci\'on}{73}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Funci\'on de Renovaci\'on}{74}{subsection.5.7}
+\contentsline {subsection}{\numberline {5.8}Funci\'on de Renovaci\'on}{74}{subsection.5.8}
+\contentsline {subsection}{\numberline {5.9}Funci\'on de Renovaci\'on}{75}{subsection.5.9}
+\contentsline {subsection}{\numberline {5.10}Funci\'on de Renovaci\'on}{75}{subsection.5.10}
+\contentsline {subsection}{\numberline {5.11}Funci\'on de Renovaci\'on}{76}{subsection.5.11}
+\contentsline {subsection}{\numberline {5.12}Funci\'on de Renovaci\'on}{77}{subsection.5.12}
+\contentsline {subsection}{\numberline {5.13}Funci\'on de Renovaci\'on}{77}{subsection.5.13}
+\contentsline {subsection}{\numberline {5.14}Funci\'on de Renovaci\'on}{78}{subsection.5.14}
+\contentsline {subsection}{\numberline {5.15}Funci\'on de Renovaci\'on}{79}{subsection.5.15}
+\contentsline {subsection}{\numberline {5.16}Funci\'on de Renovaci\'on}{79}{subsection.5.16}
+\contentsline {subsection}{\numberline {5.17}Funci\'on de Renovaci\'on}{80}{subsection.5.17}
+\contentsline {section}{\numberline {6}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{80}{section.6}
+\contentsline {subsection}{\numberline {6.1}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{132}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{213}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{214}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{215}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{216}{subsection.6.5}
+\contentsline {section}{\numberline {7}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman2}}{227}{section.7}
+\contentsline {subsection}{\numberline {7.1}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman2}}{228}{subsection.7.1}
+\contentsline {section}{\numberline {8}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{229}{section.8}
+\contentsline {subsection}{\numberline {8.1}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{236}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{241}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{247}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{254}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{261}{subsection.8.5}
+\contentsline {subsection}{\numberline {8.6}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{267}{subsection.8.6}
+\contentsline {subsection}{\numberline {8.7}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{290}{subsection.8.7}
+\contentsline {subsection}{\numberline {8.8}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{295}{subsection.8.8}
+\contentsline {subsection}{\numberline {8.9}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{301}{subsection.8.9}
+\contentsline {subsection}{\numberline {8.10}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{306}{subsection.8.10}
+\contentsline {section}{\numberline {9}Procesos Regenerativos}{311}{section.9}
+\contentsline {subsection}{\numberline {9.1}Procesos Regenerativos}{311}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Procesos Regenerativos}{312}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Procesos Regenerativos}{316}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}Procesos Regenerativos}{317}{subsection.9.4}
+\contentsline {subsection}{\numberline {9.5}Procesos Regenerativos}{318}{subsection.9.5}
+\contentsline {subsection}{\numberline {9.6}Procesos Regenerativos}{319}{subsection.9.6}
+\contentsline {subsection}{\numberline {9.7}Procesos Regenerativos}{320}{subsection.9.7}
+\contentsline {subsection}{\numberline {9.8}Procesos Regenerativos}{320}{subsection.9.8}
+\contentsline {subsection}{\numberline {9.9}Procesos Regenerativos}{321}{subsection.9.9}
+\contentsline {subsection}{\numberline {9.10}Procesos Regenerativos}{322}{subsection.9.10}
+\contentsline {subsection}{\numberline {9.11}Procesos Regenerativos}{323}{subsection.9.11}
+\contentsline {subsection}{\numberline {9.12}Procesos Regenerativos}{323}{subsection.9.12}
+\contentsline {subsection}{\numberline {9.13}Procesos Regenerativos}{326}{subsection.9.13}
+\contentsline {subsection}{\numberline {9.14}Procesos Regenerativos}{327}{subsection.9.14}
+\contentsline {subsection}{\numberline {9.15}Procesos Regenerativos}{328}{subsection.9.15}
+\contentsline {subsection}{\numberline {9.16}Procesos Regenerativos}{329}{subsection.9.16}
+\contentsline {subsection}{\numberline {9.17}Procesos Regenerativos}{330}{subsection.9.17}
+\contentsline {subsection}{\numberline {9.18}Procesos Regenerativos}{333}{subsection.9.18}
+\contentsline {subsection}{\numberline {9.19}Procesos Regenerativos}{334}{subsection.9.19}
+\contentsline {section}{\numberline {10}Procesos de Renovaci\'on}{335}{section.10}
+\contentsline {subsection}{\numberline {10.1}Procesos de Renovaci\'on}{336}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Procesos de Renovaci\'on}{336}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Procesos de Renovaci\'on}{337}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}Procesos de Renovaci\'on}{337}{subsection.10.4}
+\contentsline {subsection}{\numberline {10.5}Procesos de Renovaci\'on}{344}{subsection.10.5}
+\contentsline {subsection}{\numberline {10.6}Procesos de Renovaci\'on}{345}{subsection.10.6}
+\contentsline {subsection}{\numberline {10.7}Procesos de Renovaci\'on}{345}{subsection.10.7}
+\contentsline {subsection}{\numberline {10.8}Procesos de Renovaci\'on}{347}{subsection.10.8}
+\contentsline {subsection}{\numberline {10.9}Procesos de Renovaci\'on}{347}{subsection.10.9}
+\contentsline {subsection}{\numberline {10.10}Procesos de Renovaci\'on}{348}{subsection.10.10}
+\contentsline {subsection}{\numberline {10.11}Procesos de Renovaci\'on}{348}{subsection.10.11}
+\contentsline {subsection}{\numberline {10.12}Procesos de Renovaci\'on}{349}{subsection.10.12}
+\contentsline {subsection}{\numberline {10.13}Procesos de Renovaci\'on}{349}{subsection.10.13}
+\contentsline {subsection}{\numberline {10.14}Procesos de Renovaci\'on}{350}{subsection.10.14}
+\contentsline {subsection}{\numberline {10.15}Procesos de Renovaci\'on}{350}{subsection.10.15}
+\contentsline {subsection}{\numberline {10.16}Procesos de Renovaci\'on}{357}{subsection.10.16}
+\contentsline {section}{\numberline {11}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{358}{section.11}
+\contentsline {subsection}{\numberline {11.1}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{358}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{359}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{360}{subsection.11.3}
+\contentsline {subsection}{\numberline {11.4}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{361}{subsection.11.4}
+\contentsline {subsection}{\numberline {11.5}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{362}{subsection.11.5}
+\contentsline {subsection}{\numberline {11.6}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{363}{subsection.11.6}
+\contentsline {subsection}{\numberline {11.7}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{363}{subsection.11.7}
+\contentsline {subsection}{\numberline {11.8}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{364}{subsection.11.8}
+\contentsline {subsection}{\numberline {11.9}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{365}{subsection.11.9}
+\contentsline {subsection}{\numberline {11.10}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{366}{subsection.11.10}
+\contentsline {subsection}{\numberline {11.11}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{366}{subsection.11.11}
+\contentsline {subsection}{\numberline {11.12}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{368}{subsection.11.12}
+\contentsline {subsection}{\numberline {11.13}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{369}{subsection.11.13}
+\contentsline {subsection}{\numberline {11.14}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{369}{subsection.11.14}
+\contentsline {subsection}{\numberline {11.15}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{372}{subsection.11.15}
+\contentsline {subsection}{\numberline {11.16}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{372}{subsection.11.16}
+\contentsline {subsection}{\numberline {11.17}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{373}{subsection.11.17}
+\contentsline {subsection}{\numberline {11.18}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{374}{subsection.11.18}
+\contentsline {subsection}{\numberline {11.19}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{375}{subsection.11.19}
+\contentsline {subsection}{\numberline {11.20}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{376}{subsection.11.20}
+\contentsline {subsection}{\numberline {11.21}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{377}{subsection.11.21}
+\contentsline {subsection}{\numberline {11.22}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{377}{subsection.11.22}
+\contentsline {section}{\numberline {12}Output Process and Regenerative Processes}{378}{section.12}
+\contentsline {subsection}{\numberline {12.1}Output Process and Regenerative Processes}{379}{subsection.12.1}

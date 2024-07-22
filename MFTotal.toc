@@ -1,159 +1,188 @@
 \babel@toc {english}{}
-\contentsline {section}{\numberline {1}Procesos Regenerativos}{4}{section.1}
-\contentsline {subsection}{\numberline {1.1}Procesos Regenerativos}{7}{subsection.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1}Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{9}{subsubsection.1.1.1}
-\contentsline {section}{\numberline {2}Definiciones B\'asicas}{9}{section.2}
-\contentsline {subsection}{\numberline {2.1}Definiciones B\'asicas}{13}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Definiciones B\'asicas}{16}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Definiciones B\'asicas}{20}{subsection.2.3}
-\contentsline {section}{\numberline {3}Supuestos}{23}{section.3}
-\contentsline {subsection}{\numberline {3.1}Supuestos}{24}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Supuestos B\'asicos}{25}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Supuestos B\'asicos}{25}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Supuestos}{26}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Supuestos B\'asicos}{27}{subsubsection.3.2.1}
-\contentsline {subsection}{\numberline {3.3}Supuestos}{28}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Supuestos B\'asicos}{29}{subsubsection.3.3.1}
-\contentsline {subsection}{\numberline {3.4}Supuestos}{29}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}Supuestos B\'asicos}{30}{subsubsection.3.4.1}
-\contentsline {subsection}{\numberline {3.5}Supuestos}{31}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Supuestos B\'asicos}{32}{subsubsection.3.5.1}
-\contentsline {subsection}{\numberline {3.6}Supuestos}{32}{subsection.3.6}
-\contentsline {subsubsection}{\numberline {3.6.1}Supuestos B\'asicos}{33}{subsubsection.3.6.1}
-\contentsline {subsection}{\numberline {3.7}Supuestos}{34}{subsection.3.7}
-\contentsline {subsubsection}{\numberline {3.7.1}Supuestos B\'asicos}{35}{subsubsection.3.7.1}
-\contentsline {subsection}{\numberline {3.8}Supuestos}{35}{subsection.3.8}
-\contentsline {subsubsection}{\numberline {3.8.1}Supuestos B\'asicos}{36}{subsubsection.3.8.1}
-\contentsline {subsection}{\numberline {3.9}Supuestos}{37}{subsection.3.9}
-\contentsline {subsubsection}{\numberline {3.9.1}Supuestos B\'asicos}{38}{subsubsection.3.9.1}
-\contentsline {section}{\numberline {4}Preliminares}{38}{section.4}
-\contentsline {section}{\numberline {5}Procesos Harris Recurrente}{39}{section.5}
-\contentsline {subsection}{\numberline {5.1}Procesos Harris Recurrente}{41}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Procesos Harris Recurrente}{42}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Procesos Harris Recurrente}{44}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Procesos Harris Recurrente}{45}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Procesos Harris Recurrente}{46}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Procesos Harris Recurrente}{48}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Procesos Harris Recurrente}{49}{subsection.5.7}
-\contentsline {subsection}{\numberline {5.8}Procesos Harris Recurrente}{50}{subsection.5.8}
-\contentsline {subsection}{\numberline {5.9}Procesos Harris Recurrente}{52}{subsection.5.9}
-\contentsline {subsection}{\numberline {5.10}Procesos Harris Recurrente}{53}{subsection.5.10}
-\contentsline {subsection}{\numberline {5.11}Procesos Harris Recurrente}{54}{subsection.5.11}
-\contentsline {subsection}{\numberline {5.12}Procesos Harris Recurrente}{56}{subsection.5.12}
-\contentsline {subsection}{\numberline {5.13}Procesos Harris Recurrente}{57}{subsection.5.13}
-\contentsline {subsection}{\numberline {5.14}Procesos Harris Recurrente}{58}{subsection.5.14}
-\contentsline {subsection}{\numberline {5.15}Procesos Harris Recurrente}{60}{subsection.5.15}
-\contentsline {subsection}{\numberline {5.16}Procesos Harris Recurrente}{61}{subsection.5.16}
-\contentsline {section}{\numberline {6}Modelo de Flujo}{62}{section.6}
-\contentsline {subsection}{\numberline {6.1}Modelo de Flujo}{64}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}Modelo de Flujo y Estabilidad}{70}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}Resultados principales}{71}{subsubsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.3}Definiciones Generales}{72}{subsubsection.6.1.3}
-\contentsline {subsubsection}{\numberline {6.1.4}Definiciones y Descripci\'on del Modelo}{74}{subsubsection.6.1.4}
-\contentsline {subsubsection}{\numberline {6.1.5}Pol\'iticas de Servicio}{74}{subsubsection.6.1.5}
-\contentsline {subsubsection}{\numberline {6.1.6}Proceso de Estados}{74}{subsubsection.6.1.6}
-\contentsline {subsubsection}{\numberline {6.1.7}Introducci{\'o}n}{75}{subsubsection.6.1.7}
-\contentsline {subsubsection}{\numberline {6.1.8}Colas C\'iclicas}{75}{subsubsection.6.1.8}
-\contentsline {subsubsection}{\numberline {6.1.9}Resultados Previos}{76}{subsubsection.6.1.9}
-\contentsline {subsubsection}{\numberline {6.1.10}Teorema de Estabilidad: Descripci{\'o}n}{77}{subsubsection.6.1.10}
-\contentsline {subsection}{\numberline {6.2}Modelo de Flujo}{78}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Modelo de Flujo}{80}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Modelo de Flujo}{81}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Modelo de Flujo}{83}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Modelo de Flujo}{85}{subsection.6.6}
-\contentsline {subsection}{\numberline {6.7}Modelo de Flujo}{88}{subsection.6.7}
-\contentsline {subsubsection}{\numberline {6.7.1}Supuestos B\'asicos}{90}{subsubsection.6.7.1}
-\contentsline {subsection}{\numberline {6.8}Modelo de Flujo}{90}{subsection.6.8}
-\contentsline {subsubsection}{\numberline {6.8.1}Supuestos B\'asicos}{92}{subsubsection.6.8.1}
-\contentsline {subsection}{\numberline {6.9}Modelo de Flujo}{93}{subsection.6.9}
-\contentsline {subsubsection}{\numberline {6.9.1}Modelo de Flujo y Estabilidad}{99}{subsubsection.6.9.1}
-\contentsline {subsubsection}{\numberline {6.9.2}Resultados principales}{100}{subsubsection.6.9.2}
-\contentsline {subsubsection}{\numberline {6.9.3}Definiciones Generales}{101}{subsubsection.6.9.3}
-\contentsline {subsubsection}{\numberline {6.9.4}Definiciones y Descripci\'on del Modelo}{102}{subsubsection.6.9.4}
-\contentsline {subsubsection}{\numberline {6.9.5}Pol\'iticas de Servicio}{102}{subsubsection.6.9.5}
-\contentsline {subsubsection}{\numberline {6.9.6}Proceso de Estados}{103}{subsubsection.6.9.6}
-\contentsline {subsubsection}{\numberline {6.9.7}Introducci{\'o}n}{103}{subsubsection.6.9.7}
-\contentsline {subsubsection}{\numberline {6.9.8}Colas C\'iclicas}{104}{subsubsection.6.9.8}
-\contentsline {subsubsection}{\numberline {6.9.9}Resultados Previos}{105}{subsubsection.6.9.9}
-\contentsline {subsubsection}{\numberline {6.9.10}Teorema de Estabilidad: Descripci{\'o}n}{106}{subsubsection.6.9.10}
-\contentsline {subsection}{\numberline {6.10}Modelo de Flujo}{106}{subsection.6.10}
-\contentsline {subsection}{\numberline {6.11}Modelo de Flujo}{117}{subsection.6.11}
-\contentsline {subsection}{\numberline {6.12}Modelo de Flujo}{127}{subsection.6.12}
-\contentsline {subsection}{\numberline {6.13}Modelo de Flujo}{129}{subsection.6.13}
-\contentsline {subsection}{\numberline {6.14}Modelo de Flujo}{131}{subsection.6.14}
-\contentsline {subsection}{\numberline {6.15}Modelo de Flujo}{134}{subsection.6.15}
-\contentsline {subsection}{\numberline {6.16}Modelo de Flujo}{145}{subsection.6.16}
-\contentsline {subsection}{\numberline {6.17}Modelo de Flujo}{146}{subsection.6.17}
-\contentsline {section}{\numberline {7}Proceso de Estados Markoviano para el Sistema}{157}{section.7}
-\contentsline {subsection}{\numberline {7.1}Proceso de Estados Markoviano para el Sistema}{158}{subsection.7.1}
-\contentsline {section}{\numberline {8}Procesos de Estados de Markov}{158}{section.8}
-\contentsline {subsection}{\numberline {8.1}Procesos de Estados de Markov}{160}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Procesos de Estados de Markov}{161}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Procesos de Estados de Markov}{162}{subsection.8.3}
-\contentsline {section}{\numberline {9}Teor\'ia General de Procesos Estoc\'asticos}{164}{section.9}
-\contentsline {subsection}{\numberline {9.1}Teor\'ia General de Procesos Estoc\'asticos}{164}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Teor\'ia General de Procesos Estoc\'asticos}{164}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Teor\'ia General de Procesos Estoc\'asticos}{165}{subsection.9.3}
-\contentsline {section}{\numberline {10}Propiedades de Markov}{165}{section.10}
-\contentsline {subsection}{\numberline {10.1}Propiedades de Markov}{166}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Propiedades de Markov}{166}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}Propiedades de Markov}{167}{subsection.10.3}
-\contentsline {subsection}{\numberline {10.4}Propiedades de Markov}{168}{subsection.10.4}
-\contentsline {subsection}{\numberline {10.5}Propiedades de Markov}{168}{subsection.10.5}
-\contentsline {subsection}{\numberline {10.6}Propiedades de Markov}{169}{subsection.10.6}
-\contentsline {subsection}{\numberline {10.7}Propiedades de Markov}{170}{subsection.10.7}
-\contentsline {subsection}{\numberline {10.8}Propiedades de Markov}{170}{subsection.10.8}
-\contentsline {subsection}{\numberline {10.9}Propiedades de Markov}{171}{subsection.10.9}
-\contentsline {subsection}{\numberline {10.10}Propiedades de Markov}{172}{subsection.10.10}
-\contentsline {subsection}{\numberline {10.11}Propiedades de Markov}{172}{subsection.10.11}
-\contentsline {section}{\numberline {11}Primer Condici\'on de Regularidad}{173}{section.11}
-\contentsline {subsection}{\numberline {11.1}Primer Condici\'on de Regularidad}{174}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}Primer Condici\'on de Regularidad}{180}{subsection.11.2}
-\contentsline {subsection}{\numberline {11.3}Primer Condici\'on de Regularidad}{187}{subsection.11.3}
-\contentsline {subsection}{\numberline {11.4}Primer Condici\'on de Regularidad}{194}{subsection.11.4}
-\contentsline {subsection}{\numberline {11.5}Primer Condici\'on de Regularidad}{194}{subsection.11.5}
-\contentsline {subsection}{\numberline {11.6}Primer Condici\'on de Regularidad}{201}{subsection.11.6}
-\contentsline {subsection}{\numberline {11.7}Primer Condici\'on de Regularidad}{202}{subsection.11.7}
-\contentsline {subsection}{\numberline {11.8}Primer Condici\'on de Regularidad}{208}{subsection.11.8}
-\contentsline {subsection}{\numberline {11.9}Primer Condici\'on de Regularidad}{212}{subsection.11.9}
-\contentsline {subsection}{\numberline {11.10}Primer Condici\'on de Regularidad}{215}{subsection.11.10}
-\contentsline {subsection}{\numberline {11.11}Primer Condici\'on de Regularidad}{215}{subsection.11.11}
-\contentsline {section}{\numberline {12}Construcci\'on del Modelo de Flujo}{222}{section.12}
-\contentsline {subsection}{\numberline {12.1}Construcci\'on del Modelo de Flujo}{225}{subsection.12.1}
-\contentsline {subsection}{\numberline {12.2}Construcci\'on del Modelo de Flujo}{229}{subsection.12.2}
-\contentsline {subsection}{\numberline {12.3}Construcci\'on del Modelo de Flujo}{232}{subsection.12.3}
-\contentsline {subsection}{\numberline {12.4}Construcci\'on de un Modelo de Flujo L\'imite}{235}{subsection.12.4}
-\contentsline {section}{\numberline {13}Estabilidad}{239}{section.13}
-\contentsline {subsection}{\numberline {13.1}Estabilidad}{243}{subsection.13.1}
-\contentsline {subsection}{\numberline {13.2}Estabilidad}{247}{subsection.13.2}
-\contentsline {subsection}{\numberline {13.3}Estabilidad}{251}{subsection.13.3}
-\contentsline {section}{\numberline {14}Procesos Fuerte de Markov}{255}{section.14}
-\contentsline {subsection}{\numberline {14.1}Procesos Fuerte de Markov}{255}{subsection.14.1}
-\contentsline {subsubsection}{\numberline {14.1.1}Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{255}{subsubsection.14.1.1}
-\contentsline {subsection}{\numberline {14.2}Procesos Fuerte de Markov}{255}{subsection.14.2}
-\contentsline {subsection}{\numberline {14.3}Procesos Fuerte de Markov}{256}{subsection.14.3}
-\contentsline {subsection}{\numberline {14.4}Procesos Fuerte de Markov}{256}{subsection.14.4}
-\contentsline {subsection}{\numberline {14.5}Procesos Fuerte de Markov}{257}{subsection.14.5}
-\contentsline {section}{\numberline {15}Procesos Harris Recurrentes Positivos}{257}{section.15}
-\contentsline {subsection}{\numberline {15.1}Procesos Harris Recurrentes Positivos}{257}{subsection.15.1}
-\contentsline {subsection}{\numberline {15.2}Procesos Harris Recurrentes Positivos}{257}{subsection.15.2}
-\contentsline {section}{\numberline {16}Construcci\'on de un Modelo de Flujo L\'imite}{257}{section.16}
-\contentsline {subsection}{\numberline {16.1}Construcci\'on de un Modelo de Flujo L\'imite}{261}{subsection.16.1}
-\contentsline {subsection}{\numberline {16.2}Construcci\'on de un Modelo de Flujo L\'imite}{265}{subsection.16.2}
-\contentsline {subsection}{\numberline {16.3}Modelo de Visitas C\'iclicas con un Servidor: Estabilidad}{269}{subsection.16.3}
-\contentsline {section}{\numberline {17}Teorema 2.1}{269}{section.17}
-\contentsline {subsection}{\numberline {17.1}Teorema 2.1}{270}{subsection.17.1}
-\contentsline {subsection}{\numberline {17.2}Teorema 2.1}{272}{subsection.17.2}
-\contentsline {subsection}{\numberline {17.3}Teorema 2.1}{273}{subsection.17.3}
-\contentsline {section}{\numberline {18}Teorema 2.2}{275}{section.18}
-\contentsline {subsection}{\numberline {18.1}Teorema 2.2}{275}{subsection.18.1}
-\contentsline {subsection}{\numberline {18.2}Teorema 2.2}{275}{subsection.18.2}
-\contentsline {subsection}{\numberline {18.3}Teorema 2.2}{275}{subsection.18.3}
-\contentsline {section}{\numberline {19}Teorema 2.3}{275}{section.19}
-\contentsline {subsection}{\numberline {19.1}Teorema 2.3}{275}{subsection.19.1}
-\contentsline {subsection}{\numberline {19.2}Teorema 2.3}{276}{subsection.19.2}
-\contentsline {subsection}{\numberline {19.3}Teorema 2.3}{276}{subsection.19.3}
-\contentsline {section}{\numberline {20}Estabilidad de los Sistemas de Visitas C\'iclicas}{277}{section.20}
-\contentsline {subsection}{\numberline {20.1}Estabilidad de los Sistemas de Visitas C\'iclicas}{278}{subsection.20.1}
-\contentsline {section}{\numberline {21}Resultados principales}{279}{section.21}
-\contentsline {subsection}{\numberline {21.1}Resultados principales}{279}{subsection.21.1}
+\contentsline {part}{I\hspace {1em}Contenido}{5}{part.1}
+\contentsline {section}{\numberline {1}Definiciones B\'asicas}{5}{section.1}
+\contentsline {section}{\numberline {2}Procesos Harris Recurrente}{12}{section.2}
+\contentsline {section}{\numberline {3}Modelo de Flujo}{13}{section.3}
+\contentsline {part}{II\hspace {1em}Material}{33}{part.2}
+\contentsline {subsection}{\numberline {3.1}Modelo de Flujo}{33}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Modelo de Flujo}{37}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Modelo de Flujo}{48}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Modelo de Flujo}{50}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Modelo de Flujo}{52}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Modelo de Flujo}{55}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Modelo de Flujo}{65}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}Modelo de Flujo}{67}{subsection.3.8}
+\contentsline {section}{\numberline {4}Proceso de Estados Markoviano para el Sistema}{78}{section.4}
+\contentsline {subsection}{\numberline {4.1}Proceso de Estados Markoviano para el Sistema}{79}{subsection.4.1}
+\contentsline {section}{\numberline {5}Procesos de Estados de Markov}{79}{section.5}
+\contentsline {subsection}{\numberline {5.1}Procesos de Estados de Markov}{81}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Procesos de Estados de Markov}{82}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Procesos de Estados de Markov}{83}{subsection.5.3}
+\contentsline {section}{\numberline {6}Teor\'ia General de Procesos Estoc\'asticos}{85}{section.6}
+\contentsline {subsection}{\numberline {6.1}Teor\'ia General de Procesos Estoc\'asticos}{85}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Teor\'ia General de Procesos Estoc\'asticos}{85}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Teor\'ia General de Procesos Estoc\'asticos}{85}{subsection.6.3}
+\contentsline {section}{\numberline {7}Propiedades de Markov}{86}{section.7}
+\contentsline {subsection}{\numberline {7.1}Propiedades de Markov}{86}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Propiedades de Markov}{87}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Propiedades de Markov}{88}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Propiedades de Markov}{88}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Propiedades de Markov}{89}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}Propiedades de Markov}{90}{subsection.7.6}
+\contentsline {subsection}{\numberline {7.7}Propiedades de Markov}{90}{subsection.7.7}
+\contentsline {subsection}{\numberline {7.8}Propiedades de Markov}{91}{subsection.7.8}
+\contentsline {subsection}{\numberline {7.9}Propiedades de Markov}{92}{subsection.7.9}
+\contentsline {subsection}{\numberline {7.10}Propiedades de Markov}{92}{subsection.7.10}
+\contentsline {subsection}{\numberline {7.11}Propiedades de Markov}{93}{subsection.7.11}
+\contentsline {section}{\numberline {8}Primer Condici\'on de Regularidad}{94}{section.8}
+\contentsline {subsection}{\numberline {8.1}Primer Condici\'on de Regularidad}{94}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Primer Condici\'on de Regularidad}{101}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Primer Condici\'on de Regularidad}{108}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Primer Condici\'on de Regularidad}{114}{subsection.8.4}
+\contentsline {subsection}{\numberline {8.5}Primer Condici\'on de Regularidad}{115}{subsection.8.5}
+\contentsline {subsection}{\numberline {8.6}Primer Condici\'on de Regularidad}{121}{subsection.8.6}
+\contentsline {subsection}{\numberline {8.7}Primer Condici\'on de Regularidad}{122}{subsection.8.7}
+\contentsline {subsection}{\numberline {8.8}Primer Condici\'on de Regularidad}{129}{subsection.8.8}
+\contentsline {subsection}{\numberline {8.9}Primer Condici\'on de Regularidad}{132}{subsection.8.9}
+\contentsline {subsection}{\numberline {8.10}Primer Condici\'on de Regularidad}{135}{subsection.8.10}
+\contentsline {subsection}{\numberline {8.11}Primer Condici\'on de Regularidad}{136}{subsection.8.11}
+\contentsline {section}{\numberline {9}Construcci\'on del Modelo de Flujo}{143}{section.9}
+\contentsline {subsection}{\numberline {9.1}Construcci\'on del Modelo de Flujo}{146}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Construcci\'on del Modelo de Flujo}{149}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Construcci\'on del Modelo de Flujo}{152}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}Construcci\'on de un Modelo de Flujo L\'imite}{156}{subsection.9.4}
+\contentsline {section}{\numberline {10}Estabilidad}{159}{section.10}
+\contentsline {subsection}{\numberline {10.1}Estabilidad}{163}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Estabilidad}{167}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}Estabilidad}{171}{subsection.10.3}
+\contentsline {section}{\numberline {11}Procesos Fuerte de Markov}{175}{section.11}
+\contentsline {subsection}{\numberline {11.1}Procesos Fuerte de Markov}{176}{subsection.11.1}
+\contentsline {subsubsection}{\numberline {11.1.1}Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{176}{subsubsection.11.1.1}
+\contentsline {subsection}{\numberline {11.2}Procesos Fuerte de Markov}{176}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Procesos Fuerte de Markov}{176}{subsection.11.3}
+\contentsline {subsection}{\numberline {11.4}Procesos Fuerte de Markov}{176}{subsection.11.4}
+\contentsline {subsection}{\numberline {11.5}Procesos Fuerte de Markov}{177}{subsection.11.5}
+\contentsline {section}{\numberline {12}Procesos Harris Recurrentes Positivos}{177}{section.12}
+\contentsline {subsection}{\numberline {12.1}Procesos Harris Recurrentes Positivos}{177}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Procesos Harris Recurrentes Positivos}{177}{subsection.12.2}
+\contentsline {section}{\numberline {13}Construcci\'on de un Modelo de Flujo L\'imite}{178}{section.13}
+\contentsline {subsection}{\numberline {13.1}Construcci\'on de un Modelo de Flujo L\'imite}{181}{subsection.13.1}
+\contentsline {subsection}{\numberline {13.2}Construcci\'on de un Modelo de Flujo L\'imite}{185}{subsection.13.2}
+\contentsline {subsection}{\numberline {13.3}Modelo de Visitas C\'iclicas con un Servidor: Estabilidad}{189}{subsection.13.3}
+\contentsline {section}{\numberline {14}Teorema 2.1}{189}{section.14}
+\contentsline {subsection}{\numberline {14.1}Teorema 2.1}{191}{subsection.14.1}
+\contentsline {subsection}{\numberline {14.2}Teorema 2.1}{192}{subsection.14.2}
+\contentsline {subsection}{\numberline {14.3}Teorema 2.1}{194}{subsection.14.3}
+\contentsline {section}{\numberline {15}Teorema 2.2}{195}{section.15}
+\contentsline {subsection}{\numberline {15.1}Teorema 2.2}{195}{subsection.15.1}
+\contentsline {subsection}{\numberline {15.2}Teorema 2.2}{195}{subsection.15.2}
+\contentsline {subsection}{\numberline {15.3}Teorema 2.2}{196}{subsection.15.3}
+\contentsline {section}{\numberline {16}Teorema 2.3}{196}{section.16}
+\contentsline {subsection}{\numberline {16.1}Teorema 2.3}{196}{subsection.16.1}
+\contentsline {subsection}{\numberline {16.2}Teorema 2.3}{196}{subsection.16.2}
+\contentsline {subsection}{\numberline {16.3}Teorema 2.3}{196}{subsection.16.3}
+\contentsline {section}{\numberline {17}Estabilidad de los Sistemas de Visitas C\'iclicas}{197}{section.17}
+\contentsline {subsection}{\numberline {17.1}Estabilidad de los Sistemas de Visitas C\'iclicas}{198}{subsection.17.1}
+\contentsline {section}{\numberline {18}Resultados principales}{199}{section.18}
+\contentsline {subsection}{\numberline {18.1}Resultados principales}{199}{subsection.18.1}
+\contentsline {subsection}{\numberline {18.2}Modelo de Flujo}{199}{subsection.18.2}
+\contentsline {subsection}{\numberline {18.3}Procesos de Estados de Markov}{210}{subsection.18.3}
+\contentsline {subsection}{\numberline {18.4}Teor\'ia General de Procesos Estoc\'asticos}{211}{subsection.18.4}
+\contentsline {subsection}{\numberline {18.5}Propiedades de Markov}{211}{subsection.18.5}
+\contentsline {subsection}{\numberline {18.6}Primer Condici\'on de Regularidad}{212}{subsection.18.6}
+\contentsline {subsection}{\numberline {18.7}Construcci\'on del Modelo de Flujo}{213}{subsection.18.7}
+\contentsline {subsection}{\numberline {18.8}Estabilidad}{216}{subsection.18.8}
+\contentsline {subsection}{\numberline {18.9}Propiedades de Markov}{220}{subsection.18.9}
+\contentsline {subsection}{\numberline {18.10}Primer Condici\'on de Regularidad}{221}{subsection.18.10}
+\contentsline {subsection}{\numberline {18.11}Procesos Fuerte de Markov}{227}{subsection.18.11}
+\contentsline {subsubsection}{\numberline {18.11.1}Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{228}{subsubsection.18.11.1}
+\contentsline {subsection}{\numberline {18.12}Procesos Harris Recurrentes Positivos}{228}{subsection.18.12}
+\contentsline {subsection}{\numberline {18.13}Construcci\'on de un Modelo de Flujo L\'imite}{228}{subsection.18.13}
+\contentsline {subsection}{\numberline {18.14}Modelo de Visitas C\'iclicas con un Servidor: Estabilidad}{232}{subsection.18.14}
+\contentsline {subsection}{\numberline {18.15}Teorema 2.1}{232}{subsection.18.15}
+\contentsline {subsection}{\numberline {18.16}Teorema 2.2}{233}{subsection.18.16}
+\contentsline {subsection}{\numberline {18.17}Teorema 2.3}{233}{subsection.18.17}
+\contentsline {subsection}{\numberline {18.18}Definiciones B\'asicas}{233}{subsection.18.18}
+\contentsline {subsection}{\numberline {18.19}Preliminares}{238}{subsection.18.19}
+\contentsline {subsection}{\numberline {18.20}Procesos Harris Recurrente}{239}{subsection.18.20}
+\contentsline {subsection}{\numberline {18.21}Modelo de Flujo}{240}{subsection.18.21}
+\contentsline {subsection}{\numberline {18.22}Procesos de Estados de Markov}{251}{subsection.18.22}
+\contentsline {subsection}{\numberline {18.23}Teor\'ia General de Procesos Estoc\'asticos}{252}{subsection.18.23}
+\contentsline {subsection}{\numberline {18.24}Propiedades de Markov}{253}{subsection.18.24}
+\contentsline {subsection}{\numberline {18.25}Primer Condici\'on de Regularidad}{253}{subsection.18.25}
+\contentsline {subsection}{\numberline {18.26}Construcci\'on del Modelo de Flujo}{254}{subsection.18.26}
+\contentsline {subsection}{\numberline {18.27}Estabilidad}{257}{subsection.18.27}
+\contentsline {subsection}{\numberline {18.28}Propiedades de Markov}{261}{subsection.18.28}
+\contentsline {subsection}{\numberline {18.29}Primer Condici\'on de Regularidad}{262}{subsection.18.29}
+\contentsline {subsection}{\numberline {18.30}Procesos de Estados Markoviano para el Sistema}{269}{subsection.18.30}
+\contentsline {subsection}{\numberline {18.31}Procesos Fuerte de Markov}{269}{subsection.18.31}
+\contentsline {subsubsection}{\numberline {18.31.1}Construcci\'on de un Proceso Determinista por partes, Davis \cite {Davis}}{269}{subsubsection.18.31.1}
+\contentsline {subsection}{\numberline {18.32}Procesos Harris Recurrentes Positivos}{269}{subsection.18.32}
+\contentsline {subsection}{\numberline {18.33}Construcci\'on de un Modelo de Flujo L\'imite}{269}{subsection.18.33}
+\contentsline {subsection}{\numberline {18.34}Modelo de Visitas C\'iclicas con un Servidor: Estabilidad}{273}{subsection.18.34}
+\contentsline {subsection}{\numberline {18.35}Teorema 2.1}{273}{subsection.18.35}
+\contentsline {subsection}{\numberline {18.36}Teorema 2.2}{275}{subsection.18.36}
+\contentsline {subsection}{\numberline {18.37}Teorema 2.3}{275}{subsection.18.37}
+\contentsline {subsection}{\numberline {18.38}Definiciones B\'asicas}{276}{subsection.18.38}
+\contentsline {subsection}{\numberline {18.39}Proceso de Estados Markoviano para el Sistema}{279}{subsection.18.39}
+\contentsline {subsection}{\numberline {18.40}Procesos Fuerte de Markov}{279}{subsection.18.40}
+\contentsline {subsection}{\numberline {18.41}Propiedades de Markov}{280}{subsection.18.41}
+\contentsline {subsection}{\numberline {18.42}Primer Condici\'on de Regularidad}{280}{subsection.18.42}
+\contentsline {subsection}{\numberline {18.43}Propiedades de Markov}{283}{subsection.18.43}
+\contentsline {subsection}{\numberline {18.44}Primer Condici\'on de Regularidad}{284}{subsection.18.44}
+\contentsline {subsection}{\numberline {18.45}Supuestos}{291}{subsection.18.45}
+\contentsline {subsubsection}{\numberline {18.45.1}Supuestos B\'asicos}{292}{subsubsection.18.45.1}
+\contentsline {subsection}{\numberline {18.46}Procesos Harris Recurrente}{292}{subsection.18.46}
+\contentsline {subsection}{\numberline {18.47}Modelo de Flujo}{293}{subsection.18.47}
+\contentsline {subsubsection}{\numberline {18.47.1}Modelo de Flujo y Estabilidad}{299}{subsubsection.18.47.1}
+\contentsline {subsubsection}{\numberline {18.47.2}Resultados principales}{300}{subsubsection.18.47.2}
+\contentsline {subsubsection}{\numberline {18.47.3}Definiciones Generales}{301}{subsubsection.18.47.3}
+\contentsline {subsubsection}{\numberline {18.47.4}Definiciones y Descripci\'on del Modelo}{303}{subsubsection.18.47.4}
+\contentsline {subsubsection}{\numberline {18.47.5}Pol\'iticas de Servicio}{303}{subsubsection.18.47.5}
+\contentsline {subsubsection}{\numberline {18.47.6}Proceso de Estados}{303}{subsubsection.18.47.6}
+\contentsline {subsubsection}{\numberline {18.47.7}Introducci{\'o}n}{304}{subsubsection.18.47.7}
+\contentsline {subsubsection}{\numberline {18.47.8}Colas C\'iclicas}{304}{subsubsection.18.47.8}
+\contentsline {subsubsection}{\numberline {18.47.9}Resultados Previos}{305}{subsubsection.18.47.9}
+\contentsline {subsubsection}{\numberline {18.47.10}Teorema de Estabilidad: Descripci{\'o}n}{306}{subsubsection.18.47.10}
+\contentsline {subsection}{\numberline {18.48}Supuestos}{307}{subsection.18.48}
+\contentsline {subsubsection}{\numberline {18.48.1}Supuestos B\'asicos}{308}{subsubsection.18.48.1}
+\contentsline {subsection}{\numberline {18.49}Procesos Harris Recurrente}{308}{subsection.18.49}
+\contentsline {subsection}{\numberline {18.50}Modelo de Flujo}{310}{subsection.18.50}
+\contentsline {subsection}{\numberline {18.51}Modelo de Flujo}{311}{subsection.18.51}
+\contentsline {subsection}{\numberline {18.52}Estabilidad de los Sistemas de Visitas C\'iclicas}{314}{subsection.18.52}
+\contentsline {subsection}{\numberline {18.53}Resultados principales}{315}{subsection.18.53}
+\contentsline {subsection}{\numberline {18.54}Supuestos}{315}{subsection.18.54}
+\contentsline {subsubsection}{\numberline {18.54.1}Supuestos B\'asicos}{316}{subsubsection.18.54.1}
+\contentsline {subsection}{\numberline {18.55}Procesos Harris Recurrente}{317}{subsection.18.55}
+\contentsline {subsection}{\numberline {18.56}Modelo de Flujo}{318}{subsection.18.56}
+\contentsline {subsection}{\numberline {18.57}Supuestos}{320}{subsection.18.57}
+\contentsline {subsubsection}{\numberline {18.57.1}Supuestos B\'asicos}{321}{subsubsection.18.57.1}
+\contentsline {subsection}{\numberline {18.58}Procesos Harris Recurrente}{322}{subsection.18.58}
+\contentsline {subsection}{\numberline {18.59}Modelo de Flujo}{323}{subsection.18.59}
+\contentsline {subsubsection}{\numberline {18.59.1}Supuestos B\'asicos}{325}{subsubsection.18.59.1}
+\contentsline {subsection}{\numberline {18.60}Procesos Harris Recurrente}{325}{subsection.18.60}
+\contentsline {subsection}{\numberline {18.61}Modelo de Flujo}{327}{subsection.18.61}
+\contentsline {subsection}{\numberline {18.62}Supuestos}{328}{subsection.18.62}
+\contentsline {subsubsection}{\numberline {18.62.1}Supuestos B\'asicos}{330}{subsubsection.18.62.1}
+\contentsline {subsection}{\numberline {18.63}Procesos Harris Recurrente}{330}{subsection.18.63}
+\contentsline {subsection}{\numberline {18.64}Modelo de Flujo}{331}{subsection.18.64}
+\contentsline {section}{\numberline {19}Preliminares: Modelos de Flujo}{333}{section.19}
+\contentsline {subsection}{\numberline {19.1}Supuestos B\'asicos}{334}{subsection.19.1}
+\contentsline {subsection}{\numberline {19.2}Procesos Regenerativos}{335}{subsection.19.2}
+\contentsline {subsection}{\numberline {19.3}Preliminares}{336}{subsection.19.3}
+\contentsline {subsection}{\numberline {19.4}Procesos Harris Recurrente}{337}{subsection.19.4}
+\contentsline {section}{\numberline {20}Modelo de Flujo}{339}{section.20}
+\contentsline {subsection}{\numberline {20.1}Teor\'a de Procesos Estoc\'asticos y Medibilidad}{341}{subsection.20.1}
+\contentsline {subsection}{\numberline {20.2}Construcci\'on del Modelo de Flujo}{349}{subsection.20.2}
+\contentsline {subsection}{\numberline {20.3}Ya revisado}{407}{subsection.20.3}
+\contentsline {section}{\numberline {21}Procesos de Renovaci\'on y Regenerativos}{413}{section.21}
+\contentsline {subsection}{\numberline {21.1}Tiempo de Ciclo Promedio}{423}{subsection.21.1}
+\contentsline {subsection}{\numberline {21.2}Tiempos de Ciclo e Intervisita}{423}{subsection.21.2}
+\contentsline {subsection}{\numberline {21.3}Longitudes de la Cola en cualquier tiempo}{427}{subsection.21.3}
+\contentsline {subsection}{\numberline {21.4}Por resolver}{428}{subsection.21.4}
+\contentsline {subsection}{\numberline {21.5}Tiempos de Ciclo e Intervisita}{429}{subsection.21.5}
+\contentsline {subsection}{\numberline {21.6}Longitudes de la Cola en cualquier tiempo}{434}{subsection.21.6}
+\contentsline {subsection}{\numberline {21.7}Material por agregar}{434}{subsection.21.7}
+\contentsline {subsection}{\numberline {21.8}Propiedades de los Procesos de Renovaci\'on}{447}{subsection.21.8}
+\contentsline {section}{\numberline {22}Procesos Regenerativos}{464}{section.22}
+\contentsline {subsection}{\numberline {22.1}Preliminares}{467}{subsection.22.1}
