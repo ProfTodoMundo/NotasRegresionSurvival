@@ -1,0 +1,1180 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,english]{babel}
+\usepackage{amsmath,amssymb,amsthm,amsfonts}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{graphicx,graphics}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{float} 
+\usepackage{subfig}
+\usepackage[figuresright]{rotating}
+\usepackage{enumerate}
+\usepackage{anysize} 
+\usepackage{url}
+
+\title{Cadenas de Markov: Revisi\'on}
+\author{Carlos E. Martínez-Rodríguez}
+\date{Julio 2024}
+
+\geometry{
+  a4paper,
+  left=25mm,
+  right=25mm,
+  top=30mm,
+  bottom=30mm,
+}
+
+% Configuración de encabezados y pies de página
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\rightmark}
+\fancyfoot[L]{Carlos E. Martínez-Rodríguez}
+
+% Definiciones de nuevos entornos
+\newtheorem{Algthm}{Algoritmo}
+\newtheorem{Def}{Definición}
+\newtheorem{Ejem}{Ejemplo}
+\newtheorem{Teo}{Teorema}
+\newtheorem{Dem}{Demostración}
+\newtheorem{Note}{Nota}
+\newtheorem{Sol}{Solución}
+\newtheorem{Prop}{Proposición}
+\newtheorem{Cor}{Corolario}
+\newtheorem{Col}{Corolario}
+\newtheorem{Coro}{Corolario}
+\newtheorem{Lemma}{Lema}
+\newtheorem{Lem}{Lema}
+\newtheorem{Lema}{Lema}
+\newtheorem{Sup}{Supuestos}
+\newtheorem{Assumption}{Supuestos}
+\newtheorem{Remark}{Observación}
+\newtheorem{Condition}{Condición}
+\newtheorem{Theorem}{Teorema}
+\newtheorem{Corollary}{Corolario}
+\newtheorem{Ejemplo}{Ejemplo}
+\newtheorem{Example}{Ejemplo}
+\newtheorem{Obs}{Observación}
+
+% Nuevos comandos
+\def\RR{\mathbb{R}}
+\def\ZZ{\mathbb{Z}}
+\newcommand{\nat}{\mathbb{N}}
+\newcommand{\ent}{\mathbb{Z}}
+\newcommand{\rea}{\mathbb{R}}
+\newcommand{\Eb}{\mathbf{E}}
+\newcommand{\esp}{\mathbb{E}}
+\newcommand{\prob}{\mathbb{P}}
+\newcommand{\indora}{\mbox{$1$\hspace{-0.8ex}$1$}}
+\newcommand{\ER}{\left(E,\mathcal{E}\right)}
+\newcommand{\KM}{\left(P_{s,t}\right)}
+\newcommand{\Xt}{\left(X_{t}\right)_{t\in I}}
+\newcommand{\PE}{\left(X_{t}\right)_{t\in I}}
+\newcommand{\SG}{\left(P_{t}\right)}
+\newcommand{\CM}{\mathbf{P}^{x}}
+\newcommand\mypar{\par\vspace{\baselineskip}}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+%<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===
+
+
+%_____________________________________________________________________________________
+%
+\section{Estacionareidad}
+%_____________________________________________________________________________________
+%}
+
+Sea $v=\left(v_{i}\right)_{i\in E}$ medida no negativa en $E$, podemos definir una nueva medida $v\prob$ que asigna masa $\sum_{i\in E}v_{i}p_{ij}$ a cada estado $j$.
+
+\begin{Def}
+La medida $v$ es estacionaria si $v_{i}<\infty$ para toda $i$ y adem\'as $v\prob=v$.
+\end{Def}
+En el caso de que $v$ sea distribuci\'on, independientemente de que sea estacionaria o no, se cumple con
+
+\begin{eqnarray*}
+\prob_{v}\left[X_{1}=j\right]=\sum_{i\in E}\prob_{v}\left[X_{0}=i\right]p_{ij}=\sum_{i\in E}v_{i}p_{ij}=\left(vP\right)_{j}
+\end{eqnarray*}
+
+\begin{Teo}
+Supongamos que $v$ es una distribuci\'on estacionaria. Entonces
+\begin{itemize}
+\item[i)] La cadena es estrictamente estacionaria con respecto a
+$\prob_{v}$, es decir, $\prob_{v}$-distribuci\'on de $\left\{X_{n},X_{n+1},\ldots\right\}$ no depende de $n$;
+\item[ii)] Existe un aversi\'on estrictamente estacionaria $\left\{X_{n}\right\}_{n\in Z}$ de la cadena con doble tiempo infinito y $\prob\left(X_{n}=i\right)=v_{i}$ para toda $n\in Z$.
+\end{itemize}
+\end{Teo}
+
+\begin{Teo}
+Sea $i$ estado fijo, recurrente. Entonces una medida estacionaria $v$ puede definirse haciendo que $v_{j}$ sea el n\'umero esperado de visitas a $j$ entre dos visitas consecutivas $i$,
+
+\begin{equation}\label{Eq.3.1}
+v_{j}=\esp_{i}\sum_{n=0}^{\tau(i)-1}\indora\left(X_{n}=i\right)=\sum_{n=0}^{\infty}\prob_{i}\left[X_{n}=j,\tau(i)>n\right]
+\end{equation}
+\end{Teo}
+
+\begin{Teo}\label{Teo.3.3}
+Si la cadena es irreducible y recurrente, entonces existe una medida estacionaria $v$, tal que satisface $0<v_{j}<\infty$ para toda $j$, y es \'unica salvo factores multiplicativos, es decir, si $v,v^{*}$ son estacionarias, entonces $c=cv^{*}$ para alguna $c\in\left(0,\infty\right)$.
+\end{Teo}
+
+\begin{Cor}\label{Cor.3.5}
+Si la cadena es irreducible y positiva recurrente, existe una
+\'unica distribuci\'on estacionaria $\pi$ dada por
+\begin{equation}
+\pi_{j}=\frac{1}{\esp_{i}\tau_{i}}\esp_{i}\sum_{n=0}^{\tau\left(i\right)-1}\indora\left(X_{n}=j\right)=\frac{1}{\esp_{j}\tau\left(j\right)}.
+\end{equation}
+\end{Cor}
+
+\begin{Cor}\label{Cor.3.6}
+Cualquier cadena de Markov irreducible con un espacio de estados finito es positiva recurrente.
+\end{Cor}
+%_____________________________________________________________________________________
+%
+\section{Funciones Arm\'onicas, Recurrencia y Transitoriedad}
+%_____________________________________________________________________________________
+%
+\begin{Def}\label{Def.Armonica}
+Una funci\'on Arm\'onica es el eigenvector derecho $h$ de $P$ correspondiente al eigenvalor 1.
+\end{Def}
+\begin{eqnarray*}
+Ph=h\Leftrightarrow h\left(i\right)=\sum_{j\in E}p_{ij}h\left(j\right)=\esp_{i}h\left(X_{1}\right)=\esp\left[h\left(X_{n+1}\right)|X_{n}=i\right].
+\end{eqnarray*}
+es decir, $\left\{h\left(X_{n}\right)\right\}$ es martingala.
+\begin{Prop}\label{Prop.5.2}
+Sea $\left\{X_{n}\right\}$ cadena irreducible  y sea $i$ estado fijo arbitrario. Entonces la cadena es transitoria s\'i y s\'olo si existe una funci\'on no cero, acotada $h:E-\left\{i\right\}\rightarrow\rea$ que satisface
+\begin{equation}\label{Eq.5.1}
+h\left(j\right)=\sum_{k\neq i}p_{jk}h\left(k\right)\textrm{   para }j\neq i.
+\end{equation}
+\end{Prop}
+
+\begin{Prop}\label{Prop.5.4}
+Suponga que la cadena es irreducible y sea $E_{0}$ un subconjunto finito de $E$ tal que se cumple la ecuaci\'on 5.2 para alguna funci\'on $h$ acotada que satisface $h\left(i\right)<h\left(j\right)$ para alg\'un estado $i\notin E_{0}$ y todo $j\in E_{0}$. Entonces la cadena es transitoria.
+\end{Prop}
+
+%_____________________________________________________________________________________
+%
+\section{Teor\'ia Erg\'odica}
+%_____________________________________________________________________________________
+%
+\begin{Lema}
+Sea $\left\{X_{n}\right\}$ cadena irreducible y se $F$ subconjunto finito del espacio de estados. Entonces la cadena es positiva recurrente si $\esp_{i}\tau\left(F\right)<\infty$ para todo $i\in F$.
+\end{Lema}
+
+\begin{Prop}
+Sea $\left\{X_{n}\right\}$ cadena irreducible y transiente o cero recurrente, entonces $p_{ij}^{n}\rightarrow0$ conforme $n\rightarrow\infty$ para cualquier $i,j\in E$, $E$ espacio de estados.
+\end{Prop}
+Utilizando el teorema (2.2) y el corolario \ref{Cor.3.5}, se demuestra el siguiente resultado importante.
+
+\begin{Teo}
+Sea $\left\{X_{n}\right\}$ cadena irreducible y aperi\'odica positiva recurrente, y sea $\pi=\left\{\pi_{j}\right\}_{j\in E}$ la distribuci\'on estacionaria. Entonces $p_{ij}^{n}\rightarrow\pi_{j}$ para todo $i,j$.
+\end{Teo}
+\begin{Def}\label{Def.Ergodicidad}
+Una cadena irreducible aperiodica, positiva recurrente con medida estacionaria $v$, es llamada {\em erg\'odica}.
+\end{Def}
+
+\begin{Prop}\label{Prop.4.4}
+Sea $\left\{X_{n}\right\}$ cadena irreducible y recurrente con medida estacionaria $v$, entocnes para todo $i,j,k,l\in E$
+\begin{equation}
+\frac{\sum_{n=0}^{m}p_{ij}^{n}}{\sum_{n=0}^{m}p_{lk}^{n}}\rightarrow\frac{v_{j}}{v_{k}}\textrm{,    }m\rightarrow\infty
+\end{equation}
+\end{Prop}
+\begin{Lema}\label{Lema.4.5}
+La matriz $\widetilde{P}$ con elementos $\widetilde{p}_{ij}=\frac{v_{ji}p_{ji}}{v_{i}}$ es una matriz de transici\'on. Adem\'s, el $i$-\'esimo elementos $\widetilde{p}_{ij}^{m}$ de la matriz potencia $\widetilde{P}^{m}$ est? dada por $\widetilde{p}_{ij}^{m}=\frac{v_{ji}p_{ji}^{m}}{v_{i}}$.
+\end{Lema}
+
+\begin{Lema}
+Def\'inase $N_{i}^{m}=\sum_{n=0}^{m}\indora\left(X_{n}=i\right)$ como el n\'umero de visitas a $i$ antes del tiempo $m$. Entonces si la cadena es reducible y recurrente, $lim_{m\rightarrow\infty}\frac{\esp_{j}N_{i}^{m}}{\esp_{k}N_{i}^{m}}=1$ para todo $j,k\in E$.
+\end{Lema}
+
+
+%_____________________________________________________________________________________
+%
+\subsection{Ejemplo de Cadena de Markov para dos Estados}
+%_____________________________________________________________________________________
+%
+
+Supongamos que se tiene la siguiente cadena:
+\begin{equation}
+\left(\begin{array}{cc}
+1-q & q\\
+p & 1-p\\
+\end{array}
+\right).
+\end{equation}
+Si $P\left[X_{0}=0\right]=\pi_{0}(0)=a$ y $P\left[X_{0}=1\right]=\pi_{0}(1)=b=1-\pi_{0}(0)$, con $a+b=1$, entonces despu\'es de un procedimiento m\'as o menos corto se tiene que:
+
+\begin{eqnarray*}
+P\left[X_{n}=0\right]=\frac{p}{p+q}+\left(1-p-q\right)^{n}\left(a-\frac{p}{p+q}\right).\\
+P\left[X_{n}=1\right]=\frac{q}{p+q}+\left(1-p-q\right)^{n}\left(b-\frac{q}{p+q}\right).\\
+\end{eqnarray*}
+donde, como $0<p,q<1$, se tiene que $|1-p-q|<1$, entonces $\left(1-p-q\right)^{n}\rightarrow 0$ cuando $n\rightarrow\infty$. Por lo tanto
+\begin{eqnarray*}
+lim_{n\rightarrow\infty}P\left[X_{n}=0\right]=\frac{p}{p+q}.\\
+lim_{n\rightarrow\infty}P\left[X_{n}=1\right]=\frac{q}{p+q}.
+\end{eqnarray*}
+Si hacemos $v=\left(\frac{p}{p+q},\frac{q}{p+q}\right)$, entonces
+\begin{eqnarray*}
+\left(\frac{p}{p+q},\frac{q}{p+q}\right)\left(\begin{array}{cc}
+1-q & q\\
+p & 1-p\\
+\end{array}\right).
+\end{eqnarray*}
+
+
+\begin{Prop}\label{Prop.5.4}
+Suponga que la cadena es irreducible y sea $E_{0}$ un subconjunto finito de $E$ tal que se cumple la ecuaci\'on 5.2 para alguna funci\'on $h$ acotada que satisface $h\left(i\right)<h\left(j\right)$ para alg\'un estado $i\notin E_{0}$ y todo $j\in E_{0}$. Entonces la cadena es transitoria.
+\end{Prop}
+
+%_____________________________________________________________________________________
+%
+\section{Procesos de Markov de Saltos}
+%_____________________________________________________________________________________
+%
+
+
+Consideremos un estado que comienza en el estado $x_{0}$ al tiempo $0$, supongamos que el sistema permanece en $x_{0}$ hasta alg\'un tiempo positivo $\tau_{1}$, tiempo en el que el sistema salta a un nuevo estado $x_{1}\neq x_{0}$. Puede ocurrir que el sistema permanezca en $x_{0}$ de manera indefinida, en este caso hacemos $\tau_{1}=\infty$. Si $\tau_{1}$ es finito, el sistema permanecer\'a en $x_{1}$ hasta $\tau_{2}$, y as\'i sucesivamente.
+Sea
+\begin{equation}
+X\left(t\right)=\left\{\begin{array}{cc}
+x_{0} & 0\leq t<\tau_{1}\\
+x_{1} & \tau_{1}\leq t<\tau_{2}\\
+x_{2} & \tau_{2}\leq t<\tau_{3}\\
+\vdots &\\
+\end{array}\right.
+\end{equation}
+
+A este proceso  se le llama {\em proceso de salto}. Si
+\begin{equation}
+lim_{n\rightarrow\infty}\tau_{n}=\left\{\begin{array}{cc}
+<\infty & X_{t}\textrm{ explota}\\
+=\infty & X_{t}\textrm{ no explota}\\
+\end{array}\right.
+\end{equation}
+
+Un proceso puro de saltos es un proceso de saltos que satisface la propiedad de Markov.
+
+\begin{Prop}
+Un proceso de saltos es Markoviano si y s\'olo si todos los estados no absorbentes $x$ son tales que
+\begin{eqnarray*}
+P_{x}\left(\tau_{1}>t+s|\tau_{1}>s\right)=P_{x}\left(\tau_{1}>t\right)
+\end{eqnarray*}
+para $s,t\geq0$, equivalentemente
+
+\begin{equation}\label{Eq.5}
+\frac{1-F_{x}\left(t+s\right)}{1-F_{x}\left(s\right)}=1-F_{x}\left(t\right).
+\end{equation}
+\end{Prop}
+
+\begin{Note}
+Una distribuci\'on $F_{x}$ satisface la ecuaci\'on (\ref{Eq.5}) si y s\'olo si es una funci\'on de distribuci\'on exponencial para todos los estados no absorbentes $x$.
+\end{Note}
+
+Por un proceso de nacimiento y muerte se entiende un proceso de Markov de Saltos, $\left\{X_{t}\right\}_{t\geq0}$ en $E=\nat$ tal que del estado $n$ s\'olo se puede mover a $n-1$ o $n+1$, es decir, la matriz intensidad es de la forma:
+
+\begin{equation}
+\Lambda=\left(\begin{array}{ccccc}
+-\beta_{0}&\beta_{0} & 0 & 0 & \ldots\\
+\delta_{1}&-\beta_{1}-\delta_{1} & \beta_{1}&0&\ldots\\
+0&\delta_{2}&-\beta_{2}-\delta_{2} & \beta_{2}&\ldots\\
+\vdots & & & \ddots &
+\end{array}\right)
+\end{equation}
+
+donde $\beta_{n}$ son las probabilidades de nacimiento y
+$\delta_{n}$ las probabilidades de muerte.
+
+La matriz de transici\'on es
+\begin{equation}
+Q=\left(\begin{array}{ccccc}
+0& 1 & 0 & 0 & \ldots\\
+q_{1}&0 & p_{1}&0&\ldots\\
+0&q_{2}&0& p_{2}&\ldots\\
+\vdots & & & \ddots &
+\end{array}\right)
+\end{equation}
+con $p_{n}=\frac{\beta_{n}}{\beta_{n}+\delta_{n}}$ y
+$q_{n}=\frac{\delta_{n}}{\beta_{n}+\delta_{n}}$
+
+\begin{Prop}
+La recurrencia de un Proceso Markoviano de Saltos
+$\left\{X_{t}\right\}_{t\geq0}$ con espacio de estados numerable, o equivalentemente de la cadena encajada $\left\{Y_{n}\right\}$ es equivalente a
+\begin{equation}\label{Eq.2.1}
+\sum_{n=1}^{\infty}\frac{\delta_{1}\cdots\delta_{n}}{\beta_{1}\cdots\beta_{n}}=\sum_{n=1}^{\infty}\frac{q_{1}\cdots
+q_{n}}{p_{1}\cdots p_{n}}=\infty
+\end{equation}
+\end{Prop}
+
+\begin{Lem}
+Independientemente de la recurrencia o transitoriedad de la cadena, hay una y s\'olo una, salvo m\'ultiplos, soluci\'on $\nu$
+a $\nu\Lambda=0$, dada por
+\begin{equation}\label{Eq.2.2}
+\nu_{n}=\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}\nu_{0}
+\end{equation}
+\end{Lem}
+
+\begin{Cor}\label{Corolario2.3}
+En el caso recurrente, la medida estacionaria $\mu$ para
+$\left\{Y_{n}\right\}$ est\'a dada por
+\begin{equation}\label{Eq.2.3}
+\mu_{n}=\frac{p_{1}\cdots p_{n-1}}{q_{1}\cdots q_{n}}\mu_{0}
+\end{equation}
+para $n=1,2,\ldots$
+\end{Cor}
+
+\begin{Def}
+Una medida $\nu$ es estacionaria si $0\leq\nu_{j}<\infty$ y para toda $t$ se cumple que $\nu P^{t}=nu$.
+\end{Def}
+
+
+\begin{Def}
+Un proceso irreducible recurrente con medida estacionaria con masa finita es llamado erg\'odico.
+\end{Def}
+
+\begin{Teo}\label{Teo4.3}
+Un Proceso de Saltos de Markov irreducible no explosivo es erg\'odico si y s\'olo si uno puede encontrar una soluci\'on $\pi$ de probabilidad, $|\pi|=1$, $0\leq\pi_{j}\leq1$ para $\nu\Lambda=0$. En este caso $\pi$ es la distribuci\'on estacionaria.
+\end{Teo}
+\begin{Cor}\label{Corolario2.4}
+$\left\{X_{t}\right\}_{t\geq0}$ es erg\'odica si y s\'olo si (\ref{Eq.2.1}) se cumple y $S<\infty$, en cuyo caso la distribuci\'on estacionaria $\pi$ est\'a dada por
+
+\begin{equation}\label{Eq.2.4}
+\pi_{0}=\frac{1}{S}\textrm{,
+}\pi_{n}=\frac{1}{S}\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}\textrm{,
+}n=1,2,\ldots
+\end{equation}
+\end{Cor}
+
+
+Sea $E$ espacio discreto de estados, finito o numerable, y sea $\left\{X_{t}\right\}$ un proceso de Markov con espacio de estados $E$. Una medida $\mu$ en $E$ definida por sus probabilidades puntuales $\mu_{i}$, escribimos $p_{ij}^{t}=P^{t}\left(i,\left\{j\right\}\right)=P_{i}\left(X_{t}=j\right)$.
+
+El monto del tiempo gastado en cada estado es positivo, de modo tal que las trayectorias muestrales son constantes por partes. Para un proceso de saltos denotamos por los tiempos de saltos a $S_{0}=0<S_{1}<S_{2}\cdots$, los tiempos entre saltos consecutivos $T_{n}=S_{n+1}-S_{n}$ y la secuencia de estados visitados por $Y_{0},Y_{1},\ldots$, as\'i las trayectorias muestrales son constantes entre $S_{n}$ consecutivos, continua por la derecha, es decir, $X_{S_{n}}=Y_{n}$. 
+
+La descripci\'on de un modelo pr\'actico est\'a dado usualmente en t\'erminos de las intensidades $\lambda\left(i\right)$ y las probabilidades de salto $q_{ij}$ m\'as que en t\'erminos de la matriz de transici\'on $P^{t}$. Sup\'ongase de ahora en adelante que $q_{ii}=0$ cuando $\lambda\left(i\right)>0$
+
+\begin{Teo}
+Cualquier Proceso de Markov de Saltos satisface la Propiedad
+Fuerte de Markov
+\end{Teo}
+
+\begin{Def}
+Una medida $v\neq0$ es estacionaria si $0\leq v_{j}<\infty$, $vP^{t}=v$ para toda $t$.
+\end{Def}
+
+\begin{Teo}\label{Teo.4.2}
+Supongamos que $\left\{X_{t}\right\}$ es irreducible recurrente en $E$. Entonces existe una y s\'olo una, salvo m\'ultiplos, medida estacionaria $v$. Esta $v$ tiene la propiedad de que $0<v_{j}<\infty$ para todo $j$ y puede encontrarse en cualquiera de las siguientes formas
+
+\begin{itemize}
+\item[i)] Para alg\'un estado $i$, fijo pero arbitrario, $v_{j}$ es el tiempo esperado utilizado en $j$ entre dos llegadas consecutivas al estado $i$;
+\begin{equation}\label{Eq.4.2}
+v_{j}=\esp_{i}\int_{0}^{w\left(i\right)}\indora\left(X_{t}=j\right)dt
+\end{equation}
+con $w\left(i\right)=\inf\left\{t>0:X_{t}=i,X_{t^{-}}=\lim_{s\uparrow t}X_{s}\neq i\right\}$. 
+\item[ii)]
+$v_{j}=\frac{\mu_{j}}{\lambda\left(j\right)}$, donde $\mu$ es estacionaria para $\left\{Y_{n}\right\}$. \item[iii)] como
+soluci\'on de $v\Lambda=0$.
+\end{itemize}
+\end{Teo}
+
+\begin{Def}
+Un proceso irreducible recurrente con medida estacionaria de masa
+finita es llamado erg\'odico.
+\end{Def}
+
+\begin{Teo}\label{Teo.4.3}
+Un proceso de Markov de saltos irreducible no explosivo es erg\'odico si y s\'olo si se puede encontrar una soluci\'on, de probabilidad, $\pi$, con $|\pi|=1$ y $0\leq\pi_{j}\leq1$, a $\pi\Lambda=0$. En este caso $\pi$ es la distribuci\'on estacionaria.
+\end{Teo}
+
+\begin{Cor}\label{Cor.4.4}
+Una condici\'on suficiente para la ergodicidad de un proceso irreducible es la existencia de una probabilidad $\pi$ que resuelva el sistema $\pi\Lambda=0$ y que adem\'as tenga la propiedad de que $\sum\pi_{j}\lambda\left(j\right)$.
+\end{Cor}
+
+%_____________________________________________________________________________________
+%
+\section{Matriz Intensidad}
+%_____________________________________________________________________________________
+%
+
+
+\begin{Def}
+La matriz intensidad
+$\Lambda=\left(\lambda\left(i,j\right)\right)_{i,j\in E}$ del proceso de saltos $\left\{X_{t}\right\}_{t\geq0}$ est\'a dada por
+\begin{eqnarray*}
+\lambda\left(i,j\right)&=&\lambda\left(i\right)q_{i,j}\textrm{,    }j\neq i\\
+\lambda\left(i,i\right)&=&-\lambda\left(i\right)
+\end{eqnarray*}
+\end{Def}
+
+
+\begin{Prop}\label{Prop.3.1}
+Una matriz $E\times E$, $\Lambda$ es la matriz de intensidad de un proceso markoviano de saltos $\left\{X_{t}\right\}_{t\geq0}$ si y s\'olo si
+\begin{eqnarray*}
+\lambda\left(i,i\right)\leq0\textrm{, }\lambda\left(i,j\right)\textrm{,   }i\neq j\textrm{,  }\sum_{j\in E}\lambda\left(i,j\right)=0.
+\end{eqnarray*}
+Adem\'as, $\Lambda$ est\'a en correspondencia uno a uno con la
+distribuci\'on del proceso minimal dado por el teorema 3.1.
+\end{Prop}
+
+
+Para el caso particular de la Cola $M/M/1$, la matr\'iz de itensidad est\'a dada por
+\begin{eqnarray*}
+\Lambda=\left[\begin{array}{cccccc}
+-\beta & \beta & 0 &0 &0& \cdots\\
+\delta & -\beta-\delta & \beta & 0 & 0 &\cdots\\
+0 & \delta & -\beta-\delta & \beta & 0 &\cdots\\
+\vdots & & & & & \ddots\\
+\end{array}\right]
+\end{eqnarray*}
+
+
+%____________________________________________________________________________
+\section{Medidas Estacionarias}
+%____________________________________________________________________________
+%
+
+
+\begin{Def}
+Una medida $v\neq0$ es estacionaria si $0\leq v_{j}<\infty$, $vP^{t}=v$ para toda $t$.
+\end{Def}
+
+\begin{Teo}\label{Teo.4.2}
+Supongamos que $\left\{X_{t}\right\}$ es irreducible recurrente en $E$. Entonces existe una y s\'olo una, salvo m\'ultiplos, medida estacionaria $v$. Esta $v$ tiene la propiedad de que $0<v_{j}<\infty$ para todo $j$ y puede encontrarse en cualquiera de las siguientes formas
+
+\begin{itemize}
+\item[i)] Para alg\'un estado $i$, fijo pero arbitrario, $v_{j}$ es el tiempo esperado utilizado en $j$ entre dos llegadas consecutivas al estado $i$;
+\begin{equation}\label{Eq.4.2}
+v_{j}=\esp_{i}\int_{0}^{w\left(i\right)}\indora\left(X_{t}=j\right)dt
+\end{equation}
+con $w\left(i\right)=\inf\left\{t>0:X_{t}=i,X_{t^{-}}=\lim_{s\uparrow t}X_{s}\neq i\right\}$. 
+\item[ii)]
+$v_{j}=\frac{\mu_{j}}{\lambda\left(j\right)}$, donde $\mu$ es estacionaria para $\left\{Y_{n}\right\}$. 
+\item[iii)] como soluci\'on de $v\Lambda=0$.
+\end{itemize}
+\end{Teo}
+
+
+%____________________________________________________________________________
+\section{Criterios de Ergodicidad}
+%____________________________________________________________________________
+%
+
+\begin{Def}
+Un proceso irreducible recurrente con medida estacionaria de masa finita es llamado erg\'odico.
+\end{Def}
+
+\begin{Teo}\label{Teo.4.3}
+Un proceso de Markov de saltos irreducible no explosivo es erg\'odico si y s\'olo si se puede encontrar una soluci\'on, de probabilidad, $\pi$, con $|\pi|=1$ y $0\leq\pi_{j}\leq1$, a $\pi\Lambda=0$. En este caso $\pi$ es la distribuci\'on estacionaria.
+\end{Teo}
+
+\begin{Cor}\label{Cor.4.4}
+Una condici\'on suficiente para la ergodicidad de un proceso irreducible es la existencia de una probabilidad $\pi$ que resuelva el sistema $\pi\Lambda=0$ y que adem\'as tenga la propiedad de que $\sum\pi_{j}\lambda\left(j\right)<\infty$.
+\end{Cor}
+
+\begin{Prop}
+Si el proceso es erg\'odico, entonces existe una versi\'on estrictamente estacionaria
+$\left\{X_{t}\right\}_{-\infty<t<\infty}$con doble tiempo
+infinito.
+\end{Prop}
+
+\begin{Teo}
+Si $\left\{X_{t}\right\}$ es erg\'odico y $\pi$ es la distribuci\'on estacionaria, entonces para todo $i,j$, $p_{ij}^{t}\rightarrow\pi_{j}$ cuando $t\rightarrow\infty$.
+\end{Teo}
+
+\begin{Cor}
+Si $\left\{X_{t}\right\}$ es irreducible recurente pero no erg\'odica, es decir $|v|=\infty$, entonces $p_{ij}^{t}\rightarrow0$ para todo $i,j\in E$.
+\end{Cor}
+
+\begin{Cor}
+Para cualquier proceso Markoviano de Saltos minimal, irreducible o
+no, los l\'imites $li_{t\rightarrow\infty}p_{ij}^{t}$ existe.
+\end{Cor}
+
+
+%_____________________________________________________________________________________
+%
+\section{Procesos de Nacimiento y Muerte}
+%_____________________________________________________________________________________
+%
+
+\begin{Prop}\label{Prop.2.1}
+La recurrencia de $\left\{X_{t}\right\}$, o equivalentemente de
+$\left\{Y_{n}\right\}$ es equivalente a
+\begin{equation}\label{Eq.2.1}
+\sum_{n=1}^{\infty}\frac{\delta_{1}\cdots\delta_{n}}{\beta_{1}\cdots\beta_{n}}=\sum_{n=1}^{\infty}\frac{q_{1}\cdots
+q_{n}}{p_{1}\cdots p_{n}}=\infty
+\end{equation}
+\end{Prop}
+
+\begin{Lema}\label{Lema.2.2}
+Independientemente de la recurrencia o transitorieadad, existe una
+y s\'olo una, salvo m\'ultiplos, soluci\'on a $v\Lambda=0$, dada por
+\begin{equation}\label{Eq.2.2}
+v_{n}=\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}v_{0}
+\end{equation}
+para $n=1,2,\ldots$.
+\end{Lema}
+
+\begin{Cor}\label{Cor.2.3}
+En el caso recurrente, la medida estacionaria $\mu$ para
+$\left\{Y_{n}\right\}$ est\'a dada por
+\begin{equation}
+\mu_{n}=\frac{p_{1}\cdots p_{n-1}}{q_{1}\cdots q_{n}}\mu_{0}
+\end{equation}
+para $n=1,2,\ldots$.
+\end{Cor}
+
+Se define a
+$S=1+\sum_{n=1}^{\infty}\frac{\beta_{0}\beta_{1}\cdots\beta_{n-1}}{\delta_{1}\delta_{2}\cdots\delta_{n}}$
+
+\begin{Cor}\label{Cor.2.4}
+$\left\{X_{t}\right\}$ es erg\'odica si y s\'olo si la ecuaci\'on
+(\ref{Eq.2.1}) se cumple y adem\'as $S<\infty$, en cuyo caso la
+distribuci\'on erg\'odica, $\pi$, est\'a dada por
+\begin{equation}\label{Eq.2.4}
+\pi_{0}=\frac{1}{S}\textrm{,
+}\pi_{n}=\frac{1}{S}\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}
+\end{equation}
+para $n=1,2,\ldots$.
+\end{Cor}
+%_____________________________________________________________________________________
+\section{Procesos de Nacimiento y Muerte Generales}
+%_____________________________________________________________________________________
+
+Por un proceso de nacimiento y muerte se entiende un proceso de saltos de markov $\left\{X_{t}\right\}_{t\geq0}$ con espacio de estados a lo m\'as numerable, con la propiedad de que s\'olo puede ir al estado $n+1$ o al estado $n-1$, es decir, su matriz de intensidad es de la forma
+\begin{eqnarray*}
+\Lambda=\left[\begin{array}{cccccc}
+-\beta_{0} & \beta_{0} & 0 &0 &0& \cdots\\
+\delta_{1} & -\beta_{1}-\delta_{1} & \beta_{1} & 0 & 0 &\cdots\\
+0 & \delta_{2} & -\beta_{2}-\delta_{2} & \beta_{2} & 0 &\cdots\\
+\vdots & & & & & \ddots\\
+\end{array}\right]
+\end{eqnarray*}
+donde $\beta_{n}$ son las intensidades de nacimiento y $\delta_{n}$ las intensidades de muerte, o tambi\'en se puede ver como a $X_{t}$ el n\'umero de usuarios en una cola al tiempo $t$, un salto hacia arriba corresponde a la llegada de un nuevo usuario y un salto hacia abajo como al abandono de un usuario despu\'es de haber recibido su servicio.
+
+La cadena de saltos $\left\{Y_{n}\right\}$ tiene matriz de transici\'on dada por
+\begin{eqnarray*}
+Q=\left[\begin{array}{cccccc}
+0 & 1 & 0 &0 &0& \cdots\\
+q_{1} & 0 & p_{1} & 0 & 0 &\cdots\\
+0 & q_{2} & 0 & p_{2} & 0 &\cdots\\
+\vdots & & & & & \ddots\\
+\end{array}\right]
+\end{eqnarray*}
+donde $p_{n}=\frac{\beta_{n}}{\beta_{n}+\delta_{n}}$ y $q_{n}=1-p_{n}=\frac{\delta_{n}}{\beta_{n}+\delta_{n}}$, donde adem\'as se asumne por el momento que $p_{n}$ no puede tomar el valor $0$ \'o $1$ para cualquier valor de $n$.
+
+\begin{Prop}\label{Prop.2.1}
+La recurrencia de $\left\{X_{t}\right\}$, o equivalentemente de $\left\{Y_{n}\right\}$ es equivalente a
+\begin{equation}\label{Eq.2.1}
+\sum_{n=1}^{\infty}\frac{\delta_{1}\cdots\delta_{n}}{\beta_{1}\cdots\beta_{n}}=\sum_{n=1}^{\infty}\frac{q_{1}\cdots q_{n}}{p_{1}\cdots p_{n}}=\infty
+\end{equation}
+\end{Prop}
+
+\begin{Lema}\label{Lema.2.2}
+Independientemente de la recurrencia o transitorieadad, existe una y s\'olo una, salvo m\'ultiplos, soluci\'on a $v\Lambda=0$, dada por
+\begin{equation}\label{Eq.2.2}
+v_{n}=\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}v_{0}
+\end{equation}
+para $n=1,2,\ldots$.
+\end{Lema}
+
+\begin{Cor}\label{Cor.2.3}
+En el caso recurrente, la medida estacionaria $\mu$ para $\left\{Y_{n}\right\}$ est\'a dada por
+\begin{equation}\label{Eq.}
+\mu_{n}=\frac{p_{1}\cdots p_{n-1}}{q_{1}\cdots q_{n}}\mu_{0}
+\end{equation}
+para $n=1,2,\ldots$.
+\end{Cor}
+
+Se define a $S=1+\sum_{n=1}^{\infty}\frac{\beta_{0}\beta_{1}\cdots\beta_{n-1}}{\delta_{1}\delta_{2}\cdots\delta_{n}}$.
+
+\begin{Cor}\label{Cor.2.4}
+$\left\{X_{t}\right\}$ es erg\'odica si y s\'olo si la ecuaci\'on (\ref{Eq.2.1}) se cumple y adem\'as $S<\infty$, en cuyo caso la distribuci\'on erg\'odica, $\pi$, est\'a dada por
+\begin{equation}\label{Eq.2.4}
+\pi_{0}=\frac{1}{S}\textrm{,     }\pi_{n}=\frac{1}{S}\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}
+\end{equation}
+para $n=1,2,\ldots$.
+\end{Cor}
+
+
+
+
+
+%_____________________________________________________________________________________
+%
+\section{Notaci\'on Kendall-Lee}
+%_____________________________________________________________________________________
+%
+
+A partir de este momento se har\'an las siguientes consideraciones:
+\begin{itemize}
+\item[a) ]Si $t_{n}$ es el tiempo aleatorio en el que llega al sistema el $n$-\'esimo cliente, para $n=1,2,\ldots$, $t_{0}=0$ y $t_{0}<t_{1}<\cdots$ se definen los tiempos entre arribos $\tau_{n}=t_{n}-t_{n-1}$ para $n=1,2,\ldots$, variables aleatorias independientes e id\'enticamente distribuidas.
+
+\item[b) ]Los tiempos entre arribos tienen un valor medio $E\left(\tau\right)$ finito y positivo $\frac{1}{\beta}$, es decir, $\beta$ se puede ver como la tasa o intensidad promedio de arribos al sistema por unidad de tiempo.
+\item[c) ]  Adem\'as se supondr\'a que los servidores son identicos y si $s$ denota la variable aleatoria que describe el tiempo de servicio, entonces $E\left(s\right)=\frac{1}{\delta}$, $\delta$ es la tasa promedio de servicio por servidor.
+\end{itemize}
+
+
+La notaci\'on de Kendall-Lee es una forma abreviada de describir un sistema de espera con las siguientes componentes:
+\begin{itemize}
+\item[a)] {\em\bf Fuente}: Poblaci\'on de clientes potenciales del sistema, esta puede ser finita o infinita. 
+\item[b)] {\em\bf Proceso de Arribos}: Proceso determinado por la funci\'on de distribuci\'on $A\left(t\right)=P\left\{\tau\leq t\right\}$ de los tiempos entre arribos.
+\end{itemize}
+
+Adem\'as tenemos las siguientes igualdades
+\begin{equation}\label{Eq.0.1}
+N\left(t\right)=N_{q}\left(t\right)+N_{s}\left(s\right)
+\end{equation}
+donde
+\begin{itemize}
+\item $N\left(t\right)$ es el n\'umero de clientes en el sistema al tiempo $t$. 
+\item $N_{q}\left(t\right)$ es el n\'umero de cliente en la cola al tiempo $t$.
+\item $N_{s}\left(t\right)$ es el n\'umero de clientes recibiendo servicio en el tiempo $t$.
+\end{itemize}
+
+Bajo la hip\'otesis de estacionareidad, es decir, las caracter\'isticas de funcionamiento del sistema se han estabilizado en valores independientes del tiempo, entonces
+\begin{equation}
+N=N_{q}+N_{s}.
+\end{equation}
+
+Los valores medios de las cantidades anteriores se escriben como $L=E\left(N\right)$, $L_{q}=E\left(N_{q}\right)$ y $L_{s}=E\left(N_{s}\right)$, entonces de la ecuaci\'on \ref{Eq.0.1} se obtiene
+
+\begin{equation}
+L=L_{q}+L_{s}
+\end{equation}
+Si $q$ es el tiempo que pasa un cliente en la cola antes de recibir servicio, y W es el tiempo total que un cliente pasa en el sistema, entonces \[w=q+s\] por lo tanto \[W=W_{q}+W_{s},\] donde $W=E\left(w\right)$, $W_{q}=E\left(q\right)$ y $W_{s}=E\left(s\right)=\frac{1}{\delta}$.
+
+La intensidad de tr\'afico se define como
+\begin{equation}
+\rho=\frac{E\left(s\right)}{E\left(\tau\right)}=\frac{\beta}{\delta}.
+\end{equation}
+
+La utilizaci\'on por servidor es
+\begin{equation}
+u=\frac{\rho}{c}=\frac{\beta}{c\delta}.
+\end{equation}
+donde $c$ es el n\'umero de servidores.
+
+Esta notaci\'on es una forma abreviada de describir un sistema de espera con componentes dados a continuaci\'on, la notaci\'on es
+
+\begin{equation}\label{Notacion.K.L.}
+A/S/c/K/F/d
+\end{equation}
+
+Cada una de las letras describe:
+
+\begin{itemize}
+\item $A$ es la distribuci\'on de los tiempos entre arribos.
+\item $S$ es la distribuci\'on del tiempo de servicio.
+\item $c$ es el n\'umero de servidores.
+\item $K$ es la capacidad del sistema.
+\item $F$ es el n\'umero de individuos en la fuente.
+\item $d$ es la disciplina del servicio
+\end{itemize}
+
+Usualmente se acostumbra suponer que $K=\infty$, $F=\infty$ y $d=FIFO$, es decir, First In First Out. Las distribuciones usuales para $A$ y $B$ son:
+
+\begin{itemize}
+\item $GI$ para la distribuci\'on general de los tiempos entre arribos.
+\item $G$ distribuci\'on general del tiempo de servicio.
+\item $M$ Distribuci\'on exponencial para $A$ o $S$.
+\item $E_{K}$ Distribuci\'on Erlang-$K$, para $A$ o $S$.
+\item $D$ tiempos entre arribos o de servicio constantes, es decir, deterministicos.
+\end{itemize}
+
+
+%_____________________________________________________________________________________
+%
+\subsection{Cola $M/M/1$}
+%_____________________________________________________________________________________
+%
+Este modelo corresponde a un proceso de nacimiento y muerte con $\beta_{n}=\beta$ y $\delta_{n}=\delta$ independiente del valor de $n$. La intensidad de tr\'afico $\rho=\frac{\beta}{\delta}$, implica que el criterio de recurrencia (ecuaci\'on \ref{Eq.2.1}) quede de la forma:
+\begin{eqnarray*}
+1+\sum_{n=1}^{\infty}\rho^{-n}=\infty.
+\end{eqnarray*}
+Equivalentemente el proceso es recurrente si y s\'olo si
+\begin{eqnarray*}
+\sum_{n\geq1}\left(\frac{\beta}{\delta}\right)^{n}<\infty\Leftrightarrow \frac{\beta}{\delta}<1.
+\end{eqnarray*}
+Entonces
+$S=\frac{\delta}{\delta-\beta}$, luego por la ecuaci\'on \ref{Eq.2.4} se tiene que
+\begin{eqnarray*}
+\pi_{0}&=&\frac{\delta-\beta}{\delta}=1-\frac{\beta}{\delta},\\
+\pi_{n}&=&\pi_{0}\left(\frac{\beta}{\delta}\right)^{n}=\left(1-\frac{\beta}{\delta}\right)\left(\frac{\beta}{\delta}\right)^{n}=\left(1-\rho\right)\rho^{n}.
+\end{eqnarray*}
+
+
+Lo cual nos lleva a la siguiente proposici\'on:
+
+\begin{Prop}
+La cola $M/M/1$ con intensidad de tr\'afico $\rho$, es recurrente si y s\'olo si $\rho\leq1$.
+\end{Prop}
+
+Entonces por el corolario \ref{Cor.2.3}
+
+\begin{Prop}
+La cola $M/M/1$ con intensidad de tr\'afico $\rho$ es erg\'odica si y s\'olo si $\rho<1$. En cuyo caso, la distribuci\'on de equilibrio $\pi$ de la longitud de la cola es geom\'etrica, $\pi_{n}=\left(1-\rho\right)\rho^{n}$, para $n=1,2,\ldots$.
+\end{Prop}
+
+De la proposici\'on anterior se desprenden varios hechos importantes.
+\begin{itemize}
+\item[a) ] $\prob\left[X_{t}=0\right]=\pi_{0}=1-\rho$, es decir, la probabilidad de que el sistema se encuentre ocupado.
+\item[b) ] De las propiedades de la distribuci\'on Geom\'etrica se desprende que
+\begin{itemize}
+\item[i) ] $\esp\left[X_{t}\right]=\frac{\rho}{1-\rho}$,
+\item[ii) ] $Var\left[X_{t}\right]=\frac{\rho}{\left(1-\rho\right)^{2}}$.
+\end{itemize}
+\end{itemize}
+
+Si $L$ es el n\'umero esperado de clientes en el sistema, incluyendo los que est\'an siendo atendidos, entonces
+\begin{eqnarray}
+L=\frac{\rho}{1-\rho}.
+\end{eqnarray}
+Si adem\'as $W$ es el tiempo total del cliente en la cola: $W=W_{q}+W_{s}$, $\rho=\frac{\esp\left[s\right]}{\esp\left[\tau\right]}=\beta W_{s}$, puesto que $W_{s}=\esp\left[s\right]$ y $\esp\left[\tau\right]=\frac{1}{\delta}$. Por la f\'ormula de Little $L=\lambda W$
+\begin{eqnarray*}
+W&=&\frac{L}{\beta}=\frac{\frac{\rho}{1-\rho}}{\beta}=\frac{\rho}{\delta}\frac{1}{1-\rho}=\frac{W_{s}}{1-\rho}\\
+&=&\frac{1}{\delta\left(1-\rho\right)}=\frac{1}{\delta-\beta},
+\end{eqnarray*}
+
+luego entonces
+
+\begin{eqnarray*}
+W_{q}&=&W-W_{s}=\frac{1}{\delta-\beta}-\frac{1}{\delta}=\frac{\beta}{\delta(\delta-\beta)}\\
+&=&\frac{\rho}{1-\rho}\frac{1}{\delta}=\esp\left[s\right]\frac{\rho}{1-\rho}.
+\end{eqnarray*}
+
+Entonces
+
+\begin{eqnarray*}
+L_{q}=\beta W_{q}=\frac{\rho^{2}}{1-\rho}.
+\end{eqnarray*}
+
+Finalmente, tenemos las siguientes proposiciones:
+
+\begin{Prop}
+\begin{enumerate}
+\item $W\left(t\right)=1-e^{-\frac{t}{W}}$.
+\item $W_{q}\left(t\right)=1-\rho\exp^{-\frac{t}{W}}$.
+\end{enumerate}
+donde $W=\esp(w)$.
+\end{Prop}
+
+\begin{Prop}
+La cola M/M/1 con intensidad de tr\'afico $\rho$ es recurrente si
+y s\'olo si $\rho\leq1$
+\end{Prop}
+
+\begin{Prop}
+La cola M/M/1 con intensidad de tr\'afica $\rho$ es ergodica si y
+s\'olo si $\rho<1$. En este caso, la distribuci\'on de equilibrio
+$\pi$ de la longitud de la cola es geom\'etrica,
+$\pi_{n}=\left(1-\rho\right)\rho^{n}$, para $n=0,1,2,\ldots$.
+\end{Prop}
+%_____________________________________________________________________________________
+%
+\subsection{Cola $M/M/\infty$}
+%_____________________________________________________________________________________
+%
+
+Este tipo de modelos se utilizan para estimar el n\'umero de l\'ineas en uso en una gran red comunicaci\'on o para estimar valores en los sistemas $M/M/c$ o $M/M/c/c$, en el se puede pensar que siempre hay un servidor disponible para cada cliente que llega.
+
+Se puede considerar como un proceso de nacimiento y muerte con par\'ametros $\beta_{n}=\beta$ y $\mu_{n}=n\mu$ para $n=0,1,2,\ldots$. Este modelo corresponde al caso en que $\beta_{n}=\beta$ y $\delta_{n}=n\delta$, en este caso el par\'ametro de inter\'es $\eta=\frac{\beta}{\delta}$, luego, la ecuaci\'on \ref{Eq.2.1} queda de la forma:
+
+\begin{eqnarray*}
+\sum_{n=1}^{\infty}\frac{\delta_{1}\cdots\delta_{n}}{\beta_{1}\cdots\beta_{n}}=\sum_{n=1}^{\infty}n!\eta^{-n}=\infty\\
+\end{eqnarray*}
+con $S=1+\sum_{n=1}^{\infty}\frac{\eta^{n}}{n!}=e$, entonces por la ecuaci\'on \ref{Eq.2.4} se tiene que
+
+\begin{eqnarray}\label{MMinf.pi}
+\pi_{0}=e^{\rho},\\
+\pi_{n}=e^{-\rho}\frac{\rho^{n}}{n!}.
+\end{eqnarray}
+Entonces, el n\'umero promedio de servidores ocupados es equivalente a considerar el n\'umero de clientes en el  sistema, es decir,
+\begin{eqnarray}
+L=\esp\left[N\right]=\rho.\\
+Var\left[N\right]=\rho.
+\end{eqnarray}
+Adem\'as se tiene que $W_{q}=0$ y $L_{q}=0$. El tiempo promedio en el sistema es el tiempo promedio de servicio, es decir, $W=\esp\left[s\right]=\frac{1}{\delta}$.Resumiendo, tenemos la sisuguiente proposici\'on:
+
+\begin{Prop}
+La cola $M/M/\infty$ es erg\'odica para todos los valores de $\eta$. La distribuci\'on de equilibrio $\pi$ es Poisson con media $\eta$,
+\begin{eqnarray}
+\pi_{n}=\frac{e^{-n}\eta^{n}}{n!}.
+\end{eqnarray}
+\end{Prop}
+%_____________________________________________________________________________________
+%
+\subsection{Cola $M/M/m$}
+%_____________________________________________________________________________________
+%
+
+Este sistema considera $m$ servidores id\'enticos, con tiempos entre arribos y de servicio exponenciales con medias $\esp\left[\tau\right]=\frac{1}{\beta}$ y
+$\esp\left[s\right]=\frac{1}{\delta}$. definimos ahora la utilizaci\'on por servidor como $u=\frac{\rho}{m}$ que tambi\'en se puede interpretar como la fracci\'on de tiempo promedio que cada servidor est\'a ocupado.
+
+La cola $M/M/m$ se puede considerar como un proceso de nacimiento y muerte con par\'ametros: $\beta_{n}=\beta$ para $n=0,1,2,\ldots$ y
+\begin{eqnarray}
+\delta_{n}=\left\{\begin{array}{cc}
+n\delta & n=0,1,\ldots,m-1\\
+c\delta & n=m,\ldots\\
+\end{array}\right.
+\end{eqnarray}
+
+entonces  la condici\'on de recurrencia se va a cumplir s\'i y s\'olo si $\sum_{n\geq1}\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}<\infty$,
+equivalentemente se debe de cumplir que
+\begin{eqnarray*}
+S&=&1+\sum_{n\geq1}\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}=\sum_{n=0}^{m-1}\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}+\sum_{n=0}^{\infty}\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}\\
+&=&\sum_{n=0}^{m-1}\frac{\beta^{n}}{n!\delta^{n}}+\sum_{n=0}^{\infty}\frac{\rho^{m}}{m!}u^{n}
+\end{eqnarray*}
+converja, lo cual ocurre si $u<1$, en este caso
+
+\begin{eqnarray}
+S=\sum_{n=0}^{m-1}\frac{\rho^{n}}{n!}+\frac{\rho^{m}}{m!}\left(1-u\right)
+\end{eqnarray}
+luego, para este caso se tiene que
+
+\begin{eqnarray}
+\pi_{0}&=&\frac{1}{S}\\
+\pi_{n}&=&\left\{\begin{array}{cc}
+\pi_{0}\frac{\rho^{n}}{n!} & n=0,1,\ldots,m-1\\
+\pi_{0}\frac{\rho^{n}}{m!m^{n-m}}& n=m,\ldots\\
+\end{array}\right.
+\end{eqnarray}
+Al igual que se hizo antes, determinaremos los valores de
+$L_{q},W_{q},W$ y $L$:
+\begin{eqnarray*}
+L_{q}&=&\esp\left[N_{q}\right]=\sum_{n=0}^{\infty}\left(n-m\right)\pi_{n}=\sum_{n=0}^{\infty}n\pi_{n+m}\\
+&=&\sum_{n=0}^{\infty}n\pi_{0}\frac{\rho^{n+m}}{m!m^{n+m}}=\pi_{0}\frac{\rho^{m}}{m!}\sum_{n=0}^{\infty}nu^{n}=\pi_{0}\frac{u\rho^{m}}{m!}\sum_{n=0}^{\infty}\frac{d}{du}u^{n}\\
+&=&\pi_{0}\frac{u\rho^{m}}{m!}\frac{d}{du}\sum_{n=0}^{\infty}u^{n}=\pi_{0}\frac{u\rho^{m}}{m!}\frac{d}{du}\left(\frac{1}{1-u}\right)=\pi_{0}\frac{u\rho^{m}}{m!}\frac{1}{\left(1-u\right)^{2}},
+\end{eqnarray*}
+
+es decir
+\begin{equation}
+L_{q}=\frac{u\pi_{0}\rho^{m}}{m!\left(1-u\right)^{2}},
+\end{equation}
+luego
+\begin{equation}
+W_{q}=\frac{L_{q}}{\beta}.
+\end{equation}
+Adem\'as
+\begin{equation}
+W=W_{q}+\frac{1}{\delta}
+\end{equation}
+
+Si definimos
+\begin{eqnarray}
+C\left(m,\rho\right)=\frac{\pi_{0}\rho^{m}}{m!\left(1-u\right)}=\frac{\pi_{m}}{1-u},
+\end{eqnarray}
+que es la probabilidad de que un cliente que llegue al sistema
+tenga que esperar en la cola. Entonces podemos reescribir las
+ecuaciones reci\'en enunciadas:
+
+\begin{eqnarray}
+L_{q}&=&\frac{C\left(m,\rho\right)u}{1-u},\\
+W_{q}&=&\frac{C\left(m,\rho\right)\esp\left[s\right]}{m\left(1-u\right)}\\
+\end{eqnarray}
+Por tanto tenemos las siguientes proposiciones:
+
+\begin{Prop}
+La cola $M/M/m$ con intensidad de tr\'afico $\rho$ es erg\'odica si y s\'olo si $\rho<1$. En este caso la distribuci\'on erg\'odica $\pi$ est\'a dada por
+\begin{eqnarray}
+\pi_{n}=\left\{\begin{array}{cc}
+\frac{1}{S}\frac{\eta^{n}}{n!} & 0\leq n\leq m\\
+\frac{1}{S}\frac{\eta^{m}}{m!}\rho^{n-m} & m\leq n<\infty\\
+\end{array}\right.
+\end{eqnarray}
+\end{Prop}
+
+\begin{Prop}
+Para $t\geq0$
+\begin{itemize}
+\item[a)]
+\begin{eqnarray}
+W_{q}\left(t\right)=1-C\left(m,\rho\right)e^{-c\delta
+t\left(1-u\right)}.
+\end{eqnarray} 
+\item[b)]\begin{eqnarray}
+W\left(t\right)=\left\{\begin{array}{cc}
+1+e^{-\delta t}\frac{\rho-m+W_{q}\left(0\right)}{m-1-\rho}+e^{-m\delta t\left(1-u\right)}\frac{C\left(m,\rho\right)}{m-1-\rho} & \rho\neq m-1\\
+1-\left(1+C\left(m,\rho\right)\delta t\right)e^{-\delta t} & \rho=m-1\\
+\end{array}\right.
+\end{eqnarray}
+\end{itemize}
+\end{Prop}
+
+Resumiendo, para este caso $\beta_{n}=\beta$ y
+$\delta_{n}=m\left(n\right)\delta$, donde $m\left(n\right)$ es el n\'umero de servidores ocupados en el estado $n$, es decir,
+$m\left(n\right)=m$, para $n\geq m$ y $m\left(n\right)=m$ para
+$1\leq n\leq m$. La intensidad de tr\'afico es
+$\rho=\frac{\beta}{m\delta}$ y $\frac{\beta_{n}}{\delta_{n}}=\rho$
+para $n\geq m$. As\'i, al igual que en el caso $m=1$, la ecuaci\'on
+\ref{Eq.2.1} y la recurrencia se cumplen si y s\'olo si
+$\sum_{n=1}^{\infty}\rho^{-n}=\infty$, es decir, cuando
+$\rho\leq1$. 
+
+
+%_____________________________________________________________________________________
+%
+\subsection{Cola $M/M/m/m$}
+%_____________________________________________________________________________________
+%
+
+Consideremos un sistema con $m$ servidores id\'enticos, pero ahora cada uno es de capacidad finita $m$. Si todos los servidores se encuentran ocupados, el siguiente usuario en llegar se pierde pues no se le deja esperar a que reciba servicio. Este tipo de sistemas pueden verse como un proceso de nacimiento y muerte con
+\begin{eqnarray}
+\beta_{n}=\left\{\begin{array}{cc}
+\beta & n=0,1,2,\ldots,m-1\\
+0 & n\geq m\\
+\end{array}
+\right.
+\end{eqnarray}
+
+\begin{eqnarray}
+\delta_{n}=\left\{\begin{array}{cc}
+n\delta & n=0,1,2,\ldots,m-1\\
+0 & n\geq m\\
+\end{array}
+\right.
+\end{eqnarray}
+El proceso tiene epacio de estados finitos, $S=\left\{0,1,\ldots,m\right\}$, entonces de las ecuaciones que determinan la distribuci\'on estacionaria se tiene que
+\begin{equation}\label{Eq.13.1}
+\pi_{n}=\left\{\begin{array}{cc}
+\pi_{0}\frac{\rho^{n}}{n!} & n=0,1,2,\ldots,m\\
+0 & n\geq m\\
+\end{array}
+\right.
+\end{equation}
+y adem\'as
+\begin{equation}
+\pi_{0}=\left(\sum_{n=0}^{m}\frac{\rho^{n}}{n!}\right)^{-1}.
+\end{equation}
+A la ecuaci\'on \ref{Eq.13.1} se le llama {\em distribuci\'on truncada}. Si definimos
+$\pi_{m}=B\left(m,\rho\right)=\pi_{0}\frac{\rho^{m}}{m!}$, $\pi_{m}$ representa la probabilidad de que todos los servidores se encuentren ocupados, y tambi\'en se le conoce como {\em f\'ormula de p\'erdida de Erlang}. Necesariamente en este caso el tiempo de espera en la cola $W_{q}$ y el n\'umero promedio de clientes en la cola $L_{q}$ deben de ser cero puesto que no se permite esperar para recibir servicio, m\'as a\'un, el tiempo de espera en el sistema y el tiempo de serivcio tienen la misma distribuci\'on, es decir,
+\[W\left(t\right)=\prob\left\{w\leq t\right\}=1-e^{-\mu t},\] en particular
+\[W=\esp\left[w\right]=\esp\left[s\right]=\frac{1}{\delta}.\]
+Por otra parte, el n\'umero esperado de clientes en el sistema es
+\begin{eqnarray*}
+L&=&\esp\left[N\right]=\sum_{n=0}^{m}n\pi_{n}=\pi_{0}\rho\sum_{n=0}^{m}\frac{\rho^{n-1}}{\left(n-1\right)!}\\
+&=&\pi_{0}\rho\sum_{n=0}^{m-1}\frac{\rho^{n}}{n!}
+\end{eqnarray*}
+entonces, se tiene que
+\begin{equation}
+L=\rho\left(1-B\left(m,\rho\right)\right)=\esp\left[s\right]\left(1-B\left(m,\rho\right)\right).
+\end{equation}
+Adem\'as
+\begin{equation}
+\delta_{q}=\delta\left(1-B\left(m,\rho\right)\right)
+\end{equation}
+representa la tasa promedio efectiva de arribos al sistema.
+%_____________________________________________________________________________________
+%
+\subsection{Cola M/G/1}
+%_____________________________________________________________________________________
+%
+Consideremos un sistema de espera con un servidor, en el que los tiempos entre arribos son exponenciales, y los tiempos de servicio tienen una distribuci\'on general $G$. Sea $N\left(t\right)_{t\geq0}$ el n\'umero de clientes en el sistema al tiempo $t$, y sean $t_{1}<t_{2}<\dots$ los tiempos sucesivos en los que los clientes completan su servicio y salen del sistema.
+
+La sucesi\'on $\left\{X_{n}\right\}$ definida por
+$X_{n}=N\left(t_{n}\right)$ es una cadena de Markov, en espec\'ifico es la Cadena encajada del proceso de llegadas de usuarios. Sea $U_{n}$ el n\'umero de clientes que llegan al sistema durante el tiempo de servicio del $n$-\'esimo cliente, entonces se tiene que
+
+\begin{eqnarray*}
+X_{n+1}=\left\{\begin{array}{cc}
+X_{n}-1+U_{n+1} & \textrm{si }X_{n}\geq1,\\
+U_{n+1} & \textrm{si }X_{n}=0\\
+\end{array}\right.
+\end{eqnarray*}
+
+Dado que los procesos de arribos de los usuarios es Poisson con par\'ametro $\lambda$, la probabilidad condicional de que lleguen $j$ clientes al sistema dado que el tiempo de servicio es $s=t$, resulta:
+\begin{eqnarray*}
+\prob\left\{U=j|s=t\right\}=e^{-\lambda t}\frac{\left(\lambda
+t\right)^{j}}{j!}\textrm{,   }j=0,1,\ldots
+\end{eqnarray*}
+por el teorema de la probabilidad total se tiene que
+\begin{equation}
+a_{j}=\prob\left\{U=j\right\}=\int_{0}^{\infty}\prob\left\{U=j|s=t\right\}dG\left(t\right)=\int_{0}^{\infty}e^{-\lambda
+t}\frac{\left(\lambda t\right)^{j}}{j!}dG\left(t\right)
+\end{equation}
+donde $G$ es la distribuci\'on de los tiempos de servicio. Las probabilidades de transici\'on de la cadena est\'an dadas por
+\begin{equation}
+p_{0j}=\prob\left\{U_{n+1}=j\right\}=a_{j}\textrm{, para
+}j=0,1,\ldots
+\end{equation}
+y para $i\geq1$
+\begin{equation}
+p_{ij}=\left\{\begin{array}{cc}
+\prob\left\{U_{n+1}=j-i+1\right\}=a_{j-i+1}&\textrm{, para }j\geq i-1\\
+0 & j<i-1\\
+\end{array}
+\right.
+\end{equation}
+Entonces la matriz de transici\'on es:
+\begin{eqnarray*}
+P=\left[\begin{array}{ccccc}
+a_{0} & a_{1} & a_{2} & a_{3} & \cdots\\
+a_{0} & a_{1} & a_{2} & a_{3} & \cdots\\
+0 & a_{0} & a_{1} & a_{2} & \cdots\\
+0 & 0 & a_{0} & a_{1} & \cdots\\
+\vdots & \vdots & \cdots & \ddots &\vdots\\
+\end{array}
+\right].
+\end{eqnarray*}
+Sea $\rho=\sum_{n=0}na_{n}$, entonces se tiene el siguiente teorema:
+\begin{Teo}
+La cadena encajada $\left\{X_{n}\right\}$ es
+\begin{itemize}
+\item[a)] Recurrente positiva si $\rho<1$,
+\item[b)] Transitoria
+si $\rho>1$, 
+\item[c)] Recurrente nula si $\rho=1$.
+\end{itemize}
+\end{Teo}
+
+Recordemos que si la cadena de Markov $\left\{X_{n}\right\}$ tiene una distribuci\'on estacionaria entonces existe una distribuci\'on de probabilidad $\pi=\left(\pi_{0},\pi_{1},\ldots,\right)$, con $\pi_{i}\geq0$ y $\sum_{i\geq1}\pi_{i}=1$ tal que satisface la
+ecuaci\'on $\pi=\pi P$, equivalentemente
+\begin{equation}\label{Eq.18.9}
+\pi_{j}=\sum_{i=0}^{\infty}\pi_{k}p_{ij},\textrm{ para
+}j=0,1,2,\ldots
+\end{equation}
+que se puede ver como
+\begin{equation}\label{Eq.19.6}
+\pi_{j}=\pi_{0}a_{j}+\sum_{i=1}^{j+1}\pi_{i}a_{j-i+1}\textrm{,
+para }j=0,1,\ldots
+\end{equation}
+si definimos
+\begin{eqnarray}
+\pi\left(z\right)=\sum_{j=0}^{\infty}\pi_{j}z^{j}
+\end{eqnarray}
+y 
+\begin{equation}
+A\left(z\right)=\sum_{j=0}^{\infty}a_{j}z^{j}
+\end{equation}
+con $|z_{j}|\leq1$. Si la ecuaci\'on \ref{Eq.19.6} la multiplicamos por $z^{j}$ y sumando sobre $j$, se tiene que
+\begin{eqnarray*}
+\sum_{j=0}^{\infty}\pi_{j}z^{j}&=&\sum_{j=0}^{\infty}\pi_{0}a_{j}z^{j}+\sum_{j=0}^{\infty}\sum_{i=1}^{j+1}\pi_{i}a_{j-i+1}z^{j}\\
+&=&\pi_{0}\sum_{j=0}^{\infty}a_{j}z^{j}+\sum_{j=0}^{\infty}a_{j}z^{j}\sum_{i=1}^{\infty}\pi_{i}a_{i-1}\\
+&=&\pi_{0}A\left(z\right)+A\left(z\right)\left(\frac{\pi\left(z\right)-\pi_{0}}{z}\right)\\
+\end{eqnarray*}
+es decir,
+
+\begin{equation}
+\pi\left(z\right)=\pi_{0}A\left(z\right)+A\left(z\right)\left(\frac{\pi\left(z\right)-\pi_{0}}{z}\right)\Leftrightarrow\pi\left(z\right)=\frac{\pi_{0}A\left(z\right)\left(z-1\right)}{z-A\left(z\right)}
+\end{equation}
+
+Si $z\rightarrow1$, entonces $A\left(z\right)\rightarrow A\left(1\right)=1$, y adem\'as $A^{'}\left(z\right)\rightarrow A^{'}\left(1\right)=\rho$. Si aplicamos la Regla de L'Hospital se tiene que
+\begin{eqnarray*}
+\sum_{j=0}^{\infty}\pi_{j}=lim_{z\rightarrow1^{-}}\pi\left(z\right)=\pi_{0}lim_{z\rightarrow1^{-}}\frac{z-1}{z-A\left(z\right)}=\frac{\pi_{0}}{1-\rho}
+\end{eqnarray*}
+Retomando,
+\begin{eqnarray*}
+a_{j}=\prob\left\{U=j\right\}=\int_{0}^{\infty}e^{-\lambda
+t}\frac{\left(\lambda t\right)^{n}}{n!}dG\left(t\right)\textrm{,
+para }n=0,1,2,\ldots
+\end{eqnarray*}
+entonces
+\begin{eqnarray*}
+\rho&=&\sum_{n=0}^{\infty}na_{n}=\sum_{n=0}^{\infty}n\int_{0}^{\infty}e^{-\lambda t}\frac{\left(\lambda t\right)^{n}}{n!}dG\left(t\right)\\
+&=&\int_{0}^{\infty}\sum_{n=0}^{\infty}ne^{-\lambda
+t}\frac{\left(\lambda
+t\right)^{n}}{n!}dG\left(t\right)=\int_{0}^{\infty}\lambda
+tdG\left(t\right)=\lambda\esp\left[s\right]
+\end{eqnarray*}
+
+Adem\'as, se tiene que $\rho=\beta\esp\left[s\right]=\frac{\beta}{\delta}$ y la distribuci\'on estacionaria est\'a dada por
+\begin{eqnarray}
+\pi_{j}&=&\pi_{0}a_{j}+\sum_{i=1}^{j+1}\pi_{i}a_{j-i+1}\textrm{, para }j=0,1,\ldots\\
+\pi_{0}&=&1-\rho.
+\end{eqnarray}
+Por otra parte se tiene que\begin{equation}
+L=\pi^{'}\left(1\right)=\rho+\frac{A^{''}\left(1\right)}{2\left(1-\rho\right)}
+\end{equation}
+
+pero $A^{''}\left(1\right)=\sum_{n=1}n\left(n-1\right)a_{n}= \esp\left[U^{2}\right]-\esp\left[U\right]$, $\esp\left[U\right]=\rho$ y
+$\esp\left[U^{2}\right]=\lambda^{2}\esp\left[s^{2}\right]+\rho$.
+Por lo tanto $L=\rho+\frac{\beta^{2}\esp\left[s^{2}\right]}{2\left(1-\rho\right)}$.
+
+De las f\'ormulas de Little, se tiene que $W=E\left(w\right)=\frac{L}{\beta}$, tambi\'en el tiempo de espera en la cola
+\begin{equation}
+W_{q}=\esp\left(q\right)=\esp\left(w\right)-\esp\left(s\right)=\frac{L}{\beta}-\frac{1}{\delta},
+\end{equation}
+adem\'as el n\'umero promedio de clientes en la cola es
+\begin{equation}
+L_{q}=\esp\left(N_{q}\right)=\beta W_{q}=L-\rho
+\end{equation}
+
+
+%____________________________________________________________________________
+\subsection{Cola con Infinidad de Servidores}
+
+Este caso corresponde a $\beta_{n}=\beta$ y $\delta_{n}=n\delta$. El par\'ametro de inter\'es es $\eta=\frac{\beta}{\delta}$, de donde se obtiene:
+\begin{eqnarray*}
+\sum_{n\geq0}\frac{\delta_{1}\cdots\delta_{n}}{\beta_{1}\cdots\beta_{n}}=\sum_{n=1}^{\infty}n!\eta^{n}=\infty,\\
+S=1+\sum_{n=1}^{\infty}\frac{\eta^{n}}{n!}=e^{n}.
+\end{eqnarray*}
+
+\begin{Prop}
+La cola $M/M/\infty$ es ergodica para todos los valores de $\eta$. La distribuci\'on de equilibrio $\pi$ es Poisson con media $\eta$, $\pi_{n}=\frac{e^{-n}\eta}{n!}$
+\end{Prop}
+
+
+
+%_____________________________________________________________________________________
+%
+\section{Redes de Colas:Sistemas Abiertos}
+%_____________________________________________________________________________________
+
+Considerese un sistema con dos servidores, en los cuales los usuarios llegan de acuerdo a un proceso poisson con intensidad $\lambda_{1}$ al primer servidor, despu\'es de ser atendido se pasa a la siguiente cola en el segundo servidor. Cada servidor atiende a un usuario a la vez con tiempo exponencial con raz\'on $\mu_{i}$, para $i=1,2$. A este tipo de sistemas se les conoce como sistemas secuenciales.
+
+Def\'inase el par $\left(n,m\right)$ como el n\'umero de usuarios en el servidor 1 y 2 respectivamente. Las ecuaciones de balance son
+\begin{eqnarray}\label{Eq.Balance}
+\lambda P_{0,0}&=&\mu_{2}P_{0,1}\\
+\left(\lambda+\mu_{1}\right)P_{n,0}&=&\mu_{2}P_{n,1}+\lambda P_{n-1,0}\\
+\left(\lambda+\mu_{2}\right)P_{0,m}&=&\mu_{2}P_{0,m+1}+\mu_{1}P_{1,m-1}\\
+\left(\lambda+\mu_{1}+\mu_{2}\right)P_{n,m}&=&\mu_{2}P_{n,m+1}+\mu_{1}P_{n+1,m-1}+\lambda
+P_{n-1,m}
+\end{eqnarray}
+
+Cada servidor puede ser visto como un modelo de tipo $M/M/1$, de igual manera el proceso de salida de una cola $M/M/1$ con raz\'on $\lambda$, nos permite asumir que el servidor 2 tambi\'en es una cola $M/M/1$. Adem\'as la probabilidad de que haya $n$ usuarios en el servidor 1 es
+\begin{eqnarray*}
+P\left\{n\textrm{ en el servidor }1\right\}&=&\left(\frac{\lambda}{\mu_{1}}\right)^{n}\left(1-\frac{\lambda}{\mu_{1}}\right)=\rho_{1}^{n}\left(1-\rho_{1}\right)\\
+P\left\{m\textrm{ en el servidor }2\right\}&=&\left(\frac{\lambda}{\mu_{2}}\right)^{n}\left(1-\frac{\lambda}{\mu_{2}}\right)=\rho_{2}^{m}\left(1-\rho_{2}\right)\\
+\end{eqnarray*}
+Si el n\'umero de usuarios en los servidores 1 y 2 son variables aleatorias independientes, se sigue que:
+\begin{equation}\label{Eq.8.16}
+P_{n,m}=\rho_{1}^{n}\left(1-\rho_{1}\right)\rho_{2}^{m}\left(1-\rho_{2}\right)
+\end{equation}
+Verifiquemos que $P_{n,m}$ satisface las ecuaciones de balance (\ref{Eq.Balance}) Antes de eso, enunciemos unas igualdades que nos ser\'an de utilidad:
+\begin{eqnarray*}
+\mu_{i}\rho_{i}&=&\lambda\textrm{ para }i=1,2.\\
+\lambda P_{0,0}&=&\lambda\left(1-\rho_{1}\right)\left(1-\rho_{2}\right)\\
+\textrm{ y }\mu_{2} P_{0,1}&=&\mu_{2}\left(1-\rho_{1}\right)\rho_{2}\left(1-\rho_{2}\right)\Rightarrow\\
+\lambda P_{0,0}&=&\mu_{2} P_{0,1}\\
+\left(\lambda+\mu_{2}\right)P_{0,m}&=&\left(\lambda+\mu_{2}\right)\left(1-\rho_{1}\right)\rho_{2}^{m}\left(1-\rho_{2}\right)\\
+\mu_{2}P_{0,m+1}&=&\lambda\left(1-\rho_{1}\right)\rho_{2}^{m}\left(1-\rho_{2}\right)\\
+&=&\mu_{2}\left(1-\rho_{1}\right)\rho_{2}^{m}\left(1-\rho_{2}\right)\\
+\mu_{1}P_{1,m-1}&=&\frac{\lambda}{\rho_{2}}\left(1-\rho_{1}\right)\rho_{2}^{m}\left(1-\rho_{2}\right)\Rightarrow\\
+\left(\lambda+\mu_{2}\right)P_{0,m}&=&\mu_{2}P_{0,m+1}+\mu_{1}P_{1,m-1}\\
+\left(\lambda+\mu_{1}+\mu_{2}\right)P_{n,m}&=&\left(\lambda+\mu_{1}+\mu_{2}\right)\rho^{n}\left(1-\rho_{1}\right)\rho_{2}^{m}\left(1-\rho_{2}\right)\\
+\mu_{2}P_{n,m+1}&=&\mu_{2}\rho_{2}\rho_{1}^{n}\left(1-\rho_{1}\right)\rho_{2}^{m}\left(1-\rho_{2}\right)\\
+\mu_{1} P_{n-1,m-1}&=&\mu_{1}\frac{\rho_{1}}{\rho_{2}}\rho_{1}^{n}\left(1-\rho_{1}\right)\rho_{2}^{m}\left(1-\rho_{2}\right)\\
+\lambda P_{n-1,m}&=&\frac{\lambda}{\rho_{1}}\rho_{1}^{n}\left(1-\rho_{1}\right)\rho_{2}^{m}\left(1-\rho_{2}\right)\\
+\Rightarrow\left(\lambda+\mu_{1}+\mu_{2}\right)P_{n,m}&=&\mu_{2}P_{n,m+1}+\mu_{1} P_{n-1,m-1}+\lambda P_{n-1,m}\\
+\end{eqnarray*}
+entonces efectivamente la ecuaci\'on (\ref{Eq.8.16}) satisface las ecuaciones de balance (\ref{Eq.Balance}). El n\'umero promedio  de usuarios en el sistema, est\'a dado por
+\begin{eqnarray*}
+L&=&\sum_{n,m}\left(n+m\right)P_{n,m}=\sum_{n,m}nP_{n,m}+\sum_{n,m}mP_{n,m}\\
+&=&\sum_{n}\sum_{m}nP_{n,m}+\sum_{m}\sum_{n}mP_{n,m}=\sum_{n}n\sum_{m}P_{n,m}+\sum_{m}m\sum_{n}P_{n,m}\\
+&=&\sum_{n}n\sum_{m}\rho_{1}^{n}\left(1-\rho_{1}\right)\rho_{2}^{m}\left(1-\rho_{2}\right)+\sum_{m}m\sum_{n}\rho_{1}^{n}\left(1-\rho_{1}\right)\rho_{2}^{m}\left(1-\rho_{2}\right)\\
+&=&\sum_{n}n\rho_{1}^{n}\left(1-\rho_{1}\right)\sum_{m}\rho_{2}^{m}\left(1-\rho_{2}\right)+\sum_{m}m\rho_{2}^{m}\left(1-\rho_{2}\right)\sum_{n}\rho_{1}^{n}\left(1-\rho_{1}\right)\\
+&=&\sum_{n}n\rho_{1}^{n}\left(1-\rho_{1}\right)+\sum_{m}m\rho_{2}^{m}\left(1-\rho_{2}\right)\\
+&=&\frac{\lambda}{\mu_{1}-\lambda}+\frac{\lambda}{\mu_{2}-\lambda}
+\end{eqnarray*}
+
+
+
+\input{bibliografia}
+
+\end{document}

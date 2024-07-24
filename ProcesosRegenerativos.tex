@@ -1,12 +1,100 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,english]{babel}
+\usepackage{amsmath,amssymb,amsthm,amsfonts}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{graphicx,graphics}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{float} 
+\usepackage{subfig}
+\usepackage[figuresright]{rotating}
+\usepackage{enumerate}
+\usepackage{anysize} 
+\usepackage{url}
+
+\title{Procesos Regenerativos: Revisi\'on}
+\author{Carlos E. Martínez-Rodríguez}
+\date{Julio 2024}
+
+\geometry{
+  a4paper,
+  left=25mm,
+  right=25mm,
+  top=30mm,
+  bottom=30mm,
+}
+
+% Configuración de encabezados y pies de página
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyfoot[C]{\thepage}
+\fancyfoot[R]{\rightmark}
+\fancyfoot[L]{Carlos E. Martínez-Rodríguez}
+
+% Definiciones de nuevos entornos
+\newtheorem{Algthm}{Algoritmo}
+\newtheorem{Def}{Definición}
+\newtheorem{Ejem}{Ejemplo}
+\newtheorem{Teo}{Teorema}
+\newtheorem{Dem}{Demostración}
+\newtheorem{Note}{Nota}
+\newtheorem{Sol}{Solución}
+\newtheorem{Prop}{Proposición}
+\newtheorem{Cor}{Corolario}
+\newtheorem{Col}{Corolario}
+\newtheorem{Coro}{Corolario}
+\newtheorem{Lemma}{Lema}
+\newtheorem{Lem}{Lema}
+\newtheorem{Lema}{Lema}
+\newtheorem{Sup}{Supuestos}
+\newtheorem{Assumption}{Supuestos}
+\newtheorem{Remark}{Observación}
+\newtheorem{Condition}{Condición}
+\newtheorem{Theorem}{Teorema}
+\newtheorem{Corollary}{Corolario}
+\newtheorem{Ejemplo}{Ejemplo}
+\newtheorem{Example}{Ejemplo}
+\newtheorem{Obs}{Observación}
+
+% Nuevos comandos
+\def\RR{\mathbb{R}}
+\def\ZZ{\mathbb{Z}}
+\newcommand{\nat}{\mathbb{N}}
+\newcommand{\ent}{\mathbb{Z}}
+\newcommand{\rea}{\mathbb{R}}
+\newcommand{\Eb}{\mathbf{E}}
+\newcommand{\esp}{\mathbb{E}}
+\newcommand{\prob}{\mathbb{P}}
+\newcommand{\indora}{\mbox{$1$\hspace{-0.8ex}$1$}}
+\newcommand{\ER}{\left(E,\mathcal{E}\right)}
+\newcommand{\KM}{\left(P_{s,t}\right)}
+\newcommand{\Xt}{\left(X_{t}\right)_{t\in I}}
+\newcommand{\PE}{\left(X_{t}\right)_{t\in I}}
+\newcommand{\SG}{\left(P_{t}\right)}
+\newcommand{\CM}{\mathbf{P}^{x}}
+\newcommand\mypar{\par\vspace{\baselineskip}}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+%<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===
+
 %___________________________________________________________________________________________
 %
 % Cap 1
 %
-%___________________________________________________________________________________________
-\vspace{5.5cm}
+%___________________________________________________________________________
 \section{Procesos Regenerativos}
-\vspace{-1.0cm}
-%___________________________________________________________________________________________
+%___________________________________________________________________________
 
 
 \begin{Def}
@@ -29820,3 +29908,7 @@ con probabilidad 1 y en media, cuando $t\rightarrow\infty$.
 \end{itemize}
 \end{Teo}
 
+
+\input{bibliografia}
+
+\end{document}
