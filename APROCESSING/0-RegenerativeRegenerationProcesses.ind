@@ -1,0 +1,73 @@
+\begin{theindex}
+
+  \item Cadena de Markov, 6
+  \item Cadena Homog\'enea, 6
+  \item Cadena Irreducible, 9
+  \item Cilindro, 5
+  \item Clases de Comunicaci\'on, 9
+  \item Conjunto de Borel, 5
+  \item Conjunto Medible, 5
+
+  \indexspace
+
+  \item Delta de Kronecker, 6
+
+  \indexspace
+
+  \item Ecuaci\'on de Renovaci\'on, 15
+  \item Ecuaciones de Chapman-Kolmogorov, 7
+  \item Espacio de Rad\'on, 10
+  \item Estados absorbentes, 9
+  \item Estados recurrentes, 9
+  \item Estados transitorios, 9
+
+  \indexspace
+
+  \item Funci\'on de Renovaci\'on, 14
+  \item Funci\'on Medible, 5
+
+  \indexspace
+
+  \item Identidad de Wald para Renovaciones, 15
+
+  \indexspace
+
+  \item Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on, 
+		13
+
+  \indexspace
+
+  \item Matriz de Transici\'on, 6
+  \item Medida $\sigma$-finita, 5
+  \item Modificaci\'on Medible, 11
+
+  \indexspace
+
+  \item Probabilidades Condicionales, 6
+  \item Probabilidades de Transici\'on, 6
+  \item Proceso Adaptado, 5
+  \item Proceso de Markov, 5
+  \item Proceso de Renovaci\'on Retardado, 13
+  \item Proceso Poisson, 13, 14
+  \item Procesos Crudamente Regenerativos, 12
+  \item Procesos de Conteo, 11
+  \item Procesos de Renovaci\'on, 11
+  \item Procesos de Renovaci\'on Encajados, 15
+  \item Procesos Estacionarios, 11
+  \item Procesos Positivo Recurrente, 16
+  \item Procesos Regenerativos, 11, 15
+  \item Propiedad Fuerte de Markov, 9
+  \item Propiedad Simple de Markov, 11
+
+  \indexspace
+
+  \item Semigrupo de Transici\'on de Markov, 10
+
+  \indexspace
+
+  \item Teorema Renovaci\'on Elemental, 15
+  \item Tiempos de Paro, 5, 9
+  \item Tiempos de Regeneraci\'on, 15
+  \item Transformada de Laplace-Stieljes, 14
+
+\end{theindex}

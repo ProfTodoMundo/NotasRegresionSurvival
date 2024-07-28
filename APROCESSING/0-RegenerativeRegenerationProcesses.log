@@ -1,0 +1,4680 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.7)  27 JUL 2024 11:32
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**0-RegenerativeRegenerationProcesses.tex
+(./0-RegenerativeRegenerationProcesses.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count188
+\c@section=\count189
+\c@subsection=\count190
+\c@subsubsection=\count191
+\c@paragraph=\count192
+\c@subparagraph=\count193
+\c@figure=\count194
+\c@table=\count195
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2024/02/07 v24.2 The Babel package
+\babel@savecnt=\count196
+\U@D=\dimen141
+\l@unhyphenated=\language89
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count197
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks19
+\es@quotdepth=\count198
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/es/babel-spanish.t
+ex
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 11.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen142
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen143
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count199
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count266
+\leftroot@=\count267
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count268
+\DOTSCASE@=\count269
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen144
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count270
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count271
+\dotsspace@=\muskip16
+\c@parentequation=\count272
+\dspbrk@lvl=\count273
+\tag@help=\toks21
+\row@=\count274
+\column@=\count275
+\maxfields@=\count276
+\andhelp@=\toks22
+\eqnshift@=\dimen145
+\alignsep@=\dimen146
+\tagshift@=\dimen147
+\tagwidth@=\dimen148
+\totwidth@=\dimen149
+\lineht@=\dimen150
+\@envbody=\toks23
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2020/05/29 v2.20.6
+\thm@style=\toks25
+\thm@bodyfont=\toks26
+\thm@headfont=\toks27
+\thm@notefont=\toks28
+\thm@headpunct=\toks29
+\thm@preskip=\skip53
+\thm@postskip=\skip54
+\thm@headsep=\skip55
+\dth@everypar=\toks30
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks31
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+))
+\Gm@cnth=\count277
+\Gm@cntv=\count278
+\c@Gm@tempcnt=\count279
+\Gm@bindingoffset=\dimen151
+\Gm@wd@mp=\dimen152
+\Gm@odd@mp=\dimen153
+\Gm@even@mp=\dimen154
+\Gm@layoutwidth=\dimen155
+\Gm@layoutheight=\dimen156
+\Gm@layouthoffset=\dimen157
+\Gm@layoutvoffset=\dimen158
+\Gm@dimlist=\toks32
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2024-01-20 v7.01h Hypertext links for LaTeX
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2023-11-26 v2.56 Cross-referencing by name of section
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count280
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count281
+)
+\@linkdim=\dimen159
+\Hy@linkcounter=\count282
+\Hy@pagecounter=\count283
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count284
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4179.
+Package hyperref Info: Link nesting OFF on input line 4184.
+Package hyperref Info: Hyper index ON on input line 4187.
+Package hyperref Info: Plain pages OFF on input line 4194.
+Package hyperref Info: Backreferencing OFF on input line 4199.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4446.
+\c@Hy@tempcnt=\count285
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4784.
+\XeTeXLinkMargin=\dimen160
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count286
+\Field@Width=\dimen161
+\Fld@charsize=\dimen162
+Package hyperref Info: Hyper figures OFF on input line 6063.
+Package hyperref Info: Link nesting OFF on input line 6068.
+Package hyperref Info: Hyper index ON on input line 6071.
+Package hyperref Info: backreferencing OFF on input line 6078.
+Package hyperref Info: Link coloring OFF on input line 6083.
+Package hyperref Info: Link coloring with OCG OFF on input line 6088.
+Package hyperref Info: PDF/A mode OFF on input line 6093.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count287
+\c@Item=\count288
+\c@Hfootnote=\count289
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2024-01-20 v7.01h Hyperref driver for pdfTeX
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
+)
+\Fld@listcount=\count290
+\c@bookmark@seq@number=\count291
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+85.
+)
+\Hy@SectionHShift=\skip56
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip57
+\f@nch@O@elh=\skip58
+\f@nch@O@erh=\skip59
+\f@nch@O@olh=\skip60
+\f@nch@O@orh=\skip61
+\f@nch@O@elf=\skip62
+\f@nch@O@erf=\skip63
+\f@nch@O@olf=\skip64
+\f@nch@O@orf=\skip65
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2023/10/27 v2.16 Sectioning titles
+\ttl@box=\box53
+\beforetitleunit=\skip66
+\aftertitleunit=\skip67
+\ttl@plus=\dimen163
+\ttl@minus=\dimen164
+\ttl@toksa=\toks33
+\titlewidth=\dimen165
+\titlewidthlast=\dimen166
+\titlewidthfirst=\dimen167
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count292
+\lst@gtempboxa=\box54
+\lst@token=\toks34
+\lst@length=\count293
+\lst@currlwidth=\dimen168
+\lst@column=\count294
+\lst@pos=\count295
+\lst@lostspace=\dimen169
+\lst@width=\dimen170
+\lst@newlines=\count296
+\lst@lineno=\count297
+\lst@maxwidth=\dimen171
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/02/21 1.10 (Carsten Heinz)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/02/21 1.10 (Carsten Heinz)
+\c@lstnumber=\count298
+\lst@skipnumbers=\count299
+\lst@framebox=\box55
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/02/21 1.10 listings configuration
+))
+Package: listings 2024/02/21 1.10 (Carsten Heinz)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen172
+\Gin@req@width=\dimen173
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
+\c@tracingmulticols=\count300
+\mult@box=\box56
+\multicol@leftmargin=\dimen174
+\c@unbalance=\count301
+\c@collectmore=\count302
+\doublecol@number=\count303
+\multicoltolerance=\count304
+\multicolpretolerance=\count305
+\full@width=\dimen175
+\page@free=\dimen176
+\premulticols=\dimen177
+\postmulticols=\dimen178
+\multicolsep=\skip68
+\multicolbaselineskip=\skip69
+\partial@page=\box57
+\last@line=\box58
+\mc@boxedresult=\box59
+\maxbalancingoverflow=\dimen179
+\mult@rightbox=\box60
+\mult@grightbox=\box61
+\mult@firstbox=\box62
+\mult@gfirstbox=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\c@minrows=\count306
+\c@columnbadness=\count307
+\c@finalcolumnbadness=\count308
+\last@try=\dimen180
+\multicolovershoot=\dimen181
+\multicolundershoot=\dimen182
+\mult@nat@firstbox=\box100
+\colbreak@box=\box101
+\mc@col@check@num=\count309
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip70
+\multirow@cntb=\count310
+\multirow@dima=\skip71
+\bigstrutjot=\dimen183
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2022/01/06 v1.3d Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count311
+\float@exts=\toks35
+\float@box=\box102
+\@float@everytoks=\toks36
+\@floatcapt=\box103
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen184
+\captionmargin=\dimen185
+\caption@leftmargin=\dimen186
+\caption@rightmargin=\dimen187
+\caption@width=\dimen188
+\caption@indent=\dimen189
+\caption@parindent=\dimen190
+\caption@hangindent=\dimen191
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count312
+\c@continuedfloat=\count313
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@KVtest=\count314
+\sf@farskip=\skip72
+\sf@captopadj=\dimen192
+\sf@capskip=\skip73
+\sf@nearskip=\skip74
+\c@subfigure=\count315
+\c@subfigure@save=\count316
+\c@lofdepth=\count317
+\c@subtable=\count318
+\c@subtable@save=\count319
+\c@lotdepth=\count320
+\sf@top=\skip75
+\sf@bottom=\skip76
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count321
+\rotFPtop=\skip77
+\rotFPbot=\skip78
+\rot@float@box=\box104
+\rot@mess@toks=\toks37
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2023/07/04 v3.00 enumerate extensions (DPC)
+\@enLab=\toks38
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/anysize/anysize.sty
+Package: anysize 1994/08/13 setting margin sizes
+
+document style option `anysize' loaded
+Michael Salzenberg, Thomas Esser, Dirk Hillbrecht
+Version 1.0, Aug 13, 1994
+\@Leftmargin=\dimen193
+\@Rightmargin=\dimen194
+\@Topmargin=\dimen195
+\@Bottommargin=\dimen196
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/imakeidx/imakeidx.sty
+Package: imakeidx 2016/10/15 v1.3e Package for typesetting indices in a synchro
+nous mode
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks39
+\XKV@tempa@toks=\toks40
+)
+\XKV@depth=\count322
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+))
+\c@Algthm=\count323
+\c@Def=\count324
+\c@Ejem=\count325
+\c@Teo=\count326
+\c@Dem=\count327
+\c@Note=\count328
+\c@Sol=\count329
+\c@Prop=\count330
+\c@Cor=\count331
+\c@Col=\count332
+\c@Coro=\count333
+\c@Lemma=\count334
+\c@Lem=\count335
+\c@Lema=\count336
+\c@Sup=\count337
+\c@Assumption=\count338
+\c@Remark=\count339
+\c@Condition=\count340
+\c@Theorem=\count341
+\c@Corollary=\count342
+\c@Ejemplo=\count343
+\c@Example=\count344
+\c@Obs=\count345
+\0-RegenerativeRegenerationProcesses@idxfile=\write3
+\openout3 = `0-RegenerativeRegenerationProcesses.idx'.
+
+
+Writing index file 0-RegenerativeRegenerationProcesses.idx
+(/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count346
+\l__pdf_internal_box=\box105
+)
+(./0-RegenerativeRegenerationProcesses.aux
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+
+
+LaTeX Warning: Label `Prop.Fuerte.Markov' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `Eq.Arribos.Primera' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `Eq.Arribos.Primera' multiply defined.
+
+
+LaTeX Warning: Label `Eq.R2' multiply defined.
+
+
+LaTeX Warning: Label `Eq.Arribos.Primera' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `Ec.Renovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `Def.Tn' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `NoRenovacion' multiply defined.
+
+
+LaTeX Warning: Label `Rouche' multiply defined.
+
+
+LaTeX Warning: Label `Asmussen' multiply defined.
+
+
+LaTeX Warning: Label `Bhat' multiply defined.
+
+
+LaTeX Warning: Label `Boxma' multiply defined.
+
+
+LaTeX Warning: Label `BoonMeiWinands' multiply defined.
+
+
+LaTeX Warning: Label `Borovkov' multiply defined.
+
+
+LaTeX Warning: Label `BosBoon' multiply defined.
+
+
+LaTeX Warning: Label `HookHee' multiply defined.
+
+
+LaTeX Warning: Label `Chen' multiply defined.
+
+
+LaTeX Warning: Label `CooperII' multiply defined.
+
+
+LaTeX Warning: Label `Dai' multiply defined.
+
+
+LaTeX Warning: Label `DaiSean' multiply defined.
+
+
+LaTeX Warning: Label `DaiWeiss' multiply defined.
+
+
+LaTeX Warning: Label `Daley68' multiply defined.
+
+
+LaTeX Warning: Label `Davis' multiply defined.
+
+
+LaTeX Warning: Label `Down' multiply defined.
+
+
+LaTeX Warning: Label `Daley68' multiply defined.
+
+
+LaTeX Warning: Label `Disney' multiply defined.
+
+
+LaTeX Warning: Label `Eisenberg' multiply defined.
+
+
+LaTeX Warning: Label `FrickerJaibi' multiply defined.
+
+
+LaTeX Warning: Label `Stability' multiply defined.
+
+
+LaTeX Warning: Label `Getoor' multiply defined.
+
+
+LaTeX Warning: Label `Gut' multiply defined.
+
+
+LaTeX Warning: Label `HookHee' multiply defined.
+
+
+LaTeX Warning: Label `KaspiMandelbaum' multiply defined.
+
+
+LaTeX Warning: Label `Konheim' multiply defined.
+
+
+LaTeX Warning: Label `Kleinrock' multiply defined.
+
+
+LaTeX Warning: Label `Konheim' multiply defined.
+
+
+LaTeX Warning: Label `Lang' multiply defined.
+
+
+LaTeX Warning: Label `LevySidi' multiply defined.
+
+
+LaTeX Warning: Label `MeiBorst' multiply defined.
+
+
+LaTeX Warning: Label `MeynTweedie2' multiply defined.
+
+
+LaTeX Warning: Label `MeynDown' multiply defined.
+
+
+LaTeX Warning: Label `TesisRoubos' multiply defined.
+
+
+LaTeX Warning: Label `RepTec' multiply defined.
+
+
+LaTeX Warning: Label `Semenova' multiply defined.
+
+
+LaTeX Warning: Label `Serfozo' multiply defined.
+
+
+LaTeX Warning: Label `Sharpe' multiply defined.
+
+
+LaTeX Warning: Label `Sigma' multiply defined.
+
+
+LaTeX Warning: Label `SidiLevy1' multiply defined.
+
+
+LaTeX Warning: Label `SidiLevy2' multiply defined.
+
+
+LaTeX Warning: Label `Sigman2' multiply defined.
+
+
+LaTeX Warning: Label `Stidham' multiply defined.
+
+
+LaTeX Warning: Label `TakagiI' multiply defined.
+
+
+LaTeX Warning: Label `Takagi' multiply defined.
+
+
+LaTeX Warning: Label `Thorisson' multiply defined.
+
+
+LaTeX Warning: Label `Winands' multiply defined.
+
+)
+\openout1 = `0-RegenerativeRegenerationProcesses.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Info: Redefining \. on input line 94.
+LaTeX Info: Redefining \% on input line 94.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=674.33032pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring OFF on input line 94.
+(./0-RegenerativeRegenerationProcesses.out)
+(./0-RegenerativeRegenerationProcesses.out)
+\@outlinefile=\write4
+\openout4 = `0-RegenerativeRegenerationProcesses.out'.
+
+\c@lstlisting=\count347
+
+(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count348
+\scratchdimen=\dimen197
+\scratchbox=\box106
+\nofMPsegments=\count349
+\nofMParguments=\count350
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count351
+\MPscratchDim=\dimen198
+\MPnumerator=\count352
+\makeMPintoPDFobject=\count353
+\everyMPtoPDFconversion=\toks42
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 97.
+
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 97.
+
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(./0-RegenerativeRegenerationProcesses.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+ [1
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (2.55557pt too wide) detected at line 65
+\OT1/cmr/m/n/10 13.10. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 66
+\OT1/cmr/m/n/10 13.11. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 67
+\OT1/cmr/m/n/10 13.12. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 68
+\OT1/cmr/m/n/10 13.13. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 69
+\OT1/cmr/m/n/10 13.14. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 70
+\OT1/cmr/m/n/10 13.15. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 71
+\OT1/cmr/m/n/10 13.16. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 72
+\OT1/cmr/m/n/10 13.17. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 73
+\OT1/cmr/m/n/10 13.18. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 74
+\OT1/cmr/m/n/10 13.19. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 75
+\OT1/cmr/m/n/10 13.20. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 76
+\OT1/cmr/m/n/10 13.21. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 77
+\OT1/cmr/m/n/10 13.22. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 78
+\OT1/cmr/m/n/10 13.23. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 79
+\OT1/cmr/m/n/10 13.24. 
+ []
+
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
+[2]
+Overfull \hbox (2.55557pt too wide) detected at line 90
+\OT1/cmr/m/n/10 14.10. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 91
+\OT1/cmr/m/n/10 14.11. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 92
+\OT1/cmr/m/n/10 14.12. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 93
+\OT1/cmr/m/n/10 14.13. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 94
+\OT1/cmr/m/n/10 14.14. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 95
+\OT1/cmr/m/n/10 14.15. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 96
+\OT1/cmr/m/n/10 14.16. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 97
+\OT1/cmr/m/n/10 14.17. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 98
+\OT1/cmr/m/n/10 14.18. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 99
+\OT1/cmr/m/n/10 14.19. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 100
+\OT1/cmr/m/n/10 14.20. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 101
+\OT1/cmr/m/n/10 14.21. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 112
+\OT1/cmr/m/n/10 15.10. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 113
+\OT1/cmr/m/n/10 15.11. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 114
+\OT1/cmr/m/n/10 15.12. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 115
+\OT1/cmr/m/n/10 15.13. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 116
+\OT1/cmr/m/n/10 15.14. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 117
+\OT1/cmr/m/n/10 15.15. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 118
+\OT1/cmr/m/n/10 15.16. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 119
+\OT1/cmr/m/n/10 15.17. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 120
+\OT1/cmr/m/n/10 15.18. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 121
+\OT1/cmr/m/n/10 15.19. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 122
+\OT1/cmr/m/n/10 15.20. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 123
+\OT1/cmr/m/n/10 15.21. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 124
+\OT1/cmr/m/n/10 15.22. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 125
+\OT1/cmr/m/n/10 15.23. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 126
+\OT1/cmr/m/n/10 15.24. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 127
+\OT1/cmr/m/n/10 15.25. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 128
+\OT1/cmr/m/n/10 15.26. 
+ []
+
+LaTeX Info: Redefining \. on input line 135.
+LaTeX Info: Redefining \% on input line 135.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 135.
+LaTeX Info: Redefining \% on input line 135.
+[3]
+Overfull \hbox (2.55557pt too wide) detected at line 139
+\OT1/cmr/m/n/10 16.10. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 140
+\OT1/cmr/m/n/10 16.11. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 141
+\OT1/cmr/m/n/10 16.12. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 142
+\OT1/cmr/m/n/10 16.13. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 143
+\OT1/cmr/m/n/10 16.14. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 144
+\OT1/cmr/m/n/10 16.15. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 145
+\OT1/cmr/m/n/10 16.16. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 146
+\OT1/cmr/m/n/10 16.17. 
+ []
+
+
+Overfull \hbox (2.55557pt too wide) detected at line 147
+\OT1/cmr/m/n/10 16.18. 
+ []
+
+)
+\tf@toc=\write5
+\openout5 = `0-RegenerativeRegenerationProcesses.toc'.
+
+LaTeX Info: Redefining \. on input line 100.
+LaTeX Info: Redefining \% on input line 100.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 100.
+LaTeX Info: Redefining \% on input line 100.
+[4]
+LaTeX Info: Redefining \. on input line 178.
+LaTeX Info: Redefining \% on input line 178.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[5]
+LaTeX Info: Redefining \. on input line 273.
+LaTeX Info: Redefining \% on input line 273.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 273.
+LaTeX Info: Redefining \% on input line 273.
+[6]
+LaTeX Info: Redefining \. on input line 330.
+LaTeX Info: Redefining \% on input line 330.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 330.
+LaTeX Info: Redefining \% on input line 330.
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 353--354
+
+ []
+
+LaTeX Info: Redefining \. on input line 384.
+LaTeX Info: Redefining \% on input line 384.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 384.
+LaTeX Info: Redefining \% on input line 384.
+[8]
+LaTeX Info: Redefining \. on input line 458.
+LaTeX Info: Redefining \% on input line 458.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 458.
+LaTeX Info: Redefining \% on input line 458.
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
+
+ []
+
+
+Overfull \hbox (1.40651pt too wide) in paragraph at lines 509--510
+[][]\OT1/cmr/bx/n/10 Definici^^Son 1.18. []\OT1/cmr/m/it/10 Una fa-mi-lia $[][]
+$ de ker-nels de Mar-kov en $[]$ es lla-ma-da \OT1/cmr/m/n/10 Se-mi-gru-po de T
+ransici^^Son
+ []
+
+LaTeX Info: Redefining \. on input line 521.
+LaTeX Info: Redefining \% on input line 521.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 521.
+LaTeX Info: Redefining \% on input line 521.
+[10]
+LaTeX Info: Redefining \. on input line 577.
+LaTeX Info: Redefining \% on input line 577.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[11]
+LaTeX Info: Redefining \. on input line 651.
+LaTeX Info: Redefining \% on input line 651.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 651.
+LaTeX Info: Redefining \% on input line 651.
+[12]
+LaTeX Info: Redefining \. on input line 729.
+LaTeX Info: Redefining \% on input line 729.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 729.
+LaTeX Info: Redefining \% on input line 729.
+[13]
+LaTeX Info: Redefining \. on input line 804.
+LaTeX Info: Redefining \% on input line 804.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 804.
+LaTeX Info: Redefining \% on input line 804.
+[14]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 823.
+
+LaTeX Info: Redefining \. on input line 864.
+LaTeX Info: Redefining \% on input line 864.
+[15]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 884.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 889.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 894.
+
+LaTeX Info: Redefining \. on input line 941.
+LaTeX Info: Redefining \% on input line 941.
+[16]
+LaTeX Info: Redefining \. on input line 1025.
+LaTeX Info: Redefining \% on input line 1025.
+LaTeX Info: Redefining \. on input line 1025.
+LaTeX Info: Redefining \% on input line 1025.
+ [17]
+LaTeX Info: Redefining \. on input line 1104.
+LaTeX Info: Redefining \% on input line 1104.
+LaTeX Info: Redefining \. on input line 1104.
+LaTeX Info: Redefining \% on input line 1104.
+ [18]
+LaTeX Info: Redefining \. on input line 1176.
+LaTeX Info: Redefining \% on input line 1176.
+LaTeX Info: Redefining \. on input line 1176.
+LaTeX Info: Redefining \% on input line 1176.
+ [19]
+LaTeX Info: Redefining \. on input line 1249.
+LaTeX Info: Redefining \% on input line 1249.
+LaTeX Info: Redefining \. on input line 1249.
+LaTeX Info: Redefining \% on input line 1249.
+ [20]
+LaTeX Info: Redefining \. on input line 1322.
+LaTeX Info: Redefining \% on input line 1322.
+LaTeX Info: Redefining \. on input line 1322.
+LaTeX Info: Redefining \% on input line 1322.
+ [21]
+LaTeX Info: Redefining \. on input line 1418.
+LaTeX Info: Redefining \% on input line 1418.
+LaTeX Info: Redefining \. on input line 1418.
+LaTeX Info: Redefining \% on input line 1418.
+ [22]
+LaTeX Info: Redefining \. on input line 1480.
+LaTeX Info: Redefining \% on input line 1480.
+LaTeX Info: Redefining \. on input line 1480.
+LaTeX Info: Redefining \% on input line 1480.
+ [23]
+Overfull \hbox (3.37408pt too wide) in paragraph at lines 1522--1523
+[][]\OT1/cmr/bx/n/10 Definici^^Son 5.21. []\OT1/cmr/m/it/10 Una mo-di-fi-ca-ci^
+^Son me-di-ble de un pro-ce-so $[]$, es una ver-si^^Son de es-te, $[]$
+ []
+
+LaTeX Info: Redefining \. on input line 1550.
+LaTeX Info: Redefining \% on input line 1550.
+LaTeX Info: Redefining \. on input line 1550.
+LaTeX Info: Redefining \% on input line 1550.
+[24]
+Overfull \hbox (3.37408pt too wide) in paragraph at lines 1574--1575
+[][]\OT1/cmr/bx/n/10 Definici^^Son 5.24. []\OT1/cmr/m/it/10 Una mo-di-fi-ca-ci^
+^Son me-di-ble de un pro-ce-so $[]$, es una ver-si^^Son de es-te, $[]$
+ []
+
+LaTeX Info: Redefining \. on input line 1608.
+LaTeX Info: Redefining \% on input line 1608.
+LaTeX Info: Redefining \. on input line 1608.
+LaTeX Info: Redefining \% on input line 1608.
+[25]
+
+LaTeX Warning: Reference `Corolario2' on page 26 undefined on input line 1623.
+
+LaTeX Info: Redefining \. on input line 1660.
+LaTeX Info: Redefining \% on input line 1660.
+LaTeX Info: Redefining \. on input line 1660.
+LaTeX Info: Redefining \% on input line 1660.
+[26]
+Overfull \hbox (17.85785pt too wide) in paragraph at lines 1725--1726
+[]\OT1/cmr/m/n/10 An^^Salo-ga-men-te que co-mo se hi-zo pa-ra $\OML/cmm/m/it/10
+ Q[]$\OT1/cmr/m/n/10 , te-ne-mos que pa-ra $\OML/cmm/m/it/10 Q[]$ \OT1/cmr/m/n/
+10 se tie-ne el in-ter-va-lo $\OML/cmm/m/it/10 I[] \OT1/cmr/m/n/10 = []$
+ []
+
+LaTeX Info: Redefining \. on input line 1730.
+LaTeX Info: Redefining \% on input line 1730.
+LaTeX Info: Redefining \. on input line 1730.
+LaTeX Info: Redefining \% on input line 1730.
+[27]
+Overfull \hbox (11.32034pt too wide) in alignment at lines 1791--1810
+ [][][] []
+ []
+
+LaTeX Info: Redefining \. on input line 1834.
+LaTeX Info: Redefining \% on input line 1834.
+LaTeX Info: Redefining \. on input line 1834.
+LaTeX Info: Redefining \% on input line 1834.
+[28]
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 18
+59.
+
+
+Overfull \hbox (8.40446pt too wide) in paragraph at lines 1859--1860
+[]$ \OT1/cmr/m/it/10 pue-de ex-ten-der-se pa-ra so-por-tar una su-ce-si^^Son es
+-ta-cio-na-ria de va-ria-bles alea-to-rias $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 
+= []$\OT1/cmr/m/it/10 ,
+ []
+
+LaTeX Info: Redefining \. on input line 1905.
+LaTeX Info: Redefining \% on input line 1905.
+LaTeX Info: Redefining \. on input line 1905.
+LaTeX Info: Redefining \% on input line 1905.
+[29]
+LaTeX Info: Redefining \. on input line 1975.
+LaTeX Info: Redefining \% on input line 1975.
+LaTeX Info: Redefining \. on input line 1975.
+LaTeX Info: Redefining \% on input line 1975.
+ [30]
+LaTeX Info: Redefining \. on input line 2066.
+LaTeX Info: Redefining \% on input line 2066.
+LaTeX Info: Redefining \. on input line 2066.
+LaTeX Info: Redefining \% on input line 2066.
+ [31]
+LaTeX Info: Redefining \. on input line 2155.
+LaTeX Info: Redefining \% on input line 2155.
+LaTeX Info: Redefining \. on input line 2155.
+LaTeX Info: Redefining \% on input line 2155.
+ [32]
+Overfull \hbox (3.37408pt too wide) in paragraph at lines 2207--2208
+[][]\OT1/cmr/bx/n/10 Definici^^Son 5.29. []\OT1/cmr/m/it/10 Una mo-di-fi-ca-ci^
+^Son me-di-ble de un pro-ce-so $[]$, es una ver-si^^Son de es-te, $[]$
+ []
+
+LaTeX Info: Redefining \. on input line 2224.
+LaTeX Info: Redefining \% on input line 2224.
+LaTeX Info: Redefining \. on input line 2224.
+LaTeX Info: Redefining \% on input line 2224.
+[33]
+LaTeX Info: Redefining \. on input line 2290.
+LaTeX Info: Redefining \% on input line 2290.
+LaTeX Info: Redefining \. on input line 2290.
+LaTeX Info: Redefining \% on input line 2290.
+ [34{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.e
+nc}]
+LaTeX Info: Redefining \. on input line 2378.
+LaTeX Info: Redefining \% on input line 2378.
+LaTeX Info: Redefining \. on input line 2378.
+LaTeX Info: Redefining \% on input line 2378.
+ [35]
+LaTeX Info: Redefining \. on input line 2458.
+LaTeX Info: Redefining \% on input line 2458.
+LaTeX Info: Redefining \. on input line 2458.
+LaTeX Info: Redefining \% on input line 2458.
+ [36]
+LaTeX Info: Redefining \. on input line 2536.
+LaTeX Info: Redefining \% on input line 2536.
+LaTeX Info: Redefining \. on input line 2536.
+LaTeX Info: Redefining \% on input line 2536.
+ [37]
+LaTeX Info: Redefining \. on input line 2616.
+LaTeX Info: Redefining \% on input line 2616.
+LaTeX Info: Redefining \. on input line 2616.
+LaTeX Info: Redefining \% on input line 2616.
+ [38]
+LaTeX Info: Redefining \. on input line 2687.
+LaTeX Info: Redefining \% on input line 2687.
+LaTeX Info: Redefining \. on input line 2687.
+LaTeX Info: Redefining \% on input line 2687.
+ [39]
+LaTeX Info: Redefining \. on input line 2763.
+LaTeX Info: Redefining \% on input line 2763.
+LaTeX Info: Redefining \. on input line 2763.
+LaTeX Info: Redefining \% on input line 2763.
+ [40]
+LaTeX Info: Redefining \. on input line 2853.
+LaTeX Info: Redefining \% on input line 2853.
+LaTeX Info: Redefining \. on input line 2853.
+LaTeX Info: Redefining \% on input line 2853.
+ [41]
+LaTeX Info: Redefining \. on input line 2909.
+LaTeX Info: Redefining \% on input line 2909.
+LaTeX Info: Redefining \. on input line 2909.
+LaTeX Info: Redefining \% on input line 2909.
+ [42]
+LaTeX Info: Redefining \. on input line 2984.
+LaTeX Info: Redefining \% on input line 2984.
+LaTeX Info: Redefining \. on input line 2984.
+LaTeX Info: Redefining \% on input line 2984.
+ [43]
+LaTeX Info: Redefining \. on input line 3061.
+LaTeX Info: Redefining \% on input line 3061.
+LaTeX Info: Redefining \. on input line 3061.
+LaTeX Info: Redefining \% on input line 3061.
+ [44]
+LaTeX Info: Redefining \. on input line 3140.
+LaTeX Info: Redefining \% on input line 3140.
+LaTeX Info: Redefining \. on input line 3140.
+LaTeX Info: Redefining \% on input line 3140.
+ [45]
+LaTeX Info: Redefining \. on input line 3212.
+LaTeX Info: Redefining \% on input line 3212.
+LaTeX Info: Redefining \. on input line 3212.
+LaTeX Info: Redefining \% on input line 3212.
+ [46]
+LaTeX Info: Redefining \. on input line 3284.
+LaTeX Info: Redefining \% on input line 3284.
+LaTeX Info: Redefining \. on input line 3284.
+LaTeX Info: Redefining \% on input line 3284.
+ [47]
+LaTeX Info: Redefining \. on input line 3358.
+LaTeX Info: Redefining \% on input line 3358.
+LaTeX Info: Redefining \. on input line 3358.
+LaTeX Info: Redefining \% on input line 3358.
+
+[48]
+LaTeX Info: Redefining \. on input line 3453.
+LaTeX Info: Redefining \% on input line 3453.
+LaTeX Info: Redefining \. on input line 3453.
+LaTeX Info: Redefining \% on input line 3453.
+ [49]
+LaTeX Info: Redefining \. on input line 3510.
+LaTeX Info: Redefining \% on input line 3510.
+LaTeX Info: Redefining \. on input line 3510.
+LaTeX Info: Redefining \% on input line 3510.
+ [50]
+Overfull \hbox (3.37408pt too wide) in paragraph at lines 3552--3553
+[][]\OT1/cmr/bx/n/10 Definici^^Son 5.65. []\OT1/cmr/m/it/10 Una mo-di-fi-ca-ci^
+^Son me-di-ble de un pro-ce-so $[]$, es una ver-si^^Son de es-te, $[]$
+ []
+
+LaTeX Info: Redefining \. on input line 3580.
+LaTeX Info: Redefining \% on input line 3580.
+LaTeX Info: Redefining \. on input line 3580.
+LaTeX Info: Redefining \% on input line 3580.
+[51]
+Overfull \hbox (3.37408pt too wide) in paragraph at lines 3604--3605
+[][]\OT1/cmr/bx/n/10 Definici^^Son 5.68. []\OT1/cmr/m/it/10 Una mo-di-fi-ca-ci^
+^Son me-di-ble de un pro-ce-so $[]$, es una ver-si^^Son de es-te, $[]$
+ []
+
+LaTeX Info: Redefining \. on input line 3639.
+LaTeX Info: Redefining \% on input line 3639.
+LaTeX Info: Redefining \. on input line 3639.
+LaTeX Info: Redefining \% on input line 3639.
+[52]
+Overfull \hbox (16.72833pt too wide) in paragraph at lines 3670--3672
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, pa-ra $\OML/cmm/m/it/10 A \OMS/cmsy/m/n
+/10 2 E$\OT1/cmr/m/it/10 , se tie-ne que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it
+/10 , don-de $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+LaTeX Info: Redefining \. on input line 3697.
+LaTeX Info: Redefining \% on input line 3697.
+LaTeX Info: Redefining \. on input line 3697.
+LaTeX Info: Redefining \% on input line 3697.
+[53]
+LaTeX Info: Redefining \. on input line 3775.
+LaTeX Info: Redefining \% on input line 3775.
+LaTeX Info: Redefining \. on input line 3775.
+LaTeX Info: Redefining \% on input line 3775.
+ [54]
+LaTeX Info: Redefining \. on input line 3854.
+LaTeX Info: Redefining \% on input line 3854.
+LaTeX Info: Redefining \. on input line 3854.
+LaTeX Info: Redefining \% on input line 3854.
+ [55]
+LaTeX Info: Redefining \. on input line 3927.
+LaTeX Info: Redefining \% on input line 3927.
+LaTeX Info: Redefining \. on input line 3927.
+LaTeX Info: Redefining \% on input line 3927.
+ [56]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 3939.
+
+LaTeX Info: Redefining \. on input line 4001.
+LaTeX Info: Redefining \% on input line 4001.
+LaTeX Info: Redefining \. on input line 4001.
+LaTeX Info: Redefining \% on input line 4001.
+[57]
+Overfull \hbox (3.37408pt too wide) in paragraph at lines 4035--4036
+[][]\OT1/cmr/bx/n/10 Definici^^Son 5.98. []\OT1/cmr/m/it/10 Una mo-di-fi-ca-ci^
+^Son me-di-ble de un pro-ce-so $[]$, es una ver-si^^Son de es-te, $[]$
+ []
+
+LaTeX Info: Redefining \. on input line 4070.
+LaTeX Info: Redefining \% on input line 4070.
+LaTeX Info: Redefining \. on input line 4070.
+LaTeX Info: Redefining \% on input line 4070.
+[58]
+LaTeX Info: Redefining \. on input line 4146.
+LaTeX Info: Redefining \% on input line 4146.
+LaTeX Info: Redefining \. on input line 4146.
+LaTeX Info: Redefining \% on input line 4146.
+ [59]
+LaTeX Info: Redefining \. on input line 4219.
+LaTeX Info: Redefining \% on input line 4219.
+LaTeX Info: Redefining \. on input line 4219.
+LaTeX Info: Redefining \% on input line 4219.
+ [60]
+LaTeX Info: Redefining \. on input line 4297.
+LaTeX Info: Redefining \% on input line 4297.
+LaTeX Info: Redefining \. on input line 4297.
+LaTeX Info: Redefining \% on input line 4297.
+ [61]
+LaTeX Info: Redefining \. on input line 4382.
+LaTeX Info: Redefining \% on input line 4382.
+LaTeX Info: Redefining \. on input line 4382.
+LaTeX Info: Redefining \% on input line 4382.
+ [62]
+LaTeX Info: Redefining \. on input line 4459.
+LaTeX Info: Redefining \% on input line 4459.
+LaTeX Info: Redefining \. on input line 4459.
+LaTeX Info: Redefining \% on input line 4459.
+ [63]
+LaTeX Info: Redefining \. on input line 4538.
+LaTeX Info: Redefining \% on input line 4538.
+LaTeX Info: Redefining \. on input line 4538.
+LaTeX Info: Redefining \% on input line 4538.
+ [64]
+LaTeX Info: Redefining \. on input line 4609.
+LaTeX Info: Redefining \% on input line 4609.
+LaTeX Info: Redefining \. on input line 4609.
+LaTeX Info: Redefining \% on input line 4609.
+ [65]
+LaTeX Info: Redefining \. on input line 4695.
+LaTeX Info: Redefining \% on input line 4695.
+LaTeX Info: Redefining \. on input line 4695.
+LaTeX Info: Redefining \% on input line 4695.
+ [66]
+LaTeX Info: Redefining \. on input line 4750.
+LaTeX Info: Redefining \% on input line 4750.
+LaTeX Info: Redefining \. on input line 4750.
+LaTeX Info: Redefining \% on input line 4750.
+ [67]
+LaTeX Info: Redefining \. on input line 4837.
+LaTeX Info: Redefining \% on input line 4837.
+LaTeX Info: Redefining \. on input line 4837.
+LaTeX Info: Redefining \% on input line 4837.
+ [68]
+LaTeX Info: Redefining \. on input line 4910.
+LaTeX Info: Redefining \% on input line 4910.
+LaTeX Info: Redefining \. on input line 4910.
+LaTeX Info: Redefining \% on input line 4910.
+ [69]
+LaTeX Info: Redefining \. on input line 4990.
+LaTeX Info: Redefining \% on input line 4990.
+LaTeX Info: Redefining \. on input line 4990.
+LaTeX Info: Redefining \% on input line 4990.
+ [70]
+LaTeX Info: Redefining \. on input line 5064.
+LaTeX Info: Redefining \% on input line 5064.
+LaTeX Info: Redefining \. on input line 5064.
+LaTeX Info: Redefining \% on input line 5064.
+ [71]
+LaTeX Info: Redefining \. on input line 5130.
+LaTeX Info: Redefining \% on input line 5130.
+LaTeX Info: Redefining \. on input line 5130.
+LaTeX Info: Redefining \% on input line 5130.
+ [72]
+LaTeX Info: Redefining \. on input line 5208.
+LaTeX Info: Redefining \% on input line 5208.
+LaTeX Info: Redefining \. on input line 5208.
+LaTeX Info: Redefining \% on input line 5208.
+
+[73]
+LaTeX Info: Redefining \. on input line 5287.
+LaTeX Info: Redefining \% on input line 5287.
+LaTeX Info: Redefining \. on input line 5287.
+LaTeX Info: Redefining \% on input line 5287.
+ [74]
+LaTeX Info: Redefining \. on input line 5350.
+LaTeX Info: Redefining \% on input line 5350.
+LaTeX Info: Redefining \. on input line 5350.
+LaTeX Info: Redefining \% on input line 5350.
+ [75]
+LaTeX Info: Redefining \. on input line 5418.
+LaTeX Info: Redefining \% on input line 5418.
+LaTeX Info: Redefining \. on input line 5418.
+LaTeX Info: Redefining \% on input line 5418.
+ [76]
+LaTeX Info: Redefining \. on input line 5473.
+LaTeX Info: Redefining \% on input line 5473.
+LaTeX Info: Redefining \. on input line 5473.
+LaTeX Info: Redefining \% on input line 5473.
+ [77]
+
+LaTeX Warning: Reference `Corolario2' on page 78 undefined on input line 5485.
+
+LaTeX Info: Redefining \. on input line 5528.
+LaTeX Info: Redefining \% on input line 5528.
+LaTeX Info: Redefining \. on input line 5528.
+LaTeX Info: Redefining \% on input line 5528.
+[78]
+Overfull \hbox (17.85785pt too wide) in paragraph at lines 5587--5588
+[]\OT1/cmr/m/n/10 An^^Salo-ga-men-te que co-mo se hi-zo pa-ra $\OML/cmm/m/it/10
+ Q[]$\OT1/cmr/m/n/10 , te-ne-mos que pa-ra $\OML/cmm/m/it/10 Q[]$ \OT1/cmr/m/n/
+10 se tie-ne el in-ter-va-lo $\OML/cmm/m/it/10 I[] \OT1/cmr/m/n/10 = []$
+ []
+
+LaTeX Info: Redefining \. on input line 5618.
+LaTeX Info: Redefining \% on input line 5618.
+LaTeX Info: Redefining \. on input line 5618.
+LaTeX Info: Redefining \% on input line 5618.
+[79]
+Overfull \hbox (11.32034pt too wide) in alignment at lines 5653--5672
+ [][][] []
+ []
+
+LaTeX Info: Redefining \. on input line 5719.
+LaTeX Info: Redefining \% on input line 5719.
+LaTeX Info: Redefining \. on input line 5719.
+LaTeX Info: Redefining \% on input line 5719.
+[80]
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 57
+21.
+
+
+Overfull \hbox (8.40446pt too wide) in paragraph at lines 5721--5722
+[]$ \OT1/cmr/m/it/10 pue-de ex-ten-der-se pa-ra so-por-tar una su-ce-si^^Son es
+-ta-cio-na-ria de va-ria-bles alea-to-rias $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 
+= []$\OT1/cmr/m/it/10 ,
+ []
+
+LaTeX Info: Redefining \. on input line 5783.
+LaTeX Info: Redefining \% on input line 5783.
+LaTeX Info: Redefining \. on input line 5783.
+LaTeX Info: Redefining \% on input line 5783.
+[81]
+LaTeX Info: Redefining \. on input line 5852.
+LaTeX Info: Redefining \% on input line 5852.
+LaTeX Info: Redefining \. on input line 5852.
+LaTeX Info: Redefining \% on input line 5852.
+ [82]
+LaTeX Info: Redefining \. on input line 5940.
+LaTeX Info: Redefining \% on input line 5940.
+LaTeX Info: Redefining \. on input line 5940.
+LaTeX Info: Redefining \% on input line 5940.
+ [83]
+LaTeX Info: Redefining \. on input line 6034.
+LaTeX Info: Redefining \% on input line 6034.
+LaTeX Info: Redefining \. on input line 6034.
+LaTeX Info: Redefining \% on input line 6034.
+ [84]
+LaTeX Info: Redefining \. on input line 6104.
+LaTeX Info: Redefining \% on input line 6104.
+LaTeX Info: Redefining \. on input line 6104.
+LaTeX Info: Redefining \% on input line 6104.
+ [85]
+LaTeX Info: Redefining \. on input line 6180.
+LaTeX Info: Redefining \% on input line 6180.
+LaTeX Info: Redefining \. on input line 6180.
+LaTeX Info: Redefining \% on input line 6180.
+ [86]
+LaTeX Info: Redefining \. on input line 6253.
+LaTeX Info: Redefining \% on input line 6253.
+LaTeX Info: Redefining \. on input line 6253.
+LaTeX Info: Redefining \% on input line 6253.
+ [87]
+LaTeX Info: Redefining \. on input line 6331.
+LaTeX Info: Redefining \% on input line 6331.
+LaTeX Info: Redefining \. on input line 6331.
+LaTeX Info: Redefining \% on input line 6331.
+ [88]
+LaTeX Info: Redefining \. on input line 6416.
+LaTeX Info: Redefining \% on input line 6416.
+LaTeX Info: Redefining \. on input line 6416.
+LaTeX Info: Redefining \% on input line 6416.
+ [89]
+LaTeX Info: Redefining \. on input line 6493.
+LaTeX Info: Redefining \% on input line 6493.
+LaTeX Info: Redefining \. on input line 6493.
+LaTeX Info: Redefining \% on input line 6493.
+ [90]
+LaTeX Info: Redefining \. on input line 6572.
+LaTeX Info: Redefining \% on input line 6572.
+LaTeX Info: Redefining \. on input line 6572.
+LaTeX Info: Redefining \% on input line 6572.
+ [91]
+LaTeX Info: Redefining \. on input line 6643.
+LaTeX Info: Redefining \% on input line 6643.
+LaTeX Info: Redefining \. on input line 6643.
+LaTeX Info: Redefining \% on input line 6643.
+ [92]
+LaTeX Info: Redefining \. on input line 6729.
+LaTeX Info: Redefining \% on input line 6729.
+LaTeX Info: Redefining \. on input line 6729.
+LaTeX Info: Redefining \% on input line 6729.
+ [93]
+LaTeX Info: Redefining \. on input line 6784.
+LaTeX Info: Redefining \% on input line 6784.
+LaTeX Info: Redefining \. on input line 6784.
+LaTeX Info: Redefining \% on input line 6784.
+ [94]
+LaTeX Info: Redefining \. on input line 6871.
+LaTeX Info: Redefining \% on input line 6871.
+LaTeX Info: Redefining \. on input line 6871.
+LaTeX Info: Redefining \% on input line 6871.
+ [95]
+LaTeX Info: Redefining \. on input line 6944.
+LaTeX Info: Redefining \% on input line 6944.
+LaTeX Info: Redefining \. on input line 6944.
+LaTeX Info: Redefining \% on input line 6944.
+
+[96]
+LaTeX Info: Redefining \. on input line 7024.
+LaTeX Info: Redefining \% on input line 7024.
+LaTeX Info: Redefining \. on input line 7024.
+LaTeX Info: Redefining \% on input line 7024.
+ [97]
+LaTeX Info: Redefining \. on input line 7098.
+LaTeX Info: Redefining \% on input line 7098.
+LaTeX Info: Redefining \. on input line 7098.
+LaTeX Info: Redefining \% on input line 7098.
+ [98]
+LaTeX Info: Redefining \. on input line 7164.
+LaTeX Info: Redefining \% on input line 7164.
+LaTeX Info: Redefining \. on input line 7164.
+LaTeX Info: Redefining \% on input line 7164.
+ [99]
+LaTeX Info: Redefining \. on input line 7237.
+LaTeX Info: Redefining \% on input line 7237.
+LaTeX Info: Redefining \. on input line 7237.
+LaTeX Info: Redefining \% on input line 7237.
+ [100]
+LaTeX Info: Redefining \. on input line 7327.
+LaTeX Info: Redefining \% on input line 7327.
+LaTeX Info: Redefining \. on input line 7327.
+LaTeX Info: Redefining \% on input line 7327.
+ [101]
+LaTeX Info: Redefining \. on input line 7385.
+LaTeX Info: Redefining \% on input line 7385.
+LaTeX Info: Redefining \. on input line 7385.
+LaTeX Info: Redefining \% on input line 7385.
+ [102]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 7435.
+
+LaTeX Info: Redefining \. on input line 7447.
+LaTeX Info: Redefining \% on input line 7447.
+LaTeX Info: Redefining \. on input line 7447.
+LaTeX Info: Redefining \% on input line 7447.
+[103]
+LaTeX Info: Redefining \. on input line 7517.
+LaTeX Info: Redefining \% on input line 7517.
+ [104]
+LaTeX Info: Redefining \. on input line 7588.
+LaTeX Info: Redefining \% on input line 7588.
+ [105]
+LaTeX Info: Redefining \. on input line 7655.
+LaTeX Info: Redefining \% on input line 7655.
+ [106]
+LaTeX Info: Redefining \. on input line 7726.
+LaTeX Info: Redefining \% on input line 7726.
+ [107]
+LaTeX Info: Redefining \. on input line 7791.
+LaTeX Info: Redefining \% on input line 7791.
+ [108]
+Overfull \hbox (3.37408pt too wide) in paragraph at lines 7799--7800
+[][]\OT1/cmr/bx/n/10 Definici^^Son 6.13. []\OT1/cmr/m/it/10 Una mo-di-fi-ca-ci^
+^Son me-di-ble de un pro-ce-so $[]$, es una ver-si^^Son de es-te, $[]$
+ []
+
+LaTeX Info: Redefining \. on input line 7855.
+LaTeX Info: Redefining \% on input line 7855.
+[109]
+LaTeX Info: Redefining \. on input line 7933.
+LaTeX Info: Redefining \% on input line 7933.
+ [110]
+LaTeX Info: Redefining \. on input line 8015.
+LaTeX Info: Redefining \% on input line 8015.
+ [111]
+LaTeX Info: Redefining \. on input line 8086.
+LaTeX Info: Redefining \% on input line 8086.
+ [112]
+LaTeX Info: Redefining \. on input line 8164.
+LaTeX Info: Redefining \% on input line 8164.
+ [113]
+LaTeX Info: Redefining \. on input line 8239.
+LaTeX Info: Redefining \% on input line 8239.
+ [114]
+LaTeX Info: Redefining \. on input line 8315.
+LaTeX Info: Redefining \% on input line 8315.
+ [115]
+LaTeX Info: Redefining \. on input line 8398.
+LaTeX Info: Redefining \% on input line 8398.
+ [116]
+LaTeX Info: Redefining \. on input line 8486.
+LaTeX Info: Redefining \% on input line 8486.
+ [117]
+LaTeX Info: Redefining \. on input line 8550.
+LaTeX Info: Redefining \% on input line 8550.
+ [118]
+LaTeX Info: Redefining \. on input line 8629.
+LaTeX Info: Redefining \% on input line 8629.
+ [119]
+LaTeX Info: Redefining \. on input line 8706.
+LaTeX Info: Redefining \% on input line 8706.
+ [120]
+LaTeX Info: Redefining \. on input line 8779.
+LaTeX Info: Redefining \% on input line 8779.
+
+[121]
+LaTeX Info: Redefining \. on input line 8861.
+LaTeX Info: Redefining \% on input line 8861.
+ [122]
+LaTeX Info: Redefining \. on input line 8931.
+LaTeX Info: Redefining \% on input line 8931.
+ [123]
+LaTeX Info: Redefining \. on input line 9036.
+LaTeX Info: Redefining \% on input line 9036.
+ [124]
+LaTeX Info: Redefining \. on input line 9095.
+LaTeX Info: Redefining \% on input line 9095.
+ [125]
+Overfull \hbox (3.37408pt too wide) in paragraph at lines 9142--9143
+[][]\OT1/cmr/bx/n/10 Definici^^Son 6.49. []\OT1/cmr/m/it/10 Una mo-di-fi-ca-ci^
+^Son me-di-ble de un pro-ce-so $[]$, es una ver-si^^Son de es-te, $[]$
+ []
+
+LaTeX Info: Redefining \. on input line 9155.
+LaTeX Info: Redefining \% on input line 9155.
+[126]
+Overfull \hbox (3.37408pt too wide) in paragraph at lines 9194--9195
+[][]\OT1/cmr/bx/n/10 Definici^^Son 6.52. []\OT1/cmr/m/it/10 Una mo-di-fi-ca-ci^
+^Son me-di-ble de un pro-ce-so $[]$, es una ver-si^^Son de es-te, $[]$
+ []
+
+LaTeX Info: Redefining \. on input line 9229.
+LaTeX Info: Redefining \% on input line 9229.
+[127]
+Overfull \hbox (16.72833pt too wide) in paragraph at lines 9260--9262
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, pa-ra $\OML/cmm/m/it/10 A \OMS/cmsy/m/n
+/10 2 E$\OT1/cmr/m/it/10 , se tie-ne que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it
+/10 , don-de $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+LaTeX Info: Redefining \. on input line 9287.
+LaTeX Info: Redefining \% on input line 9287.
+[128]
+LaTeX Info: Redefining \. on input line 9365.
+LaTeX Info: Redefining \% on input line 9365.
+ [129]
+LaTeX Info: Redefining \. on input line 9444.
+LaTeX Info: Redefining \% on input line 9444.
+ [130]
+LaTeX Info: Redefining \. on input line 9517.
+LaTeX Info: Redefining \% on input line 9517.
+ [131]
+LaTeX Info: Redefining \. on input line 9602.
+LaTeX Info: Redefining \% on input line 9602.
+ [132]
+
+LaTeX Warning: Reference `Corolario2' on page 133 undefined on input line 9614.
+
+
+LaTeX Info: Redefining \. on input line 9651.
+LaTeX Info: Redefining \% on input line 9651.
+[133]
+LaTeX Info: Redefining \. on input line 9714.
+LaTeX Info: Redefining \% on input line 9714.
+ [134]
+LaTeX Info: Redefining \. on input line 9775.
+LaTeX Info: Redefining \% on input line 9775.
+ [135]
+LaTeX Info: Redefining \. on input line 9838.
+LaTeX Info: Redefining \% on input line 9838.
+ [136]
+LaTeX Info: Redefining \. on input line 9886.
+LaTeX Info: Redefining \% on input line 9886.
+ [137]
+LaTeX Info: Redefining \. on input line 9960.
+LaTeX Info: Redefining \% on input line 9960.
+ [138]
+LaTeX Info: Redefining \. on input line 10023.
+LaTeX Info: Redefining \% on input line 10023.
+ [139]
+
+LaTeX Warning: Reference `Corolario2' on page 140 undefined on input line 10049
+.
+
+LaTeX Info: Redefining \. on input line 10089.
+LaTeX Info: Redefining \% on input line 10089.
+[140]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 10106.
+
+LaTeX Info: Redefining \. on input line 10145.
+LaTeX Info: Redefining \% on input line 10145.
+LaTeX Info: Redefining \. on input line 10145.
+LaTeX Info: Redefining \% on input line 10145.
+[141]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 10172.
+
+LaTeX Info: Redefining \. on input line 10216.
+LaTeX Info: Redefining \% on input line 10216.
+LaTeX Info: Redefining \. on input line 10216.
+LaTeX Info: Redefining \% on input line 10216.
+[142]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 10259.
+
+LaTeX Info: Redefining \. on input line 10277.
+LaTeX Info: Redefining \% on input line 10277.
+LaTeX Info: Redefining \. on input line 10277.
+LaTeX Info: Redefining \% on input line 10277.
+[143]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 10324.
+
+LaTeX Info: Redefining \. on input line 10343.
+LaTeX Info: Redefining \% on input line 10343.
+LaTeX Info: Redefining \. on input line 10343.
+LaTeX Info: Redefining \% on input line 10343.
+[144]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 10391.
+
+LaTeX Info: Redefining \. on input line 10410.
+LaTeX Info: Redefining \% on input line 10410.
+LaTeX Info: Redefining \. on input line 10410.
+LaTeX Info: Redefining \% on input line 10410.
+[145]
+LaTeX Info: Redefining \. on input line 10479.
+LaTeX Info: Redefining \% on input line 10479.
+LaTeX Info: Redefining \. on input line 10479.
+LaTeX Info: Redefining \% on input line 10479.
+ [146]
+LaTeX Info: Redefining \. on input line 10545.
+LaTeX Info: Redefining \% on input line 10545.
+LaTeX Info: Redefining \. on input line 10545.
+LaTeX Info: Redefining \% on input line 10545.
+ [147]
+LaTeX Info: Redefining \. on input line 10623.
+LaTeX Info: Redefining \% on input line 10623.
+LaTeX Info: Redefining \. on input line 10623.
+LaTeX Info: Redefining \% on input line 10623.
+ [148]
+LaTeX Info: Redefining \. on input line 10705.
+LaTeX Info: Redefining \% on input line 10705.
+LaTeX Info: Redefining \. on input line 10705.
+LaTeX Info: Redefining \% on input line 10705.
+ [149]
+LaTeX Info: Redefining \. on input line 10776.
+LaTeX Info: Redefining \% on input line 10776.
+LaTeX Info: Redefining \. on input line 10776.
+LaTeX Info: Redefining \% on input line 10776.
+ [150]
+LaTeX Info: Redefining \. on input line 10854.
+LaTeX Info: Redefining \% on input line 10854.
+LaTeX Info: Redefining \. on input line 10854.
+LaTeX Info: Redefining \% on input line 10854.
+ [151]
+LaTeX Info: Redefining \. on input line 10929.
+LaTeX Info: Redefining \% on input line 10929.
+LaTeX Info: Redefining \. on input line 10929.
+LaTeX Info: Redefining \% on input line 10929.
+ [152]
+LaTeX Info: Redefining \. on input line 11005.
+LaTeX Info: Redefining \% on input line 11005.
+LaTeX Info: Redefining \. on input line 11005.
+LaTeX Info: Redefining \% on input line 11005.
+ [153]
+LaTeX Info: Redefining \. on input line 11088.
+LaTeX Info: Redefining \% on input line 11088.
+LaTeX Info: Redefining \. on input line 11088.
+LaTeX Info: Redefining \% on input line 11088.
+ [154]
+LaTeX Info: Redefining \. on input line 11176.
+LaTeX Info: Redefining \% on input line 11176.
+LaTeX Info: Redefining \. on input line 11176.
+LaTeX Info: Redefining \% on input line 11176.
+ [155]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 11185.
+
+LaTeX Info: Redefining \. on input line 11235.
+LaTeX Info: Redefining \% on input line 11235.
+[156]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 11255.
+
+LaTeX Info: Redefining \. on input line 11305.
+LaTeX Info: Redefining \% on input line 11305.
+LaTeX Info: Redefining \. on input line 11305.
+LaTeX Info: Redefining \% on input line 11305.
+[157]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 11321.
+
+LaTeX Info: Redefining \. on input line 11371.
+LaTeX Info: Redefining \% on input line 11371.
+LaTeX Info: Redefining \. on input line 11371.
+LaTeX Info: Redefining \% on input line 11371.
+[158]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 11388.
+
+LaTeX Info: Redefining \. on input line 11440.
+LaTeX Info: Redefining \% on input line 11440.
+LaTeX Info: Redefining \. on input line 11440.
+LaTeX Info: Redefining \% on input line 11440.
+[159]
+LaTeX Info: Redefining \. on input line 11521.
+LaTeX Info: Redefining \% on input line 11521.
+LaTeX Info: Redefining \. on input line 11521.
+LaTeX Info: Redefining \% on input line 11521.
+ [160]
+LaTeX Info: Redefining \. on input line 11603.
+LaTeX Info: Redefining \% on input line 11603.
+LaTeX Info: Redefining \. on input line 11603.
+LaTeX Info: Redefining \% on input line 11603.
+ [161]
+LaTeX Info: Redefining \. on input line 11676.
+LaTeX Info: Redefining \% on input line 11676.
+LaTeX Info: Redefining \. on input line 11676.
+LaTeX Info: Redefining \% on input line 11676.
+ [162]
+LaTeX Info: Redefining \. on input line 11758.
+LaTeX Info: Redefining \% on input line 11758.
+LaTeX Info: Redefining \. on input line 11758.
+LaTeX Info: Redefining \% on input line 11758.
+ [163]
+LaTeX Info: Redefining \. on input line 11828.
+LaTeX Info: Redefining \% on input line 11828.
+LaTeX Info: Redefining \. on input line 11828.
+LaTeX Info: Redefining \% on input line 11828.
+ [164]
+LaTeX Info: Redefining \. on input line 11914.
+LaTeX Info: Redefining \% on input line 11914.
+LaTeX Info: Redefining \. on input line 11914.
+LaTeX Info: Redefining \% on input line 11914.
+ [165]
+LaTeX Info: Redefining \. on input line 11992.
+LaTeX Info: Redefining \% on input line 11992.
+LaTeX Info: Redefining \. on input line 11992.
+LaTeX Info: Redefining \% on input line 11992.
+ [166]
+LaTeX Info: Redefining \. on input line 12072.
+LaTeX Info: Redefining \% on input line 12072.
+LaTeX Info: Redefining \. on input line 12072.
+LaTeX Info: Redefining \% on input line 12072.
+ [167]
+LaTeX Info: Redefining \. on input line 12152.
+LaTeX Info: Redefining \% on input line 12152.
+LaTeX Info: Redefining \. on input line 12152.
+LaTeX Info: Redefining \% on input line 12152.
+ [168]
+LaTeX Info: Redefining \. on input line 12228.
+LaTeX Info: Redefining \% on input line 12228.
+LaTeX Info: Redefining \. on input line 12228.
+LaTeX Info: Redefining \% on input line 12228.
+ [169]
+LaTeX Info: Redefining \. on input line 12294.
+LaTeX Info: Redefining \% on input line 12294.
+LaTeX Info: Redefining \. on input line 12294.
+LaTeX Info: Redefining \% on input line 12294.
+ [170]
+LaTeX Info: Redefining \. on input line 12372.
+LaTeX Info: Redefining \% on input line 12372.
+LaTeX Info: Redefining \. on input line 12372.
+LaTeX Info: Redefining \% on input line 12372.
+
+[171]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 12404.
+
+LaTeX Info: Redefining \. on input line 12444.
+LaTeX Info: Redefining \% on input line 12444.
+[172]
+LaTeX Info: Redefining \. on input line 12519.
+LaTeX Info: Redefining \% on input line 12519.
+ [173]
+LaTeX Info: Redefining \. on input line 12595.
+LaTeX Info: Redefining \% on input line 12595.
+ [174]
+LaTeX Info: Redefining \. on input line 12678.
+LaTeX Info: Redefining \% on input line 12678.
+ [175]
+LaTeX Info: Redefining \. on input line 12758.
+LaTeX Info: Redefining \% on input line 12758.
+ [176]
+LaTeX Info: Redefining \. on input line 12831.
+LaTeX Info: Redefining \% on input line 12831.
+ [177]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 12910.
+
+LaTeX Info: Redefining \. on input line 12920.
+LaTeX Info: Redefining \% on input line 12920.
+[178]
+LaTeX Info: Redefining \. on input line 12991.
+LaTeX Info: Redefining \% on input line 12991.
+LaTeX Info: Redefining \. on input line 12991.
+LaTeX Info: Redefining \% on input line 12991.
+ [179]
+LaTeX Info: Redefining \. on input line 13067.
+LaTeX Info: Redefining \% on input line 13067.
+LaTeX Info: Redefining \. on input line 13067.
+LaTeX Info: Redefining \% on input line 13067.
+ [180]
+LaTeX Info: Redefining \. on input line 13144.
+LaTeX Info: Redefining \% on input line 13144.
+LaTeX Info: Redefining \. on input line 13144.
+LaTeX Info: Redefining \% on input line 13144.
+ [181]
+LaTeX Info: Redefining \. on input line 13216.
+LaTeX Info: Redefining \% on input line 13216.
+LaTeX Info: Redefining \. on input line 13216.
+LaTeX Info: Redefining \% on input line 13216.
+ [182]
+LaTeX Info: Redefining \. on input line 13289.
+LaTeX Info: Redefining \% on input line 13289.
+LaTeX Info: Redefining \. on input line 13289.
+LaTeX Info: Redefining \% on input line 13289.
+ [183]
+LaTeX Info: Redefining \. on input line 13362.
+LaTeX Info: Redefining \% on input line 13362.
+LaTeX Info: Redefining \. on input line 13362.
+LaTeX Info: Redefining \% on input line 13362.
+ [184]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 13417.
+
+LaTeX Info: Redefining \. on input line 13446.
+LaTeX Info: Redefining \% on input line 13446.
+LaTeX Info: Redefining \. on input line 13446.
+LaTeX Info: Redefining \% on input line 13446.
+[185]
+LaTeX Info: Redefining \. on input line 13522.
+LaTeX Info: Redefining \% on input line 13522.
+LaTeX Info: Redefining \. on input line 13522.
+LaTeX Info: Redefining \% on input line 13522.
+ [186]
+LaTeX Info: Redefining \. on input line 13600.
+LaTeX Info: Redefining \% on input line 13600.
+LaTeX Info: Redefining \. on input line 13600.
+LaTeX Info: Redefining \% on input line 13600.
+ [187]
+LaTeX Info: Redefining \. on input line 13683.
+LaTeX Info: Redefining \% on input line 13683.
+LaTeX Info: Redefining \. on input line 13683.
+LaTeX Info: Redefining \% on input line 13683.
+ [188]
+LaTeX Info: Redefining \. on input line 13763.
+LaTeX Info: Redefining \% on input line 13763.
+LaTeX Info: Redefining \. on input line 13763.
+LaTeX Info: Redefining \% on input line 13763.
+ [189]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 13792.
+
+LaTeX Info: Redefining \. on input line 13826.
+LaTeX Info: Redefining \% on input line 13826.
+LaTeX Info: Redefining \. on input line 13826.
+LaTeX Info: Redefining \% on input line 13826.
+[190]
+LaTeX Info: Redefining \. on input line 13907.
+LaTeX Info: Redefining \% on input line 13907.
+LaTeX Info: Redefining \. on input line 13907.
+LaTeX Info: Redefining \% on input line 13907.
+ [191]
+LaTeX Info: Redefining \. on input line 13983.
+LaTeX Info: Redefining \% on input line 13983.
+LaTeX Info: Redefining \. on input line 13983.
+LaTeX Info: Redefining \% on input line 13983.
+ [192]
+LaTeX Info: Redefining \. on input line 14066.
+LaTeX Info: Redefining \% on input line 14066.
+LaTeX Info: Redefining \. on input line 14066.
+LaTeX Info: Redefining \% on input line 14066.
+ [193]
+LaTeX Info: Redefining \. on input line 14146.
+LaTeX Info: Redefining \% on input line 14146.
+LaTeX Info: Redefining \. on input line 14146.
+LaTeX Info: Redefining \% on input line 14146.
+ [194]
+LaTeX Info: Redefining \. on input line 14219.
+LaTeX Info: Redefining \% on input line 14219.
+LaTeX Info: Redefining \. on input line 14219.
+LaTeX Info: Redefining \% on input line 14219.
+ [195]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 14302.
+
+LaTeX Info: Redefining \. on input line 14310.
+LaTeX Info: Redefining \% on input line 14310.
+LaTeX Info: Redefining \. on input line 14310.
+LaTeX Info: Redefining \% on input line 14310.
+[196]
+LaTeX Info: Redefining \. on input line 14381.
+LaTeX Info: Redefining \% on input line 14381.
+LaTeX Info: Redefining \. on input line 14381.
+LaTeX Info: Redefining \% on input line 14381.
+ [197]
+LaTeX Info: Redefining \. on input line 14457.
+LaTeX Info: Redefining \% on input line 14457.
+LaTeX Info: Redefining \. on input line 14457.
+LaTeX Info: Redefining \% on input line 14457.
+ [198]
+LaTeX Info: Redefining \. on input line 14532.
+LaTeX Info: Redefining \% on input line 14532.
+LaTeX Info: Redefining \. on input line 14532.
+LaTeX Info: Redefining \% on input line 14532.
+ [199]
+LaTeX Info: Redefining \. on input line 14604.
+LaTeX Info: Redefining \% on input line 14604.
+LaTeX Info: Redefining \. on input line 14604.
+LaTeX Info: Redefining \% on input line 14604.
+ [200]
+LaTeX Info: Redefining \. on input line 14677.
+LaTeX Info: Redefining \% on input line 14677.
+LaTeX Info: Redefining \. on input line 14677.
+LaTeX Info: Redefining \% on input line 14677.
+ [201]
+LaTeX Info: Redefining \. on input line 14750.
+LaTeX Info: Redefining \% on input line 14750.
+LaTeX Info: Redefining \. on input line 14750.
+LaTeX Info: Redefining \% on input line 14750.
+ [202]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 14807.
+
+LaTeX Info: Redefining \. on input line 14832.
+LaTeX Info: Redefining \% on input line 14832.
+LaTeX Info: Redefining \. on input line 14832.
+LaTeX Info: Redefining \% on input line 14832.
+[203]
+LaTeX Info: Redefining \. on input line 14911.
+LaTeX Info: Redefining \% on input line 14911.
+LaTeX Info: Redefining \. on input line 14911.
+LaTeX Info: Redefining \% on input line 14911.
+ [204]
+LaTeX Info: Redefining \. on input line 14985.
+LaTeX Info: Redefining \% on input line 14985.
+LaTeX Info: Redefining \. on input line 14985.
+LaTeX Info: Redefining \% on input line 14985.
+ [205]
+LaTeX Info: Redefining \. on input line 15061.
+LaTeX Info: Redefining \% on input line 15061.
+LaTeX Info: Redefining \. on input line 15061.
+LaTeX Info: Redefining \% on input line 15061.
+ [206]
+LaTeX Info: Redefining \. on input line 15133.
+LaTeX Info: Redefining \% on input line 15133.
+LaTeX Info: Redefining \. on input line 15133.
+LaTeX Info: Redefining \% on input line 15133.
+ [207]
+LaTeX Info: Redefining \. on input line 15205.
+LaTeX Info: Redefining \% on input line 15205.
+LaTeX Info: Redefining \. on input line 15205.
+LaTeX Info: Redefining \% on input line 15205.
+ [208]
+LaTeX Info: Redefining \. on input line 15287.
+LaTeX Info: Redefining \% on input line 15287.
+LaTeX Info: Redefining \. on input line 15287.
+LaTeX Info: Redefining \% on input line 15287.
+ [209]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 15308.
+
+LaTeX Info: Redefining \. on input line 15354.
+LaTeX Info: Redefining \% on input line 15354.
+LaTeX Info: Redefining \. on input line 15354.
+LaTeX Info: Redefining \% on input line 15354.
+[210]
+LaTeX Info: Redefining \. on input line 15433.
+LaTeX Info: Redefining \% on input line 15433.
+LaTeX Info: Redefining \. on input line 15433.
+LaTeX Info: Redefining \% on input line 15433.
+ [211]
+LaTeX Info: Redefining \. on input line 15506.
+LaTeX Info: Redefining \% on input line 15506.
+LaTeX Info: Redefining \. on input line 15506.
+LaTeX Info: Redefining \% on input line 15506.
+ [212]
+LaTeX Info: Redefining \. on input line 15579.
+LaTeX Info: Redefining \% on input line 15579.
+LaTeX Info: Redefining \. on input line 15579.
+LaTeX Info: Redefining \% on input line 15579.
+ [213]
+LaTeX Info: Redefining \. on input line 15656.
+LaTeX Info: Redefining \% on input line 15656.
+LaTeX Info: Redefining \. on input line 15656.
+LaTeX Info: Redefining \% on input line 15656.
+ [214]
+LaTeX Info: Redefining \. on input line 15729.
+LaTeX Info: Redefining \% on input line 15729.
+LaTeX Info: Redefining \. on input line 15729.
+LaTeX Info: Redefining \% on input line 15729.
+ [215]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 15810.
+
+LaTeX Info: Redefining \. on input line 15818.
+LaTeX Info: Redefining \% on input line 15818.
+LaTeX Info: Redefining \. on input line 15818.
+LaTeX Info: Redefining \% on input line 15818.
+[216]
+LaTeX Info: Redefining \. on input line 15889.
+LaTeX Info: Redefining \% on input line 15889.
+LaTeX Info: Redefining \. on input line 15889.
+LaTeX Info: Redefining \% on input line 15889.
+ [217]
+LaTeX Info: Redefining \. on input line 15965.
+LaTeX Info: Redefining \% on input line 15965.
+LaTeX Info: Redefining \. on input line 15965.
+LaTeX Info: Redefining \% on input line 15965.
+ [218]
+LaTeX Info: Redefining \. on input line 16042.
+LaTeX Info: Redefining \% on input line 16042.
+LaTeX Info: Redefining \. on input line 16042.
+LaTeX Info: Redefining \% on input line 16042.
+ [219]
+LaTeX Info: Redefining \. on input line 16114.
+LaTeX Info: Redefining \% on input line 16114.
+LaTeX Info: Redefining \. on input line 16114.
+LaTeX Info: Redefining \% on input line 16114.
+ [220]
+LaTeX Info: Redefining \. on input line 16187.
+LaTeX Info: Redefining \% on input line 16187.
+LaTeX Info: Redefining \. on input line 16187.
+LaTeX Info: Redefining \% on input line 16187.
+ [221]
+LaTeX Info: Redefining \. on input line 16260.
+LaTeX Info: Redefining \% on input line 16260.
+LaTeX Info: Redefining \. on input line 16260.
+LaTeX Info: Redefining \% on input line 16260.
+ [222]
+LaTeX Info: Redefining \. on input line 16362.
+LaTeX Info: Redefining \% on input line 16362.
+LaTeX Info: Redefining \. on input line 16362.
+LaTeX Info: Redefining \% on input line 16362.
+ [223]
+LaTeX Info: Redefining \. on input line 16416.
+LaTeX Info: Redefining \% on input line 16416.
+LaTeX Info: Redefining \. on input line 16416.
+LaTeX Info: Redefining \% on input line 16416.
+ [224]
+LaTeX Info: Redefining \. on input line 16485.
+LaTeX Info: Redefining \% on input line 16485.
+LaTeX Info: Redefining \. on input line 16485.
+LaTeX Info: Redefining \% on input line 16485.
+ [225]
+LaTeX Info: Redefining \. on input line 16556.
+LaTeX Info: Redefining \% on input line 16556.
+ [226]
+LaTeX Info: Redefining \. on input line 16635.
+LaTeX Info: Redefining \% on input line 16635.
+ [227]
+Overfull \hbox (16.72833pt too wide) in paragraph at lines 16675--16677
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, pa-ra $\OML/cmm/m/it/10 A \OMS/cmsy/m/n
+/10 2 E$\OT1/cmr/m/it/10 , se tie-ne que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it
+/10 , don-de $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+LaTeX Info: Redefining \. on input line 16706.
+LaTeX Info: Redefining \% on input line 16706.
+[228]
+LaTeX Info: Redefining \. on input line 16789.
+LaTeX Info: Redefining \% on input line 16789.
+ [229]
+LaTeX Info: Redefining \. on input line 16869.
+LaTeX Info: Redefining \% on input line 16869.
+ [230]
+LaTeX Info: Redefining \. on input line 16939.
+LaTeX Info: Redefining \% on input line 16939.
+ [231]
+Overfull \hbox (16.72833pt too wide) in paragraph at lines 16944--16946
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, pa-ra $\OML/cmm/m/it/10 A \OMS/cmsy/m/n
+/10 2 E$\OT1/cmr/m/it/10 , se tie-ne que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it
+/10 , don-de $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+LaTeX Info: Redefining \. on input line 17004.
+LaTeX Info: Redefining \% on input line 17004.
+[232]
+LaTeX Info: Redefining \. on input line 17085.
+LaTeX Info: Redefining \% on input line 17085.
+ [233]
+LaTeX Info: Redefining \. on input line 17167.
+LaTeX Info: Redefining \% on input line 17167.
+ [234]
+Overfull \hbox (16.72833pt too wide) in paragraph at lines 17212--17214
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, pa-ra $\OML/cmm/m/it/10 A \OMS/cmsy/m/n
+/10 2 E$\OT1/cmr/m/it/10 , se tie-ne que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it
+/10 , don-de $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+LaTeX Info: Redefining \. on input line 17234.
+LaTeX Info: Redefining \% on input line 17234.
+[235]
+LaTeX Info: Redefining \. on input line 17305.
+LaTeX Info: Redefining \% on input line 17305.
+ [236]
+LaTeX Info: Redefining \. on input line 17389.
+LaTeX Info: Redefining \% on input line 17389.
+ [237]
+LaTeX Info: Redefining \. on input line 17469.
+LaTeX Info: Redefining \% on input line 17469.
+ [238]
+Overfull \hbox (16.72833pt too wide) in paragraph at lines 17483--17485
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, pa-ra $\OML/cmm/m/it/10 A \OMS/cmsy/m/n
+/10 2 E$\OT1/cmr/m/it/10 , se tie-ne que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it
+/10 , don-de $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+LaTeX Info: Redefining \. on input line 17543.
+LaTeX Info: Redefining \% on input line 17543.
+[239]
+LaTeX Info: Redefining \. on input line 17624.
+LaTeX Info: Redefining \% on input line 17624.
+ [240]
+LaTeX Info: Redefining \. on input line 17706.
+LaTeX Info: Redefining \% on input line 17706.
+ [241]
+LaTeX Info: Redefining \. on input line 17781.
+LaTeX Info: Redefining \% on input line 17781.
+LaTeX Info: Redefining \. on input line 17781.
+LaTeX Info: Redefining \% on input line 17781.
+ [242]
+LaTeX Info: Redefining \. on input line 17861.
+LaTeX Info: Redefining \% on input line 17861.
+LaTeX Info: Redefining \. on input line 17861.
+LaTeX Info: Redefining \% on input line 17861.
+ [243]
+LaTeX Info: Redefining \. on input line 17953.
+LaTeX Info: Redefining \% on input line 17953.
+LaTeX Info: Redefining \. on input line 17953.
+LaTeX Info: Redefining \% on input line 17953.
+ [244]
+LaTeX Info: Redefining \. on input line 18020.
+LaTeX Info: Redefining \% on input line 18020.
+LaTeX Info: Redefining \. on input line 18020.
+LaTeX Info: Redefining \% on input line 18020.
+ [245]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 18035.
+
+LaTeX Info: Redefining \. on input line 18087.
+LaTeX Info: Redefining \% on input line 18087.
+[246]
+LaTeX Info: Redefining \. on input line 18166.
+LaTeX Info: Redefining \% on input line 18166.
+ [247]
+LaTeX Info: Redefining \. on input line 18239.
+LaTeX Info: Redefining \% on input line 18239.
+ [248]
+LaTeX Info: Redefining \. on input line 18312.
+LaTeX Info: Redefining \% on input line 18312.
+ [249]
+LaTeX Info: Redefining \. on input line 18389.
+LaTeX Info: Redefining \% on input line 18389.
+ [250]
+LaTeX Info: Redefining \. on input line 18461.
+LaTeX Info: Redefining \% on input line 18461.
+ [251]
+LaTeX Info: Redefining \. on input line 18564.
+LaTeX Info: Redefining \% on input line 18564.
+ [252]
+LaTeX Info: Redefining \. on input line 18625.
+LaTeX Info: Redefining \% on input line 18625.
+ [253]
+LaTeX Info: Redefining \. on input line 18691.
+LaTeX Info: Redefining \% on input line 18691.
+ [254]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 18703.
+
+LaTeX Info: Redefining \. on input line 18750.
+LaTeX Info: Redefining \% on input line 18750.
+LaTeX Info: Redefining \. on input line 18750.
+LaTeX Info: Redefining \% on input line 18750.
+[255]
+LaTeX Info: Redefining \. on input line 18826.
+LaTeX Info: Redefining \% on input line 18826.
+LaTeX Info: Redefining \. on input line 18826.
+LaTeX Info: Redefining \% on input line 18826.
+ [256]
+LaTeX Info: Redefining \. on input line 18899.
+LaTeX Info: Redefining \% on input line 18899.
+LaTeX Info: Redefining \. on input line 18899.
+LaTeX Info: Redefining \% on input line 18899.
+ [257]
+LaTeX Info: Redefining \. on input line 18972.
+LaTeX Info: Redefining \% on input line 18972.
+LaTeX Info: Redefining \. on input line 18972.
+LaTeX Info: Redefining \% on input line 18972.
+ [258]
+LaTeX Info: Redefining \. on input line 19049.
+LaTeX Info: Redefining \% on input line 19049.
+LaTeX Info: Redefining \. on input line 19049.
+LaTeX Info: Redefining \% on input line 19049.
+ [259]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 19076.
+
+LaTeX Info: Redefining \. on input line 19104.
+LaTeX Info: Redefining \% on input line 19104.
+LaTeX Info: Redefining \. on input line 19104.
+LaTeX Info: Redefining \% on input line 19104.
+[260]
+LaTeX Info: Redefining \. on input line 19185.
+LaTeX Info: Redefining \% on input line 19185.
+LaTeX Info: Redefining \. on input line 19185.
+LaTeX Info: Redefining \% on input line 19185.
+ [261]
+LaTeX Info: Redefining \. on input line 19255.
+LaTeX Info: Redefining \% on input line 19255.
+LaTeX Info: Redefining \. on input line 19255.
+LaTeX Info: Redefining \% on input line 19255.
+ [262]
+LaTeX Info: Redefining \. on input line 19338.
+LaTeX Info: Redefining \% on input line 19338.
+LaTeX Info: Redefining \. on input line 19338.
+LaTeX Info: Redefining \% on input line 19338.
+ [263]
+LaTeX Info: Redefining \. on input line 19418.
+LaTeX Info: Redefining \% on input line 19418.
+LaTeX Info: Redefining \. on input line 19418.
+LaTeX Info: Redefining \% on input line 19418.
+ [264]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 19446.
+
+LaTeX Info: Redefining \. on input line 19478.
+LaTeX Info: Redefining \% on input line 19478.
+LaTeX Info: Redefining \. on input line 19478.
+LaTeX Info: Redefining \% on input line 19478.
+[265]
+LaTeX Info: Redefining \. on input line 19559.
+LaTeX Info: Redefining \% on input line 19559.
+LaTeX Info: Redefining \. on input line 19559.
+LaTeX Info: Redefining \% on input line 19559.
+ [266]
+LaTeX Info: Redefining \. on input line 19629.
+LaTeX Info: Redefining \% on input line 19629.
+LaTeX Info: Redefining \. on input line 19629.
+LaTeX Info: Redefining \% on input line 19629.
+ [267]
+LaTeX Info: Redefining \. on input line 19712.
+LaTeX Info: Redefining \% on input line 19712.
+LaTeX Info: Redefining \. on input line 19712.
+LaTeX Info: Redefining \% on input line 19712.
+ [268]
+LaTeX Info: Redefining \. on input line 19792.
+LaTeX Info: Redefining \% on input line 19792.
+LaTeX Info: Redefining \. on input line 19792.
+LaTeX Info: Redefining \% on input line 19792.
+ [269]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 19820.
+
+LaTeX Info: Redefining \. on input line 19847.
+LaTeX Info: Redefining \% on input line 19847.
+LaTeX Info: Redefining \. on input line 19847.
+LaTeX Info: Redefining \% on input line 19847.
+[270]
+LaTeX Info: Redefining \. on input line 19928.
+LaTeX Info: Redefining \% on input line 19928.
+LaTeX Info: Redefining \. on input line 19928.
+LaTeX Info: Redefining \% on input line 19928.
+ [271]
+LaTeX Info: Redefining \. on input line 19998.
+LaTeX Info: Redefining \% on input line 19998.
+LaTeX Info: Redefining \. on input line 19998.
+LaTeX Info: Redefining \% on input line 19998.
+ [272]
+LaTeX Info: Redefining \. on input line 20081.
+LaTeX Info: Redefining \% on input line 20081.
+LaTeX Info: Redefining \. on input line 20081.
+LaTeX Info: Redefining \% on input line 20081.
+ [273]
+LaTeX Info: Redefining \. on input line 20161.
+LaTeX Info: Redefining \% on input line 20161.
+LaTeX Info: Redefining \. on input line 20161.
+LaTeX Info: Redefining \% on input line 20161.
+ [274]
+Overfull \hbox (16.72833pt too wide) in paragraph at lines 20192--20194
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, pa-ra $\OML/cmm/m/it/10 A \OMS/cmsy/m/n
+/10 2 E$\OT1/cmr/m/it/10 , se tie-ne que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it
+/10 , don-de $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+LaTeX Info: Redefining \. on input line 20222.
+LaTeX Info: Redefining \% on input line 20222.
+[275]
+LaTeX Info: Redefining \. on input line 20306.
+LaTeX Info: Redefining \% on input line 20306.
+ [276]
+LaTeX Info: Redefining \. on input line 20386.
+LaTeX Info: Redefining \% on input line 20386.
+ [277]
+LaTeX Info: Redefining \. on input line 20456.
+LaTeX Info: Redefining \% on input line 20456.
+ [278]
+Overfull \hbox (16.72833pt too wide) in paragraph at lines 20485--20487
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, pa-ra $\OML/cmm/m/it/10 A \OMS/cmsy/m/n
+/10 2 E$\OT1/cmr/m/it/10 , se tie-ne que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it
+/10 , don-de $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+LaTeX Info: Redefining \. on input line 20521.
+LaTeX Info: Redefining \% on input line 20521.
+LaTeX Info: Redefining \. on input line 20521.
+LaTeX Info: Redefining \% on input line 20521.
+[279]
+LaTeX Info: Redefining \. on input line 20599.
+LaTeX Info: Redefining \% on input line 20599.
+LaTeX Info: Redefining \. on input line 20599.
+LaTeX Info: Redefining \% on input line 20599.
+ [280]
+LaTeX Info: Redefining \. on input line 20679.
+LaTeX Info: Redefining \% on input line 20679.
+LaTeX Info: Redefining \. on input line 20679.
+LaTeX Info: Redefining \% on input line 20679.
+ [281]
+LaTeX Info: Redefining \. on input line 20749.
+LaTeX Info: Redefining \% on input line 20749.
+LaTeX Info: Redefining \. on input line 20749.
+LaTeX Info: Redefining \% on input line 20749.
+ [282]
+Overfull \hbox (16.72833pt too wide) in paragraph at lines 20754--20756
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, pa-ra $\OML/cmm/m/it/10 A \OMS/cmsy/m/n
+/10 2 E$\OT1/cmr/m/it/10 , se tie-ne que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it
+/10 , don-de $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+LaTeX Info: Redefining \. on input line 20814.
+LaTeX Info: Redefining \% on input line 20814.
+LaTeX Info: Redefining \. on input line 20814.
+LaTeX Info: Redefining \% on input line 20814.
+[283]
+LaTeX Info: Redefining \. on input line 20895.
+LaTeX Info: Redefining \% on input line 20895.
+LaTeX Info: Redefining \. on input line 20895.
+LaTeX Info: Redefining \% on input line 20895.
+ [284]
+LaTeX Info: Redefining \. on input line 20977.
+LaTeX Info: Redefining \% on input line 20977.
+LaTeX Info: Redefining \. on input line 20977.
+LaTeX Info: Redefining \% on input line 20977.
+ [285]
+Overfull \hbox (16.72833pt too wide) in paragraph at lines 21022--21024
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, pa-ra $\OML/cmm/m/it/10 A \OMS/cmsy/m/n
+/10 2 E$\OT1/cmr/m/it/10 , se tie-ne que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it
+/10 , don-de $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+LaTeX Info: Redefining \. on input line 21044.
+LaTeX Info: Redefining \% on input line 21044.
+LaTeX Info: Redefining \. on input line 21044.
+LaTeX Info: Redefining \% on input line 21044.
+[286]
+LaTeX Info: Redefining \. on input line 21115.
+LaTeX Info: Redefining \% on input line 21115.
+LaTeX Info: Redefining \. on input line 21115.
+LaTeX Info: Redefining \% on input line 21115.
+ [287]
+LaTeX Info: Redefining \. on input line 21199.
+LaTeX Info: Redefining \% on input line 21199.
+LaTeX Info: Redefining \. on input line 21199.
+LaTeX Info: Redefining \% on input line 21199.
+ [288]
+LaTeX Info: Redefining \. on input line 21279.
+LaTeX Info: Redefining \% on input line 21279.
+LaTeX Info: Redefining \. on input line 21279.
+LaTeX Info: Redefining \% on input line 21279.
+ [289]
+Overfull \hbox (16.72833pt too wide) in paragraph at lines 21293--21295
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, pa-ra $\OML/cmm/m/it/10 A \OMS/cmsy/m/n
+/10 2 E$\OT1/cmr/m/it/10 , se tie-ne que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it
+/10 , don-de $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+LaTeX Info: Redefining \. on input line 21353.
+LaTeX Info: Redefining \% on input line 21353.
+LaTeX Info: Redefining \. on input line 21353.
+LaTeX Info: Redefining \% on input line 21353.
+[290]
+LaTeX Info: Redefining \. on input line 21434.
+LaTeX Info: Redefining \% on input line 21434.
+LaTeX Info: Redefining \. on input line 21434.
+LaTeX Info: Redefining \% on input line 21434.
+ [291]
+LaTeX Info: Redefining \. on input line 21516.
+LaTeX Info: Redefining \% on input line 21516.
+LaTeX Info: Redefining \. on input line 21516.
+LaTeX Info: Redefining \% on input line 21516.
+ [292]
+Overfull \hbox (16.72833pt too wide) in paragraph at lines 21566--21568
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, pa-ra $\OML/cmm/m/it/10 A \OMS/cmsy/m/n
+/10 2 E$\OT1/cmr/m/it/10 , se tie-ne que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it
+/10 , don-de $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+LaTeX Info: Redefining \. on input line 21581.
+LaTeX Info: Redefining \% on input line 21581.
+LaTeX Info: Redefining \. on input line 21581.
+LaTeX Info: Redefining \% on input line 21581.
+[293]
+LaTeX Info: Redefining \. on input line 21647.
+LaTeX Info: Redefining \% on input line 21647.
+LaTeX Info: Redefining \. on input line 21647.
+LaTeX Info: Redefining \% on input line 21647.
+ [294]
+LaTeX Info: Redefining \. on input line 21730.
+LaTeX Info: Redefining \% on input line 21730.
+LaTeX Info: Redefining \. on input line 21730.
+LaTeX Info: Redefining \% on input line 21730.
+ [295]
+LaTeX Info: Redefining \. on input line 21809.
+LaTeX Info: Redefining \% on input line 21809.
+LaTeX Info: Redefining \. on input line 21809.
+LaTeX Info: Redefining \% on input line 21809.
+ [296]
+Overfull \hbox (16.72833pt too wide) in paragraph at lines 21835--21837
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, pa-ra $\OML/cmm/m/it/10 A \OMS/cmsy/m/n
+/10 2 E$\OT1/cmr/m/it/10 , se tie-ne que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it
+/10 , don-de $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+LaTeX Info: Redefining \. on input line 21866.
+LaTeX Info: Redefining \% on input line 21866.
+LaTeX Info: Redefining \. on input line 21866.
+LaTeX Info: Redefining \% on input line 21866.
+[297]
+LaTeX Info: Redefining \. on input line 21944.
+LaTeX Info: Redefining \% on input line 21944.
+LaTeX Info: Redefining \. on input line 21944.
+LaTeX Info: Redefining \% on input line 21944.
+ [298]
+LaTeX Info: Redefining \. on input line 22029.
+LaTeX Info: Redefining \% on input line 22029.
+LaTeX Info: Redefining \. on input line 22029.
+LaTeX Info: Redefining \% on input line 22029.
+ [299]
+LaTeX Info: Redefining \. on input line 22099.
+LaTeX Info: Redefining \% on input line 22099.
+LaTeX Info: Redefining \. on input line 22099.
+LaTeX Info: Redefining \% on input line 22099.
+ [300]
+Overfull \hbox (16.72833pt too wide) in paragraph at lines 22103--22105
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, pa-ra $\OML/cmm/m/it/10 A \OMS/cmsy/m/n
+/10 2 E$\OT1/cmr/m/it/10 , se tie-ne que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it
+/10 , don-de $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+LaTeX Info: Redefining \. on input line 22163.
+LaTeX Info: Redefining \% on input line 22163.
+LaTeX Info: Redefining \. on input line 22163.
+LaTeX Info: Redefining \% on input line 22163.
+[301]
+LaTeX Info: Redefining \. on input line 22244.
+LaTeX Info: Redefining \% on input line 22244.
+LaTeX Info: Redefining \. on input line 22244.
+LaTeX Info: Redefining \% on input line 22244.
+ [302]
+LaTeX Info: Redefining \. on input line 22319.
+LaTeX Info: Redefining \% on input line 22319.
+LaTeX Info: Redefining \. on input line 22319.
+LaTeX Info: Redefining \% on input line 22319.
+ [303]
+Overfull \hbox (16.72833pt too wide) in paragraph at lines 22374--22376
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, pa-ra $\OML/cmm/m/it/10 A \OMS/cmsy/m/n
+/10 2 E$\OT1/cmr/m/it/10 , se tie-ne que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it
+/10 , don-de $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+LaTeX Info: Redefining \. on input line 22389.
+LaTeX Info: Redefining \% on input line 22389.
+LaTeX Info: Redefining \. on input line 22389.
+LaTeX Info: Redefining \% on input line 22389.
+[304]
+LaTeX Info: Redefining \. on input line 22455.
+LaTeX Info: Redefining \% on input line 22455.
+LaTeX Info: Redefining \. on input line 22455.
+LaTeX Info: Redefining \% on input line 22455.
+ [305]
+LaTeX Info: Redefining \. on input line 22538.
+LaTeX Info: Redefining \% on input line 22538.
+LaTeX Info: Redefining \. on input line 22538.
+LaTeX Info: Redefining \% on input line 22538.
+ [306]
+LaTeX Info: Redefining \. on input line 22617.
+LaTeX Info: Redefining \% on input line 22617.
+LaTeX Info: Redefining \. on input line 22617.
+LaTeX Info: Redefining \% on input line 22617.
+ [307]
+LaTeX Info: Redefining \. on input line 22673.
+LaTeX Info: Redefining \% on input line 22673.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[308]
+LaTeX Info: Redefining \. on input line 22742.
+LaTeX Info: Redefining \% on input line 22742.
+ [309]
+LaTeX Info: Redefining \. on input line 22809.
+LaTeX Info: Redefining \% on input line 22809.
+LaTeX Info: Redefining \. on input line 22809.
+LaTeX Info: Redefining \% on input line 22809.
+ [310]
+LaTeX Info: Redefining \. on input line 22874.
+LaTeX Info: Redefining \% on input line 22874.
+LaTeX Info: Redefining \. on input line 22874.
+LaTeX Info: Redefining \% on input line 22874.
+ [311]
+LaTeX Info: Redefining \. on input line 22940.
+LaTeX Info: Redefining \% on input line 22940.
+LaTeX Info: Redefining \. on input line 22940.
+LaTeX Info: Redefining \% on input line 22940.
+ [312]
+LaTeX Info: Redefining \. on input line 23007.
+LaTeX Info: Redefining \% on input line 23007.
+LaTeX Info: Redefining \. on input line 23007.
+LaTeX Info: Redefining \% on input line 23007.
+ [313]
+LaTeX Info: Redefining \. on input line 23065.
+LaTeX Info: Redefining \% on input line 23065.
+LaTeX Info: Redefining \. on input line 23065.
+LaTeX Info: Redefining \% on input line 23065.
+ [314]
+LaTeX Info: Redefining \. on input line 23133.
+LaTeX Info: Redefining \% on input line 23133.
+LaTeX Info: Redefining \. on input line 23133.
+LaTeX Info: Redefining \% on input line 23133.
+ [315]
+LaTeX Info: Redefining \. on input line 23193.
+LaTeX Info: Redefining \% on input line 23193.
+LaTeX Info: Redefining \. on input line 23193.
+LaTeX Info: Redefining \% on input line 23193.
+ [316]
+LaTeX Info: Redefining \. on input line 23258.
+LaTeX Info: Redefining \% on input line 23258.
+LaTeX Info: Redefining \. on input line 23258.
+LaTeX Info: Redefining \% on input line 23258.
+ [317]
+LaTeX Info: Redefining \. on input line 23324.
+LaTeX Info: Redefining \% on input line 23324.
+LaTeX Info: Redefining \. on input line 23324.
+LaTeX Info: Redefining \% on input line 23324.
+ [318]
+LaTeX Info: Redefining \. on input line 23388.
+LaTeX Info: Redefining \% on input line 23388.
+LaTeX Info: Redefining \. on input line 23388.
+LaTeX Info: Redefining \% on input line 23388.
+ [319]
+LaTeX Info: Redefining \. on input line 23452.
+LaTeX Info: Redefining \% on input line 23452.
+LaTeX Info: Redefining \. on input line 23452.
+LaTeX Info: Redefining \% on input line 23452.
+
+[320]
+LaTeX Info: Redefining \. on input line 23516.
+LaTeX Info: Redefining \% on input line 23516.
+LaTeX Info: Redefining \. on input line 23516.
+LaTeX Info: Redefining \% on input line 23516.
+ [321]
+LaTeX Info: Redefining \. on input line 23585.
+LaTeX Info: Redefining \% on input line 23585.
+LaTeX Info: Redefining \. on input line 23585.
+LaTeX Info: Redefining \% on input line 23585.
+ [322]
+LaTeX Info: Redefining \. on input line 23646.
+LaTeX Info: Redefining \% on input line 23646.
+LaTeX Info: Redefining \. on input line 23646.
+LaTeX Info: Redefining \% on input line 23646.
+ [323]
+LaTeX Info: Redefining \. on input line 23713.
+LaTeX Info: Redefining \% on input line 23713.
+LaTeX Info: Redefining \. on input line 23713.
+LaTeX Info: Redefining \% on input line 23713.
+ [324]
+LaTeX Info: Redefining \. on input line 23777.
+LaTeX Info: Redefining \% on input line 23777.
+LaTeX Info: Redefining \. on input line 23777.
+LaTeX Info: Redefining \% on input line 23777.
+ [325]
+LaTeX Info: Redefining \. on input line 23852.
+LaTeX Info: Redefining \% on input line 23852.
+LaTeX Info: Redefining \. on input line 23852.
+LaTeX Info: Redefining \% on input line 23852.
+ [326]
+LaTeX Info: Redefining \. on input line 23916.
+LaTeX Info: Redefining \% on input line 23916.
+LaTeX Info: Redefining \. on input line 23916.
+LaTeX Info: Redefining \% on input line 23916.
+ [327]
+LaTeX Info: Redefining \. on input line 23975.
+LaTeX Info: Redefining \% on input line 23975.
+LaTeX Info: Redefining \. on input line 23975.
+LaTeX Info: Redefining \% on input line 23975.
+ [328]
+LaTeX Info: Redefining \. on input line 24041.
+LaTeX Info: Redefining \% on input line 24041.
+LaTeX Info: Redefining \. on input line 24041.
+LaTeX Info: Redefining \% on input line 24041.
+ [329]
+LaTeX Info: Redefining \. on input line 24105.
+LaTeX Info: Redefining \% on input line 24105.
+LaTeX Info: Redefining \. on input line 24105.
+LaTeX Info: Redefining \% on input line 24105.
+ [330]
+LaTeX Info: Redefining \. on input line 24169.
+LaTeX Info: Redefining \% on input line 24169.
+LaTeX Info: Redefining \. on input line 24169.
+LaTeX Info: Redefining \% on input line 24169.
+ [331]
+LaTeX Info: Redefining \. on input line 24233.
+LaTeX Info: Redefining \% on input line 24233.
+LaTeX Info: Redefining \. on input line 24233.
+LaTeX Info: Redefining \% on input line 24233.
+
+[332]
+LaTeX Info: Redefining \. on input line 24296.
+LaTeX Info: Redefining \% on input line 24296.
+LaTeX Info: Redefining \. on input line 24296.
+LaTeX Info: Redefining \% on input line 24296.
+ [333]
+LaTeX Info: Redefining \. on input line 24362.
+LaTeX Info: Redefining \% on input line 24362.
+LaTeX Info: Redefining \. on input line 24362.
+LaTeX Info: Redefining \% on input line 24362.
+ [334]
+LaTeX Info: Redefining \. on input line 24435.
+LaTeX Info: Redefining \% on input line 24435.
+LaTeX Info: Redefining \. on input line 24435.
+LaTeX Info: Redefining \% on input line 24435.
+ [335]
+LaTeX Info: Redefining \. on input line 24501.
+LaTeX Info: Redefining \% on input line 24501.
+LaTeX Info: Redefining \. on input line 24501.
+LaTeX Info: Redefining \% on input line 24501.
+ [336]
+LaTeX Info: Redefining \. on input line 24560.
+LaTeX Info: Redefining \% on input line 24560.
+LaTeX Info: Redefining \. on input line 24560.
+LaTeX Info: Redefining \% on input line 24560.
+ [337]
+LaTeX Info: Redefining \. on input line 24621.
+LaTeX Info: Redefining \% on input line 24621.
+LaTeX Info: Redefining \. on input line 24621.
+LaTeX Info: Redefining \% on input line 24621.
+ [338]
+LaTeX Info: Redefining \. on input line 24679.
+LaTeX Info: Redefining \% on input line 24679.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+[339]
+LaTeX Info: Redefining \. on input line 24748.
+LaTeX Info: Redefining \% on input line 24748.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 24748.
+LaTeX Info: Redefining \% on input line 24748.
+[340]
+LaTeX Info: Redefining \. on input line 24820.
+LaTeX Info: Redefining \% on input line 24820.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 24820.
+LaTeX Info: Redefining \% on input line 24820.
+[341]
+LaTeX Info: Redefining \. on input line 24902.
+LaTeX Info: Redefining \% on input line 24902.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 24902.
+LaTeX Info: Redefining \% on input line 24902.
+[342]
+LaTeX Info: Redefining \. on input line 24965.
+LaTeX Info: Redefining \% on input line 24965.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 24965.
+LaTeX Info: Redefining \% on input line 24965.
+[343]
+LaTeX Info: Redefining \. on input line 25015.
+LaTeX Info: Redefining \% on input line 25015.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25015.
+LaTeX Info: Redefining \% on input line 25015.
+[344]
+LaTeX Info: Redefining \. on input line 25069.
+LaTeX Info: Redefining \% on input line 25069.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25069.
+LaTeX Info: Redefining \% on input line 25069.
+[345]
+LaTeX Info: Redefining \. on input line 25130.
+LaTeX Info: Redefining \% on input line 25130.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25130.
+LaTeX Info: Redefining \% on input line 25130.
+[346]
+LaTeX Info: Redefining \. on input line 25180.
+LaTeX Info: Redefining \% on input line 25180.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25180.
+LaTeX Info: Redefining \% on input line 25180.
+[347]
+LaTeX Info: Redefining \. on input line 25250.
+LaTeX Info: Redefining \% on input line 25250.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25250.
+LaTeX Info: Redefining \% on input line 25250.
+[348]
+LaTeX Info: Redefining \. on input line 25327.
+LaTeX Info: Redefining \% on input line 25327.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25327.
+LaTeX Info: Redefining \% on input line 25327.
+[349]
+LaTeX Info: Redefining \. on input line 25406.
+LaTeX Info: Redefining \% on input line 25406.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25406.
+LaTeX Info: Redefining \% on input line 25406.
+[350]
+LaTeX Info: Redefining \. on input line 25478.
+LaTeX Info: Redefining \% on input line 25478.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25478.
+LaTeX Info: Redefining \% on input line 25478.
+[351]
+LaTeX Info: Redefining \. on input line 25550.
+LaTeX Info: Redefining \% on input line 25550.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25550.
+LaTeX Info: Redefining \% on input line 25550.
+[352]
+LaTeX Info: Redefining \. on input line 25624.
+LaTeX Info: Redefining \% on input line 25624.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25624.
+LaTeX Info: Redefining \% on input line 25624.
+[353]
+LaTeX Info: Redefining \. on input line 25702.
+LaTeX Info: Redefining \% on input line 25702.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25702.
+LaTeX Info: Redefining \% on input line 25702.
+[354]
+LaTeX Info: Redefining \. on input line 25752.
+LaTeX Info: Redefining \% on input line 25752.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25752.
+LaTeX Info: Redefining \% on input line 25752.
+[355]
+LaTeX Info: Redefining \. on input line 25810.
+LaTeX Info: Redefining \% on input line 25810.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25810.
+LaTeX Info: Redefining \% on input line 25810.
+[356]
+LaTeX Info: Redefining \. on input line 25873.
+LaTeX Info: Redefining \% on input line 25873.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25873.
+LaTeX Info: Redefining \% on input line 25873.
+[357]
+LaTeX Info: Redefining \. on input line 25925.
+LaTeX Info: Redefining \% on input line 25925.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25925.
+LaTeX Info: Redefining \% on input line 25925.
+[358]
+LaTeX Info: Redefining \. on input line 25972.
+LaTeX Info: Redefining \% on input line 25972.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 25972.
+LaTeX Info: Redefining \% on input line 25972.
+[359]
+LaTeX Info: Redefining \. on input line 26019.
+LaTeX Info: Redefining \% on input line 26019.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 26019.
+LaTeX Info: Redefining \% on input line 26019.
+[360]
+LaTeX Info: Redefining \. on input line 26073.
+LaTeX Info: Redefining \% on input line 26073.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 26073.
+LaTeX Info: Redefining \% on input line 26073.
+[361]
+LaTeX Info: Redefining \. on input line 26143.
+LaTeX Info: Redefining \% on input line 26143.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 26143.
+LaTeX Info: Redefining \% on input line 26143.
+[362]
+LaTeX Info: Redefining \. on input line 26220.
+LaTeX Info: Redefining \% on input line 26220.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 26220.
+LaTeX Info: Redefining \% on input line 26220.
+[363]
+LaTeX Info: Redefining \. on input line 26299.
+LaTeX Info: Redefining \% on input line 26299.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 26299.
+LaTeX Info: Redefining \% on input line 26299.
+[364]
+LaTeX Info: Redefining \. on input line 26371.
+LaTeX Info: Redefining \% on input line 26371.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 26371.
+LaTeX Info: Redefining \% on input line 26371.
+[365]
+LaTeX Info: Redefining \. on input line 26443.
+LaTeX Info: Redefining \% on input line 26443.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 26443.
+LaTeX Info: Redefining \% on input line 26443.
+[366]
+LaTeX Info: Redefining \. on input line 26517.
+LaTeX Info: Redefining \% on input line 26517.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 26517.
+LaTeX Info: Redefining \% on input line 26517.
+[367]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 26590.
+
+LaTeX Info: Redefining \. on input line 26595.
+LaTeX Info: Redefining \% on input line 26595.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.07225pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.07225pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
+
+LaTeX Info: Redefining \. on input line 26595.
+LaTeX Info: Redefining \% on input line 26595.
+[368]
+Overfull \hbox (3.37408pt too wide) in paragraph at lines 26619--26620
+[][]\OT1/cmr/bx/n/10 Definici^^Son 15.3. []\OT1/cmr/m/it/10 Una mo-di-fi-ca-ci^
+^Son me-di-ble de un pro-ce-so $[]$, es una ver-si^^Son de es-te, $[]$
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 26637.
+
+LaTeX Info: Redefining \. on input line 26662.
+LaTeX Info: Redefining \% on input line 26662.
+[369]
+Overfull \hbox (3.37408pt too wide) in paragraph at lines 26666--26667
+[][]\OT1/cmr/bx/n/10 Definici^^Son 15.6. []\OT1/cmr/m/it/10 Una mo-di-fi-ca-ci^
+^Son me-di-ble de un pro-ce-so $[]$, es una ver-si^^Son de es-te, $[]$
+ []
+
+
+Overfull \hbox (3.37408pt too wide) in paragraph at lines 26721--26722
+[][]\OT1/cmr/bx/n/10 Definici^^Son 15.9. []\OT1/cmr/m/it/10 Una mo-di-fi-ca-ci^
+^Son me-di-ble de un pro-ce-so $[]$, es una ver-si^^Son de es-te, $[]$
+ []
+
+LaTeX Info: Redefining \. on input line 26727.
+LaTeX Info: Redefining \% on input line 26727.
+LaTeX Info: Redefining \. on input line 26727.
+LaTeX Info: Redefining \% on input line 26727.
+[370]
+LaTeX Info: Redefining \. on input line 26788.
+LaTeX Info: Redefining \% on input line 26788.
+LaTeX Info: Redefining \. on input line 26788.
+LaTeX Info: Redefining \% on input line 26788.
+ [371]
+LaTeX Info: Redefining \. on input line 26851.
+LaTeX Info: Redefining \% on input line 26851.
+LaTeX Info: Redefining \. on input line 26851.
+LaTeX Info: Redefining \% on input line 26851.
+ [372]
+LaTeX Info: Redefining \. on input line 26923.
+LaTeX Info: Redefining \% on input line 26923.
+LaTeX Info: Redefining \. on input line 26923.
+LaTeX Info: Redefining \% on input line 26923.
+ [373]
+LaTeX Info: Redefining \. on input line 26980.
+LaTeX Info: Redefining \% on input line 26980.
+LaTeX Info: Redefining \. on input line 26980.
+LaTeX Info: Redefining \% on input line 26980.
+ [374]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27037.
+
+LaTeX Info: Redefining \. on input line 27042.
+LaTeX Info: Redefining \% on input line 27042.
+LaTeX Info: Redefining \. on input line 27042.
+LaTeX Info: Redefining \% on input line 27042.
+[375]
+LaTeX Info: Redefining \. on input line 27106.
+LaTeX Info: Redefining \% on input line 27106.
+LaTeX Info: Redefining \. on input line 27106.
+LaTeX Info: Redefining \% on input line 27106.
+ [376]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27135.
+
+LaTeX Info: Redefining \. on input line 27169.
+LaTeX Info: Redefining \% on input line 27169.
+LaTeX Info: Redefining \. on input line 27169.
+LaTeX Info: Redefining \% on input line 27169.
+[377]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27186.
+
+LaTeX Info: Redefining \. on input line 27226.
+LaTeX Info: Redefining \% on input line 27226.
+LaTeX Info: Redefining \. on input line 27226.
+LaTeX Info: Redefining \% on input line 27226.
+[378]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27243.
+
+LaTeX Info: Redefining \. on input line 27285.
+LaTeX Info: Redefining \% on input line 27285.
+LaTeX Info: Redefining \. on input line 27285.
+LaTeX Info: Redefining \% on input line 27285.
+[379]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27300.
+
+LaTeX Info: Redefining \. on input line 27353.
+LaTeX Info: Redefining \% on input line 27353.
+LaTeX Info: Redefining \. on input line 27353.
+LaTeX Info: Redefining \% on input line 27353.
+[380]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27393.
+
+LaTeX Info: Redefining \. on input line 27414.
+LaTeX Info: Redefining \% on input line 27414.
+LaTeX Info: Redefining \. on input line 27414.
+LaTeX Info: Redefining \% on input line 27414.
+[381]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27440.
+
+LaTeX Info: Redefining \. on input line 27480.
+LaTeX Info: Redefining \% on input line 27480.
+LaTeX Info: Redefining \. on input line 27480.
+LaTeX Info: Redefining \% on input line 27480.
+[382]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27487.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27533.
+
+LaTeX Info: Redefining \. on input line 27541.
+LaTeX Info: Redefining \% on input line 27541.
+LaTeX Info: Redefining \. on input line 27541.
+LaTeX Info: Redefining \% on input line 27541.
+[383]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27579.
+
+LaTeX Info: Redefining \. on input line 27604.
+LaTeX Info: Redefining \% on input line 27604.
+LaTeX Info: Redefining \. on input line 27604.
+LaTeX Info: Redefining \% on input line 27604.
+[384]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27635.
+
+LaTeX Info: Redefining \. on input line 27669.
+LaTeX Info: Redefining \% on input line 27669.
+LaTeX Info: Redefining \. on input line 27669.
+LaTeX Info: Redefining \% on input line 27669.
+[385]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27682.
+
+LaTeX Info: Redefining \. on input line 27728.
+LaTeX Info: Redefining \% on input line 27728.
+LaTeX Info: Redefining \. on input line 27728.
+LaTeX Info: Redefining \% on input line 27728.
+[386]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27730.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27776.
+
+LaTeX Info: Redefining \. on input line 27786.
+LaTeX Info: Redefining \% on input line 27786.
+LaTeX Info: Redefining \. on input line 27786.
+LaTeX Info: Redefining \% on input line 27786.
+[387]
+LaTeX Info: Redefining \. on input line 27847.
+LaTeX Info: Redefining \% on input line 27847.
+LaTeX Info: Redefining \. on input line 27847.
+LaTeX Info: Redefining \% on input line 27847.
+ [388]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27877.
+
+LaTeX Info: Redefining \. on input line 27911.
+LaTeX Info: Redefining \% on input line 27911.
+LaTeX Info: Redefining \. on input line 27911.
+LaTeX Info: Redefining \% on input line 27911.
+[389]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27924.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 27970.
+
+LaTeX Info: Redefining \. on input line 27975.
+LaTeX Info: Redefining \% on input line 27975.
+LaTeX Info: Redefining \. on input line 27975.
+LaTeX Info: Redefining \% on input line 27975.
+[390]
+LaTeX Info: Redefining \. on input line 28041.
+LaTeX Info: Redefining \% on input line 28041.
+LaTeX Info: Redefining \. on input line 28041.
+LaTeX Info: Redefining \% on input line 28041.
+ [391]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 28100.
+
+LaTeX Info: Redefining \. on input line 28111.
+LaTeX Info: Redefining \% on input line 28111.
+LaTeX Info: Redefining \. on input line 28111.
+LaTeX Info: Redefining \% on input line 28111.
+[392]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 28148.
+
+LaTeX Info: Redefining \. on input line 28173.
+LaTeX Info: Redefining \% on input line 28173.
+LaTeX Info: Redefining \. on input line 28173.
+LaTeX Info: Redefining \% on input line 28173.
+[393]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 28195.
+
+LaTeX Info: Redefining \. on input line 28235.
+LaTeX Info: Redefining \% on input line 28235.
+LaTeX Info: Redefining \. on input line 28235.
+LaTeX Info: Redefining \% on input line 28235.
+[394]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 28242.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 28287.
+
+LaTeX Info: Redefining \. on input line 28295.
+LaTeX Info: Redefining \% on input line 28295.
+LaTeX Info: Redefining \. on input line 28295.
+LaTeX Info: Redefining \% on input line 28295.
+[395]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 28343.
+
+LaTeX Info: Redefining \. on input line 28354.
+LaTeX Info: Redefining \% on input line 28354.
+LaTeX Info: Redefining \. on input line 28354.
+LaTeX Info: Redefining \% on input line 28354.
+[396]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 28399.
+
+LaTeX Info: Redefining \. on input line 28410.
+LaTeX Info: Redefining \% on input line 28410.
+LaTeX Info: Redefining \. on input line 28410.
+LaTeX Info: Redefining \% on input line 28410.
+[397]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 28447.
+
+LaTeX Info: Redefining \. on input line 28472.
+LaTeX Info: Redefining \% on input line 28472.
+LaTeX Info: Redefining \. on input line 28472.
+LaTeX Info: Redefining \% on input line 28472.
+[398]
+Overfull \hbox (8.40446pt too wide) in paragraph at lines 28502--28503
+[]$ \OT1/cmr/m/it/10 pue-de ex-ten-der-se pa-ra so-por-tar una su-ce-si^^Son es
+-ta-cio-na-ria de va-ria-bles alea-to-rias $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 
+= []$\OT1/cmr/m/it/10 ,
+ []
+
+LaTeX Info: Redefining \. on input line 28533.
+LaTeX Info: Redefining \% on input line 28533.
+[399]
+Overfull \hbox (8.40446pt too wide) in paragraph at lines 28578--28579
+[]$ \OT1/cmr/m/it/10 pue-de ex-ten-der-se pa-ra so-por-tar una su-ce-si^^Son es
+-ta-cio-na-ria de va-ria-bles alea-to-rias $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 
+= []$\OT1/cmr/m/it/10 ,
+ []
+
+LaTeX Info: Redefining \. on input line 28597.
+LaTeX Info: Redefining \% on input line 28597.
+LaTeX Info: Redefining \. on input line 28597.
+LaTeX Info: Redefining \% on input line 28597.
+[400]
+Overfull \hbox (8.40446pt too wide) in paragraph at lines 28647--28648
+[]$ \OT1/cmr/m/it/10 pue-de ex-ten-der-se pa-ra so-por-tar una su-ce-si^^Son es
+-ta-cio-na-ria de va-ria-bles alea-to-rias $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 
+= []$\OT1/cmr/m/it/10 ,
+ []
+
+LaTeX Info: Redefining \. on input line 28659.
+LaTeX Info: Redefining \% on input line 28659.
+LaTeX Info: Redefining \. on input line 28659.
+LaTeX Info: Redefining \% on input line 28659.
+[401]
+LaTeX Info: Redefining \. on input line 28726.
+LaTeX Info: Redefining \% on input line 28726.
+LaTeX Info: Redefining \. on input line 28726.
+LaTeX Info: Redefining \% on input line 28726.
+ [402]
+LaTeX Info: Redefining \. on input line 28788.
+LaTeX Info: Redefining \% on input line 28788.
+LaTeX Info: Redefining \. on input line 28788.
+LaTeX Info: Redefining \% on input line 28788.
+ [403]
+LaTeX Info: Redefining \. on input line 28858.
+LaTeX Info: Redefining \% on input line 28858.
+LaTeX Info: Redefining \. on input line 28858.
+LaTeX Info: Redefining \% on input line 28858.
+ [404]
+LaTeX Info: Redefining \. on input line 28924.
+LaTeX Info: Redefining \% on input line 28924.
+LaTeX Info: Redefining \. on input line 28924.
+LaTeX Info: Redefining \% on input line 28924.
+ [405]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 28942.
+
+LaTeX Info: Redefining \. on input line 28986.
+LaTeX Info: Redefining \% on input line 28986.
+LaTeX Info: Redefining \. on input line 28986.
+LaTeX Info: Redefining \% on input line 28986.
+[406]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 29009.
+
+LaTeX Info: Redefining \. on input line 29049.
+LaTeX Info: Redefining \% on input line 29049.
+LaTeX Info: Redefining \. on input line 29049.
+LaTeX Info: Redefining \% on input line 29049.
+[407]
+LaTeX Info: Redefining \. on input line 29118.
+LaTeX Info: Redefining \% on input line 29118.
+LaTeX Info: Redefining \. on input line 29118.
+LaTeX Info: Redefining \% on input line 29118.
+ [408]
+LaTeX Info: Redefining \. on input line 29192.
+LaTeX Info: Redefining \% on input line 29192.
+LaTeX Info: Redefining \. on input line 29192.
+LaTeX Info: Redefining \% on input line 29192.
+ [409]
+LaTeX Info: Redefining \. on input line 29271.
+LaTeX Info: Redefining \% on input line 29271.
+LaTeX Info: Redefining \. on input line 29271.
+LaTeX Info: Redefining \% on input line 29271.
+ [410]
+LaTeX Info: Redefining \. on input line 29348.
+LaTeX Info: Redefining \% on input line 29348.
+LaTeX Info: Redefining \. on input line 29348.
+LaTeX Info: Redefining \% on input line 29348.
+ [411]
+LaTeX Info: Redefining \. on input line 29417.
+LaTeX Info: Redefining \% on input line 29417.
+LaTeX Info: Redefining \. on input line 29417.
+LaTeX Info: Redefining \% on input line 29417.
+ [412]
+LaTeX Info: Redefining \. on input line 29497.
+LaTeX Info: Redefining \% on input line 29497.
+LaTeX Info: Redefining \. on input line 29497.
+LaTeX Info: Redefining \% on input line 29497.
+ [413]
+LaTeX Info: Redefining \. on input line 29570.
+LaTeX Info: Redefining \% on input line 29570.
+LaTeX Info: Redefining \. on input line 29570.
+LaTeX Info: Redefining \% on input line 29570.
+ [414]
+LaTeX Info: Redefining \. on input line 29655.
+LaTeX Info: Redefining \% on input line 29655.
+LaTeX Info: Redefining \. on input line 29655.
+LaTeX Info: Redefining \% on input line 29655.
+ [415]
+LaTeX Info: Redefining \. on input line 29727.
+LaTeX Info: Redefining \% on input line 29727.
+LaTeX Info: Redefining \. on input line 29727.
+LaTeX Info: Redefining \% on input line 29727.
+ [416]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 29737.
+
+LaTeX Info: Redefining \. on input line 29789.
+LaTeX Info: Redefining \% on input line 29789.
+LaTeX Info: Redefining \. on input line 29789.
+LaTeX Info: Redefining \% on input line 29789.
+[417]
+LaTeX Info: Redefining \. on input line 29870.
+LaTeX Info: Redefining \% on input line 29870.
+LaTeX Info: Redefining \. on input line 29870.
+LaTeX Info: Redefining \% on input line 29870.
+ [418]
+LaTeX Info: Redefining \. on input line 29952.
+LaTeX Info: Redefining \% on input line 29952.
+LaTeX Info: Redefining \. on input line 29952.
+LaTeX Info: Redefining \% on input line 29952.
+ [419]
+LaTeX Info: Redefining \. on input line 30025.
+LaTeX Info: Redefining \% on input line 30025.
+LaTeX Info: Redefining \. on input line 30025.
+LaTeX Info: Redefining \% on input line 30025.
+ [420]
+LaTeX Info: Redefining \. on input line 30107.
+LaTeX Info: Redefining \% on input line 30107.
+LaTeX Info: Redefining \. on input line 30107.
+LaTeX Info: Redefining \% on input line 30107.
+ [421]
+LaTeX Info: Redefining \. on input line 30177.
+LaTeX Info: Redefining \% on input line 30177.
+LaTeX Info: Redefining \. on input line 30177.
+LaTeX Info: Redefining \% on input line 30177.
+ [422]
+LaTeX Info: Redefining \. on input line 30267.
+LaTeX Info: Redefining \% on input line 30267.
+LaTeX Info: Redefining \. on input line 30267.
+LaTeX Info: Redefining \% on input line 30267.
+ [423]
+LaTeX Info: Redefining \. on input line 30331.
+LaTeX Info: Redefining \% on input line 30331.
+LaTeX Info: Redefining \. on input line 30331.
+LaTeX Info: Redefining \% on input line 30331.
+ [424]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 30358.
+
+LaTeX Info: Redefining \. on input line 30394.
+LaTeX Info: Redefining \% on input line 30394.
+LaTeX Info: Redefining \. on input line 30394.
+LaTeX Info: Redefining \% on input line 30394.
+[425]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 30404.
+
+LaTeX Info: Redefining \. on input line 30450.
+LaTeX Info: Redefining \% on input line 30450.
+LaTeX Info: Redefining \. on input line 30450.
+LaTeX Info: Redefining \% on input line 30450.
+[426]
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 30
+456.
+
+
+Overfull \hbox (8.40446pt too wide) in paragraph at lines 30456--30457
+[]$ \OT1/cmr/m/it/10 pue-de ex-ten-der-se pa-ra so-por-tar una su-ce-si^^Son es
+-ta-cio-na-ria de va-ria-bles alea-to-rias $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 
+= []$\OT1/cmr/m/it/10 ,
+ []
+
+LaTeX Info: Redefining \. on input line 30509.
+LaTeX Info: Redefining \% on input line 30509.
+[427]
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 30
+566.
+
+
+Overfull \hbox (8.40446pt too wide) in paragraph at lines 30566--30567
+[]$ \OT1/cmr/m/it/10 pue-de ex-ten-der-se pa-ra so-por-tar una su-ce-si^^Son es
+-ta-cio-na-ria de va-ria-bles alea-to-rias $\OML/cmm/m/it/10 R \OT1/cmr/m/n/10 
+= []$\OT1/cmr/m/it/10 ,
+ []
+
+LaTeX Info: Redefining \. on input line 30581.
+LaTeX Info: Redefining \% on input line 30581.
+[428]
+LaTeX Info: Redefining \. on input line 30645.
+LaTeX Info: Redefining \% on input line 30645.
+ [429] (./bibliografia.tex
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+ [430]
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
+ [431]
+LaTeX Info: Redefining \. on input line 132.
+LaTeX Info: Redefining \% on input line 132.
+LaTeX Info: Redefining \. on input line 132.
+LaTeX Info: Redefining \% on input line 132.
+ [432]
+Underfull \hbox (badness 10000) in paragraph at lines 138--139
+[]\OT1/cmr/m/n/10 Practical Gui-de to Lo-gis-tic Re-gres-sion in R on To-wards 
+Da-ta Scien-ce: []$\OT1/cmtt/m/n/10 https : / /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
+[]\OT1/cmr/m/n/10 Multinomial Lo-gis-tic Re-gres-sion on Da-ta-Camp: []$\OT1/cm
+tt/m/n/10 https : / / www . datacamp . com / community /
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Rouche})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.169 \bibitem{Rouche}
+                       I.J.B.F. Adan, J.S.H. van Leeuwaarden, and E.M.M. Win...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Asmussen
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.172 \bibitem{Asmussen}
+                         Asmussen Soren, Applied Probability and
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Bhat}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.178 \bibitem{Bhat}
+                     Bhat Narayan, An Introduction to Queueing Theory
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Boxma}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.181 \bibitem{Boxma}
+                      Boxma J. O., Analysis and Optimization of Polling
+pdfTeX warning (ext4): destination with the same identifier (name{cite.BoonMeiW
+inands}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.189 \bibitem{BoonMeiWinands}
+                               Boon M.A.A., Van der Mei R.D.  and
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Borovkov
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.192 \bibitem{Borovkov}
+                         Borovkov. A. A. and Schassberger R., Ergodicity
+pdfTeX warning (ext4): destination with the same identifier (name{cite.BosBoon}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.197 \bibitem{BosBoon}
+                       Laurent van den Bos and Marko Boon, Networks of Polli...
+LaTeX Info: Redefining \. on input line 199.
+LaTeX Info: Redefining \% on input line 199.
+LaTeX Info: Redefining \. on input line 199.
+LaTeX Info: Redefining \% on input line 199.
+[433]
+pdfTeX warning (ext4): destination with the same identifier (name{cite.HookHee}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.205 \bibitem{HookHee}
+                        Chee-Hook Ng. y Boon-Hee Soong, Queueing
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Chen}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.209 \bibitem{Chen}
+                     Chen H., Fluid Approximations and Stability of
+pdfTeX warning (ext4): destination with the same identifier (name{cite.CooperII
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.216 \bibitem{CooperII}
+                         R.B. Cooper, Queues served in cyclic order: waiting...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Dai}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.222 \bibitem{Dai}
+                    Dai Jean G., On positive Harris Recurrence of Multiclass...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.DaiSean}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.226 \bibitem{DaiSean}
+                        Dai Jim G. and Meyn Sean P., Stability and Convergen...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.DaiWeiss
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.231 \bibitem{DaiWeiss}
+                        
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Daley68}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.236 \bibitem{Daley68}
+                        D.J. Daley, The correlation structure of the output ...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Davis}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.239 \bibitem{Davis}
+                      Davis, M. H. A., Piecewise Deterministic Markov
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Down}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.244 \bibitem{Down}
+                     Down D., On the Stability of Polling Models with Multip...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Daley68}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.247 \bibitem{Daley68}
+                        D.J. Daley, The correlation structure of the output ...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Disney})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.249 \bibitem{Disney}
+                       Ralpjh L. Disney, Robert L. Farrell and Paulo Renato ...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Eisenber
+g}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.254 \bibitem{Eisenberg}
+                          M. Eisenberg, Queues with periodic service and cha...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.FrickerJ
+aibi}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.261 \bibitem{FrickerJaibi}
+                            
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Stabilit
+y}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.266 \bibitem{Stability}
+                         
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Getoor})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.275 \bibitem{Getoor}
+                       Getoor R. K., Transience and recurrence of
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Gut}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.279 \bibitem{Gut}
+                    Gut A., Stopped Random Walks: Limit Theorems and
+pdfTeX warning (ext4): destination with the same identifier (name{cite.HookHee}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.286 \bibitem{HookHee}
+                        Chee-Hook Ng. y Boon-Hee Soong, Queueing
+pdfTeX warning (ext4): destination with the same identifier (name{cite.KaspiMan
+delbaum}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.301 \bibitem{KaspiMandelbaum}
+                                Kaspi H. and Mandelbaum A., Regenerative Clo...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Konheim}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.305 \bibitem{Konheim}
+                        A.G. Konheim, H. Levy, M.M. Srinivasan, Descendant s...
+LaTeX Info: Redefining \. on input line 309.
+LaTeX Info: Redefining \% on input line 309.
+LaTeX Info: Redefining \. on input line 309.
+LaTeX Info: Redefining \% on input line 309.
+[434]
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Kleinroc
+k}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.309 \bibitem{Kleinrock}
+                          Leonard Kleinrock, Theory, Volume 1, Queueing Syst...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Konheim}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.312 \bibitem{Konheim}
+                        A. G. Konheim, h. Levy and M. M. Srinivasan. Descend...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Lang}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.319 \bibitem{Lang}
+                     Serge Lang, Calculus of Several Variables, Addison-Wesl...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.LevySidi
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.321 \bibitem{LevySidi}
+                        
+pdfTeX warning (ext4): destination with the same identifier (name{cite.MeiBorst
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.328 \bibitem{MeiBorst}
+                         van der Mei, R.D. and Borst, S. C., Analysis of Mul...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.MeynTwee
+die2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.339 \bibitem{MeynTweedie2}
+                             Meyn S. P. and Tweedie R. L., Markov Chains and...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.MeynDown
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.342 \bibitem{MeynDown}
+                         Meyn, S.P. and Down, D., Stability of Generalized J...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.TesisRou
+bos}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.362 \bibitem{TesisRoubos}
+                           
+pdfTeX warning (ext4): destination with the same identifier (name{cite.RepTec})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.372 \bibitem{RepTec}
+                      
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Semenova
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.376 \bibitem{Semenova}
+                        
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Serfozo}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.379 \bibitem{Serfozo}
+                        Richard Serfozo, Basics of Applied Stochastic Proces...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Sharpe})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.382 \bibitem{Sharpe}
+                       Sharpe Michael , General Theory of Markov Processes. ...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Sigma}) 
+has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.386 \bibitem{Sigma}
+                      Sigman Karl, The Stability of Open Queueing
+pdfTeX warning (ext4): destination with the same identifier (name{cite.SidiLevy
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.390 \bibitem{SidiLevy1}
+                          Sidi M.  and Levy H.,  Customer Routing in Polling...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.SidiLevy
+2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.394 \bibitem{SidiLevy2}
+                          Sidi M.  and Levy H., Polling Systems with Simulta...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Sigman2}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.397 \bibitem{Sigman2}
+                        Karl Sigman, Hermann Thorisson and Ronald W. Wolff, ...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Stidham}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.401 \bibitem{Stidham}
+                        Shaler Stidham, Jr., Regenerative Processes in the t...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.TakagiI}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.409 \bibitem{TakagiI}
+                        Takagi H. and Kleinrock, Analysis of Polling Systems...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Takagi})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.411 \bibitem{Takagi}
+                      Takagi Hideaki, Queueing Analysis of Polling Models, A...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Thorisso
+n}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.412 \bibitem{Thorisson}
+                          Hermann Thorisson, Coupling, Stationarity, and Reg...
+
+pdfTeX warning (ext4): destination with the same identifier (name{cite.Winands}
+) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.422 \bibitem{Winands}
+                        E.M.M. Winands, I.J.B.F. Adan adn G.J. van Houtum, M...
+LaTeX Info: Redefining \. on input line 437.
+LaTeX Info: Redefining \% on input line 437.
+LaTeX Info: Redefining \. on input line 437.
+LaTeX Info: Redefining \% on input line 437.
+[435])
+LaTeX Info: Redefining \. on input line 30673.
+LaTeX Info: Redefining \% on input line 30673.
+LaTeX Info: Redefining \. on input line 30673.
+LaTeX Info: Redefining \% on input line 30673.
+ [436]
+runsystem(makeindex 0-RegenerativeRegenerationProcesses.idx)...executed safely 
+(allowed).
+
+ (./0-RegenerativeRegenerationProcesses.ind) [437
+
+]
+(./0-RegenerativeRegenerationProcesses.aux
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `0-RegenerativeRegenerationProcesses.out' has
+ not changed.
+(rerunfilecheck)             Checksum: 7FDCB5E730299BC76F48E5D06E7F267E;37480.
+ ) 
+Here is how much of TeX's memory you used:
+ 20879 strings out of 474116
+ 300163 string characters out of 5743683
+ 1958187 words of memory out of 5000000
+ 38477 multiletter control sequences out of 15000+600000
+ 570665 words of font info for 82 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,14n,84p,807b,786s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
+cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
+l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
+texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
+xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texli
+ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/
+2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/202
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2024/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/f
+onts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-di
+st/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/texlive/2024/texmf
+-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on 0-RegenerativeRegenerationProcesses.pdf (437 pages, 2305179 b
+ytes).
+PDF statistics:
+ 8434 PDF objects out of 8907 (max. 8388607)
+ 7858 compressed objects within 79 object streams
+ 4528 named destinations out of 5155 (max. 500000)
+ 1185 words of extra memory for PDF output out of 10000 (max. 10000000)
+
