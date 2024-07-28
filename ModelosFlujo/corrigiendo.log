@@ -1,0 +1,6651 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  20 JUL 2024 14:51
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**corrigiendo.tex
+(./corrigiendo.tex
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2018/02/14 3.18 The Babel package
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2018/02/14 3.18 Babel switching mechanism
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2018/02/14 3.18 Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count89
+)
+\es@quottoks=\toks16
+\es@quotdepth=\count90
+Package babel Info: Making " an active character on input line 561.
+Package babel Info: Making . an active character on input line 662.
+Package babel Info: Making < an active character on input line 707.
+Package babel Info: Making > an active character on input line 707.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen104
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks18
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks19
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks20
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks27
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/03/24 v5.7 Page Geometry
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks28
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count103
+\Gm@cntv=\count104
+\c@Gm@tempcnt=\count105
+\Gm@bindingoffset=\dimen113
+\Gm@wd@mp=\dimen114
+\Gm@odd@mp=\dimen115
+\Gm@even@mp=\dimen116
+\Gm@layoutwidth=\dimen117
+\Gm@layoutheight=\dimen118
+\Gm@layouthoffset=\dimen119
+\Gm@layoutvoffset=\dimen120
+\Gm@dimlist=\toks29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen121
+\Hy@linkcounter=\count106
+\Hy@pagecounter=\count107
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count108
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count109
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen122
+\Fld@menulength=\count110
+\Field@Width=\dimen123
+\Fld@charsize=\dimen124
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count111
+\c@Item=\count112
+\c@Hfootnote=\count113
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
+\Fld@listcount=\count114
+\c@bookmark@seq@number=\count115
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip49
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip50
+\f@nch@O@elh=\skip51
+\f@nch@O@erh=\skip52
+\f@nch@O@olh=\skip53
+\f@nch@O@orh=\skip54
+\f@nch@O@elf=\skip55
+\f@nch@O@erf=\skip56
+\f@nch@O@olf=\skip57
+\f@nch@O@orf=\skip58
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box28
+\beforetitleunit=\skip59
+\aftertitleunit=\skip60
+\ttl@plus=\dimen125
+\ttl@minus=\dimen126
+\ttl@toksa=\toks30
+\titlewidth=\dimen127
+\titlewidthlast=\dimen128
+\titlewidthfirst=\dimen129
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count116
+\lst@gtempboxa=\box29
+\lst@token=\toks31
+\lst@length=\count117
+\lst@currlwidth=\dimen130
+\lst@column=\count118
+\lst@pos=\count119
+\lst@lostspace=\dimen131
+\lst@width=\dimen132
+\lst@newlines=\count120
+\lst@lineno=\count121
+\lst@maxwidth=\dimen133
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count122
+\lst@skipnumbers=\count123
+\lst@framebox=\box30
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen134
+\Gin@req@width=\dimen135
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2018/04/01 v1.8r multicolumn formatting (FMi)
+\c@tracingmulticols=\count124
+\mult@box=\box31
+\multicol@leftmargin=\dimen136
+\c@unbalance=\count125
+\c@collectmore=\count126
+\doublecol@number=\count127
+\multicoltolerance=\count128
+\multicolpretolerance=\count129
+\full@width=\dimen137
+\page@free=\dimen138
+\premulticols=\dimen139
+\postmulticols=\dimen140
+\multicolsep=\skip61
+\multicolbaselineskip=\skip62
+\partial@page=\box32
+\last@line=\box33
+\maxbalancingoverflow=\dimen141
+\mult@rightbox=\box34
+\mult@grightbox=\box35
+\mult@gfirstbox=\box36
+\mult@firstbox=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\c@columnbadness=\count130
+\c@finalcolumnbadness=\count131
+\last@try=\dimen142
+\multicolovershoot=\dimen143
+\multicolundershoot=\dimen144
+\mult@nat@firstbox=\box55
+\colbreak@box=\box56
+\mc@col@check@num=\count132
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip63
+\multirow@cntb=\count133
+\multirow@dima=\skip64
+\bigstrutjot=\dimen145
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count134
+\float@exts=\toks32
+\float@box=\box57
+\@float@everytoks=\toks33
+\@floatcapt=\box58
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen146
+\captionmargin@=\dimen147
+\captionwidth=\dimen148
+\caption@tempdima=\dimen149
+\caption@indent=\dimen150
+\caption@parindent=\dimen151
+\caption@hangindent=\dimen152
+)
+\c@ContinuedFloat=\count135
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@KVtest=\count136
+\sf@farskip=\skip65
+\sf@captopadj=\dimen153
+\sf@capskip=\skip66
+\sf@nearskip=\skip67
+\c@subfigure=\count137
+\c@subfigure@save=\count138
+\c@lofdepth=\count139
+\c@subtable=\count140
+\c@subtable@save=\count141
+\c@lotdepth=\count142
+\sf@top=\skip68
+\sf@bottom=\skip69
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count143
+\rotFPtop=\skip70
+\rotFPbot=\skip71
+\rot@float@box=\box59
+\rot@mess@toks=\toks34
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks35
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/anysize/anysize.sty
+Package: anysize 1994/08/13 setting margin sizes
+
+document style option `anysize' loaded
+Michael Salzenberg, Thomas Esser, Dirk Hillbrecht
+Version 1.0, Aug 13, 1994
+\@Leftmargin=\dimen154
+\@Rightmargin=\dimen155
+\@Topmargin=\dimen156
+\@Bottommargin=\dimen157
+)
+\c@Algthm=\count144
+\c@Def=\count145
+\c@Ejem=\count146
+\c@Teo=\count147
+\c@Dem=\count148
+\c@Note=\count149
+\c@Sol=\count150
+\c@Prop=\count151
+\c@Cor=\count152
+\c@Col=\count153
+\c@Coro=\count154
+\c@Lemma=\count155
+\c@Lem=\count156
+\c@Lema=\count157
+\c@Sup=\count158
+\c@Assumption=\count159
+\c@Remark=\count160
+\c@Condition=\count161
+\c@Theorem=\count162
+\c@Corollary=\count163
+\c@Ejemplo=\count164
+\c@Example=\count165
+\c@Obs=\count166
+
+No file corrigiendo.aux.
+\openout1 = `corrigiendo.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=674.33032pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box60
+Package hyperref Info: Link coloring OFF on input line 84.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count167
+)
+LaTeX Info: Redefining \ref on input line 84.
+LaTeX Info: Redefining \pageref on input line 84.
+LaTeX Info: Redefining \nameref on input line 84.
+\@outlinefile=\write3
+\openout3 = `corrigiendo.out'.
+
+\c@lstlisting=\count168
+
+(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count169
+\scratchdimen=\dimen158
+\scratchbox=\box61
+\nofMPsegments=\count170
+\nofMParguments=\count171
+\everyMPshowfont=\toks36
+\MPscratchCnt=\count172
+\MPscratchDim=\dimen159
+\MPnumerator=\count173
+\makeMPintoPDFobject=\count174
+\everyMPtoPDFconversion=\toks37
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 87.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 87.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+\tf@toc=\write4
+\openout4 = `corrigiendo.toc'.
+
+
+
+LaTeX Warning: Citation `Sigman2' on page 1 undefined on input line 96.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 110.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 110.
+ [1
+
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Citation `Sigman1' on page 2 undefined on input line 169.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 169.
+
+
+LaTeX Warning: Citation `Sigman2' on page 2 undefined on input line 187.
+
+[2] [3] [4] [5] [6] [7] [8] [9] [10]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 11 undefined on input line 860
+.
+
+[11] [12] [13] [14]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 15 undefined on input line 116
+2.
+
+[15]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 16 undefined on input line 124
+6.
+
+[16] [17]
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1391.
+
+
+
+LaTeX Warning: Reference `NoRenovacion' on page 18 undefined on input line 1408
+.
+
+[18] [19] [20] [21]
+
+LaTeX Warning: Citation `Stidham' on page 22 undefined on input line 1697.
+
+[22]
+
+LaTeX Warning: Reference `Corolario2' on page 23 undefined on input line 1715.
+
+[23]
+Overfull \hbox (18.07896pt too wide) in paragraph at lines 1817--1818
+[]\OT1/cmr/m/n/10 An^^Salogamente que como se hizo para $\OML/cmm/m/it/10 Q[]$\
+OT1/cmr/m/n/10 , ten-emos que para $\OML/cmm/m/it/10 Q[]$ \OT1/cmr/m/n/10 se ti
+ene el in-ter-valo $\OML/cmm/m/it/10 I[] \OT1/cmr/m/n/10 = []$
+ []
+
+[24]
+Overfull \hbox (11.32034pt too wide) in alignment at lines 1883--1902
+ [][][] []
+ []
+
+
+LaTeX Warning: Citation `Daley68' on page 25 undefined on input line 1906.
+
+[25]
+
+LaTeX Warning: Citation `Sigman2' on page 26 undefined on input line 1948.
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 19
+51.
+
+[26]
+
+LaTeX Warning: Citation `Daley68' on page 27 undefined on input line 2018.
+
+[27] [28]
+
+LaTeX Warning: Citation `Sigman2' on page 29 undefined on input line 2221.
+
+[29] [30] [31] [32] [33] [34] [35] [36] [37]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 38 undefined on input line 289
+4.
+
+[38] [39] [40] [41]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 42 undefined on input line 319
+6.
+
+[42]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 43 undefined on input line 328
+0.
+
+[43] [44]
+
+LaTeX Warning: Reference `NoRenovacion' on page 45 undefined on input line 3442
+.
+
+[45] [46] [47]
+
+LaTeX Warning: Citation `Sigman1' on page 48 undefined on input line 3666.
+
+[48]
+
+LaTeX Warning: Citation `Sigman2' on page 49 undefined on input line 3684.
+
+
+LaTeX Warning: Citation `Sigman2' on page 49 undefined on input line 3733.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 3733.
+
+[49]
+
+LaTeX Warning: Citation `Sigman2' on page 50 undefined on input line 3751.
+
+
+LaTeX Warning: Citation `Stidham' on page 50 undefined on input line 3800.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 3800.
+
+[50] [51] [52] [53] [54] [55] [56] [57] [58] [59] [60]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 61 undefined on input line 461
+5.
+
+[61]
+
+LaTeX Warning: Citation `Serfozo' on page 62 undefined on input line 4717.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 4717.
+
+[62] [63] [64]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 65 undefined on input line 490
+7.
+
+[65]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 66 undefined on input line 499
+1.
+
+[66]
+
+LaTeX Warning: Citation `Serfozo' on page 67 undefined on input line 5092.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 5092.
+
+[67] [68] [69]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 70 undefined on input line 529
+0.
+
+[70]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 71 undefined on input line 537
+4.
+
+[71] [72]
+
+LaTeX Warning: Reference `NoRenovacion' on page 73 undefined on input line 5536
+.
+
+[73]
+
+LaTeX Warning: Citation `Serfozo' on page 74 undefined on input line 5602.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 5602.
+
+[74] [75] [76]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 77 undefined on input line 580
+0.
+
+[77]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 78 undefined on input line 588
+2.
+
+[78] [79]
+
+LaTeX Warning: Reference `NoRenovacion' on page 80 undefined on input line 6044
+.
+
+[80]
+
+LaTeX Warning: Citation `Serfozo' on page 81 undefined on input line 6107.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 6107.
+
+[81] [82]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 83 undefined on input line 629
+9.
+
+[83] [84]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 85 undefined on input line 638
+3.
+
+[85] [86]
+
+LaTeX Warning: Reference `NoRenovacion' on page 87 undefined on input line 6545
+.
+
+[87] [88]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 6751--6752
+[][]\OT1/cmr/bx/n/10 Definici^^Son 171. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[89]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 6797--6798
+[][]\OT1/cmr/bx/n/10 Definici^^Son 174. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[90] [91]
+
+LaTeX Warning: Citation `Serfozo' on page 92 undefined on input line 6903.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 6903.
+
+[92] [93] [94]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 95 undefined on input line 708
+8.
+
+[95]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 96 undefined on input line 717
+2.
+
+[96] [97] [98]
+
+LaTeX Warning: Citation `Stidham' on page 99 undefined on input line 7398.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 7398.
+
+[99]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 7427--7428
+[][]\OT1/cmr/bx/n/10 Definici^^Son 197. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+
+LaTeX Warning: Citation `Stidham' on page 100 undefined on input line 7445.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 7445.
+
+[100]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 7474--7475
+[][]\OT1/cmr/bx/n/10 Definici^^Son 200. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[101] [102] [103] [104] [105]
+
+LaTeX Warning: Citation `Stidham' on page 106 undefined on input line 7872.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 7872.
+
+
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 7901--7902
+[][]\OT1/cmr/bx/n/10 Definici^^Son 207. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[106] [107] [108] [109] [110]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 111 undefined on input line 82
+11.
+
+[111]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 112 undefined on input line 82
+95.
+
+[112] [113] [114]
+
+LaTeX Warning: Reference `NoRenovacion' on page 115 undefined on input line 845
+7.
+
+[115] [116] [117] [118]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 119 undefined on input line 87
+87.
+
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 119 undefined on input line 88
+14.
+
+[119]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 120 undefined on input line 89
+09.
+
+[120] [121] [122] [123]
+
+LaTeX Warning: Citation `Sigman2' on page 124 undefined on input line 9173.
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 91
+76.
+
+[124] [125]
+
+LaTeX Warning: Citation `Daley68' on page 126 undefined on input line 9243.
+
+[126]
+
+LaTeX Warning: Citation `Serfozo' on page 127 undefined on input line 9347.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 9347.
+
+[127] [128] [129]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 130 undefined on input line 95
+37.
+
+[130]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 131 undefined on input line 96
+21.
+
+[131] [132] [133] [134] [135] [136]
+
+LaTeX Warning: Citation `Stidham' on page 137 undefined on input line 10028.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 10028.
+
+
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 10057--10058
+[][]\OT1/cmr/bx/n/10 Definici^^Son 279. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[137]
+
+LaTeX Warning: Citation `Stidham' on page 138 undefined on input line 10075.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 10075.
+
+
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 10104--10105
+[][]\OT1/cmr/bx/n/10 Definici^^Son 282. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+
+LaTeX Warning: Citation `Stidham' on page 138 undefined on input line 10121.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 10121.
+
+[138]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 10150--10151
+[][]\OT1/cmr/bx/n/10 Definici^^Son 285. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+
+LaTeX Warning: Citation `Stidham' on page 139 undefined on input line 10167.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 10167.
+
+[139]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 10196--10197
+[][]\OT1/cmr/bx/n/10 Definici^^Son 288. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+
+LaTeX Warning: Citation `Stidham' on page 140 undefined on input line 10214.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 10214.
+
+
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 10243--10244
+[][]\OT1/cmr/bx/n/10 Definici^^Son 291. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[140]
+
+LaTeX Warning: Citation `Stidham' on page 141 undefined on input line 10262.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 10262.
+
+
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 10291--10292
+[][]\OT1/cmr/bx/n/10 Definici^^Son 294. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+
+LaTeX Warning: Citation `Stidham' on page 141 undefined on input line 10308.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 10308.
+
+[141]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 10337--10338
+[][]\OT1/cmr/bx/n/10 Definici^^Son 297. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+
+LaTeX Warning: Citation `Stidham' on page 142 undefined on input line 10354.
+
+[142]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 10383--10384
+[][]\OT1/cmr/bx/n/10 Definici^^Son 300. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[143] [144] [145] [146] [147]
+
+LaTeX Warning: Citation `Stidham' on page 148 undefined on input line 10800.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 10800.
+
+
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 10829--10830
+[][]\OT1/cmr/bx/n/10 Definici^^Son 307. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[148] [149]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 150 undefined on input line 10
+938.
+
+[150] [151] [152] [153]
+
+LaTeX Warning: Citation `Sigman2' on page 154 undefined on input line 11156.
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 11
+159.
+
+[154]
+
+LaTeX Warning: Citation `Daley68' on page 155 undefined on input line 11226.
+
+
+LaTeX Warning: Citation `Sigman1' on page 155 undefined on input line 11269.
+
+[155]
+
+LaTeX Warning: Citation `Sigman2' on page 156 undefined on input line 11287.
+
+[156]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 11365--11366
+[][]\OT1/cmr/bx/n/10 Definici^^Son 321. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[157] [158] [159] [160] [161] [162] [163]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 164 undefined on input line 11
+958.
+
+[164] [165] [166] [167]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 168 undefined on input line 12
+255.
+
+[168]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 169 undefined on input line 12
+339.
+
+[169] [170] [171]
+
+LaTeX Warning: Reference `NoRenovacion' on page 172 undefined on input line 125
+01.
+
+[172] [173]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 12708--12709
+[][]\OT1/cmr/bx/n/10 Definici^^Son 357. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[174]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 12760--12761
+[][]\OT1/cmr/bx/n/10 Definici^^Son 360. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[175]
+
+LaTeX Warning: Reference `Def.Tn' on page 176 undefined on input line 12803.
+
+
+LaTeX Warning: Citation `Stidham' on page 176 undefined on input line 12821.
+
+
+Overfull \hbox (17.54205pt too wide) in paragraph at lines 12826--12828
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, para $\OML/cmm/m/it/10 A \OMS/cmsy/m/n/
+10 2 E$\OT1/cmr/m/it/10 , se tiene que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it/1
+0 , donde $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+[176] [177] [178] [179]
+
+LaTeX Warning: Reference `Def.Tn' on page 180 undefined on input line 13139.
+
+
+LaTeX Warning: Citation `Stidham' on page 180 undefined on input line 13162.
+
+[180]
+
+LaTeX Warning: Reference `Corolario2' on page 181 undefined on input line 13180
+.
+
+[181] [182] [183] [184]
+
+LaTeX Warning: Reference `Eq.Primer.Derivada.Q' on page 185 undefined on input 
+line 13431.
+
+[185] [186] [187]
+
+LaTeX Warning: Reference `Corolario2' on page 188 undefined on input line 13615
+.
+
+[188]
+
+LaTeX Warning: Citation `Sigman1' on page 189 undefined on input line 13672.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 13672.
+
+
+LaTeX Warning: Citation `Sigman2' on page 189 undefined on input line 13690.
+
+[189]
+
+LaTeX Warning: Citation `Stidham' on page 190 undefined on input line 13739.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 13739.
+
+
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 13768--13769
+[][]\OT1/cmr/bx/n/10 Definici^^Son 401. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[190] [191] [192] [193] [194] [195] [196] [197]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 198 undefined on input line 14
+363.
+
+[198] [199] [200] [201]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 202 undefined on input line 14
+665.
+
+[202]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 203 undefined on input line 14
+749.
+
+[203] [204] [205]
+
+LaTeX Warning: Reference `NoRenovacion' on page 206 undefined on input line 149
+11.
+
+[206] [207]
+
+LaTeX Warning: Citation `Stidham' on page 208 undefined on input line 15088.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 15088.
+
+
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 15117--15118
+[][]\OT1/cmr/bx/n/10 Definici^^Son 437. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[208]
+Overfull \hbox (17.54205pt too wide) in paragraph at lines 15147--15149
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, para $\OML/cmm/m/it/10 A \OMS/cmsy/m/n/
+10 2 E$\OT1/cmr/m/it/10 , se tiene que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it/1
+0 , donde $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+[209] [210] [211]
+Overfull \hbox (17.54205pt too wide) in paragraph at lines 15416--15418
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, para $\OML/cmm/m/it/10 A \OMS/cmsy/m/n/
+10 2 E$\OT1/cmr/m/it/10 , se tiene que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it/1
+0 , donde $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+[212] [213] [214] [215]
+Overfull \hbox (17.54205pt too wide) in paragraph at lines 15684--15686
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, para $\OML/cmm/m/it/10 A \OMS/cmsy/m/n/
+10 2 E$\OT1/cmr/m/it/10 , se tiene que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it/1
+0 , donde $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+[216] [217] [218] [219]
+Overfull \hbox (17.54205pt too wide) in paragraph at lines 15955--15957
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, para $\OML/cmm/m/it/10 A \OMS/cmsy/m/n/
+10 2 E$\OT1/cmr/m/it/10 , se tiene que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it/1
+0 , donde $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+[220] [221] [222]
+
+LaTeX Warning: Citation `Sigman2' on page 223 undefined on input line 16228.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 16228.
+
+
+LaTeX Warning: Citation `Sigman2' on page 223 undefined on input line 16246.
+
+[223]
+
+LaTeX Warning: Citation `Stidham' on page 224 undefined on input line 16295.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 16295.
+
+[224]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 16324--16325
+[][]\OT1/cmr/bx/n/10 Definici^^Son 522. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[225] [226] [227] [228] [229] [230] [231] [232]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 233 undefined on input line 16
+919.
+
+[233]
+
+LaTeX Warning: Citation `Serfozo' on page 234 undefined on input line 17023.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 17023.
+
+[234] [235] [236]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 237 undefined on input line 17
+215.
+
+[237]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 238 undefined on input line 17
+299.
+
+[238] [239]
+
+LaTeX Warning: Reference `NoRenovacion' on page 240 undefined on input line 174
+61.
+
+[240] [241]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 17667--17668
+[][]\OT1/cmr/bx/n/10 Definici^^Son 558. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[242]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 17713--17714
+[][]\OT1/cmr/bx/n/10 Definici^^Son 561. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[243] [244]
+
+LaTeX Warning: Citation `Serfozo' on page 245 undefined on input line 17819.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 17819.
+
+[245] [246] [247]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 248 undefined on input line 18
+004.
+
+[248]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 249 undefined on input line 18
+088.
+
+[249] [250] [251]
+
+LaTeX Warning: Citation `Stidham' on page 252 undefined on input line 18315.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 18315.
+
+[252]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 18344--18345
+[][]\OT1/cmr/bx/n/10 Definici^^Son 584. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+
+LaTeX Warning: Citation `Stidham' on page 253 undefined on input line 18362.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 18362.
+
+[253]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 18391--18392
+[][]\OT1/cmr/bx/n/10 Definici^^Son 587. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[254] [255] [256] [257] [258]
+
+LaTeX Warning: Citation `Stidham' on page 259 undefined on input line 18789.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 18789.
+
+
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 18818--18819
+[][]\OT1/cmr/bx/n/10 Definici^^Son 594. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[259] [260]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 261 undefined on input line 18
+927.
+
+[261] [262] [263] [264]
+
+LaTeX Warning: Citation `Sigman2' on page 265 undefined on input line 19145.
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 19
+148.
+
+[265]
+
+LaTeX Warning: Citation `Daley68' on page 266 undefined on input line 19215.
+
+[266]
+
+LaTeX Warning: Citation `Serfozo' on page 267 undefined on input line 19319.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 19319.
+
+[267] [268] [269]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 270 undefined on input line 19
+509.
+
+[270]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 271 undefined on input line 19
+593.
+
+[271] [272] [273] [274] [275] [276] [277] [278]
+
+LaTeX Warning: Citation `Stidham' on page 279 undefined on input line 20212.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 20212.
+
+[279]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 20241--20242
+[][]\OT1/cmr/bx/n/10 Definici^^Son 630. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[280]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 281 undefined on input line 20
+350.
+
+[281] [282] [283] [284]
+
+LaTeX Warning: Citation `Sigman2' on page 285 undefined on input line 20568.
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 20
+571.
+
+[285]
+
+LaTeX Warning: Citation `Daley68' on page 286 undefined on input line 20638.
+
+
+LaTeX Warning: Citation `Sigman1' on page 286 undefined on input line 20682.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 20682.
+
+[286]
+
+LaTeX Warning: Citation `Sigman2' on page 287 undefined on input line 20700.
+
+[287]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 20778--20779
+[][]\OT1/cmr/bx/n/10 Definici^^Son 644. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[288] [289] [290] [291] [292] [293] [294]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 295 undefined on input line 21
+373.
+
+[295] [296] [297] [298]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 299 undefined on input line 21
+675.
+
+[299]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 300 undefined on input line 21
+759.
+
+[300] [301] [302]
+
+LaTeX Warning: Reference `NoRenovacion' on page 303 undefined on input line 219
+21.
+
+[303] [304]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 22127--22128
+[][]\OT1/cmr/bx/n/10 Definici^^Son 680. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[305]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 22179--22180
+[][]\OT1/cmr/bx/n/10 Definici^^Son 683. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+
+LaTeX Warning: Citation `Stidham' on page 306 undefined on input line 22210.
+
+[306]
+
+LaTeX Warning: Reference `Corolario2' on page 307 undefined on input line 22228
+.
+
+[307]
+Overfull \hbox (18.07896pt too wide) in paragraph at lines 22330--22331
+[]\OT1/cmr/m/n/10 An^^Salogamente que como se hizo para $\OML/cmm/m/it/10 Q[]$\
+OT1/cmr/m/n/10 , ten-emos que para $\OML/cmm/m/it/10 Q[]$ \OT1/cmr/m/n/10 se ti
+ene el in-ter-valo $\OML/cmm/m/it/10 I[] \OT1/cmr/m/n/10 = []$
+ []
+
+[308]
+Overfull \hbox (11.32034pt too wide) in alignment at lines 22396--22415
+ [][][] []
+ []
+
+
+LaTeX Warning: Citation `Daley68' on page 309 undefined on input line 22419.
+
+[309]
+
+LaTeX Warning: Citation `Sigman2' on page 310 undefined on input line 22461.
+
+
+LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 22
+464.
+
+[310]
+
+LaTeX Warning: Citation `Daley68' on page 311 undefined on input line 22531.
+
+[311] [312]
+
+LaTeX Warning: Citation `Sigman2' on page 313 undefined on input line 22734.
+
+[313]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 22812--22813
+[][]\OT1/cmr/bx/n/10 Definici^^Son 688. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[314] [315] [316] [317] [318] [319] [320] [321]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 322 undefined on input line 23
+407.
+
+[322] [323] [324] [325]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 326 undefined on input line 23
+704.
+
+[326]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 327 undefined on input line 23
+788.
+
+[327] [328]
+
+LaTeX Warning: Reference `NoRenovacion' on page 329 undefined on input line 239
+50.
+
+[329] [330] [331]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 24157--24158
+[][]\OT1/cmr/bx/n/10 Definici^^Son 724. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[332]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 24209--24210
+[][]\OT1/cmr/bx/n/10 Definici^^Son 727. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[333]
+
+LaTeX Warning: Reference `Def.Tn' on page 334 undefined on input line 24252.
+
+
+LaTeX Warning: Citation `Stidham' on page 334 undefined on input line 24270.
+
+
+Overfull \hbox (17.54205pt too wide) in paragraph at lines 24275--24277
+[]$ \OT1/cmr/m/it/10 a $[]$, es de-cir, para $\OML/cmm/m/it/10 A \OMS/cmsy/m/n/
+10 2 E$\OT1/cmr/m/it/10 , se tiene que $[] \OMS/cmsy/m/n/10 2 F$\OT1/cmr/m/it/1
+0 , donde $[] \OT1/cmr/m/n/10 := [] =:
+ []
+
+[334] [335] [336] [337]
+
+LaTeX Warning: Citation `Sigman2' on page 338 undefined on input line 24549.
+
+[338]
+
+LaTeX Warning: Citation `Sigman2' on page 339 undefined on input line 24640.
+
+[339]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 24718--24719
+[][]\OT1/cmr/bx/n/10 Definici^^Son 757. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[340] [341] [342] [343] [344] [345] [346] [347]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 348 undefined on input line 25
+313.
+
+[348] [349] [350] [351]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 352 undefined on input line 25
+615.
+
+[352]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 353 undefined on input line 25
+699.
+
+[353] [354]
+
+LaTeX Warning: Reference `NoRenovacion' on page 355 undefined on input line 258
+61.
+
+[355] [356] [357]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 26067--26068
+[][]\OT1/cmr/bx/n/10 Definici^^Son 793. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[358]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 26119--26120
+[][]\OT1/cmr/bx/n/10 Definici^^Son 796. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+
+LaTeX Warning: Citation `Sigman1' on page 359 undefined on input line 26142.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 26142.
+
+
+LaTeX Warning: Citation `Sigman2' on page 359 undefined on input line 26160.
+
+[359] [360]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 26238--26239
+[][]\OT1/cmr/bx/n/10 Definici^^Son 801. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[361] [362] [363] [364] [365] [366] [367]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 368 undefined on input line 26
+833.
+
+[368] [369]
+
+LaTeX Warning: Citation `Serfozo' on page 370 undefined on input line 26937.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 26937.
+
+[370] [371]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 372 undefined on input line 27
+135.
+
+[372] [373]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 374 undefined on input line 27
+219.
+
+[374] [375]
+
+LaTeX Warning: Reference `NoRenovacion' on page 376 undefined on input line 273
+81.
+
+[376] [377]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 27588--27589
+[][]\OT1/cmr/bx/n/10 Definici^^Son 837. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[378]
+
+LaTeX Warning: Citation `Sigman1' on page 379 undefined on input line 27604.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 27604.
+
+
+LaTeX Warning: Citation `Sigman2' on page 379 undefined on input line 27622.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 379 undefined on input line 27648.
+
+[379]
+
+LaTeX Warning: Citation `SIGMAN1' on page 380 undefined on input line 27707.
+
+[380]
+
+LaTeX Warning: Citation `SIGMAN1' on page 381 undefined on input line 27784.
+
+[381]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 382 undefined on input line 27
+853.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 382 undefined on input line 27871.
+
+[382]
+
+LaTeX Warning: Citation `Serfozo' on page 383 undefined on input line 27888.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 27888.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 383 undefined on input line 27926.
+
+[383]
+
+LaTeX Warning: Citation `SIGMAN1' on page 384 undefined on input line 28003.
+
+[384]
+
+LaTeX Warning: Citation `SIGMAN1' on page 385 undefined on input line 28079.
+
+[385]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 386 undefined on input line 28
+086.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 386 undefined on input line 28162.
+
+[386]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 387 undefined on input line 28
+170.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 387 undefined on input line 28242.
+
+[387]
+
+LaTeX Warning: Citation `SIGMAN1' on page 388 undefined on input line 28315.
+
+[388]
+
+LaTeX Warning: Reference `NoRenovacion' on page 389 undefined on input line 283
+32.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 389 undefined on input line 28410.
+
+[389]
+
+LaTeX Warning: Citation `SIGMAN1' on page 390 undefined on input line 28471.
+
+[390]
+
+LaTeX Warning: Citation `Stidham' on page 391 undefined on input line 28509.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 28509.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 391 undefined on input line 28534.
+
+[391]
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 28538--28539
+[][]\OT1/cmr/bx/n/10 Definici^^Son 869. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+
+LaTeX Warning: Citation `Stidham' on page 392 undefined on input line 28561.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 28561.
+
+
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 28590--28591
+[][]\OT1/cmr/bx/n/10 Definici^^Son 872. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 392 undefined on input line 28601.
+
+[392]
+
+LaTeX Warning: Citation `Sigman1' on page 393 undefined on input line 28615.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 28615.
+
+
+LaTeX Warning: Citation `Sigman2' on page 393 undefined on input line 28633.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 393 undefined on input line 28661.
+
+[393]
+
+LaTeX Warning: Citation `Stidham' on page 394 undefined on input line 28682.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 28682.
+
+
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 28711--28712
+[][]\OT1/cmr/bx/n/10 Definici^^Son 877. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 394 undefined on input line 28728.
+
+[394]
+
+LaTeX Warning: Citation `Stidham' on page 395 undefined on input line 28739.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 28739.
+
+
+Overfull \hbox (0.58652pt too wide) in paragraph at lines 28768--28769
+[][]\OT1/cmr/bx/n/10 Definici^^Son 880. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^S
+on med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28798--28805
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 395 undefined on input line 28805.
+
+[395]
+Underfull \hbox (badness 10000) in paragraph at lines 28812--28818
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28823--28825
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28832--28834
+
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 396 undefined on input line 28839.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 396 undefined on input line 28843.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 396 undefined on input line 28843.
+
+
+LaTeX Warning: Citation `Dai' on page 396 undefined on input line 28847.
+
+
+LaTeX Warning: Reference `Eq.Punto.Limite' on page 396 undefined on input line 
+28850.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 396 undefined on input line 28851.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 396 undefined on input line 28851.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 396 undefined on input line 28861.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 396 undefined on input line 28861.
+
+
+LaTeX Warning: Citation `Dai' on page 396 undefined on input line 28871.
+
+
+LaTeX Warning: Citation `DaiSean' on page 396 undefined on input line 28893.
+
+
+LaTeX Warning: Citation `Chen' on page 396 undefined on input line 28900.
+
+
+LaTeX Warning: Citation `DaiSean' on page 396 undefined on input line 28901.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 396 undefined on input line 28902.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 396 undefined on input line 28902.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 396 undefined on input line 28909.
+
+[396]
+
+LaTeX Warning: Citation `Down' on page 397 undefined on input line 28915.
+
+
+LaTeX Warning: Citation `Down' on page 397 undefined on input line 28960.
+
+
+LaTeX Warning: Reference `Tma2.1.Down' on page 397 undefined on input line 2896
+6.
+
+
+LaTeX Warning: Reference `Tma2.2.Down' on page 397 undefined on input line 2896
+8.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 397 undefined on input line 28999.
+
+[397]
+
+LaTeX Warning: Citation `Davis' on page 398 undefined on input line 29068.
+
+
+LaTeX Warning: Citation `Davis' on page 398 undefined on input line 29085.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 398 undefined on input line 29103.
+
+[398]
+
+LaTeX Warning: Reference `Eq.1.4.S' on page 399 undefined on input line 29164.
+
+
+LaTeX Warning: Reference `Eq.1.6.S' on page 399 undefined on input line 29182.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 399 undefined on input line 29193.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 399 undefined on input line 29218.
+
+[399]
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 400 undefined on input line 29251.
+
+
+LaTeX Warning: Reference `Def.2.2.S' on page 400 undefined on input line 29270.
+
+
+
+LaTeX Warning: Reference `Eq.2.2.S' on page 400 undefined on input line 29273.
+
+
+LaTeX Warning: Citation `Dai' on page 400 undefined on input line 29280.
+
+
+LaTeX Warning: Citation `Dai' on page 400 undefined on input line 29309.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 400 undefined on input line 29315.
+
+[400]
+Underfull \hbox (badness 10000) in paragraph at lines 29330--29340
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29341--29343
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29360--29362
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 401 undefined on input line 29379.
+
+[401]
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 402 undefined on input line 2940
+8.
+
+
+LaTeX Warning: Citation `Dai' on page 402 undefined on input line 29409.
+
+
+LaTeX Warning: Reference `Eq.4.4' on page 402 undefined on input line 29462.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 402 undefined on input line 29474.
+
+[402]
+
+LaTeX Warning: Citation `Chen' on page 403 undefined on input line 29484.
+
+
+LaTeX Warning: Citation `Chen' on page 403 undefined on input line 29490.
+
+
+LaTeX Warning: Citation `Gut' on page 403 undefined on input line 29499.
+
+
+LaTeX Warning: Citation `Gut' on page 403 undefined on input line 29522.
+
+
+LaTeX Warning: Citation `DaiSean' on page 403 undefined on input line 29536.
+
+
+LaTeX Warning: Citation `DaiSean' on page 403 undefined on input line 29547.
+
+
+LaTeX Warning: Citation `DaiSean' on page 403 undefined on input line 29559.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 403 undefined on input line 29563.
+
+[403]
+
+LaTeX Warning: Citation `DaiSean' on page 404 undefined on input line 29573.
+
+
+LaTeX Warning: Citation `DaiSean' on page 404 undefined on input line 29589.
+
+
+LaTeX Warning: Citation `DaiSean' on page 404 undefined on input line 29599.
+
+
+LaTeX Warning: Citation `DaiSean' on page 404 undefined on input line 29610.
+
+
+LaTeX Warning: Citation `DaiSean' on page 404 undefined on input line 29618.
+
+
+LaTeX Warning: Citation `DaiSean' on page 404 undefined on input line 29636.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 404 undefined on input line 29642.
+
+[404]
+
+LaTeX Warning: Citation `DaiSean' on page 405 undefined on input line 29650.
+
+
+LaTeX Warning: Citation `DaiSean' on page 405 undefined on input line 29662.
+
+
+LaTeX Warning: Citation `DaiSean' on page 405 undefined on input line 29675.
+
+
+LaTeX Warning: Citation `Down' on page 405 undefined on input line 29693.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 405 undefined on input line 29742.
+
+[405]
+
+LaTeX Warning: Citation `RBA' on page 406 undefined on input line 29755.
+
+
+LaTeX Warning: Citation `RBA' on page 406 undefined on input line 29768.
+
+
+LaTeX Warning: Reference `Prop.Markov' on page 406 undefined on input line 2981
+0.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 406 undefined on input line 29858.
+
+[406]
+
+LaTeX Warning: Citation `Davis' on page 407 undefined on input line 29932.
+
+
+LaTeX Warning: Citation `Davis' on page 407 undefined on input line 29942.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 407 undefined on input line 29966.
+
+[407]
+
+LaTeX Warning: Reference `Eq.1.4.S' on page 408 undefined on input line 30007.
+
+
+LaTeX Warning: Reference `Eq.1.6.S' on page 408 undefined on input line 30021.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 408 undefined on input line 30027.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 408 undefined on input line 30054.
+
+[408]
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 409 undefined on input line 30075.
+
+
+LaTeX Warning: Reference `Def.2.2.S' on page 409 undefined on input line 30086.
+
+
+
+LaTeX Warning: Reference `Eq.2.2.S' on page 409 undefined on input line 30088.
+
+
+LaTeX Warning: Citation `Dai' on page 409 undefined on input line 30108.
+
+
+LaTeX Warning: Citation `Dai' on page 409 undefined on input line 30137.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 409 undefined on input line 30141.
+
+[409]
+Underfull \hbox (badness 10000) in paragraph at lines 30158--30168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30169--30171
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30188--30190
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 410 undefined on input line 30207.
+
+[410]
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 411 undefined on input line 3023
+6.
+
+
+LaTeX Warning: Citation `Dai' on page 411 undefined on input line 30237.
+
+
+LaTeX Warning: Reference `Eq.4.4' on page 411 undefined on input line 30290.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 411 undefined on input line 30302.
+
+[411]
+
+LaTeX Warning: Citation `Gut' on page 412 undefined on input line 30313.
+
+
+LaTeX Warning: Citation `DaiSean' on page 412 undefined on input line 30327.
+
+
+LaTeX Warning: Citation `DaiSean' on page 412 undefined on input line 30339.
+
+
+LaTeX Warning: Citation `DaiSean' on page 412 undefined on input line 30365.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 412 undefined on input line 30370.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 412 undefined on input line 30370.
+
+
+LaTeX Warning: Citation `DaiSean' on page 412 undefined on input line 30380.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 412 undefined on input line 30389.
+
+[412]
+
+LaTeX Warning: Citation `Chen' on page 413 undefined on input line 30409.
+
+
+LaTeX Warning: Citation `Chen' on page 413 undefined on input line 30415.
+
+
+LaTeX Warning: Citation `DaiSean' on page 413 undefined on input line 30422.
+
+
+LaTeX Warning: Citation `DaiSean' on page 413 undefined on input line 30429.
+
+
+LaTeX Warning: Citation `DaiSean' on page 413 undefined on input line 30447.
+
+
+LaTeX Warning: Citation `DaiSean' on page 413 undefined on input line 30461.
+
+
+LaTeX Warning: Citation `DaiSean' on page 413 undefined on input line 30473.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 413 undefined on input line 30483.
+
+[413]
+
+LaTeX Warning: Citation `DaiSean' on page 414 undefined on input line 30486.
+
+
+LaTeX Warning: Citation `Down' on page 414 undefined on input line 30504.
+
+
+LaTeX Warning: Citation `RBA' on page 414 undefined on input line 30564.
+
+
+LaTeX Warning: Citation `RBA' on page 414 undefined on input line 30577.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 414 undefined on input line 30610.
+
+[414]
+
+LaTeX Warning: Reference `Prop.Markov' on page 415 undefined on input line 3061
+9.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 415 undefined on input line 30710.
+
+[415]
+
+LaTeX Warning: Citation `Davis' on page 416 undefined on input line 30722.
+
+
+LaTeX Warning: Citation `Davis' on page 416 undefined on input line 30739.
+
+
+LaTeX Warning: Reference `Eq.1.4.S' on page 416 undefined on input line 30810.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 416 undefined on input line 30811.
+
+[416]
+
+LaTeX Warning: Reference `Eq.1.6.S' on page 417 undefined on input line 30824.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 417 undefined on input line 30830.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 417 undefined on input line 30857.
+
+
+LaTeX Warning: Reference `Def.2.2.S' on page 417 undefined on input line 30868.
+
+
+
+LaTeX Warning: Reference `Eq.2.2.S' on page 417 undefined on input line 30870.
+
+
+LaTeX Warning: Citation `Dai' on page 417 undefined on input line 30879.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 417 undefined on input line 30880.
+
+[417]
+
+LaTeX Warning: Citation `Dai' on page 418 undefined on input line 30908.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30929--30939
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 30940--30942
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 418 undefined on input line 30955.
+
+[418]
+Underfull \hbox (badness 10000) in paragraph at lines 30959--30961
+
+ []
+
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 419 undefined on input line 3100
+7.
+
+
+LaTeX Warning: Citation `Dai' on page 419 undefined on input line 31008.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 419 undefined on input line 31035.
+
+[419]
+
+LaTeX Warning: Citation `Dai' on page 420 undefined on input line 31057.
+
+
+LaTeX Warning: Reference `Eq.4.16' on page 420 undefined on input line 31060.
+
+
+LaTeX Warning: Reference `Eq.MF.1.3a' on page 420 undefined on input line 31061
+.
+
+
+LaTeX Warning: Reference `Eq.MF.6.3a' on page 420 undefined on input line 31061
+.
+
+
+LaTeX Warning: Citation `Dai' on page 420 undefined on input line 31069.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 420 undefined on input line 31084.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 420 undefined on input line 31084.
+
+
+LaTeX Warning: Citation `DaiSean' on page 420 undefined on input line 31095.
+
+
+LaTeX Warning: Citation `Chen' on page 420 undefined on input line 31102.
+
+
+LaTeX Warning: Citation `DaiSean' on page 420 undefined on input line 31103.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 420 undefined on input line 31104.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 420 undefined on input line 31104.
+
+
+LaTeX Warning: Reference `Eq.4.4' on page 420 undefined on input line 31117.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 420 undefined on input line 31127.
+
+[420]
+
+LaTeX Warning: Citation `Chen' on page 421 undefined on input line 31139.
+
+
+LaTeX Warning: Citation `Chen' on page 421 undefined on input line 31145.
+
+
+LaTeX Warning: Citation `Chen' on page 421 undefined on input line 31150.
+
+
+LaTeX Warning: Citation `Gut' on page 421 undefined on input line 31159.
+
+
+LaTeX Warning: Citation `Gut' on page 421 undefined on input line 31182.
+
+
+LaTeX Warning: Citation `DaiSean' on page 421 undefined on input line 31196.
+
+
+LaTeX Warning: Citation `DaiSean' on page 421 undefined on input line 31207.
+
+
+LaTeX Warning: Citation `DaiSean' on page 421 undefined on input line 31219.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 421 undefined on input line 31223.
+
+[421]
+
+LaTeX Warning: Citation `DaiSean' on page 422 undefined on input line 31233.
+
+
+LaTeX Warning: Citation `DaiSean' on page 422 undefined on input line 31248.
+
+
+LaTeX Warning: Citation `DaiSean' on page 422 undefined on input line 31258.
+
+
+LaTeX Warning: Citation `DaiSean' on page 422 undefined on input line 31268.
+
+
+LaTeX Warning: Citation `DaiSean' on page 422 undefined on input line 31275.
+
+
+LaTeX Warning: Citation `DaiSean' on page 422 undefined on input line 31293.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 422 undefined on input line 31299.
+
+[422]
+
+LaTeX Warning: Citation `DaiSean' on page 423 undefined on input line 31307.
+
+
+LaTeX Warning: Citation `DaiSean' on page 423 undefined on input line 31319.
+
+
+LaTeX Warning: Citation `DaiSean' on page 423 undefined on input line 31332.
+
+
+LaTeX Warning: Citation `Down' on page 423 undefined on input line 31350.
+
+
+LaTeX Warning: Citation `Dai' on page 423 undefined on input line 31390.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 423 undefined on input line 31395.
+
+[423]
+
+LaTeX Warning: Citation `KaspiMandelbaum' on page 424 undefined on input line 3
+1396.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31395--31397
+
+ []
+
+
+LaTeX Warning: Citation `Davis' on page 424 undefined on input line 31400.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 31400.
+
+
+LaTeX Warning: Citation `DaiSean' on page 424 undefined on input line 31408.
+
+
+LaTeX Warning: Citation `MeynDown' on page 424 undefined on input line 31409.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31437--31441
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31463--31468
+
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 424 undefined on input line 31469.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 424 undefined on input line 31479.
+
+[424]
+
+LaTeX Warning: Citation `Dai' on page 425 undefined on input line 31498.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31519--31529
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31530--31532
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31549--31551
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 425 undefined on input line 31551.
+
+[425]
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 426 undefined on input line 3159
+7.
+
+
+LaTeX Warning: Citation `Dai' on page 426 undefined on input line 31598.
+
+
+LaTeX Warning: Citation `Dai' on page 426 undefined on input line 31647.
+
+
+LaTeX Warning: Reference `Eq.4.16' on page 426 undefined on input line 31650.
+
+
+LaTeX Warning: Reference `Eq.MF.1.3a' on page 426 undefined on input line 31651
+.
+
+
+LaTeX Warning: Reference `Eq.MF.6.3a' on page 426 undefined on input line 31651
+.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 426 undefined on input line 31657.
+
+[426]
+
+LaTeX Warning: Citation `Dai' on page 427 undefined on input line 31659.
+
+
+LaTeX Warning: Citation `DaiSean' on page 427 undefined on input line 31674.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 427 undefined on input line 31703.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 427 undefined on input line 31703.
+
+
+LaTeX Warning: Citation `DaiSean' on page 427 undefined on input line 31714.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 427 undefined on input line 31719.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 427 undefined on input line 31719.
+
+
+LaTeX Warning: Citation `DaiSean' on page 427 undefined on input line 31726.
+
+
+LaTeX Warning: Citation `Chen' on page 427 undefined on input line 31733.
+
+
+LaTeX Warning: Citation `DaiSean' on page 427 undefined on input line 31734.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 427 undefined on input line 31735.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 427 undefined on input line 31735.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 427 undefined on input line 31742.
+
+[427]
+
+LaTeX Warning: Citation `Down' on page 428 undefined on input line 31754.
+
+
+LaTeX Warning: Citation `Down' on page 428 undefined on input line 31756.
+
+
+LaTeX Warning: Citation `DaiSean' on page 428 undefined on input line 31789.
+
+
+LaTeX Warning: Citation `DaiSean' on page 428 undefined on input line 31796.
+
+
+LaTeX Warning: Citation `DaiSean' on page 428 undefined on input line 31814.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 428 undefined on input line 31825.
+
+[428]
+
+LaTeX Warning: Citation `DaiSean' on page 429 undefined on input line 31828.
+
+
+LaTeX Warning: Citation `DaiSean' on page 429 undefined on input line 31840.
+
+
+LaTeX Warning: Citation `DaiSean' on page 429 undefined on input line 31853.
+
+
+LaTeX Warning: Citation `Down' on page 429 undefined on input line 31875.
+
+
+LaTeX Warning: Citation `Down' on page 429 undefined on input line 31892.
+
+
+LaTeX Warning: Reference `Tma.2.1.Down' on page 429 undefined on input line 318
+98.
+
+
+LaTeX Warning: Reference `Tma2.2.Down' on page 429 undefined on input line 3190
+0.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 429 undefined on input line 31919.
+
+[429]
+
+LaTeX Warning: Citation `RBA' on page 430 undefined on input line 31951.
+
+
+LaTeX Warning: Citation `RBA' on page 430 undefined on input line 31964.
+
+
+LaTeX Warning: Reference `Prop.Markov' on page 430 undefined on input line 3200
+6.
+
+
+LaTeX Warning: Reference `Equation.4.4' on page 430 undefined on input line 320
+35.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 430 undefined on input line 32044.
+
+[430]
+
+LaTeX Warning: Citation `Chen' on page 431 undefined on input line 32057.
+
+
+LaTeX Warning: Citation `Chen' on page 431 undefined on input line 32063.
+
+
+LaTeX Warning: Citation `Chen' on page 431 undefined on input line 32068.
+
+
+LaTeX Warning: Citation `Gut' on page 431 undefined on input line 32077.
+
+
+LaTeX Warning: Citation `Gut' on page 431 undefined on input line 32100.
+
+
+LaTeX Warning: Citation `DaiSean' on page 431 undefined on input line 32114.
+
+
+LaTeX Warning: Citation `DaiSean' on page 431 undefined on input line 32125.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 431 undefined on input line 32130.
+
+[431]
+
+LaTeX Warning: Citation `DaiSean' on page 432 undefined on input line 32137.
+
+
+LaTeX Warning: Citation `DaiSean' on page 432 undefined on input line 32151.
+
+
+LaTeX Warning: Citation `DaiSean' on page 432 undefined on input line 32166.
+
+
+LaTeX Warning: Citation `DaiSean' on page 432 undefined on input line 32176.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 432 undefined on input line 32204.
+
+[432]
+
+LaTeX Warning: Citation `Dai' on page 433 undefined on input line 32267.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32300--32303
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 433 undefined on input line 32303.
+
+[433]
+Underfull \hbox (badness 10000) in paragraph at lines 32338--32346
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32347--32350
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32356--32360
+
+ []
+
+
+Overfull \hbox (8.49518pt too wide) in paragraph at lines 32366--32369
+[]$\OML/cmm/m/it/10 ^^X[]; [] ; ^^X[]; ^^Q[]; [] ; ^^Q[]$ \OT1/cmr/m/n/10 son m
+u-tu-a-mente in-de-pen-di-entes y son suce-siones in-de-pen-di-entes e id^^Sent
+icamente
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 434 undefined on input line 32386.
+
+[434]
+
+LaTeX Warning: Citation `DaiSean' on page 435 undefined on input line 32394.
+
+
+LaTeX Warning: Reference `Def.Cto.Peq.' on page 435 undefined on input line 324
+00.
+
+
+LaTeX Warning: Citation `Davis' on page 435 undefined on input line 32410.
+
+
+LaTeX Warning: Reference `Sup3.1.Davis' on page 435 undefined on input line 324
+12.
+
+
+LaTeX Warning: Citation `Davis' on page 435 undefined on input line 32414.
+
+
+LaTeX Warning: Citation `DaiSean' on page 435 undefined on input line 32417.
+
+
+LaTeX Warning: Citation `Sharpe' on page 435 undefined on input line 32420.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32433--32436
+
+ []
+
+
+LaTeX Warning: Citation `Getoor' on page 435 undefined on input line 32463.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 435 undefined on input line 32473.
+
+[435]
+
+LaTeX Warning: Citation `Dai' on page 436 undefined on input line 32488.
+
+
+LaTeX Warning: Citation `Dai' on page 436 undefined on input line 32489.
+
+
+LaTeX Warning: Citation `Dai' on page 436 undefined on input line 32502.
+
+
+LaTeX Warning: Citation `Dai' on page 436 undefined on input line 32507.
+
+
+LaTeX Warning: Reference `Eq.3.1' on page 436 undefined on input line 32512.
+
+
+LaTeX Warning: Citation `MeynTweedie' on page 436 undefined on input line 32518
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32531--32538
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32545--32551
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32556--32558
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 436 undefined on input line 32565.
+
+[436]
+Underfull \hbox (badness 10000) in paragraph at lines 32565--32567
+
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 437 undefined on input line 32572.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 437 undefined on input line 32576.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 437 undefined on input line 32576.
+
+
+LaTeX Warning: Citation `Dai' on page 437 undefined on input line 32580.
+
+
+LaTeX Warning: Reference `Eq.Punto.Limite' on page 437 undefined on input line 
+32583.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 437 undefined on input line 32584.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 437 undefined on input line 32584.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 437 undefined on input line 32594.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 437 undefined on input line 32594.
+
+
+LaTeX Warning: Citation `Dai' on page 437 undefined on input line 32604.
+
+
+LaTeX Warning: Citation `DaiSean' on page 437 undefined on input line 32626.
+
+
+LaTeX Warning: Citation `Chen' on page 437 undefined on input line 32633.
+
+
+LaTeX Warning: Citation `DaiSean' on page 437 undefined on input line 32634.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 437 undefined on input line 32635.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 437 undefined on input line 32635.
+
+
+LaTeX Warning: Citation `Down' on page 437 undefined on input line 32648.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 437 undefined on input line 32669.
+
+[437]
+
+LaTeX Warning: Citation `Down' on page 438 undefined on input line 32693.
+
+
+LaTeX Warning: Reference `Tma2.1.Down' on page 438 undefined on input line 3269
+9.
+
+
+LaTeX Warning: Reference `Tma2.2.Down' on page 438 undefined on input line 3270
+1.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 438 undefined on input line 32764.
+
+[438]
+
+LaTeX Warning: Citation `Davis' on page 439 undefined on input line 32801.
+
+
+LaTeX Warning: Citation `Davis' on page 439 undefined on input line 32818.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 439 undefined on input line 32866.
+
+[439]
+
+LaTeX Warning: Reference `Eq.1.4.S' on page 440 undefined on input line 32897.
+
+
+LaTeX Warning: Reference `Eq.1.6.S' on page 440 undefined on input line 32915.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 440 undefined on input line 32926.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 440 undefined on input line 32977.
+
+[440]
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 441 undefined on input line 32984.
+
+
+LaTeX Warning: Reference `Def.2.2.S' on page 441 undefined on input line 33003.
+
+
+
+LaTeX Warning: Reference `Eq.2.2.S' on page 441 undefined on input line 33006.
+
+
+LaTeX Warning: Citation `Dai' on page 441 undefined on input line 33013.
+
+
+LaTeX Warning: Citation `Dai' on page 441 undefined on input line 33042.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 441 undefined on input line 33058.
+
+[441]
+Underfull \hbox (badness 10000) in paragraph at lines 33063--33073
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33074--33076
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33093--33095
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 442 undefined on input line 33139.
+
+[442]
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 443 undefined on input line 3314
+1.
+
+
+LaTeX Warning: Citation `Dai' on page 443 undefined on input line 33142.
+
+
+LaTeX Warning: Reference `Eq.4.4' on page 443 undefined on input line 33195.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 443 undefined on input line 33214.
+
+[443]
+
+LaTeX Warning: Citation `Chen' on page 444 undefined on input line 33217.
+
+
+LaTeX Warning: Citation `Chen' on page 444 undefined on input line 33223.
+
+
+LaTeX Warning: Citation `Gut' on page 444 undefined on input line 33232.
+
+
+LaTeX Warning: Citation `Gut' on page 444 undefined on input line 33255.
+
+
+LaTeX Warning: Citation `DaiSean' on page 444 undefined on input line 33269.
+
+
+LaTeX Warning: Citation `DaiSean' on page 444 undefined on input line 33280.
+
+
+LaTeX Warning: Citation `DaiSean' on page 444 undefined on input line 33292.
+
+
+LaTeX Warning: Citation `DaiSean' on page 444 undefined on input line 33306.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 444 undefined on input line 33313.
+
+[444]
+
+LaTeX Warning: Citation `DaiSean' on page 445 undefined on input line 33322.
+
+
+LaTeX Warning: Citation `DaiSean' on page 445 undefined on input line 33332.
+
+
+LaTeX Warning: Citation `DaiSean' on page 445 undefined on input line 33343.
+
+
+LaTeX Warning: Citation `DaiSean' on page 445 undefined on input line 33351.
+
+
+LaTeX Warning: Citation `DaiSean' on page 445 undefined on input line 33369.
+
+
+LaTeX Warning: Citation `DaiSean' on page 445 undefined on input line 33383.
+
+
+LaTeX Warning: Citation `DaiSean' on page 445 undefined on input line 33395.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 445 undefined on input line 33401.
+
+[445]
+
+LaTeX Warning: Citation `DaiSean' on page 446 undefined on input line 33408.
+
+
+LaTeX Warning: Citation `Down' on page 446 undefined on input line 33426.
+
+
+LaTeX Warning: Citation `RBA' on page 446 undefined on input line 33488.
+
+
+LaTeX Warning: Citation `RBA' on page 446 undefined on input line 33501.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 446 undefined on input line 33522.
+
+[446]
+
+LaTeX Warning: Reference `Prop.Markov' on page 447 undefined on input line 3354
+3.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 447 undefined on input line 33612.
+
+[447]
+
+LaTeX Warning: Citation `Davis' on page 448 undefined on input line 33665.
+
+
+LaTeX Warning: Citation `Davis' on page 448 undefined on input line 33675.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 448 undefined on input line 33730.
+
+[448]
+
+LaTeX Warning: Reference `Eq.1.4.S' on page 449 undefined on input line 33740.
+
+
+LaTeX Warning: Reference `Eq.1.6.S' on page 449 undefined on input line 33754.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 449 undefined on input line 33760.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 449 undefined on input line 33806.
+
+[449]
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 450 undefined on input line 33808.
+
+
+LaTeX Warning: Reference `Def.2.2.S' on page 450 undefined on input line 33819.
+
+
+
+LaTeX Warning: Reference `Eq.2.2.S' on page 450 undefined on input line 33821.
+
+
+LaTeX Warning: Citation `Dai' on page 450 undefined on input line 33841.
+
+
+LaTeX Warning: Citation `Dai' on page 450 undefined on input line 33870.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 450 undefined on input line 33886.
+
+[450]
+Underfull \hbox (badness 10000) in paragraph at lines 33891--33901
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33902--33904
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33921--33923
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 451 undefined on input line 33967.
+
+[451]
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 452 undefined on input line 3396
+9.
+
+
+LaTeX Warning: Citation `Dai' on page 452 undefined on input line 33970.
+
+
+LaTeX Warning: Reference `Eq.4.4' on page 452 undefined on input line 34023.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 452 undefined on input line 34042.
+
+[452]
+
+LaTeX Warning: Citation `Gut' on page 453 undefined on input line 34046.
+
+
+LaTeX Warning: Citation `DaiSean' on page 453 undefined on input line 34060.
+
+
+LaTeX Warning: Citation `DaiSean' on page 453 undefined on input line 34072.
+
+
+LaTeX Warning: Citation `DaiSean' on page 453 undefined on input line 34098.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 453 undefined on input line 34103.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 453 undefined on input line 34103.
+
+
+LaTeX Warning: Citation `DaiSean' on page 453 undefined on input line 34113.
+
+
+LaTeX Warning: Citation `Chen' on page 453 undefined on input line 34142.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 453 undefined on input line 34146.
+
+[453]
+
+LaTeX Warning: Citation `Chen' on page 454 undefined on input line 34148.
+
+
+LaTeX Warning: Citation `DaiSean' on page 454 undefined on input line 34155.
+
+
+LaTeX Warning: Citation `DaiSean' on page 454 undefined on input line 34162.
+
+
+LaTeX Warning: Citation `DaiSean' on page 454 undefined on input line 34180.
+
+
+LaTeX Warning: Citation `DaiSean' on page 454 undefined on input line 34194.
+
+
+LaTeX Warning: Citation `DaiSean' on page 454 undefined on input line 34206.
+
+
+LaTeX Warning: Citation `DaiSean' on page 454 undefined on input line 34219.
+
+
+LaTeX Warning: Citation `Down' on page 454 undefined on input line 34237.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 454 undefined on input line 34242.
+
+[454]
+
+LaTeX Warning: Citation `RBA' on page 455 undefined on input line 34297.
+
+
+LaTeX Warning: Citation `RBA' on page 455 undefined on input line 34310.
+
+
+LaTeX Warning: Reference `Prop.Markov' on page 455 undefined on input line 3435
+2.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 455 undefined on input line 34374.
+
+[455]
+
+LaTeX Warning: Citation `Davis' on page 456 undefined on input line 34455.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 456 undefined on input line 34471.
+
+[456]
+
+LaTeX Warning: Citation `Davis' on page 457 undefined on input line 34472.
+
+
+LaTeX Warning: Reference `Eq.1.4.S' on page 457 undefined on input line 34543.
+
+
+LaTeX Warning: Reference `Eq.1.6.S' on page 457 undefined on input line 34557.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 457 undefined on input line 34563.
+
+[457]
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 458 undefined on input line 34563.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 458 undefined on input line 34590.
+
+
+LaTeX Warning: Reference `Def.2.2.S' on page 458 undefined on input line 34601.
+
+
+
+LaTeX Warning: Reference `Eq.2.2.S' on page 458 undefined on input line 34603.
+
+
+LaTeX Warning: Citation `Dai' on page 458 undefined on input line 34612.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 458 undefined on input line 34630.
+
+[458]
+
+LaTeX Warning: Citation `Dai' on page 459 undefined on input line 34641.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34662--34672
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34673--34675
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34692--34694
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 459 undefined on input line 34697.
+
+[459]
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 460 undefined on input line 3474
+0.
+
+
+LaTeX Warning: Citation `Dai' on page 460 undefined on input line 34741.
+
+
+LaTeX Warning: Citation `Dai' on page 460 undefined on input line 34790.
+
+
+LaTeX Warning: Reference `Eq.4.16' on page 460 undefined on input line 34793.
+
+
+LaTeX Warning: Reference `Eq.MF.1.3a' on page 460 undefined on input line 34794
+.
+
+
+LaTeX Warning: Reference `Eq.MF.6.3a' on page 460 undefined on input line 34794
+.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 460 undefined on input line 34800.
+
+[460]
+
+LaTeX Warning: Citation `Dai' on page 461 undefined on input line 34802.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 461 undefined on input line 34817.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 461 undefined on input line 34817.
+
+
+LaTeX Warning: Citation `DaiSean' on page 461 undefined on input line 34828.
+
+
+LaTeX Warning: Citation `Chen' on page 461 undefined on input line 34835.
+
+
+LaTeX Warning: Citation `DaiSean' on page 461 undefined on input line 34836.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 461 undefined on input line 34837.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 461 undefined on input line 34837.
+
+
+LaTeX Warning: Reference `Eq.4.4' on page 461 undefined on input line 34850.
+
+
+LaTeX Warning: Citation `Chen' on page 461 undefined on input line 34872.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 461 undefined on input line 34873.
+
+[461]
+
+LaTeX Warning: Citation `Chen' on page 462 undefined on input line 34878.
+
+
+LaTeX Warning: Citation `Chen' on page 462 undefined on input line 34883.
+
+
+LaTeX Warning: Citation `Gut' on page 462 undefined on input line 34892.
+
+
+LaTeX Warning: Citation `Gut' on page 462 undefined on input line 34915.
+
+
+LaTeX Warning: Citation `DaiSean' on page 462 undefined on input line 34929.
+
+
+LaTeX Warning: Citation `DaiSean' on page 462 undefined on input line 34940.
+
+
+LaTeX Warning: Citation `DaiSean' on page 462 undefined on input line 34952.
+
+
+LaTeX Warning: Citation `DaiSean' on page 462 undefined on input line 34966.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 462 undefined on input line 34978.
+
+[462]
+
+LaTeX Warning: Citation `DaiSean' on page 463 undefined on input line 34981.
+
+
+LaTeX Warning: Citation `DaiSean' on page 463 undefined on input line 34991.
+
+
+LaTeX Warning: Citation `DaiSean' on page 463 undefined on input line 35001.
+
+
+LaTeX Warning: Citation `DaiSean' on page 463 undefined on input line 35008.
+
+
+LaTeX Warning: Citation `DaiSean' on page 463 undefined on input line 35026.
+
+
+LaTeX Warning: Citation `DaiSean' on page 463 undefined on input line 35040.
+
+
+LaTeX Warning: Citation `DaiSean' on page 463 undefined on input line 35052.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 463 undefined on input line 35058.
+
+[463]
+
+LaTeX Warning: Citation `DaiSean' on page 464 undefined on input line 35065.
+
+
+LaTeX Warning: Citation `Down' on page 464 undefined on input line 35083.
+
+
+LaTeX Warning: Citation `Dai' on page 464 undefined on input line 35127.
+
+
+LaTeX Warning: Citation `KaspiMandelbaum' on page 464 undefined on input line 3
+5133.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35132--35134
+
+ []
+
+
+LaTeX Warning: Citation `Davis' on page 464 undefined on input line 35137.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 35137.
+
+
+LaTeX Warning: Citation `DaiSean' on page 464 undefined on input line 35145.
+
+
+LaTeX Warning: Citation `MeynDown' on page 464 undefined on input line 35146.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 464 undefined on input line 35147.
+
+[464]
+Underfull \hbox (badness 10000) in paragraph at lines 35174--35178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35200--35205
+
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 465 undefined on input line 35206.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 465 undefined on input line 35233.
+
+[465]
+
+LaTeX Warning: Citation `Dai' on page 466 undefined on input line 35235.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35256--35266
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35267--35269
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35286--35288
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 466 undefined on input line 35293.
+
+[466]
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 467 undefined on input line 3533
+4.
+
+
+LaTeX Warning: Citation `Dai' on page 467 undefined on input line 35335.
+
+
+LaTeX Warning: Citation `Dai' on page 467 undefined on input line 35384.
+
+
+LaTeX Warning: Reference `Eq.4.16' on page 467 undefined on input line 35387.
+
+
+LaTeX Warning: Reference `Eq.MF.1.3a' on page 467 undefined on input line 35388
+.
+
+
+LaTeX Warning: Reference `Eq.MF.6.3a' on page 467 undefined on input line 35388
+.
+
+
+LaTeX Warning: Citation `Dai' on page 467 undefined on input line 35396.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 467 undefined on input line 35397.
+
+[467]
+
+LaTeX Warning: Citation `DaiSean' on page 468 undefined on input line 35411.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 468 undefined on input line 35440.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 468 undefined on input line 35440.
+
+
+LaTeX Warning: Citation `DaiSean' on page 468 undefined on input line 35451.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 468 undefined on input line 35456.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 468 undefined on input line 35456.
+
+
+LaTeX Warning: Citation `DaiSean' on page 468 undefined on input line 35463.
+
+
+LaTeX Warning: Citation `Chen' on page 468 undefined on input line 35470.
+
+
+LaTeX Warning: Citation `DaiSean' on page 468 undefined on input line 35471.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 468 undefined on input line 35472.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 468 undefined on input line 35472.
+
+
+LaTeX Warning: Citation `Down' on page 468 undefined on input line 35491.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 468 undefined on input line 35493.
+
+[468]
+
+LaTeX Warning: Citation `Down' on page 469 undefined on input line 35493.
+
+
+LaTeX Warning: Citation `DaiSean' on page 469 undefined on input line 35526.
+
+
+LaTeX Warning: Citation `DaiSean' on page 469 undefined on input line 35533.
+
+
+LaTeX Warning: Citation `DaiSean' on page 469 undefined on input line 35551.
+
+
+LaTeX Warning: Citation `DaiSean' on page 469 undefined on input line 35565.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 469 undefined on input line 35575.
+
+[469]
+
+LaTeX Warning: Citation `DaiSean' on page 470 undefined on input line 35577.
+
+
+LaTeX Warning: Citation `DaiSean' on page 470 undefined on input line 35590.
+
+
+LaTeX Warning: Citation `Down' on page 470 undefined on input line 35612.
+
+
+LaTeX Warning: Citation `Down' on page 470 undefined on input line 35629.
+
+
+LaTeX Warning: Reference `Tma.2.1.Down' on page 470 undefined on input line 356
+35.
+
+
+LaTeX Warning: Reference `Tma2.2.Down' on page 470 undefined on input line 3563
+7.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 470 undefined on input line 35640.
+
+[470]
+
+LaTeX Warning: Citation `RBA' on page 471 undefined on input line 35689.
+
+
+LaTeX Warning: Citation `RBA' on page 471 undefined on input line 35702.
+
+
+LaTeX Warning: Reference `Prop.Markov' on page 471 undefined on input line 3574
+4.
+
+
+LaTeX Warning: Reference `Equation.4.4' on page 471 undefined on input line 357
+73.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 471 undefined on input line 35780.
+
+[471]
+
+LaTeX Warning: Citation `Chen' on page 472 undefined on input line 35795.
+
+
+LaTeX Warning: Citation `Chen' on page 472 undefined on input line 35801.
+
+
+LaTeX Warning: Citation `Chen' on page 472 undefined on input line 35806.
+
+
+LaTeX Warning: Citation `Gut' on page 472 undefined on input line 35815.
+
+
+LaTeX Warning: Citation `Gut' on page 472 undefined on input line 35838.
+
+
+LaTeX Warning: Citation `DaiSean' on page 472 undefined on input line 35852.
+
+
+LaTeX Warning: Citation `DaiSean' on page 472 undefined on input line 35863.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 472 undefined on input line 35868.
+
+[472]
+
+LaTeX Warning: Citation `DaiSean' on page 473 undefined on input line 35875.
+
+
+LaTeX Warning: Citation `DaiSean' on page 473 undefined on input line 35889.
+
+
+LaTeX Warning: Citation `DaiSean' on page 473 undefined on input line 35904.
+
+
+LaTeX Warning: Citation `DaiSean' on page 473 undefined on input line 35914.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35944--35948
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 473 undefined on input line 35948.
+
+[473]
+Overfull \hbox (8.49518pt too wide) in paragraph at lines 35953--35956
+[]$\OML/cmm/m/it/10 ^^X[]; [] ; ^^X[]; ^^Q[]; [] ; ^^Q[]$ \OT1/cmr/m/n/10 son m
+u-tu-a-mente in-de-pen-di-entes y son suce-siones in-de-pen-di-entes e id^^Sent
+icamente
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 474 undefined on input line 35978.
+
+
+LaTeX Warning: Citation `Sharpe' on page 474 undefined on input line 35982.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 474 undefined on input line 36037.
+
+[474]
+
+LaTeX Warning: Reference `Eq.1.4.S' on page 475 undefined on input line 36062.
+
+
+LaTeX Warning: Reference `Eq.1.6.S' on page 475 undefined on input line 36082.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 475 undefined on input line 36093.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 475 undefined on input line 36153.
+
+[475]
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 476 undefined on input line 36156.
+
+
+LaTeX Warning: Reference `Def.2.2.S' on page 476 undefined on input line 36176.
+
+
+
+LaTeX Warning: Reference `Eq.2.2.S' on page 476 undefined on input line 36179.
+
+
+LaTeX Warning: Citation `RBA' on page 476 undefined on input line 36232.
+
+
+LaTeX Warning: Citation `RBA' on page 476 undefined on input line 36245.
+
+
+LaTeX Warning: Reference `Prop.Markov' on page 476 undefined on input line 3628
+7.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 476 undefined on input line 36305.
+
+[476]
+
+LaTeX Warning: Citation `Davis' on page 477 undefined on input line 36390.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 477 undefined on input line 36396.
+
+[477]
+
+LaTeX Warning: Citation `Davis' on page 478 undefined on input line 36407.
+
+
+LaTeX Warning: Reference `Eq.1.4.S' on page 478 undefined on input line 36478.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 478 undefined on input line 36482.
+
+[478]
+
+LaTeX Warning: Reference `Eq.1.6.S' on page 479 undefined on input line 36492.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 479 undefined on input line 36498.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 479 undefined on input line 36525.
+
+
+LaTeX Warning: Reference `Def.2.2.S' on page 479 undefined on input line 36536.
+
+
+
+LaTeX Warning: Reference `Eq.2.2.S' on page 479 undefined on input line 36538.
+
+
+LaTeX Warning: Citation `Dai' on page 479 undefined on input line 36546.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 479 undefined on input line 36547.
+
+[479]
+
+LaTeX Warning: Citation `Dai' on page 480 undefined on input line 36575.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36596--36606
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36607--36609
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 480 undefined on input line 36622.
+
+[480]
+Underfull \hbox (badness 10000) in paragraph at lines 36626--36628
+
+ []
+
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 481 undefined on input line 3667
+4.
+
+
+LaTeX Warning: Citation `Dai' on page 481 undefined on input line 36675.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 481 undefined on input line 36702.
+
+[481]
+
+LaTeX Warning: Citation `Dai' on page 482 undefined on input line 36724.
+
+
+LaTeX Warning: Reference `Eq.4.16' on page 482 undefined on input line 36727.
+
+
+LaTeX Warning: Reference `Eq.MF.1.3a' on page 482 undefined on input line 36728
+.
+
+
+LaTeX Warning: Reference `Eq.MF.6.3a' on page 482 undefined on input line 36728
+.
+
+
+LaTeX Warning: Citation `Dai' on page 482 undefined on input line 36736.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 482 undefined on input line 36751.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 482 undefined on input line 36751.
+
+
+LaTeX Warning: Citation `DaiSean' on page 482 undefined on input line 36762.
+
+
+LaTeX Warning: Citation `Chen' on page 482 undefined on input line 36769.
+
+
+LaTeX Warning: Citation `DaiSean' on page 482 undefined on input line 36770.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 482 undefined on input line 36771.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 482 undefined on input line 36771.
+
+
+LaTeX Warning: Reference `Eq.4.4' on page 482 undefined on input line 36784.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 482 undefined on input line 36794.
+
+[482]
+
+LaTeX Warning: Citation `Chen' on page 483 undefined on input line 36806.
+
+
+LaTeX Warning: Citation `Chen' on page 483 undefined on input line 36812.
+
+
+LaTeX Warning: Citation `Chen' on page 483 undefined on input line 36817.
+
+
+LaTeX Warning: Citation `Gut' on page 483 undefined on input line 36826.
+
+
+LaTeX Warning: Citation `Gut' on page 483 undefined on input line 36849.
+
+
+LaTeX Warning: Citation `DaiSean' on page 483 undefined on input line 36863.
+
+
+LaTeX Warning: Citation `DaiSean' on page 483 undefined on input line 36874.
+
+
+LaTeX Warning: Citation `DaiSean' on page 483 undefined on input line 36886.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 483 undefined on input line 36890.
+
+[483]
+
+LaTeX Warning: Citation `DaiSean' on page 484 undefined on input line 36900.
+
+
+LaTeX Warning: Citation `DaiSean' on page 484 undefined on input line 36915.
+
+
+LaTeX Warning: Citation `DaiSean' on page 484 undefined on input line 36925.
+
+
+LaTeX Warning: Citation `DaiSean' on page 484 undefined on input line 36936.
+
+
+LaTeX Warning: Citation `DaiSean' on page 484 undefined on input line 36943.
+
+
+LaTeX Warning: Citation `DaiSean' on page 484 undefined on input line 36961.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 484 undefined on input line 36967.
+
+[484]
+
+LaTeX Warning: Citation `DaiSean' on page 485 undefined on input line 36975.
+
+
+LaTeX Warning: Citation `DaiSean' on page 485 undefined on input line 36987.
+
+
+LaTeX Warning: Citation `DaiSean' on page 485 undefined on input line 37000.
+
+
+LaTeX Warning: Citation `Down' on page 485 undefined on input line 37018.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37036--37042
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37043--37046
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 485 undefined on input line 37053.
+
+[485]
+
+LaTeX Warning: Citation `Getoor' on page 486 undefined on input line 37096.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37081--37097
+
+ []
+
+
+Overfull \hbox (18.77869pt too wide) in paragraph at lines 37119--37124
+\OT1/cmr/m/n/10 definiendo. El pro-ceso $\OML/cmm/m/it/10 X$ \OT1/cmr/m/n/10 ev
+olu-ciona en el es-pa-cio de es-ta-dos: $\U/msb/m/n/10 X \OT1/cmr/m/n/10 = \U/m
+sb/m/n/10 Z[] \OMS/cmsy/m/n/10 ^^B \U/msb/m/n/10 R[] \OMS/cmsy/m/n/10 ^^B [][] 
+^^B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37119--37124
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 486 undefined on input line 37135.
+
+[486]
+
+LaTeX Warning: Citation `DaiSean' on page 487 undefined on input line 37154.
+
+
+LaTeX Warning: Reference `Def.Cto.Peq.' on page 487 undefined on input line 371
+60.
+
+
+LaTeX Warning: Citation `Dai' on page 487 undefined on input line 37166.
+
+
+LaTeX Warning: Citation `DaiSean' on page 487 undefined on input line 37166.
+
+
+LaTeX Warning: Citation `Davis' on page 487 undefined on input line 37171.
+
+
+LaTeX Warning: Citation `Davis' on page 487 undefined on input line 37174.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37171--37176
+
+ []
+
+
+LaTeX Warning: Citation `DaiSean' on page 487 undefined on input line 37179.
+
+
+LaTeX Warning: Citation `Sharpe' on page 487 undefined on input line 37182.
+
+
+LaTeX Warning: Citation `Dai' on page 487 undefined on input line 37200.
+
+
+LaTeX Warning: Citation `KaspiMandelbaum' on page 487 undefined on input line 3
+7200.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37199--37201
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 487 undefined on input line 37222.
+
+[487]
+
+LaTeX Warning: Citation `Getoor' on page 488 undefined on input line 37229.
+
+
+LaTeX Warning: Citation `DaiSean' on page 488 undefined on input line 37241.
+
+
+LaTeX Warning: Citation `Dai' on page 488 undefined on input line 37254.
+
+
+LaTeX Warning: Citation `Dai' on page 488 undefined on input line 37255.
+
+
+LaTeX Warning: Citation `Dai' on page 488 undefined on input line 37268.
+
+
+LaTeX Warning: Citation `Dai' on page 488 undefined on input line 37274.
+
+
+LaTeX Warning: Reference `Eq.3.1' on page 488 undefined on input line 37280.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37303--37305
+
+ []
+
+
+LaTeX Warning: Citation `Down' on page 488 undefined on input line 37315.
+
+
+LaTeX Warning: Citation `Down' on page 488 undefined on input line 37320.
+
+
+LaTeX Warning: Citation `Dai' on page 488 undefined on input line 37320.
+
+
+LaTeX Warning: Citation `DaiSean' on page 488 undefined on input line 37320.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37313--37321
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 488 undefined on input line 37321.
+
+[488]
+Underfull \hbox (badness 10000) in paragraph at lines 37326--37328
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37335--37337
+
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 489 undefined on input line 37343.
+
+
+LaTeX Warning: Reference `Eq.Punto.Limite' on page 489 undefined on input line 
+37346.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 489 undefined on input line 37347.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 489 undefined on input line 37347.
+
+
+LaTeX Warning: Citation `Dai' on page 489 undefined on input line 37364.
+
+
+LaTeX Warning: Citation `DaiSean' on page 489 undefined on input line 37386.
+
+
+LaTeX Warning: Citation `DaiSean' on page 489 undefined on input line 37393.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 489 undefined on input line 37394.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 489 undefined on input line 37394.
+
+
+LaTeX Warning: Citation `Down' on page 489 undefined on input line 37407.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 489 undefined on input line 37408.
+
+[489]
+
+LaTeX Warning: Citation `Down' on page 490 undefined on input line 37452.
+
+
+LaTeX Warning: Reference `Tma2.1.Down' on page 490 undefined on input line 3745
+9.
+
+
+LaTeX Warning: Reference `Tma2.2.Down' on page 490 undefined on input line 3746
+2.
+
+
+LaTeX Warning: Reference `Esp.Edos.Down' on page 490 undefined on input line 37
+470.
+
+
+LaTeX Warning: Citation `Dai' on page 490 undefined on input line 37479.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 490 undefined on input line 37490.
+
+[490]
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 491 undefined on input line 3750
+7.
+
+
+LaTeX Warning: Citation `Dai' on page 491 undefined on input line 37508.
+
+
+LaTeX Warning: Citation `Dai' on page 491 undefined on input line 37559.
+
+
+LaTeX Warning: Reference `Eq.Punto.Limite' on page 491 undefined on input line 
+37560.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 491 undefined on input line 37570.
+
+[491]
+
+LaTeX Warning: Citation `Chen' on page 492 undefined on input line 37582.
+
+
+LaTeX Warning: Citation `Gut' on page 492 undefined on input line 37588.
+
+
+LaTeX Warning: Citation `Gut' on page 492 undefined on input line 37611.
+
+
+LaTeX Warning: Citation `DaiSean' on page 492 undefined on input line 37625.
+
+
+LaTeX Warning: Citation `DaiSean' on page 492 undefined on input line 37636.
+
+
+LaTeX Warning: Citation `DaiSean' on page 492 undefined on input line 37648.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 492 undefined on input line 37657.
+
+[492]
+
+LaTeX Warning: Citation `DaiSean' on page 493 undefined on input line 37662.
+
+
+LaTeX Warning: Citation `DaiSean' on page 493 undefined on input line 37678.
+
+
+LaTeX Warning: Citation `DaiSean' on page 493 undefined on input line 37697.
+
+
+LaTeX Warning: Citation `DaiSean' on page 493 undefined on input line 37708.
+
+
+LaTeX Warning: Citation `DaiSean' on page 493 undefined on input line 37717.
+
+
+LaTeX Warning: Citation `DaiSean' on page 493 undefined on input line 37732.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 493 undefined on input line 37743.
+
+[493]
+
+LaTeX Warning: Citation `Down' on page 494 undefined on input line 37751.
+
+
+LaTeX Warning: Reference `Tma2.1.Down' on page 494 undefined on input line 3776
+5.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37765--37767
+
+ []
+
+
+LaTeX Warning: Reference `Prop.5.3.DaiSean' on page 494 undefined on input line
+ 37768.
+
+
+LaTeX Warning: Reference `Prop.5.4.DaiSean' on page 494 undefined on input line
+ 37769.
+
+
+LaTeX Warning: Reference `Tma.6.2' on page 494 undefined on input line 37772.
+
+
+LaTeX Warning: Citation `DaiSean' on page 494 undefined on input line 37775.
+
+
+LaTeX Warning: Citation `DaiSean' on page 494 undefined on input line 37777.
+
+
+LaTeX Warning: Citation `MeynTweedie2' on page 494 undefined on input line 3777
+8.
+
+
+LaTeX Warning: Citation `Dai' on page 494 undefined on input line 37839.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 494 undefined on input line 37840.
+
+[494]
+Overfull \hbox (10.83328pt too wide) in paragraph at lines 37842--37848
+\OT1/cmr/m/it/10 fine como cualquier soluci^^Son $[]$ de las sigu-ientes ecua-c
+iones, donde $[] [] \OT1/cmr/m/n/10 = [][]$
+ []
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 495 undefined on input line 37870.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 495 undefined on input line 37870.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 495 undefined on input line 37886.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 495 undefined on input line 37886.
+
+
+LaTeX Warning: Citation `Chen' on page 495 undefined on input line 37900.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 495 undefined on input line 37902.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 495 undefined on input line 37902.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 495 undefined on input line 37936.
+
+[495]
+
+LaTeX Warning: Citation `MaynDown' on page 496 undefined on input line 37940.
+
+
+LaTeX Warning: Reference `Lema.34.MeynDown' on page 496 undefined on input line
+ 37941.
+
+
+LaTeX Warning: Reference `Tma.5.5' on page 496 undefined on input line 37981.
+
+
+LaTeX Warning: Reference `Tma.6.2' on page 496 undefined on input line 37981.
+
+
+LaTeX Warning: Reference `Tma.6.3' on page 496 undefined on input line 37981.
+
+
+LaTeX Warning: Reference `Tma.6.4' on page 496 undefined on input line 37981.
+
+
+LaTeX Warning: Citation `Dai' on page 496 undefined on input line 38014.
+
+
+Overfull \hbox (0.53273pt too wide) in paragraph at lines 38017--38026
+\OT1/cmr/m/n/10 tiene trayec-to-rias con-tin-uas por la derecha, est definida e
+n $[]$ y est adap-tado a $[]$; $[]$
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 496 undefined on input line 38027.
+
+[496]
+
+LaTeX Warning: Citation `Getoor' on page 497 undefined on input line 38058.
+
+
+LaTeX Warning: Citation `MeynTweedie' on page 497 undefined on input line 38079
+.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 497 undefined on input line 38122.
+
+[497]
+
+LaTeX Warning: Citation `SIGMAN1' on page 498 undefined on input line 38199.
+
+[498]
+
+LaTeX Warning: Reference `Eq.Esp.Estados' on page 499 undefined on input line 3
+8238.
+
+
+LaTeX Warning: Reference `Eq.4.4' on page 499 undefined on input line 38270.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 499 undefined on input line 38276.
+
+[499]
+
+LaTeX Warning: Citation `SIGMAN1' on page 500 undefined on input line 38346.
+
+[500]
+Underfull \hbox (badness 10000) in paragraph at lines 38429--38435
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38436--38439
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 501 undefined on input line 38439.
+
+[501]
+
+LaTeX Warning: Citation `Getoor' on page 502 undefined on input line 38490.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38475--38491
+
+ []
+
+
+Overfull \hbox (18.77869pt too wide) in paragraph at lines 38513--38518
+\OT1/cmr/m/n/10 definiendo. El pro-ceso $\OML/cmm/m/it/10 X$ \OT1/cmr/m/n/10 ev
+olu-ciona en el es-pa-cio de es-ta-dos: $\U/msb/m/n/10 X \OT1/cmr/m/n/10 = \U/m
+sb/m/n/10 Z[] \OMS/cmsy/m/n/10 ^^B \U/msb/m/n/10 R[] \OMS/cmsy/m/n/10 ^^B [][] 
+^^B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38513--38518
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 502 undefined on input line 38529.
+
+[502]
+
+LaTeX Warning: Citation `DaiSean' on page 503 undefined on input line 38548.
+
+
+LaTeX Warning: Reference `Def.Cto.Peq.' on page 503 undefined on input line 385
+54.
+
+
+LaTeX Warning: Citation `Dai' on page 503 undefined on input line 38560.
+
+
+LaTeX Warning: Citation `DaiSean' on page 503 undefined on input line 38560.
+
+
+LaTeX Warning: Citation `Davis' on page 503 undefined on input line 38565.
+
+
+LaTeX Warning: Citation `Davis' on page 503 undefined on input line 38568.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38565--38570
+
+ []
+
+
+LaTeX Warning: Citation `DaiSean' on page 503 undefined on input line 38573.
+
+
+LaTeX Warning: Citation `Sharpe' on page 503 undefined on input line 38576.
+
+
+LaTeX Warning: Citation `Dai' on page 503 undefined on input line 38594.
+
+
+LaTeX Warning: Citation `KaspiMandelbaum' on page 503 undefined on input line 3
+8594.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38593--38595
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 503 undefined on input line 38616.
+
+[503]
+
+LaTeX Warning: Citation `Getoor' on page 504 undefined on input line 38623.
+
+
+LaTeX Warning: Citation `DaiSean' on page 504 undefined on input line 38635.
+
+
+LaTeX Warning: Citation `Dai' on page 504 undefined on input line 38648.
+
+
+LaTeX Warning: Citation `Dai' on page 504 undefined on input line 38649.
+
+
+LaTeX Warning: Citation `Dai' on page 504 undefined on input line 38662.
+
+
+LaTeX Warning: Citation `Dai' on page 504 undefined on input line 38668.
+
+
+LaTeX Warning: Reference `Eq.3.1' on page 504 undefined on input line 38674.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38697--38699
+
+ []
+
+
+LaTeX Warning: Citation `Down' on page 504 undefined on input line 38709.
+
+
+LaTeX Warning: Citation `Down' on page 504 undefined on input line 38714.
+
+
+LaTeX Warning: Citation `Dai' on page 504 undefined on input line 38714.
+
+
+LaTeX Warning: Citation `DaiSean' on page 504 undefined on input line 38714.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38707--38715
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 504 undefined on input line 38715.
+
+[504]
+Underfull \hbox (badness 10000) in paragraph at lines 38720--38722
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38729--38731
+
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 505 undefined on input line 38737.
+
+
+LaTeX Warning: Reference `Eq.Punto.Limite' on page 505 undefined on input line 
+38740.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 505 undefined on input line 38741.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 505 undefined on input line 38741.
+
+
+LaTeX Warning: Citation `Dai' on page 505 undefined on input line 38758.
+
+
+LaTeX Warning: Citation `DaiSean' on page 505 undefined on input line 38780.
+
+
+LaTeX Warning: Citation `DaiSean' on page 505 undefined on input line 38787.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 505 undefined on input line 38788.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 505 undefined on input line 38788.
+
+
+LaTeX Warning: Citation `Down' on page 505 undefined on input line 38801.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 505 undefined on input line 38802.
+
+[505]
+
+LaTeX Warning: Citation `Down' on page 506 undefined on input line 38846.
+
+
+LaTeX Warning: Reference `Tma2.1.Down' on page 506 undefined on input line 3885
+3.
+
+
+LaTeX Warning: Reference `Tma2.2.Down' on page 506 undefined on input line 3885
+6.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38865--38868
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38887--38894
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 506 undefined on input line 38894.
+
+[506]
+Underfull \hbox (badness 10000) in paragraph at lines 38906--38918
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38931--38936
+
+ []
+
+
+LaTeX Warning: Citation `Dai2' on page 507 undefined on input line 38941.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38937--38942
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38943--38949
+
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 507 undefined on input line 38952.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38955--38958
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 507 undefined on input line 38987.
+
+[507]
+
+LaTeX Warning: Citation `Getoor' on page 508 undefined on input line 38992.
+
+
+LaTeX Warning: Citation `MeynTweedie' on page 508 undefined on input line 39007
+.
+
+
+LaTeX Warning: Citation `Dai' on page 508 undefined on input line 39054.
+
+
+LaTeX Warning: Citation `MaynDown' on page 508 undefined on input line 39071.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 508 undefined on input line 39081.
+
+[508]
+
+LaTeX Warning: Reference `Eq.3.8' on page 509 undefined on input line 39095.
+
+
+LaTeX Warning: Reference `Eq.3.11' on page 509 undefined on input line 39095.
+
+
+LaTeX Warning: Citation `Dai2' on page 509 undefined on input line 39115.
+
+
+LaTeX Warning: Citation `DaiSean' on page 509 undefined on input line 39115.
+
+
+Overfull \hbox (8.49518pt too wide) in paragraph at lines 39118--39121
+[]$\OML/cmm/m/it/10 ^^X[]; [] ; ^^X[]; ^^Q[]; [] ; ^^Q[]$ \OT1/cmr/m/n/10 son m
+u-tu-a-mente in-de-pen-di-entes y son suce-siones in-de-pen-di-entes e id^^Sent
+icamente
+ []
+
+
+LaTeX Warning: Citation `MaynDown' on page 509 undefined on input line 39140.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 509 undefined on input line 39175.
+
+[509]
+
+LaTeX Warning: Reference `Tma2.1' on page 510 undefined on input line 39218.
+
+
+LaTeX Warning: Reference `Tma2.2' on page 510 undefined on input line 39220.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39229--39235
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39236--39239
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 510 undefined on input line 39267.
+
+[510]
+
+LaTeX Warning: Citation `Getoor' on page 511 undefined on input line 39289.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39274--39290
+
+ []
+
+
+Overfull \hbox (18.77869pt too wide) in paragraph at lines 39312--39317
+\OT1/cmr/m/n/10 definiendo. El pro-ceso $\OML/cmm/m/it/10 X$ \OT1/cmr/m/n/10 ev
+olu-ciona en el es-pa-cio de es-ta-dos: $\U/msb/m/n/10 X \OT1/cmr/m/n/10 = \U/m
+sb/m/n/10 Z[] \OMS/cmsy/m/n/10 ^^B \U/msb/m/n/10 R[] \OMS/cmsy/m/n/10 ^^B [][] 
+^^B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39312--39317
+
+ []
+
+
+LaTeX Warning: Citation `DaiSean' on page 511 undefined on input line 39347.
+
+
+LaTeX Warning: Reference `Def.Cto.Peq.' on page 511 undefined on input line 393
+53.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 511 undefined on input line 39354.
+
+[511]
+
+LaTeX Warning: Citation `Dai' on page 512 undefined on input line 39359.
+
+
+LaTeX Warning: Citation `DaiSean' on page 512 undefined on input line 39359.
+
+
+LaTeX Warning: Citation `Davis' on page 512 undefined on input line 39364.
+
+
+LaTeX Warning: Citation `Davis' on page 512 undefined on input line 39367.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39364--39369
+
+ []
+
+
+LaTeX Warning: Citation `DaiSean' on page 512 undefined on input line 39372.
+
+
+LaTeX Warning: Citation `Sharpe' on page 512 undefined on input line 39375.
+
+
+LaTeX Warning: Citation `Dai' on page 512 undefined on input line 39393.
+
+
+LaTeX Warning: Citation `KaspiMandelbaum' on page 512 undefined on input line 3
+9393.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39392--39394
+
+ []
+
+
+LaTeX Warning: Citation `Getoor' on page 512 undefined on input line 39422.
+
+
+LaTeX Warning: Citation `DaiSean' on page 512 undefined on input line 39434.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 512 undefined on input line 39444.
+
+[512]
+
+LaTeX Warning: Citation `Dai' on page 513 undefined on input line 39447.
+
+
+LaTeX Warning: Citation `Dai' on page 513 undefined on input line 39448.
+
+
+LaTeX Warning: Citation `Dai' on page 513 undefined on input line 39461.
+
+
+LaTeX Warning: Citation `Dai' on page 513 undefined on input line 39467.
+
+
+LaTeX Warning: Reference `Eq.3.1' on page 513 undefined on input line 39473.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39496--39498
+
+ []
+
+
+LaTeX Warning: Citation `Down' on page 513 undefined on input line 39508.
+
+
+LaTeX Warning: Citation `Down' on page 513 undefined on input line 39513.
+
+
+LaTeX Warning: Citation `Dai' on page 513 undefined on input line 39513.
+
+
+LaTeX Warning: Citation `DaiSean' on page 513 undefined on input line 39513.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39506--39514
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39519--39521
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39528--39530
+
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 513 undefined on input line 39536.
+
+
+LaTeX Warning: Reference `Eq.Punto.Limite' on page 513 undefined on input line 
+39539.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 513 undefined on input line 39540.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 513 undefined on input line 39540.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 513 undefined on input line 39542.
+
+[513]
+
+LaTeX Warning: Citation `Dai' on page 514 undefined on input line 39557.
+
+
+LaTeX Warning: Citation `DaiSean' on page 514 undefined on input line 39579.
+
+
+LaTeX Warning: Citation `DaiSean' on page 514 undefined on input line 39586.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 514 undefined on input line 39587.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 514 undefined on input line 39587.
+
+
+LaTeX Warning: Citation `Down' on page 514 undefined on input line 39600.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 514 undefined on input line 39643.
+
+[514]
+
+LaTeX Warning: Citation `Down' on page 515 undefined on input line 39645.
+
+
+LaTeX Warning: Reference `Tma2.1.Down' on page 515 undefined on input line 3965
+2.
+
+
+LaTeX Warning: Reference `Tma2.2.Down' on page 515 undefined on input line 3965
+5.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39664--39670
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39671--39674
+
+ []
+
+
+LaTeX Warning: Citation `Getoor' on page 515 undefined on input line 39724.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39709--39725
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 515 undefined on input line 39726.
+
+[515]
+Overfull \hbox (18.77869pt too wide) in paragraph at lines 39747--39752
+\OT1/cmr/m/n/10 definiendo. El pro-ceso $\OML/cmm/m/it/10 X$ \OT1/cmr/m/n/10 ev
+olu-ciona en el es-pa-cio de es-ta-dos: $\U/msb/m/n/10 X \OT1/cmr/m/n/10 = \U/m
+sb/m/n/10 Z[] \OMS/cmsy/m/n/10 ^^B \U/msb/m/n/10 R[] \OMS/cmsy/m/n/10 ^^B [][] 
+^^B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39747--39752
+
+ []
+
+
+LaTeX Warning: Citation `DaiSean' on page 516 undefined on input line 39782.
+
+
+LaTeX Warning: Reference `Def.Cto.Peq.' on page 516 undefined on input line 397
+88.
+
+
+LaTeX Warning: Citation `Dai' on page 516 undefined on input line 39794.
+
+
+LaTeX Warning: Citation `DaiSean' on page 516 undefined on input line 39794.
+
+
+LaTeX Warning: Citation `Davis' on page 516 undefined on input line 39799.
+
+
+LaTeX Warning: Citation `Davis' on page 516 undefined on input line 39802.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39799--39804
+
+ []
+
+
+LaTeX Warning: Citation `DaiSean' on page 516 undefined on input line 39807.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 516 undefined on input line 39808.
+
+[516]
+
+LaTeX Warning: Citation `Sharpe' on page 517 undefined on input line 39810.
+
+
+LaTeX Warning: Citation `Dai' on page 517 undefined on input line 39828.
+
+
+LaTeX Warning: Citation `KaspiMandelbaum' on page 517 undefined on input line 3
+9828.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39827--39829
+
+ []
+
+
+LaTeX Warning: Citation `Getoor' on page 517 undefined on input line 39857.
+
+
+LaTeX Warning: Citation `DaiSean' on page 517 undefined on input line 39869.
+
+
+LaTeX Warning: Citation `Dai' on page 517 undefined on input line 39882.
+
+
+LaTeX Warning: Citation `Dai' on page 517 undefined on input line 39883.
+
+
+LaTeX Warning: Citation `Dai' on page 517 undefined on input line 39896.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 517 undefined on input line 39897.
+
+[517]
+
+LaTeX Warning: Citation `Dai' on page 518 undefined on input line 39902.
+
+
+LaTeX Warning: Reference `Eq.3.1' on page 518 undefined on input line 39908.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39931--39933
+
+ []
+
+
+LaTeX Warning: Citation `Down' on page 518 undefined on input line 39943.
+
+
+LaTeX Warning: Citation `Down' on page 518 undefined on input line 39948.
+
+
+LaTeX Warning: Citation `Dai' on page 518 undefined on input line 39948.
+
+
+LaTeX Warning: Citation `DaiSean' on page 518 undefined on input line 39948.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39941--39949
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39954--39956
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39963--39965
+
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 518 undefined on input line 39971.
+
+
+LaTeX Warning: Reference `Eq.Punto.Limite' on page 518 undefined on input line 
+39974.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 518 undefined on input line 39975.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 518 undefined on input line 39975.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 518 undefined on input line 39986.
+
+[518]
+
+LaTeX Warning: Citation `Dai' on page 519 undefined on input line 39992.
+
+
+LaTeX Warning: Citation `DaiSean' on page 519 undefined on input line 40014.
+
+
+LaTeX Warning: Citation `DaiSean' on page 519 undefined on input line 40021.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 519 undefined on input line 40022.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 519 undefined on input line 40022.
+
+
+LaTeX Warning: Citation `Down' on page 519 undefined on input line 40035.
+
+
+LaTeX Warning: Citation `Down' on page 519 undefined on input line 40080.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 519 undefined on input line 40084.
+
+[519]
+
+LaTeX Warning: Reference `Tma2.1.Down' on page 520 undefined on input line 4008
+7.
+
+
+LaTeX Warning: Reference `Tma2.2.Down' on page 520 undefined on input line 4009
+0.
+
+
+LaTeX Warning: Citation `DaiSean' on page 520 undefined on input line 40125.
+
+
+LaTeX Warning: Reference `Def.Cto.Peq.' on page 520 undefined on input line 401
+31.
+
+
+LaTeX Warning: Citation `Dai' on page 520 undefined on input line 40137.
+
+
+LaTeX Warning: Citation `DaiSean' on page 520 undefined on input line 40137.
+
+
+LaTeX Warning: Citation `Davis' on page 520 undefined on input line 40142.
+
+
+LaTeX Warning: Citation `Davis' on page 520 undefined on input line 40145.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40142--40147
+
+ []
+
+
+LaTeX Warning: Citation `DaiSean' on page 520 undefined on input line 40150.
+
+
+LaTeX Warning: Citation `Sharpe' on page 520 undefined on input line 40153.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 520 undefined on input line 40169.
+
+[520]
+
+LaTeX Warning: Citation `Dai' on page 521 undefined on input line 40171.
+
+
+LaTeX Warning: Citation `KaspiMandelbaum' on page 521 undefined on input line 4
+0171.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40170--40172
+
+ []
+
+
+LaTeX Warning: Citation `Getoor' on page 521 undefined on input line 40200.
+
+
+LaTeX Warning: Citation `DaiSean' on page 521 undefined on input line 40212.
+
+
+LaTeX Warning: Citation `Dai' on page 521 undefined on input line 40225.
+
+
+LaTeX Warning: Citation `Dai' on page 521 undefined on input line 40226.
+
+
+LaTeX Warning: Citation `Dai' on page 521 undefined on input line 40239.
+
+
+LaTeX Warning: Citation `Dai' on page 521 undefined on input line 40245.
+
+
+LaTeX Warning: Reference `Eq.3.1' on page 521 undefined on input line 40251.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 521 undefined on input line 40267.
+
+[521]
+Underfull \hbox (badness 10000) in paragraph at lines 40274--40276
+
+ []
+
+
+LaTeX Warning: Citation `Down' on page 522 undefined on input line 40286.
+
+
+LaTeX Warning: Citation `Down' on page 522 undefined on input line 40291.
+
+
+LaTeX Warning: Citation `Dai' on page 522 undefined on input line 40291.
+
+
+LaTeX Warning: Citation `DaiSean' on page 522 undefined on input line 40291.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40284--40292
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40297--40299
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40306--40308
+
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 522 undefined on input line 40314.
+
+
+LaTeX Warning: Reference `Eq.Punto.Limite' on page 522 undefined on input line 
+40317.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 522 undefined on input line 40318.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 522 undefined on input line 40318.
+
+
+LaTeX Warning: Citation `Dai' on page 522 undefined on input line 40335.
+
+
+LaTeX Warning: Citation `DaiSean' on page 522 undefined on input line 40357.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 522 undefined on input line 40362.
+
+[522]
+
+LaTeX Warning: Citation `DaiSean' on page 523 undefined on input line 40364.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 523 undefined on input line 40365.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 523 undefined on input line 40365.
+
+
+LaTeX Warning: Citation `Down' on page 523 undefined on input line 40378.
+
+
+LaTeX Warning: Citation `Down' on page 523 undefined on input line 40423.
+
+
+LaTeX Warning: Reference `Tma2.1.Down' on page 523 undefined on input line 4043
+0.
+
+
+LaTeX Warning: Reference `Tma2.2.Down' on page 523 undefined on input line 4043
+3.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40441--40447
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40448--40451
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 523 undefined on input line 40460.
+
+[523]
+
+LaTeX Warning: Citation `Getoor' on page 524 undefined on input line 40502.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40487--40503
+
+ []
+
+
+Overfull \hbox (18.77869pt too wide) in paragraph at lines 40525--40530
+\OT1/cmr/m/n/10 definiendo. El pro-ceso $\OML/cmm/m/it/10 X$ \OT1/cmr/m/n/10 ev
+olu-ciona en el es-pa-cio de es-ta-dos: $\U/msb/m/n/10 X \OT1/cmr/m/n/10 = \U/m
+sb/m/n/10 Z[] \OMS/cmsy/m/n/10 ^^B \U/msb/m/n/10 R[] \OMS/cmsy/m/n/10 ^^B [][] 
+^^B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40525--40530
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 524 undefined on input line 40546.
+
+[524]
+
+LaTeX Warning: Citation `DaiSean' on page 525 undefined on input line 40560.
+
+
+LaTeX Warning: Reference `Def.Cto.Peq.' on page 525 undefined on input line 405
+66.
+
+
+LaTeX Warning: Citation `Dai' on page 525 undefined on input line 40572.
+
+
+LaTeX Warning: Citation `DaiSean' on page 525 undefined on input line 40572.
+
+
+LaTeX Warning: Citation `Davis' on page 525 undefined on input line 40577.
+
+
+LaTeX Warning: Citation `Davis' on page 525 undefined on input line 40580.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40577--40582
+
+ []
+
+
+LaTeX Warning: Citation `DaiSean' on page 525 undefined on input line 40585.
+
+
+LaTeX Warning: Citation `Sharpe' on page 525 undefined on input line 40588.
+
+
+LaTeX Warning: Citation `Dai' on page 525 undefined on input line 40606.
+
+
+LaTeX Warning: Citation `KaspiMandelbaum' on page 525 undefined on input line 4
+0606.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40605--40607
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 525 undefined on input line 40628.
+
+[525]
+
+LaTeX Warning: Citation `Getoor' on page 526 undefined on input line 40635.
+
+
+LaTeX Warning: Citation `DaiSean' on page 526 undefined on input line 40647.
+
+
+LaTeX Warning: Citation `Dai' on page 526 undefined on input line 40660.
+
+
+LaTeX Warning: Citation `Dai' on page 526 undefined on input line 40661.
+
+
+LaTeX Warning: Citation `Dai' on page 526 undefined on input line 40674.
+
+
+LaTeX Warning: Citation `Dai' on page 526 undefined on input line 40680.
+
+
+LaTeX Warning: Reference `Eq.3.1' on page 526 undefined on input line 40686.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40709--40711
+
+ []
+
+
+LaTeX Warning: Citation `Down' on page 526 undefined on input line 40721.
+
+
+LaTeX Warning: Citation `Down' on page 526 undefined on input line 40726.
+
+
+LaTeX Warning: Citation `Dai' on page 526 undefined on input line 40726.
+
+
+LaTeX Warning: Citation `DaiSean' on page 526 undefined on input line 40726.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40719--40727
+
+ []
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 526 undefined on input line 40727.
+
+[526]
+Underfull \hbox (badness 10000) in paragraph at lines 40732--40734
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40741--40743
+
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 527 undefined on input line 40749.
+
+
+LaTeX Warning: Reference `Eq.Punto.Limite' on page 527 undefined on input line 
+40752.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 527 undefined on input line 40753.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 527 undefined on input line 40753.
+
+
+LaTeX Warning: Citation `Dai' on page 527 undefined on input line 40770.
+
+
+LaTeX Warning: Citation `DaiSean' on page 527 undefined on input line 40792.
+
+
+LaTeX Warning: Citation `DaiSean' on page 527 undefined on input line 40799.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 527 undefined on input line 40800.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 527 undefined on input line 40800.
+
+
+LaTeX Warning: Citation `Down' on page 527 undefined on input line 40813.
+
+
+LaTeX Warning: Citation `SIGMAN1' on page 527 undefined on input line 40814.
+
+[527]
+
+LaTeX Warning: Citation `Down' on page 528 undefined on input line 40858.
+
+
+LaTeX Warning: Reference `Tma2.1.Down' on page 528 undefined on input line 4086
+5.
+
+
+LaTeX Warning: Reference `Tma2.2.Down' on page 528 undefined on input line 4086
+8.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40882--40888
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40889--40892
+
+ []
+
+[528]
+
+LaTeX Warning: Citation `Getoor' on page 529 undefined on input line 40942.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40927--40943
+
+ []
+
+
+Overfull \hbox (18.77869pt too wide) in paragraph at lines 40965--40970
+\OT1/cmr/m/n/10 definiendo. El pro-ceso $\OML/cmm/m/it/10 X$ \OT1/cmr/m/n/10 ev
+olu-ciona en el es-pa-cio de es-ta-dos: $\U/msb/m/n/10 X \OT1/cmr/m/n/10 = \U/m
+sb/m/n/10 Z[] \OMS/cmsy/m/n/10 ^^B \U/msb/m/n/10 R[] \OMS/cmsy/m/n/10 ^^B [][] 
+^^B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40965--40970
+
+ []
+
+[529]
+
+LaTeX Warning: Citation `DaiSean' on page 530 undefined on input line 41000.
+
+
+LaTeX Warning: Reference `Def.Cto.Peq.' on page 530 undefined on input line 410
+06.
+
+
+LaTeX Warning: Citation `Dai' on page 530 undefined on input line 41012.
+
+
+LaTeX Warning: Citation `DaiSean' on page 530 undefined on input line 41012.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41020--41026
+
+ []
+
+[530]
+
+LaTeX Warning: Citation `Dai' on page 531 undefined on input line 41110.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41139--41142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41177--41185
+
+ []
+
+[531]
+Underfull \hbox (badness 10000) in paragraph at lines 41186--41189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41195--41199
+
+ []
+
+
+Overfull \hbox (8.49518pt too wide) in paragraph at lines 41205--41208
+[]$\OML/cmm/m/it/10 ^^X[]; [] ; ^^X[]; ^^Q[]; [] ; ^^Q[]$ \OT1/cmr/m/n/10 son m
+u-tu-a-mente in-de-pen-di-entes y son suce-siones in-de-pen-di-entes e id^^Sent
+icamente
+ []
+
+
+LaTeX Warning: Citation `DaiSean' on page 532 undefined on input line 41233.
+
+
+LaTeX Warning: Reference `Def.Cto.Peq.' on page 532 undefined on input line 412
+39.
+
+
+LaTeX Warning: Citation `Davis' on page 532 undefined on input line 41249.
+
+
+LaTeX Warning: Reference `Sup3.1.Davis' on page 532 undefined on input line 412
+51.
+
+
+LaTeX Warning: Citation `Davis' on page 532 undefined on input line 41253.
+
+
+LaTeX Warning: Citation `DaiSean' on page 532 undefined on input line 41256.
+
+[532]
+
+LaTeX Warning: Citation `Sharpe' on page 533 undefined on input line 41259.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41272--41275
+
+ []
+
+
+LaTeX Warning: Citation `Getoor' on page 533 undefined on input line 41302.
+
+
+LaTeX Warning: Citation `Dai' on page 533 undefined on input line 41327.
+
+
+LaTeX Warning: Citation `Dai' on page 533 undefined on input line 41328.
+
+
+LaTeX Warning: Citation `Dai' on page 533 undefined on input line 41341.
+
+
+LaTeX Warning: Citation `Dai' on page 533 undefined on input line 41346.
+
+
+LaTeX Warning: Reference `Eq.3.1' on page 533 undefined on input line 41351.
+
+[533]
+
+LaTeX Warning: Citation `MeynTweedie' on page 534 undefined on input line 41357
+.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41370--41377
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41384--41390
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41395--41397
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41404--41406
+
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 534 undefined on input line 41411.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 534 undefined on input line 41415.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 534 undefined on input line 41415.
+
+
+LaTeX Warning: Citation `Dai' on page 534 undefined on input line 41419.
+
+
+LaTeX Warning: Reference `Eq.Punto.Limite' on page 534 undefined on input line 
+41422.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 534 undefined on input line 41423.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 534 undefined on input line 41423.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 534 undefined on input line 41433.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 534 undefined on input line 41433.
+
+
+LaTeX Warning: Citation `Dai' on page 534 undefined on input line 41443.
+
+[534]
+
+LaTeX Warning: Citation `DaiSean' on page 535 undefined on input line 41465.
+
+
+LaTeX Warning: Citation `Chen' on page 535 undefined on input line 41472.
+
+
+LaTeX Warning: Citation `DaiSean' on page 535 undefined on input line 41473.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 535 undefined on input line 41474.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 535 undefined on input line 41474.
+
+
+LaTeX Warning: Citation `Down' on page 535 undefined on input line 41487.
+
+
+LaTeX Warning: Citation `Down' on page 535 undefined on input line 41532.
+
+
+LaTeX Warning: Reference `Tma2.1.Down' on page 535 undefined on input line 4153
+8.
+
+[535]
+
+LaTeX Warning: Reference `Tma2.2.Down' on page 536 undefined on input line 4154
+0.
+
+[536]
+
+LaTeX Warning: Citation `Davis' on page 537 undefined on input line 41641.
+
+
+LaTeX Warning: Citation `Davis' on page 537 undefined on input line 41658.
+
+
+LaTeX Warning: Reference `Eq.1.4.S' on page 537 undefined on input line 41737.
+
+[537]
+
+LaTeX Warning: Reference `Eq.1.6.S' on page 538 undefined on input line 41755.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 538 undefined on input line 41766.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 538 undefined on input line 41824.
+
+
+LaTeX Warning: Reference `Def.2.2.S' on page 538 undefined on input line 41843.
+
+
+
+LaTeX Warning: Reference `Eq.2.2.S' on page 538 undefined on input line 41846.
+
+
+LaTeX Warning: Citation `Dai' on page 538 undefined on input line 41853.
+
+[538]
+
+LaTeX Warning: Citation `Dai' on page 539 undefined on input line 41882.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41903--41913
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41914--41916
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41933--41935
+
+ []
+
+[539]
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 540 undefined on input line 4198
+1.
+
+
+LaTeX Warning: Citation `Dai' on page 540 undefined on input line 41982.
+
+[540]
+
+LaTeX Warning: Reference `Eq.4.4' on page 541 undefined on input line 42035.
+
+
+LaTeX Warning: Citation `Chen' on page 541 undefined on input line 42057.
+
+
+LaTeX Warning: Citation `Chen' on page 541 undefined on input line 42063.
+
+
+LaTeX Warning: Citation `Gut' on page 541 undefined on input line 42072.
+
+
+LaTeX Warning: Citation `Gut' on page 541 undefined on input line 42095.
+
+[541]
+
+LaTeX Warning: Citation `DaiSean' on page 542 undefined on input line 42109.
+
+
+LaTeX Warning: Citation `DaiSean' on page 542 undefined on input line 42120.
+
+
+LaTeX Warning: Citation `DaiSean' on page 542 undefined on input line 42132.
+
+
+LaTeX Warning: Citation `DaiSean' on page 542 undefined on input line 42146.
+
+
+LaTeX Warning: Citation `DaiSean' on page 542 undefined on input line 42162.
+
+
+LaTeX Warning: Citation `DaiSean' on page 542 undefined on input line 42172.
+
+
+LaTeX Warning: Citation `DaiSean' on page 542 undefined on input line 42183.
+
+
+LaTeX Warning: Citation `DaiSean' on page 542 undefined on input line 42191.
+
+[542]
+Overfull \hbox (5.45601pt too wide) in paragraph at lines 42192--42197
+\OT1/cmr/m/it/10 dis-tribuida que toma val-ores en $[]$, y sea $\OML/cmm/m/it/1
+0 E [] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 max []$\OT1/cmr/m/it/10 . Si $\U/msb/
+m/n/10 E [] \OML/cmm/m/it/10 <
+ []
+
+
+LaTeX Warning: Citation `DaiSean' on page 543 undefined on input line 42209.
+
+
+LaTeX Warning: Citation `DaiSean' on page 543 undefined on input line 42223.
+
+
+LaTeX Warning: Citation `DaiSean' on page 543 undefined on input line 42235.
+
+
+LaTeX Warning: Citation `DaiSean' on page 543 undefined on input line 42248.
+
+
+LaTeX Warning: Citation `Down' on page 543 undefined on input line 42266.
+
+
+LaTeX Warning: Citation `Dai' on page 543 undefined on input line 42285.
+
+[543]
+
+LaTeX Warning: Citation `Dai' on page 544 undefined on input line 42314.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42335--42345
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42346--42348
+
+ []
+
+[544]
+Underfull \hbox (badness 10000) in paragraph at lines 42365--42367
+
+ []
+
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 545 undefined on input line 4241
+3.
+
+
+LaTeX Warning: Citation `Dai' on page 545 undefined on input line 42414.
+
+[545]
+
+LaTeX Warning: Reference `Eq.4.4' on page 546 undefined on input line 42467.
+
+
+LaTeX Warning: Citation `Gut' on page 546 undefined on input line 42490.
+
+
+LaTeX Warning: Citation `DaiSean' on page 546 undefined on input line 42504.
+
+
+LaTeX Warning: Citation `DaiSean' on page 546 undefined on input line 42516.
+
+[546]
+
+LaTeX Warning: Citation `RBA' on page 547 undefined on input line 42578.
+
+
+LaTeX Warning: Citation `RBA' on page 547 undefined on input line 42591.
+
+
+LaTeX Warning: Reference `Prop.Markov' on page 547 undefined on input line 4263
+3.
+
+[547]
+
+LaTeX Warning: Citation `Davis' on page 548 undefined on input line 42736.
+
+[548]
+
+LaTeX Warning: Citation `Davis' on page 549 undefined on input line 42753.
+
+
+LaTeX Warning: Reference `Eq.1.4.S' on page 549 undefined on input line 42824.
+
+
+LaTeX Warning: Reference `Eq.1.6.S' on page 549 undefined on input line 42838.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 549 undefined on input line 42844.
+
+[549]
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 550 undefined on input line 42869.
+
+
+LaTeX Warning: Reference `Def.2.2.S' on page 550 undefined on input line 42880.
+
+
+
+LaTeX Warning: Reference `Eq.2.2.S' on page 550 undefined on input line 42882.
+
+
+LaTeX Warning: Citation `Dai' on page 550 undefined on input line 42891.
+
+[550]
+
+LaTeX Warning: Citation `Dai' on page 551 undefined on input line 42920.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42941--42951
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42952--42954
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42971--42973
+
+ []
+
+[551]
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 552 undefined on input line 4301
+9.
+
+
+LaTeX Warning: Citation `Dai' on page 552 undefined on input line 43020.
+
+
+LaTeX Warning: Citation `Dai' on page 552 undefined on input line 43069.
+
+
+LaTeX Warning: Reference `Eq.4.16' on page 552 undefined on input line 43072.
+
+
+LaTeX Warning: Reference `Eq.MF.1.3a' on page 552 undefined on input line 43073
+.
+
+
+LaTeX Warning: Reference `Eq.MF.6.3a' on page 552 undefined on input line 43073
+.
+
+[552]
+
+LaTeX Warning: Citation `Dai' on page 553 undefined on input line 43081.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 553 undefined on input line 43096.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 553 undefined on input line 43096.
+
+
+LaTeX Warning: Citation `DaiSean' on page 553 undefined on input line 43107.
+
+
+LaTeX Warning: Citation `Chen' on page 553 undefined on input line 43114.
+
+
+LaTeX Warning: Citation `DaiSean' on page 553 undefined on input line 43115.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 553 undefined on input line 43116.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 553 undefined on input line 43116.
+
+
+LaTeX Warning: Reference `Eq.4.4' on page 553 undefined on input line 43129.
+
+
+LaTeX Warning: Citation `Chen' on page 553 undefined on input line 43151.
+
+[553]
+
+LaTeX Warning: Citation `Chen' on page 554 undefined on input line 43157.
+
+
+LaTeX Warning: Citation `Chen' on page 554 undefined on input line 43162.
+
+
+LaTeX Warning: Citation `Gut' on page 554 undefined on input line 43171.
+
+
+LaTeX Warning: Citation `Gut' on page 554 undefined on input line 43194.
+
+
+LaTeX Warning: Citation `DaiSean' on page 554 undefined on input line 43208.
+
+
+LaTeX Warning: Citation `DaiSean' on page 554 undefined on input line 43219.
+
+
+LaTeX Warning: Citation `DaiSean' on page 554 undefined on input line 43231.
+
+
+LaTeX Warning: Citation `DaiSean' on page 554 undefined on input line 43245.
+
+[554]
+
+LaTeX Warning: Citation `DaiSean' on page 555 undefined on input line 43260.
+
+
+LaTeX Warning: Citation `DaiSean' on page 555 undefined on input line 43270.
+
+
+LaTeX Warning: Citation `DaiSean' on page 555 undefined on input line 43280.
+
+
+LaTeX Warning: Citation `DaiSean' on page 555 undefined on input line 43287.
+
+
+LaTeX Warning: Citation `DaiSean' on page 555 undefined on input line 43305.
+
+
+LaTeX Warning: Citation `DaiSean' on page 555 undefined on input line 43319.
+
+
+LaTeX Warning: Citation `DaiSean' on page 555 undefined on input line 43331.
+
+[555]
+
+LaTeX Warning: Citation `DaiSean' on page 556 undefined on input line 43344.
+
+
+LaTeX Warning: Citation `Down' on page 556 undefined on input line 43362.
+
+
+LaTeX Warning: Citation `Dai' on page 556 undefined on input line 43402.
+
+
+LaTeX Warning: Citation `KaspiMandelbaum' on page 556 undefined on input line 4
+3408.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43407--43409
+
+ []
+
+
+LaTeX Warning: Citation `DaiSean' on page 556 undefined on input line 43419.
+
+
+LaTeX Warning: Citation `MeynDown' on page 556 undefined on input line 43420.
+
+[556]
+Underfull \hbox (badness 10000) in paragraph at lines 43448--43452
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43474--43479
+
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 557 undefined on input line 43480.
+
+
+LaTeX Warning: Citation `Dai' on page 557 undefined on input line 43509.
+
+[557]
+Underfull \hbox (badness 10000) in paragraph at lines 43530--43540
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43541--43543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43560--43562
+
+ []
+
+[558]
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 559 undefined on input line 4360
+8.
+
+
+LaTeX Warning: Citation `Dai' on page 559 undefined on input line 43609.
+
+
+LaTeX Warning: Citation `Dai' on page 559 undefined on input line 43658.
+
+
+LaTeX Warning: Reference `Eq.4.16' on page 559 undefined on input line 43661.
+
+
+LaTeX Warning: Reference `Eq.MF.1.3a' on page 559 undefined on input line 43662
+.
+
+
+LaTeX Warning: Reference `Eq.MF.6.3a' on page 559 undefined on input line 43662
+.
+
+
+LaTeX Warning: Citation `Dai' on page 559 undefined on input line 43670.
+
+
+LaTeX Warning: Citation `DaiSean' on page 559 undefined on input line 43685.
+
+[559]
+
+LaTeX Warning: Reference `Eq.3.8' on page 560 undefined on input line 43714.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 560 undefined on input line 43714.
+
+
+LaTeX Warning: Citation `DaiSean' on page 560 undefined on input line 43725.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 560 undefined on input line 43730.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 560 undefined on input line 43730.
+
+
+LaTeX Warning: Citation `DaiSean' on page 560 undefined on input line 43737.
+
+
+LaTeX Warning: Citation `Chen' on page 560 undefined on input line 43744.
+
+
+LaTeX Warning: Citation `DaiSean' on page 560 undefined on input line 43745.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 560 undefined on input line 43746.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 560 undefined on input line 43746.
+
+
+LaTeX Warning: Citation `Down' on page 560 undefined on input line 43765.
+
+
+LaTeX Warning: Citation `Down' on page 560 undefined on input line 43767.
+
+[560]
+
+LaTeX Warning: Citation `DaiSean' on page 561 undefined on input line 43800.
+
+
+LaTeX Warning: Citation `DaiSean' on page 561 undefined on input line 43807.
+
+
+LaTeX Warning: Citation `DaiSean' on page 561 undefined on input line 43825.
+
+
+LaTeX Warning: Citation `DaiSean' on page 561 undefined on input line 43839.
+
+
+LaTeX Warning: Citation `DaiSean' on page 561 undefined on input line 43851.
+
+
+LaTeX Warning: Citation `DaiSean' on page 561 undefined on input line 43864.
+
+[561]
+
+LaTeX Warning: Citation `Down' on page 562 undefined on input line 43886.
+
+
+LaTeX Warning: Citation `Down' on page 562 undefined on input line 43903.
+
+
+LaTeX Warning: Reference `Tma.2.1.Down' on page 562 undefined on input line 439
+09.
+
+
+LaTeX Warning: Reference `Tma2.2.Down' on page 562 undefined on input line 4391
+1.
+
+
+LaTeX Warning: Citation `Dai' on page 562 undefined on input line 43978.
+
+
+Overfull \hbox (10.83328pt too wide) in paragraph at lines 43981--43987
+\OT1/cmr/m/it/10 fine como cualquier soluci^^Son $[]$ de las sigu-ientes ecua-c
+iones, donde $[] [] \OT1/cmr/m/n/10 = [][]$
+ []
+
+[562]
+
+LaTeX Warning: Reference `Eq.3.8' on page 563 undefined on input line 44009.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 563 undefined on input line 44009.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 563 undefined on input line 44025.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 563 undefined on input line 44025.
+
+
+LaTeX Warning: Citation `Chen' on page 563 undefined on input line 44039.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 563 undefined on input line 44041.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 563 undefined on input line 44041.
+
+
+LaTeX Warning: Citation `MaynDown' on page 563 undefined on input line 44079.
+
+
+LaTeX Warning: Reference `Lema.34.MeynDown' on page 563 undefined on input line
+ 44080.
+
+[563]
+
+LaTeX Warning: Reference `Tma.5.5' on page 564 undefined on input line 44120.
+
+
+LaTeX Warning: Reference `Tma.6.2' on page 564 undefined on input line 44120.
+
+
+LaTeX Warning: Reference `Tma.6.3' on page 564 undefined on input line 44120.
+
+
+LaTeX Warning: Reference `Tma.6.4' on page 564 undefined on input line 44120.
+
+
+LaTeX Warning: Citation `Dai' on page 564 undefined on input line 44153.
+
+
+Overfull \hbox (0.53273pt too wide) in paragraph at lines 44156--44165
+\OT1/cmr/m/n/10 tiene trayec-to-rias con-tin-uas por la derecha, est definida e
+n $[]$ y est adap-tado a $[]$; $[]$
+ []
+
+[564]
+
+LaTeX Warning: Citation `Getoor' on page 565 undefined on input line 44197.
+
+
+LaTeX Warning: Citation `MeynTweedie' on page 565 undefined on input line 44218
+.
+
+[565] [566]
+
+LaTeX Warning: Reference `Eq.Esp.Estados' on page 567 undefined on input line 4
+4377.
+
+
+LaTeX Warning: Reference `Eq.4.4' on page 567 undefined on input line 44409.
+
+[567] [568]
+Underfull \hbox (badness 10000) in paragraph at lines 44568--44571
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44590--44597
+
+ []
+
+[569]
+Underfull \hbox (badness 10000) in paragraph at lines 44609--44621
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44634--44639
+
+ []
+
+
+LaTeX Warning: Citation `Dai2' on page 570 undefined on input line 44644.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44640--44645
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44646--44652
+
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 570 undefined on input line 44655.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44658--44661
+
+ []
+
+
+LaTeX Warning: Citation `Getoor' on page 570 undefined on input line 44695.
+
+[570]
+
+LaTeX Warning: Citation `MeynTweedie' on page 571 undefined on input line 44710
+.
+
+
+LaTeX Warning: Citation `Dai' on page 571 undefined on input line 44754.
+
+
+LaTeX Warning: Citation `MaynDown' on page 571 undefined on input line 44771.
+
+[571]
+
+LaTeX Warning: Reference `Eq.3.8' on page 572 undefined on input line 44795.
+
+
+LaTeX Warning: Reference `Eq.3.11' on page 572 undefined on input line 44795.
+
+
+LaTeX Warning: Citation `Dai2' on page 572 undefined on input line 44815.
+
+
+LaTeX Warning: Citation `DaiSean' on page 572 undefined on input line 44815.
+
+
+Overfull \hbox (8.49518pt too wide) in paragraph at lines 44818--44821
+[]$\OML/cmm/m/it/10 ^^X[]; [] ; ^^X[]; ^^Q[]; [] ; ^^Q[]$ \OT1/cmr/m/n/10 son m
+u-tu-a-mente in-de-pen-di-entes y son suce-siones in-de-pen-di-entes e id^^Sent
+icamente
+ []
+
+
+LaTeX Warning: Citation `MaynDown' on page 572 undefined on input line 44840.
+
+[572]
+
+LaTeX Warning: Reference `Tma2.1' on page 573 undefined on input line 44915.
+
+
+LaTeX Warning: Reference `Tma2.2' on page 573 undefined on input line 44917.
+
+
+LaTeX Warning: Reference `Equation.4.4' on page 573 undefined on input line 449
+28.
+
+
+LaTeX Warning: Citation `Chen' on page 573 undefined on input line 44950.
+
+
+LaTeX Warning: Citation `Chen' on page 573 undefined on input line 44956.
+
+[573]
+
+LaTeX Warning: Citation `Chen' on page 574 undefined on input line 44961.
+
+
+LaTeX Warning: Citation `Gut' on page 574 undefined on input line 44970.
+
+
+LaTeX Warning: Citation `Gut' on page 574 undefined on input line 44993.
+
+
+LaTeX Warning: Citation `DaiSean' on page 574 undefined on input line 45007.
+
+
+LaTeX Warning: Citation `DaiSean' on page 574 undefined on input line 45018.
+
+
+LaTeX Warning: Citation `DaiSean' on page 574 undefined on input line 45030.
+
+
+LaTeX Warning: Citation `DaiSean' on page 574 undefined on input line 45044.
+
+[574]
+
+LaTeX Warning: Citation `DaiSean' on page 575 undefined on input line 45059.
+
+
+LaTeX Warning: Citation `DaiSean' on page 575 undefined on input line 45069.
+
+[575]
+
+LaTeX Warning: Citation `Dai' on page 576 undefined on input line 45160.
+
+
+LaTeX Warning: Reference `Eq.1.4.S' on page 576 undefined on input line 45202.
+
+
+LaTeX Warning: Reference `Eq.1.6.S' on page 576 undefined on input line 45216.
+
+[576]
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 577 undefined on input line 45222.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 577 undefined on input line 45249.
+
+
+LaTeX Warning: Reference `Def.2.2.S' on page 577 undefined on input line 45260.
+
+
+
+LaTeX Warning: Reference `Eq.2.2.S' on page 577 undefined on input line 45262.
+
+
+LaTeX Warning: Citation `Dai' on page 577 undefined on input line 45271.
+
+[577]
+
+LaTeX Warning: Citation `Dai' on page 578 undefined on input line 45300.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45321--45331
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45332--45334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45351--45353
+
+ []
+
+[578]
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 579 undefined on input line 4539
+9.
+
+
+LaTeX Warning: Citation `Dai' on page 579 undefined on input line 45400.
+
+[579]
+
+LaTeX Warning: Citation `Dai' on page 580 undefined on input line 45449.
+
+
+LaTeX Warning: Reference `Eq.4.16' on page 580 undefined on input line 45452.
+
+
+LaTeX Warning: Reference `Eq.MF.1.3a' on page 580 undefined on input line 45453
+.
+
+
+LaTeX Warning: Reference `Eq.MF.6.3a' on page 580 undefined on input line 45453
+.
+
+
+LaTeX Warning: Citation `Dai' on page 580 undefined on input line 45461.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 580 undefined on input line 45476.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 580 undefined on input line 45476.
+
+
+LaTeX Warning: Citation `DaiSean' on page 580 undefined on input line 45487.
+
+
+LaTeX Warning: Citation `Chen' on page 580 undefined on input line 45494.
+
+
+LaTeX Warning: Citation `DaiSean' on page 580 undefined on input line 45495.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 580 undefined on input line 45496.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 580 undefined on input line 45496.
+
+
+LaTeX Warning: Reference `Eq.4.4' on page 580 undefined on input line 45509.
+
+[580]
+
+LaTeX Warning: Citation `Chen' on page 581 undefined on input line 45531.
+
+
+LaTeX Warning: Citation `Chen' on page 581 undefined on input line 45537.
+
+
+LaTeX Warning: Citation `Chen' on page 581 undefined on input line 45542.
+
+
+LaTeX Warning: Citation `Gut' on page 581 undefined on input line 45551.
+
+
+LaTeX Warning: Citation `Gut' on page 581 undefined on input line 45574.
+
+
+LaTeX Warning: Citation `DaiSean' on page 581 undefined on input line 45588.
+
+
+LaTeX Warning: Citation `DaiSean' on page 581 undefined on input line 45599.
+
+
+LaTeX Warning: Citation `DaiSean' on page 581 undefined on input line 45611.
+
+[581]
+
+LaTeX Warning: Citation `DaiSean' on page 582 undefined on input line 45625.
+
+
+LaTeX Warning: Citation `DaiSean' on page 582 undefined on input line 45640.
+
+
+LaTeX Warning: Citation `DaiSean' on page 582 undefined on input line 45650.
+
+
+LaTeX Warning: Citation `DaiSean' on page 582 undefined on input line 45660.
+
+
+LaTeX Warning: Citation `DaiSean' on page 582 undefined on input line 45667.
+
+
+LaTeX Warning: Citation `DaiSean' on page 582 undefined on input line 45685.
+
+[582]
+
+LaTeX Warning: Citation `DaiSean' on page 583 undefined on input line 45699.
+
+
+LaTeX Warning: Citation `DaiSean' on page 583 undefined on input line 45711.
+
+
+LaTeX Warning: Citation `DaiSean' on page 583 undefined on input line 45724.
+
+
+LaTeX Warning: Citation `Down' on page 583 undefined on input line 45742.
+
+[583]
+
+LaTeX Warning: Citation `RBA' on page 584 undefined on input line 45825.
+
+
+LaTeX Warning: Citation `RBA' on page 584 undefined on input line 45838.
+
+
+LaTeX Warning: Reference `Prop.Markov' on page 584 undefined on input line 4588
+0.
+
+
+LaTeX Warning: Reference `Equation.4.4' on page 584 undefined on input line 459
+09.
+
+[584]
+
+LaTeX Warning: Citation `Chen' on page 585 undefined on input line 45931.
+
+
+LaTeX Warning: Citation `Chen' on page 585 undefined on input line 45937.
+
+
+LaTeX Warning: Citation `Chen' on page 585 undefined on input line 45942.
+
+
+LaTeX Warning: Citation `Gut' on page 585 undefined on input line 45951.
+
+
+LaTeX Warning: Citation `Gut' on page 585 undefined on input line 45974.
+
+
+LaTeX Warning: Citation `DaiSean' on page 585 undefined on input line 45988.
+
+[585]
+
+LaTeX Warning: Citation `DaiSean' on page 586 undefined on input line 45999.
+
+
+LaTeX Warning: Citation `DaiSean' on page 586 undefined on input line 46011.
+
+
+LaTeX Warning: Citation `DaiSean' on page 586 undefined on input line 46025.
+
+
+LaTeX Warning: Citation `DaiSean' on page 586 undefined on input line 46040.
+
+
+LaTeX Warning: Citation `DaiSean' on page 586 undefined on input line 46050.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46079--46083
+
+ []
+
+[586]
+Overfull \hbox (8.49518pt too wide) in paragraph at lines 46088--46091
+[]$\OML/cmm/m/it/10 ^^X[]; [] ; ^^X[]; ^^Q[]; [] ; ^^Q[]$ \OT1/cmr/m/n/10 son m
+u-tu-a-mente in-de-pen-di-entes y son suce-siones in-de-pen-di-entes e id^^Sent
+icamente
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 587 undefined on input line 46113.
+
+
+LaTeX Warning: Citation `Sharpe' on page 587 undefined on input line 46117.
+
+[587]
+
+LaTeX Warning: Reference `Eq.1.4.S' on page 588 undefined on input line 46197.
+
+
+LaTeX Warning: Reference `Eq.1.6.S' on page 588 undefined on input line 46217.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 588 undefined on input line 46228.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 588 undefined on input line 46291.
+
+[588]
+
+LaTeX Warning: Reference `Def.2.2.S' on page 589 undefined on input line 46311.
+
+
+
+LaTeX Warning: Reference `Eq.2.2.S' on page 589 undefined on input line 46314.
+
+
+LaTeX Warning: Citation `RBA' on page 589 undefined on input line 46367.
+
+
+LaTeX Warning: Citation `RBA' on page 589 undefined on input line 46380.
+
+
+LaTeX Warning: Reference `Prop.Markov' on page 589 undefined on input line 4642
+2.
+
+[589]
+
+LaTeX Warning: Citation `Davis' on page 590 undefined on input line 46525.
+
+[590]
+
+LaTeX Warning: Citation `Davis' on page 591 undefined on input line 46542.
+
+
+LaTeX Warning: Reference `Eq.1.4.S' on page 591 undefined on input line 46613.
+
+
+LaTeX Warning: Reference `Eq.1.6.S' on page 591 undefined on input line 46627.
+
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 591 undefined on input line 46633.
+
+[591]
+
+LaTeX Warning: Reference `Eq.1.8.S' on page 592 undefined on input line 46660.
+
+
+LaTeX Warning: Reference `Def.2.2.S' on page 592 undefined on input line 46671.
+
+
+
+LaTeX Warning: Reference `Eq.2.2.S' on page 592 undefined on input line 46673.
+
+
+LaTeX Warning: Citation `Dai' on page 592 undefined on input line 46681.
+
+[592]
+
+LaTeX Warning: Citation `Dai' on page 593 undefined on input line 46710.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46731--46741
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46742--46744
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46761--46763
+
+ []
+
+[593]
+
+LaTeX Warning: Reference `Tma.4.2.Dai' on page 594 undefined on input line 4680
+9.
+
+
+LaTeX Warning: Citation `Dai' on page 594 undefined on input line 46810.
+
+
+LaTeX Warning: Citation `Dai' on page 594 undefined on input line 46859.
+
+
+LaTeX Warning: Reference `Eq.4.16' on page 594 undefined on input line 46862.
+
+
+LaTeX Warning: Reference `Eq.MF.1.3a' on page 594 undefined on input line 46863
+.
+
+
+LaTeX Warning: Reference `Eq.MF.6.3a' on page 594 undefined on input line 46863
+.
+
+[594]
+
+LaTeX Warning: Citation `Dai' on page 595 undefined on input line 46871.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 595 undefined on input line 46886.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 595 undefined on input line 46886.
+
+
+LaTeX Warning: Citation `DaiSean' on page 595 undefined on input line 46897.
+
+
+LaTeX Warning: Citation `Chen' on page 595 undefined on input line 46904.
+
+
+LaTeX Warning: Citation `DaiSean' on page 595 undefined on input line 46905.
+
+
+LaTeX Warning: Reference `Eq.3.8' on page 595 undefined on input line 46906.
+
+
+LaTeX Warning: Reference `Eq.3.13' on page 595 undefined on input line 46906.
+
+
+LaTeX Warning: Reference `Eq.4.4' on page 595 undefined on input line 46919.
+
+
+LaTeX Warning: Citation `Chen' on page 595 undefined on input line 46941.
+
+[595]
+
+LaTeX Warning: Citation `Chen' on page 596 undefined on input line 46947.
+
+
+LaTeX Warning: Citation `Chen' on page 596 undefined on input line 46952.
+
+
+LaTeX Warning: Citation `Gut' on page 596 undefined on input line 46961.
+
+
+LaTeX Warning: Citation `Gut' on page 596 undefined on input line 46984.
+
+
+LaTeX Warning: Citation `DaiSean' on page 596 undefined on input line 46998.
+
+
+LaTeX Warning: Citation `DaiSean' on page 596 undefined on input line 47009.
+
+
+LaTeX Warning: Citation `DaiSean' on page 596 undefined on input line 47021.
+
+
+LaTeX Warning: Citation `DaiSean' on page 596 undefined on input line 47035.
+
+[596]
+
+LaTeX Warning: Citation `DaiSean' on page 597 undefined on input line 47050.
+
+
+LaTeX Warning: Citation `DaiSean' on page 597 undefined on input line 47060.
+
+
+LaTeX Warning: Citation `DaiSean' on page 597 undefined on input line 47071.
+
+
+LaTeX Warning: Citation `DaiSean' on page 597 undefined on input line 47078.
+
+
+LaTeX Warning: Citation `DaiSean' on page 597 undefined on input line 47096.
+
+
+LaTeX Warning: Citation `DaiSean' on page 597 undefined on input line 47110.
+
+
+LaTeX Warning: Citation `DaiSean' on page 597 undefined on input line 47122.
+
+[597]
+
+LaTeX Warning: Citation `DaiSean' on page 598 undefined on input line 47135.
+
+
+LaTeX Warning: Citation `Down' on page 598 undefined on input line 47153.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47179--47181
+
+ []
+
+
+LaTeX Warning: Citation `Down' on page 598 undefined on input line 47191.
+
+
+LaTeX Warning: Citation `Down' on page 598 undefined on input line 47196.
+
+
+LaTeX Warning: Citation `Dai' on page 598 undefined on input line 47196.
+
+
+LaTeX Warning: Citation `DaiSean' on page 598 undefined on input line 47196.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47189--47197
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47202--47204
+
+ []
+
+[598]
+Underfull \hbox (badness 10000) in paragraph at lines 47211--47213
+
+ []
+
+
+LaTeX Warning: Citation `Dai' on page 599 undefined on input line 47219.
+
+
+LaTeX Warning: Reference `Eq.Punto.Limite' on page 599 undefined on input line 
+47222.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 599 undefined on input line 47223.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 599 undefined on input line 47223.
+
+
+LaTeX Warning: Citation `Dai' on page 599 undefined on input line 47240.
+
+
+LaTeX Warning: Citation `DaiSean' on page 599 undefined on input line 47262.
+
+
+LaTeX Warning: Citation `DaiSean' on page 599 undefined on input line 47269.
+
+
+LaTeX Warning: Reference `Eq.MF.1' on page 599 undefined on input line 47270.
+
+
+LaTeX Warning: Reference `Eq.MF.4' on page 599 undefined on input line 47270.
+
+
+LaTeX Warning: Citation `Down' on page 599 undefined on input line 47283.
+
+[599]
+
+LaTeX Warning: Citation `Down' on page 600 undefined on input line 47328.
+
+
+LaTeX Warning: Reference `Tma2.1.Down' on page 600 undefined on input line 4733
+5.
+
+
+LaTeX Warning: Reference `Tma2.2.Down' on page 600 undefined on input line 4733
+8.
+
+
+LaTeX Warning: Citation `Davis' on page 600 undefined on input line 47344.
+
+
+LaTeX Warning: Citation `Davis' on page 600 undefined on input line 47347.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47344--47349
+
+ []
+
+
+LaTeX Warning: Citation `DaiSean' on page 600 undefined on input line 47352.
+
+
+LaTeX Warning: Citation `Sharpe' on page 600 undefined on input line 47355.
+
+
+LaTeX Warning: Citation `Dai' on page 600 undefined on input line 47373.
+
+
+LaTeX Warning: Citation `KaspiMandelbaum' on page 600 undefined on input line 4
+7373.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47372--47374
+
+ []
+
+[600]
+
+LaTeX Warning: Citation `Getoor' on page 601 undefined on input line 47402.
+
+
+LaTeX Warning: Citation `DaiSean' on page 601 undefined on input line 47414.
+
+
+LaTeX Warning: Citation `Dai' on page 601 undefined on input line 47427.
+
+
+LaTeX Warning: Citation `Dai' on page 601 undefined on input line 47428.
+
+
+LaTeX Warning: Citation `Dai' on page 601 undefined on input line 47441.
+
+
+LaTeX Warning: Citation `Dai' on page 601 undefined on input line 47447.
+
+
+LaTeX Warning: Reference `Eq.3.1' on page 601 undefined on input line 47453.
+
+[601] [602] [603] [604] [605] [606]
+
+LaTeX Warning: Citation `Stidham' on page 607 undefined on input line 47828.
+
+[607]
+
+LaTeX Warning: Reference `Def.Tn' on page 608 undefined on input line 47889.
+
+[608] [609] [610] [611] [612] [613] [614] [615] [616] [617]
+
+LaTeX Warning: Reference `Def.Tn' on page 618 undefined on input line 48428.
+
+[618] [619] [620] [621] [622] [623] [624] [625] [626] [627] [628] [629]
+[630] [631]
+
+LaTeX Warning: Citation `Sigman2' on page 632 undefined on input line 49279.
+
+[632]
+
+LaTeX Warning: Citation `Sigman2' on page 633 undefined on input line 49370.
+
+[633]
+Overfull \hbox (6.33649pt too wide) in paragraph at lines 49448--49449
+[][]\OT1/cmr/bx/n/10 Definici^^Son 1235. []\OT1/cmr/m/it/10 Una mod-i-fi-caci^^
+Son med-i-ble de un pro-ceso $[]$, es una versi^^Son de este, $[]$
+ []
+
+[634] [635] [636] [637] [638] [639] [640] [641]
+
+LaTeX Warning: Reference `Ec.Renovacion' on page 642
