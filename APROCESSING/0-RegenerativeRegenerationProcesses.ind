@@ -1,6 +1,7 @@
 \begin{theindex}
 
   \item Cadena de Markov, 6
+  \item Cadena de Markov Erg\'odica, 17
   \item Cadena Homog\'enea, 6
   \item Cadena Irreducible, 9
   \item Cilindro, 5
@@ -17,6 +18,7 @@
   \item Ecuaci\'on de Renovaci\'on, 15
   \item Ecuaciones de Chapman-Kolmogorov, 7
   \item Espacio de Rad\'on, 10
+  \item Espacio Polaco, 18
   \item Estados absorbentes, 9
   \item Estados recurrentes, 9
   \item Estados transitorios, 9
@@ -33,7 +35,7 @@
   \indexspace
 
   \item Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on, 
-		13
+		14
 
   \indexspace
 
@@ -47,13 +49,14 @@
   \item Probabilidades de Transici\'on, 6
   \item Proceso Adaptado, 5
   \item Proceso de Markov, 5
-  \item Proceso de Renovaci\'on Retardado, 13
-  \item Proceso Poisson, 13, 14
+  \item Proceso de Renovaci\'on Retardado, 14
+  \item Proceso Poisson, 14, 15
   \item Procesos Crudamente Regenerativos, 12
   \item Procesos de Conteo, 11
+  \item Procesos de Markov, 17
   \item Procesos de Renovaci\'on, 11
-  \item Procesos de Renovaci\'on Encajados, 15
-  \item Procesos Estacionarios, 11
+  \item Procesos de Renovaci\'on Encajados, 16
+  \item Procesos Estacionarios, 11, 17
   \item Procesos Positivo Recurrente, 16
   \item Procesos Regenerativos, 11, 15
   \item Propiedad Fuerte de Markov, 9
@@ -67,7 +70,8 @@
 
   \item Teorema Renovaci\'on Elemental, 15
   \item Tiempos de Paro, 5, 9
-  \item Tiempos de Regeneraci\'on, 15
-  \item Transformada de Laplace-Stieljes, 14
+  \item Tiempos de Regeneraci\'on, 16
+  \item Transformada de Laplace-Stieljes, 15
+  \item Trayectorias Muestrales, 13
 
 \end{theindex}
