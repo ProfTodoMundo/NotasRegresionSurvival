@@ -1,5 +1,9 @@
 \documentclass{article}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% PAQUETES A UTILIZAR
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 \usepackage[utf8]{inputenc}
+%\usepackage[spanish,english]{babel}
 \usepackage[spanish]{babel}
 \usepackage{amsmath,amssymb,amsthm,amsfonts}
 \usepackage{geometry}
@@ -18,13 +22,16 @@
 \usepackage{anysize} 
 \usepackage{url}
 \usepackage{imakeidx}
-
-
-
-\title{Procesos Regenerativos y de Renovaci\'on: Revisi\'on}
-\author{Carlos E. Mart\'inez-Rodr\'iguez}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% TITULO DEL DOCUMENTO
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\title{Procesos Regenerativos y de Renovación: Revisión\\
+\small{Renewal and Regenerative Processes: Review}}
+\author{Carlos E. Martínez-Rodríguez}
 \date{Julio 2024}
-
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% MODIFICACION DE LOS MARGENES
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 \geometry{
   a4paper,
   left=25mm,
@@ -32,43 +39,47 @@
   top=30mm,
   bottom=30mm,
 }
-
-% Configuraci\'on de encabezados y pies de p\'agina
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% CONFIGURACION DE ENCABEZADOS Y PIES DE PAG
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\leftmark}
 \fancyfoot[C]{\thepage}
-\fancyfoot[R]{\rightmark}
-\fancyfoot[L]{Carlos E. Mart\'inez-Rodr\'iguez}
-
+\fancyfoot[R]{\footnotesize \nouppercase \leftmark}
+\fancyfoot[L]{Carlos E. Martínez-Rodríguez}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% Reducción del tamaño de letra en los pies de página
+%\fancypagestyle{plain}{
+  %\fancyfoot[C]{\footnotesize \thepage}
+  %\fancyfoot[R]{\footnotesize \leftmark}
+%  \fancyfoot[R]{\footnotesize \nouppercase{\rightmark}}
+  %\fancyfoot[L]{\footnotesize Carlos E. Martínez-Rodríguez}
+  %\fancyhead{}
+%}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% DEFINICION DE TITULOS CORTOS
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% Definir títulos cortos para las secciones
+%\usepackage{shorttoc} % Incluye este paquete para usar títulos cortos
+%\newcommand{\shorttitle}[2]{\section[#1]{#2}}
+%\newcommand{\shorttitle}[2]{\section[#1]{#2}\sectionmark{#1}}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 % Definiciones de nuevos entornos
-\newtheorem{Algthm}{Algoritmo}
-\newtheorem{Def}{Definici\'on}[section]
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\newtheorem{Def}{Definición}[section]
 \newtheorem{Ejem}{Ejemplo}[section]
 \newtheorem{Teo}{Teorema}[section]
-\newtheorem{Dem}{Demostraci\'on}
 \newtheorem{Note}{Nota}[section]
-\newtheorem{Sol}{Soluci\'on}
-\newtheorem{Prop}{Proposici\'on}[section]
+\newtheorem{Prop}{Proposición}[section]
 \newtheorem{Cor}{Corolario}[section]
-\newtheorem{Col}{Corolario}[section]
-\newtheorem{Coro}{Corolario}[section]
-\newtheorem{Lemma}{Lema}[section]
-\newtheorem{Lem}{Lema}[section]
 \newtheorem{Lema}{Lema}[section]
 \newtheorem{Sup}{Supuestos}[section]
-\newtheorem{Assumption}{Supuestos}[section]
-\newtheorem{Remark}{Observaci\'on}[section]
-\newtheorem{Condition}{Condici\'on}
-\newtheorem{Theorem}{Teorema}[section]
-\newtheorem{Corollary}{Corolario}[section]
-\newtheorem{Ejemplo}{Ejemplo}[section]
-\newtheorem{Example}{Ejemplo}[section]
-\newtheorem{Obs}{Observaci\'on}[section]
-
-% Nuevos comandos
-\def\RR{\mathbb{R}}
-\def\ZZ{\mathbb{Z}}
+\newtheorem{Obs}{Observación}[section]
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+%NUEVOS COMANDOS
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+%\def\RR{\mathbb{R}}
+%\def\ZZ{\mathbb{Z}}
 \newcommand{\nat}{\mathbb{N}}
 \newcommand{\ent}{\mathbb{Z}}
 \newcommand{\rea}{\mathbb{R}}
@@ -78,50 +89,66 @@
 \newcommand{\indora}{\mbox{$1$\hspace{-0.8ex}$1$}}
 \newcommand{\ER}{\left(E,\mathcal{E}\right)}
 \newcommand{\KM}{\left(P_{s,t}\right)}
-\newcommand{\Xt}{\left(X_{t}\right)_{t\in I}}
+%\newcommand{\Xt}{\left(X_{t}\right)_{t\in I}}
 \newcommand{\PE}{\left(X_{t}\right)_{t\in I}}
-\newcommand{\SG}{\left(P_{t}\right)}
+%\newcommand{\SG}{\left(P_{t}\right)}
 \newcommand{\CM}{\mathbf{P}^{x}}
-\newcommand\mypar{\par\vspace{\baselineskip}}
-
+%\newcommand\mypar{\par\vspace{\baselineskip}}
+\renewcommand{\abstractname}{Resumen}
 \numberwithin{equation}{section}
-
-\makeindex
-
-
-
-
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+%\makeindex
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 \begin{document}
-
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 \maketitle
 
+%<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
 \begin{abstract}
-En este documento, presentamos una revisión exhaustiva de los procesos de renovación y regenerativos, enfocándonos tanto en los fundamentos teóricos como en sus implicaciones prácticas. El estudio comienza con una introducción a los procesos estocásticos, específicamente las cadenas de Markov, las cadenas de Markov ergódicas, las cadenas homogéneas y las irreducibles. Se discuten conceptos clave como el cilindro, los conjuntos de Borel y medibles, la Delta de Kronecker, las ecuaciones de Chapman-Kolmogorov y las matrices de transición. Basándonos en esta base, exploramos los procesos regenerativos estacionarios, el teorema principal de renovación, la identidad de Wald para renovaciones, y las propiedades de los procesos de renovación, incluida la función de renovación. La sección final profundiza en la teoría de los procesos regenerativos, examinando tanto los procesos regenerativos estacionarios como los procesos de salida asociados con los procesos regenerativos, incluyendo el proceso Poisson y el teorema de existencia de los tiempos de regeneración. Esta revisión tiene como objetivo proporcionar una comprensión completa de estos procesos, que son cruciales en diversas áreas como la teoría de colas, la teoría de la fiabilidad y la investigación operativa.
+%<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+En este documento se presenta una recopilación de resultados relacionados con la teoría de procesos estocásticos, con un enfoque específico en procesos de Markov, procesos regenerativos, procesos de renovación y procesos estacionarios. La relevancia de estos temas reside en la capacidad de identificar puntos de regeneración y las condiciones necesarias para la estacionareidad del proceso. El estudio inicia con una revisión de cadenas de Markov y prosigue con el análisis de procesos que cumplen con la propiedad fuerte de Markov. Posteriormente, se profundiza en los procesos de renovación, procesos regenerativos y, finalmente, en los procesos regenerativos estacionarios, destacando los resultados presentados por Thorisson \cite{Thorisson}. Este trabajo no tiene la intención de ser exhaustivo, sino de proporcionar una base sólida que permita profundizar en el conocimiento de estos procesos, dado su amplio espectro de aplicaciones en criptografía \cite{Portman}, teoría de colas \cite{Morozov} y métodos de Monte Carlo \cite{Xu}. Asimismo, se subraya la importancia de los procesos de tipo Poisson debido a sus numerosas aplicaciones (ver \cite{Douc}).
 \end{abstract}
 
-\tableofcontents
+\begin{otherlanguage}{english}
+\renewcommand{\abstractname}{Abstract} % Cambia "Resumen" a "Abstract"
+\begin{abstract}
+This document presents a compilation of results related to the theory of stochastic processes, with a specific focus on Markov processes, regenerative processes, renewal processes, and stationary processes. The relevance of these topics lies in the ability to identify regeneration points and the necessary conditions for process stationarity. The study begins with a review of Markov chains and continues with the analysis of those processes that satisfy the strong Markov property. Subsequently, it delves into renewal processes, regenerative processes, and finally, stationary regenerative processes, highlighting the results presented by Thorisson \cite{Thorisson}. This work does not aim to be exhaustive, but rather to provide a solid foundation for deeper understanding of these processes, given their wide range of applications in cryptography \cite{Portman}, queueing theory \cite{Morozov}, and Monte Carlo methods \cite{Xu}. Additionally, the importance of Poisson-type processes is emphasized due to their numerous applications (see \cite{Douc}).
+\end{abstract}
+\end{otherlanguage}
+%<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
 
-\newpage
+%\tableofcontents
+%\newpage
 
-%<====>====<><====>====<><====>====<><====>====<><====>====<>
+%<====>====<><====>====<><====>====<><====>====<><====>
 %\part{Introducci\'on a Procesos Regenerativos}
-%<====>====<><====>====<><====>====<><====>====<><====>====<>
+%<====>====<><====>====<><====>====<><====>====<><====>
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\section*{Introducción}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+El estudio de las cadenas de Markov es fundamental para comprender las condiciones bajo las cuales un proceso estocástico puede regenerarse, así como para determinar la existencia de tiempos de regeneración. La extensión de estos conceptos a teorías de colas y sistemas de visitas cíclicas requiere un conocimiento profundo de la teoría subyacente. Este análisis naturalmente lleva a explorar temas más complejos, tales como los procesos regenerativos y de renovación. En este trabajo se realiza una revisión de los conceptos esenciales para iniciar el estudio de los procesos regenerativos estacionarios. La revisión de estos temas se llevó a cabo bajo la supervisión del Dr. Raúl Montes de Oca Machorro y la Dra. Patricia Saavedra Barrera, cuyas oportunas y valiosas sugerencias y comentarios fueron fundamentales para desarrollar el estudio de este tipo de procesos estocásticos. Es importante destacar que las aplicaciones de estos resultados en la teoría de colas tienen un impacto significativo en problemas contemporáneos. A pesar de los avances logrados, aún existen preguntas sin resolver sobre su aplicación y generalización en la teoría de colas. Este trabajo no pretende ser un estudio exhaustivo sobre el tema, sino más bien proporcionar los elementos necesarios para introducirse en el estudio de estos procesos. El documento está organizado de la siguiente manera: en la primera sección se realiza una revisión de las cadenas de Markov y de los procesos de Markov. En la segunda sección se aborda un estudio inicial de los procesos de renovación y de los procesos regenerativos, junto con sus propiedades y el teorema principal de renovación. La tercera sección profundiza en los procesos regenerativos incluidos en \cite{Thorisson}, para los cuales es necesario revisar procesos más generales. Finalmente, en la última sección se presentan una serie de consideraciones respecto al contenido de este trabajo.
 
-\section{Introducción}
 
-Los procesos estoc\'asticos son fundamentales en la modelaci\'on de sistemas que evolucionan aleatoriamente con el tiempo. Entre estos, los procesos de renovación y los procesos regenerativos ocupan un lugar destacado debido a sus aplicaciones en diversas áreas como la teoría de colas, la teoría de la fiabilidad y la investigación operativa.
+\begin{otherlanguage}{english}
+%\renewcommand{\abstractname}{Abstract} % Cambia "Resumen" a "Abstract"
+\section*{Introduction}
 
-En este documento, se presenta una revisión detallada de los procesos de renovación y regenerativos. Comenzamos con una introducción a los procesos estocásticos, específicamente las cadenas de Markov, incluyendo las cadenas de Markov ergódicas y homogéneas, así como las cadenas irreducibles. Se discuten conceptos esenciales como las clases de comunicación, los estados absorbentes, recurrentes y transitorios, y la propiedad fuerte de Markov. También se abordan las ecuaciones de Chapman-Kolmogorov y las matrices de transición, fundamentales en la teoría de los procesos de Markov.
+The study of Markov chains is fundamental for understanding the conditions under which a stochastic process can regenerate, as well as for determining the existence of regeneration times. Extending these concepts to queueing theories and cyclic visit systems requires a deep understanding of the underlying theory. This analysis naturally leads to exploring more complex topics such as regenerative and renewal processes. This work provides a review of the essential concepts for initiating the study of stationary regenerative processes. The review of these topics was carried out under the supervision of Dr. Raúl Montes de Oca Machorro and Dr. Patricia Saavedra Barrera, whose timely and valuable suggestions and comments were fundamental in developing the study of these types of stochastic processes. It is important to highlight that the applications of these results in queueing theory have a significant impact on contemporary problems. It is important to highlight that the applications of these results in queueing theory have a significant impact on contemporary problems. Despite the advances made, there are still unresolved questions regarding their application and generalization in queueing theory. This work does not aim to be an exhaustive study of the topic but rather to provide the necessary elements to introduce the study of these processes. The document is organized as follows: the first section provides a review of Markov chains and Markov processes. The second section addresses an initial study of renewal processes and regenerative processes, along with their properties and the main renewal theorem. The third section delves into the regenerative processes included in \cite{Thorisson}, for which it is necessary to review more general processes. Finally, the last section presents a series of considerations regarding the content of this work.
 
-A partir de esta base, exploramos los procesos regenerativos estacionarios, el teorema principal de renovación, y las propiedades de los procesos de renovación, incluida la función de renovación y la ley fuerte de los grandes números para procesos de renovación. Además, se examina la ecuación de renovación y la identidad de Wald para renovaciones, conceptos clave en la teoría de la renovación.
+\end{otherlanguage}
 
-La sección final profundiza en la teoría de los procesos regenerativos, examinando tanto los procesos regenerativos estacionarios como los procesos de salida asociados con los procesos regenerativos. Se discuten los procesos Poisson, los procesos wide-sense regenerative, los tiempos de inter-regeneración y los tiempos de regeneración. También se abordan conceptos avanzados como los mapeos medibles del retraso, los mapeos shift y los procesos shift-medibles.
+%En el estudio de Cadenas de Markov es importante conocer las condiciones bajo las cuales el proceso estoc\'astico relacionado se regenera, o si es posible dar las condiciones bajo las cuales se puede garantizar la existencia de tiempos de regeneraci\'on. Su generalizaci\'on a las teor\'ias de colas y sistemas de visitas c\'iclicas hace necesario profundizar en el conocimiento de la teor\'ia subyacente. Este an\'alisis, de manera natural. llev\'o a revisar temas m\'as complejos tales como procesos m\'as generales de tipo regenerativos y de renovaci\'on. En este trabajo se hace una revisi\'on de los conceptos relevantes para iniciar el estudio de los procesos regenerativos estacionarios.  La revisi\'on de estos temas se hizo bajo la tutela del Dr. Ra\'ul Montes de Oca Machorro y la Dra. Patricia Saavedra Barrera, quienes a trav\'es de sus comentarios y sugerencias se construy\'o el camino que llev\'o al estudio de este tipo de procesos estoc\'asticos. Es importante resaltar que las aplicaciones de estos resultados en la teor\'ia de colas tienen un gran impacto en temas de actualidad. A\'un quedan preguntas sin responder sobre su aplicaci\'on en la teor\'ia de Colas  y sus generalizaciones . Este trabajo no pretende ser un estudio exhaustivo sobre el tema, sino m\'as bien dar los elementos que ayuden a introducirse en el estudio de estos temas.El documento est\'a organizado de la siguiente manera: en la primera secci\'on se hace una revisi\'on de las cadenas de Markov, para continuar con procesos de Markov. En la segunda secci\'on se comienza con un primer estudio de los procesos de Renovaci\'on y de los procesos Regenerativos, así como sus propiedades y el Teorema principal de renovación. En la tercera sección se profundiza en los procesos regenerativos incluidos en \cite{Thorisson} para los cuales se requiere revisar procesos m\'as generales. Finalmente en la \'ultima secci\'on se hace una serie de consideraciones respecto al contenido de este trabajo.
 
-Esta revisión tiene como objetivo proporcionar una comprensión exhaustiva de estos procesos, que son cruciales en diversas aplicaciones prácticas, incluyendo la teoría de colas, la teoría de la fiabilidad y la investigación operativa.
 
-%_____________________________________________________________________
+
+
+%Los procesos estocásticos son fundamentales en la modelización de sistemas que evolucionan aleatoriamente con el tiempo. Entre estos, los procesos de renovación y los procesos regenerativos ocupan un lugar destacado debido a sus aplicaciones en diversas áreas como la teoría de colas, la teoría de la fiabilidad y la investigación operativa. A pesar de su importancia, aún existen áreas que requieren una mayor comprensión y desarrollo.Este documento tiene como objetivo presentar una revisión detallada de los procesos de renovación y regenerativos. En la primera parte, introducimos los procesos estocásticos, con un enfoque específico en las cadenas de Markov. Se abordan diferentes tipos de cadenas de Markov, incluyendo las ergódicas, homogéneas e irreducibles, y se discuten conceptos clave como las clases de comunicación, los estados absorbentes, recurrentes y transitorios, y la propiedad fuerte de Markov. También se revisan las ecuaciones de Chapman-Kolmogorov y las matrices de transición, que son fundamentales en la teoría de los procesos de Markov. Posteriormente, exploramos los procesos regenerativos estacionarios, el teorema principal de renovación y las propiedades de los procesos de renovación, como la función de renovación y la ley fuerte de los grandes números para estos procesos. Además, se examinan conceptos cruciales como la ecuación de renovación y la identidad de Wald para renovaciones. La sección final se centra en la teoría de los procesos regenerativos, incluyendo tanto los procesos regenerativos estacionarios como los procesos de salida asociados con estos procesos. Se discuten los procesos Poisson, los procesos wide-sense regenerative, los tiempos de inter-regeneración y los tiempos de regeneración. También se abordan conceptos avanzados como los mapeos medibles del retraso, los mapeos shift y los procesos shift-medibles.
+
+Esta revisión tiene como objetivo proporcionar una comprensión exhaustiva de estos procesos, destacando su relevancia y aplicaciones en áreas prácticas como la teoría de colas, la teoría de la fiabilidad y la investigación operativa. El documento está organizado de la siguiente manera: en la Sección 2 se presentan los procesos estocásticos, en la Sección 3 se exploran los procesos de renovación y regenerativos, y en la Sección 4 se profundiza en la teoría de los procesos regenerativos.
+%________________________________________________________
 \section{Procesos Estoc\'asticos}
-%_____________________________________________________________________
+%________________________________________________________
 
 \begin{Def}\index{Conjunto Medible}
 Sea $X$ un conjunto y $\mathcal{F}$ una $\sigma$-\'algebra de subconjuntos de $X$, la pareja $\left(X,\mathcal{F}\right)$ es llamado espacio medible. Un subconjunto $A$ de $X$ es llamado medible, o medible con respecto a $\mathcal{F}$, si $A\in\mathcal{F}$.
@@ -186,7 +213,7 @@ en $\left\{T<\infty\right\}$.
 \end{Teo}
 
 %------------------------------------------------------------------------
-\subsection{Cadenas de Markov}
+\subsection*{Cadenas de Markov}
 %------------------------------------------------------------------------
 
 \begin{Def}\index{Cadena de Markov}
@@ -327,7 +354,7 @@ P\left(X_{n+1}=y\right)=\sum_{x} P\left(X_{n}=x\right)P\left(x,y\right).
 Si se conoce la distribuci\'on de $X_{0}$ se puede conocer la distribuci\'on de $X_{1}$.
 \end{Note}
 %_______________________________________________________________
-\subsection{Procesos de Estados de Markov}
+\subsection*{Procesos de Estados de Markov}
 %_______________________________________________________________
 
 \begin{Teo}
@@ -397,7 +424,7 @@ Sea $N_{t}:=\sum_{t}\indora_{\left(t\geq t\right)}$ el n\'umero de saltos en $\l
 es un proceso de Markov, m\'as a\'un, es un Proceso Fuerte de Markov, es decir, la Propiedad Fuerte de Markov\footnote{Revisar p\'agina 362, y 364 de Davis \cite{Davis}.} se cumple para cualquier tiempo de paro.\index{Propiedad Fuerte de Markov}
 
 %------------------------------------------------------------------------------------------
-\subsection{Clasificaci\'on de Estados}
+\subsection*{Clasificaci\'on de Estados}
 %------------------------------------------------------------------------------------------
 
 \begin{Def}\index{Tiempos de Paro}
@@ -480,7 +507,7 @@ Por lo tanto tenemos la siguiente proposici\'on:
 \end{Prop}
 
 %_________________________________________________________________________
-\subsection{Procesos de Markov}
+\subsection*{Procesos de Markov}
 %_________________________________________________________________________
 En esta secci\'on se har\'an las siguientes consideraciones: $E$ es un espacio m\'etrico separable y la m\'etrica $d$ es compatible con la topolog\'ia.
 
@@ -504,7 +531,7 @@ Sea $E$ espacio separable metrizable. Entonces $E$ es de Rad\'on si y s\'olo s\'
 
 Sea $E$ espacio de estados, tal que $E$ es un espacio de Rad\'on, $\mathcal{B}\left(E\right)$ $\sigma$-\'algebra de Borel en $E$, que se denotar\'a por $\mathcal{E}$.\\
 
-Sea $\left(X,\mathcal{G},\prob\right)$ espacio de probabilidad, $I\subset\rea$ conjunto de \'indices. Sea $\mathcal{F}_{\leq t}$ la $\sigma$-\'algebra natural definida como $\sigma\left\{f\left(X_{r}\right):r\in I, r\leq t,f\in\mathcal{E}\right\}$. Se considerar\'a una $\sigma$-\'algebra m\'as general\footnote{qu\'e se quiere decir con el t\'ermino: m\'as general?}, $ \left(\mathcal{G}_{t}\right)$ tal que $\left(X_{t}\right)$ sea $\mathcal{E}$-adaptado.
+Sea $\left(X,\mathcal{G},\prob\right)$ espacio de probabilidad, $I\subset\rea$ conjunto de \'indices. Sea $\mathcal{F}_{\leq t}$ la $\sigma$-\'algebra natural definida como $\sigma\left\{f\left(X_{r}\right):r\in I, r\leq t,f\in\mathcal{E}\right\}$. Se considerar\'a una $\sigma$-\'algebra m\'as general, $ \left(\mathcal{G}_{t}\right)$ tal que $\left(X_{t}\right)$ sea $\mathcal{E}$-adaptado.
 
 \begin{Def}
 Una familia $\left(P_{s,t}\right)$ de kernels de Markov en $\left(E,\mathcal{E}\right)$ indexada por pares $s,t\in I$, con $s\leq t$ es una funci\'on de transici\'on en $\ER$, si  para todo $r\leq s< t$ en $I$ y todo $x\in E$, $B\in\mathcal{E}$
@@ -523,7 +550,7 @@ Se dice que la funci\'on de transici\'on $\KM$ en $\ER$ es la funci\'on de trans
 
 \begin{Def}\index{Semigrupo de Transici\'on de Markov}
 Una familia $\left(P_{t}\right)_{t\geq0}$ de kernels de Markov en $\ER$ es llamada {\em Semigrupo de Transici\'on de Markov} o {\em Semigrupo de Transici\'on} si
-\[P_{t+s}f\left(x\right)=P_{t}\left(P_{s}f\right)\left(x\right),\textrm{ }t,s\geq0,\textrm{ }x\in E\textrm{ }f\in b\mathcal{E}\footnote{Definir los t\'ermino $b\mathcal{E}$ y $p\mathcal{E}$}.\]
+\[P_{t+s}f\left(x\right)=P_{t}\left(P_{s}f\right)\left(x\right),\textrm{ }t,s\geq0,\textrm{ }x\in E\textrm{ }f\in b\mathcal{E}.\]
 \end{Def}
 \begin{Note}
 Si la funci\'on de transici\'on $\KM$ es llamada homog\'enea si $P_{s,t}=P_{t-s}$.
@@ -560,7 +587,7 @@ Para definir un proceso de renovaci\'on para cualquier contexto, solamente hay q
 \end{Note}
 
 %_______________________________________________________________________
-\subsection{Procesos Regenerativos Estacionarios}
+\subsection*{Procesos Regenerativos Estacionarios}
 %_______________________________________________________________________
 
 \begin{Def}\index{Procesos Regenerativos}
@@ -600,17 +627,17 @@ con probabilidad 1 y en media, cuando $t\rightarrow\infty$.
 \end{Teo}
 
 
-\begin{Coro}
+\begin{Cor}
 Sea $\left\{V\left(t\right),t\geq0\right\}$ un proceso regenerativo no negativo, con modificaci\'on medible. Si $\esp <\infty$, $F$ es no-aritm\'etica, y para todo $x\geq0$, $P\left\{V\left(t\right)\leq x,C>x\right\}$ es de variaci\'on acotada como funci\'on de $t$ en cada intervalo finito $\left[0,\tau\right]$, entonces $V\left(t\right)$ converge en distribuci\'on  cuando $t\rightarrow\infty$ y $$\esp V=\frac{\esp \int_{0}^{X}V\left(s\right)ds}{\esp X}$$
 Donde $V$ tiene la distribuci\'on l\'imite de $V\left(t\right)$ cuando $t\rightarrow\infty$.
 
-\end{Coro}
+\end{Cor}
 
 Para el caso discreto se tienen resultados similares.
 
 %________________________________________________________________________
 %
-\subsection{Teorema Principal de Renovaci\'on}
+\subsection*{Teorema Principal de Renovaci\'on}
 %________________________________________________________________________
 
 \begin{Note} Una funci\'on $h:\rea_{+}\rightarrow\rea$ es Directamente Riemann Integrable en los siguientes casos:
@@ -685,7 +712,7 @@ Para $\left\{X\left(t\right):t\geq0\right\}$ Proceso Estoc\'astico a tiempo cont
 
 
 %_____________________________________________________________________
-\subsection{Propiedades de los Procesos de Renovaci\'on}
+\subsection*{Propiedades de los Procesos de Renovaci\'on}
 %______________________________________________________________________
 Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
 \begin{eqnarray*}
@@ -746,12 +773,12 @@ lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
 
 Es decir, $T_{n}$ satisface la Ley Fuerte de los Grandes N\'umeros s\'i y s\'olo s\'i $N\left(t\right)$ la cumple.
 
-\begin{Coro}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]\index{Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on}
+\begin{Cor}[Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on]\index{Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on}
 Si $N\left(t\right)$ es un proceso de renovaci\'on cuyos tiempos de inter-renovaci\'on tienen media $\mu\leq\infty$, entonces
 \begin{eqnarray}
 t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
 \end{eqnarray}
-\end{Coro}
+\end{Cor}
 
 Consideremos el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$
 
@@ -771,16 +798,16 @@ lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
 La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
 \end{Teo}
 
-\begin{Coro}
+\begin{Cor}
 Si $N\left(t\right)$ es un proceso de renovaci\'on, y $\left(Z\left(T_{n}\right)-Z\left(T_{n-1}\right),M_{n}\right)$, para $n\geq1$, son variables aleatorias independientes e id\'enticamente distribuidas con media finita, entonces,
 \begin{eqnarray}
 lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)\rightarrow\frac{\esp\left[Z\left(T_{1}\right)-Z\left(T_{0}\right)\right]}{\esp\left[T_{1}\right]},\textrm{ c.s. cuando  }t\rightarrow\infty.
 \end{eqnarray}
-\end{Coro}
+\end{Cor}
 
 
 %_________________________________________________________________________
-\subsection{Funci\'on de Renovaci\'on}
+\subsection*{Funci\'on de Renovaci\'on}
 %_________________________________________________________________________
 
 Sup\'ongase que $N\left(t\right)$ es un proceso de renovaci\'on con distribuci\'on $F$ con media finita $\mu$.
@@ -832,12 +859,12 @@ suponiendo que la integral exista. Adem\'as si $X_{1},X_{2},\ldots$ son variable
 suponiendo que la integral exista. 
 \end{Teo}
 
-\begin{Coro}[Identidad de Wald para Renovaciones]\index{Identidad de Wald para Renovaciones}
+\begin{Cor}[Identidad de Wald para Renovaciones]\index{Identidad de Wald para Renovaciones}
 Para el proceso de renovaci\'on $N\left(t\right)$,
 \begin{eqnarray}
 \esp\left[T_{N\left(t\right)+1}\right]=\mu\esp\left[N\left(t\right)+1\right]\textrm{,  }t\geq0,
 \end{eqnarray}  
-\end{Coro}
+\end{Cor}
 
 
 \begin{Def}\index{Ecuaci\'on de Renovaci\'on}
@@ -925,7 +952,8 @@ Un proceso regenerativo con media de la longitud de ciclo finita es llamado posi
 
 %___________________________________________________________________________________________
 %
-\subsection{Renewal and Regenerative Processes}
+\subsection*{Procesos de Renovaci\'on y Regenerativos}
+%\subsection{Renewal and Regenerative Processes}
 %___________________________________________________________________________________________
 %
 
@@ -995,12 +1023,12 @@ Cuando estos enunciados son ciertos, $P\left\{B\left(t\right)\leq x\right\}=F_{e
 Una consecuencia del teorema anterior es que el Proceso Poisson es el \'unico proceso sin retardo que es estacionario.
 \end{Note}
 
-\begin{Coro}
+\begin{Cor}
 El proceso de renovaci\'on $N\left(t\right)$ sin retardo, y cuyos tiempos de inter renovaci\'on tienen media finita, es estacionario si y s\'olo si es un proceso Poisson.
-\end{Coro}
+\end{Cor}
 
 %__________________________________________________________________________________________
-\subsection{Procesos Regenerativos Estacionarios}
+\subsection*{Procesos Regenerativos Estacionarios}
 %__________________________________________________________________________________________
 
 Para $\left\{X\left(t\right):t\geq0\right\}$ Proceso Estoc\'astico a tiempo continuo con estado de espacios $S$, que es un espacio m\'etrico, con trayectorias continuas por la derecha y con l\'imites por la izquierda c.s. Sea $N\left(t\right)$ un proceso de renovaci\'on en $\rea_{+}$ definido en el mismo espacio de probabilidad que $X\left(t\right)$, con tiempos de renovaci\'on $T$ y tiempos de inter-renovaci\'on $\xi_{n}=T_{n}-T_{n-1}$, con misma distribuci\'on $F$ de media finita $\mu$.
@@ -1376,9 +1404,9 @@ Entonces el espacio de probabilidad subyacente $\left(\Omega,\mathcal{F},\prob\r
 \end{eqnarray}
 \end{Teo}
 
-\begin{Coro}\label{Tma.Estacionariedad}\index{Teorema de Estacionariedad}
+\begin{Cor}\label{Tma.Estacionariedad}\index{Teorema de Estacionariedad}
 Bajo las condiciones del Teorema anterior (\ref{Tma.Existencia.Tiempos.Regeneracion}), el par $\left(Z,S\right)$ es regenerativo cl\'asico. Si adem\'as se tiene que $\esp\left[X_{1}\right]<\infty$ por el Teorema (\ref{Teo.3.1}) existe un par $\left(Z^{*},S^{*}\right)$ que es una vesi\'on estacionaria de $\left(Z,S\right)$.
-\end{Coro}
+\end{Cor}
 
 Sea $\left(\Omega,\mathcal{F},\prob\right)$ espacio de probabilidad que soporta al proceso $Z=\left(Z_{s}\right)_{s\in\left[0,\infty\right)}$ y $S=\left(S_{k}\right)_{0}^{\infty}$ donde $Z$ es un PEOSCTM con espacio de estados $\left(E,\mathcal{E}\right)$  y espacio de trayectorias $\left(H,\mathcal{H}\right)$  y adem\'as $S$ es una sucesi\'on de tiempos aleatorios one-sided que satisfacen la condici\'on $0\leq S_{0}<S_{1}<\cdots\rightarrow\infty$. Considerando $S$ como un mapeo medible de $\left(\Omega,\mathcal{F}\right)$ al espacio sucesi\'on $\left(L,\mathcal{L}\right)$, $S:\left(\Omega,\mathcal{F}\right)\rightarrow\left(L,\mathcal{L}\right)$, donde 
 \begin{eqnarray*}
@@ -1411,7 +1439,8 @@ Con la finalidad de poder realizar los shift's sin complicaciones de medibilidad
 
 %_________________________________________________________________________
 %
-\subsection{Output Process and Regenerative Processes}
+\subsection*{Procesos de Salida y Procesos Regenerativos}
+%\subsection{Output Process and Regenerative Processes}
 %_________________________________________________________________________
 %
 En Sigman, Thorison y Wolff \cite{Sigman2} prueban que para la existencia de un una sucesi\'on infinita no decreciente de tiempos de regeneraci\'on $\tau_{1}\leq\tau_{2}\leq\cdots$ en los cuales el proceso se regenera, basta un tiempo de regeneraci\'on $R_{1}$, donde $R_{j}=\tau_{j}-\tau_{j-1}$. Para tal efecto se requiere la existencia de un espacio de probabilidad $\left(\Omega,\mathcal{F},\prob\right)$, y proceso estoc\'astico $\textit{X}=\left\{X\left(t\right):t\geq0\right\}$ con espacio de estados $\left(S,\mathcal{R}\right)$, con $\mathcal{R}$ $\sigma$-\'algebra.
@@ -1426,6 +1455,7 @@ Adem\'as, para $k\geq1$, $\theta_{k}R$ es condicionalmente independiente de $\le
 
 \end{Prop}
 
+A continuaci\'on se enuncian una lista de resultados para sistemas de espera:
 
 \begin{itemize}
 \item Doob en 1953 demostr\'o que el estado estacionario de un proceso de partida en un sistema de espera $M/G/\infty$, es Poisson con la misma tasa que el proceso de arribos.
@@ -1522,7 +1552,7 @@ Los intervalos de interpartida $\left\{D_{n}\right\}$ de un sistema $M/G/1$ esta
 
 
 
-\input{bibliografia}
+\input{bibliografiaSP}
 
-\printindex
+%\printindex
 \end{document}

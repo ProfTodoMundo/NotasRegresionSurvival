@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.7)  28 JUL 2024 20:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.7)  29 JUL 2024 01:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -555,210 +555,61 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 ))
-\c@Algthm=\count323
-\c@Def=\count324
-\c@Ejem=\count325
-\c@Teo=\count326
-\c@Dem=\count327
-\c@Note=\count328
-\c@Sol=\count329
-\c@Prop=\count330
-\c@Cor=\count331
-\c@Col=\count332
-\c@Coro=\count333
-\c@Lemma=\count334
-\c@Lem=\count335
-\c@Lema=\count336
-\c@Sup=\count337
-\c@Assumption=\count338
-\c@Remark=\count339
-\c@Condition=\count340
-\c@Theorem=\count341
-\c@Corollary=\count342
-\c@Ejemplo=\count343
-\c@Example=\count344
-\c@Obs=\count345
-\0-RegenerativeRegenerationProcesses@idxfile=\write3
-\openout3 = `0-RegenerativeRegenerationProcesses.idx'.
+\c@Def=\count323
+\c@Ejem=\count324
+\c@Teo=\count325
+\c@Note=\count326
+\c@Prop=\count327
+\c@Cor=\count328
+\c@Lema=\count329
+\c@Sup=\count330
+\c@Obs=\count331
 
-
-Writing index file 0-RegenerativeRegenerationProcesses.idx
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count346
+\l__color_backend_stack_int=\count332
 \l__pdf_internal_box=\box105
 )
 (./0-RegenerativeRegenerationProcesses.aux
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
+
+(/usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/en/babel-english.t
+ex
+Package babel Info: Importing basic data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+)
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
 
 
 LaTeX Warning: Label `Prop.Fuerte.Markov' multiply defined.
 
-
-LaTeX Warning: Label `Rouche' multiply defined.
-
-
-LaTeX Warning: Label `Asmussen' multiply defined.
-
-
-LaTeX Warning: Label `Bhat' multiply defined.
-
-
-LaTeX Warning: Label `Boxma' multiply defined.
-
-
-LaTeX Warning: Label `BoonMeiWinands' multiply defined.
-
-
-LaTeX Warning: Label `Borovkov' multiply defined.
-
-
-LaTeX Warning: Label `BosBoon' multiply defined.
-
-
-LaTeX Warning: Label `HookHee' multiply defined.
-
-
-LaTeX Warning: Label `Chen' multiply defined.
-
-
-LaTeX Warning: Label `CooperII' multiply defined.
-
-
-LaTeX Warning: Label `Dai' multiply defined.
-
-
-LaTeX Warning: Label `DaiSean' multiply defined.
-
-
-LaTeX Warning: Label `DaiWeiss' multiply defined.
-
-
-LaTeX Warning: Label `Daley68' multiply defined.
-
-
-LaTeX Warning: Label `Davis' multiply defined.
-
-
-LaTeX Warning: Label `Down' multiply defined.
-
-
-LaTeX Warning: Label `Daley68' multiply defined.
-
-
-LaTeX Warning: Label `Disney' multiply defined.
-
-
-LaTeX Warning: Label `Eisenberg' multiply defined.
-
-
-LaTeX Warning: Label `FrickerJaibi' multiply defined.
-
-
-LaTeX Warning: Label `Stability' multiply defined.
-
-
-LaTeX Warning: Label `Getoor' multiply defined.
-
-
-LaTeX Warning: Label `Gut' multiply defined.
-
-
-LaTeX Warning: Label `HookHee' multiply defined.
-
-
-LaTeX Warning: Label `KaspiMandelbaum' multiply defined.
-
-
-LaTeX Warning: Label `Konheim' multiply defined.
-
-
-LaTeX Warning: Label `Kleinrock' multiply defined.
-
-
-LaTeX Warning: Label `Konheim' multiply defined.
-
-
-LaTeX Warning: Label `Lang' multiply defined.
-
-
-LaTeX Warning: Label `LevySidi' multiply defined.
-
-
-LaTeX Warning: Label `MeiBorst' multiply defined.
-
-
-LaTeX Warning: Label `MeynTweedie2' multiply defined.
-
-
-LaTeX Warning: Label `MeynDown' multiply defined.
-
-
-LaTeX Warning: Label `TesisRoubos' multiply defined.
-
-
-LaTeX Warning: Label `RepTec' multiply defined.
-
-
-LaTeX Warning: Label `Semenova' multiply defined.
-
-
-LaTeX Warning: Label `Serfozo' multiply defined.
-
-
-LaTeX Warning: Label `Sharpe' multiply defined.
-
-
-LaTeX Warning: Label `Sigma' multiply defined.
-
-
-LaTeX Warning: Label `SidiLevy1' multiply defined.
-
-
-LaTeX Warning: Label `SidiLevy2' multiply defined.
-
-
-LaTeX Warning: Label `Sigman2' multiply defined.
-
-
-LaTeX Warning: Label `Stidham' multiply defined.
-
-
-LaTeX Warning: Label `TakagiI' multiply defined.
-
-
-LaTeX Warning: Label `Takagi' multiply defined.
-
-
-LaTeX Warning: Label `Thorisson' multiply defined.
-
-
-LaTeX Warning: Label `Winands' multiply defined.
-
 )
 \openout1 = `0-RegenerativeRegenerationProcesses.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 102.
+LaTeX Font Info:    ... okay on input line 102.
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -794,26 +645,26 @@ LaTeX Info: Redefining \% on input line 94.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 94.
+Package hyperref Info: Link coloring OFF on input line 102.
 (./0-RegenerativeRegenerationProcesses.out)
 (./0-RegenerativeRegenerationProcesses.out)
-\@outlinefile=\write4
-\openout4 = `0-RegenerativeRegenerationProcesses.out'.
+\@outlinefile=\write3
+\openout3 = `0-RegenerativeRegenerationProcesses.out'.
 
-\c@lstlisting=\count347
+\c@lstlisting=\count333
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count348
+\scratchcounter=\count334
 \scratchdimen=\dimen197
 \scratchbox=\box106
-\nofMPsegments=\count349
-\nofMParguments=\count350
+\nofMPsegments=\count335
+\nofMParguments=\count336
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count351
+\MPscratchCnt=\count337
 \MPscratchDim=\dimen198
-\MPnumerator=\count352
-\makeMPintoPDFobject=\count353
+\MPnumerator=\count338
+\makeMPintoPDFobject=\count339
 \everyMPtoPDFconversion=\toks42
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -828,681 +679,112 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 97.
-
+LaTeX Font Info:    Trying to load font information for U+msa on input line 105
+.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 97.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 105
+.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(./0-RegenerativeRegenerationProcesses.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
-\tf@toc=\write5
-\openout5 = `0-RegenerativeRegenerationProcesses.toc'.
-
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
  [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Info: Redefining \. on input line 159.
-LaTeX Info: Redefining \% on input line 159.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-[2]
-LaTeX Info: Redefining \. on input line 242.
-LaTeX Info: Redefining \% on input line 242.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 242.
-LaTeX Info: Redefining \% on input line 242.
-[3]
-LaTeX Info: Redefining \. on input line 335.
-LaTeX Info: Redefining \% on input line 335.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 335.
-LaTeX Info: Redefining \% on input line 335.
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 369--370
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
+LaTeX Info: Redefining \. on input line 182.
+LaTeX Info: Redefining \% on input line 182.
+ [2]
+LaTeX Info: Redefining \. on input line 264.
+LaTeX Info: Redefining \% on input line 264.
+ [3]
+LaTeX Info: Redefining \. on input line 346.
+LaTeX Info: Redefining \% on input line 346.
+ [4]
+LaTeX Info: Redefining \. on input line 394.
+LaTeX Info: Redefining \% on input line 394.
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
 
  []
-
-LaTeX Info: Redefining \. on input line 386.
-LaTeX Info: Redefining \% on input line 386.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 386.
-LaTeX Info: Redefining \% on input line 386.
-[5]
-LaTeX Info: Redefining \. on input line 460.
-LaTeX Info: Redefining \% on input line 460.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
 
 LaTeX Info: Redefining \. on input line 460.
 LaTeX Info: Redefining \% on input line 460.
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 505--506
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
-
-Overfull \hbox (1.40651pt too wide) in paragraph at lines 525--526
-[][]\OT1/cmr/bx/n/10 Definici^^Son 2.18. []\OT1/cmr/m/it/10 Una fa-mi-lia $[][]
+LaTeX Info: Redefining \. on input line 540.
+LaTeX Info: Redefining \% on input line 540.
+[7]
+Overfull \hbox (1.40651pt too wide) in paragraph at lines 552--553
+[][]\OT1/cmr/bx/n/10 Definici^^Son 1.18. []\OT1/cmr/m/it/10 Una fa-mi-lia $[][]
 $ de ker-nels de Mar-kov en $[]$ es lla-ma-da \OT1/cmr/m/n/10 Se-mi-gru-po de T
 ransici^^Son
  []
 
-LaTeX Info: Redefining \. on input line 526.
-LaTeX Info: Redefining \% on input line 526.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 526.
-LaTeX Info: Redefining \% on input line 526.
-[7]
 LaTeX Info: Redefining \. on input line 587.
 LaTeX Info: Redefining \% on input line 587.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
 [8]
-LaTeX Info: Redefining \. on input line 649.
-LaTeX Info: Redefining \% on input line 649.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 649.
-LaTeX Info: Redefining \% on input line 649.
-[9]
-LaTeX Info: Redefining \. on input line 718.
-LaTeX Info: Redefining \% on input line 718.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 718.
-LaTeX Info: Redefining \% on input line 718.
-[10]
-LaTeX Info: Redefining \. on input line 792.
-LaTeX Info: Redefining \% on input line 792.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 792.
-LaTeX Info: Redefining \% on input line 792.
-[11]
-LaTeX Info: Redefining \. on input line 871.
-LaTeX Info: Redefining \% on input line 871.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 871.
-LaTeX Info: Redefining \% on input line 871.
-[12]
-LaTeX Info: Redefining \. on input line 938.
-LaTeX Info: Redefining \% on input line 938.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-[13]
-LaTeX Info: Redefining \. on input line 1012.
-LaTeX Info: Redefining \% on input line 1012.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 1012.
-LaTeX Info: Redefining \% on input line 1012.
-[14]
-LaTeX Info: Redefining \. on input line 1078.
-LaTeX Info: Redefining \% on input line 1078.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 1078.
-LaTeX Info: Redefining \% on input line 1078.
-[15]
-LaTeX Info: Redefining \. on input line 1159.
-LaTeX Info: Redefining \% on input line 1159.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 1159.
-LaTeX Info: Redefining \% on input line 1159.
-[16]
-LaTeX Info: Redefining \. on input line 1228.
-LaTeX Info: Redefining \% on input line 1228.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 1228.
-LaTeX Info: Redefining \% on input line 1228.
-[17]
-LaTeX Info: Redefining \. on input line 1294.
-LaTeX Info: Redefining \% on input line 1294.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 1294.
-LaTeX Info: Redefining \% on input line 1294.
-[18]
-LaTeX Info: Redefining \. on input line 1357.
-LaTeX Info: Redefining \% on input line 1357.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 1357.
-LaTeX Info: Redefining \% on input line 1357.
-[19]
-LaTeX Info: Redefining \. on input line 1421.
-LaTeX Info: Redefining \% on input line 1421.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 1421.
-LaTeX Info: Redefining \% on input line 1421.
-[20]
-LaTeX Info: Redefining \. on input line 1482.
-LaTeX Info: Redefining \% on input line 1482.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.07225pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.07225pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.07225pt}.
-
-LaTeX Info: Redefining \. on input line 1482.
-LaTeX Info: Redefining \% on input line 1482.
-[21] (./bibliografia.tex
-LaTeX Info: Redefining \. on input line 21.
-LaTeX Info: Redefining \% on input line 21.
-LaTeX Info: Redefining \. on input line 21.
-LaTeX Info: Redefining \% on input line 21.
- [22]
-LaTeX Info: Redefining \. on input line 68.
-LaTeX Info: Redefining \% on input line 68.
-LaTeX Info: Redefining \. on input line 68.
-LaTeX Info: Redefining \% on input line 68.
- [23]
-LaTeX Info: Redefining \. on input line 120.
-LaTeX Info: Redefining \% on input line 120.
-LaTeX Info: Redefining \. on input line 120.
-LaTeX Info: Redefining \% on input line 120.
- [24]
-Underfull \hbox (badness 10000) in paragraph at lines 138--139
-[]\OT1/cmr/m/n/10 Practical Gui-de to Lo-gis-tic Re-gres-sion in R on To-wards 
-Da-ta Scien-ce: []$\OT1/cmtt/m/n/10 https : / /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
-[]\OT1/cmr/m/n/10 Multinomial Lo-gis-tic Re-gres-sion on Da-ta-Camp: []$\OT1/cm
-tt/m/n/10 https : / / www . datacamp . com / community /
- []
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Rouche})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.169 \bibitem{Rouche}
-                       I.J.B.F. Adan, J.S.H. van Leeuwaarden, and E.M.M. Win...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Asmussen
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.172 \bibitem{Asmussen}
-                         Asmussen Soren, Applied Probability and
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Bhat}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.178 \bibitem{Bhat}
-                     Bhat Narayan, An Introduction to Queueing Theory
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Boxma}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.181 \bibitem{Boxma}
-                      Boxma J. O., Analysis and Optimization of Polling
-LaTeX Info: Redefining \. on input line 184.
-LaTeX Info: Redefining \% on input line 184.
-LaTeX Info: Redefining \. on input line 184.
-LaTeX Info: Redefining \% on input line 184.
-
-[25]
-pdfTeX warning (ext4): destination with the same identifier (name{cite.BoonMeiW
-inands}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.189 \bibitem{BoonMeiWinands}
-                               Boon M.A.A., Van der Mei R.D.  and
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Borovkov
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.192 \bibitem{Borovkov}
-                         Borovkov. A. A. and Schassberger R., Ergodicity
-pdfTeX warning (ext4): destination with the same identifier (name{cite.BosBoon}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.197 \bibitem{BosBoon}
-                       Laurent van den Bos and Marko Boon, Networks of Polli...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.HookHee}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.205 \bibitem{HookHee}
-                        Chee-Hook Ng. y Boon-Hee Soong, Queueing
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Chen}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.209 \bibitem{Chen}
-                     Chen H., Fluid Approximations and Stability of
-pdfTeX warning (ext4): destination with the same identifier (name{cite.CooperII
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.216 \bibitem{CooperII}
-                         R.B. Cooper, Queues served in cyclic order: waiting...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Dai}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.222 \bibitem{Dai}
-                    Dai Jean G., On positive Harris Recurrence of Multiclass...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.DaiSean}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.226 \bibitem{DaiSean}
-                        Dai Jim G. and Meyn Sean P., Stability and Convergen...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.DaiWeiss
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.231 \bibitem{DaiWeiss}
-                        
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Daley68}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.236 \bibitem{Daley68}
-                        D.J. Daley, The correlation structure of the output ...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Davis}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.239 \bibitem{Davis}
-                      Davis, M. H. A., Piecewise Deterministic Markov
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Down}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.244 \bibitem{Down}
-                     Down D., On the Stability of Polling Models with Multip...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Daley68}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.247 \bibitem{Daley68}
-                        D.J. Daley, The correlation structure of the output ...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Disney})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.249 \bibitem{Disney}
-                       Ralpjh L. Disney, Robert L. Farrell and Paulo Renato ...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Eisenber
-g}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.254 \bibitem{Eisenberg}
-                          M. Eisenberg, Queues with periodic service and cha...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.FrickerJ
-aibi}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.261 \bibitem{FrickerJaibi}
-                            
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Stabilit
-y}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.266 \bibitem{Stability}
-                         
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Getoor})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.275 \bibitem{Getoor}
-                       Getoor R. K., Transience and recurrence of
-LaTeX Info: Redefining \. on input line 278.
-LaTeX Info: Redefining \% on input line 278.
-LaTeX Info: Redefining \. on input line 278.
-LaTeX Info: Redefining \% on input line 278.
- [26]
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Gut}) ha
-s been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.279 \bibitem{Gut}
-                    Gut A., Stopped Random Walks: Limit Theorems and
-pdfTeX warning (ext4): destination with the same identifier (name{cite.HookHee}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.286 \bibitem{HookHee}
-                        Chee-Hook Ng. y Boon-Hee Soong, Queueing
-pdfTeX warning (ext4): destination with the same identifier (name{cite.KaspiMan
-delbaum}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.301 \bibitem{KaspiMandelbaum}
-                                Kaspi H. and Mandelbaum A., Regenerative Clo...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Konheim}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.305 \bibitem{Konheim}
-                        A.G. Konheim, H. Levy, M.M. Srinivasan, Descendant s...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Kleinroc
-k}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.309 \bibitem{Kleinrock}
-                          Leonard Kleinrock, Theory, Volume 1, Queueing Syst...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Konheim}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.312 \bibitem{Konheim}
-                        A. G. Konheim, h. Levy and M. M. Srinivasan. Descend...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Lang}) h
-as been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.319 \bibitem{Lang}
-                     Serge Lang, Calculus of Several Variables, Addison-Wesl...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.LevySidi
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.321 \bibitem{LevySidi}
-                        
-pdfTeX warning (ext4): destination with the same identifier (name{cite.MeiBorst
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.328 \bibitem{MeiBorst}
-                         van der Mei, R.D. and Borst, S. C., Analysis of Mul...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.MeynTwee
-die2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.339 \bibitem{MeynTweedie2}
-                             Meyn S. P. and Tweedie R. L., Markov Chains and...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.MeynDown
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.342 \bibitem{MeynDown}
-                         Meyn, S.P. and Down, D., Stability of Generalized J...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.TesisRou
-bos}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.362 \bibitem{TesisRoubos}
-                           
-pdfTeX warning (ext4): destination with the same identifier (name{cite.RepTec})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.372 \bibitem{RepTec}
-                      
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Semenova
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.376 \bibitem{Semenova}
-                        
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Serfozo}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.379 \bibitem{Serfozo}
-                        Richard Serfozo, Basics of Applied Stochastic Proces...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Sharpe})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.382 \bibitem{Sharpe}
-                       Sharpe Michael , General Theory of Markov Processes. ...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Sigma}) 
-has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.386 \bibitem{Sigma}
-                      Sigman Karl, The Stability of Open Queueing
-pdfTeX warning (ext4): destination with the same identifier (name{cite.SidiLevy
-1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.390 \bibitem{SidiLevy1}
-                          Sidi M.  and Levy H.,  Customer Routing in Polling...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.SidiLevy
-2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.394 \bibitem{SidiLevy2}
-                          Sidi M.  and Levy H., Polling Systems with Simulta...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Sigman2}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.397 \bibitem{Sigman2}
-                        Karl Sigman, Hermann Thorisson and Ronald W. Wolff, ...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Stidham}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.401 \bibitem{Stidham}
-                        Shaler Stidham, Jr., Regenerative Processes in the t...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.TakagiI}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.409 \bibitem{TakagiI}
-                        Takagi H. and Kleinrock, Analysis of Polling Systems...
-LaTeX Info: Redefining \. on input line 411.
-LaTeX Info: Redefining \% on input line 411.
-LaTeX Info: Redefining \. on input line 411.
-LaTeX Info: Redefining \% on input line 411.
-[27]
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Takagi})
- has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.411 \bibitem{Takagi}
-                      Takagi Hideaki, Queueing Analysis of Polling Models, A...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Thorisso
-n}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.412 \bibitem{Thorisson}
-                          Hermann Thorisson, Coupling, Stationarity, and Reg...
-
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Winands}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.422 \bibitem{Winands}
-                        E.M.M. Winands, I.J.B.F. Adan adn G.J. van Houtum, M...
-)
-LaTeX Info: Redefining \. on input line 1528.
-LaTeX Info: Redefining \% on input line 1528.
-LaTeX Info: Redefining \. on input line 1528.
-LaTeX Info: Redefining \% on input line 1528.
- [28]
-runsystem(makeindex 0-RegenerativeRegenerationProcesses.idx)...executed safely 
-(allowed).
-
- (./0-RegenerativeRegenerationProcesses.ind) [29
-
-]
-(./0-RegenerativeRegenerationProcesses.aux
-LaTeX Info: Redefining \. on input line 11.
-LaTeX Info: Redefining \% on input line 11.
+LaTeX Info: Redefining \. on input line 653.
+LaTeX Info: Redefining \% on input line 653.
+ [9]
+LaTeX Info: Redefining \. on input line 721.
+LaTeX Info: Redefining \% on input line 721.
+ [10]
+LaTeX Info: Redefining \. on input line 799.
+LaTeX Info: Redefining \% on input line 799.
+ [11]
+LaTeX Info: Redefining \. on input line 874.
+LaTeX Info: Redefining \% on input line 874.
+ [12]
+LaTeX Info: Redefining \. on input line 940.
+LaTeX Info: Redefining \% on input line 940.
+ [13]
+LaTeX Info: Redefining \. on input line 1018.
+LaTeX Info: Redefining \% on input line 1018.
+ [14]
+LaTeX Info: Redefining \. on input line 1090.
+LaTeX Info: Redefining \% on input line 1090.
+ [15]
+LaTeX Info: Redefining \. on input line 1158.
+LaTeX Info: Redefining \% on input line 1158.
+ [16]
+LaTeX Info: Redefining \. on input line 1239.
+LaTeX Info: Redefining \% on input line 1239.
+ [17]
+LaTeX Info: Redefining \. on input line 1305.
+LaTeX Info: Redefining \% on input line 1305.
+ [18]
+LaTeX Info: Redefining \. on input line 1367.
+LaTeX Info: Redefining \% on input line 1367.
+ [19]
+LaTeX Info: Redefining \. on input line 1437.
+LaTeX Info: Redefining \% on input line 1437.
+ [20]
+LaTeX Info: Redefining \. on input line 1498.
+LaTeX Info: Redefining \% on input line 1498.
+ [21]
+(./bibliografiaSP.tex
+LaTeX Info: Redefining \. on input line 14.
+LaTeX Info: Redefining \% on input line 14.
+ [22])
+LaTeX Info: Redefining \. on input line 1558.
+LaTeX Info: Redefining \% on input line 1558.
+ [23] (./0-RegenerativeRegenerationProcesses.aux
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
 )
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -1514,16 +796,16 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `0-RegenerativeRegenerationProcesses.out' has
  not changed.
-(rerunfilecheck)             Checksum: BDBBED1D7ED27FDA525F6A07D58DAE38;3104.
+(rerunfilecheck)             Checksum: 2A14957F29431D7F9E78DADB5A5D5952;617.
  ) 
 Here is how much of TeX's memory you used:
- 16562 strings out of 474116
- 258163 string characters out of 5743683
- 1951187 words of memory out of 5000000
- 38320 multiletter control sequences out of 15000+600000
- 570236 words of font info for 81 fonts, out of 8000000 for 9000
+ 16353 strings out of 474116
+ 256545 string characters out of 5743683
+ 1952187 words of memory out of 5000000
+ 38201 multiletter control sequences out of 15000+600000
+ 570068 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,1363b,666s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,2031b,700s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
@@ -1550,14 +832,13 @@ onts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/typ
-e1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts
-/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on 0-RegenerativeRegenerationProcesses.pdf (29 pages, 478671 byt
+pe1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/font
+s/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on 0-RegenerativeRegenerationProcesses.pdf (23 pages, 444738 byt
 es).
 PDF statistics:
- 793 PDF objects out of 1000 (max. 8388607)
- 697 compressed objects within 7 object streams
- 369 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 607 PDF objects out of 1000 (max. 8388607)
+ 520 compressed objects within 6 object streams
+ 282 named destinations out of 1000 (max. 500000)
+ 25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
