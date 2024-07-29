@@ -1,49 +1,75 @@
-\indexentry{Conjunto Medible}{5}
-\indexentry{Medida $\sigma$-finita}{5}
-\indexentry{Conjunto de Borel}{5}
-\indexentry{Funci\'on Medible}{5}
-\indexentry{Cilindro}{5}
-\indexentry{Tiempos de Paro}{5}
-\indexentry{Proceso Adaptado}{5}
-\indexentry{Proceso de Markov}{5}
-\indexentry{Cadena de Markov}{6}
-\indexentry{Probabilidades Condicionales}{6}
-\indexentry{Cadena Homog\'enea}{6}
-\indexentry{Probabilidades de Transici\'on}{6}
-\indexentry{Delta de Kronecker}{6}
-\indexentry{Matriz de Transici\'on}{6}
-\indexentry{Ecuaciones de Chapman-Kolmogorov}{7}
-\indexentry{Propiedad Fuerte de Markov}{9}
-\indexentry{Tiempos de Paro}{9}
-\indexentry{Estados recurrentes}{9}
-\indexentry{Estados transitorios}{9}
-\indexentry{Estados absorbentes}{9}
-\indexentry{Clases de Comunicaci\'on}{9}
-\indexentry{Cadena Irreducible}{9}
-\indexentry{Espacio de Rad\'on}{10}
-\indexentry{Semigrupo de Transici\'on de Markov}{10}
-\indexentry{Propiedad Simple de Markov}{11}
-\indexentry{Procesos de Conteo}{11}
-\indexentry{Procesos de Renovaci\'on}{11}
-\indexentry{Procesos Regenerativos}{11}
-\indexentry{Procesos Estacionarios}{11}
-\indexentry{Modificaci\'on Medible}{11}
-\indexentry{Procesos Crudamente Regenerativos}{12}
-\indexentry{Trayectorias Muestrales}{13}
+\indexentry{Conjunto Medible}{4}
+\indexentry{Medida $\sigma$-finita}{4}
+\indexentry{Conjunto de Borel}{4}
+\indexentry{Funci\'on Medible}{4}
+\indexentry{Cilindro}{4}
+\indexentry{Tiempos de Paro}{4}
+\indexentry{Proceso Adaptado}{4}
+\indexentry{Proceso de Markov}{4}
+\indexentry{Cadena de Markov}{5}
+\indexentry{Probabilidades Condicionales}{5}
+\indexentry{Cadena Homog\'enea}{5}
+\indexentry{Probabilidades de Transici\'on}{5}
+\indexentry{Delta de Kronecker}{5}
+\indexentry{Matriz de Transici\'on}{5}
+\indexentry{Ecuaciones de Chapman-Kolmogorov}{6}
+\indexentry{Propiedad Fuerte de Markov}{8}
+\indexentry{Tiempos de Paro}{8}
+\indexentry{Estados recurrentes}{8}
+\indexentry{Estados transitorios}{8}
+\indexentry{Estados absorbentes}{8}
+\indexentry{Clases de Comunicaci\'on}{8}
+\indexentry{Cadena Irreducible}{8}
+\indexentry{Espacio de Rad\'on}{9}
+\indexentry{Semigrupo de Transici\'on de Markov}{9}
+\indexentry{Propiedad Simple de Markov}{10}
+\indexentry{Procesos de Conteo}{10}
+\indexentry{Procesos de Renovaci\'on}{10}
+\indexentry{Procesos Regenerativos}{10}
+\indexentry{Procesos Estacionarios}{10}
+\indexentry{Modificaci\'on Medible}{10}
+\indexentry{Teorema Principal de Renovaci\'on}{11}
+\indexentry{Procesos Crudamente Regenerativos}{11}
+\indexentry{Trayectorias Muestrales}{12}
+\indexentry{Proceso Poisson}{13}
+\indexentry{Proceso de Renovaci\'on Retardado}{13}
+\indexentry{Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on}{13}
+\indexentry{Funci\'on de Renovaci\'on}{13}
+\indexentry{Transformada de Laplace-Stieljes}{14}
 \indexentry{Proceso Poisson}{14}
-\indexentry{Proceso de Renovaci\'on Retardado}{14}
-\indexentry{Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on}{14}
-\indexentry{Funci\'on de Renovaci\'on}{14}
-\indexentry{Transformada de Laplace-Stieljes}{15}
-\indexentry{Proceso Poisson}{15}
-\indexentry{Identidad de Wald para Renovaciones}{15}
-\indexentry{Ecuaci\'on de Renovaci\'on}{15}
-\indexentry{Teorema Renovaci\'on Elemental}{15}
-\indexentry{Procesos Regenerativos}{15}
-\indexentry{Tiempos de Regeneraci\'on}{16}
-\indexentry{Procesos de Renovaci\'on Encajados}{16}
-\indexentry{Procesos Positivo Recurrente}{16}
-\indexentry{Procesos de Markov}{17}
-\indexentry{Cadena de Markov Erg\'odica}{17}
-\indexentry{Procesos Estacionarios}{17}
-\indexentry{Espacio Polaco}{18}
+\indexentry{Identidad de Wald para Renovaciones}{14}
+\indexentry{Ecuaci\'on de Renovaci\'on}{14}
+\indexentry{Teorema Renovaci\'on Elemental}{14}
+\indexentry{Procesos Regenerativos}{14}
+\indexentry{Tiempos de Regeneraci\'on}{15}
+\indexentry{Procesos de Renovaci\'on Encajados}{15}
+\indexentry{Procesos Positivo Recurrente}{15}
+\indexentry{Procesos de Markov}{16}
+\indexentry{Cadena de Markov Erg\'odica}{16}
+\indexentry{Procesos Estacionarios}{16}
+\indexentry{Espacio Producto}{17}
+\indexentry{Espacio Polaco}{17}
+\indexentry{Espacion Est\'andar}{17}
+\indexentry{Procesos Continuos por un lado}{17}
+\indexentry{Trayectorias}{18}
+\indexentry{Espacio de Trayectorias}{18}
+\indexentry{Procesos Conjuntamente Medibles}{18}
+\indexentry{Procesos Can\'onicmente Conjuntamente Medibles}{18}
+\indexentry{Trayectorias Internamente Shift-Invariantes}{18}
+\indexentry{Mapeo-shift}{18}
+\indexentry{Proceso shift-medible}{18}
+\indexentry{Mapeo Medible}{19}
+\indexentry{Procesos Regenerativo Cl\'asico}{19}
+\indexentry{Tiempos de Inter-regeneraci\'on}{19}
+\indexentry{Variable aleatoria \textit{spread out}}{19}
+\indexentry{Procesos \textit{wide-sense regenerative}}{19}
+\indexentry{Procesos Delay-length}{20}
+\indexentry{Mapeo medible del retraso}{20}
+\indexentry{Ciclo Estacionario}{20}
+\indexentry{Procesos Regenerativo Cl\'asico}{21}
+\indexentry{Procesos spread out}{21}
+\indexentry{Procesos \textit{wide-sense regenerative}}{21}
+\indexentry{Proceso de Markov}{21}
+\indexentry{Teorema de Existencia de los Tiempos de Regeneracion}{22}
+\indexentry{Teorema de Estacionariedad}{22}
+\indexentry{Mapeo shift}{22}

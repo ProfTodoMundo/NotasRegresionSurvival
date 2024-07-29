@@ -1,149 +1,123 @@
-\babel@toc {spanish}{}
-\contentsline {part}{I\hspace {1em}Introducci\'on a Procesos Regenerativos}{5}{part.1}
-\contentsline {section}{\numberline {1}Procesos Estoc\'asticos}{5}{section.1}
-\contentsline {subsection}{\numberline {1.1}Cadenas de Markov}{6}{subsection.1.1}
-\contentsline {subsection}{\numberline {1.2}Procesos de Estados de Markov}{7}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Clasificaci\'on de Estados}{9}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Procesos de Markov}{10}{subsection.1.4}
-\contentsline {section}{\numberline {2}Procesos de Renovaci\'on y Regenerativos}{11}{section.2}
-\contentsline {subsection}{\numberline {2.1}Procesos Regenerativos Estacionarios}{11}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Teorema Principal de Renovaci\'on}{12}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Propiedades de los Procesos de Renovaci\'on}{13}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Funci\'on de Renovaci\'on}{14}{subsection.2.4}
-\contentsline {part}{II\hspace {1em}Procesos Regenerativos seg\'un autores}{15}{part.2}
-\contentsline {section}{\numberline {3}Procesos Regenerativos: Sigman\cite {Sigman1}}{15}{section.3}
-\contentsline {subsection}{\numberline {3.1}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{16}{subsection.3.1}
-\contentsline {section}{\numberline {4}EN REVISI\'ON}{17}{section.4}
-\contentsline {subsection}{\numberline {4.1}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{17}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{21}{subsection.4.2}
-\contentsline {section}{\numberline {5}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{68}{section.5}
-\contentsline {subsection}{\numberline {5.1}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{105}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{106}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{107}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{108}{subsubsection.5.3.1}
-\contentsline {subsection}{\numberline {5.4}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{109}{subsection.5.4}
-\contentsline {section}{\numberline {6}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman2}}{120}{section.6}
-\contentsline {subsection}{\numberline {6.1}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman2}}{121}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman2}}{122}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{123}{subsection.6.3}
-\contentsline {section}{\numberline {7}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{136}{section.7}
-\contentsline {subsection}{\numberline {7.1}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{143}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{149}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{154}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{161}{subsection.7.4}
-\contentsline {subsection}{\numberline {7.5}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{167}{subsection.7.5}
-\contentsline {subsection}{\numberline {7.6}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{174}{subsection.7.6}
-\contentsline {subsection}{\numberline {7.7}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{181}{subsection.7.7}
-\contentsline {section}{\numberline {8}Procesos Regenerativos: Thorisson}{190}{section.8}
-\contentsline {subsection}{\numberline {8.1}One Sided Process}{206}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Regeneration: Shift-Measurability}{207}{subsection.8.2}
-\contentsline {subsection}{\numberline {8.3}Cycle-Stationarity}{207}{subsection.8.3}
-\contentsline {subsection}{\numberline {8.4}Classical Regeneration}{208}{subsection.8.4}
-\contentsline {subsection}{\numberline {8.5}Stationary Version}{208}{subsection.8.5}
-\contentsline {subsection}{\numberline {8.6}Spread Out}{208}{subsection.8.6}
-\contentsline {subsection}{\numberline {8.7}Wide Sense Regeneration}{208}{subsection.8.7}
-\contentsline {subsection}{\numberline {8.8}Existence of Regeneration Times}{208}{subsection.8.8}
-\contentsline {section}{\numberline {9}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{210}{section.9}
-\contentsline {subsection}{\numberline {9.1}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{219}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{224}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{229}{subsection.9.3}
-\contentsline {subsection}{\numberline {9.4}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{234}{subsection.9.4}
-\contentsline {section}{\numberline {10}Procesos Regenerativos: Thorisson}{239}{section.10}
-\contentsline {subsection}{\numberline {10.1}Procesos Regenerativos: Thorisson}{243}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Procesos Regenerativos: Thorisson}{257}{subsection.10.2}
-\contentsline {section}{\numberline {11}Procesos Regenerativos Estacionarios: Visi\'on cl\'asica}{272}{section.11}
-\contentsline {section}{\numberline {12}Procesos Regenerativos}{273}{section.12}
-\contentsline {subsection}{\numberline {12.1}Procesos Regenerativos}{273}{subsection.12.1}
-\contentsline {subsection}{\numberline {12.2}Procesos Regenerativos}{274}{subsection.12.2}
-\contentsline {subsection}{\numberline {12.3}Procesos Regenerativos}{275}{subsection.12.3}
-\contentsline {subsection}{\numberline {12.4}Procesos Regenerativos}{276}{subsection.12.4}
-\contentsline {subsection}{\numberline {12.5}Procesos Regenerativos}{280}{subsection.12.5}
-\contentsline {subsection}{\numberline {12.6}Procesos Regenerativos}{281}{subsection.12.6}
-\contentsline {subsection}{\numberline {12.7}Procesos Regenerativos}{282}{subsection.12.7}
-\contentsline {subsection}{\numberline {12.8}Procesos Regenerativos}{284}{subsection.12.8}
-\contentsline {subsection}{\numberline {12.9}Procesos Regenerativos}{285}{subsection.12.9}
-\contentsline {subsection}{\numberline {12.10}Procesos Regenerativos}{286}{subsection.12.10}
-\contentsline {subsection}{\numberline {12.11}Procesos Regenerativos}{287}{subsection.12.11}
-\contentsline {subsection}{\numberline {12.12}Procesos Regenerativos}{288}{subsection.12.12}
-\contentsline {subsection}{\numberline {12.13}Procesos Regenerativos}{289}{subsection.12.13}
-\contentsline {subsection}{\numberline {12.14}Procesos Regenerativos}{290}{subsection.12.14}
-\contentsline {subsection}{\numberline {12.15}Procesos Regenerativos}{290}{subsection.12.15}
-\contentsline {subsection}{\numberline {12.16}Procesos Regenerativos}{290}{subsection.12.16}
-\contentsline {subsection}{\numberline {12.17}Procesos Regenerativos}{293}{subsection.12.17}
-\contentsline {subsection}{\numberline {12.18}Procesos Regenerativos}{294}{subsection.12.18}
-\contentsline {subsection}{\numberline {12.19}Procesos Regenerativos}{295}{subsection.12.19}
-\contentsline {subsection}{\numberline {12.20}Procesos Regenerativos}{296}{subsection.12.20}
-\contentsline {subsection}{\numberline {12.21}Procesos Regenerativos}{297}{subsection.12.21}
-\contentsline {subsection}{\numberline {12.22}Procesos Regenerativos}{298}{subsection.12.22}
-\contentsline {subsection}{\numberline {12.23}Procesos Regenerativos}{301}{subsection.12.23}
-\contentsline {subsection}{\numberline {12.24}Procesos Regenerativos}{302}{subsection.12.24}
-\contentsline {section}{\numberline {13}Procesos de Renovaci\'on}{303}{section.13}
-\contentsline {subsection}{\numberline {13.1}Procesos de Renovaci\'on}{304}{subsection.13.1}
-\contentsline {subsection}{\numberline {13.2}Procesos de Renovaci\'on}{309}{subsection.13.2}
-\contentsline {subsection}{\numberline {13.3}Procesos de Renovaci\'on}{310}{subsection.13.3}
-\contentsline {subsection}{\numberline {13.4}Procesos de Renovaci\'on}{310}{subsection.13.4}
-\contentsline {subsection}{\numberline {13.5}Procesos de Renovaci\'on}{311}{subsection.13.5}
-\contentsline {subsection}{\numberline {13.6}Procesos de Renovaci\'on}{311}{subsection.13.6}
-\contentsline {subsection}{\numberline {13.7}Procesos de Renovaci\'on}{318}{subsection.13.7}
-\contentsline {subsection}{\numberline {13.8}Procesos de Renovaci\'on}{319}{subsection.13.8}
-\contentsline {subsection}{\numberline {13.9}Procesos de Renovaci\'on}{319}{subsection.13.9}
-\contentsline {subsection}{\numberline {13.10}Procesos de Renovaci\'on}{320}{subsection.13.10}
-\contentsline {subsection}{\numberline {13.11}Procesos de Renovaci\'on}{320}{subsection.13.11}
-\contentsline {subsection}{\numberline {13.12}Procesos de Renovaci\'on}{321}{subsection.13.12}
-\contentsline {subsection}{\numberline {13.13}Procesos de Renovaci\'on}{322}{subsection.13.13}
-\contentsline {subsection}{\numberline {13.14}Procesos de Renovaci\'on}{322}{subsection.13.14}
-\contentsline {subsection}{\numberline {13.15}Procesos de Renovaci\'on}{323}{subsection.13.15}
-\contentsline {subsection}{\numberline {13.16}Procesos de Renovaci\'on}{323}{subsection.13.16}
-\contentsline {subsection}{\numberline {13.17}Procesos de Renovaci\'on}{324}{subsection.13.17}
-\contentsline {subsection}{\numberline {13.18}Procesos de Renovaci\'on}{324}{subsection.13.18}
-\contentsline {subsection}{\numberline {13.19}Procesos de Renovaci\'on}{325}{subsection.13.19}
-\contentsline {subsection}{\numberline {13.20}Procesos de Renovaci\'on}{325}{subsection.13.20}
-\contentsline {subsection}{\numberline {13.21}Procesos de Renovaci\'on}{332}{subsection.13.21}
-\contentsline {section}{\numberline {14}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{333}{section.14}
-\contentsline {subsection}{\numberline {14.1}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{333}{subsection.14.1}
-\contentsline {subsection}{\numberline {14.2}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{340}{subsection.14.2}
-\contentsline {subsection}{\numberline {14.3}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{341}{subsection.14.3}
-\contentsline {subsection}{\numberline {14.4}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{342}{subsection.14.4}
-\contentsline {subsection}{\numberline {14.5}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{343}{subsection.14.5}
-\contentsline {subsection}{\numberline {14.6}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{344}{subsection.14.6}
-\contentsline {subsection}{\numberline {14.7}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{345}{subsection.14.7}
-\contentsline {subsection}{\numberline {14.8}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{346}{subsection.14.8}
-\contentsline {subsection}{\numberline {14.9}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{347}{subsection.14.9}
-\contentsline {subsection}{\numberline {14.10}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{348}{subsection.14.10}
-\contentsline {subsection}{\numberline {14.11}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{348}{subsection.14.11}
-\contentsline {subsection}{\numberline {14.12}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{349}{subsection.14.12}
-\contentsline {subsection}{\numberline {14.13}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{350}{subsection.14.13}
-\contentsline {subsection}{\numberline {14.14}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{351}{subsection.14.14}
-\contentsline {subsection}{\numberline {14.15}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{352}{subsection.14.15}
-\contentsline {subsection}{\numberline {14.16}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{353}{subsection.14.16}
-\contentsline {subsection}{\numberline {14.17}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{354}{subsection.14.17}
-\contentsline {subsection}{\numberline {14.18}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{355}{subsection.14.18}
-\contentsline {subsection}{\numberline {14.19}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{357}{subsection.14.19}
-\contentsline {subsection}{\numberline {14.20}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{357}{subsection.14.20}
-\contentsline {subsection}{\numberline {14.21}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{358}{subsection.14.21}
-\contentsline {subsection}{\numberline {14.22}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{359}{subsection.14.22}
-\contentsline {subsection}{\numberline {14.23}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{360}{subsection.14.23}
-\contentsline {subsection}{\numberline {14.24}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{361}{subsection.14.24}
-\contentsline {subsection}{\numberline {14.25}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{362}{subsection.14.25}
-\contentsline {subsection}{\numberline {14.26}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{362}{subsection.14.26}
-\contentsline {section}{\numberline {15}Output Process and Regenerative Processes}{363}{section.15}
-\contentsline {subsection}{\numberline {15.1}Output Process and Regenerative Processes}{364}{subsection.15.1}
-\contentsline {subsection}{\numberline {15.2}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{370}{subsection.15.2}
-\contentsline {subsection}{\numberline {15.3}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{371}{subsection.15.3}
-\contentsline {subsection}{\numberline {15.4}Procesos de Renovaci\'on}{372}{subsection.15.4}
-\contentsline {subsection}{\numberline {15.5}Teorema Principal de Renovaci\'on}{372}{subsection.15.5}
-\contentsline {subsection}{\numberline {15.6}Propiedades de los Procesos de Renovaci\'on}{373}{subsection.15.6}
-\contentsline {subsection}{\numberline {15.7}Propiedades de los Procesos de Renovaci\'on}{374}{subsection.15.7}
-\contentsline {subsection}{\numberline {15.8}Propiedades de los Procesos de Renovaci\'on}{376}{subsection.15.8}
-\contentsline {subsection}{\numberline {15.9}Propiedades de los Procesos de Renovaci\'on}{377}{subsection.15.9}
-\contentsline {subsection}{\numberline {15.10}Propiedades de los Procesos de Renovaci\'on}{378}{subsection.15.10}
-\contentsline {subsection}{\numberline {15.11}Funci\'on de Renovaci\'on}{379}{subsection.15.11}
-\contentsline {subsection}{\numberline {15.12}Funci\'on de Renovaci\'on}{380}{subsection.15.12}
-\contentsline {subsection}{\numberline {15.13}Procesos de Renovaci\'on}{380}{subsection.15.13}
-\contentsline {subsection}{\numberline {15.14}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{381}{subsection.15.14}
-\contentsline {subsection}{\numberline {15.15}Procesos Regenerativos}{387}{subsection.15.15}
-\contentsline {subsection}{\numberline {15.16}Procesos Regenerativos}{388}{subsection.15.16}
-\contentsline {subsection}{\numberline {15.17}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{389}{subsection.15.17}
-\contentsline {subsection}{\numberline {15.18}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{390}{subsection.15.18}
-\contentsline {section}{\numberline {16}Resultados para Procesos de Salida}{391}{section.16}
-\contentsline {section}{\numberline {17}Resultados para Procesos de Salida}{392}{section.17}
+\babel@toc {spanish}{}\relax 
+\contentsline {part}{I\hspace {1em}Introducci\'on a Procesos Regenerativos}{4}{part.1}%
+\contentsline {section}{\numberline {1}Procesos Estoc\'asticos}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Cadenas de Markov}{5}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Procesos de Estados de Markov}{6}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Clasificaci\'on de Estados}{8}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Procesos de Markov}{9}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Procesos de Renovaci\'on y Regenerativos}{10}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Procesos Regenerativos Estacionarios}{10}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Teorema Principal de Renovaci\'on}{11}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Propiedades de los Procesos de Renovaci\'on}{12}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Funci\'on de Renovaci\'on}{13}{subsection.2.4}%
+\contentsline {part}{II\hspace {1em}Procesos Regenerativos seg\'un autores}{14}{part.2}%
+\contentsline {section}{\numberline {3}Procesos Regenerativos: Sigman\cite {Sigman1}}{14}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{15}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{16}{subsection.3.2}%
+\contentsline {section}{\numberline {4}REVISANDO}{22}{section.4}%
+\contentsline {section}{\numberline {5}Procesos Regenerativos: Thorisson}{22}{section.5}%
+\contentsline {subsection}{\numberline {5.1}One Sided Process}{22}{subsection.5.1}%
+\contentsline {section}{\numberline {6}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{24}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{33}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{38}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{43}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{48}{subsection.6.4}%
+\contentsline {section}{\numberline {7}Procesos Regenerativos: Thorisson}{53}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Procesos Regenerativos: Thorisson}{56}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Procesos Regenerativos: Thorisson}{71}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Procesos Regenerativos Estacionarios: Visi\'on cl\'asica}{85}{section.8}%
+\contentsline {section}{\numberline {9}Procesos Regenerativos}{86}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Procesos Regenerativos}{87}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Procesos Regenerativos}{88}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Procesos Regenerativos}{89}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Procesos Regenerativos}{90}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Procesos Regenerativos}{93}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.6}Procesos Regenerativos}{94}{subsection.9.6}%
+\contentsline {subsection}{\numberline {9.7}Procesos Regenerativos}{95}{subsection.9.7}%
+\contentsline {subsection}{\numberline {9.8}Procesos Regenerativos}{98}{subsection.9.8}%
+\contentsline {subsection}{\numberline {9.9}Procesos Regenerativos}{99}{subsection.9.9}%
+\contentsline {subsection}{\numberline {9.10}Procesos Regenerativos}{100}{subsection.9.10}%
+\contentsline {subsection}{\numberline {9.11}Procesos Regenerativos}{100}{subsection.9.11}%
+\contentsline {subsection}{\numberline {9.12}Procesos Regenerativos}{101}{subsection.9.12}%
+\contentsline {subsection}{\numberline {9.13}Procesos Regenerativos}{102}{subsection.9.13}%
+\contentsline {subsection}{\numberline {9.14}Procesos Regenerativos}{103}{subsection.9.14}%
+\contentsline {subsection}{\numberline {9.15}Procesos Regenerativos}{103}{subsection.9.15}%
+\contentsline {subsection}{\numberline {9.16}Procesos Regenerativos}{103}{subsection.9.16}%
+\contentsline {subsection}{\numberline {9.17}Procesos Regenerativos}{106}{subsection.9.17}%
+\contentsline {subsection}{\numberline {9.18}Procesos Regenerativos}{107}{subsection.9.18}%
+\contentsline {subsection}{\numberline {9.19}Procesos Regenerativos}{108}{subsection.9.19}%
+\contentsline {subsection}{\numberline {9.20}Procesos Regenerativos}{109}{subsection.9.20}%
+\contentsline {subsection}{\numberline {9.21}Procesos Regenerativos}{110}{subsection.9.21}%
+\contentsline {subsection}{\numberline {9.22}Procesos Regenerativos}{111}{subsection.9.22}%
+\contentsline {subsection}{\numberline {9.23}Procesos Regenerativos}{114}{subsection.9.23}%
+\contentsline {subsection}{\numberline {9.24}Procesos Regenerativos}{115}{subsection.9.24}%
+\contentsline {section}{\numberline {10}Procesos de Renovaci\'on}{116}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Procesos de Renovaci\'on}{117}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Procesos de Renovaci\'on}{123}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Procesos de Renovaci\'on}{123}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Procesos de Renovaci\'on}{124}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Procesos de Renovaci\'on}{124}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.6}Procesos de Renovaci\'on}{125}{subsection.10.6}%
+\contentsline {subsection}{\numberline {10.7}Procesos de Renovaci\'on}{132}{subsection.10.7}%
+\contentsline {subsection}{\numberline {10.8}Procesos de Renovaci\'on}{132}{subsection.10.8}%
+\contentsline {subsection}{\numberline {10.9}Procesos de Renovaci\'on}{133}{subsection.10.9}%
+\contentsline {subsection}{\numberline {10.10}Procesos de Renovaci\'on}{133}{subsection.10.10}%
+\contentsline {subsection}{\numberline {10.11}Procesos de Renovaci\'on}{134}{subsection.10.11}%
+\contentsline {subsection}{\numberline {10.12}Procesos de Renovaci\'on}{135}{subsection.10.12}%
+\contentsline {subsection}{\numberline {10.13}Procesos de Renovaci\'on}{135}{subsection.10.13}%
+\contentsline {subsection}{\numberline {10.14}Procesos de Renovaci\'on}{136}{subsection.10.14}%
+\contentsline {subsection}{\numberline {10.15}Procesos de Renovaci\'on}{136}{subsection.10.15}%
+\contentsline {subsection}{\numberline {10.16}Procesos de Renovaci\'on}{137}{subsection.10.16}%
+\contentsline {subsection}{\numberline {10.17}Procesos de Renovaci\'on}{137}{subsection.10.17}%
+\contentsline {subsection}{\numberline {10.18}Procesos de Renovaci\'on}{138}{subsection.10.18}%
+\contentsline {subsection}{\numberline {10.19}Procesos de Renovaci\'on}{138}{subsection.10.19}%
+\contentsline {subsection}{\numberline {10.20}Procesos de Renovaci\'on}{139}{subsection.10.20}%
+\contentsline {subsection}{\numberline {10.21}Procesos de Renovaci\'on}{146}{subsection.10.21}%
+\contentsline {section}{\numberline {11}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{146}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{147}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{153}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{155}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{155}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{156}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{157}{subsection.11.6}%
+\contentsline {subsection}{\numberline {11.7}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{159}{subsection.11.7}%
+\contentsline {subsection}{\numberline {11.8}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{159}{subsection.11.8}%
+\contentsline {subsection}{\numberline {11.9}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{160}{subsection.11.9}%
+\contentsline {subsection}{\numberline {11.10}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{161}{subsection.11.10}%
+\contentsline {subsection}{\numberline {11.11}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{162}{subsection.11.11}%
+\contentsline {subsection}{\numberline {11.12}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{163}{subsection.11.12}%
+\contentsline {subsection}{\numberline {11.13}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{163}{subsection.11.13}%
+\contentsline {subsection}{\numberline {11.14}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{164}{subsection.11.14}%
+\contentsline {subsection}{\numberline {11.15}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{165}{subsection.11.15}%
+\contentsline {subsection}{\numberline {11.16}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{167}{subsection.11.16}%
+\contentsline {subsection}{\numberline {11.17}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{167}{subsection.11.17}%
+\contentsline {subsection}{\numberline {11.18}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{168}{subsection.11.18}%
+\contentsline {subsection}{\numberline {11.19}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{170}{subsection.11.19}%
+\contentsline {subsection}{\numberline {11.20}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{171}{subsection.11.20}%
+\contentsline {subsection}{\numberline {11.21}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{171}{subsection.11.21}%
+\contentsline {subsection}{\numberline {11.22}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{172}{subsection.11.22}%
+\contentsline {subsection}{\numberline {11.23}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{173}{subsection.11.23}%
+\contentsline {subsection}{\numberline {11.24}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{174}{subsection.11.24}%
+\contentsline {subsection}{\numberline {11.25}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{175}{subsection.11.25}%
+\contentsline {subsection}{\numberline {11.26}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{176}{subsection.11.26}%
+\contentsline {section}{\numberline {12}Output Process and Regenerative Processes}{176}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Output Process and Regenerative Processes}{178}{subsection.12.1}%
+\contentsline {subsection}{\numberline {12.2}Procesos Regenerativos Sigman, Thorisson y Wolff \cite {Sigman1}}{183}{subsection.12.2}%
+\contentsline {subsection}{\numberline {12.3}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{184}{subsection.12.3}%
+\contentsline {subsection}{\numberline {12.4}Procesos de Renovaci\'on}{185}{subsection.12.4}%
+\contentsline {subsection}{\numberline {12.5}Teorema Principal de Renovaci\'on}{186}{subsection.12.5}%
+\contentsline {subsection}{\numberline {12.6}Propiedades de los Procesos de Renovaci\'on}{186}{subsection.12.6}%
+\contentsline {subsection}{\numberline {12.7}Propiedades de los Procesos de Renovaci\'on}{188}{subsection.12.7}%
+\contentsline {subsection}{\numberline {12.8}Propiedades de los Procesos de Renovaci\'on}{189}{subsection.12.8}%
+\contentsline {subsection}{\numberline {12.9}Propiedades de los Procesos de Renovaci\'on}{190}{subsection.12.9}%
+\contentsline {subsection}{\numberline {12.10}Propiedades de los Procesos de Renovaci\'on}{191}{subsection.12.10}%
+\contentsline {subsection}{\numberline {12.11}Funci\'on de Renovaci\'on}{193}{subsection.12.11}%
+\contentsline {subsection}{\numberline {12.12}Funci\'on de Renovaci\'on}{193}{subsection.12.12}%
+\contentsline {subsection}{\numberline {12.13}Procesos de Renovaci\'on}{194}{subsection.12.13}%
+\contentsline {subsection}{\numberline {12.14}Renewal and Regenerative Processes: Serfozo\cite {Serfozo}}{194}{subsection.12.14}%
+\contentsline {subsection}{\numberline {12.15}Procesos Regenerativos}{201}{subsection.12.15}%
+\contentsline {subsection}{\numberline {12.16}Procesos Regenerativos}{201}{subsection.12.16}%
+\contentsline {subsection}{\numberline {12.17}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{202}{subsection.12.17}%
+\contentsline {subsection}{\numberline {12.18}Procesos Regenerativos Estacionarios - Stidham \cite {Stidham}}{203}{subsection.12.18}%
+\contentsline {section}{\numberline {13}Resultados para Procesos de Salida}{204}{section.13}%
+\contentsline {section}{\numberline {14}Resultados para Procesos de Salida}{206}{section.14}%

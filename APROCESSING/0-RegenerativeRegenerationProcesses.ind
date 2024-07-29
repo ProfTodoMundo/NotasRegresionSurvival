@@ -1,77 +1,103 @@
 \begin{theindex}
 
-  \item Cadena de Markov, 6
-  \item Cadena de Markov Erg\'odica, 17
-  \item Cadena Homog\'enea, 6
-  \item Cadena Irreducible, 9
-  \item Cilindro, 5
-  \item Clases de Comunicaci\'on, 9
-  \item Conjunto de Borel, 5
-  \item Conjunto Medible, 5
+  \item Cadena de Markov, 5
+  \item Cadena de Markov Erg\'odica, 16
+  \item Cadena Homog\'enea, 5
+  \item Cadena Irreducible, 8
+  \item Ciclo Estacionario, 20
+  \item Cilindro, 4
+  \item Clases de Comunicaci\'on, 8
+  \item Conjunto de Borel, 4
+  \item Conjunto Medible, 4
 
   \indexspace
 
-  \item Delta de Kronecker, 6
+  \item Delta de Kronecker, 5
 
   \indexspace
 
-  \item Ecuaci\'on de Renovaci\'on, 15
-  \item Ecuaciones de Chapman-Kolmogorov, 7
-  \item Espacio de Rad\'on, 10
-  \item Espacio Polaco, 18
-  \item Estados absorbentes, 9
-  \item Estados recurrentes, 9
-  \item Estados transitorios, 9
+  \item Ecuaci\'on de Renovaci\'on, 14
+  \item Ecuaciones de Chapman-Kolmogorov, 6
+  \item Espacio de Rad\'on, 9
+  \item Espacio de Trayectorias, 18
+  \item Espacio Polaco, 17
+  \item Espacio Producto, 17
+  \item Espacion Est\'andar, 17
+  \item Estados absorbentes, 8
+  \item Estados recurrentes, 8
+  \item Estados transitorios, 8
 
   \indexspace
 
-  \item Funci\'on de Renovaci\'on, 14
-  \item Funci\'on Medible, 5
+  \item Funci\'on de Renovaci\'on, 13
+  \item Funci\'on Medible, 4
 
   \indexspace
 
-  \item Identidad de Wald para Renovaciones, 15
+  \item Identidad de Wald para Renovaciones, 14
 
   \indexspace
 
   \item Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on, 
-		14
+		13
 
   \indexspace
 
-  \item Matriz de Transici\'on, 6
-  \item Medida $\sigma$-finita, 5
-  \item Modificaci\'on Medible, 11
+  \item Mapeo Medible, 19
+  \item Mapeo medible del retraso, 20
+  \item Mapeo shift, 22
+  \item Mapeo-shift, 18
+  \item Matriz de Transici\'on, 5
+  \item Medida $\sigma$-finita, 4
+  \item Modificaci\'on Medible, 10
 
   \indexspace
 
-  \item Probabilidades Condicionales, 6
-  \item Probabilidades de Transici\'on, 6
-  \item Proceso Adaptado, 5
-  \item Proceso de Markov, 5
-  \item Proceso de Renovaci\'on Retardado, 14
-  \item Proceso Poisson, 14, 15
-  \item Procesos Crudamente Regenerativos, 12
-  \item Procesos de Conteo, 11
-  \item Procesos de Markov, 17
-  \item Procesos de Renovaci\'on, 11
-  \item Procesos de Renovaci\'on Encajados, 16
-  \item Procesos Estacionarios, 11, 17
-  \item Procesos Positivo Recurrente, 16
-  \item Procesos Regenerativos, 11, 15
-  \item Propiedad Fuerte de Markov, 9
-  \item Propiedad Simple de Markov, 11
+  \item Probabilidades Condicionales, 5
+  \item Probabilidades de Transici\'on, 5
+  \item Proceso Adaptado, 4
+  \item Proceso de Markov, 4, 21
+  \item Proceso de Renovaci\'on Retardado, 13
+  \item Proceso Poisson, 13, 14
+  \item Proceso shift-medible, 18
+  \item Procesos \textit{wide-sense regenerative}, 19, 21
+  \item Procesos Can\'onicmente Conjuntamente Medibles, 18
+  \item Procesos Conjuntamente Medibles, 18
+  \item Procesos Continuos por un lado, 17
+  \item Procesos Crudamente Regenerativos, 11
+  \item Procesos de Conteo, 10
+  \item Procesos de Markov, 16
+  \item Procesos de Renovaci\'on, 10
+  \item Procesos de Renovaci\'on Encajados, 15
+  \item Procesos Delay-length, 20
+  \item Procesos Estacionarios, 10, 16
+  \item Procesos Positivo Recurrente, 15
+  \item Procesos Regenerativo Cl\'asico, 19, 21
+  \item Procesos Regenerativos, 10, 14
+  \item Procesos spread out, 21
+  \item Propiedad Fuerte de Markov, 8
+  \item Propiedad Simple de Markov, 10
 
   \indexspace
 
-  \item Semigrupo de Transici\'on de Markov, 10
+  \item Semigrupo de Transici\'on de Markov, 9
 
   \indexspace
 
-  \item Teorema Renovaci\'on Elemental, 15
-  \item Tiempos de Paro, 5, 9
-  \item Tiempos de Regeneraci\'on, 16
-  \item Transformada de Laplace-Stieljes, 15
-  \item Trayectorias Muestrales, 13
+  \item Teorema de Estacionariedad, 22
+  \item Teorema de Existencia de los Tiempos de Regeneracion, 22
+  \item Teorema Principal de Renovaci\'on, 11
+  \item Teorema Renovaci\'on Elemental, 14
+  \item Tiempos de Inter-regeneraci\'on, 19
+  \item Tiempos de Paro, 4, 8
+  \item Tiempos de Regeneraci\'on, 15
+  \item Transformada de Laplace-Stieljes, 14
+  \item Trayectorias, 18
+  \item Trayectorias Internamente Shift-Invariantes, 18
+  \item Trayectorias Muestrales, 12
+
+  \indexspace
+
+  \item Variable aleatoria \textit{spread out}, 19
 
 \end{theindex}
