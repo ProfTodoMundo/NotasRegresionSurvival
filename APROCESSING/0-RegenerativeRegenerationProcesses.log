@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.7)  29 JUL 2024 01:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.7)  31 JUL 2024 19:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -564,7 +564,11 @@ Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
 \c@Lema=\count329
 \c@Sup=\count330
 \c@Obs=\count331
+\0-RegenerativeRegenerationProcesses@idxfile=\write3
+\openout3 = `0-RegenerativeRegenerationProcesses.idx'.
 
+
+Writing index file 0-RegenerativeRegenerationProcesses.idx
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count332
@@ -648,8 +652,8 @@ LaTeX Info: Redefining \% on input line 102.
 Package hyperref Info: Link coloring OFF on input line 102.
 (./0-RegenerativeRegenerationProcesses.out)
 (./0-RegenerativeRegenerationProcesses.out)
-\@outlinefile=\write3
-\openout3 = `0-RegenerativeRegenerationProcesses.out'.
+\@outlinefile=\write4
+\openout4 = `0-RegenerativeRegenerationProcesses.out'.
 
 \c@lstlisting=\count333
 
@@ -702,41 +706,41 @@ LaTeX Info: Redefining \% on input line 3.
 LaTeX Info: Redefining \. on input line 5.
 LaTeX Info: Redefining \% on input line 5.
 )
-\tf@toc=\write4
-\openout4 = `0-RegenerativeRegenerationProcesses.toc'.
+\tf@toc=\write5
+\openout5 = `0-RegenerativeRegenerationProcesses.toc'.
 
  [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Info: Redefining \. on input line 139.
 LaTeX Info: Redefining \% on input line 139.
-LaTeX Info: Redefining \. on input line 175.
-LaTeX Info: Redefining \% on input line 175.
+LaTeX Info: Redefining \. on input line 170.
+LaTeX Info: Redefining \% on input line 170.
  [2]
-LaTeX Info: Redefining \. on input line 256.
-LaTeX Info: Redefining \% on input line 256.
+LaTeX Info: Redefining \. on input line 247.
+LaTeX Info: Redefining \% on input line 247.
  [3]
-LaTeX Info: Redefining \. on input line 344.
-LaTeX Info: Redefining \% on input line 344.
+LaTeX Info: Redefining \. on input line 346.
+LaTeX Info: Redefining \% on input line 346.
  [4]
-LaTeX Info: Redefining \. on input line 392.
-LaTeX Info: Redefining \% on input line 392.
+LaTeX Info: Redefining \. on input line 396.
+LaTeX Info: Redefining \% on input line 396.
  [5]
-Underfull \hbox (badness 10000) in paragraph at lines 394--395
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
 
  []
 
-LaTeX Info: Redefining \. on input line 458.
-LaTeX Info: Redefining \% on input line 458.
+LaTeX Info: Redefining \. on input line 462.
+LaTeX Info: Redefining \% on input line 462.
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 530--531
+Underfull \hbox (badness 10000) in paragraph at lines 538--539
 
  []
 
-LaTeX Info: Redefining \. on input line 538.
-LaTeX Info: Redefining \% on input line 538.
+LaTeX Info: Redefining \. on input line 539.
+LaTeX Info: Redefining \% on input line 539.
 [7]
-Overfull \hbox (1.40651pt too wide) in paragraph at lines 550--551
+Overfull \hbox (1.40651pt too wide) in paragraph at lines 558--559
 [][]\OT1/cmr/bx/n/10 Definici^^Son 1.18. []\OT1/cmr/m/it/10 Una fa-mi-lia $[][]
 $ de ker-nels de Mar-kov en $[]$ es lla-ma-da \OT1/cmr/m/n/10 Se-mi-gru-po de T
 ransici^^Son
@@ -745,58 +749,69 @@ ransici^^Son
 LaTeX Info: Redefining \. on input line 585.
 LaTeX Info: Redefining \% on input line 585.
 [8]
-LaTeX Info: Redefining \. on input line 651.
-LaTeX Info: Redefining \% on input line 651.
+LaTeX Info: Redefining \. on input line 637.
+LaTeX Info: Redefining \% on input line 637.
  [9]
-LaTeX Info: Redefining \. on input line 719.
-LaTeX Info: Redefining \% on input line 719.
+LaTeX Info: Redefining \. on input line 717.
+LaTeX Info: Redefining \% on input line 717.
  [10]
-LaTeX Info: Redefining \. on input line 797.
-LaTeX Info: Redefining \% on input line 797.
+LaTeX Info: Redefining \. on input line 790.
+LaTeX Info: Redefining \% on input line 790.
  [11]
-LaTeX Info: Redefining \. on input line 872.
-LaTeX Info: Redefining \% on input line 872.
+LaTeX Info: Redefining \. on input line 860.
+LaTeX Info: Redefining \% on input line 860.
  [12]
-LaTeX Info: Redefining \. on input line 938.
-LaTeX Info: Redefining \% on input line 938.
+LaTeX Info: Redefining \. on input line 934.
+LaTeX Info: Redefining \% on input line 934.
  [13]
-LaTeX Info: Redefining \. on input line 1016.
-LaTeX Info: Redefining \% on input line 1016.
- [14]
-LaTeX Info: Redefining \. on input line 1088.
-LaTeX Info: Redefining \% on input line 1088.
+Underfull \hbox (badness 10000) in paragraph at lines 943--944
+
+ []
+
+LaTeX Info: Redefining \. on input line 1006.
+LaTeX Info: Redefining \% on input line 1006.
+[14]
+LaTeX Info: Redefining \. on input line 1075.
+LaTeX Info: Redefining \% on input line 1075.
  [15]
-LaTeX Info: Redefining \. on input line 1156.
-LaTeX Info: Redefining \% on input line 1156.
+LaTeX Info: Redefining \. on input line 1148.
+LaTeX Info: Redefining \% on input line 1148.
  [16]
-LaTeX Info: Redefining \. on input line 1237.
-LaTeX Info: Redefining \% on input line 1237.
+LaTeX Info: Redefining \. on input line 1232.
+LaTeX Info: Redefining \% on input line 1232.
  [17]
-LaTeX Info: Redefining \. on input line 1303.
-LaTeX Info: Redefining \% on input line 1303.
+LaTeX Info: Redefining \. on input line 1293.
+LaTeX Info: Redefining \% on input line 1293.
  [18]
-LaTeX Info: Redefining \. on input line 1365.
-LaTeX Info: Redefining \% on input line 1365.
+LaTeX Info: Redefining \. on input line 1364.
+LaTeX Info: Redefining \% on input line 1364.
  [19]
-LaTeX Info: Redefining \. on input line 1435.
-LaTeX Info: Redefining \% on input line 1435.
+LaTeX Info: Redefining \. on input line 1434.
+LaTeX Info: Redefining \% on input line 1434.
  [20]
-LaTeX Info: Redefining \. on input line 1496.
-LaTeX Info: Redefining \% on input line 1496.
- [21]
-(./bibliografiaSP.tex
-LaTeX Info: Redefining \. on input line 12.
-LaTeX Info: Redefining \% on input line 12.
+LaTeX Info: Redefining \. on input line 1501.
+LaTeX Info: Redefining \% on input line 1501.
+ [21] (./bibliografiaSP.tex
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
  [22])
-LaTeX Info: Redefining \. on input line 1556.
-LaTeX Info: Redefining \% on input line 1556.
- [23] (./0-RegenerativeRegenerationProcesses.aux
+LaTeX Info: Redefining \. on input line 1568.
+LaTeX Info: Redefining \% on input line 1568.
+ [23]
+runsystem(makeindex 0-RegenerativeRegenerationProcesses.idx)...executed safely 
+(allowed).
+
+
+(./0-RegenerativeRegenerationProcesses.ind) [24
+
+]
+(./0-RegenerativeRegenerationProcesses.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+LaTeX Info: Redefining \. on input line 27.
+LaTeX Info: Redefining \% on input line 27.
 )
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -811,11 +826,11 @@ Package rerunfilecheck Info: File `0-RegenerativeRegenerationProcesses.out' has
 (rerunfilecheck)             Checksum: 2A14957F29431D7F9E78DADB5A5D5952;617.
  ) 
 Here is how much of TeX's memory you used:
- 16363 strings out of 474116
- 256801 string characters out of 5743683
- 1952187 words of memory out of 5000000
- 38208 multiletter control sequences out of 15000+600000
- 570068 words of font info for 80 fonts, out of 8000000 for 9000
+ 16381 strings out of 474116
+ 257114 string characters out of 5743683
+ 1953187 words of memory out of 5000000
+ 38218 multiletter control sequences out of 15000+600000
+ 570420 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,14n,79p,2449b,691s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
@@ -844,13 +859,14 @@ onts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/ty
-pe1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/font
-s/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on 0-RegenerativeRegenerationProcesses.pdf (23 pages, 451621 byt
+pe1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/
+type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on 0-RegenerativeRegenerationProcesses.pdf (24 pages, 469731 byt
 es).
 PDF statistics:
- 610 PDF objects out of 1000 (max. 8388607)
- 523 compressed objects within 6 object streams
- 282 named destinations out of 1000 (max. 500000)
+ 622 PDF objects out of 1000 (max. 8388607)
+ 532 compressed objects within 6 object streams
+ 285 named destinations out of 1000 (max. 500000)
  25 words of extra memory for PDF output out of 10000 (max. 10000000)
 
