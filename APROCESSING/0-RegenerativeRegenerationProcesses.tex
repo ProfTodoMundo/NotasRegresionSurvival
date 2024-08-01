@@ -161,7 +161,7 @@ Sea $X$ un espacio topológico. El álgebra de Borel en $X$, denotada por $\math
 \end{Def}
 
 \begin{Def}\label{Funcion.Medible}\index{Funci\'on Medible}
-Una funci\'on $f:X\rightarrow\rea$, es medible si para cualquier n\'umero real $\alpha$ el conjunto \[\left\{x\in X:f\left(x\right)>\alpha\right\}\] pertenece a $X$. Equivalentemente, se dice que $f$ es medible si \[f^{-1}\left(\left(\alpha,\infty\right)\right)=\left\{x\in X:f\left(x\right)>\alpha\right\}\in\mathcal{F}.\]
+Una funci\'on $f:X\rightarrow\rea$, es medible si para cualquier n\'umero real $\alpha$ el conjunto \[\left\{x\in X:f\left(x\right)>\alpha\right\},\] pertenece a $X$. Equivalentemente, se dice que $f$ es medible si \[f^{-1}\left(\left(\alpha,\infty\right)\right)=\left\{x\in X:f\left(x\right)>\alpha\right\}\in\mathcal{F}.\]
 \end{Def}
 
 
@@ -197,7 +197,7 @@ Si se dice que $\left\{X\left(t\right)\right\}$ es un Proceso de Markov sin menc
 \end{eqnarray*}
 entonces la ecuaci\'on (\ref{Prop.Markov}) se puede escribir como
 \begin{equation}
-P\left\{X\left(t\right)\in B|X\left(r\right),r\leq s\right\} = P\left\{X\left(t\right)\in B|X\left(s\right)\right\}
+P\left\{X\left(t\right)\in B|X\left(r\right),r\leq s\right\} = P\left\{X\left(t\right)\in B|X\left(s\right)\right\}.
 \end{equation}
 \end{Note}
 
@@ -205,7 +205,7 @@ P\left\{X\left(t\right)\in B|X\left(r\right),r\leq s\right\} = P\left\{X\left(t\
 Sea $\left(X_{n},\mathcal{F}_{n},n=0,1,\ldots,\right\}$ Proceso de Markov con espacio de estados $\left(S_{0},\chi_{0}\right)$ generado por una distribuici\'on inicial $P_{o}$ y probabilidad de transici\'on $p_{mn}$, para $m,n=0,1,\ldots,$ $m<n$, que por notaci\'on se escribir\'a como $p\left(m,n,x,B\right)\rightarrow p_{mn}\left(x,B\right)$. Sea $S$ tiempo de paro relativo a la $\sigma$-\'algebra $\mathcal{F}_{n}$. Sea $T$ funci\'on medible, $T:\Omega\rightarrow\left\{0,1,\ldots,\right\}$. Sup\'ongase que $T\geq S$, entonces $T$ es tiempo de paro. Si $B\in\chi_{0}$,
 entonces
 \begin{equation}\label{Prop.Fuerte.Markov}
-P\left\{X\left(T\right)\in B,T<\infty|\mathcal{F}\left(S\right)\right\} = p\left(S,T,X\left(s\right),B\right)
+P\left\{X\left(T\right)\in B,T<\infty|\mathcal{F}\left(S\right)\right\} = p\left(S,T,X\left(s\right),B\right).
 \end{equation}
 en $\left\{T<\infty\right\}$.
 \end{Teo}
@@ -218,7 +218,7 @@ en $\left\{T<\infty\right\}$.
 Sea $\left(\Omega,\mathcal{F},\prob\right)$ un espacio de probabilidad y $\mathbf{E}$ un conjunto no vac\'io, finito o numerable. Una sucesi\'on de variables aleatorias $\left\{X_{n}:\Omega\rightarrow\mathbf{E},n\geq0\right\}$ se le llama \textit{Cadena de Markov} con espacio de estados $\mathbf{E}$ si satisface la condici\'on de Markov, esto es, si para todo $n\geq1$ y toda sucesi\'on $x_{0},x_{1},\ldots,x_{n},x,y\in\mathbf{E}$ se cumple que 
 
 \begin{equation}
-P\left\{X_{n}=y|X_{n-1}=x,\ldots,X_{0}=x_{0}\right\}=P\left\{X_{n}=x_{n}|X_{n-1}=x_{n-1}\right\}
+P\left\{X_{n}=y|X_{n-1}=x,\ldots,X_{0}=x_{0}\right\}=P\left\{X_{n}=x_{n}|X_{n-1}=x_{n-1}\right\}.
 \end{equation}
 La distribuci\'on de $X_{0}$ se llama distribuci\'on inicial y se denotar\'a por $\pi$.
 \end{Def}
@@ -234,7 +234,7 @@ En este trabajo se considerar\'an solamente aquellas cadenas de Markov con proba
 \begin{Note}
 Para una cadena de Markov Homog\'enea se tiene la siguiente denotaci\'on
 \begin{equation}
-P\left\{X_{n}=y|X_{n-1}=x\right\}=P_{x,y}
+P\left\{X_{n}=y|X_{n-1}=x\right\}=P_{x,y}.
 \end{equation}
 \end{Note}
 
@@ -282,7 +282,7 @@ P\left(X_{n+1}=y|X_{n}=z,X_{m}=x\right)=P_{z,y}.
 \begin{Prop}
 Si $x_{0},x_{1},\ldots,x_{n}\in \Eb$ y $\pi\left(x_{0}\right)=P\left(X_{0}=x_{0}\right)$, entonces
 \begin{equation}
-P\left(X_{1}=x_{1},\ldots,X_{n}=x_{n},X_{0}=x_{0}\right)=\pi\left(x_{0}\right)P_{x_{0},x_{1}}\cdot P_{x_{1},x_{2}}\cdots P_{x_{n-1},x_{n}}
+P\left(X_{1}=x_{1},\ldots,X_{n}=x_{n},X_{0}=x_{0}\right)=\pi\left(x_{0}\right)P_{x_{0},x_{1}}\cdot P_{x_{1},x_{2}}\cdots P_{x_{n-1},x_{n}}.
 \end{equation}
 \end{Prop}
 
@@ -291,13 +291,13 @@ De la proposici\'on anterior se tiene
 P\left(X_{1}=x_{1},\ldots,X_{n}=x_{n}|X_{0}=x_{0}\right)=P_{x_{0},x_{1}}\cdot P_{x_{1},x_{2}}\cdots P_{x_{n-1},x_{n}}.
 \end{equation}
 
-finalmente tenemos la siguiente proposici\'on
+finalmente tenemos la siguiente proposici\'on:
 
 \begin{Prop}
 Sean $n,k\in\nat$ fijos y $x_{0},x_{1},\ldots,x_{n},\ldots,x_{n+k}\in\Eb$, entonces
 \begin{eqnarray*}
 &&P\left(X_{n+1}=x_{n+1},\ldots,X_{n+k}=x_{n+k}|X_{n}=x_{n},\ldots,X_{0}=x_{0}\right)\\
-&=&P\left(X_{1}=x_{n+1},X_{2}=x_{n+2},\cdots,X_{k}=x_{n+k}|X_{0}=x_{n}\right)
+&=&P\left(X_{1}=x_{n+1},X_{2}=x_{n+2},\cdots,X_{k}=x_{n+k}|X_{0}=x_{n}\right).
 \end{eqnarray*}
 \end{Prop}
 
@@ -318,7 +318,7 @@ Se puede demostrar que
 \begin{eqnarray}
 \begin{array}{l}
 P\left(X_{n}=0\right)=\frac{q}{p+q}\\
-P\left(X_{n}=1\right)=\frac{p}{p+q}
+P\left(X_{n}=1\right)=\frac{p}{p+q}.
 \end{array}
 \end{eqnarray}
 
@@ -337,14 +337,14 @@ Sea $\left\{Y_{i}\right\}_{i=0}^{\infty}$ sucesi\'on de variables aleatorias ind
 \begin{Prop}\index{Ecuaciones de Chapman-Kolmogorov}
 Para una cadena de Markov $\left(X_{n}\right)_{n\in\nat}$ con espacio de estados $\Eb$ y para todo $n,m\in \nat$ y toda pareja $x,y\in\Eb$ se cumple
 \begin{equation}
-P\left(X_{n+m}=y|X_{0}=x\right)=\sum_{z\in\Eb}P_{x,z}^{(m)}P_{z,y}^{(n)}=P_{x,y}^{(n+m)}
+P\left(X_{n+m}=y|X_{0}=x\right)=\sum_{z\in\Eb}P_{x,z}^{(m)}P_{z,y}^{(n)}=P_{x,y}^{(n+m)}.
 \end{equation}
 \end{Prop}
 
 \begin{Note}
 Para una cadena de Markov con un n\'umero finito de estados, se puede pensar a $P^{n}$ como la $n$-\'esima potencia de la matriz $P$. Sea $\pi_{0}$ distribuci\'on inicial de la cadena de Markov, como 
 \begin{eqnarray}
-P\left(X_{n}=y\right)=\sum_{x} P\left(X_{0}=x,X_{n}=y\right)=\sum_{x} P\left(X_{0}=x\right)P\left(X_{n}=y|X_{0}=x\right)
+P\left(X_{n}=y\right)=\sum_{x} P\left(X_{0}=x,X_{n}=y\right)=\sum_{x} P\left(X_{0}=x\right)P\left(X_{n}=y|X_{0}=x\right),
 \end{eqnarray}
 se puede comprobar que 
 
@@ -368,7 +368,7 @@ Si se conoce la distribuci\'on de $X_{0}$ se puede conocer la distribuci\'on de 
 Sea $\left(X_{n},\mathcal{F}_{n},n=0,1,\ldots,\right\}$ Proceso de Markov con espacio de estados $\left(S_{0},\chi_{0}\right)$ generado por una distribuici\'on inicial $P_{o}$ y probabilidad de transici\'on $p_{mn}$, para $m,n=0,1,\ldots,$ $m<n$, que por notaci\'on se escribir\'a como $p\left(m,n,x,B\right)\rightarrow p_{mn}\left(x,B\right)$. Sea $S$ tiempo de paro relativo a la $\sigma$-\'algebra $\mathcal{F}_{n}$. Sea $T$ funci\'on medible, $T:\Omega\rightarrow\left\{0,1,\ldots,\right\}$. Sup\'ongase que $T\geq S$, entonces $T$ es tiempo de paro. Si $B\in\chi_{0}$, entonces
 \begin{equation}\label{Prop.Fuerte.Markov}
 P\left\{X\left(T\right)\in B,T<\infty|\mathcal{F}\left(S\right)\right\} =
-p\left(S,T,X\left(s\right),B\right)
+p\left(S,T,X\left(s\right),B\right),
 \end{equation}
 en $\left\{T<\infty\right\}$.
 \end{Teo}
@@ -487,7 +487,7 @@ Para $E$ espacio de estados
 
 
 \begin{Def}\index{Cadena Irreducible}
-Se dice que la cadena es irreducible si cualquiera de las siguientes condiciones, equivalentes entre s\'i,  se cumplen
+Sea $\Eb$ espacio de estados, se dice que la cadena es irreducible si cualquiera de las siguientes condiciones, equivalentes entre s\'i,  se cumplen
 \begin{enumerate}
 \item[a) ] Desde cualquier estado de $\Eb$ se puede acceder a cualquier otro.
 
@@ -584,7 +584,7 @@ para $t\geq0$.
 Si se consideran los puntos $T_{n}$ como elementos de $\rea_{+}$, y $N\left(t\right)$ es el n\'umero de puntos en $\rea$. El proceso denotado por $\left\{N\left(t\right):t\geq0\right\}$ es un proceso puntual en $\rea_{+}$. Los $T_{n}$ son los tiempos de ocurrencia, el proceso puntual $N\left(t\right)$ es simple si su n\'umero de ocurrencias son distintas: $0<T_{1}<T_{2}<\ldots$ casi seguramente.
 
 \begin{Def}\index{Procesos de Renovaci\'on}
-Un proceso puntual $N\left(t\right)$ es un proceso de renovaci\'on si los tiempos de interocurrencia $\xi_{n}=T_{n}-T_{n-1}$, para $n\geq1$, son independientes e id\'enticamente distribuidos con distribuci\'on $F$, donde $F\left(0\right)=0$ y $T_{0}=0$. Los $T_{n}$ son llamados tiempos de renovaci\'on, referente a la independencia o renovaci\'on de la informaci\'on estoc\'astica en estos tiempos. Los $\xi_{n}$ son los tiempos de inter-renovaci\'on, y $N\left(t\right)$ es el n\'umero de renovaciones en el intervalo $\left[0,t\right)$
+Un proceso puntual $N\left(t\right)$ es un proceso de renovaci\'on si los tiempos de interocurrencia $\xi_{n}=T_{n}-T_{n-1}$, para $n\geq1$, son independientes e id\'enticamente distribuidos con distribuci\'on $F$, donde $F\left(0\right)=0$ y $T_{0}=0$. Los $T_{n}$ son llamados tiempos de renovaci\'on, referente a la independencia o renovaci\'on de la informaci\'on estoc\'astica en estos tiempos. Los $\xi_{n}$ son los tiempos de inter-renovaci\'on, y $N\left(t\right)$ es el n\'umero de renovaciones en el intervalo $\left[0,t\right)$.
 \end{Def}
 
 
@@ -634,7 +634,7 @@ con probabilidad 1 y en media, cuando $t\rightarrow\infty$.
 
 
 \begin{Cor}
-Sea $\left\{V\left(t\right),t\geq0\right\}$ un proceso regenerativo no negativo, con modificaci\'on medible. Si $\esp <\infty$, $F$ es no-aritm\'etica, y para todo $x\geq0$, $P\left\{V\left(t\right)\leq x,C>x\right\}$ es de variaci\'on acotada como funci\'on de $t$ en cada intervalo finito $\left[0,\tau\right]$, entonces $V\left(t\right)$ converge en distribuci\'on  cuando $t\rightarrow\infty$ y $$\esp V=\frac{\esp \int_{0}^{X}V\left(s\right)ds}{\esp X}.$$
+Sea $\left\{V\left(t\right),t\geq0\right\}$ un proceso regenerativo no negativo, con modificaci\'on medible. Si $\esp V<\infty$, $V$ es no-aritm\'etica, y para todo $x\geq0$, $P\left\{V\left(t\right)\leq x,C>x\right\}$ es de variaci\'on acotada como funci\'on de $t$ en cada intervalo finito $\left[0,\tau\right]$, entonces $V\left(t\right)$ converge en distribuci\'on  cuando $t\rightarrow\infty$ y $$\esp V=\frac{\esp \int_{0}^{X}V\left(s\right)ds}{\esp X}.$$
 Donde $V$ tiene la distribuci\'on l\'imite de $V\left(t\right)$ cuando $t\rightarrow\infty$.
 
 \end{Cor}
@@ -646,7 +646,7 @@ Para el caso discreto se tienen resultados similares.
 \subsection*{Teorema Principal de Renovaci\'on}
 %________________________________________________________________________
 
-\begin{Note} Una funci\'on $h:\rea_{+}\rightarrow\rea$ es Directamente Riemann Integrable en los siguientes casos:
+\begin{Note} Una funci\'on $h:\rea_{+}\rightarrow\rea$ es Directamente Riemann Integrable (DRI) en los siguientes casos:
 \begin{itemize}
 \item[a)] $h\left(t\right)\geq0$ es decreciente y Riemann Integrable.
 \item[b)] $h$ es continua excepto posiblemente en un conjunto de Lebesgue de medida 0, y $|h\left(t\right)|\leq b\left(t\right)$, donde $b$ es DRI.
@@ -694,7 +694,7 @@ donde $h\left(t\right)=\esp\left[X\left(t\right)\indora\left(T>t\right)\right]$.
 \begin{Def}\index{Trayectorias Muestrales}
 Para el proceso $\left\{\left(N\left(t\right),X\left(t\right)\right):t\geq0\right\}$, sus trayectoria muestrales en el intervalo de tiempo $\left[T_{n-1},T_{n}\right)$ est\'an descritas por
 \begin{eqnarray*}
-\zeta_{n}=\left(\xi_{n},\left\{X\left(T_{n-1}+t\right):0\leq t<\xi_{n}\right\}\right)
+\zeta_{n}=\left(\xi_{n},\left\{X\left(T_{n-1}+t\right):0\leq t<\xi_{n}\right\}\right).
 \end{eqnarray*}
 Este $\zeta_{n}$ es el $n$-\'esimo segmento del proceso. El proceso es regenerativo sobre los tiempos $T_{n}$ si sus segmentos $\zeta_{n}$ son independientes e id\'enticamennte distribuidos.
 \end{Def}
@@ -772,8 +772,10 @@ Si el primer tiempo de renovaci\'on $\xi_{1}$ no tiene la misma distribuci\'on q
 Para una constante $\mu\leq\infty$ ( o variable aleatoria), las siguientes expresiones son equivalentes:
 
 \begin{eqnarray}
-lim_{n\rightarrow\infty}n^{-1}T_{n}&=&\mu,\textrm{ c.s.}\\
-lim_{t\rightarrow\infty}t^{-1}N\left(t\right)&=&1/\mu,\textrm{ c.s.}
+\begin{array}{l}
+lim_{n\rightarrow\infty}n^{-1}T_{n}=\mu,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}N\left(t\right)=1/\mu,\textrm{ c.s.}
+\end{array}
 \end{eqnarray}
 \end{Teo}
 
@@ -798,8 +800,10 @@ M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|.
 \begin{Teo}
 Sup\'ongase que $n^{-1}T_{n}\rightarrow\mu$ c.s. cuando $n\rightarrow\infty$, donde $\mu\leq\infty$ es una constante o variable aleatoria. Sea $a$ una constante o variable aleatoria que puede ser infinita cuando $\mu$ es finita, y considere las expresiones l\'imite:
 \begin{eqnarray}
-lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)&=&a,\textrm{ c.s.}\\
-lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)&=&a/\mu,\textrm{ c.s.}
+\begin{array}{l}
+lim_{n\rightarrow\infty}n^{-1}Z\left(T_{n}\right)=a,\textrm{ c.s.}\\
+lim_{t\rightarrow\infty}t^{-1}Z\left(t\right)=a/\mu,\textrm{ c.s.}
+\end{array}
 \end{eqnarray}
 La segunda expresi\'on implica la primera. Conversamente, la primera implica la segunda si el proceso $Z\left(t\right)$ es creciente, o si $lim_{n\rightarrow\infty}n^{-1}M_{n}=0$ c.s.
 \end{Teo}
@@ -979,10 +983,10 @@ Para un proceso de renovaci\'on $N\left(t\right)$, los siguientes procesos prove
 \end{Def}
 
 \begin{Note}\index{Procesos de Markov}
-El proceso tridimensional $\left(A\left(t\right),B\left(t\right),L\left(t\right)\right)$ es regenerativo sobre $T_{n}$, y por ende cada proceso lo es. Cada proceso $A\left(t\right)$ y $B\left(t\right)$ son procesos de Markov a tiempo continuo con trayectorias continuas por partes en el espacio de estados $\rea_{+}$. Una expresi\'on conveniente para su distribuci\'on conjunta es, para $0\leq x<t,y\geq0$
+El proceso tridimensional $\left(A\left(t\right),B\left(t\right),L\left(t\right)\right)$ es regenerativo sobre $T_{n}$, y por ende cada proceso lo es. Cada proceso $A\left(t\right)$ y $B\left(t\right)$ son procesos de Markov a tiempo continuo con trayectorias continuas por partes en el espacio de estados $\rea_{+}$. Una expresi\'on conveniente para su distribuci\'on conjunta es, para $0\leq x<t,y\geq0$ tal que,
 \begin{equation}\label{NoRenovacion}
 P\left\{A\left(t\right)>x,B\left(t\right)>y\right\}=
-P\left\{N\left(t+y\right)-N\left((t-x)\right)=0\right\}
+P\left\{N\left(t+y\right)-N\left((t-x)\right)=0\right\}.
 \end{equation}
 \end{Note}
 
@@ -1015,16 +1019,19 @@ Un proceso de Markov es estacionario si $X\left(t\right)=_{d}X\left(0\right)$, $
 Considerese el proceso $N\left(t\right)=\sum_{n}\indora\left(\tau_{n}\leq t\right)$ en $\rea_{+}$, con puntos $0<\tau_{1}<\tau_{2}<\cdots$.
 
 \begin{Prop}
-Si $N$ es un proceso puntual estacionario y $\esp\left[N\left(1\right)\right]<\infty$, entonces $\esp\left[N\left(t\right)\right]=t\esp\left[N\left(1\right)\right]$, $t\geq0$
+Si $N$ es un proceso puntual estacionario y $\esp\left[N\left(1\right)\right]<\infty$, entonces 
+\begin{eqnarray}
+\esp\left[N\left(t\right)\right]=t\esp\left[N\left(1\right)\right]\textrm{, }t\geq0.
+\end{eqnarray}
 \end{Prop}
 
 \begin{Teo}
 Los siguientes enunciados son equivalentes
 \begin{itemize}
-\item[i)] El proceso retardado de renovaci\'on $N$ es estacionario.
-\item[ii)] EL proceso de tiempos de recurrencia hacia adelante $B\left(t\right)$ es estacionario.
+\item[i)] El proceso retardado de renovaci\'on $N$ es estacionario,
+\item[ii)] EL proceso de tiempos de recurrencia hacia adelante $B\left(t\right)$ es estacionario,
 \item[iii)] $\esp\left[N\left(t\right)\right]=t/\mu$,
-\item[iv)] $G\left(t\right)=F_{e}\left(t\right)=\frac{1}{\mu}\int_{0}^{t}\left[1-F\left(s\right)\right]ds$
+\item[iv)] $G\left(t\right)=F_{e}\left(t\right)=\frac{1}{\mu}\int_{0}^{t}\left[1-F\left(s\right)\right]ds$.
 \end{itemize}
 Cuando estos enunciados son ciertos, $P\left\{B\left(t\right)\leq x\right\}=F_{e}\left(x\right)$, para $t,x\geq0$.
 \end{Teo}
@@ -1069,9 +1076,9 @@ Un espacio de probabilidad $\left(\tilde{\Omega},\tilde{\mathcal{F}},\tilde{\pro
 Sea $\mathbb{I}$ un conjunto de \'indices arbitrario. Para cada $i\in\mathbb{I}$ sea $P_{i}$ una medida de probabilidad en un espacio medible $\left(E_{i},\mathcal{E}_{i}\right)$. Entonces existe una \'unica medida de probabilidad $\otimes_{i\in\mathbb{I}}P_{i}$ en $\otimes_{i\in\mathbb{I}}\left(E_{i},\mathcal{E}_{i}\right)$ tal que 
 
 \begin{eqnarray}
-\otimes_{i\in\mathbb{I}}P_{i}\left(y\in\prod_{i\in\mathbb{I}}E_{i}:y_{i}\in A_{i_{1}},\ldots,y_{n}\in A_{i_{n}}\right)=P_{i_{1}}\left(A_{i_{n}}\right)\cdots P_{i_{n}}\left(A_{i_{n}}\right)
+\otimes_{i\in\mathbb{I}}P_{i}\left(y\in\prod_{i\in\mathbb{I}}E_{i}:y_{i}\in A_{i_{1}},\ldots,y_{n}\in A_{i_{n}}\right)=P_{i_{1}}\left(A_{i_{n}}\right)\cdots P_{i_{n}}\left(A_{i_{n}}\right),
 \end{eqnarray}
-para todos los enteros $n>0$, toda $i_{1},\ldots,i_{n}\in\mathbb{I}$ y todo $A_{i_{1}}\in\mathcal{E}_{i_{1}},\ldots,A_{i_{n}}\in\mathcal{E}_{i_{n}}$
+para todos los enteros $n>0$, toda $i_{1},\ldots,i_{n}\in\mathbb{I}$ y todo $A_{i_{1}}\in\mathcal{E}_{i_{1}},\ldots,A_{i_{n}}\in\mathcal{E}_{i_{n}}$.
 \end{Teo}
 
 La medida $\otimes_{i\in\mathbb{I}}P_{i}$ es llamada la medida producto y $\otimes_{i\in\mathbb{I}}\left(E_{i},\mathcal{E}_{i},P_{i}\right):=\left(\prod_{i\in\mathbb{I}},E_{i},\otimes_{i\in\mathbb{I}}\mathcal{E}_{i},\otimes_{i\in\mathbb{I}}P_{i}\right)$, es llamado espacio de probabilidad producto.
@@ -1146,7 +1153,7 @@ La distribuci\'on del proceso estoc\'astico $Z$ con espacio de trayectorias $\le
 \begin{Def}
 Sea $Z$ un PEOSCT  con espacio de estados $\left(E,\mathcal{E}\right)$ y sea $T$ un tiempo aleatorio en $\left[0,\infty\right)$. Por $Z_{T}$ se entiende el mapeo con valores en $E$ definido en $\Omega$ en la manera obvia:
 \begin{eqnarray}
-Z_{T}\left(w\right):=Z_{T\left(w\right)}\left(w\right). w\in\Omega.
+Z_{T}\left(w\right):=Z_{T\left(w\right)}\left(w\right)\textrm{, }w\in\Omega.
 \end{eqnarray}
 \end{Def}
 
@@ -1221,7 +1228,7 @@ donde $\mathcal{L}$ son los subconjuntos de Borel de $L$, es decir, $\mathcal{L}
 \begin{Def}
 Sea $\theta_{t}$ el mapeo-shift conjunto de $H\times L$ en $H\times L$ dado por
 \begin{eqnarray}
-\theta_{t}\left(z,\left(s_{k}\right)_{0}^{\infty}\right)=\theta_{t}\left(z,\left(s_{n_{t-}+k}-t\right)_{0}^{\infty}\right)
+\theta_{t}\left(z,\left(s_{k}\right)_{0}^{\infty}\right)=\theta_{t}\left(z,\left(s_{n_{t-}+k}-t\right)_{0}^{\infty}\right),
 \end{eqnarray}
 donde 
 $n_{t-}=inf\left\{n\geq1:s_{n}\geq t\right\}$.
@@ -1234,7 +1241,7 @@ Con la finalidad de poder realizar los shift's sin complicaciones de medibilidad
 \begin{Def}\index{Procesos Regenerativo Cl\'asico}
 Dado un proceso \textbf{PEOSSM} (Proceso Estoc\'astico One Side Shift Medible) $Z$, se dice regenerativo cl\'asico con tiempos de regeneraci\'on $S$ si 
 \begin{eqnarray*}
-\theta_{S_{n}}\left(Z,S\right)=\left(Z^{0},S^{0}\right),n\geq0
+\theta_{S_{n}}\left(Z,S\right)=\left(Z^{0},S^{0}\right)\textrm{, }n\geq0,
 \end{eqnarray*}
 y adem\'as $\theta_{S_{n}}\left(Z,S\right)$ es independiente de $\left(\left(Z_{s}\right)s\in\left[0,S_{n}\right),S_{0},\ldots,S_{n}\right)$
 Si lo anterior se cumple, al par $\left(Z,S\right)$ se le llama regenerativo cl\'asico.
@@ -1244,8 +1251,8 @@ Si lo anterior se cumple, al par $\left(Z,S\right)$ se le llama regenerativo cl\
 Si el par $\left(Z,S\right)$ es regenerativo cl\'asico, entonces las longitudes de los ciclos $X_{1},X_{2},\ldots,$ son i.i.d. e independientes de la longitud del retraso $S_{0}$, es decir, $S$ es un proceso de renovaci\'on. Las longitudes de los ciclos tambi\'en son llamados tiempos de inter-regeneraci\'on y tiempos de ocurrencia.
 \end{Note}
 
-\begin{Teo}
-Sup\'ongase que el par $\left(Z,S\right)$ es regenerativo cl\'asico con $\esp\left[X_{1}\right]<\infty$. Entonces $\left(Z^{*},S^{*}\right)$ en el teorema 2.1 es una versi\'on estacionaria de $\left(Z,S\right)$. Adem\'as, si $X_{1}$ es lattice con span $d$, entonces $\left(Z^{**},S^{**}\right)$ en el teorema 2.2 es una versi\'on periodicamente estacionaria de $\left(Z,S\right)$ con periodo $d$.
+\begin{Teo}\label{Tma.Reg.Clasico}
+Sup\'ongase que el par $\left(Z,S\right)$ es regenerativo cl\'asico con $\esp\left[X_{1}\right]<\infty$. Entonces $\left(Z^{*},S^{*}\right)$ en el teorema \ref{Tma.2.1} es una versi\'on estacionaria de $\left(Z,S\right)$. Adem\'as, si $X_{1}$ es lattice con span $d$, entonces $\left(Z^{**},S^{**}\right)$ en el teorema 2.2 es una versi\'on periodicamente estacionaria de $\left(Z,S\right)$ con periodo $d$.
 
 \end{Teo}
 
@@ -1272,19 +1279,25 @@ Para cualquier proceso estoc\'astico $Z$, el proceso de trayectorias $\left(\the
 \end{Note}
 
 \begin{Teo}
-Supongase que el par $\left(Z,S\right)$ es WSR con $\esp\left[X_{1}\right]<\infty$. Entonces $\left(Z^{*},S^{*}\right)$ en el teorema 2.1 es una versi\'on estacionaria de 
-$\left(Z,S\right)$.
+Supongase que el par $\left(Z,S\right)$ es WSR con $\esp\left[X_{1}\right]<\infty$. Entonces $\left(Z^{*},S^{*}\right)$ en el teorema \ref{Tma.Reg.Clasico} es una versi\'on estacionaria de  $\left(Z,S\right)$.
 \end{Teo}
 
 
 \begin{Teo}
-Supongase que $\left(Z,S\right)$ es cycle-stationary con $\esp\left[X_{1}\right]<\infty$. Sea $U$ distribuida uniformemente en $\left[0,1\right)$ e independiente de $\left(Z^{0},S^{0}\right)$ y sea $\prob^{*}$ la medida de probabilidad en $\left(\Omega,\prob\right)$ definida por $$d\prob^{*}=\frac{X_{1}}{\esp\left[X_{1}\right]}d\prob$$. Sea $\left(Z^{*},S^{*}\right)$ con distribuci\'on $\prob^{*}\left(\theta_{UX_{1}}\left(Z^{0},S^{0}\right)\in\cdot\right)$. Entonces $\left(Z^{}*,S^{*}\right)$ es estacionario,
-\begin{eqnarray*}
-\esp\left[f\left(Z^{*},S^{*}\right)\right]=\esp\left[\int_{0}^{X_{1}}f\left(\theta_{s}\left(Z^{0},S^{0}\right)\right)ds\right]/\esp\left[X_{1}\right]
-\end{eqnarray*}
-$f\in\mathcal{H}\otimes\mathcal{L}^{+}$, and $S_{0}^{*}$ es continuo con funci\'on distribuci\'on $G_{\infty}$ definida por $$G_{\infty}\left(x\right):=\frac{\esp\left[X_{1}\right]\wedge x}{\esp\left[X_{1}\right]}$$ para $x\geq0$ y densidad $\prob\left[X_{1}>x\right]/\esp\left[X_{1}\right]$, con $x\geq0$.
-\end{Teo}
+Supongase que $\left(Z,S\right)$ es cycle-stationary con $\esp\left[X_{1}\right]<\infty$. Sea $U$ distribuida uniformemente en $\left[0,1\right)$ e independiente de $\left(Z^{0},S^{0}\right)$ y sea $\prob^{*}$ la medida de probabilidad en $\left(\Omega,\prob\right)$ definida por 
 
+\begin{eqnarray}d\prob^{*}=\frac{X_{1}}{\esp\left[X_{1}\right]}d\prob.\end{eqnarray} 
+
+Sea $\left(Z^{*},S^{*}\right)$ con distribuci\'on $\prob^{*}\left(\theta_{UX_{1}}\left(Z^{0},S^{0}\right)\in\cdot\right)$. Entonces $\left(Z^{}*,S^{*}\right)$ es estacionario,
+\begin{eqnarray}
+\esp\left[f\left(Z^{*},S^{*}\right)\right]=\esp\left[\int_{0}^{X_{1}}f\left(\theta_{s}\left(Z^{0},S^{0}\right)\right)ds\right]/\esp\left[X_{1}\right]
+\end{eqnarray}
+$f\in\mathcal{H}\otimes\mathcal{L}^{+}$, and $S_{0}^{*}$ es continuo con funci\'on distribuci\'on $G_{\infty}$ definida por 
+\begin{eqnarray}
+G_{\infty}\left(x\right):=\frac{\esp\left[X_{1}\right]\wedge x}{\esp\left[X_{1}\right]},
+\end{eqnarray}
+para $x\geq0$ y densidad $\prob\left[X_{1}>x\right]/\esp\left[X_{1}\right]$, con $x\geq0$.
+\end{Teo}
 
 \begin{Teo}
 Sea $Z$ un Proceso Estoc\'astico un lado shift-medible \textit{one-sided shift-measurable stochastic process}, (PEOSSM), y $S_{0}$ y $S_{1}$ tiempos aleatorios tales que $0\leq S_{0}<S_{1}$ y
@@ -1295,8 +1308,10 @@ Sea $Z$ un Proceso Estoc\'astico un lado shift-medible \textit{one-sided shift-m
 Entonces el espacio de probabilidad subyacente $\left(\Omega,\mathcal{F},\prob\right)$ puede extenderse para soportar una sucesi\'on de tiempos aleatorios $S$ tales que
 
 \begin{eqnarray}
+\begin{array}{l}
 \theta_{S_{n}}\left(Z,S\right)=\left(Z^{0},S^{0}\right),n\geq0,\textrm{ en distribuci\'on},\\
 \left(Z,S_{0},S_{1}\right)\textrm{ depende de }\left(X_{2},X_{3},\ldots\right)\textrm{ solamente a traves de }\theta_{S_{1}}Z.
+\end{array}
 \end{eqnarray}
 \end{Teo}
 
@@ -1319,25 +1334,24 @@ Los tiempos aleatorios $S_{n}$ dividen $Z$ en
 
 \begin{Def}
 $\left(Z,S\right)$ es \textit{zero-delayed} si $S_{0}\equiv0$. Se define el par \textit{zero-delayed} por
-\begin{eqnarray*}
-\left(Z^{0},S^{0}\right):=\theta_{S_{0}}\left(Z,S\right)
-\end{eqnarray*}
+\begin{eqnarray}
+\left(Z^{0},S^{0}\right):=\theta_{S_{0}}\left(Z,S\right).
+\end{eqnarray}
 Entonces $S_{0}^{0}\equiv0$ y $S_{0}^{0}\equiv X_{1}^{0}$, mientras que para $n\geq1$ se tiene que $X_{n}^{0}\equiv X_{n}$ y $C_{n}^{0}\equiv C_{n}$.
 \end{Def}
 
 \begin{Def}\index{Ciclo Estacionario}
 Se le llama al par $\left(Z,S\right)$ \textbf{ciclo-stacionario} si los ciclos forman una sucesi\'on estacionaria, es decir, con $=^{D}$ denota iguales en distribuci\'on:
-\begin{eqnarray*}
-\left(C_{n+1},C_{n+2},\ldots\right)=^{D}\left(C_{1},C_{2},\ldots\right),\geq0
-\end{eqnarray*}
+\begin{eqnarray}
+\left(C_{n+1},C_{n+2},\ldots\right)=^{D}\left(C_{1},C_{2},\ldots\right),\geq0.
+\end{eqnarray}
 Ciclo-estacionareidad es equivalente a 
-\begin{eqnarray*}
+\begin{eqnarray}
 \theta_{S_{n}}\left(Z,S\right)=^{D}
 \left(Z^{0},S^{0}\right),\geq0,
-\end{eqnarray*}
+\end{eqnarray}
 donde $\left(C_{n+1},C_{n+2},\ldots\right)$ y $\theta_{S_{n}}\left(Z,S\right)$ son mapeos medibles de cada uno y que no dependen de $n$.
 \end{Def}
-
 
 \begin{Def}
 Un par $\left(Z^{*},S^{*}\right)$ es \textbf{estacionario} si $\theta\left(Z^{*},S^{*}\right)=^{D}
@@ -1346,21 +1360,29 @@ Un par $\left(Z^{*},S^{*}\right)$ es \textbf{estacionario} si $\theta\left(Z^{*}
 
 
 \begin{Teo}\label{Teorema.2.1}
-Supongase que $\left(Z,S\right)$ es cycle-stationary con $\esp\left[X_{1}\right]<\infty$. Sea $U$ distribuida uniformemente en $\left[0,1\right)$ e independiente de $\left(Z^{0},S^{0}\right)$ y sea $\prob^{*}$ la medida de probabilidad en $\left(\Omega,\prob\right)$ definida por $$d\prob^{*}=\frac{X_{1}}{\esp\left[X_{1}\right]}d\prob$$. Sea $\left(Z^{*},S^{*}\right)$ con distribuci\'on $\prob^{*}\left(\theta_{UX_{1}}\left(Z^{0},S^{0}\right)\in\cdot\right)$. Entonces $\left(Z^{*},S^{*}\right)$ es estacionario,
-\begin{eqnarray*}
-\esp\left[f\left(Z^{*},S^{*}\right)\right]=\esp\left[\int_{0}^{X_{1}}f\left(\theta_{s}\left(Z^{0},S^{0}\right)\right)ds\right]/\esp\left[X_{1}\right]
-\end{eqnarray*}
-$f\in\mathcal{H}\otimes\mathcal{L}^{+}$, and $S_{0}^{*}$ es continuo con funci\'on distribuci\'on $G_{\infty}$ definida por $$G_{\infty}\left(x\right):=\frac{\esp\left[X_{1}\right]\wedge x}{\esp\left[X_{1}\right]}$$ para $x\geq0$ y densidad $\prob\left[X_{1}>x\right]/\esp\left[X_{1}\right]$, con $x\geq0$.
+Supongase que $\left(Z,S\right)$ es cycle-stationary con $\esp\left[X_{1}\right]<\infty$. Sea $U$ distribuida uniformemente en $\left[0,1\right)$ e independiente de $\left(Z^{0},S^{0}\right)$ y sea $\prob^{*}$ la medida de probabilidad en $\left(\Omega,\prob\right)$ definida por 
+
+\begin{eqnarray}
+d\prob^{*}=\frac{X_{1}}{\esp\left[X_{1}\right]}d\prob.
+\end{eqnarray}
+ Sea $\left(Z^{*},S^{*}\right)$ con distribuci\'on $\prob^{*}\left(\theta_{UX_{1}}\left(Z^{0},S^{0}\right)\in\cdot\right)$. Entonces $\left(Z^{*},S^{*}\right)$ es estacionario,
+\begin{eqnarray}
+\esp\left[f\left(Z^{*},S^{*}\right)\right]=\esp\left[\int_{0}^{X_{1}}f\left(\theta_{s}\left(Z^{0},S^{0}\right)\right)ds\right]/\esp\left[X_{1}\right],
+\end{eqnarray}
+$f\in\mathcal{H}\otimes\mathcal{L}^{+}$, and $S_{0}^{*}$ es continuo con funci\'on distribuci\'on $G_{\infty}$ definida por 
+\begin{eqnarray}
+G_{\infty}\left(x\right):=\frac{\esp\left[X_{1}\right]\wedge x}{\esp\left[X_{1}\right]},
+\end{eqnarray}
+para $x\geq0$ y densidad $\prob\left[X_{1}>x\right]/\esp\left[X_{1}\right]$, con $x\geq0$.
 \end{Teo}
 
 \begin{Def}\index{Procesos Regenerativo Cl\'asico}
 Dado un proceso \textbf{PEOSSM} (Proceso Estoc\'astico One Side Shift Medible) $Z$, se dice \textbf{regenerativo cl\'asico} con tiempos de regeneraci\'on $S$ si 
 
 \begin{eqnarray*}
-\theta_{S_{n}}\left(Z,S\right)=\left(Z^{0},S^{0}\right),n\geq0
+\theta_{S_{n}}\left(Z,S\right)=\left(Z^{0},S^{0}\right)\textrm{, }n\geq0,
 \end{eqnarray*}
-y adem\'as $\theta_{S_{n}}\left(Z,S\right)$ es independiente de $\left(\left(Z_{s}\right)s\in\left[0,S_{n}\right),S_{0},\ldots,S_{n}\right)$
-Si lo anterior se cumple, al par $\left(Z,S\right)$ se le llama regenerativo cl\'asico.
+y adem\'as $\theta_{S_{n}}\left(Z,S\right)$ es independiente de $\left(\left(Z_{s}\right)s\in\left[0,S_{n}\right),S_{0},\ldots,S_{n}\right)$. Si lo anterior se cumple, al par $\left(Z,S\right)$ se le llama regenerativo cl\'asico.
 \end{Def}
 
 \begin{Note}
@@ -1374,7 +1396,11 @@ Sup\'ongase que el par $\left(Z,S\right)$ es regenerativo cl\'asico con $\esp\le
 
 
 \begin{Def}\index{Procesos spread out}
-Una variable aleatoria $X_{1}$ es \textbf{spread out} si existe una $n\geq1$ y una  funci\'on $f\in\mathcal{B}^{+}$ tal que $\int_{\rea}f\left(x\right)dx>0$ con $X_{2},X_{3},\ldots,X_{n}$ copias i.i.d  de $X_{1}$, $$\prob\left(X_{1}+\cdots+X_{n}\in B\right)\geq\int_{B}f\left(x\right)dx$$ para $B\in\mathcal{B}$.
+Una variable aleatoria $X_{1}$ es \textbf{spread out} si existe una $n\geq1$ y una  funci\'on $f\in\mathcal{B}^{+}$ tal que $\int_{\rea}f\left(x\right)dx>0$ con $X_{2},X_{3},\ldots,X_{n}$ copias i.i.d  de $X_{1}$, 
+\begin{eqnarray}
+\prob\left(X_{1}+\cdots+X_{n}\in B\right)\geq\int_{B}f\left(x\right)dx,
+\end{eqnarray}
+ para $B\in\mathcal{B}$.
 \end{Def}
 
 \begin{Def}\index{Procesos \textit{wide-sense regenerative}}
@@ -1386,7 +1412,7 @@ Se dice que el par $\left(Z,S\right)$ es WSR si lo anterior se cumple.
 \begin{itemize}
 \item El proceso de trayectorias $\left(\theta_{s}Z\right)_{s\in\left[0,\infty\right)}$ es WSR con tiempos de regeneraci\'on $S$ pero no es regenerativo cl\'asico.
 
-\item Si $Z$ es cualquier proceso estacionario y $S$ es un proceso de renovaci\'on que es independiente de $Z$, entonces $\left(Z,S\right)$ es WSR pero en general no es regenerativo cl\'asico
+\item Si $Z$ es cualquier proceso estacionario y $S$ es un proceso de renovaci\'on que es independiente de $Z$, entonces $\left(Z,S\right)$ es WSR pero en general no es regenerativo cl\'asico.
 \end{itemize}
 \end{Note}
 
@@ -1396,8 +1422,7 @@ Para cualquier proceso estoc\'astico $Z$, el proceso de trayectorias $\left(\the
 
 
 \begin{Teo}\label{Teo.4.1}
-Supongase que el par $\left(Z,S\right)$ es WSR con $\esp\left[X_{1}\right]<\infty$. Entonces $\left(Z^{*},S^{*}\right)$ en el teorema (\ref{Teorema.2.1}) es una versi\'on estacionaria de 
-$\left(Z,S\right)$.
+Supongase que el par $\left(Z,S\right)$ es WSR con $\esp\left[X_{1}\right]<\infty$. Entonces $\left(Z^{*},S^{*}\right)$ en el teorema (\ref{Teorema.2.1}) es una versi\'on estacionaria de $\left(Z,S\right)$.
 \end{Teo}
 
 \begin{Teo}\label{Tma.Existencia.Tiempos.Regeneracion}\index{Teorema de Existencia de los Tiempos de Regeneracion}
@@ -1409,8 +1434,10 @@ Sea $Z$ un Proceso Estoc\'astico un lado shift-medible \textit{one-sided shift-m
 Entonces el espacio de probabilidad subyacente $\left(\Omega,\mathcal{F},\prob\right)$ puede extenderse para soportar una sucesi\'on de tiempos aleatorios $S$ tales que
 
 \begin{eqnarray}
+\begin{array}{l}
 \theta_{S_{n}}\left(Z,S\right)=\left(Z^{0},S^{0}\right),n\geq0,\textrm{ en distribuci\'on},\\
 \left(Z,S_{0},S_{1}\right)\textrm{ depende de }\left(X_{2},X_{3},\ldots\right)\textrm{ solamente a traves de }\theta_{S_{1}}Z.
+\end{array}
 \end{eqnarray}
 \end{Teo}
 
@@ -1427,7 +1454,7 @@ donde $\mathcal{L}$ son los subconjuntos de Borel de $L$, es decir, $\mathcal{L}
 As\'i el par $\left(Z,S\right)$ es un mapeo medible de  $\left(\Omega,\mathcal{F}\right)$ en $\left(H\times L,\mathcal{H}\otimes\mathcal{L}\right)$. El par $\mathcal{H}\otimes\mathcal{L}^{+}$ denotar\'a la clase de todas las funciones medibles de $\left(H\times L,\mathcal{H}\otimes\mathcal{L}\right)$ en $\left(\left[0,\infty\right),\mathcal{B}\left[0,\infty\right)\right)$.
 
 \begin{eqnarray*}
-\left(Z,S\right):\left(\Omega,\mathcal{F}\right)&\rightarrow& \left(H\times L,\mathcal{H}\times\mathcal{L}\right)\\
+\left(Z,S\right):\left(\Omega,\mathcal{F}\right)&\rightarrow& \left(H\times L,\mathcal{H}\times\mathcal{L}\right),\\
 \mathcal{H}\times\mathcal{L}^{*}:\left(H\times L,\mathcal{H}\times\mathcal{L}\right)
 &\rightarrow& 
 \left(\left[0,\infty\right),\mathcal{B}\left[0,\infty\right)\right).
@@ -1436,7 +1463,7 @@ As\'i el par $\left(Z,S\right)$ es un mapeo medible de  $\left(\Omega,\mathcal{F
 \begin{Def}\index{Mapeo shift}
 Sea $\theta_{t}$ el mapeo-shift conjunto de $H\times L$ en $H\times L$ dado por
 \begin{eqnarray*}
-\theta_{t}\left(z,\left(s_{k}\right)_{0}^{\infty}\right)=\theta_{t}\left(z,\left(s_{n_{t-}+k}-t\right)_{0}^{\infty}\right)
+\theta_{t}\left(z,\left(s_{k}\right)_{0}^{\infty}\right)=\theta_{t}\left(z,\left(s_{n_{t-}+k}-t\right)_{0}^{\infty}\right),
 \end{eqnarray*}
 donde 
 $n_{t-}=inf\left\{n\geq1:s_{n}\geq t\right\}$.
