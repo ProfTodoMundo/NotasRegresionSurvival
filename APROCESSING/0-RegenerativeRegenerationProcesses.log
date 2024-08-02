@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  1 AUG 2024 19:46
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.7)  1 AUG 2024 18:20
+>>>>>>> 4da5cf0348827ed473c91c5b0726ba1b1a22478c
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -543,6 +547,7 @@ LaTeX Font Info:    ... okay on input line 102.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
+<<<<<<< HEAD
 * h-part:(L,W,R)=(42.67912pt, 512.14963pt, 42.67912pt)
 * v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
 * \paperwidth=597.50787pt
@@ -551,6 +556,16 @@ LaTeX Font Info:    ... okay on input line 102.
 * \textheight=674.33032pt
 * \oddsidemargin=-29.59087pt
 * \evensidemargin=-29.59087pt
+=======
+* h-part:(L,W,R)=(39.83385pt, 517.84018pt, 39.83385pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=517.84018pt
+* \textheight=674.33032pt
+* \oddsidemargin=-32.43614pt
+* \evensidemargin=-32.43614pt
+>>>>>>> 4da5cf0348827ed473c91c5b0726ba1b1a22478c
 * \topmargin=-23.91173pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -640,17 +655,41 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [1
 
+<<<<<<< HEAD
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+=======
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Info: Redefining \. on input line 139.
+LaTeX Info: Redefining \% on input line 139.
+LaTeX Info: Redefining \. on input line 184.
+LaTeX Info: Redefining \% on input line 184.
+ [2]
+LaTeX Info: Redefining \. on input line 270.
+LaTeX Info: Redefining \% on input line 270.
+ [3]
+LaTeX Info: Redefining \. on input line 359.
+LaTeX Info: Redefining \% on input line 359.
+>>>>>>> 4da5cf0348827ed473c91c5b0726ba1b1a22478c
  [4]
 Underfull \hbox (badness 10000) in paragraph at lines 403--404
 
  []
 
+<<<<<<< HEAD
 [5] [6]
+=======
+LaTeX Info: Redefining \. on input line 404.
+LaTeX Info: Redefining \% on input line 404.
+[5]
+LaTeX Info: Redefining \. on input line 464.
+LaTeX Info: Redefining \% on input line 464.
+ [6]
+>>>>>>> 4da5cf0348827ed473c91c5b0726ba1b1a22478c
 Underfull \hbox (badness 10000) in paragraph at lines 538--539
 
  []
 
+<<<<<<< HEAD
 [7] [8] [9] [10] [11] [12]
 Underfull \hbox (badness 10000) in paragraph at lines 955--956
 
@@ -677,6 +716,72 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1398.
 
  [19] (./bibliografiaSP.tex [20]) [21]
+=======
+LaTeX Info: Redefining \. on input line 546.
+LaTeX Info: Redefining \% on input line 546.
+[7]
+LaTeX Info: Redefining \. on input line 601.
+LaTeX Info: Redefining \% on input line 601.
+ [8]
+LaTeX Info: Redefining \. on input line 674.
+LaTeX Info: Redefining \% on input line 674.
+ [9]
+LaTeX Info: Redefining \. on input line 751.
+LaTeX Info: Redefining \% on input line 751.
+ [10]
+LaTeX Info: Redefining \. on input line 837.
+LaTeX Info: Redefining \% on input line 837.
+ [11]
+LaTeX Info: Redefining \. on input line 908.
+LaTeX Info: Redefining \% on input line 908.
+ [12]
+Underfull \hbox (badness 10000) in paragraph at lines 947--948
+
+ []
+
+LaTeX Info: Redefining \. on input line 980.
+LaTeX Info: Redefining \% on input line 980.
+[13]
+LaTeX Info: Redefining \. on input line 1057.
+LaTeX Info: Redefining \% on input line 1057.
+ [14]
+LaTeX Info: Redefining \. on input line 1130.
+LaTeX Info: Redefining \% on input line 1130.
+ [15]
+LaTeX Info: Redefining \. on input line 1220.
+LaTeX Info: Redefining \% on input line 1220.
+ [16]
+
+LaTeX Warning: Reference `Tma.2.1' on page 17 undefined on input line 1255.
+
+LaTeX Info: Redefining \. on input line 1289.
+LaTeX Info: Redefining \% on input line 1289.
+[17]
+Overfull \hbox (13.10881pt too wide) in paragraph at lines 1303--1304
+[][]\OT1/cmr/bx/n/10 Teorema 17. []\OT1/cmr/m/it/10 Sea $\OML/cmm/m/it/10 Z$ \O
+T1/cmr/m/it/10 un Pro-ce-so Es-toc^^Sasti-co un la-do shift-medible one-sided s
+hift-measurable sto-chas-tic pro-cess, (PEOSSM),
+ []
+
+LaTeX Info: Redefining \. on input line 1367.
+LaTeX Info: Redefining \% on input line 1367.
+[18]
+LaTeX Info: Redefining \. on input line 1445.
+LaTeX Info: Redefining \% on input line 1445.
+ [19]
+LaTeX Info: Redefining \. on input line 1509.
+LaTeX Info: Redefining \% on input line 1509.
+ [20]
+LaTeX Info: Redefining \. on input line 1579.
+LaTeX Info: Redefining \% on input line 1579.
+ [21] (./bibliografiaSP.tex
+LaTeX Info: Redefining \. on input line 43.
+LaTeX Info: Redefining \% on input line 43.
+ [22])
+LaTeX Info: Redefining \. on input line 1595.
+LaTeX Info: Redefining \% on input line 1595.
+ [23]
+>>>>>>> 4da5cf0348827ed473c91c5b0726ba1b1a22478c
 runsystem(makeindex 0-RegenerativeRegenerationProcesses.idx)...executed safely 
 (allowed).
 
@@ -686,6 +791,7 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1496.
  [22
 
 ]
+<<<<<<< HEAD
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 1496.
 
 (./0-RegenerativeRegenerationProcesses.aux)
@@ -695,6 +801,20 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1496.
 Package rerunfilecheck Info: File `0-RegenerativeRegenerationProcesses.out' has
  not changed.
 (rerunfilecheck)             Checksum: 26F05EFEA2F07F160284AC09D93B74D6;205.
+=======
+(./0-RegenerativeRegenerationProcesses.aux
+LaTeX Info: Redefining \. on input line 22.
+LaTeX Info: Redefining \% on input line 22.
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
+)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+ ***********
+>>>>>>> 4da5cf0348827ed473c91c5b0726ba1b1a22478c
 
 
 LaTeX Warning: There were undefined references.
@@ -711,6 +831,7 @@ Here is how much of TeX's memory you used:
  14705 multiletter control sequences out of 15000+600000
  15991 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
+<<<<<<< HEAD
  44i,14n,43p,2449b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
@@ -742,6 +863,39 @@ pe1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist/fonts/
 type1/public/amsfonts/symbols/msbm7.pfb>
 Output written on 0-RegenerativeRegenerationProcesses.pdf (22 pages, 431480 byt
+=======
+ 75i,14n,79p,2449b,739s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
+usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
+/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/l
+ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/loc
+al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local
+/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/t
+exlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/tex
+live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texli
+ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive
+/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/20
+24/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2024/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type
+1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/
+type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on 0-RegenerativeRegenerationProcesses.pdf (24 pages, 469826 byt
+>>>>>>> 4da5cf0348827ed473c91c5b0726ba1b1a22478c
 es).
 PDF statistics:
  577 PDF objects out of 1000 (max. 8388607)

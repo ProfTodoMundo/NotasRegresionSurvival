@@ -5,7 +5,11 @@
   \item Cadena Homog\'enea, 3
   \item Cadena Irreducible, 7
   \item Cadenas Homog\'eneas, 3
+<<<<<<< HEAD
   \item Ciclo Estacionario, 19
+=======
+  \item Ciclo Estacionario, 18
+>>>>>>> 4da5cf0348827ed473c91c5b0726ba1b1a22478c
   \item Cilindro, 2
   \item Clases de Comunicaci\'on, 7
   \item Conjunto de Borel, 2
@@ -46,6 +50,10 @@
 
   \item Mapeo Medible, 17
   \item Mapeo medible del retraso, 18
+<<<<<<< HEAD
+=======
+  \item Mapeo shift, 20
+>>>>>>> 4da5cf0348827ed473c91c5b0726ba1b1a22478c
   \item Mapeo-shift, 16
   \item Matriz de Transici\'on, 3
   \item Medida $\sigma$-finita, 2
@@ -56,11 +64,19 @@
   \item Probabilidades Condicionales, 3
   \item Probabilidades de Transici\'on, 3
   \item Proceso Adaptado, 3
+<<<<<<< HEAD
   \item Proceso de Markov, 3
   \item Proceso de Renovaci\'on Retardado, 11
   \item Proceso Poisson, 11, 12, 20
   \item Proceso shift-medible, 16
   \item Procesos \textit{wide-sense regenerative}, 17
+=======
+  \item Proceso de Markov, 3, 19
+  \item Proceso de Renovaci\'on Retardado, 11
+  \item Proceso Poisson, 11, 12, 21
+  \item Proceso shift-medible, 16
+  \item Procesos \textit{wide-sense regenerative}, 17, 19
+>>>>>>> 4da5cf0348827ed473c91c5b0726ba1b1a22478c
   \item Procesos Can\'onicmente Conjuntamente Medibles, 16
   \item Procesos Conjuntamente Medibles, 16
   \item Procesos Continuos por un lado, 15
@@ -72,8 +88,14 @@
   \item Procesos Delay-length, 18
   \item Procesos Estacionarios, 9, 14
   \item Procesos Positivo Recurrente, 13
+<<<<<<< HEAD
   \item Procesos Regenerativo Cl\'asico, 17
   \item Procesos Regenerativos, 9, 13
+=======
+  \item Procesos Regenerativo Cl\'asico, 17, 19
+  \item Procesos Regenerativos, 9, 13
+  \item Procesos spread out, 19
+>>>>>>> 4da5cf0348827ed473c91c5b0726ba1b1a22478c
   \item Propiedad Fuerte de Markov, 6
   \item Propiedad Simple de Markov, 8
 
@@ -83,7 +105,12 @@
 
   \indexspace
 
+<<<<<<< HEAD
   \item Teorema de Estacionariedad, 18
+=======
+  \item Teorema de Estacionariedad, 20
+  \item Teorema de Existencia de los Tiempos de Regeneracion, 20
+>>>>>>> 4da5cf0348827ed473c91c5b0726ba1b1a22478c
   \item Teorema Principal de Renovaci\'on, 9
   \item Teorema Renovaci\'on Elemental, 12
   \item Tiempos de Inter-regeneraci\'on, 17
