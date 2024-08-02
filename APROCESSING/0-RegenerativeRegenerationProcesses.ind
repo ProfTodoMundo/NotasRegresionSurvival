@@ -1,29 +1,29 @@
 \begin{theindex}
 
   \item Cadena de Markov, 3
-  \item Cadena de Markov Erg\'odica, 15
+  \item Cadena de Markov Erg\'odica, 14
   \item Cadena Homog\'enea, 3
   \item Cadena Irreducible, 7
   \item Cadenas Homog\'eneas, 3
-  \item Ciclo Estacionario, 19
-  \item Cilindro, 3
+  \item Ciclo Estacionario, 18
+  \item Cilindro, 2
   \item Clases de Comunicaci\'on, 7
   \item Conjunto de Borel, 2
   \item Conjunto Medible, 2
 
   \indexspace
 
-  \item Delta de Kronecker, 4
+  \item Delta de Kronecker, 3
 
   \indexspace
 
-  \item Ecuaci\'on de Renovaci\'on, 13
-  \item Ecuaciones de Chapman-Kolmogorov, 5
-  \item Espacio de Rad\'on, 8
+  \item Ecuaci\'on de Renovaci\'on, 12
+  \item Ecuaciones de Chapman-Kolmogorov, 4
+  \item Espacio de Rad\'on, 7
   \item Espacio de Trayectorias, 16
-  \item Espacio Polaco, 16
+  \item Espacio Polaco, 15
   \item Espacio Producto, 15
-  \item Espacion Est\'andar, 16
+  \item Espacion Est\'andar, 15
   \item Estados absorbentes, 7
   \item Estados recurrentes, 7
   \item Estados transitorios, 7
@@ -35,47 +35,47 @@
 
   \indexspace
 
-  \item Identidad de Wald para Renovaciones, 13
+  \item Identidad de Wald para Renovaciones, 12
 
   \indexspace
 
   \item Ley Fuerte de los Grandes N\'umeros para Procesos de Renovaci\'on, 
-		12
+		11
 
   \indexspace
 
   \item Mapeo Medible, 17
-  \item Mapeo medible del retraso, 19
-  \item Mapeo shift, 21
-  \item Mapeo-shift, 17
-  \item Matriz de Transici\'on, 4
+  \item Mapeo medible del retraso, 18
+  \item Mapeo shift, 20
+  \item Mapeo-shift, 16
+  \item Matriz de Transici\'on, 3
   \item Medida $\sigma$-finita, 2
   \item Modificaci\'on Medible, 9
 
   \indexspace
 
   \item Probabilidades Condicionales, 3
-  \item Probabilidades de Transici\'on, 4
+  \item Probabilidades de Transici\'on, 3
   \item Proceso Adaptado, 3
-  \item Proceso de Markov, 3, 20
+  \item Proceso de Markov, 3, 19
   \item Proceso de Renovaci\'on Retardado, 11
-  \item Proceso Poisson, 11, 13, 22
-  \item Proceso shift-medible, 17
-  \item Procesos \textit{wide-sense regenerative}, 18, 20
-  \item Procesos Can\'onicmente Conjuntamente Medibles, 17
-  \item Procesos Conjuntamente Medibles, 17
-  \item Procesos Continuos por un lado, 16
+  \item Proceso Poisson, 11, 12, 21
+  \item Proceso shift-medible, 16
+  \item Procesos \textit{wide-sense regenerative}, 17, 19
+  \item Procesos Can\'onicmente Conjuntamente Medibles, 16
+  \item Procesos Conjuntamente Medibles, 16
+  \item Procesos Continuos por un lado, 15
   \item Procesos Crudamente Regenerativos, 10
   \item Procesos de Conteo, 8
   \item Procesos de Markov, 14
-  \item Procesos de Renovaci\'on, 9
+  \item Procesos de Renovaci\'on, 8
   \item Procesos de Renovaci\'on Encajados, 13
-  \item Procesos Delay-length, 19
-  \item Procesos Estacionarios, 9, 15
-  \item Procesos Positivo Recurrente, 14
-  \item Procesos Regenerativo Cl\'asico, 18, 20
+  \item Procesos Delay-length, 18
+  \item Procesos Estacionarios, 9, 14
+  \item Procesos Positivo Recurrente, 13
+  \item Procesos Regenerativo Cl\'asico, 17, 19
   \item Procesos Regenerativos, 9, 13
-  \item Procesos spread out, 20
+  \item Procesos spread out, 19
   \item Propiedad Fuerte de Markov, 6
   \item Propiedad Simple de Markov, 8
 
@@ -87,18 +87,18 @@
 
   \item Teorema de Estacionariedad, 20
   \item Teorema de Existencia de los Tiempos de Regeneracion, 20
-  \item Teorema Principal de Renovaci\'on, 10
-  \item Teorema Renovaci\'on Elemental, 13
-  \item Tiempos de Inter-regeneraci\'on, 18
+  \item Teorema Principal de Renovaci\'on, 9
+  \item Teorema Renovaci\'on Elemental, 12
+  \item Tiempos de Inter-regeneraci\'on, 17
   \item Tiempos de Paro, 3, 6
   \item Tiempos de Regeneraci\'on, 13
   \item Transformada de Laplace-Stieljes, 12
   \item Trayectorias, 16
-  \item Trayectorias Internamente Shift-Invariantes, 17
+  \item Trayectorias Internamente Shift-Invariantes, 16
   \item Trayectorias Muestrales, 10
 
   \indexspace
 
-  \item Variable aleatoria \textit{spread out}, 18
+  \item Variable aleatoria \textit{spread out}, 17
 
 \end{theindex}

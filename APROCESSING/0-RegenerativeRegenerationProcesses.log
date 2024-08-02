@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.7)  1 AUG 2024 09:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.7)  1 AUG 2024 18:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -623,14 +623,14 @@ LaTeX Info: Redefining \% on input line 102.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* h-part:(L,W,R)=(39.83385pt, 517.84018pt, 39.83385pt)
 * v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=455.24411pt
+* \textwidth=517.84018pt
 * \textheight=674.33032pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
+* \oddsidemargin=-32.43614pt
+* \evensidemargin=-32.43614pt
 * \topmargin=-23.91173pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -714,89 +714,89 @@ LaTeX Info: Redefining \% on input line 5.
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Info: Redefining \. on input line 139.
 LaTeX Info: Redefining \% on input line 139.
-LaTeX Info: Redefining \. on input line 170.
-LaTeX Info: Redefining \% on input line 170.
+LaTeX Info: Redefining \. on input line 184.
+LaTeX Info: Redefining \% on input line 184.
  [2]
-LaTeX Info: Redefining \. on input line 247.
-LaTeX Info: Redefining \% on input line 247.
+LaTeX Info: Redefining \. on input line 270.
+LaTeX Info: Redefining \% on input line 270.
  [3]
-LaTeX Info: Redefining \. on input line 346.
-LaTeX Info: Redefining \% on input line 346.
+LaTeX Info: Redefining \. on input line 359.
+LaTeX Info: Redefining \% on input line 359.
  [4]
-LaTeX Info: Redefining \. on input line 396.
-LaTeX Info: Redefining \% on input line 396.
- [5]
 Underfull \hbox (badness 10000) in paragraph at lines 403--404
 
  []
 
-LaTeX Info: Redefining \. on input line 462.
-LaTeX Info: Redefining \% on input line 462.
-[6]
+LaTeX Info: Redefining \. on input line 404.
+LaTeX Info: Redefining \% on input line 404.
+[5]
+LaTeX Info: Redefining \. on input line 464.
+LaTeX Info: Redefining \% on input line 464.
+ [6]
 Underfull \hbox (badness 10000) in paragraph at lines 538--539
 
  []
 
-LaTeX Info: Redefining \. on input line 539.
-LaTeX Info: Redefining \% on input line 539.
+LaTeX Info: Redefining \. on input line 546.
+LaTeX Info: Redefining \% on input line 546.
 [7]
-Overfull \hbox (1.40651pt too wide) in paragraph at lines 558--559
-[][]\OT1/cmr/bx/n/10 Definici^^Son 1.18. []\OT1/cmr/m/it/10 Una fa-mi-lia $[][]
-$ de ker-nels de Mar-kov en $[]$ es lla-ma-da \OT1/cmr/m/n/10 Se-mi-gru-po de T
-ransici^^Son
- []
-
-LaTeX Info: Redefining \. on input line 585.
-LaTeX Info: Redefining \% on input line 585.
-[8]
-LaTeX Info: Redefining \. on input line 637.
-LaTeX Info: Redefining \% on input line 637.
+LaTeX Info: Redefining \. on input line 601.
+LaTeX Info: Redefining \% on input line 601.
+ [8]
+LaTeX Info: Redefining \. on input line 674.
+LaTeX Info: Redefining \% on input line 674.
  [9]
-LaTeX Info: Redefining \. on input line 717.
-LaTeX Info: Redefining \% on input line 717.
+LaTeX Info: Redefining \. on input line 751.
+LaTeX Info: Redefining \% on input line 751.
  [10]
-LaTeX Info: Redefining \. on input line 792.
-LaTeX Info: Redefining \% on input line 792.
+LaTeX Info: Redefining \. on input line 837.
+LaTeX Info: Redefining \% on input line 837.
  [11]
-LaTeX Info: Redefining \. on input line 866.
-LaTeX Info: Redefining \% on input line 866.
+LaTeX Info: Redefining \. on input line 908.
+LaTeX Info: Redefining \% on input line 908.
  [12]
-LaTeX Info: Redefining \. on input line 938.
-LaTeX Info: Redefining \% on input line 938.
- [13]
 Underfull \hbox (badness 10000) in paragraph at lines 947--948
 
  []
 
-LaTeX Info: Redefining \. on input line 1010.
-LaTeX Info: Redefining \% on input line 1010.
-[14]
-LaTeX Info: Redefining \. on input line 1082.
-LaTeX Info: Redefining \% on input line 1082.
+LaTeX Info: Redefining \. on input line 980.
+LaTeX Info: Redefining \% on input line 980.
+[13]
+LaTeX Info: Redefining \. on input line 1057.
+LaTeX Info: Redefining \% on input line 1057.
+ [14]
+LaTeX Info: Redefining \. on input line 1130.
+LaTeX Info: Redefining \% on input line 1130.
  [15]
-LaTeX Info: Redefining \. on input line 1155.
-LaTeX Info: Redefining \% on input line 1155.
+LaTeX Info: Redefining \. on input line 1220.
+LaTeX Info: Redefining \% on input line 1220.
  [16]
-LaTeX Info: Redefining \. on input line 1239.
-LaTeX Info: Redefining \% on input line 1239.
- [17]
 
-LaTeX Warning: Reference `Tma.2.1' on page 18 undefined on input line 1255.
+LaTeX Warning: Reference `Tma.2.1' on page 17 undefined on input line 1255.
 
-LaTeX Info: Redefining \. on input line 1306.
-LaTeX Info: Redefining \% on input line 1306.
+LaTeX Info: Redefining \. on input line 1289.
+LaTeX Info: Redefining \% on input line 1289.
+[17]
+Overfull \hbox (13.10881pt too wide) in paragraph at lines 1303--1304
+[][]\OT1/cmr/bx/n/10 Teorema 17. []\OT1/cmr/m/it/10 Sea $\OML/cmm/m/it/10 Z$ \O
+T1/cmr/m/it/10 un Pro-ce-so Es-toc^^Sasti-co un la-do shift-medible one-sided s
+hift-measurable sto-chas-tic pro-cess, (PEOSSM),
+ []
+
+LaTeX Info: Redefining \. on input line 1367.
+LaTeX Info: Redefining \% on input line 1367.
 [18]
-LaTeX Info: Redefining \. on input line 1386.
-LaTeX Info: Redefining \% on input line 1386.
+LaTeX Info: Redefining \. on input line 1445.
+LaTeX Info: Redefining \% on input line 1445.
  [19]
-LaTeX Info: Redefining \. on input line 1461.
-LaTeX Info: Redefining \% on input line 1461.
+LaTeX Info: Redefining \. on input line 1509.
+LaTeX Info: Redefining \% on input line 1509.
  [20]
-LaTeX Info: Redefining \. on input line 1528.
-LaTeX Info: Redefining \% on input line 1528.
+LaTeX Info: Redefining \. on input line 1579.
+LaTeX Info: Redefining \% on input line 1579.
  [21] (./bibliografiaSP.tex
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
+LaTeX Info: Redefining \. on input line 43.
+LaTeX Info: Redefining \% on input line 43.
  [22])
 LaTeX Info: Redefining \. on input line 1595.
 LaTeX Info: Redefining \% on input line 1595.
@@ -813,8 +813,8 @@ LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
 )
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -838,7 +838,7 @@ Here is how much of TeX's memory you used:
  38219 multiletter control sequences out of 15000+600000
  570420 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,14n,79p,2449b,691s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,14n,79p,2449b,739s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
@@ -868,7 +868,7 @@ ype1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/
 type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on 0-RegenerativeRegenerationProcesses.pdf (24 pages, 470759 byt
+Output written on 0-RegenerativeRegenerationProcesses.pdf (24 pages, 469826 byt
 es).
 PDF statistics:
  637 PDF objects out of 1000 (max. 8388607)
