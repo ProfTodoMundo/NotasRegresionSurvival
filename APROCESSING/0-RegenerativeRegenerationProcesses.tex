@@ -4,7 +4,7 @@
 %_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 \usepackage[utf8]{inputenc}
 %\usepackage[spanish,english]{babel}
-\usepackage[spanish]{babel}
+\usepackage[spanish,english]{babel}
 \usepackage{amsmath,amssymb,amsthm,amsfonts}
 \usepackage{geometry}
 \usepackage{hyperref}
@@ -34,8 +34,8 @@
 %_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 \geometry{
   a4paper,
-  left=25mm,
-  right=25mm,
+  left=15mm,
+  right=15mm,
   top=30mm,
   bottom=30mm,
 }
@@ -68,13 +68,13 @@
 %_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 \newtheorem{Def}{Definición}[section]
 \newtheorem{Ejem}{Ejemplo}[section]
-\newtheorem{Teo}{Teorema}%[section]
-\newtheorem{Note}{Nota}%[section]
-\newtheorem{Prop}{Proposición}%[section]
-\newtheorem{Cor}{Corolario}%[section]
-\newtheorem{Lema}{Lema}%[section]
+\newtheorem{Teo}{Teorema}[section]
+\newtheorem{Note}{Nota}[section]
+\newtheorem{Prop}{Proposición}[section]
+\newtheorem{Cor}{Corolario}[section]
+\newtheorem{Lema}{Lema}[section]
 \newtheorem{Sup}{Supuestos}[section]
-\newtheorem{Obs}{Observación}%[section]
+\newtheorem{Obs}{Observación}[section]
 %_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 %NUEVOS COMANDOS
 %_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
@@ -127,14 +127,14 @@ This document presents a compilation of results related to the theory of stochas
 %_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 \section*{Introducción}
 %_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-El estudio de las cadenas de Markov es fundamental para comprender las condiciones bajo las cuales un proceso estocástico puede regenerarse, así como para determinar la existencia de tiempos de regeneración. La extensión de estos conceptos a teorías de colas y sistemas de visitas cíclicas requiere un conocimiento profundo de la teoría subyacente. Este análisis naturalmente lleva a explorar temas más complejos, tales como los procesos regenerativos y de renovación. En este trabajo se realiza una revisión de los conceptos esenciales para iniciar el estudio de los procesos regenerativos estacionarios. La revisión de estos temas se llevó a cabo bajo la supervisión del Dr. Raúl Montes de Oca Machorro y la Dra. Patricia Saavedra Barrera, cuyas oportunas y valiosas sugerencias y comentarios fueron fundamentales para desarrollar el estudio de este tipo de procesos estocásticos. Es importante destacar que las aplicaciones de estos resultados en la teoría de colas tienen un impacto significativo en problemas contemporáneos. A pesar de los avances logrados, aún existen preguntas sin resolver sobre su aplicación y generalización en la teoría de colas. Este trabajo no pretende ser un estudio exhaustivo sobre el tema, sino más bien proporcionar los elementos necesarios para introducirse en el estudio de estos procesos. El documento está organizado de la siguiente manera: en la primera sección se realiza una revisión de las cadenas de Markov y de los procesos de Markov. En la segunda sección se aborda un estudio inicial de los procesos de renovación y de los procesos regenerativos, junto con sus propiedades y el teorema principal de renovación. La tercera sección profundiza en los procesos regenerativos incluidos en \cite{Thorisson}, para los cuales es necesario revisar procesos más generales. Finalmente, en la última sección se presentan una serie de consideraciones respecto al contenido de este trabajo.
+El estudio de las cadenas de Markov es fundamental para comprender las condiciones bajo las cuales un proceso estocástico puede regenerarse, así como para determinar la existencia de tiempos de regeneración. La extensión de estos conceptos a teorías de colas y sistemas de visitas cíclicas requiere un conocimiento profundo de la teoría subyacente. Este análisis naturalmente lleva a explorar temas más complejos, tales como los procesos regenerativos y de renovación. En este trabajo se realiza una revisión de los conceptos esenciales para iniciar el estudio de los procesos regenerativos estacionarios. La revisión de estos temas se llevó a cabo en su momento bajo la supervisión del Dr. Raúl Montes de Oca Machorro y la Dra. Patricia Saavedra Barrera, cuyas oportunas y valiosas sugerencias y comentarios fueron fundamentales para desarrollar el estudio de este tipo de procesos estocásticos. Es importante destacar que las aplicaciones de estos resultados en la teoría de colas tienen un impacto significativo en problemas contemporáneos. A pesar de los avances logrados, aún existen preguntas sin resolver sobre su aplicación y generalización en la teoría de colas. Este trabajo no pretende ser un estudio exhaustivo sobre el tema, sino más bien proporcionar los elementos necesarios para introducirse en el estudio de estos procesos. El documento está organizado de la siguiente manera: en la primera sección se realiza una revisión de las cadenas de Markov y de los procesos de Markov. En la segunda sección se aborda un estudio inicial de los procesos de renovación y de los procesos regenerativos, junto con sus propiedades y el teorema principal de renovación. La tercera sección profundiza en los procesos regenerativos incluidos en \cite{Thorisson}, para los cuales es necesario revisar procesos más generales. Finalmente, en la última sección se presentan una serie de consideraciones respecto al contenido de este trabajo.
 
 
 \begin{otherlanguage}{english}
 %\renewcommand{\abstractname}{Abstract} % Cambia "Resumen" a "Abstract"
 \section*{Introduction}
 
-The study of Markov chains is fundamental for understanding the conditions under which a stochastic process can regenerate, as well as for determining the existence of regeneration times. Extending these concepts to queueing theories and cyclic visit systems requires a deep understanding of the underlying theory. This analysis naturally leads to exploring more complex topics such as regenerative and renewal processes. This work provides a review of the essential concepts for initiating the study of stationary regenerative processes. The review of these topics was carried out under the supervision of Dr. Raúl Montes de Oca Machorro and Dr. Patricia Saavedra Barrera, whose timely and valuable suggestions and comments were fundamental in developing the study of these types of stochastic processes. It is important to highlight that the applications of these results in queueing theory have a significant impact on contemporary problems. It is important to highlight that the applications of these results in queueing theory have a significant impact on contemporary problems. Despite the advances made, there are still unresolved questions regarding their application and generalization in queueing theory. This work does not aim to be an exhaustive study of the topic but rather to provide the necessary elements to introduce the study of these processes. The document is organized as follows: the first section provides a review of Markov chains and Markov processes. The second section addresses an initial study of renewal processes and regenerative processes, along with their properties and the main renewal theorem. The third section delves into the regenerative processes included in \cite{Thorisson}, for which it is necessary to review more general processes. Finally, the last section presents a series of considerations regarding the content of this work.
+The study of Markov chains is fundamental for understanding the conditions under which a stochastic process can regenerate, as well as for determining the existence of regeneration times. Extending these concepts to queueing theories and cyclic visit systems requires a deep understanding of the underlying theory. This analysis naturally leads to exploring more complex topics such as regenerative and renewal processes. This work provides a review of the essential concepts for initiating the study of stationary regenerative processes. The review of these topics was conducted under the supervision of Dr. Raúl Montes de Oca Machorro and Dr. Patricia Saavedra Barrera, whose timely and valuable suggestions and comments were fundamental in developing the study of these types of stochastic processes. It is important to highlight that the applications of these results in queueing theory have a significant impact on contemporary problems. It is important to highlight that the applications of these results in queueing theory have a significant impact on contemporary problems. Despite the advances made, there are still unresolved questions regarding their application and generalization in queueing theory. This work does not aim to be an exhaustive study of the topic but rather to provide the necessary elements to introduce the study of these processes. The document is organized as follows: the first section provides a review of Markov chains and Markov processes. The second section addresses an initial study of renewal processes and regenerative processes, along with their properties and the main renewal theorem. The third section delves into the regenerative processes included in \cite{Thorisson}, for which it is necessary to review more general processes. Finally, the last section presents a series of considerations regarding the content of this work.
 
 \end{otherlanguage}
 
@@ -180,7 +180,7 @@ Sea $\left\{\mathcal{F}\left(t\right),t\geq0\right\}$ familia creciente de sub $
 \end{Def}
 
 \begin{Def}\index{Proceso Adaptado}
-Sea $X\left(t\right),t\geq0$ proceso estoc\'astico, con $\left(S,\chi\right)$ espacio de estados. Se dice que el proceso es adaptado a $\left\{\mathcal{F}\left(t\right)\right\}$, es decir, si para cualquier $s,t\in I$, $I$ conjunto de \'indices, $s<t$, se tiene que $\mathcal{F}\left(s\right)\subset\mathcal{F}\left(t\right)$ y $X\left(t\right)$ es $\mathcal{F}\left(t\right)$-medible,
+Sea $X\left(t\right),t\geq0$ proceso estoc\'astico, con $\left(S,\chi\right)$ espacio de estados. Se dice que el proceso es adaptado a $\left\{\mathcal{F}\left(t\right)\right\}$, es decir, si para cualquier $s,t\in I$, $I$ conjunto de \'indices, $s<t$, se tiene que $\mathcal{F}\left(s\right)\subset\mathcal{F}\left(t\right)$, y $X\left(t\right)$ es $\mathcal{F}\left(t\right)$-medible,
 \end{Def}
 
 \begin{Def}\index{Proceso de Markov}
@@ -253,7 +253,7 @@ En el caso de que $\mathbf{E}$ sea finito, se considera la matrix $P=\left(P_{x,
 
 
 \begin{Note}
-Si la distribuci\'on inicial $\pi$ es igual al vector $\left(\delta_{x,y}\right)_{y\in\mathbf{E}}$, es decir
+Si la distribuci\'on inicial $\pi$ es igual al vector $\left(\delta_{x,y}\right)_{y\in\mathbf{E}}$, es decir,
 \begin{eqnarray*}
 P\left(X_{0}=x)=1\right)\textrm{ y }P\left(X_{0}\neq x\right)=0,
 \end{eqnarray*}
@@ -317,7 +317,7 @@ P\left(X_{0}=0\right)=\pi_{0}\left(0\right).
 Se puede demostrar que
 \begin{eqnarray}
 \begin{array}{l}
-P\left(X_{n}=0\right)=\frac{q}{p+q}\\
+P\left(X_{n}=0\right)=\frac{q}{p+q},\\
 P\left(X_{n}=1\right)=\frac{p}{p+q}.
 \end{array}
 \end{eqnarray}
@@ -402,10 +402,10 @@ Para $\mathbf{x}=\left(v,\zeta\right)\in E$ se denota \[t^{*}\mathbf{x}=inf\left
 
 En lo que respecta a la funci\'on $\lambda$, se supondr\'a que para cada $\left(v,\zeta\right)\in E$ existe un $\epsilon>0$ tal que la funci\'on $s\rightarrow\lambda\left(v,\phi_{v}\left(s,\zeta\right)\right)\in E$ es integrable para $s\in\left[0,\epsilon\right)$. La medida de transici\'on $Q\left(A;\mathbf{x}\right)$ es una funci\'on medible de $\mathbf{x}$ para cada $A\in\mathcal{E}$, definida para $\mathbf{x}\in E\cup\Gamma^{*}$ y es una medida de probabilidad en $\left(E,\mathcal{E}\right)$ para cada $\mathbf{x}\in E$.\\
 
-El movimiento del proceso $\left(\mathbf{x}_{t}\right)$ comenzando en $\mathbf{x}=\left(n,\mathbf{z}\right)\in E$ se puede construir de la siguiente manera, def\'inase la funci\'on $F$ por
+El movimiento del proceso $\left(\mathbf{x}_{t}\right)$ comenzando en $\mathbf{x}=\left(n,\mathbf{z}\right)\in E$, se puede construir de la siguiente manera, def\'inase la funci\'on $F$ por
 
 \begin{equation}
-F\left(t\right)=\left\{\begin{array}{ll}\\
+F\left(t\right)=\left\{\begin{array}{ll}
 exp\left(-\int_{0}^{t}\lambda\left(n,\phi_{n}\left(s,\mathbf{z}\right)\right)ds\right), & t<t^{*}\left(\mathbf{x}\right),\\
 0, & t\geq t^{*}\left(\mathbf{x}\right).
 \end{array}\right.
@@ -470,7 +470,7 @@ En una cadena de Markov $\left(X_{n}\right)_{n\in\nat}$ con espacio de estados $
 Se tiene el siguiente resultado:
 
 \begin{Prop}
-$x\leftrightarrow y$ es una relaci\'on de equivalencia y da lugar a una partici\'on del espacio de estados $\Eb$
+$x\leftrightarrow y$ es una relaci\'on de equivalencia y da lugar a una partici\'on del espacio de estados $\Eb$.
 \end{Prop}
 
 \begin{Def}
@@ -540,15 +540,15 @@ Sea $E$ espacio de estados, tal que $E$ es un espacio de Rad\'on, $\mathcal{B}\l
 Sea $\left(X,\mathcal{G},\prob\right)$ espacio de probabilidad, $I\subset\rea$ conjunto de \'indices. Sea $\mathcal{F}_{\leq t}$ la $\sigma$-\'algebra natural definida como $\sigma\left\{f\left(X_{r}\right):r\in I, r\leq t,f\in\mathcal{E}\right\}$. Se considerar\'a una $\sigma$-\'algebra m\'as general, $ \left(\mathcal{G}_{t}\right)$ tal que $\left(X_{t}\right)$ sea $\mathcal{E}$-adaptado.
 
 \begin{Def}
-Una familia $\left(P_{s,t}\right)$ de kernels de Markov en $\left(E,\mathcal{E}\right)$ indexada por pares $s,t\in I$, con $s\leq t$ es una funci\'on de transici\'on en $\ER$, si  para todo $r\leq s< t$ en $I$ y todo $x\in E$, $B\in\mathcal{E}$
+Una familia $\left(P_{s,t}\right)$ de kernels de Markov en $\left(E,\mathcal{E}\right)$ indexada por pares $s,t\in I$, con $s\leq t$ es una funci\'on de transici\'on en $\ER$, si  para todo $r\leq s< t$ en $I$ y todo $x\in E$, $B\in\mathcal{E}$,
 \begin{equation}\label{Eq.Kernels}
 P_{r,t}\left(x,B\right)=\int_{E}P_{r,s}\left(x,dy\right)P_{s,t}\left(y,B\right)\footnote{Ecuaci\'on de Chapman-Kolmogorov}.
 \end{equation}
 \end{Def}
 
-Se dice que la funci\'on de transici\'on $\KM$ en $\ER$ es la funci\'on de transici\'on para un proceso $\PE$  con valores en $E$ y que satisface la propiedad de Markov\footnote{\begin{equation}\label{Eq.1.4.S}
+Se dice que la funci\'on de transici\'on $\KM$ en $\ER$, es la funci\'on de transici\'on para un proceso $\PE$  con valores en $E$ y que satisface la propiedad de Markov\footnote{\begin{equation}\label{Eq.1.4.S}
 \prob\left\{H|\mathcal{G}_{t}\right\}=\prob\left\{H|X_{t}\right\}\textrm{ }H\in p\mathcal{F}_{\geq t}.
-\end{equation}} (\ref{Eq.1.4.S}) relativa a $\left(\mathcal{G}_{t}\right)$ si
+\end{equation}} (\ref{Eq.1.4.S}) relativa a $\left(\mathcal{G}_{t}\right)$, si
 
 \begin{equation}\label{Eq.1.6.S}
 \prob\left\{f\left(X_{t}\right)|\mathcal{G}_{s}\right\}=P_{s,t}f\left(X_{t}\right)\textrm{ }s\leq t\in I,\textrm{ }f\in b\mathcal{E}.
@@ -562,7 +562,7 @@ Una familia $\left(P_{t}\right)_{t\geq0}$ de kernels de Markov en $\ER$ es llama
 Si la funci\'on de transici\'on $\KM$ es llamada homog\'enea si $P_{s,t}=P_{t-s}$.
 \end{Note}
 
-Un proceso de Markov que satisface la ecuaci\'on (\ref{Eq.1.6.S}) con funci\'on de transici\'on homog\'enea $\left(P_{t}\right)$ tiene la propiedad caracter\'istica
+Un proceso de Markov que satisface la ecuaci\'on (\ref{Eq.1.6.S}) con funci\'on de transici\'on homog\'enea $\left(P_{t}\right)$ tiene la propiedad caracter\'istica:
 \begin{equation}\label{Eq.1.8.S}\index{Propiedad Simple de Markov}
 \prob\left\{f\left(X_{t+s}\right)|\mathcal{G}_{t}\right\}=P_{s}f\left(X_{t}\right)\textrm{ }t,s\geq0,\textrm{ }f\in b\mathcal{E}.
 \end{equation}
@@ -576,9 +576,8 @@ La ecuaci\'on anterior es la {\em Propiedad Simple de Markov} de $X$ relativa a 
 Sean $0\leq T_{1}\leq T_{2}\leq \ldots$ son tiempos aleatorios infinitos en los cuales ocurren ciertos eventos. El n\'umero de tiempos $T_{n}$ en el intervalo $\left[0,t\right)$ es
 
 \begin{eqnarray}
-N\left(t\right)=\sum_{n=1}^{\infty}\indora\left(T_{n}\leq t\right),
+N\left(t\right)=\sum_{n=1}^{\infty}\indora\left(T_{n}\leq t\right)\textrm{, para }t\geq0.
 \end{eqnarray}
-para $t\geq0$.
 \end{Def}
 
 Si se consideran los puntos $T_{n}$ como elementos de $\rea_{+}$, y $N\left(t\right)$ es el n\'umero de puntos en $\rea$. El proceso denotado por $\left\{N\left(t\right):t\geq0\right\}$ es un proceso puntual en $\rea_{+}$. Los $T_{n}$ son los tiempos de ocurrencia, el proceso puntual $N\left(t\right)$ es simple si su n\'umero de ocurrencias son distintas: $0<T_{1}<T_{2}<\ldots$ casi seguramente.
@@ -589,7 +588,11 @@ Un proceso puntual $N\left(t\right)$ es un proceso de renovaci\'on si los tiempo
 
 
 \begin{Note}
-Para definir un proceso de renovaci\'on para cualquier contexto, solamente hay que especificar una distribuci\'on $F$, con $F\left(0\right)=0$, para los tiempos de inter-renovaci\'on. La funci\'on $F$ en turno define las otras variables aleatorias. De manera formal, existe un espacio de probabilidad y una sucesi\'on de variables aleatorias $\xi_{1},\xi_{2},\ldots$ definidas en este con distribuci\'on $F$. Entonces las otras cantidades son $T_{n}=\sum_{k=1}^{n}\xi_{k}$ y $N\left(t\right)=\sum_{n=1}^{\infty}\indora\left(T_{n}\leq t\right)$, donde $T_{n}\rightarrow\infty$ casi seguramente por la Ley Fuerte de los Grandes N\'umeros.
+Para definir un proceso de renovaci\'on para cualquier contexto, solamente hay que especificar una distribuci\'on $F$, con $F\left(0\right)=0$, para los tiempos de inter-renovaci\'on. La funci\'on $F$ en turno define las otras variables aleatorias. De manera formal, existe un espacio de probabilidad y una sucesi\'on de variables aleatorias $\xi_{1},\xi_{2},\ldots$ definidas en este con distribuci\'on $F$. Entonces las otras cantidades son 
+\begin{eqnarray}
+T_{n}=\sum_{k=1}^{n}\xi_{k},\textrm{ y }N\left(t\right)=\sum_{n=1}^{\infty}\indora\left(T_{n}\leq t\right)\textrm{, donde }T_{n}\rightarrow\infty,
+\end{eqnarray}
+casi seguramente por la Ley Fuerte de los Grandes N\'umeros.
 \end{Note}
 
 %_______________________________________________________________________
@@ -622,7 +625,8 @@ Una modificaci\'on medible de un proceso $\left\{V\left(t\right),t\geq0\right\}$
 \begin{Teo}
 Sea $\left\{V\left(t\right),t\geq\right\}$ un proceso regenerativo no negativo con modificaci\'on medible. Sea $\esp\left[X\right]<\infty$. Entonces el proceso estacionario dado por la ecuaci\'on anterior est\'a bien definido y tiene funci\'on de distribuci\'on independiente de $t$, adem\'as
 \begin{itemize}
-\item[i)] \begin{eqnarray*}
+\item[i)] 
+\begin{eqnarray*}
 \esp\left[V^{*}\left(0\right)\right]&=&\frac{\esp\left[\int_{0}^{X}V\left(s\right)ds\right]}{\esp\left[X\right]}.\end{eqnarray*}
 \item[ii)] Si $\esp\left[V^{*}\left(0\right)\right]<\infty$, equivalentemente, si $\esp\left[\int_{0}^{X}V\left(s\right)ds\right]<\infty$,entonces
 \begin{eqnarray*}
@@ -654,7 +658,7 @@ Para el caso discreto se tienen resultados similares.
 \end{Note}
 
 \begin{Teo}[Teorema Principal de Renovaci\'on]\index{Teorema Principal de Renovaci\'on}
-Si $F$ es no aritm\'etica y $h\left(t\right)$ es Directamente Riemann Integrable (DRI), entonces
+Si $F$ es no aritm\'etica y $h\left(t\right)$ es DRI, entonces
 
 \begin{eqnarray}
 lim_{t\rightarrow\infty}U\star h=\frac{1}{\mu}\int_{\rea_{+}}h\left(s\right)ds.
@@ -662,7 +666,7 @@ lim_{t\rightarrow\infty}U\star h=\frac{1}{\mu}\int_{\rea_{+}}h\left(s\right)ds.
 \end{Teo}
 
 \begin{Prop}
-Cualquier funci\'on $H\left(t\right)$ acotada en intervalos finitos y que es 0 para $t<0$ puede expresarse como
+Cualquier funci\'on $H\left(t\right)$ acotada en intervalos finitos y que es 0 para $t<0$, puede expresarse como
 \begin{eqnarray}
 H\left(t\right)=U\star h\left(t\right)\textrm{,  donde }h\left(t\right)=H\left(t\right)-F\star H\left(t\right).
 \end{eqnarray}
@@ -683,7 +687,7 @@ Sup\'ongase que $X\left(t\right)$ es un proceso crudamente regenerativo en $T$, 
 \end{Prop}
 
 \begin{Teo}[Regeneraci\'on Cruda]
-Sup\'ongase que $X\left(t\right)$ es un proceso con valores positivo crudamente regenerativo en $T$, y def\'inase $M=\sup\left\{|X\left(t\right)|:t\leq T\right\}$. Si $T$ es no aritm\'etico y $M$ y $MT$ tienen media finita, entonces
+Sup\'ongase que $X\left(t\right)$ es un proceso con valores positivo crudamente regenerativo en $T$, y def\'inase $M=\sup\left\{|X\left(t\right)|:t\leq T\right\}$. Si $T$ es no aritm\'etico; y $M$ y $MT$ tienen media finita, entonces
 \begin{eqnarray}
 lim_{t\rightarrow\infty}\esp\left[X\left(t\right)\right]=\frac{1}{\mu}\int_{\rea_{+}}h\left(s\right)ds,
 \end{eqnarray}
@@ -721,37 +725,41 @@ Consid\'erese $\left\{X\left(t\right):t\geq0\right\}$ Proceso Estoc\'astico a ti
 \subsection*{Propiedades de los Procesos de Renovaci\'on}
 %______________________________________________________________________
 Los tiempos $T_{n}$ est\'an relacionados con los conteos de $N\left(t\right)$ por
-\begin{eqnarray*}
-\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\},\\
-T_{N\left(t\right)}\leq &t&<T_{N\left(t\right)+1},
-\end{eqnarray*}
+\begin{eqnarray}
+\begin{array}{l}
+\left\{N\left(t\right)\geq n\right\}=\left\{T_{n}\leq t\right\},\\
+T_{N\left(t\right)}\leq t<T_{N\left(t\right)+1},
+\end{array}
+\end{eqnarray}
 
 adem\'as $N\left(T_{n}\right)=n$, y 
 
-\begin{eqnarray*}
+\begin{eqnarray}
 N\left(t\right)=\max\left\{n:T_{n}\leq t\right\}=\min\left\{n:T_{n+1}>t\right\}.
-\end{eqnarray*}
+\end{eqnarray}
 
 Por propiedades de la convoluci\'on se sabe que
 
-\begin{eqnarray*}
+\begin{eqnarray}
 P\left\{T_{n}\leq t\right\}=F^{n\star}\left(t\right),
-\end{eqnarray*}
+\end{eqnarray}
 que es la $n$-\'esima convoluci\'on de $F$. Entonces 
 
-\begin{eqnarray*}
-\left\{N\left(t\right)\geq n\right\}&=&\left\{T_{n}\leq t\right\},\\
-P\left\{N\left(t\right)\leq n\right\}&=&1-F^{\left(n+1\right)\star}\left(t\right).
-\end{eqnarray*}
+\begin{eqnarray}
+\begin{array}{l}
+\left\{N\left(t\right)\geq n\right\}=\left\{T_{n}\leq t\right\},\\
+P\left\{N\left(t\right)\leq n\right\}=1-F^{\left(n+1\right)\star}\left(t\right).
+\end{array}
+\end{eqnarray}
 
-Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$ se tiene que
+Adem\'as usando el hecho de que $\esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}P\left\{N\left(t\right)\geq n\right\}$, se tiene que
 
-\begin{eqnarray*}
+\begin{eqnarray}
 \esp\left[N\left(t\right)\right]=\sum_{n=1}^{\infty}F^{n\star}\left(t\right).
-\end{eqnarray*}
+\end{eqnarray}
 
 \begin{Prop}
-Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$ existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
+Para cada $t\geq0$, la funci\'on generadora de momentos $\esp\left[e^{\alpha N\left(t\right)}\right]$, existe para alguna $\alpha$ en una vecindad del 0, y de aqu\'i que $\esp\left[N\left(t\right)^{m}\right]<\infty$, para $m\geq1$.
 \end{Prop}
 
 %AQUI ME QUEDE ES EL EJEMPLO 2.1 DEL PDF
@@ -791,7 +799,7 @@ t^{-1}N\left(t\right)\rightarrow 1/\mu,\textrm{ c.s. cuando }t\rightarrow\infty.
 Consideremos el proceso estoc\'astico de valores reales $\left\{Z\left(t\right):t\geq0\right\}$ en el mismo espacio de probabilidad que $N\left(t\right)$.
 
 \begin{Def}
-Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$ se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
+Para el proceso $\left\{Z\left(t\right):t\geq0\right\}$, se define la fluctuaci\'on m\'axima de $Z\left(t\right)$ en el intervalo $\left(T_{n-1},T_{n}\right]$:
 \begin{eqnarray*}
 M_{n}=\sup_{T_{n-1}<t\leq T_{n}}|Z\left(t\right)-Z\left(T_{n-1}\right)|.
 \end{eqnarray*}
@@ -872,7 +880,7 @@ suponiendo que la integral exista.
 \begin{Cor}[Identidad de Wald para Renovaciones]\index{Identidad de Wald para Renovaciones}
 Para el proceso de renovaci\'on $N\left(t\right)$,
 \begin{eqnarray}
-\esp\left[T_{N\left(t\right)+1}\right]=\mu\esp\left[N\left(t\right)+1\right]\textrm{.  }t\geq0,
+\esp\left[T_{N\left(t\right)+1}\right]=\mu\esp\left[N\left(t\right)+1\right]\textrm{,  }t\geq0.
 \end{eqnarray}  
 \end{Cor}
 
@@ -992,10 +1000,9 @@ P\left\{N\left(t+y\right)-N\left((t-x)\right)=0\right\}.
 
 \begin{Ejem}[Tiempos de recurrencia Poisson]
 Si $N\left(t\right)$ es un proceso Poisson con tasa $\lambda$, entonces de la expresi\'on (\ref{NoRenovacion}) se tiene que
-
 \begin{eqnarray*}
-\begin{array}{lc}
-P\left\{A\left(t\right)>x,B\left(t\right)>y\right\}=e^{-\lambda\left(x+y\right)},&0\leq x<t,y\geq0,
+\begin{array}{l}
+P\left\{A\left(t\right)>x,B\left(t\right)>y\right\}=e^{-\lambda\left(x+y\right)}\textrm{, }0\leq x<t,y\geq0,
 \end{array}
 \end{eqnarray*}
 que es la probabilidad Poisson de no renovaciones en un intervalo de longitud $x+y$.
@@ -1131,7 +1138,7 @@ Para espacios polacos $\left(E,\mathcal{E}\right)$ el Teorema de Consistencia de
 
 
 \begin{Def}\index{Trayectorias}
-Las trayectorias de $Z$ son las realizaciones $Z\left(w\right)$ para $w\in\Omega$ del mapeo aleatorio $Z$.
+Las trayectorias de $Z$ son las realizaciones $Z\left(w\right)$, para $w\in\Omega$ del mapeo aleatorio $Z$.
 \end{Def}
 
 \begin{Note}
@@ -1217,7 +1224,7 @@ El producto numerable de espacios polacos es polaco.
 
 
 \begin{Def}\index{Mapeo Medible}
-Sea $\left(\Omega,\mathcal{F},\prob\right)$ espacio de probabilidad que soporta al proceso $Z=\left(Z_{s}\right)_{s\in\left[0,\infty\right)}$ y $S=\left(S_{k}\right)_{0}^{\infty}$ donde $Z$ es un PEOSCTM con espacio de estados $\left(E,\mathcal{E}\right)$  y espacio de trayectorias $\left(H,\mathcal{H}\right)$  y adem\'as $S$ es una sucesi\'on de tiempos aleatorios one-sided que satisfacen la condici\'on $0\leq S_{0}<S_{1}<\cdots\rightarrow\infty$. Considerando $S$ como un mapeo medible de $\left(\Omega,\mathcal{F}\right)$ al espacio sucesi\'on $\left(L,\mathcal{L}\right)$, donde 
+Sea $\left(\Omega,\mathcal{F},\prob\right)$, espacio de probabilidad que soporta al proceso $Z=\left(Z_{s}\right)_{s\in\left[0,\infty\right)}$ y $S=\left(S_{k}\right)_{0}^{\infty}$ donde $Z$ es un PEOSCTM con espacio de estados $\left(E,\mathcal{E}\right)$  y espacio de trayectorias $\left(H,\mathcal{H}\right)$  y adem\'as $S$ es una sucesi\'on de tiempos aleatorios one-sided que satisfacen la condici\'on $0\leq S_{0}<S_{1}<\cdots\rightarrow\infty$. Considerando $S$ como un mapeo medible de $\left(\Omega,\mathcal{F}\right)$ al espacio sucesi\'on $\left(L,\mathcal{L}\right)$, donde 
 \begin{eqnarray}
 L=\left\{\left(s_{k}\right)_{0}^{\infty}\in\left[0,\infty\right)^{\left\{0,1,\ldots\right\}}:s_{0}<s_{1}<\cdots\rightarrow\infty\right\},
 \end{eqnarray}
@@ -1252,12 +1259,15 @@ Si el par $\left(Z,S\right)$ es regenerativo cl\'asico, entonces las longitudes 
 \end{Note}
 
 \begin{Teo}\label{Tma.Reg.Clasico}
-Sup\'ongase que el par $\left(Z,S\right)$ es regenerativo cl\'asico con $\esp\left[X_{1}\right]<\infty$. Entonces $\left(Z^{*},S^{*}\right)$ en el teorema \ref{Tma.2.1} es una versi\'on estacionaria de $\left(Z,S\right)$. Adem\'as, si $X_{1}$ es lattice con span $d$, entonces $\left(Z^{**},S^{**}\right)$ en el teorema 2.2 es una versi\'on periodicamente estacionaria de $\left(Z,S\right)$ con periodo $d$.
+Sup\'ongase que el par $\left(Z,S\right)$ es regenerativo cl\'asico con $\esp\left[X_{1}\right]<\infty$. Entonces $\left(Z^{*},S^{*}\right)$ es una versi\'on estacionaria de $\left(Z,S\right)$. Adem\'as, si $X_{1}$ es lattice con span $d$, entonces $\left(Z^{**},S^{**}\right)$ es una versi\'on periodicamente estacionaria de $\left(Z,S\right)$ con periodo $d$.
 
 \end{Teo}
 
 \begin{Def}\index{Variable aleatoria \textit{spread out}}
-Una variable aleatoria $X_{1}$ es \textit{spread out} si existe una $n\geq1$ y una  funci\'on $f\in\mathcal{B}^{+}$ tal que $\int_{\rea}f\left(x\right)dx>0$ con $X_{2},X_{3},\ldots,X_{n}$ copias i.i.d  de $X_{1}$, $$\prob\left(X_{1}+\cdots+X_{n}\in B\right)\geq\int_{B}f\left(x\right)dx$$ para $B\in\mathcal{B}$.
+Una variable aleatoria $X_{1}$ es \textit{spread out} si existe una $n\geq1$ y una  funci\'on $f\in\mathcal{B}^{+}$ tal que $\int_{\rea}f\left(x\right)dx>0$ con $X_{2},X_{3},\ldots,X_{n}$ copias i.i.d  de $X_{1}$, 
+\begin{eqnarray}
+\prob\left(X_{1}+\cdots+X_{n}\in B\right)\geq\int_{B}f\left(x\right)dx\textrm{para }B\in\mathcal{B}.
+\end{eqnarray}
 \end{Def}
 
 \begin{Def}\index{Procesos \textit{wide-sense regenerative}}
@@ -1315,6 +1325,11 @@ Entonces el espacio de probabilidad subyacente $\left(\Omega,\mathcal{F},\prob\r
 \end{eqnarray}
 \end{Teo}
 
+
+\begin{Cor}\label{Tma.Estacionariedad}\index{Teorema de Estacionariedad}
+Bajo las condiciones del Teorema anterior (\ref{Tma.Existencia.Tiempos.Regeneracion}), el par $\left(Z,S\right)$ es regenerativo cl\'asico. Si adem\'as se tiene que $\esp\left[X_{1}\right]<\infty$ por el Teorema (\ref{Teo.3.1}) existe un par $\left(Z^{*},S^{*}\right)$ que es una vesi\'on estacionaria de $\left(Z,S\right)$.
+\end{Cor}
+
 \begin{Def}
 Los tiempos aleatorios $S_{n}$ dividen $Z$ en 
 \begin{itemize}
@@ -1343,12 +1358,12 @@ Entonces $S_{0}^{0}\equiv0$ y $S_{0}^{0}\equiv X_{1}^{0}$, mientras que para $n\
 \begin{Def}\index{Ciclo Estacionario}
 Se le llama al par $\left(Z,S\right)$ \textbf{ciclo-stacionario} si los ciclos forman una sucesi\'on estacionaria, es decir, con $=^{D}$ denota iguales en distribuci\'on:
 \begin{eqnarray}
-\left(C_{n+1},C_{n+2},\ldots\right)=^{D}\left(C_{1},C_{2},\ldots\right),\geq0.
+\left(C_{n+1},C_{n+2},\ldots\right)=^{D}\left(C_{1},C_{2},\ldots\right),n\geq0.
 \end{eqnarray}
 Ciclo-estacionareidad es equivalente a 
 \begin{eqnarray}
 \theta_{S_{n}}\left(Z,S\right)=^{D}
-\left(Z^{0},S^{0}\right),\geq0,
+\left(Z^{0},S^{0}\right),n\geq0,
 \end{eqnarray}
 donde $\left(C_{n+1},C_{n+2},\ldots\right)$ y $\theta_{S_{n}}\left(Z,S\right)$ son mapeos medibles de cada uno y que no dependen de $n$.
 \end{Def}
@@ -1357,121 +1372,6 @@ donde $\left(C_{n+1},C_{n+2},\ldots\right)$ y $\theta_{S_{n}}\left(Z,S\right)$ s
 Un par $\left(Z^{*},S^{*}\right)$ es \textbf{estacionario} si $\theta\left(Z^{*},S^{*}\right)=^{D}
 \left(Z^{*},S^{*}\right)$, para $t\geq0$.
 \end{Def}
-
-
-\begin{Teo}\label{Teorema.2.1}
-Supongase que $\left(Z,S\right)$ es cycle-stationary con $\esp\left[X_{1}\right]<\infty$. Sea $U$ distribuida uniformemente en $\left[0,1\right)$ e independiente de $\left(Z^{0},S^{0}\right)$ y sea $\prob^{*}$ la medida de probabilidad en $\left(\Omega,\prob\right)$ definida por 
-
-\begin{eqnarray}
-d\prob^{*}=\frac{X_{1}}{\esp\left[X_{1}\right]}d\prob.
-\end{eqnarray}
- Sea $\left(Z^{*},S^{*}\right)$ con distribuci\'on $\prob^{*}\left(\theta_{UX_{1}}\left(Z^{0},S^{0}\right)\in\cdot\right)$. Entonces $\left(Z^{*},S^{*}\right)$ es estacionario,
-\begin{eqnarray}
-\esp\left[f\left(Z^{*},S^{*}\right)\right]=\esp\left[\int_{0}^{X_{1}}f\left(\theta_{s}\left(Z^{0},S^{0}\right)\right)ds\right]/\esp\left[X_{1}\right],
-\end{eqnarray}
-$f\in\mathcal{H}\otimes\mathcal{L}^{+}$, and $S_{0}^{*}$ es continuo con funci\'on distribuci\'on $G_{\infty}$ definida por 
-\begin{eqnarray}
-G_{\infty}\left(x\right):=\frac{\esp\left[X_{1}\right]\wedge x}{\esp\left[X_{1}\right]},
-\end{eqnarray}
-para $x\geq0$ y densidad $\prob\left[X_{1}>x\right]/\esp\left[X_{1}\right]$, con $x\geq0$.
-\end{Teo}
-
-\begin{Def}\index{Procesos Regenerativo Cl\'asico}
-Dado un proceso \textbf{PEOSSM} (Proceso Estoc\'astico One Side Shift Medible) $Z$, se dice \textbf{regenerativo cl\'asico} con tiempos de regeneraci\'on $S$ si 
-
-\begin{eqnarray*}
-\theta_{S_{n}}\left(Z,S\right)=\left(Z^{0},S^{0}\right)\textrm{, }n\geq0,
-\end{eqnarray*}
-y adem\'as $\theta_{S_{n}}\left(Z,S\right)$ es independiente de $\left(\left(Z_{s}\right)s\in\left[0,S_{n}\right),S_{0},\ldots,S_{n}\right)$. Si lo anterior se cumple, al par $\left(Z,S\right)$ se le llama regenerativo cl\'asico.
-\end{Def}
-
-\begin{Note}
-Si el par $\left(Z,S\right)$ es regenerativo cl\'asico, entonces las longitudes de los ciclos $X_{1},X_{2},\ldots,$ son i.i.d. e independientes de la longitud del retraso $S_{0}$, es decir, $S$ es un \textbf{proceso de renovaci\'on}. Las longitudes de los ciclos tambi\'en son llamados tiempos de inter-regeneraci\'on y tiempos de ocurrencia.
-
-\end{Note}
-
-\begin{Teo}\label{Teo.3.1}
-Sup\'ongase que el par $\left(Z,S\right)$ es regenerativo cl\'asico con $\esp\left[X_{1}\right]<\infty$. Entonces $\left(Z^{*},S^{*}\right)$ en el teorema \ref{Teorema.2.1} es una versi\'on estacionaria de $\left(Z,S\right)$.
-\end{Teo}
-
-
-\begin{Def}\index{Procesos spread out}
-Una variable aleatoria $X_{1}$ es \textbf{spread out} si existe una $n\geq1$ y una  funci\'on $f\in\mathcal{B}^{+}$ tal que $\int_{\rea}f\left(x\right)dx>0$ con $X_{2},X_{3},\ldots,X_{n}$ copias i.i.d  de $X_{1}$, 
-\begin{eqnarray}
-\prob\left(X_{1}+\cdots+X_{n}\in B\right)\geq\int_{B}f\left(x\right)dx,
-\end{eqnarray}
- para $B\in\mathcal{B}$.
-\end{Def}
-
-\begin{Def}\index{Procesos \textit{wide-sense regenerative}}
-Dado un proceso estoc\'astico $Z$ se le llama \textit{wide-sense regenerative} (\textbf{WSR}) con tiempos de regeneraci\'on $S$ si $\theta_{S_{n}}\left(Z,S\right)=\left(Z^{0},S^{0}\right)$ para $n\geq0$ en distribuci\'on y $\theta_{S_{n}}\left(Z,S\right)$ es independiente de $\left(S_{0},S_{1},\ldots,S_{n}\right)$ para $n\geq0$.
-Se dice que el par $\left(Z,S\right)$ es WSR si lo anterior se cumple.
-\end{Def}
-
-\begin{Note}
-\begin{itemize}
-\item El proceso de trayectorias $\left(\theta_{s}Z\right)_{s\in\left[0,\infty\right)}$ es WSR con tiempos de regeneraci\'on $S$ pero no es regenerativo cl\'asico.
-
-\item Si $Z$ es cualquier proceso estacionario y $S$ es un proceso de renovaci\'on que es independiente de $Z$, entonces $\left(Z,S\right)$ es WSR pero en general no es regenerativo cl\'asico.
-\end{itemize}
-\end{Note}
-
-\begin{Note}\index{Proceso de Markov}
-Para cualquier proceso estoc\'astico $Z$, el proceso de trayectorias $\left(\theta_{s}Z\right)_{s\in\left[0,\infty\right)}$ es siempre un proceso de Markov.
-\end{Note}
-
-
-\begin{Teo}\label{Teo.4.1}
-Supongase que el par $\left(Z,S\right)$ es WSR con $\esp\left[X_{1}\right]<\infty$. Entonces $\left(Z^{*},S^{*}\right)$ en el teorema (\ref{Teorema.2.1}) es una versi\'on estacionaria de $\left(Z,S\right)$.
-\end{Teo}
-
-\begin{Teo}\label{Tma.Existencia.Tiempos.Regeneracion}\index{Teorema de Existencia de los Tiempos de Regeneracion}
-Sea $Z$ un Proceso Estoc\'astico un lado shift-medible \textit{one-sided shift-measurable stochastic process}, (PEOSCTSM), y $S_{0}$ y $S_{1}$ tiempos aleatorios tales que $0\leq S_{0}<S_{1}$ y
-\begin{equation}
-\theta_{S_{1}}Z=\theta_{S_{0}}Z\textrm{ en distribuci\'on}.
-\end{equation}
-
-Entonces el espacio de probabilidad subyacente $\left(\Omega,\mathcal{F},\prob\right)$ puede extenderse para soportar una sucesi\'on de tiempos aleatorios $S$ tales que
-
-\begin{eqnarray}
-\begin{array}{l}
-\theta_{S_{n}}\left(Z,S\right)=\left(Z^{0},S^{0}\right),n\geq0,\textrm{ en distribuci\'on},\\
-\left(Z,S_{0},S_{1}\right)\textrm{ depende de }\left(X_{2},X_{3},\ldots\right)\textrm{ solamente a traves de }\theta_{S_{1}}Z.
-\end{array}
-\end{eqnarray}
-\end{Teo}
-
-\begin{Cor}\label{Tma.Estacionariedad}\index{Teorema de Estacionariedad}
-Bajo las condiciones del Teorema anterior (\ref{Tma.Existencia.Tiempos.Regeneracion}), el par $\left(Z,S\right)$ es regenerativo cl\'asico. Si adem\'as se tiene que $\esp\left[X_{1}\right]<\infty$ por el Teorema (\ref{Teo.3.1}) existe un par $\left(Z^{*},S^{*}\right)$ que es una vesi\'on estacionaria de $\left(Z,S\right)$.
-\end{Cor}
-
-Sea $\left(\Omega,\mathcal{F},\prob\right)$ espacio de probabilidad que soporta al proceso $Z=\left(Z_{s}\right)_{s\in\left[0,\infty\right)}$ y $S=\left(S_{k}\right)_{0}^{\infty}$ donde $Z$ es un PEOSCTM con espacio de estados $\left(E,\mathcal{E}\right)$  y espacio de trayectorias $\left(H,\mathcal{H}\right)$  y adem\'as $S$ es una sucesi\'on de tiempos aleatorios one-sided que satisfacen la condici\'on $0\leq S_{0}<S_{1}<\cdots\rightarrow\infty$. Considerando $S$ como un mapeo medible de $\left(\Omega,\mathcal{F}\right)$ al espacio sucesi\'on $\left(L,\mathcal{L}\right)$, $S:\left(\Omega,\mathcal{F}\right)\rightarrow\left(L,\mathcal{L}\right)$, donde 
-\begin{eqnarray*}
-L=\left\{\left(s_{k}\right)_{0}^{\infty}\in\left[0,\infty\right)^{\left\{0,1,\ldots\right\}}:s_{0}<s_{1}<\cdots\rightarrow\infty\right\},
-\end{eqnarray*}
-donde $\mathcal{L}$ son los subconjuntos de Borel de $L$, es decir, $\mathcal{L}=L\cap\mathcal{B}^{\left\{0,1,\ldots\right\}}$.
-
-As\'i el par $\left(Z,S\right)$ es un mapeo medible de  $\left(\Omega,\mathcal{F}\right)$ en $\left(H\times L,\mathcal{H}\otimes\mathcal{L}\right)$. El par $\mathcal{H}\otimes\mathcal{L}^{+}$ denotar\'a la clase de todas las funciones medibles de $\left(H\times L,\mathcal{H}\otimes\mathcal{L}\right)$ en $\left(\left[0,\infty\right),\mathcal{B}\left[0,\infty\right)\right)$.
-
-\begin{eqnarray*}
-\left(Z,S\right):\left(\Omega,\mathcal{F}\right)&\rightarrow& \left(H\times L,\mathcal{H}\times\mathcal{L}\right),\\
-\mathcal{H}\times\mathcal{L}^{*}:\left(H\times L,\mathcal{H}\times\mathcal{L}\right)
-&\rightarrow& 
-\left(\left[0,\infty\right),\mathcal{B}\left[0,\infty\right)\right).
-\end{eqnarray*}
-
-\begin{Def}\index{Mapeo shift}
-Sea $\theta_{t}$ el mapeo-shift conjunto de $H\times L$ en $H\times L$ dado por
-\begin{eqnarray*}
-\theta_{t}\left(z,\left(s_{k}\right)_{0}^{\infty}\right)=\theta_{t}\left(z,\left(s_{n_{t-}+k}-t\right)_{0}^{\infty}\right),
-\end{eqnarray*}
-donde 
-$n_{t-}=inf\left\{n\geq1:s_{n}\geq t\right\}$.
-\end{Def}
-
-\begin{Note}
-Con la finalidad de poder realizar los shift's sin complicaciones de medibilidad, se supondr\'a que $Z$ es shit-medible, es decir, el conjunto de trayectorias $H$ es invariante bajo shifts del tiempo y el mapeo que toma $\left(z,t\right)\in H\times\left[0,\infty\right)$ en $z_{t}\in E$ es $\mathcal{H}\otimes\mathcal{B}\left[0,\infty\right)/\mathcal{E}$ medible.
-\end{Note}
 
 
 %_________________________________________________________________________
