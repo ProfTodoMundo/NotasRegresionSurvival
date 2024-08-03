@@ -1,6 +1,10 @@
 \documentclass{article}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% PAQUETES A UTILIZAR
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 \usepackage[utf8]{inputenc}
-\usepackage[spanish,english]{babel}
+\usepackage[spanish]{babel}
+%\usepackage[spanish,english]{babel}
 \usepackage{amsmath,amssymb,amsthm,amsfonts}
 \usepackage{geometry}
 \usepackage{hyperref}
@@ -17,55 +21,70 @@
 \usepackage{enumerate}
 \usepackage{anysize} 
 \usepackage{url}
-
-\title{Polling Systems: Revisi\'on}
+\usepackage{imakeidx}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% TITULO DEL DOCUMENTO
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\title{Sistemas de Visita: Revisión\\
+\small{Polling Systems: Review}}
 \author{Carlos E. Martínez-Rodríguez}
-\date{Julio 2024}
-
+\date{Julio-Agosto 2024}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% MODIFICACION DE LOS MARGENES
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 \geometry{
   a4paper,
-  left=25mm,
-  right=25mm,
+  left=15mm,
+  right=15mm,
+  left=14mm,
+  right=14mm,
   top=30mm,
   bottom=30mm,
 }
-
-% Configuración de encabezados y pies de página
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% CONFIGURACION DE ENCABEZADOS Y PIES DE PAG
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\leftmark}
 \fancyfoot[C]{\thepage}
-\fancyfoot[R]{\rightmark}
-\fancyfoot[L]{Carlos E. Martínez-Rodríguez}
-
+\fancyfoot[R]{\tiny \leftmark}
+\fancyfoot[L]{\tiny Carlos E. Martínez-Rodríguez}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% Reducción del tamaño de letra en los pies de página
+%\fancypagestyle{plain}{
+  %\fancyfoot[C]{\footnotesize \thepage}
+  %\fancyfoot[R]{\footnotesize \leftmark}
+%  \fancyfoot[R]{\footnotesize \nouppercase{\rightmark}}
+  %\fancyfoot[L]{\footnotesize Carlos E. Martínez-Rodríguez}
+  %\fancyhead{}
+%}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% DEFINICION DE TITULOS CORTOS
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% Definir títulos cortos para las secciones
+%\usepackage{shorttoc} % Incluye este paquete para usar títulos cortos
+%\newcommand{\shorttitle}[2]{\section[#1]{#2}}
+%\newcommand{\shorttitle}[2]{\section[#1]{#2}\sectionmark{#1}}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 % Definiciones de nuevos entornos
-\newtheorem{Algthm}{Algoritmo}
-\newtheorem{Def}{Definición}
-\newtheorem{Ejem}{Ejemplo}
-\newtheorem{Teo}{Teorema}
-\newtheorem{Dem}{Demostración}
-\newtheorem{Note}{Nota}
-\newtheorem{Sol}{Solución}
-\newtheorem{Prop}{Proposición}
-\newtheorem{Cor}{Corolario}
-\newtheorem{Col}{Corolario}
-\newtheorem{Coro}{Corolario}
-\newtheorem{Lemma}{Lema}
-\newtheorem{Lem}{Lema}
-\newtheorem{Lema}{Lema}
-\newtheorem{Sup}{Supuestos}
-\newtheorem{Assumption}{Supuestos}
-\newtheorem{Remark}{Observación}
-\newtheorem{Condition}{Condición}
-\newtheorem{Theorem}{Teorema}
-\newtheorem{Corollary}{Corolario}
-\newtheorem{Ejemplo}{Ejemplo}
-\newtheorem{Example}{Ejemplo}
-\newtheorem{Obs}{Observación}
-
-% Nuevos comandos
-\def\RR{\mathbb{R}}
-\def\ZZ{\mathbb{Z}}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\newtheorem{Def}{Definición}[section]
+\newtheorem{Ejem}{Ejemplo}[section]
+\newtheorem{Teo}{Teorema}[section]
+\newtheorem{Dem}{Demostraci\'on}[section]
+\newtheorem{Note}{Nota}[section]
+\newtheorem{Prop}{Proposición}[section]
+\newtheorem{Cor}{Corolario}[section]
+\newtheorem{Coro}{Corolario}[section]
+\newtheorem{Lema}{Lema}[section]
+\newtheorem{Lemma}{Lema}[section]
+\newtheorem{Sup}{Supuestos}[section]
+\newtheorem{Obs}{Observación}[section]
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+%NUEVOS COMANDOS
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+%\def\RR{\mathbb{R}}
+%\def\ZZ{\mathbb{Z}}
 \newcommand{\nat}{\mathbb{N}}
 \newcommand{\ent}{\mathbb{Z}}
 \newcommand{\rea}{\mathbb{R}}
@@ -75,47 +94,56 @@
 \newcommand{\indora}{\mbox{$1$\hspace{-0.8ex}$1$}}
 \newcommand{\ER}{\left(E,\mathcal{E}\right)}
 \newcommand{\KM}{\left(P_{s,t}\right)}
-\newcommand{\Xt}{\left(X_{t}\right)_{t\in I}}
+%\newcommand{\Xt}{\left(X_{t}\right)_{t\in I}}
 \newcommand{\PE}{\left(X_{t}\right)_{t\in I}}
 \newcommand{\SG}{\left(P_{t}\right)}
 \newcommand{\CM}{\mathbf{P}^{x}}
-\newcommand\mypar{\par\vspace{\baselineskip}}
-
+%\newcommand\mypar{\par\vspace{\baselineskip}}
+\renewcommand{\abstractname}{Resumen}
+\numberwithin{equation}{section}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\makeindex
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 \begin{document}
-
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 \maketitle
 
+%<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+\begin{abstract}
+%<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\end{abstract}
+
+\begin{otherlanguage}{english}
+\renewcommand{\abstractname}{Abstract} % Cambia "Resumen" a "Abstract"
+\begin{abstract}
+\end{abstract}
+\end{otherlanguage}
+%<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
 \tableofcontents
-%<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===
+%\newpage
+%<====>====<><====>====<><====>====<><====>====<><====>
+%\part{Introducci\'on a Procesos Regenerativos}
+%<====>====<><====>====<><====>====<><====>====<><====>
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\section*{Introducción}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\begin{otherlanguage}{english}
+%\renewcommand{\abstractname}{Abstract} % Cambia "Resumen" a "Abstract"
+\section*{Introduction}
+\end{otherlanguage}
+%<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>
 
+%________________________________________________________
 \section{Sistemas de Visitas}
-%_________________________________________________________________________
-%\subsection{Historia}
-%_________________________________________________________________________
-Los {\emph{Sistemas de Visitas}} fueron introducidos a principios de los a\~nos 50, ver \cite{Boxma,BoonMeiWinands,LevySidi,TesisRoubos,Takagi,Semenova}, con un problema relacionado con las personas encargadas de la revisi\'on y reparaci\'on de m\'aquinas; m\'as adelante fueron utilizados para estudiar problemas de control de se\~nales de tr\'afico. A partir de ese momento el campo de aplicaci\'on ha crecido considerablemente, por ejemplo en: comunicaci\'on en redes de computadoras, rob\'otica, tr\'afico y transporte, manufactura, producci\'on, distribuci\'on de correo, sistema de saludp\'ublica, etc.
-%_________________________________________________________________________
-%\section{Descripci\'on}
-%_________________________________________________________________________
+%________________________________________________________
 
-Un modelo de colas es un modelo matem\'atico que describe la situaci\'on en la que uno o varios usuarios solicitan de un servicio a una instancia, computadora o persona. Aquellos usuarios que no son atendidos inmediatamente toman un lugar en una cola en espera de servicio. Un sistema de visitas consiste en modelos de colas conformadas por varias colas y un solo servidor que las visita en alg\'un orden para atender a los usuarios que se encuentran esperando por servicio.
+Los {\emph{Sistemas de Visitas}} fueron introducidos a principios de los a\~nos 50, ver \cite{Boxma,BoonMeiWinands,LevySidi,TesisRoubos,Takagi,Semenova}, con un problema relacionado con las personas encargadas de la revisi\'on y reparaci\'on de m\'aquinas; m\'as adelante fueron utilizados para estudiar problemas de control de se\~nales de tr\'afico. A partir de ese momento el campo de aplicaci\'on ha crecido considerablemente, por ejemplo en: comunicaci\'on en redes de computadoras, rob\'otica, tr\'afico y transporte, manufactura, producci\'on, distribuci\'on de correo, sistema de salud p\'ublica, etc.\index{Sistemas de Visita}\\
 
-%_________________________________________________________________________
-%\section{Objetivos}
-%_________________________________________________________________________
+Un modelo de colas es un modelo matem\'atico que describe la situaci\'on en la que uno o varios usuarios solicitan de un servicio a una instancia, computadora o persona. Aquellos usuarios que no son atendidos inmediatamente toman un lugar en una cola en espera de servicio. Un sistema de visitas consiste en modelos de colas conformadas por varias colas y un solo servidor que las visita en alg\'un orden para atender a los usuarios que se encuentran esperando por servicio.\index{Sistemas de Espera}
 
-Uno de los principales objetivos de este tipo de sistemas es tratar de mejorar el desempe\~no del sistema de visitas. Una de medida de desempe\~no importante es el tiempo de respuesta del sistema, as\'i como los tiempos promedios de espera en una fila y el tiempo promedio total que tarda en ser realizada una operaci\'on completa a lo largo de todo el sistema.\\
+Uno de los principales objetivos de este tipo de sistemas es tratar de mejorar el desempe\~no del sistema de visitas. Una de medida de desempe\~no importante es el tiempo de respuesta del sistema, as\'i como los tiempos promedios de espera en una fila y el tiempo promedio total que tarda en ser realizada una operaci\'on completa a lo largo de todo el sistema.\index{Medidas de Desempe\~no} Algunas medidas de desempe\~no para los usuarios son los valores promedio de espera para ser atendidos, de servicio, de permanencia total en el sistema; mientras que para el servidor son los valores promedio de permanencia en una cola atendiendo, de traslado entre las colas, de duraci\'on del ciclo entre dos visitas consecutivas a la misma cola, entre otras medidas de desempe\~no estudiadas en la literatura.\\
 
-Algunas medidas de desempe\~no para los usuarios son los valores promedio de espera para ser atendidos, de servicio, de permanencia total en el sistema; mientras que para el servidor son los valores promedio de permanencia en una cola atendiendo, de traslado entre las colas, de duraci\'on del ciclo entre dos visitas consecutivas a la misma cola, entre otras medidas de desempe\~no estudiadas en la literatura.
-
-%_________________________________________________________________________
-%\section{Caracter\'isticas}
-%_________________________________________________________________________
-
-En la mayor\'ia de los modelos de colas c\'iclicas, la capacidad de almacenamiento es infinita, es decir la cola puede acomodar a una cantidad infinita de usuarios a la vez.
-
-%_________________________________________________________________________
-%\subsection{Clasificaci\'on}
-%_________________________________________________________________________
 Los sistemas de visitas pueden dividirse en dos clases:
 \begin{itemize}
 \item[i)] hay varios servidores y los usuarios que llegan al sistema eligen un servidor de entre los que est\'an presentes.
@@ -123,26 +151,12 @@ Los sistemas de visitas pueden dividirse en dos clases:
 \item[ii)] hay uno o varios servidores que son comunes a todas las colas, estos visitan a cada una de las colas y atienden a los usuarios que est\'an presentes al momento de la visita del
 servidor.
 \end{itemize}
-%_________________________________________________________________________
-%\subsection{Tiempos de arribo a las colas}
-%_________________________________________________________________________
 
-La manera en que los usuarios llegan a las colas. Los usuarios llegan a las colas de manera tal que los tiempos entre arribos son independientes e id\'enticamente distribuidos. En la mayor\'ia de los modelos de visitas c\'iclicas, la capacidad de almacenamiento es infinita, es decir la cola puede acomodar a una cantidad infinita de usuarios a la vez.
+Los usuarios llegan a las colas de manera tal que los tiempos entre arribos son independientes e id\'enticamente distribuidos. En la mayor\'ia de los modelos de visitas c\'iclicas, la capacidad de almacenamiento es infinita, es decir la cola puede acomodar a una cantidad infinita de usuarios a la vez. Los tiempos de servicio en una cola son usualmente considerados como muestra de una distribuci\'on de probabilidad que caracteriza a la cola, adem\'as se acostumbra considerarlos mutuamente independientes e independientes del estado actual del sistema. \\
 
-%________________________________________________________
-%\subsection{Tiempos de servicio}
-%________________________________________________________
-Los tiempos de servicio en una cola son usualmente considerados como muestra de una distribuci\'on de probabilidad que caracteriza a la cola, adem\'as se acostumbra considerarlos mutuamente independientes e independientes del estado actual del sistema. 
+La ruta de atenci\'on del servidor, es el orden en el cual el servidor visita las colas determinado por un mecanismo que puede depender del estado actual del sistema (din\'amico) o puede ser independiente del estado del sistema (est\'atico). El mecanismo m\'as utilizado es el c\'iclico. Para modelar sistemas en los cuales ciertas colas son visitadas con mayor frecuencia que otras, las colas c\'iclicas se han extendido a colas peri\'odicas, en las cuales el servidor visita la cola conforme a una orden de servicio de longitud finita. \index{Colas C\'iclicas}\\
 
-%________________________________________________________
-%\subsection{Traslados del Servidor}
-%________________________________________________________
-
-La ruta de atenci\'on del servidor, es el orden en el cual el servidor visita las colas determinado por un mecanismo que puede depender del estado actual del sistema (din\'amico) o puede ser independiente del estado del sistema (est\'atico). 
-
-El mecanismo m\'as utilizado es el c\'iclico. Para modelar sistemas en los cuales ciertas colas son visitadas con mayor frecuencia que otras, las colas c\'iclicas se han extendido a colas peri\'odicas, en las cuales el servidor visita la cola conforme a una orden de servicio de longitud finita. 
-
-El {\em orden de visita} se entiende como la regla utilizada por el servidor para elegir la pr\'oxima cola. Este servicio puede ser din\'amico o est\'atico:
+El {\em orden de visita} se entiende como la regla utilizada por el servidor para elegir la pr\'oxima cola. Este servicio puede ser din\'amico o est\'atico:\index{Orden de visita}
 
 \begin{itemize}
 \item[i)] Para el caso {\em est\'atico} la regla permanece invariante a lo largo del curso de la operaci\'on del sistema.
@@ -159,26 +173,16 @@ Dentro de los ordenes de tipo est\'atico hay varios, los m\'as comunes son:
 \[Q_{T\left(1\right)},Q_{T\left(2\right)},\ldots,Q_{T\left(M\right)},Q_{T\left(1\right)},\ldots,Q_{T\left(M\right)}\]
 caracterizada por una tabla de visitas
 \[\left(T\left(1\right),T\left(2\right),\ldots,T\left(M\right)\right),\]
-con $M\geq N$, $T\left(i\right)\in\left\{1,2,\ldots,N\right\}$ e $i=\overline{1,M}$. Hay un caso especial, {\em colas tipo elevador} donde las colas son atendidas en el orden \[Q_{1},Q_{2},\ldots,Q_{N},Q_{1},Q_{2},\ldots,Q_{N-1},Q_{N},Q_{N-1},\ldots,Q_{1}\].
+con $M\geq N$, $T\left(i\right)\in\left\{1,2,\ldots,N\right\}$ e $i=\overline{1,M}$. Hay un caso especial, {\em colas tipo elevador} donde las colas son atendidas en el orden \[Q_{1},Q_{2},\ldots,Q_{N},Q_{1},Q_{2},\ldots,Q_{N-1},Q_{N},Q_{N-1},\ldots,Q_{1},\].
 
-\item[iii)] {\em aleatorio}: la cola $Q_{i}$ es elegida para serbatendida con probabilidad $p_{i}$, $i=\overline{1,N}$, $\sum_{i=1}^{N}p_{i}=1$. Una posible variaci\'on es que despu\'es de atender $Q_{i}$ el servidor se desplaza a $Q_{j}$ con probabilidad $p_{ij}$, con $i,j=\overline{1,N}$, $\sum_{j=1}^{N}p_{ij}=1$, para $i=\overline{1,N}$.
+\item[iii)] {\em aleatorio}: la cola $Q_{i}$ es elegida para ser atendida con probabilidad $p_{i}$, $i=\overline{1,N}$, $\sum_{i=1}^{N}p_{i}=1$. Una posible variaci\'on es que despu\'es de atender $Q_{i}$ el servidor se desplaza a $Q_{j}$ con probabilidad $p_{ij}$, con $i,j=\overline{1,N}$, $\sum_{j=1}^{N}p_{ij}=1$, para $i=\overline{1,N}$.
 \end{itemize}
 
-El servidor usualmente incurrir\'a en tiempos de traslado para ir de una cola a otra. Un sistema de visitas puede expresarse en un par de par\'ametros: el n\'umero de colas, que usualmente se denotar\'a por $N$, y el tr\'afico caracter\'istico de las colas, que consiste de los procesos de arribo y los procesos de servicio, la figura (\ref{Sistema.de.Visitas}) caracteriza a estos sistemas.\\
+El servidor usualmente incurrir\'a en tiempos de traslado para ir de una cola a otra. Un sistema de visitas puede expresarse en un par de par\'ametros: el n\'umero de colas, que usualmente se denotar\'a por $N$, y el tr\'afico caracter\'istico de las colas, que consiste de los procesos de arribo y los procesos de servicio caracteriza a estos sistemas.\\
 
-%________________________________________________________
-%\subsection{Disciplina de servicio}
-%________________________________________________________
+La disciplina de servicio especifica el n\'umero de usuarios que son atendidos durante la visita del servidor a la cola; estas pueden ser clasificadas en l\'imite de usuarios atendidos y en usuarios atendidos en un tiempo l\'imite, poniendo restricciones en la cantidad de tiempo utilizado por el servidor en una visita a la cola. Alternativamente pueden ser clasificadas en pol\'iticas exhaustivas y pol\'iticas cerradas, dependiendo en si los usuarios que llegaron a la cola mientras el servidor estaba dando servicio son candidatos para ser atendidos por el servidor que se encuentra en la cola dando servicio. En la pol\'itica exhaustiva estos usuarios son candidatos para ser atendidos mientras que en la cerrada no lo son. De estas dos pol\'iticas se han creado h\'ibridos los cuales pueden revisarse en \cite{BoonMeiWinands}.\index{Disciplina de Servicio}\\
 
-La disciplina de servicio especifica el n\'umero de usuarios que son atendidos durante la visita del servidor a la cola; estas pueden ser clasificadas en l\'imite de usuarios atendidos y en usuarios atendidos en un tiempo l\'imite, poniendo restricciones en la cantidad de tiempo utilizado por el servidor en una visita a la cola. Alternativamente pueden ser clasificadas en pol\'iticas exhaustivas y pol\'iticas cerradas, dependiendo en si los usuarios que llegaron a la cola mientras el servidor estaba dando servicio son candidatos para ser atendidos por el servidor que se encuentra en la cola dando servicio. En la pol\'itica exhaustiva estos usuarios son candidatos para ser atendidos mientras que en la cerrada no lo son. De estas dos pol\'iticas se han creado h\'ibridos los cuales pueden revisarse en \cite{BoonMeiWinands}.
-
-La disciplina de la cola especifica el orden en el cual los usuarios presentes en la cola son atendidos. La m\'as com\'un es la {\em First-In-First-Served}.
-
-%________________________________________________________
-%\subsection{Pol\'itica de Servicio}
-%________________________________________________________
-
-Las pol\'iticas m\'as comunes son las de tipo exhaustivo que consiste en que el servidor continuar\'a trabajando hasta que la cola quede vac\'ia; y la pol\'itica cerrada, bajo la cual ser\'an atendidos exactamente aquellos que estaban presentes al momento en que lleg\'o el servidor a la cola. 
+La disciplina de la cola especifica el orden en el cual los usuarios presentes en la cola son atendidos. La m\'as com\'un es la {\em First-In-First-Served}. Las pol\'iticas m\'as comunes son las de tipo exhaustivo que consiste en que el servidor continuar\'a trabajando hasta que la cola quede vac\'ia; y la pol\'itica cerrada, bajo la cual ser\'an atendidos exactamente aquellos que estaban presentes al momento en que lleg\'o el servidor a la cola. \index{Pol\'itica de Servicio}\\
 
 Las pol\'iticas de servicio deben de satisfacer las siguientes propiedades:
 \begin{itemize}
@@ -194,7 +198,7 @@ Las pol\'iticas de servicio deben de satisfacer las siguientes propiedades:
 
 \end{itemize}
 
-Las principales pol\'iticas deterministas de servicio son:
+Las principales pol\'iticas deterministas de servicio son:\index{Pol\'iticas Deterministas}
 \begin{itemize}
 
 \item[i)] {\em Cerrada} donde solamente los usuarios presentes al comienzo de la etapa son considerados para ser atendidos.
@@ -206,20 +210,16 @@ Las principales pol\'iticas deterministas de servicio son:
 \item[iv)] {\em tiempo limitado} la cola es atendida solo por un periodo de tiempo fijo.
 \end{itemize}
 
-%________________________________________________________
-%\subsection*{Extras}
-%________________________________________________________
+\begin{Note}
 \begin{itemize}
-\item Una etapa es el periodo de tiempo durante el cual el
+\item[a) ] Una etapa es el periodo de tiempo durante el cual el
 servidor atiende de manera continua en una sola cola.
 
-\item Un ciclo  es el periodo necesario para terminar $l$ etapas.
-
+\item[b) ] Un ciclo  es el periodo necesario para terminar $l$ etapas.
 \end{itemize}
+\end{Note}
 
-
-Boxma y Groenendijk \cite{Boxma2} enuncian la Ley de
-Pseudo-Conservaci\'on para la pol\'itica exhaustiva como
+Boxma y Groenendijk \cite{Boxma2} enuncian la Ley de Pseudo-Conservaci\'on para la pol\'itica exhaustiva como\index{Ley de Pseudo-Conservaci\'on}
 
 \begin{equation}\label{LPCPE}
 \sum_{i=1}^{N}\rho_{i}\esp
@@ -227,15 +227,14 @@ W_{i}=\rho\frac{\sum_{i=1}^{N}\lambda_{i}\esp\left[\delta_{i}^{(2)}\left(1\right
 \end{equation}
 
 donde $\delta=\sum_{i=1}^{N}\delta_{i}\left(1\right)$ y
-$\delta_{i}^{(2)}$ denota el segundo momento de los tiempos de traslado entre colas del servidor, $\delta^{(2)}$ es el segundo momento de los tiempos de traslado entre las colas de todo el sistema, finalmente sea $\rho=\sum_{i=1}^{N}\rho_{i}$. Por otro lado, se tiene que
+$\delta_{i}^{(2)}$ denota el segundo momento de los tiempos de traslado entre colas del servidor, $\delta^{(2)}$ es el segundo momento de los tiempos de traslado entre las colas de todo el sistema, finalmente $\rho=\sum_{i=1}^{N}\rho_{i}$. Por otro lado, se tiene que
 
-\begin{equation}\label{Eq.Tiempo.Espera}
+\begin{equation}\label{Eq.Tiempo.Espera}\index{Tiempos de Espera}
 \esp W_{i}=\frac{\esp I_{i}^{2}}{2\esp
 I_{i}}+\frac{\lambda_{i}\esp\left[\eta_{i}^{(2)}\left(1\right)\right]}{2\left(1-\rho_{i}\right)},
 \end{equation}
 
-con $I_{i}$ definido como el peri\'odo de intervisita, es decir el tiempo entre una salida y el pr\'oximo arribo del servidor a la cola $Q_{i}$, dado por $I_{i}=C_{i}-V_{i}$, donde $C_{i}$ es la longitud del ciclo, definido como el tiempo entre dos instantes de
-visita consecutivos a la cola $Q_{i}$ y $V_{i}$ es el periodo de visita, definido como el tiempo que el servidor utiliza en atender a los usuarios de la cola $Q_{i}$.
+con $I_{i}$ definido como el peri\'odo de intervisita, es decir el tiempo entre una salida y el pr\'oximo arribo del servidor a la cola $Q_{i}$, dado por $I_{i}=C_{i}-V_{i}$, donde $C_{i}$ es la longitud del ciclo, definido como el tiempo entre dos instantes de visita consecutivos a la cola $Q_{i}$ y $V_{i}$ es el periodo de visita, definido como el tiempo que el servidor utiliza en atender a los usuarios de la cola $Q_{i}$.\index{Periodo de Intervisita}
 \begin{equation}\label{Eq.Periodo.Intervisita}
 \esp
 I_{i}=\frac{\left(1-\rho_{i}\right)}{1-\rho}\sum_{i=1}^{N}\esp\left[\delta_{i}\left(1\right)\right],
@@ -243,26 +242,26 @@ I_{i}=\frac{\left(1-\rho_{i}\right)}{1-\rho}\sum_{i=1}^{N}\esp\left[\delta_{i}\l
 
 con
 
-\begin{equation}\label{Eq.Periodo.Intervisita}
+\begin{equation}\label{SdoMomento.Periodo.Intervisita}
 \esp
 I_{i}^{2}=\esp\left[\delta_{i-1}^{(2)}\left(1\right)\right]-\left(\esp\left[\delta_{i-1}\left(1\right)\right]\right)^{2}+
 \frac{1-\rho_{i}}{\rho_{i}}\sum_{j=1,j\neq i}^{N}r_{ij}+\left(\esp
 I_{i}\right)^{2},
 \end{equation}
 
-donde el conjunto de valores $\left\{r_{ij}:i,j=1,2,\ldots,N\right\}$ representan la covarianza del tiempo para las colas $i$ y $j$; para sistemas con servicio
-exhaustivo, el tiempo de estaci\'on para la cola $i$ se define como el intervalo de tiempo entre instantes sucesivos cuando el servidor abandona la cola $i-1$ y la cola $i$. Hideaki Takagi \cite{Takagi} proporciona expresiones cerradas para calcular $r_{ij}$, \'estas implican resolver un sistema de $N^{2}$
-Ecuaciones lineales;
+donde el conjunto de valores $\left\{r_{ij}:i,j=1,2,\ldots,N\right\}$ representan la covarianza del tiempo para las colas $i$ y $j$; para sistemas con servicio exhaustivo, el tiempo de estaci\'on para la cola $i$ se define como el intervalo de tiempo entre instantes sucesivos cuando el servidor abandona la cola $i-1$ y la cola $i$. Hideaki Takagi \cite{Takagi} proporciona expresiones cerradas para calcular $r_{ij}$, \'estas implican resolver un sistema de $N^{2}$ ecuaciones lineales;
 
 %{\footnotesize{
 \begin{eqnarray}\label{Eq.Cov.TT}
-r_{ij}&=&\frac{\rho_{i}}{1-\rho_{i}}\left(\sum_{m=i+1}^{N}r_{jm}+\sum_{m=1}^{j-1}r_{jm}+\sum_{m=j}^{i-1}r_{jm}\right),\textrm{
+\begin{array}{l}
+r_{ij}=\frac{\rho_{i}}{1-\rho_{i}}\left(\sum_{m=i+1}^{N}r_{jm}+\sum_{m=1}^{j-1}r_{jm}+\sum_{m=j}^{i-1}r_{jm}\right),\textrm{
 }j<i,\\
-r_{ij}&=&\frac{\rho_{i}}{1-\rho_{i}}\left(\sum_{m=i+1}^{j-1}r_{jm}+\sum_{m=j}^{N}r_{jm}+\sum_{m=1}^{i-1}r_{jm}\right),\textrm{
+r_{ij}=\frac{\rho_{i}}{1-\rho_{i}}\left(\sum_{m=i+1}^{j-1}r_{jm}+\sum_{m=j}^{N}r_{jm}+\sum_{m=1}^{i-1}r_{jm}\right),\textrm{
 }j>i,\\
-r_{ij}&=&\frac{\esp\left[\delta_{i-1}^{(2)}\left(1\right)\right]-\left(\esp\left[\delta_{i-1}\left(1\right)\right]\right)^{2}}
+r_{ij}=\frac{\esp\left[\delta_{i-1}^{(2)}\left(1\right)\right]-\left(\esp\left[\delta_{i-1}\left(1\right)\right]\right)^{2}}
 {\left(1-\rho_{i}\right)^{2}}+\frac{\lambda_{i}\esp\left[\eta_{i}\left(1\right)^{(2)}\right]}{\left(1-\rho_{i}\right)^{3}}+\frac{\rho_{i}}{1-\rho_{i}}\sum_{j=i,j=1}^{N}r_{ij}.
-\end{eqnarray}%}}
+\end{array}
+\end{eqnarray}\index{Pol\'itica de Servicio Exhaustiva}
 
 Para el caso de la Pol\'itica Cerrada la Ley de Pseudo-Conservaci\'on se expresa en los siguientes t\'erminos.
 \begin{equation}\label{LPCPG}
@@ -273,176 +272,175 @@ el tiempo de espera promedio para los usuarios en la cola $Q_{1}$ se puede deter
 \begin{equation}\label{Eq.Tiempo.Espera.Gated}
 \esp W_{i}=\frac{\left(1+\rho_{i}\right)\esp C_{i}^{2}}{2\esp
 C_{i}},
-\end{equation}
+\end{equation}\index{Tiempos de Espera}
 donde $C_{i}$ denota la longitud del ciclo para la cola $Q_{i}$, definida como el tiempo entre dos instantes consecutivos de visita en $Q_{i}$, cuyo segundo momento est\'a dado por
 
 \begin{equation}\label{Eq.Periodo.Intervisita.Gated}
 \esp C_{i}^{2}=\frac{1}{\rho_{i}}\sum_{j=1,j\neq
 i}^{N}r_{ij}+\sum_{j=1}^{N}r_{ij}+\left(\esp C\right)^{2},
-\end{equation}
+\end{equation}\index{Periodo de Intervisita}
 con
 \begin{eqnarray*}
 \esp C=\frac{\delta}{1-\rho},
 \end{eqnarray*}
-
 donde $r_{ij}$ representa la covarianza del tiempo de estaci\'on para las colas $i$ y $j$, pero el tiempo de estaci\'on para la cola $i$ para la pol\'itica cerrada se define como el intervalo de tiempo entre instantes sucesivos cuando el servidor visita la cola $i$ y la cola $i+1$. El conjunto $\left\{r_{ij}:i,j=1,2,\ldots,N\right\}$ se calcula resolviendo un
 sistema de $N^{2}$ ecuaciones lineales
 
 \begin{eqnarray}\label{Eq.Cov.TT.Gated}
-r_{ij}&=&\rho_{i}\left(\sum_{m=i}^{N}r_{jm}+\sum_{m=1}^{j-1}r_{jm}+\sum_{m=j}^{i-1}r_{mj}\right),\textrm{
+\begin{array}{l}
+r_{ij}=\rho_{i}\left(\sum_{m=i}^{N}r_{jm}+\sum_{m=1}^{j-1}r_{jm}+\sum_{m=j}^{i-1}r_{mj}\right),\textrm{
 }j<i,\\
-r_{ij}&=&\rho_{i}\left(\sum_{m=i}^{j-1}r_{jm}+\sum_{m=j}^{N}r_{jm}+\sum_{m=1}^{i-1}r_{mj}\right),\textrm{
+r_{ij}=\rho_{i}\left(\sum_{m=i}^{j-1}r_{jm}+\sum_{m=j}^{N}r_{jm}+\sum_{m=1}^{i-1}r_{mj}\right),\textrm{
 }j>i,\\
-r_{ij}&=&r_{i-1}^{(2)}-\left(r_{i-1}^{(1)}\right)^{2}+\lambda_{i}b_{i}^{(2)}\esp
+r_{ij}=r_{i-1}^{(2)}-\left(r_{i-1}^{(1)}\right)^{2}+\lambda_{i}b_{i}^{(2)}\esp
 C_{i}+\rho_{i}\sum_{j=1,j\neq
 i}^{N}r_{ij}+\rho_{i}^{2}\sum_{i=j,j=1}^{N}r_{ij}.
+\end{array}
 \end{eqnarray}
 
 Finalmente, Takagi \cite{Takagi} proponen una aproximaci\'on para los tiempos de espera de los usuarios en cada una de las colas:
-\begin{eqnarray*}
-\sum_{i=1}^{N}\frac{\rho_{i}}{\rho}\left(1-\frac{\lambda_{i}\delta}{1-\rho}\right)\esp\left[W_{i}\right]&=&\sum_{i=1}^{N}\frac{\lambda_{i}\esp\left[\eta_{i}\left(1\right)^{(2)}\right]}{2\left(1-\rho\right)}\\
-+\frac{\sum_{i=1}^{N}\esp\left[\delta_{i}^{2}\right]-\left(\esp\left[\delta_{i}\left(1\right)\right]\right)^{2}}{2\delta}&+&\frac{\delta\left(\rho-\sum_{i=1}^{N}\rho_{i}^{2}\right)}{2\rho\left(1-\rho\right)}+\frac{\delta\sum_{i=1}^{N}\rho_{i}^{2}}{\rho\left(1-\rho\right)},
-\end{eqnarray*}
+\begin{eqnarray}
+\begin{array}{l}
+\sum_{i=1}^{N}\frac{\rho_{i}}{\rho}\left(1-\frac{\lambda_{i}\delta}{1-\rho}\right)\esp\left[W_{i}\right]=\sum_{i=1}^{N}\frac{\lambda_{i}\esp\left[\eta_{i}\left(1\right)^{(2)}\right]}{2\left(1-\rho\right)}\\
++\frac{\sum_{i=1}^{N}\esp\left[\delta_{i}^{2}\right]-\left(\esp\left[\delta_{i}\left(1\right)\right]\right)^{2}}{2\delta}+\frac{\delta\left(\rho-\sum_{i=1}^{N}\rho_{i}^{2}\right)}{2\rho\left(1-\rho\right)}+\frac{\delta\sum_{i=1}^{N}\rho_{i}^{2}}{\rho\left(1-\rho\right)},
+\end{array}
+\end{eqnarray}
 entonces
-\begin{eqnarray*}\label{LPCPKL}
+\begin{eqnarray}\label{LPCPKL}
+\begin{array}{l}
 \esp
-W_{i}&\cong&\frac{1-\rho+\rho_{i}}{1-\rho-\lambda_{i}\delta}\times\frac{1-\rho}{\rho\left(1-\rho\right)+\sum_{i=1}^{N}\rho_{i}^{2}}\\
-&\times&\left[\frac{\rho}{2\left(1-\rho\right)}\sum_{i=1}^{N}\lambda_{i}\esp\left[\eta_{i}\left(1\right)^{(2)}\right]+\frac{\rho\Delta^{2}}{2\delta}+\frac{\delta}{2\left(1-\rho\right)}\sum_{i=1}^{N}\rho_{i}\left(1+\rho_{i}\right).\right]
-\end{eqnarray*}
-donde $\Delta^{2}=\sum_{i=1}^{N}\delta_{i}^{2}$. 
+W_{i}\cong\frac{1-\rho+\rho_{i}}{1-\rho-\lambda_{i}\delta}\times\frac{1-\rho}{\rho\left(1-\rho\right)+\sum_{i=1}^{N}\rho_{i}^{2}}\\
+\times\left[\frac{\rho}{2\left(1-\rho\right)}\sum_{i=1}^{N}\lambda_{i}\esp\left[\eta_{i}\left(1\right)^{(2)}\right]+\frac{\rho\Delta^{2}}{2\delta}+\frac{\delta}{2\left(1-\rho\right)}\sum_{i=1}^{N}\rho_{i}\left(1+\rho_{i}\right).\right]
+\end{array}
+\end{eqnarray}
+donde $\Delta^{2}=\sum_{i=1}^{N}\delta_{i}^{2}$. El modelo est\'a compuesto por $c$ colas de capacidad infinita, etiquetadas de $1$ a $c$ las cuales son atendidas por $s$ servidores. Los servidores atienden de acuerdo a una cadena de Markov independiente $\left(X^{i}_{n}\right)_{n}$ con $1\leq i\leq s$ y $n\in\left\{1,2,\ldots,c\right\}$ con la misma matriz de transici\'on $r_{k,l}$ y \'unica medida invariante $\left(p_{k}\right)$. Cada servidor permanece atendiendo en la cola un periodo llamado de visita y determinada por la pol\'itica de servicio asignada a la cola.\\
 
-El modelo est\'a compuesto por $c$ colas de capacidad infinita, etiquetadas de $1$ a $c$ las cuales son atendidas por $s$
-servidores. Los servidores atienden de acuerdo a una cadena de Markov independiente $\left(X^{i}_{n}\right)_{n}$ con $1\leq i\leq s$ y $n\in\left\{1,2,\ldots,c\right\}$ con la misma matriz de transici\'on $r_{k,l}$ y \'unica medida invariante $\left(p_{k}\right)$. Cada servidor permanece atendiendo en la cola un periodo llamado de visita y determinada por la pol\'itica de
-servicio asignada a la cola.
+Los usuarios llegan a la cola $k$ con una tasa $\lambda_{k}$ y son atendidos a una raz\'on $\mu_{k}$. Las sucesiones de tiempos de inter-arribo $\left(\tau_{k}\left(n\right)\right)_{n}$, la de tiempos de servicio $\left(\sigma_{k}^{i}\left(n\right)\right)_{n}$ y la de tiempos de cambio $\left(\sigma_{k,l}^{0,i}\left(n\right)\right)_{n}$ requeridas en la cola $k$ para el servidor $i$ son sucesiones independientes e id\'enticamente distribuidas con distribuci\'on general independiente de $i$, con media $\sigma_{k}=\frac{1}{\mu_{k}}$, respectivamente $\sigma_{k,l}^{0}=\frac{1}{\mu_{k,l}^{0}}$, e independiente de las cadenas de Markov $\left(X^{i}_{n}\right)_{n}$. Adem\'as se supone que los tiempos de interarribo se asume son acotados, para cada $\rho_{k}=\lambda_{k}\sigma_{k}<s$ para asegurar la estabilidad de la cola $k$ cuando opera como una cola $M/GM/1$.\index{Tiempos de inter-arribo}\\
 
-Los usuarios llegan a la cola $k$ con una tasa $\lambda_{k}$ y son atendidos a una raz\'on $\mu_{k}$. Las sucesiones de tiempos de interarribo $\left(\tau_{k}\left(n\right)\right)_{n}$, la de
-tiempos de servicio $\left(\sigma_{k}^{i}\left(n\right)\right)_{n}$ y la de tiempos de cambio $\left(\sigma_{k,l}^{0,i}\left(n\right)\right)_{n}$ requeridas en la cola $k$ para el servidor $i$ son sucesiones independientes e id\'enticamente distribuidas con distribuci\'on general independiente de $i$, con media $\sigma_{k}=\frac{1}{\mu_{k}}$, respectivamente $\sigma_{k,l}^{0}=\frac{1}{\mu_{k,l}^{0}}$, e independiente de las cadenas de Markov $\left(X^{i}_{n}\right)_{n}$. Adem\'as se supone que los tiempos de interarribo se asume son acotados, para cada $\rho_{k}=\lambda_{k}\sigma_{k}<s$ para asegurar la estabilidad de la cola $k$ cuando opera como una cola $M/GM/1$.
-
-Una pol\'itica de servicio determina el n\'umero de usuarios que ser\'an atendidos sin interrupci\'on en periodo de servicio por los servidores que atienden a la cola. Para un solo servidor esta se define a trav\'es de una funci\'on $f$ donde $f\left(x,a\right)$ es el n\'umero de usuarios que son atendidos sin interrupci\'on cuando el servidor llega a la cola y encuentra $x$ usuarios esperando dado el tiempo transcurrido de interarribo $a$. Sea $v\left(x,a\right)$ la du raci\'on del periodo de servicio para una sola condici\'on inicial $\left(x,a\right)$.
-
-Las pol\'iticas de servicio consideradas satisfacen las siguientes
-propiedades:
+Una pol\'itica de servicio determina el n\'umero de usuarios que ser\'an atendidos sin interrupci\'on en periodo de servicio por los servidores que atienden a la cola. Para un solo servidor esta se define a trav\'es de una funci\'on $f$ donde $f\left(x,a\right)$ es el n\'umero de usuarios que son atendidos sin interrupci\'on cuando el servidor llega a la cola y encuentra $x$ usuarios esperando dado el tiempo transcurrido de interarribo $a$. Sea $v\left(x,a\right)$ la du raci\'on del periodo de servicio para una sola condici\'on inicial $\left(x,a\right)$.\index{Pol\'itica de Servicio} Las pol\'iticas de servicio consideradas satisfacen las siguientes propiedades:
 
 \begin{itemize}
 \item[i)] Hay conservaci\'on del trabajo, es decir
-\[v\left(x,a\right)=\sum_{l=1}^{f\left(x,a\right)}\sigma\left(l\right)\]
-con $f\left(0,a\right)=v\left(0,a\right)=0$, donde
-$\left(\sigma\left(l\right)\right)_{l}$ es una sucesi\'on independiente e id\'enticamente distribuida de los tiempos de servicio solicitados. 
-\item[ii)] La selecci\'on de usuarios para se atendidos es independiente de sus correspondientes tiempos de servicio y del pasado hasta el inicio del periodo de servicio. As\'i las distribuci\'on $\left(f,v\right)$ no depende del orden en el cu\'al son atendidos los usuarios. \item[iii)] La pol\'itica de servicio es mon\'otona en el sentido de que para cada $a\geq0$ los n\'umeros $f\left(x,a\right)$ son mon\'otonos en distribuci\'on en $x$ y su l\'imite en distribuci\'on cuando $x\rightarrow\infty$ es una variable aleatoria $F^{*0}$ que no depende de $a$. \item[iv)] El n\'umero de usuarios atendidos por cada servidor es acotado por
-$f^{min}\left(x\right)$ de la longitud de la cola $x$ que adem\'as converge mon\'otonamente en distribuci\'on a $F^{*}$ cuando $x\rightarrow\infty$
+\begin{eqnarray}
+v\left(x,a\right)=\sum_{l=1}^{f\left(x,a\right)}\sigma\left(l\right)
+\end{eqnarray}
+con $f\left(0,a\right)=v\left(0,a\right)=0$, donde $\left(\sigma\left(l\right)\right)_{l}$ es una sucesi\'on independiente e id\'enticamente distribuida de los tiempos de servicio solicitados. 
+\item[ii)] La selecci\'on de usuarios para se atendidos es independiente de sus correspondientes tiempos de servicio y del pasado hasta el inicio del periodo de servicio. As\'i las distribuci\'on $\left(f,v\right)$ no depende del orden en el cu\'al son atendidos los usuarios. \item[iii)] La pol\'itica de servicio es mon\'otona en el sentido de que para cada $a\geq0$ los n\'umeros $f\left(x,a\right)$ son mon\'otonos en distribuci\'on en $x$ y su l\'imite en distribuci\'on cuando $x\rightarrow\infty$ es una variable aleatoria $F^{*0}$ que no depende de $a$. \item[iv)] El n\'umero de usuarios atendidos por cada servidor es acotado por $f^{min}\left(x\right)$ de la longitud de la cola $x$ que adem\'as converge mon\'otonamente en distribuci\'on a $F^{*}$ cuando $x\rightarrow\infty$.
 \end{itemize}
-
 
 
 Un sistema de visitas o sistema de colas consiste en un cierto n\'umero de filas o colas atendidas por un solo servidor en un orden determinado, estos se puede aplicar en situaciones en las cuales varios tipos de usuarios intentan tener acceso a una fuente en com\'un que est\'a disponible para un solo tipo de usuario a la vez. 
 
-Un sistema de visitas consiste en varias colas a las cuales los usuarios llegan conforme a un proceso poisson con tasa $\lambda_{i}$; la capacidad de las mismas, es decir, el n\'umero de lugares disponibles; el n\'umero de servidores que llegan a la cola correspondiente para dar servicio a los usuarios; la manera en que los servidores dan servicio; el tiempo que tarda el servidor en ir de una a otra cola, as\'i como el orden y la disciplina de servicio de la cola; la pol\'itica de servicio determina cuales y cuantos usuarios ser\'an atendidos durante la visita del servidor a la cola.\\
-
-Las pol\'iticas m\'as comunes son las de tipo exhaustivo que consiste en que el servidor continuar\'a trabajando hasta que la cola quede vac\'ia; y la pol\'itica cerrada, bajo la cual ser\'an atendidos exactamente aquellos que estaban presentes al momento en que lleg\'o el servidor a la cola. El esquema de ruta determina en que orden el servidor visitara a las colas. La decisi\'on del servidor sobre la pr\'oxima cola que visitar\'a puede depender de la informaci\'on disponible para el servidor, por ejemplo las longitudes de las
-colas.\\
-
-El servidor usualmente incurrir\'a en tiempos de traslado para ir de una cola a otra. Un sistema de visitas puede expresarse en un par de par\'ametros: el n\'umero de colas, que usualmente se denotar\'a por $N$, y el tr\'afico caracter\'istico de las colas, que consiste de los procesos de arribo y los procesos de servicio, la figura (\ref{GRafSistColasCiclicas}) caracteriza a estos sistemas.\\
-
-Algunas medidas de desempe\~no para los usuarios son los valores promedio de espera para ser atendidos, de servicio, de permanencia total en el sistema; mientras que para el servidor son los valores promedio de permanencia en una cola atendiendo, de traslado entre las colas, de duraci\'on del ciclo entre dos visitas consecutivas a la misma cola, entre otras medidas de desempe\~no estudiaddas en la literatura.
-
-
-%___________________________________________________________________________________________
-%
+%__________________________________________
  \section{Funci\'on Generadora de Probabilidades}
-%___________________________________________________________________________________________
+%__________________________________________
 
-\begin{Teo}[Teorema de Continuidad]
-Sup\'ongase que $\left\{X_{n},n=1,2,3,\ldots\right\}$ son variables aleatorias finitas, no negativas con valores enteros tales que $P\left(X_{n}=k\right)=p_{k}^{(n)}$, para $n=1,2,3,\ldots$, $k=0,1,2,\ldots$, con $\sum_{k=0}^{\infty}p_{k}^{(n)}=1$, para $n=1,2,3,\ldots$. Sea $g_{n}$ la PGF para la variable aleatoria $X_{n}$. Entonces existe una sucesi\'on $\left\{p_{k}\right\}$ tal que \begin{eqnarray*}
+\begin{Teo}[Teorema de Continuidad]\index{Teorema de Continuidad}
+Sup\'ongase que $\left\{X_{n},n=1,2,3,\ldots\right\}$ son variables aleatorias finitas, no negativas con valores enteros tales que $P\left(X_{n}=k\right)=p_{k}^{(n)}$, para $n=1,2,3,\ldots$, $k=0,1,2,\ldots$, con $\sum_{k=0}^{\infty}p_{k}^{(n)}=1$, para $n=1,2,3,\ldots$. Sea $g_{n}$ la Funci\'on Generadora de Probabilidades (FGP)  para la variable aleatoria $X_{n}$. Entonces existe una sucesi\'on $\left\{p_{k}\right\}$ tal que 
+\begin{eqnarray}
 lim_{n\rightarrow\infty}p_{k}^{(n)}=p_{k}\textrm{ para }0<s<1.
-\end{eqnarray*}
+\end{eqnarray}
 
 En este caso, $g\left(s\right)=\sum_{k=0}^{\infty}s^{k}p_{k}$. Adem\'as
-\begin{eqnarray*}
+\begin{eqnarray}
 \sum_{k=0}^{\infty}p_{k}=1\textrm{ si y s\'olo si
-}lim_{s\uparrow1}g\left(s\right)=1
-\end{eqnarray*}
+}lim_{s\uparrow1}g\left(s\right)=1.
+\end{eqnarray}
 \end{Teo}
 
 \begin{Teo}
-Sea $N$ una variable aleatoria con valores enteros no negativos finita tal que $P\left(N=k\right)=p_{k}$, para $k=0,1,2,\ldots$, y $\sum_{k=0}^{\infty}p_{k}=P\left(N<\infty\right)=1$. Sea $\Phi$ la PGF de $N$ tal que
-$g\left(s\right)=\esp\left[s^{N}\right]=\sum_{k=0}^{\infty}s^{k}p_{k}$ con $g\left(1\right)=1$. Si $0\leq p_{1}\leq1$ y $\esp\left[N\right]=g^{'}\left(1\right)\leq1$, entonces no existe soluci\'on  de la ecuaci\'on $g\left(s\right)=s$ en el intervalo $\left[0,1\right)$. Si $\esp\left[N\right]=g^{'}\left(1\right)>1$, lo cual implica que $0\leq p_{1}<1$, entonces existe una \'unica soluci\'on de la ecuaci\'on $g\left(s\right)=s$ en el intervalo $\left[0,1\right)$.
+Sea $N$ una variable aleatoria con valores enteros no negativos finita tal que $P\left(N=k\right)=p_{k}$, para $k=0,1,2,\ldots$, y 
+\begin{eqnarray}
+\sum_{k=0}^{\infty}p_{k}=P\left(N<\infty\right)=1.
+\end{eqnarray} 
+
+Sea $\Phi$ la FGP de $N$ tal que
+\begin{eqnarray}
+g\left(s\right)=\esp\left[s^{N}\right]=\sum_{k=0}^{\infty}s^{k}p_{k},
+\end{eqnarray}
+ con $g\left(1\right)=1$. Si $0\leq p_{1}\leq1$ y 
+ \begin{eqnarray}
+\esp\left[N\right]=g^{'}\left(1\right)\leq1,
+\end{eqnarray}
+ entonces no existe soluci\'on  de la ecuaci\'on $g\left(s\right)=s$ en el intervalo $\left[0,1\right)$. Si $\esp\left[N\right]=g^{'}\left(1\right)>1$, lo cual implica que $0\leq p_{1}<1$, entonces existe una \'unica soluci\'on de la ecuaci\'on $g\left(s\right)=s$ en el intervalo $\left[0,1\right)$.
 \end{Teo}
 
-
 \begin{Teo}
-Si $X$ y $Y$ tienen PGF $G_{X}$ y $G_{Y}$ respectivamente, entonces,\[G_{X}\left(s\right)=G_{Y}\left(s\right)\] para tod $s$, si y s\'olo si \[P\left(X=k\right))=P\left(Y=k\right)\] para toda $k=0,1,\ldots,$., es decir, si y s\'olo si $X$ y $Y$ tienen la misma distribuci\'on de probabilidad.
+Si $X$ y $Y$ tienen PGF $G_{X}$ y $G_{Y}$ respectivamente, entonces,\[G_{X}\left(s\right)=G_{Y}\left(s\right)\] para toda $s$, s\'i y s\'olo s\'i
+\begin{eqnarray}
+P\left(X=k\right))=P\left(Y=k\right),
+\end{eqnarray}
+para toda $k=0,1,\ldots,$., es decir, si y s\'olo si $X$ y $Y$ tienen la misma distribuci\'on de probabilidad.
 \end{Teo}
 
-
 \begin{Teo}
-Para cada $n$ fijo, sea la sucesi\'oin de probabilidades $\left\{a_{0,n},a_{1,n},\ldots,\right\}$, tales que $a_{k,n}\geq0$ para toda $k=0,1,2,\ldots,$ y $\sum_{k\geq0}a_{k,n}=1$, y sea $G_{n}\left(s\right)$ la correspondiente funci\'on generadora, $G_{n}\left(s\right)=\sum_{k\geq0}a_{k,n}s^{k}$. De modo que para cada valor fijo de $k$
-\begin{eqnarray*}
+Para cada $n$ fijo, sea la sucesi\'on de probabilidades $\left\{a_{0,n},a_{1,n},\ldots,\right\}$, tales que $a_{k,n}\geq0$ para toda $k=0,1,2,\ldots,$ y $\sum_{k\geq0}a_{k,n}=1$, y sea $G_{n}\left(s\right)$ la correspondiente funci\'on generadora, $G_{n}\left(s\right)=\sum_{k\geq0}a_{k,n}s^{k}$. De modo que para cada valor fijo de $k$
+\begin{eqnarray}
 lim_{n\rightarrow\infty}a_{k,n}=a_{k},
-\end{eqnarray*}
+\end{eqnarray}
 es decir converge en distribuci\'on, es necesario y suficiente que para cada valor fijo $s\in\left[0,\right)$,
 
-\begin{eqnarray*}
+\begin{eqnarray}
 lim_{n\rightarrow\infty}G_{n}\left(s\right)=G\left(s\right),
-\end{eqnarray*}
+\end{eqnarray}
 donde $G\left(s\right)=\sum_{k\geq0}p_{k}s^{k}$, para cualquier la funci\'on generadora del l\'imite de la sucesi\'on.
 \end{Teo}
 
-\begin{Teo}[Teorema de Abel]
+\begin{Teo}[Teorema de Abel]\index{Teorema de Abel}
 Sea $G\left(s\right)=\sum_{k\geq0}a_{k}s^{k}$ para cualquier $\left\{p_{0},p_{1},\ldots,\right\}$, tales que $p_{k}\geq0$ para toda $k=0,1,2,\ldots,$. Entonces $G\left(s\right)$ es continua por la derecha en $s=1$, es decir
-\begin{eqnarray*}
-lim_{s\uparrow1}G\left(s\right)=\sum_{k\geq0}p_{k}=G\left(\right),
-\end{eqnarray*}
+\begin{eqnarray}
+lim_{s\uparrow1}G\left(s\right)=\sum_{k\geq0}p_{k}=G\left(s\right),
+\end{eqnarray}
 sin importar si la suma es finita o no.
 \end{Teo}
 
 \begin{Note}
-El radio de Convergencia para cualquier PGF es $R\geq1$, entonces, el Teorema de Abel nos dice que a\'un en el peor escenario, cuando $R=1$, a\'un se puede confiar en que la PGF ser\'a continua en $s=1$, en contraste, no se puede asegurar que la PGF ser\'a continua en el l\'imite inferior $-R$, puesto que la PGF es sim\'etrica alrededor del cero: la PGF converge para todo $s\in\left(-R,R\right)$, y no lo hace para $s<-R$ o $s>R$. Adem\'as nos dice que podemos escribir $G_{X}\left(1\right)$ como una abreviaci\'on de $lim_{s\uparrow1}G_{X}\left(s\right)$.
+El radio de Convergencia para cualquier FGP es $R\geq1$, entonces, el Teorema de Abel nos dice que a\'un en el peor escenario, cuando $R=1$, a\'un se puede confiar en que la FGP ser\'a continua en $s=1$, en contraste, no se puede asegurar que la FGP ser\'a continua en el l\'imite inferior $-R$, puesto que la FGP es sim\'etrica alrededor del cero: la FGP converge para todo $s\in\left(-R,R\right)$, y no lo hace para $s<-R$ o $s>R$. Adem\'as nos dice que podemos escribir $G_{X}\left(1\right)$ como una abreviaci\'on de $lim_{s\uparrow1}G_{X}\left(s\right)$.
 \end{Note}
 
 Entonces si suponemos que la diferenciaci\'on t\'ermino a t\'ermino est\'a permitida, entonces
 
-\begin{eqnarray*}
+\begin{eqnarray}
 G_{X}^{'}\left(s\right)&=&\sum_{x=1}^{\infty}xs^{x-1}p_{x}
-\end{eqnarray*}
+\end{eqnarray}
 
 el Teorema de Abel nos dice que
-\begin{eqnarray*}
-\esp\left(X\right]&=&\lim_{s\uparrow1}G_{X}^{'}\left(s\right):\\
-\esp\left[X\right]&=&=\sum_{x=1}^{\infty}xp_{x}=G_{X}^{'}\left(1\right)\\
-&=&\lim_{s\uparrow1}G_{X}^{'}\left(s\right),
-\end{eqnarray*}
+\begin{eqnarray}
+\begin{array}{l}
+\esp\left(X\right]=\lim_{s\uparrow1}G_{X}^{'}\left(s\right):\\
+\esp\left[X\right]=\sum_{x=1}^{\infty}xp_{x}=G_{X}^{'}\left(1\right)=\lim_{s\uparrow1}G_{X}^{'}\left(s\right),
+\end{array}
+\end{eqnarray}
 dado que el Teorema de Abel se aplica a
-\begin{eqnarray*}
+\begin{eqnarray}
 G_{X}^{'}\left(s\right)&=&\sum_{x=1}^{\infty}xs^{x-1}p_{x},
-\end{eqnarray*}
+\end{eqnarray}
 estableciendo as\'i que $G_{X}^{'}\left(s\right)$ es continua en $s=1$. Sin el Teorema de Abel no se podr\'ia asegurar que el l\'imite de $G_{X}^{'}\left(s\right)$ conforme $s\uparrow1$ sea la respuesta correcta para $\esp\left[X\right]$.
 
 \begin{Note}
-La PGF converge para todo $|s|<R$, para alg\'un $R$. De hecho la PGF converge absolutamente si $|s|<R$. La PGF adem\'as converge uniformemente en conjuntos de la forma $\left\{s:|s|<R^{'}\right\}$, donde $R^{'}<R$, es decir, $\forall\epsilon>0, \exists n_{0}\in\ent$ tal que $\forall s$, con $|s|<R^{'}$, y $\forall n\geq n_{0}$,
-\begin{eqnarray*}
+La FGP converge para todo $|s|<R$, para alg\'un $R$. De hecho la FGP converge absolutamente si $|s|<R$. La FGP adem\'as converge uniformemente en conjuntos de la forma $\left\{s:|s|<R^{'}\right\}$, donde $R^{'}<R$, es decir, $\forall\epsilon>0, \exists n_{0}\in\ent$ tal que $\forall s$, con $|s|<R^{'}$, y $\forall n\geq n_{0}$,
+\begin{eqnarray}
 |\sum_{x=0}^{n}s^{x}\prob\left(X=x\right)-G_{X}\left(s\right)|<\epsilon.
-\end{eqnarray*}
+\end{eqnarray}
 De hecho, la convergencia uniforme es la que nos permite diferenciar t\'ermino a t\'ermino:
-\begin{eqnarray*}
+\begin{eqnarray}
 G_{X}\left(s\right)=\esp\left[s^{X}\right]=\sum_{x=0}^{\infty}s^{x}\prob\left(X=x\right),
-\end{eqnarray*}
+\end{eqnarray}
 y sea $s<R$.
 \begin{enumerate}
 \item
-\begin{eqnarray*}
-G_{X}^{'}\left(s\right)&=&\frac{d}{ds}\left(\sum_{x=0}^{\infty}s^{x}\prob\left(X=x\right)\right)=\sum_{x=0}^{\infty}\frac{d}{ds}\left(s^{x}\prob\left(X=x\right)\right)\\
-&=&\sum_{x=0}^{n}xs^{x-1}\prob\left(X=x\right).
-\end{eqnarray*}
+\begin{eqnarray}
+G_{X}^{'}\left(s\right)=\frac{d}{ds}\left(\sum_{x=0}^{\infty}s^{x}\prob\left(X=x\right)\right)=\sum_{x=0}^{\infty}\frac{d}{ds}\left(s^{x}\prob\left(X=x\right)\right)=\sum_{x=0}^{n}xs^{x-1}\prob\left(X=x\right).
+\end{eqnarray}
 
-\item\begin{eqnarray*}
-\int_{a}^{b}G_{X}\left(s\right)ds&=&\int_{a}^{b}\left(\sum_{x=0}^{\infty}s^{x}\prob\left(X=x\right)\right)ds=\sum_{x=0}^{\infty}\left(\int_{a}^{b}s^{x}\prob\left(X=x\right)ds\right)\\
-&=&\sum_{x=0}^{\infty}\frac{s^{x+1}}{x+1}\prob\left(X=x\right),
-\end{eqnarray*}
+\item\begin{eqnarray}
+\int_{a}^{b}G_{X}\left(s\right)ds&=&\int_{a}^{b}\left(\sum_{x=0}^{\infty}s^{x}\prob\left(X=x\right)\right)ds=\sum_{x=0}^{\infty}\left(\int_{a}^{b}s^{x}\prob\left(X=x\right)ds\right)=\sum_{x=0}^{\infty}\frac{s^{x+1}}{x+1}\prob\left(X=x\right),
+\end{eqnarray}
 para $-R<a<b<R$.
 \end{enumerate}
 \end{Note}
 
-\begin{Teo}[Teorema de Convergencia Mon\'otona para PGF] Sean $X$ y $X_{n}$ variables aleatorias no negativas, con valores en los enteros, finitas, tales que
+\begin{Teo}[Teorema de Convergencia Mon\'otona para FGP]\index{Teorema de Convergencia Mon\'otona} Sean $X$ y $X_{n}$ variables aleatorias no negativas, con valores en los enteros, finitas, tales que
 \begin{eqnarray*}
 lim_{n\rightarrow\infty}G_{X_{n}}\left(s\right)&=&G_{X}\left(s\right)
 \end{eqnarray*}
@@ -453,144 +451,143 @@ lim_{n\rightarrow\infty}P\left(X_{n}=k\right)=P\left(X=k\right),
 para $k=0,1,2,\ldots.$
 \end{Teo}
 
-El teorema anterior requiere del siguiente lema
-
+El teorema anterior requiere del siguiente lema:
 \begin{Lemma}
 Sean $a_{n,k}\in\ent^{+}$, $n\in\nat$ constantes no negativas con
 $\sum_{k\geq0}a_{k,n}\leq1$. Sup\'ongase que para $0\leq s\leq1$,
 se tiene
-\begin{eqnarray*}
+\begin{eqnarray}
 a_{n}\left(s\right)&=&\sum_{k=0}^{\infty}a_{k,n}s^{k}\rightarrow
 a\left(s\right)=\sum_{k=0}^{\infty}a_{k}s^{k}.
-\end{eqnarray*}
+\end{eqnarray}
 Entonces
-\begin{eqnarray*}
+\begin{eqnarray}
 a_{0,n}\rightarrow a_{0}.
-\end{eqnarray*}
+\end{eqnarray}
 \end{Lemma}
 
-Consideremos un sistema que consta de \'unicamente un servidor y una sola cola, a la cual los usuarios arriban conforme a un proceso poisson cuya tasa promedio de llegada es $1/\lambda$; la tasa promedio con la cual el servidor da servicio es $1/\mu$, adem\'as los tiempos entre arribos y los tiempos de servicio son independientes entre s\'i.
+Consideremos un sistema que consta de \'unicamente un servidor y una sola cola, a la cual los usuarios arriban conforme a un proceso poisson cuya tasa promedio de llegada es $1/\lambda$; la tasa promedio con la cual el servidor da servicio es $1/\mu$, adem\'as los tiempos entre arribos y los tiempos de servicio son independientes entre s\'i. Se define la carga de tr\'afico $\rho:=\frac{\lambda}{\mu}$, para este modelo existe un teorema que nos dice la relaci\'on que hay entre el valor de $\rho$ y la estabilidad de la cola:
 
-Se define la carga de tr\'afico $\rho:=\frac{\lambda}{\mu}$, para este modelo existe un teorema que nos dice la relaci\'on que hay entre el valor de $\rho$ y la estabilidad de la cola:
-
-\begin{Prop}
+\begin{Prop}\index{Cola $M/M/1$}
 La cola $M/M/1$ con carga de tr\'afico $\rho$, es estable si y s\'olo si $\rho<1$.
 \end{Prop}
 
 Este teorema nos permite determinar las principales medidas de desempe\~no: Tiempo de espera en el sistema, $W$, el n\'umero esperado de clientes en el sistema, $L$, adem\'as de los tiempos promedio e espera tanto en la cola como de servicio, $s$ representa el tiempo de servicio para un cliente:
 
 \begin{eqnarray}
- L&=&\frac{\rho}{1-\rho},\\
-W&=&\frac{1}{\mu-\lambda},\\
-W_{q}&=&\esp\left[s\right]\frac{\rho}{1-\rho}\textrm{,  y }\\
-L_{q}&=&\frac{\rho^{2}}{1-\rho}.
+\begin{array}{l}
+ L=\frac{\rho}{1-\rho},\\
+W=\frac{1}{\mu-\lambda},\\
+W_{q}=\esp\left[s\right]\frac{\rho}{1-\rho}\textrm{,  y }\\
+L_{q}=\frac{\rho^{2}}{1-\rho}.
+\end{array}
 \end{eqnarray}
 
 Esta es la idea general, poder determinar la principales medidas de desempe\~no para un sistema de colas o sistema de visitas, para este fin es necesario realizar los siguientes supuestos. En teor\'ia de colas hay casos particulares, para los cuales es posible determinar espec\'ificamente medidas de desempe\~no del sistema bajo condiciones de estabilidad, tales como los tiempos promedio de espera y de servicio, tanto en el sistema como en cada
-una de las colas.
+una de las colas.\\
 
+En teor\'ia de colas hay casos particulares, para los cuales es posible determinar espec\'ificamente medidas de desempe\~no del sistema bajo condiciones de estabilidad, tales como los tiempos promedio de espera y de servicio, tanto en el sistema como en cada una de las colas. Se considerar\'an intervalos de tiempo de la forma $\left[t,t+1\right]$. Los usuarios arriban por paquetes de manera independiente del resto de las colas. Se define el grupo de usuarios que llegan a cada una de las colas del sistema 1, caracterizadas por $Q_{1}$ y $Q_{2}$ respectivamente, en el intervalo de tiempo $\left[t,t+1\right]$ por $X_{1}\left(t\right),X_{2}\left(t\right)$.\\
 
-En teor\'ia de colas hay casos particulares, para los cuales es posible determinar espec\'ificamente medidas de desempe\~no del sistema bajo condiciones de estabilidad, tales como los tiempos promedio de espera y de servicio, tanto en el sistema como en cada
-una de las colas. Se considerar\'an intervalos de tiempo de la forma $\left[t,t+1\right]$. Los usuarios arriban por paquetes de manera independiente del resto de las colas. Se define el grupo de usuarios que llegan a cada una de las colas del sistema 1, caracterizadas por $Q_{1}$ y $Q_{2}$ respectivamente, en el intervalo de tiempo $\left[t,t+1\right]$ por $X_{1}\left(t\right),X_{2}\left(t\right)$.
+Para cada uno de los procesos anteriores se define su Funci\'on Generadora de Probabilidades (FGP):
 
-Para cada uno de los procesos anteriores se define su Funci\'on Generadora de Probabilidades (PGF):
-
-\begin{eqnarray*}
+\begin{eqnarray}
 \begin{array}{cc}
-P_{1}\left(z_{1}\right)=\esp\left[z_{1}^{X_{1}\left(t\right)}\right], & P_{2}\left(z_{2}\right)=\esp\left[z_{2}^{X_{2}\left(t\right)}\right].\\
+P_{1}\left(z_{1}\right)=\esp\left[z_{1}^{X_{1}\left(t\right)}\right], & P_{2}\left(z_{2}\right)=\esp\left[z_{2}^{X_{2}\left(t\right)}\right].
 \end{array}
-\end{eqnarray*}
+\end{eqnarray}
 
 Con primer momento definidos por
 
-\begin{eqnarray*}
-\mu_{1}&=&\esp\left[X_{1}\left(t\right)\right]=P_{1}^{(1)}\left(1\right),\\
-\mu_{2}&=&\esp\left[X_{2}\left(t\right)\right]=P_{2}^{(1)}\left(1\right).
-\end{eqnarray*}
+\begin{eqnarray}
+\begin{array}{l}
+\mu_{1}=\esp\left[X_{1}\left(t\right)\right]=P_{1}^{(1)}\left(1\right),\\
+\mu_{2}=\esp\left[X_{2}\left(t\right)\right]=P_{2}^{(1)}\left(1\right).
+\end{array}
+\end{eqnarray}
 
+En lo que respecta al servidor, en t\'erminos de los tiempos de visita a cada una de las colas, se denotar\'an por $\tau_{1},\tau_{2}$ para $Q_{1},Q_{2}$ respectivamente; y a los tiempos en que el servidor termina de atender en las colas $Q_{1},Q_{2}$, se les denotar\'a por $\overline{\tau}_{1},\overline{\tau}_{2}$ respectivamente. Entonces, los tiempos de servicio est\'an dados por las diferencias $\overline{\tau}_{1}-\tau_{1},\overline{\tau}_{2}-\tau_{2}$ para $Q_{1},Q_{2}$. \\
 
-En lo que respecta al servidor, en t\'erminos de los tiempos de visita a cada una de las colas, se denotar\'an por $\tau_{1},\tau_{2}$ para $Q_{1},Q_{2}$ respectivamente; y a los
-tiempos en que el servidor termina de atender en las colas $Q_{1},Q_{2}$, se les denotar\'a por $\overline{\tau}_{1},\overline{\tau}_{2}$ respectivamente. Entonces, los tiempos de servicio est\'an dados por las diferencias $\overline{\tau}_{1}-\tau_{1},\overline{\tau}_{2}-\tau_{2}$ para $Q_{1},Q_{2}$. An\'alogamente los tiempos de traslado del servidor desde el momento en que termina de atender a una cola y llega a la siguiente para comenzar a dar servicio est\'an dados por $\tau_{2}-\overline{\tau}_{1},\tau_{1}-\overline{\tau}_{2}$.
+An\'alogamente los tiempos de traslado del servidor desde el momento en que termina de atender a una cola y llega a la siguiente para comenzar a dar servicio est\'an dados por $\tau_{2}-\overline{\tau}_{1},\tau_{1}-\overline{\tau}_{2}$. La FGP para estos tiempos de traslado est\'an dados por
 
-
-La FGP para estos tiempos de traslado est\'an dados por
-
-\begin{eqnarray*}
+\begin{eqnarray}
 \begin{array}{cc}
 R_{1}\left(z_{1}\right)=\esp\left[z_{1}^{\tau_{2}-\overline{\tau}_{1}}\right],
 &
 R_{2}\left(z_{2}\right)=\esp\left[z_{2}^{\tau_{1}-\overline{\tau}_{2}}\right],
 \end{array}
-\end{eqnarray*}
+\end{eqnarray}
 
 y al igual que como se hizo con anterioridad
 
-\begin{eqnarray*}
+\begin{eqnarray}
 \begin{array}{cc}
 r_{1}=R_{1}^{(1)}\left(1\right)=\esp\left[\tau_{2}-\overline{\tau}_{1}\right],
 &
-r_{2}=R_{2}^{(1)}\left(1\right)=\esp\left[\tau_{1}-\overline{\tau}_{2}\right],\\
+r_{2}=R_{2}^{(1)}\left(1\right)=\esp\left[\tau_{1}-\overline{\tau}_{2}\right].
 \end{array}
-\end{eqnarray*}
+\end{eqnarray}
 Sean $\alpha_{1},\alpha_{2}$ el n\'umero de usuarios que arriban
-en grupo a la cola $Q_{1}$ y $Q_{2}$ respectivamente. Sus PGF's
+en grupo a la cola $Q_{1}$ y $Q_{2}$ respectivamente. Sus FGP's
 est\'an definidas como
 
-\begin{eqnarray*}
+\begin{eqnarray}
 \begin{array}{cc}
 A_{1}\left(z\right)=\esp\left[z^{\alpha_{1}\left(t\right)}\right],&
 A_{2}\left(z\right)=\esp\left[z^{\alpha_{2}\left(t\right)}\right].\\
 \end{array}
-\end{eqnarray*}
+\end{eqnarray}
 
 Su primer momento est\'a dado por
 
-\begin{eqnarray*}
+\begin{eqnarray}
 \begin{array}{cc}
 \lambda_{1}=\esp\left[\alpha_{1}\left(t\right)\right]=A_{1}^{(1)}\left(1\right),&
 \lambda_{2}=\esp\left[\alpha_{2}\left(t\right)\right]=A_{2}^{(1)}\left(1\right).\\
 \end{array}
-\end{eqnarray*}
+\end{eqnarray}
 
-Sean $\beta_{1},\beta_{2}$ el n\'umero de usuarios que arriban en el grupo $\alpha_{1},\alpha_{2}$ a la cola $Q_{1}$ y $Q_{2}$, respectivamente, de igual manera se definen sus PGF's
+Sean $\beta_{1},\beta_{2}$ el n\'umero de usuarios que arriban en el grupo $\alpha_{1},\alpha_{2}$ a la cola $Q_{1}$ y $Q_{2}$, respectivamente, de igual manera se definen sus F'GPs
 
-\begin{eqnarray*}
+\begin{eqnarray}
 \begin{array}{cc}
 B_{1}\left(z\right)=\esp\left[z^{\beta_{1}\left(t\right)}\right],&
 B_{2}\left(z\right)=\esp\left[z^{\beta_{2}\left(t\right)}\right],\\
 \end{array}
-\end{eqnarray*}
+\end{eqnarray}
 
 con
 
-\begin{eqnarray*}
+\begin{eqnarray}
 \begin{array}{cc}
 b_{1}=\esp\left[\beta_{1}\left(t\right)\right]=B_{1}^{(1)}\left(1\right),&
 b_{2}=\esp\left[\beta_{2}\left(t\right)\right]=B_{2}^{(1)}\left(1\right).\\
 \end{array}
-\end{eqnarray*}
+\end{eqnarray}
 
 La distribuci\'on para el n\'umero de grupos que arriban al sistema en cada una de las colas se definen por:
 
-\begin{eqnarray*}
+\begin{eqnarray}
 \begin{array}{cc}
 P_{1}\left(z_{1}\right)=A_{1}\left[B_{1}\left(z_{1}\right)\right]=\esp\left[B_{1}\left(z_{1}\right)^{\alpha_{1}\left(t\right)}\right],& P_{2}\left(z_{1}\right)=A_{1}\left[B_{1}\left(z_{1}\right)\right]=\esp\left[B_{1}\left(z_{1}\right)^{\alpha_{1}\left(t\right)}\right],\\
 \end{array}
-\end{eqnarray*}
+\end{eqnarray}
 
 entonces
 
-\begin{eqnarray*}
-P_{1}^{(1)}\left(1\right)&=&\esp\left[\alpha_{1}\left(t\right)B_{1}^{(1)}\left(1\right)\right]=B_{1}^{(1)}\left(1\right)\esp\left[\alpha_{1}\left(t\right)\right]=\lambda_{1}b_{1}\\
-P_{2}^{(1)}\left(1\right)&=&\esp\left[\alpha_{2}\left(t\right)B_{2}^{(1)}\left(1\right)\right]=B_{2}^{(1)}\left(1\right)\esp\left[\alpha_{2}\left(t\right)\right]=\lambda_{2}b_{2}.\\
-\end{eqnarray*}
+\begin{eqnarray}
+\begin{array}{l}
+P_{1}^{(1)}\left(1\right)=\esp\left[\alpha_{1}\left(t\right)B_{1}^{(1)}\left(1\right)\right]=B_{1}^{(1)}\left(1\right)\esp\left[\alpha_{1}\left(t\right)\right]=\lambda_{1}b_{1}\\
+P_{2}^{(1)}\left(1\right)=\esp\left[\alpha_{2}\left(t\right)B_{2}^{(1)}\left(1\right)\right]=B_{2}^{(1)}\left(1\right)\esp\left[\alpha_{2}\left(t\right)\right]=\lambda_{2}b_{2}.
+\end{array}
+\end{eqnarray}
 
 De lo desarrollado hasta ahora se tiene lo siguiente
 
 \begin{eqnarray*}
-&&\esp\left[z_{1}^{L_{1}\left(\overline{\tau}_{1}\right)}z_{2}^{L_{2}\left(\overline{\tau}_{1}\right)}\right]=\esp\left[z_{2}^{L_{2}\left(\overline{\tau}_{1}\right)}\right]=\esp\left[z_{2}^{L_{2}\left(\tau_{1}\right)+X_{2}\left(\overline{\tau}_{1}-\tau_{1}\right)}\right]\\
-&=&\esp\left[\left\{z_{2}^{L_{2}\left(\tau_{1}\right)}\right\}\left\{z_{2}^{X_{2}\left(\overline{\tau}_{1}-\tau_{1}\right)}\right\}\right]=\esp\left[\left\{z_{2}^{L_{2}\left(\tau_{1}\right)}\right\}\left\{P_{2}\left(z_{2}\right)\right\}^{\overline{\tau}_{1}-\tau_{1}}\right]\\
-&=&\esp\left[\left\{z_{2}^{L_{2}\left(\tau_{1}\right)}\right\}\left\{\theta_{1}\left(P_{2}\left(z_{2}\right)\right)\right\}^{L_{1}\left(\tau_{1}\right)}\right]=F_{1}\left(\theta_{1}\left(P_{2}\left(z_{2}\right)\right),z_{2}\right)
+\begin{array}{l}
+\esp\left[z_{1}^{L_{1}\left(\overline{\tau}_{1}\right)}z_{2}^{L_{2}\left(\overline{\tau}_{1}\right)}\right]=\esp\left[z_{2}^{L_{2}\left(\overline{\tau}_{1}\right)}\right]=\esp\left[z_{2}^{L_{2}\left(\tau_{1}\right)+X_{2}\left(\overline{\tau}_{1}-\tau_{1}\right)}\right]=\esp\left[\left\{z_{2}^{L_{2}\left(\tau_{1}\right)}\right\}\left\{z_{2}^{X_{2}\left(\overline{\tau}_{1}-\tau_{1}\right)}\right\}\right]\\
+=\esp\left[\left\{z_{2}^{L_{2}\left(\tau_{1}\right)}\right\}\left\{P_{2}\left(z_{2}\right)\right\}^{\overline{\tau}_{1}-\tau_{1}}\right]=\esp\left[\left\{z_{2}^{L_{2}\left(\tau_{1}\right)}\right\}\left\{\theta_{1}\left(P_{2}\left(z_{2}\right)\right)\right\}^{L_{1}\left(\tau_{1}\right)}\right]=F_{1}\left(\theta_{1}\left(P_{2}\left(z_{2}\right)\right),z_{2}\right)
+\end{array}
 \end{eqnarray*}
 
 es decir 
@@ -601,9 +598,10 @@ es decir
 Procediendo de manera an\'aloga para $\overline{\tau}_{2}$:
 
 \begin{eqnarray*}
-\esp\left[z_{1}^{L_{1}\left(\overline{\tau}_{2}\right)}z_{2}^{L_{2}\left(\overline{\tau}_{2}\right)}\right]&=&\esp\left[z_{1}^{L_{1}\left(\overline{\tau}_{2}\right)}\right]=\esp\left[z_{1}^{L_{1}\left(\tau_{2}\right)+X_{1}\left(\overline{\tau}_{2}-\tau_{2}\right)}\right]=\esp\left[\left\{z_{1}^{L_{1}\left(\tau_{2}\right)}\right\}\left\{z_{1}^{X_{1}\left(\overline{\tau}_{2}-\tau_{2}\right)}\right\}\right]\\
-&=&\esp\left[\left\{z_{1}^{L_{1}\left(\tau_{2}\right)}\right\}\left\{P_{1}\left(z_{1}\right)\right\}^{\overline{\tau}_{2}-\tau_{2}}\right]=\esp\left[\left\{z_{1}^{L_{1}\left(\tau_{2}\right)}\right\}\left\{\theta_{2}\left(P_{1}\left(z_{1}\right)\right)\right\}^{L_{2}\left(\tau_{2}\right)}\right]\\
-&=&F_{2}\left(z_{1},\theta_{2}\left(P_{1}\left(z_{1}\right)\right)\right)
+\begin{array}{l}
+\esp\left[z_{1}^{L_{1}\left(\overline{\tau}_{2}\right)}z_{2}^{L_{2}\left(\overline{\tau}_{2}\right)}\right]=\esp\left[z_{1}^{L_{1}\left(\overline{\tau}_{2}\right)}\right]=\esp\left[z_{1}^{L_{1}\left(\tau_{2}\right)+X_{1}\left(\overline{\tau}_{2}-\tau_{2}\right)}\right]=\esp\left[\left\{z_{1}^{L_{1}\left(\tau_{2}\right)}\right\}\left\{z_{1}^{X_{1}\left(\overline{\tau}_{2}-\tau_{2}\right)}\right\}\right]\\
+=\esp\left[\left\{z_{1}^{L_{1}\left(\tau_{2}\right)}\right\}\left\{P_{1}\left(z_{1}\right)\right\}^{\overline{\tau}_{2}-\tau_{2}}\right]=\esp\left[\left\{z_{1}^{L_{1}\left(\tau_{2}\right)}\right\}\left\{\theta_{2}\left(P_{1}\left(z_{1}\right)\right)\right\}^{L_{2}\left(\tau_{2}\right)}\right]=F_{2}\left(z_{1},\theta_{2}\left(P_{1}\left(z_{1}\right)\right)\right)
+\end{array}
 \end{eqnarray*}
 por tanto
 \begin{equation}\label{Eq.PGF.Conjunta.Tau2}
@@ -3529,5 +3527,5 @@ por lo tanto una condici\'on suficiente para la existencia del proceso regenerat
 \end{eqnarray*}
 \end{Note}
 \input{bibliografia}
-
+\printindex
 \end{document}

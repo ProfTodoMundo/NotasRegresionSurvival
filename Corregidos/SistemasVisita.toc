@@ -1,0 +1,15 @@
+\babel@toc {spanish}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {spanish}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Sistemas de Visitas}{1}{section.1}%
+\contentsline {section}{\numberline {2}Funci\'on Generadora de Probabilidades}{5}{section.2}%
+\contentsline {section}{\numberline {3}El problema de la ruina del jugador}{12}{section.3}%
+\contentsline {section}{\numberline {4}Ecuaciones Centrales}{17}{section.4}%
+\contentsline {section}{\numberline {5}Redes de Jackson}{21}{section.5}%
+\contentsline {section}{\numberline {6}Resultados Adicionales}{21}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Procesos de Renovaci\'on y Regenerativos}{21}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Propiedades de los Procesos de Renovaci\'on}{30}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Resultados para Procesos de Salida}{45}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Aplicaci\'on a Teor\'ia de Colas}{47}{section.7}%

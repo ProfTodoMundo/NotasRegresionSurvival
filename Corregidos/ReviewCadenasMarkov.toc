@@ -1,0 +1,20 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Estacionareidad}{1}{section.1}%
+\contentsline {section}{\numberline {2}Funciones Arm\'onicas, Recurrencia y Transitoriedad}{2}{section.2}%
+\contentsline {section}{\numberline {3}Teor\'ia Erg\'odica}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Ejemplo de Cadena de Markov para dos Estados}{2}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Procesos de Markov de Saltos}{3}{section.4}%
+\contentsline {section}{\numberline {5}Matriz Intensidad}{5}{section.5}%
+\contentsline {section}{\numberline {6}Medidas Estacionarias}{5}{section.6}%
+\contentsline {section}{\numberline {7}Criterios de Ergodicidad}{6}{section.7}%
+\contentsline {section}{\numberline {8}Procesos de Nacimiento y Muerte}{6}{section.8}%
+\contentsline {section}{\numberline {9}Procesos de Nacimiento y Muerte Generales}{7}{section.9}%
+\contentsline {section}{\numberline {10}Notaci\'on Kendall-Lee}{7}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Cola $M/M/1$}{9}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Cola $M/M/\infty $}{10}{subsection.10.2}%
+\contentsline {subsection}{\numberline {10.3}Cola $M/M/m$}{11}{subsection.10.3}%
+\contentsline {subsection}{\numberline {10.4}Cola $M/M/m/m$}{12}{subsection.10.4}%
+\contentsline {subsection}{\numberline {10.5}Cola M/G/1}{13}{subsection.10.5}%
+\contentsline {subsection}{\numberline {10.6}Cola con Infinidad de Servidores}{15}{subsection.10.6}%
+\contentsline {section}{\numberline {11}Redes de Colas:Sistemas Abiertos}{16}{section.11}%
+\contentsline {section}{\numberline {12}Resultados para Procesos de Salida}{17}{section.12}%

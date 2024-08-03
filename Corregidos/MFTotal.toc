@@ -1,0 +1,10 @@
+\babel@toc {spanish}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {spanish}{}\relax 
+\babel@toc {english}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Definiciones B\'asicas}{1}{section.1}%
+\contentsline {section}{\numberline {2}Modelo de Flujo}{2}{section.2}%
+\contentsline {section}{\numberline {3}Construcci\'on de un Modelo de Flujo L\'imite}{11}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Modelo de Flujo Retrasado}{15}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Procesos Harris Recurrente}{20}{section.4}%
