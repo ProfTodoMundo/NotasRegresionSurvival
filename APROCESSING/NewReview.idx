@@ -1,7 +1,7 @@
 \indexentry{Conjunto Medible}{1}
 \indexentry{Medida $\sigma$-finita}{1}
 \indexentry{Conjunto de Borel}{1}
-\indexentry{Funci\'on Medible}{2}
+\indexentry{Funci\'on Medible}{1}
 \indexentry{Cilindro}{2}
 \indexentry{Proceso Adaptado}{2}
 \indexentry{Tiempos de Paro}{2}
@@ -12,19 +12,19 @@
 \indexentry{Probabilidades Condicionales}{2}
 \indexentry{Cadenas Homog\'eneas}{2}
 \indexentry{Cadena Homog\'enea}{2}
-\indexentry{Probabilidades de Transici\'on}{3}
+\indexentry{Probabilidades de Transici\'on}{2}
 \indexentry{Delta de Kronecker}{3}
 \indexentry{Matriz de Transici\'on}{3}
-\indexentry{Ecuaciones de Chapman-Kolmogorov}{4}
+\indexentry{Ecuaciones de Chapman-Kolmogorov}{3}
 \indexentry{Tiempos de Paro}{4}
 \indexentry{Estados recurrentes}{4}
 \indexentry{Estados transitorios}{4}
 \indexentry{Estados absorbentes}{4}
-\indexentry{Clases de Comunicaci\'on}{5}
+\indexentry{Clases de Comunicaci\'on}{4}
 \indexentry{Cadena Irreducible}{5}
 \indexentry{Medida Estacionaria}{5}
-\indexentry{Cadena Positiva Recurrente}{6}
-\indexentry{Funci\'on Arm\'onica}{6}
+\indexentry{Cadena Positiva Recurrente}{5}
+\indexentry{Funci\'on Arm\'onica}{5}
 \indexentry{Cadena Transitoria}{6}
 \indexentry{Cadena Positiva Recurrente}{6}
 \indexentry{Cadena Erg\'odica}{6}
@@ -33,3 +33,5 @@
 \indexentry{Matriz Intensidad}{8}
 \indexentry{Distribuci\'on Estacionaria}{8}
 \indexentry{Cadena Erg\'odica}{8}
+\indexentry{Proceso Erg\'odico}{9}
+\indexentry{Matriz Intensidad}{9}

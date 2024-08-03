@@ -1,11 +1,9 @@
 \BOOKMARK [1][-]{section.1}{Procesos Estoc\341sticos}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{Cadenas de Markov}{section.1}% 2
-\BOOKMARK [2][-]{subsection.1.2}{Clasificaci\363n de Estados}{section.1}% 3
-\BOOKMARK [2][-]{subsection.1.3}{Ejemplo de Cadena de Markov para dos Estados}{section.1}% 4
-\BOOKMARK [1][-]{section.2}{Procesos de Markov de Saltos}{}% 5
-\BOOKMARK [1][-]{section.3}{Voy en esta parte}{}% 6
-\BOOKMARK [1][-]{section.4}{Matriz Intensidad}{}% 7
-\BOOKMARK [1][-]{section.5}{Medidas Estacionarias}{}% 8
-\BOOKMARK [1][-]{section.6}{Criterios de Ergodicidad}{}% 9
-\BOOKMARK [1][-]{section.7}{Procesos de Nacimiento y Muerte}{}% 10
-\BOOKMARK [1][-]{section.8}{Procesos de Nacimiento y Muerte Generales}{}% 11
+\BOOKMARK [1][-]{section.2}{Procesos de Markov de Saltos}{}% 2
+\BOOKMARK [1][-]{section.3}{Notaci\363n Kendall-Lee}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Cola M/M/1}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Cola M/M/}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.3}{Cola M/M/m}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.4}{Cola M/M/m/m}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.5}{Cola M/G/1}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.6}{Cola con Infinidad de Servidores}{section.3}% 9
