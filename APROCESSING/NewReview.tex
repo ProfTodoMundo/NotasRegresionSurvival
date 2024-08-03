@@ -1,0 +1,965 @@
+\documentclass{article}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% PAQUETES A UTILIZAR
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\usepackage[utf8]{inputenc}
+\usepackage[spanish,english]{babel}
+\usepackage{amsmath,amssymb,amsthm,amsfonts}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{graphicx,graphics}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage{float} 
+\usepackage{subfig}
+\usepackage[figuresright]{rotating}
+\usepackage{enumerate}
+\usepackage{anysize} 
+\usepackage{url}
+\usepackage{imakeidx}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% TITULO DEL DOCUMENTO
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\title{Notas sobre Sistemas de Espera\\
+\small{Notes about Queueting Systems}}
+\author{Carlos E. Martínez-Rodríguez}
+\date{}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% MODIFICACION DE LOS MARGENES
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\geometry{
+  a4paper,
+  left=15mm,
+  right=15mm,
+  left=14mm,
+  right=14mm,
+  top=30mm,
+  bottom=30mm,
+}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% CONFIGURACION DE ENCABEZADOS Y PIES DE PAG
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\nouppercase{\leftmark}} % Sección en el encabezado izquierdo
+\fancyfoot[C]{\thepage} % Número de página centrado en el pie
+\fancyfoot[L]{\tiny Carlos E. Martínez-Rodríguez} % Autor en el pie izquierdo
+\fancyfoot[R]{\tiny \nouppercase{\rightmark}} % Subsection actual en el pie derecho
+
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% Definiciones de nuevos entornos
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\newtheorem{Def}{Definición}[section]
+\newtheorem{Ejem}{Ejemplo}[section]
+\newtheorem{Teo}{Teorema}[section]
+\newtheorem{Note}{Nota}[section]
+\newtheorem{Prop}{Proposición}[section]
+\newtheorem{Cor}{Corolario}[section]
+%\newtheorem{Coro}{Corolario}[section]
+\newtheorem{Lema}{Lema}[section]
+%\newtheorem{Lemma}{Lema}[section]
+%\newtheorem{Lem}{Lema}[section]
+\newtheorem{Sup}{Supuestos}[section]
+\newtheorem{Obs}{Observación}[section]
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+%NUEVOS COMANDOS
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\newcommand{\nat}{\mathbb{N}}
+\newcommand{\ent}{\mathbb{Z}}
+\newcommand{\rea}{\mathbb{R}}
+\newcommand{\Eb}{\mathbf{E}}
+\newcommand{\esp}{\mathbb{E}}
+\newcommand{\prob}{\mathbb{P}}
+\newcommand{\indora}{\mbox{$1$\hspace{-0.8ex}$1$}}
+\newcommand{\ER}{\left(E,\mathcal{E}\right)}
+\newcommand{\KM}{\left(P_{s,t}\right)}
+\newcommand{\PE}{\left(X_{t}\right)_{t\in I}}
+\newcommand{\CM}{\mathbf{P}^{x}}
+\renewcommand{\abstractname}{Resumen}
+\numberwithin{equation}{section}
+\newcommand{\acmclass}[1]{\noindent\textbf{ACM Class:} #1\\}
+\newcommand{\mscclass}[1]{\noindent\textbf{MSC Class:} #1\\}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\makeindex
+
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\begin{document}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\maketitle
+%\acmclass{G.3; I.6.4; G.1.6; C.4}
+%\mscclass{60J10; 60K05; 60K20; 60G10; 90B22}
+
+%<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+\begin{abstract}
+%<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\end{abstract}
+
+\begin{otherlanguage}{english}
+\renewcommand{\abstractname}{Abstract} % Cambia "Resumen" a "Abstract"
+\begin{abstract}
+
+\end{abstract}
+\end{otherlanguage}
+%<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+
+\tableofcontents
+%\newpage
+
+%<====>====<><====>====<><====>====<><====>====<><====>
+%\part{Introducci\'on a Procesos Regenerativos}
+%<====>====<><====>====<><====>====<><====>====<><====>
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+\section*{Introducción}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+
+\begin{otherlanguage}{english}
+\renewcommand{\abstractname}{Abstract} % Cambia "Resumen" a "Abstract"
+\section*{Introduction}
+\end{otherlanguage}
+
+
+%________________________________________________________
+\section{Procesos Estoc\'asticos}\label{Procesos.Estocasticos}
+%________________________________________________________
+
+\begin{Def}\index{Conjunto Medible}
+Sea $X$ un conjunto y $\mathcal{F}$ una $\sigma$-\'algebra de subconjuntos de $X$, la pareja $\left(X,\mathcal{F}\right)$ es llamado espacio medible. Un subconjunto $A$ de $X$ es llamado medible, o medible con respecto a $\mathcal{F}$, si $A\in\mathcal{F}$.
+\end{Def}
+
+\begin{Def}\index{Medida $\sigma$-finita}
+Sea $\left(X,\mathcal{F},\mu\right)$ espacio de medida. Se dice que la medida $\mu$ es $\sigma$-finita si se puede escribir $X=\bigcup_{n\geq1}X_{n}$ con $X_{n}\in\mathcal{F}$ y $\mu\left(X_{n}\right)<\infty$.
+\end{Def}
+
+\begin{Def}\label{Cto.Borel}\index{Conjunto de Borel}
+Sea $X$ un espacio topológico. El álgebra de Borel en $X$, denotada por $\mathcal{B}(X)$, es la $\sigma$-álgebra generada por la colección de todos los conjuntos abiertos de $X$. Es decir, $\mathcal{B}(X)$ es la colección más pequeña de subconjuntos de $X$ que contiene todos los conjuntos abiertos y es cerrada bajo la unión numerable, la intersección numerable y el complemento.
+\end{Def}
+
+\begin{Def}\label{Funcion.Medible}\index{Funci\'on Medible}
+Una funci\'on $f:X\rightarrow\rea$, es medible si para cualquier n\'umero real $\alpha$ el conjunto \[\left\{x\in X:f\left(x\right)>\alpha\right\},\] pertenece a $X$. Equivalentemente, se dice que $f$ es medible si \[f^{-1}\left(\left(\alpha,\infty\right)\right)=\left\{x\in X:f\left(x\right)>\alpha\right\}\in\mathcal{F}.\]
+\end{Def}
+
+
+\begin{Def}\label{Def.Cilindros}\index{Cilindro}
+Sean $\left(\Omega_{i},\mathcal{F}_{i}\right)$, $i=1,2,\ldots,$ espacios medibles y $\Omega=\prod_{i=1}^{\infty}\Omega_{i}$ el conjunto de todas las sucesiones $\left(\omega_{1},\omega_{2},\ldots,\right)$ tales que $\omega_{i}\in\Omega_{i}$, $i=1,2,\ldots,$. Si $B^{n}\subset\prod_{i=1}^{\infty}\Omega_{i}$, definimos $B_{n}=\left\{\omega\in\Omega:\left(\omega_{1},\omega_{2},\ldots,\omega_{n}\right)\in B^{n}\right\}$. Al conjunto $B_{n}$ se le llama {\em cilindro} con base $B^{n}$, el cilindro es llamado medible si $B^{n}\in\prod_{i=1}^{\infty}\mathcal{F}_{i}$.
+\end{Def}
+
+
+\begin{Def}\label{Def.Proc.Adaptado}\index{Proceso Adaptado}
+Sea $X\left(t\right),t\geq0$ proceso estoc\'astico, el proceso es adaptado a la familia de $\sigma$-\'algebras $\mathcal{F}_{t}$, para $t\geq0$, si para $s<t$ implica que $\mathcal{F}_{s}\subset\mathcal{F}_{t}$, y $X\left(t\right)$ es $\mathcal{F}_{t}$-medible para cada $t$. Si no se especifica $\mathcal{F}_{t}$ entonces se toma $\mathcal{F}_{t}$ como $\mathcal{F}\left(X\left(s\right),s\leq t\right)$, la m\'as peque\~na $\sigma$-\'algebra de subconjuntos de $\Omega$ que hace que cada $X\left(s\right)$, con $s\leq t$ sea Borel medible.
+\end{Def}
+
+
+\begin{Def}\label{Def.Tiempo.Paro}\index{Tiempos de Paro}
+Sea $\left\{\mathcal{F}\left(t\right),t\geq0\right\}$ familia creciente de sub $\sigma$-\'algebras. es decir, $\mathcal{F}\left(s\right)\subset\mathcal{F}\left(t\right)$ para $s\leq t$. Un tiempo de paro para $\mathcal{F}\left(t\right)$ es una funci\'on $T:\Omega\rightarrow\left[0,\infty\right]$ tal que $\left\{T\leq t\right\}\in\mathcal{F}\left(t\right)$ para cada $t\geq0$. Un tiempo de paro para el proceso estoc\'astico $X\left(t\right),t\geq0$ es un tiempo de paro para las $\sigma$-\'algebras $\mathcal{F}\left(t\right)=\mathcal{F}\left(X\left(s\right)\right)$.
+\end{Def}
+
+\begin{Def}\index{Proceso Adaptado}
+Sea $X\left(t\right),t\geq0$ proceso estoc\'astico, con $\left(S,\chi\right)$ espacio de estados. Se dice que el proceso es adaptado a $\left\{\mathcal{F}\left(t\right)\right\}$, es decir, si para cualquier $s,t\in I$, $I$ conjunto de \'indices, $s<t$, se tiene que $\mathcal{F}\left(s\right)\subset\mathcal{F}\left(t\right)$, y $X\left(t\right)$ es $\mathcal{F}\left(t\right)$-medible,
+\end{Def}
+
+\begin{Def}\index{Proceso de Markov}
+Sea $X\left(t\right),t\geq0$ proceso estoc\'astico, se dice que es un Proceso de Markov relativo a $\mathcal{F}\left(t\right)$ o que $\left\{X\left(t\right),\mathcal{F}\left(t\right)\right\}$ es de Markov si y s\'olo si para cualquier conjunto $B\in\chi$,  y $s,t\in I$, $s<t$ se cumple que
+\begin{equation}\label{Prop.Markov}
+P\left\{X\left(t\right)\in B|\mathcal{F}\left(s\right)\right\}=P\left\{X\left(t\right)\in B|X\left(s\right)\right\}.
+\end{equation}
+\end{Def}
+
+\begin{Note}
+Si se dice que $\left\{X\left(t\right)\right\}$ es un Proceso de Markov sin mencionar $\mathcal{F}\left(t\right)$, se asumir\'a que 
+\begin{eqnarray*}
+\mathcal{F}\left(t\right)=\mathcal{F}_{0}\left(t\right)=\mathcal{F}\left(X\left(r\right),r\leq t\right),
+\end{eqnarray*}
+entonces la ecuaci\'on (\ref{Prop.Markov}) se puede escribir como
+\begin{equation}
+P\left\{X\left(t\right)\in B|X\left(r\right),r\leq s\right\} = P\left\{X\left(t\right)\in B|X\left(s\right)\right\}.
+\end{equation}
+\end{Note}
+
+\begin{Teo}
+Sea $\left(X_{n},\mathcal{F}_{n},n=0,1,\ldots,\right\}$ Proceso de Markov con espacio de estados $\left(S_{0},\chi_{0}\right)$ generado por una distribuici\'on inicial $P_{o}$ y probabilidad de transici\'on $p_{mn}$, para $m,n=0,1,\ldots,$ $m<n$, que por notaci\'on se escribir\'a como $p\left(m,n,x,B\right)\rightarrow p_{mn}\left(x,B\right)$. Sea $S$ tiempo de paro relativo a la $\sigma$-\'algebra $\mathcal{F}_{n}$. Sea $T$ funci\'on medible, $T:\Omega\rightarrow\left\{0,1,\ldots,\right\}$. Sup\'ongase que $T\geq S$, entonces $T$ es tiempo de paro. Si $B\in\chi_{0}$,
+entonces
+\begin{equation}\label{Prop.Fuerte.Markov}
+P\left\{X\left(T\right)\in B,T<\infty|\mathcal{F}\left(S\right)\right\} = p\left(S,T,X\left(s\right),B\right).
+\end{equation}
+en $\left\{T<\infty\right\}$.
+\end{Teo}
+
+%------------------------------------------------------------------------
+\subsection{Cadenas de Markov}
+%------------------------------------------------------------------------
+
+\begin{Def}\index{Cadena de Markov}
+Sea $\left(\Omega,\mathcal{F},\prob\right)$ un espacio de probabilidad y $\mathbf{E}$ un conjunto no vac\'io, finito o numerable. Una sucesi\'on de variables aleatorias $\left\{X_{n}:\Omega\rightarrow\mathbf{E},n\geq0\right\}$ se le llama \textit{Cadena de Markov} con espacio de estados $\mathbf{E}$ si satisface la condici\'on de Markov, esto es, si para todo $n\geq1$ y toda sucesi\'on $x_{0},x_{1},\ldots,x_{n},x,y\in\mathbf{E}$ se cumple que 
+
+\begin{equation}
+P\left\{X_{n}=y|X_{n-1}=x,\ldots,X_{0}=x_{0}\right\}=P\left\{X_{n}=x_{n}|X_{n-1}=x_{n-1}\right\}.
+\end{equation}
+La distribuci\'on de $X_{0}$ se llama distribuci\'on inicial y se denotar\'a por $\pi$.
+\end{Def}
+
+\begin{Note}\index{Probabilidades Condicionales}
+Las probabilidades condicionales $P\left\{X_{n}=y|X_{n-1}=x\right\}$ se les llama \textit{probabilidades condicionales}\index{Probabilidades Condicionales}
+\end{Note}
+
+\begin{Note}\index{Cadenas Homog\'eneas}
+En este trabajo se considerar\'an solamente aquellas cadenas de Markov con probabilidades de transici\'on estacionarias, es decir, aquellas que no dependen del valor de $n$ (se dice que es una cadena homog\'enea), es decir, cuando se diga $X_{n},n\geq0$ es cadena de Markov, se entiende que es una sucesi\'on de variables aleatorias que satisfacen la propiedad de Markov y que tienen probabilidades de transici\'on estacionarias.\index{Cadena Homog\'enea}
+\end{Note}
+
+\begin{Note}
+Para una cadena de Markov Homog\'enea se tiene la siguiente denotaci\'on
+\begin{equation}
+P\left\{X_{n}=y|X_{n-1}=x\right\}=P_{x,y}.
+\end{equation}
+\end{Note}
+
+\begin{Note}\index{Probabilidades de Transici\'on}
+Para $m\geq1$ se denotar\'a por $P^{(m)}_{x,y}$ a $P\left\{X_{n+m}=y|X_{n}=x\right\}$, que significa la probabilidad de ir en $m$ pasos o unidades de tiempo de $x$ a $y$, y se le llama \textit{probabilidad de transici\'on en $m$ pasos}.
+\end{Note}
+
+\begin{Note}\index{Delta de Kronecker}
+Para $x,y\in\mathbf{E}$ se define a $P^{(0)}_{x,y}$ como $\delta_{x,y}$, donde $\delta_{x,y}$ es la delta de Kronecker, es decir, vale 1 si $x=y$ y 0 en otro caso.
+\end{Note}
+
+
+\begin{Note}\index{Matriz de Transici\'on}
+En el caso de que $\mathbf{E}$ sea finito, se considera la matrix $P=\left(P_{x,y}\right)_{x,y\in \mathbf{E}}$ y se le llama \textit{matriz de transici\'on}.
+\end{Note}
+
+
+\begin{Note}
+Si la distribuci\'on inicial $\pi$ es igual al vector $\left(\delta_{x,y}\right)_{y\in\mathbf{E}}$, es decir,
+\begin{eqnarray*}
+P\left(X_{0}=x)=1\right)\textrm{ y }P\left(X_{0}\neq x\right)=0,
+\end{eqnarray*}
+entonces se toma la notaci\'on 
+\begin{eqnarray}
+&&P_{x}\left(A\right)=P\left(A|X_{0}=x\right),A\in\mathcal{F},
+\end{eqnarray}
+y se dice que la cadena empieza en $A$. Se puede demostrar que $P_{x}$ es una nueva medida de probabilidad en el espacio $\left(\Omega,\mathcal{F}\right)$.
+\end{Note}
+
+
+\begin{Note}
+La suma de las entradas de los renglones de la matriz de transici\'on es igual a uno, es decir, para todo $x\in \mathbf{E}$ se tiene $\sum_{y\in\mathbf{E}}P_{x,y}=1$.
+\end{Note}
+
+Para poder obtener uno de los resultados m\'as importantes en cadenas de Markov, la \textit{ecuaci\'on de Chapman-kolmogorov} se requieren los siguientes resultados:
+
+\begin{Lema}
+Sean $x,y,z\in\Eb$ y $0\leq m\leq n-1$, entonces se cumple que
+\begin{equation}
+P\left(X_{n+1}=y|X_{n}=z,X_{m}=x\right)=P_{z,y}.
+\end{equation}
+\end{Lema}
+
+
+\begin{Prop}
+Si $x_{0},x_{1},\ldots,x_{n}\in \Eb$ y $\pi\left(x_{0}\right)=P\left(X_{0}=x_{0}\right)$, entonces
+\begin{equation}
+P\left(X_{1}=x_{1},\ldots,X_{n}=x_{n},X_{0}=x_{0}\right)=\pi\left(x_{0}\right)P_{x_{0},x_{1}}\cdot P_{x_{1},x_{2}}\cdots P_{x_{n-1},x_{n}}.
+\end{equation}
+\end{Prop}
+
+De la proposici\'on anterior se tiene
+\begin{equation}
+P\left(X_{1}=x_{1},\ldots,X_{n}=x_{n}|X_{0}=x_{0}\right)=P_{x_{0},x_{1}}\cdot P_{x_{1},x_{2}}\cdots P_{x_{n-1},x_{n}}.
+\end{equation}
+
+finalmente tenemos la siguiente proposici\'on:
+
+\begin{Prop}
+Sean $n,k\in\nat$ fijos y $x_{0},x_{1},\ldots,x_{n},\ldots,x_{n+k}\in\Eb$, entonces
+\begin{eqnarray*}
+&&P\left(X_{n+1}=x_{n+1},\ldots,X_{n+k}=x_{n+k}|X_{n}=x_{n},\ldots,X_{0}=x_{0}\right)\\
+&=&P\left(X_{1}=x_{n+1},X_{2}=x_{n+2},\cdots,X_{k}=x_{n+k}|X_{0}=x_{n}\right).
+\end{eqnarray*}
+\end{Prop}
+
+
+\begin{Ejem}
+Sea $X_{n}$ una variable aleatoria al tiempo $n$ tal que
+\begin{eqnarray}
+\begin{array}{l}
+P\left(X_{n+1}=1 \mid X_{n}=0\right)=p,\\
+P\left(X_{n+1}=0 \mid X_{n}=1\right)=q=1-p,\\
+P\left(X_{0}=0\right)=\pi_{0}\left(0\right).
+\end{array}
+\end{eqnarray}
+
+\end{Ejem}
+
+Se puede demostrar que
+\begin{eqnarray}
+\begin{array}{l}
+P\left(X_{n}=0\right)=\frac{q}{p+q},\\
+P\left(X_{n}=1\right)=\frac{p}{p+q}.
+\end{array}
+\end{eqnarray}
+
+\begin{Ejem}
+El problema de la Caminata Aleatoria.
+\end{Ejem}
+
+\begin{Ejem}
+El problema de la ruina del jugador.
+\end{Ejem}
+
+\begin{Ejem}
+Sea $\left\{Y_{i}\right\}_{i=0}^{\infty}$ sucesi\'on de variables aleatorias independientes e identicamente distribuidas, definidas sobre un espacio de probabilidad $\left(\Omega,\mathcal{F},\prob\right)$ y que toman valores enteros, se tiene que la sucesi\'on $\left\{X_{i}\right\}_{i=0}^{\infty}$ definida por $X_{j}=\sum_{i=0}^{j}Y_{i}$ es una cadena de Markov en el conjunto de los n\'umeros enteros.
+\end{Ejem}
+
+\begin{Prop}\index{Ecuaciones de Chapman-Kolmogorov}
+Para una cadena de Markov $\left(X_{n}\right)_{n\in\nat}$ con espacio de estados $\Eb$ y para todo $n,m\in \nat$ y toda pareja $x,y\in\Eb$ se cumple
+\begin{equation}
+P\left(X_{n+m}=y|X_{0}=x\right)=\sum_{z\in\Eb}P_{x,z}^{(m)}P_{z,y}^{(n)}=P_{x,y}^{(n+m)}.
+\end{equation}
+\end{Prop}
+
+\begin{Note}
+Para una cadena de Markov con un n\'umero finito de estados, se puede pensar a $P^{n}$ como la $n$-\'esima potencia de la matriz $P$. Sea $\pi_{0}$ distribuci\'on inicial de la cadena de Markov, como 
+\begin{eqnarray}
+P\left(X_{n}=y\right)=\sum_{x} P\left(X_{0}=x,X_{n}=y\right)=\sum_{x} P\left(X_{0}=x\right)P\left(X_{n}=y|X_{0}=x\right),
+\end{eqnarray}
+se puede comprobar que 
+
+\begin{eqnarray}
+P\left(X_{n}=y\right)=\sum_{x} \pi_{0}\left(X\right)P^{n}\left(x,y\right).
+\end{eqnarray}
+\end{Note}
+
+Con lo anterior es posible calcular la distribuici\'on de $X_{n}$ en t\'erminos de la distribuci\'on inicial $\pi_{0}$ y la funci\'on de transici\'on de $n$-pasos $P^{n}$,
+\begin{eqnarray}
+P\left(X_{n+1}=y\right)=\sum_{x} P\left(X_{n}=x\right)P\left(x,y\right).
+\end{eqnarray}
+\begin{Note}
+Si se conoce la distribuci\'on de $X_{0}$ se puede conocer la distribuci\'on de $X_{1}$.
+\end{Note}
+
+%------------------------------------------------------------------------------------------
+\subsection{Clasificaci\'on de Estados}
+%------------------------------------------------------------------------------------------
+
+\begin{Def}\index{Tiempos de Paro}
+Para $A$ conjunto en el espacio de estados, se define un tiempo de paro $T_{A}$ de $A$ como
+\begin{equation}
+T_{A}=min_{n>0}\left(X_{n}\in A\right).
+\end{equation}
+\end{Def}
+
+\begin{Note}
+Si $X_{n}\notin A$ para toda $n>0$, $T_{A}=\infty$, es decir,  $T_{A}$ es el primer tiempo positivo que la cadena de Markov est\'a en $A$.
+\end{Note}
+
+Una vez que se tiene la definici\'on anterior se puede demostrar la siguiente igualdad:
+
+\begin{Prop}
+$P^{n}\left(x,y\right)=\sum_{m=1}^{n}P_{x}\left(T_{y}=m\right)P^{n.m}\left(y,x\right), n\geq1$.
+\end{Prop}
+\medskip
+
+\begin{Def}
+En una cadena de Markov $\left(X_{n}\right)_{n\in\nat}$ con espacio de estados $\Eb$, matriz de transici\'on $\left(P_{x,y}\right)_{x,y\in\Eb}$ y para $x,y\in\Eb$,  se dice que
+\begin{itemize}
+\item[a) ]  De $x$ se accede a $y$ si existe $n\geq0$ tal que $P_{x,y}^{(n)}>0$ y se denota por $\left(x\rightarrow y\right)$.
+
+\item[b) ] $x$ y $y$ se comunican entre s\'i, lo que se denota por $\left(x\leftrightarrow y\right)$, si se cumplen $\left(x\rightarrow y\right)$ y $\left(y\rightarrow x\right)$.
+
+\item[c) ] Un estado $x\in\Eb$ es estado recurrente si $$P\left(X_{n}=x\textrm{ para alg\'un }n\in\nat|X_{0}=x \right)\equiv1.$$ \index{Estados recurrentes}
+
+\item[d) ] Un estado $x\in\Eb$ es estado transitorio si $$P\left(X_{n}=x\textrm{ para alg\'un }n\in\nat|X_{0}=x \right)<1.$$ \index{Estados transitorios}
+
+\item[e) ] Un estado $x\in\Eb$ se llama absorbente si $P_{x,x}\equiv1$.\index{Estados absorbentes}
+\end{itemize}
+\end{Def}
+
+Se tiene el siguiente resultado:
+
+\begin{Prop}
+$x\leftrightarrow y$ es una relaci\'on de equivalencia y da lugar a una partici\'on del espacio de estados $\Eb$.
+\end{Prop}
+
+\begin{Def}
+Para $E$ espacio de estados
+\begin{itemize}
+
+\item[a)  ] Se dice que $C\subset \Eb$ es una clase de comunicaci\'on si cualesquiera dos estados de $C$ se comunic\'an entre s\'i.\index{Clases de Comunicaci\'on}
+
+\item[b)  ] Dado $x\in\Eb$, su clase de comunicaci\'on se denota por: $C\left(x\right)=\left\{y\in\Eb:x\leftrightarrow y\right\}$.
+
+\item[c)  ] Se dice que un conjunto de estados  $C\subset \Eb$ es cerrado si ning\'un estado de $\Eb-C$ puede ser accedido desde un estado de $C$.
+\end{itemize}
+\end{Def}
+
+
+\begin{Def}\index{Cadena Irreducible}
+Sea $\Eb$ espacio de estados, se dice que la cadena es irreducible si cualquiera de las siguientes condiciones, equivalentes entre s\'i,  se cumplen
+\begin{enumerate}
+\item[a) ] Desde cualquier estado de $\Eb$ se puede acceder a cualquier otro.
+
+\item[b) ] Todos los estados se comunican entre s\'i.
+
+\item[c) ] $C\left(x\right)=\Eb$ para alg\'un $x\in\Eb$.
+
+\item[d) ] $C\left(x\right)=\Eb$ para todo $x\in\Eb$.
+
+\item[e) ] El \'unico conjunto cerrado es el total.
+\end{enumerate}
+\end{Def}
+Por lo tanto tenemos la siguiente proposici\'on:
+\begin{Prop}  Sea $\Eb$ espacio de estados y $T$ tiempo de paro, entonces se tiene que
+\begin{enumerate}
+\item[a) ] Un estado $x\in\Eb$ es recurrente si y s\'olo si $P\left(T_{x}<\infty|x_{0}=x\right)=1$.
+
+\item[b) ] Un estado $x\in\Eb$ es transitorio si y s\'olo si $P\left(T_{x}<\infty|x_{0}=x\right)<1$.
+
+\item[c) ] Un estado $x\in\Eb$ es absorbente si y s\'olo si $P\left(T_{x}=1|x_{0}=x\right)=1$.
+
+
+\end{enumerate}
+\end{Prop}
+
+%____________________________________________________________
+%\subsection{Estacionareidad}\label{SeccionEstacionareidad}
+%____________________________________________________________
+
+Sea $v=\left(v_{i}\right)_{i\in E}$ medida no negativa en $E$, podemos definir una nueva medida $v\prob$ que asigna masa $\sum_{i\in E}v_{i}p_{ij}$ a cada estado $j$.
+
+\begin{Def}\index{Medida Estacionaria}
+La medida $v$ es estacionaria si $v_{i}<\infty$ para toda $i$ y adem\'as $v\prob=v$.
+\end{Def}
+En el caso de que $v$ sea distribuci\'on, independientemente de que sea estacionaria o no, se cumple con
+
+\begin{eqnarray}
+\prob_{v}\left[X_{1}=j\right]=\sum_{i\in E}\prob_{v}\left[X_{0}=i\right]p_{ij}=\sum_{i\in E}v_{i}p_{ij}=\left(vP\right)_{j}.
+\end{eqnarray}
+
+\begin{Teo}
+Supongamos que $v$ es una distribuci\'on estacionaria. Entonces
+\begin{itemize}
+\item[i)] La cadena es estrictamente estacionaria con respecto a
+$\prob_{v}$, es decir, $\prob_{v}$-distribuci\'on de $\left\{X_{n},X_{n+1},\ldots\right\}$ no depende de $n$;
+\item[ii)] Existe un aversi\'on estrictamente estacionaria $\left\{X_{n}\right\}_{n\in Z}$ de la cadena con doble tiempo infinito y $\prob\left(X_{n}=i\right)=v_{i}$ para toda $n\in Z$.
+\end{itemize}
+\end{Teo}
+
+\begin{Teo}
+Sea $i$ estado fijo, recurrente. Entonces una medida estacionaria $v$ puede definirse haciendo que $v_{j}$ sea el n\'umero esperado de visitas a $j$ entre dos visitas consecutivas $i$,
+
+\begin{equation}\label{Eq.3.1}
+v_{j}=\esp_{i}\sum_{n=0}^{\tau(i)-1}\indora\left(X_{n}=i\right)=\sum_{n=0}^{\infty}\prob_{i}\left[X_{n}=j,\tau(i)>n\right].
+\end{equation}
+\end{Teo}
+
+\begin{Teo}\label{Teo.3.3}
+Si la cadena es irreducible y recurrente, entonces existe una medida estacionaria $v$, tal que satisface $0<v_{j}<\infty$ para toda $j$, y es \'unica salvo factores multiplicativos, es decir, si $v,v^{*}$ son estacionarias, entonces $c=cv^{*}$ para alguna $c\in\left(0,\infty\right)$.
+\end{Teo}
+
+\begin{Cor}\label{Cor.3.5}
+Si la cadena es irreducible y positiva recurrente, existe una \'unica distribuci\'on estacionaria $\pi$ dada por
+\begin{equation}
+\pi_{j}=\frac{1}{\esp_{i}\tau_{i}}\esp_{i}\sum_{n=0}^{\tau\left(i\right)-1}\indora\left(X_{n}=j\right)=\frac{1}{\esp_{j}\tau\left(j\right)}.
+\end{equation}
+\end{Cor}
+
+\begin{Cor}\label{Cor.3.6}\index{Cadena Positiva Recurrente}
+Cualquier cadena de Markov irreducible con un espacio de estados finito es positiva recurrente.
+\end{Cor}
+%_____________________________________________________________________________________
+%\subsection{Funciones Arm\'onicas, Recurrencia y Transitoriedad}
+%_____________________________________________________________________________________
+
+\begin{Def}\label{Def.Armonica}\index{Funci\'on Arm\'onica}
+Una funci\'on Arm\'onica es el eigenvector derecho $h$ de $P$ correspondiente al eigenvalor 1.
+\end{Def}
+\begin{eqnarray}
+Ph=h\Leftrightarrow h\left(i\right)=\sum_{j\in E}p_{ij}h\left(j\right)=\esp_{i}h\left(X_{1}\right)=\esp\left[h\left(X_{n+1}\right)|X_{n}=i\right].
+\end{eqnarray}
+es decir, $\left\{h\left(X_{n}\right)\right\}$ es martingala.\\
+
+\begin{Prop}\label{Prop.5.2}\index{Cadena Transitoria}
+Sea $\left\{X_{n}\right\}$ cadena irreducible  y sea $i$ estado fijo arbitrario. Entonces la cadena es transitoria s\'i y s\'olo si existe una funci\'on no cero, acotada $h:E-\left\{i\right\}\rightarrow\rea$ que satisface
+\begin{equation}\label{Eq.5.1}
+h\left(j\right)=\sum_{k\neq i}p_{jk}h\left(k\right)\textrm{   para }j\neq i.
+\end{equation}
+\end{Prop}
+
+\begin{Prop}\label{Prop.5.4}
+Suponga que la cadena es irreducible y sea $E_{0}$ un subconjunto finito de $E$ tal que se cumple la ecuaci\'on \ref{Eq.5.1} para alguna funci\'on $h$ acotada que satisface $h\left(i\right)<h\left(j\right)$ para alg\'un estado $i\notin E_{0}$ y todo $j\in E_{0}$. Entonces la cadena es transitoria.
+\end{Prop}
+
+%_____________________________________________________________________________________
+%\subsection{Teor\'ia Erg\'odica}
+%_____________________________________________________________________________________
+
+\begin{Lema}\index{Cadena Positiva Recurrente}
+Sea $\left\{X_{n}\right\}$ cadena irreducible y se $F$ subconjunto finito del espacio de estados. Entonces la cadena es positiva recurrente si $\esp_{i}\tau\left(F\right)<\infty$ para todo $i\in F$.
+\end{Lema}
+
+\begin{Prop}
+Sea $\left\{X_{n}\right\}$ cadena irreducible y transiente o cero recurrente, entonces $p_{ij}^{n}\rightarrow0$ conforme $n\rightarrow\infty$ para cualquier $i,j\in E$, $E$ espacio de estados.
+\end{Prop}
+
+Se tiene el siguiente resultado:
+
+\begin{Teo}
+Sea $\left\{X_{n}\right\}$ cadena irreducible y aperi\'odica positiva recurrente, y sea $\pi=\left\{\pi_{j}\right\}_{j\in E}$ la distribuci\'on estacionaria. Entonces $p_{ij}^{n}\rightarrow\pi_{j}$ para todo $i,j$.
+\end{Teo}
+
+\begin{Def}\label{Def.Ergodicidad}\index{Cadena Erg\'odica}
+Una cadena irreducible aperiodica, positiva recurrente con medida estacionaria $v$, es llamada {\em erg\'odica}.
+\end{Def}
+
+\begin{Prop}\label{Prop.4.4}
+Sea $\left\{X_{n}\right\}$ cadena irreducible y recurrente con medida estacionaria $v$, entonces para todo $i,j,k,l\in E$
+\begin{equation}
+\frac{\sum_{n=0}^{m}p_{ij}^{n}}{\sum_{n=0}^{m}p_{lk}^{n}}\rightarrow\frac{v_{j}}{v_{k}}\textrm{,    }m\rightarrow\infty
+\end{equation}
+\end{Prop}
+
+\begin{Lema}\label{Lema.4.5}
+La matriz $\widetilde{P}$ con elementos 
+\begin{eqnarray}
+\widetilde{p}_{ij}=\frac{v_{ji}p_{ji}}{v_{i}}
+\end{eqnarray}
+es una matriz de transici\'on. Adem\'s, el $i$-\'esimo elementos $\widetilde{p}_{ij}^{m}$ de la matriz potencia $\widetilde{P}^{m}$ est\'a dada por 
+
+\begin{eqnarray}
+\widetilde{p}_{ij}^{m}=\frac{v_{ji}p_{ji}^{m}}{v_{i}}.
+\end{eqnarray}
+\end{Lema}
+
+\begin{Lema}
+Def\'inase 
+\begin{eqnarray}
+N_{i}^{m}=\sum_{n=0}^{m}\indora\left(X_{n}=i\right)
+\end{eqnarray} 
+como el n\'umero de visitas a $i$ antes del tiempo $m$. Entonces si la cadena es reducible y recurrente, 
+\begin{eqnarray}
+lim_{m\rightarrow\infty}\frac{\esp_{j}N_{i}^{m}}{\esp_{k}N_{i}^{m}}=1\textrm{ para todo }j,k\in E.
+\end{eqnarray}
+\end{Lema}
+
+%_____________________________________________________________________________________
+%
+\subsection{Ejemplo de Cadena de Markov para dos Estados}
+%_____________________________________________________________________________________
+
+Supongamos que se tiene la siguiente cadena:
+\begin{equation}
+\left(\begin{array}{cc}
+1-q & q\\
+p & 1-p\\
+\end{array}
+\right).
+\end{equation}
+Si $P\left[X_{0}=0\right]=\pi_{0}(0)=a$ y $P\left[X_{0}=1\right]=\pi_{0}(1)=b=1-\pi_{0}(0)$, con $a+b=1$, entonces despu\'es de un procedimiento m\'as o menos corto se tiene que:
+
+\begin{eqnarray*}
+P\left[X_{n}=0\right]=\frac{p}{p+q}+\left(1-p-q\right)^{n}\left(a-\frac{p}{p+q}\right).\\
+P\left[X_{n}=1\right]=\frac{q}{p+q}+\left(1-p-q\right)^{n}\left(b-\frac{q}{p+q}\right).\\
+\end{eqnarray*}
+donde, como $0<p,q<1$, se tiene que $|1-p-q|<1$, entonces $\left(1-p-q\right)^{n}\rightarrow 0$ cuando $n\rightarrow\infty$. Por lo tanto
+\begin{eqnarray*}
+lim_{n\rightarrow\infty}P\left[X_{n}=0\right]=\frac{p}{p+q}.\\
+lim_{n\rightarrow\infty}P\left[X_{n}=1\right]=\frac{q}{p+q}.
+\end{eqnarray*}
+Si hacemos $v=\left(\frac{p}{p+q},\frac{q}{p+q}\right)$, entonces
+\begin{eqnarray*}
+\left(\frac{p}{p+q},\frac{q}{p+q}\right)\left(\begin{array}{cc}
+1-q & q\\
+p & 1-p\\
+\end{array}\right).
+\end{eqnarray*}
+
+\begin{Prop}\label{Prop.5.4}
+Suponga que la cadena es irreducible y sea $E_{0}$ un subconjunto finito de $E$ tal que se cumple la ecuaci\'on \ref{Eq.5.1} para alguna funci\'on $h$ acotada que satisface $h\left(i\right)<h\left(j\right)$ para alg\'un estado $i\notin E_{0}$ y todo $j\in E_{0}$. Entonces la cadena es transitoria.
+\end{Prop}
+
+%___________________________________________________________________
+%
+\section{Procesos de Markov de Saltos}
+%___________________________________________________________________
+
+Consideremos un estado que comienza en el estado $x_{0}$ al tiempo $0$, supongamos que el sistema permanece en $x_{0}$ hasta alg\'un tiempo positivo $\tau_{1}$, tiempo en el que el sistema salta a un nuevo estado $x_{1}\neq x_{0}$. Puede ocurrir que el sistema permanezca en $x_{0}$ de manera indefinida, en este caso hacemos $\tau_{1}=\infty$. Si $\tau_{1}$ es finito, el sistema permanecer\'a en $x_{1}$ hasta $\tau_{2}$, y as\'i sucesivamente.
+Sea
+\begin{equation}
+X\left(t\right)=\left\{\begin{array}{cc}
+x_{0} & 0\leq t<\tau_{1}\\
+x_{1} & \tau_{1}\leq t<\tau_{2}\\
+x_{2} & \tau_{2}\leq t<\tau_{3}\\
+\vdots &\\
+\end{array}\right.
+\end{equation}
+
+A este proceso  se le llama {\em proceso de salto}. \index{Proceso de Salto}Si
+\begin{equation}
+lim_{n\rightarrow\infty}\tau_{n}=\left\{\begin{array}{cc}
+<\infty & X_{t}\textrm{ explota,}\\
+=\infty & X_{t}\textrm{ no explota.}\\
+\end{array}\right.
+\end{equation}
+
+Un proceso puro de saltos es un proceso de saltos que satisface la propiedad de Markov.
+
+\begin{Prop}
+Un proceso de saltos es Markoviano si y s\'olo si todos los estados no absorbentes $x$ son tales que
+\begin{eqnarray*}
+P_{x}\left(\tau_{1}>t+s|\tau_{1}>s\right)=P_{x}\left(\tau_{1}>t\right),
+\end{eqnarray*}
+para $s,t\geq0$, equivalentemente,
+
+\begin{equation}\label{Eq.5}
+\frac{1-F_{x}\left(t+s\right)}{1-F_{x}\left(s\right)}=1-F_{x}\left(t\right).
+\end{equation}
+\end{Prop}
+
+\begin{Note}
+Una distribuci\'on $F_{x}$ satisface la ecuaci\'on (\ref{Eq.5}) si y s\'olo si es una funci\'on de distribuci\'on exponencial para todos los estados no absorbentes $x$.
+\end{Note}
+
+Por un proceso de nacimiento y muerte \index{Proceso de Nacimiento y Muerte} se entiende un proceso de Markov de Saltos, $\left\{X_{t}\right\}_{t\geq0}$ en $E=\nat$, tal que del estado $n$ s\'olo se puede mover a $n-1$ o $n+1$, es decir, la matriz intensidad \index{Matriz Intensidad}es de la forma:
+
+\begin{equation}
+\Lambda=\left(\begin{array}{ccccc}
+-\beta_{0}&\beta_{0} & 0 & 0 & \ldots\\
+\delta_{1}&-\beta_{1}-\delta_{1} & \beta_{1}&0&\ldots\\
+0&\delta_{2}&-\beta_{2}-\delta_{2} & \beta_{2}&\ldots\\
+\vdots & & & \ddots &
+\end{array}\right)
+\end{equation}
+
+donde $\beta_{n}$ son las probabilidades de nacimiento y $\delta_{n}$ las probabilidades de muerte.
+
+La matriz de transici\'on es
+\begin{equation}
+Q=\left(\begin{array}{ccccc}
+0& 1 & 0 & 0 & \ldots\\
+q_{1}&0 & p_{1}&0&\ldots\\
+0&q_{2}&0& p_{2}&\ldots\\
+\vdots & & & \ddots &
+\end{array}\right)
+\end{equation}
+con 
+\begin{eqnarray}
+\begin{array}{ll}
+p_{n}=\frac{\beta_{n}}{\beta_{n}+\delta_{n}}\textrm{  y}& q_{n}=\frac{\delta_{n}}{\beta_{n}+\delta_{n}}.
+\end{array}
+\end{eqnarray}
+
+\begin{Prop}
+La recurrencia de un Proceso Markoviano de Saltos
+$\left\{X_{t}\right\}_{t\geq0}$ con espacio de estados numerable, o equivalentemente de la cadena encajada $\left\{Y_{n}\right\}$ es equivalente a
+\begin{equation}\label{Eq.2.1}
+\sum_{n=1}^{\infty}\frac{\delta_{1}\cdots\delta_{n}}{\beta_{1}\cdots\beta_{n}}=\sum_{n=1}^{\infty}\frac{q_{1}\cdots q_{n}}{p_{1}\cdots p_{n}}=\infty.
+\end{equation}
+\end{Prop}
+
+\begin{Lema}
+Independientemente de la recurrencia o transitoriedad de la cadena, hay una y s\'olo una, salvo m\'ultiplos, soluci\'on $\nu$, a $\nu\Lambda=0$, dada por
+\begin{equation}\label{Eq.2.2}
+\nu_{n}=\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}\nu_{0}.
+\end{equation}
+\end{Lema}
+
+\begin{Cor}\label{Corolario2.3}
+En el caso recurrente, la medida estacionaria $\mu$ para $\left\{Y_{n}\right\}$, est\'a dada por
+\begin{equation}\label{Eq.2.3}
+\mu_{n}=\frac{p_{1}\cdots p_{n-1}}{q_{1}\cdots q_{n}}\mu_{0}\textrm{, para }n=1,2,\ldots.
+\end{equation}
+\end{Cor}
+
+\begin{Def}
+Una medida $\nu$ es estacionaria si $0\leq\nu_{j}<\infty$ y para toda $t$ se cumple que 
+\begin{eqnarray}
+\nu P^{t}=nu.
+\end{eqnarray}
+\end{Def}
+
+
+\begin{Def}
+Un proceso irreducible recurrente con medida estacionaria con masa finita es llamado erg\'odico.
+\end{Def}
+
+\begin{Teo}\label{Teo4.3}
+Un Proceso de Saltos de Markov irreducible no explosivo es erg\'odico si y s\'olo si uno puede encontrar una soluci\'on $\pi$ de probabilidad, $|\pi|=1$, $0\leq\pi_{j}\leq1$, para $\nu\Lambda=0$. En este caso $\pi$ es la distribuci\'on estacionaria.\index{Distribuci\'on Estacionaria}
+\end{Teo}
+\begin{Cor}\label{Corolario2.4}\index{Cadena Erg\'odica}
+$\left\{X_{t}\right\}_{t\geq0}$ es erg\'odica si y s\'olo si (\ref{Eq.2.1}) se cumple y $S<\infty$, en cuyo caso la distribuci\'on estacionaria $\pi$ est\'a dada por
+
+\begin{equation}\label{Eq.2.4}
+\pi_{0}=\frac{1}{S}\textrm{,
+}\pi_{n}=\frac{1}{S}\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}\textrm{,
+}n=1,2,\ldots
+\end{equation}
+\end{Cor}
+
+%>><<>><<==>><<>><<><<>><<==>><<>><<><<>><<==>><<>><<><<>><<==>><<>><<><<>><<==>
+\section{Voy en esta parte}
+%>><<>><<==>><<>><<><<>><<==>><<>><<><<>><<==>><<>><<><<>><<==>><<>><<><<>><<==>
+
+Sea $E$ espacio discreto de estados, finito o numerable, y sea $\left\{X_{t}\right\}$ un proceso de Markov con espacio de estados $E$. Una medida $\mu$ en $E$ definida por sus probabilidades puntuales $\mu_{i}$, escribimos $p_{ij}^{t}=P^{t}\left(i,\left\{j\right\}\right)=P_{i}\left(X_{t}=j\right)$.
+
+El monto del tiempo gastado en cada estado es positivo, de modo tal que las trayectorias muestrales son constantes por partes. Para un proceso de saltos denotamos por los tiempos de saltos a $S_{0}=0<S_{1}<S_{2}\cdots$, los tiempos entre saltos consecutivos $T_{n}=S_{n+1}-S_{n}$ y la secuencia de estados visitados por $Y_{0},Y_{1},\ldots$, as\'i las trayectorias muestrales son constantes entre $S_{n}$ consecutivos, continua por la derecha, es decir, $X_{S_{n}}=Y_{n}$. 
+
+La descripci\'on de un modelo pr\'actico est\'a dado usualmente en t\'erminos de las intensidades $\lambda\left(i\right)$ y las probabilidades de salto $q_{ij}$ m\'as que en t\'erminos de la matriz de transici\'on $P^{t}$. Sup\'ongase de ahora en adelante que $q_{ii}=0$ cuando $\lambda\left(i\right)>0$
+
+\begin{Teo}
+Cualquier Proceso de Markov de Saltos satisface la Propiedad
+Fuerte de Markov
+\end{Teo}
+
+\begin{Def}
+Una medida $v\neq0$ es estacionaria si $0\leq v_{j}<\infty$, $vP^{t}=v$ para toda $t$.
+\end{Def}
+
+\begin{Teo}\label{Teo.4.2}
+Supongamos que $\left\{X_{t}\right\}$ es irreducible recurrente en $E$. Entonces existe una y s\'olo una, salvo m\'ultiplos, medida estacionaria $v$. Esta $v$ tiene la propiedad de que $0<v_{j}<\infty$ para todo $j$ y puede encontrarse en cualquiera de las siguientes formas
+
+\begin{itemize}
+\item[i)] Para alg\'un estado $i$, fijo pero arbitrario, $v_{j}$ es el tiempo esperado utilizado en $j$ entre dos llegadas consecutivas al estado $i$;
+\begin{equation}\label{Eq.4.2}
+v_{j}=\esp_{i}\int_{0}^{w\left(i\right)}\indora\left(X_{t}=j\right)dt
+\end{equation}
+con $w\left(i\right)=\inf\left\{t>0:X_{t}=i,X_{t^{-}}=\lim_{s\uparrow t}X_{s}\neq i\right\}$. 
+\item[ii)]
+$v_{j}=\frac{\mu_{j}}{\lambda\left(j\right)}$, donde $\mu$ es estacionaria para $\left\{Y_{n}\right\}$. \item[iii)] como
+soluci\'on de $v\Lambda=0$.
+\end{itemize}
+\end{Teo}
+
+\begin{Def}
+Un proceso irreducible recurrente con medida estacionaria de masa
+finita es llamado erg\'odico.
+\end{Def}
+
+\begin{Teo}\label{Teo.4.3}
+Un proceso de Markov de saltos irreducible no explosivo es erg\'odico si y s\'olo si se puede encontrar una soluci\'on, de probabilidad, $\pi$, con $|\pi|=1$ y $0\leq\pi_{j}\leq1$, a $\pi\Lambda=0$. En este caso $\pi$ es la distribuci\'on estacionaria.
+\end{Teo}
+
+\begin{Cor}\label{Cor.4.4}
+Una condici\'on suficiente para la ergodicidad de un proceso irreducible es la existencia de una probabilidad $\pi$ que resuelva el sistema $\pi\Lambda=0$ y que adem\'as tenga la propiedad de que $\sum\pi_{j}\lambda\left(j\right)$.
+\end{Cor}
+
+%_____________________________________________________________________________________
+%
+\section{Matriz Intensidad}
+%_____________________________________________________________________________________
+%
+
+
+\begin{Def}
+La matriz intensidad
+$\Lambda=\left(\lambda\left(i,j\right)\right)_{i,j\in E}$ del proceso de saltos $\left\{X_{t}\right\}_{t\geq0}$ est\'a dada por
+\begin{eqnarray*}
+\lambda\left(i,j\right)&=&\lambda\left(i\right)q_{i,j}\textrm{,    }j\neq i\\
+\lambda\left(i,i\right)&=&-\lambda\left(i\right)
+\end{eqnarray*}
+\end{Def}
+
+
+\begin{Prop}\label{Prop.3.1}
+Una matriz $E\times E$, $\Lambda$ es la matriz de intensidad de un proceso markoviano de saltos $\left\{X_{t}\right\}_{t\geq0}$ si y s\'olo si
+\begin{eqnarray*}
+\lambda\left(i,i\right)\leq0\textrm{, }\lambda\left(i,j\right)\textrm{,   }i\neq j\textrm{,  }\sum_{j\in E}\lambda\left(i,j\right)=0.
+\end{eqnarray*}
+Adem\'as, $\Lambda$ est\'a en correspondencia uno a uno con la
+distribuci\'on del proceso minimal dado por el teorema 3.1.
+\end{Prop}
+
+
+Para el caso particular de la Cola $M/M/1$, la matr\'iz de itensidad est\'a dada por
+\begin{eqnarray*}
+\Lambda=\left[\begin{array}{cccccc}
+-\beta & \beta & 0 &0 &0& \cdots\\
+\delta & -\beta-\delta & \beta & 0 & 0 &\cdots\\
+0 & \delta & -\beta-\delta & \beta & 0 &\cdots\\
+\vdots & & & & & \ddots\\
+\end{array}\right]
+\end{eqnarray*}
+
+
+%____________________________________________________________________________
+\section{Medidas Estacionarias}
+%____________________________________________________________________________
+%
+
+
+\begin{Def}
+Una medida $v\neq0$ es estacionaria si $0\leq v_{j}<\infty$, $vP^{t}=v$ para toda $t$.
+\end{Def}
+
+\begin{Teo}\label{Teo.4.2}
+Supongamos que $\left\{X_{t}\right\}$ es irreducible recurrente en $E$. Entonces existe una y s\'olo una, salvo m\'ultiplos, medida estacionaria $v$. Esta $v$ tiene la propiedad de que $0<v_{j}<\infty$ para todo $j$ y puede encontrarse en cualquiera de las siguientes formas
+
+\begin{itemize}
+\item[i)] Para alg\'un estado $i$, fijo pero arbitrario, $v_{j}$ es el tiempo esperado utilizado en $j$ entre dos llegadas consecutivas al estado $i$;
+\begin{equation}\label{Eq.4.2}
+v_{j}=\esp_{i}\int_{0}^{w\left(i\right)}\indora\left(X_{t}=j\right)dt
+\end{equation}
+con $w\left(i\right)=\inf\left\{t>0:X_{t}=i,X_{t^{-}}=\lim_{s\uparrow t}X_{s}\neq i\right\}$. 
+\item[ii)]
+$v_{j}=\frac{\mu_{j}}{\lambda\left(j\right)}$, donde $\mu$ es estacionaria para $\left\{Y_{n}\right\}$. 
+\item[iii)] como soluci\'on de $v\Lambda=0$.
+\end{itemize}
+\end{Teo}
+
+
+%____________________________________________________________________________
+\section{Criterios de Ergodicidad}
+%____________________________________________________________________________
+%
+
+\begin{Def}
+Un proceso irreducible recurrente con medida estacionaria de masa finita es llamado erg\'odico.
+\end{Def}
+
+\begin{Teo}\label{Teo.4.3}
+Un proceso de Markov de saltos irreducible no explosivo es erg\'odico si y s\'olo si se puede encontrar una soluci\'on, de probabilidad, $\pi$, con $|\pi|=1$ y $0\leq\pi_{j}\leq1$, a $\pi\Lambda=0$. En este caso $\pi$ es la distribuci\'on estacionaria.
+\end{Teo}
+
+\begin{Cor}\label{Cor.4.4}
+Una condici\'on suficiente para la ergodicidad de un proceso irreducible es la existencia de una probabilidad $\pi$ que resuelva el sistema $\pi\Lambda=0$ y que adem\'as tenga la propiedad de que $\sum\pi_{j}\lambda\left(j\right)<\infty$.
+\end{Cor}
+
+\begin{Prop}
+Si el proceso es erg\'odico, entonces existe una versi\'on estrictamente estacionaria
+$\left\{X_{t}\right\}_{-\infty<t<\infty}$con doble tiempo
+infinito.
+\end{Prop}
+
+\begin{Teo}
+Si $\left\{X_{t}\right\}$ es erg\'odico y $\pi$ es la distribuci\'on estacionaria, entonces para todo $i,j$, $p_{ij}^{t}\rightarrow\pi_{j}$ cuando $t\rightarrow\infty$.
+\end{Teo}
+
+\begin{Cor}
+Si $\left\{X_{t}\right\}$ es irreducible recurente pero no erg\'odica, es decir $|v|=\infty$, entonces $p_{ij}^{t}\rightarrow0$ para todo $i,j\in E$.
+\end{Cor}
+
+\begin{Cor}
+Para cualquier proceso Markoviano de Saltos minimal, irreducible o
+no, los l\'imites $li_{t\rightarrow\infty}p_{ij}^{t}$ existe.
+\end{Cor}
+
+
+%_____________________________________________________________________________________
+%
+\section{Procesos de Nacimiento y Muerte}
+%_____________________________________________________________________________________
+%
+
+\begin{Prop}\label{Prop.2.1}
+La recurrencia de $\left\{X_{t}\right\}$, o equivalentemente de
+$\left\{Y_{n}\right\}$ es equivalente a
+\begin{equation}\label{Eq.2.1}
+\sum_{n=1}^{\infty}\frac{\delta_{1}\cdots\delta_{n}}{\beta_{1}\cdots\beta_{n}}=\sum_{n=1}^{\infty}\frac{q_{1}\cdots
+q_{n}}{p_{1}\cdots p_{n}}=\infty
+\end{equation}
+\end{Prop}
+
+\begin{Lema}\label{Lema.2.2}
+Independientemente de la recurrencia o transitorieadad, existe una
+y s\'olo una, salvo m\'ultiplos, soluci\'on a $v\Lambda=0$, dada por
+\begin{equation}\label{Eq.2.2}
+v_{n}=\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}v_{0}
+\end{equation}
+para $n=1,2,\ldots$.
+\end{Lema}
+
+\begin{Cor}\label{Cor.2.3}
+En el caso recurrente, la medida estacionaria $\mu$ para
+$\left\{Y_{n}\right\}$ est\'a dada por
+\begin{equation}
+\mu_{n}=\frac{p_{1}\cdots p_{n-1}}{q_{1}\cdots q_{n}}\mu_{0}
+\end{equation}
+para $n=1,2,\ldots$.
+\end{Cor}
+
+Se define a
+$S=1+\sum_{n=1}^{\infty}\frac{\beta_{0}\beta_{1}\cdots\beta_{n-1}}{\delta_{1}\delta_{2}\cdots\delta_{n}}$
+
+\begin{Cor}\label{Cor.2.4}
+$\left\{X_{t}\right\}$ es erg\'odica si y s\'olo si la ecuaci\'on
+(\ref{Eq.2.1}) se cumple y adem\'as $S<\infty$, en cuyo caso la
+distribuci\'on erg\'odica, $\pi$, est\'a dada por
+\begin{equation}\label{Eq.2.4}
+\pi_{0}=\frac{1}{S}\textrm{,
+}\pi_{n}=\frac{1}{S}\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}
+\end{equation}
+para $n=1,2,\ldots$.
+\end{Cor}
+%_____________________________________________________________________________________
+\section{Procesos de Nacimiento y Muerte Generales}
+%_____________________________________________________________________________________
+
+Por un proceso de nacimiento y muerte se entiende un proceso de saltos de markov $\left\{X_{t}\right\}_{t\geq0}$ con espacio de estados a lo m\'as numerable, con la propiedad de que s\'olo puede ir al estado $n+1$ o al estado $n-1$, es decir, su matriz de intensidad es de la forma
+\begin{eqnarray*}
+\Lambda=\left[\begin{array}{cccccc}
+-\beta_{0} & \beta_{0} & 0 &0 &0& \cdots\\
+\delta_{1} & -\beta_{1}-\delta_{1} & \beta_{1} & 0 & 0 &\cdots\\
+0 & \delta_{2} & -\beta_{2}-\delta_{2} & \beta_{2} & 0 &\cdots\\
+\vdots & & & & & \ddots\\
+\end{array}\right]
+\end{eqnarray*}
+donde $\beta_{n}$ son las intensidades de nacimiento y $\delta_{n}$ las intensidades de muerte, o tambi\'en se puede ver como a $X_{t}$ el n\'umero de usuarios en una cola al tiempo $t$, un salto hacia arriba corresponde a la llegada de un nuevo usuario y un salto hacia abajo como al abandono de un usuario despu\'es de haber recibido su servicio.
+
+La cadena de saltos $\left\{Y_{n}\right\}$ tiene matriz de transici\'on dada por
+\begin{eqnarray*}
+Q=\left[\begin{array}{cccccc}
+0 & 1 & 0 &0 &0& \cdots\\
+q_{1} & 0 & p_{1} & 0 & 0 &\cdots\\
+0 & q_{2} & 0 & p_{2} & 0 &\cdots\\
+\vdots & & & & & \ddots\\
+\end{array}\right]
+\end{eqnarray*}
+donde $p_{n}=\frac{\beta_{n}}{\beta_{n}+\delta_{n}}$ y $q_{n}=1-p_{n}=\frac{\delta_{n}}{\beta_{n}+\delta_{n}}$, donde adem\'as se asumne por el momento que $p_{n}$ no puede tomar el valor $0$ \'o $1$ para cualquier valor de $n$.
+
+\begin{Prop}\label{Prop.2.1}
+La recurrencia de $\left\{X_{t}\right\}$, o equivalentemente de $\left\{Y_{n}\right\}$ es equivalente a
+\begin{equation}\label{Eq.2.1}
+\sum_{n=1}^{\infty}\frac{\delta_{1}\cdots\delta_{n}}{\beta_{1}\cdots\beta_{n}}=\sum_{n=1}^{\infty}\frac{q_{1}\cdots q_{n}}{p_{1}\cdots p_{n}}=\infty
+\end{equation}
+\end{Prop}
+
+\begin{Lema}\label{Lema.2.2}
+Independientemente de la recurrencia o transitorieadad, existe una y s\'olo una, salvo m\'ultiplos, soluci\'on a $v\Lambda=0$, dada por
+\begin{equation}\label{Eq.2.2}
+v_{n}=\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}v_{0}
+\end{equation}
+para $n=1,2,\ldots$.
+\end{Lema}
+
+\begin{Cor}\label{Cor.2.3}
+En el caso recurrente, la medida estacionaria $\mu$ para $\left\{Y_{n}\right\}$ est\'a dada por
+\begin{equation}\label{Eq.}
+\mu_{n}=\frac{p_{1}\cdots p_{n-1}}{q_{1}\cdots q_{n}}\mu_{0}
+\end{equation}
+para $n=1,2,\ldots$.
+\end{Cor}
+
+Se define a $S=1+\sum_{n=1}^{\infty}\frac{\beta_{0}\beta_{1}\cdots\beta_{n-1}}{\delta_{1}\delta_{2}\cdots\delta_{n}}$.
+
+\begin{Cor}\label{Cor.2.4}
+$\left\{X_{t}\right\}$ es erg\'odica si y s\'olo si la ecuaci\'on (\ref{Eq.2.1}) se cumple y adem\'as $S<\infty$, en cuyo caso la distribuci\'on erg\'odica, $\pi$, est\'a dada por
+\begin{equation}\label{Eq.2.4}
+\pi_{0}=\frac{1}{S}\textrm{,     }\pi_{n}=\frac{1}{S}\frac{\beta_{0}\cdots\beta_{n-1}}{\delta_{1}\cdots\delta_{n}}
+\end{equation}
+para $n=1,2,\ldots$.
+\end{Cor}
+
+
+
+
+
+%<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>
+\input{bibliografia}
+%<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>
+\printindex
+%<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>==<>===<>
+\end{document}

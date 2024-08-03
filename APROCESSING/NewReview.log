@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  2 AUG 2024 19:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  2 AUG 2024 20:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**ReviewCadenasMarkov.tex
-(./ReviewCadenasMarkov.tex
+**NewReview.tex
+(./NewReview.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
@@ -505,18 +505,15 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 \c@Note=\count148
 \c@Prop=\count149
 \c@Cor=\count150
-\c@Coro=\count151
-\c@Lema=\count152
-\c@Lemma=\count153
-\c@Lem=\count154
-\c@Sup=\count155
-\c@Obs=\count156
-\ReviewCadenasMarkov@idxfile=\write3
-\openout3 = `ReviewCadenasMarkov.idx'.
+\c@Lema=\count151
+\c@Sup=\count152
+\c@Obs=\count153
+\NewReview@idxfile=\write3
+\openout3 = `NewReview.idx'.
 
 
-Writing index file ReviewCadenasMarkov.idx
-(./ReviewCadenasMarkov.aux
+Writing index file NewReview.idx
+(./NewReview.aux
 
 LaTeX Warning: Label `Prop.5.4' multiply defined.
 
@@ -704,7 +701,7 @@ LaTeX Warning: Label `Thorisson' multiply defined.
 LaTeX Warning: Label `Winands' multiply defined.
 
 )
-\openout1 = `ReviewCadenasMarkov.aux'.
+\openout1 = `NewReview.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
 LaTeX Font Info:    ... okay on input line 91.
@@ -763,30 +760,30 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count157
+\c@section@level=\count154
 )
 LaTeX Info: Redefining \ref on input line 91.
 LaTeX Info: Redefining \pageref on input line 91.
 LaTeX Info: Redefining \nameref on input line 91.
 
-(./ReviewCadenasMarkov.out) (./ReviewCadenasMarkov.out)
+(./NewReview.out) (./NewReview.out)
 \@outlinefile=\write4
-\openout4 = `ReviewCadenasMarkov.out'.
+\openout4 = `NewReview.out'.
 
-\c@lstlisting=\count158
+\c@lstlisting=\count155
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count159
+\scratchcounter=\count156
 \scratchdimen=\dimen158
 \scratchbox=\box61
-\nofMPsegments=\count160
-\nofMParguments=\count161
+\nofMPsegments=\count157
+\nofMParguments=\count158
 \everyMPshowfont=\toks38
-\MPscratchCnt=\count162
+\MPscratchCnt=\count159
 \MPscratchDim=\dimen159
-\MPnumerator=\count163
-\makeMPintoPDFobject=\count164
+\MPnumerator=\count160
+\makeMPintoPDFobject=\count161
 \everyMPtoPDFconversion=\toks39
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -819,260 +816,44 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 96.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-LaTeX Warning: Citation `Portman' on page 1 undefined on input line 101.
-
-
-LaTeX Warning: Citation `Morozov' on page 1 undefined on input line 101.
-
-
-LaTeX Warning: Citation `Xu' on page 1 undefined on input line 101.
-
-
-LaTeX Warning: Citation `Douc' on page 1 undefined on input line 101.
-
-
-LaTeX Warning: Citation `Portman' on page 1 undefined on input line 107.
-
-
-LaTeX Warning: Citation `Morozov' on page 1 undefined on input line 107.
-
-
-LaTeX Warning: Citation `Xu' on page 1 undefined on input line 107.
-
-
-LaTeX Warning: Citation `Douc' on page 1 undefined on input line 107.
-
-(./ReviewCadenasMarkov.toc [1
-
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+(./NewReview.toc)
 \tf@toc=\write5
-\openout5 = `ReviewCadenasMarkov.toc'.
+\openout5 = `NewReview.toc'.
 
- [2]
+ [1
 
-LaTeX Warning: Citation `RBA' on page 3 undefined on input line 159.
-
-
-LaTeX Warning: Citation `RBA' on page 3 undefined on input line 164.
-
-[3] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 389--390
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+ [4] [5]
+Underfull \hbox (badness 10000) in paragraph at lines 483--485
 
  []
 
-[6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 524--525
-
- []
-
-[8] [9] [10] [11] [12] [13] [14]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1105
-.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1105.
-
- [15]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1163.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1163.
-
-[16]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1250.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\infty' on input line 1250.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1250.
-
-[17]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1282.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1282.
-
-[18] [19]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1392.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1392.
-
-[20] [21] [22] [23]
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 16
-50.
-
-[24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 1761--1762
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1765--1766
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1775--1776
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1777--1778
-
- []
-
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 1801--1802
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1803--1804
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1805--1806
-
- []
-
-[27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 1935--1937
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1938--1939
-
- []
-
-[29] [30] [31]
-Underfull \hbox (badness 10000) in paragraph at lines 2106--2108
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2109--2110
-
- []
-
-[32]
-Underfull \hbox (badness 10000) in paragraph at lines 2128--2129
-
- []
-
-[33] [34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44]
-Underfull \hbox (badness 10000) in paragraph at lines 2755--2759
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2760--2761
-
- []
-
-[45]
-Underfull \hbox (badness 10000) in paragraph at lines 2762--2765
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2796--2797
-
- []
-
-[46] [47] [48] [49] [50] [51] [52] [53] [54] [55]
-
-LaTeX Warning: Reference `Ec.Renovacion' on page 56 undefined on input line 357
-9.
-
-[56] [57] [58] [59]
-
-LaTeX Warning: Reference `Ec.Renovacion' on page 60 undefined on input line 388
-1.
-
-[60]
-
-LaTeX Warning: Reference `Ec.Renovacion' on page 61 undefined on input line 396
-5.
-
-[61]
-Overfull \hbox (3.95648pt too wide) in paragraph at lines 4065--4066
-[][]\OT1/cmr/bx/n/10 Definici^^Son 19.30. []\OT1/cmr/m/it/10 Para el pro-ceso $
-[]$, sus trayec-to-ria mues-trales en el in-ter-valo de tiempo $[]$
- []
-
-
-Overfull \hbox (3.95648pt too wide) in paragraph at lines 4091--4092
-[][]\OT1/cmr/bx/n/10 Definici^^Son 19.31. []\OT1/cmr/m/it/10 Para el pro-ceso $
-[]$, sus trayec-to-ria mues-trales en el in-ter-valo de tiempo $[]$
- []
-
-[62]
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 4110.
-
- [63]
-Overfull \hbox (3.95648pt too wide) in paragraph at lines 4248--4249
-[][]\OT1/cmr/bx/n/10 Definici^^Son 19.36. []\OT1/cmr/m/it/10 Para el pro-ceso $
-[]$, sus trayec-to-ria mues-trales en el in-ter-valo de tiempo $[]$
- []
-
-[64] [65] [66]
-
-LaTeX Warning: Reference `Corolario2' on page 67 undefined on input line 4426.
-
-[67] [68] [69]
-
-LaTeX Font Warning: Command \footnotesize invalid in math mode on input line 46
-62.
-
-[70] [71] [72] [73] [74] [75] [76] [77] (./bibliografia.tex [78] [79]
-Underfull \hbox (badness 10000) in paragraph at lines 121--122
+[6] [7] [8] [9] [10] (./bibliografia.tex [11] [12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 []\OT1/cmr/m/n/10 Probability and Statis-tics Tu-to-ri-als on Khan Academy: []$
 \OT1/cmtt/m/n/10 https : / / www . khanacademy . org / math /
  []
 
-[80]
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--131
 []\OT1/cmr/m/n/10 Data Clean-ing and Pre-pro-cess-ing on To-wards Data Sci-ence
 : []$\OT1/cmtt/m/n/10 https : / / towardsdatascience . com /
  []
 
 
-Underfull \hbox (badness 3769) in paragraph at lines 135--136
+Underfull \hbox (badness 3769) in paragraph at lines 134--135
 []\OT1/cmr/m/n/10 Evaluating Ma-chine Learn-ing Mod-els on To-wards Data Sci-en
 ce: []$\OT1/cmtt/m/n/10 https : / / towardsdatascience . com /
  []
 
 
-Underfull \hbox (badness 2922) in paragraph at lines 155--156
+Underfull \hbox (badness 2922) in paragraph at lines 154--155
 []\OT1/cmr/m/n/10 An In-tro-duc-tion to Sur-vival Anal-y-sis on To-wards Data S
 ci-ence: []$\OT1/cmtt/m/n/10 https : / / towardsdatascience . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 []\OT1/cmr/m/n/10 Multinomial Lo-gis-tic Re-gres-sion on Dat-a-Camp: []$\OT1/cm
 tt/m/n/10 https : / / www . datacamp . com / community / tutorials /
  []
@@ -1081,346 +862,330 @@ pdfTeX warning (ext4): destination with the same identifier (name{cite.Rouche})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.168 \bibitem{Rouche}
+l.167 \bibitem{Rouche}
                        I.J.B.F. Adan, J.S.H. van Leeuwaarden, and E.M.M. Win...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Asmussen
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.171 \bibitem{Asmussen}
+l.170 \bibitem{Asmussen}
                          Asmussen Soren, Applied Probability andpdfTeX warning 
 (ext4): destination with the same identifier (name{cite.Bhat}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.177 \bibitem{Bhat}
+l.176 \bibitem{Bhat}
                      Bhat Narayan, An Introduction to Queueing TheorypdfTeX war
 ning (ext4): destination with the same identifier (name{cite.Boxma}) has been a
 lready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.180 \bibitem{Boxma}
-                      Boxma J. O., Analysis and Optimization of PollingpdfTeX w
-arning (ext4): destination with the same identifier (name{cite.BoonMeiWinands})
- has been already used, duplicate ignored
+l.179 \bibitem{Boxma}
+                      Boxma J. O., Analysis and Optimization of Polling
+[14]pdfTeX warning (ext4): destination with the same identifier (name{cite.Boon
+MeiWinands}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.188 \bibitem{BoonMeiWinands}
+l.187 \bibitem{BoonMeiWinands}
                                Boon M.A.A., Van der Mei R.D.  andpdfTeX warning
  (ext4): destination with the same identifier (name{cite.Borovkov}) has been al
 ready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.191 \bibitem{Borovkov}
+l.190 \bibitem{Borovkov}
                          Borovkov. A. A. and Schassberger R., ErgodicitypdfTeX 
 warning (ext4): destination with the same identifier (name{cite.BosBoon}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.196 \bibitem{BosBoon}
+l.195 \bibitem{BosBoon}
                        Laurent van den Bos and Marko Boon, Networks of Polli...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.HookHee}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.204 \bibitem{HookHee}
-                        Chee-Hook Ng. y Boon-Hee Soong, Queueing [81]pdfTeX war
-ning (ext4): destination with the same identifier (name{cite.Chen}) has been al
-ready used, duplicate ignored
+l.203 \bibitem{HookHee}
+                        Chee-Hook Ng. y Boon-Hee Soong, QueueingpdfTeX warning 
+(ext4): destination with the same identifier (name{cite.Chen}) has been already
+ used, duplicate ignored
 <to be read again> 
                    \relax 
-l.208 \bibitem{Chen}
+l.207 \bibitem{Chen}
                      Chen H., Fluid Approximations and Stability ofpdfTeX warni
 ng (ext4): destination with the same identifier (name{cite.CooperII}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.215 \bibitem{CooperII}
+l.214 \bibitem{CooperII}
                          R.B. Cooper, Queues served in cyclic order: waiting...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Dai}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.221 \bibitem{Dai}
+l.220 \bibitem{Dai}
                     Dai Jean G., On positive Harris Recurrence of Multiclass...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.DaiSean}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.225 \bibitem{DaiSean}
+l.224 \bibitem{DaiSean}
                         Dai Jim G. and Meyn Sean P., Stability and Convergen...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.DaiWeiss
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.230 \bibitem{DaiWeiss}
+l.229 \bibitem{DaiWeiss}
                         pdfTeX warning (ext4): destination with the same identi
 fier (name{cite.Daley68}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.235 \bibitem{Daley68}
+l.234 \bibitem{Daley68}
                         D.J. Daley, The correlation structure of the output ...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Davis}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.238 \bibitem{Davis}
+l.237 \bibitem{Davis}
                       Davis, M. H. A., Piecewise Deterministic MarkovpdfTeX war
 ning (ext4): destination with the same identifier (name{cite.Down}) has been al
 ready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.243 \bibitem{Down}
+l.242 \bibitem{Down}
                      Down D., On the Stability of Polling Models with Multip...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Daley68}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.246 \bibitem{Daley68}
+l.245 \bibitem{Daley68}
                         D.J. Daley, The correlation structure of the output ...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Disney})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.248 \bibitem{Disney}
+l.247 \bibitem{Disney}
                        Ralpjh L. Disney, Robert L. Farrell and Paulo Renato ...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Eisenber
 g}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.253 \bibitem{Eisenberg}
+l.252 \bibitem{Eisenberg}
                           M. Eisenberg, Queues with periodic service and cha...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.FrickerJ
 aibi}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.260 \bibitem{FrickerJaibi}
+l.259 \bibitem{FrickerJaibi}
                             pdfTeX warning (ext4): destination with the same id
 entifier (name{cite.Stability}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.265 \bibitem{Stability}
+l.264 \bibitem{Stability}
                          pdfTeX warning (ext4): destination with the same ident
 ifier (name{cite.Getoor}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.274 \bibitem{Getoor}
+l.273 \bibitem{Getoor}
                        Getoor R. K., Transience and recurrence ofpdfTeX warning
  (ext4): destination with the same identifier (name{cite.Gut}) has been already
  used, duplicate ignored
 <to be read again> 
                    \relax 
-l.278 \bibitem{Gut}
+l.277 \bibitem{Gut}
                     Gut A., Stopped Random Walks: Limit Theorems andpdfTeX warn
 ing (ext4): destination with the same identifier (name{cite.HookHee}) has been 
 already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.285 \bibitem{HookHee}
+l.284 \bibitem{HookHee}
                         Chee-Hook Ng. y Boon-Hee Soong, QueueingpdfTeX warning 
 (ext4): destination with the same identifier (name{cite.KaspiMandelbaum}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.300 \bibitem{KaspiMandelbaum}
+l.299 \bibitem{KaspiMandelbaum}
                                 Kaspi H. and Mandelbaum A., Regenerative Clo...
-pdfTeX warning (ext4): destination with the same identifier (name{cite.Konheim}
-) has been already used, duplicate ignored
+[15]pdfTeX warning (ext4): destination with the same identifier (name{cite.Konh
+eim}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.304 \bibitem{Konheim}
+l.303 \bibitem{Konheim}
                         A.G. Konheim, H. Levy, M.M. Srinivasan, Descendant s...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Kleinroc
 k}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.308 \bibitem{Kleinrock}
+l.307 \bibitem{Kleinrock}
                           Leonard Kleinrock, Theory, Volume 1, Queueing Syst...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Konheim}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.311 \bibitem{Konheim}
+l.310 \bibitem{Konheim}
                         A. G. Konheim, h. Levy and M. M. Srinivasan. Descend...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Lang}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.318 \bibitem{Lang}
+l.317 \bibitem{Lang}
                      Serge Lang, Calculus of Several Variables, Addison-Wesl...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.LevySidi
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.320 \bibitem{LevySidi}
-                         [82]pdfTeX warning (ext4): destination with the same i
-dentifier (name{cite.MeiBorst}) has been already used, duplicate ignored
+l.319 \bibitem{LevySidi}
+                        pdfTeX warning (ext4): destination with the same identi
+fier (name{cite.MeiBorst}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.327 \bibitem{MeiBorst}
+l.326 \bibitem{MeiBorst}
                          van der Mei, R.D. and Borst, S. C., Analysis of Mul...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.MeynTwee
 die2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.338 \bibitem{MeynTweedie2}
+l.337 \bibitem{MeynTweedie2}
                              Meyn S. P. and Tweedie R. L., Markov Chains and...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.MeynDown
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.341 \bibitem{MeynDown}
+l.340 \bibitem{MeynDown}
                          Meyn, S.P. and Down, D., Stability of Generalized J...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.TesisRou
 bos}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.361 \bibitem{TesisRoubos}
+l.360 \bibitem{TesisRoubos}
                            pdfTeX warning (ext4): destination with the same ide
 ntifier (name{cite.RepTec}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.371 \bibitem{RepTec}
+l.370 \bibitem{RepTec}
                       pdfTeX warning (ext4): destination with the same identifi
 er (name{cite.Semenova}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.375 \bibitem{Semenova}
+l.374 \bibitem{Semenova}
                         pdfTeX warning (ext4): destination with the same identi
 fier (name{cite.Serfozo}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.378 \bibitem{Serfozo}
+l.377 \bibitem{Serfozo}
                         Richard Serfozo, Basics of Applied Stochastic Proces...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Sharpe})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.381 \bibitem{Sharpe}
+l.380 \bibitem{Sharpe}
                        Sharpe Michael , General Theory of Markov Processes. ...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Sigma}) 
 has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.385 \bibitem{Sigma}
+l.384 \bibitem{Sigma}
                       Sigman Karl, The Stability of Open QueueingpdfTeX warning
  (ext4): destination with the same identifier (name{cite.SidiLevy1}) has been a
 lready used, duplicate ignored
 <to be read again> 
                    \relax 
-l.389 \bibitem{SidiLevy1}
+l.388 \bibitem{SidiLevy1}
                           Sidi M.  and Levy H.,  Customer Routing in Polling...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.SidiLevy
 2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.393 \bibitem{SidiLevy2}
+l.392 \bibitem{SidiLevy2}
                           Sidi M.  and Levy H., Polling Systems with Simulta...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Sigman2}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.396 \bibitem{Sigman2}
+l.395 \bibitem{Sigman2}
                         Karl Sigman, Hermann Thorisson and Ronald W. Wolff, ...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Stidham}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.400 \bibitem{Stidham}
+l.399 \bibitem{Stidham}
                         Shaler Stidham, Jr., Regenerative Processes in the t...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.TakagiI}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.408 \bibitem{TakagiI}
+l.407 \bibitem{TakagiI}
                         Takagi H. and Kleinrock, Analysis of Polling Systems...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Takagi})
  has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.410 \bibitem{Takagi}
+l.409 \bibitem{Takagi}
                       Takagi Hideaki, Queueing Analysis of Polling Models, A...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Thorisso
 n}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.411 \bibitem{Thorisson}
+l.410 \bibitem{Thorisson}
                           Hermann Thorisson, Coupling, Stationarity, and Reg...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.Winands}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.421 \bibitem{Winands}
+l.420 \bibitem{Winands}
                         E.M.M. Winands, I.J.B.F. Adan adn G.J. van Houtum, M...
-) [83]
-runsystem(makeindex ReviewCadenasMarkov.idx)...executed safely (allowed).
+[16]) [17]
+runsystem(makeindex NewReview.idx)...executed safely (allowed).
 
- (./ReviewCadenasMarkov.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5157.
- [84
+ (./NewReview.ind)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 965.
+ [18
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 5157.
- (./ReviewCadenasMarkov.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 5157.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5157.
-
-Package rerunfilecheck Info: File `ReviewCadenasMarkov.out' has not changed.
-(rerunfilecheck)             Checksum: 742B37C1D8EABC677BB0961928F66912;2325.
-
-
-LaTeX Warning: There were undefined references.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 965.
+ (./NewReview.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 965.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 965.
+Package rerunfilecheck Info: File `NewReview.out' has not changed.
+(rerunfilecheck)             Checksum: B25E39257C05FFDB0CE81BD94539B97D;720.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 5157.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 965.
  ) 
 Here is how much of TeX's memory you used:
- 11909 strings out of 492649
- 171007 string characters out of 6129622
- 306342 words of memory out of 5000000
- 14895 multiletter control sequences out of 15000+600000
- 16159 words of font info for 60 fonts, out of 8000000 for 9000
+ 11324 strings out of 492649
+ 164477 string characters out of 6129622
+ 293781 words of memory out of 5000000
+ 14780 multiletter control sequences out of 15000+600000
+ 13941 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,17n,43p,2015b,530s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,14n,43p,608b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
-cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texli
-ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2018/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2018/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2018/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/
-type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on ReviewCadenasMarkov.pdf (84 pages, 728956 bytes).
+r/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
+/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/
+local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/lo
+cal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loca
+l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
+ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
+18/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2018/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2018/tex
+mf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on NewReview.pdf (18 pages, 317162 bytes).
 PDF statistics:
- 1511 PDF objects out of 1728 (max. 8388607)
- 1378 compressed objects within 14 object streams
- 718 named destinations out of 1000 (max. 500000)
- 273 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 529 PDF objects out of 1000 (max. 8388607)
+ 483 compressed objects within 5 object streams
+ 256 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

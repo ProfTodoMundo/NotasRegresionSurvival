@@ -1,20 +1,39 @@
-\babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Estacionareidad}{1}{section.1}%
-\contentsline {section}{\numberline {2}Funciones Arm\'onicas, Recurrencia y Transitoriedad}{2}{section.2}%
-\contentsline {section}{\numberline {3}Teor\'ia Erg\'odica}{2}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Ejemplo de Cadena de Markov para dos Estados}{2}{subsection.3.1}%
-\contentsline {section}{\numberline {4}Procesos de Markov de Saltos}{3}{section.4}%
-\contentsline {section}{\numberline {5}Matriz Intensidad}{5}{section.5}%
-\contentsline {section}{\numberline {6}Medidas Estacionarias}{5}{section.6}%
-\contentsline {section}{\numberline {7}Criterios de Ergodicidad}{6}{section.7}%
-\contentsline {section}{\numberline {8}Procesos de Nacimiento y Muerte}{6}{section.8}%
-\contentsline {section}{\numberline {9}Procesos de Nacimiento y Muerte Generales}{7}{section.9}%
-\contentsline {section}{\numberline {10}Notaci\'on Kendall-Lee}{7}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Cola $M/M/1$}{9}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Cola $M/M/\infty $}{10}{subsection.10.2}%
-\contentsline {subsection}{\numberline {10.3}Cola $M/M/m$}{11}{subsection.10.3}%
-\contentsline {subsection}{\numberline {10.4}Cola $M/M/m/m$}{12}{subsection.10.4}%
-\contentsline {subsection}{\numberline {10.5}Cola M/G/1}{13}{subsection.10.5}%
-\contentsline {subsection}{\numberline {10.6}Cola con Infinidad de Servidores}{15}{subsection.10.6}%
-\contentsline {section}{\numberline {11}Redes de Colas:Sistemas Abiertos}{16}{section.11}%
-\contentsline {section}{\numberline {12}Resultados para Procesos de Salida}{17}{section.12}%
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Procesos Estoc\'asticos}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Cadenas de Markov}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Procesos de Estados de Markov}{6}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}Clasificaci\'on de Estados}{7}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Procesos de Markov}{8}{subsection.1.4}
+\contentsline {section}{\numberline {2}Estacionareidad}{9}{section.2}
+\contentsline {section}{\numberline {3}Funciones Arm\'onicas, Recurrencia y Transitoriedad}{9}{section.3}
+\contentsline {section}{\numberline {4}Teor\'ia Erg\'odica}{10}{section.4}
+\contentsline {subsection}{\numberline {4.1}Ejemplo de Cadena de Markov para dos Estados}{10}{subsection.4.1}
+\contentsline {section}{\numberline {5}Procesos de Markov de Saltos}{11}{section.5}
+\contentsline {section}{\numberline {6}Matriz Intensidad}{13}{section.6}
+\contentsline {section}{\numberline {7}Medidas Estacionarias}{13}{section.7}
+\contentsline {section}{\numberline {8}Criterios de Ergodicidad}{13}{section.8}
+\contentsline {section}{\numberline {9}Procesos de Nacimiento y Muerte}{14}{section.9}
+\contentsline {section}{\numberline {10}Procesos de Nacimiento y Muerte Generales}{14}{section.10}
+\contentsline {section}{\numberline {11}Notaci\'on Kendall-Lee}{15}{section.11}
+\contentsline {subsection}{\numberline {11.1}Cola $M/M/1$}{16}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Cola $M/M/\infty $}{18}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Cola $M/M/m$}{18}{subsection.11.3}
+\contentsline {subsection}{\numberline {11.4}Cola $M/M/m/m$}{20}{subsection.11.4}
+\contentsline {subsection}{\numberline {11.5}Cola M/G/1}{21}{subsection.11.5}
+\contentsline {subsection}{\numberline {11.6}Cola con Infinidad de Servidores}{23}{subsection.11.6}
+\contentsline {section}{\numberline {12}Redes de Colas:Sistemas Abiertos}{23}{section.12}
+\contentsline {section}{\numberline {13}Resultados para Procesos de Salida}{24}{section.13}
+\contentsline {section}{\numberline {14}Sistemas de Visitas}{26}{section.14}
+\contentsline {section}{\numberline {15}Funci\'on Generadora de Probabilidades}{30}{section.15}
+\contentsline {section}{\numberline {16}El problema de la ruina del jugador}{36}{section.16}
+\contentsline {section}{\numberline {17}Ecuaciones Centrales}{42}{section.17}
+\contentsline {section}{\numberline {18}Redes de Jackson}{46}{section.18}
+\contentsline {section}{\numberline {19}Resultados Adicionales}{46}{section.19}
+\contentsline {subsection}{\numberline {19.1}Procesos de Renovaci\'on y Regenerativos}{46}{subsection.19.1}
+\contentsline {subsection}{\numberline {19.2}Propiedades de los Procesos de Renovaci\'on}{55}{subsection.19.2}
+\contentsline {subsection}{\numberline {19.3}Resultados para Procesos de Salida}{70}{subsection.19.3}
+\contentsline {section}{\numberline {20}Aplicaci\'on a Teor\'ia de Colas}{72}{section.20}
