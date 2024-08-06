@@ -1,73 +1,42 @@
 \begin{theindex}
 
-  \item Cadena de Markov, 4
-  \item Cadena Homog\'enea, 4
-  \item Cadena Irreducible, 7
-  \item Cadenas Homog\'eneas, 4
-  \item Cilindro, 3
-  \item Clases de Comunicaci\'on, 7
-  \item Cola $M/M/1$, 32
-  \item Colas C\'iclicas, 26
-  \item Conjunto de Borel, 3
-  \item Conjunto Medible, 3
+  \item Cola $M/M/1$, 8
+  \item Colas C\'iclicas, 2
 
   \indexspace
 
-  \item Delta de Kronecker, 4
-  \item Disciplina de Servicio, 27
+  \item Disciplina de Servicio, 3
 
   \indexspace
 
-  \item Ecuaciones de Chapman-Kolmogorov, 5
-  \item Espacio de Rad\'on, 8
-  \item Estados absorbentes, 7
-  \item Estados recurrentes, 7
-  \item Estados transitorios, 7
+  \item Ley de Pseudo-Conservaci\'on, 3
 
   \indexspace
 
-  \item Funci\'on Medible, 3
+  \item Medidas de Desempe\~no, 2
 
   \indexspace
 
-  \item Ley de Pseudo-Conservaci\'on, 28
+  \item Orden de visita, 2
 
   \indexspace
 
-  \item Matriz de Transici\'on, 4
-  \item Medida $\sigma$-finita, 3
-  \item Medidas de Desempe\~no, 26
+  \item Periodo de Intervisita, 4
+  \item Pol\'itica de Servicio, 3, 5
+  \item Pol\'itica de Servicio Exhaustiva, 4
+  \item Pol\'iticas Deterministas, 3
 
   \indexspace
 
-  \item Orden de visita, 26
+  \item Sistemas de Espera, 1
+  \item Sistemas de Visita, 1
 
   \indexspace
 
-  \item Periodo de Intervisita, 28, 29
-  \item Pol\'itica de Servicio, 27, 29
-  \item Pol\'itica de Servicio Exhaustiva, 28
-  \item Pol\'iticas Deterministas, 28
-  \item Probabilidades Condicionales, 4
-  \item Probabilidades de Transici\'on, 4
-  \item Proceso Adaptado, 3
-  \item Proceso de Markov, 3
-  \item Propiedad Fuerte de Markov, 7
-  \item Propiedad Simple de Markov, 8
-
-  \indexspace
-
-  \item Semigrupo de Transici\'on de Markov, 8
-  \item Sistemas de Espera, 26
-  \item Sistemas de Visita, 26
-
-  \indexspace
-
-  \item Teorema de Abel, 31
-  \item Teorema de Continuidad, 30
-  \item Teorema de Convergencia Mon\'otona, 32
-  \item Tiempos de Espera, 28, 29
-  \item Tiempos de inter-arribo, 29
-  \item Tiempos de Paro, 3, 7
+  \item Teorema de Abel, 6
+  \item Teorema de Continuidad, 5
+  \item Teorema de Convergencia Mon\'otona, 7
+  \item Tiempos de Espera, 3, 4
+  \item Tiempos de inter-arribo, 5
 
 \end{theindex}

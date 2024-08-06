@@ -104,9 +104,96 @@ $\left\{X_{t}\right\}$ es erg\'odica si y s\'olo si la ecuaci\'on (\ref{Eq.2.1})
 para $n=1,2,\ldots$.
 \end{Cor}
 
+
+
+
+
 %_____________________________________________________________________________________
 %
-\section{Cola $M/M/1$}
+\section{Notaci\'on Kendall-Lee}
+%_____________________________________________________________________________________
+%
+
+A partir de este momento se har\'an las siguientes consideraciones:
+\begin{itemize}
+\item[a) ]Si $t_{n}$ es el tiempo aleatorio en el que llega al sistema el $n$-\'esimo cliente, para $n=1,2,\ldots$, $t_{0}=0$ y $t_{0}<t_{1}<\cdots$ se definen los tiempos entre arribos $\tau_{n}=t_{n}-t_{n-1}$ para $n=1,2,\ldots$, variables aleatorias independientes e id\'enticamente distribuidas.
+
+\item[b) ]Los tiempos entre arribos tienen un valor medio $E\left(\tau\right)$ finito y positivo $\frac{1}{\beta}$, es decir, $\beta$ se puede ver como la tasa o intensidad promedio de arribos al sistema por unidad de tiempo.
+\item[c) ]  Adem\'as se supondr\'a que los servidores son identicos y si $s$ denota la variable aleatoria que describe el tiempo de servicio, entonces $E\left(s\right)=\frac{1}{\delta}$, $\delta$ es la tasa promedio de servicio por servidor.
+\end{itemize}
+
+
+La notaci\'on de Kendall-Lee es una forma abreviada de describir un sistema de espera con las siguientes componentes:
+\begin{itemize}
+\item[a)] {\em\bf Fuente}: Poblaci\'on de clientes potenciales del sistema, esta puede ser finita o infinita. 
+\item[b)] {\em\bf Proceso de Arribos}: Proceso determinado por la funci\'on de distribuci\'on $A\left(t\right)=P\left\{\tau\leq t\right\}$ de los tiempos entre arribos.
+\end{itemize}
+
+Adem\'as tenemos las siguientes igualdades
+\begin{equation}\label{Eq.0.1}
+N\left(t\right)=N_{q}\left(t\right)+N_{s}\left(s\right)
+\end{equation}
+donde
+\begin{itemize}
+\item $N\left(t\right)$ es el n\'umero de clientes en el sistema al tiempo $t$. 
+\item $N_{q}\left(t\right)$ es el n\'umero de cliente en la cola al tiempo $t$.
+\item $N_{s}\left(t\right)$ es el n\'umero de clientes recibiendo servicio en el tiempo $t$.
+\end{itemize}
+
+Bajo la hip\'otesis de estacionareidad, es decir, las caracter\'isticas de funcionamiento del sistema se han estabilizado en valores independientes del tiempo, entonces
+\begin{equation}
+N=N_{q}+N_{s}.
+\end{equation}
+
+Los valores medios de las cantidades anteriores se escriben como $L=E\left(N\right)$, $L_{q}=E\left(N_{q}\right)$ y $L_{s}=E\left(N_{s}\right)$, entonces de la ecuaci\'on \ref{Eq.0.1} se obtiene
+
+\begin{equation}
+L=L_{q}+L_{s}
+\end{equation}
+Si $q$ es el tiempo que pasa un cliente en la cola antes de recibir servicio, y W es el tiempo total que un cliente pasa en el sistema, entonces \[w=q+s\] por lo tanto \[W=W_{q}+W_{s},\] donde $W=E\left(w\right)$, $W_{q}=E\left(q\right)$ y $W_{s}=E\left(s\right)=\frac{1}{\delta}$.
+
+La intensidad de tr\'afico se define como
+\begin{equation}
+\rho=\frac{E\left(s\right)}{E\left(\tau\right)}=\frac{\beta}{\delta}.
+\end{equation}
+
+La utilizaci\'on por servidor es
+\begin{equation}
+u=\frac{\rho}{c}=\frac{\beta}{c\delta}.
+\end{equation}
+donde $c$ es el n\'umero de servidores.
+
+Esta notaci\'on es una forma abreviada de describir un sistema de espera con componentes dados a continuaci\'on, la notaci\'on es
+
+\begin{equation}\label{Notacion.K.L.}
+A/S/c/K/F/d
+\end{equation}
+
+Cada una de las letras describe:
+
+\begin{itemize}
+\item $A$ es la distribuci\'on de los tiempos entre arribos.
+\item $S$ es la distribuci\'on del tiempo de servicio.
+\item $c$ es el n\'umero de servidores.
+\item $K$ es la capacidad del sistema.
+\item $F$ es el n\'umero de individuos en la fuente.
+\item $d$ es la disciplina del servicio
+\end{itemize}
+
+Usualmente se acostumbra suponer que $K=\infty$, $F=\infty$ y $d=FIFO$, es decir, First In First Out. Las distribuciones usuales para $A$ y $B$ son:
+
+\begin{itemize}
+\item $GI$ para la distribuci\'on general de los tiempos entre arribos.
+\item $G$ distribuci\'on general del tiempo de servicio.
+\item $M$ Distribuci\'on exponencial para $A$ o $S$.
+\item $E_{K}$ Distribuci\'on Erlang-$K$, para $A$ o $S$.
+\item $D$ tiempos entre arribos o de servicio constantes, es decir, deterministicos.
+\end{itemize}
+
+
+%_____________________________________________________________________________________
+%
+\subsection{Cola $M/M/1$}
 %_____________________________________________________________________________________
 %
 Este modelo corresponde a un proceso de nacimiento y muerte con $\beta_{n}=\beta$ y $\delta_{n}=\delta$ independiente del valor de $n$. La intensidad de tr\'afico $\rho=\frac{\beta}{\delta}$, implica que el criterio de recurrencia (ecuaci\'on \ref{Eq.2.1}) quede de la forma:
@@ -193,7 +280,7 @@ $\pi_{n}=\left(1-\rho\right)\rho^{n}$, para $n=0,1,2,\ldots$.
 \end{Prop}
 %_____________________________________________________________________________________
 %
-\section{Cola $M/M/\infty$}
+\subsection{Cola $M/M/\infty$}
 %_____________________________________________________________________________________
 %
 
@@ -225,7 +312,7 @@ La cola $M/M/\infty$ es erg\'odica para todos los valores de $\eta$. La distribu
 \end{Prop}
 %_____________________________________________________________________________________
 %
-\section{Cola $M/M/m$}
+\subsection{Cola $M/M/m$}
 %_____________________________________________________________________________________
 %
 
@@ -335,7 +422,7 @@ $\rho\leq1$.
 
 %_____________________________________________________________________________________
 %
-\section{Cola $M/M/m/m$}
+\subsection{Cola $M/M/m/m$}
 %_____________________________________________________________________________________
 %
 
@@ -387,7 +474,7 @@ Adem\'as
 representa la tasa promedio efectiva de arribos al sistema.
 %_____________________________________________________________________________________
 %
-\section{Cola M/G/1}
+\subsection{Cola M/G/1}
 %_____________________________________________________________________________________
 %
 Consideremos un sistema de espera con un servidor, en el que los tiempos entre arribos son exponenciales, y los tiempos de servicio tienen una distribuci\'on general $G$. Sea $N\left(t\right)_{t\geq0}$ el n\'umero de clientes en el sistema al tiempo $t$, y sean $t_{1}<t_{2}<\dots$ los tiempos sucesivos en los que los clientes completan su servicio y salen del sistema.
@@ -521,7 +608,7 @@ L_{q}=\esp\left(N_{q}\right)=\beta W_{q}=L-\rho
 
 
 %____________________________________________________________________________
-\section{Cola con Infinidad de Servidores}
+\subsection{Cola con Infinidad de Servidores}
 
 Este caso corresponde a $\beta_{n}=\beta$ y $\delta_{n}=n\delta$. El par\'ametro de inter\'es es $\eta=\frac{\beta}{\delta}$, de donde se obtiene:
 \begin{eqnarray*}

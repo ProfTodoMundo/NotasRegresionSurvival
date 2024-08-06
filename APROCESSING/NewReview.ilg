@@ -1,6 +1,6 @@
-This is makeindex, version 2.15 [TeX Live 2018] (kpathsea + Thai support).
-Scanning input file NewReview.idx....done (37 entries accepted, 0 rejected).
-Sorting entries....done (198 comparisons).
-Generating output file NewReview.ind....done (53 lines written, 0 warnings).
+This is makeindex, version 2.17 [TeX Live 2024] (kpathsea + Thai support).
+Scanning input file NewReview.idx....done (64 entries accepted, 0 rejected).
+Sorting entries....done (399 comparisons).
+Generating output file NewReview.ind....done (84 lines written, 0 warnings).
 Output written in NewReview.ind.
 Transcript written in NewReview.ilg.

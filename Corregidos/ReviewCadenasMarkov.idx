@@ -1,48 +1,20 @@
-\indexentry{Conjunto Medible}{3}
-\indexentry{Medida $\sigma$-finita}{3}
-\indexentry{Conjunto de Borel}{3}
-\indexentry{Funci\'on Medible}{3}
-\indexentry{Cilindro}{3}
-\indexentry{Tiempos de Paro}{3}
-\indexentry{Proceso Adaptado}{3}
-\indexentry{Proceso de Markov}{3}
-\indexentry{Cadena de Markov}{4}
-\indexentry{Probabilidades Condicionales}{4}
-\indexentry{Probabilidades Condicionales}{4}
-\indexentry{Cadenas Homog\'eneas}{4}
-\indexentry{Cadena Homog\'enea}{4}
-\indexentry{Probabilidades de Transici\'on}{4}
-\indexentry{Delta de Kronecker}{4}
-\indexentry{Matriz de Transici\'on}{4}
-\indexentry{Ecuaciones de Chapman-Kolmogorov}{5}
-\indexentry{Propiedad Fuerte de Markov}{7}
-\indexentry{Tiempos de Paro}{7}
-\indexentry{Estados recurrentes}{7}
-\indexentry{Estados transitorios}{7}
-\indexentry{Estados absorbentes}{7}
-\indexentry{Clases de Comunicaci\'on}{7}
-\indexentry{Cadena Irreducible}{7}
-\indexentry{Espacio de Rad\'on}{8}
-\indexentry{Semigrupo de Transici\'on de Markov}{8}
-\indexentry{Propiedad Simple de Markov}{8}
-\indexentry{Propiedad Simple de Markov}{8}
-\indexentry{Sistemas de Visita}{26}
-\indexentry{Sistemas de Espera}{26}
-\indexentry{Medidas de Desempe\~no}{26}
-\indexentry{Colas C\'iclicas}{26}
-\indexentry{Orden de visita}{26}
-\indexentry{Disciplina de Servicio}{27}
-\indexentry{Pol\'itica de Servicio}{27}
-\indexentry{Pol\'iticas Deterministas}{28}
-\indexentry{Ley de Pseudo-Conservaci\'on}{28}
-\indexentry{Tiempos de Espera}{28}
-\indexentry{Periodo de Intervisita}{28}
-\indexentry{Pol\'itica de Servicio Exhaustiva}{28}
-\indexentry{Tiempos de Espera}{29}
-\indexentry{Periodo de Intervisita}{29}
-\indexentry{Tiempos de inter-arribo}{29}
-\indexentry{Pol\'itica de Servicio}{29}
-\indexentry{Teorema de Continuidad}{30}
-\indexentry{Teorema de Abel}{31}
-\indexentry{Teorema de Convergencia Mon\'otona}{32}
-\indexentry{Cola $M/M/1$}{32}
+\indexentry{Sistemas de Visita}{1}
+\indexentry{Sistemas de Espera}{1}
+\indexentry{Medidas de Desempe\~no}{2}
+\indexentry{Colas C\'iclicas}{2}
+\indexentry{Orden de visita}{2}
+\indexentry{Disciplina de Servicio}{3}
+\indexentry{Pol\'itica de Servicio}{3}
+\indexentry{Pol\'iticas Deterministas}{3}
+\indexentry{Ley de Pseudo-Conservaci\'on}{3}
+\indexentry{Tiempos de Espera}{3}
+\indexentry{Periodo de Intervisita}{4}
+\indexentry{Pol\'itica de Servicio Exhaustiva}{4}
+\indexentry{Tiempos de Espera}{4}
+\indexentry{Periodo de Intervisita}{4}
+\indexentry{Tiempos de inter-arribo}{5}
+\indexentry{Pol\'itica de Servicio}{5}
+\indexentry{Teorema de Continuidad}{5}
+\indexentry{Teorema de Abel}{6}
+\indexentry{Teorema de Convergencia Mon\'otona}{7}
+\indexentry{Cola $M/M/1$}{8}

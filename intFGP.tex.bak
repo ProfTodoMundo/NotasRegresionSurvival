@@ -1,0 +1,727 @@
+
+%___________________________________________________________________________________________
+%
+\section{Funciones Generadoras de Probabilidades}
+%___________________________________________________________________________________________
+
+\begin{Teo}[Teorema de Continuidad]
+Sup\'ongase que $\left\{X_{n},n=1,2,3,\ldots\right\}$ son
+variables aleatorias finitas, no negativas con valores enteros
+tales que $P\left(X_{n}=k\right)=p_{k}^{(n)}$, para
+$n=1,2,3,\ldots$, $k=0,1,2,\ldots$, con
+$\sum_{k=0}^{\infty}p_{k}^{(n)}=1$, para $n=1,2,3,\ldots$. Sea
+$g_{n}$ la PGF para la variable aleatoria $X_{n}$. Entonces existe
+una sucesi\'on $\left\{p_{k}\right\}$ tal que
+\begin{eqnarray*}
+lim_{n\rightarrow\infty}p_{k}^{(n)}=p_{k}\textrm{ para }0<s<1.
+\end{eqnarray*}
+En este caso, $g\left(s\right)=\sum_{k=0}^{\infty}s^{k}p_{k}$.
+Adem\'as
+\begin{eqnarray*}
+\sum_{k=0}^{\infty}p_{k}=1\textrm{ si y s\'olo si
+}lim_{s\uparrow1}g\left(s\right)=1
+\end{eqnarray*}
+\end{Teo}
+
+\begin{Teo}
+Sea $N$ una variable aleatoria con valores enteros no negativos
+finita tal que $P\left(N=k\right)=p_{k}$, para $k=0,1,2,\ldots$, y
+$\sum_{k=0}^{\infty}p_{k}=P\left(N<\infty\right)=1$. Sea $\Phi$ la
+PGF de $N$ tal que
+$g\left(s\right)=\esp\left[s^{N}\right]=\sum_{k=0}^{\infty}s^{k}p_{k}$
+con $g\left(1\right)=1$. Si $0\leq p_{1}\leq1$ y
+$\esp\left[N\right]=g^{'}\left(1\right)\leq1$, entonces no existe
+soluci\'on  de la ecuaci\'on $g\left(s\right)=s$ en el intervalo
+$\left[0,1\right)$. Si $\esp\left[N\right]=g^{'}\left(1\right)>1$,
+lo cual implica que $0\leq p_{1}<1$, entonces existe una \'unica
+soluci\'on de la ecuaci\'on $g\left(s\right)=s$ en el intervalo
+$\left[0,1\right)$.
+\end{Teo}
+
+
+\begin{Teo}
+Si $X$ y $Y$ tienen PGF $G_{X}$ y $G_{Y}$ respectivamente,
+entonces,\[G_{X}\left(s\right)=G_{Y}\left(s\right)\] para toda
+$s$, si y s\'olo si \[P\left(X=k\right))=P\left(Y=k\right)\] para
+toda $k=0,1,\ldots,$., es decir, si y s\'olo si $X$ y $Y$ tienen
+la misma distribuci\'on de probabilidad.
+\end{Teo}
+
+
+\begin{Teo}
+Para cada $n$ fijo, sea la sucesi\'oin de probabilidades
+$\left\{a_{0,n},a_{1,n},\ldots,\right\}$, tales que $a_{k,n}\geq0$
+para toda $k=0,1,2,\ldots,$ y $\sum_{k\geq0}a_{k,n}=1$, y sea
+$G_{n}\left(s\right)$ la correspondiente funci\'on generadora,
+$G_{n}\left(s\right)=\sum_{k\geq0}a_{k,n}s^{k}$. De modo que para
+cada valor fijo de $k$
+\begin{eqnarray*}
+lim_{n\rightarrow\infty}a_{k,n}=a_{k},
+\end{eqnarray*}
+es decir converge en distribuci\'on, es necesario y suficiente que
+para cada valor fijo $s\in\left[0,\right)$,
+\begin{eqnarray*}
+lim_{n\rightarrow\infty}G_{n}\left(s\right)=G\left(s\right),
+\end{eqnarray*}
+donde $G\left(s\right)=\sum_{k\geq0}p_{k}s^{k}$, para cualquier
+
+la funci\'on generadora del l\'imite de la sucesi\'on.
+\end{Teo}
+
+\begin{Teo}[Teorema de Abel]
+Sea $G\left(s\right)=\sum_{k\geq0}a_{k}s^{k}$ para cualquier
+$\left\{p_{0},p_{1},\ldots,\right\}$, tales que $p_{k}\geq0$ para
+toda $k=0,1,2,\ldots,$. Entonces $G\left(s\right)$ es continua por
+la derecha en $s=1$, es decir
+\begin{eqnarray*}
+lim_{s\uparrow1}G\left(s\right)=\sum_{k\geq0}p_{k}=G\left(\right),
+\end{eqnarray*}
+sin importar si la suma es finita o no.
+\end{Teo}
+\begin{Note}
+El radio de Convergencia para cualquier PGF es $R\geq1$, entonces,
+el Teorema de Abel nos dice que a\'un en el peor escenario, cuando
+$R=1$, a\'un se puede confiar en que la PGF ser\'a continua en
+$s=1$, en contraste, no se puede asegurar que la PGF ser\'a
+continua en el l\'imite inferior $-R$, puesto que la PGF es
+sim\'etrica alrededor del cero: la PGF converge para todo
+$s\in\left(-R,R\right)$, y no lo hace para $s<-R$ o $s>R$.
+Adem\'as nos dice que podemos escribir $G_{X}\left(1\right)$ como
+una abreviaci\'on de $lim_{s\uparrow1}G_{X}\left(s\right)$.
+\end{Note}
+
+Entonces si suponemos que la diferenciaci\'on t\'ermino a
+t\'ermino est\'a permitida, entonces
+
+\begin{eqnarray*}
+G_{X}^{'}\left(s\right)&=&\sum_{x=1}^{\infty}xs^{x-1}p_{x}
+\end{eqnarray*}
+
+el Teorema de Abel nos dice que
+\begin{eqnarray*}
+\esp\left(X\right]&=&\lim_{s\uparrow1}G_{X}^{'}\left(s\right):\\
+\esp\left[X\right]&=&=\sum_{x=1}^{\infty}xp_{x}=G_{X}^{'}\left(1\right)\\
+&=&\lim_{s\uparrow1}G_{X}^{'}\left(s\right),
+\end{eqnarray*}
+dado que el Teorema de Abel se aplica a
+\begin{eqnarray*}
+G_{X}^{'}\left(s\right)&=&\sum_{x=1}^{\infty}xs^{x-1}p_{x},
+\end{eqnarray*}
+estableciendo as\'i que $G_{X}^{'}\left(s\right)$ es continua en
+$s=1$. Sin el Teorema de Abel no se podr\'ia asegurar que el
+l\'imite de $G_{X}^{'}\left(s\right)$ conforme $s\uparrow1$ sea la
+respuesta correcta para $\esp\left[X\right]$.
+
+\begin{Note}
+La PGF converge para todo $|s|<R$, para alg\'un $R$. De hecho la
+PGF converge absolutamente si $|s|<R$. La PGF adem\'as converge
+uniformemente en conjuntos de la forma
+$\left\{s:|s|<R^{'}\right\}$, donde $R^{'}<R$, es decir,
+$\forall\epsilon>0, \exists n_{0}\in\ent$ tal que $\forall s$, con
+$|s|<R^{'}$, y $\forall n\geq n_{0}$,
+\begin{eqnarray*}
+|\sum_{x=0}^{n}s^{x}\prob\left(X=x\right)-G_{X}\left(s\right)|<\epsilon.
+\end{eqnarray*}
+De hecho, la convergencia uniforme es la que nos permite
+diferenciar t\'ermino a t\'ermino:
+\begin{eqnarray*}
+G_{X}\left(s\right)=\esp\left[s^{X}\right]=\sum_{x=0}^{\infty}s^{x}\prob\left(X=x\right),
+\end{eqnarray*}
+y sea $s<R$.
+\begin{enumerate}
+\item
+\begin{eqnarray*}
+G_{X}^{'}\left(s\right)&=&\frac{d}{ds}\left(\sum_{x=0}^{\infty}s^{x}\prob\left(X=x\right)\right)=\sum_{x=0}^{\infty}\frac{d}{ds}\left(s^{x}\prob\left(X=x\right)\right)\\
+&=&\sum_{x=0}^{n}xs^{x-1}\prob\left(X=x\right).
+\end{eqnarray*}
+
+\item\begin{eqnarray*}
+\int_{a}^{b}G_{X}\left(s\right)ds&=&\int_{a}^{b}\left(\sum_{x=0}^{\infty}s^{x}\prob\left(X=x\right)\right)ds=\sum_{x=0}^{\infty}\left(\int_{a}^{b}s^{x}\prob\left(X=x\right)ds\right)\\
+&=&\sum_{x=0}^{\infty}\frac{s^{x+1}}{x+1}\prob\left(X=x\right),
+\end{eqnarray*}
+para $-R<a<b<R$.
+\end{enumerate}
+\end{Note}
+
+\begin{Teo}[Teorema de Convergencia Mon\'otona para PGF]
+Sean $X$ y $X_{n}$ variables aleatorias no negativas, con valores
+en los enteros, finitas, tales que
+\begin{eqnarray*}
+lim_{n\rightarrow\infty}G_{X_{n}}\left(s\right)&=&G_{X}\left(s\right)
+\end{eqnarray*}
+para $0\leq s\leq1$, entonces
+\begin{eqnarray*}
+lim_{n\rightarrow\infty}P\left(X_{n}=k\right)=P\left(X=k\right),
+\end{eqnarray*}
+para $k=0,1,2,\ldots.$
+\end{Teo}
+
+El teorema anterior requiere del siguiente lema
+
+\begin{Lemma}
+Sean $a_{n,k}\in\ent^{+}$, $n\in\nat$ constantes no negativas con
+$\sum_{k\geq0}a_{k,n}\leq1$. Sup\'ongase que para $0\leq s\leq1$,
+se tiene
+
+\begin{eqnarray*}
+a_{n}\left(s\right)&=&\sum_{k=0}^{\infty}a_{k,n}s^{k}\rightarrow
+a\left(s\right)=\sum_{k=0}^{\infty}a_{k}s^{k}.
+\end{eqnarray*}
+Entonces
+\begin{eqnarray*}
+a_{0,n}\rightarrow a_{0}.
+\end{eqnarray*}
+\end{Lemma}
+%_________________________________________________________________________
+%\section{El teorema de Rouche y las FGP}
+%_________________________________________________________________________
+
+
+
+%_________________________________________________________________________
+\section{El problema de la ruina del jugador}
+%_________________________________________________________________________
+
+Supongamos que se tiene un jugador que cuenta con un capital inicial de $\tilde{L}_{0}\geq0$ unidades, esta persona realiza una serie de dos juegos simult\'aneos e independientes de manera sucesiva, dichos eventos son independientes e id\'enticos entre s\'i para cada realizaci\'on. Para $n\geq0$ fijo, la ganancia en el $n$-\'esimo juego es $\tilde{X}_{n}=X_{n}+Y_{n}$ unidades de las cuales se resta una cuota de 1 unidad por cada juego simult\'aneo, es decir, se restan dos unidades por cada juego realizado. En t\'erminos de la teor\'ia de colas puede pensarse como el n\'umero de usuarios que llegan a una cola v\'ia dos procesos de arribo distintos e independientes entre s\'i. Su Funci\'on Generadora de Probabilidades (FGP) est\'a dada por $F\left(z\right)=\esp\left[z^{\tilde{L}_{0}}\right]$ para $z\in\mathbb{C}$, adem\'as
+$$\tilde{P}\left(z\right)=\esp\left[z^{\tilde{X}_{n}}\right]=\esp\left[z^{X_{n}+Y_{n}}\right]=\esp\left[z^{X_{n}}z^{Y_{n}}\right]=\esp\left[z^{X_{n}}\right]\esp\left[z^{Y_{n}}\right]=P\left(z\right)\check{P}\left(z\right),$$ con $\tilde{\mu}=\esp\left[\tilde{X}_{n}\right]=\tilde{P}\left[z\right]<1$. Sea $\tilde{L}_{n}$ el capital remanente despu\'es del $n$-\'esimo
+juego. Entonces
+
+$$\tilde{L}_{n}=\tilde{L}_{0}+\tilde{X}_{1}+\tilde{X}_{2}+\cdots+\tilde{X}_{n}-2n.$$
+
+La ruina del jugador ocurre despu\'es del $n$-\'esimo juego, es decir, la cola se vac\'ia despu\'es del $n$-\'esimo juego, entonces sea $T$ definida como $T=min\left\{\tilde{L}_{n}=0\right\}$. Si $\tilde{L}_{0}=0$, entonces claramente $T=0$. En este sentido $T$ puede interpretarse como la longitud del periodo de tiempo que el servidor ocupa para dar servicio en la cola, comenzando con $\tilde{L}_{0}$ grupos de usuarios presentes en la cola, quienes arribaron conforme a un proceso dado por $\tilde{P}\left(z\right)$.
+
+Sea $g_{n,k}$ la probabilidad del evento de que el jugador no caiga en ruina antes del $n$-\'esimo juego, y que adem\'as tenga un capital de $k$ unidades antes del $n$-\'esimo juego, es decir, dada $n\in\left\{1,2,\ldots\right\}$ y $k\in\left\{0,1,2,\ldots\right\}$
+\begin{eqnarray*}
+g_{n,k}:=P\left\{\tilde{L}_{j}>0, j=1,\ldots,n,
+\tilde{L}_{n}=k\right\},
+\end{eqnarray*}
+la cual adem\'as se puede escribir como:
+\begin{eqnarray*}
+g_{n,k}&=&P\left\{\tilde{L}_{j}>0, j=1,\ldots,n,
+\tilde{L}_{n}=k\right\}=\sum_{j=1}^{k+1}g_{n-1,j}P\left\{\tilde{X}_{n}=k-j+1\right\}\\
+&=&\sum_{j=1}^{k+1}g_{n-1,j}P\left\{X_{n}+Y_{n}=k-j+1\right\}=\sum_{j=1}^{k+1}\sum_{l=1}^{j}g_{n-1,j}P\left\{X_{n}+Y_{n}=k-j+1,Y_{n}=l\right\}\\
+&=&\sum_{j=1}^{k+1}\sum_{l=1}^{j}g_{n-1,j}P\left\{X_{n}+Y_{n}=k-j+1|Y_{n}=l\right\}P\left\{Y_{n}=l\right\}\\
+&=&\sum_{j=1}^{k+1}\sum_{l=1}^{j}g_{n-1,j}P\left\{X_{n}=k-j-l+1\right\}P\left\{Y_{n}=l\right\},
+\end{eqnarray*}
+
+es decir
+\begin{eqnarray}\label{Eq.Gnk.2S}
+g_{n,k}=\sum_{j=1}^{k+1}\sum_{l=1}^{j}g_{n-1,j}P\left\{X_{n}=k-j-l+1\right\}P\left\{Y_{n}=l\right\}.
+\end{eqnarray}
+Adem\'as
+\begin{equation}\label{Eq.L02S}
+g_{0,k}=P\left\{\tilde{L}_{0}=k\right\}.
+\end{equation}
+Se definen las siguientes FGP:
+\begin{equation}\label{Eq.3.16.a.2S}
+G_{n}\left(z\right)=\sum_{k=0}^{\infty}g_{n,k}z^{k},\textrm{ para
+}n=0,1,\ldots,
+\end{equation}
+y 
+\begin{equation}\label{Eq.3.16.b.2S}
+G\left(z,w\right)=\sum_{n=0}^{\infty}G_{n}\left(z\right)w^{n}, z,w\in\mathbb{C}.
+\end{equation}
+En particular para $k=0$,
+\begin{eqnarray*}
+g_{n,0}=G_{n}\left(0\right)=P\left\{\tilde{L}_{j}>0,\textrm{ para
+}j<n,\textrm{ y }\tilde{L}_{n}=0\right\}=P\left\{T=n\right\},
+\end{eqnarray*}
+adem\'as
+\begin{eqnarray*}%\label{Eq.G0w.2S}
+G\left(0,w\right)=\sum_{n=0}^{\infty}G_{n}\left(0\right)w^{n}=\sum_{n=0}^{\infty}P\left\{T=n\right\}w^{n}
+=\esp\left[w^{T}\right]
+\end{eqnarray*}
+la cu\'al resulta ser la FGP del tiempo de ruina $T$.
+
+
+\begin{Prop}\label{Prop.1.1.2S}
+Sean $z,w\in\mathbb{C}$ y sea $n\geq0$ fijo. Para $G_{n}\left(z\right)$ y $G\left(z,w\right)$ definidas como en
+(\ref{Eq.3.16.a.2S}) y (\ref{Eq.3.16.b.2S}) respectivamente, se tiene que
+\begin{equation}\label{Eq.Pag.45}
+G_{n}\left(z\right)=\frac{1}{z}\left[G_{n-1}\left(z\right)-G_{n-1}\left(0\right)\right]\tilde{P}\left(z\right).
+\end{equation}
+
+Adem\'as
+
+
+\begin{equation}\label{Eq.Pag.46}
+G\left(z,w\right)=\frac{zF\left(z\right)-wP\left(z\right)G\left(0,w\right)}{z-wR\left(z\right)},
+\end{equation}
+
+con un \'unico polo en el c\'irculo unitario, adem\'as, el polo es
+de la forma $z=\theta\left(w\right)$ y satisface que
+
+\begin{enumerate}
+\item[i)]$\tilde{\theta}\left(1\right)=1$,
+
+\item[ii)] $\tilde{\theta}^{(1)}\left(1\right)=\frac{1}{1-\tilde{\mu}}$,
+
+\item[iii)]
+$\tilde{\theta}^{(2)}\left(1\right)=\frac{\tilde{\mu}}{\left(1-\tilde{\mu}\right)^{2}}+\frac{\tilde{\sigma}}{\left(1-\tilde{\mu}\right)^{3}}$.
+\end{enumerate}
+
+Finalmente, adem\'as se cumple que
+\begin{equation}
+\esp\left[w^{T}\right]=G\left(0,w\right)=F\left[\tilde{\theta}\left(w\right)\right].
+\end{equation}
+\end{Prop}
+\begin{proof}
+
+Multiplicando las ecuaciones (\ref{Eq.Gnk.2S}) y (\ref{Eq.L02S})
+por el t\'ermino $z^{k}$:
+
+\begin{eqnarray*}
+g_{n,k}z^{k}&=&\sum_{j=1}^{k+1}\sum_{l=1}^{j}g_{n-1,j}P\left\{X_{n}=k-j-l+1\right\}P\left\{Y_{n}=l\right\}z^{k},\\
+g_{0,k}z^{k}&=&P\left\{\tilde{L}_{0}=k\right\}z^{k},
+\end{eqnarray*}
+
+ahora sumamos sobre $k$
+\begin{eqnarray*}
+\sum_{k=0}^{\infty}g_{n,k}z^{k}&=&\sum_{k=0}^{\infty}\sum_{j=1}^{k+1}\sum_{l=1}^{j}g_{n-1,j}P\left\{X_{n}=k-j-l+1\right\}P\left\{Y_{n}=l\right\}z^{k}\\
+&=&\sum_{k=0}^{\infty}z^{k}\sum_{j=1}^{k+1}\sum_{l=1}^{j}g_{n-1,j}P\left\{X_{n}=k-\left(j+l
+-1\right)\right\}P\left\{Y_{n}=l\right\}\\
+&=&\sum_{k=0}^{\infty}z^{k+\left(j+l-1\right)-\left(j+l-1\right)}\sum_{j=1}^{k+1}\sum_{l=1}^{j}g_{n-1,j}P\left\{X_{n}=k-
+\left(j+l-1\right)\right\}P\left\{Y_{n}=l\right\}\\
+&=&\sum_{k=0}^{\infty}\sum_{j=1}^{k+1}\sum_{l=1}^{j}g_{n-1,j}z^{j-1}P\left\{X_{n}=k-
+\left(j+l-1\right)\right\}z^{k-\left(j+l-1\right)}P\left\{Y_{n}=l\right\}z^{l}\\
+&=&\sum_{j=1}^{\infty}\sum_{l=1}^{j}g_{n-1,j}z^{j-1}\sum_{k=j+l-1}^{\infty}P\left\{X_{n}=k-
+\left(j+l-1\right)\right\}z^{k-\left(j+l-1\right)}P\left\{Y_{n}=l\right\}z^{l}\\
+&=&\sum_{j=1}^{\infty}g_{n-1,j}z^{j-1}\sum_{l=1}^{j}\sum_{k=j+l-1}^{\infty}P\left\{X_{n}=k-
+\left(j+l-1\right)\right\}z^{k-\left(j+l-1\right)}P\left\{Y_{n}=l\right\}z^{l}\\
+&=&\sum_{j=1}^{\infty}g_{n-1,j}z^{j-1}\sum_{k=j+l-1}^{\infty}\sum_{l=1}^{j}P\left\{X_{n}=k-
+\left(j+l-1\right)\right\}z^{k-\left(j+l-1\right)}P\left\{Y_{n}=l\right\}z^{l}\\
+&=&\sum_{j=1}^{\infty}g_{n-1,j}z^{j-1}\sum_{k=j+l-1}^{\infty}\sum_{l=1}^{j}P\left\{X_{n}=k-
+\left(j+l-1\right)\right\}z^{k-\left(j+l-1\right)}\sum_{l=1}^{j}P
+\left\{Y_{n}=l\right\}z^{l}\\
+\end{eqnarray*}
+\begin{eqnarray*}
+&=&\sum_{j=1}^{\infty}g_{n-1,j}z^{j-1}\sum_{l=1}^{\infty}P\left\{Y_{n}=l\right\}z^{l}
+\sum_{k=j+l-1}^{\infty}\sum_{l=1}^{j}
+P\left\{X_{n}=k-\left(j+l-1\right)\right\}z^{k-\left(j+l-1\right)}\\
+&=&\frac{1}{z}\left[G_{n-1}\left(z\right)-G_{n-1}\left(0\right)\right]\check{P}\left(z\right)
+\sum_{k=j+l-1}^{\infty}\sum_{l=1}^{j}
+P\left\{X_{n}=k-\left(j+l-1\right)\right\}z^{k-\left(j+l-1\right)}\\
+&=&\frac{1}{z}\left[G_{n-1}\left(z\right)-G_{n-1}\left(0\right)\right]\check{P}\left(z\right)P\left(z\right)=\frac{1}{z}\left[G_{n-1}\left(z\right)-G_{n-1}\left(0\right)\right]\tilde{P}\left(z\right),
+\end{eqnarray*}
+es decir la ecuaci\'on (\ref{Eq.3.16.a.2S}) se puede reescribir como
+\begin{equation}\label{Eq.3.16.a.2Sbis}
+G_{n}\left(z\right)=\frac{1}{z}\left[G_{n-1}\left(z\right)-G_{n-1}\left(0\right)\right]\tilde{P}\left(z\right).
+\end{equation}
+
+Por otra parte recordemos la ecuaci\'on (\ref{Eq.3.16.a.2S})
+\begin{eqnarray*}
+G_{n}\left(z\right)&=&\sum_{k=0}^{\infty}g_{n,k}z^{k},\textrm{ entonces }\frac{G_{n}\left(z\right)}{z}=\sum_{k=1}^{\infty}g_{n,k}z^{k-1},
+\end{eqnarray*}
+
+por lo tanto utilizando la ecuaci\'on (\ref{Eq.3.16.a.2Sbis}):
+
+\begin{eqnarray*}
+G\left(z,w\right)&=&\sum_{n=0}^{\infty}G_{n}\left(z\right)w^{n}=G_{0}\left(z\right)+
+\sum_{n=1}^{\infty}G_{n}\left(z\right)w^{n}=F\left(z\right)+\sum_{n=0}^{\infty}\left[G_{n}\left(z\right)-G_{n}\left(0\right)\right]w^{n}\frac{\tilde{P}\left(z\right)}{z}\\
+&=&F\left(z\right)+\frac{w}{z}\sum_{n=0}^{\infty}\left[G_{n}\left(z\right)-G_{n}\left(0\right)\right]w^{n-1}\tilde{P}\left(z\right)
+\end{eqnarray*}
+es decir
+\begin{eqnarray*}
+G\left(z,w\right)&=&F\left(z\right)+\frac{w}{z}\left[G\left(z,w\right)-G\left(0,w\right)\right]\tilde{P}\left(z\right),
+\end{eqnarray*}
+entonces
+\begin{eqnarray*}
+G\left(z,w\right)=F\left(z\right)+\frac{w}{z}\left[G\left(z,w\right)-G\left(0,w\right)\right]\tilde{P}\left(z\right)&=&F\left(z\right)+\frac{w}{z}\tilde{P}\left(z\right)G\left(z,w\right)-\frac{w}{z}\tilde{P}\left(z\right)G\left(0,w\right)\\
+&\Leftrightarrow&\\
+G\left(z,w\right)\left\{1-\frac{w}{z}\tilde{P}\left(z\right)\right\}&=&F\left(z\right)-\frac{w}{z}\tilde{P}\left(z\right)G\left(0,w\right),
+\end{eqnarray*}
+por lo tanto,
+\begin{equation}
+G\left(z,w\right)=\frac{zF\left(z\right)-w\tilde{P}\left(z\right)G\left(0,w\right)}{1-w\tilde{P}\left(z\right)}.
+\end{equation}
+Ahora $G\left(z,w\right)$ es anal\'itica en $|z|=1$. Sean $z,w$ tales que $|z|=1$ y $|w|\leq1$, como $\tilde{P}\left(z\right)$ es FGP
+\begin{eqnarray*}
+|z-\left(z-w\tilde{P}\left(z\right)\right)|<|z|\Leftrightarrow|w\tilde{P}\left(z\right)|<|z|
+\end{eqnarray*}
+es decir, se cumplen las condiciones del Teorema de Rouch\'e y por
+tanto, $z$ y $z-w\tilde{P}\left(z\right)$ tienen el mismo n\'umero de
+ceros en $|z|=1$. Sea $z=\tilde{\theta}\left(w\right)$ la soluci\'on
+\'unica de $z-w\tilde{P}\left(z\right)$, es decir
+\begin{equation}\label{Eq.Theta.w}
+\tilde{\theta}\left(w\right)-w\tilde{P}\left(\tilde{\theta}\left(w\right)\right)=0,
+\end{equation}
+ con $|\tilde{\theta}\left(w\right)|<1$. Cabe hacer menci\'on que $\tilde{\theta}\left(w\right)$ es la FGP para el tiempo de ruina cuando $\tilde{L}_{0}=1$. Considerando la ecuaci\'on (\ref{Eq.Theta.w})
+\begin{eqnarray*}
+0&=&\frac{\partial}{\partial w}\tilde{\theta}\left(w\right)|_{w=1}-\frac{\partial}{\partial w}\left\{w\tilde{P}\left(\tilde{\theta}\left(w\right)\right)\right\}|_{w=1}=\tilde{\theta}^{(1)}\left(w\right)|_{w=1}-\frac{\partial}{\partial w}w\left\{\tilde{P}\left(\tilde{\theta}\left(w\right)\right)\right\}|_{w=1}\\
+&-&w\frac{\partial}{\partial w}\tilde{P}\left(\tilde{\theta}\left(w\right)\right)|_{w=1}=\tilde{\theta}^{(1)}\left(1\right)-\tilde{P}\left(\tilde{\theta}\left(1\right)\right)-w\left\{\frac{\partial \tilde{P}\left(\tilde{\theta}\left(w\right)\right)}{\partial \tilde{\theta}\left(w\right)}\cdot\frac{\partial\tilde{\theta}\left(w\right)}{\partial w}|_{w=1}\right\}\\
+&=&\tilde{\theta}^{(1)}\left(1\right)-\tilde{P}\left(\tilde{\theta}\left(1\right)
+\right)-\tilde{P}^{(1)}\left(\tilde{\theta}\left(1\right)\right)\cdot\tilde{\theta}^{(1)}\left(1\right),
+\end{eqnarray*}
+luego
+$$\tilde{P}\left(\tilde{\theta}\left(1\right)\right)=\tilde{\theta}^{(1)}\left(1\right)-\tilde{P}^{(1)}\left(\tilde{\theta}\left(1\right)\right)\cdot
+\tilde{\theta}^{(1)}\left(1\right)=\tilde{\theta}^{(1)}\left(1\right)\left(1-\tilde{P}^{(1)}\left(\tilde{\theta}\left(1\right)\right)\right),$$
+por tanto $$\tilde{\theta}^{(1)}\left(1\right)=\frac{\tilde{P}\left(\tilde{\theta}\left(1\right)\right)}{\left(1-\tilde{P}^{(1)}\left(\tilde{\theta}\left(1\right)\right)\right)}=\frac{1}{1-\tilde{\mu}}.$$
+Ahora determinemos el segundo momento de $\tilde{\theta}\left(w\right)$,
+nuevamente consideremos la ecuaci\'on (\ref{Eq.Theta.w}):
+\begin{eqnarray*}
+0&=&\tilde{\theta}\left(w\right)-w\tilde{P}\left(\tilde{\theta}\left(w\right)\right)\Rightarrow 0=\frac{\partial}{\partial w}\left\{\tilde{\theta}\left(w\right)-w\tilde{P}\left(\tilde{\theta}\left(w\right)\right)\right\}\Rightarrow 0=\frac{\partial}{\partial w}\left\{\frac{\partial}{\partial w}\left\{\tilde{\theta}\left(w\right)-w\tilde{P}\left(\tilde{\theta}\left(w\right)\right)\right\}\right\}
+\end{eqnarray*}
+luego se tiene
+\begin{eqnarray*}
+&&\frac{\partial}{\partial w}\left\{\frac{\partial}{\partial w}\tilde{\theta}\left(w\right)-\frac{\partial}{\partial w}\left[w\tilde{P}\left(\tilde{\theta}\left(w\right)\right)\right]\right\}
+=\frac{\partial}{\partial w}\left\{\frac{\partial}{\partial w}\tilde{\theta}\left(w\right)-\frac{\partial}{\partial w}\left[w\tilde{P}\left(\tilde{\theta}\left(w\right)\right)\right]\right\}\\
+&=&\frac{\partial}{\partial w}\left\{\frac{\partial \tilde{\theta}\left(w\right)}{\partial w}-\left[\tilde{P}\left(\tilde{\theta}\left(w\right)\right)+w\frac{\partial}{\partial w}P\left(\tilde{\theta}\left(w\right)\right)\right]\right\}\\
+&=&\frac{\partial}{\partial w}\left\{\frac{\partial \tilde{\theta}\left(w\right)}{\partial w}-\left(\tilde{P}\left(\tilde{\theta}\left(w\right)\right)+w\frac{\partial \tilde{P}\left(\tilde{\theta}\left(w\right)\right)}{\partial w}\frac{\partial \tilde{\theta}\left(w\right)}{\partial w}\right]\right\}\\
+&=&\frac{\partial}{\partial w}\left\{\tilde{\theta}^{(1)}\left(w\right)-\tilde{P}\left(\tilde{\theta}\left(w\right)\right)-w\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)\tilde{\theta}^{(1)}\left(w\right)\right\}\\
+&=&\frac{\partial}{\partial w}\tilde{\theta}^{(1)}\left(w\right)-\frac{\partial}{\partial w}\tilde{P}\left(\tilde{\theta}\left(w\right)\right)-\frac{\partial}{\partial w}\left[w\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)\tilde{\theta}^{(1)}\left(w\right)\right]\\
+&=&\frac{\partial}{\partial
+w}\tilde{\theta}^{(1)}\left(w\right)-\frac{\partial
+\tilde{P}\left(\tilde{\theta}\left(w\right)\right)}{\partial
+\tilde{\theta}\left(w\right)}\frac{\partial \tilde{\theta}\left(w\right)}{\partial
+w}-\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)\tilde{\theta}^{(1)}\left(w\right)
+-w\frac{\partial\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)}{\partial
+w}\tilde{\theta}^{(1)}\left(w\right)\\
+&-&w\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)\frac{\partial
+\tilde{\theta}^{(1)}\left(w\right)}{\partial w}\\
+&=&\tilde{\theta}^{(2)}\left(w\right)-\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)\tilde{\theta}^{(1)}\left(w\right)
+-\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)\tilde{\theta}^{(1)}\left(w\right)
+-w\tilde{P}^{(2)}\left(\tilde{\theta}\left(w\right)\right)\left(\tilde{\theta}^{(1)}\left(w\right)\right)^{2}
+\end{eqnarray*}
+\begin{eqnarray*}
+&-&w\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)\tilde{\theta}^{(2)}\left(w\right)\\
+&=&\tilde{\theta}^{(2)}\left(w\right)-2\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)\tilde{\theta}^{(1)}\left(w\right)-w\tilde{P}^{(2)}\left(\tilde{\theta}\left(w\right)\right)\left(\tilde{\theta}^{(1)}\left(w\right)\right)^{2}-w\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)\tilde{\theta}^{(2)}\left(w\right)\\
+&=&\tilde{\theta}^{(2)}\left(w\right)\left[1-w\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)\right]-
+\tilde{\theta}^{(1)}\left(w\right)\left[w\tilde{\theta}^{(1)}\left(w\right)\tilde{P}^{(2)}\left(\tilde{\theta}\left(w\right)\right)+2\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)\right]
+\end{eqnarray*}
+luego
+\begin{eqnarray*}
+\tilde{\theta}^{(2)}\left(w\right)&&\left[1-w\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)\right]-\tilde{\theta}^{(1)}\left(w\right)\left[w\tilde{\theta}^{(1)}\left(w\right)\tilde{P}^{(2)}\left(\tilde{\theta}\left(w\right)\right)
++2\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)\right]=0\\
+\tilde{\theta}^{(2)}\left(w\right)&=&\frac{\tilde{\theta}^{(1)}\left(w\right)\left[w\tilde{\theta}^{(1)}\left(w\right)\tilde{P}^{(2)}\left(\tilde{\theta}\left(w\right)\right)+2P^{(1)}\left(\tilde{\theta}\left(w\right)\right)\right]}{1-w\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)}\\
+&=&\frac{\tilde{\theta}^{(1)}\left(w\right)w\tilde{\theta}^{(1)}\left(w\right)\tilde{P}^{(2)}\left(\tilde{\theta}\left(w\right)\right)}{1-w\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)}+\frac{2\tilde{\theta}^{(1)}\left(w\right)\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)}{1-w\tilde{P}^{(1)}\left(\tilde{\theta}\left(w\right)\right)}
+\end{eqnarray*}
+si evaluamos la expresi\'on anterior en $w=1$:
+\begin{eqnarray*}
+\tilde{\theta}^{(2)}\left(1\right)&=&\frac{\left(\tilde{\theta}^{(1)}\left(1\right)\right)^{2}\tilde{P}^{(2)}\left(\tilde{\theta}\left(1\right)\right)}{1-\tilde{P}^{(1)}\left(\tilde{\theta}\left(1\right)\right)}+\frac{2\tilde{\theta}^{(1)}\left(1\right)\tilde{P}^{(1)}\left(\tilde{\theta}\left(1\right)\right)}{1-\tilde{P}^{(1)}\left(\tilde{\theta}\left(1\right)\right)}=\frac{\left(\tilde{\theta}^{(1)}\left(1\right)\right)^{2}\tilde{P}^{(2)}\left(1\right)}{1-\tilde{P}^{(1)}\left(1\right)}+\frac{2\tilde{\theta}^{(1)}\left(1\right)\tilde{P}^{(1)}\left(1\right)}{1-\tilde{P}^{(1)}\left(1\right)}\\
+&=&\frac{\left(\frac{1}{1-\tilde{\mu}}\right)^{2}\tilde{P}^{(2)}\left(1\right)}{1-\tilde{\mu}}+\frac{2\left(\frac{1}{1-\tilde{\mu}}\right)\tilde{\mu}}{1-\tilde{\mu}}=\frac{\tilde{P}^{(2)}\left(1\right)}{\left(1-\tilde{\mu}\right)^{3}}+\frac{2\tilde{\mu}}{\left(1-\tilde{\mu}\right)^{2}}=\frac{\sigma^{2}-\tilde{\mu}+\tilde{\mu}^{2}}{\left(1-\tilde{\mu}\right)^{3}}+\frac{2\tilde{\mu}}{\left(1-\tilde{\mu}\right)^{2}}\\
+&=&\frac{\sigma^{2}-\tilde{\mu}+\tilde{\mu}^{2}+2\tilde{\mu}\left(1-\tilde{\mu}\right)}{\left(1-\tilde{\mu}\right)^{3}}
+\end{eqnarray*}
+es decir
+\begin{eqnarray*}
+\tilde{\theta}^{(2)}\left(1\right)&=&\frac{\sigma^{2}}{\left(1-\tilde{\mu}\right)^{3}}+\frac{\tilde{\mu}}{\left(1-\tilde{\mu}\right)^{2}}.
+\end{eqnarray*}
+\end{proof}
+
+\begin{Coro}
+El tiempo de ruina del jugador tiene primer y segundo momento dados por
+\begin{eqnarray}
+\esp\left[T\right]&=&\frac{\esp\left[\tilde{L}_{0}\right]}{1-\tilde{\mu}}\\
+Var\left[T\right]&=&\frac{Var\left[\tilde{L}_{0}\right]}{\left(1-\tilde{\mu}\right)^{2}}+\frac{\sigma^{2}\esp\left[\tilde{L}_{0}\right]}{\left(1-\tilde{\mu}\right)^{3}}.
+\end{eqnarray}
+\end{Coro}
+%_________________________________________________________________________________________________
+\section{Sistemas de visitas: Ecuaciones Recursivas}
+%__________________________________________________________________________________________________
+
+
+
+%__________________________________________________________________________
+\subsection{Definiciones}
+%__________________________________________________________________________
+
+Se considerar\'an intervalos de tiempo de la forma
+$\left[t,t+1\right]$. Los usuarios arriban por paquetes de manera
+independiente del resto de las colas. Se define el grupo de
+usuarios que llegan a cada una de las colas del sistema 1,
+caracterizadas por $Q_{1}$ y $Q_{2}$ respectivamente, en el
+intervalo de tiempo $\left[t,t+1\right]$ por
+$X_{1}\left(t\right),X_{2}\left(t\right)$.
+
+
+
+Para cada uno de los procesos anteriores se define su Funci\'on
+Generadora de Probabilidades (PGF):
+
+\begin{eqnarray*}
+\begin{array}{cc}
+P_{1}\left(z_{1}\right)=\esp\left[z_{1}^{X_{1}\left(t\right)}\right], & P_{2}\left(z_{2}\right)=\esp\left[z_{2}^{X_{2}\left(t\right)}\right].\\
+\end{array}
+\end{eqnarray*}
+
+Con primer momento definidos por
+
+\begin{eqnarray*}
+%\begin{array}{cc}
+\mu_{1}&=&\esp\left[X_{1}\left(t\right)\right]=P_{1}^{(1)}\left(1\right),\\
+\mu_{2}&=&\esp\left[X_{2}\left(t\right)\right]=P_{2}^{(1)}\left(1\right).\\
+%\end{array}
+\end{eqnarray*}
+
+
+En lo que respecta al servidor, en t\'erminos de los tiempos de
+visita a cada una de las colas, se denotar\'an por
+$\tau_{1},\tau_{2}$ para $Q_{1},Q_{2}$ respectivamente; y a los
+tiempos en que el servidor termina de atender en las colas
+$Q_{1},Q_{2}$, se les denotar\'a por
+$\overline{\tau}_{1},\overline{\tau}_{2}$ respectivamente.
+Entonces, los tiempos de servicio est\'an dados por las
+diferencias
+$\overline{\tau}_{1}-\tau_{1},\overline{\tau}_{2}-\tau_{2}$ para
+$Q_{1},Q_{2}$. An\'alogamente los tiempos de traslado del servidor
+desde el momento en que termina de atender a una cola y llega a la
+siguiente para comenzar a dar servicio est\'an dados por
+$\tau_{2}-\overline{\tau}_{1},\tau_{1}-\overline{\tau}_{2}$.
+
+
+La FGP para estos tiempos de traslado est\'an dados por
+
+\begin{eqnarray*}
+\begin{array}{cc}
+R_{1}\left(z_{1}\right)=\esp\left[z_{1}^{\tau_{2}-\overline{\tau}_{1}}\right],
+&
+R_{2}\left(z_{2}\right)=\esp\left[z_{2}^{\tau_{1}-\overline{\tau}_{2}}\right],
+\end{array}
+\end{eqnarray*}
+
+y al igual que como se hizo con anterioridad
+
+\begin{eqnarray*}
+\begin{array}{cc}
+r_{1}=R_{1}^{(1)}\left(1\right)=\esp\left[\tau_{2}-\overline{\tau}_{1}\right],
+&
+r_{2}=R_{2}^{(1)}\left(1\right)=\esp\left[\tau_{1}-\overline{\tau}_{2}\right],\\
+\end{array}
+\end{eqnarray*}
+
+
+Sean $\alpha_{1},\alpha_{2}$ el n\'umero de usuarios que arriban
+en grupo a la cola $Q_{1}$ y $Q_{2}$ respectivamente. Sus PGF's
+est\'an definidas como
+
+\begin{eqnarray*}
+\begin{array}{cc}
+A_{1}\left(z\right)=\esp\left[z^{\alpha_{1}\left(t\right)}\right],&
+A_{2}\left(z\right)=\esp\left[z^{\alpha_{2}\left(t\right)}\right].\\
+\end{array}
+\end{eqnarray*}
+
+Su primer momento est\'a dado por
+
+\begin{eqnarray*}
+\begin{array}{cc}
+\lambda_{1}=\esp\left[\alpha_{1}\left(t\right)\right]=A_{1}^{(1)}\left(1\right),&
+\lambda_{2}=\esp\left[\alpha_{2}\left(t\right)\right]=A_{2}^{(1)}\left(1\right).\\
+\end{array}
+\end{eqnarray*}
+
+
+Sean $\beta_{1},\beta_{2}$ el n\'umero de usuarios que arriban en
+el grupo $\alpha_{1},\alpha_{2}$ a la cola $Q_{1}$ y $Q_{2}$,
+respectivamente, de igual manera se definen sus PGF's
+
+\begin{eqnarray*}
+\begin{array}{cc}
+B_{1}\left(z\right)=\esp\left[z^{\beta_{1}\left(t\right)}\right],&
+B_{2}\left(z\right)=\esp\left[z^{\beta_{2}\left(t\right)}\right],\\
+\end{array}
+\end{eqnarray*}
+
+con
+
+\begin{eqnarray*}
+\begin{array}{cc}
+b_{1}=\esp\left[\beta_{1}\left(t\right)\right]=B_{1}^{(1)}\left(1\right),&
+b_{2}=\esp\left[\beta_{2}\left(t\right)\right]=B_{2}^{(1)}\left(1\right).\\
+\end{array}
+\end{eqnarray*}
+
+La distribuci\'on para el n\'umero de grupos que arriban al
+sistema en cada una de las colas se definen por:
+
+\begin{eqnarray*}
+\begin{array}{cc}
+P_{1}\left(z_{1}\right)=A_{1}\left[B_{1}\left(z_{1}\right)\right]=\esp\left[B_{1}\left(z_{1}\right)^{\alpha_{1}\left(t\right)}\right],&
+P_{2}\left(z_{1}\right)=A_{1}\left[B_{1}\left(z_{1}\right)\right]=\esp\left[B_{1}\left(z_{1}\right)^{\alpha_{1}\left(t\right)}\right],\\
+\end{array}
+\end{eqnarray*}
+
+entonces
+
+\begin{eqnarray*}
+P_{1}^{(1)}\left(1\right)&=&\esp\left[\alpha_{1}\left(t\right)B_{1}^{(1)}\left(1\right)\right]=B_{1}^{(1)}\left(1\right)\esp\left[\alpha_{1}\left(t\right)\right]=\lambda_{1}b_{1}\\
+P_{2}^{(1)}\left(1\right)&=&\esp\left[\alpha_{2}\left(t\right)B_{2}^{(1)}\left(1\right)\right]=B_{2}^{(1)}\left(1\right)\esp\left[\alpha_{2}\left(t\right)\right]=\lambda_{2}b_{2}.\\
+\end{eqnarray*}
+
+
+
+
+%\end{Def}
+
+%________________________________________________________
+\subsection{Funciones Generadoras de Probabilidad Conjunta}
+%________________________________________________________
+
+
+De lo desarrollado hasta ahora se tiene lo siguiente
+
+\begin{eqnarray*}
+&&\esp\left[z_{1}^{L_{1}\left(\overline{\tau}_{1}\right)}z_{2}^{L_{2}\left(\overline{\tau}_{1}\right)}\right]=\esp\left[z_{2}^{L_{2}\left(\overline{\tau}_{1}\right)}\right]=\esp\left[z_{2}^{L_{2}\left(\tau_{1}\right)+X_{2}\left(\overline{\tau}_{1}-\tau_{1}\right)}\right]\\
+&=&\esp\left[\left\{z_{2}^{L_{2}\left(\tau_{1}\right)}\right\}\left\{z_{2}^{X_{2}\left(\overline{\tau}_{1}-\tau_{1}\right)}\right\}\right]=\esp\left[\left\{z_{2}^{L_{2}\left(\tau_{1}\right)}\right\}\left\{P_{2}\left(z_{2}\right)\right\}^{\overline{\tau}_{1}-\tau_{1}}\right]\\
+&=&\esp\left[\left\{z_{2}^{L_{2}\left(\tau_{1}\right)}\right\}\left\{\theta_{1}\left(P_{2}\left(z_{2}\right)\right)\right\}^{L_{1}\left(\tau_{1}\right)}\right]=F_{1}\left(\theta_{1}\left(P_{2}\left(z_{2}\right)\right),z_{2}\right)
+\end{eqnarray*}
+
+es decir %{{\tiny
+\begin{equation}\label{Eq.base.F1}
+\esp\left[z_{1}^{L_{1}\left(\overline{\tau}_{1}\right)}z_{2}^{L_{2}\left(\overline{\tau}_{1}\right)}\right]=F_{1}\left(\theta_{1}\left(P_{2}\left(z_{2}\right)\right),z_{2}\right).
+\end{equation}
+
+Procediendo de manera an\'aloga para $\overline{\tau}_{2}$:
+
+\begin{eqnarray*}
+\esp\left[z_{1}^{L_{1}\left(\overline{\tau}_{2}\right)}z_{2}^{L_{2}\left(\overline{\tau}_{2}\right)}\right]&=&\esp\left[z_{1}^{L_{1}\left(\overline{\tau}_{2}\right)}\right]=\esp\left[z_{1}^{L_{1}\left(\tau_{2}\right)+X_{1}\left(\overline{\tau}_{2}-\tau_{2}\right)}\right]=\esp\left[\left\{z_{1}^{L_{1}\left(\tau_{2}\right)}\right\}\left\{z_{1}^{X_{1}\left(\overline{\tau}_{2}-\tau_{2}\right)}\right\}\right]\\
+&=&\esp\left[\left\{z_{1}^{L_{1}\left(\tau_{2}\right)}\right\}\left\{P_{1}\left(z_{1}\right)\right\}^{\overline{\tau}_{2}-\tau_{2}}\right]=\esp\left[\left\{z_{1}^{L_{1}\left(\tau_{2}\right)}\right\}\left\{\theta_{2}\left(P_{1}\left(z_{1}\right)\right)\right\}^{L_{2}\left(\tau_{2}\right)}\right]\\
+&=&F_{2}\left(z_{1},\theta_{2}\left(P_{1}\left(z_{1}\right)\right)\right)
+\end{eqnarray*}%}}
+
+
+\begin{equation}\label{Eq.PGF.Conjunta.Tau2}
+\esp\left[z_{1}^{L_{1}\left(\overline{\tau}_{2}\right)}z_{2}^{L_{2}\left(\overline{\tau}_{2}\right)}\right]=F_{2}\left(z_{1},\theta_{2}\left(P_{1}\left(z_{1}\right)\right)\right)
+\end{equation}%}
+
+Ahora, para el intervalo de tiempo
+$\left[\overline{\tau}_{1},\tau_{2}\right]$ y
+$\left[\overline{\tau}_{2},\tau_{1}\right]$, los arribos de los
+usuarios modifican el n\'umero de usuarios que llegan a las colas,
+es decir, los procesos
+$L_{1}\left(t\right)$
+y $L_{2}\left(t\right)$. La PGF para el n\'umero de arribos
+a todas las estaciones durante el intervalo
+$\left[\overline{\tau}_{1},\tau_{2}\right]$  cuya distribuci\'on
+est\'a especificada por la distribuci\'on compuesta
+$R_{1}\left(\mathbf{z}\right),R_{2}\left(\mathbf{z}\right)$:
+
+\begin{eqnarray*}
+R_{1}\left(\mathbf{z}\right)=R_{1}\left(\prod_{i=1}^{2}P\left(z_{i}\right)\right)=\esp\left[\left\{\prod_{i=1}^{2}P\left(z_{i}\right)\right\}^{\tau_{2}-\overline{\tau}_{1}}\right]\\
+R_{2}\left(\mathbf{z}\right)=R_{2}\left(\prod_{i=1}^{2}P\left(z_{i}\right)\right)=\esp\left[\left\{\prod_{i=1}^{2}P\left(z_{i}\right)\right\}^{\tau_{1}-\overline{\tau}_{2}}\right]\\
+\end{eqnarray*}
+
+
+Dado que los eventos en
+$\left[\tau_{1},\overline{\tau}_{1}\right]$ y
+$\left[\overline{\tau}_{1},\tau_{2}\right]$ son independientes, la
+PGF conjunta para el n\'umero de usuarios en el sistema al tiempo
+$t=\tau_{2}$ la PGF conjunta para el n\'umero de usuarios en el sistema est\'an dadas por
+
+{\footnotesize{
+\begin{eqnarray*}
+F_{1}\left(\mathbf{z}\right)&=&R_{2}\left(\prod_{i=1}^{2}P\left(z_{i}\right)\right)F_{2}\left(z_{1},\theta_{2}\left(P_{1}\left(z_{1}\right)\right)\right)\\
+F_{2}\left(\mathbf{z}\right)&=&R_{1}\left(\prod_{i=1}^{2}P\left(z_{i}\right)\right)F_{1}\left(\theta_{1}\left(P_{2}\left(z_{2}\right)\right),z_{2}\right)\\
+\end{eqnarray*}}}
+
+
+Entonces debemos de determinar las siguientes expresiones:
+
+
+\begin{eqnarray*}
+\begin{array}{cc}
+f_{1}\left(1\right)=\frac{\partial F_{1}\left(\mathbf{z}\right)}{\partial z_{1}}|_{\mathbf{z}=1}, & f_{1}\left(2\right)=\frac{\partial F_{1}\left(\mathbf{z}\right)}{\partial z_{2}}|_{\mathbf{z}=1},\\
+f_{2}\left(1\right)=\frac{\partial F_{2}\left(\mathbf{z}\right)}{\partial z_{1}}|_{\mathbf{z}=1}, & f_{2}\left(2\right)=\frac{\partial F_{2}\left(\mathbf{z}\right)}{\partial z_{2}}|_{\mathbf{z}=1},\\
+\end{array}
+\end{eqnarray*}
+
+
+\begin{eqnarray*}
+\frac{\partial R_{1}\left(\mathbf{z}\right)}{\partial
+z_{1}}|_{\mathbf{z}=1}&=&R_{1}^{(1)}\left(1\right)P_{1}^{(1)}\left(1\right)\\
+\frac{\partial R_{1}\left(\mathbf{z}\right)}{\partial
+z_{2}}|_{\mathbf{z}=1}&=&R_{1}^{(1)}\left(1\right)P_{2}^{(1)}\left(1\right)\\
+\frac{\partial R_{2}\left(\mathbf{z}\right)}{\partial
+z_{1}}|_{\mathbf{z}=1}&=&R_{2}^{(1)}\left(1\right)P_{1}^{(1)}\left(1\right)\\
+\frac{\partial R_{2}\left(\mathbf{z}\right)}{\partial
+z_{2}}|_{\mathbf{z}=1}&=&R_{2}^{(1)}\left(1\right)P_{2}^{(1)}\left(1\right)\\
+\end{eqnarray*}
+
+
+
+\begin{eqnarray*}
+\frac{\partial}{\partial
+z_{1}}F_{1}\left(\theta_{1}\left(P_{2}\left(z_{2}\right)\right),z_{2}\right)&=&0\\
+\frac{\partial}{\partial
+z_{2}}F_{1}\left(\theta_{1}\left(P_{2}\left(z_{2}\right)\right),z_{2}\right)&=&\frac{\partial
+F_{1}}{\partial z_{2}}+\frac{\partial F_{1}}{\partial
+z_{1}}\theta_{1}^{(1)}P_{2}^{(1)}\left(1\right)\\
+\frac{\partial}{\partial
+z_{1}}F_{2}\left(z_{1},\theta_{2}\left(P_{1}\left(z_{1}\right)\right)\right)&=&\frac{\partial
+F_{2}}{\partial z_{1}}+\frac{\partial F_{2}}{\partial
+z_{2}}\theta_{2}^{(1)}P_{1}^{(1)}\left(1\right)\\
+\frac{\partial}{\partial
+z_{2}}F_{2}\left(z_{1},\theta_{2}\left(P_{1}\left(z_{1}\right)\right)\right)&=&0\\
+\end{eqnarray*}
+
+
+Por lo tanto de las dos secciones anteriores se tiene que:
+
+
+\begin{eqnarray*}
+\frac{\partial F_{1}}{\partial z_{1}}&=&\frac{\partial
+R_{2}}{\partial z_{1}}|_{\mathbf{z}=1}+\frac{\partial F_{2}}{\partial z_{1}}|_{\mathbf{z}=1}=R_{2}^{(1)}\left(1\right)P_{1}^{(1)}\left(1\right)+f_{2}\left(1\right)+f_{2}\left(2\right)\theta_{2}^{(1)}\left(1\right)P_{1}^{(1)}\left(1\right)\\
+\frac{\partial F_{1}}{\partial z_{2}}&=&\frac{\partial
+R_{2}}{\partial z_{2}}|_{\mathbf{z}=1}+\frac{\partial F_{2}}{\partial z_{2}}|_{\mathbf{z}=1}=R_{2}^{(1)}\left(1\right)P_{2}^{(1)}\left(1\right)\\
+\frac{\partial F_{2}}{\partial z_{1}}&=&\frac{\partial
+R_{1}}{\partial z_{1}}|_{\mathbf{z}=1}+\frac{\partial F_{1}}{\partial z_{1}}|_{\mathbf{z}=1}=R_{1}^{(1)}\left(1\right)P_{1}^{(1)}\left(1\right)\\
+\frac{\partial F_{2}}{\partial z_{2}}&=&\frac{\partial
+R_{1}}{\partial z_{2}}|_{\mathbf{z}=1}+\frac{\partial F_{1}}{\partial z_{2}}|_{\mathbf{z}=1}
+=R_{1}^{(1)}\left(1\right)P_{2}^{(1)}\left(1\right)+f_{1}\left(1\right)\theta_{1}^{(1)}\left(1\right)P_{2}^{(1)}\left(1\right)\\
+\end{eqnarray*}
+
+
+El cual se puede escribir en forma equivalente:
+\begin{eqnarray*}
+f_{1}\left(1\right)&=&r_{2}\mu_{1}+f_{2}\left(1\right)+f_{2}\left(2\right)\frac{\mu_{1}}{1-\mu_{2}}\\
+f_{1}\left(2\right)&=&r_{2}\mu_{2}\\
+f_{2}\left(1\right)&=&r_{1}\mu_{1}\\
+f_{2}\left(2\right)&=&r_{1}\mu_{2}+f_{1}\left(2\right)+f_{1}\left(1\right)\frac{\mu_{2}}{1-\mu_{1}}\\
+\end{eqnarray*}
+
+De donde:
+\begin{eqnarray*}
+f_{1}\left(1\right)&=&\mu_{1}\left[r_{2}+\frac{f_{2}\left(2\right)}{1-\mu_{2}}\right]+f_{2}\left(1\right)\\
+f_{2}\left(2\right)&=&\mu_{2}\left[r_{1}+\frac{f_{1}\left(1\right)}{1-\mu_{1}}\right]+f_{1}\left(2\right)\\
+\end{eqnarray*}
+
+Resolviendo para $f_{1}\left(1\right)$:
+\begin{eqnarray*}
+f_{1}\left(1\right)&=&r_{2}\mu_{1}+f_{2}\left(1\right)+f_{2}\left(2\right)\frac{\mu_{1}}{1-\mu_{2}}=r_{2}\mu_{1}+r_{1}\mu_{1}+f_{2}\left(2\right)\frac{\mu_{1}}{1-\mu_{2}}\\
+&=&\mu_{1}\left(r_{2}+r_{1}\right)+f_{2}\left(2\right)\frac{\mu_{1}}{1-\mu_{2}}=\mu_{1}\left(r+\frac{f_{2}\left(2\right)}{1-\mu_{2}}\right),\\
+\end{eqnarray*}
+
+entonces
+
+\begin{eqnarray*}
+f_{2}\left(2\right)&=&\mu_{2}\left(r_{1}+\frac{f_{1}\left(1\right)}{1-\mu_{1}}\right)+f_{1}\left(2\right)=\mu_{2}\left(r_{1}+\frac{f_{1}\left(1\right)}{1-\mu_{1}}\right)+r_{2}\mu_{2}\\
+&=&\mu_{2}\left[r_{1}+r_{2}+\frac{f_{1}\left(1\right)}{1-\mu_{1}}\right]=\mu_{2}\left[r+\frac{f_{1}\left(1\right)}{1-\mu_{1}}\right]\\
+&=&\mu_{2}r+\mu_{1}\left(r+\frac{f_{2}\left(2\right)}{1-\mu_{2}}\right)\frac{\mu_{2}}{1-\mu_{1}}\\
+&=&\mu_{2}r+\mu_{2}\frac{r\mu_{1}}{1-\mu_{1}}+f_{2}\left(2\right)\frac{\mu_{1}\mu_{2}}{\left(1-\mu_{1}\right)\left(1-\mu_{2}\right)}\\
+&=&\mu_{2}\left(r+\frac{r\mu_{1}}{1-\mu_{1}}\right)+f_{2}\left(2\right)\frac{\mu_{1}\mu_{2}}{\left(1-\mu_{1}\right)\left(1-\mu_{2}\right)}\\
+&=&\mu_{2}\left(\frac{r}{1-\mu_{1}}\right)+f_{2}\left(2\right)\frac{\mu_{1}\mu_{2}}{\left(1-\mu_{1}\right)\left(1-\mu_{2}\right)}\\
+\end{eqnarray*}
+entonces
+\begin{eqnarray*}
+f_{2}\left(2\right)-f_{2}\left(2\right)\frac{\mu_{1}\mu_{2}}{\left(1-\mu_{1}\right)\left(1-\mu_{2}\right)}&=&\mu_{2}\left(\frac{r}{1-\mu_{1}}\right)\\
+f_{2}\left(2\right)\left(1-\frac{\mu_{1}\mu_{2}}{\left(1-\mu_{1}\right)\left(1-\mu_{2}\right)}\right)&=&\mu_{2}\left(\frac{r}{1-\mu_{1}}\right)\\
+f_{2}\left(2\right)\left(\frac{1-\mu_{1}-\mu_{2}+\mu_{1}\mu_{2}-\mu_{1}\mu_{2}}{\left(1-\mu_{1}\right)\left(1-\mu_{2}\right)}\right)&=&\mu_{2}\left(\frac{r}{1-\mu_{1}}\right)\\
+f_{2}\left(2\right)\left(\frac{1-\mu}{\left(1-\mu_{1}\right)\left(1-\mu_{2}\right)}\right)&=&\mu_{2}\left(\frac{r}{1-\mu_{1}}\right)\\
+\end{eqnarray*}
+por tanto
+\begin{eqnarray*}
+f_{2}\left(2\right)&=&\frac{r\frac{\mu_{2}}{1-\mu_{1}}}{\frac{1-\mu}{\left(1-\mu_{1}\right)\left(1-\mu_{2}\right)}}=\frac{r\mu_{2}\left(1-\mu_{1}\right)\left(1-\mu_{2}\right)}{\left(1-\mu_{1}\right)\left(1-\mu\right)}\\
+&=&\frac{\mu_{2}\left(1-\mu_{2}\right)}{1-\mu}r=r\mu_{2}\frac{1-\mu_{2}}{1-\mu}.
+\end{eqnarray*}
+es decir
+
+\begin{eqnarray}
+f_{2}\left(2\right)&=&r\mu_{2}\frac{1-\mu_{2}}{1-\mu}.
+\end{eqnarray}
+
+Entonces
+
+\begin{eqnarray*}
+f_{1}\left(1\right)&=&\mu_{1}r+f_{2}\left(2\right)\frac{\mu_{1}}{1-\mu_{2}}=\mu_{1}r+\left(\frac{\mu_{2}\left(1-\mu_{2}\right)}{1-\mu}r\right)\frac{\mu_{1}}{1-\mu_{2}}\\
+&=&\mu_{1}r+\mu_{1}r\left(\frac{\mu_{2}}{1-\mu}\right)=\mu_{1}r\left[1+\frac{\mu_{2}}{1-\mu}\right]\\
+&=&r\mu_{1}\frac{1-\mu_{1}}{1-\mu}\\
+\end{eqnarray*}

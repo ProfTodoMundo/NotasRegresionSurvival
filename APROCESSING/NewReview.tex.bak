@@ -1960,7 +1960,7 @@ f_{1}\left(1\right)=r\mu_{1}\frac{1-\mu_{1}}{1-\mu}.
 
 
 %_________________________________________________________________________
-\section{Ap\'endice A: El problema de la ruina del jugador}
+\section{El problema de la ruina del jugador}
 %_________________________________________________________________________
 
 Supongamos que se tiene un jugador que cuenta con un capital inicial de $\tilde{L}_{0}\geq0$ unidades, esta persona realiza una serie de dos juegos simult\'aneos e independientes de manera sucesiva, dichos eventos son independientes e id\'enticos entre s\'i para cada realizaci\'on.\\
@@ -2170,9 +2170,7 @@ Var\left[T\right]&=&\frac{Var\left[\tilde{L}_{0}\right]}{\left(1-\tilde{\mu}\rig
 \end{eqnarray}
 \end{Cor}
 
-%_________________________________________________________________________
-\section{Ap\'endice B: Extensi\'on a sistema de visitas c\'iclicas}
-%_________________________________________________________________________
+
 Hagamos una extensi\'on para el caso en que se tienen varias colas:
 
 \begin{Prop}
@@ -2195,7 +2193,8 @@ f_{i}\left(i\right)&=&\mu_{i}\left[\sum_{k=1}^{N}r_{k}+\sum_{k=1,k\neq i}^{N}\fr
 En la Ecuaci\'on (\ref{Eq.2}) hagamos $j=i+1$, entonces se tiene $f_{j}=r_{i}\mu_{i}$, lo mismo para (\ref{Eq.1})
 
 \begin{eqnarray*}
-f_{i}\left(i\right)&=&r_{i}\mu_{i}+\mu_{i}\left[\sum_{k=j}^{i-1}r_{k}+\sum_{k=j}^{i-1}\frac{f_{k}\left(k\right)}{1-\mu_{k}}\right]=\mu_{i}\left[\sum_{k=j}^{i}r_{k}+\sum_{k=j}^{i-1}\frac{f_{k}\left(k\right)}{1-\mu_{k}}\right]
+f_{i}\left(i\right)&=&r_{i}\mu_{i}+\mu_{i}\left[\sum_{k=j}^{i-1}r_{k}+\sum_{k=j}^{i-1}\frac{f_{k}\left(k\right)}{1-\mu_{k}}\right]\\
+&=&\mu_{i}\left[\sum_{k=j}^{i}r_{k}+\sum_{k=j}^{i-1}\frac{f_{k}\left(k\right)}{1-\mu_{k}}\right]\\
 \end{eqnarray*}
 
 entonces, tomando sobre todo valor de $1,\ldots,N$, tanto para antes de $i$ como para despu\'es de $i$, entonces
@@ -2208,24 +2207,31 @@ f_{i}\left(i\right)&=&\mu_{i}\left[\sum_{k=1}^{N}r_{k}+\sum_{k=1,k\neq i}^{N}\fr
 Ahora, supongamos nuevamente la ecuaci\'on (\ref{Eq.1})
 
 \begin{eqnarray*}
-f_{i}\left(i\right)-f_{j}\left(i\right)&=&\mu_{i}\left[\sum_{k=j}^{i-1}r_{k}+\sum_{k=j}^{i-1}\frac{f_{k}\left(k\right)}{1-\mu_{k}}\right]\Leftrightarrow
-f_{j}\left(j\right)-f_{i}\left(j\right)=\mu_{j}\left[\sum_{k=i}^{j-1}r_{k}+\sum_{k=i}^{j-1}\frac{f_{k}\left(k\right)}{1-\mu_{k}}\right]\\
-f_{i}\left(j\right)&=&f_{j}\left(j\right)-\mu_{j}\left[\sum_{k=i}^{j-1}r_{k}+\sum_{k=i}^{j-1}\frac{f_{k}\left(k\right)}{1-\mu_{k}}\right]=\mu_{j}\left(1-\mu_{j}\right)\frac{r}{1-\mu}-\mu_{j}\left[\sum_{k=i}^{j-1}r_{k}+\sum_{k=i}^{j-1}\frac{f_{k}\left(k\right)}{1-\mu_{k}}\right]\\
-&=&\mu_{j}\left[\left(1-\mu_{j}\right)\frac{r}{1-\mu}-\sum_{k=i}^{j-1}r_{k}-\sum_{k=i}^{j-1}\frac{f_{k}\left(k\right)}{1-\mu_{k}}\right]=\mu_{j}\left[\left(1-\mu_{j}\right)\frac{r}{1-\mu}-\sum_{k=i}^{j-1}r_{k}-\frac{r}{1-\mu}\sum_{k=i}^{j-1}\mu_{k}\right]\\
-&=&\mu_{j}\left[\frac{r}{1-\mu}\left(1-\mu_{j}-\sum_{k=i}^{j-1}\mu_{k}\right)-\sum_{k=i}^{j-1}r_{k}\right]=\mu_{j}\left[\frac{r}{1-\mu}\left(1-\sum_{k=i}^{j}\mu_{k}\right)-\sum_{k=i}^{j-1}r_{k}\right].
+f_{i}\left(i\right)-f_{j}\left(i\right)&=&\mu_{i}\left[\sum_{k=j}^{i-1}r_{k}+\sum_{k=j}^{i-1}\frac{f_{k}\left(k\right)}{1-\mu_{k}}\right]\\
+&\Leftrightarrow&\\
+f_{j}\left(j\right)-f_{i}\left(j\right)&=&\mu_{j}\left[\sum_{k=i}^{j-1}r_{k}+\sum_{k=i}^{j-1}\frac{f_{k}\left(k\right)}{1-\mu_{k}}\right]\\
+f_{i}\left(j\right)&=&f_{j}\left(j\right)-\mu_{j}\left[\sum_{k=i}^{j-1}r_{k}+\sum_{k=i}^{j-1}\frac{f_{k}\left(k\right)}{1-\mu_{k}}\right]\\
+&=&\mu_{j}\left(1-\mu_{j}\right)\frac{r}{1-\mu}-\mu_{j}\left[\sum_{k=i}^{j-1}r_{k}+\sum_{k=i}^{j-1}\frac{f_{k}\left(k\right)}{1-\mu_{k}}\right]\\
+&=&\mu_{j}\left[\left(1-\mu_{j}\right)\frac{r}{1-\mu}-\sum_{k=i}^{j-1}r_{k}-\sum_{k=i}^{j-1}\frac{f_{k}\left(k\right)}{1-\mu_{k}}\right]\\
+&=&\mu_{j}\left[\left(1-\mu_{j}\right)\frac{r}{1-\mu}-\sum_{k=i}^{j-1}r_{k}-\frac{r}{1-\mu}\sum_{k=i}^{j-1}\mu_{k}\right]\\
+&=&\mu_{j}\left[\frac{r}{1-\mu}\left(1-\mu_{j}-\sum_{k=i}^{j-1}\mu_{k}\right)-\sum_{k=i}^{j-1}r_{k}\right]\\
+&=&\mu_{j}\left[\frac{r}{1-\mu}\left(1-\sum_{k=i}^{j}\mu_{k}\right)-\sum_{k=i}^{j-1}r_{k}\right].\\
 \end{eqnarray*}
 
 Ahora,
 
 \begin{eqnarray*}
-1-\sum_{k=i}^{j}\mu_{k}=1-\sum_{k=1}^{N}\mu_{k}+\sum_{k=j+1}^{i-1}\mu_{k}\Leftrightarrow
-\sum_{k=i}^{j}\mu_{k}=\sum_{k=1}^{N}\mu_{k}-\sum_{k=j+1}^{i-1}\mu_{k}\Leftrightarrow\sum_{k=1}^{N}\mu_{k}=\sum_{k=i}^{j}\mu_{k}+\sum_{k=j+1}^{i-1}\mu_{k}.
+1-\sum_{k=i}^{j}\mu_{k}&=&1-\sum_{k=1}^{N}\mu_{k}+\sum_{k=j+1}^{i-1}\mu_{k}\\
+&\Leftrightarrow&\\
+\sum_{k=i}^{j}\mu_{k}&=&\sum_{k=1}^{N}\mu_{k}-\sum_{k=j+1}^{i-1}\mu_{k}\\
+&\Leftrightarrow&\\
+\sum_{k=1}^{N}\mu_{k}&=&\sum_{k=i}^{j}\mu_{k}+\sum_{k=j+1}^{i-1}\mu_{k}\\
 \end{eqnarray*}
 
 Por tanto
-\begin{eqnarray}
+\begin{eqnarray*}
 f_{i}\left(j\right)&=&\mu_{j}\left[\frac{r}{1-\mu}\sum_{k=j+1}^{i-1}\mu_{k}+\sum_{k=j}^{i-1}r_{k}\right].
-\end{eqnarray}
+\end{eqnarray*}
 
 
 

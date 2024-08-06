@@ -1,34 +1,10 @@
-\BOOKMARK [1][-]{section.1}{Procesos Estoc\341sticos}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{Cadenas de Markov}{section.1}% 2
-\BOOKMARK [2][-]{subsection.1.2}{Procesos de Estados de Markov}{section.1}% 3
-\BOOKMARK [2][-]{subsection.1.3}{Clasificaci\363n de Estados}{section.1}% 4
-\BOOKMARK [2][-]{subsection.1.4}{Procesos de Markov}{section.1}% 5
-\BOOKMARK [1][-]{section.2}{Estacionareidad}{}% 6
-\BOOKMARK [1][-]{section.3}{Funciones Arm\363nicas, Recurrencia y Transitoriedad}{}% 7
-\BOOKMARK [1][-]{section.4}{Teor\355a Erg\363dica}{}% 8
-\BOOKMARK [2][-]{subsection.4.1}{Ejemplo de Cadena de Markov para dos Estados}{section.4}% 9
-\BOOKMARK [1][-]{section.5}{Procesos de Markov de Saltos}{}% 10
-\BOOKMARK [1][-]{section.6}{Matriz Intensidad}{}% 11
-\BOOKMARK [1][-]{section.7}{Medidas Estacionarias}{}% 12
-\BOOKMARK [1][-]{section.8}{Criterios de Ergodicidad}{}% 13
-\BOOKMARK [1][-]{section.9}{Procesos de Nacimiento y Muerte}{}% 14
-\BOOKMARK [1][-]{section.10}{Procesos de Nacimiento y Muerte Generales}{}% 15
-\BOOKMARK [1][-]{section.11}{Notaci\363n Kendall-Lee}{}% 16
-\BOOKMARK [2][-]{subsection.11.1}{Cola M/M/1}{section.11}% 17
-\BOOKMARK [2][-]{subsection.11.2}{Cola M/M/}{section.11}% 18
-\BOOKMARK [2][-]{subsection.11.3}{Cola M/M/m}{section.11}% 19
-\BOOKMARK [2][-]{subsection.11.4}{Cola M/M/m/m}{section.11}% 20
-\BOOKMARK [2][-]{subsection.11.5}{Cola M/G/1}{section.11}% 21
-\BOOKMARK [2][-]{subsection.11.6}{Cola con Infinidad de Servidores}{section.11}% 22
-\BOOKMARK [1][-]{section.12}{Redes de Colas:Sistemas Abiertos}{}% 23
-\BOOKMARK [1][-]{section.13}{Resultados para Procesos de Salida}{}% 24
-\BOOKMARK [1][-]{section.14}{Sistemas de Visitas}{}% 25
-\BOOKMARK [1][-]{section.15}{Funci\363n Generadora de Probabilidades}{}% 26
-\BOOKMARK [1][-]{section.16}{El problema de la ruina del jugador}{}% 27
-\BOOKMARK [1][-]{section.17}{Ecuaciones Centrales}{}% 28
-\BOOKMARK [1][-]{section.18}{Redes de Jackson}{}% 29
-\BOOKMARK [1][-]{section.19}{Resultados Adicionales}{}% 30
-\BOOKMARK [2][-]{subsection.19.1}{Procesos de Renovaci\363n y Regenerativos}{section.19}% 31
-\BOOKMARK [2][-]{subsection.19.2}{Propiedades de los Procesos de Renovaci\363n}{section.19}% 32
-\BOOKMARK [2][-]{subsection.19.3}{Resultados para Procesos de Salida}{section.19}% 33
-\BOOKMARK [1][-]{section.20}{Aplicaci\363n a Teor\355a de Colas}{}% 34
+\BOOKMARK [1][-]{section.1}{\376\377\000S\000i\000s\000t\000e\000m\000a\000s\000\040\000d\000e\000\040\000V\000i\000s\000i\000t\000a\000s}{}% 1
+\BOOKMARK [1][-]{section.2}{\376\377\000F\000u\000n\000c\000i\000\363\000n\000\040\000G\000e\000n\000e\000r\000a\000d\000o\000r\000a\000\040\000d\000e\000\040\000P\000r\000o\000b\000a\000b\000i\000l\000i\000d\000a\000d\000e\000s}{}% 2
+\BOOKMARK [1][-]{section.3}{\376\377\000E\000l\000\040\000p\000r\000o\000b\000l\000e\000m\000a\000\040\000d\000e\000\040\000l\000a\000\040\000r\000u\000i\000n\000a\000\040\000d\000e\000l\000\040\000j\000u\000g\000a\000d\000o\000r}{}% 3
+\BOOKMARK [1][-]{section.4}{\376\377\000E\000c\000u\000a\000c\000i\000o\000n\000e\000s\000\040\000C\000e\000n\000t\000r\000a\000l\000e\000s}{}% 4
+\BOOKMARK [1][-]{section.5}{\376\377\000R\000e\000d\000e\000s\000\040\000d\000e\000\040\000J\000a\000c\000k\000s\000o\000n}{}% 5
+\BOOKMARK [1][-]{section.6}{\376\377\000R\000e\000s\000u\000l\000t\000a\000d\000o\000s\000\040\000A\000d\000i\000c\000i\000o\000n\000a\000l\000e\000s}{}% 6
+\BOOKMARK [2][-]{subsection.6.1}{\376\377\000P\000r\000o\000c\000e\000s\000o\000s\000\040\000d\000e\000\040\000R\000e\000n\000o\000v\000a\000c\000i\000\363\000n\000\040\000y\000\040\000R\000e\000g\000e\000n\000e\000r\000a\000t\000i\000v\000o\000s}{section.6}% 7
+\BOOKMARK [2][-]{subsection.6.2}{\376\377\000P\000r\000o\000p\000i\000e\000d\000a\000d\000e\000s\000\040\000d\000e\000\040\000l\000o\000s\000\040\000P\000r\000o\000c\000e\000s\000o\000s\000\040\000d\000e\000\040\000R\000e\000n\000o\000v\000a\000c\000i\000\363\000n}{section.6}% 8
+\BOOKMARK [2][-]{subsection.6.3}{\376\377\000R\000e\000s\000u\000l\000t\000a\000d\000o\000s\000\040\000p\000a\000r\000a\000\040\000P\000r\000o\000c\000e\000s\000o\000s\000\040\000d\000e\000\040\000S\000a\000l\000i\000d\000a}{section.6}% 9
+\BOOKMARK [1][-]{section.7}{\376\377\000A\000p\000l\000i\000c\000a\000c\000i\000\363\000n\000\040\000a\000\040\000T\000e\000o\000r\000\355\000a\000\040\000d\000e\000\040\000C\000o\000l\000a\000s}{}% 10

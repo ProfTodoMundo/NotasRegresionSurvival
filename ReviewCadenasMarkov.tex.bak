@@ -1032,14 +1032,8 @@ La cola $M/M/\infty$ es ergodica para todos los valores de $\eta$. La distribuci
 
 %_____________________________________________________________________________________
 %
-\section{Redes de Colas}
+\section{Redes de Colas:Sistemas Abiertos}
 %_____________________________________________________________________________________
-
-%_____________________________________________________________________________________
-%
-\subsection{Sistemas Abiertos}
-%_____________________________________________________________________________________
-%
 
 Considerese un sistema con dos servidores, en los cuales los usuarios llegan de acuerdo a un proceso poisson con intensidad $\lambda_{1}$ al primer servidor, despu\'es de ser atendido se pasa a la siguiente cola en el segundo servidor. Cada servidor atiende a un usuario a la vez con tiempo exponencial con raz\'on $\mu_{i}$, para $i=1,2$. A este tipo de sistemas se les conoce como sistemas secuenciales.
 

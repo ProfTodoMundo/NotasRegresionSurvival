@@ -1,0 +1,1368 @@
+%_________________________________________________-
+\section{Generadores de Variables Aleatorias}
+
+
+Realizar
+
+\begin{eqnarray*}
+\left(aX_{i}+C\right)mod M\Leftrightarrow
+X_{n+1}=Res\left(\frac{aX_{i}+C}{M}\right)
+\end{eqnarray*}
+Entonces para $a,C\in\ent^{+}$, se tiene que $x_{n}\in\left\{0,1,2,\ldots,M\right\}$.
+
+$X_{i+1}=\left(aX_{i}+C\right)mod M$ para
+$M,a,c,\in\ent^{+}\Rightarrow X_{i}\in{0,1,2,\ldots,M-1}$
+
+Si hacemos $J_{i}=\left(\frac{X_{i}}{M}\right)$
+una sucesi\'on de numeros pseudoaleatorios que se puede considerar como una aproximaci\'on a una sucesi\'on de V.A. uniformes.
+
+
+Observaciones:La sucesi\'on $\left\{ X_{O},X_{1},X_{2},X_{3},\ldots\right\}$
+
+Se repetira despues de $M$ pasos y por tanto ser\'a peri\'odica, con periodo $M$
+
+\begin{eqnarray*}
+a&=&c=X_{0}=3\textrm{ y }M=5\\
+X_{1}&=&\left(3\left(4\right)+3\right)mod 5=12mod 5=2\\
+X_{2}&=&\left(3\left(2\right)+3\right)mod 5=9mod 5=4\\
+X_{3}&=&\left(3\left(4\right)+3\right)mod 5=15mod 5=0\\
+X_{4}&=&3 mod 5=3\textrm{ periodo es igual a }4.
+\end{eqnarray*}
+
+El periodo de un generador\\
+$=M_{min} \lbrace T \mid X_{i}+T=X_{i}\rbrace$\\
+Se quisiera que T fuese suficientemente grande para una maquina de 32 bits se recomienda:\\
+1) M n\'umero  primo grande apropiado, del termino de la palabra\\
+$M=2^{32}-1$\\
+$a=7^{5}$\\
+
+Otro generador:
+
+\begin{eqnarray*}
+1)Ix=, Iy, Iz\in \jmath_{29999}\\
+2)Ix=171\ast Ix MOD 177-\left(\frac{2Ix}{177}\right)\\
+Iy=17\ast Iy MOD 176-\left(\frac{35Iy}{176}\right)\\
+Iz=170\ast Iz MOD 178-\left(\frac{63Iz}{178}\right)\\
+3)\textrm{Si } Ix\leq 0\Rightarrow Ix= Ix+30269\\
+Iy\leq 0\Rightarrow Iy= Iy+30307\\
+Iz\leq 0\Rightarrow Iz= Iz+30323\\
+4)u=\left(\frac{Ix}{30269}+\frac{Iy}{30307}+\frac{Iz}{30325}\right)\\
+5)\textrm{Usar} Ix, Iy, Iz en 2\\
+6)Por si las dudas\\
+\textrm{Si} u=\left\{
+\begin{array}{cc}
+1 & u=u-EPS\\
+0 & u=u+EPS\\
+\end{array}
+\right.
+\end{eqnarray*}
+
+$EPS\rightarrow \textrm{precisi\'on de la maquina}\\
+EPS\Rightarrow 1+\frac{EPS}{2}=1$\\
+
+Supongamos que tenemos $\lbrace Y_{1}, Y_{2}\ldots Y_{n}\rbrace$ muestra aleatoria de la V.A Y con distintas $F$. Sea $F_{e}$ la distribuci\'on empirica afectada como:\\
+
+$F_{e}=\frac{\lbrace i: Y_{i}\leq n\rbrace}{n}$\\
+
+Es decir $F_{e}=$ proporci\'on de n\'umeros $\leq n$ (observados)\\
+Si la hipotesis nula: F es la distribuci\'on subyacente, es cierta, entonces:\\
+
+$F_{e} \approx F$ entonces se propone:\\
+$D\equiv \max_{x}\left\{
+F_{e}\left(x\right)
+-F\left(x\right)\right\}$\\
+
+El estadistico se prueba 
+
+Sea $Y_(i)=y_(i), i= 1,2,\ldots n$\\
+
+${Y_(1), Y_(2),\ldots Y _(n)}$ M.A 
+
+
+\begin{eqnarray*}
+F_{e}(x)\left(y\right)=
+\left\{
+\begin{array}{lc}
+\prob\left[Y\leq y\right] & 0<y<\infty\\
+0 & \textrm{e.o.c.}
+\end{array}
+\right.
+\end{eqnarray*}
+
+Caso discreto:\\
+Si $X\leq x \Rightarrow F^{-1} (u) \leq x$ 
+
+\begin{eqnarray*}
+u\leq F (x+ xi)\\
+u\leq F (x) \\
+\Rightarrow P{X\leq x} = P{U\leq F(x)} =F (x)  
+\end{eqnarray*}
+
+$\xi por$ definici\'on de $F^{-}$ 
+por ser continua por la derecha\\
+ 
+es decir sean $ {u_(1), u_(2)\ldots u(n)} VA \sim U (0,1)$  
+
+\begin{eqnarray*}
+\Rightarrow{Y_(1), Y_(2)\ldots Y_(n)}\\ \sim F(Y:\theta)\\
+y_(i) =F^{-1} (u_(i)\\
+\end{eqnarray*}
+Caso cerrado:\\
+Si $F(x\vert\theta)$ es la densidad asociada a F\\
+
+\begin{eqnarray*}
+\Rightarrow F(x)=\int_(\infty)^{x} f_(x)(t\vert\theta)\delta t\\
+\int_(\infty)^{x_(i)} f_(x)(t\vert\theta)\delta t= U _(i)\\
+\end{eqnarray*}
+
+\begin{eqnarray*}
+Y\backsim U(0,1)\\
+a=b=1\\
+1 caso a\neq b\\
+a=2, b=1\\
+Z=a+ (b-a) Y\backsim U(z(a, b))\\
+\lbrace X_(n)\ldots ,X_(n)\rbrace u.a.i.i.d. M_(x)=E[x] y \\
+\end{eqnarray*}
+
+Qu\'e tan buena es la aproximaci\'on?\\
+De d\'onde sacamos $\lbrace X_(1),\ldots ,X_(n)\rbrace$?\\
+
+\begin{eqnarray*}
+a&=&1=b\\
+1.n&=&m=10\\
+2.n&=&20, m=10\\
+3.n&=&50, m=60\\
+4.n&=&100, m=100\\
+5.n&=&100, n=10\\
+\end{eqnarray*}
+%_____________________________________________________________
+\section{Generaci\'on de Variables Aleatorias}
+%_____________________________________________________________
+
+
+Generar variables aleatorias\\
+De todas las atribciones?\\
+Teoricamente NO\\
+
+1.-Basta saber generar $X_(1),\ldots X_(n) \backsim U (X\vert 0,1)$ para tener $y_(1), y_(2), \ldots, y_(n)\backsim F(Y\vert\theta)$\\
+Con tener $y_(1)= T_(i)(X_(1), \ldots, X_(n))$\\
+
+2.-Tiene sentido la frase \textit{Sea $\lbrace x_(1), \ldots, x_(n)\rbrace$ muestra aleatoria} de $U (x\vert0, 1)?$\\
+
+3.- Si nos dan $\lbrace X_(1),\ldots, x_(n)\rbrace $ C\'omo checamos que son una sola muestra de $U(X\vert 0,1)$?\\
+
+1)Supongamos:\\
+\begin{eqnarray*}
+F(X,\theta)=1-e^{x\theta}, \theta, 
+x \in\rea^{+},\theta=3
+\end{eqnarray*}
+
+
+$F_(\theta): (0,\infty)\rightarrow(0,1)$de manera biyectiva\\ 
+$u=1- e^{-x\theta} \Rightarrow x=-\frac{1}{\theta}$\\ 
+
+aseguro\\
+
+Si $u\backsim(u\vert0,1) \Rightarrow x=-\frac{1}{\theta}log (i-u) \backsim exp(x\vert\theta)$\\
+
+$p(x\vert\theta)=\frac{e^{-\theta}\theta^x}{x^1}$\\
+
+$P\swarrow= P[x=k]$\\
+
+$F:(0,\infty)\rightarrow (0,1)$ pero no de manera inyectiva\\ 
+$F(2,3)= F(2,\theta)=u$\\
+Sea $F^-:(0,1)\rightarrow\pi$\\
+$F^{-}(t)= \infty \lbrace x \epsilon\pi: F(x)\geq t\rbrace Vt\epsilon(0,1)$\\
+
+La llamada iversa generalizada de F\\
+
+O sea $\rightarrow$ Si $F$ continua entonces $F^{-1}=F^{-}$\\
+
+Si $u\backsim U(u\vert0,1)$ y F es una funci\'on de distribuci\'on, entonces $X=F^{-}(u)$ tiene como funci\'on de distribuci\'on a $F$\\
+
+P.D $P[X\leq x]= F(x)$\\
+
+Caso continuo\\
+$P[X\leq x]= P[F^{-1}(u)\leq x]=P[U\leq F(x)]=F(x)$\\
+
+Caso discreto\\
+$\delta X\leq x\Longrightarrow F^-(u)\leq x$\\
+
+
+$u\leq F(x+\varepsilon) \varepsilon\epsilon\pi^{+}$ por defecto de $F^{-}$
+$u\leq F(x)$ por ser contado por la derecha
+$\Longrightarrow P[X\leq x]= P[U\leq F(x)]= F(x)$
+
+O sea\\
+Si $\lbrace u_(1), \ldots, U_(n)\rbrace$ son $u\cdot a\cdot i\backsim U(u\vert0,1)$\\
+
+Entiende $\lbrace Y_(1),\ldots, Y_(n)\rbrace \backsim F(Y; \theta)$ VAIID
+
+donde $Y_(i)=F^{-1}(u_(1)) V i \epsilon Jn$
+
+Continuo\\
+Si $p(x\vert\theta)$ es la densidad asociada a F, entiende\\
+
+$F(x)= \int^{x}_{-\infty} p(\epsilon\vert\theta)dt$\\
+
+Nos podemos concentrar en aprender a generar $\lbrace X_(1), \ldots, X_(n)\rbrace\backsim U(x\vert0,1)$\\
+
+TRENT $\longleftarrow$ Funci\'on\\
+
+
+
+$1.-D(x)= \lbrace \frac{2x  x\epsilon[0,\frac{1}{2}]}{2(1-x) x\epsilon [\frac{1}{2}, 1]}$\\
+$x_i= D(x_i-1)=\ldots =D^i (x_1)$\\
+
+La funci\'on queda as\'i\\
+2.-$G(x)= 4(x)(1-x)$ $x\epsilon(0,1)$\\
+Y sea $X_{n}=G^{n}(x_{1})$\\
+$U_n=\frac{2}{\pi}sen^{-1}\sqrt{x_n}$\\
+
+$u\epsilon 80,1), P(a,b]= b-a=\lambda (a,b]$\\
+$45=101101\longleftarrow$ binaria\\
+$u=\sum _{i=1}^{\infty}\frac{d_i(u)}{z^{i}}= 0,d_1(w)d_2(w)\ldots$\\
+
+quiero construir 
+I)$X_1\ldots, X_n,\ldots \epsilon(0,1)$\\
+II)Independientes\\
+III)$P[X_1\leq x]= x$\\
+
+Lancemos una moneda al aire\\
+águila=1\\
+sol=0\\
+
+Lanzo n veces $u_1, u_2, \ldots, u_n$\\
+
+\begin{eqnarray*}
+P\lbrace\epsilon (0,1]: d_i(w)=u_i, i\epsilon J_n\rbrace =P \lbrace w\epsilon (0,1]: \sum _{i=1}^{\infty}\frac{d_i(w)}{2_{i}}\epsilon (\sum _{i=1}^{n}\frac{u_i}{z_i},\sum _{i=1}^{n}\frac{u_i}{2_i}+\frac{1}{2^n}]\rbrace =\frac{1}{2^{n}}\forall n\epsilon IN\\
+P\lbrace W\epsilon(O,1):d_i(w)=u_i\rbrace]=\frac{1}{2}\\
+P[d_i=u_i :i\epsilon J_n]=\pi^{n} P[d_i=u_i]=\frac{1}{2^{n}}	\forall n\in IN\\
+\Rightarrow \left\{d_{i}:i\in \mathbb{N}\right\} 
+\end{eqnarray*}
+son u.a independientes\\ 
+							
+												
+Debida al Kolmogoroff\\
+
+\begin{eqnarray*}						
+(0,1), \lambda (a,b)=b-a\\						
+w=\sum_{n=1}^{\infty}\frac{d_{n}(w)}{2^{n}}\epsilon (0,1]\\
+d_{n}(w)=\left\{0,1\right\},\forall n\in N
+\end{eqnarray*}
+$u_{1},u_{2},\ldots,u_{n},u_{i}\in \left\{0,1\right\}$\\
+
+\begin{eqnarray*}
+P[d_i=u_i, i\epsilon J_n]= P[d_i(w)= u_i]= 2^{n}\\
+P[d _(n)(w)=u _n\\
+\zeta (w)= \\
+P[w\epsilon\Omega:\xi_n(w)=1]=\frac{1}{2} \forall n\in N
+P[W\epsilon\Omega:\xi_1 (w)=u_1,\ldots ,\xi_n(w)=u _n=\frac{1}{2^{n}}\\
+\end{eqnarray*}
+
+%alaide 
+
+u.e $\lbrace \xi _{n}: n\in {N}\rbrace$ sucesi\'on de u.a.i\\
+
+Sean\ $\lbrace \eta_{i,j} :j  \in \nat \rbrace\\  
+\forall  i \in \nat$  
+
+Subsecciones distintas de $\lbrace{\xi _n}\rbrace$\\
+Entonces\\
+
+%_______________________________
+\begin{eqnarray*}	
+\eta_i(w)=\sum_{j=1}^{\infty} \frac{\eta_{ij}(w)}{2^{j}}
+\end{eqnarray*}
+%________________________________
+\begin{eqnarray*}	
+P[\eta_i\leq w]=w =\sum_{n=1}^{\infty} \frac{d_n(w)}{2^{n}}
+\end{eqnarray*}
+%________________________________
+
+\begin{proof}
+
+\begin{eqnarray*}	
+P[\eta_i < w]=P\lbrace U_{j=1}^{\infty}(\eta_{i1}=d_1,\eta_{i2}=d_2, ... ,\eta_{ik}<d_k)\rbrace
+\\
+=\sum_{k=1}^{\infty} P[\eta_{i1}=d_1\eta_{i2}=d_2, ... ,\eta_{ik}<d_k]
+\\
+=\sum_{k=1}^{\infty}\dfrac{P[\eta_{ik}<d_k]}{2^{k-1}}
+\\
+=\sum_{k=1}^{\infty}\dfrac{d_k(w)}{2^{k}}=w
+\end{eqnarray*}
+
+\end{proof}
+%____________________________________
+\begin{eqnarray*}
+demostremos:
+\\
+P[\eta_{ik}<d_k]=\dfrac{d_k}{2}
+\\
+P[\eta_{i}\leq w]=w
+\end{eqnarray*}
+%demostracion pendiente falta entendimiento en ecuaciones 
+\\
+%____________________________________
+$\lbrace\eta_n: n \in \nat\rbrace $ donde $ u.a.i $ son constantes distintas $
+\\U(\eta(0,1)
+ $ por lo tanto, tiene sentido decir$\\
+ $sea $ \lbrace x_1,..., x_n\rbrace m.a $ de $F(x;\theta)$
+\\
+Es $\lbrace x_1,...,X_n \rbrace m.a$ de $F(x;\theta)$?
+\\
+Sea $\ent_n=\lbrace x_1,x_2,...,x_n\rbrace v.a.i.i.d.F$
+\\
+i. Independientes
+\\
+ii. $X \sim F$
+%____________________________________
+
+\section{Teorema de Glivenico-Cantelli}
+
+\begin{eqnarray*}
+\textrm{Sea }
+ \ent_n \backsim F 
+ \textrm{ y } F_n(x)=\dfrac{1}{n}=\sum_{i=1}^{n}I_{(-\infty,x)} (x_i)
+ \\\textrm{(Funcion de Distribucion Empirica) }\\
+ %faltan los acentos 
+%_____________________________________
+ \end{eqnarray*} 
+ 
+entonces:\\
+$P\lbrace sup_{x\in R} \parallel F_n(x)-F(x)\parallel> \epsilon \rbrace_{n\rightarrow\infty}\rightarrow 0    \\ \forall \epsilon \in R^{+}$
+\\
+$F_n(x)_{n\longrightarrow\infty}\longrightarrow F(x)$
+\\
+$H_{0}: Z_{n}\sim U(X\vert 0,1)\\
+H_{1}:$ No 
+\\
+(u.a continuas)
+%_____________________________________
+\begin{eqnarray*}
+\textrm{Sea  }t\in(0,1)  \textrm{y} G_n(t)=\frac{1}{n}\sum_{i=1}^{n}I_{(-\infty,t)}(x_i)
+\\\\
+\delta\lbrace g_n(t)-F(t) \rbrace
+\\
+\textrm{existen muchas puebas libres de distribu..}
+\\\textrm{Anderson-Darling}
+\\\\
+A_n^{2}=n\int_{0}^{1}\dfrac{(G_n(t)-t)^{2}}{t(1-t)}dt=\sum_{i=0}^{n}\int_{x_1}^{x_i+1}\dfrac{(G_n(t)-t^{2})}{t(1-t)}dt
+ \end{eqnarray*} 
+%____________________________________________  
+ Si  $x_1\leq x_2\leq ... \leq X_n$
+ \\
+tenemos
+\\ 
+ $A_n^{2}=-n-\frac{1}{n}\sum_{i=1}^{n} \lbrace(Z_i-1)(\ln_e x_i) + (\ln(1-x_{n_{i+1}}))\rbrace$
+ \\\\
+ o bien
+\\ \\
+ $A_n^{2}=-n-\frac{1}{n}\sum_{i=1}^{n} \lbrace(Z_i-1)(\ln_e x_i) + (2(n-i)+1)\rbrace$
+ \\\\
+ %___________________________________________
+\\\\ 
+ Ejemplo:
+ \\
+ $A_{n}^{2}(n\geq 5)$
+ \\\\
+ Cuantiles
+ \\
+
+\begin{table}[h!]
+\centering
+ \begin{tabular}{||c| c c c c c c c c ||} 
+ \hline
+ $\alpha=1-\infty$ & 0.25 & 0.15 & 0.10 & 0.05 & 0.025 & 0.01 & 0.005 & 0.001\\ [0.5ex] 
+ \hline\hline
+ $\Delta^{2}$ & 1.248 & 1.610 & 1.933 & 2.492 & 3.070 & 3.88 & 4.5 & 6\\ [1ex] 
+ \hline
+ \end{tabular}
+\end{table}
+
+%___________________________________________________
+
+D\'\  Agostino, R, Stephens, M.A (1986)(eds)
+\\
+Goodness-of-fit techniques
+\\
+NY: Marcel Decker
+\\
+Ref
+\\
+CAp 4, M.Stephens
+\\
+Edf Statistics
+\\
+Regla (suponiendo que $x_1, x_2, ... ,x_n$ son independientes)
+\\
+1.- Ordenar las obsiones
+\\
+2.- Calcular $An^{2}$
+\\
+3.- Si $An^{2} > w_{1-\infty} \Longrightarrow H:u(0,1)$ es falsa $\propto$
+%______________________________________________
+\\\\
+Ejemplo:
+\\\\
+Mathematica
+\\
+Gen $100$ obs $\sim U (x\vert0,1)$ 
+\\
+$A_{100}^{2}=0.446177$ si son unif, por que son independientes.
+\\
+(Tarcita): Checar el generadior de $U(0,1)$
+\\
+$n=10$, de $10$ en $10$ hasta $100$ 
+%____________________________________________
+\\\\
+
+\section{Independencia}
+\begin{eqnarray*}
+COV(x_i,x_j)=E\lbrace (x_i-E(x_i)(x_j-E(x_j))\rbrace
+\\\\ 
+ \textrm{Nota: es coolineal, si la rel no es lineal, no la detecta }
+ \\\\
+r(s)=\sum_{i=1}^{n}
+ \end{eqnarray*} 
+%_____________________________________________
+Bibliografia:
+\\
+Randles, Wolfe (1978-1980) -  Intruduction techniques to  the theory of Non parametric statistic
+\\
+N.Y: Wiley 
+\\
+Conover, J (197*) 2° Non parametric statisctics N.Y. Wiley
+\\
+Prueba de signos, rachas, etc 
+\\
+Ripley, B (1987) Stochastic Simulation N.Y: Wiley
+%______________________________________________
+
+Encontrar algoritmo que genere "numeros aleatorios" en el (0,1)
+\\
+Qu\'e significa que $ \lbrace x_1, ..., x_n \rbrace $  sean numeros aleatorios en el (0,1)? 
+\\
+
+Ripley (1987):
+\\
+Una sucesi\' on de n\' umeros en el (0,1) generada por un proceso determinista que tiene las mismas propiedades relevantes de una sucesi\' on de $ v^{s}, a^{s}, c^{s} $ en el (0,1) 
+\\
+\\
+Qu\'e  es un proceso determinista?
+\\
+Algoritmo matematico de la forma $x_{n+1}=D(\lbrace x_n \rbrace)$
+\\
+Donde sus propiedades relevantes son:
+\\
+%____________________________________
+\begin{eqnarray*}
+\textrm{De independencia}
+\\
+\lbrace u_1,..., u_n\rbrace u.a.i.i.d    \ U(u\vert 0,1)
+\\ P\lbrace u_1 \leq u_1, ..., U_n\leq u_1\rbrace = \prod_{i=1}^{n} U_{i}
+\\ P\lbrace u_1 \leq u_1, ..., U_n\leq u_1\rbrace = \prod_{j=i}^{k} U_{ij}
+\rightarrow   \forall k \in J_n
+\\
+\textrm{prueba de indep Wald-Wolfowite}
+\\
+u_1,...,u_n \ \ \tilde{u}= \textrm{mediana} \lbrace u_1,...,u_n\rbrace =U_{\dfrac{n+1}{2}} 
+\\
+u_{(1)} \leq u_{(2)} \leq ... \leq u_{(n)}
+\\
+y_{i}= \left\{
+\begin{array}{lc}
+0 & \textrm{ si } u_{i} \leq \tilde{u}\\
+1 & \textrm{ si } u_{i} > \tilde{u}
+\end{array}\right.         
+\\
+%______________________________________
+T= \textrm{numero de rachas}
+\\
+\textrm{T} < w_{\dfrac{\alpha}{2}} \ \ \ \textrm{\'o \ \ T}  \geqslant w_{1-\dfrac{\alpha}{2}}
+\\
+\Longrightarrow \textrm{se rechaza} \ H_{0} : u.a.i.
+ \end{eqnarray*}
+%____________________________________________
+ \\
+Los generadores m\'as famosos y utilizados son los llamados generadores congruenciales (mixtos, lineales).
+\\
+\begin{eqnarray*}  
+U_{n+1}=(a u_{n}+b)\ \textrm{mod}1 \ \ a,b \in \mathbf{R^{+}} \longleftarrow sepierden decimales
+\\
+x_{n+1}=(a x_{n}+b)\ \textrm{mod M} \ \ a,b \in  \nat \longleftarrow para trabajar con enteros
+\\
+x_{n} \in \lbrace  0,1,..., m-1\rbrace \ \ \forall n \in \nat
+ \end{eqnarray*}
+ %_______________________________________-
+ 
+ El periodo de un generador es el m\'inimo entero T tal que $X_{i+T}=X_i$  
+\\
+$D^{t}(x_{i})=x{i}\longleftarrow $ regreso al inicio 
+\\
+Mientras no llegue al periodo todos los n\'umeros son diferentes a s
+\\
+En un generador 
+\\
+$T$ fuese grandote \ \ \ $T=T(a,b,M)$
+\\
+con mod M
+\\
+$ \lbrace u_{1},..., u_{k}\rbrace$ $k$ hiperplanos del $[0,1]$
+\\
+periodos razonables son del orden $2^{37}-1$
+\\
+No hay forma de demostrar que existen  $a,b \in \nat \cup \lbrace 0 \rbrace$ \ y $\ M \in \nat $ tales que $D(x_{n}= a x_{n}+b)$ mod M sea optimo.
+\\
+\\
+%_____________________________________________
+Otro generador 
+\\
+\begin{enumerate}
+\item Dar tres semillas iniciales $IX, IY, It \in J_{29999}$
+\\\\
+\item $IX=171 * IX$ (mod 177)$-\frac{2IX}{177}$ 
+\\\\
+$IY=172*IY$ (mod 176) $-\frac{35IY}{176}$
+\\\\
+$IZ=170*IZ$ (mod 178) $-\frac{63IZ}{178}$
+\\\\
+\item $IX\leq 0 \Longrightarrow IX=IX+30269$
+\\
+$I\leq 0 \Longrightarrow IY=IY+30307$
+\\
+$IZ\leq 0 \Longrightarrow IZ=IZ+30323$
+\\
+\item
+$u=\lbrace \frac{IX}{30269}+\frac{IY}{30307}+ \frac{IZ}{30325} \rbrace$ mod 1
+\\
+\item 
+Usen $IX, JY, IZ$ en $2$
+\\
+\item
+(por si las dudas)
+\\
+Si $u=\frac{1}{0}$
+\\
+$u=\frac{- eps}{+ eps}$ \\
+Donde:
+\\
+eps= presici\'on de la maquina $1+\frac{eps}{2}=1$
+\\
+\end{enumerate} 
+%____________________________________
+Supongamos que tenemos un generador de numeros aleatorios en $(0,1)$ 
+Este, KISS, Ripley; G.Marsaglia
+\\
+Y Ahora? C\'omo generamos n\'umeros aleatrorios de una dist F? 
+\\
+(Que sea r\'apido, eficiente, portable) 
+%_________________________________
+\\
+Hab\'abiamos visto que si una $F_{n}$ de distintas entidades.
+\\
+$u=F(x)\sim U(u\vert0,1)
+\\ 
+x=F^{-}(u)\backsim F(x)$
+\\
+Ejemplo 1:
+%_______________________________________________
+\begin{eqnarray*} 
+X\backsim exp ( 0 \ \vert \ \theta )
+\\
+F(x;\theta)=1-e^{-x\theta}
+\\
+\Longrightarrow \ \ u=1-e^{-x\theta} \backsim U(u\vert0,1)
+\\
+\Longrightarrow  \ \ x=\frac{-1}{\theta} \log(1-u) \ \backsim  \ \exp (x\vert\theta)
+\\
+n=-\frac{1}{\theta} \log (a)  \exp ( x \vert \theta )
+\\
+\textrm{si} \  \  U\backsim \ (u\vert 0,1)
+\\
+\textrm{tambien} 1-u \backsim U(u\vert 0,1)
+\end{eqnarray*}
+%________________________________________________
+Ejemplo 2:
+%__________________________________________________
+ \begin{eqnarray*}
+ X\backsim Gamma (X \ \vert \alpha, \beta )
+ \\
+ F(x; \alpha, \beta )= \int_{0}^{x}\frac{\beta^{\alpha} t^{\alpha-1}}{\pi (\alpha)}e^{-t\beta}dt=u
+ \\\\
+ \textrm{No tiene forma anal\'itica, es una forma de generar Gamma}
+ \end{eqnarray*}
+ %___________________________________________________
+ Si $ \ \ X \backsim \exp (X \vert \theta)$
+ \begin{eqnarray*}
+\\
+F(x;\theta)=e^{-x\theta}
+\\
+\rightarrow x=-\frac{1}{\theta} \log u \backsim \exp (x\vert\theta) \longleftarrow \ \ F^{-1}(u)=x
+ \\
+ \end{eqnarray*}
+ %_____________________________________________________
+\\\\
+Si $ \ \ u \backsim U(u\vert0,1)$
+ \\
+  \begin{eqnarray*}
+ p(x \vert \alpha, \beta)=\frac{\beta^{\alpha} n^{\alpha-1}}{\pi(\alpha)}e^{-x\beta}
+ \\
+ \textrm{tal que} \ \alpha, \beta \in \mathbf{R^{+}} \textrm{al igual} \ \ x \in \mathbf{R^{+}}
+ \\
+ Ga(x\vert \alpha \beta)
+\\
+Ga(x\vert1, \beta)=\exp (x\vert \beta)
+\\\\
+Ga(x\vert \frac{n}{2}, \frac{1}{2})=X^{2}(x\vert n) 
+\\\\
+\textrm{Si} \ \ \lbrace x_{1},...,x_{n}\rbrace \ \ \textrm{son} \ \  u.a.i \ \  Ga(x_{i}\vert \alpha_{i}, \beta) 
+\\
+\rightarrow \sum_{i=1}^{n}x_{i} \backsim Ga \lbrace \Sigma x_{i}\vert \Sigma \alpha_{i}, \beta\rbrace
+\\
+\phi(t)=E [e^{itx}]
+ \end{eqnarray*}
+ %__________________________________________________________________________
+ Si $\ \ \ X^{2} \ (x\vert2_{n})$
+\begin{enumerate}
+\item $ U_{1},...,u_{n} \backsim U(u\vert 0,1)$
+\\
+$(x-{1}=-2 \log U_{i})$
+\item $Y=-2 \Sigma_{i=1}^n \log u_{i} \backsim X^{2}(y\vert 2n)$
+\\ genero un valor de $X^{2}$
+\\ ya no necesita la inversa de la $X^{2}$, pero generamos solo las que tienen g del pares.
+\item $y_{1},...,y_{m}$ hay que repetir 1 y 2 
+ \end{enumerate} 
+ 
+Para generar variables aleatorias $Ga$, $Ga(x \vert n, \beta)$
+\begin{enumerate}
+\item $u_{1},..., u_{n} \backsim U(u \vert 0,1)$
+\item $Y= -\frac{1}{\beta} \Sigma_{i=1}^{n} \log u_{1} \backsim Ga(Y \vert n, \beta)$
+\item igual
+\end{enumerate}
+%_____________________________________________________________________________
+
+  \begin{eqnarray*}
+\textrm{Sean} \ \ X_{1} \backsim Ga (X_{1} \vert \alpha, 1), \ X_{2} \backsim Ga(X_{2} \vert \beta, 1)  \ \ \textrm{ independientes }
+\\
+Y_{1} =\dfrac{X_{1}}{X_{1}+ X_{2}} \ \ , Y_{2}= X_{1} + X_{2} \ \ ,  \ \ Y_{i} = Y_{i} (X_{1}, X_{2})
+\\
+X_{1}=Y_{1} Y_{2} = x_{1}(Y_{1}, Y_{2})
+\\
+X_{2}= Y_{2}(1-Y_{1}) = x_{2} (Y_{1}, Y_{2})
+\\ \\
+\textrm{TEOREMA}
+\\
+\textrm{Si} X_{1},..., X_{n}  \ \textrm{son} \ \  u.a.i \ \textrm{con} \ \ p(X_{1},...,X_{n} \vert \theta) \  \textrm{y} \ \  Y_{1},...,Y_{n}
+\\ \textrm{es una transferencia uno a uno de } \lbrace X_{1}, ..., X_{n} \rbrace \Longrightarrow \textrm{la densidad de } \ Y
+\\
+\\
+p(Y_{1},...,y_{n} \vert  \theta) = \frac{p(X_{1}(Y_{1},...,y_{n}),..., X_{n}(Y_{1},..., Y_{n}) )}{\vert J \vert}
+\\
+\\
+\vert J \vert =  \left \vert 
+\begin{array}{lc}
+\ Y_{2} & \ \ Y_{1}\\
+-Y_{2} &  \ \ 1-Y_{1}
+\end{array}\right. 
+\\
+\\
+p(Y_{1},Y_{2})= \frac{1}{\Gamma(\alpha)} \ (Y_{1}Y_{2})^{\alpha - 1}  \ e^{-Y_{1} Y_{2}}\frac{1}{\Gamma (\beta)} \ [Y_{2}(1-Y_{1})]^{\beta - 1} \ e^{-Y_{2}(1-Y_{1})} \ Y_{2}\\
+\\
+p(Y_{1},Y_{2} \vert \alpha , \beta)= \frac{1}{\Gamma(\alpha) \Gamma(\beta)} Y_{1}^{\alpha - 1} (1 - Y_{1})^{\beta - 1} Y_{2}^{\alpha + \beta - 1} \ e^{-Y_{2}} \\ \\
+p(Y_{1} \vert \alpha , \beta) = \frac{\Gamma (\alpha + \beta )}{\Gamma (\alpha) \Gamma (\beta)} \ \ Y_{1}^{\alpha - 1} 
+\\ \textrm{tal que}  \ \ \ 
+\\
+\alpha , \beta \in \mathbf{R^{+}} 
+\\ Y_{1} \in  (0 , 1)
+ \end{eqnarray*}
+%_____________________________________________________________________________________________________
+     
+Supongamos que se quiere generar un $Be(x \vert \alpha, \beta)$
+ \begin{enumerate}
+\item  $X \backsim$ Gamma $(x \vert \alpha, 1)$ ,  $Y \backsim  Ga (Y \vert \beta, 1)$ indepen
+\item $Z = \frac{X}{X + Y} \backsim Beta (Z \vert \alpha, \beta)$
+\end{enumerate}
+%________________________________________________________
+$X \backsim B_{er} (X \vert \theta) \ \ p(x \vert \theta)= \theta^{x} (1 - \theta)^{1-x}; \ x \in \lbrace 0,1 \rbrace, \ \ \theta \in (0,1) $
+\\ \\
+$F(X \vert \theta) =  \left \lbrace 
+\begin{array}{lc}
+\ 0 & si \ \ x<0\\
+\ i-1 & \ \  \ si  \ \ 0<= x <1 \\
+\ 1 & si \ \ x<=1
+\end{array}\right.$ 
+\\ \\
+$F^{-}(u \vert \theta) =  \left\lbrace 
+\begin{array}{lc}
+\ 0 & si \ \ u< = 0 - \theta \\
+\ 1 & si \ \ u> 1 - \theta
+\end{array}\right. $
+
+ \begin{enumerate}
+\item  $u_{1},...,u_{n}$
+\item  Si $u  1 - \theta$, hacer $X=0$, \ en otro caso, \ hacer $x=1$ \\
+  $\longrightarrow X \backsim B_{er}(X \vert \theta )$ \\
+  y de aqui a generar $X \longrightarrow bin (X \vert n)$ est\'a f\'acil \\
+  $Y= \sum X_{i}$ ;  $X_{i} \backsim Bernoulli (X \vert \theta)$ \ indep
+\end{enumerate}
+%____________________________________________________________
+En general Si
+$X \backsim F$ cuya densidad es $p_{k} = P[X=k], \ \ k \in J_{m}$
+ \begin{enumerate}
+\item $u \backsim U(u \vert 0,1) $
+\item Si $u \in [p_{k}, p_{k+1}] \longrightarrow x=k$
+\end{enumerate}
+%________________________________________________________
+Ahora, dadas 2 va 
+$X_{1} \backsim N(x_{1} \vert 0,1)$ \ y \ $X_{2} \backsim N(x_{2} \vert 0,1 )$ indeped
+$
+\textrm{Sea} \theta \in [0, 2\pi]  \  \ \textrm{y} \ \ r \in \mathbf{R^{+}} u\lbrace 0 \rbrace
+\\
+X_{1} = r cos \theta \ \ \ \ \ p(x_{1}, x_{2})=\frac{1}{2 \pi} \ \ e^{-\frac{1}{2}(X_{1}^{2})+X_{2}^{2}}
+\\
+X_{2}=r sen \theta
+\\
+p(r, \theta)= \frac{1}{2 \pi} \ e^{-\frac{1}{2}} \left |  \begin{array}{lc}
+\ Cos \theta - r Sen \theta \\
+\ Sen \theta + r Cos \theta
+\end{array}\right.\left | = \frac{r}{2 \pi} \ e^{-\frac{1}{2} r^{2}}=g_{1}(\theta) g_{2} (r)\right.$  \\ 
+\\ $ \longrightarrow  r$ \ y \ $ \theta$ \ son independientes y obviamente $ \theta \backsim U (\theta \vert 0, 2 \pi)$
+%___________________________________________________________
+Entonces podemos generar V A $X^{2}(n)$
+  \begin{eqnarray*}
+  \textrm{Si} X_{1}, ..., X_{n} \backsim N(X \vert 0,1) \longrightarrow \sum_{i=1}^{n} Xi^{2} \backsim  X^{2}(. \vert n)\\ \\
+ \end{eqnarray*} 
+ Sean $\ \  s=r^{2} \longrightarrow \ \ ds=2rdr \\ $
+  \begin{eqnarray*}
+  p(\theta, s)= \frac{1}{2 \pi} \ \frac{1}{2} e^{-\frac{s}{2}}
+ \end{eqnarray*}
+%____________________________________
+$X^{2} (x \vert n)= Ga (x \vert \frac{n}{2}, \frac{1}{2})\ = \ \frac{x^{\frac{n}{2}-1} \ e^{-\frac{1}{2}x}}{2^{\frac{n}{2}} \Gamma (\frac{n}{2})}$
+  \begin{eqnarray*}
+  X^{2}(x \vert 2)= \frac{e^{-\frac{x}{2}}}{2}
+  \\
+  \longrightarrow s \backsim X^{2} (s \vert 2)
+  \\ \\
+  \int_{0}^{t} \frac{1}{2} \ e^{-\frac{s}{2}} ds = -e^{-\frac{s}{2}} \int_{0}^{t} = 1-e^{-\frac{t}{2}} \\ \\
+  \longrightarrow 1-F(t)= e^{-\frac{t}{2}} = U \\
+  P[U \leq u]= P[e^{-\frac{1}{2}} \leq u] = P[t \geq -2 lim u] = u
+ \end{eqnarray*}
+ Normales 
+ 
+ \begin{enumerate}
+\item Sea $u_{1}, u_{2} $
+\item  $\theta =2 \pi u_{1} r= \sqrt{-2 lim u_{2}}$
+\item $X_{1} = \ \ rCos \theta, \ \ X_{2} = \ \ rSen \theta$
+\end{enumerate}
+$\longrightarrow X_{1}, X_{2} \ \ \backsim \ \ N(X \vert 0, 1)$
+%_____________________________________________
+\section{M\'etodo Box, Muller (1958)}
+
+$X \ \ \backsim N (x \vert 0,1) \\ \longrightarrow \ \ Y= M + \varphi X \ \ \ \backsim N (y \vert \mu , \varphi)
+\\
+\underline{X} \backsim N_{k} ( \underline{X}\ \ \vert \ \  \underline{\mu}  , \underline{\sum_{k}}) $
+\\ \\ \\
+Descomposici\'on expectral y anexas. 
+\\
+Si una matrix $\sum_{k*k}$ \ es def positiva, ent. $ \exists n \ \Lambda$ \ y \ $ \underline{P}$ \\
+donde $\Lambda = diag \{ \lambda_{1},..., \lambda_{k} \} $ \ \ y \ \ $ \underline{P}$ ortogonal tales que 
+\begin{eqnarray*}
+\Sigma = \underline{P}' \Lambda P  \ \ \ \ \ \ \ ( P^{1} = P^{-1} ) \\ 
+= \underline{P^{1}} \ \ \Lambda^{-\frac{1}{2}} \ \Lambda^{\frac{1}{2}} \ \underline{P} \ \ \  \ \ \Lambda^{\frac{1}{2}}= \{ \sqrt{\lambda_{1}}, ... , \sqrt{\lambda_{k}} \} \\
+= A' A \\ \\ 
+A^{-1} \Sigma A^{-1} = I \\
+(A \Sigma ^{-1} A^{1})^{-1} = I \\
+Y = A (X - \mu) \backsim N_{k} (Y \vert \ \underline{o} , I_{k})
+\end{eqnarray*}
+%_________________________________________________________________
+
+ \section{Transformaciones (Mezclas)}
+ 
+ \begin{eqnarray*}
+X \backsim \ N (X \vert 0 , \tau h) \ \ \ \ \ \tau h = \frac{1}{v(x)} \equiv \textrm{precisi\'on} \\
+ h \backsim Ga (h \vert \  \alpha \ ,  \ \beta) \\ \\
+ p(x \vert \ \tau \ , \ \alpha \ , \ \beta ) = \int_{o}^{\infty} \ p (x , h \vert \ \tau \ , \ \alpha \ , \beta)dh \ = \int_{o}^{\infty} \ p (X \vert \ 0 \ , \ h \tau) \ p (h \vert \ \alpha \ , \ \beta)dh \\
+ OC \int_{0}^{\infty}h^{\frac{1}{2}} e^{-\frac{\tau h}{2}x^{2}} h^{\alpha - 1} e^{-h \beta} dh \\ \\
+ OC \int_{0}^{\infty} h^{\alpha + \frac{1}{2} - 1} \ e^{-h (\beta + \frac{\tau x^{2}}{2})} dh \\ \\
+ OC \left( \beta + \frac{\tau x^{2}}{2} \right)^{- \frac{2 \alpha + 1}{2}}\\ \\
+ OC \left( 1 + \frac{\tau \alpha}{\beta} \frac{x^{2}}{2 \alpha} \right)^{-\frac{2 \alpha + 1}{2}}
+\end{eqnarray*}
+
+$p(X \vert \tau , \alpha , \beta) = STU (X \vert 2 \alpha , 0 , \frac{\tau \alpha }{\beta})$
+\\  
+$\Longrightarrow \sqrt{\frac{\beta}{\tau \alpha}} \ X \ \sim STU (X \vert 2 \alpha, 0 , 1) = t(x \vert 2 \alpha) $ \\
+\\ \\ \\ 
+Algoritmo para generar (students) \\
+ 
+ \begin{enumerate}
+\item $h \sim Gamma (h \vert \alpha , \beta)$ 
+\item $X \sim N (X \vert  \mu , \frac{1}{\sqrt{\tau h}})$
+\item $Y = X \sim STU (Y \vert  2 \alpha ,  \mu , \frac{\tau \alpha}{\beta})$
+\end{enumerate}
+$X \sim bin (X \vert n , \theta ) \ \ \ \ \ \ \theta \sim Beta (\theta \vert \alpha , \beta)\\ \\
+p(X \vert n, \alpha , \beta) = \displaystyle \int_{0}^{1} bin (X \vert n , \theta) Beta (\theta \vert  \alpha . \beta) d \theta \\ \\
+= \dfrac{\binom{n}{x} \Gamma (\alpha + \beta)}{\Gamma(\alpha) \Gamma (\beta)} \displaystyle \int_{0}^{1} \theta^{x} (1 - \theta )^{n - x} \theta^{\alpha - 1} (1 - \theta)^{\beta - 1} d \theta \\ \\
+= \dfrac{\Gamma (n + 1) \Gamma (\alpha + \beta)}{\Gamma (\alpha) \Gamma (x + 1) \Gamma (n-x+1) \Gamma (\alpha)}
+\displaystyle \int_{0}^{1} \theta^{\alpha + x - 1} (1 - \theta)^{\beta + n - x -1} d \theta \\ \\
+= \dfrac{\Gamma (n + 1) \Gamma (\alpha + \beta)}{\Gamma (x + 1)\Gamma (n - x + 1) \Gamma (\alpha) \Gamma (\beta)}
+\ \ \ \ \dfrac{\Gamma (\alpha + x ) \Gamma (\beta + n - x)}{\Gamma (\alpha + \beta + n)} \\
+\\ = BB (X \vert n , \alpha , \beta) \ \ \ \ \ x \in J_{n} U {0} \\
+n \in \nat \\ \alpha , \beta \in \mathrm{R^{+}}$
+%_____________________________
+$X \sim N (X \vert \mu , 1) \\
+X^{2} \sim X^{2} (X^{2} \vert 1 , \mu^{2})\\
+= \displaystyle \sum_{i=1}^{\infty} P(n \vert \Gamma_{i}) X^{2} (x \vert n)$\\
+\\
+M\'etodos generales. \\
+$f(x)= (x + 2)^{3}(1 -x)\ \ , \ \ x \in (0,1) \\
+{X_{1}, ... , X_{n}} \ \ $ \ \ generar $u.a$ que se dist asi
+ \begin{eqnarray*}
+ \log f(x)= 3 \log (x + 2) + \log (1 - x)\\
+ \dfrac{d}{dx} \log f(x) =\dfrac{3}{x + 2} - \dfrac{1}{1 - x} = 0 \\
+ 3(1 - \sim x) - (\sim x + 2)= 0\\
+ 3 - 3 \sim x - \sim x - 2 = -4 \sim x + 1 = 0\\
+  \sim x = \frac{1}{4} \ \  \textrm{m\'aximo global}\\
+  f \left(\frac{1}{4}\right)= \left(\frac{9}{4}\right)^{3} \left(\frac{3}{4} \right)=\frac{2187}{256} \approx 8.54 
+\end{eqnarray*}
+$\dfrac{d^{2}}{dx^{2}} \log f(x) = - \dfrac{3}{(x+2)^{2}} - \dfrac{1}{(1 - x)^{2}} < 0$
+ fraf
+ \begin{eqnarray*}
+\int_{0}^{1} F(x)dx = \int_{0}^{1}(x^{3}+6 x^{2} + 12 x + 8)(1 - x)dx \\
+= \int_{0}^{1} (x^{3} + 6 x^{2} + 12x + 8 - x^{4} - 6 x^{3} - 12 x^{2} - 8x) dx \\
+= \int_{0}^{1} (-x^{4} - 5 x^{3} - 6 x^{2} + 4x + 8)dx \\
+=  \left [ - \frac{x^{5}}{5} - \frac{5 x^{4}}{4} - \frac{6 x^{3}}{3} + \frac{4 x^{2}}{2} + 8x\right ]_{0}^{1}\\
+= -\frac{1}{5} - \frac{5}{4} - 2 + 2 + 8 = \frac{131}{20} \approx 6.55
+\end{eqnarray*}
+$g(x)= \frac{20}{130} f(x) \ \ \ \ x \in (0,1)$ \ \ \ \ es una densidad
+\\ Si $M = \frac{2187}{256} \ \ \Longrightarrow f(x) \leq M U (X \vert 0, 1)$ \\
+\\ En gral, si $\exists M \in \mathrm{R^{+}}$ y $h(x)$ una funcion de dens tal q \\
+$0 \leq f(x) \leq Mh (x)$
+
+ \begin{enumerate}
+\item generar $ x \sim h(x)$ \ \ y $\ \ u \sim U (u \vert 0 , 1)$
+\item Hagan $Y = X$ \ \ si \ \ $ u \leq \frac{f(x)}{M h(x)}$
+\item en caso contrario ir a 1 
+\end{enumerate}
+
+Algoritmo de aceptacion y rechazo \\
+ \begin{enumerate}
+\item ? $Y \sim f $?
+\item ? el proceso termina alg\'un d\'ia?
+\item En promedio ?cu\'antas iteraciones necesitamos?
+\end{enumerate}
+
+ \begin{enumerate}
+\item $P[ Y \leq y] = \dfrac{ \displaystyle \int_{- \infty}^{y} F(x) dx}{\displaystyle \int_{- \infty}^{\infty} F(x)dx} = F_{X}(y)$ \\ \\
+$P[Y \leq y] = P \left[ X \leq y \vert U \leq \dfrac{f(x)}{Mh(x)} \right] = \dfrac{P\left[ X \leq y, U \leq \frac{f(x)}{Mh(x)}\right]}{P \left[ U \leq \frac{f(x)}{Mh(x)}\right]}$ \\ \\ \\
+$= \dfrac{\displaystyle \int_{\infty}^{y} \left\{  \displaystyle \int_{\infty}^{\frac{f(x)}{Mh(x)}} du\right\} h(x) dx}{\displaystyle \int_{- \infty}^{\infty} \left\{  \displaystyle \int_{- \infty}^{\frac{f(x)}{Mh(x)}} du\right\} h(x) dx} = \dfrac{\frac{1}{M} \displaystyle \int_{- \infty}^{y} f(x) dx}{\frac{1}{M} \displaystyle \int_{- \infty}^{\infty} f(x)dx} = F_{X} (y)$ \\ \\ \\ por lo tanto $Y \ \sim oc \ f(x)$
+\item $\theta = P \left[ U \leq \frac{f(x)}{Mh(x)} \right] \\ \\
+= E_{X} \left[ \underline{P} \left[ u \leq \frac{f(x)}{Mh(x)} \vert X \right]\right] \\ \\
+= \frac{1}{M} E_{X} \left[ \frac{f(x)}{Mh(x)}\right] > 0$ \\ \\
+abusando de notacion \\ \\
+ \\ $P(-\infty , x) =F(x) = \displaystyle \int_{- \infty}^{x} f(t) dt \\\\
+\underline{P} (A) = \displaystyle \int_{a} d \underline{P} = \displaystyle \int_{\Omega}^{- \infty} I_{A} d \underline{P} = E [I_{A}] \\ \\
+E \left[  X \vert Y\right] = \displaystyle \int x p(X  \vert Y) dx \\ \\
+E_{Y} \ E_{X \vert Y} \left[ X \vert Y \right] = \displaystyle \int  \left\{ x p(X \vert Y) dx \right\} p(y) dy \\ \\
+= \displaystyle \int \displaystyle \int  x p(x, y)dy dx \\ \\
+= \displaystyle \int  x p(x)dx = E [X]
+$\\ \\
+$T$
+\\ $\Longrightarrow P_{i} = P$ [aceptar $Y$ en el i-esimo intento]$= (1 - \theta)^{i-1} \theta$ \\ \\
+$\displaystyle \sum_{i=1}^{\infty} P_{i} = \theta \displaystyle \sum_{i=1}^{\infty} (1 - \theta)^{i - 1} = \frac{\theta}{1 - (1 - \theta)} = 1$
+eventualmente termina 
+\item E (intentos) $\displaystyle \sum_{i=1}^{\infty} i \theta (1 - \theta)^{i - 1} = \theta \displaystyle \sum_{i=1}^{\infty} i(1 - \theta)^{i - 1} = \\ \\
+= \theta  \begin{bmatrix}
+  \  & 1+(1- \theta) + (1 - \theta)^{2} + & .... \\
+  \ \ \ & (1 - \theta) + (1 - \theta)^{2} + &  ... \\
+  \ \ \ \ & (1 - \theta)^{2} + &  ...
+ \end{bmatrix}
+ \\ \\ \\ \\
+\dfrac{1}{\theta} + \dfrac{(1 - \theta)}{\theta} + \dfrac{(1 - \theta)^{2}}{\theta} = \dfrac{1}{\theta} $
+\\ \\ \\ de 2 $\theta = P \left[ U \leq \frac{f(x)}{Mh(x)}\right]$ \\ \\
+$\frac{1}{\theta} = \dfrac{M}{E_{X} \left( \frac{f(x)}{h(x)} \right)} = 1.3$ \\ 
+num de prom de intentos q neces para gen una $u.a Y \sim f(x)$
+\end{enumerate}
+T \\ En bayesiana \\ \\
+$p( \theta \vert Zn) = \dfrac{p(x) P(Zn \vert \theta)}{\int p(\theta) p(zn \vert \theta)d \theta} $ \\ \\
+T \\ Generar $v.a$ de la funci\'on $f(x)$ del ejemplo \\ \\
+$f(x) = (x + 2)^{3} (1 - x) \ \ \ \ x \in (0,1) \\
+\{ X_{1},..., X_{n}\} \approx g(x)$ \\
+?$M$? \ \ contar el numero de intentos en prom. \\ \\
+$M = 10 ; \ \ \ \frac{1}{\theta} \approx 1.6 \\ 
+M = 13 ; \ \ \ \frac{1}{\theta} \approx 2$ \\ \\
+Mientras mas grande es $M$ mas desecho \\ 
+Si $ u \sim U (u \vert 0,1) \\
+\Longrightarrow X = -\frac{1}{\theta} \log u \sim exp (X \vert \theta)$\\ \\
+Si $\{ X_{1},...,X_{n} \} \sim exp (X \vert \theta )$ \\
+$\Longrightarrow Y = \displaystyle \sum_{i=1}^{n} X_{1} \sim Ga (X \vert n, \theta)$ \ \ para valores enteros de $\alpha$ \\ \\ \\
+$Ga (X \vert \alpha , 1) = \dfrac{x^{\alpha - 1}}{\Gamma (\alpha)} e^{-x} \\ \\
+Z=\dfrac{X}{\beta} \Longrightarrow \ \ X= Z \beta \ \ \ \ dx= \beta dz \\ \\
+\Longrightarrow p(Z \vert \alpha , \beta) = \dfrac{(Z \beta)^{\alpha - 1}}{\Gamma (\alpha)} e^{- Z \beta } \beta \ \ = \dfrac{\beta^{\alpha} Z^{\alpha - 1}}{\Gamma (\alpha)} e^{-Z \beta}$ \\ \\ \\
+Generar \\ 
+$\{ X_{1}, ..., X_{n}\} \sim Ga (X \vert \alpha , 1) \ \ \ \ \ \alpha \geq 1 $\\
+Sea $a =[\alpha]$ y quiero usar $Ga (X \vert a, b)$ para generar $Ga (X \vert \alpha , 1)$ \\ 
+$f(x) \ \ \ \ Ga(\alpha , 1) \\
+g(x) \ \ \ \ Ga(a,b) \\ \\
+\dfrac{f(x)}{g(x)} = \dfrac{Ga(X \vert \alpha , 1)}{Ga(X \vert a,b)} OC \dfrac{x^{\alpha - 1} e^{-x}}{ b^{a} x^{a - 1} e^{-bx}} = x^{\alpha - a} b^{-a} e^{-x (1-b)}$ \\ \\
+voy a encontrar el max de $X$
+\\ $\log \left( \frac{f(x)}{g(x)}\right) \approx (\alpha - a) \log x - a \log b - x (1 - b) \\ \\
+\frac{d}{dx} \log \left( \frac{f(x)}{g(x)}\right) = \dfrac{\alpha - a}{x} - (1 -b) = \dfrac{\alpha -a}{x} - 1 + b = 0 \\ \\
+\dfrac{\alpha - a}{x} = 1 - b \ \ \ \ \ \ \dfrac{- (\alpha - a)}{x^{2}} < 0 \\ \\
+\sim x = \dfrac{\alpha - a}{1 - b}$ --- maximo global \\ \\
+$\Longrightarrow \dfrac{f(x)}{g(x)} \leq \left( \dfrac{\alpha - a}{1 - b}\right)^{\alpha - a} b^{-a} e^{-(\alpha - a)} = \left( \dfrac{x - a}{e (1 - b)} \right)^{\alpha - a} b^{-a} \ \ \ \ \ \forall x \in \mathcal{R^{+}} \\ \\
+(\alpha - a) \log (x -a) - (\alpha - a) - (\alpha - a) \log (1 - b) - a \log b + \dfrac{(\alpha - a)}{1 - b} - \dfrac{a}{b} = 0 \\ \\
+\alpha \sim b - a \sim b - a + a \sim b = 0 \\
+\sim b = \frac{a}{\alpha}$ \ \ hace la cot min \\ 
+\\ $M = \left[ \dfrac{\alpha - a}{e (1 - \frac{a}{\alpha})}\right]^{\alpha - a} \left( \dfrac{a}{\alpha}\right)^{-a} = \left( \dfrac{\alpha}{e} \right)^{\alpha - a} \left( \dfrac{a}{\alpha}\right)^{-a}$ \\ \\
+O sea pa generar $Ga (x \vert \alpha, 1 )$
+ \begin{enumerate}
+\item $g(x) = Ga (X \vert [\alpha], \frac{[\alpha]}{\alpha })$
+\item  Generar $u \sim U (u \sim 0, 1) \\ 
+X \sim Ga \left( X \vert [\alpha] , \frac{[\alpha]}{\alpha}\right)$
+\item Si \\ $u \leq  \dfrac{x^{\alpha - 1} e^{-1}}{Mg(x)}$ \\ \\ $Y = X$ \\ \\ si no pos de nuevo \\ \\
+$\dfrac{1}{\theta}  = M \Gamma (\alpha)$
+\end{enumerate}
+Ultimo ejemplo
+ \\ Grafica
+\\ $N(x \vert 0,1)$
+ \begin{eqnarray*}
+STU (X \vert 1 , \mu , \tau ) \\ \\
+Ca (X \vert \mu , \tau) = \dfrac{1}{\pi \tau (1 + (\frac{x - \mu}{\tau})^{2})} \\ \\
+Ca (X \vert a , \tau) = \dfrac{1}{\pi \tau (1 + \frac{x^{2}}{\tau^{2}})} \\ \\
+\dfrac{N (x \vert 0, 1)}{Ca (x \vert 0 , \tau)} = \dfrac{\frac{1}{\sqrt{2 \pi}} e^{-\frac{x^{2}}{2}}}{\frac{1}{\pi (1 + x^{2})}} = \sqrt{\frac{\pi}{2}} = (1 + x^{2}) e^{-\frac{x^{2}}{2}} \\ \\
+\textrm{la mejor densidad cauchy para generar } N(0,1) \ \textrm{es la} \ 0, 1 \\ \\
+Ca (X \vert 0 , 1) =\frac{1}{\pi (1 + x^{2})} \ \ \ \textrm{algorit acept y rechazo} \\ \\
+Cota \sqrt{2 - \tau^{2}} 
+\end{eqnarray*}
+Box Muller \ $\Longrightarrow$  \ generar muchisimas \ \ $10,000$
+
+ \begin{enumerate}
+\item $g(x) = Ca (X \vert 0,1) =  \dfrac{1}{\pi (1 + x^{2})}$ 
+\item Generar $u \sim U (0 , 1) \ \ \ \ \ x \sim Ca (X \vert 0,1)$ \\ 
+$\Longrightarrow$  $ X \sim No (x \vert 0,1)$ \\ \\
+si $u \leq \frac{f(x)}{Mg(x)} = \frac{\sqrt{\pi}}{2} (1 + x^{2}) e^{-\frac{x^{2}}{2}}$ \\ \\
+$f(x) OC e^{-\frac{x^{2}}{2}} \\ \\
+g(x) = Ca (X \vert 0,1) = \frac{1}{\pi (1 + x^{2})} \\ \\
+f(x) \leq Mg(x) \ \ \ \ \ \ \ \ \ \ h(1) = \pi (2) e^{- \frac{1}{2}} = M    \\ \\
+\Longrightarrow \ \ \dfrac{f(x)}{g(x)} \leq M \\ \\
+\dfrac{f(x)}{g(x)} = \pi (1 + x^{2}) e^{- \frac{x^{2}}{2}}  \\ \\
+h= \log \dfrac{f(x)}{g(x)} = \log \pi  + \log (1 + x^{2}) - \frac{x^{2}}{2} \\ \\
+h' = \dfrac{1}{1 + x^{2}} (2x) - x = 0 \ \ \ \ \Longrightarrow \ x \left[ \frac{2}{1 + x^{2}} - 1\right] = 0$
+\end{enumerate}
+%_________________________________________________________________
+
+\section{Algoritmo de aceptaci\'on y rechazo}
+
+Sea $g$ densidad,  $N \in \mathcal{R}$  tales que 
+$f(x) \leq Mg(x)$ \\
+ \begin{enumerate}
+\item Generar $X \sim g$ \ \ y \ \ $u \sim U$
+\item Si $u \leq \dfrac{f(x)}{Mg(x)}$
+\end{enumerate}
+Quedarse con $X$ , \ si no , ir a $1$ \\
+grafica
+\\ \\
+$X \sim Ga (X \vert \theta )$
+ \begin{eqnarray*}
+P(X \vert \theta) = \dfrac{1}{\pi (1 + (X - \theta)^{2})} \\ \\
+Z = \{ X_{1}, ... , X_{n}\} \\ \\ \textrm{ y} \ \ \ \ 
+p(\theta) = N (\theta \vert 0 , \tau) \ \ \ \tau \ \ \  \textrm{conocida} \\ \\
+p(\theta \vert Zn) \ \ OC \ \ p(\theta) \ \ p(Zn \vert \theta) \\ \\
+p(\theta \vert Zn) \ \ OC \ \ e^{-\frac{\theta^{2}}{2 \tau^{2}}} \ \displaystyle  \Pi_{i=1}^{n} (1 + (X_{i} - \theta)^{2})^{-1} \\ \\
+ \textrm{Intervalo de probabilidad } \ \ p  \ \ \textrm{para} \ \ \ \theta \\ \\
+ P \left[ \theta \in I \vert Zn \right] = \int_{I} p(\theta \vert Zn) d\theta = p
+\end{eqnarray*}
+
+Preguntas  
+$p(X \vert \theta)$ \ \ \ ? C\'omo es ? \\ grafica \\ \\
+$Z = \{ X_{1}, X_{2}\} \\ \\
+p(X_{1} , X-{2} \vert \theta ) = l (\theta ) = \dfrac{1}{\pi^{2}} \left\{ \frac{1}{1 + (x_{1} - \theta)^{2}} - \frac{1}{1 + (x_{2} - \theta)^{2}} \right\} \\ \\
+\log p(X_{1} , X_{2} \vert \theta) = - \log \Pi - \log (1 + (X_{1} - \theta)^{2} ) - \log (1 + (X_{2} - \theta)^{2}) \\ \\
+\dfrac{d}{d \theta} \log p(X_{1}, X_{2} \vert  \theta) = \frac{2 (X_{1} - \theta)}{1 + (X_{1} - \theta)^{2}} + \frac{2 (X_{2} - \theta)}{1 + (X_{2} - \theta)^{2}} \\ \\
+X_{1} = 3 \  \ \ \ \ X_{2} = 7 \\ \\
+l(-2) = 0.000047 \ \ \ \ \ l(o)= 0.00020 \\ 
+l(-1) = 0.000092 \ \ \ \ \ l(1) = 0.00055 \ \ \ \ l(2) = 0.0019$ \\
+grafica
+$
+\\ p(\theta \vert Zn)\ \ OC \ \ e^{-\frac{\theta^{2}}{2  \tau^{2}}} \ \  \Pi_{i=1}^{n} \frac{1}{(1+ (x_{i} - \theta)^{2})} \\ \\
+\displaystyle \int_{a}^{b} p(\theta \vert Zn) d \theta =p$
+\\ \\ T 
+\\ \\
+ \begin{enumerate}
+\item condiciones para que $ l (\theta \vert X_{1}, X_{2})$ \ \ sea unimodal
+\item Intentar generar $l (\theta x_{1}, ... , x_{n})$ 
+\end{enumerate} 
+
+Marsagha (1977) \\
+sea $g$ densidad $g_{l}$ una funcion y $M \in \mathcal{R}$  tales que  $g_{l} \leq f \ \leq Mg$ \\
+grafica 
+ \begin{enumerate}
+\item Generar $X \sim g \ \ \ \ \ u \sim U$
+\item Quedarse con $X$ si $u \leq \dfrac{g_{l} (x)}{Mg (x)}$ \\ \\ en caso contrario ir a $1$
+\end{enumerate}
+
+La familia exponencial de distribuciones \\ \\
+$p(x \vert \theta ) = h(x) exp \{ \theta x - \Psi (\theta)\}$ \\ 
+una funcion $f$ \ es log-c\'oncava si log f es c\'oncava \\ grafica \\ \\
+$bin (X \vert \theta) = \displaystyle\binom{n}{x} \theta^{x} (1 - \theta)^{n - x} \\ \\ 
+= \displaystyle\binom{n}{x} \left( \frac{\theta}{1 - \theta }\right)^{x} (1 - \theta)^{n} \\ \\ 
+=  \displaystyle\binom{n}{x} exp \left\{ x \log \frac{\theta}{1 - \theta} + n \log (1 - \theta )\right\} \\ \\
+P_{o} (X \vert \lambda) = \dfrac{e^{- \lambda} \lambda^{x}}{x !} \ \  =  \ \ \frac{1}{x !} \ exp \{ x \log \lambda - \lambda \} \\ \\ 
+N \ \, \ \ Ga, \ \ Beta, \ \ exp, \ \ geo$ \\ \\
+$\log p(x \vert \theta) = \log h(x) + \theta x - \Psi (\theta ) \\ \\
+\dfrac{\varrho }{\varrho x} \log p(x \vert \theta) = \frac{h' (x)}{h(x)} + \theta \\ \\
+\dfrac{\varrho^{2}}{\varrho x^{2}} \ \log p(x \vert \theta ) = \dfrac{h(x) h''(x) - [h'(x)]^{2}}{h^{2}(x)} < 0 \ \ \ \ \ \ \forall x \in \mathcal{R}$
+\\ \\
+$\Longrightarrow p (x \vert \theta)$ \ es log c\'oncaba \\ \\ grafica \\ 
+$sn = \{ X_{0}, X_{1}, ..., X_{n}\}$ \ \ tales que $p (x \vert \theta) \in \mathrm{R^{+}}$ \\
+$ L_{i, i+1} \longrightarrow (x_{i},f(x_{i})) \ , \ (x_{i + 1} , f(x_{i+1}) ) \\ \\ $
+Sea $x \in [x_{i}, x_{i+1}]$,
+$f_{n} = L_{i, i+1} (x)$ y $\overline f_{n} (x) = min \{ L_{i-1 , i}^{(x)} , L_{i+1, i+2}^{(x)} \}$ \\ \\
+$\Longrightarrow f_{-n}(x) \leq f(x) \leq \overline{f}_{n}(x)$ \ \ \ \ \ $\forall x  \in sup (f)$ \\ \\
+
+$\{f_{n} (x)\}_{x \to -\infty}= 0 \ \ \ $ y $ \ \ \ \{\overline{f}_{x \to \infty}n(x)\} = min \{   L_{0,1}(x), L_{n, n+1} (x)\} \\ \\
+f(x)= \log p (X \vert \theta)\\ \\
+\underline{h}_{n} (x) = exp \underline{f}_{n}(x)\ \ \ \  $ y $ \ \ \ \ \overline{h}_{n}(x)= exp \overline{f}_{n}(x) \\ \\
+\Longrightarrow \underline{h}_{n} (x) \leq p (X \vert \theta) \leq \overline{h}_{n}(x) = Cn gn (x)$ \ \ con $gn$ \ \ densidad \\ \\ \\ \\ \\
+Sea $f$ log-c\'oncava \\ Si $f$ es c\'oncava \\ 
+ \begin{eqnarray*}
+ \dfrac{\varrho^{2} f}{\varrho x^{2}} < 0 \\
+ \\
+ \dfrac{\varrho^{2} \log f}{\varrho x^{2}} = \dfrac{f f'' - [f']^{2}}{f^{2}} < 0 \\ \\
+ \textrm{grafica} \\ \\
+ Sn = \{ X_{0}, X_{1}, ... , X_{n+1} \} \ C \  sop \ f \\
+ \textrm{Para} \ \ \ x \in [x_{i}, x_{i+1}] \\ 
+ \underline{h}_{n} (x) = L_{i, i+1} (x) \\ 
+ \overline{h}_{n} (x) = min \{ L_{i-1 , i}(x), L_{i+1 , i}(x)\} \\
+ \underline{h}_{n}(x) \leq h(x) \leq \overline{h}_{n}(x) \ \ \ \ \ \ \ \ \ \forall \ x \in [x_{0},x_{n+1}] \\ \\
+ \textrm{En} \ \ \  [x_{0} , x_{n+1}]^{c} \ \ \ \underline{h}_{n}(x)= 0 \ \ \ \ \overline{h}_{n+1} = min \{ L_{0, 1} (x) L_{n, n+1} (x)\} \\ 
+ \Longrightarrow  \underline{f_{n}} \leq f(x) \leq \overline{f}_{n} (x) \ \ \ \ \forall \ \ x \in Df \\ 
+ \textrm{Con } \ \ \underline{f}_{n} = exp \{ \underline{h}_{n}\} \ \ \textrm{y} \ \ \ \overline{f}_{n} = exp \{ \overline{h}_{n}\} \\ 
+ g \ell \leq f \leq Mg \\ 
+ u, x \sim g \\ \\
+\end{eqnarray*}
+ \begin{enumerate}
+\item $u \leq  \dfrac{g \ell}{Mg}$
+\item $u \leq \dfrac{f}{Mg}$
+\end{enumerate}
+Gr\'afica 
+
+\section{M\'etodo Adaptativo de rechazo u aceptaci\'on} 
+Sea   $ Cn = \displaystyle \int_{x_{0}}^{x_{n+1}} \overline{f}_{n} (x) dx \\
+\Longrightarrow \underline{f}_n (x) \leq f(x) \leq \overline{f}_{n} (x) =C_{n} g_{n} (x)$ \ \ \\
+con $g_{n}$ densidad
+\\ Algoritmo 
+\\
+ \begin{enumerate}
+\item Fijar $n \in \nat $ \ y \ $S_{n}$
+\item Generar $u \sim  U (u \vert 0,1) \ \ $ y \ \ $X \sim  g_{n}$
+\item Si $u \leq \dfrac{\underline{f}_{n} (x)}{C_{n} g_{n} (x)}$ \ \ nos quedamos con \ \ $X (X \sim f)$
+\item Si no \\ Si $u \leq \dfrac{f(x)}{C_{n} g_{n}(x)} \ \ \ \Longrightarrow \ \ \ \ X \sim f$ \ \ y actualizo  \ \ $S_{n+1} = S_{n} U \{ x \}$
+\item Si no 
+\end{enumerate}
+
+$g_{n } (x) = C^{-1}_{n}$
+\\ grafica 
+\\ 
+Sea $\alpha_{i} x + \beta_{i} = L_{i , i+1} (x)$ \ la ec de la recta en $[x_{i}, x_{i+1}]$ \ y tenemos  $\ell_{n}$ \ rectas \\ Grafica \\ \\
+$
+\sum_{i=0}^{n} e^{\alpha_{i}x + \beta_{i}} I_{x_{i}, x_{i+1}} \\ 
+$ 
+Grafica \\ \\ 
+Vou a intentar en ... $a$ ...
+\\  \\ \\ 
+$[- \infty , x_{0}] \ \ L_{0, 1} (x) \ \ \ \ \ \ [x_{n+1}, \infty ] L_{x_{n}, x_{n+1}} \\
+\\ L_{-1 , 0} \rightsquigarrow (x_{0}, y_{0}) \ \ \ \ \ L_{0,1} \rightsquigarrow (x_{1},y_{1}) \\ 
+L_{1,2} \rightsquigarrow (y_{0}, x_{1}) \ \ \ \ \ \ L_{2, 3} \rightsquigarrow (y_{1}, x_{2})$ \\ \\ \\ \\ 
+Sean $Z_{0},..., Z_{r_{n}}$ los puntos que definen a las $r_{n}$ rectas que cunran a $f$
+\begin{eqnarray*}
+g_{n} (x) = C_{n}^{-1} \left\lbrace \sum_{i=0}^{r_{n}} e^{\alpha_{i}x + \beta_{i}} \ \ I_{[Z_{i}, Z_{i+1}]} (x) \ \ + \ \ e^{\alpha_{-1} x + \beta_{-1}} I_{[- \infty , Z_{0}]} (x) \ \ + \ \ e^{\alpha_{r_{n} + 1}x + \beta_{r_{n} + 1}} I_{Z_{r_{n}}, \infty} (x)\right\rbrace \\ 
+\\ C_{n} =  \int_{- \infty}^{Z-{0}} e^{\alpha_{-1} x + \beta_{-1}} dx +  \sum_{i=0}^{r_{n}} \int_{Z_{i}}^{Z_{i} + 1} dx  + \int_{Z_{r_{n+1}}}^{\infty} e^{\alpha_{r_{n+1}x + \beta_{r_{n+1}}}} dx \\ \\
+C_{n} = \dfrac{e^{\alpha_{-1} Z_{0} + \beta_{-1}} }{\alpha_{-1}} + \sum_{i=0}^{r_{n}} \left( \dfrac{e^{Z_{i+1} \alpha_{i} + \beta_{i}} - e^{Z_{i} \alpha_{i} + \beta_{i}}}{\alpha_{i}}\right) - \dfrac{e^{\alpha_{r_{n+1} Z_{r_{n+1}} + \beta_{r_{n}}} }}{\alpha_{r_{n+1}}} \\ \\
+g_{n}(x) = C_{n}^{-1} \{ \} = \dfrac{1}{C_{n}}  \sum_{i} e^{\alpha_{i} x + \beta_{i}} I_{\Delta_{i}}(x) \\ \\
+= \sum \Pi_{i} f_{i} \ \ \ \ \ \ \Pi_{i}=\dfrac{e^{\alpha_{i}x + \beta_{i}}}{C_{n}^{\alpha_{i}}}
+\end{eqnarray*}
+Para generar $X \sim g_{n}(x)$
+ \begin{enumerate}
+\item Eleir $[Z_{i}, Z_{i +1}]$ \ con probabilidad \ \\
+$U(X)= \upsilon_{1} (x) I_{1} + \upsilon_{2} (x) I_{2} \\ \\
+C = \int U(x)dx = \int_{I_{1}} \upsilon_{1} + \int_{I_{2}} \upsilon_{2} \\ \\
+\dfrac{u(\alpha)}{C} = \dfrac{\upsilon_{1}}{C} = \dfrac{\upsilon_{2}}{C} $ \ \ \ \ es densidad 
+\item Generar $u \sim (u \vert 0 , 1)$ \ \ y \ \ hacer  $X =$ tarcita
+\end{enumerate}
+
+El algoritmo adaptativo de aceptaci\'on y rechazo es un m\'etodo para generar $u.a$ de funciones continuas $log$-c\'oncavas.
+\\ ?Qu\'e pasa con las distribuciones discretas? Esto es, sea $X u.a$ cuya funcion de densidad est\'a dada $X$
+\\ 
+\\
+$P [X = k] = P_{k} \ \ \ \ \ \ \forall k \in I \subseteq  \nat U \{ 0 \}$ \ \ \ \ y tales que \ \ \ \ $\displaystyle \sum_{k \in I} P_{k} = 1$ \\ 
+Graficas 
+
+$F^{-} (u) = inf \{ t : F(t) \geq u \}$ \\
+Sea $P_{k}^{*} = \displaystyle \sum_{i=1}^{k} P_{i} = F(k)$\\
+$F^{-} (u) = k $ \ \ si \ \ $P^{*}_{k-1} < u \leq P_{k}^{*}$
+ \begin{enumerate}
+\item $k = 0 (k = 1)$ \ \ segun donde empiece.
+\item Generar $u \sim U (0 , 1)$
+\item Hacer $X = k $ \ \ si \ \ $u \ \leq \ P_{k}^{*}$
+\item En caso contrario $k = k + 1$ \ \ y regresamos  a 3  
+\end{enumerate}
+El inicio es importante por que si es asi me voy a tardar mucho en generar los valores grandes.
+\\ \\
+$E [X] = E $ [numero de comp para obtener $k$] = $\sum_{k \in I} k P_{k}$
+\\ \\
+Ejemplo
+\\ 
+bin $\left( x \vert 3 , \dfrac{1}{3}   \right) = \left( \dfrac{3}{x} \right)^{x} \left( \dfrac{2}{3} \right)^{3-x} \ \ \ \ \ \ \ \ \ x \in \{ 0, 1, 2, 3 \}$ \\ \\ \\ \\ 
+ $\begin{array}{ccc}
+   k & p_{k} &  \ P_{k} \\ \\ 
+   0 & 0.296 & \  \frac{8}{27} \\  
+ 1 & 0.445 & \ \frac{12}{27} \\  
+ 2 & 0.222 &  \ \frac{6}{27} \\ 
+ 3 & 0.037 & \ \frac{1}{27}
+  \end{array}$
+  \\ \\
+  $P_{0} = 0.296 = 0.8 * \frac{2}{8} + 0.18 * \frac{9}{18} + 0.02 * \frac{6}{20} \\
+  P_{1} = 0.445 = 0.8 * \frac{4}{8} + 0.18 * \frac{4}{18} + 0.02 * \frac{5}{20} \\
+  P_{2} = 0.222 = 0.8 * \frac{2}{8} + 0.18 * \frac{2}{18} + 0.02 * \frac{2}{20} \\
+  P_{3} = 0.037 = 0.8 * \frac{0}{8} + 0.18 * \frac{3}{18} + 0.02 * \frac{7}{20} \\
+  P_{k} = 0.8 f_{1K} + 0.18 f_{2k} + 0.02 f_{3k} = \displaystyle \sum_{j=1}^{3} \Pi_{j} f_{jk} \\
+\underline{f_{1}} = \dfrac{1}{8}  
+  \begin{bmatrix}
+  2\\ 4 \\ 2 \\ 0
+ \end{bmatrix} $ \ \ \ \ 
+$ 
+ \underline{f_{2}} = \dfrac{1}{18}  
+  \begin{bmatrix}
+  9\\ 4 \\ 2 \\ 3
+ \end{bmatrix}
+$ \ \ \ \ 
+$ 
+ \underline{f_{3}} =   
+  \begin{bmatrix}
+  6\\ 5 \\ 2 \\ 7
+ \end{bmatrix}
+$ \\
+ \begin{enumerate}
+\item Generar $i \in \{ 1, 2, 3\}$ \  deacuerdo a $\Pi_{i}$
+\item Generar $k$ \ dado \ $i$
+\end{enumerate}
+Grafica 
+\\
+$P[k=2] = P ........$
+% no se entiende 
+\\
+$\dfrac{8}{27} = \dfrac{1}{4} \left( \dfrac{9}{27} + 0 + 0 + \dfrac{23}{27} \right) \\
+\dfrac{12}{27} = \dfrac{1}{4} \left( \dfrac{1}{18} + \dfrac{9}{27} + \dfrac{21}{27} + 0\right) \\
+\dfrac{6}{27} = \dfrac{1}{4} \left( 0 + \dfrac{18}{27} + \dfrac{6}{27} + 0  \right) \\
+\dfrac{1}{7} = \dfrac{1}{4} \left( 0 + 0 + 0 + \dfrac{4}{27}\right)$ \\ \\
+
+$\Pi_{i} = \dfrac{1}{4} \ \ \ \forall \ \ i \in J_{i}$ \\
+$\underline{P}_{1}^{*} = \dfrac{1}{27}$
+$\begin{bmatrix}
+  8\\ 18 \\ 0 \\ 0
+ \end{bmatrix}$,  $\underline{P}_{2}^{*} = \dfrac{1}{27}$\ \ $\begin{bmatrix}
+  0\\ 9 \\ 18 \\ 0
+ \end{bmatrix}$  \ \ \ $\underline{P}_{3}^{*} = \dfrac{1}{27}$ $\begin{bmatrix}
+  0\\ 18 \\ 6 \\ 0
+ \end{bmatrix}$ \ \ \ $\underline{P}_{4}^{*} = \dfrac{1}{27}$ $\begin{bmatrix}
+  2\\ 0 \\ 0 \\ 4
+ \end{bmatrix}$
+\begin{enumerate}
+\item Genero $i \in \{ 1, 2, 3, 4\}$
+\item Generar $k$ dado $i$
+\end{enumerate}
+?Existe siemore la descomposici\'on? \\
+$P_{k} = \displaystyle \sum_{j} \Pi_{j} f_{jk}$ ? \\
+NO SE SABE \\
+Si existiera este algoritmo es m\'as eficiente que el gral. \\
+?El algoritmo de aceptaci\'on y rechazo funciona para $v.a$ dise? \\
+Si, ero no sirve para nada \\
+En resumen: \\
+- No existe el algoritmo 'optimo para generar $\{ X_{1},...,X_{n}\} \sim F(x; \theta)$ \\
+-S\'i existen algoritmos generales  para generar $\{ X_{1},..., X_{n} \} \sim F(x; \theta)$ \\
+$F^{-} A y R $ Disc, adaptivo, etc EXPERIENCIA \\
+Tiene que ver : \\
+\begin{enumerate}
+\item[-] n
+\item[-] Lenguaje de programaci\'on.
+\item[-] Velocidad de la maquina. \ \ (menos imp)
+\item[-] Precisi\'on 
+\end{enumerate}
+Asumimos que tenemos "excelentes" generadores b\'asicos de $u.a$ de distribuciones distintas y un programa general del algoritmo de aceptaci\'on y rechazo. \\
+?D\'onde vamos a usar "simulaci\'on"? \\
+Sea $Z_{n} \{ X_{1}, X_{2}, ..., X_{n}\} \sim U(X \vert \theta_{1}, \theta_{2}) \\
+H . \theta_{1} = \theta_{0} \ \ \ \ us \ \ \ H' : \theta_{1} \neq  \theta_{0}$ \\
+Neyman - Pearson \\
+Cociente de verosimilitudes (generalizadas) \\ \\
+$\Lambda = \dfrac{\ell (\theta_{1}, \theta_{2} \vert Z_{n}, H)}{\ell (\theta_{1}, \theta_{2} \vert Z_{n})} = \dfrac{\theta_{1}, \theta_{2} \in H \ell (\theta_{1}, \theta_{2} \vert Z_{n})}{H \ell (\theta_{1}, \theta_{2} \vert Z_{n})}  \\ \\
+\ell (\theta_{1}, \theta_{2} \vert Z_{n}) OC p (Z_{n} \vert \theta_{1}, \theta_{2}) = \Pi_{i=1}^{n} p (x_{i} \vert \theta_{1}, \theta_{2}) \\ \\
+\Longrightarrow  \ell (\theta_{1}, \theta_{2} \vert Z_{n}) = \Pi_{i=1}^{n} \frac{1}{\theta_{2} - \theta_{1}} I_{(\theta_{1}, \theta_{2})} (x_{i}) \\ \\
+=  \ell (\theta_{1}, \theta_{2} \vert y_{1}, Y_{n}) = (\theta_{2} - \theta_{1})^{-n} I_{[- \infty , \theta_{2}]} (Y_{n}) I_{[\theta, \infty]} (Y_{1}) \\ \\ $ con $Y_{1} = min Z_{n} \ \ \ Y_{n} = max Z_{n} $ \\
+Grafica \\ \\
+sup $\ell (\theta_{1}, \theta_{2} \vert Z_{n}) = \ell (\theta_{0}, Y_{n} \vert Z_{n}) \\ $
+sup $\ell (\theta_{1}, \theta_{2} \vert Z_{n}) = \ell (Y_{1} , Y_{n} \vert Z_{n}) \\
+\Longrightarrow \Lambda = \left( \dfrac{Y_{n} - Y_{1}}{Y_{n}- \theta_{0}}\right)^{n} \\ 
+\wp = \{ Z_{n} . \Lambda (Z_{n})\leq k \Lambda Y_{i} < \theta_{0}\} \\
+P [\Lambda (Z_{n}) \leq k \vert H] \leq \alpha \\
+\\ \\ \\ 
+p(X_{1}, ... , X_{n} \vert \theta_{1}, \theta_{2}) \rightsquigarrow p (Y_{1}, Y_{n} \vert \theta_{1}, \theta_{2}) \rightsquigarrow p(\Lambda (Z_{n}) \vert \theta_{1}, \theta_{2}) \\
+Y_{1} = min \{ x_{1} , ..., x_{n}\} \\
+Y_{2} = min \{ \{ x_{1}, ..., x_{n}\} \backslash \{ Y_{1}\}\}
+\\ . \\ . \\ . \\ \\
+Y_{n} = max \{ X_{1}, ... , X_{n}\} \\ \\ 
+\theta_{1} \leq Y_{1} \leq Y_{2} \leq ... \leq Y_{n} \leq \theta_{2}$
+\begin{eqnarray*}
+p(Y_{1}, ..., Y_{n}) = n! \ \ p_{x} (Y_{1}, ... ,Y_{n}) \\ \\
+p(Y_{1}, Y_{3}, ... , Y_{n}) = n! \ \ \displaystyle \int_{y_{1}}^{Y_{3}} p_{x} (Y_{1},... Y_{n})dY_{z} = n! \ \  p_{x} (Y_{1}, Y_{3}, ..., Y_{n}) \displaystyle \int_{Y_{1}}^{Y_{3}} p_{x} (Y_{2}) d Y_{2} \\ \\
+= n! \ \ p_{x} (Y_{1}, Y_{3}, ..., Y_{n}) \left\{  F_{x} (Y_{3}) - F_{x} (Y_{1})\right\} \\ \\
+p(Y_{1}, Y_{4}, ..., Y_{n} ) = n! \ \ p_{x} (Y_{1}, Y_{4}, ..., Y_{n}) \displaystyle\int_{Y_{1}}^{Y_{4}} p_{x} (Y_{3}) \{ F_{x} (Y_{3}) - F_{x} (Y_{1})\} d Y_{3} \\ \\
+= n! \ \ p_{x} () \dfrac{\{ F_{x} (Y_{3}) - F_{x} (Y_{1})\}^{2}}{2} \displaystyle]_{Y_{1}}^{Y_{4}} = n! \ \ p_{x} () \dfrac{\{ F_{x} (Y_{4}) - F_{x} (Y_{1})\}^{2}}{2}
+\\
+. \\ . \\ . \\
+p(Y_{1}, Y_{n}) = n! p_{x} (Y_{1}) p_{x} (Y_{n}) \dfrac{\{ F_{x} (Y_{n}) - F_{x} (Y_{1})\}^{n-2}}{(n-2)!} \\
+\\
+Z_{1} = \frac{Y_{n} - Y_{1}}{ Y_{n} - \theta_{0}} \ \ \ \ , \ \ \ Z_{2} = Y_{n} - \theta_{0} \ \ \ , \ Y_{n} = \theta_{0} + Z_{2} \\ \\
+Z_{1} = \frac{\theta + Z_{2} - Y_{1} }{Z_{2}} \ \ \ \ = \ \ \ \ - Z_{1} Z_{2} + \theta + Z_{2} = Y_{1} \\ \\
+|J| = 
+\begin{vmatrix}
+ -Z_{2} & 1 - Z_{1} \\  
+  0 & 1 
+  \end{vmatrix} 
+  = Z_{2} \ \ \ \ \ \ F_{x} (x) = \dfrac{x - \theta_{1}}{\theta_{2} - \theta_{1}}
+\end{eqnarray*}
+\begin{eqnarray*}
+p(Z_{1}, Z_{2}) = \dfrac{n (n-1)}{(\theta_{2} - \theta_1)^{n}} \left\{ \dfrac{\theta_{0} + Z - \theta_{1}}{\theta_{2} - \theta_{1}} - \dfrac{\theta_{0} + Z_{2} - Z_{1} Z_{2} - \theta_{1}}{\theta_{2} - \theta_{1}} \right\}^{n-2} \\ \\
+p(Z_{1}, Z_{2}) = \dfrac{n (n - 1)}{(\theta_{2} - \theta_{1})^{n}} \{ Z_{1} Z_{2} \}^{n-2} \\ 
+p (Z_{1} \vert \theta_{1}, \theta_{2}) = \dfrac{n (n - 1)}{(\theta_{2} - \theta_{1})^{n}} Z_{1}^{n-2} \displaystyle\int_{0}^{\theta_{2} - \theta_{0}} Z_{2}^{n-2} dZ_{2}\\
+= \dfrac{n (n-1)}{(\theta_{2} - \theta_{1})^{2}} Z_{1}^{n-2} \left( \dfrac{Z_{2}^{n-1}}{n-1}\right) \left|_{0}^{\theta_{2} - \theta_{1}}\right. = \dfrac{n (\theta_{2} - \theta_{0})^{n-1}}{(\theta_{2} - \theta_{1})^{2}} Z_{1}^{n-2} I_{0,1} (Z_{1})
+\end{eqnarray*}
+Bajo H \\
+$p (Z_{1} \vert \theta_{1}, \theta_{2}, H) = p (Z_{1}) = \dfrac{n Z_{1}^{n-2}}{(\theta_{2} - \theta_{0})} I_{ (0,1) } (Z_{1})$ \\
+Otro ejemplo:
+\begin{eqnarray*}
+X_{1}, ..., X_{n} \sim Ca (X \vert \theta) \\ \\
+\ell (Z_{n} \vert \theta) = \Pi_{i=1}^{n} \dfrac{1}{\Pi (1 + (x_{1} - \theta)^{2})} \\
+\log \ell (Z_{n} \vert \theta) =  -\sum_{i=0}^{n} \log (1 + (x_{i} - \theta)^{2}) \\ \\
+\dfrac{d}{d \theta} m (Z_{n} \vert \theta) = + \displaystyle \sum_{i=1}^{n} \dfrac{2 (x_{i} - \theta)}{(1 + (x_{i} - \theta)^{2})} \\ \\
+\displaystyle \sum_{i=1}^{n} \dfrac{(x_{i} - \hat{\theta} )}{1 + (x_{i} - \hat{\theta})^{2}} = 0
+\end{eqnarray*}
+
+Las prob que surgen en estad\'istica son integraci\'on obtener m\'aximos o minimos.
+\\
+\section{Integraci\'on}
+Sea $X \sim N (X \vert 0 , 1)$ \\
+$F_{x} (x) = \int_{-\infty}^{x} \dfrac{1}{\sqrt(2 \pi)} dt = E_{N(X \vert 0,1)} I_{(- \infty , x)} (t)$ \\
+En general, nos interesa resolver.
+\\ \\
+$E_{x}\left[ g (x)\right] = \displaystyle \int_{-\infty}^{x} g(x) f(x) dx$ \ \ $\rightsquigarrow$ \ \ lo primero que hay que checar es que $E_{x} [g(x)] < \infty$ \\ \\
+Leyes de los grandes n\'umeros \\ \\
+$\{ X_{n} : n \int \nat \} u.a.i.id$ \ con \ $E [X_{n}] = \theta < \infty \\ \\ 
+\dfrac{1}{n} \displaystyle \sum_{i=1}^{n} \longrightarrow \theta $ \\
+\\ Desigua?dad de Cebychev
+\\ \\
+$
+\Lambda \xi \in \mathcal{R^{+}}
+\\ \\ P \left[ \vert \overline{X}_{n} - \theta \vert \geq \xi \right] \leq \dfrac{V (\overline{X}_{n})}{\xi^{2}}  
+ $ \\ \\
+ La idea es terminar $\theta$ \ con \ \ $\hat{\theta} = \dfrac{1}{n} \displaystyle \sum_{i=1}^{n} g(X_{i}) \\
+ \{ X_{1} , ... , X_{n}\} \sim f(X) \\ \\ 
+ \in [\hat{\theta}] = \theta \\ \\
+ V (\hat{\theta}) = \dfrac{1}{n} \displaystyle \int_{- \infty}^{\infty} ( g(x) - \theta)^{2} f(x) dx = \dfrac{c (\theta)}{n} \\ \\  $ 
+ Si \ \ $\xi = \sqrt{\dfrac{V[\hat{\theta_{n}}]}{\delta}} $ \ \ \ , \ \ \ $ \delta \in \mathcal{R^{+}} \\ \\
+ P \left[ \vert \hat{\theta} - \theta \vert \geq \sqrt{\dfrac{V(\hat{\theta_{n}})}{\delta}}\right] \leq \dfrac{V(\hat{\theta_{n}} \delta)}{V[\hat{\theta_{n}}]} = \delta $ \\ \\
+ Es decir \\ \\
+ $\vert \hat{\theta} - \theta \vert \leq \sqrt{\dfrac{V (\hat{\theta_{n}})}{\delta}} = \sqrt{\dfrac{c(\theta)}{n \delta}} = O (n^{- \frac{1}{2}})$ \\ \\
+ Con prob al menos $1-\delta$
+ \\ La precisi\'on del estimador $\hat{\theta}$ depende fuertemente de su varianza \\
+ \\ $\vert \hat{\theta_{n}} - \theta \vert \approx O (n^{-\frac{1}{2}}) \\ \\
+ E_{n} [ I_{(-\infty,1)}] \\ 
+ \hat{\theta} = \dfrac{1}{n} \displaystyle\sum_{i=1}^{n} I_{[-\infty, t]}  (x_{i}) \\ \\
+ \hat{\theta_{n}} = \frac{j}{n} \\ \\
+ I_{- \infty , t}(x_{i}) \sim B(\centerdot \vert  \Phi (t)) \\ \\
+ n \hat{\theta_{n}} \sim bin (n \hat{\theta_{n}} \vert n , \Phi (t)) \\ \\
+ Var (n \hat{\theta_{n}}) = n \Phi (t) [1 - \Phi (t)] = \frac{1}{n} \Phi (t) (1 - \Phi (t)) \\ \\
+ t= 0 , \ \ \ \Phi(t) = 0.5 \\ \\
+ V(\hat{\theta_{n}^{?}}) = \sqrt{\frac{1}{4n}}
+ $ \\ \\ 
+ tarea \\ \\
+ $\Phi (t) \ \ \ t \in \{ 0, 1.64, 1.96\}$ \\
+ 
+exactas en 4 cifras significativas \\
+$X_{1}, ... , X_{n} \sim N (X \vert 0,1)$ \\ \\
+Tarea \\ \\
+$X \sim Cauchy (X \vert 0, 1 ) \\ \\
+p(x) = \dfrac{1}{\pi (1 + x^{2})} ;  \theta = P [x > 2] = \displaystyle \int_{2}^{\infty} \dfrac{1}{\pi (1 + x^{2})} dx$
+\\ \\
+Estimar $\Phi (x) = \dfrac{1}{\sqrt{2 \pi}} \displaystyle\int_{- \infty}^{x} e^{- \frac{1}{2} t^{2}} dt $
+\begin{eqnarray*}
+= \displaystyle \int_{- \infty}^{\infty} I_{[- \infty, x ]} (t) N (t \vert 0, 1) dt \\
+\\ = E [I_{(- \infty , x)} (t)] \\ \\
+= \dfrac{1}{n} \displaystyle\int_{1}^{n} I_{(- \infty , x)} (t_{i})
+\end{eqnarray*}
+donde $\{ t_{1}, ..., t_{n}\} \sim N (t \vert 0 , 1)$ \\
+\begin{enumerate}
+\item Dadas $x$ \ y \ $n$ \ generar ${t_{1},...,t_{n}} \sim N (t \vert 0 , 1)$
+\item Cortar cuantas $t's \leq x$ \ sean m
+\item $\Phi (x) = \dfrac{m}{n} $
+\end{enumerate}
+De que tama?o tiene que ser "$n$" para tener exactas cuatro cifras significativas.
+\\
+En general
+\\ \\
+$\displaystyle \int_{-\infty}^{\infty} g(x) dx  = \int_{-\infty}^{\infty} h(x) p (x) dx$ \\ \\
+con $p(x)$ \ funcion de desnsidad, de manera que \\
+$\theta = E_{p} [h(x)] = \displaystyle\int_{-\infty}^{\infty} h(x) p(x) dx$ \\ Puede ser estimado por \\ \\
+$\hat{\theta_{n}} = \dfrac{1}{n} \displaystyle\sum_{1}^{n} h (x_{i})$ \\ \\
+con $\{ x_{1}, ..., x_{n} \} \sim p (x) $ \\ \\
+$\hat{\theta_{n}}$ \ \ cumple con \\ \\
+$E[\hat{\theta}] = \theta$ \ \ y \ \ $V [\hat{\theta_{n}}] = O (n^{-\frac{1}{2}}) = \vert \theta - \hat{\theta_{n}} \vert $ \\ \\ 
+Ejemplo :
+\\ 
+\begin{eqnarray*}
+\textrm{Si} \ \ X \sim Ca(X \vert 0, 1) \\ 
+p(x) = \dfrac{1}{\pi (1 + x^{2})} \ \ , \ \ x \in \mathrm{R} \\ \\
+\theta = p [X \geq 2] = \displaystyle\int_{2}^{\infty} \dfrac{dx}{\pi (1 + x^{2})} \\
+\theta = \dfrac{acr Cot 2}{\pi} \approx 0.147534 \\
+\\ \theta = \displaystyle\int_{- \infty}^{\infty} I_{(2, \infty)} (x) Ca (x \vert 0,1) dx = E [I_{(2, \infty)} (x)] \\ 
+\\ \hat{\theta_{n}} = \dfrac{1}{n} \displaystyle\sum_{i=1}^{n} F_{(2, \infty)}(x_{i}),\\
+\{x_{1},..., x_{n}\} \sim Ca(X \vert 0,1)\\
+\Longrightarrow n \hat{\theta_{n}} \sim Bm (n \hat{\theta} \vert n , \theta) \\ 
+\Longrightarrow \not V \not\vert \not\hat{\theta} V[n \hat{\theta_{n}}] = n \theta (1 - \theta) \\
+V[]\hat{\theta_{n}} = \dfrac{\theta (1 - \theta)}{n} = \dfrac{0.1258}{n}
+\end{eqnarray*}
+Grafica
+\begin{eqnarray*}
+2 \theta = 1 - \displaystyle\int_{-2}^{2} \dfrac{dx}{\pi (1 + x^{2})} = P [\vert X \vert \geq 2] \\
+\theta = \dfrac{1}{2} - \dfrac{1}{2} \displaystyle\int_{-2}^{2} \dfrac{dx}{\pi (1 + x^{2})} = \dfrac{1}{2} - 2 \displaystyle\int_{-2}^{2} \dfrac{dx}{4 \pi (1 + x^{2})} \\
+U (X \vert -2 , 2) = \dfrac{1}{4} \\
+\theta = \dfrac{1}{2} - \dfrac{2}{\pi} E_{u} \left[ \dfrac{1}{1 + x^{2}} \right] \\
+\hat{\theta_{1}} = \dfrac{1}{2n} \displaystyle\sum_{i=1}^{n} I_{(-2 , 2)^{c}} (x_{i}) \ \ \ \ \{ x_{1}, ... , x_{n}\} \sim Ca (X \vert 0,1) \\
+n2 \hat{\theta_{1}} \sim Bin (2n \hat{\theta} \vert n , 2 \theta) \\ \\ 
+Var (\hat{\theta_{1}}) = \dfrac{2n \theta (1 - 2 \theta)}{4 n^{2}} = \dfrac{\theta(1 - 2 \theta)}{2 n} = \dfrac{0.0520}{n} \\ \\
+\theta = \dfrac{1}{2} - \dfrac{1}{2} \displaystyle\int_{-2}^{2} \dfrac{dx}{\pi (1 + x^{2})} = \dfrac{1}{2} - \int_{0}^{2} \dfrac{dx}{\pi (1 + x^{2})} = \dfrac{1}{2} - 2 \int_{0}^{2} \dfrac{dx}{2 \pi (1 + x^{2})} \\ \\
+\theta = \dfrac{1}{2} - \dfrac{2}{\pi} E_{p*} [(1 + x^{2})^{-1}] \\ \\
+p^{*} (x) = U (x \vert 0 ,2) \\ \\
+\hat{\theta_{2}} = \dfrac{1}{2} - \dfrac{2}{\pi} \dfrac{1}{n} \sum_{i=1}^{n} \dfrac{1}{1 + x_{i}^{2}} \ \ \ \ \ \ \ \{ x_{1}, ... , x_{n}\} \sim U (X \vert 0,2) \\ \\
+Var (\hat{\theta_{2}}) = \dfrac{4n}{n^{2} \pi^{2}} Var \left( \dfrac{1}{1 + x^{2}}\right) = \dfrac{4}{n \pi^{2}} \left\{ \dfrac{1}{2} \int_{0}^{2} \dfrac{dx}{(1 + x^{2})^{2}} - \left[ \dfrac{1}{2} \int_{0}^{2} \dfrac{dx}{(1 + x^{2})} \right]^{2}\right\} \approx \dfrac{0.0285}{n}
+\end{eqnarray*}
+\\ \\ \\ Sea $Y = \dfrac{1}{X} \Longrightarrow \ \ dx = - \dfrac{dy}{y^{2}}
+\\ \\ \Longrightarrow \theta = \displaystyle\int_{0}^{\frac{1}{2}} \dfrac{1}{\Pi} \dfrac{y^{-2} dy}{(1 - y^{-2})} = \dfrac{1}{\Pi} \int_{0}^{\frac{1}{2}} \dfrac{dy}{1 + y^{2}} = \dfrac{1}{2 \pi} \int_{0}^{\frac{1}{2}} \dfrac{2 dy}{1 + y^{2}}$ \\ \\
+$\hat{\theta_{3}} = \dfrac{1}{2 n \Pi} \displaystyle\sum_{i=1}^{n} \dfrac{1}{1 + x_{i}^{2}} \\ \\
+Var (\hat{\theta_{3}}) = \dfrac{1}{4 n \Pi^{2}} \left\{ 2 \ \int_{0}^{\frac{1}{2}} \dfrac{dx}{(1 + x^{2})^{2}} - 4 \left[ \int_{0}^{\frac{1}{2}} \dfrac{dx}{(1 + x^{2})}\right]^{2} \right\} \approx \dfrac{9.55 * 10^{-5}}{n}$
+\\ ?C\'omo reducir varianza en gral? \\ \\
+$\theta = \displaystyle\int_{- \infty}^{\infty} h(x) dx = \int_{-\infty}^{\infty} = \dfrac{h(x)}{p(x)} p(x) dx $ \ \ \ \ \ Muestreo por importancia \\
+$ \theta = E_{p} \left[\dfrac{h (x)}{p (x)} \right] \\
+\\ \hat{\theta} = \dfrac{1}{n} = \displaystyle\sum_{i=1}^{n} \dfrac{h(x_{i})}{p (x_{i})}$ \ \ \ \ \ donde $\{ x_{1}, ..., x_{n}\} \sim p(x)$ \\ \\
+$V[\hat{\theta_{n}}] = \displaystyle\int_{-\infty}^{\infty}( \hat{\theta_{n}} - \theta)^{2} p(x) dx$ \\ \\
+$V[\hat{\theta_{n}}] = \dfrac{1}{n} V \left[ \dfrac{h(x)}{p (x)}\right] = \dfrac{1}{n} \int \left( \dfrac{h(x)}{p (x)} - \theta \right)^{2} p (x) dx$ \\ \\
+$= \dfrac{1}{n} \left\{  \displaystyle\int \dfrac{h^{2} (x)}{p (2)} dx - \theta^{2} \right\}$ \\ \\
+$= \dfrac{1}{n} \left\{ \int \left[ \dfrac{h(x)}{p(x)}\right]^{2} p(x) dx - \theta^{2} \right\} \geq 0$ \\ \\ 
+$\Longrightarrow \int \left[  \dfrac{h(x)}{p (x)}\right]^{2} p (x) dx \geq \theta^{2}$ \ \ \ \ \ se minimiza cuando $h$ se parece a $p$ \\ \\
+ $g(x) = \dfrac{1}{4 x^{2}} \\ \int_{2}^{\infty} g(x)dx = \dfrac{1}{4} \left\{ - x^{-1} \right\}_{2}^{\infty
+ } = \dfrac{1}{8}$ \\ 
+ Sea $p(x)= \dfrac{2}{x^{2}}$ \ \ \ , \ \ \ $x \in [2, \infty) \\ \\
+ \theta = \displaystyle\int_{2}^{\infty}
+\dfrac{x^{2}}{2 \Pi (1 + x^{2})} \ \  \dfrac{2}{x^{2}} dx \\ \\
+$
