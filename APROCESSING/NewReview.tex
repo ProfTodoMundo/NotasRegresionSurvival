@@ -24,8 +24,8 @@
 %_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 % TITULO DEL DOCUMENTO
 %_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
-\title{Notas sobre Sistemas de Espera\\
-\small{Notes about Queueting Systems}}
+\title{Notas sobre Teor\'ia de colas y algunas aplicaciones\\
+\small{Notes about Queueting Theory and some applications}}
 \author{Carlos E. Martínez-Rodríguez}
 \date{}
 %_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
@@ -97,7 +97,21 @@
 %<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
 \begin{abstract}
 %<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
-%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+% Objetivo Principal
+- Esta revisión de literatura examina aspectos críticos de los procesos estocásticos, incluyendo los procesos de Markov de saltos y la notación Kendall-Lee.
+
+% Contexto
+- Los procesos estocásticos son fundamentales en diversas aplicaciones, desde la biología hasta las telecomunicaciones.
+
+% Métodos o Enfoques
+- Se exploran métodos de análisis como la teoría de colas y modelos de sistemas de visitas.
+
+% Resultados Clave
+- Se identifican herramientas clave y áreas para futuras investigaciones, destacando la relevancia de la función generadora de probabilidades.
+
+% Implicaciones
+- Los resultados subrayan la importancia de integrar modelos estocásticos en la optimización de redes complejas.
+
 \end{abstract}
 
 \begin{otherlanguage}{english}
@@ -116,6 +130,24 @@
 %<====>====<><====>====<><====>====<><====>====<><====>
 %_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 \section*{Introducción}
+% Contexto General
+- Los procesos estocásticos son esenciales en la modelación de fenómenos aleatorios y dinámicos, con aplicaciones en numerosos campos.
+
+% Importancia del Estudio
+- Este estudio es relevante por su enfoque en procesos de Markov de saltos, utilizados en la simulación de sistemas complejos.
+
+% Definición de Términos Clave
+- La notación Kendall-Lee es una herramienta crucial para la descripción y análisis de modelos de colas.
+
+% Alcance de la Revisión
+- La revisión abarca redes de colas en sistemas abiertos, así como sistemas de visitas y funciones generadoras de probabilidades.
+
+% Objetivos Específicos
+- Identificar tendencias actuales, proporcionar un resumen de los avances y sugerir áreas para futuras investigaciones.
+
+% Estructura del Documento
+- La revisión incluye dos apéndices que abordan el problema de la ruina del jugador y la extensión a sistemas de visitas cíclicas, ofreciendo una perspectiva integral de los temas discutidos.
+
 %_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
 
@@ -1957,10 +1989,26 @@ es decir
 f_{1}\left(1\right)=r\mu_{1}\frac{1-\mu_{1}}{1-\mu}.
 \end{equation}
 
+\section*{Conclusiones}
+
+% Resumen de Hallazgos
+- La notación Kendall-Lee se ha demostrado valiosa para caracterizar modelos de colas en sistemas abiertos.
+
+% Implicaciones de los Resultados
+- Los sistemas de visitas son fundamentales para optimizar la eficiencia en operaciones de servicio.
+
+% Limitaciones del Estudio
+- El estudio está principalmente limitado a modelos teóricos y su aplicación práctica podría requerir validación adicional.
+
+% Recomendaciones para Futuras Investigaciones
+- Futuras investigaciones deberían explorar la aplicación de estos conceptos en dominios emergentes como la inteligencia artificial y la bioinformática.
+
+% Contribución al Campo
+- Esta revisión proporciona una comprensión integral y actualizada de los procesos estocásticos, contribuyendo al conocimiento existente y estableciendo una base para investigaciones futuras.
 
 
 %_________________________________________________________________________
-\section{Ap\'endice A: El problema de la ruina del jugador}
+\section*{Ap\'endice A: El problema de la ruina del jugador}
 %_________________________________________________________________________
 
 Supongamos que se tiene un jugador que cuenta con un capital inicial de $\tilde{L}_{0}\geq0$ unidades, esta persona realiza una serie de dos juegos simult\'aneos e independientes de manera sucesiva, dichos eventos son independientes e id\'enticos entre s\'i para cada realizaci\'on.\\
@@ -2171,7 +2219,7 @@ Var\left[T\right]&=&\frac{Var\left[\tilde{L}_{0}\right]}{\left(1-\tilde{\mu}\rig
 \end{Cor}
 
 %_________________________________________________________________________
-\section{Ap\'endice B: Extensi\'on a sistema de visitas c\'iclicas}
+\section*{Ap\'endice B: Extensi\'on a sistema de visitas c\'iclicas}
 %_________________________________________________________________________
 Hagamos una extensi\'on para el caso en que se tienen varias colas:
 

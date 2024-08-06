@@ -3,11 +3,9 @@
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Procesos Estoc\'asticos}{1}{section.1}%
+\contentsline {section}{\numberline {1}Procesos Estoc\'asticos}{2}{section.1}%
 \contentsline {section}{\numberline {2}Procesos de Markov de Saltos}{7}{section.2}%
 \contentsline {section}{\numberline {3}Notaci\'on Kendall-Lee}{10}{section.3}%
 \contentsline {section}{\numberline {4}Redes de Colas:Sistemas Abiertos}{18}{section.4}%
 \contentsline {section}{\numberline {5}Sistemas de Visitas}{19}{section.5}%
 \contentsline {section}{\numberline {6}Funci\'on Generadora de Probabilidades}{22}{section.6}%
-\contentsline {section}{\numberline {7}Ap\'endice A: El problema de la ruina del jugador}{28}{section.7}%
-\contentsline {section}{\numberline {8}Ap\'endice B: Extensi\'on a sistema de visitas c\'iclicas}{33}{section.8}%

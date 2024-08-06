@@ -1,23 +1,23 @@
 \begin{theindex}
 
-  \item Cadena de Markov, 2
+  \item Cadena de Markov, 3
   \item Cadena Encajada, 15
-  \item Cadena Erg\'odica, 6, 8
-  \item Cadena Homog\'enea, 2
+  \item Cadena Erg\'odica, 6, 9
+  \item Cadena Homog\'enea, 3
   \item Cadena Irreducible, 5
-  \item Cadena Positiva Recurrente, 5, 6
+  \item Cadena Positiva Recurrente, 6
   \item Cadena Transitoria, 6
-  \item Cadenas Homog\'eneas, 2
+  \item Cadenas Homog\'eneas, 3
   \item Cilindro, 2
-  \item Clases de Comunicaci\'on, 4
+  \item Clases de Comunicaci\'on, 5
   \item Cola $M/G/1$, 15
   \item Cola $M/M/1$, 11, 24
   \item Cola $M/M/\infty$, 12
   \item Cola $M/M/m$, 13
   \item Cola $M/M/m/m$, 15
   \item Colas C\'iclicas, 19
-  \item Conjunto de Borel, 1
-  \item Conjunto Medible, 1
+  \item Conjunto de Borel, 2
+  \item Conjunto Medible, 2
 
   \indexspace
 
@@ -27,15 +27,15 @@
 
   \indexspace
 
-  \item Ecuaciones de Chapman-Kolmogorov, 3
-  \item Estados absorbentes, 4
-  \item Estados recurrentes, 4
-  \item Estados transitorios, 4
+  \item Ecuaciones de Chapman-Kolmogorov, 4
+  \item Estados absorbentes, 5
+  \item Estados recurrentes, 5
+  \item Estados transitorios, 5
 
   \indexspace
 
-  \item Funci\'on Arm\'onica, 5
-  \item Funci\'on Medible, 1
+  \item Funci\'on Arm\'onica, 6
+  \item Funci\'on Medible, 2
 
   \indexspace
 
@@ -45,7 +45,7 @@
 
   \item Matriz de Transici\'on, 3
   \item Matriz Intensidad, 8, 9
-  \item Medida $\sigma$-finita, 1
+  \item Medida $\sigma$-finita, 2
   \item Medida Estacionaria, 5
   \item Medidas de Desempe\~no, 19
 
@@ -59,8 +59,8 @@
   \item Pol\'itica de Servicio, 20
   \item Pol\'itica de Servicio Exhaustiva, 21
   \item Pol\'iticas Deterministas, 21
-  \item Probabilidades Condicionales, 2
-  \item Probabilidades de Transici\'on, 2
+  \item Probabilidades Condicionales, 3
+  \item Probabilidades de Transici\'on, 3
   \item Proceso Adaptado, 2
   \item Proceso de Markov, 2
   \item Proceso de Nacimiento y Muerte, 8

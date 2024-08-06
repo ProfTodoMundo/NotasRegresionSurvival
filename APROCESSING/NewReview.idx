@@ -1,30 +1,30 @@
-\indexentry{Conjunto Medible}{1}
-\indexentry{Medida $\sigma$-finita}{1}
-\indexentry{Conjunto de Borel}{1}
-\indexentry{Funci\'on Medible}{1}
+\indexentry{Conjunto Medible}{2}
+\indexentry{Medida $\sigma$-finita}{2}
+\indexentry{Conjunto de Borel}{2}
+\indexentry{Funci\'on Medible}{2}
 \indexentry{Cilindro}{2}
 \indexentry{Proceso Adaptado}{2}
 \indexentry{Tiempos de Paro}{2}
 \indexentry{Proceso Adaptado}{2}
 \indexentry{Proceso de Markov}{2}
-\indexentry{Cadena de Markov}{2}
-\indexentry{Probabilidades Condicionales}{2}
-\indexentry{Probabilidades Condicionales}{2}
-\indexentry{Cadenas Homog\'eneas}{2}
-\indexentry{Cadena Homog\'enea}{2}
-\indexentry{Probabilidades de Transici\'on}{2}
+\indexentry{Cadena de Markov}{3}
+\indexentry{Probabilidades Condicionales}{3}
+\indexentry{Probabilidades Condicionales}{3}
+\indexentry{Cadenas Homog\'eneas}{3}
+\indexentry{Cadena Homog\'enea}{3}
+\indexentry{Probabilidades de Transici\'on}{3}
 \indexentry{Delta de Kronecker}{3}
 \indexentry{Matriz de Transici\'on}{3}
-\indexentry{Ecuaciones de Chapman-Kolmogorov}{3}
+\indexentry{Ecuaciones de Chapman-Kolmogorov}{4}
 \indexentry{Tiempos de Paro}{4}
-\indexentry{Estados recurrentes}{4}
-\indexentry{Estados transitorios}{4}
-\indexentry{Estados absorbentes}{4}
-\indexentry{Clases de Comunicaci\'on}{4}
+\indexentry{Estados recurrentes}{5}
+\indexentry{Estados transitorios}{5}
+\indexentry{Estados absorbentes}{5}
+\indexentry{Clases de Comunicaci\'on}{5}
 \indexentry{Cadena Irreducible}{5}
 \indexentry{Medida Estacionaria}{5}
-\indexentry{Cadena Positiva Recurrente}{5}
-\indexentry{Funci\'on Arm\'onica}{5}
+\indexentry{Cadena Positiva Recurrente}{6}
+\indexentry{Funci\'on Arm\'onica}{6}
 \indexentry{Cadena Transitoria}{6}
 \indexentry{Cadena Positiva Recurrente}{6}
 \indexentry{Cadena Erg\'odica}{6}
@@ -32,7 +32,7 @@
 \indexentry{Proceso de Nacimiento y Muerte}{8}
 \indexentry{Matriz Intensidad}{8}
 \indexentry{Distribuci\'on Estacionaria}{8}
-\indexentry{Cadena Erg\'odica}{8}
+\indexentry{Cadena Erg\'odica}{9}
 \indexentry{Proceso Erg\'odico}{9}
 \indexentry{Matriz Intensidad}{9}
 \indexentry{Cola $M/M/1$}{11}
