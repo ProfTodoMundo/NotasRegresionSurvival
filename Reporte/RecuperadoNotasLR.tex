@@ -318,8 +318,194 @@ Hay muchas otras clases de datos inadecuados. Por ejemplo, algunos datos son res
 \textbf{Sesgo} significa que un usuario d\'e los datos perjudicialmente de m\'as \'enfasis a los hechos, los cuales son empleados para mantener su predeterminada posici\'on u opini\'on. Los estad\'isticos son frecuentemente degradados por lemas tales como: \textit{Hay tres clases de mentiras: mentiras, mentiras reprobables y estad\'istica, y Las cifras no mienten, pero los mentirosos piensan}. Hay dos clases de sesgos: conscientes e inconscientes. Ambos son comunes en el an\'alisis estad\'istico. Hay numerosos ejemplos de sesgos conscientes. Un anunciante frecuentemente usa la estad\'istica para probar que su producto es muy superior al producto de su competidor. Un pol\'itico prefiere usar la estad\'istica para sostener su punto de vista. Gerentes y l\'ideres de trabajadores pueden simult\'aneamente situar sus respectivas cifras estad\'isticas sobre la misma tabla de trato para mostrar que sus rechazos o peticiones son justificadas. Es casi imposible que un sesgo inconsciente est\'e completamente ausente en un trabajo estad\'istico. En lo que respecta al ser humano, es dif\'icil obtener una actitud completamente objetiva al abordar un problema, aun cuando un cient\'ifico deber\'ia tener una mente abierta. Un estad\'istico deber\'ia estar enterado del hecho de que su interpretaci\'on de los resultados del an\'alisis estad\'istico est\'a influenciado por su propia experiencia, conocimiento y antecedentes con relaci\'on al problema dado.
 
 %<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
-\section{Fundamentos}
+\section{Estad\'istica Descriptiva}
 %<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+
+La estad\'istica descriptiva resume y describe las caracter\'isticas de un conjunto de datos. Incluye medidas de tendencia central, medidas de dispersi\'on y medidas de forma.
+%---------------------------------------------------------
+\subsection{Medidas de Tendencia Central}
+%---------------------------------------------------------
+Las medidas de tendencia central incluyen la media, la mediana y la moda.
+%---------------------------------------------------------
+\subsubsection{Media}
+%---------------------------------------------------------
+La media aritm\'etica es la suma de los valores dividida por el n\'umero de valores:
+\begin{eqnarray*}
+\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+\end{eqnarray*}
+donde $x_i$ son los valores de la muestra y $n$ es el tama\~no de la muestra.
+%---------------------------------------------------------
+\subsubsection{Mediana}
+%---------------------------------------------------------
+La mediana es el valor medio cuando los datos est\'an ordenados. Si el n\'umero de valores es impar, la mediana es el valor central. Si es par, es el promedio de los dos valores centrales.
+%---------------------------------------------------------
+\subsubsection{Moda}
+%---------------------------------------------------------
+La moda es el valor que ocurre con mayor frecuencia en un conjunto de datos.
+%---------------------------------------------------------
+\subsection{Medidas de Dispersi\'on}
+%---------------------------------------------------------
+Las medidas de dispersi\'on incluyen el rango, la varianza y la desviaci\'on est\'andar.
+%---------------------------------------------------------
+\subsubsection{Rango}
+%---------------------------------------------------------
+El rango es la diferencia entre el valor m\'aximo y el valor m\'inimo de los datos:
+\begin{eqnarray*}
+Rango = x_{\text{max}} - x_{\text{min}}
+\end{eqnarray*}
+%---------------------------------------------------------
+\subsubsection{Varianza}
+%---------------------------------------------------------
+La varianza es la media de los cuadrados de las diferencias entre los valores y la media:
+\begin{eqnarray*}
+\sigma^2 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2
+\end{eqnarray*}
+%---------------------------------------------------------
+\subsubsection{Desviaci\'on Est\'andar}
+%---------------------------------------------------------
+La desviaci\'on est\'andar es la ra\'iz cuadrada de la varianza:
+\begin{eqnarray*}
+\sigma = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2}
+\end{eqnarray*}
+
+
+%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+\section{Probabilidad}
+%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+%---------------------------------------------------------
+\subsection{Espacio Muestral y Eventos}
+%---------------------------------------------------------
+%---------------------------------------------------------
+\subsection{Definiciones de Probabilidad}
+%---------------------------------------------------------
+%---------------------------------------------------------
+\subsubsection{Probabilidad Cl\'asica}
+%---------------------------------------------------------
+%---------------------------------------------------------
+\subsubsection{Probabilidad Frecuentista}
+%---------------------------------------------------------
+%---------------------------------------------------------
+\subsubsection{Probabilidad Bayesiana}
+%---------------------------------------------------------
+%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+\section{Estad\'istica Bayesiana}
+%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+%---------------------------------------------------------
+\subsection{Prior y Posterior}
+%---------------------------------------------------------
+%---------------------------------------------------------
+\subsubsection{Distribuci\'on Prior}
+%---------------------------------------------------------
+%---------------------------------------------------------
+\subsubsection{Verosimilitud}
+%---------------------------------------------------------
+La verosimilitud (likelihood) es la probabilidad de observar los datos dados los par\'ametros. Es una funci\'on de los par\'ametros $\theta$ dada una muestra de datos $X$:
+\begin{eqnarray*}
+L(\theta; X) = P(X|\theta)
+\end{eqnarray*}
+donde $X$ son los datos observados y $\theta$ son los par\'ametros del modelo.
+%---------------------------------------------------------
+\subsubsection{Distribuci\'on Posterior}
+%---------------------------------------------------------
+La distribuci\'on posterior (a posteriori) combina la informaci\'on de la prior y la verosimilitud utilizando el teorema de Bayes. Representa nuestra creencia sobre los par\'ametros despu\'es de observar los datos:
+\begin{eqnarray*}
+P(\theta|X) = \frac{P(X|\theta)P(\theta)}{P(X)}
+\end{eqnarray*}
+donde $P(\theta|X)$ es la distribuci\'on posterior, $P(X|\theta)$ es la verosimilitud, $P(\theta)$ es la prior y $P(X)$ es la probabilidad marginal de los datos.
+
+La probabilidad marginal de los datos $P(X)$ se puede calcular como:
+\begin{eqnarray*}
+P(X) = \int_{\Theta} P(X|\theta)P(\theta) d\theta
+\end{eqnarray*}
+donde $\Theta$ es el espacio de todos los posibles valores del par\'ametro $\theta$.
+
+%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+\section{Distribuciones de Probabilidad}
+%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
+%---------------------------------------------------------
+\subsection{Distribuciones Discretas}
+%---------------------------------------------------------
+%---------------------------------------------------------
+\subsubsection{Distribuci\'on Binomial}
+%---------------------------------------------------------
+La distribuci\'on binomial describe el n\'umero de \'exitos en una serie de ensayos de Bernoulli independientes y con la misma probabilidad de \'exito. La funci\'on de probabilidad es:
+\begin{eqnarray*}
+P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
+\end{eqnarray*}
+donde $X$ es el n\'umero de \'exitos, $n$ es el n\'umero de ensayos, $p$ es la probabilidad de \'exito en cada ensayo, y $\binom{n}{k}$ es el coeficiente binomial.
+
+La funci\'on generadora de momentos (MGF) para la distribuci\'on binomial es:
+\begin{eqnarray*}
+M_X(t) = \left( 1 - p + pe^t \right)^n
+\end{eqnarray*}
+
+El valor esperado y la varianza de una variable aleatoria binomial son:
+\begin{eqnarray*}
+E(X) &=& np \\
+\text{Var}(X) &=& np(1-p)
+\end{eqnarray*}
+%---------------------------------------------------------
+\subsubsection{Distribuci\'on de Poisson}
+%---------------------------------------------------------
+La distribuci\'on de Poisson describe el n\'umero de eventos que ocurren en un intervalo de tiempo fijo o en un \'area fija. La funci\'on de probabilidad es:
+\begin{eqnarray*}
+P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}
+\end{eqnarray*}
+donde $X$ es el n\'umero de eventos, $\lambda$ es la tasa media de eventos por intervalo, y $k$ es el n\'umero de eventos observados.
+
+La funci\'on generadora de momentos (MGF) para la distribuci\'on de Poisson es:
+\begin{eqnarray*}
+M_X(t) = e^{\lambda (e^t - 1)}
+\end{eqnarray*}
+
+El valor esperado y la varianza de una variable aleatoria de Poisson son:
+\begin{eqnarray*}
+E(X) &=& \lambda \\
+\text{Var}(X) &=& \lambda
+\end{eqnarray*}
+%---------------------------------------------------------
+\subsection{Distribuciones Continuas}
+%---------------------------------------------------------
+%---------------------------------------------------------
+\subsubsection{Distribuci\'on Normal}
+%---------------------------------------------------------
+La distribuci\'on normal, tambi\'en conocida como distribuci\'on gaussiana, es una de las distribuciones m\'as importantes en estad\'istica. La funci\'on de densidad de probabilidad es:
+\begin{eqnarray*}
+f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+\end{eqnarray*}
+donde $x$ es un valor de la variable aleatoria, $\mu$ es la media, y $\sigma$ es la desviaci\'on est\'andar.
+
+La funci\'on generadora de momentos (MGF) para la distribuci\'on normal es:
+\begin{eqnarray*}
+M_X(t) = e^{\mu t + \frac{1}{2} \sigma^2 t^2}
+\end{eqnarray*}
+
+El valor esperado y la varianza de una variable aleatoria normal son:
+\begin{eqnarray*}
+E(X) &=& \mu \\
+\text{Var}(X) &=& \sigma^2
+\end{eqnarray*}
+
+\subsubsection{Distribuci\'on Exponencial}
+
+La distribuci\'on exponencial describe el tiempo entre eventos en un proceso de Poisson. La funci\'on de densidad de probabilidad es:
+\begin{eqnarray*}
+f(x) = \lambda e^{-\lambda x}
+\end{eqnarray*}
+donde $x$ es el tiempo entre eventos y $\lambda$ es la tasa media de eventos.
+
+La funci\'on generadora de momentos (MGF) para la distribuci\'on exponencial es:
+\begin{eqnarray*}
+M_X(t) = \frac{\lambda}{\lambda - t}, \quad \text{para } t < \lambda
+\end{eqnarray*}
+
+El valor esperado y la varianza de una variable aleatoria exponencial son:
+\begin{eqnarray*}
+E(X) &=& \frac{1}{\lambda} \\
+\text{Var}(X) &=& \frac{1}{\lambda^2}
+\end{eqnarray*}
+
+
 
 %---------------------------------------------------------
 \subsection{Pruebas de Hip\'otesis}
@@ -1646,14 +1832,15 @@ El m\'etodo de Newton-Raphson es un algoritmo iterativo que se utiliza para enco
 
 donde:
 \begin{itemize}
-    \item $\boldsymbol{\beta}^{(t)}$ es el vector de coeficientes en la $t$-\'esima iteraci\'on.
-    \item $\nabla \log L(\boldsymbol{\beta}^{(t)})$ es el gradiente de la funci\'on de log-verosimilitud con respecto a los coeficientes $\boldsymbol{\beta}$:
+    \item[a) ] $\boldsymbol{\beta}^{(t)}$ es el vector de coeficientes en la $t$-\'esima iteraci\'on.
+    \item[b) ] $\nabla \log L(\boldsymbol{\beta}^{(t)})$ es el gradiente de la funci\'on de log-verosimilitud con respecto a los coeficientes $\boldsymbol{\beta}$:
 
 \begin{equation}\label{Eq.Gradiente1}
 \nabla \log L(\boldsymbol{\beta}) = \mathbf{X}^T (\mathbf{y} - \mathbf{p})
 \end{equation}
 
-donde $\mathbf{y}$ es el vector de valores observados y $\mathbf{p}$ es el vector de probabilidades.
+donde $\mathbf{y}$ es el vector de valores observados y $\mathbf{p}$ es el vector de probabilidades, recordar la ecuaci\'on (\ref{Eq.PrimeraDerivada}).
+
     \item $\mathbf{H}(\boldsymbol{\beta}^{(t)})$ es la matriz Hessiana (matriz de segundas derivadas) evaluada en $\boldsymbol{\beta}^{(t)}$:
 \begin{equation}\label{Eq.Hessiana1}
 \mathbf{H}(\boldsymbol{\beta}) = -\mathbf{X}^T \mathbf{W} \mathbf{X}
@@ -1667,85 +1854,20 @@ En resumen:
 
 \begin{Algthm}\label{Algoritmo1}
 El algoritmo Newton-Raphson para la regresi\'on log\'istica se puede resumir en los siguientes pasos:
-\begin{enumerate}
-    \item Inicializar el vector de coeficientes $\boldsymbol{\beta}^{(0)}$ (por ejemplo, con ceros o valores peque\~nos aleatorios).
-    \item Calcular el gradiente $\nabla \log L(\boldsymbol{\beta}^{(t)})$ y la matriz Hessiana $\mathbf{H}(\boldsymbol{\beta}^{(t)})$ en la iteraci\'on $t$.
-    \item Actualizar los coeficientes utilizando la f\'ormula:
-    \begin{equation}\label{Eq.Criterio1}
-    \boldsymbol{\beta}^{(t+1)} = \boldsymbol{\beta}^{(t)} - \left[ \mathbf{H}(\boldsymbol{\beta}^{(t)}) \right]^{-1} \nabla \log L(\boldsymbol{\beta}^{(t)})
-    \end{equation}
-    \item Repetir los pasos 2 y 3 hasta que la diferencia entre $\boldsymbol{\beta}^{(t+1)}$ y $\boldsymbol{\beta}^{(t)}$ sea menor que un umbral predefinido (criterio de convergencia).
-\end{enumerate}
+\begin{itemize}
+\item[i) ] Inicializar el vector de coeficientes $\boldsymbol{\beta}^{(0)}$ (por ejemplo, con ceros o valores peque\~nos aleatorios).
+\item[ii) ] Calcular el gradiente $\nabla \log L(\boldsymbol{\beta}^{(t)})$ y la matriz Hessiana $\mathbf{H}(\boldsymbol{\beta}^{(t)})$ en la iteraci\'on $t$.
+\item[iii) ] Actualizar los coeficientes utilizando la f\'ormula:
+\begin{equation}\label{Eq.Criterio1}
+\boldsymbol{\beta}^{(t+1)} = \boldsymbol{\beta}^{(t)} - \left[ \mathbf{H}(\boldsymbol{\beta}^{(t)}) \right]^{-1} \nabla \log L(\boldsymbol{\beta}^{(t)})
+\end{equation}
+\item[iv) ] Repetir los pasos ii) y iii) hasta que la diferencia entre $\boldsymbol{\beta}^{(t+1)}$ y $\boldsymbol{\beta}^{(t)}$ sea menor que un umbral predefinido (criterio de convergencia).
+\end{itemize}
 \end{Algthm}
 
 En resumen, el m\'etodo de Newton-Raphson permite encontrar los coeficientes que maximizan la funci\'on de log-verosimilitud de manera eficiente. 
 
-\section{Espec\'ificando}
-En espec\'ifico para un conjunto de $n$ observaciones, la funci\'on de verosimilitud $L$ se define como el producto de las probabilidades individuales de observar cada dato:
-\begin{equation}
-L(\beta_0, \beta_1, \ldots, \beta_n) = \prod_{i=1}^{n} p_i^{y_i} (1 - p_i)^{1 - y_i}
-\end{equation}
-donde $y_i$ es el valor observado de la variable dependiente para la $i$-\'esima observaci\'on y $p_i$ es la probabilidad predicha de que $Y_i = 1$. Aqu\'i, $p_i$ es dado por la funci\'on log\'istica:
-\begin{equation}
-p_i = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}}
-\end{equation}
-
-Tomando el logaritmo:
-\begin{equation}
-\log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right]
-\end{equation}
-
-Sustituyendo $p_i$:
-\begin{equation}
-\log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i (\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}) - \log(1 + e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}) \right]
-\end{equation}
-
-Dado que el objetivo es encontrar los valores de $\beta_0, \beta_1, \ldots, \beta_n$ que maximicen la funci\'on de log-verosimilitud.  Para $\beta_j$, la derivada parcial de la funci\'on de log-verosimilitud es:
-\begin{equation}
-\frac{\partial \log L}{\partial \beta_j} = \sum_{i=1}^{n} \left[ y_i X_{ij} - \frac{X_{ij} e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}}{1 + e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}} \right]
-\end{equation}
-
-Esto se simplifica a (comparar con la ecuaci\'on \ref{Eq.1.14}):
-\begin{eqnarray}\label{Eq.1.25}
-\frac{\partial \log L}{\partial \beta_j} = \sum_{i=1}^{n} X_{ij} (y_i - p_i)
-\end{eqnarray}
-
-
-Para maximizar la log-verosimilitud, resolvemos el sistema de ecuaciones $\frac{\partial \log L}{\partial \beta_j} = 0$ para todos los $j$ de 0 a $n$., mismo que se resuelve num\'ericamente utilizando m\'etodos el algoritmo de Newton-Raphson. El m\'etodo de Newton-Raphson se basa en una aproximaci\'on de segundo orden de la funci\'on objetivo. Dado un valor inicial de los coeficientes $\beta^{(0)}$, se iterativamente actualiza el valor de los coeficientes utilizando la f\'ormula:
-\begin{equation}\label{Eq.Criterio1.5}
-\beta^{(k+1)} = \beta^{(k)} - \left[ \mathbf{H}(\beta^{(k)}) \right]^{-1} \mathbf{g}(\beta^{(k)})
-\end{equation}
-donde:
-\begin{itemize}
-    \item $\beta^{(k)}$ es el vector de coeficientes en la $k$-\'esima iteraci\'on.
-    \item $\mathbf{g}(\beta^{(k)})$ es el gradiente (vector de primeras derivadas) evaluado en $\beta^{(k)}$:
-\begin{equation}\label{Eq.Gradiente2}
-\mathbf{g}(\beta) = \frac{\partial \log L}{\partial \beta} = \sum_{i=1}^{n} \mathbf{X}_i (y_i - p_i)
-\end{equation}
-donde $\mathbf{X}_i$ es el vector de valores de las variables independientes para la $i$-\'esima observaci\'on (comparar con ecuaci\'on \ref{Eq.Gradiente1}).
-
-    \item $\mathbf{H}(\beta^{(k)})$ es la matriz Hessiana (matriz de segundas derivadas) evaluada en $\beta^{(k)}$:
-\begin{equation}\label{Eq.Hessiana2}
-\mathbf{H}(\beta) = \frac{\partial^2 \log L}{\partial \beta \partial \beta^T} = -\sum_{i=1}^{n} p_i (1 - p_i) \mathbf{X}_i \mathbf{X}_i^T,
-\end{equation}
-comparar con ecuaci\'on \ref{Eq.Hessiana1}
-\end{itemize}
-
-\begin{Algthm} \label{Algoritmo2}
-Los pasos del algoritmo Newton-Raphson para la regresi\'on log\'istica son:
-\begin{enumerate}
-    \item Inicializar el vector de coeficientes $\beta^{(0)}$ (por ejemplo, con ceros o valores peque\~nos aleatorios).
-    \item Calcular el gradiente $\mathbf{g}(\beta^{(k)})$ y la matriz Hessiana $\mathbf{H}(\beta^{(k)})$ en la iteraci\'on $k$.
-    \item Actualizar los coeficientes utilizando la f\'ormula:
-    \begin{equation}\label{Eq.Criterio2}
-    \beta^{(k+1)} = \beta^{(k)} - \left[ \mathbf{H}(\beta^{(k)}) \right]^{-1} \mathbf{g}(\beta^{(k)})
-    \end{equation}
-    \item Repetir los pasos 2 y 3 hasta que la diferencia entre $\beta^{(k+1)}$ y $\beta^{(k)}$ sea menor que un umbral predefinido (criterio de convergencia).
-\end{enumerate}
-\end{Algthm}
-Como se puede observar la diferencia entre el Algoritmo \ref{Algoritmo1} y el Algoritmo \ref{Algoritmo2} son m\'inimas
-
-\section*{Notas finales}
+\subsection{Notas finales}
 
 En el contexto de la regresi\'on log\'istica, los vectores $X_1, X_2, \ldots, X_n$ representan las variables independientes. Cada $X_j$ es un vector columna que contiene los valores de la variable independiente $j$ para cada una de las $n$ observaciones. Es decir,
 
@@ -1838,430 +1960,27 @@ El m\'etodo de Newton-Raphson actualiza los coeficientes $\boldsymbol{\beta}$ de
 
 Iterando este proceso hasta que la diferencia entre $\boldsymbol{\beta}^{(t+1)}$ y $\boldsymbol{\beta}^{(t)}$ sea menor que un umbral predefinido (\ref{Eq.Criterio0}, \ref{Eq.Criterio1}, \ref{Eq.Criterio1.5} y \ref{Eq.Criterio2}), se obtienen los estimadores de m\'axima verosimilitud para los coeficientes de la regresi\'on log\'istica.
 
-
-\chapter{Elementos de Probabilidad}
-\section{Introducci\'on}
-
-Los fundamentos de probabilidad y estad\'istica son esenciales para comprender y aplicar t\'ecnicas de an\'alisis de datos y modelado estad\'istico, incluyendo la regresi\'on lineal y log\'istica. Este cap\'itulo proporciona una revisi\'on de los conceptos clave en probabilidad y estad\'istica que son relevantes para estos m\'etodos.
-
-\section{Probabilidad}
-
-La probabilidad es una medida de la incertidumbre o el grado de creencia en la ocurrencia de un evento. Los conceptos fundamentales incluyen:
-
-\subsection{Espacio Muestral y Eventos}
-
-El espacio muestral, denotado como $S$, es el conjunto de todos los posibles resultados de un experimento aleatorio. Un evento es un subconjunto del espacio muestral. Por ejemplo, si lanzamos un dado, el espacio muestral es:
-\begin{eqnarray*}
-S = \{1, 2, 3, 4, 5, 6\}
-\end{eqnarray*}
-Un evento podr\'ia ser obtener un n\'umero par:
-\begin{eqnarray*}
-E = \{2, 4, 6\}
-\end{eqnarray*}
-
-\subsection{Definiciones de Probabilidad}
-
-Existen varias definiciones de probabilidad, incluyendo la probabilidad cl\'asica, la probabilidad frecuentista y la probabilidad bayesiana.
-
-\subsubsection{Probabilidad Cl\'asica}
-
-La probabilidad cl\'asica se define como el n\'umero de resultados favorables dividido por el n\'umero total de resultados posibles:
-\begin{eqnarray*}
-P(E) = \frac{|E|}{|S|}
-\end{eqnarray*}
-donde $|E|$ es el n\'umero de elementos en el evento $E$ y $|S|$ es el n\'umero de elementos en el espacio muestral $S$.
-
-\subsubsection{Probabilidad Frecuentista}
-
-La probabilidad frecuentista se basa en la frecuencia relativa de ocurrencia de un evento en un gran n\'umero de repeticiones del experimento:
-\begin{eqnarray*}
-P(E) = \lim_{n \to \infty} \frac{n_E}{n}
-\end{eqnarray*}
-donde $n_E$ es el n\'umero de veces que ocurre el evento $E$ y $n$ es el n\'umero total de repeticiones del experimento.
-
-\subsubsection{Probabilidad Bayesiana}
-
-La probabilidad bayesiana se interpreta como un grado de creencia actualizado a medida que se dispone de nueva informaci\'on. Se basa en el teorema de Bayes:
-\begin{eqnarray*}
-P(A|B) = \frac{P(B|A)P(A)}{P(B)}
-\end{eqnarray*}
-donde $P(A|B)$ es la probabilidad de $A$ dado $B$, $P(B|A)$ es la probabilidad de $B$ dado $A$, $P(A)$ y $P(B)$ son las probabilidades de $A$ y $B$ respectivamente.
-
-\section{Estad\'istica Bayesiana}
-
-La estad\'istica bayesiana proporciona un enfoque coherente para el an\'alisis de datos basado en el teorema de Bayes. Los conceptos fundamentales incluyen:
-
-\subsection{Prior y Posterior}
-
-\subsubsection{Distribuci\'on Prior}
-
-La distribuci\'on prior (apriori) representa nuestra creencia sobre los par\'ametros antes de observar los datos. Es una distribuci\'on de probabilidad que refleja nuestra incertidumbre inicial sobre los par\'ametros. Por ejemplo, si creemos que un par\'ametro $\theta$ sigue una distribuci\'on normal con media $\mu_0$ y varianza $\sigma_0^2$, nuestra prior ser\'ia:
-\begin{eqnarray*}
-P(\theta) = \frac{1}{\sqrt{2\pi\sigma_0^2}} e^{-\frac{(\theta-\mu_0)^2}{2\sigma_0^2}}
-\end{eqnarray*}
-
-\subsubsection{Verosimilitud}
-
-La verosimilitud (likelihood) es la probabilidad de observar los datos dados los par\'ametros. Es una funci\'on de los par\'ametros $\theta$ dada una muestra de datos $X$:
-\begin{eqnarray*}
-L(\theta; X) = P(X|\theta)
-\end{eqnarray*}
-donde $X$ son los datos observados y $\theta$ son los par\'ametros del modelo.
-
-\subsubsection{Distribuci\'on Posterior}
-
-La distribuci\'on posterior (a posteriori) combina la informaci\'on de la prior y la verosimilitud utilizando el teorema de Bayes. Representa nuestra creencia sobre los par\'ametros despu\'es de observar los datos:
-\begin{eqnarray*}
-P(\theta|X) = \frac{P(X|\theta)P(\theta)}{P(X)}
-\end{eqnarray*}
-donde $P(\theta|X)$ es la distribuci\'on posterior, $P(X|\theta)$ es la verosimilitud, $P(\theta)$ es la prior y $P(X)$ es la probabilidad marginal de los datos.
-
-La probabilidad marginal de los datos $P(X)$ se puede calcular como:
-\begin{eqnarray*}
-P(X) = \int_{\Theta} P(X|\theta)P(\theta) d\theta
-\end{eqnarray*}
-donde $\Theta$ es el espacio de todos los posibles valores del par\'ametro $\theta$.
-
-\section{Distribuciones de Probabilidad}
-
-Las distribuciones de probabilidad describen c\'omo se distribuyen los valores de una variable aleatoria. Existen distribuciones de probabilidad discretas y continuas.
-
-\subsection{Distribuciones Discretas}
-
-Una variable aleatoria discreta toma un n\'umero finito o contable de valores. Algunas distribuciones discretas comunes incluyen:
-
-\subsubsection{Distribuci\'on Binomial}
-
-La distribuci\'on binomial describe el n\'umero de \'exitos en una serie de ensayos de Bernoulli independientes y con la misma probabilidad de \'exito. La funci\'on de probabilidad es:
-\begin{eqnarray*}
-P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
-\end{eqnarray*}
-donde $X$ es el n\'umero de \'exitos, $n$ es el n\'umero de ensayos, $p$ es la probabilidad de \'exito en cada ensayo, y $\binom{n}{k}$ es el coeficiente binomial.
-
-La funci\'on generadora de momentos (MGF) para la distribuci\'on binomial es:
-\begin{eqnarray*}
-M_X(t) = \left( 1 - p + pe^t \right)^n
-\end{eqnarray*}
-
-El valor esperado y la varianza de una variable aleatoria binomial son:
-\begin{eqnarray*}
-E(X) &=& np \\
-\text{Var}(X) &=& np(1-p)
-\end{eqnarray*}
-
-\subsubsection{Distribuci\'on de Poisson}
-
-La distribuci\'on de Poisson describe el n\'umero de eventos que ocurren en un intervalo de tiempo fijo o en un \'area fija. La funci\'on de probabilidad es:
-\begin{eqnarray*}
-P(X = k) = \frac{\lambda^k e^{-\lambda}}{k!}
-\end{eqnarray*}
-donde $X$ es el n\'umero de eventos, $\lambda$ es la tasa media de eventos por intervalo, y $k$ es el n\'umero de eventos observados.
-
-La funci\'on generadora de momentos (MGF) para la distribuci\'on de Poisson es:
-\begin{eqnarray*}
-M_X(t) = e^{\lambda (e^t - 1)}
-\end{eqnarray*}
-
-El valor esperado y la varianza de una variable aleatoria de Poisson son:
-\begin{eqnarray*}
-E(X) &=& \lambda \\
-\text{Var}(X) &=& \lambda
-\end{eqnarray*}
-
-\subsection{Distribuciones Continuas}
-
-Una variable aleatoria continua toma un n\'umero infinito de valores en un intervalo continuo. Algunas distribuciones continuas comunes incluyen:
-
-\subsubsection{Distribuci\'on Normal}
-
-La distribuci\'on normal, tambi\'en conocida como distribuci\'on gaussiana, es una de las distribuciones m\'as importantes en estad\'istica. La funci\'on de densidad de probabilidad es:
-\begin{eqnarray*}
-f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}
-\end{eqnarray*}
-donde $x$ es un valor de la variable aleatoria, $\mu$ es la media, y $\sigma$ es la desviaci\'on est\'andar.
-
-La funci\'on generadora de momentos (MGF) para la distribuci\'on normal es:
-\begin{eqnarray*}
-M_X(t) = e^{\mu t + \frac{1}{2} \sigma^2 t^2}
-\end{eqnarray*}
-
-El valor esperado y la varianza de una variable aleatoria normal son:
-\begin{eqnarray*}
-E(X) &=& \mu \\
-\text{Var}(X) &=& \sigma^2
-\end{eqnarray*}
-
-\subsubsection{Distribuci\'on Exponencial}
-
-La distribuci\'on exponencial describe el tiempo entre eventos en un proceso de Poisson. La funci\'on de densidad de probabilidad es:
-\begin{eqnarray*}
-f(x) = \lambda e^{-\lambda x}
-\end{eqnarray*}
-donde $x$ es el tiempo entre eventos y $\lambda$ es la tasa media de eventos.
-
-La funci\'on generadora de momentos (MGF) para la distribuci\'on exponencial es:
-\begin{eqnarray*}
-M_X(t) = \frac{\lambda}{\lambda - t}, \quad \text{para } t < \lambda
-\end{eqnarray*}
-
-El valor esperado y la varianza de una variable aleatoria exponencial son:
-\begin{eqnarray*}
-E(X) &=& \frac{1}{\lambda} \\
-\text{Var}(X) &=& \frac{1}{\lambda^2}
-\end{eqnarray*}
-
-\section{Estad\'istica Descriptiva}
-
-La estad\'istica descriptiva resume y describe las caracter\'isticas de un conjunto de datos. Incluye medidas de tendencia central, medidas de dispersi\'on y medidas de forma.
-
-\subsection{Medidas de Tendencia Central}
-
-Las medidas de tendencia central incluyen la media, la mediana y la moda.
-
-\subsubsection{Media}
-
-La media aritm\'etica es la suma de los valores dividida por el n\'umero de valores:
-\begin{eqnarray*}
-\bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
-\end{eqnarray*}
-donde $x_i$ son los valores de la muestra y $n$ es el tama\~no de la muestra.
-
-\subsubsection{Mediana}
-
-La mediana es el valor medio cuando los datos est\'an ordenados. Si el n\'umero de valores es impar, la mediana es el valor central. Si es par, es el promedio de los dos valores centrales.
-
-\subsubsection{Moda}
-
-La moda es el valor que ocurre con mayor frecuencia en un conjunto de datos.
-
-\subsection{Medidas de Dispersi\'on}
-
-Las medidas de dispersi\'on incluyen el rango, la varianza y la desviaci\'on est\'andar.
-
-\subsubsection{Rango}
-
-El rango es la diferencia entre el valor m\'aximo y el valor m\'inimo de los datos:
-\begin{eqnarray*}
-Rango = x_{\text{max}} - x_{\text{min}}
-\end{eqnarray*}
-
-\subsubsection{Varianza}
-
-La varianza es la media de los cuadrados de las diferencias entre los valores y la media:
-\begin{eqnarray*}
-\sigma^2 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2
-\end{eqnarray*}
-
-\subsubsection{Desviaci\'on Est\'andar}
-
-La desviaci\'on est\'andar es la ra\'iz cuadrada de la varianza:
-\begin{eqnarray*}
-\sigma = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (x_i - \bar{x})^2}
-\end{eqnarray*}
-
-\section{Inferencia Estad\'istica}
-
-La inferencia estad\'istica es el proceso de sacar conclusiones sobre una poblaci\'on a partir de una muestra. Incluye la estimaci\'on de par\'ametros y la prueba de hip\'otesis.
-
-\subsection{Estimaci\'on de Par\'ametros}
-
-La estimaci\'on de par\'ametros implica el uso de datos muestrales para estimar los par\'ametros de una poblaci\'on.
-
-\subsubsection{Estimador Puntual}
-
-Un estimador puntual proporciona un \'unico valor como estimaci\'on de un par\'ametro de la poblaci\'on. Por ejemplo, la media muestral $\bar{x}$ es un estimador puntual de la media poblacional $\mu$. Otros ejemplos de estimadores puntuales son:
-
-\begin{itemize}
-    \item \textbf{Mediana muestral ($\tilde{x}$)}: Estimador de la mediana poblacional.
-    \item \textbf{Varianza muestral ($s^2$)}: Estimador de la varianza poblacional $\sigma^2$, definido como:
-    \begin{eqnarray*}
-    s^2 = \frac{1}{n-1} \sum_{i=1}^{n} (x_i - \bar{x})^2
-    \end{eqnarray*}
-    \item \textbf{Desviaci\'on est\'andar muestral ($s$)}: Estimador de la desviaci\'on est\'andar poblacional $\sigma$, definido como:
-    \begin{eqnarray*}
-    s = \sqrt{s^2}
-    \end{eqnarray*}
-\end{itemize}
-
-\subsubsection{Propiedades de los Estimadores Puntuales}
-
-Los estimadores puntuales deben cumplir ciertas propiedades deseables, como:
-
-\begin{itemize}
-    \item \textbf{Insesgadez}: Un estimador es insesgado si su valor esperado es igual al valor del par\'ametro que estima.
-    \begin{eqnarray*}
-    E(\hat{\theta}) = \theta
-    \end{eqnarray*}
-    \item \textbf{Consistencia}: Un estimador es consistente si converge en probabilidad al valor del par\'ametro a medida que el tama\~no de la muestra tiende a infinito.
-    \item \textbf{Eficiencia}: Un estimador es eficiente si tiene la varianza m\'as baja entre todos los estimadores insesgados.
-\end{itemize}
-
-\subsubsection{Estimador por Intervalo}
-
-Un estimador por intervalo proporciona un rango de valores dentro del cual se espera que se encuentre el par\'ametro poblacional con un cierto nivel de confianza. Por ejemplo, un intervalo de confianza para la media es:
-\begin{eqnarray*}
-\left( \bar{x} - z \frac{\sigma}{\sqrt{n}}, \bar{x} + z \frac{\sigma}{\sqrt{n}} \right)
-\end{eqnarray*}
-donde $z$ es el valor cr\'itico correspondiente al nivel de confianza deseado, $\sigma$ es la desviaci\'on est\'andar poblacional y $n$ es el tama\~no de la muestra.
-
-\subsection{Prueba de Hip\'otesis}
-
-La prueba de hip\'otesis es un procedimiento para decidir si una afirmaci\'on sobre un par\'ametro poblacional es consistente con los datos muestrales.
-
-\subsubsection{Hip\'otesis Nula y Alternativa}
-
-La hip\'otesis nula ($H_0$) es la afirmaci\'on que se somete a prueba, y la hip\'otesis alternativa ($H_a$) es la afirmaci\'on que se acepta si se rechaza la hip\'otesis nula.
-
-\subsubsection{Nivel de Significancia}
-
-El nivel de significancia ($\alpha$) es la probabilidad de rechazar la hip\'otesis nula cuando es verdadera. Un valor com\'unmente utilizado es $\alpha = 0.05$.
-
-\subsubsection{Estad\'istico de Prueba}
-
-El estad\'istico de prueba es una medida calculada a partir de los datos muestrales que se utiliza para decidir si se rechaza la hip\'otesis nula. Por ejemplo, en una prueba $t$ para la media:
-\begin{eqnarray*}
-t = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}
-\end{eqnarray*}
-donde $\bar{x}$ es la media muestral, $\mu_0$ es la media poblacional bajo la hip\'otesis nula, $s$ es la desviaci\'on est\'andar muestral y $n$ es el tama\~no de la muestra.
-
-\subsubsection{P-valor}
-
-El p-valor es la probabilidad de obtener un valor del estad\'istico de prueba al menos tan extremo como el observado, bajo la suposici\'on de que la hip\'otesis nula es verdadera. Si el p-valor es menor que el nivel de significancia $\alpha$, se rechaza la hip\'otesis nula. El p-valor se interpreta de la siguiente manera:
-
-\begin{itemize}
-    \item \textbf{P-valor bajo (p < 0.05)}: Evidencia suficiente para rechazar la hip\'otesis nula.
-    \item \textbf{P-valor alto (p > 0.05)}: No hay suficiente evidencia para rechazar la hip\'otesis nula.
-\end{itemize}
-
-\subsubsection{Tipos de Errores}
-
-En la prueba de hip\'otesis, se pueden cometer dos tipos de errores:
-
-\begin{itemize}
-    \item \textbf{Error Tipo I ($\alpha$)}: Rechazar la hip\'otesis nula cuando es verdadera.
-    \item \textbf{Error Tipo II ($\beta$)}: No rechazar la hip\'otesis nula cuando es falsa.
-\end{itemize}
-
-\subsubsection{Tabla de Errores en la Prueba de Hip\'otesis}
-
-A continuaci\'on se presenta una tabla que muestra los posibles resultados en una prueba de hip\'otesis, incluyendo los falsos positivos (error tipo I) y los falsos negativos (error tipo II):
-
-\begin{table}[h]
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
- & \textbf{Hip\'otesis Nula Verdadera} & \textbf{Hip\'otesis Nula Falsa} \\
-\hline
-\textbf{Rechazar $H_0$} & Error Tipo I ($\alpha$) & Aceptar $H_a$ \\
-\hline
-\textbf{No Rechazar $H_0$} & Aceptar $H_0$ & Error Tipo II ($\beta$) \\
-\hline
-\end{tabular}
-\caption{Resultados de la Prueba de Hip\'otesis}
-\label{tab:hypothesis_testing}
-\end{table}
-
-
-
-\chapter{Matem\'aticas Detr\'as de la Regresi\'on Log\'istica}
-\section{Introducci\'on}
-
-La regresi\'on log\'istica es una t\'ecnica de modelado estad\'istico utilizada para predecir la probabilidad de un evento binario en funci\'on de una o m\'as variables independientes. Este cap\'itulo profundiza en las matem\'aticas subyacentes a la regresi\'on log\'istica, incluyendo la funci\'on log\'istica, la funci\'on de verosimilitud, y los m\'etodos para estimar los coeficientes del modelo.
-
-\section{Funci\'on Log\'istica}
-
-La funci\'on log\'istica es la base de la regresi\'on log\'istica. Esta funci\'on transforma una combinaci\'on lineal de variables independientes en una probabilidad.
-
-\subsection{Definici\'on}
-
-La funci\'on log\'istica se define como:
-\begin{eqnarray*}
-p = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n)}}
-\end{eqnarray*}
-donde $p$ es la probabilidad de que el evento ocurra, $\beta_0, \beta_1, \ldots, \beta_n$ son los coeficientes del modelo, y $X_1, X_2, \ldots, X_n$ son las variables independientes.
-
-\subsection{Propiedades}
-
-La funci\'on log\'istica tiene varias propiedades importantes:
-\begin{itemize}
-    \item \textbf{Rango}: La funci\'on log\'istica siempre produce un valor entre 0 y 1, lo que la hace adecuada para modelar probabilidades.
-    \item \textbf{Monoton\'ia}: La funci\'on es mon\'otona creciente, lo que significa que a medida que la combinaci\'on lineal de variables independientes aumenta, la probabilidad tambi\'en aumenta.
-    \item \textbf{Simetr\'ia}: La funci\'on log\'istica es sim\'etrica en torno a $p = 0.5$.
-\end{itemize}
-
-\section{Funci\'on de Verosimilitud}
-
-La funci\'on de verosimilitud se utiliza para estimar los coeficientes del modelo de regresi\'on log\'istica. Esta funci\'on mide la probabilidad de observar los datos dados los coeficientes del modelo.
-
-\subsection{Definici\'on}
-
-Para un conjunto de $n$ observaciones, la funci\'on de verosimilitud $L$ se define como el producto de las probabilidades individuales de observar cada dato:
-\begin{eqnarray*}
-L(\beta_0, \beta_1, \ldots, \beta_n) = \prod_{i=1}^{n} p_i^{y_i} (1 - p_i)^{1 - y_i}
-\end{eqnarray*}
-donde $y_i$ es el valor observado de la variable dependiente para la $i$-\'esima observaci\'on y $p_i$ es la probabilidad predicha de que $Y_i = 1$.
-
-\subsection{Funci\'on de Log-Verosimilitud}
-
-Para simplificar los c\'alculos, trabajamos con el logaritmo de la funci\'on de verosimilitud, conocido como la funci\'on de log-verosimilitud. Tomar el logaritmo convierte el producto en una suma:
-\begin{eqnarray*}
-\log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right]
-\end{eqnarray*}
-
-Sustituyendo $p_i$:
-\begin{eqnarray*}
-\log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i (\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}) - \log(1 + e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}) \right]
-\end{eqnarray*}
-
-\section{Estimaci\'on de Coeficientes}
-
-Los coeficientes del modelo de regresi\'on log\'istica se estiman maximizando la funci\'on de log-verosimilitud. Este proceso generalmente se realiza mediante m\'etodos iterativos como el algoritmo de Newton-Raphson.
-
-\subsection{Gradiente y Hessiana}
-
-Para maximizar la funci\'on de log-verosimilitud, necesitamos calcular su gradiente y su matriz Hessiana.
-
-\subsubsection{Gradiente}
-
-El gradiente de la funci\'on de log-verosimilitud con respecto a los coeficientes $\beta$ es:
-\begin{eqnarray*}
-\mathbf{g}(\beta) = \frac{\partial \log L}{\partial \beta} = \sum_{i=1}^{n} \mathbf{X}_i (y_i - p_i)
-\end{eqnarray*}
-donde $\mathbf{X}_i$ es el vector de valores de las variables independientes para la $i$-\'esima observaci\'on.
-
-\subsubsection{Hessiana}
-
-La matriz Hessiana de la funci\'on de log-verosimilitud con respecto a los coeficientes $\beta$ es:
-\begin{eqnarray*}
-\mathbf{H}(\beta) = \frac{\partial^2 \log L}{\partial \beta \partial \beta^T} = -\sum_{i=1}^{n} p_i (1 - p_i) \mathbf{X}_i \mathbf{X}_i^T
-\end{eqnarray*}
-
-\subsection{Algoritmo Newton-Raphson}
-
-El algoritmo Newton-Raphson se utiliza para encontrar los valores de los coeficientes que maximizan la funci\'on de log-verosimilitud. El algoritmo se puede resumir en los siguientes pasos:
-\begin{enumerate}
-    \item Inicializar el vector de coeficientes $\beta^{(0)}$ (por ejemplo, con ceros o valores peque\~nos aleatorios).
-    \item Calcular el gradiente $\mathbf{g}(\beta^{(k)})$ y la matriz Hessiana $\mathbf{H}(\beta^{(k)})$ en la iteraci\'on $k$.
-    \item Actualizar los coeficientes utilizando la f\'ormula:
-    \begin{eqnarray*}
-    \beta^{(k+1)} = \beta^{(k)} - \left[ \mathbf{H}(\beta^{(k)}) \right]^{-1} \mathbf{g}(\beta^{(k)})
-    \end{eqnarray*}
-    \item Repetir los pasos 2 y 3 hasta que la diferencia entre $\beta^{(k+1)}$ y $\beta^{(k)}$ sea menor que un umbral predefinido (criterio de convergencia).
-\end{enumerate}
-
+%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
 \section{Validaci\'on del Modelo}
+%<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
 
 Una vez que se han estimado los coeficientes del modelo de regresi\'on log\'istica, es importante validar el modelo para asegurarse de que proporciona predicciones precisas.
-
+%---------------------------------------------------------
 \subsection{Curva ROC y AUC}
-
+%---------------------------------------------------------
 La curva ROC (Receiver Operating Characteristic) es una herramienta gr\'afica utilizada para evaluar el rendimiento de un modelo de clasificaci\'on binaria. El \'area bajo la curva (AUC) mide la capacidad del modelo para distinguir entre las clases.
-
+%---------------------------------------------------------
 \subsection{Matriz de Confusi\'on}
-
+%---------------------------------------------------------
 La matriz de confusi\'on es una tabla que resume el rendimiento de un modelo de clasificaci\'on al comparar las predicciones del modelo con los valores reales. Los t\'erminos en la matriz de confusi\'on incluyen verdaderos positivos, falsos positivos, verdaderos negativos y falsos negativos.
 
 
+
+
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
+\chapter{Elementos de Probabilidad}
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 
 \chapter{Preparaci\'on de Datos y Selecci\'on de Variables}
 
