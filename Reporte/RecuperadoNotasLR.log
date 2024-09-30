@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  29 SEP 2024 20:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  29 SEP 2024 21:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -405,24 +405,24 @@ LaTeX Info: Redefining \% on input line 11.
 )
 \openout1 = `RecuperadoNotasLR.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 94.
-LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -458,13 +458,13 @@ LaTeX Font Info:    ... okay on input line 94.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 94.
+Package hyperref Info: Link coloring OFF on input line 95.
 (./RecuperadoNotasLR.out) (./RecuperadoNotasLR.out)
 \@outlinefile=\write3
 \openout3 = `RecuperadoNotasLR.out'.
 
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
 \c@lstlisting=\count318
 
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -489,13 +489,13 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 97.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 98.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 97.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 98.
 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -602,8 +602,8 @@ LaTeX Info: Redefining \% on input line 307.
 \tf@toc=\write4
 \openout4 = `RecuperadoNotasLR.toc'.
 
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
+LaTeX Info: Redefining \. on input line 101.
+LaTeX Info: Redefining \% on input line 101.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -613,15 +613,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
+LaTeX Info: Redefining \. on input line 101.
+LaTeX Info: Redefining \% on input line 101.
 [7]
 Cap\'{\i }tulo 1.
 [8
 
 ]
-LaTeX Info: Redefining \. on input line 128.
-LaTeX Info: Redefining \% on input line 128.
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -631,11 +631,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 128.
-LaTeX Info: Redefining \% on input line 128.
+LaTeX Info: Redefining \. on input line 129.
+LaTeX Info: Redefining \% on input line 129.
 [9]
-LaTeX Info: Redefining \. on input line 164.
-LaTeX Info: Redefining \% on input line 164.
+LaTeX Info: Redefining \. on input line 165.
+LaTeX Info: Redefining \% on input line 165.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -645,11 +645,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 164.
-LaTeX Info: Redefining \% on input line 164.
+LaTeX Info: Redefining \. on input line 165.
+LaTeX Info: Redefining \% on input line 165.
 [10]
-LaTeX Info: Redefining \. on input line 196.
-LaTeX Info: Redefining \% on input line 196.
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -659,11 +659,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 196.
-LaTeX Info: Redefining \% on input line 196.
+LaTeX Info: Redefining \. on input line 197.
+LaTeX Info: Redefining \% on input line 197.
 [11]
-LaTeX Info: Redefining \. on input line 249.
-LaTeX Info: Redefining \% on input line 249.
+LaTeX Info: Redefining \. on input line 250.
+LaTeX Info: Redefining \% on input line 250.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -673,12 +673,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 249.
-LaTeX Info: Redefining \% on input line 249.
+LaTeX Info: Redefining \. on input line 250.
+LaTeX Info: Redefining \% on input line 250.
 [12{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.en
 c}]
-LaTeX Info: Redefining \. on input line 272.
-LaTeX Info: Redefining \% on input line 272.
+LaTeX Info: Redefining \. on input line 273.
+LaTeX Info: Redefining \% on input line 273.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -688,11 +688,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 272.
-LaTeX Info: Redefining \% on input line 272.
+LaTeX Info: Redefining \. on input line 273.
+LaTeX Info: Redefining \% on input line 273.
 [13]
-LaTeX Info: Redefining \. on input line 306.
-LaTeX Info: Redefining \% on input line 306.
+LaTeX Info: Redefining \. on input line 307.
+LaTeX Info: Redefining \% on input line 307.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -702,11 +702,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 306.
-LaTeX Info: Redefining \% on input line 306.
+LaTeX Info: Redefining \. on input line 307.
+LaTeX Info: Redefining \% on input line 307.
 [14]
-LaTeX Info: Redefining \. on input line 329.
-LaTeX Info: Redefining \% on input line 329.
+LaTeX Info: Redefining \. on input line 330.
+LaTeX Info: Redefining \% on input line 330.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -716,11 +716,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 329.
-LaTeX Info: Redefining \% on input line 329.
+LaTeX Info: Redefining \. on input line 330.
+LaTeX Info: Redefining \% on input line 330.
 [15]
-LaTeX Info: Redefining \. on input line 374.
-LaTeX Info: Redefining \% on input line 374.
+LaTeX Info: Redefining \. on input line 375.
+LaTeX Info: Redefining \% on input line 375.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -730,11 +730,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 374.
-LaTeX Info: Redefining \% on input line 374.
+LaTeX Info: Redefining \. on input line 375.
+LaTeX Info: Redefining \% on input line 375.
 [16]
-LaTeX Info: Redefining \. on input line 440.
-LaTeX Info: Redefining \% on input line 440.
+LaTeX Info: Redefining \. on input line 441.
+LaTeX Info: Redefining \% on input line 441.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -744,11 +744,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 440.
-LaTeX Info: Redefining \% on input line 440.
+LaTeX Info: Redefining \. on input line 441.
+LaTeX Info: Redefining \% on input line 441.
 [17]
-LaTeX Info: Redefining \. on input line 481.
-LaTeX Info: Redefining \% on input line 481.
+LaTeX Info: Redefining \. on input line 482.
+LaTeX Info: Redefining \% on input line 482.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -758,11 +758,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 481.
-LaTeX Info: Redefining \% on input line 481.
+LaTeX Info: Redefining \. on input line 482.
+LaTeX Info: Redefining \% on input line 482.
 [18]
-LaTeX Info: Redefining \. on input line 532.
-LaTeX Info: Redefining \% on input line 532.
+LaTeX Info: Redefining \. on input line 533.
+LaTeX Info: Redefining \% on input line 533.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -772,11 +772,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 532.
-LaTeX Info: Redefining \% on input line 532.
+LaTeX Info: Redefining \. on input line 533.
+LaTeX Info: Redefining \% on input line 533.
 [19]
-LaTeX Info: Redefining \. on input line 593.
-LaTeX Info: Redefining \% on input line 593.
+LaTeX Info: Redefining \. on input line 594.
+LaTeX Info: Redefining \% on input line 594.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -786,11 +786,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 593.
-LaTeX Info: Redefining \% on input line 593.
+LaTeX Info: Redefining \. on input line 594.
+LaTeX Info: Redefining \% on input line 594.
 [20]
-LaTeX Info: Redefining \. on input line 657.
-LaTeX Info: Redefining \% on input line 657.
+LaTeX Info: Redefining \. on input line 658.
+LaTeX Info: Redefining \% on input line 658.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -800,11 +800,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 657.
-LaTeX Info: Redefining \% on input line 657.
+LaTeX Info: Redefining \. on input line 658.
+LaTeX Info: Redefining \% on input line 658.
 [21]
-LaTeX Info: Redefining \. on input line 722.
-LaTeX Info: Redefining \% on input line 722.
+LaTeX Info: Redefining \. on input line 723.
+LaTeX Info: Redefining \% on input line 723.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -814,11 +814,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 722.
-LaTeX Info: Redefining \% on input line 722.
+LaTeX Info: Redefining \. on input line 723.
+LaTeX Info: Redefining \% on input line 723.
 [22]
-LaTeX Info: Redefining \. on input line 795.
-LaTeX Info: Redefining \% on input line 795.
+LaTeX Info: Redefining \. on input line 796.
+LaTeX Info: Redefining \% on input line 796.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -828,11 +828,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 795.
-LaTeX Info: Redefining \% on input line 795.
+LaTeX Info: Redefining \. on input line 796.
+LaTeX Info: Redefining \% on input line 796.
 [23]
-LaTeX Info: Redefining \. on input line 850.
-LaTeX Info: Redefining \% on input line 850.
+LaTeX Info: Redefining \. on input line 851.
+LaTeX Info: Redefining \% on input line 851.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -842,11 +842,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 850.
-LaTeX Info: Redefining \% on input line 850.
+LaTeX Info: Redefining \. on input line 851.
+LaTeX Info: Redefining \% on input line 851.
 [24]
-LaTeX Info: Redefining \. on input line 899.
-LaTeX Info: Redefining \% on input line 899.
+LaTeX Info: Redefining \. on input line 900.
+LaTeX Info: Redefining \% on input line 900.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -856,11 +856,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 899.
-LaTeX Info: Redefining \% on input line 899.
+LaTeX Info: Redefining \. on input line 900.
+LaTeX Info: Redefining \% on input line 900.
 [25]
-LaTeX Info: Redefining \. on input line 939.
-LaTeX Info: Redefining \% on input line 939.
+LaTeX Info: Redefining \. on input line 940.
+LaTeX Info: Redefining \% on input line 940.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -870,11 +870,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 939.
-LaTeX Info: Redefining \% on input line 939.
+LaTeX Info: Redefining \. on input line 940.
+LaTeX Info: Redefining \% on input line 940.
 [26]
-LaTeX Info: Redefining \. on input line 983.
-LaTeX Info: Redefining \% on input line 983.
+LaTeX Info: Redefining \. on input line 984.
+LaTeX Info: Redefining \% on input line 984.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -884,11 +884,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 983.
-LaTeX Info: Redefining \% on input line 983.
+LaTeX Info: Redefining \. on input line 984.
+LaTeX Info: Redefining \% on input line 984.
 [27]
-LaTeX Info: Redefining \. on input line 1036.
-LaTeX Info: Redefining \% on input line 1036.
+LaTeX Info: Redefining \. on input line 1037.
+LaTeX Info: Redefining \% on input line 1037.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -898,11 +898,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1036.
-LaTeX Info: Redefining \% on input line 1036.
+LaTeX Info: Redefining \. on input line 1037.
+LaTeX Info: Redefining \% on input line 1037.
 [28]
-LaTeX Info: Redefining \. on input line 1093.
-LaTeX Info: Redefining \% on input line 1093.
+LaTeX Info: Redefining \. on input line 1094.
+LaTeX Info: Redefining \% on input line 1094.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -912,11 +912,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1093.
-LaTeX Info: Redefining \% on input line 1093.
+LaTeX Info: Redefining \. on input line 1094.
+LaTeX Info: Redefining \% on input line 1094.
 [29]
-LaTeX Info: Redefining \. on input line 1144.
-LaTeX Info: Redefining \% on input line 1144.
+LaTeX Info: Redefining \. on input line 1145.
+LaTeX Info: Redefining \% on input line 1145.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -926,35 +926,35 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1144.
-LaTeX Info: Redefining \% on input line 1144.
+LaTeX Info: Redefining \. on input line 1145.
+LaTeX Info: Redefining \% on input line 1145.
 [30]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1151.
+(hyperref)                removing `math shift' on input line 1152.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1151.
+(hyperref)                removing `subscript' on input line 1152.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1151.
+(hyperref)                removing `math shift' on input line 1152.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1151.
+(hyperref)                removing `math shift' on input line 1152.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 1151.
+(hyperref)                removing `subscript' on input line 1152.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 1151.
+(hyperref)                removing `math shift' on input line 1152.
 
-LaTeX Info: Redefining \. on input line 1200.
-LaTeX Info: Redefining \% on input line 1200.
+LaTeX Info: Redefining \. on input line 1201.
+LaTeX Info: Redefining \% on input line 1201.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.1638pt, for example:
@@ -963,11 +963,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1200.
-LaTeX Info: Redefining \% on input line 1200.
+LaTeX Info: Redefining \. on input line 1201.
+LaTeX Info: Redefining \% on input line 1201.
 [31]
-LaTeX Info: Redefining \. on input line 1249.
-LaTeX Info: Redefining \% on input line 1249.
+LaTeX Info: Redefining \. on input line 1250.
+LaTeX Info: Redefining \% on input line 1250.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -977,11 +977,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1249.
-LaTeX Info: Redefining \% on input line 1249.
+LaTeX Info: Redefining \. on input line 1250.
+LaTeX Info: Redefining \% on input line 1250.
 [32]
-LaTeX Info: Redefining \. on input line 1298.
-LaTeX Info: Redefining \% on input line 1298.
+LaTeX Info: Redefining \. on input line 1299.
+LaTeX Info: Redefining \% on input line 1299.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -991,11 +991,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1298.
-LaTeX Info: Redefining \% on input line 1298.
+LaTeX Info: Redefining \. on input line 1299.
+LaTeX Info: Redefining \% on input line 1299.
 [33]
-LaTeX Info: Redefining \. on input line 1345.
-LaTeX Info: Redefining \% on input line 1345.
+LaTeX Info: Redefining \. on input line 1346.
+LaTeX Info: Redefining \% on input line 1346.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1005,11 +1005,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1345.
-LaTeX Info: Redefining \% on input line 1345.
+LaTeX Info: Redefining \. on input line 1346.
+LaTeX Info: Redefining \% on input line 1346.
 [34]
-LaTeX Info: Redefining \. on input line 1390.
-LaTeX Info: Redefining \% on input line 1390.
+LaTeX Info: Redefining \. on input line 1391.
+LaTeX Info: Redefining \% on input line 1391.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1019,20 +1019,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1390.
-LaTeX Info: Redefining \% on input line 1390.
+LaTeX Info: Redefining \. on input line 1391.
+LaTeX Info: Redefining \% on input line 1391.
 [35]
 Cap\'{\i }tulo 2.
 [36
 
 ]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-432.
+433.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Info: Redefining \. on input line 1482.
-LaTeX Info: Redefining \% on input line 1482.
+LaTeX Info: Redefining \. on input line 1483.
+LaTeX Info: Redefining \% on input line 1483.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1042,11 +1042,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1482.
-LaTeX Info: Redefining \% on input line 1482.
+LaTeX Info: Redefining \. on input line 1483.
+LaTeX Info: Redefining \% on input line 1483.
 [37]
-LaTeX Info: Redefining \. on input line 1534.
-LaTeX Info: Redefining \% on input line 1534.
+LaTeX Info: Redefining \. on input line 1535.
+LaTeX Info: Redefining \% on input line 1535.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1056,15 +1056,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1534.
-LaTeX Info: Redefining \% on input line 1534.
+LaTeX Info: Redefining \. on input line 1535.
+LaTeX Info: Redefining \% on input line 1535.
 [38]
-Overfull \hbox (37.279pt too wide) in alignment at lines 1584--1588
+Overfull \hbox (37.279pt too wide) in alignment at lines 1585--1589
  [][][] []
  []
 
-LaTeX Info: Redefining \. on input line 1607.
-LaTeX Info: Redefining \% on input line 1607.
+LaTeX Info: Redefining \. on input line 1611.
+LaTeX Info: Redefining \% on input line 1611.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.1638pt, for example:
@@ -1073,11 +1073,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1607.
-LaTeX Info: Redefining \% on input line 1607.
+LaTeX Info: Redefining \. on input line 1611.
+LaTeX Info: Redefining \% on input line 1611.
 [39]
-LaTeX Info: Redefining \. on input line 1654.
-LaTeX Info: Redefining \% on input line 1654.
+LaTeX Info: Redefining \. on input line 1660.
+LaTeX Info: Redefining \% on input line 1660.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1087,12 +1087,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1654.
-LaTeX Info: Redefining \% on input line 1654.
+LaTeX Info: Redefining \. on input line 1660.
+LaTeX Info: Redefining \% on input line 1660.
 [40]
-LaTeX Info: Redefining \. on input line 1711.
-LaTeX Info: Redefining \% on input line 1711.
 
+LaTeX Warning: Reference `Eq.1.14' on page 41 undefined on input line 1708.
+
+LaTeX Info: Redefining \. on input line 1717.
+LaTeX Info: Redefining \% on input line 1717.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.1638pt, for example:
@@ -1101,11 +1103,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1711.
-LaTeX Info: Redefining \% on input line 1711.
+LaTeX Info: Redefining \. on input line 1717.
+LaTeX Info: Redefining \% on input line 1717.
 [41]
-LaTeX Info: Redefining \. on input line 1766.
-LaTeX Info: Redefining \% on input line 1766.
+LaTeX Info: Redefining \. on input line 1772.
+LaTeX Info: Redefining \% on input line 1772.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1115,12 +1117,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1766.
-LaTeX Info: Redefining \% on input line 1766.
+LaTeX Info: Redefining \. on input line 1772.
+LaTeX Info: Redefining \% on input line 1772.
 [42]
-LaTeX Info: Redefining \. on input line 1834.
-LaTeX Info: Redefining \% on input line 1834.
 
+LaTeX Warning: Reference `Eq.LogLikelihood1' on page 43 undefined on input line
+ 1802.
+
+LaTeX Info: Redefining \. on input line 1840.
+LaTeX Info: Redefining \% on input line 1840.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.1638pt, for example:
@@ -1129,11 +1134,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1834.
-LaTeX Info: Redefining \% on input line 1834.
+LaTeX Info: Redefining \. on input line 1840.
+LaTeX Info: Redefining \% on input line 1840.
 [43]
-LaTeX Info: Redefining \. on input line 1836.
-LaTeX Info: Redefining \% on input line 1836.
+LaTeX Info: Redefining \. on input line 1842.
+LaTeX Info: Redefining \% on input line 1842.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1143,15 +1148,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1836.
-LaTeX Info: Redefining \% on input line 1836.
+LaTeX Info: Redefining \. on input line 1842.
+LaTeX Info: Redefining \% on input line 1842.
 [44]
 Cap\'{\i }tulo 3.
 [45
 
 ]
-LaTeX Info: Redefining \. on input line 1923.
-LaTeX Info: Redefining \% on input line 1923.
+LaTeX Info: Redefining \. on input line 1929.
+LaTeX Info: Redefining \% on input line 1929.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1161,11 +1166,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1923.
-LaTeX Info: Redefining \% on input line 1923.
+LaTeX Info: Redefining \. on input line 1929.
+LaTeX Info: Redefining \% on input line 1929.
 [46]
-LaTeX Info: Redefining \. on input line 1986.
-LaTeX Info: Redefining \% on input line 1986.
+LaTeX Info: Redefining \. on input line 1992.
+LaTeX Info: Redefining \% on input line 1992.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1175,11 +1180,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 1986.
-LaTeX Info: Redefining \% on input line 1986.
+LaTeX Info: Redefining \. on input line 1992.
+LaTeX Info: Redefining \% on input line 1992.
 [47]
-LaTeX Info: Redefining \. on input line 2035.
-LaTeX Info: Redefining \% on input line 2035.
+LaTeX Info: Redefining \. on input line 2041.
+LaTeX Info: Redefining \% on input line 2041.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1189,11 +1194,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2035.
-LaTeX Info: Redefining \% on input line 2035.
+LaTeX Info: Redefining \. on input line 2041.
+LaTeX Info: Redefining \% on input line 2041.
 [48]
-LaTeX Info: Redefining \. on input line 2088.
-LaTeX Info: Redefining \% on input line 2088.
+LaTeX Info: Redefining \. on input line 2094.
+LaTeX Info: Redefining \% on input line 2094.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1203,11 +1208,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2088.
-LaTeX Info: Redefining \% on input line 2088.
+LaTeX Info: Redefining \. on input line 2094.
+LaTeX Info: Redefining \% on input line 2094.
 [49]
-LaTeX Info: Redefining \. on input line 2135.
-LaTeX Info: Redefining \% on input line 2135.
+LaTeX Info: Redefining \. on input line 2141.
+LaTeX Info: Redefining \% on input line 2141.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1217,11 +1222,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2135.
-LaTeX Info: Redefining \% on input line 2135.
+LaTeX Info: Redefining \. on input line 2141.
+LaTeX Info: Redefining \% on input line 2141.
 [50]
-LaTeX Info: Redefining \. on input line 2160.
-LaTeX Info: Redefining \% on input line 2160.
+LaTeX Info: Redefining \. on input line 2166.
+LaTeX Info: Redefining \% on input line 2166.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1231,25 +1236,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2160.
-LaTeX Info: Redefining \% on input line 2160.
+LaTeX Info: Redefining \. on input line 2166.
+LaTeX Info: Redefining \% on input line 2166.
 [51]
 Cap\'{\i }tulo 4.
 [52
 
 ]
-Overfull \hbox (17.71356pt too wide) in alignment at lines 2206--2208
+Overfull \hbox (17.71356pt too wide) in alignment at lines 2212--2214
  [][][] []
  []
 
 
-Overfull \hbox (7.20218pt too wide) in paragraph at lines 2212--2213
+Overfull \hbox (7.20218pt too wide) in paragraph at lines 2218--2219
 []\T1/cmr/m/n/10 Los co-efi-cien-tes del mo-de-lo de re-gre-sión lo-gís-ti-ca s
 e es-ti-man ma-xi-mi-zan-do la fun-ción de log-verosimilitud.
  []
 
-LaTeX Info: Redefining \. on input line 2244.
-LaTeX Info: Redefining \% on input line 2244.
+LaTeX Info: Redefining \. on input line 2250.
+LaTeX Info: Redefining \% on input line 2250.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.1638pt, for example:
@@ -1258,11 +1263,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2244.
-LaTeX Info: Redefining \% on input line 2244.
+LaTeX Info: Redefining \. on input line 2250.
+LaTeX Info: Redefining \% on input line 2250.
 [53]
-LaTeX Info: Redefining \. on input line 2260.
-LaTeX Info: Redefining \% on input line 2260.
+LaTeX Info: Redefining \. on input line 2266.
+LaTeX Info: Redefining \% on input line 2266.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1272,15 +1277,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2260.
-LaTeX Info: Redefining \% on input line 2260.
+LaTeX Info: Redefining \. on input line 2266.
+LaTeX Info: Redefining \% on input line 2266.
 [54]
 Cap\'{\i }tulo 5.
 [55
 
 ]
-LaTeX Info: Redefining \. on input line 2345.
-LaTeX Info: Redefining \% on input line 2345.
+LaTeX Info: Redefining \. on input line 2351.
+LaTeX Info: Redefining \% on input line 2351.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1290,11 +1295,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2345.
-LaTeX Info: Redefining \% on input line 2345.
+LaTeX Info: Redefining \. on input line 2351.
+LaTeX Info: Redefining \% on input line 2351.
 [56]
-LaTeX Info: Redefining \. on input line 2400.
-LaTeX Info: Redefining \% on input line 2400.
+LaTeX Info: Redefining \. on input line 2406.
+LaTeX Info: Redefining \% on input line 2406.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1304,11 +1309,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2400.
-LaTeX Info: Redefining \% on input line 2400.
+LaTeX Info: Redefining \. on input line 2406.
+LaTeX Info: Redefining \% on input line 2406.
 [57]
-LaTeX Info: Redefining \. on input line 2426.
-LaTeX Info: Redefining \% on input line 2426.
+LaTeX Info: Redefining \. on input line 2432.
+LaTeX Info: Redefining \% on input line 2432.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1318,8 +1323,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2426.
-LaTeX Info: Redefining \% on input line 2426.
+LaTeX Info: Redefining \. on input line 2432.
+LaTeX Info: Redefining \% on input line 2432.
 [58]
 Cap\'{\i }tulo 6.
 
@@ -1328,8 +1333,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [59
 
 ]
-LaTeX Info: Redefining \. on input line 2515.
-LaTeX Info: Redefining \% on input line 2515.
+LaTeX Info: Redefining \. on input line 2521.
+LaTeX Info: Redefining \% on input line 2521.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1339,11 +1344,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2515.
-LaTeX Info: Redefining \% on input line 2515.
+LaTeX Info: Redefining \. on input line 2521.
+LaTeX Info: Redefining \% on input line 2521.
 [60]
-LaTeX Info: Redefining \. on input line 2563.
-LaTeX Info: Redefining \% on input line 2563.
+LaTeX Info: Redefining \. on input line 2569.
+LaTeX Info: Redefining \% on input line 2569.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1353,15 +1358,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2563.
-LaTeX Info: Redefining \% on input line 2563.
+LaTeX Info: Redefining \. on input line 2569.
+LaTeX Info: Redefining \% on input line 2569.
 [61]
 Cap\'{\i }tulo 7.
 [62
 
 ]
-LaTeX Info: Redefining \. on input line 2652.
-LaTeX Info: Redefining \% on input line 2652.
+LaTeX Info: Redefining \. on input line 2658.
+LaTeX Info: Redefining \% on input line 2658.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1371,11 +1376,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2652.
-LaTeX Info: Redefining \% on input line 2652.
+LaTeX Info: Redefining \. on input line 2658.
+LaTeX Info: Redefining \% on input line 2658.
 [63]
-LaTeX Info: Redefining \. on input line 2669.
-LaTeX Info: Redefining \% on input line 2669.
+LaTeX Info: Redefining \. on input line 2675.
+LaTeX Info: Redefining \% on input line 2675.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1385,15 +1390,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2669.
-LaTeX Info: Redefining \% on input line 2669.
+LaTeX Info: Redefining \. on input line 2675.
+LaTeX Info: Redefining \% on input line 2675.
 [64]
 Cap\'{\i }tulo 8.
 [65
 
 ]
-LaTeX Info: Redefining \. on input line 2762.
-LaTeX Info: Redefining \% on input line 2762.
+LaTeX Info: Redefining \. on input line 2768.
+LaTeX Info: Redefining \% on input line 2768.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1403,11 +1408,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2762.
-LaTeX Info: Redefining \% on input line 2762.
+LaTeX Info: Redefining \. on input line 2768.
+LaTeX Info: Redefining \% on input line 2768.
 [66]
-LaTeX Info: Redefining \. on input line 2773.
-LaTeX Info: Redefining \% on input line 2773.
+LaTeX Info: Redefining \. on input line 2779.
+LaTeX Info: Redefining \% on input line 2779.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1417,15 +1422,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2773.
-LaTeX Info: Redefining \% on input line 2773.
+LaTeX Info: Redefining \. on input line 2779.
+LaTeX Info: Redefining \% on input line 2779.
 [67]
 Cap\'{\i }tulo 9.
 [68
 
 ]
-LaTeX Info: Redefining \. on input line 2849.
-LaTeX Info: Redefining \% on input line 2849.
+LaTeX Info: Redefining \. on input line 2855.
+LaTeX Info: Redefining \% on input line 2855.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1435,15 +1440,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2849.
-LaTeX Info: Redefining \% on input line 2849.
+LaTeX Info: Redefining \. on input line 2855.
+LaTeX Info: Redefining \% on input line 2855.
 [69]
 Cap\'{\i }tulo 10.
 [70
 
 ]
-LaTeX Info: Redefining \. on input line 2950.
-LaTeX Info: Redefining \% on input line 2950.
+LaTeX Info: Redefining \. on input line 2956.
+LaTeX Info: Redefining \% on input line 2956.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1453,15 +1458,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 2950.
-LaTeX Info: Redefining \% on input line 2950.
+LaTeX Info: Redefining \. on input line 2956.
+LaTeX Info: Redefining \% on input line 2956.
 [71]
 Cap\'{\i }tulo 11.
 [72
 
 ]
-LaTeX Info: Redefining \. on input line 3002.
-LaTeX Info: Redefining \% on input line 3002.
+LaTeX Info: Redefining \. on input line 3008.
+LaTeX Info: Redefining \% on input line 3008.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1471,8 +1476,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3002.
-LaTeX Info: Redefining \% on input line 3002.
+LaTeX Info: Redefining \. on input line 3008.
+LaTeX Info: Redefining \% on input line 3008.
 [73] [74
 
 ]
@@ -1480,8 +1485,8 @@ Cap\'{\i }tulo 12.
 [75
 
 ]
-LaTeX Info: Redefining \. on input line 3072.
-LaTeX Info: Redefining \% on input line 3072.
+LaTeX Info: Redefining \. on input line 3078.
+LaTeX Info: Redefining \% on input line 3078.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1491,11 +1496,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3072.
-LaTeX Info: Redefining \% on input line 3072.
+LaTeX Info: Redefining \. on input line 3078.
+LaTeX Info: Redefining \% on input line 3078.
 [76]
-LaTeX Info: Redefining \. on input line 3088.
-LaTeX Info: Redefining \% on input line 3088.
+LaTeX Info: Redefining \. on input line 3094.
+LaTeX Info: Redefining \% on input line 3094.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1505,49 +1510,29 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3088.
-LaTeX Info: Redefining \% on input line 3088.
+LaTeX Info: Redefining \. on input line 3094.
+LaTeX Info: Redefining \% on input line 3094.
 [77]
 Cap\'{\i }tulo 13.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3107.
+(hyperref)                removing `math shift' on input line 3113.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3107.
+(hyperref)                removing `math shift' on input line 3113.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3117.
+(hyperref)                removing `math shift' on input line 3123.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3117.
+(hyperref)                removing `math shift' on input line 3123.
 
 [78
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3137.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lambda' on input line 3137.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3137.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3137.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3137.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3143.
@@ -1560,8 +1545,28 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3143.
 
-LaTeX Info: Redefining \. on input line 3165.
-LaTeX Info: Redefining \% on input line 3165.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3143.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3143.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3149.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lambda' on input line 3149.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3149.
+
+LaTeX Info: Redefining \. on input line 3171.
+LaTeX Info: Redefining \% on input line 3171.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.1638pt, for example:
@@ -1570,23 +1575,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3165.
-LaTeX Info: Redefining \% on input line 3165.
+LaTeX Info: Redefining \. on input line 3171.
+LaTeX Info: Redefining \% on input line 3171.
 [79]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3170.
+(hyperref)                removing `math shift' on input line 3176.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lambda' on input line 3170.
+(hyperref)                removing `\lambda' on input line 3176.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3170.
+(hyperref)                removing `math shift' on input line 3176.
 
-LaTeX Info: Redefining \. on input line 3204.
-LaTeX Info: Redefining \% on input line 3204.
+LaTeX Info: Redefining \. on input line 3210.
+LaTeX Info: Redefining \% on input line 3210.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 12.1638pt, for example:
@@ -1595,11 +1600,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3204.
-LaTeX Info: Redefining \% on input line 3204.
+LaTeX Info: Redefining \. on input line 3210.
+LaTeX Info: Redefining \% on input line 3210.
 [80]
-LaTeX Info: Redefining \. on input line 3220.
-LaTeX Info: Redefining \% on input line 3220.
+LaTeX Info: Redefining \. on input line 3226.
+LaTeX Info: Redefining \% on input line 3226.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1609,15 +1614,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3220.
-LaTeX Info: Redefining \% on input line 3220.
+LaTeX Info: Redefining \. on input line 3226.
+LaTeX Info: Redefining \% on input line 3226.
 [81]
 Cap\'{\i }tulo 14.
 [82
 
 ]
-LaTeX Info: Redefining \. on input line 3299.
-LaTeX Info: Redefining \% on input line 3299.
+LaTeX Info: Redefining \. on input line 3305.
+LaTeX Info: Redefining \% on input line 3305.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1627,11 +1632,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3299.
-LaTeX Info: Redefining \% on input line 3299.
+LaTeX Info: Redefining \. on input line 3305.
+LaTeX Info: Redefining \% on input line 3305.
 [83]
-LaTeX Info: Redefining \. on input line 3332.
-LaTeX Info: Redefining \% on input line 3332.
+LaTeX Info: Redefining \. on input line 3338.
+LaTeX Info: Redefining \% on input line 3338.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1641,11 +1646,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3332.
-LaTeX Info: Redefining \% on input line 3332.
+LaTeX Info: Redefining \. on input line 3338.
+LaTeX Info: Redefining \% on input line 3338.
 [84]
-LaTeX Info: Redefining \. on input line 3347.
-LaTeX Info: Redefining \% on input line 3347.
+LaTeX Info: Redefining \. on input line 3353.
+LaTeX Info: Redefining \% on input line 3353.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1655,39 +1660,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3347.
-LaTeX Info: Redefining \% on input line 3347.
+LaTeX Info: Redefining \. on input line 3353.
+LaTeX Info: Redefining \% on input line 3353.
 [85]
 Cap\'{\i }tulo 15.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3367.
+(hyperref)                removing `math shift' on input line 3373.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 3367.
+(hyperref)                removing `subscript' on input line 3373.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3367.
+(hyperref)                removing `math shift' on input line 3373.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3367.
+(hyperref)                removing `math shift' on input line 3373.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 3367.
+(hyperref)                removing `subscript' on input line 3373.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 3367.
+(hyperref)                removing `math shift' on input line 3373.
 
 [86
 
 ]
-LaTeX Info: Redefining \. on input line 3428.
-LaTeX Info: Redefining \% on input line 3428.
+LaTeX Info: Redefining \. on input line 3434.
+LaTeX Info: Redefining \% on input line 3434.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1697,15 +1702,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3428.
-LaTeX Info: Redefining \% on input line 3428.
+LaTeX Info: Redefining \. on input line 3434.
+LaTeX Info: Redefining \% on input line 3434.
 [87]
 Cap\'{\i }tulo 16.
 [88
 
 ]
-LaTeX Info: Redefining \. on input line 3504.
-LaTeX Info: Redefining \% on input line 3504.
+LaTeX Info: Redefining \. on input line 3510.
+LaTeX Info: Redefining \% on input line 3510.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1715,11 +1720,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3504.
-LaTeX Info: Redefining \% on input line 3504.
+LaTeX Info: Redefining \. on input line 3510.
+LaTeX Info: Redefining \% on input line 3510.
 [89]
-LaTeX Info: Redefining \. on input line 3507.
-LaTeX Info: Redefining \% on input line 3507.
+LaTeX Info: Redefining \. on input line 3513.
+LaTeX Info: Redefining \% on input line 3513.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1729,15 +1734,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3507.
-LaTeX Info: Redefining \% on input line 3507.
+LaTeX Info: Redefining \. on input line 3513.
+LaTeX Info: Redefining \% on input line 3513.
 [90]
 Cap\'{\i }tulo 17.
 [91
 
 ]
-LaTeX Info: Redefining \. on input line 3577.
-LaTeX Info: Redefining \% on input line 3577.
+LaTeX Info: Redefining \. on input line 3583.
+LaTeX Info: Redefining \% on input line 3583.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1747,15 +1752,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3577.
-LaTeX Info: Redefining \% on input line 3577.
+LaTeX Info: Redefining \. on input line 3583.
+LaTeX Info: Redefining \% on input line 3583.
 [92]
 Cap\'{\i }tulo 18.
 [93
 
 ]
-LaTeX Info: Redefining \. on input line 3666.
-LaTeX Info: Redefining \% on input line 3666.
+LaTeX Info: Redefining \. on input line 3672.
+LaTeX Info: Redefining \% on input line 3672.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1765,11 +1770,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3666.
-LaTeX Info: Redefining \% on input line 3666.
+LaTeX Info: Redefining \. on input line 3672.
+LaTeX Info: Redefining \% on input line 3672.
 [94]
-LaTeX Info: Redefining \. on input line 3669.
-LaTeX Info: Redefining \% on input line 3669.
+LaTeX Info: Redefining \. on input line 3675.
+LaTeX Info: Redefining \% on input line 3675.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1779,15 +1784,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3669.
-LaTeX Info: Redefining \% on input line 3669.
+LaTeX Info: Redefining \. on input line 3675.
+LaTeX Info: Redefining \% on input line 3675.
 [95]
 Cap\'{\i }tulo 19.
 [96
 
 ]
-LaTeX Info: Redefining \. on input line 3742.
-LaTeX Info: Redefining \% on input line 3742.
+LaTeX Info: Redefining \. on input line 3748.
+LaTeX Info: Redefining \% on input line 3748.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1797,15 +1802,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3742.
-LaTeX Info: Redefining \% on input line 3742.
+LaTeX Info: Redefining \. on input line 3748.
+LaTeX Info: Redefining \% on input line 3748.
 [97]
 Cap\'{\i }tulo 20.
 [98
 
 ]
-LaTeX Info: Redefining \. on input line 3804.
-LaTeX Info: Redefining \% on input line 3804.
+LaTeX Info: Redefining \. on input line 3810.
+LaTeX Info: Redefining \% on input line 3810.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1815,15 +1820,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3804.
-LaTeX Info: Redefining \% on input line 3804.
+LaTeX Info: Redefining \. on input line 3810.
+LaTeX Info: Redefining \% on input line 3810.
 [99]
 Cap\'{\i }tulo 21.
 [100
 
 ]
-LaTeX Info: Redefining \. on input line 3867.
-LaTeX Info: Redefining \% on input line 3867.
+LaTeX Info: Redefining \. on input line 3873.
+LaTeX Info: Redefining \% on input line 3873.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1833,8 +1838,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.1638pt}.
 
-LaTeX Info: Redefining \. on input line 3867.
-LaTeX Info: Redefining \% on input line 3867.
+LaTeX Info: Redefining \. on input line 3873.
+LaTeX Info: Redefining \% on input line 3873.
 [101] (./RecuperadoNotasLR.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
@@ -1843,55 +1848,104 @@ LaTeX Info: Redefining \% on input line 11.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-Package rerunfilecheck Info: File `RecuperadoNotasLR.out' has not changed.
-(rerunfilecheck)             Checksum: ABBA763A065F24087B2E89F3C5BC03DB;65200.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `RecuperadoNotasLR.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `RecuperadoNotasLR.out':
+(rerunfilecheck)             Before: ABBA763A065F24087B2E89F3C5BC03DB;65200
+(rerunfilecheck)             After:  C44792A195D73849B048821B10271A7B;65207.
  ) 
 Here is how much of TeX's memory you used:
- 14857 strings out of 474116
- 224505 string characters out of 5743682
- 1955187 words of memory out of 5000000
- 36395 multiletter control sequences out of 15000+600000
+ 14871 strings out of 474116
+ 224744 string characters out of 5743682
+ 1954187 words of memory out of 5000000
+ 36399 multiletter control sequences out of 15000+600000
  583087 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,15n,84p,2138b,779s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></u
-sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
-/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
-ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
-al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/loc
-al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr
-/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
-sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/lo
-cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
-/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/te
-xlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texli
-ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive
-/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/tex
-live/2024/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texli
-ve/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive
-/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2
-024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/202
-4/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2024/
-texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2024/te
-xmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2024/texm
-f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-
-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-di
-st/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2024/texmf-dist
-/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2024/texmf-dist/f
-onts/type1/public/cm-super/sftt1000.pfb>
-Output written on RecuperadoNotasLR.pdf (102 pages, 826679 bytes).
+
+pdfTeX warning (dest): name{equation.2.5.39} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.2.5.36} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.2.4.29} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.2.4.26} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.2.5.38} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.2.5.37} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.2.4.28} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{equation.2.4.27} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.2.5} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr
+/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/l
+ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local
+/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local
+/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib5.pfb></usr/l
+ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib7.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/l
+ocal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/loca
+l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
+exlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
+ive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texli
+ve/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive
+/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
+024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texli
+ve/2024/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb></usr/local/texlive
+/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2
+024/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/202
+4/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2024/
+texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2024/te
+xmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2024/texm
+f-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2024/texmf-
+dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-di
+st/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-dist
+/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2024/texmf-dist/f
+onts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2024/texmf-dist/fon
+ts/type1/public/cm-super/sftt1000.pfb>
+Output written on RecuperadoNotasLR.pdf (102 pages, 826278 bytes).
 PDF statistics:
- 2629 PDF objects out of 2984 (max. 8388607)
- 2431 compressed objects within 25 object streams
- 622 named destinations out of 1000 (max. 500000)
+ 2640 PDF objects out of 2984 (max. 8388607)
+ 2442 compressed objects within 25 object streams
+ 632 named destinations out of 1000 (max. 500000)
  2641 words of extra memory for PDF output out of 10000 (max. 10000000)
 

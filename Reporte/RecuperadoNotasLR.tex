@@ -1,23 +1,24 @@
-\documentclass[a4paper]{report} % Especificar el tamaño del papel directamente aquí
-\usepackage[utf8]{inputenc} % Ya no es necesario en LaTeX moderno (si usas una versión reciente, puedes eliminar esta línea)
-\usepackage[T1]{fontenc} % Mejora la codificación de fuentes
-\usepackage{amsmath, amssymb} % Combinar los paquetes matemáticos en una sola línea
+\documentclass[a4paper]{report} % Especificar el tama\~no del papel directamente aqu\'i
+\usepackage[utf8]{inputenc} % Ya no es necesario en LaTeX moderno (si usas una versi\'on reciente, puedes eliminar esta l\'inea)
+\usepackage[T1]{fontenc} % Mejora la codificaci\'on de fuentes
+\usepackage{amsmath, amssymb} % Combinar los paquetes matemáticos en una sola l\'inea
 \usepackage{geometry}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
-\usepackage{titlesec} % Para modificar títulos de secciones
+\usepackage{titlesec} % Para modificar t\'itulos de secciones
 \usepackage[spanish]{babel} % Definir el idioma
-\usepackage{listings} % Incluir código fuente
+\usepackage{listings} % Incluir c\'odigo fuente
 \usepackage{graphicx} % Incluir gráficos
+\usepackage{hyperref}
 
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
-\title{Curso Elemental de Regresión Logística y Análisis de Supervivencia}
-\author{Carlos E. Martínez-Rodríguez}
+\title{Curso Elemental de Regresi\'on Log\'istica y An\'alisis de Supervivencia}
+\author{Carlos E. Mart\'inez-Rodr\'iguez}
 \date{Julio 2024}
 
-% Configuración de geometría
+% Configuraci\'on de geometr\'ia
 \geometry{
   left=25mm,
   right=25mm,
@@ -25,15 +26,15 @@
   bottom=30mm,
 }
 
-% Configuración de encabezados y pies de página
+% Configuraci\'on de encabezados y pies de p\'agina
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\leftmark}
 \fancyfoot[C]{\thepage}
 \fancyfoot[R]{\rightmark}
-\fancyfoot[L]{Carlos E. Martínez-Rodríguez}
+\fancyfoot[L]{Carlos E. Mart\'inez-Rodr\'iguez}
 
-% Configuración para la inclusión de código fuente en R
+% Configuraci\'on para la inclusi\'on de c\'odigo fuente en R
 \lstset{
     language=R,
     basicstyle=\ttfamily\small,
@@ -54,24 +55,24 @@
 
 % Definiciones de nuevos entornos
 \newtheorem{Algthm}{Algoritmo}[chapter]
-\newtheorem{Def}{Definición}[chapter]
+\newtheorem{Def}{Definici\'on}[chapter]
 \newtheorem{Ejem}{Ejemplo}[chapter]
 \newtheorem{Teo}{Teorema}[chapter]
-\newtheorem{Dem}{Demostración}[chapter]
+\newtheorem{Dem}{Demostraci\'on}[chapter]
 \newtheorem{Note}{Nota}[chapter]
-\newtheorem{Sol}{Solución}[chapter]
-\newtheorem{Prop}{Proposición}[chapter]
+\newtheorem{Sol}{Soluci\'on}[chapter]
+\newtheorem{Prop}{Proposici\'on}[chapter]
 \newtheorem{Coro}{Corolario}[chapter]
 \newtheorem{Lemma}{Lema}[chapter]
 \newtheorem{Sup}{Supuestos}[chapter]
-\newtheorem{Remark}{Observación}[chapter]
-\newtheorem{Condition}{Condición}[chapter]
+\newtheorem{Remark}{Observaci\'on}[chapter]
+\newtheorem{Condition}{Condici\'on}[chapter]
 \newtheorem{Theorem}{Teorema}[chapter]
 \newtheorem{Corollary}{Corolario}[chapter]
-\newtheorem{Obs}{Observación}[chapter]
+\newtheorem{Obs}{Observaci\'on}[chapter]
 
 
-% Definiciones de comandos para símbolos matemáticos
+% Definiciones de comandos para s\'imbolos matem\'aticos
 \def\RR{\mathbb{R}}
 \def\ZZ{\mathbb{Z}}
 \newcommand{\nat}{\mathbb{N}}
@@ -321,30 +322,30 @@ Hay muchas otras clases de datos inadecuados. Por ejemplo, algunos datos son res
 %<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
 
 %---------------------------------------------------------
-\subsection{Pruebas de Hipótesis}
+\subsection{Pruebas de Hip\'otesis}
 %---------------------------------------------------------
 
 \begin{itemize}
-    \item Una hipótesis estadística es una afirmación acerca de la distribución de probabilidad de una variable aleatoria, a menudo involucran uno o más parámetros de la distribución.
-    \item Las hipótesis son afirmaciones respecto a la población o distribución bajo estudio, no en torno a la muestra.
-    \item La mayoría de las veces, la prueba de hipótesis consiste en determinar si la situación experimental ha cambiado.
-    \item El interés principal es decidir sobre la veracidad o falsedad de una hipótesis, a este procedimiento se le llama \textit{prueba de hipótesis}.
-    \item Si la información es consistente con la hipótesis, se concluye que esta es verdadera, de lo contrario que con base en la información, es falsa.
+    \item Una hip\'otesis estad\'istica es una afirmaci\'on acerca de la distribuci\'on de probabilidad de una variable aleatoria, a menudo involucran uno o m\'as par\'ametros de la distribuci\'on.
+    \item Las hip\'otesis son afirmaciones respecto a la poblaci\'on o distribuci\'on bajo estudio, no en torno a la muestra.
+    \item La mayor\'ia de las veces, la prueba de hip\'otesis consiste en determinar si la situaci\'on experimental ha cambiado.
+    \item El inter\'es principal es decidir sobre la veracidad o falsedad de una hip\'otesis, a este procedimiento se le llama \textit{prueba de hip\'otesis}.
+    \item Si la informaci\'on es consistente con la hip\'otesis, se concluye que esta es verdadera, de lo contrario que con base en la informaci\'on, es falsa.
 \end{itemize}
 
-Una prueba de hipótesis está formada por cinco partes:
+Una prueba de hip\'otesis est\'a formada por cinco partes:
 \begin{itemize}
-    \item La hipótesis nula, denotada por $H_{0}$.
-    \item La hipótesis alternativa, denotada por $H_{1}$.
-    \item El estadístico de prueba y su valor $p$.
-    \item La región de rechazo.
-    \item La conclusión.
+    \item La hip\'otesis nula, denotada por $H_{0}$.
+    \item La hip\'otesis alternativa, denotada por $H_{1}$.
+    \item El estad\'istico de prueba y su valor $p$.
+    \item La regi\'on de rechazo.
+    \item La conclusi\'on.
 \end{itemize}
 
 \begin{Def}
-Las dos hipótesis en competencia son la \textbf{hipótesis alternativa $H_{1}$}, usualmente la que se desea apoyar, y la \textbf{hipótesis nula $H_{0}$}, opuesta a $H_{1}$.
+Las dos hip\'otesis en competencia son la \textbf{hip\'otesis alternativa $H_{1}$}, usualmente la que se desea apoyar, y la \textbf{hip\'otesis nula $H_{0}$}, opuesta a $H_{1}$.
 \end{Def}
-En general, es más fácil presentar evidencia de que $H_{1}$ es cierta, que demostrar que $H_{0}$ es falsa, es por eso que por lo regular se comienza suponiendo que $H_{0}$ es cierta, luego se utilizan los datos de la muestra para decidir si existe evidencia a favor de $H_{1}$, más que a favor de $H_{0}$, así se tienen dos conclusiones:
+En general, es m\'as f\'acil presentar evidencia de que $H_{1}$ es cierta, que demostrar que $H_{0}$ es falsa, es por eso que por lo regular se comienza suponiendo que $H_{0}$ es cierta, luego se utilizan los datos de la muestra para decidir si existe evidencia a favor de $H_{1}$, m\'as que a favor de $H_{0}$, as\'i se tienen dos conclusiones:
 \begin{itemize}
     \item Rechazar $H_{0}$ y concluir que $H_{1}$ es verdadera.
     \item Aceptar, no rechazar, $H_{0}$ como verdadera.
@@ -353,33 +354,33 @@ En general, es más fácil presentar evidencia de que $H_{1}$ es cierta, que dem
 \begin{Ejem}
 Se desea demostrar que el salario promedio por hora en cierto lugar es distinto de $19$ usd, que es el promedio nacional. Entonces $H_{1}:\mu \neq 19$, y $H_{0}:\mu = 19$.
 \end{Ejem}
-A esta se le denomina \textbf{Prueba de hipótesis de dos colas}.
+A esta se le denomina \textbf{Prueba de hip\'otesis de dos colas}.
 
 \begin{Ejem}
-Un determinado proceso produce un promedio de $5\%$ de piezas defectuosas. Se está interesado en demostrar que un simple ajuste en una máquina reducirá $p$, la proporción de piezas defectuosas producidas en este proceso. Entonces se tiene $H_{0}: p < 0.3$ y $H_{1}: p = 0.03$. Si se puede rechazar $H_{0}$, se concluye que el proceso ajustado produce menos del $5\%$ de piezas defectuosas.
+Un determinado proceso produce un promedio de $5\%$ de piezas defectuosas. Se est\'a interesado en demostrar que un simple ajuste en una m\'aquina reducir\'a $p$, la proporci\'on de piezas defectuosas producidas en este proceso. Entonces se tiene $H_{0}: p < 0.3$ y $H_{1}: p = 0.03$. Si se puede rechazar $H_{0}$, se concluye que el proceso ajustado produce menos del $5\%$ de piezas defectuosas.
 \end{Ejem}
-A esta se le denomina \textbf{Prueba de hipótesis de una cola}.
+A esta se le denomina \textbf{Prueba de hip\'otesis de una cola}.
 
-La decisión de rechazar o aceptar la hipótesis nula está basada en la información contenida en una muestra proveniente de la población de interés. Esta información tiene estas formas:
+La decisi\'on de rechazar o aceptar la hip\'otesis nula est\'a basada en la informaci\'on contenida en una muestra proveniente de la poblaci\'on de inter\'es. Esta informaci\'on tiene estas formas:
 \begin{itemize}
-    \item \textbf{Estadístico de prueba:} un sólo número calculado a partir de la muestra.
-    \item \textbf{$p$-value:} probabilidad calculada a partir del estadístico de prueba.
+    \item \textbf{Estad\'istico de prueba:} un s\'olo n\'umero calculado a partir de la muestra.
+    \item \textbf{$p$-value:} probabilidad calculada a partir del estad\'istico de prueba.
 \end{itemize}
 
 \begin{Def}
-El $p$-value es la probabilidad de observar un estadístico de prueba tanto o más alejado del valor observado, si en realidad $H_{0}$ es verdadera. Valores grandes del estadístico de prueba y valores pequeños de $p$ significan que se ha observado un evento muy poco probable, si $H_{0}$ en realidad es verdadera.
+El $p$-value es la probabilidad de observar un estad\'istico de prueba tanto o m\'as alejado del valor observado, si en realidad $H_{0}$ es verdadera. Valores grandes del estad\'istico de prueba y valores peque\~nos de $p$ significan que se ha observado un evento muy poco probable, si $H_{0}$ en realidad es verdadera.
 \end{Def}
 
-Todo el conjunto de valores que puede tomar el estadístico de prueba se divide en dos regiones. Un conjunto, formado de valores que apoyan la hipótesis alternativa y llevan a rechazar $H_{0}$, se denomina \textbf{región de rechazo}. El otro, conformado por los valores que sustentan la hipótesis nula, se le denomina \textbf{región de aceptación}. Cuando la región de rechazo está en la cola izquierda de la distribución, la prueba se denomina \textbf{prueba lateral izquierda}. Una prueba con región de rechazo en la cola derecha se le llama \textbf{prueba lateral derecha}. Si el estadístico de prueba cae en la región de rechazo, entonces se rechaza $H_{0}$. Si el estadístico de prueba cae en la región de aceptación, entonces la hipótesis nula se acepta o la prueba se juzga como no concluyente. Dependiendo del nivel de confianza que se desea agregar a las conclusiones de la prueba, y el \textbf{nivel de significancia $\alpha$}, el riesgo que está dispuesto a correr si se toma una decisión incorrecta.
+Todo el conjunto de valores que puede tomar el estad\'istico de prueba se divide en dos regiones. Un conjunto, formado de valores que apoyan la hip\'otesis alternativa y llevan a rechazar $H_{0}$, se denomina \textbf{regi\'on de rechazo}. El otro, conformado por los valores que sustentan la hip\'otesis nula, se le denomina \textbf{regi\'on de aceptaci\'on}. Cuando la regi\'on de rechazo est\'a en la cola izquierda de la distribuci\'on, la prueba se denomina \textbf{prueba lateral izquierda}. Una prueba con regi\'on de rechazo en la cola derecha se le llama \textbf{prueba lateral derecha}. Si el estad\'istico de prueba cae en la regi\'on de rechazo, entonces se rechaza $H_{0}$. Si el estad\'istico de prueba cae en la regi\'on de aceptaci\'on, entonces la hip\'otesis nula se acepta o la prueba se juzga como no concluyente. Dependiendo del nivel de confianza que se desea agregar a las conclusiones de la prueba, y el \textbf{nivel de significancia $\alpha$}, el riesgo que est\'a dispuesto a correr si se toma una decisi\'on incorrecta.
 
 \begin{Def}
-Un \textbf{error de tipo I} para una prueba estadística es el error que se tiene al rechazar la hipótesis nula cuando es verdadera. El \textbf{nivel de significancia} para una prueba estadística de hipótesis es
+Un \textbf{error de tipo I} para una prueba estad\'istica es el error que se tiene al rechazar la hip\'otesis nula cuando es verdadera. El \textbf{nivel de significancia} para una prueba estad\'istica de hip\'otesis es
 \begin{eqnarray*}
 \alpha &=& P\left\{\textrm{error tipo I}\right\} = P\left\{\textrm{rechazar equivocadamente } H_{0}\right\} \\
 &=& P\left\{\textrm{rechazar } H_{0} \textrm{ cuando } H_{0} \textrm{ es verdadera}\right\}
 \end{eqnarray*}
 \end{Def}
-Este valor $\alpha$ representa el valor máximo de riesgo tolerable de rechazar incorrectamente $H_{0}$. Una vez establecido el nivel de significancia, la región de rechazo se define para poder determinar si se rechaza $H_{0}$ con un cierto nivel de confianza.
+Este valor $\alpha$ representa el valor m\'aximo de riesgo tolerable de rechazar incorrectamente $H_{0}$. Una vez establecido el nivel de significancia, la regi\'on de rechazo se define para poder determinar si se rechaza $H_{0}$ con un cierto nivel de confianza.
 
 %---------------------------------------------------------
 \subsection{Muestras grandes: una media poblacional}
@@ -387,21 +388,21 @@ Este valor $\alpha$ representa el valor máximo de riesgo tolerable de rechazar 
 
 
 \begin{Def}
-El \textbf{valor de $p$} (\textbf{$p$-value}) o nivel de significancia observado de un estadístico de prueba es el valor más pequeño de $\alpha$ para el cual $H_{0}$ se puede rechazar. El riesgo de cometer un error tipo $I$, si $H_{0}$ es rechazada con base en la información que proporciona la muestra.
+El \textbf{valor de $p$} (\textbf{$p$-value}) o nivel de significancia observado de un estad\'istico de prueba es el valor m\'as peque\~no de $\alpha$ para el cual $H_{0}$ se puede rechazar. El riesgo de cometer un error tipo $I$, si $H_{0}$ es rechazada con base en la informaci\'on que proporciona la muestra.
 \end{Def}
 
 \begin{Note}
-Valores pequeños de $p$ indican que el valor observado del estadístico de prueba se encuentra alejado del valor hipotético de $\mu$, es decir se tiene evidencia de que $H_{0}$ es falsa y por tanto debe de rechazarse.
+Valores peque\~nos de $p$ indican que el valor observado del estad\'istico de prueba se encuentra alejado del valor hipot\'etico de $\mu$, es decir se tiene evidencia de que $H_{0}$ es falsa y por tanto debe de rechazarse.
 \end{Note}
 
 \begin{Note}
-Valores grandes de $p$ indican que el estadístico de prueba observado no está alejado de la media hipotética y no apoya el rechazo de $H_{0}$.
+Valores grandes de $p$ indican que el estad\'istico de prueba observado no est\'a alejado de la media hipot\'etica y no apoya el rechazo de $H_{0}$.
 \end{Note}
 
 \begin{Def}
-Si el valor de $p$ es menor o igual que el nivel de significancia $\alpha$, determinado previamente, entonces $H_{0}$ es rechazada y se puede concluir que los resultados son estadísticamente significativos con un nivel de confianza del $100 (1-\alpha)\%$.
+Si el valor de $p$ es menor o igual que el nivel de significancia $\alpha$, determinado previamente, entonces $H_{0}$ es rechazada y se puede concluir que los resultados son estad\'isticamente significativos con un nivel de confianza del $100 (1-\alpha)\%$.
 \end{Def}
-Es usual utilizar la siguiente clasificación de resultados:
+Es usual utilizar la siguiente clasificaci\'on de resultados:
 
 
 \begin{center}
@@ -1396,37 +1397,37 @@ $R^{2}$ . Este coeficiente tiene las siguientes propiedades
 %<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
 
 
-La regresión logística es una técnica de modelado estadístico ampliamente utilizada en análisis de datos cuando el objetivo es predecir la probabilidad de un resultado binario, es decir, cuando la variable dependiente o respuesta tiene dos posibles categorías, como "éxito/fallo" o "sí/no". Esta técnica se emplea en una variedad de disciplinas, como la biomedicina, ciencias sociales, marketing y más, para resolver problemas donde la variable respuesta es discreta o categórica.\medskip
+La regresi\'on log\'istica es una t\'ecnica de modelado estad\'istico ampliamente utilizada en an\'alisis de datos cuando el objetivo es predecir la probabilidad de un resultado binario, es decir, cuando la variable dependiente o respuesta tiene dos posibles categor\'ias, como "\'exito/fallo" o "s\'i/no". Esta t\'ecnica se emplea en una variedad de disciplinas, como la biomedicina, ciencias sociales, marketing y m\'as, para resolver problemas donde la variable respuesta es discreta o categ\'orica.\medskip
 
-A diferencia de la regresión lineal, que asume una relación lineal entre las variables independientes y la variable dependiente y que produce valores en un rango continuo, la regresión logística está diseñada para manejar situaciones donde la respuesta es categórica. En su forma más común, la regresión logística binaria, el modelo predice la probabilidad de que un evento ocurra en función de una o más variables independientes. Este tipo de regresión toma la forma de un modelo no lineal, debido a la naturaleza discreta de la variable dependiente.\medskip
+A diferencia de la regresi\'on lineal, que asume una relaci\'on lineal entre las variables independientes y la variable dependiente y que produce valores en un rango continuo, la regresi\'on log\'istica est\'a dise\~nada para manejar situaciones donde la respuesta es categ\'orica. En su forma m\'as com\'un, la regresi\'on log\'istica binaria, el modelo predice la probabilidad de que un evento ocurra en funci\'on de una o m\'as variables independientes. Este tipo de regresi\'on toma la forma de un modelo no lineal, debido a la naturaleza discreta de la variable dependiente.\medskip
 
 
-La regresión lineal busca modelar la relación entre una variable dependiente continua $Y$ y una o más variables independientes $X_1, X_2, \ldots, X_n$ mediante una ecuación de la forma:
+La regresi\'on lineal busca modelar la relaci\'on entre una variable dependiente continua $Y$ y una o m\'as variables independientes $X_1, X_2, \ldots, X_n$ mediante una ecuaci\'on de la forma:
 \begin{eqnarray}
 Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n + \epsilon,
 \end{eqnarray}
-donde $\beta_0, \beta_1, \ldots, \beta_n$ son los coeficientes del modelo y $\epsilon$ es el término de error. La regresión logística, en cambio, modela la probabilidad de que un evento ocurra (por ejemplo, éxito vs. fracaso) utilizando la función logística. La variable dependiente $Y$ es binaria, tomando valores de 0 o 1. La ecuación de la regresión logística es:
+donde $\beta_0, \beta_1, \ldots, \beta_n$ son los coeficientes del modelo y $\epsilon$ es el t\'ermino de error. La regresi\'on log\'istica, en cambio, modela la probabilidad de que un evento ocurra (por ejemplo, \'exito vs. fracaso) utilizando la funci\'on log\'istica. La variable dependiente $Y$ es binaria, tomando valores de 0 o 1. La ecuaci\'on de la regresi\'on log\'istica es:
 \begin{eqnarray}
 \text{logit}(p) = \log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n,
 \end{eqnarray}
-donde $p$ es la probabilidad de que $Y=1$. La función logística es:
+donde $p$ es la probabilidad de que $Y=1$. La funci\'on log\'istica es:
 \begin{eqnarray}
 p = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n)}}.
 \end{eqnarray}
 
-La regresión logística se utiliza en una variedad de campos para problemas de clasificación binaria, tales como:
+La regresi\'on log\'istica se utiliza en una variedad de campos para problemas de clasificaci\'on binaria, tales como:
 \begin{itemize}
-    \item \textbf{Medicina}: Predicción de la presencia o ausencia de una enfermedad.
-    \item \textbf{Marketing}: Determinación de la probabilidad de que un cliente compre un producto.
-    \item \textbf{Finanzas}: Evaluación del riesgo de crédito, es decir, si un cliente va a incumplir o no con un préstamo.
-    \item \textbf{Seguridad}: Detección de fraudes o intrusiones.
+    \item \textbf{Medicina}: Predicci\'on de la presencia o ausencia de una enfermedad.
+    \item \textbf{Marketing}: Determinaci\'on de la probabilidad de que un cliente compre un producto.
+    \item \textbf{Finanzas}: Evaluaci\'on del riesgo de cr\'edito, es decir, si un cliente va a incumplir o no con un pr\'estamo.
+    \item \textbf{Seguridad}: Detecci\'on de fraudes o intrusiones.
 \end{itemize}
 
 %------------------------------------------------------
-\subsection{Implementación Básica en R}
+\subsection{Implementaci\'on B\'asica en R}
 %------------------------------------------------------
 
-Para implementar una regresión logística en R, primero es necesario instalar y cargar los paquetes necesarios. Aquí se muestra un ejemplo básico de implementación:
+Para implementar una regresi\'on log\'istica en R, primero es necesario instalar y cargar los paquetes necesarios. Aqu\'i se muestra un ejemplo b\'asico de implementaci\'on:
 
 \begin{itemize}
     \item Descargue e instale R desde \texttt{https://cran.r-project.org/}.
@@ -1434,7 +1435,7 @@ Para implementar una regresión logística en R, primero es necesario instalar y
 \end{itemize}
 
 \begin{verbatim}
-# Instalación del paquete necesario
+# Instalaci\'on del paquete necesario
 install.packages("stats")
 
 # Carga del paquete
@@ -1446,7 +1447,7 @@ data <- data.frame(
   predictor = c(2.3, 1.9, 3.1, 2.8, 3.6, 2.4, 2.1, 3.3, 2.2, 1.7)
 )
 
-# Ajuste del modelo de regresión logística
+# Ajuste del modelo de regresi\'on log\'istica
 model <- glm(outcome ~ predictor, data = data, family = binomial)
 
 # Resumen del modelo
@@ -1454,64 +1455,64 @@ summary(model)
 \end{verbatim}
 
 %<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
-\section{Conceptos Básicos}
+\section{Conceptos B\'asicos}
 %<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
 
-La regresión logística es una técnica de modelado estadístico utilizada para predecir la probabilidad de un evento binario (es decir, un evento que tiene dos posibles resultados) en función de una o más variables independientes.  Un modelo de regresión logística describe cómo una variable dependiente binaria $Y$ (que puede tomar los valores $0$ o $1$) está relacionada con una o más variables independientes $X_1, X_2, \ldots, X_n$. A diferencia de la regresión lineal, que predice un valor continuo, la regresión logística predice una probabilidad que puede ser interpretada como la probabilidad de que $Y=1$ dado un conjunto de valores para $X_1, X_2, \ldots, X_n$.
+La regresi\'on log\'istica es una t\'ecnica de modelado estad\'istico utilizada para predecir la probabilidad de un evento binario (es decir, un evento que tiene dos posibles resultados) en funci\'on de una o m\'as variables independientes.  Un modelo de regresi\'on log\'istica describe c\'omo una variable dependiente binaria $Y$ (que puede tomar los valores $0$ o $1$) est\'a relacionada con una o m\'as variables independientes $X_1, X_2, \ldots, X_n$. A diferencia de la regresi\'on lineal, que predice un valor continuo, la regresi\'on log\'istica predice una probabilidad que puede ser interpretada como la probabilidad de que $Y=1$ dado un conjunto de valores para $X_1, X_2, \ldots, X_n$.
 
 %----------------------------------------------------------------
-\subsection{Regresión Lineal}
+\subsection{Regresi\'on Lineal}
 %----------------------------------------------------------------
 
-La regresión lineal es utilizada para predecir el valor de una variable dependiente continua en función de una o más variables independientes. El modelo de regresión lineal tiene la forma:
+La regresi\'on lineal es utilizada para predecir el valor de una variable dependiente continua en funci\'on de una o m\'as variables independientes. El modelo de regresi\'on lineal tiene la forma:
 \begin{equation}
 Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n + \epsilon
 \end{equation}
 donde:
 \begin{itemize}
     \item[a) ] $Y$ es la variable dependiente.
-    \item[b) ] $\beta_0$ es la intersección con el eje $Y$ o término constante.
-    \item[c) ] $\beta_1, \beta_2, \ldots, \beta_n$ son los coeficientes que representan la relación entre las variables independientes y la variable dependiente.
+    \item[b) ] $\beta_0$ es la intersecci\'on con el eje $Y$ o t\'ermino constante.
+    \item[c) ] $\beta_1, \beta_2, \ldots, \beta_n$ son los coeficientes que representan la relaci\'on entre las variables independientes y la variable dependiente.
     \item[d) ] $X_1, X_2, \ldots, X_n$ son las variables independientes.
-    \item[e) ] $\epsilon$ es el término de error, que representa la desviación de los datos observados de los valores predichos por el modelo.
+    \item[e) ] $\epsilon$ es el t\'ermino de error, que representa la desviaci\'on de los datos observados de los valores predichos por el modelo.
 \end{itemize}
 
-El objetivo de la regresión lineal es encontrar los valores de los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$ que minimicen la suma de los cuadrados de las diferencias entre los valores observados y los valores predichos. Este método se conoce como mínimos cuadrados ordinarios (OLS, por sus siglas en inglés). La función de costo a minimizar es:
+El objetivo de la regresi\'on lineal es encontrar los valores de los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$ que minimicen la suma de los cuadrados de las diferencias entre los valores observados y los valores predichos. Este m\'etodo se conoce como m\'inimos cuadrados ordinarios (OLS, por sus siglas en ingl\'es). La funci\'on de costo a minimizar es:
 \begin{equation}
 J\left(\beta_0, \beta_1, \ldots, \beta_n\right) = \sum_{i=1}^{n}\left(y_i - \hat{y}_i\right)^2
 \end{equation}
 donde:
 \begin{itemize}
-    \item[a) ] $y_i$ es el valor observado de la variable dependiente para la $i$-ésima observación.
-    \item[b) ] $\hat{y}_i$ es el valor predicho por el modelo para la $i$-ésima observación, dado por:
+    \item[a) ] $y_i$ es el valor observado de la variable dependiente para la $i$-\'esima observaci\'on.
+    \item[b) ] $\hat{y}_i$ es el valor predicho por el modelo para la $i$-\'esima observaci\'on, dado por:
     \begin{equation}
     \hat{y}_i = \beta_0 + \beta_1 x_{i1} + \beta_2 x_{i2} + \ldots + \beta_n x_{in}
     \end{equation}
 \end{itemize}
 
-Para encontrar los valores óptimos de los coeficientes, se toman las derivadas parciales de la función de costo con respecto a cada coeficiente y se igualan a cero:
+Para encontrar los valores \'optimos de los coeficientes, se toman las derivadas parciales de la funci\'on de costo con respecto a cada coeficiente y se igualan a cero:
 \begin{equation}
 \frac{\partial J}{\partial \beta_j} = 0 \quad \text{para } j = 0, 1, \ldots, n
 \end{equation}
 
-Resolviendo este sistema de ecuaciones, se obtienen los valores de los coeficientes que minimizan la función de costo.
+Resolviendo este sistema de ecuaciones, se obtienen los valores de los coeficientes que minimizan la funci\'on de costo.
 %----------------------------------------------------------------
-\subsection{Regresión Logística}
+\subsection{Regresi\'on Log\'istica}
 %----------------------------------------------------------------
 
-La deducción de la fórmula de la regresión logística comienza con la necesidad de modelar la probabilidad de un evento binario. Queremos encontrar una función que relacione las variables independientes con la probabilidad de que la variable dependiente tome el valor $1$. La probabilidad de que el evento ocurra, $P(Y=1)$, se denota como $p$. La probabilidad de que el evento no ocurra, $P(Y=0)$, es $1-p$. Los \textbf{odds} (chances) de que ocurra el evento se definen como:
+La deducci\'on de la f\'ormula de la regresi\'on log\'istica comienza con la necesidad de modelar la probabilidad de un evento binario. Queremos encontrar una funci\'on que relacione las variables independientes con la probabilidad de que la variable dependiente tome el valor $1$. La probabilidad de que el evento ocurra, $P(Y=1)$, se denota como $p$. La probabilidad de que el evento no ocurra, $P(Y=0)$, es $1-p$. Los \textbf{odds} (chances) de que ocurra el evento se definen como:
 \begin{equation}
 \text{odds} = \frac{p}{1-p}
 \end{equation}
-Los odds indican cuántas veces más probable es que ocurra el evento frente a que no ocurra. Para simplificar el modelado de los \textit{odds}, se aplica el logaritmo natural, obteniendo la función \textbf{logit}:
+Los odds indican cu\'antas veces m\'as probable es que ocurra el evento frente a que no ocurra. Para simplificar el modelado de los \textit{odds}, se aplica el logaritmo natural, obteniendo la funci\'on \textbf{logit}:
 \begin{equation}
 \text{logit}(p) = \log\left(\frac{p}{1-p}\right)
 \end{equation}
-La transformación logit es útil porque convierte el rango de la probabilidad (0, 1) al rango de números reales $\left(-\infty, \infty\right)$. La idea clave de la regresión logística es modelar la transformación logit de la probabilidad como una combinación lineal de las variables independientes:
+La transformaci\'on logit es \'util porque convierte el rango de la probabilidad (0, 1) al rango de n\'umeros reales $\left(-\infty, \infty\right)$. La idea clave de la regresi\'on log\'istica es modelar la transformaci\'on logit de la probabilidad como una combinaci\'on lineal de las variables independientes:
 \begin{equation}\label{Ec.logit}
 \text{logit}(p) = \log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n
 \end{equation}
-Aquí, $\beta_0$ es el t\'ermino constante y $\beta_1, \beta_2, \ldots, \beta_n$ son los coeficientes asociados con las variables independientes $X_1, X_2, \ldots, X_n$. Para expresar $p$ en función de una combinación lineal de las variables independientes, invertimos la transformación logit. Partimos de la ecuación \ref{Ec.logit}, aplicando la funci\'on exponencial en ambos lados:
+Aqu\'i, $\beta_0$ es el t\'ermino constante y $\beta_1, \beta_2, \ldots, \beta_n$ son los coeficientes asociados con las variables independientes $X_1, X_2, \ldots, X_n$. Para expresar $p$ en funci\'on de una combinaci\'on lineal de las variables independientes, invertimos la transformaci\'on logit. Partimos de la ecuaci\'on \ref{Ec.logit}, aplicando la funci\'on exponencial en ambos lados:
 \begin{eqnarray}
 \frac{p}{1-p} = e^{\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n}
 \end{eqnarray}
@@ -1520,17 +1521,17 @@ Despejando $p$:
 p = \frac{e^{\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n}}{1 + e^{\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n}}
 \end{eqnarray}
 
-La expresión final que obtenemos es conocida como la \textbf{función logística}:
+La expresi\'on final que obtenemos es conocida como la \textbf{funci\'on log\'istica}:
 \begin{equation}\label{Eq.Logit1}
 p = \frac{1}{1 + e^{-\left(\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n\right)}}
 \end{equation}
-Esta función describe cómo las variables independientes se relacionan con la probabilidad de que el evento de interés ocurra. Los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$ se estiman a partir de los datos utilizando el método de máxima verosimilitud.
+Esta funci\'on describe c\'omo las variables independientes se relacionan con la probabilidad de que el evento de inter\'es ocurra. Los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$ se estiman a partir de los datos utilizando el m\'etodo de m\'axima verosimilitud.
 
 %<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
-\section{Método de Máxima Verosimilitud}
+\section{M\'etodo de M\'axima Verosimilitud}
 %<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
 
-Para estimar los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$ en la regresión logística, utilizamos el método de máxima verosimilitud. La idea es encontrar los valores de los coeficientes que maximicen la probabilidad de observar los datos dados. Esta probabilidad se expresa mediante la función de verosimilitud $L$. La función de verosimilitud $L(\beta_0, \beta_1, \ldots, \beta_n)$ para un conjunto de $n$ observaciones se define como el producto de las probabilidades de las observaciones dadas las variables independientes:
+Para estimar los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$ en la regresi\'on log\'istica, utilizamos el m\'etodo de m\'axima verosimilitud. La idea es encontrar los valores de los coeficientes que maximicen la probabilidad de observar los datos dados. Esta probabilidad se expresa mediante la funci\'on de verosimilitud $L$. La funci\'on de verosimilitud $L(\beta_0, \beta_1, \ldots, \beta_n)$ para un conjunto de $n$ observaciones se define como el producto de las probabilidades de las observaciones dadas las variables independientes:
 
 \begin{equation}\label{Eq.Verosimilitud}
 L(\beta_0, \beta_1, \ldots, \beta_n) = \prod_{i=1}^{n} p_i^{y_i} (1 - p_i)^{1 - y_i}
@@ -1539,22 +1540,22 @@ L(\beta_0, \beta_1, \ldots, \beta_n) = \prod_{i=1}^{n} p_i^{y_i} (1 - p_i)^{1 - 
 donde:
 \begin{itemize}
     \item[a) ] $p_i$ es la probabilidad predicha de que $Y_i = 1$,
-    \item[b) ] $y_i$ es el valor observado de la variable dependiente para la $i$-ésima observación.
+    \item[b) ] $y_i$ es el valor observado de la variable dependiente para la $i$-\'esima observaci\'on.
 \end{itemize}
 
-Trabajar directamente con esta función de verosimilitud puede ser complicado debido al producto de muchas probabilidades, especialmente si $n$ es grande. Para simplificar los cálculos, se utiliza el logaritmo de la función de verosimilitud, conocido como la función de \textit{log-verosimilitud}. El uso del logaritmo simplifica significativamente la diferenciación y maximización de la función. La función de log-verosimilitud se define como:
+Trabajar directamente con esta funci\'on de verosimilitud puede ser complicado debido al producto de muchas probabilidades, especialmente si $n$ es grande. Para simplificar los c\'alculos, se utiliza el logaritmo de la funci\'on de verosimilitud, conocido como la funci\'on de \textit{log-verosimilitud}. El uso del logaritmo simplifica significativamente la diferenciaci\'on y maximizaci\'on de la funci\'on. La funci\'on de log-verosimilitud se define como:
 
 \begin{equation}\label{Funcion.LogVerosimilitud}
 \log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right].
 \end{equation}
 
-Aquí, $\log$ representa el logaritmo natural. Esta transformación es válida porque el logaritmo es una función monótona creciente, lo que significa que maximizar la log-verosimilitud es equivalente a maximizar la verosimilitud original. En la regresión logística, de acuerdo a la ecuaci\'on \ref{Eq.Logit1} la probabilidad $p_i$ está dada por la función logística:
+Aqu\'i, $\log$ representa el logaritmo natural. Esta transformaci\'on es v\'alida porque el logaritmo es una funci\'on mon\'otona creciente, lo que significa que maximizar la log-verosimilitud es equivalente a maximizar la verosimilitud original. En la regresi\'on log\'istica, de acuerdo a la ecuaci\'on \ref{Eq.Logit1} la probabilidad $p_i$ est\'a dada por la funci\'on log\'istica:
 
 \begin{equation}\label{Eq.Logit1.Multi}
 p_i = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}}
 \end{equation}
 
-Sustituyendo esta expresión en la función de log-verosimilitud (\ref{Funcion.LogVerosimilitud}), obtenemos:
+Sustituyendo esta expresi\'on en la funci\'on de log-verosimilitud (\ref{Funcion.LogVerosimilitud}), obtenemos:
 
 \begin{eqnarray}\label{Eq.LogVerosimilitud.VV}
 \begin{array}{l}
@@ -1563,7 +1564,7 @@ Sustituyendo esta expresión en la función de log-verosimilitud (\ref{Funcion.L
 \end{array}
 \end{eqnarray}
 
-Simplificando esta expresión,
+Simplificando esta expresi\'on,
 
 \begin{eqnarray}
 \log \left( \frac{1}{1 + e^{-z}} \right) &=& -\log(1 + e^{-z})\textrm{, por tanto}\\
@@ -1579,16 +1580,19 @@ Aplicando las ecuaciones anteriores, la ecuaci\'on \ref{Eq.LogVerosimilitud.VV} 
 \end{array}
 \end{eqnarray*}
 
-Simplificando aún más, obtenemos:
+Simplificando a\'un m\'as, obtenemos:
 
-\begin{eqnarray}
+\begin{eqnarray}\label{Eq.LogVerosimilitud.Final}
 \begin{array}{r}
 \log L(\beta_0, \beta_1, \ldots, \beta_n) =\sum_{i=1}^{n} \left[ y_i (\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}) -\log(1 + e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}) \right]
 \end{array}
 \end{eqnarray}
-\subsection{Notaci\'on Matricial}
 
-Para simplificar aún más la notación, podemos utilizar notación matricial. Definimos la matriz $\mathbf{X}$ de tamaño $n \times (k+1)$ y el vector de coeficientes $\boldsymbol{\beta}$ de tamaño $(k+1) \times 1$ como sigue:
+%-------------------------------------------------
+\subsection{Notaci\'on Matricial}
+%-------------------------------------------------
+
+Para simplificar a\'un m\'as la notaci\'on, podemos utilizar notaci\'on matricial. Definimos la matriz $\mathbf{X}$ de tama\~no $n \times (k+1)$ y el vector de coeficientes $\boldsymbol{\beta}$ de tama\~no $(k+1) \times 1$ como sigue:
 
 \begin{equation}\label{Eq.Matricial1}
 \mathbf{X} = \begin{bmatrix}
@@ -1606,15 +1610,15 @@ Para simplificar aún más la notación, podemos utilizar notación matricial. D
 \end{bmatrix}
 \end{equation}
 
-Entonces, la expresión para la función de log-verosimilitud es:
+Entonces, la expresi\'on para la funci\'on de log-verosimilitud, ecuaci\'on \ref{Eq.LogVerosimilitud.Final}, es:
 
-\begin{equation}\label{Eq.LogLikelihood1}
+\begin{equation}\label{Eq.LogLikelihood1.Matricial}
 \log L(\boldsymbol{\beta}) = \sum_{i=1}^{n} \left[ y_i (\mathbf{X}_i \boldsymbol{\beta}) - \log(1 + e^{\mathbf{X}_i \boldsymbol{\beta}}) \right]
 \end{equation}
 
-donde $\mathbf{X}_i$ es la $i$-ésima fila de la matriz $\mathbf{X}$.  Esta notación matricial simplifica la implementación y la derivación de los estimadores de los coeficientes en la regresión logística. Utilizando métodos numéricos, como el algoritmo de Newton-Raphson, se pueden encontrar los coeficientes que maximizan la función de log-verosimilitud. Para maximizar la función de log-verosimilitud, derivamos esta función con respecto a cada uno de los coeficientes $\beta_j$ y encontramos los puntos críticos. La derivada parcial de la función de log-verosimilitud con respecto a $\beta_j$ es:
+donde $\mathbf{X}_i$ es la $i$-\'esima fila de la matriz $\mathbf{X}$.  Esta notaci\'on matricial simplifica la implementaci\'on y la derivaci\'on de los estimadores de los coeficientes en la regresi\'on log\'istica. Utilizando el  m\'etodo de Newton-Raphson, es posible encontrar los coeficientes $\beta_j$ que maximizan la funci\'on de log-verosimilitud. Para maximizar la funci\'on de log-verosimilitud, derivamos esta funci\'on con respecto a cada uno de los coeficientes $\beta_j$ y encontramos los puntos cr\'iticos. La derivada parcial de la funci\'on de log-verosimilitud con respecto a $\beta_j$ es:
 
-\begin{eqnarray}\label{Eq.1.14}
+\begin{eqnarray}\label{Primer.Derivada.LV}
 \frac{\partial \log L(\boldsymbol{\beta})}{\partial \beta_j} = \sum_{i=1}^{n} \left[ y_i X_{ij} - \frac{X_{ij} e^{\mathbf{X}_i \boldsymbol{\beta}}}{1 + e^{\mathbf{X}_i \boldsymbol{\beta}}} \right]
 \end{eqnarray}
 
@@ -1624,15 +1628,17 @@ Simplificando, esta derivada se puede expresar como:
 \frac{\partial \log L(\boldsymbol{\beta})}{\partial \beta_j} = \sum_{i=1}^{n} X_{ij} (y_i - p_i),\textrm{ donde }p_i = \frac{1}{1 + e^{-\mathbf{X}_i \boldsymbol{\beta}}}
 \end{eqnarray}
 
-Para encontrar los coeficientes que maximizan la log-verosimilitud, resolvemos el sistema de ecuaciones 
-\begin{eqnarray*}
+Para encontrar los coeficientes que maximizan la log-verosimilitud, se requiere resolver el sistema de ecuaciones 
+\begin{eqnarray}\label{Eq.Sol.ML}
 \frac{\partial \log L(\boldsymbol{\beta})}{\partial \beta_j} = 0 \textrm{ para todos los }j = 0, 1, \ldots, k. 
-\end{eqnarray*}
-Este sistema de ecuaciones no tiene una solución analítica cerrada, por lo que se resuelve numéricamente utilizando métodos iterativos como el algoritmo de Newton-Raphson.
+\end{eqnarray}
+Este sistema de ecuaciones no tiene una soluci\'on anal\'itica cerrada, por lo que se propone resolver utilizando el m\'etodo  de Newton-Raphson.
 
-\section{Método de Newton-Raphson}
+%---------------------------------------------------------------
+\subsection{M\'etodo de Newton-Raphson}
+%---------------------------------------------------------------
 
-El método de Newton-Raphson es un algoritmo iterativo que se utiliza para encontrar las raíces de una función. En el contexto de la regresión logística, se utiliza para maximizar la función de log-verosimilitud encontrando los valores de los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$. Este m\'etodo se basa en una aproximación de segundo orden de la función objetivo. Dado un valor inicial de los coeficientes $\boldsymbol{\beta}^{(0)}$, se actualiza iterativamente el valor de los coeficientes utilizando la fórmula:
+El m\'etodo de Newton-Raphson es un algoritmo iterativo que se utiliza para encontrar las ra\'ices de una funci\'on. En el contexto de la regresi\'on log\'istica, se utiliza para maximizar la funci\'on de log-verosimilitud encontrando los valores de los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$. Este m\'etodo se basa en una aproximaci\'on de segundo orden de la funci\'on objetivo. Dado un valor inicial de los coeficientes $\boldsymbol{\beta}^{(0)}$, se actualiza iterativamente el valor de los coeficientes utilizando la f\'ormula:
 
 \begin{equation}\label{Eq.Criterio0}
 \boldsymbol{\beta}^{(t+1)} = \boldsymbol{\beta}^{(t)} - \left[ \mathbf{H}(\boldsymbol{\beta}^{(t)}) \right]^{-1} \nabla \log L(\boldsymbol{\beta}^{(t)})
@@ -1640,8 +1646,8 @@ El método de Newton-Raphson es un algoritmo iterativo que se utiliza para encon
 
 donde:
 \begin{itemize}
-    \item $\boldsymbol{\beta}^{(t)}$ es el vector de coeficientes en la $t$-ésima iteración.
-    \item $\nabla \log L(\boldsymbol{\beta}^{(t)})$ es el gradiente de la función de log-verosimilitud con respecto a los coeficientes $\boldsymbol{\beta}$:
+    \item $\boldsymbol{\beta}^{(t)}$ es el vector de coeficientes en la $t$-\'esima iteraci\'on.
+    \item $\nabla \log L(\boldsymbol{\beta}^{(t)})$ es el gradiente de la funci\'on de log-verosimilitud con respecto a los coeficientes $\boldsymbol{\beta}$:
 
 \begin{equation}\label{Eq.Gradiente1}
 \nabla \log L(\boldsymbol{\beta}) = \mathbf{X}^T (\mathbf{y} - \mathbf{p})
@@ -1660,11 +1666,11 @@ donde $\mathbf{W}$ es una matriz diagonal de pesos con elementos $w_i = p_i (1 -
 En resumen:
 
 \begin{Algthm}\label{Algoritmo1}
-El algoritmo Newton-Raphson para la regresión logística se puede resumir en los siguientes pasos:
+El algoritmo Newton-Raphson para la regresi\'on log\'istica se puede resumir en los siguientes pasos:
 \begin{enumerate}
-    \item Inicializar el vector de coeficientes $\boldsymbol{\beta}^{(0)}$ (por ejemplo, con ceros o valores pequeños aleatorios).
-    \item Calcular el gradiente $\nabla \log L(\boldsymbol{\beta}^{(t)})$ y la matriz Hessiana $\mathbf{H}(\boldsymbol{\beta}^{(t)})$ en la iteración $t$.
-    \item Actualizar los coeficientes utilizando la fórmula:
+    \item Inicializar el vector de coeficientes $\boldsymbol{\beta}^{(0)}$ (por ejemplo, con ceros o valores peque\~nos aleatorios).
+    \item Calcular el gradiente $\nabla \log L(\boldsymbol{\beta}^{(t)})$ y la matriz Hessiana $\mathbf{H}(\boldsymbol{\beta}^{(t)})$ en la iteraci\'on $t$.
+    \item Actualizar los coeficientes utilizando la f\'ormula:
     \begin{equation}\label{Eq.Criterio1}
     \boldsymbol{\beta}^{(t+1)} = \boldsymbol{\beta}^{(t)} - \left[ \mathbf{H}(\boldsymbol{\beta}^{(t)}) \right]^{-1} \nabla \log L(\boldsymbol{\beta}^{(t)})
     \end{equation}
@@ -1672,14 +1678,14 @@ El algoritmo Newton-Raphson para la regresión logística se puede resumir en lo
 \end{enumerate}
 \end{Algthm}
 
-En resumen, el método de Newton-Raphson permite encontrar los coeficientes que maximizan la función de log-verosimilitud de manera eficiente. 
+En resumen, el m\'etodo de Newton-Raphson permite encontrar los coeficientes que maximizan la funci\'on de log-verosimilitud de manera eficiente. 
 
 \section{Espec\'ificando}
-En espec\'ifico para un conjunto de $n$ observaciones, la función de verosimilitud $L$ se define como el producto de las probabilidades individuales de observar cada dato:
+En espec\'ifico para un conjunto de $n$ observaciones, la funci\'on de verosimilitud $L$ se define como el producto de las probabilidades individuales de observar cada dato:
 \begin{equation}
 L(\beta_0, \beta_1, \ldots, \beta_n) = \prod_{i=1}^{n} p_i^{y_i} (1 - p_i)^{1 - y_i}
 \end{equation}
-donde $y_i$ es el valor observado de la variable dependiente para la $i$-ésima observación y $p_i$ es la probabilidad predicha de que $Y_i = 1$. Aquí, $p_i$ es dado por la función logística:
+donde $y_i$ es el valor observado de la variable dependiente para la $i$-\'esima observaci\'on y $p_i$ es la probabilidad predicha de que $Y_i = 1$. Aqu\'i, $p_i$ es dado por la funci\'on log\'istica:
 \begin{equation}
 p_i = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}}
 \end{equation}
@@ -1694,7 +1700,7 @@ Sustituyendo $p_i$:
 \log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i (\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}) - \log(1 + e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}) \right]
 \end{equation}
 
-Dado que el objetivo es encontrar los valores de $\beta_0, \beta_1, \ldots, \beta_n$ que maximicen la función de log-verosimilitud.  Para $\beta_j$, la derivada parcial de la función de log-verosimilitud es:
+Dado que el objetivo es encontrar los valores de $\beta_0, \beta_1, \ldots, \beta_n$ que maximicen la funci\'on de log-verosimilitud.  Para $\beta_j$, la derivada parcial de la funci\'on de log-verosimilitud es:
 \begin{equation}
 \frac{\partial \log L}{\partial \beta_j} = \sum_{i=1}^{n} \left[ y_i X_{ij} - \frac{X_{ij} e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}}{1 + e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}} \right]
 \end{equation}
@@ -1705,18 +1711,18 @@ Esto se simplifica a (comparar con la ecuaci\'on \ref{Eq.1.14}):
 \end{eqnarray}
 
 
-Para maximizar la log-verosimilitud, resolvemos el sistema de ecuaciones $\frac{\partial \log L}{\partial \beta_j} = 0$ para todos los $j$ de 0 a $n$., mismo que se resuelve numéricamente utilizando métodos el algoritmo de Newton-Raphson. El método de Newton-Raphson se basa en una aproximación de segundo orden de la función objetivo. Dado un valor inicial de los coeficientes $\beta^{(0)}$, se iterativamente actualiza el valor de los coeficientes utilizando la fórmula:
+Para maximizar la log-verosimilitud, resolvemos el sistema de ecuaciones $\frac{\partial \log L}{\partial \beta_j} = 0$ para todos los $j$ de 0 a $n$., mismo que se resuelve num\'ericamente utilizando m\'etodos el algoritmo de Newton-Raphson. El m\'etodo de Newton-Raphson se basa en una aproximaci\'on de segundo orden de la funci\'on objetivo. Dado un valor inicial de los coeficientes $\beta^{(0)}$, se iterativamente actualiza el valor de los coeficientes utilizando la f\'ormula:
 \begin{equation}\label{Eq.Criterio1.5}
 \beta^{(k+1)} = \beta^{(k)} - \left[ \mathbf{H}(\beta^{(k)}) \right]^{-1} \mathbf{g}(\beta^{(k)})
 \end{equation}
 donde:
 \begin{itemize}
-    \item $\beta^{(k)}$ es el vector de coeficientes en la $k$-ésima iteración.
+    \item $\beta^{(k)}$ es el vector de coeficientes en la $k$-\'esima iteraci\'on.
     \item $\mathbf{g}(\beta^{(k)})$ es el gradiente (vector de primeras derivadas) evaluado en $\beta^{(k)}$:
 \begin{equation}\label{Eq.Gradiente2}
 \mathbf{g}(\beta) = \frac{\partial \log L}{\partial \beta} = \sum_{i=1}^{n} \mathbf{X}_i (y_i - p_i)
 \end{equation}
-donde $\mathbf{X}_i$ es el vector de valores de las variables independientes para la $i$-ésima observación (comparar con ecuaci\'on \ref{Eq.Gradiente1}).
+donde $\mathbf{X}_i$ es el vector de valores de las variables independientes para la $i$-\'esima observaci\'on (comparar con ecuaci\'on \ref{Eq.Gradiente1}).
 
     \item $\mathbf{H}(\beta^{(k)})$ es la matriz Hessiana (matriz de segundas derivadas) evaluada en $\beta^{(k)}$:
 \begin{equation}\label{Eq.Hessiana2}
@@ -1726,11 +1732,11 @@ comparar con ecuaci\'on \ref{Eq.Hessiana1}
 \end{itemize}
 
 \begin{Algthm} \label{Algoritmo2}
-Los pasos del algoritmo Newton-Raphson para la regresión logística son:
+Los pasos del algoritmo Newton-Raphson para la regresi\'on log\'istica son:
 \begin{enumerate}
-    \item Inicializar el vector de coeficientes $\beta^{(0)}$ (por ejemplo, con ceros o valores pequeños aleatorios).
-    \item Calcular el gradiente $\mathbf{g}(\beta^{(k)})$ y la matriz Hessiana $\mathbf{H}(\beta^{(k)})$ en la iteración $k$.
-    \item Actualizar los coeficientes utilizando la fórmula:
+    \item Inicializar el vector de coeficientes $\beta^{(0)}$ (por ejemplo, con ceros o valores peque\~nos aleatorios).
+    \item Calcular el gradiente $\mathbf{g}(\beta^{(k)})$ y la matriz Hessiana $\mathbf{H}(\beta^{(k)})$ en la iteraci\'on $k$.
+    \item Actualizar los coeficientes utilizando la f\'ormula:
     \begin{equation}\label{Eq.Criterio2}
     \beta^{(k+1)} = \beta^{(k)} - \left[ \mathbf{H}(\beta^{(k)}) \right]^{-1} \mathbf{g}(\beta^{(k)})
     \end{equation}
@@ -1741,7 +1747,7 @@ Como se puede observar la diferencia entre el Algoritmo \ref{Algoritmo1} y el Al
 
 \section*{Notas finales}
 
-En el contexto de la regresión logística, los vectores $X_1, X_2, \ldots, X_n$ representan las variables independientes. Cada $X_j$ es un vector columna que contiene los valores de la variable independiente $j$ para cada una de las $n$ observaciones. Es decir,
+En el contexto de la regresi\'on log\'istica, los vectores $X_1, X_2, \ldots, X_n$ representan las variables independientes. Cada $X_j$ es un vector columna que contiene los valores de la variable independiente $j$ para cada una de las $n$ observaciones. Es decir,
 
 \begin{equation}
 X_j = \begin{bmatrix}
@@ -1752,7 +1758,7 @@ x_{nj}
 \end{bmatrix}
 \end{equation}
 
-Para simplificar la notación y los cálculos, a menudo combinamos todos los vectores de variables independientes en una única matriz de diseño $\mathbf{X}$ de tamaño $n \times (k+1)$, donde $n$ es el número de observaciones y $k+1$ es el número de variables independientes más el término de intercepto. La primera columna de $\mathbf{X}$ corresponde a un vector de unos para el término de intercepto, y las demás columnas corresponden a los valores de las variables independientes:
+Para simplificar la notaci\'on y los c\'alculos, a menudo combinamos todos los vectores de variables independientes en una \'unica matriz de dise\~no $\mathbf{X}$ de tama\~no $n \times (k+1)$, donde $n$ es el n\'umero de observaciones y $k+1$ es el n\'umero de variables independientes m\'as el t\'ermino de intercepto. La primera columna de $\mathbf{X}$ corresponde a un vector de unos para el t\'ermino de intercepto, y las dem\'as columnas corresponden a los valores de las variables independientes:
 
 \begin{equation}
 \mathbf{X} = \begin{bmatrix}
@@ -1762,7 +1768,7 @@ Para simplificar la notación y los cálculos, a menudo combinamos todos los vec
 1 & x_{n1} & x_{n2} & \ldots & x_{nk}
 \end{bmatrix}
 \end{equation}
-revisar la ecuaci\'on \ref{Eq.Matricial1}. De esta forma, el modelo logit puede ser escrito de manera compacta utilizando la notación matricial:
+revisar la ecuaci\'on \ref{Eq.Matricial1}. De esta forma, el modelo logit puede ser escrito de manera compacta utilizando la notaci\'on matricial:
 
 \begin{equation}
 \text{logit}(p) = \log\left(\frac{p}{1-p}\right) = \mathbf{X} \boldsymbol{\beta}
@@ -1780,35 +1786,35 @@ donde $\boldsymbol{\beta}$ es el vector de coeficientes:
 \end{bmatrix}
 \end{equation}
 
-Así, la probabilidad $p$ se puede expresar como:
+As\'i, la probabilidad $p$ se puede expresar como:
 
 \begin{equation}\label{Eq.Logit2}
 p = \frac{1}{1 + e^{-\mathbf{X} \boldsymbol{\beta}}}
 \end{equation}
 
-Comparar la ecuaci\'on anterior con la ecuaci\'on \ref{Eq.Logit1}. Esta notación matricial simplifica la implementación y la derivación de los estimadores de los coeficientes en la regresión logística. Para estimar los coeficientes $\boldsymbol{\beta}$ en la regresión logística, se utiliza el método de máxima verosimilitud. La función de verosimilitud $L(\boldsymbol{\beta})$ se define como el producto de las probabilidades de las observaciones dadas las variables independientes, recordemos la ecuaci\'on \ref{Eq.Verosimilitud}:
+Comparar la ecuaci\'on anterior con la ecuaci\'on \ref{Eq.Logit1}. Esta notaci\'on matricial simplifica la implementaci\'on y la derivaci\'on de los estimadores de los coeficientes en la regresi\'on log\'istica. Para estimar los coeficientes $\boldsymbol{\beta}$ en la regresi\'on log\'istica, se utiliza el m\'etodo de m\'axima verosimilitud. La funci\'on de verosimilitud $L(\boldsymbol{\beta})$ se define como el producto de las probabilidades de las observaciones dadas las variables independientes, recordemos la ecuaci\'on \ref{Eq.Verosimilitud}:
 
 \begin{eqnarray}
 L(\boldsymbol{\beta}) = \prod_{i=1}^{n} p_i^{y_i} (1 - p_i)^{1 - y_i}
 \end{eqnarray}
 
 
-donde $y_i$ es el valor observado de la variable dependiente para la $i$-ésima observación, y $p_i$ es la probabilidad predicha de que $Y_i = 1$.  La función de log-verosimilitud, que es más fácil de maximizar, se obtiene tomando el logaritmo natural de la función de verosimilitud (\ref{Eq.LogLikelihood1}):
+donde $y_i$ es el valor observado de la variable dependiente para la $i$-\'esima observaci\'on, y $p_i$ es la probabilidad predicha de que $Y_i = 1$.  La funci\'on de log-verosimilitud, que es m\'as f\'acil de maximizar, se obtiene tomando el logaritmo natural de la funci\'on de verosimilitud (\ref{Eq.LogLikelihood1}):
 
 \begin{equation}
 \log L(\boldsymbol{\beta}) = \sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right]
 \end{equation}
 
-Sustituyendo $p_i = \frac{1}{1 + e^{-\mathbf{X}_i \boldsymbol{\beta}}}$, donde $\mathbf{X}_i$ es la $i$-ésima fila de la matriz de diseño $\mathbf{X}$, obtenemos:
+Sustituyendo $p_i = \frac{1}{1 + e^{-\mathbf{X}_i \boldsymbol{\beta}}}$, donde $\mathbf{X}_i$ es la $i$-\'esima fila de la matriz de dise\~no $\mathbf{X}$, obtenemos:
 
 \begin{equation}\label{Eq.LogLikelihood2}
 \log L(\boldsymbol{\beta}) = \sum_{i=1}^{n} \left[ y_i (\mathbf{X}_i \boldsymbol{\beta}) - \log(1 + e^{\mathbf{X}_i \boldsymbol{\beta}}) \right]
 \end{equation}
 
-Para encontrar los valores de $\boldsymbol{\beta}$ que maximizan la función de log-verosimilitud, se utiliza un algoritmo iterativo como el método de Newton-Raphson. Este método requiere calcular el gradiente y la matriz Hessiana de la función de log-verosimilitud.
+Para encontrar los valores de $\boldsymbol{\beta}$ que maximizan la funci\'on de log-verosimilitud, se utiliza un algoritmo iterativo como el m\'etodo de Newton-Raphson. Este m\'etodo requiere calcular el gradiente y la matriz Hessiana de la funci\'on de log-verosimilitud.
 
 
-El gradiente de la función de log-verosimilitud con respecto a $\boldsymbol{\beta}$ es (\ref{Eq.Gradiente1} y \ref{Eq.Gradiente2}):
+El gradiente de la funci\'on de log-verosimilitud con respecto a $\boldsymbol{\beta}$ es (\ref{Eq.Gradiente1} y \ref{Eq.Gradiente2}):
 
 \begin{equation}
 \nabla \log L(\boldsymbol{\beta}) = \mathbf{X}^T (\mathbf{y} - \mathbf{p})
@@ -1816,7 +1822,7 @@ El gradiente de la función de log-verosimilitud con respecto a $\boldsymbol{\be
 
 donde $\mathbf{y}$ es el vector de valores observados y $\mathbf{p}$ es el vector de probabilidades predichas.
 
-La matriz Hessiana de la función de log-verosimilitud es (\ref{Eq.Hessiana1} y \ref{Eq.Hessiana2}):
+La matriz Hessiana de la funci\'on de log-verosimilitud es (\ref{Eq.Hessiana1} y \ref{Eq.Hessiana2}):
 
 \begin{equation}
 \mathbf{H}(\boldsymbol{\beta}) = -\mathbf{X}^T \mathbf{W} \mathbf{X}
@@ -1824,13 +1830,13 @@ La matriz Hessiana de la función de log-verosimilitud es (\ref{Eq.Hessiana1} y 
 
 donde $\mathbf{W}$ es una matriz diagonal de pesos con elementos $w_i = p_i (1 - p_i)$.
 
-El método de Newton-Raphson actualiza los coeficientes $\boldsymbol{\beta}$ de la siguiente manera:
+El m\'etodo de Newton-Raphson actualiza los coeficientes $\boldsymbol{\beta}$ de la siguiente manera:
 
 \begin{equation}\label{Eq.Criterio3}
 \boldsymbol{\beta}^{(t+1)} = \boldsymbol{\beta}^{(t)} - [\mathbf{H}(\boldsymbol{\beta}^{(t)})]^{-1} \nabla \log L(\boldsymbol{\beta}^{(t)})
 \end{equation}
 
-Iterando este proceso hasta que la diferencia entre $\boldsymbol{\beta}^{(t+1)}$ y $\boldsymbol{\beta}^{(t)}$ sea menor que un umbral predefinido (\ref{Eq.Criterio0}, \ref{Eq.Criterio1}, \ref{Eq.Criterio1.5} y \ref{Eq.Criterio2}), se obtienen los estimadores de máxima verosimilitud para los coeficientes de la regresión logística.
+Iterando este proceso hasta que la diferencia entre $\boldsymbol{\beta}^{(t+1)}$ y $\boldsymbol{\beta}^{(t)}$ sea menor que un umbral predefinido (\ref{Eq.Criterio0}, \ref{Eq.Criterio1}, \ref{Eq.Criterio1.5} y \ref{Eq.Criterio2}), se obtienen los estimadores de m\'axima verosimilitud para los coeficientes de la regresi\'on log\'istica.
 
 
 \chapter{Elementos de Probabilidad}
@@ -2157,7 +2163,7 @@ A continuaci\'on se presenta una tabla que muestra los posibles resultados en un
 
 
 
-\chapter{Matemáticas Detrás de la Regresión Logística}
+\chapter{Matem\'aticas Detr\'as de la Regresi\'on Log\'istica}
 \section{Introducci\'on}
 
 La regresi\'on log\'istica es una t\'ecnica de modelado estad\'istico utilizada para predecir la probabilidad de un evento binario en funci\'on de una o m\'as variables independientes. Este cap\'itulo profundiza en las matem\'aticas subyacentes a la regresi\'on log\'istica, incluyendo la funci\'on log\'istica, la funci\'on de verosimilitud, y los m\'etodos para estimar los coeficientes del modelo.
@@ -2257,7 +2263,7 @@ La matriz de confusi\'on es una tabla que resume el rendimiento de un modelo de 
 
 
 
-\chapter{Preparación de Datos y Selección de Variables}
+\chapter{Preparaci\'on de Datos y Selecci\'on de Variables}
 
 
 \section{Introducci\'on}
@@ -2423,29 +2429,29 @@ summary(model)
 
 
 
-\chapter{Evaluación del Modelo y Validación Cruzada}
+\chapter{Evaluaci\'on del Modelo y Validaci\'on Cruzada}
 
 
-\section{Introducción}
+\section{Introducci\'on}
 
-Evaluar la calidad y el rendimiento de un modelo de regresión logística es crucial para asegurar que las predicciones sean precisas y útiles. Este capítulo se centra en las técnicas y métricas utilizadas para evaluar modelos de clasificación binaria, así como en la validación cruzada, una técnica para evaluar la generalización del modelo.
+Evaluar la calidad y el rendimiento de un modelo de regresi\'on log\'istica es crucial para asegurar que las predicciones sean precisas y \'utiles. Este cap\'itulo se centra en las t\'ecnicas y m\'etricas utilizadas para evaluar modelos de clasificaci\'on binaria, as\'i como en la validaci\'on cruzada, una t\'ecnica para evaluar la generalizaci\'on del modelo.
 
-\section{Métricas de Evaluación del Modelo}
+\section{M\'etricas de Evaluaci\'on del Modelo}
 
-Las métricas de evaluación permiten cuantificar la precisión y el rendimiento de un modelo. Algunas de las métricas más comunes incluyen:
+Las m\'etricas de evaluaci\'on permiten cuantificar la precisi\'on y el rendimiento de un modelo. Algunas de las m\'etricas m\'as comunes incluyen:
 
 \subsection{Curva ROC y AUC}
 
-La curva ROC (Receiver Operating Characteristic) es una representación gráfica de la sensibilidad (verdaderos positivos) frente a 1 - especificidad (falsos positivos). El área bajo la curva (AUC) mide la capacidad del modelo para distinguir entre las clases.
+La curva ROC (Receiver Operating Characteristic) es una representaci\'on gr\'afica de la sensibilidad (verdaderos positivos) frente a 1 - especificidad (falsos positivos). El \'area bajo la curva (AUC) mide la capacidad del modelo para distinguir entre las clases.
 
 \begin{eqnarray*}
 \text{Sensibilidad} &=& \frac{\text{TP}}{\text{TP} + \text{FN}} \\
 \text{Especificidad} &=& \frac{\text{TN}}{\text{TN} + \text{FP}}
 \end{eqnarray*}
 
-\subsection{Matriz de Confusión}
+\subsection{Matriz de Confusi\'on}
 
-La matriz de confusión es una tabla que muestra el rendimiento del modelo comparando las predicciones con los valores reales. Los términos incluyen:
+La matriz de confusi\'on es una tabla que muestra el rendimiento del modelo comparando las predicciones con los valores reales. Los t\'erminos incluyen:
 \begin{itemize}
     \item \textbf{Verdaderos Positivos (TP)}: Predicciones correctas de la clase positiva.
     \item \textbf{Falsos Positivos (FP)}: Predicciones incorrectas de la clase positiva.
@@ -2457,40 +2463,40 @@ La matriz de confusión es una tabla que muestra el rendimiento del modelo compa
 \centering
 \begin{tabular}{|c|c|c|}
 \hline
- & \textbf{Predicción Positiva} & \textbf{Predicción Negativa} \\
+ & \textbf{Predicci\'on Positiva} & \textbf{Predicci\'on Negativa} \\
 \hline
 \textbf{Real Positiva} & TP & FN \\
 \hline
 \textbf{Real Negativa} & FP & TN \\
 \hline
 \end{tabular}
-\caption{Matriz de Confusión}
+\caption{Matriz de Confusi\'on}
 \label{tab:confusion_matrix}
 \end{table}
 
-\subsection{Precisión, Recall y F1-Score}
+\subsection{Precisi\'on, Recall y F1-Score}
 
 \begin{eqnarray*}
-\text{Precisión} &=& \frac{\text{TP}}{\text{TP} + \text{FP}} \\
+\text{Precisi\'on} &=& \frac{\text{TP}}{\text{TP} + \text{FP}} \\
 \text{Recall} &=& \frac{\text{TP}}{\text{TP} + \text{FN}} \\
-\text{F1-Score} &=& 2 \cdot \frac{\text{Precisión} \cdot \text{Recall}}{\text{Precisión} + \text{Recall}}
+\text{F1-Score} &=& 2 \cdot \frac{\text{Precisi\'on} \cdot \text{Recall}}{\text{Precisi\'on} + \text{Recall}}
 \end{eqnarray*}
 
 \subsection{Log-Loss}
 
-La pérdida logarítmica (Log-Loss) mide la precisión de las probabilidades predichas. La fórmula es:
+La p\'erdida logar\'itmica (Log-Loss) mide la precisi\'on de las probabilidades predichas. La f\'ormula es:
 \begin{eqnarray*}
 \text{Log-Loss} = -\frac{1}{n} \sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right]
 \end{eqnarray*}
 donde $y_i$ son los valores reales y $p_i$ son las probabilidades predichas.
 
-\section{Validación Cruzada}
+\section{Validaci\'on Cruzada}
 
-La validación cruzada es una técnica para evaluar la capacidad de generalización de un modelo. Existen varios tipos de validación cruzada:
+La validaci\'on cruzada es una t\'ecnica para evaluar la capacidad de generalizaci\'on de un modelo. Existen varios tipos de validaci\'on cruzada:
 
 \subsection{K-Fold Cross-Validation}
 
-En K-Fold Cross-Validation, los datos se dividen en K subconjuntos. El modelo se entrena K veces, cada vez utilizando K-1 subconjuntos para el entrenamiento y el subconjunto restante para la validación.
+En K-Fold Cross-Validation, los datos se dividen en K subconjuntos. El modelo se entrena K veces, cada vez utilizando K-1 subconjuntos para el entrenamiento y el subconjunto restante para la validaci\'on.
 
 \begin{eqnarray*}
 \text{Error Medio} = \frac{1}{K} \sum_{k=1}^{K} \text{Error}_k
@@ -2498,7 +2504,7 @@ En K-Fold Cross-Validation, los datos se dividen en K subconjuntos. El modelo se
 
 \subsection{Leave-One-Out Cross-Validation (LOOCV)}
 
-En LOOCV, cada observación se usa una vez como conjunto de validación y las restantes como conjunto de entrenamiento. Este método es computacionalmente costoso pero útil para conjuntos de datos pequeños.
+En LOOCV, cada observaci\'on se usa una vez como conjunto de validaci\'on y las restantes como conjunto de entrenamiento. Este m\'etodo es computacionalmente costoso pero \'util para conjuntos de datos peque\~nos.
 
 \section{Ajuste y Sobreajuste del Modelo}
 
@@ -2506,23 +2512,23 @@ El ajuste adecuado del modelo es crucial para evitar el sobreajuste (overfitting
 
 \subsection{Sobreajuste}
 
-El sobreajuste ocurre cuando un modelo se ajusta demasiado bien a los datos de entrenamiento, capturando ruido y patrones irrelevantes. Los síntomas incluyen una alta precisión en el entrenamiento y baja precisión en la validación.
+El sobreajuste ocurre cuando un modelo se ajusta demasiado bien a los datos de entrenamiento, capturando ruido y patrones irrelevantes. Los s\'intomas incluyen una alta precisi\'on en el entrenamiento y baja precisi\'on en la validaci\'on.
 
 \subsection{Subajuste}
 
-El subajuste ocurre cuando un modelo no captura los patrones subyacentes de los datos. Los síntomas incluyen baja precisión tanto en el entrenamiento como en la validación.
+El subajuste ocurre cuando un modelo no captura los patrones subyacentes de los datos. Los s\'intomas incluyen baja precisi\'on tanto en el entrenamiento como en la validaci\'on.
 
-\subsection{Regularización}
+\subsection{Regularizaci\'on}
 
-La regularización es una técnica para prevenir el sobreajuste añadiendo un término de penalización a la función de costo. Las técnicas comunes incluyen:
+La regularizaci\'on es una t\'ecnica para prevenir el sobreajuste a\~nadiendo un t\'ermino de penalizaci\'on a la funci\'on de costo. Las t\'ecnicas comunes incluyen:
 \begin{itemize}
-    \item \textbf{Regresión Lasso (L1)}
-    \item \textbf{Regresión Ridge (L2)}
+    \item \textbf{Regresi\'on Lasso (L1)}
+    \item \textbf{Regresi\'on Ridge (L2)}
 \end{itemize}
 
-\section{Implementación en R}
+\section{Implementaci\'on en R}
 
-\subsection{Evaluación del Modelo}
+\subsection{Evaluaci\'on del Modelo}
 
 \begin{verbatim}
 # Cargar el paquete necesario
@@ -2536,17 +2542,17 @@ trainIndex <- createDataPartition(data$var1, p = .8,
 dataTrain <- data[trainIndex,]
 dataTest <- data[-trainIndex,]
 
-# Entrenar el modelo de regresión logística
+# Entrenar el modelo de regresi\'on log\'istica
 model <- train(var1 ~ ., data = dataTrain, method = "glm", family = "binomial")
 
 # Predicciones en el conjunto de prueba
 predictions <- predict(model, dataTest)
 
-# Matriz de confusión
+# Matriz de confusi\'on
 confusionMatrix(predictions, dataTest$var1)
 \end{verbatim}
 
-\subsection{Validación Cruzada}
+\subsection{Validaci\'on Cruzada}
 
 \begin{verbatim}
 # K-Fold Cross-Validation
@@ -2554,13 +2560,13 @@ control <- trainControl(method = "cv", number = 10)
 model_cv <- train(var1 ~ ., data = dataTrain, method = "glm", 
                   family = "binomial", trControl = control)
 
-# Evaluación del modelo con validación cruzada
+# Evaluaci\'on del modelo con validaci\'on cruzada
 print(model_cv)
 \end{verbatim}
 
 
 
-\chapter{Diagnóstico del Modelo y Ajuste de Parámetros}
+\chapter{Diagn\'ostico del Modelo y Ajuste de Par\'ametros}
 
 
 \section{Introducci\'on}
@@ -2666,7 +2672,7 @@ print(model_tune)
 
 
 
-\chapter{Interpretación de los Resultados}
+\chapter{Interpretaci\'on de los Resultados}
 
 \section{Introducci\'on}
 
@@ -2770,7 +2776,7 @@ summary(model)
 
 
 
-\chapter{Regresión Logística Multinomial y Análisis de Supervivencia}
+\chapter{Regresi\'on Log\'istica Multinomial y An\'alisis de Supervivencia}
 
 \section{Introducci\'on}
 
@@ -2846,7 +2852,7 @@ summary(model_cox)
 
 
 
-\chapter{Implementación de Regresión Logística en Datos Reales}
+\chapter{Implementaci\'on de Regresi\'on Log\'istica en Datos Reales}
 \section{Introducci\'on}
 
 Implementar un modelo de regresi\'on log\'istica en datos reales implica varias etapas, desde la limpieza de datos hasta la evaluaci\'on y validaci\'on del modelo. Este cap\'itulo presenta un ejemplo pr\'actico de la implementaci\'on de un modelo de regresi\'on log\'istica utilizando un conjunto de datos real.
@@ -3002,16 +3008,16 @@ Presenta tu proyecto en un informe detallado que incluya la descripci\'on del co
 \part{SEGUNDA PARTE: ANALISIS DE SUPERVIVENCIA}
 %==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
 
-\chapter{Introducción al Análisis de Supervivencia}
+\chapter{Introducci\'on al An\'alisis de Supervivencia}
 
-\section{Conceptos Básicos}
-El análisis de supervivencia es una rama de la estad\'istica que se ocupa del análisis del tiempo que transcurre hasta que ocurre un evento de inter\'es, com\'unmente referido como "tiempo de falla". Este campo es ampliamente utilizado en medicina, biolog\'ia, ingenier\'ia, ciencias sociales, y otros campos.
+\section{Conceptos B\'asicos}
+El an\'alisis de supervivencia es una rama de la estad\'istica que se ocupa del an\'alisis del tiempo que transcurre hasta que ocurre un evento de inter\'es, com\'unmente referido como "tiempo de falla". Este campo es ampliamente utilizado en medicina, biolog\'ia, ingenier\'ia, ciencias sociales, y otros campos.
 
 \section{Definici\'on de Eventos y Tiempos}
-En el análisis de supervivencia, un "evento" se refiere a la ocurrencia de un evento espec\'ifico, como la muerte, la falla de un componente, la reca\'ida de una enfermedad, etc. El "tiempo de supervivencia" es el tiempo que transcurre desde un punto de inicio definido hasta la ocurrencia del evento.
+En el an\'alisis de supervivencia, un "evento" se refiere a la ocurrencia de un evento espec\'ifico, como la muerte, la falla de un componente, la reca\'ida de una enfermedad, etc. El "tiempo de supervivencia" es el tiempo que transcurre desde un punto de inicio definido hasta la ocurrencia del evento.
 
 \section{Censura}
-La censura ocurre cuando la informaci\'on completa sobre el tiempo hasta el evento no está disponible para todos los individuos en el estudio. Hay tres tipos principales de censura:
+La censura ocurre cuando la informaci\'on completa sobre el tiempo hasta el evento no est\'a disponible para todos los individuos en el estudio. Hay tres tipos principales de censura:
 \begin{itemize}
     \item \textbf{Censura a la derecha:} Ocurre cuando el evento de inter\'es no se ha observado para algunos sujetos antes del final del estudio.
     \item \textbf{Censura a la izquierda:} Ocurre cuando el evento de inter\'es ocurri\'o antes del inicio del periodo de observaci\'on.
@@ -3019,7 +3025,7 @@ La censura ocurre cuando la informaci\'on completa sobre el tiempo hasta el even
 \end{itemize}
 
 \section{Funci\'on de Supervivencia}
-La funci\'on de supervivencia, $S(t)$, se define como la probabilidad de que un individuo sobreviva más allá de un tiempo $t$. Matemáticamente, se expresa como:
+La funci\'on de supervivencia, $S(t)$, se define como la probabilidad de que un individuo sobreviva m\'as all\'a de un tiempo $t$. Matem\'aticamente, se expresa como:
 \begin{eqnarray*}
 S(t) = P(T > t)
 \end{eqnarray*}
@@ -3085,12 +3091,12 @@ y la funci\'on de riesgo emp\'irica como:
 El an\'alisis de supervivencia es una herramienta poderosa para analizar datos de tiempo hasta evento. Entender los conceptos b\'asicos como la funci\'on de supervivencia y la funci\'on de riesgo es fundamental para el an\'alisis m\'as avanzado.
 
 
-\chapter{Función de Supervivencia y Función de Riesgo}
+\chapter{Funci\'on de Supervivencia y Funci\'on de Riesgo}
 \section{Introducci\'on}
-Este cap\'itulo profundiza en la definici\'on y propiedades de la funci\'on de supervivencia y la funci\'on de riesgo, dos conceptos fundamentales en el análisis de supervivencia. Entender estas funciones y su relaci\'on es crucial para modelar y analizar datos de tiempo hasta evento.
+Este cap\'itulo profundiza en la definici\'on y propiedades de la funci\'on de supervivencia y la funci\'on de riesgo, dos conceptos fundamentales en el an\'alisis de supervivencia. Entender estas funciones y su relaci\'on es crucial para modelar y analizar datos de tiempo hasta evento.
 
 \section{Funci\'on de Supervivencia}
-La funci\'on de supervivencia, $S(t)$, describe la probabilidad de que un individuo sobreviva más allá de un tiempo $t$. Formalmente, se define como:
+La funci\'on de supervivencia, $S(t)$, describe la probabilidad de que un individuo sobreviva m\'as all\'a de un tiempo $t$. Formalmente, se define como:
 \begin{eqnarray*}
 S(t) = P(T > t)
 \end{eqnarray*}
@@ -3114,7 +3120,7 @@ S(t) &=& P(T > t) \\
 \end{eqnarray*}
 donde $F(t)$ es la funci\'on de distribuci\'on acumulada.
 
-\subsection{Ejemplo de Cálculo de $S(t)$}
+\subsection{Ejemplo de C\'alculo de $S(t)$}
 Consideremos un ejemplo donde el tiempo de supervivencia $T$ sigue una distribuci\'on exponencial con tasa $\lambda$. La funci\'on de densidad de probabilidad $f(t)$ es:
 \begin{eqnarray*}
 f(t) = \lambda e^{-\lambda t}, \quad t \geq 0
@@ -3220,7 +3226,7 @@ La funci\'on de supervivencia y la funci\'on de riesgo son herramientas fundamen
 \chapter{Estimador de Kaplan-Meier}
 
 \section{Introducci\'on}
-El estimador de Kaplan-Meier, tambi\'en conocido como la funci\'on de supervivencia emp\'irica, es una herramienta no param\'etrica para estimar la funci\'on de supervivencia a partir de datos censurados. Este m\'etodo es especialmente \'util cuando los tiempos de evento están censurados a la derecha.
+El estimador de Kaplan-Meier, tambi\'en conocido como la funci\'on de supervivencia emp\'irica, es una herramienta no param\'etrica para estimar la funci\'on de supervivencia a partir de datos censurados. Este m\'etodo es especialmente \'util cuando los tiempos de evento est\'an censurados a la derecha.
 
 \section{Definici\'on del Estimador de Kaplan-Meier}
 El estimador de Kaplan-Meier se define como:
@@ -3344,13 +3350,13 @@ El estimador de Kaplan-Meier es una herramienta poderosa para estimar la funci\'
 
 
 
-\chapter{Comparación de Curvas de Supervivencia}
+\chapter{Comparaci\'on de Curvas de Supervivencia}
 
 \section{Introducci\'on}
 Comparar curvas de supervivencia es crucial para determinar si existen diferencias significativas en las tasas de supervivencia entre diferentes grupos. Las pruebas de hip\'otesis, como el test de log-rank, son herramientas comunes para esta comparaci\'on.
 
 \section{Test de Log-rank}
-El test de log-rank se utiliza para comparar las curvas de supervivencia de dos o más grupos. La hip\'otesis nula es que no hay diferencia en las funciones de riesgo entre los grupos.
+El test de log-rank se utiliza para comparar las curvas de supervivencia de dos o m\'as grupos. La hip\'otesis nula es que no hay diferencia en las funciones de riesgo entre los grupos.
 
 \subsection{F\'ormula del Test de Log-rank}
 El estad\'istico del test de log-rank se define como:
@@ -3364,7 +3370,7 @@ donde:
     \item $V_i$ es la varianza del n\'umero de eventos en el grupo $i$.
 \end{itemize}
 
-\subsection{Cálculo de $E_i$ y $V_i$}
+\subsection{C\'alculo de $E_i$ y $V_i$}
 El n\'umero esperado de eventos $E_i$ y la varianza $V_i$ se calculan como:
 \begin{eqnarray*}
 E_i &=& \frac{d_i \cdot n_i}{n} \\
@@ -3428,7 +3434,7 @@ El test de log-rank es una herramienta esencial para comparar curvas de superviv
 \chapter{Modelos de Riesgos Proporcionales de Cox}
 
 \section{Introducci\'on}
-El modelo de riesgos proporcionales de Cox, propuesto por David Cox en 1972, es una de las herramientas más utilizadas en el análisis de supervivencia. Este modelo permite evaluar el efecto de varias covariables en el tiempo hasta el evento, sin asumir una forma espec\'ifica para la distribuci\'on de los tiempos de supervivencia.
+El modelo de riesgos proporcionales de Cox, propuesto por David Cox en 1972, es una de las herramientas m\'as utilizadas en el an\'alisis de supervivencia. Este modelo permite evaluar el efecto de varias covariables en el tiempo hasta el evento, sin asumir una forma espec\'ifica para la distribuci\'on de los tiempos de supervivencia.
 
 \section{Definici\'on del Modelo de Cox}
 El modelo de Cox se define como:
@@ -3444,7 +3450,7 @@ donde:
 \end{itemize}
 
 \section{Supuesto de Proporcionalidad de Riesgos}
-El modelo de Cox asume que las razones de riesgo entre dos individuos son constantes a lo largo del tiempo. Matemáticamente, si $X_i$ y $X_j$ son las covariables de dos individuos, la raz\'on de riesgos se expresa como:
+El modelo de Cox asume que las razones de riesgo entre dos individuos son constantes a lo largo del tiempo. Matem\'aticamente, si $X_i$ y $X_j$ son las covariables de dos individuos, la raz\'on de riesgos se expresa como:
 \begin{eqnarray*}
 \frac{\lambda(t \mid X_i)}{\lambda(t \mid X_j)} = \frac{\lambda_0(t) \exp(\beta^T X_i)}{\lambda_0(t) \exp(\beta^T X_j)} = \exp(\beta^T (X_i - X_j))
 \end{eqnarray*}
@@ -3504,10 +3510,10 @@ El modelo de riesgos proporcionales de Cox es una herramienta poderosa para anal
 
 
 
-\chapter{Diagnóstico y Validación de Modelos de Cox}
+\chapter{Diagn\'ostico y Validaci\'on de Modelos de Cox}
 
 \section{Introducci\'on}
-Una vez ajustado un modelo de Cox, es crucial realizar diagn\'osticos y validaciones para asegurar que el modelo es apropiado y que los supuestos subyacentes son válidos. Esto incluye la verificaci\'on del supuesto de proporcionalidad de riesgos y la evaluaci\'on del ajuste del modelo.
+Una vez ajustado un modelo de Cox, es crucial realizar diagn\'osticos y validaciones para asegurar que el modelo es apropiado y que los supuestos subyacentes son v\'alidos. Esto incluye la verificaci\'on del supuesto de proporcionalidad de riesgos y la evaluaci\'on del ajuste del modelo.
 
 \section{Supuesto de Proporcionalidad de Riesgos}
 El supuesto de proporcionalidad de riesgos implica que la raz\'on de riesgos entre dos individuos es constante a lo largo del tiempo. Si este supuesto no se cumple, las inferencias hechas a partir del modelo pueden ser incorrectas.
@@ -3517,7 +3523,7 @@ Los residuos de Schoenfeld se utilizan para evaluar la proporcionalidad de riesg
 \begin{eqnarray*}
 r_{ij} = X_{ij} - \hat{X}_{ij}
 \end{eqnarray*}
-donde $\hat{X}_{ij}$ es la covariable ajustada. Si los residuos de Schoenfeld no muestran una tendencia sistemática cuando se trazan contra el tiempo, el supuesto de proporcionalidad de riesgos es razonable.
+donde $\hat{X}_{ij}$ es la covariable ajustada. Si los residuos de Schoenfeld no muestran una tendencia sistem\'atica cuando se trazan contra el tiempo, el supuesto de proporcionalidad de riesgos es razonable.
 
 \section{Bondad de Ajuste}
 La bondad de ajuste del modelo de Cox se eval\'ua comparando las curvas de supervivencia observadas y ajustadas, y utilizando estad\'isticas de ajuste global.
@@ -3597,8 +3603,8 @@ El modelo AFT se puede transformar logar\'itmicamente para obtener una forma lin
 \log(T) = \log(T_0) + \beta^T X
 \end{eqnarray*}
 
-\section{Estimaci\'on de los Parámetros}
-Los parámetros del modelo AFT se estiman utilizando el m\'etodo de máxima verosimilitud. La funci\'on de verosimilitud se define como:
+\section{Estimaci\'on de los Par\'ametros}
+Los par\'ametros del modelo AFT se estiman utilizando el m\'etodo de m\'axima verosimilitud. La funci\'on de verosimilitud se define como:
 \begin{eqnarray*}
 L(\beta) = \prod_{i=1}^n f(t_i \mid X_i; \beta)
 \end{eqnarray*}
@@ -3666,10 +3672,10 @@ Los modelos AFT proporcionan una alternativa flexible a los modelos de riesgos p
 
 
 
-\chapter{Análisis Multivariado de Supervivencia}
+\chapter{An\'alisis Multivariado de Supervivencia}
 
 \section{Introducci\'on}
-El análisis multivariado de supervivencia extiende los modelos de supervivencia para incluir m\'ultiples covariables, permitiendo evaluar su efecto simultáneo sobre el tiempo hasta el evento. Los modelos de Cox y AFT son com\'unmente utilizados en este contexto.
+El an\'alisis multivariado de supervivencia extiende los modelos de supervivencia para incluir m\'ultiples covariables, permitiendo evaluar su efecto simult\'aneo sobre el tiempo hasta el evento. Los modelos de Cox y AFT son com\'unmente utilizados en este contexto.
 
 \section{Modelo de Cox Multivariado}
 El modelo de Cox multivariado se define como:
@@ -3678,8 +3684,8 @@ El modelo de Cox multivariado se define como:
 \end{eqnarray*}
 donde $X$ es un vector de covariables.
 
-\subsection{Estimaci\'on de los Parámetros}
-Los parámetros $\beta$ se estiman utilizando el m\'etodo de máxima verosimilitud parcial, como se discuti\'o anteriormente. La funci\'on de verosimilitud parcial se maximiza para obtener los estimadores de los coeficientes.
+\subsection{Estimaci\'on de los Par\'ametros}
+Los par\'ametros $\beta$ se estiman utilizando el m\'etodo de m\'axima verosimilitud parcial, como se discuti\'o anteriormente. La funci\'on de verosimilitud parcial se maximiza para obtener los estimadores de los coeficientes.
 
 \section{Modelo AFT Multivariado}
 El modelo AFT multivariado se expresa como:
@@ -3742,7 +3748,7 @@ El an\'alisis multivariado de supervivencia permite evaluar el efecto conjunto d
 \chapter{Supervivencia en Datos Complicados}
 
 \section{Introducci\'on}
-El análisis de supervivencia en datos complicados se refiere a la evaluaci\'on de datos de supervivencia que presentan desaf\'ios adicionales, como la censura por intervalo, datos truncados y datos con m\'ultiples tipos de eventos. Estos escenarios requieren m\'etodos avanzados para un análisis adecuado.
+El an\'alisis de supervivencia en datos complicados se refiere a la evaluaci\'on de datos de supervivencia que presentan desaf\'ios adicionales, como la censura por intervalo, datos truncados y datos con m\'ultiples tipos de eventos. Estos escenarios requieren m\'etodos avanzados para un an\'alisis adecuado.
 
 \section{Censura por Intervalo}
 La censura por intervalo ocurre cuando el evento de inter\'es se sabe que ocurri\'o dentro de un intervalo de tiempo, pero no se conoce el momento exacto. Esto es com\'un en estudios donde las observaciones se realizan en puntos de tiempo discretos.
@@ -3801,21 +3807,21 @@ El an\'alisis de supervivencia en datos complicados requiere m\'etodos avanzados
 
 
 
-\chapter{Proyecto Final y Revisión}
+\chapter{Proyecto Final y Revisi\'on}
 
 \section{Introducci\'on}
-El proyecto final proporciona una oportunidad para aplicar los conceptos y t\'ecnicas aprendidas en el curso de análisis de supervivencia. Este cap\'itulo incluye una gu\'ia para desarrollar un proyecto de análisis de supervivencia y una revisi\'on de los conceptos clave.
+El proyecto final proporciona una oportunidad para aplicar los conceptos y t\'ecnicas aprendidas en el curso de an\'alisis de supervivencia. Este cap\'itulo incluye una gu\'ia para desarrollar un proyecto de an\'alisis de supervivencia y una revisi\'on de los conceptos clave.
 
 \section{Desarrollo del Proyecto}
 El proyecto final debe incluir los siguientes componentes:
 \begin{enumerate}
-    \item Definici\'on del problema: Identificar la pregunta de investigaci\'on y los objetivos del análisis de supervivencia.
+    \item Definici\'on del problema: Identificar la pregunta de investigaci\'on y los objetivos del an\'alisis de supervivencia.
     \item Descripci\'on de los datos: Presentar los datos utilizados, incluyendo las covariables y la estructura de los datos.
-    \item Análisis exploratorio: Realizar un análisis descriptivo de los datos, incluyendo la censura y la distribuci\'on de los tiempos de supervivencia.
+    \item An\'alisis exploratorio: Realizar un an\'alisis descriptivo de los datos, incluyendo la censura y la distribuci\'on de los tiempos de supervivencia.
     \item Ajuste del modelo: Ajustar modelos de supervivencia adecuados (Kaplan-Meier, Cox, AFT) y evaluar su bondad de ajuste.
     \item Diagn\'ostico del modelo: Realizar diagn\'osticos para evaluar los supuestos del modelo y la influencia de observaciones individuales.
     \item Interpretaci\'on de resultados: Interpretar los coeficientes del modelo y las curvas de supervivencia ajustadas.
-    \item Conclusiones: Resumir los hallazgos del análisis y proporcionar recomendaciones basadas en los resultados.
+    \item Conclusiones: Resumir los hallazgos del an\'alisis y proporcionar recomendaciones basadas en los resultados.
 \end{enumerate}
 
 \section{Revisi\'on de Conceptos Clave}
