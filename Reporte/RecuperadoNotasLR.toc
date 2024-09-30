@@ -37,6 +37,7 @@
 \contentsline {subsection}{\numberline {2.2.1}Regresión Lineal}{37}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Regresión Logística}{38}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}Método de Máxima Verosimilitud}{39}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Notaci\'on Matricial}{40}{subsection.2.3.1}%
 \contentsline {section}{\numberline {2.4}Método de Newton-Raphson}{40}{section.2.4}%
 \contentsline {section}{\numberline {2.5}Espec\'ificando}{41}{section.2.5}%
 \contentsline {chapter}{\numberline {3}Elementos de Probabilidad}{45}{chapter.3}%

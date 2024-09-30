@@ -1525,6 +1525,7 @@ La expresión final que obtenemos es conocida como la \textbf{función logístic
 p = \frac{1}{1 + e^{-\left(\beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n\right)}}
 \end{equation}
 Esta función describe cómo las variables independientes se relacionan con la probabilidad de que el evento de interés ocurra. Los coeficientes $\beta_0, \beta_1, \ldots, \beta_n$ se estiman a partir de los datos utilizando el método de máxima verosimilitud.
+
 %<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
 \section{Método de Máxima Verosimilitud}
 %<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
@@ -1537,57 +1538,55 @@ L(\beta_0, \beta_1, \ldots, \beta_n) = \prod_{i=1}^{n} p_i^{y_i} (1 - p_i)^{1 - 
 
 donde:
 \begin{itemize}
-    \item $p_i$ es la probabilidad predicha de que $Y_i = 1$,
-    \item $y_i$ es el valor observado de la variable dependiente para la $i$-ésima observación.
+    \item[a) ] $p_i$ es la probabilidad predicha de que $Y_i = 1$,
+    \item[b) ] $y_i$ es el valor observado de la variable dependiente para la $i$-ésima observación.
 \end{itemize}
 
+Trabajar directamente con esta función de verosimilitud puede ser complicado debido al producto de muchas probabilidades, especialmente si $n$ es grande. Para simplificar los cálculos, se utiliza el logaritmo de la función de verosimilitud, conocido como la función de \textit{log-verosimilitud}. El uso del logaritmo simplifica significativamente la diferenciación y maximización de la función. La función de log-verosimilitud se define como:
 
-
-Trabajar directamente con esta función de verosimilitud puede ser complicado debido al \pageref{•}roducto de muchas probabilidades, especialmente si $n$ es grande. Para simplificar los cálculos, se utiliza el logaritmo de la función de verosimilitud, conocido como la función de log-verosimilitud. El uso del logaritmo simplifica significativamente la diferenciación y maximización de la función. La función de log-verosimilitud se define como:
-
-\begin{equation}
-\log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right]
+\begin{equation}\label{Funcion.LogVerosimilitud}
+\log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right].
 \end{equation}
 
-Aquí, $\log$ representa el logaritmo natural. Esta transformación es válida porque el logaritmo es una función monótona creciente, lo que significa que maximizar la log-verosimilitud es equivalente a maximizar la verosimilitud original. En la regresión logística, la probabilidad $p_i$ está dada por la función logística:
+Aquí, $\log$ representa el logaritmo natural. Esta transformación es válida porque el logaritmo es una función monótona creciente, lo que significa que maximizar la log-verosimilitud es equivalente a maximizar la verosimilitud original. En la regresión logística, de acuerdo a la ecuaci\'on \ref{Eq.Logit1} la probabilidad $p_i$ está dada por la función logística:
 
-\begin{equation}
+\begin{equation}\label{Eq.Logit1.Multi}
 p_i = \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}}
 \end{equation}
 
-Sustituyendo esta expresión en la función de log-verosimilitud, obtenemos:
+Sustituyendo esta expresión en la función de log-verosimilitud (\ref{Funcion.LogVerosimilitud}), obtenemos:
+
+\begin{eqnarray}\label{Eq.LogVerosimilitud.VV}
+\begin{array}{l}
+\log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i \log \left( \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}} \right) + \right. \\
+ \left. (1 - y_i) \log \left( 1 - \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}} \right) \right]
+\end{array}
+\end{eqnarray}
+
+Simplificando esta expresión,
+
+\begin{eqnarray}
+\log \left( \frac{1}{1 + e^{-z}} \right) &=& -\log(1 + e^{-z})\textrm{, por tanto}\\
+\log \left( 1 - \frac{1}{1 + e^{-z}} \right) &=& \log \left( \frac{e^{-z}}{1 + e^{-z}} \right) = -z - \log(1 + e^{-z})
+\end{eqnarray}
+
+Aplicando las ecuaciones anteriores, la ecuaci\'on \ref{Eq.LogVerosimilitud.VV} se convierte en:
 
 \begin{eqnarray*}
-\log L(\beta_0, \beta_1, \ldots, \beta_n) &= \sum_{i=1}^{n} \left[ y_i \log \left( \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}} \right) + \right. \nonumber \\
-& \quad \left. (1 - y_i) \log \left( 1 - \frac{1}{1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}} \right) \right]
-\end{eqnarray*}
-
-Simplificando esta expresión, notamos que:
-
-\begin{eqnarray*}
-\log \left( \frac{1}{1 + e^{-z}} \right) = -\log(1 + e^{-z})
-\end{eqnarray*}
-
-y
-
-\begin{eqnarray*}
-\log \left( 1 - \frac{1}{1 + e^{-z}} \right) = \log \left( \frac{e^{-z}}{1 + e^{-z}} \right) = -z - \log(1 + e^{-z})
-\end{eqnarray*}
-
-Aplicando estas identidades, la función de log-verosimilitud se convierte en:
-
-\begin{eqnarray*}
-\log L(\beta_0, \beta_1, \ldots, \beta_n) &=& \sum_{i=1}^{n} \left[ y_i (-\log(1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})})) + \right. \nonumber \\
-&& \quad \left. (1 - y_i) \left( -(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}) - \log(1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}) \right) \right]
+\begin{array}{l}
+\log L(\beta_0, \beta_1, \ldots, \beta_n) = \sum_{i=1}^{n} \left[ y_i (-\log(1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})})) + \right. \nonumber \\
+ \quad \left. (1 - y_i) \left( -(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}) - \log(1 + e^{-(\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})}) \right) \right]
+\end{array}
 \end{eqnarray*}
 
 Simplificando aún más, obtenemos:
 
-\begin{eqnarray*}
-\log L(\beta_0, \beta_1, \ldots, \beta_n) &=& \sum_{i=1}^{n} \left[ y_i (\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in})\right.\\
-& -&\left. \log(1 + e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}) \right]
-\end{eqnarray*}
-
+\begin{eqnarray}
+\begin{array}{r}
+\log L(\beta_0, \beta_1, \ldots, \beta_n) =\sum_{i=1}^{n} \left[ y_i (\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}) -\log(1 + e^{\beta_0 + \beta_1 X_{i1} + \beta_2 X_{i2} + \ldots + \beta_n X_{in}}) \right]
+\end{array}
+\end{eqnarray}
+\subsection{Notaci\'on Matricial}
 
 Para simplificar aún más la notación, podemos utilizar notación matricial. Definimos la matriz $\mathbf{X}$ de tamaño $n \times (k+1)$ y el vector de coeficientes $\boldsymbol{\beta}$ de tamaño $(k+1) \times 1$ como sigue:
 
