@@ -1971,10 +1971,10 @@ Una vez que se han estimado los coeficientes del modelo de regresi\'on log\'isti
 La curva ROC (Receiver Operating Characteristic) es una herramienta gr\'afica utilizada para evaluar el rendimiento de un modelo de clasificaci\'on binaria. El \'area bajo la curva (AUC) mide la capacidad del modelo para distinguir entre las clases. 
 La curva ROC (Receiver Operating Characteristic) es una representaci\'on gr\'afica de la sensibilidad (verdaderos positivos) frente a 1 - especificidad (falsos positivos). El \'area bajo la curva (AUC) mide la capacidad del modelo para distinguir entre las clases.
 
-\begin{eqnarray*}
+\begin{eqnarray}
 \text{Sensibilidad} &=& \frac{\text{TP}}{\text{TP} + \text{FN}} \\
 \text{Especificidad} &=& \frac{\text{TN}}{\text{TN} + \text{FP}}
-\end{eqnarray*}
+\end{eqnarray}
 
 
 
@@ -2007,18 +2007,18 @@ La matriz de confusi\'on es una tabla que muestra el rendimiento del modelo comp
 %---------------------------------------------------------
 \subsection{Precisi\'on, Recall y F1-Score}
 %---------------------------------------------------------
-\begin{eqnarray*}
+\begin{eqnarray}
 \text{Precisi\'on} &=& \frac{\text{TP}}{\text{TP} + \text{FP}} \\
 \text{Recall} &=& \frac{\text{TP}}{\text{TP} + \text{FN}} \\
 \text{F1-Score} &=& 2 \cdot \frac{\text{Precisi\'on} \cdot \text{Recall}}{\text{Precisi\'on} + \text{Recall}}
-\end{eqnarray*}
+\end{eqnarray}
 %---------------------------------------------------------
 \subsection{Log-Loss}
 %---------------------------------------------------------
 La p\'erdida logar\'itmica (Log-Loss) mide la precisi\'on de las probabilidades predichas. La f\'ormula es:
-\begin{eqnarray*}
+\begin{eqnarray}
 \text{Log-Loss} = -\frac{1}{n} \sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right]
-\end{eqnarray*}
+\end{eqnarray}
 donde $y_i$ son los valores reales y $p_i$ son las probabilidades predichas.
 %---------------------------------------------------------
 \subsection{K-Fold Cross-Validation}
@@ -2028,9 +2028,9 @@ La validaci\'on cruzada es una t\'ecnica para evaluar la capacidad de generaliza
 
 En K-Fold Cross-Validation, los datos se dividen en K subconjuntos. El modelo se entrena K veces, cada vez utilizando K-1 subconjuntos para el entrenamiento y el subconjunto restante para la validaci\'on.
 
-\begin{eqnarray*}
+\begin{eqnarray}
 \text{Error Medio} = \frac{1}{K} \sum_{k=1}^{K} \text{Error}_k
-\end{eqnarray*}
+\end{eqnarray}
 %---------------------------------------------------------
 \subsection{Leave-One-Out Cross-Validation (LOOCV)}
 %---------------------------------------------------------
@@ -2044,7 +2044,7 @@ El ajuste adecuado del modelo es crucial para evitar el sobreajuste (\textit{ove
 
 \begin{itemize}
 
-\item Sobreajuste: El sobreajuste ocurre cuando un modelo se ajusta demasiado bien a los datos de entrenamiento, capturando no solo los patrones reales, sino también el ruido y las peculiaridades del conjunto de datos. Esto resulta en un modelo que funciona extremadamente bien en los datos de entrenamiento, pero que falla al ser evaluado con datos nuevos. Los síntomas típicos del sobreajuste incluyen una \textbf{alta precisión en el conjunto de entrenamiento} y \textbf{una baja precisión en el conjunto de validación o prueba}.
+\item \textbf{Sobreajuste}: El sobreajuste ocurre cuando un modelo se ajusta demasiado bien a los datos de entrenamiento, capturando no solo los patrones reales, sino también el ruido y las peculiaridades del conjunto de datos. Esto resulta en un modelo que funciona extremadamente bien en los datos de entrenamiento, pero que falla al ser evaluado con datos nuevos. Los síntomas típicos del sobreajuste incluyen una \textbf{alta precisión en el conjunto de entrenamiento} y \textbf{una baja precisión en el conjunto de validación o prueba}.
 
 Algunos factores que pueden llevar al sobreajuste incluyen:
 \begin{itemize} 
@@ -2053,7 +2053,7 @@ Algunos factores que pueden llevar al sobreajuste incluyen:
  \item[c) ] \textbf{Falta de regularización}: Si no se utiliza ninguna técnica de regularización, el modelo puede ajustarse de manera demasiado precisa a los datos. 
  \end{itemize}
 
-\item Subajuste:  El subajuste ocurre cuando el modelo no es capaz de capturar los patrones subyacentes de los datos, generalmente porque es demasiado simple o porque el entrenamiento no ha sido suficiente. En este caso, tanto en el conjunto de entrenamiento como en el de validación se observan errores elevados, lo que indica que el modelo no está aprendiendo correctamente.
+\item \textbf{Subajuste}:  El subajuste ocurre cuando el modelo no es capaz de capturar los patrones subyacentes de los datos, generalmente porque es demasiado simple o porque el entrenamiento no ha sido suficiente. En este caso, tanto en el conjunto de entrenamiento como en el de validación se observan errores elevados, lo que indica que el modelo no está aprendiendo correctamente.
 
 Las causas comunes del subajuste incluyen: 
 \begin{itemize}
@@ -2066,26 +2066,26 @@ Existen varias estrategias para prevenir el sobreajuste, incluyendo la selecció
 
 \begin{itemize}
 
-\item Regularizaci\'on) La regularización es una técnica que añade un término de penalización a la función de costo, con el fin de reducir la complejidad del modelo. Las dos formas más comunes de regularización son:
+\item \textbf{Regularizaci\'on} La regularización es una técnica que añade un término de penalización a la función de costo, con el fin de reducir la complejidad del modelo. Las dos formas más comunes de regularización son:
 
 \begin{itemize} 
-\item[a) ] \textbf{Regresión Lasso (L1)}: Esta técnica añade una penalización proporcional al valor absoluto de los coeficientes del modelo. La regularización Lasso tiende a reducir algunos coeficientes a cero, lo que lleva a la selección automática de características. \begin{eqnarray*} 
+\item[a) ] \textbf{Regresión Lasso (L1)}: Esta técnica añade una penalización proporcional al valor absoluto de los coeficientes del modelo. La regularización Lasso tiende a reducir algunos coeficientes a cero, lo que lleva a la selección automática de características. \begin{eqnarray} 
 \text{Función de Costo L1} = \sum_{i=1}^{n} (y_i - \hat{y}i)^2 + \lambda \sum{j=1}^{p} |\beta_j| 
-\end{eqnarray*} 
+\end{eqnarray} 
 
 \item[b) ] \textbf{Regresión Ridge (L2)}: Esta técnica penaliza el cuadrado de los coeficientes del modelo. A diferencia de Lasso, Ridge no fuerza los coeficientes a ser exactamente cero, sino que los reduce. 
-\begin{eqnarray*} 
+\begin{eqnarray} 
 \text{Función de Costo L2} = \sum_{i=1}^{n} (y_i - \hat{y}i)^2 + \lambda \sum{j=1}^{p} \beta_j^2 
-\end{eqnarray*} 
+\end{eqnarray} 
 \end{itemize}
 
-\item Elastic Net: Combina las penalizaciones L1 y L2, con un término de penalización ajustable para controlar la importancia de cada uno. 
+\item \textbf{Elastic Net}: Combina las penalizaciones L1 y L2, con un término de penalización ajustable para controlar la importancia de cada uno. 
 
-\item Validación Cruzada: Otra técnica importante para prevenir el sobreajuste es la validación cruzada, que ayuda a estimar el rendimiento del modelo en datos no observados. El método más común es la validación cruzada $K-fold$, donde los datos se dividen en $K$ subconjuntos, y el modelo se entrena $K$ veces, utilizando $K-1$ subconjuntos para el entrenamiento y el restante para la validación.
+\item \textbf{Validación Cruzada}: Otra técnica importante para prevenir el sobreajuste es la validación cruzada, que ayuda a estimar el rendimiento del modelo en datos no observados. El método más común es la validación cruzada $K-fold$, donde los datos se dividen en $K$ subconjuntos, y el modelo se entrena $K$ veces, utilizando $K-1$ subconjuntos para el entrenamiento y el restante para la validación.
 
-\item Aumentar el Tamaño del Conjunto de Datos: Una estrategia efectiva, aunque a menudo difícil de implementar, es aumentar el tamaño del conjunto de datos. Más datos permiten al modelo capturar mejor los patrones subyacentes y generalizar de manera más efectiva, disminuyendo el riesgo de sobreajuste.
+\item \textbf{Aumentar el Tamaño del Conjunto de Datos}: Una estrategia efectiva, aunque a menudo difícil de implementar, es aumentar el tamaño del conjunto de datos. Más datos permiten al modelo capturar mejor los patrones subyacentes y generalizar de manera más efectiva, disminuyendo el riesgo de sobreajuste.
 
-\item Reducción de Características (Feature Selection): Reducir el número de características (variables) irrelevantes o redundantes puede simplificar el modelo y mejorar su capacidad de generalización. Técnicas como la selección de características basada en su importancia o la eliminación de características altamente correlacionadas pueden ayudar a evitar el sobreajuste.
+\item \textbf{Reducción de Características} (Feature Selection): Reducir el número de características (variables) irrelevantes o redundantes puede simplificar el modelo y mejorar su capacidad de generalización. Técnicas como la selección de características basada en su importancia o la eliminación de características altamente correlacionadas pueden ayudar a evitar el sobreajuste.
 \end{itemize}
 
 

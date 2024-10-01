@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  1 OCT 2024 14:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.25)  1 OCT 2024 15:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1735,8 +1735,8 @@ Package rerunfilecheck Info: File `RecuperadoNotasLR.out' has not changed.
 (rerunfilecheck)             Checksum: D749C6D9CCC46B99A4788CDF1C0B3448;58353.
  ) 
 Here is how much of TeX's memory you used:
- 14742 strings out of 474116
- 222839 string characters out of 5743682
+ 14748 strings out of 474116
+ 222929 string characters out of 5743682
  1954187 words of memory out of 5000000
  36353 multiletter control sequences out of 15000+600000
  583087 words of font info for 95 fonts, out of 8000000 for 9000
@@ -1776,10 +1776,10 @@ dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-di
 st/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2024/texmf-dist
 /fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2024/texmf-dist/f
 onts/type1/public/cm-super/sftt1000.pfb>
-Output written on RecuperadoNotasLR.pdf (92 pages, 798405 bytes).
+Output written on RecuperadoNotasLR.pdf (92 pages, 798762 bytes).
 PDF statistics:
- 2340 PDF objects out of 2487 (max. 8388607)
- 2155 compressed objects within 22 object streams
- 549 named destinations out of 1000 (max. 500000)
+ 2347 PDF objects out of 2487 (max. 8388607)
+ 2162 compressed objects within 22 object streams
+ 555 named destinations out of 1000 (max. 500000)
  2321 words of extra memory for PDF output out of 10000 (max. 10000000)
 
