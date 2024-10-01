@@ -1958,7 +1958,7 @@ El m\'etodo de Newton-Raphson actualiza los coeficientes $\boldsymbol{\beta}$ de
 \boldsymbol{\beta}^{(t+1)} = \boldsymbol{\beta}^{(t)} - [\mathbf{H}(\boldsymbol{\beta}^{(t)})]^{-1} \nabla \log L(\boldsymbol{\beta}^{(t)})
 \end{equation}
 
-Iterando este proceso hasta que la diferencia entre $\boldsymbol{\beta}^{(t+1)}$ y $\boldsymbol{\beta}^{(t)}$ sea menor que un umbral predefinido (\ref{Eq.Criterio0}, \ref{Eq.Criterio1}, \ref{Eq.Criterio1.5} y \ref{Eq.Criterio2}), se obtienen los estimadores de m\'axima verosimilitud para los coeficientes de la regresi\'on log\'istica.
+Iterando este proceso hasta que la diferencia entre $\boldsymbol{\beta}^{(t+1)}$ y $\boldsymbol{\beta}^{(t)}$ sea menor que un umbral predefinido (\ref{Eq.Criterio0} y  \ref{Eq.Criterio1}), se obtienen los estimadores de m\'axima verosimilitud para los coeficientes de la regresi\'on log\'istica.
 
 %<>==<><>==<><>==<><>==<><>==<><>==<><>==<><>==<>
 \section{Validaci\'on del Modelo}
@@ -1968,21 +1968,132 @@ Una vez que se han estimado los coeficientes del modelo de regresi\'on log\'isti
 %---------------------------------------------------------
 \subsection{Curva ROC y AUC}
 %---------------------------------------------------------
-La curva ROC (Receiver Operating Characteristic) es una herramienta gr\'afica utilizada para evaluar el rendimiento de un modelo de clasificaci\'on binaria. El \'area bajo la curva (AUC) mide la capacidad del modelo para distinguir entre las clases.
+La curva ROC (Receiver Operating Characteristic) es una herramienta gr\'afica utilizada para evaluar el rendimiento de un modelo de clasificaci\'on binaria. El \'area bajo la curva (AUC) mide la capacidad del modelo para distinguir entre las clases. 
+La curva ROC (Receiver Operating Characteristic) es una representaci\'on gr\'afica de la sensibilidad (verdaderos positivos) frente a 1 - especificidad (falsos positivos). El \'area bajo la curva (AUC) mide la capacidad del modelo para distinguir entre las clases.
+
+\begin{eqnarray*}
+\text{Sensibilidad} &=& \frac{\text{TP}}{\text{TP} + \text{FN}} \\
+\text{Especificidad} &=& \frac{\text{TN}}{\text{TN} + \text{FP}}
+\end{eqnarray*}
+
+
+
 %---------------------------------------------------------
 \subsection{Matriz de Confusi\'on}
 %---------------------------------------------------------
-La matriz de confusi\'on es una tabla que resume el rendimiento de un modelo de clasificaci\'on al comparar las predicciones del modelo con los valores reales. Los t\'erminos en la matriz de confusi\'on incluyen verdaderos positivos, falsos positivos, verdaderos negativos y falsos negativos.
+La matriz de confusi\'on es una tabla que resume el rendimiento de un modelo de clasificaci\'on al comparar las predicciones del modelo con los valores reales. Los t\'erminos en la matriz de confusi\'on incluyen verdaderos positivos, falsos positivos, verdaderos negativos y falsos negativos. 
+La matriz de confusi\'on es una tabla que muestra el rendimiento del modelo comparando las predicciones con los valores reales. Los t\'erminos incluyen:
+\begin{itemize}
+    \item \textbf{Verdaderos Positivos (TP)}: Predicciones correctas de la clase positiva.
+    \item \textbf{Falsos Positivos (FP)}: Predicciones incorrectas de la clase positiva.
+    \item \textbf{Verdaderos Negativos (TN)}: Predicciones correctas de la clase negativa.
+    \item \textbf{Falsos Negativos (FN)}: Predicciones incorrectas de la clase negativa.
+\end{itemize}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+ & \textbf{Predicci\'on Positiva} & \textbf{Predicci\'on Negativa} \\
+\hline
+\textbf{Real Positiva} & TP & FN \\
+\hline
+\textbf{Real Negativa} & FP & TN \\
+\hline
+\end{tabular}
+\caption{Matriz de Confusi\'on}
+\label{tab:confusion_matrix}
+\end{table}
+%---------------------------------------------------------
+\subsection{Precisi\'on, Recall y F1-Score}
+%---------------------------------------------------------
+\begin{eqnarray*}
+\text{Precisi\'on} &=& \frac{\text{TP}}{\text{TP} + \text{FP}} \\
+\text{Recall} &=& \frac{\text{TP}}{\text{TP} + \text{FN}} \\
+\text{F1-Score} &=& 2 \cdot \frac{\text{Precisi\'on} \cdot \text{Recall}}{\text{Precisi\'on} + \text{Recall}}
+\end{eqnarray*}
+%---------------------------------------------------------
+\subsection{Log-Loss}
+%---------------------------------------------------------
+La p\'erdida logar\'itmica (Log-Loss) mide la precisi\'on de las probabilidades predichas. La f\'ormula es:
+\begin{eqnarray*}
+\text{Log-Loss} = -\frac{1}{n} \sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right]
+\end{eqnarray*}
+donde $y_i$ son los valores reales y $p_i$ son las probabilidades predichas.
+%---------------------------------------------------------
+\subsection{K-Fold Cross-Validation}
+%---------------------------------------------------------
+La validaci\'on cruzada es una t\'ecnica para evaluar la capacidad de generalizaci\'on de un modelo. Existen varios tipos de validaci\'on cruzada:
+
+
+En K-Fold Cross-Validation, los datos se dividen en K subconjuntos. El modelo se entrena K veces, cada vez utilizando K-1 subconjuntos para el entrenamiento y el subconjunto restante para la validaci\'on.
+
+\begin{eqnarray*}
+\text{Error Medio} = \frac{1}{K} \sum_{k=1}^{K} \text{Error}_k
+\end{eqnarray*}
+%---------------------------------------------------------
+\subsection{Leave-One-Out Cross-Validation (LOOCV)}
+%---------------------------------------------------------
+En LOOCV, cada observaci\'on se usa una vez como conjunto de validaci\'on y las restantes como conjunto de entrenamiento. Este m\'etodo es computacionalmente costoso pero \'util para conjuntos de datos peque\~nos.
+
+%<>==><==<>==><==<>==><==<>==><==<>==><==<>==><==
+\section{Ajuste y Sobreajuste del Modelo}
+%<>==><==<>==><==<>==><==<>==><==<>==><==<>==><==
+
+El ajuste adecuado del modelo es crucial para evitar el sobreajuste (\textit{overfitting}) y el subajuste (\textit{underfitting)}. Ambos problemas impactan negativamente en la capacidad del modelo para generalizar a datos nuevos.
+
+\begin{itemize}
+
+\item Sobreajuste: El sobreajuste ocurre cuando un modelo se ajusta demasiado bien a los datos de entrenamiento, capturando no solo los patrones reales, sino también el ruido y las peculiaridades del conjunto de datos. Esto resulta en un modelo que funciona extremadamente bien en los datos de entrenamiento, pero que falla al ser evaluado con datos nuevos. Los síntomas típicos del sobreajuste incluyen una \textbf{alta precisión en el conjunto de entrenamiento} y \textbf{una baja precisión en el conjunto de validación o prueba}.
+
+Algunos factores que pueden llevar al sobreajuste incluyen:
+\begin{itemize} 
+\item[a) ] \textbf{Modelos excesivamente complejos}: Un modelo con demasiados parámetros o características puede adaptarse demasiado a los datos. 
+\item[b) ] \textbf{Conjuntos de datos pequeños}: Cuando los datos de entrenamiento no son suficientes para capturar la variedad de situaciones posibles.
+ \item[c) ] \textbf{Falta de regularización}: Si no se utiliza ninguna técnica de regularización, el modelo puede ajustarse de manera demasiado precisa a los datos. 
+ \end{itemize}
+
+\item Subajuste:  El subajuste ocurre cuando el modelo no es capaz de capturar los patrones subyacentes de los datos, generalmente porque es demasiado simple o porque el entrenamiento no ha sido suficiente. En este caso, tanto en el conjunto de entrenamiento como en el de validación se observan errores elevados, lo que indica que el modelo no está aprendiendo correctamente.
+
+Las causas comunes del subajuste incluyen: 
+\begin{itemize}
+\item[a) ] \textbf{Modelos demasiado simples}: Modelos con pocos parámetros o de baja complejidad, como la regresión lineal para problemas no lineales. 
+\item[b) ] \textbf{Insuficiente entrenamiento}: El modelo no ha sido entrenado adecuadamente, lo que puede requerir más iteraciones de entrenamiento o ajustes en los hiperparámetros. 
+\item[c) ] \textbf{Datos insuficientemente procesados}: El preprocesamiento incorrecto o insuficiente de los datos puede impedir que el modelo identifique patrones importantes. \end{itemize}
+\end{itemize}
+
+Existen varias estrategias para prevenir el sobreajuste, incluyendo la selección de un modelo adecuado, el uso de más datos y la aplicación de técnicas de regularización. A continuación, se describen algunas de las técnicas más comunes:
+
+\begin{itemize}
+
+\item Regularizaci\'on) La regularización es una técnica que añade un término de penalización a la función de costo, con el fin de reducir la complejidad del modelo. Las dos formas más comunes de regularización son:
+
+\begin{itemize} 
+\item[a) ] \textbf{Regresión Lasso (L1)}: Esta técnica añade una penalización proporcional al valor absoluto de los coeficientes del modelo. La regularización Lasso tiende a reducir algunos coeficientes a cero, lo que lleva a la selección automática de características. \begin{eqnarray*} 
+\text{Función de Costo L1} = \sum_{i=1}^{n} (y_i - \hat{y}i)^2 + \lambda \sum{j=1}^{p} |\beta_j| 
+\end{eqnarray*} 
+
+\item[b) ] \textbf{Regresión Ridge (L2)}: Esta técnica penaliza el cuadrado de los coeficientes del modelo. A diferencia de Lasso, Ridge no fuerza los coeficientes a ser exactamente cero, sino que los reduce. 
+\begin{eqnarray*} 
+\text{Función de Costo L2} = \sum_{i=1}^{n} (y_i - \hat{y}i)^2 + \lambda \sum{j=1}^{p} \beta_j^2 
+\end{eqnarray*} 
+\end{itemize}
+
+\item Elastic Net: Combina las penalizaciones L1 y L2, con un término de penalización ajustable para controlar la importancia de cada uno. 
+
+\item Validación Cruzada: Otra técnica importante para prevenir el sobreajuste es la validación cruzada, que ayuda a estimar el rendimiento del modelo en datos no observados. El método más común es la validación cruzada $K-fold$, donde los datos se dividen en $K$ subconjuntos, y el modelo se entrena $K$ veces, utilizando $K-1$ subconjuntos para el entrenamiento y el restante para la validación.
+
+\item Aumentar el Tamaño del Conjunto de Datos: Una estrategia efectiva, aunque a menudo difícil de implementar, es aumentar el tamaño del conjunto de datos. Más datos permiten al modelo capturar mejor los patrones subyacentes y generalizar de manera más efectiva, disminuyendo el riesgo de sobreajuste.
+
+\item Reducción de Características (Feature Selection): Reducir el número de características (variables) irrelevantes o redundantes puede simplificar el modelo y mejorar su capacidad de generalización. Técnicas como la selección de características basada en su importancia o la eliminación de características altamente correlacionadas pueden ayudar a evitar el sobreajuste.
+\end{itemize}
 
 
 
 
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
-\chapter{Elementos de Probabilidad}
-%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
-%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
-
 \chapter{Preparaci\'on de Datos y Selecci\'on de Variables}
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 
 
 \section{Introducci\'on}
@@ -2147,146 +2258,9 @@ summary(model)
 \end{verbatim}
 
 
-
-\chapter{Evaluaci\'on del Modelo y Validaci\'on Cruzada}
-
-
-\section{Introducci\'on}
-
-Evaluar la calidad y el rendimiento de un modelo de regresi\'on log\'istica es crucial para asegurar que las predicciones sean precisas y \'utiles. Este cap\'itulo se centra en las t\'ecnicas y m\'etricas utilizadas para evaluar modelos de clasificaci\'on binaria, as\'i como en la validaci\'on cruzada, una t\'ecnica para evaluar la generalizaci\'on del modelo.
-
-\section{M\'etricas de Evaluaci\'on del Modelo}
-
-Las m\'etricas de evaluaci\'on permiten cuantificar la precisi\'on y el rendimiento de un modelo. Algunas de las m\'etricas m\'as comunes incluyen:
-
-\subsection{Curva ROC y AUC}
-
-La curva ROC (Receiver Operating Characteristic) es una representaci\'on gr\'afica de la sensibilidad (verdaderos positivos) frente a 1 - especificidad (falsos positivos). El \'area bajo la curva (AUC) mide la capacidad del modelo para distinguir entre las clases.
-
-\begin{eqnarray*}
-\text{Sensibilidad} &=& \frac{\text{TP}}{\text{TP} + \text{FN}} \\
-\text{Especificidad} &=& \frac{\text{TN}}{\text{TN} + \text{FP}}
-\end{eqnarray*}
-
-\subsection{Matriz de Confusi\'on}
-
-La matriz de confusi\'on es una tabla que muestra el rendimiento del modelo comparando las predicciones con los valores reales. Los t\'erminos incluyen:
-\begin{itemize}
-    \item \textbf{Verdaderos Positivos (TP)}: Predicciones correctas de la clase positiva.
-    \item \textbf{Falsos Positivos (FP)}: Predicciones incorrectas de la clase positiva.
-    \item \textbf{Verdaderos Negativos (TN)}: Predicciones correctas de la clase negativa.
-    \item \textbf{Falsos Negativos (FN)}: Predicciones incorrectas de la clase negativa.
-\end{itemize}
-
-\begin{table}[h]
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
- & \textbf{Predicci\'on Positiva} & \textbf{Predicci\'on Negativa} \\
-\hline
-\textbf{Real Positiva} & TP & FN \\
-\hline
-\textbf{Real Negativa} & FP & TN \\
-\hline
-\end{tabular}
-\caption{Matriz de Confusi\'on}
-\label{tab:confusion_matrix}
-\end{table}
-
-\subsection{Precisi\'on, Recall y F1-Score}
-
-\begin{eqnarray*}
-\text{Precisi\'on} &=& \frac{\text{TP}}{\text{TP} + \text{FP}} \\
-\text{Recall} &=& \frac{\text{TP}}{\text{TP} + \text{FN}} \\
-\text{F1-Score} &=& 2 \cdot \frac{\text{Precisi\'on} \cdot \text{Recall}}{\text{Precisi\'on} + \text{Recall}}
-\end{eqnarray*}
-
-\subsection{Log-Loss}
-
-La p\'erdida logar\'itmica (Log-Loss) mide la precisi\'on de las probabilidades predichas. La f\'ormula es:
-\begin{eqnarray*}
-\text{Log-Loss} = -\frac{1}{n} \sum_{i=1}^{n} \left[ y_i \log(p_i) + (1 - y_i) \log(1 - p_i) \right]
-\end{eqnarray*}
-donde $y_i$ son los valores reales y $p_i$ son las probabilidades predichas.
-
-\section{Validaci\'on Cruzada}
-
-La validaci\'on cruzada es una t\'ecnica para evaluar la capacidad de generalizaci\'on de un modelo. Existen varios tipos de validaci\'on cruzada:
-
-\subsection{K-Fold Cross-Validation}
-
-En K-Fold Cross-Validation, los datos se dividen en K subconjuntos. El modelo se entrena K veces, cada vez utilizando K-1 subconjuntos para el entrenamiento y el subconjunto restante para la validaci\'on.
-
-\begin{eqnarray*}
-\text{Error Medio} = \frac{1}{K} \sum_{k=1}^{K} \text{Error}_k
-\end{eqnarray*}
-
-\subsection{Leave-One-Out Cross-Validation (LOOCV)}
-
-En LOOCV, cada observaci\'on se usa una vez como conjunto de validaci\'on y las restantes como conjunto de entrenamiento. Este m\'etodo es computacionalmente costoso pero \'util para conjuntos de datos peque\~nos.
-
-\section{Ajuste y Sobreajuste del Modelo}
-
-El ajuste adecuado del modelo es crucial para evitar el sobreajuste (overfitting) y el subajuste (underfitting).
-
-\subsection{Sobreajuste}
-
-El sobreajuste ocurre cuando un modelo se ajusta demasiado bien a los datos de entrenamiento, capturando ruido y patrones irrelevantes. Los s\'intomas incluyen una alta precisi\'on en el entrenamiento y baja precisi\'on en la validaci\'on.
-
-\subsection{Subajuste}
-
-El subajuste ocurre cuando un modelo no captura los patrones subyacentes de los datos. Los s\'intomas incluyen baja precisi\'on tanto en el entrenamiento como en la validaci\'on.
-
-\subsection{Regularizaci\'on}
-
-La regularizaci\'on es una t\'ecnica para prevenir el sobreajuste a\~nadiendo un t\'ermino de penalizaci\'on a la funci\'on de costo. Las t\'ecnicas comunes incluyen:
-\begin{itemize}
-    \item \textbf{Regresi\'on Lasso (L1)}
-    \item \textbf{Regresi\'on Ridge (L2)}
-\end{itemize}
-
-\section{Implementaci\'on en R}
-
-\subsection{Evaluaci\'on del Modelo}
-
-\begin{verbatim}
-# Cargar el paquete necesario
-library(caret)
-
-# Dividir los datos en conjuntos de entrenamiento y prueba
-set.seed(123)
-trainIndex <- createDataPartition(data$var1, p = .8, 
-                                  list = FALSE, 
-                                  times = 1)
-dataTrain <- data[trainIndex,]
-dataTest <- data[-trainIndex,]
-
-# Entrenar el modelo de regresi\'on log\'istica
-model <- train(var1 ~ ., data = dataTrain, method = "glm", family = "binomial")
-
-# Predicciones en el conjunto de prueba
-predictions <- predict(model, dataTest)
-
-# Matriz de confusi\'on
-confusionMatrix(predictions, dataTest$var1)
-\end{verbatim}
-
-\subsection{Validaci\'on Cruzada}
-
-\begin{verbatim}
-# K-Fold Cross-Validation
-control <- trainControl(method = "cv", number = 10)
-model_cv <- train(var1 ~ ., data = dataTrain, method = "glm", 
-                  family = "binomial", trControl = control)
-
-# Evaluaci\'on del modelo con validaci\'on cruzada
-print(model_cv)
-\end{verbatim}
-
-
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Diagn\'ostico del Modelo y Ajuste de Par\'ametros}
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 
 \section{Introducci\'on}
 
@@ -2390,9 +2364,9 @@ print(model_tune)
 \end{verbatim}
 
 
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Interpretaci\'on de los Resultados}
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \section{Introducci\'on}
 
 Interpretar correctamente los resultados de un modelo de regresi\'on log\'istica es esencial para tomar decisiones informadas. Este cap\'itulo se centra en la interpretaci\'on de los coeficientes del modelo, las odds ratios, los intervalos de confianza y la significancia estad\'istica.
@@ -2494,9 +2468,9 @@ summary(model)
 \end{verbatim}
 
 
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Regresi\'on Log\'istica Multinomial y An\'alisis de Supervivencia}
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \section{Introducci\'on}
 
 La regresi\'on log\'istica multinomial y el an\'alisis de supervivencia son extensiones de la regresi\'on log\'istica binaria. Este cap\'itulo se enfoca en las t\'ecnicas y aplicaciones de estos m\'etodos avanzados.
@@ -2570,8 +2544,10 @@ summary(model_cox)
 \end{verbatim}
 
 
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Implementaci\'on de Regresi\'on Log\'istica en Datos Reales}
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
+
 \section{Introducci\'on}
 
 Implementar un modelo de regresi\'on log\'istica en datos reales implica varias etapas, desde la limpieza de datos hasta la evaluaci\'on y validaci\'on del modelo. Este cap\'itulo presenta un ejemplo pr\'actico de la implementaci\'on de un modelo de regresi\'on log\'istica utilizando un conjunto de datos real.
@@ -2671,8 +2647,9 @@ exp(coef(model))
 \end{verbatim}
 
 
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Resumen y Proyecto Final}
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \section{Resumen de Conceptos Clave}
 
 En este curso, hemos cubierto una variedad de conceptos y t\'ecnicas esenciales para la regresi\'on log\'istica. Los conceptos clave incluyen:
@@ -2941,9 +2918,9 @@ En este caso, la vida media residual es constante e igual a $\frac{1}{\lambda}$,
 La funci\'on de supervivencia y la funci\'on de riesgo son herramientas fundamentales en el an\'alisis de supervivencia. Entender su definici\'on, propiedades, y la relaci\'on entre ellas es esencial para modelar y analizar correctamente los datos de tiempo hasta evento. Las funciones de riesgo acumulada y vida media residual proporcionan informaci\'on adicional sobre la din\'amica del riesgo a lo largo del tiempo.
 
 
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Estimador de Kaplan-Meier}
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \section{Introducci\'on}
 El estimador de Kaplan-Meier, tambi\'en conocido como la funci\'on de supervivencia emp\'irica, es una herramienta no param\'etrica para estimar la funci\'on de supervivencia a partir de datos censurados. Este m\'etodo es especialmente \'util cuando los tiempos de evento est\'an censurados a la derecha.
 
@@ -3068,9 +3045,9 @@ El estimador de Kaplan-Meier proporciona una estimaci\'on emp\'irica de la funci
 El estimador de Kaplan-Meier es una herramienta poderosa para estimar la funci\'on de supervivencia en presencia de datos censurados. Su c\'alculo es relativamente sencillo y proporciona una estimaci\'on no param\'etrica robusta de la supervivencia a lo largo del tiempo. La interpretaci\'on adecuada de este estimador y su intervalo de confianza asociado es fundamental para el an\'alisis de datos de supervivencia.
 
 
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Comparaci\'on de Curvas de Supervivencia}
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \section{Introducci\'on}
 Comparar curvas de supervivencia es crucial para determinar si existen diferencias significativas en las tasas de supervivencia entre diferentes grupos. Las pruebas de hip\'otesis, como el test de log-rank, son herramientas comunes para esta comparaci\'on.
 
@@ -3149,9 +3126,9 @@ Adem\'as del test de log-rank, existen otras pruebas para comparar curvas de sup
 El test de log-rank es una herramienta esencial para comparar curvas de supervivencia entre diferentes grupos. Su c\'alculo se basa en la diferencia entre los eventos observados y esperados en cada grupo, y su interpretaci\'on puede ayudar a identificar diferencias significativas en la supervivencia.
 
 
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Modelos de Riesgos Proporcionales de Cox}
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \section{Introducci\'on}
 El modelo de riesgos proporcionales de Cox, propuesto por David Cox en 1972, es una de las herramientas m\'as utilizadas en el an\'alisis de supervivencia. Este modelo permite evaluar el efecto de varias covariables en el tiempo hasta el evento, sin asumir una forma espec\'ifica para la distribuci\'on de los tiempos de supervivencia.
 
@@ -3228,9 +3205,9 @@ La funci\'on de riesgo ajustada se expresa como:
 El modelo de riesgos proporcionales de Cox es una herramienta poderosa para analizar datos de supervivencia con m\'ultiples covariables. Su flexibilidad y la falta de suposiciones fuertes sobre la distribuci\'on de los tiempos de supervivencia lo hacen ampliamente aplicable en diversas disciplinas.
 
 
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Diagn\'ostico y Validaci\'on de Modelos de Cox}
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \section{Introducci\'on}
 Una vez ajustado un modelo de Cox, es crucial realizar diagn\'osticos y validaciones para asegurar que el modelo es apropiado y que los supuestos subyacentes son v\'alidos. Esto incluye la verificaci\'on del supuesto de proporcionalidad de riesgos y la evaluaci\'on del ajuste del modelo.
 
@@ -3298,8 +3275,10 @@ Observaciones con residuos de deviance grandes en valor absoluto (como la observ
 El diagn\'ostico y la validaci\'on son pasos cr\'iticos en el an\'slisis de modelos de Cox. Evaluar el supuesto de proporcionalidad de riesgos, la bondad de ajuste y la influencia de observaciones individuales asegura que las inferencias y conclusiones derivadas del modelo sean v\'slidas y fiables.
 
 
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Modelos Acelerados de Fallos}
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
+
 \section{Introducci\'on}
 Los modelos acelerados de fallos (AFT) son una alternativa a los modelos de riesgos proporcionales de Cox. En lugar de asumir que las covariables afectan la tasa de riesgo, los modelos AFT asumen que las covariables multiplican el tiempo de supervivencia por una constante.
 
@@ -3390,8 +3369,9 @@ S(t \mid X) = \exp\left(-\left(\frac{t \exp(-0.02 \cdot \text{edad} + 0.5 \cdot 
 Los modelos AFT proporcionan una alternativa flexible a los modelos de riesgos proporcionales de Cox. Su enfoque en la multiplicaci\'on del tiempo de supervivencia por una constante permite una interpretaci\'on intuitiva y aplicaciones en diversas \'areas.
 
 
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{An\'alisis Multivariado de Supervivencia}
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 
 \section{Introducci\'on}
 El an\'alisis multivariado de supervivencia extiende los modelos de supervivencia para incluir m\'ultiples covariables, permitiendo evaluar su efecto simult\'aneo sobre el tiempo hasta el evento. Los modelos de Cox y AFT son com\'unmente utilizados en este contexto.
@@ -3463,9 +3443,9 @@ La funci\'on de riesgo ajustada se expresa como:
 El an\'alisis multivariado de supervivencia permite evaluar el efecto conjunto de m\'ultiples covariables sobre el tiempo hasta el evento. La inclusi\'on de interacciones y efectos no lineales, junto con la selecci\'on adecuada de variables, mejora la precisi\'on y la interpretabilidad de los modelos de supervivencia.
 
 
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Supervivencia en Datos Complicados}
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \section{Introducci\'on}
 El an\'alisis de supervivencia en datos complicados se refiere a la evaluaci\'on de datos de supervivencia que presentan desaf\'ios adicionales, como la censura por intervalo, datos truncados y datos con m\'ultiples tipos de eventos. Estos escenarios requieren m\'etodos avanzados para un an\'alisis adecuado.
 
@@ -3525,9 +3505,9 @@ S(t \mid X) = \exp\left(-\left(\frac{t \exp(0.04 \cdot \text{edad} - 0.8 \cdot \
 El an\'alisis de supervivencia en datos complicados requiere m\'etodos avanzados para manejar censura por intervalo, datos truncados y competing risks. La aplicaci\'on de modelos adecuados y m\'etodos de imputaci\'on asegura un an\'alisis preciso y completo de estos datos complejos.
 
 
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Proyecto Final y Revisi\'on}
-
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \section{Introducci\'on}
 El proyecto final proporciona una oportunidad para aplicar los conceptos y t\'ecnicas aprendidas en el curso de an\'alisis de supervivencia. Este cap\'itulo incluye una gu\'ia para desarrollar un proyecto de an\'alisis de supervivencia y una revisi\'on de los conceptos clave.
 
