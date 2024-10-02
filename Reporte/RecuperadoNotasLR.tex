@@ -11,10 +11,10 @@
 \usepackage{graphicx} % Incluir gráficos
 \usepackage{hyperref}
 
-\setcounter{secnumdepth}{3}
-\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
 
-\title{Curso Elemental de Regresi\'on Log\'istica y An\'alisis de Supervivencia}
+\title{Notas Elementales de Regresi\'on Log\'istica y An\'alisis de Supervivencia}
 \author{Carlos E. Mart\'inez-Rodr\'iguez}
 \date{Julio 2024}
 
@@ -97,6 +97,12 @@
 \maketitle
 
 \tableofcontents
+
+%==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
+\part{PRIMERA PARTE: REGRESI\'ON LOG\'ISTICA}
+%==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
+
+
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Introducci\'on}
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
@@ -2088,31 +2094,20 @@ Existen varias estrategias para prevenir el sobreajuste, incluyendo la selecció
 \item \textbf{Reducción de Características} (Feature Selection): Reducir el número de características (variables) irrelevantes o redundantes puede simplificar el modelo y mejorar su capacidad de generalización. Técnicas como la selección de características basada en su importancia o la eliminación de características altamente correlacionadas pueden ayudar a evitar el sobreajuste.
 \end{itemize}
 
-
-
-
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Preparaci\'on de Datos y Selecci\'on de Variables}
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 
-
 \section{Introducci\'on}
 
 La preparaci\'on de datos y la selecci\'on de variables son pasos cruciales en el proceso de modelado estad\'istico. Un modelo bien preparado y con las variables adecuadas puede mejorar significativamente la precisi\'on y la interpretabilidad del modelo. Este cap\'itulo proporciona una revisi\'on detallada de las t\'ecnicas de limpieza de datos, tratamiento de datos faltantes, codificaci\'on de variables categ\'oricas y selecci\'on de variables.
-
+%<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
 \section{Importancia de la Preparaci\'on de Datos}
+%<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
 
 La calidad de los datos es fundamental para el \'exito de cualquier an\'alisis estad\'istico. Los datos sin limpiar pueden llevar a modelos inexactos y conclusiones err\'oneas. La preparaci\'on de datos incluye varias etapas:
 \begin{itemize}
-    \item Limpieza de datos
-    \item Tratamiento de datos faltantes
-    \item Codificaci\'on de variables categ\'oricas
-    \item Selecci\'on y transformaci\'on de variables
-\end{itemize}
-
-\section{Limpieza de Datos}
-
-La limpieza de datos es el proceso de detectar y corregir (o eliminar) los datos incorrectos, incompletos o irrelevantes. Este proceso incluye:
+    \item Limpieza de datos: es el proceso de detectar y corregir (o eliminar) los datos incorrectos, incompletos o irrelevantes. Este proceso incluye:
 \begin{itemize}
     \item Eliminaci\'on de duplicados
     \item Correcci\'on de errores tipogr\'aficos
@@ -2120,18 +2115,10 @@ La limpieza de datos es el proceso de detectar y corregir (o eliminar) los datos
     \item Tratamiento de valores extremos (outliers)
 \end{itemize}
 
-\section{Tratamiento de Datos Faltantes}
-
-Los datos faltantes son un problema com\'un en los conjuntos de datos y pueden afectar la calidad de los modelos. Hay varias estrategias para manejar los datos faltantes:
+    \item Tratamiento de datos faltantes: Los datos faltantes son un problema com\'un en los conjuntos de datos y pueden afectar la calidad de los modelos. Hay varias estrategias para manejar los datos faltantes:
 \begin{itemize}
     \item \textbf{Eliminaci\'on de Datos Faltantes}: Se eliminan las filas o columnas con datos faltantes.
-    \item \textbf{Imputaci\'on}: Se reemplazan los valores faltantes con estimaciones, como la media, la mediana o la moda.
-    \item \textbf{Modelos Predictivos}: Se utilizan modelos predictivos para estimar los valores faltantes.
-\end{itemize}
-
-\subsection{Imputaci\'on de la Media}
-
-Una t\'ecnica com\'un es reemplazar los valores faltantes con la media de la variable. Esto se puede hacer de la siguiente manera:
+    \item \textbf{Imputaci\'on}: Se reemplazan los valores faltantes con estimaciones, como la media, la mediana o la moda. Una t\'ecnica com\'un es reemplazar los valores faltantes con la media de la variable. Esto se puede hacer de la siguiente manera:
 \begin{eqnarray*}
 x_i = \begin{cases} 
       x_i & \text{si } x_i \text{ no es faltante} \\
@@ -2140,234 +2127,121 @@ x_i = \begin{cases}
 \end{eqnarray*}
 donde $\bar{x}$ es la media de la variable.
 
-\section{Codificaci\'on de Variables Categ\'oricas}
+    \item \textbf{Modelos Predictivos}: Se utilizan modelos predictivos para estimar los valores faltantes.
+\end{itemize}
 
-Las variables categ\'oricas deben ser convertidas a un formato num\'erico antes de ser usadas en un modelo de regresi\'on log\'istica. Hay varias t\'ecnicas para codificar variables categ\'oricas:
+    
+    \item Codificaci\'on de variables categ\'oricas: Las variables categ\'oricas deben ser convertidas a un formato num\'erico antes de ser usadas en un modelo de regresi\'on log\'istica. Hay varias t\'ecnicas para codificar variables categ\'oricas:
 
-\subsection{Codificaci\'on One-Hot}
-
-La codificaci\'on one-hot crea una columna binaria para cada categor\'ia. Por ejemplo, si tenemos una variable categ\'orica con tres categor\'ias (A, B, C), se crean tres columnas:
+\begin{itemize}
+\item La codificaci\'on one-hot crea una columna binaria para cada categor\'ia. Por ejemplo, si tenemos una variable categ\'orica con tres categor\'ias (A, B, C), se crean tres columnas:
 \begin{eqnarray*}
 \text{A} &=& [1, 0, 0] \\
 \text{B} &=& [0, 1, 0] \\
 \text{C} &=& [0, 0, 1]
 \end{eqnarray*}
 
-\subsection{Codificaci\'on Ordinal}
-
-La codificaci\'on ordinal asigna un valor entero \'unico a cada categor\'ia, preservando el orden natural de las categor\'ias. Por ejemplo:
+\item La codificaci\'on ordinal asigna un valor entero \'unico a cada categor\'ia, preservando el orden natural de las categor\'ias. Por ejemplo:
 \begin{eqnarray*}
 \text{Bajo} &=& 1 \\
 \text{Medio} &=& 2 \\
 \text{Alto} &=& 3
 \end{eqnarray*}
+\end{itemize}
+    \item Selecci\'on y transformaci\'on de variables: La selecci\'on de variables es el proceso de elegir las variables m\'as relevantes para el modelo. Existen varias t\'ecnicas para la selecci\'on de variables:
 
-\section{Selecci\'on de Variables}
-
-La selecci\'on de variables es el proceso de elegir las variables m\'as relevantes para el modelo. Existen varias t\'ecnicas para la selecci\'on de variables:
-
-\subsection{M\'etodos de Filtrado}
-
-Los m\'etodos de filtrado seleccionan variables basadas en criterios estad\'isticos, como la correlaci\'on o la chi-cuadrado. Algunas t\'ecnicas comunes incluyen:
+\begin{itemize}
+\item M\'etodos de Filtrado: Los m\'etodos de filtrado seleccionan variables basadas en criterios estad\'isticos, como la correlaci\'on o la chi-cuadrado. Algunas t\'ecnicas comunes incluyen:
 \begin{itemize}
     \item \textbf{An\'alisis de Correlaci\'on}: Se seleccionan variables con alta correlaci\'on con la variable dependiente y baja correlaci\'on entre ellas.
     \item \textbf{Pruebas de Chi-cuadrado}: Se utilizan para variables categ\'oricas para determinar la asociaci\'on entre la variable independiente y la variable dependiente.
 \end{itemize}
 
-\subsection{M\'etodos de Wrapper}
-
-Los m\'etodos de wrapper eval\'uan m\'ultiples combinaciones de variables y seleccionan la combinaci\'on que optimiza el rendimiento del modelo. Ejemplos incluyen:
+\item M\'etodos de Wrapper: Los m\'etodos de wrapper eval\'uan m\'ultiples combinaciones de variables y seleccionan la combinaci\'on que optimiza el rendimiento del modelo. Ejemplos incluyen:
 \begin{itemize}
     \item \textbf{Selecci\'on hacia Adelante}: Comienza con un modelo vac\'io y agrega variables una por una, seleccionando la variable que mejora m\'as el modelo en cada paso.
     \item \textbf{Selecci\'on hacia Atr\'as}: Comienza con todas las variables y elimina una por una, removiendo la variable que tiene el menor impacto en el modelo en cada paso.
     \item \textbf{Selecci\'on Paso a Paso}: Combina la selecci\'on hacia adelante y hacia atr\'as, agregando y eliminando variables seg\'un sea necesario.
 \end{itemize}
 
-\subsection{M\'etodos Basados en Modelos}
+\item M\'etodos Basados en Modelos: Los m\'etodos basados en modelos utilizan t\'ecnicas de regularizaci\'on como Lasso y Ridge para seleccionar variables. Estas t\'ecnicas a\~naden un t\'ermino de penalizaci\'on a la funci\'on de costo para evitar el sobreajuste.
 
-Los m\'etodos basados en modelos utilizan t\'ecnicas de regularizaci\'on como Lasso y Ridge para seleccionar variables. Estas t\'ecnicas a\~naden un t\'ermino de penalizaci\'on a la funci\'on de costo para evitar el sobreajuste.
-
-\subsubsection{Regresi\'on Lasso}
-
-La regresi\'on Lasso (Least Absolute Shrinkage and Selection Operator) a\~nade una penalizaci\'on $L_1$ a la funci\'on de costo:
+\begin{itemize}
+\item Regresi\'on Lasso: La regresi\'on Lasso (Least Absolute Shrinkage and Selection Operator) a\~nade una penalizaci\'on $L_1$ a la funci\'on de costo:
 \begin{eqnarray*}
 J(\beta) = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{p} |\beta_j|
 \end{eqnarray*}
 donde $\lambda$ es el par\'ametro de regularizaci\'on que controla la cantidad de penalizaci\'on.
 
-\subsubsection{Regresi\'on Ridge}
-
-La regresi\'on Ridge a\~nade una penalizaci\'on $L_2$ a la funci\'on de costo:
+\item Regresi\'on Ridge: La regresi\'on Ridge a\~nade una penalizaci\'on $L_2$ a la funci\'on de costo:
 \begin{eqnarray*}
 J(\beta) = \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^{p} \beta_j^2
 \end{eqnarray*}
 donde $\lambda$ es el par\'ametro de regularizaci\'on.
-
-\section{Implementaci\'on en R}
-
-\subsection{Limpieza de Datos}
-
-Para ilustrar la limpieza de datos en R, considere el siguiente conjunto de datos:
-\begin{verbatim}
-data <- data.frame(
-  var1 = c(1, 2, 3, NA, 5),
-  var2 = c("A", "B", "A", "B", "A"),
-  var3 = c(10, 15, 10, 20, 25)
-)
-
-# Eliminaci\'on de filas con datos faltantes
-data_clean <- na.omit(data)
-
-# Imputaci\'on de la media
-data$var1[is.na(data$var1)] <- mean(data$var1, na.rm = TRUE)
-\end{verbatim}
-
-\subsection{Codificaci\'on de Variables Categ\'oricas}
-
-Para codificar variables categ\'oricas, utilice la funci\'on `model.matrix`:
-\begin{verbatim}
-data <- data.frame(
-  var1 = c(1, 2, 3, 4, 5),
-  var2 = c("A", "B", "A", "B", "A")
-)
-
-# Codificaci\'on one-hot
-data_onehot <- model.matrix(~ var2 - 1, data = data)
-\end{verbatim}
-
-\subsection{Selecci\'on de Variables}
-
-Para la selecci\'on de variables, utilice el paquete `caret`:
-\begin{verbatim}
-library(caret)
-
-# Dividir los datos en conjuntos de entrenamiento y prueba
-set.seed(123)
-trainIndex <- createDataPartition(data$var1, p = .8, 
-                                  list = FALSE, 
-                                  times = 1)
-dataTrain <- data[trainIndex,]
-dataTest <- data[-trainIndex,]
-
-# Modelo de regresi\'on log\'istica
-model <- train(var1 ~ ., data = dataTrain, method = "glm", family = "binomial")
-
-# Selecci\'on de variables
-model <- step(model, direction = "both")
-summary(model)
-\end{verbatim}
+\end{itemize}
+\end{itemize}
+\end{itemize}
 
 
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Diagn\'ostico del Modelo y Ajuste de Par\'ametros}
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 
-\section{Introducci\'on}
 
 El diagn\'ostico del modelo y el ajuste de par\'ametros son pasos esenciales para mejorar la precisi\'on y la robustez de los modelos de regresi\'on log\'istica. Este cap\'itulo se enfoca en las t\'ecnicas para diagnosticar problemas en los modelos y en m\'etodos para ajustar los par\'ametros de manera \'optima.
 
-\section{Diagn\'ostico del Modelo}
+\begin{itemize}
+\item Diagn\'ostico del Modelo: El diagn\'ostico del modelo implica evaluar el rendimiento del modelo y detectar posibles problemas, como el sobreajuste, la multicolinealidad y la influencia de puntos de datos individuales.
 
-El diagn\'ostico del modelo implica evaluar el rendimiento del modelo y detectar posibles problemas, como el sobreajuste, la multicolinealidad y la influencia de puntos de datos individuales.
-
-\subsection{Residuos}
-
-Los residuos son las diferencias entre los valores observados y los valores predichos por el modelo. El an\'alisis de residuos puede revelar patrones que indican problemas con el modelo.
+\item Residuos: Los residuos son las diferencias entre los valores observados y los valores predichos por el modelo. El an\'alisis de residuos puede revelar patrones que indican problemas con el modelo.
 
 \begin{eqnarray*}
 \text{Residuo}_i = y_i - \hat{y}_i
 \end{eqnarray*}
+\begin{itemize}
 
-\subsubsection{Residuos Estudiantizados}
-
-Los residuos estudiantizados se ajustan por la variabilidad del residuo y se utilizan para detectar outliers.
+\item Residuos Estudiantizados: Los residuos estudiantizados se ajustan por la variabilidad del residuo y se utilizan para detectar outliers.
 
 \begin{eqnarray*}
 r_i = \frac{\text{Residuo}_i}{\hat{\sigma} \sqrt{1 - h_i}}
 \end{eqnarray*}
 donde $h_i$ es el leverage del punto de datos.
+\end{itemize}
 
-\subsection{Influencia}
-
-La influencia mide el impacto de un punto de datos en los coeficientes del modelo. Los puntos con alta influencia pueden distorsionar el modelo.
-
-\subsubsection{Distancia de Cook}
-
-La distancia de Cook es una medida de la influencia de un punto de datos en los coeficientes del modelo.
+\item Influencia: La influencia mide el impacto de un punto de datos en los coeficientes del modelo. Los puntos con alta influencia pueden distorsionar el modelo.
+\begin{itemize}
+\item Distancia de Cook: La distancia de Cook es una medida de la influencia de un punto de datos en los coeficientes del modelo.
 
 \begin{eqnarray*}
 D_i = \frac{r_i^2}{p} \cdot \frac{h_i}{1 - h_i}
 \end{eqnarray*}
 donde $p$ es el n\'umero de par\'ametros en el modelo.
+\end{itemize}
 
-\subsection{Multicolinealidad}
-
-La multicolinealidad ocurre cuando dos o m\'as variables independientes est\'an altamente correlacionadas. Esto puede inflar las varianzas de los coeficientes y hacer que el modelo sea inestable.
-
-\subsubsection{Factor de Inflaci\'on de la Varianza (VIF)}
-
-El VIF mide cu\'anto se inflan las varianzas de los coeficientes debido a la multicolinealidad.
+\item Multicolinealidad: La multicolinealidad ocurre cuando dos o m\'as variables independientes est\'an altamente correlacionadas. Esto puede inflar las varianzas de los coeficientes y hacer que el modelo sea inestable.
+\begin{itemize}
+\item Factor de Inflaci\'on de la Varianza (VIF): El VIF mide cu\'anto se inflan las varianzas de los coeficientes debido a la multicolinealidad.
 
 \begin{eqnarray*}
 \text{VIF}_j = \frac{1}{1 - R_j^2}
 \end{eqnarray*}
 donde $R_j^2$ es el coeficiente de determinaci\'on de la regresi\'on de la variable $j$ contra todas las dem\'as variables.
+\end{itemize}
 
-\section{Ajuste de Par\'ametros}
+\item Ajuste de Par\'ametros: El ajuste de par\'ametros implica seleccionar los valores \'optimos para los hiperpar\'ametros del modelo. Esto puede mejorar el rendimiento y prevenir el sobreajuste.
+\begin{itemize}
+\item Grid Search: El grid search es un m\'etodo exhaustivo para ajustar los par\'ametros. Se define una rejilla de posibles valores de par\'ametros y se eval\'ua el rendimiento del modelo para cada combinaci\'on.
 
-El ajuste de par\'ametros implica seleccionar los valores \'optimos para los hiperpar\'ametros del modelo. Esto puede mejorar el rendimiento y prevenir el sobreajuste.
+\item Random Search: El random search selecciona  aleatoriamente combinaciones de valores de par\'ametros dentro de un rango especificado. Es menos exhaustivo que el grid search, pero puede ser m\'as eficiente.
 
-\subsection{Grid Search}
-
-El grid search es un m\'etodo exhaustivo para ajustar los par\'ametros. Se define una rejilla de posibles valores de par\'ametros y se eval\'ua el rendimiento del modelo para cada combinaci\'on.
-
-\subsection{Random Search}
-
-El random search selecciona aleatoriamente combinaciones de valores de par\'ametros dentro de un rango especificado. Es menos exhaustivo que el grid search, pero puede ser m\'as eficiente.
-
-\subsection{Bayesian Optimization}
-
-La optimizaci\'on bayesiana utiliza modelos probabil\'isticos para seleccionar iterativamente los valores de par\'ametros m\'as prometedores.
-
-\section{Implementaci\'on en R}
-
-\subsection{Diagn\'ostico del Modelo}
-
-\begin{verbatim}
-# Cargar el paquete necesario
-library(car)
-
-# Residuos estudentizados
-dataTrain$resid <- rstudent(model)
-hist(dataTrain$resid, breaks = 20, main = "Residuos Estudentizados")
-
-# Distancia de Cook
-dataTrain$cook <- cooks.distance(model)
-plot(dataTrain$cook, type = "h", main = "Distancia de Cook")
-
-# Factor de Inflaci\'on de la Varianza
-vif_values <- vif(model)
-print(vif_values)
-\end{verbatim}
-
-\subsection{Ajuste de Par\'ametros}
-
-\begin{verbatim}
-# Grid Search con caret
-control <- trainControl(method = "cv", number = 10)
-tune_grid <- expand.grid(.alpha = c(0, 0.5, 1), .lambda = seq(0.01, 0.1, by = 0.01))
-
-model_tune <- train(var1 ~ ., data = dataTrain, method = "glmnet", 
-                    trControl = control, tuneGrid = tune_grid)
-
-print(model_tune)
-\end{verbatim}
+\item Bayesian Optimization: La optimizaci\'on bayesiana utiliza modelos probabil\'isticos para seleccionar iterativamente los valores de par\'ametros m\'as prometedores.
+\end{itemize}
+\end{itemize}
 
 
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Interpretaci\'on de los Resultados}
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
-\section{Introducci\'on}
 
 Interpretar correctamente los resultados de un modelo de regresi\'on log\'istica es esencial para tomar decisiones informadas. Este cap\'itulo se centra en la interpretaci\'on de los coeficientes del modelo, las odds ratios, los intervalos de confianza y la significancia estad\'istica.
 
@@ -2375,7 +2249,7 @@ Interpretar correctamente los resultados de un modelo de regresi\'on log\'istica
 
 Los coeficientes de regresi\'on log\'istica representan la relaci\'on entre las variables independientes y la variable dependiente en t\'erminos de log-odds. 
 
-\subsection{Interpretaci\'on de los Coeficientes}
+%\subsection{Interpretaci\'on de los Coeficientes}
 
 Cada coeficiente $\beta_j$ en el modelo de regresi\'on log\'istica se interpreta como el cambio en el log-odds de la variable dependiente por unidad de cambio en la variable independiente $X_j$.
 
@@ -2383,7 +2257,7 @@ Cada coeficiente $\beta_j$ en el modelo de regresi\'on log\'istica se interpreta
 \log\left(\frac{p}{1-p}\right) = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \ldots + \beta_n X_n
 \end{eqnarray*}
 
-\subsection{Signo de los Coeficientes}
+%\subsection{Signo de los Coeficientes}
 
 \begin{itemize}
     \item \textbf{Coeficiente Positivo}: Un coeficiente positivo indica que un aumento en la variable independiente est\'a asociado con un aumento en el log-odds de la variable dependiente.
@@ -2392,15 +2266,15 @@ Cada coeficiente $\beta_j$ en el modelo de regresi\'on log\'istica se interpreta
 
 \section{Odds Ratios}
 
-Las odds ratios proporcionan una interpretaci\'on m\'as intuitiva de los coeficientes de regresi\'on log\'istica. La odds ratio para una variable independiente $X_j$ se calcula como $e^{\beta_j}$.
+Las odds ratios proporcionan una interpretación\'on m\'as intuitiva de los coeficientes de regresi\'on log\'istica. La odds ratio para una variable independiente $X_j$ se calcula como $e^{\beta_j}$.
 
-\subsection{C\'alculo de las Odds Ratios}
+%\subsection{C\'alculo de las Odds Ratios}
 
 \begin{eqnarray*}
 \text{OR}_j = e^{\beta_j}
 \end{eqnarray*}
 
-\subsection{Interpretaci\'on de las Odds Ratios}
+%\subsection{Interpretaci\'on de las Odds Ratios}
 
 \begin{itemize}
     \item \textbf{OR > 1}: Un OR mayor que 1 indica que un aumento en la variable independiente est\'a asociado con un aumento en las odds de la variable dependiente.
@@ -2412,7 +2286,7 @@ Las odds ratios proporcionan una interpretaci\'on m\'as intuitiva de los coefici
 
 Los intervalos de confianza proporcionan una medida de la incertidumbre asociada con los estimadores de los coeficientes. Un intervalo de confianza del 95\% para un coeficiente $\beta_j$ indica que, en el 95\% de las muestras, el intervalo contendr\'a el valor verdadero de $\beta_j$.
 
-\subsection{C\'alculo de los Intervalos de Confianza}
+%\subsection{C\'alculo de los Intervalos de Confianza}
 
 Para calcular un intervalo de confianza del 95\% para un coeficiente $\beta_j$, utilizamos la f\'ormula:
 \begin{eqnarray*}
@@ -2424,54 +2298,18 @@ donde $\text{SE}(\beta_j)$ es el error est\'andar de $\beta_j$.
 
 La significancia estad\'istica se utiliza para determinar si los coeficientes del modelo son significativamente diferentes de cero. Esto se eval\'ua mediante pruebas de hip\'otesis.
 
-\subsection{Prueba de Hip\'otesis}
+%\subsection{Prueba de Hip\'otesis}
 
 Para cada coeficiente $\beta_j$, la hip\'otesis nula $H_0$ es que $\beta_j = 0$. La hip\'otesis alternativa $H_a$ es que $\beta_j \neq 0$.
 
-\subsection{P-valor}
+%\subsection{P-valor}
 
 El p-valor indica la probabilidad de obtener un coeficiente tan extremo como el observado, asumiendo que la hip\'otesis nula es verdadera. Un p-valor menor que el nivel de significancia $\alpha$ (t\'ipicamente 0.05) indica que podemos rechazar la hip\'otesis nula.
-
-\section{Implementaci\'on en R}
-
-\subsection{C\'alculo de Coeficientes y Odds Ratios}
-
-\begin{verbatim}
-# Cargar el paquete necesario
-library(broom)
-
-# Entrenar el modelo de regresi\'on log\'istica
-model <- glm(var1 ~ ., data = dataTrain, family = "binomial")
-
-# Coeficientes del modelo
-coef(model)
-
-# Odds ratios
-exp(coef(model))
-\end{verbatim}
-
-\subsection{Intervalos de Confianza}
-
-\begin{verbatim}
-# Intervalos de confianza para los coeficientes
-confint(model)
-
-# Intervalos de confianza para las odds ratios
-exp(confint(model))
-\end{verbatim}
-
-\subsection{P-valores y Significancia Estad\'istica}
-
-\begin{verbatim}
-# Resumen del modelo con p-valores
-summary(model)
-\end{verbatim}
-
 
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Regresi\'on Log\'istica Multinomial y An\'alisis de Supervivencia}
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
-\section{Introducci\'on}
+%\section{Introducci\'on}
 
 La regresi\'on log\'istica multinomial y el an\'alisis de supervivencia son extensiones de la regresi\'on log\'istica binaria. Este cap\'itulo se enfoca en las t\'ecnicas y aplicaciones de estos m\'etodos avanzados.
 
@@ -2479,7 +2317,7 @@ La regresi\'on log\'istica multinomial y el an\'alisis de supervivencia son exte
 
 La regresi\'on log\'istica multinomial se utiliza cuando la variable dependiente tiene m\'as de dos categor\'ias.
 
-\subsection{Modelo Multinomial}
+%\subsection{Modelo Multinomial}
 
 El modelo de regresi\'on log\'istica multinomial generaliza el modelo binario para manejar m\'ultiples categor\'ias. La probabilidad de que una observaci\'on pertenezca a la categor\'ia $k$ se expresa como:
 
@@ -2487,7 +2325,7 @@ El modelo de regresi\'on log\'istica multinomial generaliza el modelo binario pa
 P(Y = k) = \frac{e^{\beta_{0k} + \beta_{1k} X_1 + \ldots + \beta_{nk} X_n}}{\sum_{j=1}^{K} e^{\beta_{0j} + \beta_{1j} X_1 + \ldots + \beta_{nj} X_n}}
 \end{eqnarray*}
 
-\subsection{Estimaci\'on de Par\'ametros}
+%\subsection{Estimaci\'on de Par\'ametros}
 
 Los coeficientes del modelo multinomial se estiman utilizando m\'axima verosimilitud, similar a la regresi\'on log\'istica binaria.
 
@@ -2495,7 +2333,7 @@ Los coeficientes del modelo multinomial se estiman utilizando m\'axima verosimil
 
 El an\'alisis de supervivencia se utiliza para modelar el tiempo hasta que ocurre un evento de inter\'es, como la muerte o la falla de un componente.
 
-\subsection{Funci\'on de Supervivencia}
+%\subsection{Funci\'on de Supervivencia}
 
 La funci\'on de supervivencia $S(t)$ describe la probabilidad de que una observaci\'on sobreviva m\'as all\'a del tiempo $t$:
 
@@ -2503,7 +2341,7 @@ La funci\'on de supervivencia $S(t)$ describe la probabilidad de que una observa
 S(t) = P(T > t)
 \end{eqnarray*}
 
-\subsection{Modelo de Riesgos Proporcionales de Cox}
+%\subsection{Modelo de Riesgos Proporcionales de Cox}
 
 El modelo de Cox es un modelo de regresi\'on semiparam\'etrico utilizado para analizar datos de supervivencia:
 
@@ -2512,191 +2350,6 @@ h(t|X) = h_0(t) e^{\beta_1 X_1 + \ldots + \beta_p X_p}
 \end{eqnarray*}
 donde $h(t|X)$ es la tasa de riesgo en el tiempo $t$ dado el vector de covariables $X$ y $h_0(t)$ es la tasa de riesgo basal.
 
-\section{Implementaci\'on en R}
-
-\subsection{Regresi\'on Log\'istica Multinomial}
-
-\begin{verbatim}
-# Cargar el paquete necesario
-library(nnet)
-
-# Entrenar el modelo de regresi\'on log\'istica multinomial
-model_multinom <- multinom(var1 ~ ., data = dataTrain)
-
-# Resumen del modelo
-summary(model_multinom)
-\end{verbatim}
-
-\subsection{An\'alisis de Supervivencia}
-
-\begin{verbatim}
-# Cargar el paquete necesario
-library(survival)
-
-# Crear el objeto de supervivencia
-surv_object <- Surv(time = data$time, event = data$status)
-
-# Ajustar el modelo de Cox
-model_cox <- coxph(surv_object ~ var1 + var2, data = data)
-
-# Resumen del modelo
-summary(model_cox)
-\end{verbatim}
-
-
-%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
-\chapter{Implementaci\'on de Regresi\'on Log\'istica en Datos Reales}
-%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
-
-\section{Introducci\'on}
-
-Implementar un modelo de regresi\'on log\'istica en datos reales implica varias etapas, desde la limpieza de datos hasta la evaluaci\'on y validaci\'on del modelo. Este cap\'itulo presenta un ejemplo pr\'actico de la implementaci\'on de un modelo de regresi\'on log\'istica utilizando un conjunto de datos real.
-
-\section{Conjunto de Datos}
-
-Para este ejemplo, utilizaremos un conjunto de datos disponible p\'ublicamente que contiene informaci\'on sobre clientes bancarios. El objetivo es predecir si un cliente suscribir\'a un dep\'osito a plazo fijo.
-
-\section{Preparaci\'on de Datos}
-
-\subsection{Carga y Exploraci\'on de Datos}
-
-Primero, cargamos y exploramos el conjunto de datos para entender su estructura y contenido.
-
-\begin{verbatim}
-# Cargar el paquete necesario
-library(dplyr)
-
-# Cargar el conjunto de datos
-data <- read.csv("bank.csv")
-
-# Explorar los datos
-str(data)
-summary(data)
-\end{verbatim}
-
-\subsection{Limpieza de Datos}
-
-El siguiente paso es limpiar los datos, lo que incluye tratar los valores faltantes y eliminar las duplicidades.
-
-\begin{verbatim}
-# Eliminar duplicados
-data <- data %>% distinct()
-
-# Imputar valores faltantes (si existen)
-data <- data %>% mutate_if(is.numeric, ~ifelse(is.na(.), mean(., na.rm = TRUE), .))
-\end{verbatim}
-
-\subsection{Codificaci\'on de Variables Categ\'oricas}
-
-Convertimos las variables categ\'oricas en variables num\'ericas utilizando la codificaci\'on one-hot.
-
-\begin{verbatim}
-# Codificaci\'on one-hot de variables categ\'oricas
-data <- data %>% mutate(across(where(is.factor), ~ as.numeric(as.factor(.))))
-\end{verbatim}
-
-\section{Divisi\'on de Datos}
-
-Dividimos los datos en conjuntos de entrenamiento y prueba.
-
-\begin{verbatim}
-# Dividir los datos en conjuntos de entrenamiento y prueba
-set.seed(123)
-trainIndex <- createDataPartition(data$y, p = .8, list = FALSE, times = 1)
-dataTrain <- data[trainIndex,]
-dataTest <- data[-trainIndex,]
-\end{verbatim}
-
-\section{Entrenamiento del Modelo}
-
-Entrenamos un modelo de regresi\'on log\'istica utilizando el conjunto de entrenamiento.
-
-\begin{verbatim}
-# Entrenar el modelo de regresi\'on log\'istica
-model <- glm(y ~ ., data = dataTrain, family = "binomial")
-
-# Resumen del modelo
-summary(model)
-\end{verbatim}
-
-\section{Evaluaci\'on del Modelo}
-
-Evaluamos el rendimiento del modelo utilizando el conjunto de prueba.
-
-\begin{verbatim}
-# Predicciones en el conjunto de prueba
-predictions <- predict(model, dataTest, type = "response")
-
-# Convertir probabilidades a etiquetas
-predicted_labels <- ifelse(predictions > 0.5, 1, 0)
-
-# Matriz de confusi\'on
-confusionMatrix(predicted_labels, dataTest$y)
-\end{verbatim}
-
-\section{Interpretaci\'on de los Resultados}
-
-Interpretamos los coeficientes del modelo y las odds ratios.
-
-\begin{verbatim}
-# Coeficientes del modelo
-coef(model)
-
-# Odds ratios
-exp(coef(model))
-\end{verbatim}
-
-
-%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
-\chapter{Resumen y Proyecto Final}
-%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
-\section{Resumen de Conceptos Clave}
-
-En este curso, hemos cubierto una variedad de conceptos y t\'ecnicas esenciales para la regresi\'on log\'istica. Los conceptos clave incluyen:
-
-\begin{itemize}
-    \item \textbf{Fundamentos de Probabilidad y Estad\'istica}: Comprensi\'on de distribuciones de probabilidad, medidas de tendencia central y dispersi\'on, inferencia estad\'istica y pruebas de hip\'otesis.
-    \item \textbf{Regresi\'on Log\'istica}: Modelo de regresi\'on log\'istica binaria y multinomial, interpretaci\'on de coeficientes y odds ratios, m\'etodos de estimaci\'on y validaci\'on.
-    \item \textbf{Preparaci\'on de Datos}: Limpieza de datos, tratamiento de valores faltantes, codificaci\'on de variables categ\'oricas y selecci\'on de variables.
-    \item \textbf{Evaluaci\'on del Modelo}: Curva ROC, AUC, matriz de confusi\'on, precisi\'on, recall, F1-score y validaci\'on cruzada.
-    \item \textbf{Diagn\'ostico del Modelo}: An\'alisis de residuos, influencia, multicolinealidad y ajuste de par\'ametros.
-    \item \textbf{An\'alisis de Supervivencia}: Modelos de supervivencia, funci\'on de supervivencia y modelos de riesgos proporcionales de Cox.
-\end{itemize}
-
-\section{Buenas Pr\'acticas}
-
-Al implementar modelos de regresi\'on log\'istica, es importante seguir buenas pr\'acticas para garantizar la precisi\'on y la robustez de los modelos. Algunas buenas pr\'acticas incluyen:
-
-\begin{itemize}
-    \item \textbf{Exploraci\'on y Preparaci\'on de Datos}: Realizar un an\'alisis exploratorio exhaustivo y preparar los datos adecuadamente antes de construir el modelo.
-    \item \textbf{Evaluaci\'on y Validaci\'on del Modelo}: Utilizar m\'etricas adecuadas para evaluar el rendimiento del modelo y validar el modelo utilizando t\'ecnicas como la validaci\'on cruzada.
-    \item \textbf{Interpretaci\'on de Resultados}: Interpretar correctamente los coeficientes del modelo y las odds ratios, y comunicar los resultados de manera clara y concisa.
-    \item \textbf{Revisi\'on y Ajuste del Modelo}: Diagnosticar problemas en el modelo y ajustar los par\'ametros para mejorar el rendimiento.
-\end{itemize}
-
-\section{Proyecto Final}
-
-Para aplicar los conceptos y t\'ecnicas aprendidos en este curso, te proponemos realizar un proyecto final utilizando un conjunto de datos de tu elecci\'on. El proyecto debe incluir las siguientes etapas:
-
-\subsection{Selecci\'on del Conjunto de Datos}
-
-Elige un conjunto de datos relevante que contenga una variable dependiente binaria o multinomial y varias variables independientes.
-
-\subsection{Exploraci\'on y Preparaci\'on de Datos}
-
-Realiza un an\'alisis exploratorio de los datos y prepara los datos para el modelado. Esto incluye la limpieza de datos, el tratamiento de valores faltantes y la codificaci\'on de variables categ\'oricas.
-
-\subsection{Entrenamiento y Evaluaci\'on del Modelo}
-
-Entrena un modelo de regresi\'on log\'istica utilizando el conjunto de datos preparado y eval\'ua su rendimiento utilizando m\'etricas apropiadas.
-
-\subsection{Interpretaci\'on de Resultados}
-
-Interpreta los coeficientes del modelo y las odds ratios, y proporciona una explicaci\'on clara de los resultados.
-
-\subsection{Presentaci\'on del Proyecto}
-
-Presenta tu proyecto en un informe detallado que incluya la descripci\'on del conjunto de datos, los pasos de preparaci\'on y modelado, los resultados del modelo y las conclusiones.
 
 
 
@@ -2704,67 +2357,76 @@ Presenta tu proyecto en un informe detallado que incluya la descripci\'on del co
 \part{SEGUNDA PARTE: ANALISIS DE SUPERVIVENCIA}
 %==<>====<>====<>====<>====<>====<>====<>====<>====<>====<>====
 
-\chapter{Introducci\'on al An\'alisis de Supervivencia}
 
-\section{Conceptos B\'asicos}
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
+\chapter{Introducci\'on al An\'alisis de Supervivencia}
+%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
+
+%<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
+\section{Introducción: Conceptos B\'asicos}
+%<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
 El an\'alisis de supervivencia es una rama de la estad\'istica que se ocupa del an\'alisis del tiempo que transcurre hasta que ocurre un evento de inter\'es, com\'unmente referido como "tiempo de falla". Este campo es ampliamente utilizado en medicina, biolog\'ia, ingenier\'ia, ciencias sociales, y otros campos.
 
-\section{Definici\'on de Eventos y Tiempos}
-En el an\'alisis de supervivencia, un "evento" se refiere a la ocurrencia de un evento espec\'ifico, como la muerte, la falla de un componente, la reca\'ida de una enfermedad, etc. El "tiempo de supervivencia" es el tiempo que transcurre desde un punto de inicio definido hasta la ocurrencia del evento.
+%\section{Definici\'on de Eventos y Tiempos}
+En el an\'alisis de supervivencia, un \textit{evento} se refiere a la ocurrencia de un evento espec\'ifico, como la muerte, la falla de un componente, la reca\'ida de una enfermedad, etc. El \textit{tiempo de supervivencia} es el tiempo que transcurre desde un punto de inicio definido hasta la ocurrencia del evento.
 
-\section{Censura}
 La censura ocurre cuando la informaci\'on completa sobre el tiempo hasta el evento no est\'a disponible para todos los individuos en el estudio. Hay tres tipos principales de censura:
 \begin{itemize}
     \item \textbf{Censura a la derecha:} Ocurre cuando el evento de inter\'es no se ha observado para algunos sujetos antes del final del estudio.
     \item \textbf{Censura a la izquierda:} Ocurre cuando el evento de inter\'es ocurri\'o antes del inicio del periodo de observaci\'on.
     \item \textbf{Censura por intervalo:} Ocurre cuando el evento de inter\'es se sabe que ocurri\'o en un intervalo de tiempo, pero no se conoce el momento exacto.
 \end{itemize}
-
-\section{Funci\'on de Supervivencia}
-La funci\'on de supervivencia, $S(t)$, se define como la probabilidad de que un individuo sobreviva m\'as all\'a de un tiempo $t$. Matem\'aticamente, se expresa como:
-\begin{eqnarray*}
+%<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
+\section{Funci\'on de Supervivencia y Funci\'on de Riesgo}
+%<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
+La funci\'on de supervivencia, $S(t)$, se define como la probabilidad de que un individuo sobreviva m\'as all\'a de un tiempo $t$, se puede expresar como:
+\begin{eqnarray}
 S(t) = P(T > t)
-\end{eqnarray*}
+\end{eqnarray}
 donde $T$ es una variable aleatoria que representa el tiempo hasta el evento. La funci\'on de supervivencia tiene las siguientes propiedades:
+
 \begin{itemize}
-    \item $S(0) = 1$: Esto indica que al inicio (tiempo $t=0$), la probabilidad de haber experimentado el evento es cero, por lo tanto, la supervivencia es del 100%.
+    \item $S(0) = 1$: Esto indica que al inicio (tiempo $t=0$), la probabilidad de haber experimentado el evento es cero, por lo tanto, la supervivencia es del $100\%$.
     \item $\lim_{t \to \infty} S(t) = 0$: A medida que el tiempo tiende al infinito, la probabilidad de que cualquier individuo a\'un no haya experimentado el evento tiende a cero.
     \item $S(t)$ es una funci\'on no creciente: Esto significa que a medida que el tiempo avanza, la probabilidad de supervivencia no aumenta.
 \end{itemize}
 
-\section{Funci\'on de Densidad de Probabilidad}
-La funci\'on de densidad de probabilidad $f(t)$ describe la probabilidad de que el evento ocurra en un instante de tiempo espec\'ifico. Se define como:
-\begin{eqnarray*}
+%\section{Funci\'on de Densidad de Probabilidad}
+La funci\'on de densidad de probabilidad $f(t)$ describe la probabilidad de que el evento ocurra en un instante de tiempo espec\'ifico, esta se define como:
+\begin{eqnarray}
 f(t) = \frac{dF(t)}{dt}
-\end{eqnarray*}
+\end{eqnarray}
 donde $F(t)$ es la funci\'on de distribuci\'on acumulada, $F(t) = P(T \leq t)$. La relaci\'on entre $S(t)$ y $f(t)$ es:
-\begin{eqnarray*}
+\begin{eqnarray}
 f(t) = -\frac{dS(t)}{dt}
-\end{eqnarray*}
+\end{eqnarray}
+%<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
+\section*{Funci\'on de Riesgo}
+%<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
 
-\section{Funci\'on de Riesgo}
-La funci\'on de riesgo, $\lambda(t)$, tambi\'en conocida como funci\'on de tasa de fallas o hazard rate, se define como la tasa instant\'anea de ocurrencia del evento en el tiempo $t$, dado que el individuo ha sobrevivido hasta el tiempo $t$. Matem\'aticamente, se expresa como:
-\begin{eqnarray*}
+La funci\'on de riesgo, $\lambda(t)$, tambi\'en conocida como funci\'on de tasa de fallas o \textit{hazard rate}, se define como la tasa instant\'anea de ocurrencia del evento en el tiempo $t$, dado que el individuo ha sobrevivido hasta el tiempo $t$. Matem\'aticamente, se expresa como:
+\begin{eqnarray}
 \lambda(t) = \lim_{\Delta t \to 0} \frac{P(t \leq T < t + \Delta t \mid T \geq t)}{\Delta t}
-\end{eqnarray*}
+\end{eqnarray}
 Esto se puede reescribir usando $f(t)$ y $S(t)$ como:
-\begin{eqnarray*}
+\begin{eqnarray}
 \lambda(t) = \frac{f(t)}{S(t)}
-\end{eqnarray*}
+\end{eqnarray}
 
-\section{Relaci\'on entre Funci\'on de Supervivencia y Funci\'on de Riesgo}
+%\section{Relaci\'on entre Funci\'on de Supervivencia y Funci\'on de Riesgo}
+
 La funci\'on de supervivencia y la funci\'on de riesgo est\'an relacionadas a trav\'es de la siguiente ecuaci\'on:
-\begin{eqnarray*}
+\begin{eqnarray}
 S(t) = \exp\left(-\int_0^t \lambda(u) \, du\right)
-\end{eqnarray*}
-Esta f\'ormula se deriva del hecho de que la funci\'on de supervivencia es la probabilidad acumulativa de no haber experimentado el evento hasta el tiempo $t$, y $\lambda(t)$ es la tasa instant\'anea de ocurrencia del evento.
+\end{eqnarray}
+Esta f\'ormula se deriva del hecho de que la funci\'on de supervivencia es la probabilidad acumulada de no haber experimentado el evento hasta el tiempo $t$, y $\lambda(t)$ es la tasa instant\'anea de ocurrencia del evento.
 
 La funci\'on de riesgo tambi\'en puede ser expresada como:
-\begin{eqnarray*}
+\begin{eqnarray}
 \lambda(t) = -\frac{d}{dt} \log S(t)
-\end{eqnarray*}
+\end{eqnarray}
 
-\section{Deducci\'on de la Funci\'on de Supervivencia}
+%\section{Deducci\'on de la Funci\'on de Supervivencia}
 La relaci\'on entre la funci\'on de supervivencia y la funci\'on de riesgo se puede deducir integrando la funci\'on de riesgo:
 \begin{eqnarray*}
 S(t) &=& \exp\left(-\int_0^t \lambda(u) \, du\right) \\
@@ -2773,7 +2435,7 @@ S(t) &=& \exp\left(-\int_0^t \lambda(u) \, du\right) \\
 \lambda(t) &=& -\frac{d}{dt} \log S(t)
 \end{eqnarray*}
 
-\section{Ejemplo de C\'alculo}
+\section*{Ejemplo de C\'alculo}
 Supongamos que tenemos una muestra de tiempos de supervivencia $T_1, T_2, \ldots, T_n$. Podemos estimar la funci\'on de supervivencia emp\'irica como:
 \begin{eqnarray*}
 \hat{S}(t) = \frac{\text{N\'umero de individuos que sobreviven m\'as all\'a de } t}{\text{N\'umero total de individuos en riesgo en } t}
@@ -2783,22 +2445,11 @@ y la funci\'on de riesgo emp\'irica como:
 \hat{\lambda}(t) = \frac{\text{N\'umero de eventos en } t}{\text{N\'umero de individuos en riesgo en } t}
 \end{eqnarray*}
 
-\section{Conclusi\'on}
-El an\'alisis de supervivencia es una herramienta poderosa para analizar datos de tiempo hasta evento. Entender los conceptos b\'asicos como la funci\'on de supervivencia y la funci\'on de riesgo es fundamental para el an\'alisis m\'as avanzado.
+El an\'alisis de supervivencia es una herramienta poderosa para analizar datos de tiempo hasta evento. 
 
-
-\chapter{Funci\'on de Supervivencia y Funci\'on de Riesgo}
-\section{Introducci\'on}
-Este cap\'itulo profundiza en la definici\'on y propiedades de la funci\'on de supervivencia y la funci\'on de riesgo, dos conceptos fundamentales en el an\'alisis de supervivencia. Entender estas funciones y su relaci\'on es crucial para modelar y analizar datos de tiempo hasta evento.
-
-\section{Funci\'on de Supervivencia}
-La funci\'on de supervivencia, $S(t)$, describe la probabilidad de que un individuo sobreviva m\'as all\'a de un tiempo $t$. Formalmente, se define como:
-\begin{eqnarray*}
-S(t) = P(T > t)
-\end{eqnarray*}
-donde $T$ es una variable aleatoria que representa el tiempo hasta el evento.
-
-\subsection{Propiedades de la Funci\'on de Supervivencia}
+%<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
+\section{Propiedades} 
+%<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
 La funci\'on de supervivencia tiene varias propiedades importantes:
 \begin{itemize}
     \item $S(0) = 1$: Indica que la probabilidad de haber experimentado el evento en el tiempo 0 es cero.
@@ -2806,7 +2457,6 @@ La funci\'on de supervivencia tiene varias propiedades importantes:
     \item $S(t)$ es una funci\'on no creciente: A medida que el tiempo avanza, la probabilidad de supervivencia no aumenta.
 \end{itemize}
 
-\subsection{Derivaci\'on de $S(t)$}
 Si la funci\'on de densidad de probabilidad $f(t)$ del tiempo de supervivencia $T$ es conocida, la funci\'on de supervivencia puede derivarse como:
 \begin{eqnarray*}
 S(t) &=& P(T > t) \\
@@ -2814,10 +2464,7 @@ S(t) &=& P(T > t) \\
      &=& 1 - F(t) \\
      &=& 1 - \int_0^t f(u) \, du
 \end{eqnarray*}
-donde $F(t)$ es la funci\'on de distribuci\'on acumulada.
-
-\subsection{Ejemplo de C\'alculo de $S(t)$}
-Consideremos un ejemplo donde el tiempo de supervivencia $T$ sigue una distribuci\'on exponencial con tasa $\lambda$. La funci\'on de densidad de probabilidad $f(t)$ es:
+donde $F(t)$ es la funci\'on de distribuci\'on acumulada. Consideremos un ejemplo donde el tiempo de supervivencia $T$ sigue una distribuci\'on exponencial con tasa $\lambda$. La funci\'on de densidad de probabilidad $f(t)$ es:
 \begin{eqnarray*}
 f(t) = \lambda e^{-\lambda t}, \quad t \geq 0
 \end{eqnarray*}
@@ -2830,19 +2477,16 @@ Por lo tanto, la funci\'on de supervivencia $S(t)$ es:
 S(t) = 1 - F(t) = e^{-\lambda t}
 \end{eqnarray*}
 
-\section{Funci\'on de Riesgo}
 La funci\'on de riesgo, $\lambda(t)$, proporciona la tasa instant\'anea de ocurrencia del evento en el tiempo $t$, dado que el individuo ha sobrevivido hasta el tiempo $t$. Matem\'aticamente, se define como:
 \begin{eqnarray*}
 \lambda(t) = \lim_{\Delta t \to 0} \frac{P(t \leq T < t + \Delta t \mid T \geq t)}{\Delta t}
 \end{eqnarray*}
 
-\subsection{Relaci\'on entre $\lambda(t)$ y $f(t)$}
 La funci\'on de riesgo se puede relacionar con la funci\'on de densidad de probabilidad $f(t)$ y la funci\'on de supervivencia $S(t)$ de la siguiente manera:
 \begin{eqnarray*}
 \lambda(t) &=& \frac{f(t)}{S(t)}
 \end{eqnarray*}
 
-\subsection{Derivaci\'on de $\lambda(t)$}
 La derivaci\'on de $\lambda(t)$ se basa en la definici\'on condicional de la probabilidad:
 \begin{eqnarray*}
 \lambda(t) &=& \lim_{\Delta t \to 0} \frac{P(t \leq T < t + \Delta t \mid T \geq t)}{\Delta t} \\
@@ -2851,13 +2495,13 @@ La derivaci\'on de $\lambda(t)$ se basa en la definici\'on condicional de la pro
            &=& \frac{f(t)}{S(t)}
 \end{eqnarray*}
 
-\section{Relaci\'on entre Funci\'on de Supervivencia y Funci\'on de Riesgo}
+
 La funci\'on de supervivencia y la funci\'on de riesgo est\'an estrechamente relacionadas. La relaci\'on se expresa mediante la siguiente ecuaci\'on:
 \begin{eqnarray*}
 S(t) = \exp\left(-\int_0^t \lambda(u) \, du\right)
 \end{eqnarray*}
 
-\subsection{Deducci\'on de la Relaci\'on}
+%\subsection{Deducci\'on de la Relaci\'on}
 Para deducir esta relaci\'on, consideramos la derivada logar\'itmica de la funci\'on de supervivencia:
 \begin{eqnarray*}
 S(t) &=& \exp\left(-\int_0^t \lambda(u) \, du\right) \\
@@ -2866,10 +2510,10 @@ S(t) &=& \exp\left(-\int_0^t \lambda(u) \, du\right) \\
 \lambda(t) &=& -\frac{d}{dt} \log S(t)
 \end{eqnarray*}
 
-\section{Interpretaci\'on de la Funci\'on de Riesgo}
+%\section{Interpretaci\'on de la Funci\'on de Riesgo}
 La funci\'on de riesgo, $\lambda(t)$, se interpreta como la tasa instant\'anea de ocurrencia del evento por unidad de tiempo, dado que el individuo ha sobrevivido hasta el tiempo $t$. Es una medida local del riesgo de falla en un instante espec\'ifico.
 
-\subsection{Ejemplo de C\'alculo de $\lambda(t)$}
+%\subsection{Ejemplo de C\'alculo de $\lambda(t)$}
 Consideremos nuevamente el caso donde el tiempo de supervivencia $T$ sigue una distribuci\'on exponencial con tasa $\lambda$. La funci\'on de densidad de probabilidad $f(t)$ es:
 \begin{eqnarray*}
 f(t) = \lambda e^{-\lambda t}
@@ -2886,7 +2530,7 @@ La funci\'on de riesgo $\lambda(t)$ se calcula como:
 \end{eqnarray*}
 En este caso, $\lambda(t)$ es constante y igual a $\lambda$, lo que es una caracter\'istica de la distribuci\'on exponencial.
 
-\section{Funciones de Riesgo Acumulada y Media Residual}
+%\section{Funciones de Riesgo Acumulada y Media Residual}
 La funci\'on de riesgo acumulada $H(t)$ se define como:
 \begin{eqnarray*}
 H(t) = \int_0^t \lambda(u) \, du
@@ -2898,7 +2542,8 @@ La funci\'on de vida media residual $e(t)$ se define como la esperanza del tiemp
 e(t) = \mathbb{E}[T - t \mid T > t] = \int_t^\infty S(u) \, du
 \end{eqnarray*}
 
-\section{Ejemplo de C\'alculo de Funci\'on de Riesgo Acumulada y Vida Media Residual}
+\section*{Ejemplo de C\'alculo de Funci\'on de Riesgo Acumulada y Vida Media Residual}
+
 Consideremos nuevamente la distribuci\'on exponencial con tasa $\lambda$. La funci\'on de riesgo acumulada $H(t)$ es:
 \begin{eqnarray*}
 H(t) &=& \int_0^t \lambda \, du \\
@@ -2914,14 +2559,14 @@ e(t) &=& \int_t^\infty e^{-\lambda u} \, du \\
 \end{eqnarray*}
 En este caso, la vida media residual es constante e igual a $\frac{1}{\lambda}$, otra caracter\'istica de la distribuci\'on exponencial.
 
-\section{Conclusi\'on}
-La funci\'on de supervivencia y la funci\'on de riesgo son herramientas fundamentales en el an\'alisis de supervivencia. Entender su definici\'on, propiedades, y la relaci\'on entre ellas es esencial para modelar y analizar correctamente los datos de tiempo hasta evento. Las funciones de riesgo acumulada y vida media residual proporcionan informaci\'on adicional sobre la din\'amica del riesgo a lo largo del tiempo.
-
 
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Estimador de Kaplan-Meier}
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
+
+%<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
 \section{Introducci\'on}
+%<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
 El estimador de Kaplan-Meier, tambi\'en conocido como la funci\'on de supervivencia emp\'irica, es una herramienta no param\'etrica para estimar la funci\'on de supervivencia a partir de datos censurados. Este m\'etodo es especialmente \'util cuando los tiempos de evento est\'an censurados a la derecha.
 
 \section{Definici\'on del Estimador de Kaplan-Meier}
