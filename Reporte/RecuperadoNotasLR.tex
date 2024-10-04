@@ -2363,12 +2363,9 @@ donde $h(t|X)$ es la tasa de riesgo en el tiempo $t$ dado el vector de covariabl
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 
 %<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
-\section{Introducción: Conceptos B\'asicos}
+\section*{Introducción}
 %<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
-El an\'alisis de supervivencia es una rama de la estad\'istica que se ocupa del an\'alisis del tiempo que transcurre hasta que ocurre un evento de inter\'es, com\'unmente referido como "tiempo de falla". Este campo es ampliamente utilizado en medicina, biolog\'ia, ingenier\'ia, ciencias sociales, y otros campos.
-
-%\section{Definici\'on de Eventos y Tiempos}
-En el an\'alisis de supervivencia, un \textit{evento} se refiere a la ocurrencia de un evento espec\'ifico, como la muerte, la falla de un componente, la reca\'ida de una enfermedad, etc. El \textit{tiempo de supervivencia} es el tiempo que transcurre desde un punto de inicio definido hasta la ocurrencia del evento.
+El an\'alisis de supervivencia es una rama de la estad\'istica que se ocupa del an\'alisis del tiempo que transcurre hasta que ocurre un evento de inter\'es, com\'unmente referido como "tiempo de falla". Este campo es ampliamente utilizado en medicina, biolog\'ia, ingenier\'ia, ciencias sociales, y otros campos. En el an\'alisis de supervivencia, un \textit{evento} se refiere a la ocurrencia de un evento espec\'ifico, como la muerte, la falla de un componente, la reca\'ida de una enfermedad, etc. El \textit{tiempo de supervivencia} es el tiempo que transcurre desde un punto de inicio definido hasta la ocurrencia del evento.
 
 La censura ocurre cuando la informaci\'on completa sobre el tiempo hasta el evento no est\'a disponible para todos los individuos en el estudio. Hay tres tipos principales de censura:
 \begin{itemize}
@@ -2377,7 +2374,7 @@ La censura ocurre cuando la informaci\'on completa sobre el tiempo hasta el even
     \item \textbf{Censura por intervalo:} Ocurre cuando el evento de inter\'es se sabe que ocurri\'o en un intervalo de tiempo, pero no se conoce el momento exacto.
 \end{itemize}
 %<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
-\section{Funci\'on de Supervivencia y Funci\'on de Riesgo}
+\section*{Funci\'on de Supervivencia y Funci\'on de Riesgo}
 %<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
 La funci\'on de supervivencia, $S(t)$, se define como la probabilidad de que un individuo sobreviva m\'as all\'a de un tiempo $t$, se puede expresar como:
 \begin{eqnarray}
@@ -2413,7 +2410,7 @@ Esto se puede reescribir usando $f(t)$ y $S(t)$ como:
 \lambda(t) = \frac{f(t)}{S(t)}
 \end{eqnarray}
 
-%\section{Relaci\'on entre Funci\'on de Supervivencia y Funci\'on de Riesgo}
+\section*{Relaci\'on entre Funci\'on de Supervivencia y Funci\'on de Riesgo}
 
 La funci\'on de supervivencia y la funci\'on de riesgo est\'an relacionadas a trav\'es de la siguiente ecuaci\'on:
 \begin{eqnarray}
@@ -2448,7 +2445,7 @@ y la funci\'on de riesgo emp\'irica como:
 El an\'alisis de supervivencia es una herramienta poderosa para analizar datos de tiempo hasta evento. 
 
 %<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
-\section{Propiedades} 
+%\subsection{Propiedades} 
 %<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
 La funci\'on de supervivencia tiene varias propiedades importantes:
 \begin{itemize}
@@ -2513,7 +2510,7 @@ S(t) &=& \exp\left(-\int_0^t \lambda(u) \, du\right) \\
 %\section{Interpretaci\'on de la Funci\'on de Riesgo}
 La funci\'on de riesgo, $\lambda(t)$, se interpreta como la tasa instant\'anea de ocurrencia del evento por unidad de tiempo, dado que el individuo ha sobrevivido hasta el tiempo $t$. Es una medida local del riesgo de falla en un instante espec\'ifico.
 
-%\subsection{Ejemplo de C\'alculo de $\lambda(t)$}
+\subsection*{Ejemplo de C\'alculo de $\lambda(t)$}
 Consideremos nuevamente el caso donde el tiempo de supervivencia $T$ sigue una distribuci\'on exponencial con tasa $\lambda$. La funci\'on de densidad de probabilidad $f(t)$ es:
 \begin{eqnarray*}
 f(t) = \lambda e^{-\lambda t}
@@ -2530,7 +2527,7 @@ La funci\'on de riesgo $\lambda(t)$ se calcula como:
 \end{eqnarray*}
 En este caso, $\lambda(t)$ es constante y igual a $\lambda$, lo que es una caracter\'istica de la distribuci\'on exponencial.
 
-%\section{Funciones de Riesgo Acumulada y Media Residual}
+\section*{Funciones de Riesgo Acumulada y Media Residual}
 La funci\'on de riesgo acumulada $H(t)$ se define como:
 \begin{eqnarray*}
 H(t) = \int_0^t \lambda(u) \, du
@@ -2565,11 +2562,11 @@ En este caso, la vida media residual es constante e igual a $\frac{1}{\lambda}$,
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 
 %<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
-\section{Introducci\'on}
+%\section{Estimador de Kaplan-Meier}
 %<==>==<==><==>==<==><==>==<==><==>==<==><==>==<==>
 El estimador de Kaplan-Meier, tambi\'en conocido como la funci\'on de supervivencia emp\'irica, es una herramienta no param\'etrica para estimar la funci\'on de supervivencia a partir de datos censurados. Este m\'etodo es especialmente \'util cuando los tiempos de evento est\'an censurados a la derecha.
 
-\section{Definici\'on del Estimador de Kaplan-Meier}
+\section*{Definici\'on del Estimador de Kaplan-Meier}
 El estimador de Kaplan-Meier se define como:
 \begin{eqnarray*}
 \hat{S}(t) = \prod_{t_i \leq t} \left(1 - \frac{d_i}{n_i}\right)
@@ -2581,7 +2578,7 @@ donde:
     \item $n_i$ es el n\'umero de individuos en riesgo justo antes de $t_i$.
 \end{itemize}
 
-\section{Propiedades del Estimador de Kaplan-Meier}
+\section*{Propiedades del Estimador de Kaplan-Meier}
 El estimador de Kaplan-Meier tiene las siguientes propiedades:
 \begin{itemize}
     \item Es una funci\'on escalonada que disminuye en los tiempos de los eventos observados.
@@ -2589,35 +2586,35 @@ El estimador de Kaplan-Meier tiene las siguientes propiedades:
     \item Proporciona una estimaci\'on no param\'etrica de la funci\'on de supervivencia.
 \end{itemize}
 
-\subsection{Funci\'on Escalonada}
+\subsection*{Funci\'on Escalonada}
 La funci\'on escalonada del estimador de Kaplan-Meier significa que $\hat{S}(t)$ permanece constante entre los tiempos de los eventos y disminuye en los tiempos de los eventos. Matem\'aticamente, si $t_i$ es el tiempo del $i$-\'esimo evento, entonces:
 \begin{eqnarray*}
 \hat{S}(t) = \hat{S}(t_i) \quad \text{para} \ t_i \leq t < t_{i+1}
 \end{eqnarray*}
 
-\subsection{Manejo de Datos Censurados}
+%\subsection{Manejo de Datos Censurados}
 El estimador de Kaplan-Meier maneja datos censurados a la derecha al ajustar la estimaci\'on de la funci\'on de supervivencia s\'olo en los tiempos en que ocurren eventos. Si un individuo es censurado antes de experimentar el evento, no contribuye a la disminuci\'on de $\hat{S}(t)$ en el tiempo de censura. Esto asegura que la censura no sesga la estimaci\'on de la supervivencia.
 
-\subsection{Estimaci\'on No Param\'etrica}
+%\subsection{Estimaci\'on No Param\'etrica}
 El estimador de Kaplan-Meier es no param\'etrico porque no asume ninguna forma espec\'ifica para la distribuci\'on de los tiempos de supervivencia. En cambio, utiliza la informaci\'on emp\'irica disponible para estimar la funci\'on de supervivencia.
 
-\section{Deducci\'on del Estimador de Kaplan-Meier}
+%\section{Deducci\'on del Estimador de Kaplan-Meier}
 La deducci\'on del estimador de Kaplan-Meier se basa en el principio de probabilidad condicional. Consideremos un conjunto de tiempos de supervivencia observados $t_1, t_2, \ldots, t_k$ con eventos en cada uno de estos tiempos. El estimador de la probabilidad de supervivencia m\'as all\'a del tiempo $t$ es el producto de las probabilidades de sobrevivir m\'as all\'a de cada uno de los tiempos de evento observados hasta $t$.
 
-\subsection{Probabilidad Condicional}
+%\subsection{Probabilidad Condicional}
 La probabilidad de sobrevivir m\'as all\'a de $t_i$, dado que el individuo ha sobrevivido justo antes de $t_i$, es:
 \begin{eqnarray*}
 P(T > t_i \mid T \geq t_i) = 1 - \frac{d_i}{n_i}
 \end{eqnarray*}
 donde $d_i$ es el n\'umero de eventos en $t_i$ y $n_i$ es el n\'umero de individuos en riesgo justo antes de $t_i$.
 
-\subsection{Producto de Probabilidades Condicionales}
+%\subsection{Producto de Probabilidades Condicionales}
 La probabilidad de sobrevivir m\'as all\'a de un tiempo $t$ cualquiera, dada la secuencia de tiempos de evento, es el producto de las probabilidades condicionales de sobrevivir m\'as all\'a de cada uno de los tiempos de evento observados hasta $t$. As\'i, el estimador de Kaplan-Meier se obtiene como:
 \begin{eqnarray*}
 \hat{S}(t) = \prod_{t_i \leq t} \left(1 - \frac{d_i}{n_i}\right)
 \end{eqnarray*}
 
-\section{Ejemplo de C\'alculo}
+\section*{Ejemplo de C\'alculo}
 Supongamos que tenemos los siguientes tiempos de supervivencia observados para cinco individuos: 2, 3, 5, 7, 8. Supongamos adem\'as que tenemos censura a la derecha en el tiempo 10. Los tiempos de evento y el n\'umero de individuos en riesgo justo antes de cada evento son:
 
 \begin{table}[h]
@@ -2645,20 +2642,22 @@ Usando estos datos, el estimador de Kaplan-Meier se calcula como:
 \hat{S}(8) &=& 0.2 \times \left(1 - \frac{1}{1}\right) = 0.2 \times 0 = 0 \\
 \end{eqnarray*}
 
-\section{Intervalos de Confianza para el Estimador de Kaplan-Meier}
+\section*{Intervalos de Confianza para el Estimador de Kaplan-Meier}
+
 Para calcular intervalos de confianza para el estimador de Kaplan-Meier, se puede usar la transformaci\'on logar\'itmica y la aproximaci\'on normal. Un intervalo de confianza aproximado para $\log(-\log(\hat{S}(t)))$ se obtiene como:
 \begin{eqnarray*}
 \log(-\log(\hat{S}(t))) \pm z_{\alpha/2} \sqrt{\frac{1}{d_i(n_i - d_i)}}
 \end{eqnarray*}
 donde $z_{\alpha/2}$ es el percentil correspondiente de la distribuci\'on normal est\'andar.
 
-\section{Transformaci\'on Logar\'itmica Inversa}
+\section*{Transformaci\'on Logar\'itmica Inversa}
 La transformaci\'on logar\'itmica inversa se utiliza para obtener los l\'imites del intervalo de confianza para $S(t)$:
 \begin{eqnarray*}
 \hat{S}(t) = \exp\left(-\exp\left(\log(-\log(\hat{S}(t))) \pm z_{\alpha/2} \sqrt{\frac{1}{d_i(n_i - d_i)}}\right)\right)
 \end{eqnarray*}
 
-\section{C\'alculo Detallado de Intervalos de Confianza}
+\section*{C\'alculo Detallado de Intervalos de Confianza}
+
 Para un c\'alculo m\'as detallado de los intervalos de confianza, consideremos un tiempo espec\'ifico $t_j$. La varianza del estimador de Kaplan-Meier en $t_j$ se puede estimar usando Greenwood's formula:
 \begin{eqnarray*}
 \text{Var}(\hat{S}(t_j)) = \hat{S}(t_j)^2 \sum_{t_i \leq t_j} \frac{d_i}{n_i(n_i - d_i)}
@@ -2668,7 +2667,8 @@ El intervalo de confianza aproximado para $\hat{S}(t_j)$ es entonces:
 \hat{S}(t_j) \pm z_{\alpha/2} \sqrt{\text{Var}(\hat{S}(t_j))}
 \end{eqnarray*}
 
-\section{Ejemplo de Intervalo de Confianza}
+\section*{Ejemplo de Intervalo de Confianza}
+
 Supongamos que en el ejemplo anterior queremos calcular el intervalo de confianza para $\hat{S}(3)$. Primero, calculamos la varianza:
 \begin{eqnarray*}
 \text{Var}(\hat{S}(3)) &=& \hat{S}(3)^2 \left( \frac{1}{5 \times 4} + \frac{1}{4 \times 3} \right) \\
@@ -2683,23 +2683,22 @@ El intervalo de confianza es entonces:
 \end{eqnarray*}
 Por lo tanto, el intervalo de confianza para $\hat{S}(3)$ es aproximadamente $(0.171, 1.029)$. Dado que una probabilidad no puede exceder 1, ajustamos el intervalo a $(0.171, 1.0)$.
 
-\section{Interpretaci\'on del Estimador de Kaplan-Meier}
+%\section{Interpretaci\'on del Estimador de Kaplan-Meier}
 El estimador de Kaplan-Meier proporciona una estimaci\'on emp\'irica de la funci\'on de supervivencia que es f\'acil de interpretar y calcular. Su capacidad para manejar datos censurados lo hace especialmente \'util en estudios de supervivencia.
 
-\section{Conclusi\'on}
 El estimador de Kaplan-Meier es una herramienta poderosa para estimar la funci\'on de supervivencia en presencia de datos censurados. Su c\'alculo es relativamente sencillo y proporciona una estimaci\'on no param\'etrica robusta de la supervivencia a lo largo del tiempo. La interpretaci\'on adecuada de este estimador y su intervalo de confianza asociado es fundamental para el an\'alisis de datos de supervivencia.
 
 
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Comparaci\'on de Curvas de Supervivencia}
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
-\section{Introducci\'on}
+%\section{Curvas de Supervivencia}
 Comparar curvas de supervivencia es crucial para determinar si existen diferencias significativas en las tasas de supervivencia entre diferentes grupos. Las pruebas de hip\'otesis, como el test de log-rank, son herramientas comunes para esta comparaci\'on.
 
-\section{Test de Log-rank}
+\section*{Test de Log-rank}
 El test de log-rank se utiliza para comparar las curvas de supervivencia de dos o m\'as grupos. La hip\'otesis nula es que no hay diferencia en las funciones de riesgo entre los grupos.
 
-\subsection{F\'ormula del Test de Log-rank}
+\subsection*{F\'ormula del Test de Log-rank}
 El estad\'istico del test de log-rank se define como:
 \begin{eqnarray*}
 \chi^2 = \frac{\left(\sum_{i=1}^k (O_i - E_i)\right)^2}{\sum_{i=1}^k V_i}
@@ -2711,7 +2710,7 @@ donde:
     \item $V_i$ es la varianza del n\'umero de eventos en el grupo $i$.
 \end{itemize}
 
-\subsection{C\'alculo de $E_i$ y $V_i$}
+\subsection*{C\'alculo de $E_i$ y $V_i$}
 El n\'umero esperado de eventos $E_i$ y la varianza $V_i$ se calculan como:
 \begin{eqnarray*}
 E_i &=& \frac{d_i \cdot n_i}{n} \\
@@ -2724,7 +2723,7 @@ donde:
     \item $n$ es el n\'umero total de individuos en todos los grupos.
 \end{itemize}
 
-\section{Ejemplo de C\'alculo del Test de Log-rank}
+%\section{Ejemplo de C\'alculo del Test de Log-rank}
 Supongamos que tenemos dos grupos con los siguientes datos de eventos:
 
 \begin{table}[h]
@@ -2761,23 +2760,24 @@ El estad\'istico de log-rank se calcula como:
 
 El valor p se puede obtener comparando $\chi^2$ con una distribuci\'on $\chi^2$ con un grado de libertad (dado que estamos comparando dos grupos).
 
-\section{Interpretaci\'on del Test de Log-rank}
+%\section{Interpretaci\'on del Test de Log-rank}
 Un valor p peque\~no (generalmente menos de 0.05) indica que hay una diferencia significativa en las curvas de supervivencia entre los grupos. Un valor p grande sugiere que no hay suficiente evidencia para rechazar la hip\'otesis nula de que las curvas de supervivencia son iguales.
 
-\section{Pruebas Alternativas}
+%\section{Pruebas Alternativas}
 Adem\'as del test de log-rank, existen otras pruebas para comparar curvas de supervivencia, como el test de Wilcoxon (Breslow), que da m\'as peso a los eventos en tiempos tempranos.
 
-\section{Conclusi\'on}
+%\section{Conclusi\'on}
 El test de log-rank es una herramienta esencial para comparar curvas de supervivencia entre diferentes grupos. Su c\'alculo se basa en la diferencia entre los eventos observados y esperados en cada grupo, y su interpretaci\'on puede ayudar a identificar diferencias significativas en la supervivencia.
 
 
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Modelos de Riesgos Proporcionales de Cox}
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
-\section{Introducci\'on}
+
+%\section{Modelos de Riesgos Proporcionales de Cox}
 El modelo de riesgos proporcionales de Cox, propuesto por David Cox en 1972, es una de las herramientas m\'as utilizadas en el an\'alisis de supervivencia. Este modelo permite evaluar el efecto de varias covariables en el tiempo hasta el evento, sin asumir una forma espec\'ifica para la distribuci\'on de los tiempos de supervivencia.
 
-\section{Definici\'on del Modelo de Cox}
+\section*{Definici\'on del Modelo de Cox}
 El modelo de Cox se define como:
 \begin{eqnarray*}
 \lambda(t \mid X) = \lambda_0(t) \exp(\beta^T X)
@@ -2790,52 +2790,52 @@ donde:
     \item $X$ es el vector de covariables.
 \end{itemize}
 
-\section{Supuesto de Proporcionalidad de Riesgos}
+\section*{Supuesto de Proporcionalidad de Riesgos}
 El modelo de Cox asume que las razones de riesgo entre dos individuos son constantes a lo largo del tiempo. Matem\'aticamente, si $X_i$ y $X_j$ son las covariables de dos individuos, la raz\'on de riesgos se expresa como:
 \begin{eqnarray*}
 \frac{\lambda(t \mid X_i)}{\lambda(t \mid X_j)} = \frac{\lambda_0(t) \exp(\beta^T X_i)}{\lambda_0(t) \exp(\beta^T X_j)} = \exp(\beta^T (X_i - X_j))
 \end{eqnarray*}
 
-\section{Estimaci\'on de los Par\'ametros}
+\section*{Estimaci\'on de los Par\'ametros}
 Los par\'ametros $\beta$ se estiman utilizando el m\'etodo de m\'axima verosimilitud parcial. La funci\'on de verosimilitud parcial se define como:
 \begin{eqnarray*}
 L(\beta) = \prod_{i=1}^k \frac{\exp(\beta^T X_i)}{\sum_{j \in R(t_i)} \exp(\beta^T X_j)}
 \end{eqnarray*}
 donde $R(t_i)$ es el conjunto de individuos en riesgo en el tiempo $t_i$.
 
-\subsection{Funci\'on de Log-Verosimilitud Parcial}
+\subsection*{Funci\'on de Log-Verosimilitud Parcial}
 La funci\'on de log-verosimilitud parcial es:
 \begin{eqnarray*}
 \log L(\beta) = \sum_{i=1}^k \left(\beta^T X_i - \log \sum_{j \in R(t_i)} \exp(\beta^T X_j)\right)
 \end{eqnarray*}
 
-\subsection{Derivadas Parciales y Maximizaci\'on}
+\subsection*{Derivadas Parciales y Maximizaci\'on}
 Para encontrar los estimadores de m\'axima verosimilitud, resolvemos el sistema de ecuaciones obtenido al igualar a cero las derivadas parciales de $\log L(\beta)$ con respecto a $\beta$:
 \begin{eqnarray*}
 \frac{\partial \log L(\beta)}{\partial \beta} = \sum_{i=1}^k \left(X_i - \frac{\sum_{j \in R(t_i)} X_j \exp(\beta^T X_j)}{\sum_{j \in R(t_i)} \exp(\beta^T X_j)}\right) = 0
 \end{eqnarray*}
 
-\section{Interpretaci\'on de los Coeficientes}
+%\section{Interpretaci\'on de los Coeficientes}
 Cada coeficiente $\beta_i$ representa el logaritmo de la raz\'on de riesgos asociado con un incremento unitario en la covariable $X_i$. Un valor positivo de $\beta_i$ indica que un aumento en $X_i$ incrementa el riesgo del evento, mientras que un valor negativo indica una reducci\'on del riesgo.
 
-\section{Evaluaci\'on del Modelo}
+\section*{Evaluaci\'on del Modelo}
 El modelo de Cox se eval\'ua utilizando varias t\'ecnicas, como el an\'alisis de residuos de Schoenfeld para verificar el supuesto de proporcionalidad de riesgos, y el uso de curvas de supervivencia estimadas para evaluar la bondad de ajuste.
 
-\subsection{Residuos de Schoenfeld}
+\subsection*{Residuos de Schoenfeld}
 Los residuos de Schoenfeld se utilizan para evaluar la proporcionalidad de riesgos. Para cada evento en el tiempo $t_i$, el residuo de Schoenfeld para la covariable $X_j$ se define como:
 \begin{eqnarray*}
 r_{ij} = X_{ij} - \hat{X}_{ij}
 \end{eqnarray*}
 donde $\hat{X}_{ij}$ es la covariable ajustada.
 
-\subsection{Curvas de Supervivencia Ajustadas}
+\subsection*{Curvas de Supervivencia Ajustadas}
 Las curvas de supervivencia ajustadas se obtienen utilizando la funci\'on de riesgo basal estimada y los coeficientes del modelo. La funci\'on de supervivencia ajustada se define como:
 \begin{eqnarray*}
 \hat{S}(t \mid X) = \hat{S}_0(t)^{\exp(\beta^T X)}
 \end{eqnarray*}
 donde $\hat{S}_0(t)$ es la funci\'on de supervivencia basal estimada.
 
-\section{Ejemplo de Aplicaci\'on del Modelo de Cox}
+\section*{Ejemplo de Aplicaci\'on del Modelo de Cox}
 Consideremos un ejemplo con tres covariables: edad, sexo y tratamiento. Supongamos que los datos se ajustan a un modelo de Cox y obtenemos los siguientes coeficientes:
 \begin{eqnarray*}
 \hat{\beta}_{edad} = 0.02, \quad \hat{\beta}_{sexo} = -0.5, \quad \hat{\beta}_{tratamiento} = 1.2
@@ -2846,57 +2846,59 @@ La funci\'on de riesgo ajustada se expresa como:
 \lambda(t \mid X) = \lambda_0(t) \exp(0.02 \cdot \text{edad} - 0.5 \cdot \text{sexo} + 1.2 \cdot \text{tratamiento})
 \end{eqnarray*}
 
-\section{Conclusi\'on}
+%\section{Conclusi\'on}
 El modelo de riesgos proporcionales de Cox es una herramienta poderosa para analizar datos de supervivencia con m\'ultiples covariables. Su flexibilidad y la falta de suposiciones fuertes sobre la distribuci\'on de los tiempos de supervivencia lo hacen ampliamente aplicable en diversas disciplinas.
 
 
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Diagn\'ostico y Validaci\'on de Modelos de Cox}
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
-\section{Introducci\'on}
+%\section{Modelos de Cox}
+
 Una vez ajustado un modelo de Cox, es crucial realizar diagn\'osticos y validaciones para asegurar que el modelo es apropiado y que los supuestos subyacentes son v\'alidos. Esto incluye la verificaci\'on del supuesto de proporcionalidad de riesgos y la evaluaci\'on del ajuste del modelo.
 
-\section{Supuesto de Proporcionalidad de Riesgos}
+\section*{Supuesto de Proporcionalidad de Riesgos}
 El supuesto de proporcionalidad de riesgos implica que la raz\'on de riesgos entre dos individuos es constante a lo largo del tiempo. Si este supuesto no se cumple, las inferencias hechas a partir del modelo pueden ser incorrectas.
 
-\subsection{Residuos de Schoenfeld}
-Los residuos de Schoenfeld se utilizan para evaluar la proporcionalidad de riesgos. Para cada evento en el tiempo $t_i$, el residuo de Schoenfeld para la covariable $X_j$ se define como:
-\begin{eqnarray*}
+\subsection*{Residuos de Schoenfeld}
+Los residuos de \textit{Schoenfeld} se utilizan para evaluar la proporcionalidad de riesgos. Para cada evento en el tiempo $t_i$, el residuo de Schoenfeld para la covariable $X_j$ se define como:
+
+\begin{eqnarray}
 r_{ij} = X_{ij} - \hat{X}_{ij}
-\end{eqnarray*}
+\end{eqnarray}
 donde $\hat{X}_{ij}$ es la covariable ajustada. Si los residuos de Schoenfeld no muestran una tendencia sistem\'atica cuando se trazan contra el tiempo, el supuesto de proporcionalidad de riesgos es razonable.
 
-\section{Bondad de Ajuste}
+\section*{Bondad de Ajuste}
 La bondad de ajuste del modelo de Cox se eval\'ua comparando las curvas de supervivencia observadas y ajustadas, y utilizando estad\'isticas de ajuste global.
 
-\subsection{Curvas de Supervivencia Ajustadas}
+\subsection*{Curvas de Supervivencia Ajustadas}
 Las curvas de supervivencia aaustadas se obtienen utilizando la funci\'on de riesgo basal estimada y los coeficientes del modelo. La funci\'on de supervivencia ajustada se define como:
 \begin{eqnarray*}
 \hat{S}(t \mid X) = \hat{S}_0(t)^{\exp(\beta^T X)}
 \end{eqnarray*}
 donde $\hat{S}_0(t)$ es la funci\'on de supervivencia basal estimada. Comparar estas curvas con las curvas de Kaplan-Meier para diferentes niveles de las covariables puede proporcionar una validaci\'on visual del ajuste del modelo.
 
-\subsection{Estad\'isticas de Ajuste Global}
+\subsection*{Estad\'isticas de Ajuste Global}
 Las estad\'isticas de ajuste global, como el test de la desviaci\'on y el test de la bondad de ajuste de Grambsch y Therneau, se utilizan para evaluar el ajuste global del modelo de Cox.
 
-\section{Diagn\'ostico de Influencia}
+%\section{Diagn\'ostico de Influencia}
 El diagn\'ostico de influencia identifica observaciones individuales que tienen un gran impacto en los estimados del modelo. Los residuos de devianza y los residuos de martingala se utilizan com\'unmente para este prop\'osito.
 
-\subsection{Residuos de Deviance}
+\subsection*{Residuos de Deviance}
 Los residuos de deviance se definen como:
 \begin{eqnarray*}
 D_i = \text{sign}(O_i - E_i) \sqrt{-2 \left(O_i \log \frac{O_i}{E_i} - (O_i - E_i)\right)}
 \end{eqnarray*}
 donde $O_i$ es el n\'umero observado de eventos y $E_i$ es el n\'umero esperado de eventos. Observaciones con residuos de deviance grandes en valor absoluto pueden ser influyentes.
 
-\subsection{Residuos de Martingala}
+\subsection*{Residuos de Martingala}
 Los residuos de martingala se definen como:
 \begin{eqnarray*}
 M_i = O_i - E_i
 \end{eqnarray*}
 donde $O_i$ es el n\'umero observado de eventos y $E_i$ es el n\'umero esperado de eventos. Los residuos de martingala se utilizan para detectar observaciones que no se ajustan bien al modelo.
 
-\section{Ejemplo de Diagn\'ostico}
+\section*{Ejemplo de Diagn\'ostico}
 Consideremos un modelo de Cox ajustado con las covariables edad, sexo y tratamiento. Para diagnosticar la influencia de observaciones individuales, calculamos los residuos de deviance y martingala para cada observaci\'on.
 
 \begin{table}[h]
@@ -2916,7 +2918,7 @@ Observaci\'on & Edad & Sexo & Tratamiento & Residuo de Deviance \\
 
 Observaciones con residuos de deviance grandes en valor absoluto (como la observaci\'on 3) pueden ser influyentes y requieren una revisi\'on adicional.
 
-\section{Conclusi\'on}
+%\section{Conclusi\'on}
 El diagn\'ostico y la validaci\'on son pasos cr\'iticos en el an\'slisis de modelos de Cox. Evaluar el supuesto de proporcionalidad de riesgos, la bondad de ajuste y la influencia de observaciones individuales asegura que las inferencias y conclusiones derivadas del modelo sean v\'slidas y fiables.
 
 
@@ -2924,10 +2926,10 @@ El diagn\'ostico y la validaci\'on son pasos cr\'iticos en el an\'slisis de mode
 \chapter{Modelos Acelerados de Fallos}
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 
-\section{Introducci\'on}
+%\section{Introducci\'on}
 Los modelos acelerados de fallos (AFT) son una alternativa a los modelos de riesgos proporcionales de Cox. En lugar de asumir que las covariables afectan la tasa de riesgo, los modelos AFT asumen que las covariables multiplican el tiempo de supervivencia por una constante.
 
-\section{Definici\'on del Modelo AFT}
+\section*{Definici\'on del Modelo AFT}
 Un modelo AFT se expresa como:
 \begin{eqnarray*}
 T = T_0 \exp(\beta^T X)
@@ -2940,35 +2942,35 @@ donde:
     \item $X$ es el vector de covariables.
 \end{itemize}
 
-\subsection{Transformaci\'on Logar\'itmica}
+\subsection*{Transformaci\'on Logar\'itmica}
 El modelo AFT se puede transformar logar\'itmicamente para obtener una forma lineal:
 \begin{eqnarray*}
 \log(T) = \log(T_0) + \beta^T X
 \end{eqnarray*}
 
-\section{Estimaci\'on de los Par\'ametros}
+\section*{Estimaci\'on de los Par\'ametros}
 Los par\'ametros del modelo AFT se estiman utilizando el m\'etodo de m\'axima verosimilitud. La funci\'on de verosimilitud se define como:
 \begin{eqnarray*}
 L(\beta) = \prod_{i=1}^n f(t_i \mid X_i; \beta)
 \end{eqnarray*}
 donde $f(t_i \mid X_i; \beta)$ es la funci\'on de densidad de probabilidad del tiempo de supervivencia $t_i$ dado el vector de covariables $X_i$ y los par\'ametros $\beta$.
 
-\subsection{Funci\'on de Log-Verosimilitud}
+\subsection*{Funci\'on de Log-Verosimilitud}
 La funci\'on de log-verosimilitud es:
 \begin{eqnarray*}
 \log L(\beta) = \sum_{i=1}^n \log f(t_i \mid X_i; \beta)
 \end{eqnarray*}
 
-\subsection{Maximizaci\'on de la Verosimilitud}
+\subsection*{Maximizaci\'on de la Verosimilitud}
 Los estimadores de m\'axima verosimilitud se obtienen resolviendo el sistema de ecuaciones obtenido al igualar a cero las derivadas parciales de $\log L(\beta)$ con respecto a $\beta$:
 \begin{eqnarray*}
 \frac{\partial \log L(\beta)}{\partial \beta} = 0
 \end{eqnarray*}
 
-\section{Distribuciones Comunes en Modelos AFT}
+\section*{Distribuciones Comunes en Modelos AFT}
 En los modelos AFT, el tiempo de supervivencia $T$ puede seguir varias distribuciones comunes, como la exponencial, Weibull, log-normal y log-log\'istica. Cada una de estas distribuciones tiene diferentes propiedades y aplicaciones.
 
-\subsection{Modelo Exponencial AFT}
+\subsection*{Modelo Exponencial AFT}
 En un modelo exponencial AFT, el tiempo de supervivencia $T$ sigue una distribuci\'on exponencial con par\'ametro $\lambda$:
 \begin{eqnarray*}
 f(t) = \lambda \exp(-\lambda t)
@@ -2982,7 +2984,7 @@ La transformaci\'on logar\'itmica del tiempo de supervivencia es:
 \log(T) = \log\left(\frac{1}{\lambda}\right) + \beta^T X
 \end{eqnarray*}
 
-\subsection{Modelo Weibull AFT}
+\subsection*{Modelo Weibull AFT}
 En un modelo Weibull AFT, el tiempo de supervivencia $T$ sigue una distribuci\'on Weibull con par\'ametros $\lambda$ y $k$:
 \begin{eqnarray*}
 f(t) = \lambda k t^{k-1} \exp(-\lambda t^k)
@@ -2996,10 +2998,10 @@ La transformaci\'on logar\'itmica del tiempo de supervivencia es:
 \log(T) = \log\left(\left(\frac{1}{\lambda}\right)^{1/k}\right) + \frac{\beta^T X}{k}
 \end{eqnarray*}
 
-\section{Interpretaci\'on de los Coeficientes}
+\section*{Interpretaci\'on de los Coeficientes}
 En los modelos AFT, los coeficientes $\beta_i$ se interpretan como factores multiplicativos del tiempo de supervivencia. Un valor positivo de $\beta_i$ indica que un aumento en la covariable $X_i$ incrementa el tiempo de supervivencia, mientras que un valor negativo indica una reducci\'on del tiempo de supervivencia.
 
-\section{Ejemplo de Aplicaci\'on del Modelo AFT}
+\section*{Ejemplo de Aplicaci\'on del Modelo AFT}
 Consideremos un ejemplo con tres covariables: edad, sexo y tratamiento. Supongamos que los datos se ajustan a un modelo Weibull AFT y obtenemos los siguientes coeficientes:
 \begin{eqnarray*}
 \hat{\beta}_{edad} = -0.02, \quad \hat{\beta}_{sexo} = 0.5, \quad \hat{\beta}_{tratamiento} = -1.2
@@ -3010,7 +3012,7 @@ La funci\'on de supervivencia ajustada se expresa como:
 S(t \mid X) = \exp\left(-\left(\frac{t \exp(-0.02 \cdot \text{edad} + 0.5 \cdot \text{sexo} - 1.2 \cdot \text{tratamiento})}{\lambda}\right)^k\right)
 \end{eqnarray*}
 
-\section{Conclusi\'on}
+%\section{Conclusi\'on}
 Los modelos AFT proporcionan una alternativa flexible a los modelos de riesgos proporcionales de Cox. Su enfoque en la multiplicaci\'on del tiempo de supervivencia por una constante permite una interpretaci\'on intuitiva y aplicaciones en diversas \'areas.
 
 
@@ -3018,54 +3020,54 @@ Los modelos AFT proporcionan una alternativa flexible a los modelos de riesgos p
 \chapter{An\'alisis Multivariado de Supervivencia}
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 
-\section{Introducci\'on}
+%\section{Introducci\'on}
 El an\'alisis multivariado de supervivencia extiende los modelos de supervivencia para incluir m\'ultiples covariables, permitiendo evaluar su efecto simult\'aneo sobre el tiempo hasta el evento. Los modelos de Cox y AFT son com\'unmente utilizados en este contexto.
 
-\section{Modelo de Cox Multivariado}
+\section*{Modelo de Cox Multivariado}
 El modelo de Cox multivariado se define como:
 \begin{eqnarray*}
 \lambda(t \mid X) = \lambda_0(t) \exp(\beta^T X)
 \end{eqnarray*}
 donde $X$ es un vector de covariables.
 
-\subsection{Estimaci\'on de los Par\'ametros}
+\subsection*{Estimaci\'on de los Par\'ametros}
 Los par\'ametros $\beta$ se estiman utilizando el m\'etodo de m\'axima verosimilitud parcial, como se discuti\'o anteriormente. La funci\'on de verosimilitud parcial se maximiza para obtener los estimadores de los coeficientes.
 
-\section{Modelo AFT Multivariado}
+\section*{Modelo AFT Multivariado}
 El modelo AFT multivariado se expresa como:
 \begin{eqnarray*}
 T = T_0 \exp(\beta^T X)
 \end{eqnarray*}
 
-\subsection{Estimaci\'on de los Par\'ametros}
+\subsection*{Estimaci\'on de los Par\'ametros}
 Los par\'ametros $\beta$ se estiman utilizando el m\'etodo de m\'axima verosimilitud, similar al caso univariado. La funci\'on de verosimilitud se maximiza para obtener los estimadores de los coeficientes.
 
-\section{Interacci\'on y Efectos No Lineales}
+\section*{Interacci\'on y Efectos No Lineales}
 En el an\'alisis multivariado, es importante considerar la posibilidad de interacciones entre covariables y efectos no lineales. Estos se pueden incluir en los modelos extendiendo las funciones de riesgo o supervivencia.
 
-\subsection{Interacciones}
+\subsection*{Interacciones}
 Las interacciones entre covariables se pueden modelar a\~nadiendo t\'erminos de interacci\'on en el modelo:
 \begin{eqnarray*}
 \lambda(t \mid X) = \lambda_0(t) \exp(\beta_1 X_1 + \beta_2 X_2 + \beta_3 X_1 X_2)
 \end{eqnarray*}
 donde $X_1 X_2$ es el t\'ermino de interacci\'on.
 
-\subsection{Efectos No Lineales}
+\subsection*{Efectos No Lineales}
 Los efectos no lineales se pueden modelar utilizando funciones no lineales de las covariables, como polinomios o splines:
 \begin{eqnarray*}
 \lambda(t \mid X) = \lambda_0(t) \exp(\beta_1 X + \beta_2 X^2)
 \end{eqnarray*}
 
-\section{Selecci\'on de Variables}
+\section*{Selecci\'on de Variables}
 La selecci\'on de variables es crucial en el an\'alisis multivariado para evitar el sobreajuste y mejorar la interpretabilidad del modelo. M\'etodos como la regresi\'on hacia atr\'as, la regresi\'on hacia adelante y la selecci\'on por criterios de informaci\'on (AIC, BIC) son com\'unmente utilizados.
 
-\subsection{Regresi\'on Hacia Atr\'as}
+\subsection*{Regresi\'on Hacia Atr\'as}
 La regresi\'on hacia atr\'as comienza con todas las covariables en el modelo y elimina iterativamente la covariable menos significativa hasta que todas las covariables restantes sean significativas.
 
-\subsection{Regresi\'on Hacia Adelante}
+\subsection*{Regresi\'on Hacia Adelante}
 La regresi\'on hacia adelante comienza con un modelo vac\'io y a\~nade iterativamente la covariable m\'as significativa hasta que no se pueda a\~nadir ninguna covariable adicional significativa.
 
-\subsection{Criterios de Informaci\'on}
+\subsection*{Criterios de Informaci\'on}
 Los criterios de informaci\'on, como el AIC (Akaike Information Criterion) y el BIC (Bayesian Information Criterion), se utilizan para seleccionar el modelo que mejor se ajusta a los datos con la menor complejidad posible:
 \begin{eqnarray*}
 AIC &=& -2 \log L + 2k \\
@@ -3073,7 +3075,7 @@ BIC &=& -2 \log L + k \log n
 \end{eqnarray*}
 donde $L$ es la funci\'on de verosimilitud del modelo, $k$ es el n\'umero de par\'ametros en el modelo y $n$ es el tama\~no de la muestra.
 
-\section{Ejemplo de An\'alisis Multivariado}
+\section*{Ejemplo de An\'alisis Multivariado}
 Consideremos un ejemplo con tres covariables: edad, sexo y tratamiento. Ajustamos un modelo de Cox multivariado y obtenemos los siguientes coeficientes:
 \begin{eqnarray*}
 \hat{\beta}_{edad} = 0.03, \quad \hat{\beta}_{sexo} = -0.6, \quad \hat{\beta}_{tratamiento} = 1.5
@@ -3084,20 +3086,20 @@ La funci\'on de riesgo ajustada se expresa como:
 \lambda(t \mid X) = \lambda_0(t) \exp(0.03 \cdot \text{edad} - 0.6 \cdot \text{sexo} + 1.5 \cdot \text{tratamiento})
 \end{eqnarray*}
 
-\section{Conclusi\'on}
+%\section{Conclusi\'on}
 El an\'alisis multivariado de supervivencia permite evaluar el efecto conjunto de m\'ultiples covariables sobre el tiempo hasta el evento. La inclusi\'on de interacciones y efectos no lineales, junto con la selecci\'on adecuada de variables, mejora la precisi\'on y la interpretabilidad de los modelos de supervivencia.
 
 
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
 \chapter{Supervivencia en Datos Complicados}
 %<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
-\section{Introducci\'on}
+%\section{Introducci\'on}
 El an\'alisis de supervivencia en datos complicados se refiere a la evaluaci\'on de datos de supervivencia que presentan desaf\'ios adicionales, como la censura por intervalo, datos truncados y datos con m\'ultiples tipos de eventos. Estos escenarios requieren m\'etodos avanzados para un an\'alisis adecuado.
 
 \section{Censura por Intervalo}
 La censura por intervalo ocurre cuando el evento de inter\'es se sabe que ocurri\'o dentro de un intervalo de tiempo, pero no se conoce el momento exacto. Esto es com\'un en estudios donde las observaciones se realizan en puntos de tiempo discretos.
 
-\subsection{Modelo para Datos Censurados por Intervalo}
+\subsection*{Modelo para Datos Censurados por Intervalo}
 Para datos censurados por intervalo, la funci\'on de verosimilitud se modifica para incluir la probabilidad de que el evento ocurra dentro de un intervalo:
 \begin{eqnarray*}
 L(\beta) = \prod_{i=1}^n P(T_i \in [L_i, U_i] \mid X_i; \beta)
@@ -3107,7 +3109,7 @@ donde $[L_i, U_i]$ es el intervalo de tiempo durante el cual se sabe que ocurri\
 \section{Datos Truncados}
 Los datos truncados ocurren cuando los tiempos de supervivencia est\'an sujetos a un umbral, y solo se observan los individuos cuyos tiempos de supervivencia superan (o est\'an por debajo de) ese umbral. Existen dos tipos principales de truncamiento: truncamiento a la izquierda y truncamiento a la derecha.
 
-\subsection{Modelo para Datos Truncados}
+\subsection*{Modelo para Datos Truncados}
 Para datos truncados a la izquierda, la funci\'on de verosimilitud se ajusta para considerar solo los individuos que superan el umbral de truncamiento:
 \begin{eqnarray*}
 L(\beta) = \prod_{i=1}^n \frac{f(t_i \mid X_i; \beta)}{1 - F(L_i \mid X_i; \beta)}
@@ -3117,7 +3119,7 @@ donde $L_i$ es el umbral de truncamiento para el individuo $i$.
 \section{An\'alisis de Competing Risks}
 En estudios donde pueden ocurrir m\'ultiples tipos de eventos (competing risks), es crucial modelar adecuadamente el riesgo asociado con cada tipo de evento. La probabilidad de ocurrencia de cada evento compite con las probabilidades de ocurrencia de otros eventos.
 
-\subsection{Modelo de Competing Risks}
+\subsection*{Modelo de Competing Risks}
 Para un an\'alisis de competing risks, la funci\'on de riesgo se descompone en funciones de riesgo espec\'ificas para cada tipo de evento:
 \begin{eqnarray*}
 \lambda(t) = \sum_{j=1}^m \lambda_j(t)
@@ -3127,7 +3129,7 @@ donde $\lambda_j(t)$ es la funci\'on de riesgo para el evento $j$.
 \section{M\'etodos de Imputaci\'on}
 Los m\'etodos de imputaci\'on se utilizan para manejar datos faltantes o censurados en estudios de supervivencia. La imputaci\'on m\'ultiple es un enfoque com\'un que crea m\'ultiples conjuntos de datos completos imputando valores faltantes varias veces y luego combina los resultados.
 
-\subsection{Imputaci\'on M\'ultiple}
+\subsection*{Imputaci\'on M\'ultiple}
 La imputaci\'on m\'ultiple para datos de supervivencia se realiza en tres pasos:
 \begin{enumerate}
     \item Imputar los valores faltantes m\'ultiples veces para crear varios conjuntos de datos completos.
@@ -3135,7 +3137,7 @@ La imputaci\'on m\'ultiple para datos de supervivencia se realiza en tres pasos:
     \item Combinar los resultados de los an\'alisis separados para obtener estimaciones y varianzas combinadas.
 \end{enumerate}
 
-\section{Ejemplo de An\'alisis con Datos Complicados}
+\section*{Ejemplo de An\'alisis con Datos Complicados}
 Consideremos un estudio con datos censurados por intervalo y competing risks. Ajustamos un modelo para los datos censurados por intervalo y obtenemos los siguientes coeficientes para las covariables edad y tratamiento:
 \begin{eqnarray*}
 \hat{\beta}_{edad} = 0.04, \quad \hat{\beta}_{tratamiento} = -0.8
@@ -3146,69 +3148,8 @@ La funci\'on de supervivencia ajustada se expresa como:
 S(t \mid X) = \exp\left(-\left(\frac{t \exp(0.04 \cdot \text{edad} - 0.8 \cdot \text{tratamiento})}{\lambda}\right)^k\right)
 \end{eqnarray*}
 
-\section{Conclusi\'on}
+%\section{Conclusi\'on}
 El an\'alisis de supervivencia en datos complicados requiere m\'etodos avanzados para manejar censura por intervalo, datos truncados y competing risks. La aplicaci\'on de modelos adecuados y m\'etodos de imputaci\'on asegura un an\'alisis preciso y completo de estos datos complejos.
-
-
-%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
-\chapter{Proyecto Final y Revisi\'on}
-%<--__--__--__--><--__--__--__--><--__--__--__--><--__--__--__-->
-\section{Introducci\'on}
-El proyecto final proporciona una oportunidad para aplicar los conceptos y t\'ecnicas aprendidas en el curso de an\'alisis de supervivencia. Este cap\'itulo incluye una gu\'ia para desarrollar un proyecto de an\'alisis de supervivencia y una revisi\'on de los conceptos clave.
-
-\section{Desarrollo del Proyecto}
-El proyecto final debe incluir los siguientes componentes:
-\begin{enumerate}
-    \item Definici\'on del problema: Identificar la pregunta de investigaci\'on y los objetivos del an\'alisis de supervivencia.
-    \item Descripci\'on de los datos: Presentar los datos utilizados, incluyendo las covariables y la estructura de los datos.
-    \item An\'alisis exploratorio: Realizar un an\'alisis descriptivo de los datos, incluyendo la censura y la distribuci\'on de los tiempos de supervivencia.
-    \item Ajuste del modelo: Ajustar modelos de supervivencia adecuados (Kaplan-Meier, Cox, AFT) y evaluar su bondad de ajuste.
-    \item Diagn\'ostico del modelo: Realizar diagn\'osticos para evaluar los supuestos del modelo y la influencia de observaciones individuales.
-    \item Interpretaci\'on de resultados: Interpretar los coeficientes del modelo y las curvas de supervivencia ajustadas.
-    \item Conclusiones: Resumir los hallazgos del an\'alisis y proporcionar recomendaciones basadas en los resultados.
-\end{enumerate}
-
-\section{Revisi\'on de Conceptos Clave}
-Una revisi\'on de los conceptos clave del an\'alisis de supervivencia incluye:
-\begin{itemize}
-    \item \textbf{Funci\'on de Supervivencia:} Define la probabilidad de sobrevivir m\'as all\'a de un tiempo espec\'ifico.
-    \item \textbf{Funci\'on de Riesgo:} Define la tasa instant\'anea de ocurrencia del evento.
-    \item \textbf{Estimador de Kaplan-Meier:} Proporciona una estimaci\'on no param\'etrica de la funci\'on de supervivencia.
-    \item \textbf{Test de Log-rank:} Compara curvas de supervivencia entre diferentes grupos.
-    \item \textbf{Modelo de Cox:} Eval\'ua el efecto de m\'ultiples covariables sobre el tiempo hasta el evento, asumiendo proporcionalidad de riesgos.
-    \item \textbf{Modelos AFT:} Modelan el efecto de las covariables multiplicando el tiempo de supervivencia por una constante.
-    \item \textbf{An\'alisis Multivariado:} Considera interacciones y efectos no lineales entre m\'ultiples covariables.
-    \item \textbf{Supervivencia en Datos Complicados:} Maneja censura por intervalo, datos truncados y competing risks.
-\end{itemize}
-
-\section{Ejemplo de Proyecto Final}
-A continuaci\'on se presenta un ejemplo de estructura de un proyecto final de an\'alisis de supervivencia:
-
-\subsection{Definici\'on del Problema}
-Analizar el efecto del tratamiento y la edad sobre la supervivencia de pacientes con una enfermedad espec\'ifica.
-
-\subsection{Descripci\'on de los Datos}
-Datos de supervivencia de 100 pacientes, con covariables: edad, sexo y tipo de tratamiento. Los tiempos de supervivencia est\'an censurados a la derecha.
-
-\subsection{An\'alisis Exploratorio}
-Realizar histogramas y curvas de Kaplan-Meier para explorar la distribuci\'on de los tiempos de supervivencia y la censura.
-
-\subsection{Ajuste del Modelo}
-Ajustar un modelo de Cox y un modelo AFT con las covariables edad y tratamiento.
-
-\subsection{Diagn\'ostico del Modelo}
-Evaluar la proporcionalidad de riesgos y realizar an\'alisis de residuos para identificar observaciones influyentes.
-
-\subsection{Interpretaci\'on de Resultados}
-Interpretar los coeficientes del modelo y las curvas de supervivencia ajustadas para diferentes niveles de las covariables.
-
-\subsection{Conclusiones}
-Resumir los hallazgos y proporcionar recomendaciones sobre el efecto del tratamiento y la edad en la supervivencia de los pacientes.
-
-\section{Conclusi\'on}
-El proyecto final es una oportunidad para aplicar los conocimientos adquiridos en un contexto pr\'actico. La revisi\'on de los conceptos clave y la aplicaci\'on de t\'ecnicas adecuadas de an\'alisis de supervivencia aseguran un an\'alisis riguroso y significativo.
-
-
 
 
 
